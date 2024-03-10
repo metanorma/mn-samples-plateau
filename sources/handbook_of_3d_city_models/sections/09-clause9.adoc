@@ -59,7 +59,7 @@
 
 標準製品仕様に示す応用スキーマ（UMLクラス図及び定義文書）では、3D都市モデルとして必要な運用上の多重度を示している。データ製品の実装においては、応用スキーマとの一致（運用上の多重度との一致）が必要となることに留意すること。
 
-なお、応用スキーマの多重度とXMLSchemaに定義された多重度との一覧を別表「応用スキーマとXMLSchemaとの多重度の対応」（ https://www.mlit.go.jp/plateau/file/libraries/doc/specification_attachedTable1.xlsx[https://www.mlit.go.jp/plateau/file/libraries/doc/specification_attachedTable1.xlsx]）に示す。両者に差異がある場合には、併せてその内容を留意事項として示す。
+なお、応用スキーマの多重度とXMLSchemaに定義された多重度との一覧を別表「応用スキーマとXMLSchemaとの多重度の対応」（ https://www.mlit.go.jp/plateau/file/libraries/doc/specification_attachedTable1.xlsx）に示す。両者に差異がある場合には、併せてその内容を留意事項として示す。
 
 [[sec_9.4]]
 === データ利用時の留意事項
@@ -67,7 +67,7 @@
 [[sec_9.4.1]]
 ==== XMLSchemaタグの日本語表記
 
-　本標準製品仕様書に示す応用スキーマクラス図に示すクラスの名称や属性・関連役割の名称には、CityGML及びi-URのXMLSchemaに定義されたタグを使用している。このタグに対応する日本語表記を別表「応用スキーマとXMLSchemaとの多重度の対応」（ https://www.mlit.go.jp/plateau/file/libraries/doc/specification_attachedTable1.xlsx[https://www.mlit.go.jp/plateau/file/libraries/doc/specification_attachedTable1.xlsx]）に示す。
+　本標準製品仕様書に示す応用スキーマクラス図に示すクラスの名称や属性・関連役割の名称には、CityGML及びi-URのXMLSchemaに定義されたタグを使用している。このタグに対応する日本語表記を別表「応用スキーマとXMLSchemaとの多重度の対応」（ https://www.mlit.go.jp/plateau/file/libraries/doc/specification_attachedTable1.xlsx）に示す。
 
 　この日本語表記は3D都市モデルの可視化において使用できる。ユースケースによって最適な可視化方法は異なるため、別表の日本語表記の採用は必須ではないが、ユースケースの実現に支障のない範囲でこの日本語表記を採用することが望ましい。
 
@@ -84,7 +84,7 @@
 [[sec_9.5]]
 === 品質評価ツール
 
-品質評価については、関連するオープンソースソフトウェアがProject "PLATEAU"公式GitHubリポジトリに公開されており、それらを利用しても良い（ https://github.com/Project-PLATEAU/[https://github.com/Project-PLATEAU/]）。
+品質評価については、関連するオープンソースソフトウェアがProject "PLATEAU"公式GitHubリポジトリに公開されており、それらを利用しても良い（ https://github.com/Project-PLATEAU/）。
 
 ただし、この品質評価ツールは、3D都市モデル標準製品仕様書第2.3版に対応しており、この標準製品仕様書が発行される時点では、この標準製品仕様書には対応していないことに留意する必要がある。
 
@@ -96,15 +96,15 @@
 |===
 h|  h|  h| 品質評価尺度 h| 機能概要 h| 検査対象 h| 論理検査 h| 全数 h| 補足
 
-| 過剰 | C01 | インスタンスに与えられたgml:idと同じgml:idをもつ他のインスタンスがデータ製品内に存在しない | カウント、数を出力 | 〇 | 〇 | 〇 | 
+| 過剰 | C01 | インスタンスに与えられたgml:idと同じgml:idをもつ他のインスタンスがデータ製品内に存在しない | カウント、数を出力 | 〇 | 〇 | 〇 |
 | 漏れ | C02 | 参照データとインスタンス数が等しい | 都市モデルの数をカウントして表示、ユーザが保持する参照データの数と比較 | 〇 | 〇 | 〇 | 論理検査の結果を、目視で比較
-| 書式一貫性 | L01 | 整形式（Well-Formed XML)になっていない箇所数 | XML文法チェック | 〇 | 〇 | 〇 | 
-.2+| 概念一貫性 | L02 | 妥当（Valid）なXML文書になっていない箇所数 | CityGML/i-URスキーマチェック | 〇 | 〇 | 〇 | 
+| 書式一貫性 | L01 | 整形式（Well-Formed XML)になっていない箇所数 | XML文法チェック | 〇 | 〇 | 〇 |
+.2+| 概念一貫性 | L02 | 妥当（Valid）なXML文書になっていない箇所数 | CityGML/i-URスキーマチェック | 〇 | 〇 | 〇 |
 | L03 | 応用スキーマに定義していない地物型の出現箇所数 | CityGML/i-UR未定義のクラスをカウント | 〇 | 〇 | 〇 | 他スキーマが読み込まれた場合、当該クラスは排除不可
-| 　 | L-bldg-06 | 建築物のbldg:lod2Solidにより記述される立体（gml:Solid）の境界面（gml:MultiSurface）と、bldg:boundedByにより参照する屋根面、底面、壁面、外部天井、外部床面又は閉鎖面がbldg:lod2MultiSurfaceにより記述される面（gml:MultiSurface）とが一致する。 | Solidを構成する面が正しいBoundarySurfaceを参照しているかチェック | 〇 | 〇 | 〇 | 
-.3+| 定義域一貫性 | L04 | codeSpaceにより指定された辞書に定義されていない値となっている箇所数 | カウント、数を出力 | 〇 | 〇 | 〇 | 
-| L05 | srsNameにより指定された空間参照系のepsgコードが、6697あるいは6668のいずれでもない。 | カウント、数を出力 | 〇 | 〇 | 〇 | 
-| L06 | 幾何オブジェクトインスタンスの座標値に含まれる、緯度、経度、標高が、この幾何オブジェクトインスタンスを含む都市モデル（core:CityModel）の属性boundedByにより示された空間範囲に含まれる。 | カウント、数を出力 | 〇 | 〇 | 〇 | 
+| 　 | L-bldg-06 | 建築物のbldg:lod2Solidにより記述される立体（gml:Solid）の境界面（gml:MultiSurface）と、bldg:boundedByにより参照する屋根面、底面、壁面、外部天井、外部床面又は閉鎖面がbldg:lod2MultiSurfaceにより記述される面（gml:MultiSurface）とが一致する。 | Solidを構成する面が正しいBoundarySurfaceを参照しているかチェック | 〇 | 〇 | 〇 |
+.3+| 定義域一貫性 | L04 | codeSpaceにより指定された辞書に定義されていない値となっている箇所数 | カウント、数を出力 | 〇 | 〇 | 〇 |
+| L05 | srsNameにより指定された空間参照系のepsgコードが、6697あるいは6668のいずれでもない。 | カウント、数を出力 | 〇 | 〇 | 〇 |
+| L06 | 幾何オブジェクトインスタンスの座標値に含まれる、緯度、経度、標高が、この幾何オブジェクトインスタンスを含む都市モデル（core:CityModel）の属性boundedByにより示された空間範囲に含まれる。 | カウント、数を出力 | 〇 | 〇 | 〇 |
 .2+| 位相一貫性 | L10 | 座標列の向きが不正なインスタンスをエラーとする。外周は反時計回り、内周は時計回りがただしい。 | カウント、数を出力 | 〇 | 〇 | 〇 | 対象はSolidのみ
 a| L11 +
 L12
@@ -216,7 +216,7 @@ h| 応用スキーマ h| 接頭辞
 
 |===
 
-[CRS]には、当該ファイルに含まれるオブジェクトの空間参照系の略称（半角数字）としてEPSGコード（ https://epsg.org/home.html[https://epsg.org/home.html]）を入力する。EPSGコードは、空間参照系に与えられた固有の識別子である。 +
+[CRS]には、当該ファイルに含まれるオブジェクトの空間参照系の略称（半角数字）としてEPSGコード（ https://epsg.org/home.html）を入力する。EPSGコードは、空間参照系に与えられた固有の識別子である。 +
 地下埋設物に適用する空間参照系の略称を下表に示す。
 
 [[table_9-5]]
@@ -314,7 +314,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 h| ファイル名 | ImplicitGeometry_mimeType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ImplicitGeometry_mimeType.xml[https://www.geospatial.jp/iur/codelists/3.0/ImplicitGeometry_mimeType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ImplicitGeometry_mimeType.xml
 h| コード h| 説明
 | model/gltf+json | gltf
 | model/x3d+xml | .x3db, .x3d

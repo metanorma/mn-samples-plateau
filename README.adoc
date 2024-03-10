@@ -1,0 +1,44 @@
+= Project PLATEAU sample documents
+
+These documents belong to Project PLATEAU by MLIT.
+
+== Structure
+
+`sources/`::
+source of the documents
+
+`_site/`::
+(automatically generated, in the `gh-pages` branch) published document.
+
+
+== Usage
+
+=== Installing Metanorma
+
+See https://www.metanorma.org
+
+=== Fetching the document
+
+[source,sh]
+----
+git clone https://github.com/metanorma/iso-iec-jseg-15/
+----
+
+=== Building the document
+
+[source,sh]
+----
+metanorma site generate
+----
+
+=== Running via Docker or locally
+
+If you have installed the build tools locally, and wish to run the
+locally-installed compilation tools, there is nothing further to set.
+
+If you don't want to deal with local dependencies, use the docker:
+
+[source,sh]
+----
+docker run -v "$(pwd)":/metanorma -w /metanorma -it metanorma/metanorma metanorma site generate
+----

@@ -60,7 +60,7 @@ image::images/figure3.svg[]
 [cols="17",options="noheader"]
 |===
 .2+h| モデル .2+h| GML 13+h| CityGML 2+h| i-UR
-h| Core h| Appearance h| Bridge h| Building h| CityFurniture h| CityObjectGroup 
+h| Core h| Appearance h| Bridge h| Building h| CityFurniture h| CityObjectGroup
 h| Generic h| LandUse h| Relief h| Transportation h| Tunnel
 h| Vegetation h| WaterBody h| Urban Object h| Urban Function
 | 建築物 ^| ✓ ^| ✓ ^| *1 | ^| ✓ | ^| *3 ^| *2 | | | | | | ^| ✓ |
@@ -431,7 +431,7 @@ image::images/figure11.webp[]
 |===
 | | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
-| LOD1 ^| ● | Building | Solid | 射影の短辺の実長1m以上 
+| LOD1 ^| ● | Building | Solid | 射影の短辺の実長1m以上
 a|
 * 建築物の外周の上方からの正射影を取得し、地上から一律の高さを与えて立ち上げた立体を作成する。
 | 一律の高さは、中央値を原則とする。
@@ -588,7 +588,7 @@ a|
 * 方位が変化する場所で区切る。
 | 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 
-| LOD2.0 ^| ■ | BuildingPart | Solid 
+| LOD2.0 ^| ■ | BuildingPart | Solid
 | 1棟の建築物を、主題属性の異なる複数の部分に分ける場合に必須とする。
 a|
 * 屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）及び閉鎖面（ClosureSurface）を境界面とする立体を作成する。
@@ -960,7 +960,7 @@ a|
 
 * 屋根の外周を取得し、各頂点に地表面の高さを与える。
 
-【屋根の外周と外壁面との距離が3m以上】 
+【屋根の外周と外壁面との距離が3m以上】
 
 * 地表と外壁面との交線を取得し、各頂点に地表面の高さを与える。
 
@@ -2645,7 +2645,7 @@ image::images/figure52.webp[]
 
 .LOD4でのbldg:ClosureSurfaceの例
 image::images/figure53.webp[]
-2+a| 
+2+a|
 
 .LOD4でのbldg:ClosureSurfaceを非表示にした例
 image::images/figure54.webp[]
@@ -4448,7 +4448,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 h| ファイル名 | Building_class.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Building_class.xml[https://www.geospatial.jp/iur/codelists/3.0/Building_class.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Building_class.xml
 h| コード h| 説明
 | 3001 | 普通建物
 | 3002 | 堅ろう建物
@@ -4466,7 +4466,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | Building_usage.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Building_usage.xml[https://www.geospatial.jp/iur/codelists/3.0/Building_usage.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Building_usage.xml
 h| コード h| 説明
 | 401 | 業務施設
 | 402 | 商業施設
@@ -4497,7 +4497,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | Building_roofType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Building_roofType.xml[https://www.geospatial.jp/iur/codelists/3.0/Building_roofType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Building_roofType.xml
 h| コード h| 説明
 | 1 | 切妻屋根
 | 2 | 寄棟屋根
@@ -4539,7 +4539,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | BuildingInstallation_class.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BuildingInstallation_class.xml[https://www.geospatial.jp/iur/codelists/3.0/BuildingInstallation_class.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BuildingInstallation_class.xml
 h| コード h| 説明
 | 1000 | 外観の特徴
 | 1020 | 廃棄物管理
@@ -4558,7 +4558,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | BuildingInstallation_function.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BuildingInstallation_function.xml[https://www.geospatial.jp/iur/codelists/3.0/BuildingInstallation_function.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BuildingInstallation_function.xml
 h| コード h| 説明
 | 1000 | バルコニー
 | 1001 | ポーチ
@@ -4600,7 +4600,7 @@ h| コード h| 説明
 |===
 h| ファイル名 2+| Room_class.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/Room_class.xml[https://www.geospatial.jp/iur/codelists/3.0/Room_class.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/Room_class.xml
 h| コード 2+h| 説明
 | SL_20 | Administrative, commercial and protective service spaces | 管理事務、商業、保安の空間
 | SL_25 | Cultural, educational, scientific and information spaces | 文化教育の空間
@@ -4629,7 +4629,7 @@ h| コード 2+h| 説明
 |===
 h| ファイル名 2+| Room_function.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/Road_function.xml[https://www.geospatial.jp/iur/codelists/3.0/Road_function.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/Road_function.xml
 h| コード 2+h| 説明
 | SL_20_10 | Legislative spaces | 議会スペース
 | SL_20_15 | Administrative spaces | 管理事務活動の空間
@@ -4762,7 +4762,7 @@ h| コード 2+h| 説明
 |===
 h| ファイル名 | IntBuildingInstallation_class.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/IntBuildingInstallation_class.xml[https://www.geospatial.jp/iur/codelists/3.0/IntBuildingInstallation_class.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/IntBuildingInstallation_class.xml
 h| コード h| 説明
 | BE_01 | IfcBeam
 | BE_02 | IfcColumn
@@ -4785,7 +4785,7 @@ h| コード h| 説明
 |===
 h| ファイル名 2+| IntBuildingInstallation_function.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/IntBuildingInstallation_function.xml[https://www.geospatial.jp/iur/codelists/3.0/IntBuildingInstallation_function.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/IntBuildingInstallation_function.xml
 h| コード 2+h| 説明
 | EF_25 | Wall and barrier elements | 壁およびバリア（バリケード）エレメント
 | EF_30 | Roofs, floor and paving elements | 屋根、床、舗装エレメント
@@ -4811,7 +4811,7 @@ h| コード 2+h| 説明
 |===
 h| ファイル名 2+| BuildingFurniture_class.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/BuildingFurniture_class.xml[https://www.geospatial.jp/iur/codelists/3.0/BuildingFurniture_class.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/BuildingFurniture_class.xml
 h| コード 2+h| 説明
 | Pr_40_10 | Signature products | サイネージ製品
 | Pr_40_20 | Sanitari fittings and accessories | 衛生器具および付属品
@@ -4829,7 +4829,7 @@ h| コード 2+h| 説明
 |===
 h| ファイル名 2+| BuildingFurniture_function.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/BuildingFurniture_function.xml[https://www.geospatial.jp/iur/codelists/3.0/BuildingFurniture_function.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/BuildingFurniture_function.xml
 h| コード 2+h| 説明
 | Pr_40_10_57 | Notices, identification and labels | 通知、識別、ラベル
 | Pr_40_10_77 | Signs and markers | サインとマーカー
@@ -4930,7 +4930,7 @@ h| コード 2+h| 説明
 |===
 h| ファイル名 | BuildingDetailAttribute_detailedUsage.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BuildingDetailAttribute_detailedUsage.xml[https://www.geospatial.jp/iur/codelists/3.0/BuildingDetailAttribute_detailedUsage.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BuildingDetailAttribute_detailedUsage.xml
 h| コード h| 説明
 | 401 | 業務施設
 | 401101 | 事務所
@@ -5105,7 +5105,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | BuildingDetailAttribute_buildingStructureType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BuildingDetailAttribute_buildingStructureType.xml[https://www.geospatial.jp/iur/codelists/3.0/BuildingDetailAttribute_buildingStructureType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BuildingDetailAttribute_buildingStructureType.xml
 h| コード h| 説明
 | 601 | 木造・土蔵造
 | 602 | 鉄骨鉄筋コンクリート造
@@ -5126,7 +5126,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | BuildingDetailAttribute_fireproofStructureType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BuildingDetailAttribute_fireproofStructureType.xml[https://www.geospatial.jp/iur/codelists/3.0/BuildingDetailAttribute_fireproofStructureType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BuildingDetailAttribute_fireproofStructureType.xml
 h| コード h| 説明
 | 1001 | 耐火
 | 1002 | 準耐火造
@@ -5143,7 +5143,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | BuildingDetailAttribute_vacancy.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BuildingDetailAttribute_vacancy.xml[https://www.geospatial.jp/iur/codelists/3.0/BuildingDetailAttribute_vacancy.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BuildingDetailAttribute_vacancy.xml
 h| コード h| 説明
 | 1 | 空き家
 | 0 | 空き家以外
@@ -5156,7 +5156,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | LargeCustomerFacilityAttribute_class.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/LargeCustomerFacilityAttribute_class.xml[https://www.geospatial.jp/iur/codelists/3.0/LargeCustomerFacilityAttribute_class.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/LargeCustomerFacilityAttribute_class.xml
 h| コード h| 説明
 | 1 | 大規模小売店舗（食品スーパー）
 | 2 | 大規模小売店舗（百貨店・スーパー・ショッピングセンター・寄合百貨店・小売市場）
@@ -5174,7 +5174,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | BuildingDataQualityAttribute_srcScale.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BuildingDataQualityAttribute_srcScale.xml[https://www.geospatial.jp/iur/codelists/3.0/BuildingDataQualityAttribute_srcScale.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BuildingDataQualityAttribute_srcScale.xml
 h| コード h| 説明
 | 1 | 地図情報レベル2500
 | 2 | 地図情報レベル1000
@@ -5188,7 +5188,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | BuildingDataQualityAttribute_geometrySrcDesc.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BuildingDataQualityAttribute_geometrySrcDesc.xml[https://www.geospatial.jp/iur/codelists/3.0/BuildingDataQualityAttribute_geometrySrcDesc.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BuildingDataQualityAttribute_geometrySrcDesc.xml
 h| コード h| 説明
 | 1 | 現地測量
 | 2 | 地上レーザ測量
@@ -5210,7 +5210,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | BuildingDataQualityAttribute_thematicSrcDesc.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BuildingDataQualityAttribute_thematicSrcDesc.xml[https://www.geospatial.jp/iur/codelists/3.0/BuildingDataQualityAttribute_thematicSrcDesc.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BuildingDataQualityAttribute_thematicSrcDesc.xml
 h| コード h| 説明
 | 1 | 都市計画基礎調査
 | 2 | 道路基盤地図情報
@@ -5230,7 +5230,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | BuildingDataQualityAttribute_appearanceSrcDesc.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BuildingDataQualityAttribute_appearanceSrcDesc.xml[https://www.geospatial.jp/iur/codelists/3.0/BuildingDataQualityAttribute_appearanceSrcDesc.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BuildingDataQualityAttribute_appearanceSrcDesc.xml
 h| コード h| 説明
 | 1 | 空中写真
 | 2 | MMS画像
@@ -5245,7 +5245,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | BuildingDataQualityAttribute_lod1HeightType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BuildingDataQualityAttribute_lod1HeightType.xml[https://www.geospatial.jp/iur/codelists/3.0/BuildingDataQualityAttribute_lod1HeightType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BuildingDataQualityAttribute_lod1HeightType.xml
 h| コード h| 説明
 | 1 | 点群から取得_最高高さ
 | 2 | 点群から取得_中央値
@@ -5286,7 +5286,7 @@ h| 値 h| 説明
 |===
 h| ファイル名 | IfcBuildingElement_elementType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/IfcBuildingElement_elementType.xml[https://www.geospatial.jp/iur/codelists/3.0/IfcBuildingElement_elementType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/IfcBuildingElement_elementType.xml
 h| コード h| 説明
 | BE_01 | IfcBeam
 | BE_02 | IfcColumn
@@ -5316,7 +5316,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | IfcBuildingElement_predefinedType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/IfcBuildingElement_predefinedType.xml[https://www.geospatial.jp/iur/codelists/3.0/IfcBuildingElement_predefinedType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/IfcBuildingElement_predefinedType.xml
 h| コード h| 説明
 | 01 | IfcColumn：COLUMN（柱）
 | 02 | IfcColumn：PILASTER（壁に貼り付けられた、又は埋め込まれた装飾用の柱）
@@ -5367,7 +5367,7 @@ h| 値 h| 説明
 |===
 h| ファイル名 | IfcBuildingElement_shapeType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/IfcBuildingElement_shapeType.xml[https://www.geospatial.jp/iur/codelists/3.0/IfcBuildingElement_shapeType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/IfcBuildingElement_shapeType.xml
 h| コード h| 説明
 | 01 | IfcRamp：STRAIGHT_RUN_RAMP（直線的なスロープ）
 | 02 | IfcRamp：TWO_STRAIGHT_RUN_RAMP （1ヵ所の踊り場のある直線的なスロープ）
@@ -5581,7 +5581,7 @@ h| 値 h| 説明
 |===
 h| ファイル名 | Common_indoorSource.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/%20Common_indoorSource.xml[https://www.geospatial.jp/iur/codelists/3.0/ Common_indoorSource.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/%20Common_indoorSource.xml
 h| コード h| 説明
 | 1 | フロアマップ
 | 2 | CADデータ
@@ -5804,7 +5804,7 @@ a|
 a|
 * 交差する道路の道路縁が接する点を結ぶ線に囲まれた車道部を取得する。
 * 高さは0とする。
-a| 
+a|
 [%unnumbered]
 image::images/figure73.webp[]
 a|
@@ -5889,7 +5889,7 @@ h| LOD3.0 h| LOD3.1 h| LOD3.2及びLOD3.3 h| LOD3.4
 a| LOD3.1の区分を細分する。 +
 歩道部のうち、植栽を区分する。
 | LOD3.2の区分を細分する。細分はユースケースに応じて決定する。
-a| 
+a|
 [%unnumbered]
 image::images/figure74.webp[]
 
@@ -5992,7 +5992,7 @@ a|
 a|
 * 交差する道路の道路縁が接する点を結ぶ線に囲まれた車道部を取得する。
 * 高さは車道の路面高さとする。
-a| 
+a|
 
 [%unnumbered]
 image::images/figure86.webp[]
@@ -6427,11 +6427,11 @@ tran:Roadに含まれるtran:TrafficArea及びtran:AuxiliaryTrafficAreaは、同
 .LOD1における道路の取得例
 image::images/figure94.webp[]
 
-2+a| 
+2+a|
 
 .LOD2における道路の取得例
 image::images/figure95.webp[]
-2+a| 
+2+a|
 
 .LOD3における道路の取得例
 image::images/figure96.webp[]
@@ -6741,7 +6741,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 h| ファイル名 | TransportationComplex_class.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TransportationComplex_class.xml[https://www.geospatial.jp/iur/codelists/3.0/TransportationComplex_class.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TransportationComplex_class.xml
 h| コード h| 説明
 | 1020 | 徒歩道等
 | 1040 | 道路
@@ -6760,7 +6760,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | Road_function.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Road_function.xml[https://www.geospatial.jp/iur/codelists/3.0/Road_function.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Road_function.xml
 h| コード h| 説明
 | 1 | 高速自動車国道
 | 2 | 一般国道
@@ -6786,7 +6786,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | Road_usage.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Road_usage.xml[https://www.geospatial.jp/iur/codelists/3.0/Road_usage.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Road_usage.xml
 h| コード h| 説明
 | 1 | 緊急輸送道路（第一次緊急輸送道路）
 | 2 | 緊急輸送道路（第二次緊急輸送道路）
@@ -6796,7 +6796,7 @@ h| コード h| 説明
 
 |===
 
-参考:: 国土交通省ウェブサイト（ https://www.mlit.go.jp/road/bosai/measures/index3.html[https://www.mlit.go.jp/road/bosai/measures/index3.html]）及び地域防災計画の作成の基準（ https://www.mlit.go.jp/common/001036322.pdf[https://www.mlit.go.jp/common/001036322.pdf]）
+参考:: 国土交通省ウェブサイト（ https://www.mlit.go.jp/road/bosai/measures/index3.html）及び地域防災計画の作成の基準（ https://www.mlit.go.jp/common/001036322.pdf）
 
 ====== TrafficArea_function.xml
 
@@ -6808,7 +6808,7 @@ h| コード h| 説明
 |===
 h| ファイル名 4+| TrafficArea_function.xml
 
-h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.0/TrafficArea_function.xml[https://www.geospatial.jp/iur/codelists/3.0/TrafficArea_function.xml]
+h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.0/TrafficArea_function.xml
 2+h| 大分類 2+h| 小分類 .2+h| 定義
 h| コード h| 説明 h| コード h| 説明
 .2+| 1000 .2+| 車道部 2+| | 主として自動車が利用する道路の部分。
@@ -6825,7 +6825,7 @@ h| コード h| 説明 h| コード h| 説明
 |===
 h| ファイル名 4+| TrafficArea_function.xml
 
-h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.0/TrafficArea_function.xml[https://www.geospatial.jp/iur/codelists/3.0/TrafficArea_function.xml]
+h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.0/TrafficArea_function.xml
 2+h| 大分類 2+h| 小分類 .2+h| 定義
 h| コード h| 説明 h| コード h| 説明
 .3+| 1000 .3+| 車道部 2+| | 主として自動車が利用する道路の部分のうち、自動車の通行の用に供される部分。
@@ -6843,7 +6843,7 @@ h| コード h| 説明 h| コード h| 説明
 |===
 h| ファイル名 4+| TrafficArea_function.xml
 
-h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.0/TrafficArea_function.xml[https://www.geospatial.jp/iur/codelists/3.0/TrafficArea_function.xml]
+h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.0/TrafficArea_function.xml
 2+h| 大分類 2+h| 小分類 .2+h| 定義
 h| コード h| 説明 h| コード h| 説明
 .3+| 1000 .3+| 車道部 2+| | 主として自動車が利用する道路の部分のうち、自動車の通行の用に供される部分。
@@ -6861,7 +6861,7 @@ h| コード h| 説明 h| コード h| 説明
 |===
 h| ファイル名 4+| TrafficArea_function.xml
 
-h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.0/TrafficArea_function.xml[https://www.geospatial.jp/iur/codelists/3.0/TrafficArea_function.xml]
+h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.0/TrafficArea_function.xml
 2+h| 大分類 2+h| 小分類 .2+h| 定義
 h| コード h| 説明 h| コード h| 説明
 .8+| 1000 .8+| 車道部 2+| a| 主として自動車が利用する道路の部分のうち、自動車の通行の用に供される部分。 +
@@ -6894,7 +6894,7 @@ h| コード h| 説明 h| コード h| 説明
 |===
 h| ファイル名 2+| AuxiliaryTrafficArea_function.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/AuxiliaryTrafficArea_function.xml[https://www.geospatial.jp/iur/codelists/3.0/AuxiliaryTrafficArea_function.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/AuxiliaryTrafficArea_function.xml
 2+h| 大分類 .2+h| 定義
 h| コード h| 説明
 | 3000 | 島 | 車両の走行を制御し、安全な交通を確保するために設置される分離帯及び交通島。路面電車停車所が設けられた島を含む。
@@ -6909,7 +6909,7 @@ h| コード h| 説明
 |===
 h| ファイル名 2+| AuxiliaryTrafficArea_function.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/AuxiliaryTrafficArea_function.xml[https://www.geospatial.jp/iur/codelists/3.0/AuxiliaryTrafficArea_function.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/AuxiliaryTrafficArea_function.xml
 2+h| 大分類 .2+h| 定義
 h| コード h| 説明
 | 3000 | 島 | 車両の走行を制御し、安全な交通を確保するために設置される分離帯及び交通島。路面電車停車所が設けられた島を含む。
@@ -6925,7 +6925,7 @@ h| コード h| 説明
 |===
 h| ファイル名 4+| AuxiliaryTrafficArea_function.xml
 
-h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.0/AuxiliaryTrafficArea_function.xml[https://www.geospatial.jp/iur/codelists/3.0/AuxiliaryTrafficArea_function.xml]
+h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.0/AuxiliaryTrafficArea_function.xml
 2+h| 大分類 2+h| 小分類 .2+h| 定義
 h| コード h| 説明 h| コード h| 説明
 .7+| 1000 .7+| 車道部 2+| a| 主として自動車が利用する道路の部分のうち、自動車の通行の用に供されない（物理的に通行が可能であっても、道路設計上、車両が通行することが想定されていない）を部分。 +
@@ -6956,8 +6956,8 @@ h| コード h| 説明 h| コード h| 説明
 |===
 h| ファイル名 3+| TrafficArea_surfaceMaterial.xml、AuxiliaryTrafficArea_surfaceMaterial.xml
 
-h| ファイルURL 3+a| https://www.geospatial.jp/iur/codelists/3.0/TrafficArea_surfaceMaterial.xml[https://www.geospatial.jp/iur/codelists/3.0/TrafficArea_surfaceMaterial.xml] +
- https://www.geospatial.jp/iur/codelists/3.0/AuxiliaryTrafficArea_surfaceMaterial.xml[https://www.geospatial.jp/iur/codelists/3.0/AuxiliaryTrafficArea_surfaceMaterial.xml]
+h| ファイルURL 3+a| https://www.geospatial.jp/iur/codelists/3.0/TrafficArea_surfaceMaterial.xml +
+ https://www.geospatial.jp/iur/codelists/3.0/AuxiliaryTrafficArea_surfaceMaterial.xml
 2+h| 大分類 2+h| 小分類
 h| コード h| 説明 h| コード h| 説明
 .4+| 1000 .4+| アスファルト舗装 2+|
@@ -6973,7 +6973,7 @@ h| コード h| 説明 h| コード h| 説明
 
 |===
 
-参考:: 国土交通省道路局ウェブサイト（ https://www.mlit.go.jp/road/soudan/soudan_08b_01.html[https://www.mlit.go.jp/road/soudan/soudan_08b_01.html]）
+参考:: 国土交通省道路局ウェブサイト（ https://www.mlit.go.jp/road/soudan/soudan_08b_01.html）
 
 ===== Urban Object（i-UR）
 
@@ -6983,7 +6983,7 @@ h| コード h| 説明 h| コード h| 説明
 |===
 h| ファイル名 | RoadStructureAttribute_widthType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/RoadStructureAttribute_widthType.xml[https://www.geospatial.jp/iur/codelists/3.0/RoadStructureAttribute_widthType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/RoadStructureAttribute_widthType.xml
 h| コード h| 説明
 | 1 | 15m以上
 | 2 | 6m以上15m未満
@@ -7000,7 +7000,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | RoadStructureAttribute_sectionType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/RoadStructureAttribute_sectionType.xml[https://www.geospatial.jp/iur/codelists/3.0/RoadStructureAttribute_sectionType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/RoadStructureAttribute_sectionType.xml
 h| コード h| 説明
 | 1 | 土工区間・通常区間
 | 2 | 高架橋
@@ -7017,7 +7017,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | TransportationDataQualityAttribute_geometrySrcDesc.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TransportationDataQualityAttribute_geometrySrcDesc.xml[https://www.geospatial.jp/iur/codelists/3.0/TransportationDataQualityAttribute_geometrySrcDesc.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TransportationDataQualityAttribute_geometrySrcDesc.xml
 h| コード h| 説明
 | 1 | 現地測量
 | 2 | 地上レーザ測量
@@ -7040,7 +7040,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | TransportationDataQualityAttribute_srcScale.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TransportationDataQualityAttribute_srcScale.xml[https://www.geospatial.jp/iur/codelists/3.0/TransportationDataQualityAttribute_srcScale.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TransportationDataQualityAttribute_srcScale.xml
 h| コード h| 説明
 | 1 | 地図情報レベル2500
 | 2 | 地図情報レベル1000
@@ -7054,7 +7054,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | TransportationDataQualityAttribute_thematicSrcDesc.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TransportationDataQualityAttribute_thematicSrcDesc.xml[https://www.geospatial.jp/iur/codelists/3.0/TransportationDataQualityAttribute_thematicSrcDesc.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TransportationDataQualityAttribute_thematicSrcDesc.xml
 h| コード h| 説明
 | 1 | 都市計画基礎調査
 | 2 | 道路基盤地図情報
@@ -7075,7 +7075,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | TransportationDataQualityAttribute_appearanceSrcDesc.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TransportationDataQualityAttribute_appearanceSrcDesc.xml[https://www.geospatial.jp/iur/codelists/3.0/TransportationDataQualityAttribute_appearanceSrcDesc.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TransportationDataQualityAttribute_appearanceSrcDesc.xml
 h| コード h| 説明
 | 1 | 空中写真
 | 2 | MMS画像
@@ -7090,7 +7090,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | Road_lodType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Road_lodType.xml[https://www.geospatial.jp/iur/codelists/3.0/Road_lodType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Road_lodType.xml
 h| コード h| 説明
 | 3.0 a| 道路の横断方向の高さは一律とし、車道の高さとする。 +
 車道、車道交差部、分離帯及び歩道を区分する。
@@ -7750,15 +7750,15 @@ tran:Railwayに含まれるtran:TrafficArea及びtran:AuxiliaryTrafficAreaは、
 .LOD0における鉄道の取得例
 image::images/figure127.webp[]
 
-2+a| 
+2+a|
 
 .LOD1における鉄道の取得例
 image::images/figure128.webp[]
-2+a| 
+2+a|
 
 .LOD2における鉄道の取得例
 image::images/figure129.webp[]
-2+a| 
+2+a|
 
 .LOD3における鉄道の取得例
 image::images/figure130.webp[]
@@ -8120,7 +8120,7 @@ tran:Roadのコードリスト参照
 |===
 h| ファイル名 | Railway_function.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Railway_function.xml[https://www.geospatial.jp/iur/codelists/3.0/Railway_function.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Railway_function.xml
 h| コード h| 説明
 | 01 | 普通鉄道
 | 02 | 地下鉄
@@ -8139,7 +8139,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | TrafficArea_function.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TrafficArea_function.xml[https://www.geospatial.jp/iur/codelists/3.0/TrafficArea_function.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TrafficArea_function.xml
 h| コード h| 説明
 | 8000 | 軌道中心線
 | 8100 | 軌道
@@ -8160,7 +8160,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | RailwayRouteAttribute_operatorType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/RailwayRouteAttribute_operatorType.xml[https://www.geospatial.jp/iur/codelists/3.0/RailwayRouteAttribute_operatorType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/RailwayRouteAttribute_operatorType.xml
 h| コード h| 説明
 | 1 | 新幹線
 | 2 | JR在来線
@@ -8178,7 +8178,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | RailwayRouteAttribute_railwayType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/RailwayRouteAttribute_railwayType.xml[https://www.geospatial.jp/iur/codelists/3.0/RailwayRouteAttribute_railwayType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/RailwayRouteAttribute_railwayType.xml
 h| コード h| 説明
 | 11 | 普通鉄道JR
 | 12 | 普通鉄道
@@ -8203,7 +8203,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | RailwayTrackAttribute_directionType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/RailwayTrackAttribute_directionType.xml[https://www.geospatial.jp/iur/codelists/3.0/RailwayTrackAttribute_directionType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/RailwayTrackAttribute_directionType.xml
 h| コード h| 説明
 | 01 | 上下線一体
 | 02 | 上り線
@@ -8217,7 +8217,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | RailwayTrackAttribute_trackType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/%20RailwayTrackAttribute_trackType.xml[https://www.geospatial.jp/iur/codelists/3.0/ RailwayTrackAttribute_trackType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/%20RailwayTrackAttribute_trackType.xml
 h| コード h| 説明
 | 01 | 本線
 | 02 | 副本線
@@ -8231,7 +8231,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | RailwayTrackAttribute_alignmentType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/%20RailwayTrackAttribute_alignmentType.xml[https://www.geospatial.jp/iur/codelists/3.0/ RailwayTrackAttribute_alignmentType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/%20RailwayTrackAttribute_alignmentType.xml
 h| コード h| 説明
 | 01 | 直線
 | 02 | 円曲線
@@ -8247,7 +8247,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | ControlPoint_function.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/%20ControlPoint_function.xml[https://www.geospatial.jp/iur/codelists/3.0/ ControlPoint_function.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/%20ControlPoint_function.xml
 h| コード h| 説明
 | 01 | 円曲線
 | 02 | 緩和曲線
@@ -8280,7 +8280,7 @@ tran:Roadのコードリスト参照
 |===
 h| ファイル名 | Railway_lodType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/%20Railway_lodType.xml[https://www.geospatial.jp/iur/codelists/3.0/ Railway_lodType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/%20Railway_lodType.xml
 h| コード h| 説明
 | 3.0 | 軌道中心線（線）、軌間（面）及び道床（面）を取得する。横断方向に一律の高さとする。
 | 3.1 | 軌道中心線（線）、軌間（面）、レール、道床（面）及び交通補助領域を取得する。横断方向に15㎝以上の高さの差を取得する。
@@ -8496,7 +8496,7 @@ a|
 a|
 * 交差する道路の道路縁が接する点を結ぶ線に囲まれた車道部を取得する。
 * 高さは0とする。
-a| 
+a|
 
 [%unnumbered]
 image::images/figure142.webp[]
@@ -8584,7 +8584,7 @@ h| LOD3.0 h| LOD3.1 h| LOD3.2及びLOD3.3 h| LOD3.4
 a| LOD3.1の区分を細分する。 +
 歩道部のうち、植栽を区分する。
 | LOD3.2の区分を細分する。細分はユースケースに応じて決定する。
-a| 
+a|
 
 [%unnumbered]
 image::images/figure143.webp[]
@@ -9257,7 +9257,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 h| ファイル名 | Track_function.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Track_function.xml[https://www.geospatial.jp/iur/codelists/3.0/Track_function.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Track_function.xml
 h| コード h| 説明
 | 1 | 徒歩道
 | 2 | 庭園路
@@ -9286,7 +9286,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | TrackAttribute_adminType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TrackAttribute_adminType.xml[https://www.geospatial.jp/iur/codelists/3.0/TrackAttribute_adminType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TrackAttribute_adminType.xml
 h| コード h| 説明
 | 1 | 国
 | 2 | 都道府県
@@ -9305,7 +9305,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | TrackAttribute_structureType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TrackAttribute_structureType.xml[https://www.geospatial.jp/iur/codelists/3.0/TrackAttribute_structureType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TrackAttribute_structureType.xml
 h| コード h| 説明
 | 1 | 通常部
 | 2 | 橋・高架
@@ -9325,7 +9325,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | TrackAttribute_widthType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TrackAttribute_widthType.xml[https://www.geospatial.jp/iur/codelists/3.0/TrackAttribute_widthType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TrackAttribute_widthType.xml
 h| コード h| 説明
 | 1 | 3m未満
 | 2 | 3m-5.5m未満
@@ -9653,7 +9653,7 @@ h| LOD3.0 h| LOD3.1 h| LOD3.2及びLOD3.3 h| LOD3.4
 a| LOD3.1の区分を細分する。 +
 歩道部のうち、植栽を区分する。
 | LOD3.2の区分を細分する。細分はユースケースに応じて決定する。
-a| 
+a|
 
 [%unnumbered]
 image::images/figure172.webp[]
@@ -10386,7 +10386,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 h| ファイル名 | Square_function.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Square_function.xml[https://www.geospatial.jp/iur/codelists/3.0/Square_function.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Square_function.xml
 h| コード h| 説明
 | 1 | 駅前広場
 | 2 | 自動車ターミナル
@@ -10416,7 +10416,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | Common_status.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Common_status.xml[https://www.geospatial.jp/iur/codelists/3.0/Common_status.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Common_status.xml
 h| コード h| 説明
 | 1 | 計画
 | 2 | 事業中
@@ -10431,7 +10431,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | StationSquareAttribute_railwayType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/StationSquareAttribute_railwayType.xml[https://www.geospatial.jp/iur/codelists/3.0/StationSquareAttribute_railwayType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/StationSquareAttribute_railwayType.xml
 h| コード h| 説明
 | 1 | JR
 | 2 | 私鉄
@@ -10448,7 +10448,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | TerminalAttribute_userType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TerminalAttribute%20_userType.xml[https://www.geospatial.jp/iur/codelists/3.0/TerminalAttribute \_userType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TerminalAttribute%20_userType.xml
 h| コード h| 説明
 | 1 | 一般
 | 2 | 専用
@@ -10463,7 +10463,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | TerminalAttribute_terminalType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TerminalAttribute_terminalType.xml[https://www.geospatial.jp/iur/codelists/3.0/TerminalAttribute_terminalType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TerminalAttribute_terminalType.xml
 h| コード h| 説明
 | 1 | トラックターミナル
 | 2 | バスターミナル
@@ -10837,7 +10837,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 h| ファイル名 | Waterway_function.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Watwaway_function.xml[https://www.geospatial.jp/iur/codelists/3.0/Watwaway_function.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Watwaway_function.xml
 h| コード h| 説明
 | 01 | 法定航路
 
@@ -10849,7 +10849,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | WaterwayDetailAttribute_routeDirection.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/WaterwayDetailAttribute_routeDirection.xml[https://www.geospatial.jp/iur/codelists/3.0/WaterwayDetailAttribute_routeDirection.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/WaterwayDetailAttribute_routeDirection.xml
 h| コード h| 説明
 | 01 | 両方向
 | 02 | 指定無
@@ -10863,7 +10863,7 @@ h| コード h| 説明
 
 土地利用とは、都市計画基礎調査の土地利用現況をいう。（都市計画法第6条）
 
-出典:: 「デジタル社会における都市計画情報の高度化に向けた検討会」　( https://www.mlit.go.jp/toshi/tosiko/toshi_tosiko_tk_000077.html[https://www.mlit.go.jp/toshi/tosiko/toshi_tosiko_tk_000077.html]) +
+出典:: 「デジタル社会における都市計画情報の高度化に向けた検討会」　( https://www.mlit.go.jp/toshi/tosiko/toshi_tosiko_tk_000077.html) +
 　　　都市計画情報のデジタル化・オープンデータガイダンス（案） +
 　　　都市計画基礎調査実施要領（案） +
 　　　都市計画データ標準製品仕様書（案）
@@ -11056,7 +11056,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 h| ファイル名 | Common_landUseType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Common_landUseType.xml[https://www.geospatial.jp/iur/codelists/3.0/Common_landUseType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Common_landUseType.xml
 h| コード h| 説明
 | 201 | 田（水田）
 | 202 | 畑（畑、樹園地、採草地、養鶏（牛・豚）場）
@@ -11095,7 +11095,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | Common_ownerType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Common_ownerType.xml[https://www.geospatial.jp/iur/codelists/3.0/Common_ownerType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Common_ownerType.xml
 h| コード h| 説明
 | 1010 | 国
 | 1020 | 都道府県
@@ -11581,7 +11581,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 |===
 h| ファイル名 | WaterBody_function.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/WaterBody_function.xml[https://www.geospatial.jp/iur/codelists/3.0/WaterBody_function.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/WaterBody_function.xml
 h| コード h| 説明
 | 1 | 洪水浸水想定区域
 | 2 | 津波浸水想定
@@ -11598,7 +11598,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | RiverFloodingRiskAttribute_adminType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/RiverFloodingRiskAttribute_adminType.xml[https://www.geospatial.jp/iur/codelists/3.0/RiverFloodingRiskAttribute_adminType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/RiverFloodingRiskAttribute_adminType.xml
 h| コード h| 説明
 | 1 | 国
 | 2 | 都道府県
@@ -11613,7 +11613,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | RiverFloodingRiskAttribute_scale.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/RiverFloodingRiskAttribute_scale.xml[https://www.geospatial.jp/iur/codelists/3.0/RiverFloodingRiskAttribute_scale.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/RiverFloodingRiskAttribute_scale.xml
 h| コード h| 説明
 | 1 | L1（計画規模）
 | 2 | L2（想定最大規模）
@@ -11628,7 +11628,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | RiverFloodingRiskAttribute_rank.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/RiverFloodingRiskAttribute_rank.xml[https://www.geospatial.jp/iur/codelists/3.0/RiverFloodingRiskAttribute_rank.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/RiverFloodingRiskAttribute_rank.xml
 h| コード h| 説明
 | 1 | 0.5m未満
 | 2 | 0.5m以上3m未満
@@ -11647,7 +11647,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | TsunamiRiskAttribute_rank.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TsunamiRiskAttribute_rank.xml[https://www.geospatial.jp/iur/codelists/3.0/TsunamiRiskAttribute_rank.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TsunamiRiskAttribute_rank.xml
 h| コード h| 説明
 | 1 | 0.5m未満
 | 2 | 0.5m以上3m未満
@@ -11666,7 +11666,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | HighTideRiskAttribute_rank.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/HighTideRiskAttribute_rank.xml[https://www.geospatial.jp/iur/codelists/3.0/HighTideRiskAttribute_rank.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/HighTideRiskAttribute_rank.xml
 h| コード h| 説明
 | 1 | 0.5m未満
 | 2 | 0.5m以上3m未満
@@ -11685,7 +11685,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | InlandFloodingRiskAttribute_rank.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/InlandFloodingRiskAttribute_rank.xml[https://www.geospatial.jp/iur/codelists/3.0/InlandFloodingRiskAttribute_rank.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/InlandFloodingRiskAttribute_rank.xml
 h| コード h| 説明
 | 1 | 0.5m未満
 | 2 | 0.5m以上3m未満
@@ -11706,7 +11706,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | LandSlideRiskAttribute_description.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/LandSlideRiskAttribute_description.xml[https://www.geospatial.jp/iur/codelists/3.0/LandSlideRiskAttribute_description.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/LandSlideRiskAttribute_description.xml
 h| コード h| 説明
 | 1 | 急傾斜地の崩落
 | 2 | 土石流
@@ -11722,7 +11722,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | LandSlideRiskAttribute_areaType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/LandSlideRiskAttribute_areaType.xml[https://www.geospatial.jp/iur/codelists/3.0/LandSlideRiskAttribute_areaType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/LandSlideRiskAttribute_areaType.xml
 h| コード h| 説明
 | 1 | 土砂災害警戒区域（指定済）
 | 2 | 土砂災害特別警戒区域（指定済）
@@ -11739,7 +11739,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | LandSlideRiskAttribute_status.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/LandSlideRiskAttribute_status.xml[https://www.geospatial.jp/iur/codelists/3.0/LandSlideRiskAttribute_status.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/LandSlideRiskAttribute_status.xml
 h| コード h| 説明
 | 0 | 特別警戒区域指定済み
 | 1 | 特別警戒区域未指定
@@ -17704,7 +17704,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 |===
 h| ファイル名 | Common_urbanPlanType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Common_urbanPlanType.xml[https://www.geospatial.jp/iur/codelists/3.0/Common_urbanPlanType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Common_urbanPlanType.xml
 h| コード h| 説明
 | 21 | 都市計画区域
 | 26 | 準都市計画区域
@@ -17718,7 +17718,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | Common_areaClassificationType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Common_areaClassificationType.xml[https://www.geospatial.jp/iur/codelists/3.0/Common_areaClassificationType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Common_areaClassificationType.xml
 h| コード h| 説明
 | 22 | 市街化区域
 | 23 | 市街化調整区域
@@ -17731,7 +17731,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | Common_districtsAndZonesType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Common_districtsAndZonesType.xml[https://www.geospatial.jp/iur/codelists/3.0/Common_districtsAndZonesType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Common_districtsAndZonesType.xml
 h| コード h| 説明
 | 0 | 用途地域の指定をしない区域
 | 1 | 第1種低層住居専用地域
@@ -17785,7 +17785,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | Common_validType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Common_validType.xml[https://www.geospatial.jp/iur/codelists/3.0/Common_validType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Common_validType.xml
 h| コード h| 説明
 | 1 | 決定
 | 2 | 廃止
@@ -17800,7 +17800,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | Common_availabilityType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Common_availabilityType.xml[https://www.geospatial.jp/iur/codelists/3.0/Common_availabilityType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Common_availabilityType.xml
 h| コード h| 説明
 | 1 | 有り
 | 2 | 無し
@@ -17814,7 +17814,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | SpecialUseDistrict_usage.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/SpecialUseDistrict_usage.xml[https://www.geospatial.jp/iur/codelists/3.0/SpecialUseDistrict_usage.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/SpecialUseDistrict_usage.xml
 h| コード h| 説明
 | 1 | 特別工業地区
 | 2 | 文教地区
@@ -17837,7 +17837,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | HeightControlDistrict_usage.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/HeightControlDistrict_usage.xml[https://www.geospatial.jp/iur/codelists/3.0/HeightControlDistrict_usage.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/HeightControlDistrict_usage.xml
 h| コード h| 説明
 | 1 | 最高限高度地区
 | 2 | 最低限高度地区
@@ -17850,7 +17850,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | FirePreventionDistrict_usage.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/FirePreventionDistrict_usage.xml[https://www.geospatial.jp/iur/codelists/3.0/FirePreventionDistrict_usage.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/FirePreventionDistrict_usage.xml
 h| コード h| 説明
 | 1 | 防火地域（地域）
 | 2 | 防火地域（路線）
@@ -17865,7 +17865,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | ScenicDistrict_usage.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ScenicDistrict_usage.xml[https://www.geospatial.jp/iur/codelists/3.0/ScenicDistrict_usage.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ScenicDistrict_usage.xml
 h| コード h| 説明
 | 1 | 第一種風致地区
 | 2 | 第二種風致地区
@@ -17880,7 +17880,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | PortZone_usage.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/PortZone_usage.xml[https://www.geospatial.jp/iur/codelists/3.0/PortZone_usage.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/PortZone_usage.xml
 h| コード h| 説明
 | 1 | 商港区
 | 2 | 特殊物資港区
@@ -17900,7 +17900,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | SpecialGreenSpaceConservationDistrict_requirement.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/SpecialGreenSpaceConservationDistrict_requirement.xml[https://www.geospatial.jp/iur/codelists/3.0/SpecialGreenSpaceConservationDistrict_requirement.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/SpecialGreenSpaceConservationDistrict_requirement.xml
 h| コード h| 説明
 | 1 | 無秩序な市街地化の防止、公害又は災害の防止等の為必要な遮断地帯、緩衝地帯又は非難地帯として適切な位置、規模及び形態を有するもの
 | 2 | 神社、寺院等の建造物、遺跡等と一体となって、又は伝承若しくは風俗慣習と結びついて当該地域において伝統的又は文化的意義を有するもの
@@ -17916,7 +17916,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | ProjectPromotionArea_function.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ProjectPromotionArea_function.xml[https://www.geospatial.jp/iur/codelists/3.0/ProjectPromotionArea_function.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ProjectPromotionArea_function.xml
 h| コード h| 説明
 | 1 | 市街地再開発促進区域
 | 2 | 土地区画整理促進区域
@@ -17931,7 +17931,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | UrbanRoadAttribute_routeTypeNumber.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/UrbanRoadAttribute_routeTypeNumber.xml[https://www.geospatial.jp/iur/codelists/3.0/UrbanRoadAttribute_routeTypeNumber.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/UrbanRoadAttribute_routeTypeNumber.xml
 h| コード h| 説明
 | 1 | 自動車専用道路
 | 3 | 幹線街路
@@ -17948,7 +17948,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | UrbanRoadAttribute_routeSizeNumber.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/UrbanRoadAttribute_routeSizeNumber.xml[https://www.geospatial.jp/iur/codelists/3.0/UrbanRoadAttribute_routeSizeNumber.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/UrbanRoadAttribute_routeSizeNumber.xml
 h| コード h| 説明
 | 1 | 幅員40m以上
 | 2 | 幅員30m以上40m未満
@@ -17966,7 +17966,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | UrbanRoadAttribute_roadType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/UrbanRoadAttribute_roadType.xml[https://www.geospatial.jp/iur/codelists/3.0/UrbanRoadAttribute_roadType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/UrbanRoadAttribute_roadType.xml
 h| コード h| 説明
 | 1 | 自動車専用道路
 | 2 | 幹線街路
@@ -17981,7 +17981,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | TrafficFacility_trafficFacilityStructureType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/%20TrafficFacility_trafficFacilityStructureType.xml[https://www.geospatial.jp/iur/codelists/3.0/ TrafficFacility_trafficFacilityStructureType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/%20TrafficFacility_trafficFacilityStructureType.xml
 h| コード h| 説明
 | 1 | 嵩上式
 | 2 | 地下式
@@ -17996,7 +17996,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | TrafficFacility_trafficFacilityCrossingType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/%20TrafficFacility_trafficFacilityCrossingType.xml[https://www.geospatial.jp/iur/codelists/3.0/ TrafficFacility_trafficFacilityCrossingType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/%20TrafficFacility_trafficFacilityCrossingType.xml
 h| コード h| 説明
 | 1 | 立体交差
 | 2 | 平面交差
@@ -18009,7 +18009,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | VehicleTerminalAttribute_terminalType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/VehicleTerminalAttribute_terminalType.xml[https://www.geospatial.jp/iur/codelists/3.0/VehicleTerminalAttribute_terminalType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/VehicleTerminalAttribute_terminalType.xml
 h| コード h| 説明
 | 1 | トラックターミナル
 | 2 | バスターミナル
@@ -18022,7 +18022,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | ParkAttribute_parkTypeNumber.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ParkAttribute_parkTypeNumber.xml[https://www.geospatial.jp/iur/codelists/3.0/ParkAttribute_parkTypeNumber.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ParkAttribute_parkTypeNumber.xml
 h| コード h| 説明
 | 2 | 街区公園
 | 3 | 近隣公園
@@ -18041,7 +18041,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | ParkAttribute_parkSizeNumber.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ParkAttribute_parkSizeNumber.xml[https://www.geospatial.jp/iur/codelists/3.0/ParkAttribute_parkSizeNumber.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ParkAttribute_parkSizeNumber.xml
 h| コード h| 説明
 | 2 | 面積1ha未満
 | 3 | 面積1ha以上4ha未満
@@ -18058,7 +18058,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | Waterway_structure.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Waterway_structure.xml[https://www.geospatial.jp/iur/codelists/3.0/Waterway_structure.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Waterway_structure.xml
 h| コード h| 説明
 | 1 | 単断面式
 | 2 | 複断面式
@@ -18082,7 +18082,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | SewerSystemAttribute_systemType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/SewerSystemAttribute_systemType.xml[https://www.geospatial.jp/iur/codelists/3.0/SewerSystemAttribute_systemType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/SewerSystemAttribute_systemType.xml
 h| コード h| 説明
 | 1 | 公共下水道
 | 2 | 流域下水道
@@ -18096,7 +18096,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | UrbanRedevelopmentProject_usage.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/UrbanRedevelopmentProject_usage.xml[https://www.geospatial.jp/iur/codelists/3.0/UrbanRedevelopmentProject_usage.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/UrbanRedevelopmentProject_usage.xml
 h| コード h| 説明
 | 1 | 第一種
 | 2 | 第二種
@@ -18109,7 +18109,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | UrbanDevelopmentProject_function.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/UrbanDevelopmentProject_function.xml[https://www.geospatial.jp/iur/codelists/3.0/UrbanDevelopmentProject_function.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/UrbanDevelopmentProject_function.xml
 h| コード h| 説明
 | 1 | 土地区画整理事業
 | 2 | 新住宅市街地開発事業
@@ -18126,7 +18126,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | ScheduledAreaForUrbanDevelopment_function.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ScheduledAreaForUrbanDevelopment_function.xml[https://www.geospatial.jp/iur/codelists/3.0/ScheduledAreaForUrbanDevelopment_function.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ScheduledAreaForUrbanDevelopment_function.xml
 h| コード h| 説明
 | 1 | 新住宅市街地開発事業の予定区域
 | 2 | 工業団地造成事業の予定区域
@@ -18143,7 +18143,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | DistrictPlan_function.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/DistrictPlan_function.xml[https://www.geospatial.jp/iur/codelists/3.0/DistrictPlan_function.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/DistrictPlan_function.xml
 h| コード h| 説明
 | 1 | 地区計画
 | 2 | 再開発等促進区を定める地区計画
@@ -18168,7 +18168,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | DistrictDevelopmentPlan_function.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/DistrictDevelopmentPlan_function.xml[https://www.geospatial.jp/iur/codelists/3.0/DistrictDevelopmentPlan_function.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/DistrictDevelopmentPlan_function.xml
 h| コード h| 説明
 | 1 | 地区整備計画
 | 2 | 特定建築物地区整備計画
@@ -18185,7 +18185,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | ZonalDisasterPreventionFacility_facilityType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ZonalDisasterPreventionFacility_facilityType.xml[https://www.geospatial.jp/iur/codelists/3.0/ZonalDisasterPreventionFacility_facilityType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ZonalDisasterPreventionFacility_facilityType.xml
 h| コード h| 説明
 | 1 | 地区防災施設
 | 2 | 特定地区防災施設
@@ -18198,7 +18198,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | Common_districtFacilityType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Common_districtFacilityType.xml[https://www.geospatial.jp/iur/codelists/3.0/Common_districtFacilityType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Common_districtFacilityType.xml
 h| コード h| 説明
 | 1 | 地区施設
 | 2 | 沿道地区施設
@@ -18212,7 +18212,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | District_function.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/District_function.xml[https://www.geospatial.jp/iur/codelists/3.0/District_function.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/District_function.xml
 h| コード h| 説明
 | 1 | 地区
 | 2 | 沿道地区
@@ -18226,7 +18226,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | PromotionArea_function.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/PromotionArea_function.xml[https://www.geospatial.jp/iur/codelists/3.0/PromotionArea_function.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/PromotionArea_function.xml
 h| コード h| 説明
 | 1 | 再開発促進区
 | 2 | 開発整備促進区
@@ -18240,7 +18240,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | Boundary_function.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Boundary_function.xml[https://www.geospatial.jp/iur/codelists/3.0/Boundary_function.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Boundary_function.xml
 h| コード h| 説明
 | 11 | 行政界
 | 21 | 地番界
@@ -18265,7 +18265,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | UrbanPlan_areaType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/%20UrbanPlan_areaType.xml[https://www.geospatial.jp/iur/codelists/3.0/ UrbanPlan_areaType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/%20UrbanPlan_areaType.xml
 h| コード h| 説明
 | 1001 | 都市計画区域
 | 1002 | 準都市計画区域
@@ -18399,7 +18399,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | UrbanFacility_function.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/UrbanFacility_function.xml[https://www.geospatial.jp/iur/codelists/3.0/UrbanFacility_function.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/UrbanFacility_function.xml
 h| コード h| 説明
 | 3000 | 都市施設
 | 3010 | 交通施設
@@ -20290,7 +20290,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 h| ファイル名 | Bridge_class.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Bridge_class.xml[https://www.geospatial.jp/iur/codelists/3.0/Bridge_class.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Bridge_class.xml
 h| コード h| 説明
 | 01 | 桁橋
 | 02 | トラス橋
@@ -20309,7 +20309,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | Bridge_function.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Bridge_function.xml[https://www.geospatial.jp/iur/codelists/3.0/Bridge_function.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Bridge_function.xml
 h| コード h| 説明
 | 01 | 道路橋
 | 02 | 鉄道橋
@@ -20330,7 +20330,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | BridgeConstructionElement_function.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BridgeConstructionElement_function.xml[https://www.geospatial.jp/iur/codelists/3.0/BridgeConstructionElement_function.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BridgeConstructionElement_function.xml
 h| コード h| 説明
 | 01 | 橋脚
 | 02 | 橋台
@@ -20350,7 +20350,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | BridgeInstallation_function.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BridgeInstallation_function.xml[https://www.geospatial.jp/iur/codelists/3.0/BridgeInstallation_function.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BridgeInstallation_function.xml
 h| コード h| 説明
 | 01 | 支承
 | 02 | 落橋防止装置
@@ -20381,7 +20381,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | BridgeStructureAttribute_material.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BridgeStructureAttribute_material.xml[https://www.geospatial.jp/iur/codelists/3.0/BridgeStructureAttribute_material.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BridgeStructureAttribute_material.xml
 h| コード h| 説明
 | 01 | 鋼溶接橋
 | 02 | 鋼（鉄）リベット橋
@@ -20401,7 +20401,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | BridgeStructureAttribute_bridgeType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BridgeStructureAttribute_bridgeType.xml[https://www.geospatial.jp/iur/codelists/3.0/BridgeStructureAttribute_bridgeType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BridgeStructureAttribute_bridgeType.xml
 h| コード h| 説明
 | 01 | 橋
 | 02 | 高架橋
@@ -20415,7 +20415,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | BridgeFunctionalAttribute_userType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BridgeFunctionalAttribute_userType.xml[https://www.geospatial.jp/iur/codelists/3.0/BridgeFunctionalAttribute_userType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/BridgeFunctionalAttribute_userType.xml
 h| コード h| 説明
 | 01 | 歩行者専用
 | 02 | 自転車専用
@@ -20429,7 +20429,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | Bridge_lodType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Bridge_lodType.xml[https://www.geospatial.jp/iur/codelists/3.0/Bridge_lodType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Bridge_lodType.xml
 h| コード h| 説明
 | 2.0 | 道路橋、桟道橋及び鉄道橋は、床版の外周を、高さをもった面として表現する。横断歩道橋、ペデストリアンデッキ及び跨線橋は、本体（上部工、階段及び踊り場）の外周を取得し、高さをもった面として表現する。階段の個々の段は取得せず、下端と上端を結んだ平面として表現する。
 | 2.1 | 道路橋、桟道橋及び鉄道橋は、床版及び主桁によって、厚みと高さをもった立体として表現する。橋脚などの構造上不可欠な部材を表現してもよい。 横断歩道橋、ペデストリアンデッキ及び跨線橋は、本体（上部工、階段及び踊り場）を、それぞれを厚みと高さを持った立体として表現する。 上部工、階段及び踊り場は分けて取得できる。階段の個々の段は取得せず、下端と上端を結んだ面として表現する。
@@ -21904,7 +21904,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 h| ファイル名 | Tunnel_class.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Tunnel_class.xml[https://www.geospatial.jp/iur/codelists/3.0/Tunnel_class.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Tunnel_class.xml
 h| コード h| 説明
 | 1000 | 交通
 | 1010 | 供給
@@ -21921,7 +21921,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | Tunnel_function.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Tunnel_function.xml[https://www.geospatial.jp/iur/codelists/3.0/Tunnel_function.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Tunnel_function.xml
 h| コード h| 説明
 | 1000 | 鉄道用トンネル
 | 1010 | 道路用トンネル
@@ -21938,7 +21938,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | TunnelInstallation_function.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TunnelInstallation_function.xml[https://www.geospatial.jp/iur/codelists/3.0/TunnelInstallation_function.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TunnelInstallation_function.xml
 h| コード h| 説明
 | 01 | 受変電設備
 | 02 | 予備電源設備
@@ -21964,7 +21964,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | TunnelFunctionalAttribute_userType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TunnelFunctionalAttribute_userType.xml[https://www.geospatial.jp/iur/codelists/3.0/TunnelFunctionalAttribute_userType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TunnelFunctionalAttribute_userType.xml
 h| コード h| 説明
 | 01 | 車道
 | 02 | 歩行者専用
@@ -21987,7 +21987,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | TunnelStructureAttribute_tunnelType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TunnelStructureAttribute_tunnelType.xml[https://www.geospatial.jp/iur/codelists/3.0/TunnelStructureAttribute_tunnelType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TunnelStructureAttribute_tunnelType.xml
 h| コード h| 説明
 | 01 | トンネル
 | 02 | シェッド
@@ -22005,7 +22005,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | TunnelStructureAttribute_tunnelSubType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/%20TunnelStructureAttribute_tunnelSubType.xml[https://www.geospatial.jp/iur/codelists/3.0/ TunnelStructureAttribute_tunnelSubType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/%20TunnelStructureAttribute_tunnelSubType.xml
 h| コード h| 説明
 | 01 | ボックスカルバート
 | 02 | 門型カルバート
@@ -22026,7 +22026,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | TunnelStructureAttribute_mouthType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TunnelStructureAttribute_mouthType.xml[https://www.geospatial.jp/iur/codelists/3.0/TunnelStructureAttribute_mouthType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/TunnelStructureAttribute_mouthType.xml
 h| コード h| 説明
 | 01 | 面壁工
 | 02 | 突出工
@@ -22043,7 +22043,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | Tunnel_lodType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Tunnel_lodType.xml[https://www.geospatial.jp/iur/codelists/3.0/Tunnel_lodType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Tunnel_lodType.xml
 h| コード h| 説明
 | 4.0 | LOD3.0の外形に加え、トンネル内部（内空）を再現する。内空の境界面を床、内壁面又は天井面に区分する。また、内壁等に扉や窓がある場合に区分する。トンネル内部の付属物は取得しない。
 | 4.1 | LOD4.0に加え、「短辺の実長が3ｍ以上」又は「横断又は縦断面積が3m2以上かつ短辺の実長が1m以上」の固定された設備を取得する。
@@ -22068,10 +22068,10 @@ h| その他の構造物 h| 説明
 | 水門・閘門・陸閘 a| 河川管理施設等構造令第46条に示される水門。 +
 水門：河川又は水路を横断して設けられる制水施設であって堤防の機能を有するもの。 +
 閘門：運河・放水路などで水量を調節するための水門。 +
-陸閘：閉鎖することで海水の侵入を防止するとともに、開放することで堤防等の海側にある港湾、漁港、海浜等を利用するために人や車両等が堤防等を横断できるようにする施設。 （ https://www.mlit.go.jp/common/001176448.pdf[https://www.mlit.go.jp/common/001176448.pdf]）
+陸閘：閉鎖することで海水の侵入を防止するとともに、開放することで堤防等の海側にある港湾、漁港、海浜等を利用するために人や車両等が堤防等を横断できるようにする施設。 （ https://www.mlit.go.jp/common/001176448.pdf）
 | 樋門・樋管 a| 河川管理施設等構造令第46条に示される樋門。 +
 海・河川への排水口に設けられている施設。 +
-（ https://www.mlit.go.jp/common/001176448.pdf[https://www.mlit.go.jp/common/001176448.pdf]）
+（ https://www.mlit.go.jp/common/001176448.pdf）
 | 伏せ越し a| 河川管理施設等構造令第68条に示される伏せ越し。 +
 用水施設又は排水施設である開渠が、河川法の適用を受ける河川と交差する場合において、逆サイフォン構造で河底を横過する工作物で、施工方法が開削工法によるもの。
 | 水制 a| 河川管理施設等構造令第26条に示される護岸。 +
@@ -23064,7 +23064,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 h| ファイル名 | OtherConstruction_class.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/OtherConstruction_class.xml[https://www.geospatial.jp/iur/codelists/3.0/OtherConstruction_class.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/OtherConstruction_class.xml
 h| コード h| 説明
 | 01 | ダム
 | 02 | 堤防
@@ -23088,7 +23088,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | OtherConstruction_function.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/OtherConstruction_function.xml[https://www.geospatial.jp/iur/codelists/3.0/OtherConstruction_function.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/OtherConstruction_function.xml
 h| コード h| 説明
 | 0201 | 本堤
 | 0202 | 控堤
@@ -23125,7 +23125,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | ConstructionInstallation_function.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ConstructionInstallation_function.xml[https://www.geospatial.jp/iur/codelists/3.0/ConstructionInstallation_function.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ConstructionInstallation_function.xml
 h| コード h| 説明
 | 1 | 防護柵
 | 2 | 階段
@@ -23142,7 +23142,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | ConstructionBaseAttribute_purpose.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ConstructionBaseAttribute_purpose.xml[https://www.geospatial.jp/iur/codelists/3.0/ConstructionBaseAttribute_purpose.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ConstructionBaseAttribute_purpose.xml
 h| コード h| 説明
 | 01 | 洪水調節、農地防災
 | 02 | 不特定用水、河川維持用水
@@ -23165,7 +23165,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | ConstructionStructureAttribute_structureType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ConstructionStructureAttribute_structureType.xml[https://www.geospatial.jp/iur/codelists/3.0/ConstructionStructureAttribute_structureType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ConstructionStructureAttribute_structureType.xml
 h| コード h| 説明
 | 0101 | アーチダム
 | 0102 | バットレスダム
@@ -23208,7 +23208,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | ConstructionStructureAttribute_slopeType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ConstructionStructureAttribute_slopeType.xml[https://www.geospatial.jp/iur/codelists/3.0/ConstructionStructureAttribute_slopeType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ConstructionStructureAttribute_slopeType.xml
 h| コード h| 説明
 | 01 | 階段式
 | 02 | 押上式
@@ -23225,7 +23225,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | ConstructionBaseAttribute_adminType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ConstructionBaseAttribute_adminType.xml[https://www.geospatial.jp/iur/codelists/3.0/ConstructionBaseAttribute_adminType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ConstructionBaseAttribute_adminType.xml
 h| コード h| 説明
 | 1 | 港湾局
 | 2 | 都道府県（港湾管理者）
@@ -23283,7 +23283,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | ConstructionBaseAttribute_installerType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ConstructionBaseAttribute_installerType.xml[https://www.geospatial.jp/iur/codelists/3.0/ConstructionBaseAttribute_installerType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ConstructionBaseAttribute_installerType.xml
 h| コード h| 説明
 | 01 | 国土交通省（各地方整備局、北海道開発局含む）
 | 02 | 沖縄開発庁
@@ -23311,7 +23311,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | ConstructionRiskAssessmentAttribute_riskType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ConstructionRiskAssessmentAttribute_riskType.xml[https://www.geospatial.jp/iur/codelists/3.0/ConstructionRiskAssessmentAttribute_riskType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ConstructionRiskAssessmentAttribute_riskType.xml
 h| コード h| 説明
 | 01 | 判定区分Ⅰ　（健全）
 | 02 | 判定区分Ⅱ　（予防保全段階）
@@ -23330,7 +23330,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | ConstructionRiskAssessmentAttribute_status.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ConstructionRiskAssessmentAttribute_status.xml[https://www.geospatial.jp/iur/codelists/3.0/ConstructionRiskAssessmentAttribute_status.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ConstructionRiskAssessmentAttribute_status.xml
 h| コード h| 説明
 | 01 | 予防保全段階
 | 02 | 措置完了済み
@@ -23347,7 +23347,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | ConstructionFunctionalAttribute_directionType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ConstructionFunctionalAttribute_directionType.xml[https://www.geospatial.jp/iur/codelists/3.0/ConstructionFunctionalAttribute_directionType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ConstructionFunctionalAttribute_directionType.xml
 h| コード h| 説明
 | 01 | 上下線一体
 | 02 | 上り線
@@ -23361,7 +23361,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | DataQualityAttribute_srcScale.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/DataQualityAttribute_srcScale.xml[https://www.geospatial.jp/iur/codelists/3.0/DataQualityAttribute_srcScale.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/DataQualityAttribute_srcScale.xml
 h| コード h| 説明
 | 1 | 地図情報レベル2500
 | 2 | 地図情報レベル1000
@@ -23375,7 +23375,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/DataQualityAttribute_geometrySrcDesc.xml[https://www.geospatial.jp/iur/codelists/3.0/DataQualityAttribute_geometrySrcDesc.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/DataQualityAttribute_geometrySrcDesc.xml
 h| コード h| 説明
 | 1 | 現地測量
 | 2 | 地上レーザ測量
@@ -23396,7 +23396,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/DataQualityAttribute_thematicSrcDesc.xml[https://www.geospatial.jp/iur/codelists/3.0/DataQualityAttribute_thematicSrcDesc.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/DataQualityAttribute_thematicSrcDesc.xml
 h| コード h| 説明
 | 1 | 都市計画基礎調査
 | 2 | 道路基盤地図情報
@@ -23415,7 +23415,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/DataQualityAttribute_appearanceSrcDesc.xml[https://www.geospatial.jp/iur/codelists/3.0/DataQualityAttribute_appearanceSrcDesc.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/DataQualityAttribute_appearanceSrcDesc.xml
 h| コード h| 説明
 | 1 | 空中写真
 | 2 | MMS画像
@@ -23430,7 +23430,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | DataQualityAttribute_lod1HeightType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/DataQualityAttribute_lod1HeightType.xml[https://www.geospatial.jp/iur/codelists/3.0/DataQualityAttribute_lod1HeightType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/DataQualityAttribute_lod1HeightType.xml
 h| コード h| 説明
 | 1 | 点群から取得_最高高さ
 | 2 | 点群から取得_中央値
@@ -23447,7 +23447,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | RiverFacilityIdAttribute_sideType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/RiverFacilityIdAttribute_sideType.xml[https://www.geospatial.jp/iur/codelists/3.0/RiverFacilityIdAttribute_sideType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/RiverFacilityIdAttribute_sideType.xml
 h| コード h| 説明
 | 1 | 左岸
 | 2 | 右岸
@@ -23465,7 +23465,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | OtherConstruction_lodType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/OtherConstruction_lodType.xml[https://www.geospatial.jp/iur/codelists/3.0/OtherConstruction_lodType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/OtherConstruction_lodType.xml
 h| 値 h| 説明
 | 3.0 | 構造物の形状を、主要な部分の外形を構成する特徴点から構成する面を境界面とする立体として表現する。
 | 3.1 | 構造物の形状を、主要な部分の外形を構成する特徴点から構成する面を境界面とする立体として表現し、構造上不可欠ではない付属物（手すり、柵、構造物と一体ではない階段）を表現する。
@@ -23478,7 +23478,7 @@ h| 値 h| 説明
 |===
 h| ファイル名 | Elevation_elevationReference.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Elevation_elevationReference.xml[https://www.geospatial.jp/iur/codelists/3.0/Elevation_elevationReference.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Elevation_elevationReference.xml
 h| コード h| 説明
 | 1 | 構造物の底面
 | 2 | 構造物の最高点
@@ -24003,7 +24003,7 @@ LOD1とLOD2のように、異なるLODの幾何オブジェクトをもち、そ
 |===
 h| ファイル名 | CityFurniture_class.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/CityFurniture_class.xml[https://www.geospatial.jp/iur/codelists/3.0/CityFurniture_class.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/CityFurniture_class.xml
 h| コード h| 説明
 | 1000 | 交通施設
 | 1010 | 通信施設
@@ -24020,7 +24020,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | CityFurniture_function.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/CityFurniture_function.xml[https://www.geospatial.jp/iur/codelists/3.0/CityFurniture_function.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/CityFurniture_function.xml
 h| コード h| 説明
 | 1000 | 道路標示
 | 1010 | 区画線
@@ -24128,7 +24128,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | CityFurnitureDataQualityAttribute_srcScale.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/CityFurnitureDataQualityAttribute_srcScale.xml[https://www.geospatial.jp/iur/codelists/3.0/CityFurnitureDataQualityAttribute_srcScale.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/CityFurnitureDataQualityAttribute_srcScale.xml
 h| コード h| 説明
 | 1 | 地図情報レベル2500
 | 2 | 地図情報レベル1000
@@ -24142,7 +24142,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | CityFurnitureDataQualityAttribute_geometrySrcDesc.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/CityFurnitureDataQualityAttribute_geometrySrcDesc.xml[https://www.geospatial.jp/iur/codelists/3.0/CityFurnitureDataQualityAttribute_geometrySrcDesc.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/CityFurnitureDataQualityAttribute_geometrySrcDesc.xml
 h| コード h| 説明
 | 1 | 現地測量
 | 2 | 地上レーザ測量
@@ -24163,7 +24163,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | CityFurnitureDataQualityAttribute_thematicSrcDesc.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/CityFurnitureDataQualityAttribute_thematicSrcDesc.xml[https://www.geospatial.jp/iur/codelists/3.0/CityFurnitureDataQualityAttribute_thematicSrcDesc.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/CityFurnitureDataQualityAttribute_thematicSrcDesc.xml
 h| コード h| 説明
 | 2 | 道路基盤地図情報
 | 3 | 道路台帳
@@ -24181,7 +24181,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | CityFurnitureDataQualityAttribute_appearanceSrcDesc.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/CityFurnitureDataQualityAttribute_appearanceSrcDesc.xml[https://www.geospatial.jp/iur/codelists/3.0/CityFurnitureDataQualityAttribute_appearanceSrcDesc.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/CityFurnitureDataQualityAttribute_appearanceSrcDesc.xml
 h| コード h| 説明
 | 1 | 空中写真
 | 2 | MMS画像
@@ -24196,7 +24196,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | CityFurnitureDetailAttribute_facilityType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/CityFurnitureDetailAttribute_facilityType.xml[https://www.geospatial.jp/iur/codelists/3.0/CityFurnitureDetailAttribute_facilityType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/CityFurnitureDetailAttribute_facilityType.xml
 h| コード h| 説明
 | 1 | 基幹管路
 | 2 | 支線
@@ -26200,7 +26200,7 @@ h| uro:phaseType | gml:CodeType [0..1] | 延長が計測された段階。コー
 |===
 h| ファイル名 | UtilityNetworkElement_occupierType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/UtilityNetworkElement_occupierType.xml[https://www.geospatial.jp/iur/codelists/3.0/UtilityNetworkElement_occupierType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/UtilityNetworkElement_occupierType.xml
 h| コード h| 説明
 | 100 | 道路管理者
 | 200 | 通信
@@ -26219,7 +26219,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | UtilityNetworkElement_occupierName.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/UtilityNetworkElement_occupierName.xml[https://www.geospatial.jp/iur/codelists/3.0/UtilityNetworkElement_occupierName.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/UtilityNetworkElement_occupierName.xml
 h| コード h| 説明
 | 1 | 国土交通省
 | 2 | 東京都
@@ -26237,7 +26237,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | UtilityNetworkElement_yearType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/UtilityNetworkElement_yearType.xml[https://www.geospatial.jp/iur/codelists/3.0/UtilityNetworkElement_yearType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/UtilityNetworkElement_yearType.xml
 h| コード h| 説明
 | 0 | 確定
 | 7 | 頃
@@ -26252,7 +26252,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | UtilityNetworkElement_administrator.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/%20UtilityNetworkElement_administrator.xml[https://www.geospatial.jp/iur/codelists/3.0/ UtilityNetworkElement_administrator.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/%20UtilityNetworkElement_administrator.xml
 h| コード h| 説明
 | 1 | 国土交通省
 | 2 | 東京都
@@ -26270,7 +26270,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | UtilityNetworkElement_material.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/%20UtilityNetworkElement_material.xml[https://www.geospatial.jp/iur/codelists/3.0/ UtilityNetworkElement_material.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/%20UtilityNetworkElement_material.xml
 h| コード h| 説明
 | 1 | 金属
 | 2 | 合成樹脂
@@ -26285,7 +26285,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | Pipe_sleeveType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Pipe_sleeveType.xml[https://www.geospatial.jp/iur/codelists/3.0/Pipe_sleeveType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Pipe_sleeveType.xml
 h| コード h| 説明
 | 0 | 被覆なし
 | 1 | 継手のみ被覆
@@ -26299,7 +26299,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | Appurtenance_appurtenanceType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Appurtenance_appurtenanceType.xml[https://www.geospatial.jp/iur/codelists/3.0/Appurtenance_appurtenanceType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Appurtenance_appurtenanceType.xml
 h| コード h| 説明
 | 410 | ガバナ
 | 420 | バルブ
@@ -26321,7 +26321,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | UtilityNodeContainer_containerType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/UtilityNodeContainer_containerType.xml[https://www.geospatial.jp/iur/codelists/3.0/UtilityNodeContainer_containerType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/UtilityNodeContainer_containerType.xml
 h| コード h| 説明
 | 501 | 制水弁室
 | 502 | 泥吐室
@@ -26351,7 +26351,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | ThematicShape_heightType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/%20ThematicShape_heightType.xml[https://www.geospatial.jp/iur/codelists/3.0/ ThematicShape_heightType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/%20ThematicShape_heightType.xml
 h| コード h| 説明
 | 1 | 地下埋設物の中心の高さ
 | 2 | 地表の高さ
@@ -26365,7 +26365,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | LengthAttribute_mesureType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/LengthAttribute_mesureType.xml[https://www.geospatial.jp/iur/codelists/3.0/LengthAttribute_mesureType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/LengthAttribute_mesureType.xml
 h| コード h| 説明
 | 1 | 実延長
 | 2 | 亘長
@@ -26378,7 +26378,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | LengthAttribute_phaseType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/%20LengthAttribute_phaseType.xml[https://www.geospatial.jp/iur/codelists/3.0/ LengthAttribute_phaseType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/%20LengthAttribute_phaseType.xml
 h| コード h| 説明
 | 1 | 竣工
 | 2 | 設計
@@ -26714,14 +26714,14 @@ a|
 image::images/figure341.webp[]
 
 LOD4.0は建築物の外形（図１）に加え、建築物の内部を部屋に区分する（図２）。このとき、各部屋の形状は立体として表現し、部屋の立体の境界面を、天井面、内壁面、床面又は閉鎖面のいずれかに区分する（図３）。また、天井面、内壁面又は床面に存在する全ての扉及び窓を表現する（図４）。 CityGMLでは、壁面や天井面などは全て面として表現する。1つの壁が建築物の外形を示す外壁と部屋の外形を示す内壁との機能を備えていた場合、建築物の外形となる面と部屋の外形となる面の2枚の面として表現され、それらの面の間には隙間ができる（何もない）。LOD4.0では地下街の内部に存在する付属物や家具を表現しないため、上図の例でも、付属物である階段、エレベータ、柱等が表現されていない。 なお、地下街の地上への出入口に設けられた建屋は、都市設備（CityFurniture）として取得する。
-| LOD4.1 a| 
+| LOD4.1 a|
 
 [%unnumbered]
 image::images/figure342.webp[]
 
 LOD4.1ではLOD4.0に、屋内の付属物（bldg:IntBuildingInstallation）として、階段、スロープ、輸送設備（エスカレータ、エレベータ及び動く歩道）、柱及びデッキ・ステージが追加される。 +
 上図の例では、LOD4.0に加えて、階段、エスカレータ、スロープ及び柱が付属物として追加された。
-| LOD4.2 a| 
+| LOD4.2 a|
 
 [%unnumbered]
 image::images/figure343.webp[]
@@ -27712,7 +27712,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 h| ファイル名 | SolitaryVegetationObject_class.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/SolitaryVegetationObject_class.xml[https://www.geospatial.jp/iur/codelists/3.0/SolitaryVegetationObject_class.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/SolitaryVegetationObject_class.xml
 h| コード h| 説明
 | 1 | 高木（樹高3m以上）
 | 2 | 中木（樹高1m以上3m未満）
@@ -27729,7 +27729,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | SolitaryVegetationObject_function.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/SolitaryVegetationObject_function.xml[https://www.geospatial.jp/iur/codelists/3.0/SolitaryVegetationObject_function.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/SolitaryVegetationObject_function.xml
 h| コード h| 説明
 | 11 | 常緑/針葉
 | 12 | 常緑/広葉
@@ -27747,7 +27747,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | PlantCover_class.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/PlantCover_class.xml[https://www.geospatial.jp/iur/codelists/3.0/PlantCover_class.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/PlantCover_class.xml
 h| コード h| 説明
 | 1 | 高木（樹高3m以上）
 | 2 | 中木（樹高1m以上3m未満）
@@ -27768,7 +27768,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | VegetationDataQualityAttribute_geometrySrcDesc.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/VegetationDataQualityAttribute_GeometrySrcDesc.xml[https://www.geospatial.jp/iur/codelists/3.0/VegetationDataQualityAttribute_GeometrySrcDesc.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/VegetationDataQualityAttribute_GeometrySrcDesc.xml
 h| コード h| 説明
 | 1 | 現地測量
 | 2 | 地上レーザ測量
@@ -27789,7 +27789,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | VegetationDataQualityAttribute_srcScale.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/VegetationDataQualityAttribute_srcScale.xml[https://www.geospatial.jp/iur/codelists/3.0/VegetationDataQualityAttribute_srcScale.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/VegetationDataQualityAttribute_srcScale.xml
 h| コード h| 説明
 | 1 | 地図情報レベル2500
 | 2 | 地図情報レベル1000
@@ -27803,7 +27803,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | VegetationDataQualityAttribute_thematicSrcDesc.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/VegetationDataQualityAttribute_thematicSrcDesc.xml[https://www.geospatial.jp/iur/codelists/3.0/VegetationDataQualityAttribute_thematicSrcDesc.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/VegetationDataQualityAttribute_thematicSrcDesc.xml
 h| コード h| 説明
 | 2 | 道路基盤地図情報
 | 3 | 道路台帳
@@ -27821,7 +27821,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | VegetationDataQualityAttribute_appearanceSrcDesc.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/VegetationDataQualityAttribute_appearanceSrcDesc.xml[https://www.geospatial.jp/iur/codelists/3.0/VegetationDataQualityAttribute_appearanceSrcDesc.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/VegetationDataQualityAttribute_appearanceSrcDesc.xml
 h| コード h| 説明
 | 1 | 空中写真
 | 2 | MMS画像
@@ -28916,8 +28916,8 @@ h| ステレオタイプ 2+| << DataType >>
 3+h| 属性
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:kana | xs:string[0..1] | 水部の名称のフリガナ。カタカナで記述する。
-| uro:waterSystemCode | gml:CodeType [0..1] | 水系域コード。河川コード仕様書（国土交通省河川局）にて示された2桁の地域番号と4桁の水系番号からなる6桁の番号。 （水系域コード一覧： https://nlftp.mlit.go.jp/ksj/gml/codelist/WaterSystemCodeCd.html[https://nlftp.mlit.go.jp/ksj/gml/codelist/WaterSystemCodeCd.html]） 地域番号は、1級水系の場合は地方整備局等の番号、1級水系以外は都道府県の番号となる。また、水系番号は、１水系につき１つ与えられた番号であり、地域番号と併せて使用することで、水系の特定が可能となる。 コードリスト（WaterBodyDetailAttribute_SystemCode.xml）より選択する。
-| uro:riverCode | gml:CodeType [0..1] | 河川コード。河川コード仕様書（国土交通省河川局）にて示された、１級河川、２級河川、準用河川、普通河川に該当する個別の河川を一意に特定するために付与された2桁の地域番号、4桁の水系番号、4桁の河川番号からなる10桁の番号。 （河川コード一覧： https://nlftp.mlit.go.jp/ksj/gml/codelist/RiverCodeCd.html[https://nlftp.mlit.go.jp/ksj/gml/codelist/RiverCodeCd.html]） 河川番号、同一水系内において河川を特定するための番号であり、1河川につき1つの番号が付与される。 コードリスト（WaterBodyDetailAttribute_riverCode.xml）より選択する。
+| uro:waterSystemCode | gml:CodeType [0..1] | 水系域コード。河川コード仕様書（国土交通省河川局）にて示された2桁の地域番号と4桁の水系番号からなる6桁の番号。 （水系域コード一覧： https://nlftp.mlit.go.jp/ksj/gml/codelist/WaterSystemCodeCd.html） 地域番号は、1級水系の場合は地方整備局等の番号、1級水系以外は都道府県の番号となる。また、水系番号は、１水系につき１つ与えられた番号であり、地域番号と併せて使用することで、水系の特定が可能となる。 コードリスト（WaterBodyDetailAttribute_SystemCode.xml）より選択する。
+| uro:riverCode | gml:CodeType [0..1] | 河川コード。河川コード仕様書（国土交通省河川局）にて示された、１級河川、２級河川、準用河川、普通河川に該当する個別の河川を一意に特定するために付与された2桁の地域番号、4桁の水系番号、4桁の河川番号からなる10桁の番号。 （河川コード一覧： https://nlftp.mlit.go.jp/ksj/gml/codelist/RiverCodeCd.html） 河川番号、同一水系内において河川を特定するための番号であり、1河川につき1つの番号が付与される。 コードリスト（WaterBodyDetailAttribute_riverCode.xml）より選択する。
 | uro:adminType | gml:CodeType [0..1] | 河川管理者が管理する区間種別。コードリスト（WaterBodyDetailAttribute_adminType.xml）より選択する。
 | uro:flowDirection | xs: boolean [0..1] | 水部の流下方向の判明状況。
 | uro:maximumDepth | gml:LengthType[0..1] | 最大水深。単位はｍ（uom="m"）とする。
@@ -28956,7 +28956,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 h| ファイル名 | WaterBody_class.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/WaterBody_class.xml[https://www.geospatial.jp/iur/codelists/3.0/WaterBody_class.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/WaterBody_class.xml
 h| コード h| 説明
 | 1000 | sea（海）
 | 1010 | tidal waterbody（潮汐水域）
@@ -28979,7 +28979,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | WaterBodyDetailAttribute_adminType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/WaterBodyDetailAttribute_adminType.xml[https://www.geospatial.jp/iur/codelists/3.0/WaterBodyDetailAttribute_adminType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/WaterBodyDetailAttribute_adminType.xml
 h| コード h| 説明
 | 0 | 不明
 | 1 | 1級直轄区間
@@ -29088,8 +29088,8 @@ h| 型の定義 2+a| 法令により定められた区域。 標準製品仕様�
 
 * 河川法における河川区域、高規格堤防特別区域、樹林帯区域、河川保全区域、河川立体区域
 * 港湾法における港湾区域、港湾隣接区域
-* 漁港漁場整備法における漁港の区域 
-* 海岸法における海岸保全区域 
+* 漁港漁場整備法における漁港の区域
+* 海岸法における海岸保全区域
 * 道路法における道路の区域 上記以外の法令により定められた区域についても、urf:Zoneを継承する下位のクラスとして定義されていない場合は、urf:Zoneを使用して記述する。
 
 h| 上位の型 2+| urf:_UrbanFunction
@@ -29176,7 +29176,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 |===
 h| ファイル名 | Zone_function.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Zone_function.xml[https://www.geospatial.jp/iur/codelists/3.0/Zone_function.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Zone_function.xml
 h| コード h| 説明
 | 0101 | 河川区域
 | 0102 | 高規格堤防特別区域
@@ -29541,7 +29541,7 @@ h| (gml:boundedBy) | gml:Envelope [0..1] | マテリアルの空間範囲。
 |===
 h| ファイル名 | Appearance_mimeType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Appearance_mimeType.xml[https://www.geospatial.jp/iur/codelists/3.0/Appearance_mimeType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Appearance_mimeType.xml
 h| コード h| 説明
 | image/jpeg | *.jpeg, \*.jpg images
 | image/png | *.png images
@@ -29770,7 +29770,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 h| ファイル名 | CityObjectGroup_class.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/CityObjectGroup_class.xml[https://www.geospatial.jp/iur/codelists/3.0/CityObjectGroup_class.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/CityObjectGroup_class.xml
 h| コード h| 説明
 | 2000 | assembly
 
@@ -29784,7 +29784,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | CityObjectGroup_function.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/CityObjectGroup_usage.xml[https://www.geospatial.jp/iur/codelists/3.0/CityObjectGroup_usage.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/CityObjectGroup_usage.xml
 h| コード h| 説明
 | 1030 | lod4Storey
 | 1040 | zone
@@ -29957,7 +29957,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 h| ファイル名 | Common_dmCode.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Common_dmCode.xml[https://www.geospatial.jp/iur/codelists/3.0/Common_dmCode.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Common_dmCode.xml
 h| コード h| 説明
 | 1101 | 都府県界
 | 1102 | 北海道の支庁界
@@ -30154,7 +30154,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | Common_shapeType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Common_shapeType.xml[https://www.geospatial.jp/iur/codelists/3.0/Common_shapeType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Common_shapeType.xml
 h| コード h| 説明
 | 0 | 非区分（下記に該当しない全データ）
 | 11 | 射影部の上端
@@ -30182,7 +30182,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | Common_MapLevel.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Common_MapLevel.xml[https://www.geospatial.jp/iur/codelists/3.0/Common_MapLevel.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Common_MapLevel.xml
 h| 値 h| 説明
 | 500 | 地図情報レベル500
 | 1000 | 地図情報レベル1000
@@ -30199,7 +30199,7 @@ h| 値 h| 説明
 |===
 h| ファイル名 | Common_geometryType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Common_geometryType.xml[https://www.geospatial.jp/iur/codelists/3.0/Common_geometryType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Common_geometryType.xml
 h| コード h| 説明
 | E1 | 面
 | E2 | 線
@@ -30217,7 +30217,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | DmElement_dataType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/DmElement_dataType.xml[https://www.geospatial.jp/iur/codelists/3.0/DmElement_dataType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/DmElement_dataType.xml
 h| コード h| 説明
 | 0 | 実データなし（地形表面の高さを計測したもの）
 | 1 | 実データなし（人口構造物等の地形表面以外の高さを計測したもの）
@@ -30237,7 +30237,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | DmElement_annotationType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/DmElement_annotationType.xml[https://www.geospatial.jp/iur/codelists/3.0/DmElement_annotationType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/DmElement_annotationType.xml
 h| コード h| 説明
 | 0 | 区分しない
 | 1 | 漢字
@@ -30253,7 +30253,7 @@ h| コード h| 説明
 |===
 h| ファイル名 2+| DmElement_precisionType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/DmElement_precisionType.xml[https://www.geospatial.jp/iur/codelists/3.0/DmElement_precisionType.xml] |
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/DmElement_precisionType.xml |
 h| コード h| 説明（上位桁：数値化区分） h| 説明（下位桁：地図情報レベル）
 | 1 | 基準点測量成果を用いる方法 | 1～50
 | 2 | TS等を用いた数値実測 | ～100
@@ -30275,7 +30275,7 @@ h| コード h| 説明（上位桁：数値化区分） h| 説明（下位桁：
 |===
 h| ファイル名 | DmElement_breakType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/DmElement_breakType.xml[https://www.geospatial.jp/iur/codelists/3.0/DmElement_breakType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/DmElement_breakType.xml
 h| コード h| 説明
 | 0 | 間断しない
 | 1～9 | 間断する（数値は優先順位）
@@ -30290,7 +30290,7 @@ h| コード h| 説明
 |===
 h| ファイル名 | DmElement_dislocationType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/DmElement_dislocationType.xml[https://www.geospatial.jp/iur/codelists/3.0/DmElement_dislocationType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/DmElement_dislocationType.xml
 h| コード h| 説明
 | 0 | 転位しない
 | 1～9 | 座標列の方向に対して右側に転位する
@@ -31142,7 +31142,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 h| ファイル名 2+| FacilityTypeAttribute_class.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/FacilityTypeAttribute_class.xml[https://www.geospatial.jp/iur/codelists/3.0/FacilityTypeAttribute_class.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/FacilityTypeAttribute_class.xml
 h| コード 2+h| 説明
 | 01 2+| 河川管理施設
 | 02 2+| 砂防施設
@@ -31160,7 +31160,7 @@ h| コード 2+h| 説明
 |===
 h| ファイル名 2+| FacilityTypeAttribute_function.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/FacilityTypeAttribute_function.xml[https://www.geospatial.jp/iur/codelists/3.0/FacilityTypeAttribute_function.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/FacilityTypeAttribute_function.xml
 h| コード 2+h| 説明
 | 0501 2+| 港湾水域施設
 | 0502 2+| 港湾外郭施設
@@ -31212,7 +31212,7 @@ h| コード 2+h| 説明
 |===
 h| ファイル名 2+| RiverFacilityIdAttribute_sideType.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/RiverFacilityIdAttribute_sideType.xml[https://www.geospatial.jp/iur/codelists/3.0/RiverFacilityIdAttribute_sideType.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/RiverFacilityIdAttribute_sideType.xml
 h| コード 2+h| 説明
 | 1 2+| 左岸
 | 2 2+| 右岸
@@ -31232,7 +31232,7 @@ h| コード 2+h| 説明
 |===
 h| ファイル名 2+| PortAttribute_facilityDetailType.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/PortAttribute_facilityDetailType.xml[https://www.geospatial.jp/iur/codelists/3.0/PortAttribute_facilityDetailType.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/PortAttribute_facilityDetailType.xml
 h| コード 2+h| 説明
 | 1 2+| 上屋
 | 2 2+| 移動式
@@ -31294,7 +31294,7 @@ h| コード 2+h| 説明
 |===
 h| ファイル名 2+| PortAttribute_portStatus.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/PortAttribute_portStatus.xml[https://www.geospatial.jp/iur/codelists/3.0/PortAttribute_portStatus.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/PortAttribute_portStatus.xml
 h| コード 2+h| 説明
 | 1 2+| 国際拠点
 | 2 2+| 重要
@@ -31312,7 +31312,7 @@ h| コード 2+h| 説明
 |===
 h| ファイル名 2+| PortAttribute_grantType.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/PortAttribute_grantType.xml[https://www.geospatial.jp/iur/codelists/3.0/PortAttribute_grantType.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/PortAttribute_grantType.xml
 h| コード 2+h| 説明
 | 1 2+| 国有施設
 | 2 2+| 補助施設
@@ -31326,7 +31326,7 @@ h| コード 2+h| 説明
 |===
 h| ファイル名 2+| PortAttribute_storageCapacityUnit.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/PortAttribute_storageCapacityUnit.xml[https://www.geospatial.jp/iur/codelists/3.0/PortAttribute_storageCapacityUnit.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/PortAttribute_storageCapacityUnit.xml
 h| コード 2+h| 説明
 | 1 2+| m3
 | 2 2+| kl
@@ -31340,7 +31340,7 @@ h| コード 2+h| 説明
 |===
 h| ファイル名 2+| ShipServiceFacility_supplyAbilityUnit.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/ShipServiceFacility_supplyAbilityUnit.xml[https://www.geospatial.jp/iur/codelists/3.0/ShipServiceFacility_supplyAbilityUnit.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/ShipServiceFacility_supplyAbilityUnit.xml
 h| コード 2+h| 説明
 | 1 2+| kl/時間
 | 2 2+| ton/時間
@@ -31353,7 +31353,7 @@ h| コード 2+h| 説明
 |===
 h| ファイル名 2+| PortManagementFacility_unitOfShipType.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/PortManagementFacility_unitOfShipType.xml[https://www.geospatial.jp/iur/codelists/3.0/PortManagementFacility_unitOfShipType.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/PortManagementFacility_unitOfShipType.xml
 h| コード 2+h| 説明
 | 1 2+| G/T
 | 2 2+| ton
@@ -31366,7 +31366,7 @@ h| コード 2+h| 説明
 |===
 h| ファイル名 2+| PortAttribute_geologicalType.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/%20PortAttribute_geologicalType.xml[https://www.geospatial.jp/iur/codelists/3.0/ PortAttribute_geologicalType.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/%20PortAttribute_geologicalType.xml
 h| コード 2+h| 説明
 | 1 2+| 岩
 | 2 2+| 礫
@@ -31386,7 +31386,7 @@ h| コード 2+h| 説明
 |===
 h| ファイル名 2+| CyberportMarinaAndPBS_mainVessels.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/CyberportMarinaAndPBS_mainVessels.xml[https://www.geospatial.jp/iur/codelists/3.0/CyberportMarinaAndPBS_mainVessels.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/CyberportMarinaAndPBS_mainVessels.xml
 h| コード 2+h| 説明
 | 1 2+| 一般貨物船（荷役）
 | 2 2+| 旅 客 船（その他）
@@ -31401,7 +31401,7 @@ h| コード 2+h| 説明
 |===
 h| ファイル名 2+| MooringFacility_mainVessels.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/MooringFacility_mainVessels.xml[https://www.geospatial.jp/iur/codelists/3.0/MooringFacility_mainVessels.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/MooringFacility_mainVessels.xml
 h| コード 2+h| 説明
 | 1 2+| 一般貨物船（荷役）
 | 2 2+| 旅客船（その他）
@@ -31454,7 +31454,7 @@ h| コード 2+h| 説明
 |===
 h| ファイル名 2+| PortAttribute_form.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/PortAttribute_form.xml[https://www.geospatial.jp/iur/codelists/3.0/PortAttribute_form.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/PortAttribute_form.xml
 h| コード 2+h| 説明
 | 1 2+| 島式
 | 2 2+| 突堤式
@@ -31468,7 +31468,7 @@ h| コード 2+h| 説明
 |===
 h| ファイル名 2+| CargoHandlingFacility_packingName.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/CargoHandlingFacility_packingName.xml[https://www.geospatial.jp/iur/codelists/3.0/CargoHandlingFacility_packingName.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/CargoHandlingFacility_packingName.xml
 h| コード 2+h| 説明
 | 1 2+| コンテナ
 | 2 2+| ばら荷
@@ -31483,7 +31483,7 @@ h| コード 2+h| 説明
 |===
 h| ファイル名 2+| HarborFacility_areaType.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/HarborFacility_areaType.xml[https://www.geospatial.jp/iur/codelists/3.0/HarborFacility_areaType.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/HarborFacility_areaType.xml
 h| コード 2+h| 説明
 | 1 2+| 防波堤沖
 | 2 2+| 防波堤内
@@ -31497,7 +31497,7 @@ h| コード 2+h| 説明
 |===
 h| ファイル名 2+| PortTransportationFacility_pavementType.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/PortTransportationFacility_pavementType.xml[https://www.geospatial.jp/iur/codelists/3.0/PortTransportationFacility_pavementType.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/PortTransportationFacility_pavementType.xml
 h| コード 2+h| 説明
 | 1 2+| 砂利敷
 | 2 2+| アスファルト舗装
@@ -31512,7 +31512,7 @@ h| コード 2+h| 説明
 |===
 h| ファイル名 2+| PortTransportationFacility_routeType.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/PortTransportationFacility_routeType.xml[https://www.geospatial.jp/iur/codelists/3.0/PortTransportationFacility_routeType.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/PortTransportationFacility_routeType.xml
 h| コード 2+h| 説明
 | 1 2+| 単線
 | 2 2+| 複線
@@ -31527,7 +31527,7 @@ h| コード 2+h| 説明
 |===
 h| ファイル名 2+| PortAttribute_mainCargo.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/PortAttribute_mainCargo.xml[https://www.geospatial.jp/iur/codelists/3.0/PortAttribute_mainCargo.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/PortAttribute_mainCargo.xml
 h| コード 2+h| 説明
 | 1 2+| 麦
 | 2 2+| 米
@@ -31621,7 +31621,7 @@ h| コード 2+h| 説明
 |===
 h| ファイル名 2+| ProtectiveFacility_structureType.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/ProtectiveFacility_structureType.xml[https://www.geospatial.jp/iur/codelists/3.0/ProtectiveFacility_structureType.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/ProtectiveFacility_structureType.xml
 h| コード 2+h| 説明
 | 1 2+| 直立
 | 2 2+| 傾斜
@@ -31659,7 +31659,7 @@ h| コード 2+h| 説明
 |===
 h| ファイル名 2+| PortAttribute_structureType.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/PortAttribute_structureType.xml[https://www.geospatial.jp/iur/codelists/3.0/PortAttribute_structureType.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/PortAttribute_structureType.xml
 h| コード 2+h| 説明
 | 1 2+| ケーソン（異形、消波ケーソンを含む）
 | 2 2+| ハイブリッドケーソン（異形、消波ケーソンを含む）
@@ -31718,7 +31718,7 @@ h| コード 2+h| 説明
 |===
 h| ファイル名 2+| PortWasteTreatmentFacilityAttribute_wasteType.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/PortWasteTreatmentFacilityAttribute_wasteType.xml[https://www.geospatial.jp/iur/codelists/3.0/PortWasteTreatmentFacilityAttribute_wasteType.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/PortWasteTreatmentFacilityAttribute_wasteType.xml
 h| コード 2+h| 説明
 | 1 2+| 一般廃棄物
 | 2 2+| 産業廃棄物
@@ -31735,7 +31735,7 @@ h| コード 2+h| 説明
 |===
 h| ファイル名 2+| FishingPortFacilityAttribute_facilityDetailsType.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/FishingPortFacilityAttribute_facilityDetailsType.xml[https://www.geospatial.jp/iur/codelists/3.0/FishingPortFacilityAttribute_facilityDetailsType.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/FishingPortFacilityAttribute_facilityDetailsType.xml
 h| コード 2+h| 説明
 | 1 2+| 係船浮標
 | 2 2+| 護岸
@@ -31782,7 +31782,7 @@ h| コード 2+h| 説明
 |===
 h| ファイル名 2+| FishingPortFacilityAttribute_portType.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/FishingPortFacilityAttribute_portType.xml[https://www.geospatial.jp/iur/codelists/3.0/FishingPortFacilityAttribute_portType.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/FishingPortFacilityAttribute_portType.xml
 h| コード 2+h| 説明
 | 1 2+| 第1種
 | 2 2+| 第2種
@@ -31797,7 +31797,7 @@ h| コード 2+h| 説明
 |===
 h| ファイル名 2+| FishingPortFacilityAttribute_structureType.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/FishingPortFacilityAttribute_structureType.xml[https://www.geospatial.jp/iur/codelists/3.0/FishingPortFacilityAttribute_structureType.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/FishingPortFacilityAttribute_structureType.xml
 h| コード 2+h| 説明
 | 1 2+| 直立提
 | 2 2+| 傾斜堤
@@ -31831,7 +31831,7 @@ h| コード 2+h| 説明
 |===
 h| ファイル名 2+| Common_mainMaterial.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/Common_mainMaterial.xml[https://www.geospatial.jp/iur/codelists/3.0/Common_mainMaterial.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/Common_mainMaterial.xml
 h| コード 2+h| 説明
 | 1 2+| コンクリ－ト
 | 2 2+| 鉄筋コンクリ－ト
@@ -31855,7 +31855,7 @@ h| コード 2+h| 説明
 |===
 h| ファイル名 2+| MaintenanceHistoryAttribute_maintenanceType.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/MaintenanceHistoryAttribute_maintenanceType.xml[https://www.geospatial.jp/iur/codelists/3.0/MaintenanceHistoryAttribute_maintenanceType.xml]
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/MaintenanceHistoryAttribute_maintenanceType.xml
 h| コード 2+h| 説明
 | 1 2+| 初期工事
 | 2 2+| 改良工事

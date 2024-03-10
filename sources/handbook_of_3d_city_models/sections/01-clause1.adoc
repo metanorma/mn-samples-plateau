@@ -17,6 +17,7 @@
 
 [[sec_1.2]]
 === 目的
+
 「3D都市モデル標準製品仕様書」（以下、「標準製品仕様書」と呼ぶ）は、[underline]#各都市において3D都市モデルを整備する際にその製品仕様を適切に作成でき、かつ、各都市の製品仕様に従って整備された3D都市モデルが国際標準に準拠したものになることを目的として提供する標準文書#である。
 
 標準製品仕様書では、以下に示すユースケースに3D都市モデルが使用されることを想定し、その製品仕様を定めている。
@@ -55,6 +56,8 @@ image::images/figure1.webp[]
 
 標準製品仕様書は、以下の規格、規程及び仕様書を引用する。
 
+// TODO: These are normative references for standards
+
 [[table1]]
 .標準製品仕様書が引用する規格等
 [cols="2",options="header"]
@@ -79,6 +82,8 @@ image::images/figure1.webp[]
 | 品質の要求，評価及び報告のための規則（国土交通省国土地理院）
 | https://www.gsi.go.jp/GIS/jpgis-downloads.html
 |===
+
+// TODO: These are normative references for specifications
 
 また、標準製品仕様書は、以下の仕様書を参照し、整合を図っている。
 
@@ -113,52 +118,55 @@ image::images/figure1.webp[]
 
 引用規格等のうち、版の記載があるものは、その版を適用し、その後の改正版（追補を含む。）は適用しない。版の記載がないものは、その最新版（追補を含む。）を適用する
 
+// TODO: These are Terms and definitions
+
 [[sec_1.5]]
-=== 用語と定義
+[title=用語と定義]
+=== Terms and definitions
 
 標準製品仕様書で使用する用語を示す。以下に記載のない用語とその定義については、JPGIS 2014付属書5（規定）定義に従う。
 
-3D都市モデル
+==== 3D都市モデル
 
 都市空間の地物及び属性を都市スケールで3次元的に再現したCityGML形式のデータ。
 
-BIM（Building Information Modeling）
+==== BIM（Building Information Modeling）
 
 コンピュータ上に作成した主に三次元の形状情報に加え、室等の名称・⾯積、材料・部材の仕様・性能、仕上げ等、建築物の属性情報を併せ持つ建築物情報モデルを構築するもの。
 
 ［出典　3D都市モデル整備のためのBIM活⽤マニュアル第3.0版］
 
-BIM モデル
+==== BIM モデル
 
 コンピュータ上に作成した三次元の形状情報に加え、室等の名称・⾯積、材料・部材の仕様・性能、仕上げ等の建築物の属性情報を併せ持つ建築物情報モデル。
 
 ［出典　3D都市モデル整備のためのBIM活⽤マニュアル第3.0版］
 
-IFC（Industry Foundation Classes）
+==== IFC（Industry Foundation Classes）
 
 buildingSMART International (以降 bSI) が策定した三次元モデルデータ形式。2013年にはISO 16739:2013:Ver.4.0.0.0(IFC4)として、国際標準として承認されている。2018年に改訂され、ISO 16739-1:2018:Ver.4.0.2.1(IFC4 ADD2 TC1)が最新である。当初は、建築分野でのデータ交換を対象にしていたが、2013年には bSI内にInfrastructure Roomが設置され、⼟⽊分野を対象にした検討が進められている。
 
 ［出典　3D都市モデル整備のためのBIM活用マニュアル第3.0版］
 
-Levels Of Detail (LOD)
+==== Levels Of Detail (LOD)
 
 詳細さの度合い（詳細度）であり、CityGMLにおいて定義されている一つのオブジェクトの幾何を、その利用や可視化の目的に応じて、複数の段階に抽象化することを可能とする、マルチスケールなモデリングの仕組みである。
 
 ［参考　OpenGIS(R) OGC CityGML Encoding Standard］
 
-応用スキーマ
+==== 応用スキーマ
 
 一つ又は複数の応用システムによって要求されるデータのための概念スキーマ。
 
 ［出典　JPGIS］
 
-数値地形図
+==== 数値地形図
 
 都市、河川、道路、ダム等の計画、管理及び土木工事のために使用できる位置精度を有した地理空間情報及び数値地形図
 
 ［作業規程の準則　付録７公共測量標準図式］
 
-地物
+==== 地物
 
 現実世界の現象の抽象概念。
 
@@ -166,34 +174,39 @@ Levels Of Detail (LOD)
 
 ［出典　JPGIS］
 
-地物属性
+==== 地物属性
 
 地物の特性。
 
 ［出典　JPGIS］
 
-地物関連 +
-地物間の関係。 +
+==== 地物関連
+
+地物間の関係。
+
 ［出典　JPGIS］
 
-関連役割
+==== 関連役割
 
 関連において相手の地物に対する自分の役割を指す。
 
 ［参考　地理情報標準プロファイル（JPGIS） Ver. 1.0　解説書］
 
-プロファイル
+==== プロファイル
 
 1つ以上の基本規格のセット又は基本規格のサブセット及び該当する場合には特定の機能を達成するために必要なそれらの基本規格から選択された条項、クラス、オプション及びパラメータの識別。
 
 ［出典　ISO 19106:2004］
 
-補足
+==== 補足
 
 標準製品仕様書は、i-UR及びCityGMLから3D都市モデルとして必要な地物型等をi-UR及びCityGMLと矛盾なく抽出した、i-UR及びCityGMLのプロファイルである。また、各都市で作成される拡張製品仕様書も、i-UR及びCityGMLのプロファイルでなくてはならない。
 
+// TODO: These are abbreviations
+
 [[toc1_06]]
-=== 略語
+[title=略語]
+=== Abbreviations
 
 BIM:: Building Information Modeling
 
@@ -218,6 +231,8 @@ MMS:: Mobile Mapping System
 UML:: Unified Modeling Language
 
 なお、標準製品仕様書で使用する以下の略語は、特段の記載がない場合にはそれぞれ下表に示す版を指す。
+
+// TODO: These are abbreviations
 
 [[table_1-3]]
 .略語に使用する版
@@ -249,11 +264,11 @@ UML:: Unified Modeling Language
 | 6 | 拡張製品仕様書：汎用都市オブジェクト | template_objectlist.xlsx | シート名：A.2.5_汎用都市オブジェクト
 | 7 | 拡張製品仕様書：汎用属性 | template_objectlist.xlsx | シート名：A.2.6_汎用属性
 | 8 | 拡張製品仕様書：拡張品質要求 | template_objectlist.xlsx | シート名：A.2.7_拡張品質要求
-| 9 | READMEテンプレート | README.md | 
+| 9 | READMEテンプレート | README.md |
 | 10 | 原典資料テンプレート | resourcelist_sample.xlsx |
 | 11 | 索引図 | index.docx | 3D都市モデルの整備範囲を示す図
-| 12 | XMLSchema一式 | ― |  https://www.geospatial.jp/iur/[https://www.geospatial.jp/iur/]より取得できる。
-| 13 | コードリスト一式 | ― |  https://www.geospatial.jp/iur/[https://www.geospatial.jp/iur/]より取得できる。
+| 12 | XMLSchema一式 | ― |  https://www.geospatial.jp/iur/より取得できる。
+| 13 | コードリスト一式 | ― |  https://www.geospatial.jp/iur/より取得できる。
 |===
 
 1及び2は、各都市で拡張製品仕様書を作成する際に必ず使用するファイルである。
