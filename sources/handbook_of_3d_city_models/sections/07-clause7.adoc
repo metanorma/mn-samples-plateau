@@ -258,7 +258,7 @@ h| ファイル名称の構成要素 h| 説明 h| 使用可能な文字
 
 |===
 
-[CRS]には、当該ファイルに含まれるオブジェクトの空間参照系の略称（半角数字）としてEPSGコード（ https://epsg.org/home.html[https://epsg.org/home.html]）を入力する。EPSGコードは、空間参照系に与えられた固有の識別子である。
+[CRS]には、当該ファイルに含まれるオブジェクトの空間参照系の略称（半角数字）としてEPSGコード（ https://epsg.org/home.html）を入力する。EPSGコードは、空間参照系に与えられた固有の識別子である。
 
 標準製品仕様書で使用する空間参照系の略称を下表に示す。
 
@@ -367,22 +367,22 @@ a|
 image::images/figure437.webp[]
 | area | 区域モデルを格納するフォルダ
 
-a| 
+a|
 [%unnumbered]
 image::images/figure438.webp[]
 | bldg | 建築物モデルを格納するフォルダ。
 
-a| 
+a|
 [%unnumbered]
 image::images/figure439.webp[]
 | brid | 橋梁モデルを格納するフォルダ。
 
-a| 
+a|
 [%unnumbered]
 image::images/figure440.webp[]
 | cons | その他の構造物モデルを格納するフォルダ
 
-a| 
+a|
 [%unnumbered]
 image::images/figure441.webp[]
 | dem | 地形モデルを格納するフォルダ。
@@ -392,22 +392,22 @@ a|
 image::images/figure442.webp[]
 | fld | 災害リスク（浸水）モデルのうち、洪水浸水想定区域を格納するフォルダ。区域図ごとにサブフォルダを作成する。サブフォルダの構成及び名称は、別途示す。
 
-a| 
+a|
 [%unnumbered]
 image::images/figure443.webp[]
 | frn | 都市設備を格納するフォルダ。
 
-a| 
+a|
 [%unnumbered]
 image::images/figure444.webp[]
 | gen | 汎用都市オブジェクトを格納するフォルダ。
 
-a| 
+a|
 [%unnumbered]
 image::images/figure445.webp[]
 | htd | 災害リスク（浸水）モデルのうち、高潮浸水想定区域を格納するフォルダ。区域図ごとにサブフォルダを作成する。サブフォルダの構成及び名称は、別途示す。
 
-a| 
+a|
 [%unnumbered]
 image::images/figure446.webp[]
 | ifld | 災害リスク（浸水）モデルのうち、内水浸水想定区域を格納するフォルダ。区域図ごとにサブフォルダを作成する。サブフォルダの構成及び名称は、別途示す。
@@ -520,8 +520,8 @@ h| ルートフォルダ名称の構成要素 h| 説明 h| 使用可能な文字
 |===
 h| フォルダ名 h| サブフォルダ名 h| フォルダの説明（洪水浸水想定区域図の名称）
 
-| natl | | 
-| pref | | 
+| natl | |
+| pref | |
 
 |===
 
@@ -549,8 +549,8 @@ h| サブフォルダ名 h| フォルダの説明（津波浸水想定の名称�
 |===
 h| サブフォルダ名 h| フォルダの説明（高潮浸水想定区域図の名称）
 
-|  | 
-|  | 
+|  |
+|  |
 
 |===
 
@@ -564,8 +564,8 @@ h| サブフォルダ名 h| フォルダの説明（高潮浸水想定区域図�
 |===
 h| サブフォルダ名 h| フォルダの説明（内水浸水想定区域図の名称）
 
-|  | 
-|  | 
+|  |
+|  |
 
 |===
 
@@ -596,8 +596,8 @@ DVD、HDD又はウェブサイトからのダウンロード
 |===
 h| 分割後ファイル名称 h| 格納したフォルダ又はファイルの種類
 
-|  | 
-|  | 
+|  |
+|  |
 
 |===
 
@@ -680,11 +680,11 @@ LODは、「LOD2.0」「LOD3.0」「LOD3.1」のように、最小の区分を�
 | 原典資料リストへのリンク | 成果品フォルダに含まれる原典資料リスト（CSVファイル）への相対パス。
 | 利用に関する留意事項 a| オープンデータの場合は、以下を記入する。
 
-「本データセットは[PLATEAU Site Policy 「３．著作権について」]( https://www.mlit.go.jp/plateau/site-policy/[https://www.mlit.go.jp/plateau/site-policy/])で定められた以下のライセンスを採用します。 +
+「本データセットは[PLATEAU Site Policy 「３．著作権について」]( https://www.mlit.go.jp/plateau/site-policy/)で定められた以下のライセンスを採用します。 +
 + 政府標準利用規約（第2.0版） +
-+ [クリエイティブ・コモンズ・ライセンスの表示4.0国際]( https://creativecommons.org/licenses/by/4.0/legalcode.ja[https://creativecommons.org/licenses/by/4.0/legalcode.ja]) +
-+ ODC BY（ https://opendatacommons.org/licenses/odbl/[https://opendatacommons.org/licenses/odbl/]） +
-+ ODbL（ https://opendatacommons.org/licenses/odbl/[https://opendatacommons.org/licenses/odbl/]） +
++ [クリエイティブ・コモンズ・ライセンスの表示4.0国際]( https://creativecommons.org/licenses/by/4.0/legalcode.ja) +
++ ODC BY（ https://opendatacommons.org/licenses/odbl/） +
++ ODbL（ https://opendatacommons.org/licenses/odbl/） +
 利用者は、いずれかのライセンスを選択し、商用利用も含め、無償で自由にご利用いただけます。 +
 原典資料の位置の正しさの違いや、作成された時期の違いにより、現状を正確に反映していない場合があることにご注意ください。」
 
