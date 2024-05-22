@@ -11,7 +11,125 @@ source of the documents
 (automatically generated, in the `gh-pages` branch) published document.
 
 
-== Usage
+== Prerequisites
+
+=== General
+
+WARNING: You must have have access privileges to this software before you
+can access this software. Please contact Ribose administrators if you do not.
+
+This repository contains documents that require the private Metanorma-PLATEAU
+package.
+
+There are two ways to access the Metanorma-PLATEAU software.
+
+=== Via private package
+
+==== Obtain a GitHub authentication token
+
+A GitHub authentication token is needed to install this package.
+Please follow the following steps.
+
+. On https://github.com, click on your profile picture on the top right
+and click on "Settings".
+. Click on "Developer settings" at the bottom of the navigation bar
+. Click on "Personal access tokens", then "Tokens (classic)"
+. Click the "Generate new token" button, then "Generate new token (classic)"
+. Now prompted with a form, choose a name for the token, set expiration (usual caveats apply),
+and select at least the scope `read:packages`. This allows the new token to access
+private packages.
+
+NOTE: Make sure you create a "personal access token (classic)" which is the only
+form of token the
+https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-rubygems-registry[GitHub private Rubygems package registry]
+supports!
+
+This token is to be used in your Gem *and* Bundler authentication (see https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-rubygems-registry[GitHub's page] for details).
+
+==== Configure Rubygems authentication
+
+This is the first location to install the token.
+
+Create a file `~/.gem/credentials` to house your token:
+
+[source,yaml]
+----
+---
+:github: Bearer ghp_BEEFBEEFBEEFBEEFBEEFBEEFBEEFBEEFBEEF
+----
+
+==== Configure Bundler authentication
+
+This is the second location to install the token.
+
+Run the following command:
+
+[source,sh]
+----
+bundle config https://rubygems.pkg.github.com/metanorma YOURUSERNAME:ghp_BEEFBEEFBEEFBEEFBEEFBEEFBEEFBEEFBEEF
+----
+
+
+
+=== Via source code
+
+==== Setup Git authentication with GitHub
+
+Please refer to these guides. We recommend using SSH over HTTPS to
+authentication against GitHub due to stability.
+
+SSH:
+
+* https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent[Generating a new SSH key and adding it to the ssh-agent]
+* https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account[Adding a new SSH key to your GitHub account]
+
+==== Configuring the document repository
+
+Metanorma document repositories are configured by default to use private packages,
+not development source code.
+
+In order to use development source code, you would need to authenticate with
+GitHub through Git.
+
+To use SSH or HTTP for GitHub authentication, you will need to edit the
+`Gemfile` located at the root of the document repository.
+
+[source,ruby]
+----
+source "https://rubygems.org"
+
+gem "metanorma-plateau", source: "https://rubygems.pkg.github.com/metanorma" <1>
+gem "metanorma-cli"
+----
+<1> This line uses the privately published package. Line to replace.
+
+If you use SSH, change to:
+
+[source,ruby]
+----
+source "https://rubygems.org"
+
+gem "metanorma-plateau", git: "git@github.com:metanorma/metanorma-plateau.git" <1>
+gem "metanorma-cli"
+----
+<1> Replaced line
+
+If using HTTPS, change to:
+
+[source,ruby]
+----
+source "https://rubygems.org"
+
+gem "metanorma-plateau", github: "metanorma/metanorma-plateau" <1>
+gem "metanorma-cli"
+----
+<1> Replaced line
+
+
+Then run the `bundle` command to fetch the development code.
+
+
+== Usage (general)
 
 === Installing Metanorma
 
