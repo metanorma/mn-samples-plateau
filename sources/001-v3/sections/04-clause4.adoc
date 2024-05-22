@@ -128,7 +128,7 @@ h| Vegetation h| WaterBody h| Urban Object h| Urban Function
 
 a|
 [%unnumbered]
-image::images/figure4.webp[]
+image::images/figure4.webp.png[]
 
 | クラス。 クラスは3段の箱により記述する。 1段目の箱には、ステレオタイプ（クラスの種類）とクラス名を記述する。クラス名には、<<table_4-3>>に示す接頭辞を付ける。 2段目の箱には、クラスの属性を記述する。 3段目の箱は使用しない。 クラスの属性は、属性名、属性の型、属性の多重度から構成する。 属性の型は、属性が取る値の種類を指定する。xs:string（文字列型）のような基本的な型やgml:Solidのような幾何オブジェクト、あるいは、応用スキーマで定義した別のクラスを指定できる。 基本的な型は、4.1.5に定義を示す。 応用スキーマクラス図では、属性名の前に「＋」の記号が表示される。 これはUMLクラス図において、他のクラスからその属性を表示し、使用できるかどうか（可視性）を示す。 ただし、応用スキーマクラス図では可視性を使用しないため、無視してよい。 属性の多重度は、その属性が繰り返し出現可能な回数を指定する。 [a..b]のように指定し、a及びbは、a<=j<=b となる任意の整数 j を意味する。[a..a]は、[a]と同じとみなす。以下のような記載方法がある。 +
 [0..1] ：0又は1 +
@@ -141,25 +141,25 @@ image::images/figure4.webp[]
 
 a|
 [%unnumbered]
-image::images/figure5.webp[]
+image::images/figure5.webp.png[]
 
 | 継承。 元となるクラス（上位クラス）の特性を受け継ぐ新しいクラス（下位クラス）との関係を意味する。継承を実装する場合、下位クラスのインスタンス（データ）は，自分自身に定義された属性や関連役割だけではなく、上位クラスに定義された属性や関連役割もつ。 △が付く側（Class1）が元となるクラスである。 なお、後述する関連とは異なり、上位のクラスと下位のクラスのインスタンスは、互いへの参照はもたない。あくまで、下位のクラスのインスタンスが、上位のクラスに定義された属性等を記述するデータ構造をもつことだけを意味する。
 
 a|
 [%unnumbered]
-image::images/figure6.webp[]
+image::images/figure6.webp.png[]
 
 | 関連。 二つのクラス間に関係性があることを意味する。 関連役割名は、この関連における役割を示す。また、関連には多重度を指定できる。多重度は、相手のクラス1に対して関連する自分の数を記載する。 多重度の記法は、属性の多重度と同じである。また、多重度が省略された場合は1となる。 関連を実装する場合、関連役割名をつけた属性として、他方のクラスのインスタンスへの参照をもたせる。 関連には向きをつけることができる。向きは矢印により記述する。関連に向きが付けられた場合、参照は片方向となる。すなわち、例図の場合にはClass1のインスタンスがClass2のインスタンスへの参照ともつが、Class2のインスタンスはClass1のインスタンスへの参照をもたない。 CityGMLでは、都市オブジェクトと幾何オブジェクトとの間に関連が定義されている。これにより、都市オブジェクトは幾何オブジェクトへの参照をもつことができる。例えば、道路の幾何オブジェクトとして面を作成した場合に、その面を航路の幾何オブジェクトとして参照することができる。
 
 a|
 [%unnumbered]
-image::images/figure7.webp[]
+image::images/figure7.webp.png[]
 
 | 集成。 二つのクラス間に全体と部分という関係がある関連である。全体となるクラス側に白いひし形を記述する。 関連役割名は、この関連における役割を示す。また、関連には多重度を指定できる。多重度は、相手のクラス1に対して関連する自分の数を記載する。 多重度の記法は、属性の多重度と同じである。また、多重度が省略された場合は1となる。また、向きをつけることができる。 集成を実装する場合、関連役割名をつけた属性として、他方のクラスのインスタンスへの参照をもたせる、又は、部品となるクラスのインスタンスを、全体となるクラスのインスタンスの内部に記述する。 なお、標準製品仕様書では、集成の実装は、部品となるクラスのインスタンスを、全体となるクラスのインスタンスの内部に記述することを原則とする。部品となるクラスは、他のクラスのインスタンスから参照してもよい。 CityGMLでは、uro:Building（建築物）とuro:WallSurface（外壁面）との間に集成関連が定義されている。このとき、建築物が全体となり外壁面はその部品となる。
 
 a|
 [%unnumbered]
-image::images/figure8.webp[]
+image::images/figure8.webp.png[]
 
 | 合成。 +
 二つのクラス間に全体と部分という関係がさらに強固な関連である。全体となるクラス側に黒いひし形を記述する。 +
@@ -358,10 +358,10 @@ h| Null値の定義域   h| 説明
 
 a|
 [%unnumbered]
-image::images/figure9.webp[]
+image::images/figure9.webp.png[]
 a|
 [%unnumbered]
-image::images/figure10.webp[]
+image::images/figure10.webp.png[]
 
 ^| RoofEdge ^| FootPrint
 
@@ -419,7 +419,7 @@ h| LOD1
 
 a|
 [%unnumbered]
-image::images/figure11.webp[]
+image::images/figure11.webp.png[]
 
 |===
 
@@ -519,7 +519,7 @@ BuildingPartを使用する場合に必須とする
 
 [[fig_4-1]]
 .建築物モデル（LOD2）に含むべき地物
-image::images/figure12.webp[]
+image::images/figure12.webp.png[]
 
 LOD2.0、LOD2.1及びLOD2.2それぞれの取得イメージを<<table_4-10>>に示す。
 
@@ -532,13 +532,13 @@ h| LOD h| LOD2.0 h| LOD2.1 h| LOD2.2
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure13.webp[]
+image::images/figure13.webp.png[]
 a|
 [%unnumbered]
-image::images/figure14.webp[]
+image::images/figure14.webp.png[]
 a|
 [%unnumbered]
-image::images/figure15.webp[]
+image::images/figure15.webp.png[]
 
 h| 説明
 | 屋根の主要な外形が再現される。LOD2.0では付属物は取得しないため、バルコニーも屋根として取得する。 なお、LOD2では屋根面は詳細化されるが壁面は詳細化されないため、バルコニーの下部も建築物の一部として表現される。
@@ -548,7 +548,7 @@ h| 説明
 |===
 
 [%unnumbered]
-image::images/figure16.webp[]
+image::images/figure16.webp.png[]
 
 ====== 建築物モデル（LOD2.0）の定義
 
@@ -572,7 +572,7 @@ a|
 屋根の棟及び谷は、以下を指す。
 
 [%unnumbered]
-image::images/figure17.webp[]
+image::images/figure17.webp.png[]
 
 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 
@@ -886,7 +886,7 @@ a|
 
 [[figure_4-2]]
 .建築物モデル（LOD3）に含むべき地物と取得基準
-image::images/figure18.webp[]
+image::images/figure18.webp.png[]
 
 建築物モデル（LOD3.0）、建築物モデル（LOD3.1）、建築物モデル（LOD3.2）及び建築物モデル（LOD3.3）それぞれの取得イメージを表4-12に示す。
 
@@ -899,7 +899,7 @@ image::images/figure18.webp[]
 h| LOD3.0
 a|
 [%unnumbered]
-image::images/figure19.webp[]
+image::images/figure19.webp.png[]
 a| 屋根のうち短辺3m以上の屋根面が表現される。 付属物のうち、短辺3m以上の規模の大きな付属物が再現される。
 
 LOD3では壁面が詳細化されるため、LOD2では表現されない付属物の下部の形状も表現される。 また、外壁面に設けられた短辺1m以上の開口部（窓、扉）が再現される。 なお、上図の場合、軒裏は3m以内であったため、表現されなかった。
@@ -909,19 +909,19 @@ LOD3では壁面が詳細化されるため、LOD2では表現されない付属
 h| LOD3.1
 a|
 [%unnumbered]
-image::images/figure20.webp[]
+image::images/figure20.webp.png[]
 a| 短辺の実長1m以上かつ上方からの正射影の面積3m2以上の屋根面が表現される。 この結果、左図の例では、LOD3.0では切妻屋根として表現されたが、LOD3.1の条件を満たしたため、入母屋屋根として表現された。 また、この例図では、軒裏の距離が1m以上あったため、表現された。 開口部及び屋外付属物の表現は、LOD3.0と同様の表現となる。
 
 h| LOD3.2
 a|
 [%unnumbered]
-image::images/figure21.webp[]
+image::images/figure21.webp.png[]
 a| LOD3.2ではさらに詳細な表現が可能となり、短辺の実長1m 以上又は上方からの正射影の面積1m2 以上の屋根が再現される。 左図の例では、屋根に設けられた小屋根がこの条件に該当し、再現されている。 また、LOD3.2では、短辺が実長1m以上又は上方又は側方からの正射影の面積1m2以上の屋外付属物が表現される。 左図の例では、屋根上の煙突と外壁面に設けられた庇がこの条件を満たしたため屋外付属物として表現された。 LOD3.2では、面積1m2以上の窓や扉も表現されるため、この条件に該当する窓が追加された。
 
 h| LOD3.3
 a|
 [%unnumbered]
-image::images/figure22.webp[]
+image::images/figure22.webp.png[]
 a| LOD3.3では、短辺の実長が1m未満の細かな屋根の形状が表現される。 左図の例では、LOD3.1及びLOD3.2では1枚の屋根面として表現されていたが、LOD3.3では傾斜の異なる2枚の屋根面として区分された。 また、軒裏のうち、屋根の外周との距離が1m未満の狭い軒裏も表現された。 さらに、LOD3.3の条件を満たす1m未満の小さな開口部や付属物が追加された。
 
 |===
@@ -949,7 +949,7 @@ a|
 * 屋根の棟及び谷で区切ることにより、屋根の傾斜や向きを再現する。屋根の棟及び谷は、以下を指す。
 
 [%unnumbered]
-image::images/figure23.webp[]
+image::images/figure23.webp.png[]
 
 * 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 
@@ -990,7 +990,7 @@ a|
 * 高さは、各頂点の高さとする。
 a|
 [%unnumbered]
-image::images/figure24.webp[]
+image::images/figure24.webp.png[]
 
 | LOD3.0 ^| ■ | BuildingPart | Solid
 | 1棟の建築物を、属性の異なる複数の部分に分ける場合に必須とする。
@@ -1435,7 +1435,7 @@ BuildingPartを使用する場合、及び、内壁面、天井面、床面が�
 
 [[figure_4-3]]
 .建築物モデル（LOD4）に含むべき地物
-image::images/figure25.webp[]
+image::images/figure25.webp.png[]
 
 LOD4.0、LOD4.1及びLOD4.2それぞれの取得イメージを<<table_4-14>>に示す。
 
@@ -1448,7 +1448,7 @@ LOD4.0、LOD4.1及びLOD4.2それぞれの取得イメージを<<table_4-14>>に
 | LOD4.0
 a|
 [%unnumbered]
-image::images/figure26.webp[]
+image::images/figure26.webp.png[]
 
 LOD4.0は建築物の外形（上図1）に加え、建築物の内部を表現する。このとき、建築物の内部は部屋（bldg:Room）に区切られ、各部屋の形状は立体として表現する（上図2）。また、部屋の立体の境界面は、天井面（bldg:CeilingSurface）、内壁面（bldg:InteriorWallSurface）、床面（bldg:FloorSurface）又は閉鎖面（bldg:ClosureSurface）のいずれかに区分する（上図３）。さらに、各部屋の天井面、内壁面又は床面に存在する扉（bldg:Door）及び窓（bldg:Window）を区分する（上図４）。 +
 閉鎖面は、境界面となる内壁面や天井面、床面はないが、建築確認申請では部屋となっている空間を区切る場合に仮想的な境界面として使用する。 +
@@ -1459,7 +1459,7 @@ LOD4.0は建築物の外形（上図1）に加え、建築物の内部を表現�
 | LOD4.1
 a|
 [%unnumbered]
-image::images/figure27.webp[]
+image::images/figure27.webp.png[]
 
 LOD4.1ではLOD4.0に、屋内の付属物（bldg:IntBuildingInstallation）として、階段、スロープ、輸送設備（エスカレータ、エレベータ及び動く歩道）、柱及びデッキ・ステージが追加される。 +
 上図の例では、LOD4.0に加えて、階段、踊り場、エレベータ、柱が付属物として追加された。
@@ -1467,7 +1467,7 @@ LOD4.1ではLOD4.0に、屋内の付属物（bldg:IntBuildingInstallation）と�
 | LOD4.2
 a|
 [%unnumbered]
-image::images/figure28.webp[]
+image::images/figure28.webp.png[]
 
 LOD4.2ではLOD4.1に屋内の付属物（bldg:IntBuildingInstallation）として、手すり、パネル及び梁が付属物として追加される。 +
 また、机やいすなどの移動可能な家具（bldg:BuildingFurniture）が追加される。 +
@@ -1503,7 +1503,7 @@ a|
 屋根の棟及び谷は、以下を指す。
 
 [%unnumbered]
-image::images/figure29.webp[]
+image::images/figure29.webp.png[]
 
 * 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 
@@ -2070,7 +2070,7 @@ h| 型の定義
 2+a| 居住その他の目的をもって構築された建築物。 普通建物、堅ろう建物、普通無壁舎及び堅ろう無壁舎に区分する。 普通建物とは、3階未満の建物及び3階以上の木造等で建築された建物をいう。 堅ろう建物とは、鉄筋コンクリート等で建築された建物で、地上3階以上又は3階相当以上の高さのものやスタンドを備えた競技場をいう。 普通無壁舎とは、側壁のない建物、温室及び工場内の建物類似の構築物で、3階未満のものをいう。 堅ろう無壁舎とは、鉄筋コンクリート等で建築された側壁のない建物及び建物類似の構築物で、地上3階以上又は3階相当以上の高さのものをいう。 （作業規程の準則　付録７　公共測量標準図式）
 
 .bldg:Buildingの例
-image::images/figure41.webp[]
+image::images/figure41.webp.png[]
 
 LOD0からLOD3 までは、建築物の屋外の形状を表現する。 +
 LOD4では、建築物の屋外の形状に加え、屋内の形状を表現する。
@@ -2150,7 +2150,7 @@ bldg:lod0RoofEdgeを使用することを原則とする。
 a| 建築物の外周の上方からの正射影を取得し、地上から一律の高さを与えて立ち上げた立体。
 
 .LOD1立体イメージ
-image::images/figure42.webp[]
+image::images/figure42.webp.png[]
 
 一律の高さは中央値を原則とする。
 
@@ -2158,7 +2158,7 @@ image::images/figure42.webp[]
 a| 建築物の主要構造の外形を示す立体であり、屋根面（RoofSurface）、外壁面（WallSurface）及び底面（GroundSurface）を境界面とする。
 
 .LOD2立体イメージ
-image::images/figure43.webp[]
+image::images/figure43.webp.png[]
 
 建築物をbldg:BuildingPartの集まりとして記述する場合、この空間属性は空となる。
 
@@ -2174,7 +2174,7 @@ h| (bldg:lod2MultiSurface) | gml:MultiSurface [0..1]
 a| 建築物の詳細な形状を示す立体であり、屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）及び開口部の面（境界面の内空として作成されている場合）を境界面とする。
 
 .LOD3立体イメージ
-image::images/figure44.webp[]
+image::images/figure44.webp.png[]
 
 建築物をbldg:BuildingPartの集まりとして記述する場合、この空間属性は空となる。
 
@@ -2272,7 +2272,7 @@ h| 型の定義 2+a| 建築物の一部。 +
 また、一棟の建築物を構成する建築物部分は同じ建築物を構成する他の建築物部分と接していなければならない。
 
 [%unnumbered]
-image::images/figure45.webp[]
+image::images/figure45.webp.png[]
 
 この地物型は、LOD2、LOD3及びLOD４の建築物を記述する際に使用可能であるが、ユースケースにより、建築物と建築物部分を区分する必要がない場合には、建築物部分として分けず、一体的な建築物としてよい。
 
@@ -2349,7 +2349,7 @@ h| (uro:bldgDmAttribute) | uro:DmAttribute [0..*] | 公共測量標準図式に�
 h| 型の定義 2+a| 壁、間仕切り、床、天井などで仕切られ、生活の場などに用いられる、建物内部の隔てられた空間の区画（部屋）。
 
 .bldg:Roomの例
-image::images/figure46.webp[]
+image::images/figure46.webp.png[]
 
 bldg:Roomは、bldg:Buildingに含まれる地物として記述する。 +
 このとき、bldg:Roomは、複数の地物の集まりとして表現する。bldg:Roomに含まれる地物とは、以下である。 +
@@ -2421,7 +2421,7 @@ LOD4を作成する場合で、個々の部屋によって適用するLOD4の区
 h| 型の定義 2+a| 主に建築物の上部を覆う構造物。
 
 .bldg:RoofSurfaceの例
-image::images/figure47.webp[]
+image::images/figure47.webp.png[]
 
 h| 上位の型 2+| bldg:_BoundarySurface
 h| ステレオタイプ 2+| << FeatureType >>
@@ -2462,7 +2462,7 @@ uro:IfcRoof +
 h| 型の定義 2+a| 建築物の外周を構成する壁面（外壁）。
 
 .bldg:WallSurfaceの例
-image::images/figure48.webp[]
+image::images/figure48.webp.png[]
 
 カーテンウォールはbldg:WallSurfaceにより表現する。カーテンウォールとは、建築物の外側に配置され、建築物を囲む非耐荷重の壁である。 +
 [参考 ISO 6707-1:2020 Buildings and civil engineering works — Vocabulary — Part 1: General terms]
@@ -2508,7 +2508,7 @@ h| 型の定義 2+a| 建築物の立体形状の底面。 +
 建築物の底面又は建築物の壁面と地形との交線を境界とする面を取得する。
 
 .bldg:GroundSurface
-image::images/figure49.webp[]
+image::images/figure49.webp.png[]
 
 h| 上位の型 2+| bldg:_BoundarySurface
 h| ステレオタイプ 2+| << FeatureType >>
@@ -2548,7 +2548,7 @@ uro:IfcBuildingElement このとき、uro:IfcBuildingElement の属性uro:elemen
 h| 型の定義 2+a| 建築物の外側を覆う部分であり、天井としての機能を有する部分。
 
 .bldg:OuterCeilingSurfaceの例
-image::images/figure50.webp[]
+image::images/figure50.webp.png[]
 
 ユースケースで屋外の天井と壁面との区分が必要な場合に、bldg:OuterCeilingSurfaceを使用する。 +
 ユースケースで屋外の天井と壁面との区分が不要な場合には、この型は使用せず、bldg:WallSurfaceを使用する。
@@ -2592,7 +2592,7 @@ BIMモデルからの変換により作成する場合は、bldg:OuterCeilingSur
 h| 型の定義 2+a| 建築物の外側を覆う部分であり、通行可能な床面としての機能を有する部分。例えば、屋上や通路として利用されている面が該当する。
 
 .OuterFloorSurfaceの例
-image::images/figure51.webp[]
+image::images/figure51.webp.png[]
 
 ユースケースで通行可能な床面と屋根面の区分が必要な場合に、bldg:OuterFloorSurfaceを使用する。 +
 ユースケースで通行可能な床面と屋根面との区分が不要な場合には、この型は使用せず、bldg:RoofSurfaceを使用する。
@@ -2639,16 +2639,16 @@ uro:IfcBuildingElement +
 1棟の建築物を、主題属性の異なる複数の部分に分ける場合に、その境界面として使用する。
 
 .LOD2又はLOD3でのbldg:ClosureSurfaceの例
-image::images/figure52.webp[]
+image::images/figure52.webp.png[]
 
 2+a| 屋内においては、境界面となる内壁面や天井面、床面はないが、建築確認申請では部屋となっている空間を区切る場合に、部屋の境界面として便宜上設けられた仮想的な面をさす。
 
 .LOD4でのbldg:ClosureSurfaceの例
-image::images/figure53.webp[]
+image::images/figure53.webp.png[]
 2+a|
 
 .LOD4でのbldg:ClosureSurfaceを非表示にした例
-image::images/figure54.webp[]
+image::images/figure54.webp.png[]
 
 h| 上位の型 2+| bldg:_BoundarySurface
 h| ステレオタイプ 2+| << FeatureType >>
@@ -2688,7 +2688,7 @@ h| (uro:ifcBoundarySurfaceAttribute) | uro:IfcAttribute [0..*] | IDM・MVDで定
 h| 型の定義 2+a| 建築物の内側に向いた壁や仕切り。部屋（bldg:Room）の立体を構成する垂直方向の境界面となる。
 
 .bldg:InteriorWallSurfaceの例
-image::images/figure55.webp[]
+image::images/figure55.webp.png[]
 
 CityGMLでは、壁は面として表現し、1つの壁は、内側の面と外側の面の2つの面として表現する。 例えば、屋外と屋内を仕切る壁があった場合、屋外に面する壁の面は、bldg:WallSurace（外壁面）として表現し、屋内に面する壁の面は、bldg:InteriorWallSurface（内壁面）として表現する。このとき、bldg:WallSurfaceと、bldg:InteriorSurfaceとの間（壁の厚みに相当する空間）には何も存在しない。 bldg:InteriorWallSurfaceの法線ベクトルは、建築物の内側を向く。
 
@@ -2732,7 +2732,7 @@ uro:IndoorUserDefinedAttribute
 h| 型の定義 2+a| 部屋など構造物内部の上側の面（天井）。部屋（bldg:Room）の境界面となる。
 
 .bldg:CeilingSurfaceの例
-image::images/figure56.webp[]
+image::images/figure56.webp.png[]
 
 bldg:CeilingSurfaceの法線ベクトルは下向き（部屋の内側に向く方向が正）となる。
 
@@ -2775,7 +2775,7 @@ uro:IndoorUserDefinedAttribute
 h| 型の定義 2+a| 建物の内部空間の各階下面に位置する水平で平らな板状の構造物（床面）。部屋（bldg:Room）の境界面となる。
 
 .bldg:FloorSurfaceの例
-image::images/figure57.webp[]
+image::images/figure57.webp.png[]
 
 bldg:FloorSurfaceの法線ベクトルは上向き（部屋の内側に向く方向が正）となる。
 
@@ -2818,7 +2818,7 @@ uro:IndoorUserDefinedAttribute
 h| 型の定義 2+| 採光、通風、換気、眺望などの目的のため、建築物の屋根又は壁、部屋の天井、壁、床に設けられた開口部のうち、人や物の出入りを目的としないもの。
 
 .bldg:Windowの例
-image::images/figure58.webp[]
+image::images/figure58.webp.png[]
 
 CityGMLでは、窓を面として表現し、1つの窓を外側と内側の2つのbldg:Windowのオブジェクトとして表現する。例えば、屋内と屋外をつなぐ窓があった場合、 外側となるbldg:Windowは、建築物の外壁（bldg:WallSurface）等の境界面に含まれる。 内側となるbldg:Windowは、部屋の壁面（bldg:InteriorWallSurface）等の境界面に含まれる。 このとき、屋外の境界面（bldg:WallSurface、bldg:GroundSurface、bldg:OuterFloorSurface、bldg:OuterCeilingSurface）に設けられた開口部は、常にその法線ベクトルが建築物の外側を向く。部屋の境界面（bldg:InteriorWallSurface、bldg:FloorSurface、bldg:CeilingSurface）に設けられた開口部は、常にその法線ベクトルが部屋の内側を向く。
 
@@ -2864,7 +2864,7 @@ uro:IndoorUserDefinedAttribute
 h| 型の定義 2+a| 採光、通風、換気、眺望、通行などの目的のため、建築物の屋根、天井、壁、床などに設けられた開口部のうち、人や物の出入りを目的とするもの。
 
 .bldg:Doorの例
-image::images/figure59.webp[]
+image::images/figure59.webp.png[]
 
 CityGMLでは、扉を面として表現し、1つの扉を外側と内側の2つのbldg:Doorのオブジェクトとして表現する。例えば、屋内と屋外をつなぐ窓があった場合、 外側となるbldg:Doorは、建築物の外壁（bldg:WallSurface）等の境界面に含まれる。 内側となるbldg:Doorは、部屋の壁面（bldg:InteriorWallSurface）等の境界面に含まれる。 このとき、屋外の境界面（bldg:WallSurface、bldg:GroundSurface、bldg:OuterFloorSurface、bldg:OuterCeilingSurface）に設けられた開口部は、常にその法線ベクトルが建築物の外側を向く。部屋の境界面（bldg:InteriorWallSurface、bldg:FloorSurface、bldg:CeilingSurface）に設けられた開口部は、常にその法線ベクトルが部屋の内側を向く。
 
@@ -2909,7 +2909,7 @@ uro:IndoorUserDefinedAttribute
 h| 型の定義 2+a| 建築物の外側（屋外）に設置され、建築物の外観を特徴づける設備。 建築物の付帯的な設備であり、主要な部分であってはならない。また、建築物（bldg:Building）と接していなければならない。 建築物の屋外付属物には以下を含む。ただし、全て屋外に設置され、建築物と接するもののみを対象とする。 バルコニー、ポーチ、アーケード、テラス、サンテラス、回廊、エントランスホール、ダクト、装飾的な柱、デッキ、屋根飾り、出窓、ドーマー、（建築物の一部としての）煙突、看板、換気口、（建築物の一部としての）塔、階段、カーポート、物置、アンテナ、外階段や歩道に設けられた屋根、手すり、スロープ、パネル（内装・外装の仕上げ等で利用される板材）、エレベータ、エスカレータ、動く歩道など。
 
 .bldg:BuildingInstallationの例
-image::images/figure60.webp[]
+image::images/figure60.webp.png[]
 
 （左：屋根面に設置された建築物の屋外付属物　右：壁面に設置された建築物の屋外付属物）
 
@@ -2944,7 +2944,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | bldg:lod2Geometry | gml:_Geometry [0..1] a| 建築物の屋外付属物のLOD2の形状。 屋外付属物の外形（外側から見える形）を構成する面を取得し、面の各頂点に屋外付属物の高さを与える。各面は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう取得する。 gml:MultiSurfaceを使用することを基本とする。 容積の算出等ユースケースで必要な場合は、gml:Solidを使用する。
 
 .bldg:BuildingInstallationの取得例（屋外階段）
-image::images/figure61.webp[]
+image::images/figure61.webp.png[]
 
 | bldg:lod3Geometry | gml:_Geometry [0..1] | 建築物の屋外付属物のLOD3の形状。 屋外付属物の外形（外側から見える形）を構成する面を取得し、面の各頂点に屋外付属物の高さを与える。各面は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう取得する。 gml:MultiSurfaceを使用することを基本とする。容積の算出等ユースケースで必要な場合は、gml:Solidを使用する。
 | bldg:lod4Geometry | gml:_Geometry [0..1] | 建築物の屋外付属物のLOD4の外形。 屋外付属物の外形（外側から見える形）を構成する面を取得し、面の各頂点に屋外付属物の高さを与える。各面は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう取得する。 gml:MultiSurfaceにより記述することを基本とする。容積の算出等ユースケースで必要な場合は、gml:Solidを使用する。
@@ -2952,7 +2952,7 @@ image::images/figure61.webp[]
 例えば、下図（平面図）のように建築物に建築物の屋外付属物があった場合、この建築物の屋外付属物を含む空間（gml:Solid）をBuildingとしたい場合は、建築物の屋外付属物の境界面を壁面（bldg:WallSurface）とする。
 
 [%unnumbered]
-image::images/figure62.webp[]
+image::images/figure62.webp.png[]
 
 建築物の空間に建築物の屋外付属物を含まない場合は、建築物の屋外付属物を構成する面を、境界面（bldg:_BoundarySurface）に区別する必要はない。
 3+h| 自身に定義された関連役割
@@ -2972,7 +2972,7 @@ h| 型の定義 2+a| 建築物の内側に設置された、恒久的に存在�
 屋内付属物は、建築物の付帯的な設備であり、主要な部分であってはならない。また、屋内付属物は、建築物（bldg:Building）又は部屋（bldg:Room）と接していなければならない。
 
 .bldg:IntBuildingInstallationの例（階段、手すり）
-image::images/figure63.webp[]
+image::images/figure63.webp.png[]
 
 LOD4では、この屋内付属物を含む建築物に適用されたLOD4の細分に従い、以下を取得する。 +
 LOD4.0：屋内付属物を取得しない（bldg:IntBuildingInstallationは取得しない）。 +
@@ -3014,7 +3014,7 @@ gml:MultiSurfaceにより記述することを基本とする。 +
 例えば、下図（平面図）のように部屋内に屋内付属物があった場合、この屋内付属物を除く空間（gml:Solid）をRoomとしたい場合は、屋内付属物の境界面を壁面（bldg:InteriorWallSurface）とする。
 
 [%unnumbered]
-image::images/figure64.webp[]
+image::images/figure64.webp.png[]
 
 ただし、部屋の空間から屋内付属物を除く必要が無い場合は、屋内付属物の形状を構成する面を、境界面（bldg:_BoundarySurface）にする必要はない。 +
 また、ユースケースによりエレベータの出入口を、エレベータの扉を使って表現する必要がある場合は、bldg:boundedBy関連役割により、エレベータの扉が存在する境界面を壁面（bldg:InteriorWallSurface）として区分し、この壁面に扉（bldg:Door）を作成することでエレベータの扉を表現可能となる。
@@ -3043,7 +3043,7 @@ h| 型の定義 2+a| 室内の移動できる備品（家具）。 +
 bldg:IntBuildingInstallationが、建築物内部に設置された恒久的かつ固定的な設備であることと対照的に、bldg:BuildingFurnitureは椅子やテーブルのような、動かすことができる備品である。
 
 .bldg:BuildingFurnitureの例（机、椅子）
-image::images/figure65.webp[]
+image::images/figure65.webp.png[]
 
 LOD4.2の場合にのみ取得する。 +
 ただし、ユースケースの要求に応じて、取得対象とする家具を限定してよい。
@@ -3232,7 +3232,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 型の定義 2+a| 洪水浸水想定区域内に存在する建築物に、浸水想定区域がもつ属性を与えるための属性型。 同一の浸水想定区域図において、複数の区域に建築物が跨って存在する場合は、同一浸水ランクを持つ浸水ランクのメッシュを一つの区域とし、その区域と建築物が重なる面積が最も大きい浸水ランクの値を採用する。（面積が等しい場合は、より危険な区域を採用する） 浸水深は採用した浸水ランクを持つ浸水深のメッシュのうち、建築物と重なる面積が最も大きいメッシュの浸水深を採用する。（同じ浸水深を持つメッシュは面積算出の際に合算する） 浸水継続時間は採用した浸水深のメッシュと重なる浸水継続時間のメッシュの浸水継続時間を採用する。複数の浸水継続時間のメッシュが重なる場合は最も大きい浸水継続時間の値を採用する。 浸水深の有効桁数は、「浸水想定区域図データ電子化ガイドライン（第4版）」に従い、浸水深の有効桁数は、小数点以下 3 桁まで登録可能とするが、小数点以下 2 桁でもよいとする。 面積の有効桁数は、小数点2桁（3桁目で四捨五入）とする。
 
 [%unnumbered]
-image::images/figure66.webp[]
+image::images/figure66.webp.png[]
 
 h| 上位の型 2+| uro:BuildingFloodingRiskAttribute
 h| ステレオタイプ 2+| << DataType >>
@@ -3723,7 +3723,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:trueNorth | gml:doubleList [0..1]
 a| 北方角との差を2次元ベクトルで設定する。角度表現のラジアン又は度の設定は、MVD-IfcProject.UnitsInContext（短径設定情報）を参照。北が0時の方向であれば値は(0,1)。
 [%unnumbered]
-image::images/figure67.webp[]
+image::images/figure67.webp.png[]
 
 |===
 
@@ -5627,11 +5627,11 @@ h| 2+^h| LOD0
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure68.webp[]
+image::images/figure68.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure69.webp[]
+image::images/figure69.webp.png[]
 h| 説明 | 左右両側の道路縁から等距離となる点をつないだ線分を取得する。 | 道路縁を取得する。
 
 |===
@@ -5693,7 +5693,7 @@ h| h| LOD1
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure70.webp[]
+image::images/figure70.webp.png[]
 h| 説明 | 道路縁により囲まれた範囲を面として取得し、以下の場所で区切る。
 * 車道交差部（十字路、丁字路、その他二つ以上の道路が交わる部分）で区切る。
 * 道路構造（トンネル、橋梁）が変化する場所
@@ -5747,7 +5747,7 @@ h| h| LOD2
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure71.webp[]
+image::images/figure71.webp.png[]
 h| 説明 a| 道路縁により囲まれた範囲を面として取得し、面を以下に区分する。
 * 車道部
 * 車道交差部
@@ -5798,7 +5798,7 @@ a| 隅切りとは、道路構造令第27条第2項に示された、道路が�
 また、建築基準法施行規則第144条の4第1項第2号に示される隅切りを含む。
 
 [%unnumbered]
-image::images/figure72.webp[]
+image::images/figure72.webp.png[]
 a|
 * 車道交差部（隅切りが無い場合）
 a|
@@ -5806,7 +5806,7 @@ a|
 * 高さは0とする。
 a|
 [%unnumbered]
-image::images/figure73.webp[]
+image::images/figure73.webp.png[]
 a|
 * 歩道部
 a|
@@ -5891,19 +5891,19 @@ a| LOD3.1の区分を細分する。 +
 | LOD3.2の区分を細分する。細分はユースケースに応じて決定する。
 a|
 [%unnumbered]
-image::images/figure74.webp[]
+image::images/figure74.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure75.webp[]
+image::images/figure75.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure76.webp[]
+image::images/figure76.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure77.webp[]
+image::images/figure77.webp.png[]
 
 |===
 
@@ -5919,44 +5919,44 @@ h| LOD3.0及びLOD3.1 h| LOD3.2 h| LOD3.3及びLOD3.4
 立体交差が表現できる。
 
 [%unnumbered]
-image::images/figure78.webp[]
+image::images/figure78.webp.png[]
 
 a| 道路の横断方向に存在する15㎝以上の高さの差を取得する。 +
 ①高さの差が15㎝以上の段は、段の形状を取得する。
 
 [%unnumbered]
-image::images/figure79.webp[]
+image::images/figure79.webp.png[]
 
 a| 道路の横断方向に存在する2㎝以上の高さの差を取得する。 +
 ①高さの差が2㎝以上の段は、段の形状を取得する。
 
 [%unnumbered]
-image::images/figure80.webp[]
+image::images/figure80.webp.png[]
 a| ②高さの差が15㎝以上のスロープは、スロープの形状を取得する。
 
 [%unnumbered]
-image::images/figure81.webp[]
+image::images/figure81.webp.png[]
 
 a| ②高さの差が2㎝以上のスロープは、スロープの形状を取得する。
 
 [%unnumbered]
-image::images/figure82.webp[]
+image::images/figure82.webp.png[]
 .2+a| ③高さの差が15㎝未満の段が複数あり、合計15㎝以上の高さの差がある場合は、スロープとして取得する。
 
 [%unnumbered]
-image::images/figure83.webp[]
+image::images/figure83.webp.png[]
 
 歩道と車道との間や車道と島との間に存在する縁石による段を表現できる。
 
 a| ③高さの差が2㎝未満の段が複数あり、合計2㎝以上の高さの差がある場合は、スロープとして取得する。
 
 [%unnumbered]
-image::images/figure84.webp[]
+image::images/figure84.webp.png[]
 
 a| 歩道に設けられた車道への切り下げ部に存在する段が表現できる。
 
 [%unnumbered]
-image::images/figure85.webp[]
+image::images/figure85.webp.png[]
 
 |===
 
@@ -5995,7 +5995,7 @@ a|
 a|
 
 [%unnumbered]
-image::images/figure86.webp[]
+image::images/figure86.webp.png[]
 a|
 * 歩道部
 a|
@@ -6134,7 +6134,7 @@ a|
 a| 高さの差を表現する面は、歩道部の一部として取得する。
 
 [%unnumbered]
-image::images/figure87.webp[]
+image::images/figure87.webp.png[]
 .2+| LOD3.2 .2+| ● .2+| Auxiliary TrafficArea .2+| MultiSurface
 a|
 * 島
@@ -6213,7 +6213,7 @@ a|
 a| 高さの差を表現する面は、歩道部の一部として取得する。
 
 [%unnumbered]
-image::images/figure88.webp[]
+image::images/figure88.webp.png[]
 .2+| LOD3.3 .2+| ● .2+| Auxiliary TrafficArea .2+| MultiSurface
 a|
 * 島
@@ -6292,7 +6292,7 @@ a|
 a| 高さの差を表現する面は、歩道部の一部として取得する。
 
 [%unnumbered]
-image::images/figure89.webp[]
+image::images/figure89.webp.png[]
 | LOD3.4 ^| 〇 | TrafficArea | MultiSurface
 a|
 * すりつけ区間、踏切道、軌道敷、待避所、副道、自動車駐車場（走路）、自転車駐車場（走路）、
@@ -6425,16 +6425,16 @@ image::images/figure93.svg[]
 tran:Roadに含まれるtran:TrafficArea及びtran:AuxiliaryTrafficAreaは、同一路線に含まれなければならない。 同一のLODにおいて、連続する道路の境界は一致しなければならない。
 
 .LOD1における道路の取得例
-image::images/figure94.webp[]
+image::images/figure94.webp.png[]
 
 2+a|
 
 .LOD2における道路の取得例
-image::images/figure95.webp[]
+image::images/figure95.webp.png[]
 2+a|
 
 .LOD3における道路の取得例
-image::images/figure96.webp[]
+image::images/figure96.webp.png[]
 h| 上位の型 2+| tran:TrafficComplex
 h| ステレオタイプ 2+| << FeatureType >>
 3+h| 継承する属性
@@ -6490,23 +6490,23 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 * LOD2及びLOD3.0の場合は、車道部として、車両の利用が想定された車線や路肩その他一体的な舗装がされた全ての道路の部分を対象とする。また、歩道部として、歩道及び歩道上に設置された植栽の範囲を対象とする。
 
 .LOD2及びLOD3.0におけるtran:TrafficAreaの例
-image::images/figure97.webp[]
+image::images/figure97.webp.png[]
 
 2+a|
 * LOD3.1の場合は、LOD3.0の車道部のうち、車線を細分する。
 
 .LOD3.1におけるtran:TrafficAreaの例
-image::images/figure98.webp[]
+image::images/figure98.webp.png[]
 2+a|
 * LOD3.2及びLOD3.3の場合は、LOD3.1の歩道部から歩道上の植栽を除いた範囲を歩道部とする。
 
 .LOD3.2及びLOD3.3におけるtran:TrafficAreaの例
-image::images/figure99.webp[]
+image::images/figure99.webp.png[]
 2+a|
 * LOD3.4の場合は、コードリストの区分に従う。
 
 .LOD3.4におけるtran:TrafficAreaの例
-image::images/figure100.webp[]
+image::images/figure100.webp.png[]
 
 1つの道路オブジェクトに含まれる交通領域は、属性の変化が無い限り、区分しない。
 h| 上位の型 2+| tran:_TransportationObject
@@ -6565,18 +6565,18 @@ LOD3.1～LOD3.4では、停止線がある場合にはこれの延長とし、�
 * LOD2、LOD3.0及びLOD3.1の場合は、道路内の島状の施設（交通島及び分離帯、路面電車停車所）を対象とする。
 
 .LOD2、LOD3.0及びLOD3.1での道路のtran:AuxiliaryTrafficAreaの取得例
-image::images/figure101.webp[]
+image::images/figure101.webp.png[]
 
 2+a|
 * LOD3.2及びLOD3.3の場合は、上記に加え、歩道部に設置された植栽を対象とする。
 
 .LOD3.2及びLOD3.3での道路のtran:AuxiliaryTrafficAreaの取得例
-image::images/figure102.webp[]
+image::images/figure102.webp.png[]
 2+a|
 * LOD3.4に場合は、tran:functionにより指定されるコードリストの区分に従う。
 
 .LOD3.4での道路のtran:AuxiliaryTrafficAreaの取得例
-image::images/figure103.webp[]
+image::images/figure103.webp.png[]
 
 1つの道路オブジェクトに含まれる交通補助領域は、属性の変化が無い限り、延長方向では区分しない（例：延長方向に連続する分離帯を細分しない）。
 h| 上位の型 2+| tran:_TransportationObject
@@ -7152,29 +7152,29 @@ h| 5+^h| LOD0
 h| 取得例
 5+a|
 [%unnumbered]
-image::images/figure104.webp[]
+image::images/figure104.webp.png[]
 h| 説明 5+| 中心線を取得する。
 h| 5+^h| LOD0
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure105.webp[]
+image::images/figure105.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure106.webp[]
+image::images/figure106.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure107.webp[]
+image::images/figure107.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure108.webp[]
+image::images/figure108.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure109.webp[]
+image::images/figure109.webp.png[]
 h| 説明 | 普通鉄道、地下鉄地上部、路面鉄道は、地図情報レベル2500ではレールの中心線を取得し、地図情報レベル500及び1000ではレールを取得する。 | モノレールは、地図情報レベル500及び1000では中心線を取得する。 | 特殊軌道の場合は、地図情報レベル2500では中心線を取得し、地図情報レベル500及び1000ではレールを取得する。 | 索道の場合は、中心線を取得する。 | 建設中の鉄道、トンネル内の鉄道、地下鉄地下部の場合は、地図情報レベル500及び1000ではレールを取得する。
 
 |===
@@ -7252,11 +7252,11 @@ h| 2+^h| LOD1
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure110.webp[]
+image::images/figure110.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure111.webp[]
+image::images/figure111.webp.png[]
 h| 説明 a| 普通鉄道、地下鉄、路面鉄道及び特殊軌道の場合は、レールの内側の領域を面として取得する。 +
 同一路線に上下線などの複数の軌道が存在する場合は、路線ごとにまとめて一つの地物とする。 +
 軌道が分岐・合流する場所で地物を区切る。 +
@@ -7271,7 +7271,7 @@ h| 2+^h| LOD1
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure112.webp[]
+image::images/figure112.webp.png[]
 
 |
 h| 説明 | 索道の場合は、起点及び終点が同一となる索道のケーブルに囲まれた範囲を面として取得する。高さは0とする。 |
@@ -7342,7 +7342,7 @@ a|
 
 [[figure_4-4]]
 .線路の構造
-image::images/figure113.webp[]
+image::images/figure113.webp.png[]
 
 軌道：施工基面上の道床（スラブを含む）、軌きょう及び直接これらに付帯する施設をいう。[JIS E1001:2001　鉄道―線路用語]
 
@@ -7365,7 +7365,7 @@ h| h| LOD2
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure114.webp[]
+image::images/figure114.webp.png[]
 h| 説明 | 軌道中心線、レールに囲まれた範囲※、及び道床を取得する。高さは0とする。 軌道中心線の形状はLOD0と同様であり、レールに囲まれた範囲の形状はLOD1と同様であるが、LOD2とは地物型が異なる。 LOD0が路線ごとに一つの地物であったことに対し、LOD2は、軌道ごとに一つの地物（tran:TrafficArea）となる。 なお、軌道中心線及びレールに囲まれた範囲は、それぞれ一つの地物（tran:TrafficArea）とする。 道床は外周により囲まれた範囲をtran:TrafficAreaとして取得する。道床はレールに囲まれた範囲を包含する。 いずれも高さは0とする。 ※軌道中心線が直線である区間では、レールに囲まれた範囲の幅は軌間と一致する。 軌間とは、軌道中心線が直線である区間におけるレール面上から下方の所定距離以内における左右レール頭部間の最短距離である。 [JIS E1001:2001　鉄道-線路用語]
 
 |===
@@ -7470,15 +7470,15 @@ h| h| LOD3.0 h| LOD3.1 h| LOD3.2
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure115.webp[]
+image::images/figure115.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure116.webp[]
+image::images/figure116.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure117.webp[]
+image::images/figure117.webp.png[]
 h| 説明 | 軌道中心線、レールに囲まれた範囲及び道床を面として取得する。 | 軌道中心線、レールに囲まれた範囲、道床に加え、レールを取得する。また、道床外の鉄道用地を交通補助領域として取得する。 レールに囲まれた範囲は、レールの内側とする。 a| 軌道中心線、レールに囲まれた範囲、道床に加え、レールを取得する。また、道床外の鉄道用地を交通補助領域として取得する。 +
 道床及び道床外の鉄道用地を、ユースケースの必要に応じて細分できる。
 
@@ -7493,27 +7493,27 @@ h| h| LOD3.0 h| LOD3.1 h| LOD3.2
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure118.webp[]
+image::images/figure118.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure119.webp[]
+image::images/figure119.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure120.webp[]
+image::images/figure120.webp.png[]
 h| 説明 | 軌道中心線の各点に標高を与える。 道床に軌道中心線の高さを与える。 軌道中心線の高さは、レール面の高さとする。 a| 軌道中心線の各点に標高を与える。 +
 レールの横断方向に存在する15㎝以上の高さの差を取得する。
 
 [%unnumbered]
-image::images/figure121.webp[]
+image::images/figure121.webp.png[]
 
 a| 軌道中心線の各点に標高を与える。 +
 レールの横断方向に存在する15㎝未満の高さの差を取得する。 +
 高さの差を取得する閾値は、ユースケースの必要に応じて定めることができる。
 
 [%unnumbered]
-image::images/figure122.webp[]
+image::images/figure122.webp.png[]
 
 |===
 
@@ -7543,7 +7543,7 @@ a|
 * 各頂点に軌道中心線上の高さを与える。
 a|
 [%unnumbered]
-image::images/figure123.webp[]
+image::images/figure123.webp.png[]
 | LOD3.0 ^| ● | TrafficArea | MultiSurface
 a|
 * 道床
@@ -7592,7 +7592,7 @@ a|
 * 各頂点に軌道の高さを与える。
 a|
 [%unnumbered]
-image::images/figure124.webp[]
+image::images/figure124.webp.png[]
 | LOD3.1 ^| ● | TrafficArea | MultiSurface
 a|
 * 道床
@@ -7646,7 +7646,7 @@ a|
 * 各頂点に軌道の高さを与える。
 a|
 [%unnumbered]
-image::images/figure125.webp[]
+image::images/figure125.webp.png[]
 | LOD3.2 ^| ● | TrafficArea | MultiSurface
 a|
 * 道床
@@ -7748,20 +7748,20 @@ tran:Roadの応用スキーマクラス図参照
 tran:Railwayに含まれるtran:TrafficArea及びtran:AuxiliaryTrafficAreaは、同一路線に含まれなければならない。また、同一のLODにおいて、連続する鉄道の境界は一致しなければならない。
 
 .LOD0における鉄道の取得例
-image::images/figure127.webp[]
+image::images/figure127.webp.png[]
 
 2+a|
 
 .LOD1における鉄道の取得例
-image::images/figure128.webp[]
+image::images/figure128.webp.png[]
 2+a|
 
 .LOD2における鉄道の取得例
-image::images/figure129.webp[]
+image::images/figure129.webp.png[]
 2+a|
 
 .LOD3における鉄道の取得例
-image::images/figure130.webp[]
+image::images/figure130.webp.png[]
 h| 上位の型 2+| tran:TrafficComplex
 h| ステレオタイプ 2+| << FeatureType >>
 3+h| 継承する属性
@@ -7818,23 +7818,23 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 * LOD2の場合は、軌道中心線に加え、道床の外周に囲まれた範囲を取得する。高さは0とする。
 
 .LOD2における鉄道のtran:TrafficAreaの例
-image::images/figure131.webp[]
+image::images/figure131.webp.png[]
 
 2+a|
 * LOD3.0の場合は軌道中心線に加え、道床の外周に囲まれた範囲を取得する。軌道中心線の各頂点には、軌道中心線上の勾配変化点の標高に基づき、高さを与える。また、道床の高さは、軌道中心線上の高さとする。
 
 .LOD3.0における鉄道のtran:TrafficAreaの例
-image::images/figure132.webp[]
+image::images/figure132.webp.png[]
 2+a|
 * LOD3.1の場合は、LOD3.0の軌道中心線、道床に加え、レールを取得する。高さはそれぞれの水平位置における標高とする。15㎝以上の高さの差を取得する。
 
 .LOD3.1における鉄道のtran:TrafficAreaの例
-image::images/figure133.webp[]
+image::images/figure133.webp.png[]
 2+a|
 * LOD3.2の場合は、LOD3.1の軌道中心線、道床及びレールの範囲を取得する。高さはそれぞれの水平位置における標高とする。15㎝未満の高さの差を取得する。
 
 .LOD3.2におけるtran:TrafficAreaの例
-image::images/figure134.webp[]
+image::images/figure134.webp.png[]
 
 1つの鉄道オブジェクトに含まれる交通領域は、属性の変化が無い限り、延長方向では区分しない。 +
 LOD3では、軌道中心線の平面線形が変化する位置（円曲線及び緩和曲線の開始地点及び終了地点）で区切る。
@@ -7881,13 +7881,13 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 * LOD3.1の場合は、鉄道敷地界及び道床の外周に囲まれた範囲を取得する。高さはそれぞれの水平位置における標高とする。15㎝以上の高さの差を取得する。
 
 .LOD3.1におけるtran:AuxiliaryTrafficAreaの例
-image::images/figure135.webp[]
+image::images/figure135.webp.png[]
 
 2+a|
 * LOD3.2の場合は、鉄道敷地界及び道床の外周に囲まれた範囲を取得する。高さはそれぞれの水平位置における標高とする。15㎝未満の高さの差を取得する。
 
 .LOD3.2におけるtran:AuxiliaryTrafficAreaの例
-image::images/figure136.webp[]
+image::images/figure136.webp.png[]
 
 1つの鉄道オブジェクトに含まれる交通補助領域は、属性の変化が無い限り、延長方向では区分しない。
 h| 上位の型 2+| tran:_TransportationObject
@@ -8318,11 +8318,11 @@ h| 2+^h| LOD0
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure137.webp[]
+image::images/figure137.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure138.webp[]
+image::images/figure138.webp.png[]
 h| 説明 | 左右両側の徒歩道縁から等距離となる点をつないだ線分を取得する。 | 徒歩道縁線を取得する。
 
 |===
@@ -8384,7 +8384,7 @@ h| h| LOD1
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure139.webp[]
+image::images/figure139.webp.png[]
 h| 説明 a| 徒歩道縁により囲まれた範囲を面として取得し、以下の場所で区切る。
 
 * 交差部（十字路、丁字路、その他二つ以上の徒歩道が交わる部分）で区切る。
@@ -8441,7 +8441,7 @@ h| h| LOD2
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure140.webp[]
+image::images/figure140.webp.png[]
 h| 説明 a| 徒歩道縁により囲まれた範囲を面として取得し、面を以下に区分する。
 
 * 車道部
@@ -8490,7 +8490,7 @@ a|
 a| 隅切りとは、道路構造令第27条第2項に示された、道路が同一平面で交差し、又は接続する場合に隅角部を切り取り、適当な見とおしができる構造としたものをいう。また、建築基準法施行規則第144条の4第1項第2号に示される隅切りを含む。
 
 [%unnumbered]
-image::images/figure141.webp[]
+image::images/figure141.webp.png[]
 a|
 * 車道交差部（隅切りが無い場合）
 a|
@@ -8499,7 +8499,7 @@ a|
 a|
 
 [%unnumbered]
-image::images/figure142.webp[]
+image::images/figure142.webp.png[]
 a|
 * 歩道部
 a|
@@ -8587,19 +8587,19 @@ a| LOD3.1の区分を細分する。 +
 a|
 
 [%unnumbered]
-image::images/figure143.webp[]
+image::images/figure143.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure144.webp[]
+image::images/figure144.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure145.webp[]
+image::images/figure145.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure146.webp[]
+image::images/figure146.webp.png[]
 
 |===
 
@@ -8615,41 +8615,41 @@ h| LOD3.0及びLOD3.1 h| LOD3.2 h| LOD3.3及びLOD3.4
 立体交差が表現できる。
 
 [%unnumbered]
-image::images/figure147.webp[]
+image::images/figure147.webp.png[]
 
 a| 徒歩道の横断方向に存在する15㎝以上の高さの差を取得する。 +
 ①2㎝以上の段は、段の形状を取得する。
 
 [%unnumbered]
-image::images/figure148.webp[]
+image::images/figure148.webp.png[]
 
 a| 徒歩道の横断方向に存在する2㎝以上の高さの差を取得する。 +
 ①15㎝以上の段は、段の形状を取得する。
 
 [%unnumbered]
-image::images/figure149.webp[]
+image::images/figure149.webp.png[]
 a| ②15㎝以上のスロープは、スロープの形状を取得する。
 
 [%unnumbered]
-image::images/figure150.webp[]
+image::images/figure150.webp.png[]
 
 a| ②2㎝以上のスロープは、スロープの形状を取得する。
 
 [%unnumbered]
-image::images/figure151.webp[]
+image::images/figure151.webp.png[]
 .2+a| ③高さの差が15㎝未満の段が複数あり、合計15㎝以上の高さの差がある場合は、スロープとして取得する。
 
 [%unnumbered]
-image::images/figure152.webp[]
+image::images/figure152.webp.png[]
 
 歩道と車道との間や車道と島との間に存在する縁石による段を表現できる。
 a| ③高さの差が2㎝未満の段が複数あり、合計2㎝以上の高さの差がある場合は、スロープとして取得する。
 [%unnumbered]
-image::images/figure153.webp[]
+image::images/figure153.webp.png[]
 
 a| 歩道に設けられた切り下げ部に存在する段が表現できる。
 [%unnumbered]
-image::images/figure154.webp[]
+image::images/figure154.webp.png[]
 
 |===
 
@@ -8827,7 +8827,7 @@ a|
 a| 高さの差を表現する面は、歩道部の一部として取得する。
 
 [%unnumbered]
-image::images/figure155.webp[]
+image::images/figure155.webp.png[]
 .2+| LOD3.2 .2+| ● .2+| Auxiliary TrafficArea .2+| MultiSurface
 a|
 * 島
@@ -8907,7 +8907,7 @@ a|
 a| 高さの差を表現する面は、歩道部の一部として取得する。
 
 [%unnumbered]
-image::images/figure156.webp[]
+image::images/figure156.webp.png[]
 .2+| LOD3.3 .2+| ● .2+| Auxiliary TrafficArea .2+| MultiSurface
 a|
 * 島
@@ -8988,7 +8988,7 @@ a|
 a| 高さの差を表現する面は、歩道部の一部として取得する。
 
 [%unnumbered]
-image::images/figure157.webp[]
+image::images/figure157.webp.png[]
 | LOD3.4 ^| 〇 | TrafficArea | MultiSurface
 a|
 * すりつけ区間、踏切道、軌道敷、待避所、副道、自動車駐車場（走路）、自転車駐車場（走路）
@@ -9107,21 +9107,21 @@ image::images/figure158.svg[]
 * LOD0における徒歩道の取得例
 
 [%unnumbered]
-image::images/figure159.webp[]
+image::images/figure159.webp.png[]
 
 ネットワークで取得する場合は、徒歩道の中心線とする。徒歩道が道路と接する場合、道路中心線まで伸ばす。
 2+a|
 * LOD1における徒歩道の取得例
 
 [%unnumbered]
-image::images/figure160.webp[]
+image::images/figure160.webp.png[]
 
 徒歩道のLOD1（面）は、徒歩道の境界に囲まれた範囲とする。徒歩道が道路と接する場合、その境界線は道路（tran:Road）の境界線と一致しなければならない。
 2+a|
 * LOD2における徒歩道の取得例
 
 [%unnumbered]
-image::images/figure161.webp[]
+image::images/figure161.webp.png[]
 
 徒歩道のLOD2は、LOD1（面）をtran:TrafficArea（車道、車道交差部、歩道）及びtran:AuxiliaryTrafficArea（島）に区分する。このとき、隣接するtran:TrafficArea及びtran:AuxiliaryTrafficAreaの面の境界線は座標が一致していなければならない。 +
 また、徒歩道が道路と接続する場合、接続する境界線は一致しなければならない。 +
@@ -9132,12 +9132,12 @@ image::images/figure161.webp[]
 LOD3.0では、徒歩道の横断方向に一律の高さ（車道の高さ）を付し、高さの差は表現しない。
 
 [%unnumbered]
-image::images/figure162.webp[]
+image::images/figure162.webp.png[]
 2+a| 徒歩道に車道が無い場合は歩道の高さとする。 +
 段の表現を行わないため、徒歩道に階段が存在する場合、階段の段は表現されず、最下段と最上段を結ぶ一定の斜度をもった面として表現される。
 
 [%unnumbered]
-image::images/figure163.webp[]
+image::images/figure163.webp.png[]
 
 LOD2と同様、道路と接続する場合は、境界線が一致していなければならない。
 h| 上位の型 2+| tran:TrafficComplex
@@ -9374,12 +9374,12 @@ h| 2+^h| LOD0
 h| 取得例 a| 駅前広場
 
 [%unnumbered]
-image::images/figure164.webp[]
+image::images/figure164.webp.png[]
 
 a| 駅前広場
 
 [%unnumbered]
-image::images/figure165.webp[]
+image::images/figure165.webp.png[]
 h| 説明 a| 広場内において、車道の両側（歩道、安全地帯及び分離帯）から等距離の点をつなぐ線分を、広場の中心線とする。 +
 車道が交差又は分岐する場所で中心線を区切る。 +
 広場内の中心線は連続でなければならず、また、その端点は広場が接続する道路の中心線までとする。
@@ -9388,12 +9388,12 @@ h| 2+^h| LOD0
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure166.webp[]
+image::images/figure166.webp.png[]
 
 自動車ターミナル
 a|
 [%unnumbered]
-image::images/figure167.webp[]
+image::images/figure167.webp.png[]
 
 自動車ターミナル
 h| 説明 a| 広場内において、車道の両側（庭園路、歩道、安全地帯及び分離帯）から等距離の点をつなぐ線分を、広場の中心線とする。 +
@@ -9404,12 +9404,12 @@ h| 2+^h| LOD0
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure168.webp[]
+image::images/figure168.webp.png[]
 
 交通広場
 a|
 [%unnumbered]
-image::images/figure169.webp[]
+image::images/figure169.webp.png[]
 
 交通広場
 h| 説明 a| 車道の両側（歩道、安全地帯及び分離帯）から等距離の点をつなぐ線分を、広場の中心線とする。 +
@@ -9472,7 +9472,7 @@ h| LOD h| LOD1
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure170.webp[]
+image::images/figure170.webp.png[]
 h| 説明 a| 交通（広場）モデル（LOD1）の形状を示す面は、都市計画で定められた区域とする。 +
 高さは0とする。
 
@@ -9520,7 +9520,7 @@ h| LOD h| LOD2
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure171.webp[]
+image::images/figure171.webp.png[]
 h| 説明 a| 都市計画において定められた広場の区域（交通（広場）モデル（LOD1））を以下に区分する。
 
 * 車道部
@@ -9656,19 +9656,19 @@ a| LOD3.1の区分を細分する。 +
 a|
 
 [%unnumbered]
-image::images/figure172.webp[]
+image::images/figure172.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure173.webp[]
+image::images/figure173.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure174.webp[]
+image::images/figure174.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure175.webp[]
+image::images/figure175.webp.png[]
 
 |===
 
@@ -9684,42 +9684,42 @@ h| LOD3.0及びLOD3.1 h| LOD3.2 h| LOD3.3及びLOD3.4
 立体交差が表現できる。
 
 [%unnumbered]
-image::images/figure176.webp[]
+image::images/figure176.webp.png[]
 
 a| 徒歩道の横断方向に存在する15㎝以上の高さの差を取得する。 +
 ①15㎝以上の段は、段の形状を取得する。
 
 [%unnumbered]
-image::images/figure177.webp[]
+image::images/figure177.webp.png[]
 
 a| 徒歩道の横断方向に存在する2㎝以上の高さの差を取得する。 +
 ①2㎝以上の段は、段の形状を取得する。
 
 [%unnumbered]
-image::images/figure178.webp[]
+image::images/figure178.webp.png[]
 a| ②15㎝以上のスロープは、スロープの形状を取得する。
 
 [%unnumbered]
-image::images/figure179.webp[]
+image::images/figure179.webp.png[]
 
 a| ②2㎝以上のスロープは、スロープの形状を取得する。
 
 [%unnumbered]
-image::images/figure180.webp[]
+image::images/figure180.webp.png[]
 .2+a| ③高さの差が15㎝未満の段が複数あり、合計15㎝以上の高さの差がある場合は、スロープとして取得する。
 
 [%unnumbered]
-image::images/figure181.webp[]
+image::images/figure181.webp.png[]
 
 歩道と車道との間や車道と島との間に存在する縁石による段を表現できる。
 a| ③高さの差が2㎝未満の段が複数あり、合計2㎝以上の高さの差がある場合は、スロープとして取得する。
 [%unnumbered]
-image::images/figure182.webp[]
+image::images/figure182.webp.png[]
 
 a| 歩道に設けられた切り下げ部に存在する段が表現できる。
 
 [%unnumbered]
-image::images/figure183.webp[]
+image::images/figure183.webp.png[]
 
 |===
 
@@ -10155,21 +10155,21 @@ LOD2以上では、tran:Squareの面を、tran:TrafficAreaとtran:AuxiliaryTraff
 * LOD0における広場の取得例
 
 [%unnumbered]
-image::images/figure185.webp[]
+image::images/figure185.webp.png[]
 
 ネットワークで取得する場合は、広場の中心線とする。広場の中心線は、これに接する道路の中心線まで伸ばす。
 2+a|
 * LOD1における広場の取得例
 
 [%unnumbered]
-image::images/figure186.webp[]
+image::images/figure186.webp.png[]
 
 広場のLOD1（面）は、都市計画図書の計画図に示された、都市計画の区域とする。
 2+a|
 * LOD2における広場の取得例
 
 [%unnumbered]
-image::images/figure187.webp[]
+image::images/figure187.webp.png[]
 
 広場のLOD2は、LOD1（面）をtran:TrafficArea（車道部、車道交差部、歩道部）及びtran:AuxiliaryTrafficArea（島）に区分する。このとき、隣接するの面の境界線は、座標が一致していなければならない。 +
 また、広場の面が道路の面と重なる場合、重なる範囲に存在するtran:TrafficArea（車道、車道交差部、歩道）及びtran:AuxiliaryTrafficArea（島）は、道路の構成要素であり、かつ、広場の構成要素となる。
@@ -10179,7 +10179,7 @@ image::images/figure187.webp[]
 LOD3.0では、広場の高さは車道の高さとし、段の表現は行わない。歩道及び島には、車道の高さを与えるが、歩道及び島の面を構成する境界線上の各点に、これと接する車道の高さを付与する。高さが異なる車道に囲まれた歩道や島の面は、傾きをもった面となる。
 
 [%unnumbered]
-image::images/figure188.webp[]
+image::images/figure188.webp.png[]
 
 LOD2と同様、隣接する道路の境界線と一致していなければならず、広場の区域と道路の区域とが重なる場合は、この範囲に存在するtran:TrafficArea（車道、車道交差部、歩道）及びtran:AuxiliaryTrafficArea（島）を広場と道路が共有しなければならない。
 h| 上位の型 2+| tran:TrafficComplex
@@ -10504,7 +10504,7 @@ h| h| LOD0
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure189.webp[]
+image::images/figure189.webp.png[]
 h| 説明 | 航路の区域の中心線を取得する。
 
 |===
@@ -10550,7 +10550,7 @@ h| h| LOD1
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure190.webp[]
+image::images/figure190.webp.png[]
 h| 説明 a| 法令により指定された航路の区域を取得する。 +
 高さは0とする。
 
@@ -10598,7 +10598,7 @@ h| h| LOD2
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure191.webp[]
+image::images/figure191.webp.png[]
 h| 説明 a| 航路の境界線をつないだ面を取得する。 +
 航路の区域に一つの航路しか存在しない場合、LOD1の形状に一致する。 +
 高さは0とする。
@@ -10684,7 +10684,7 @@ h| 型の定義 2+a| 航路とは、船舶の通路として法令で定める�
 * 航路が交差する部分（二つ以上の航路が交わる部分）
 
 [%unnumbered]
-image::images/figure193.webp[]
+image::images/figure193.webp.png[]
 
 tran:Waterwayに含まれるtran:TrafficAreaは、同一航路でなければならない。 +
 同一のLODにおいて、連続する航路の境界は一致しなければならない。
@@ -10741,7 +10741,7 @@ h| 型の定義 2+a| 法令により指定された進行方向に区切った�
 高さは0とする。
 
 .LOD2における航路のtran:TrafficAreaの例
-image::images/figure194.webp[]
+image::images/figure194.webp.png[]
 
 h| 上位の型 2+| tran:_TransportationObject
 h| ステレオタイプ 2+| << FeatureType >>
@@ -10889,7 +10889,7 @@ h| h| LOD1
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure195.webp[]
+image::images/figure195.webp.png[]
 h| 説明 a| 都市計画基礎調査の土地利用現況において作成された面に一致する。 +
 高さは0とする。
 
@@ -11147,7 +11147,7 @@ h| h| LOD1
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure198.webp[]
+image::images/figure198.webp.png[]
 h| 説明 a| 洪水浸水想定区域、津波浸水想定、高潮浸水想定区域、及び内水浸水想定区域の浸水面を取得する。 +
 高さは標高に水位を加えた高さとする。
 
@@ -11191,7 +11191,7 @@ h| h| LOD1
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure199.webp[]
+image::images/figure199.webp.png[]
 h| 説明 a| 土砂災害警戒区域及び土砂災害特別警戒区域に指定された範囲を取得する。 +
 高さは0とする。
 
@@ -11288,7 +11288,7 @@ h| 型の定義 2+a| 河川、湖沼、等のように陸地内に存在する�
 浸水面を構成する図形の頂点の高さは、標高に水位を加えた高さとする。
 
 [%unnumbered]
-image::images/figure204.webp[]
+image::images/figure204.webp.png[]
 
 　　　　　　　　図　wtr:WaterBodyの例 +
 （PlateauView上でbldg:BuildingのLOD1モデルと重畳表示）
@@ -11414,7 +11414,7 @@ h| 型の定義 2+a| 洪水浸水想定区域内に存在する構造物に、�
 同一の浸水想定区域図において、複数の区域に一つ構造物が跨って存在する場合は、同一浸水ランクを持つ浸水ランクのメッシュを一つの区域とし、その区域と構造物が重なる面積が最も大きい浸水ランクの値を採用する。（面積が等しい場合は、より危険な区域を採用する） 浸水深は採用した浸水ランクを持つ浸水深のメッシュのうち、構造物と重なる面積が最も大きいメッシュの浸水深を採用する。（同じ浸水深を持つメッシュは面積算出の際に合算する） 浸水継続時間は採用した浸水深のメッシュと重なる浸水継続時間のメッシュの浸水継続時間を採用する。複数の浸水継続時間のメッシュが重なる場合は最も大きい浸水継続時間の値を採用する。
 
 [%unnumbered]
-image::images/figure205.webp[]
+image::images/figure205.webp.png[]
 
 h| 上位の型 2+| uro: FloodingRiskAttribute
 h| ステレオタイプ 2+| << DataType >>
@@ -11772,7 +11772,7 @@ h| h| LOD1
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure206.webp[]
+image::images/figure206.webp.png[]
 h| 説明 | 区域の境界により囲まれた面を取得する。 高さは0とする。
 
 |===
@@ -12045,7 +12045,7 @@ image::images/figure226.svg[]
 h| 型の定義 2+a| 都市計画区域。都市の実態や将来の計画を勘案して、一体の都市地域となるべき区域として指定された区域。（都市計画法第5条第1項）
 
 .都市計画区域の例
-image::images/figure227.webp[]
+image::images/figure227.webp.png[]
 
 複数の市区町村にまたがる都市計画区域の場合は、市区町村の境界で区切る。
 
@@ -12168,7 +12168,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 h| 型の定義 2+a| 都市計画法第7条に基づき、無秩序な市街地の拡大による環境悪化の防止、計画的な公共施設整備などによる良好な市街地の形成などを行うため、都市計画区域について区分された、計画的な市街化を図るべき区域「市街化区域」と、市街化を抑制すべき「市街化調整区域」。（都市計画法第7条）
 
 .区域区分（市街化調整地域）の例
-image::images/figure228.webp[]
+image::images/figure228.webp.png[]
 
 複数の市区町村にまたがる市街化区域又は市街化調整区域の場合は、市区町村の境界で区切る。
 
@@ -12228,7 +12228,7 @@ h| 型の定義 2+a| 地域地区。都市計画法第8条に基づき、都市�
 下位の地物型として定義されていない地域地区を記述したい場合にのみ、この地物型を使用し、属性「urf:function」でその内容を識別する。下位の地物型として定義されている場合は、必ず下位の地物型を使用すること。
 
 .urf:DistrictsAndZones及び下位型の例
-image::images/figure229.webp[]
+image::images/figure229.webp.png[]
 
 （3D地形の上でLOD1のbldg:Buildingと重畳表示している）
 
@@ -18514,23 +18514,23 @@ h| 5+^h| LOD0
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure230.webp[]
+image::images/figure230.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure231.webp[]
+image::images/figure231.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure232.webp[]
+image::images/figure232.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure233.webp[]
+image::images/figure233.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure234.webp[]
+image::images/figure234.webp.png[]
 h| 説明 | 道路橋は、地図情報レベル2500では、縁線を取得する。また、ひ開部を表示する。地図情報レベル500及び1000では、縁線のほか、高欄、橋脚及び親柱（橋の両端に高欄の続きとして設けられる高欄より大きな柱）の外周を取得する。 | 桟道橋は、橋桁が斜面に接していない側の縁線を取得し、橋脚の外周を取得する。 | 鉄道橋は、地図情報レベル2500では、縁線を取得する。地図情報レベル500及び1000では、橋の縁線と橋脚の縁線を取得する。 | 横断歩道橋、跨線橋及び公共用歩廊は、外周の正射影を取得する。 | 徒橋は、中心線を取得する。ひ開部を表示する。
 
 |===
@@ -18623,19 +18623,19 @@ h| 4+^h| LOD1
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure235.webp[]
+image::images/figure235.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure236.webp[]
+image::images/figure236.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure237.webp[]
+image::images/figure237.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure238.webp[]
+image::images/figure238.webp.png[]
 h| 説明 a| 道路橋及び鉄道橋は、橋梁の縁線をつないだ外周に、地上から一律の高さを下向きに与えて立ち上げた立体とする。 +
 ひ開部は含めない。 +
 橋梁モデル（LOD0）に橋脚の外周が含まれている場合は、橋脚を含めた外周に一律の高さを与える。
@@ -18746,7 +18746,7 @@ a| 屋外付属物 +
 
 [[figure_4-5]]
 .橋梁の部材の名称
-image::images/figure239.webp[]
+image::images/figure239.webp.png[]
 
 橋梁モデル（LOD2）の取得イメージを<<table_4-63>>に示す。
 
@@ -18759,26 +18759,26 @@ h| 3+^h| LOD2.0
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure240.webp[]
+image::images/figure240.webp.png[]
 
 2+a|
 [%unnumbered]
-image::images/figure241.webp[]
+image::images/figure241.webp.png[]
 h| 説明 | 道路橋、桟道橋及び鉄道橋は、床版の外周を、高さをもった面として表現する。 2+a| 横断歩道橋、ペデストリアンデッキ及び跨線橋は、本体（上部工、階段及び踊り場）の外周を取得し、高さをもった面として表現する。 +
 階段の個々の段は取得せず、下端と上端を結んだ平面として表現する。
 h| 3+^h| LOD2.1
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure242.webp[]
+image::images/figure242.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure243.webp[]
+image::images/figure243.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure244.webp[]
+image::images/figure244.webp.png[]
 h| 説明 a| 道路橋、桟道橋及び鉄道橋は、床版及び主桁によって、厚みと高さをもった立体として表現する。 +
 橋脚などの構造上不可欠な部材（BuildingConstructionElement）を表現してもよい。 +
 上図では、橋脚を表現している。
@@ -18977,21 +18977,21 @@ h| 2+^h| LOD3
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure245.webp[]
+image::images/figure245.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure246.webp[]
+image::images/figure246.webp.png[]
 h| 説明 | 道路橋及び鉄道橋の場合は、床版及び主桁以外の構造上不可欠な部材をBridgeConstructionElementとして取得する。上図の例では橋脚が該当する。それ以外の橋梁の外観を構成する部材をBridgeInstallationとして取得する。上図の例では高欄が該当する。 | 跨線橋の場合は、道路橋及び鉄道橋と同様に、床版及び主桁以外の構造上不可欠な部材をBridgeConstructionElementとして取得する。上図の例では橋脚が該当する。それ以外の橋梁の外観を構成する部材をBridgeInstallationとして取得する。上図の例では高欄が該当する。
 h| 2+^h| LOD3
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure247.webp[]
+image::images/figure247.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure248.webp[]
+image::images/figure248.webp.png[]
 h| 説明 a| ケーブル橋の場合、パイロン、ケーブル及び吊材を構造上不可欠な部材（BuildingConstructionElement）として取得する。 +
 この時、吊材は1本1本取得せず、吊材が存在する範囲をまとめて1つの面として取得してもよい。
 | 横断歩道橋、ペデストリアンデッキ及び跨線橋の場合は、本体（上部工、階段及び踊り場）以外の構造上不可欠な部材をBridgeConstructionElementとして取得する。上図の例では橋脚が該当する。それ以外の橋梁の外観を構成する部材をBridgeInstallationとして取得する。上図の例では高欄が該当する。横断歩道橋、ペデストリアンデッキ及び跨線橋の本体（上部工、階段及び踊り場）に屋根がある場合、庇はBridgeInstallationとして取得する。
@@ -19184,7 +19184,7 @@ IFCでは、梁（IfcBeam）やスラブ（IfcSlab）、支承（IfcBearing）�
 
 [[figure_4-6]]
 .IfcBridgeにおけるクラス間の階層構造（出典：IFC Bridge Fast Track Project Report WP2: Conceptual Model）
-image::images/figure249.webp[]
+image::images/figure249.webp.png[]
 
 ====== 橋梁モデル（LOD4）の定義
 
@@ -19590,7 +19590,7 @@ h| 型の定義 2+a| 橋梁の構造上重要な部材。 +
 橋脚、橋台、トラス、アーチ、吊材、パイロン、ケーブルをさす。
 
 .brid:BridgeConstructionElementの例
-image::images/figure252.webp[]
+image::images/figure252.webp.png[]
 
 h| 上位の型 2+| brid:_CityObject
 h| ステレオタイプ 2+| << FeatureType >>
@@ -20474,23 +20474,23 @@ h| 5+^h| LOD0
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure253.webp[]
+image::images/figure253.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure254.webp[]
+image::images/figure254.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure255.webp[]
+image::images/figure255.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure256.webp[]
+image::images/figure256.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure257.webp[]
+image::images/figure257.webp.png[]
 h| 説明 | 中央位置の点と方向を取得する。 | 坑口部分の外周を線として取得する。 | 坑口部分の外周を面として取得する。 | |
 
 |===
@@ -20549,11 +20549,11 @@ h| 2+^h| LOD1
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure258.webp[]
+image::images/figure258.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure259.webp[]
+image::images/figure259.webp.png[]
 h| 説明 | トンネルの場合は、トンネルの坑口を含めた外周に一律の高さを与えて立ち上げた立体として表現する。 一律の高さは、トンネルの最も低い高さから最も高い高さまでとする。 トンネル内部が傾斜している場合は、その標高差によりトンネルの形状が実際の形状と乖離する。 そのため、ユースケースの必要に応じて、トンネルをTunnelPartに区切り、区切った区間ごとに一律の高さを立ち上げることで、より実際に近い形状で表現できる。 | 地下横断歩道の場合は、地下横断歩道の外周に、路面の高さから一律の高さ（設計図や竣工図に示された構造物の深さ）を下向きに与えた立体として表現する。 地下横断歩道内部が傾斜している場合は、その標高差により地下横断歩道の形状が実際の形状と乖離する。 そのため、ユースケースの必要に応じて、地下横断歩道をTunnelPartに区切り、区切った区間ごとに一律の高さを立ち上げることで、より実際に近い形状で表現できる。 なお、地下横断歩道の出入口に、防風・雨・雪及び採光を目的として設けられた建屋は、都市設備（CityFurniture）として取得する。
 
 |===
@@ -20618,11 +20618,11 @@ h| 2+^h| LOD2
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure260.webp[]
+image::images/figure260.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure261.webp[]
+image::images/figure261.webp.png[]
 h| 説明 | トンネルの外形を立体として表現し、立体の各境界面を、屋根や外壁に区分する。トンネルの外形には坑口を含む。 | 地下横断歩道の外形を立体として取得し、立体の各境界面を、屋根や外壁に区分する。 地下横断歩道の出入口に設けられた建屋は、都市設備（CityFurniture）として取得する。
 
 |===
@@ -20666,7 +20666,7 @@ a|
 〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 [%unnumbered]
-image::images/figure262.webp[]
+image::images/figure262.webp.png[]
 
 [[toc4_12_01_04]]
 ===== トンネルモデル（LOD3）
@@ -20686,10 +20686,10 @@ h| 2+^h| LOD3
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure263.webp[]
+image::images/figure263.webp.png[]
 a|
 [%unnumbered]
-image::images/figure264.webp[]
+image::images/figure264.webp.png[]
 
 h| 説明
 | トンネルの外形を立体として表現し、立体の各境界面を、屋根、外壁及び開口部に区分する。 さらにトンネルの外側に付いている付属物として、坑門や連絡坑を取得する。
@@ -20808,7 +20808,7 @@ h| h| 取得例 h| 説明
 h| LOD4.0
 a|
 [%unnumbered]
-image::images/figure265.webp[]
+image::images/figure265.webp.png[]
 
 a| LOD3.0の外形に加え、トンネル内部（内空）を再現する。 +
 内空の境界面を床（FloorSurface）、内壁面（InteriorWallSurface）又は天井面（CeilingSurface）に区分する。また、内壁等に扉や窓がある場合に区分する。 +
@@ -20816,14 +20816,14 @@ a| LOD3.0の外形に加え、トンネル内部（内空）を再現する。 +
 h| LOD4.1
 a|
 [%unnumbered]
-image::images/figure266.webp[]
+image::images/figure266.webp.png[]
 
  a| LOD4.0に加え、「短辺の実長が3m以上」又は「横断又は縦断面積が3m2以上かつ短辺の実長が1m以上」の固定された設備を取得する。 +
 左図の例の場合は、換気用のジェットファンが短辺の実長が3m以上に該当し、また、手すりが縦断面積が3m2以上かつ短辺の実長が1m以上に該当したため、取得された。
 h| LOD4.2
 a|
 [%unnumbered]
-image::images/figure267.webp[]
+image::images/figure267.webp.png[]
 
  a| LOD4.1に加え、全ての固定された設備及び固定されていない設備を取得する。 +
 左図の例の場合は、消火栓、警報標示板、トンネル照明及び非常口表示灯が固定された設備に該当し、また、看板が固定されていない設備に該当したため取得された。
@@ -21208,7 +21208,7 @@ uro:DisasterRiskAttributeの下位型を使用して記述する。
 h| 型の定義 2+a| トンネルの一部。 一つのトンネルが、構造の異なる部分、あるいは用途が異なる部分から構成されており、それぞれを属性として保持する場合に、トンネルを複数の部分として分けて記述するために用いる。 トンネルが上下線で分かれた二連で構成されている場合、それぞれtun:TunnelPartとし、これらを合わせて一つのtun:Tunnelとして記述できる。 この地物型を使用する場合、一つのtun:Tunnelには、複数のtun:TunnelPartが存在しなければならない。 また、LOD1においてトンネルの形状をより実際に近い形で表現するために、トンネルを分けて記述する場合に使用できる。
 
 [%unnumbered]
-image::images/figure270.webp[]
+image::images/figure270.webp.png[]
 
 h| 上位の型 2+| tun:_AbstractTunnel
 h| ステレオタイプ 2+| << FeatureType >>
@@ -22103,29 +22103,29 @@ h| 3+^h| LOD0
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure271.webp[]
+image::images/figure271.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure272.webp[]
+image::images/figure272.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure273.webp[]
+image::images/figure273.webp.png[]
 h| 説明 | 水門は、真形を取得する。極小の場合は、表示位置の点と方向を取得する。 | 敷石斜坂の場合は、外周を面として取得する。 | 防波堤は、直ヒ（直壁）の場合は低い方を右に取得する。それ以外の場合は射影部の上端線を低い方を右に取得し、射影部の下端線を高い方を右に取得する。
 h| 3+^h| LOD0
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure274.webp[]
+image::images/figure274.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure275.webp[]
+image::images/figure275.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure276.webp[]
+image::images/figure276.webp.png[]
 h| 説明 | 堤防の場合は、法線を取得する。 | 船揚場の場合は、外周を面として取得し、説明注記を線状に入力する。 a| 堰の場合は、上流部の中心線と下流部の中心線を取得する。 +
 極小の場合は、中央位置の点情報と方向を取得する。
 
@@ -22201,11 +22201,11 @@ h| 2+^h| LOD1
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure277.webp[]
+image::images/figure277.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure278.webp[]
+image::images/figure278.webp.png[]
 h| 説明
 | 構造物の上からの外周の正射影に一律の高さを与えて立ち上げた立体とする。 構造物の外周は水面（陸上に設置されている場合は地面）との交線とする。 一律の高さは、水面（陸上に設置されている場合は地面）から構造物の最高高さまでとする。
 | 水制や床止めのように、同じ形状の小規模な構造物が繰り返し配置され、一体となってその機能を果たす構造物の場合、全体を包含する矩形又は矩形の集まりを面として取得し、一律の高さを与えて立ち上げた立体とする。 一律の高さは、水面（陸上に設置されている場合は地面）から構造物の最高高さまでとする。
@@ -22275,13 +22275,13 @@ h| h| LOD2
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure279.webp[]
+image::images/figure279.webp.png[]
 h| 説明 | 水門や堰のように、単独で設置される構造物の場合、外周の上から見た正射影に水面（陸上の構造物の場合は地面）の高さを与えた面を底面とする。 また、上から見た外形の正射影に構造物の高さを与えた面を屋根面とし、底面と屋根面を結んだ立体として表現する。 側面が直立しており、上からの正射影が取得できない場合は外壁面とする。 側面は詳細化せず、上部に管理橋や管理所等が存在する水門や堰は、ゲートの形状は表現しない。 なお、構造物を行政界等で区切り、一部のみを作成する場合、その仮想的な境界面には閉鎖面を使用する。 堤防や護岸に設けられた階段は、最上段及び最下段を結ぶスロープ状に再現する。
 h| h| LOD2.0
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure280.webp[]
+image::images/figure280.webp.png[]
 h| 説明 | 水制や床止めのように、同じ形状の小規模な構造物が繰り返し配置され、一体となってその機能を果たす構造物の場合、一体となった外形を、簡略化した立体により表現する。 この場合、上から見える面は全て屋根面とする。
 
 |===
@@ -22365,13 +22365,13 @@ h| h| LOD3.0
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure281.webp[]
+image::images/figure281.webp.png[]
 h| 説明 | LOD3.0では、水門や堰のように、単独で設置される構造物の場合、LOD2の形状から、側面を詳細化した立体として表現する。 構造上不可欠ではない付属物（手すり、柵、構造物と一体ではない階段）は表現しない。 堤防や護岸に設けられた階段の段を表現する。 水制の形状を個々に表現できるが、個々に形状を作成する必要はなく、同一のモデルを複製して配置してよい。
 h| h| LOD3.1
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure282.webp[]
+image::images/figure282.webp.png[]
 h| 説明 | LOD3.1では、LOD3.0に加え、構造上不可欠ではない付属物（手すり、柵、構造物と一体ではない階段）を表現する。 また、構造物の外形を構成する上向きの面のうち通行可能な面を屋外床面に区分することができる。
 
 |===
@@ -23552,19 +23552,19 @@ h| 4+^h| LOD0
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure285.webp[]
+image::images/figure285.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure286.webp[]
+image::images/figure286.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure287.webp[]
+image::images/figure287.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure288.webp[]
+image::images/figure288.webp.png[]
 h| 説明 | 記号の表示位置を取得する。 | 中心線を取得する。 | 外周を線として取得する。 | 外周を面として取得する。
 
 |===
@@ -23623,11 +23623,11 @@ h| 2+^h| LOD1
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure289.webp[]
+image::images/figure289.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure290.webp[]
+image::images/figure290.webp.png[]
 h| 説明 | 都市設備の外周の上からの外周の正射影に地表からの一律の高さを与えて立ち上げた立体を作成する。 一律の高さは、都市設備の最高高さとする。 2+| 路面標示やマンホールのように、他の地物の面と一体として表現されるべきものは、都市設備の外周に囲まれた面として表現する。
 
 |===
@@ -23677,11 +23677,11 @@ h| 2+^h| LOD2
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure291.webp[]
+image::images/figure291.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure292.webp[]
+image::images/figure292.webp.png[]
 h| 説明 | 都市設備の主要な部分について、上方から見た外周の形状が変化する高さでの各外周を取得し、それぞれの外周の頂点をつないだ立体を作成する。 2+| 都市設備の主要な部分の外周を取得する。外周を構成する各頂点に、路面等この都市設備が設置されている地物の高さを与える。
 
 |===
@@ -23731,15 +23731,15 @@ h| 2+^h| LOD3.0 h| LOD3.1
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure293.webp[]
+image::images/figure293.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure294.webp[]
+image::images/figure294.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure295.webp[]
+image::images/figure295.webp.png[]
 h| 説明 a| 都市設備の外周を取得する。 +
 その形状はLOD2よりも詳細化される。 外周を構成する各頂点に、路面等この都市設備が設置されている地物の高さを与える。
 | 都市設備の主要な部分について、それぞれの外形を構成する特徴点※により作成した立体。 主要な部分同士の接続部は表現不要とする。 ※一定高さごとに横断面を作成し、この頂点を結び外形を構成する。 | 都市設備の主要な部分について、それぞれの外形を構成する特徴点※により作成した立体。 主要な部分同士の接続部を表現する。 ※一定高さごとに横断面を作成し、この頂点を結び外形を構成する。
@@ -24247,23 +24247,23 @@ h| 5+^h| LOD0
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure298.webp[]
+image::images/figure298.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure299.webp[]
+image::images/figure299.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure300.webp[]
+image::images/figure300.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure301.webp[]
+image::images/figure301.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure302.webp[]
+image::images/figure302.webp.png[]
 h| 説明 a| 指定された管径よりも小さい管路は、管路の中心線を取得する。 +
 高さは0とする。
 a| 指定された管径よりも大きい管路は、管路の外周を取得する。 +
@@ -24278,19 +24278,19 @@ h| 5+^h| LOD0
 h| 取得例
 2+a|
 [%unnumbered]
-image::images/figure303.webp[]
+image::images/figure303.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure304.webp[]
+image::images/figure304.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure305.webp[]
+image::images/figure305.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure306.webp[]
+image::images/figure306.webp.png[]
 h| 説明 2+a| トラフ（コンクリート製の樋）等構造物に格納されている場合は、その大きさにより中心線もしくは外周を取得する。 +
 高さは0とする。
 a| 弁栓類、ガバナ等の設備の中心位置を取得する。 +
@@ -24508,37 +24508,37 @@ h| 4+^h| LOD1
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure307.webp[]
+image::images/figure307.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure308.webp[]
+image::images/figure308.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure309.webp[]
+image::images/figure309.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure310.webp[]
+image::images/figure310.webp.png[]
 h| 説明 | 管路の外周の正射影を、地表から一律の高さで下向きに立ち上げた立体として表現する。 | 複数まとまって埋設されている管路の最外縁を外周とし、その正射影を、地表から一律の高さで下向きに立ち上げた立体として表現する。 | ケーブルの外周の正射影を、地表から一律の高さでで下向きに立ち上げた立体として表現する。 | 複数まとまって埋設されているケーブルの最外縁を外周とし、その正射影を、地表から一律の高さで下向きに立ち上げた立体として表現する。
 h| 4+^h| LOD1
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure311.webp[]
+image::images/figure311.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure312.webp[]
+image::images/figure312.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure313.webp[]
+image::images/figure313.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure314.webp[]
+image::images/figure314.webp.png[]
 h| 説明 | 構造物の外周の正射影を、地表から一律の高さで下向きに立ち上げた立体として表現する。 | 水栓やガバナ等の設備の上からの正射影を包含する矩形を、地表からの一律の高さで下向きに立ち上げた立体として表現する。 | マンホールの蓋の上からの正射影を包含する矩形を、地表から一律の高さで下向きに立ち上げた立体として表現する。 | ハンドホールの蓋の上からの正射影を包含する矩形のを、地表から一律の高さで下向きに立ち上げた立体として表現する。
 
 |===
@@ -24663,37 +24663,37 @@ h| 4+^h| LOD2
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure315.webp[]
+image::images/figure315.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure316.webp[]
+image::images/figure316.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure317.webp[]
+image::images/figure317.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure318.webp[]
+image::images/figure318.webp.png[]
 h| 説明 | 管路の外周の上からの正射影を、管路が埋設された深さから、管径の大きさで下向きに立ち上げた立体として表現する。 | 複数まとまって埋設されている管路の最外縁を外周とし、その上からの正射影を、管路が埋設された深さから、管径の合計の大きさで、下向きに立ち上げた立体として表現する。 | ケーブルの外周の上からの正射影を、ケーブルが埋設された深さからケーブルの径の大きさで下向きに立ち上げた立体として表現する。 | 複数まとまって埋設されているケーブルの最外縁を外周とし、その上からの正射影を、ケーブルが埋設された深さからケーブルの径の合計の大きさで下向きに立ち上げた立体として表現する。
 h| 4+^h| LOD2
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure319.webp[]
+image::images/figure319.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure320.webp[]
+image::images/figure320.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure321.webp[]
+image::images/figure321.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure322.webp[]
+image::images/figure322.webp.png[]
 h| 説明 | 構造物の外周の正射影を取得し、構造物が埋設された深さから構造物の高さで下向きに立ち上げた立体を作成する。 | 弁栓類、ガバナ等の設備を包含する矩形の正射影を、設備が埋設された深さから設備の高さで下向きに立ち上げた立体として表現する。 | マンホール本体の外周の上からの正射影を取得し、地表からマンホールの深さで下向きに立ち上げた立体を作成する。 | ハンドホール本体の外周の上からの正射影を取得し、地表からマンホールの深さで下向きに立ち上げた立体を作成する。
 
 |===
@@ -24830,37 +24830,37 @@ h| 4+^h| LOD3
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure323.webp[]
+image::images/figure323.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure324.webp[]
+image::images/figure324.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure325.webp[]
+image::images/figure325.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure326.webp[]
+image::images/figure326.webp.png[]
 h| 説明 | 管路の外形を構成する面を取得する。 | 複数まとまって埋設されている管路も、個々の管路の外形を構成する面を取得する。 | ケーブルの外形を構成する面を取得する。 | 複数まとまって埋設されているケーブルも、個々のケーブルの外形を構成する面を取得する。
 h| 4+^h| LOD3
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure327.webp[]
+image::images/figure327.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure328.webp[]
+image::images/figure328.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure329.webp[]
+image::images/figure329.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure330.webp[]
+image::images/figure330.webp.png[]
 h| 説明 a| 構造物の外形を構成する面を取得する。 +
 なお、構造物に格納されている管路も、個々の管路の外形を構成する面を取得する。
 | 弁栓類、ガバナ等の設備の主要な構造を、直方体及び円柱の組合せにより簡略化し、外形を構成する面を取得する。 | マンホール本体の外形を構成する面を取得する。設備の横断面形状の変化を表現する（<<table_4-92>>）。 | ハンドホール本体の外形を構成する面を取得する。設備の横断面形状の変化を表現する。
@@ -24876,7 +24876,7 @@ h| h| LOD3
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure331.webp[]
+image::images/figure331.webp.png[]
 h| 説明 | 設備の外形を構成する面を取得する。設備の横断面形状の変化を表現する。
 
 |===
@@ -25034,19 +25034,19 @@ h| 4+^h| LOD4
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure332.webp[]
+image::images/figure332.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure333.webp[]
+image::images/figure333.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure334.webp[]
+image::images/figure334.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure335.webp[]
+image::images/figure335.webp.png[]
 h| 説明 | 管路の外形を構成する面（埋設物モデル（LOD3））に加え、管路の内空を構成する面を取得する。 | 複数まとまって埋設されている管路の外形を構成する面（埋設物モデル（LOD3））に加え、各管路の内空を構成する面を取得する。 | 構造物の外形を構成する面を取得する。構造物のLOD4 を作成する場合は、構造物の内側の面を作成する。構造物に格納されている管路のLOD4を作成する場合は、各管路も、個々の管路の外形を構成する面に加え、内空を構成する面を取得する。 | マンホール・ハンドホール等の外形を構成する面（埋設物モデル（LOD3））に加え、内部を構成する面を取得する。
 
 |===
@@ -26418,7 +26418,7 @@ h| h| LOD0
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure337.webp[]
+image::images/figure337.webp.png[]
 h| 説明 a| 地下街の外周の上方からの正射影を取得する。 +
 高さは0とする。
 
@@ -26462,7 +26462,7 @@ h| h| LOD1
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure338.webp[]
+image::images/figure338.webp.png[]
 h| 説明 | 地下街の外周の正射影を、地表から地下街の下端まで下向きに立ち上げた立体として表現する。
 
 |===
@@ -26504,7 +26504,7 @@ h| h| LOD2
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure339.webp[]
+image::images/figure339.webp.png[]
 h| 説明 a| 地下街の外形を立体として表現し、立体を構成する境界面のそれぞれを、上向きの面は屋根面、下向きの面は底面、それ以外は外壁面として区分する。 +
 なお、地上に設置された、地下街出入口の建屋は都市設備（CityFurniture）として取得する。
 
@@ -26577,7 +26577,7 @@ h| h| LOD3
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure340.webp[]
+image::images/figure340.webp.png[]
 h| 説明 a| 地下街の外形を立体として表現し、立体を構成する境界面のそれぞれを、上向きの面は屋根面、下向きの面は底面、それ以外は外壁面として区分する。また、地下街への出入口を閉鎖面として取得する。 +
 地下街モデル（LOD2）から、地下街への出入口を閉鎖面に区分したモデルである。 +
 地上に設置された、地下街出入口の建屋は都市設備（CityFurniture）として取得する。
@@ -26711,20 +26711,20 @@ h| LOD h| 取得イメージと説明
 | LOD4.0
 a|
 [%unnumbered]
-image::images/figure341.webp[]
+image::images/figure341.webp.png[]
 
 LOD4.0は建築物の外形（図１）に加え、建築物の内部を部屋に区分する（図２）。このとき、各部屋の形状は立体として表現し、部屋の立体の境界面を、天井面、内壁面、床面又は閉鎖面のいずれかに区分する（図３）。また、天井面、内壁面又は床面に存在する全ての扉及び窓を表現する（図４）。 CityGMLでは、壁面や天井面などは全て面として表現する。1つの壁が建築物の外形を示す外壁と部屋の外形を示す内壁との機能を備えていた場合、建築物の外形となる面と部屋の外形となる面の2枚の面として表現され、それらの面の間には隙間ができる（何もない）。LOD4.0では地下街の内部に存在する付属物や家具を表現しないため、上図の例でも、付属物である階段、エレベータ、柱等が表現されていない。 なお、地下街の地上への出入口に設けられた建屋は、都市設備（CityFurniture）として取得する。
 | LOD4.1 a|
 
 [%unnumbered]
-image::images/figure342.webp[]
+image::images/figure342.webp.png[]
 
 LOD4.1ではLOD4.0に、屋内の付属物（bldg:IntBuildingInstallation）として、階段、スロープ、輸送設備（エスカレータ、エレベータ及び動く歩道）、柱及びデッキ・ステージが追加される。 +
 上図の例では、LOD4.0に加えて、階段、エスカレータ、スロープ及び柱が付属物として追加された。
 | LOD4.2 a|
 
 [%unnumbered]
-image::images/figure343.webp[]
+image::images/figure343.webp.png[]
 
 LOD4.2ではLOD4.1に屋内の付属物（bldg:IntBuildingInstallation）として、手すり、パネル及び梁が付属物として追加される。また、机やいすなどの移動可能な家具（bldg:BuildingFurniture）が追加される。 +
 上図の例では、LOD4.2に加えて付属物として階段の手すり及び部屋の間仕切りとしてパネル、また、家具としてテーブルやいす及び棚が追加された。
@@ -27130,13 +27130,13 @@ image::images/figure344.svg[]
 参考::  消防法第8条の2第1項では、地下街を「地下の工作物内に設けられた店舗、事務所その他これらに類する施設で、連続して地下道に面して設けられたものと当該地下道とを合わせたもの」また同施行令別表第一では準地下街として「建築物の地階で連続して地下道に面して設けられたものと当該地下道とを合わせたもの」と定義している。 また、「地下街に関する基本方針」（昭和49年6月28日付建設省都計発第58号）では地下街を「公共の用に供される地下歩道（地下駅の改札口外の通路、コンコース等を含む。）と当該地下歩道に面して設けられる店舗、事務所その他これらに類する施設とが一体となった地下施設（地下駐車場が併設されている場合には、当該地下駐車場を含む。）であって、公共の用に供されている道路又は駅前広場（土地区画整理事業、市街地再開発事業等により建設中の道路又は駅前広場を含む。）の区域に係るもの」と定義している。
 
 .uro:UndergroundBuildingの例
-image::images/figure345.webp[]
+image::images/figure345.webp.png[]
 
 2+a| 建築物の地階は、建築物（bldg:Building）として表現する。 +
 地下街から地上に出入りするために設けられた開口部（bldg:ClosureSurface）を覆うように設けられた建屋は、frn:CityFurnitureとして取得する。
 
 .地下街の出入り口に設けられた建屋
-image::images/figure346.webp[]
+image::images/figure346.webp.png[]
 h| 上位の型 2+| bldg:_AbstractBuilding
 h| ステレオタイプ 2+| << FeatureType >>
 3+h| 継承する属性
@@ -27245,15 +27245,15 @@ h| 3+^h| LOD0
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure347.webp[]
+image::images/figure347.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure348.webp[]
+image::images/figure348.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure349.webp[]
+image::images/figure349.webp.png[]
 h| 説明 | 並木、植樹、独立樹（広葉樹）、独立樹（針葉樹）は、記号の表示位置の点情報を取得する。 | 田、はす田、畑、さとうきび畑、パイナップル畑、わさび畑、桑畑、茶畑、果樹園、その他の樹木畑、牧草地、芝地、広葉樹林、針葉樹林、竹林、荒地、はい松地、しの地（笹地）、やし科樹林、湿地、砂れき地（未分類）、砂地、れき地、干潟は、記号表示位置又は記号代表点を点情報で取得する。 | 植生界（異なった植生の区分）及び耕地界（同一する種類の耕地の境で、一区画の短辺が図上概ね2.0㎝以上のものをいう）は、中心を取得する。
 
 |===
@@ -27318,11 +27318,11 @@ h| 2+^h| LOD1
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure350.webp[]
+image::images/figure350.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure351.webp[]
+image::images/figure351.webp.png[]
 h| 説明 | 樹冠の外周の正射影に、地表面から一律の高さで立ち上げた立体として表現する。 | 植被の外周の正射影に地表面から一律の高さで立ち上げた立体として表現する。
 
 |===
@@ -27367,11 +27367,11 @@ h| 2+^h| LOD2
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure352.webp[]
+image::images/figure352.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure353.webp[]
+image::images/figure353.webp.png[]
 h| 説明 a| 樹冠と樹幹をそれぞれ簡略化した立体※を組み合わせた立体として表現する。 +
 ※簡略化した立体とは、楕円体、球体、円錐、角錐、角柱、円柱などの単純な立体図形とする。
 a| 植被の表層の高さを取得し、比高3m以上を再現した立体として表現する。 +
@@ -27433,11 +27433,11 @@ h| 2+^h| LOD3
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure354.webp[]
+image::images/figure354.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure355.webp[]
+image::images/figure355.webp.png[]
 h| 説明 a| 樹冠及び樹幹の外形を構成する特徴点※により作成した立体。 +
 ※一定高さごとに樹冠の横断面を作成し、この頂点を結び外形を構成する（樹冠内部の主枝等の表現は行わない。）が、ユースケースの必要に応じて詳細化してよい。
 a| 植被の表層の高さを取得し、比高1m以上を再現した立体として表現する。 +
@@ -27535,7 +27535,7 @@ image::images/figure357.svg[]
 h| 型の定義 2+a| 独立した樹木。
 
 .SolitaryVegetationObjectの例
-image::images/figure358.webp[]
+image::images/figure358.webp.png[]
 
 h| 上位の型 2+| veg:_VegetationObject
 h| ステレオタイプ 2+| << FeatureType >>
@@ -27580,19 +27580,19 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 樹冠を水平投影した面を樹高で立ち上げた立体となる。
 
 .LOD1のSolitaryVegetationObjectの例
-image::images/figure359.webp[]
+image::images/figure359.webp.png[]
 | veg:lod2Geometry | gml:_Geometry [0..1] a| 単独木の形状を立体とし、その主要な部分の外形を面の集まり又は立体として区分して表現する。 +
 樹冠と樹幹をそれぞれ簡略化した立体（楕円体、球体、円錐、角錐、角柱、円柱などの単純な立体図形）を組み合わせた立体
 
 .LOD2のSolitaryVegetationObjectの例
-image::images/figure360.webp[]
+image::images/figure360.webp.png[]
 
 樹木量の算定等、容積が必要ではない場合には、gml:MultiSurfaceにより外殻を構成する。
 | veg:lod3Geometry | gml:_Geometry [0..1] a| 単独木の形状を立体とし、その主要な部分の外形を面の集まり又は立体として詳細に区分して表現する。 +
 一定高さごとに樹冠の横断面を作成し、この頂点を結び外形を構成する（樹冠内部の主枝等の表現は行わない）。
 
 .LOD3のSolitaryVegetationObjectの例
-image::images/figure361.webp[]
+image::images/figure361.webp.png[]
 
 樹木量の算定等、容積が必要ではない場合には、gml:MultiSurfaceにより外殻を構成する。
 
@@ -27605,7 +27605,7 @@ image::images/figure361.webp[]
 h| 型の定義 2+a| 植被。芝生や茂みのように、植生に覆われた範囲を指し、個々の樹木を識別しない。
 
 .veg:PlantCoverの例
-image::images/figure362.webp[]
+image::images/figure362.webp.png[]
 
 h| 上位の型 2+| veg:_VegetationObject
 h| ステレオタイプ 2+| << FeatureType >>
@@ -27646,23 +27646,23 @@ h| (veg:lod1MultiSurface) | gml:MultiSurface [0..1] | LOD1はSolidにより表�
 植被の範囲内で比高3m以上の場合にこれを区分した面の集まりとなる。
 
 .LOD2のPlantCoverの例
-image::images/figure363.webp[]
+image::images/figure363.webp.png[]
 | veg:lod3MultiSurface | gml:MultiSurface [0..1] a| 植被の形状を立体とし、その主要な部分の外形を面の集まりとして詳細に区分して表現する。植被の範囲内で比高1m以上の場合にこれを区分した面の集まりとなる。
 
 .LOD3のPlantCoverの例
-image::images/figure364.webp[]
+image::images/figure364.webp.png[]
 | veg:lod1MultiSolid | gml:MultiSolid [0..1] a| 植被の形状をそれが占有している範囲（面）に一律の高さを与えた立体として表現する。植被の占有している範囲（面）に、その範囲内で最も高い植被の高さで立ち上げた立体となる。
 
 .LOD1のPlantCoverの例
-image::images/figure365.webp[]
+image::images/figure365.webp.png[]
 | veg:lod2MultiSolid | gml:MultiSolid [0..1] a| 植被の形状を立体とし、その主要な部分の外形を立体として詳細に区分して表現する。植被の範囲内で比高3m以上の場合にこれを区分した面を境界とする立体となる。
 
 .LOD2のPlantCoverの例
-image::images/figure366.webp[]
+image::images/figure366.webp.png[]
 | veg:lod3MultiSolid | gml:MultiSolid [0..1] a| 植被の形状を立体とし、その主要な部分の外形を立体として詳細に区分して表現する。植被の範囲内で比高1m以上の場合にこれを区分した面を境界とする立体となる。
 
 .LOD3のPlantCoverの例
-image::images/figure367.webp[]
+image::images/figure367.webp.png[]
 
 |===
 
@@ -27854,45 +27854,45 @@ h| 5+^h| LOD0
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure368.webp[]
+image::images/figure368.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure369.webp[]
+image::images/figure369.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure370.webp[]
+image::images/figure370.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure371.webp[]
+image::images/figure371.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure372.webp[]
+image::images/figure372.webp.png[]
 h| 説明 | 等高線及び等深線は等値線を取得する。 | 凹地は高い方を左に見るように等値線を取得する。 | 凹地（小）は高い方を1点目、低い方を2点目として取得する。 | 洞口は正射影の方向に一致させて記号を表示する。 | 露岩は、高度の高い方を右に見る形で界線を取得する。
 h| 5+^h| LOD0
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure373.webp[]
+image::images/figure373.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure374.webp[]
+image::images/figure374.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure375.webp[]
+image::images/figure375.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure376.webp[]
+image::images/figure376.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure377.webp[]
+image::images/figure377.webp.png[]
 h| 説明 | 土がけは、頂部を示す線と射影部を示す短線を頂部から最大傾斜方向へ図上2.0mmまで表示し、それ以上の射影部は下端を破線で表示する。また、正射影の幅が図上1.0㎝以上の場合には記号の挿入位置を取得する。 a| 岩がけは、頂部を山型に表示し、傾斜を示す +
 短線は頂部を示す線から最大傾斜方向に、壁面を示す短線は傾斜を示す短線と直角に表示する。傾斜を示す短線は、最大図上2.5mmを表示し射影部の下端を破線で表示する。正射影の幅が図上1.0cm以上の場合には、適宜の位置に（岩）の記号を添えて表示する。
 a| 雨裂は、地図情報レベル500及び1000では土がけの記号で表示する。地図情報レベル2500は雨裂の正射影を表示する。 +
@@ -27981,11 +27981,11 @@ h| 2+^h| LOD1
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure378.webp[]
+image::images/figure378.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure379.webp[]
+image::images/figure379.webp.png[]
 h| 説明 | 地形を、標高をもつ点の集まりとして表現する。 | 地形を、標高をもつ任意の3点で構成される三角形の集合として表現する。
 
 |===
@@ -28214,7 +28214,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 h| 型の定義 2+a| 三角形の集まりにより地形の起伏を表現した地物。基準地域メッシュ（第三次地域区画、一辺の長さ約1km）を地物の単位とすることを基本とする。
 
 .dem:TINReliefの例
-image::images/figure382.webp[]
+image::images/figure382.webp.png[]
 
 h| 上位の型 2+| dem:_ReliefComponent
 h| ステレオタイプ 2+| << FeatureType >>
@@ -28253,7 +28253,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 h| 型の定義 2+a| 点の集まりにより地形の起伏を表現した地物。基準地域メッシュ（第三次地域区画、一辺の長さ約1km）を地物の単位とする。
 
 .dem:MassPointReliefの例
-image::images/figure383.webp[]
+image::images/figure383.webp.png[]
 
 h| 上位の型 2+| dem:_ReliefComponent
 h| ステレオタイプ 2+| << FeatureType >>
@@ -28291,7 +28291,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 h| 型の定義 2+a| 線の集まりにより地形の起伏を表現した地物。基準地域メッシュ（第三次地域区画、一辺の長さ約1km）を地物の単位とする。
 
 .dem:BreaklineReliefの例
-image::images/figure384.webp[]
+image::images/figure384.webp.png[]
 
 h| 上位の型 2+| dem:_ReliefComponent
 h| ステレオタイプ 2+| << FeatureType >>
@@ -28386,48 +28386,48 @@ h| 4+^h| LOD0（河川ネットワークにより表現する場合）
 h| 取得例
 2+a|
 [%unnumbered]
-image::images/figure385.webp[]
+image::images/figure385.webp.png[]
 
 2+a|
 [%unnumbered]
-image::images/figure386.webp[]
+image::images/figure386.webp.png[]
 h| 説明 2+| 河川、細流、かれ川、用水路及び地下水路の場合は、中心線を取得する。 2+a| 湖池は水涯線を取得する。 +
 海岸線は、水涯線と河川区域の境界とを結ぶ線を取得する。
 h| 4+^h| LOD0（公共測量標準図式により表現する場合）
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure387.webp[]
+image::images/figure387.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure388.webp[]
+image::images/figure388.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure389.webp[]
+image::images/figure389.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure390.webp[]
+image::images/figure390.webp.png[]
 h| 説明 | 地図情報レベル500及び1000における河川、また、地図情報レベル2500における水涯線（河川、湖池等、海岸線）は界線を取得する。 | 地図情報レベル500及び1000における細流、また、地図情報レベル2500における一条河川は中心線を取得する。 | かれ川は、範囲を示す縁線を取得する。 | 用水路は、界線を取得する。
 h| 4+^h| LOD0（公共測量標準図式により表現する場合）
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure391.webp[]
+image::images/figure391.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure392.webp[]
+image::images/figure392.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure393.webp[]
+image::images/figure393.webp.png[]
 
 a|
 [%unnumbered]
-image::images/figure394.webp[]
+image::images/figure394.webp.png[]
 h| 説明 | 注記されない湖沼は、界線に加えて記号挿入位置を取得する。 | 海岸線は、地図情報レベル500及び1000において、図上海部として識別が難しい場所においては、界線に加えて記号を表示する。 | 水路地下部は地下水路縁線を取得する。 | 低位水涯線（干潟線）は、界線を取得する。
 
 |===
@@ -28525,7 +28525,7 @@ h| h| LOD1
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure395.webp[]
+image::images/figure395.webp.png[]
 h| 説明 | 水涯線により囲まれた面を取得する。中洲がある場合は、中洲を除いた面となる。
 
 |===
@@ -28570,7 +28570,7 @@ h| h| LOD2
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure396.webp[]
+image::images/figure396.webp.png[]
 h| 説明 a| 水涯線により囲まれた水面と、水底面に囲まれた立体を作成する。 +
 水面は水部モデル（LOD1）の面に一致する。また、水底面は、等深線や航空レーザ（ALB）又は、マルチビーム測深の点群データを用いて再現した、水底の起伏を表す面となる。 +
 境界面を水面、地表面に区分し、水部を管理区間や行政界など仮想的な面により区切りたい場合にはその境界面を閉鎖面に区分する。
@@ -28636,7 +28636,7 @@ h| h| LOD3
 h| 取得例
 a|
 [%unnumbered]
-image::images/figure397.webp[]
+image::images/figure397.webp.png[]
 h| 説明 a| 水部モデル（LOD2）である、水涯線により囲まれた水面と、水底面に囲まれた立体から、橋梁下部の橋脚部分など水中にある構造物を除いた立体となる。 +
 水中にある構造物と水部の境界面はWaterGroundSurfaceとする。
 
@@ -28742,20 +28742,20 @@ image::images/figure399.svg[]
 .4+h| 型の定義 2+a| 河川、湖沼、等のように陸地内に存在する水の存在する部分及び海。水路や貯水槽、プールのような人工的に存在する水を含む。 LOD0は、ネットワーク又は、公共測量標準図式による表現のいずれかとし、ネットワークを原則とする。
 
 .wtr:WaterBodyの例（LOD0）
-image::images/figure400.webp[]
+image::images/figure400.webp.png[]
 
 2+a| LOD1は、水涯線により囲まれた面として表現する。
 
 .wtr:WaterBodyの例（LOD1）
-image::images/figure401.webp[]
+image::images/figure401.webp.png[]
 2+a| LOD2は、水面と水底面に囲まれた立体として表現する。
 
 .wtr:WaterBodyの例（LOD2）
-image::images/figure402.webp[]
+image::images/figure402.webp.png[]
 2+a| LOD3は、水面と水底面に囲まれた立体から、水中の構造物を除いた立体として表現する。
 
 .wtr:WaterBodyの例（LOD3）
-image::images/figure403.webp[]
+image::images/figure403.webp.png[]
 
 水部のインスタンスは基準地域メッシュ（第3次地域区画）の境界でインスタンスを分割する。 LOD2又はLOD3でインスタンスを分割する場合は、基準地域メッシュの水部の立体の境界面分割するための仮想的な境界面を「wtr:WaterClosureSurface」とする。
 h| 上位の型 2+| wtr:_WaterObject
@@ -28805,7 +28805,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 h| 型の定義 2+a| 水面。大気と水部の境界面とする。
 
 .水部の断面イメージ
-image::images/figure404.webp[]
+image::images/figure404.webp.png[]
 
 h| 上位の型 2+| wtr:_BoundarySurface
 h| ステレオタイプ 2+| << FeatureType >>
@@ -28842,7 +28842,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 h| 型の定義 2+a| 水底面。地形と水部の境界面及び水中の構造物と水部との境界面をいう。
 
 .水部の断面イメージ
-image::images/figure405.webp[]
+image::images/figure405.webp.png[]
 
 h| 上位の型 2+| wtr:_BoundarySurface
 h| ステレオタイプ 2+| << FeatureType >>
@@ -28876,7 +28876,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 h| 型の定義 2+a| 水部の立体を区切る仮想的な面。（閉鎖面） 複数の基準地域メッシュに跨って存在する河川、湖沼、海等を基準メッシュ単位に分割する場合や、河川、湖沼、海等の一部の範囲のみを作成する場合に、水部の立体を構成する境界面として使用する。
 
 .水部の断面イメージ
-image::images/figure406.webp[]
+image::images/figure406.webp.png[]
 
 h| 上位の型 2+| wtr:_BoundarySurface
 h| ステレオタイプ 2+| << FeatureType >>
@@ -29017,7 +29017,7 @@ h| 5+^h| LOD1
 h| 取得例
 5+^a|
 [%unnumbered]
-image::images/figure407.webp[]
+image::images/figure407.webp.png[]
 
 h| 説明
 5+a| 区域の境界により囲まれた面を取得する。 +
@@ -29436,7 +29436,7 @@ h| クラスの定義 2+a| 地物の外観。 +
 地物の幾何オブジェクトとなる面に色又はテクスチャを指定する。
 
 .Apperanceを使用してbldg:Buildingの外観を設定した例（左：色の指定　右：テクスチャの指定）
-image::images/figure412.webp[]
+image::images/figure412.webp.png[]
 
 h| 上位の型 2+| core:_CityObject
 h| ステレオタイプ 2+| << FeatureType >>
@@ -29461,7 +29461,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 h| クラスの定義 2+a| 地物インスタンスに貼り付ける画像と貼り付け方をパラメータにより指定するための型。
 
 .bldg:Buildingの外観としてテクスチャを指定した例
-image::images/figure413.webp[]
+image::images/figure413.webp.png[]
 
 h| 上位の型 2+| app:_Texture
 h| ステレオタイプ 2+| << FeatureType >>
@@ -29508,7 +29508,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| クラスの定義 2+a| 地物インスタンスの表面色を指定するための型。
 
 .bldg:Buildingの外観として色を指定した例
-image::images/figure414.webp[]
+image::images/figure414.webp.png[]
 
 h| 上位の型 2+| app:_SurfaceData
 h| ステレオタイプ 2+| << FeatureType >>
@@ -29621,13 +29621,13 @@ image::images/figure416.svg[]
 下図は、建築物の1階の部屋をgrp:CityObjectGroupとしてグループ化した例である。
 
 .grp:CityObjectGroupの使用例
-image::images/figure417.webp[]
+image::images/figure417.webp.png[]
 
 2+a| CityGMLでは、建築物の階や任意設定空間に相当する地物は存在しない。そこで、グループ化の仕組みであるgrp:CityObjectGroupを建築物の階を表現するために使用する。 +
 属性gml:nameにより階又は任意設定空間を識別する名称を付与し、関連役割grp:groupMemberにより同じ階又は任意に設定空間に存在する部屋（bldg:Room）を参照することで、建築物の階を表現する。
 
 [%unnumbered]
-image::images/figure418.webp[]
+image::images/figure418.webp.png[]
 
 例えば、1階に6つの部屋が存在する場合、上図のように、1階を示すgrp:CityObjectGroupは、6つのbldg:Roomを関連役割grp:groupMemberにより参照する。
 h| 上位の型 2+| core:_CityObject
@@ -32009,7 +32009,7 @@ h| クラスの定義 2+a| 多角形。以下を満たさなければならな�
 ====== 外周及び内周に自己交差がなく、始終点以外の点で一致する点がない。
 
 [%unnumbered]
-image::images/figure428.webp[]
+image::images/figure428.webp.png[]
 
 h| 上位の型 2+| gml:_GeometricPrimitive
 h| ステレオタイプ 2+| << Type >>
@@ -32042,7 +32042,7 @@ h| クラスの定義 2+a| 面の集まり。ただし、構成要素となる�
 立体の外殻や内殻として使用される。
 
 [%unnumbered]
-image::images/figure429.webp[]
+image::images/figure429.webp.png[]
 
 h| 上位の型 2+| gml:_Surface
 h| ステレオタイプ 2+| << Type >>
@@ -32065,7 +32065,7 @@ h| クラスの定義 2+a| 立体。以下を満たさなければならない�
 . gml:Solidの境界を構成する曲面が、重なっていない。
 
 [%unnumbered]
-image::images/figure430.webp[]
+image::images/figure430.webp.png[]
 
 妥当なgml:Solidの例
 
