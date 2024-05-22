@@ -14,7 +14,7 @@ CityGMLには、LOD0からLOD4までの5つのLODの段階が用意されてい�
 
 [[table_4-1]]
 .標準製品仕様書が対象とするLOD
-[cols="6",options="header"]
+[cols="4,1,1,1,1,1",options="header"]
 |===
 | LOD | LOD0 | LOD1 | LOD2 | LOD3 | LOD4
 
@@ -100,7 +100,7 @@ h| Vegetation h| WaterBody h| Urban Object h| Urban Function
 
 [[table_4-3]]
 .応用スキーマクラス図における出典の明示
-[cols="2",options="header"]
+[cols="1,5",options="header"]
 |===
 | 出典 | 地物
 
@@ -122,7 +122,7 @@ h| Vegetation h| WaterBody h| Urban Object h| Urban Function
 
 [[table_4-4]]
 .応用スキーマクラス図の表記
-[width=90%]
+[cols="3,5"]
 |===
 | 表記 | 意味
 
@@ -215,7 +215,7 @@ a| 指定したいくつかの型のうちの一つだけが選択される共�
 
 [[table_4-6]]
 .定義文書の構成
-[width=90%]
+[cols="1,1,2"]
 |===
 h| クラスの定義 2+| クラスの定義を記載。
 
@@ -311,7 +311,7 @@ uom属性を用いて、数値の単位を記載すること。使用する単�
 
 Null値をとる場合は、以下の定義域より選択する。
 
-[%unnumbered]
+[cols="2",options="unnumbered"]
 |===
 h| Null値の定義域   h| 説明
 
@@ -2259,8 +2259,6 @@ uro:IndoorUserDefinedAttribute
 | uro:bldgRealEstateIDAttribute | uro:RealEstateIDAttribute [0..1] | 建築物に紐づく不動産IDの情報。
 
 |===
-
-// left it here
 
 ====== bldg:BuildingPart
 
