@@ -46,21 +46,21 @@ supports!
 
 This token is to be used in your Gem *and* Bundler authentication (see https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-rubygems-registry[GitHub's page] for details).
 
-==== Configure Rubygems authentication
+// ==== Configure Rubygems authentication
 
-This is the first location to install the token.
+// This is the first location to install the token.
 
-Create a file `~/.gem/credentials` to house your token:
+// Create a file `~/.gem/credentials` to house your token:
 
-[source,yaml]
-----
----
-:github: Bearer ghp_BEEFBEEFBEEFBEEFBEEFBEEFBEEFBEEFBEEF
-----
+// [source,yaml]
+// ----
+// ---
+// :github: Bearer ghp_BEEFBEEFBEEFBEEFBEEFBEEFBEEFBEEFBEEF
+// ----
 
 ==== Configure Bundler authentication
 
-This is the second location to install the token.
+// This is the second location to install the token.
 
 Run the following command:
 
@@ -69,7 +69,18 @@ Run the following command:
 bundle config https://rubygems.pkg.github.com/metanorma YOURUSERNAME:ghp_BEEFBEEFBEEFBEEFBEEFBEEFBEEFBEEFBEEF
 ----
 
+To verify if it worked, check your `$HOME/.bundle/config` file
+that it contains this line:
 
+[source,yaml]
+----
+---
+BUNDLE_GEM__CI: "github"
+BUNDLE_GEM__CHANGELOG: "false"
+BUNDLE_RUBYGEMS__PKG__GITHUB__COM: "MyGitHubUsername:ghp_BEEFBEEFBEEFBEEFBEEFBEEFBEEFBEEFBEEF" <1>
+BUNDLE_GEM__LINTER: "rubocop"
+----
+<1> Check if this exists!
 
 === Via source code
 
