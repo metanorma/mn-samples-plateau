@@ -21,7 +21,7 @@ See https://www.metanorma.org
 
 [source,sh]
 ----
-git clone https://github.com/metanorma/iso-iec-jseg-15/
+git clone https://github.com/metanorma/mn-samples-plateau/
 ----
 
 === Building the document
@@ -30,6 +30,39 @@ git clone https://github.com/metanorma/iso-iec-jseg-15/
 ----
 metanorma site generate
 ----
+
+
+== Editor usage
+
+=== Convert images from webp to PNG
+
+Some PLATEAU documents utilize webp images.
+
+Due to https://github.com/metanorma/mn-samples-plateau/issues/7 , the PDF renderer we use, Apache FOP, does not support webp images.
+
+Hence at import we have to convert all webp images into PNG.
+
+Converting with parallel processing: (if you have GNU Parallel)
+
+[source,sh]
+----
+$ parallel dwebp {} -o {}.png ::: *.webp
+----
+
+Converting sequentially:
+
+[source,sh]
+----
+$ find . -name "*.webp" -exec dwebp \{} -o \{}.png
+----
+
+Updating the files to refer to the new `.png` files:
+
+[source,sh]
+----
+sed -i '' 's/\.webp/.webp.png/g' sources/001-v3/sections/*.adoc
+----
+
 
 === Running via Docker or locally
 
