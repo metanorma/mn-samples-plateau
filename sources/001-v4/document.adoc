@@ -1,36 +1,25 @@
-= 3D都市モデル標準製品仕様書
+= Handbook of 3D City Models
+:docnumber: 1
+:edition: 3
+:revdate: 2023-12-25
+:published-date: 2023-04-07
+:copyright-year: 2023
+:language: ja
+:title-intro-ja: 3D都市モデル導入のためのガイドブック
+:title-main-ja: 3D都市モデル標準製品仕様書
+:publisher: 国土交通省 都市局
+:sponsor: （協力）内閣府 地方創生推進事務局
+:title-intro-en: Handbook of 3D City Models
+:title-main-en: Standard Data Product Specification for 3D City Model
+:doctype: international-standard
+:coverpage-image: images/coverpage.pdf
+:imagedir: images
+:mn-document-class: plateau
+:mn-output-extensions: xml,html,pdf,rxl
+:local-cache-only:
+:data-uri-image:
 
-ver. 4.0
-
-Standard Data Product Specification for 3D City Model
-
-<circle data-v-1521f7d0="" cx="15" cy="15" r="3" fill="white"></circle>
-
-3D都市モデル標準製品仕様書
-
-第4.0版
-
-Standard Data Product Specification for 3D City Model
-
-国土交通省都市局　Project PLATEAU
-
-* * *
-
-Submission Date:
-
-2024-03-22
-
-https://www.mlit.go.jp/plateau/[Project PLATEAU]
-
-https://www.mlit.go.jp/plateaudocument02/[3D都市モデル標準作業手順書[HTML形式]]
-
-https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_doc_0001_ver04.pdf[3D都市モデル標準製品仕様書[PDF形式]]
-
-https://www.mlit.go.jp/plateau/file/libraries/doc/template.zip[3D都市モデル拡張製品仕様書テンプレート[ZIP形式]]
-
-https://www.geospatial.jp/iur/[i-UR符号化仕様及びコードリスト]
-
-http://schemas.opengis.net/citygml/[CityGML符号化仕様]
+sources/001-v4/document.adoc
 
 include::sections/abstract-01.adoc[]
 

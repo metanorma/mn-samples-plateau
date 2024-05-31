@@ -20,20 +20,20 @@
 |===
 | 5+^| LOD0
 | 取得例
-^a| image::images/368.webp["",150]
-^a| image::images/369.webp["",150]
-^a| image::images/370.webp["",130]
-^a| image::images/371.webp["",170]
-^a| image::images/372.webp["",150]
+^a| image::images/368.png["",150]
+^a| image::images/369.png["",150]
+^a| image::images/370.png["",130]
+^a| image::images/371.png["",170]
+^a| image::images/372.png["",150]
 
 | 説明 | 等高線及び等深線は等値線を取得する。 | 凹地は高い方を左に見るように等値線を取得する。 | 凹地（小）は高い方を1点目、低い方を2点目として取得する。 | 洞口は正射影の方向に一致させて記号を表示する。 | 露岩は、高度の高い方を右に見る形で界線を取得する。
 | 5+^| LOD0
 | 取得例
-^a| image::images/373.webp["",120]
-^a| image::images/374.webp["",150]
-^a| image::images/375.webp["",170]
-^a| image::images/376.webp["",150]
-^a| image::images/377.webp["",170]
+^a| image::images/373.png["",120]
+^a| image::images/374.png["",150]
+^a| image::images/375.png["",170]
+^a| image::images/376.png["",150]
+^a| image::images/377.png["",170]
 
 | 説明
 | 土がけは、頂部を示す線と射影部を示す短線を頂部から最大傾斜方向へ図上2.0mmまで表示し、それ以上の射影部は下端を破線で表示する。また、正射影の幅が図上1.0㎝以上の場合には記号の挿入位置を取得する。
@@ -125,8 +125,8 @@ a| • 記号表示位置の点を取得する。 +
 |===
 | 2+^| LOD1
 | 取得例
-^a| image::images/378.webp["",350]
-^a| image::images/379.webp["",400]
+^a| image::images/378.png["",350]
+^a| image::images/379.png["",400]
 
 | 説明 | 地形を、標高をもつ点の集まりとして表現する。 | 地形を、標高をもつ任意の三点で構成される三角形の集合として表現する。
 
@@ -383,7 +383,7 @@ dem:ReliefFeatureがもつdem:TINRelief、dem:MassPointRelief又はdem:Breakline
 2+a| 
 三角形の集まりにより地形の起伏を表現した地物。基準地域メッシュ（第三次地域区画、一辺の長さ約1km）を地物の単位とすることを基本とする。
 
-image::images/382.webp["",300,title=" 図　dem:TINReliefの例"]
+image::images/382.png["",300,title=" 図　dem:TINReliefの例"]
 
 | 上位の型 2+| dem:_ReliefComponent
 | ステレオタイプ 2+| << FeatureType >>
@@ -431,7 +431,7 @@ a| 起伏を表現する三角網。 +
 2+a| 
 点の集まりにより地形の起伏を表現した地物。基準地域メッシュ（第三次地域区画、一辺の長さ約1km）を地物の単位とする。
 
-image::images/383.webp["",300,title=" 図　dem:MassPointReliefの例"]
+image::images/383.png["",300,title=" 図　dem:MassPointReliefの例"]
 
 | 上位の型 2+| dem:_ReliefComponent
 | ステレオタイプ 2+| << FeatureType >>
@@ -476,7 +476,7 @@ extentのinteriorは地形の内空を記述する。ランダム点群の場合
 2+a| 
 線の集まりにより地形の起伏を表現した地物。基準地域メッシュ（第三次地域区画、一辺の長さ約1km）を地物の単位とする。
 
-image::images/384.webp["",300,title=" 図　dem:BreaklineReliefの例"]
+image::images/384.png["",300,title=" 図　dem:BreaklineReliefの例"]
 
 | 上位の型 2+| dem:_ReliefComponent
 | ステレオタイプ 2+| << FeatureType >>

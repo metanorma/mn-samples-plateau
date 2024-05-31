@@ -30,8 +30,8 @@
 |===
 | 2+^| LOD0
 | 取得例
-a| image::images/068.webp["",300]
-a| image::images/069.webp["",300]
+a| image::images/068.png["",300]
+a| image::images/069.png["",300]
 
 | 説明 | 左右両側の道路縁から等距離となる点をつないだ線分を取得する。 | 道路縁を取得する。
 
@@ -91,7 +91,7 @@ a| • 道路縁を取得する。 +
 |===
 | ^| LOD1
 | 取得例
-a| image::images/070.webp["",750]
+a| image::images/070.png["",750]
 
 | 説明 | 道路縁により囲まれた範囲を面として取得し、以下の場所で区切る。 • 交差部（四差路、多差路及び三差路） • 道路構造（トンネル、橋梁）が変化する場所 • 位置正確度や取得方法が変わる場所 高さは0とする。
 
@@ -143,7 +143,7 @@ a| • 道路縁をつないだ面を作成する。 +
 |===
 | ^| LOD2
 | 取得例
-a| image::images/071.webp["",800]
+a| image::images/071.png["",800]
 
 | 説明 | 道路縁により囲まれた範囲を面として取得し、面を以下に区分する。 • 車道部 • 車道交差部 • 歩道部 • 島 高さは0とする。
 
@@ -198,12 +198,12 @@ a|
 隅切りとは、道路構造令第27条第2項に示された、道路が同一平面で交差又は接続する場合に隅角部を切り取り、適当な見とおしができる構造としたものをいう。 +
 また、建築基準法施行規則第144条の4第1項第2号に示される隅切りを含む。
 
-image::images/072.webp["",180]
+image::images/072.png["",180]
 
 | • 車道交差部（隅切りが無い場合）
 a| • 交差する道路の道路縁が接する点を結ぶ線に囲まれた車道部を取得する。 +
 • 高さは0とする。
-a| image::images/073.webp["",180]
+a| image::images/073.png["",180]
 
 | • 歩道部
 a| • 歩道の境界をつないだ面を取得する。 +
@@ -292,10 +292,10 @@ a| LOD3.1の区分を細分する。 +
 歩道部のうち、植栽を区分する。
 | LOD3.3の区分を細分する。細分はユースケースに応じて決定する。
 
-^a| image::images/074.webp["",140]
-^a| image::images/075.webp["",200]
-^a| image::images/076.webp["",210]
-^a| image::images/077.webp["",230]
+^a| image::images/074.png["",140]
+^a| image::images/075.png["",200]
+^a| image::images/076.png["",210]
+^a| image::images/077.png["",230]
 
 |===
 
@@ -313,47 +313,47 @@ a| LOD3.1の区分を細分する。 +
  +
 立体交差が表現できる。
 
-image::images/078.webp["",250]
+image::images/078.png["",250]
 
 a| 
 道路の横断方向に存在する15㎝以上の高さの差を取得する。 +
 ①高さの差が15㎝以上の段は、段の形状を取得する。
 
-image::images/079.webp["",280]
+image::images/079.png["",280]
 
 a| 
 道路の横断方向に存在する2㎝以上の高さの差を取得する。 +
  +
 ①高さの差が2㎝以上の段は、段の形状を取得する。
 
-image::images/080.webp["",280]
+image::images/080.png["",280]
 
 a| 
 ②高さの差が15㎝以上のスロープは、スロープの形状を取得する。
 
-image::images/081.webp["",280]
+image::images/081.png["",280]
 
 a| 
 ②高さの差が2㎝以上のスロープは、スロープの形状を取得する。
 
-image::images/082.webp["",280]
+image::images/082.png["",280]
 
 .2+a| 
 ③高さの差が15㎝未満の段が複数あり、合計15㎝以上の高さの差がある場合は、スロープとして取得する。
 
-image::images/083.webp["",280]
+image::images/083.png["",280]
 
 歩道と車道との間や車道と島との間に存在する縁石による段を表現できる。
 
 a| 
 ③高さの差が2㎝未満の段が複数あり、合計2㎝以上の高さの差がある場合は、スロープとして取得する。
 
-image::images/084.webp["",280]
+image::images/084.png["",280]
 
 a| 
 歩道に設けられた車道への切り下げ部に存在する段が表現できる。
 
-image::images/085.webp["",280]
+image::images/085.png["",280]
 
 |===
 
@@ -393,7 +393,7 @@ a| • 隅切りで囲まれた車道部を取得する。 +
 | • 車道交差部（隅切りが無い場合）
 a| • 交差する道路の道路縁が接する点を結ぶ線に囲まれた車道部を取得する。 +
 • 高さは車道の路面高さとする。
-a| image::images/086.webp["",200]
+a| image::images/086.png["",200]
 
 | • 歩道部
 a| • 歩道の境界をつないだ面を取得する。 +
@@ -540,7 +540,7 @@ a| • 15㎝以上の段の場合は、段の上端と下端を結ぶ面を作�
 a| 
 高さの差を表現する面は、歩道部の一部として取得する。
 
-image::images/087.webp["",200]
+image::images/087.png["",200]
 
 .2+| LOD3.2
 .2+| ●
@@ -622,7 +622,7 @@ a| • 2㎝以上の段の場合は、段の上端と下端を結ぶ面を作成
 a| 
 高さの差を表現する面は、歩道部の一部として取得する。
 
-image::images/088.webp["",200]
+image::images/088.png["",200]
 
 .2+| LOD3.3
 .2+| ●
@@ -704,7 +704,7 @@ a| • 2㎝以上の段の場合は、段の上端と下端を結ぶ面を作成
 a| 
 高さの差を表現する面は、歩道部の一部として取得する。
 
-image::images/089.webp["",200]
+image::images/089.png["",200]
 
 | LOD3.4
 | 〇
@@ -844,11 +844,11 @@ image::images/093.svg[]
 • 交差部（四差路、多差路及び三差路） • 道路構造の変化点（トンネル、橋梁） • 位置正確度（地図情報レベル）や取得方法 +
 tran:Roadに含まれるtran:TrafficArea及びtran:AuxiliaryTrafficAreaは、同一路線に含まれなければならない。 同一のLODにおいて、連続する道路の境界は一致しなければならない。
 
-image::images/094.webp["",300,title=" 図　LOD1における道路の取得例"]
+image::images/094.png["",300,title=" 図　LOD1における道路の取得例"]
 
-2+a| image::images/095.webp["",600,title=" 図　LOD2における道路の取得例"]
+2+a| image::images/095.png["",600,title=" 図　LOD2における道路の取得例"]
 
-2+a| image::images/096.webp["",600,title=" 図　LOD3における道路の取得例"]
+2+a| image::images/096.png["",600,title=" 図　LOD3における道路の取得例"]
 
 | 上位の型 2+| tran:TrafficComplex
 | ステレオタイプ 2+| << FeatureType >>
@@ -917,22 +917,22 @@ tran:Roadが参照するtran:TrafficArea及びtran:AuxiliaryTrafficAreaのtran:l
  +
 • LOD2及びLOD3.0の場合は、車道部として、車両の利用が想定された車線や路肩その他一体的な舗装がされた全ての道路の部分を対象とする。また、歩道部として、歩道及び歩道上に設置された植栽の範囲を対象とする。
 
-image::images/097.webp["",700,title=" 図　LOD2及びLOD3.0におけるtran:TrafficAreaの例"]
+image::images/097.png["",700,title=" 図　LOD2及びLOD3.0におけるtran:TrafficAreaの例"]
 
 2+a| 
 • LOD3.1の場合は、LOD3.0の車道部のうち、車線を細分する。
 
-image::images/098.webp["",700,title=" 図　LOD3.1におけるtran:TrafficAreaの例"]
+image::images/098.png["",700,title=" 図　LOD3.1におけるtran:TrafficAreaの例"]
 
 2+a| 
 • LOD3.2及びLOD3.3の場合は、LOD3.1の歩道部から歩道上の植栽を除いた範囲を歩道部とする。
 
-image::images/099.webp["",700,title=" 図　LOD3.2及びLOD3.3におけるtran:TrafficAreaの例"]
+image::images/099.png["",700,title=" 図　LOD3.2及びLOD3.3におけるtran:TrafficAreaの例"]
 
 2+a| 
 • LOD3.4の場合は、コードリストの区分に従う。
 
-image::images/100.webp["",700,title=" 図　LOD3.4におけるtran:TrafficAreaの例"]
+image::images/100.png["",700,title=" 図　LOD3.4におけるtran:TrafficAreaの例"]
 
 1つの道路オブジェクトに含まれる交通領域は、属性の変化が無い限り、区分しない。
 
@@ -1001,17 +1001,17 @@ a| 交通領域の構造。道路の交通領域の場合にのみ取得する�
 道路を構成する領域のうち、交通領域の機能を補助するために設けられた領域。 +
 • LOD2、LOD3.0及びLOD3.1の場合は、道路内の島状の施設（交通島及び分離帯、路面電車停車所）を対象とする。
 
-image::images/101.webp["",700,title=" 図　LOD2、LOD3.0及びLOD3.1での道路のtran:AuxiliaryTrafficAreaの取得例"]
+image::images/101.png["",700,title=" 図　LOD2、LOD3.0及びLOD3.1での道路のtran:AuxiliaryTrafficAreaの取得例"]
 
 2+a| 
 • LOD3.2及びLOD3.3の場合は、上記に加え、歩道部に設置された植栽を対象とする。
 
-image::images/102.webp["",700,title=" 図　LOD3.2及びLOD3.3での道路のtran:AuxiliaryTrafficAreaの取得例"]
+image::images/102.png["",700,title=" 図　LOD3.2及びLOD3.3での道路のtran:AuxiliaryTrafficAreaの取得例"]
 
 2+a| 
 • LOD3.4に場合は、tran:functionにより指定されるコードリストの区分に従う。
 
-image::images/103.webp["",700,title=" 図　LOD3.4での道路のtran:AuxiliaryTrafficAreaの取得例"]
+image::images/103.png["",700,title=" 図　LOD3.4での道路のtran:AuxiliaryTrafficAreaの取得例"]
 
 1つの道路オブジェクトに含まれる交通補助領域は、属性の変化が無い限り、延長方向では区分しない（例：延長方向に連続する分離帯を細分しない）。
 

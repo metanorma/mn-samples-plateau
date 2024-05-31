@@ -35,12 +35,12 @@
 a| 
 駅前広場
 
-image::images/165.webp["",350]
+image::images/165.png["",350]
 
 a| 
 駅前広場
 
-image::images/166.webp["",340]
+image::images/166.png["",340]
 
 | 説明
 a| 広場内において、車道の両側（歩道、安全地帯及び分離帯）から等距離の点をつなぐ線分を、広場の中心線とする。 +
@@ -52,13 +52,13 @@ a| 広場内において、車道の両側（歩道、安全地帯及び分離�
 | 取得例
 ^a| 
 
-image::images/167.webp["",370]
+image::images/167.png["",370]
 
 自動車ターミナル
 
 ^a| 
 
-image::images/168.webp["",350]
+image::images/168.png["",350]
 
 自動車ターミナル
 
@@ -72,13 +72,13 @@ a| 広場内において、車道の両側（庭園路、歩道、安全地帯�
 | 取得例
 ^a| 
 
-image::images/169.webp["",460]
+image::images/169.png["",460]
 
 交通広場
 
 ^a| 
 
-image::images/170.webp["",460]
+image::images/170.png["",460]
 
 交通広場
 
@@ -140,7 +140,7 @@ a| • 公共測量標準図式による表現は、uro:DmGeometricAttributeのu
 |===
 | LOD ^| LOD1
 | 取得例
-a| image::images/171.webp["",500]
+a| image::images/171.png["",500]
 
 | 説明
 a| 交通（広場）モデル（LOD1）の形状を示す面は、都市計画で定められた区域とする。 +
@@ -190,7 +190,7 @@ a| • 区域の境界線をつないだ面を作成する。 +
 |===
 | LOD ^| LOD2
 | 取得例
-a| image::images/172.webp["",500]
+a| image::images/172.png["",500]
 
 | 説明
 a| 都市計画において定められた広場の区域（交通（広場）モデル（LOD1））を以下に区分する。 • 車道部 • 車道交差部 • 歩道部 • 島 高さは0とする。 +
@@ -323,10 +323,10 @@ a| LOD3.1の区分を細分する。 +
 歩道部のうち、植栽を区分する。
 | LOD3.2の区分を細分する。細分はユースケースに応じて決定する。
 
-^a| image::images/173.webp["",150]
-^a| image::images/174.webp["",210]
-^a| image::images/175.webp["",220]
-^a| image::images/176.webp["",250]
+^a| image::images/173.png["",150]
+^a| image::images/174.png["",210]
+^a| image::images/175.png["",220]
+^a| image::images/176.png["",250]
 
 |===
 
@@ -343,48 +343,48 @@ a| LOD3.1の区分を細分する。 +
 徒歩道内（車道、歩道、分離帯）の高さは、横断方向に同一（全て車道の高さ）となる。 +
 立体交差が表現できる。
 
-image::images/177.webp["",270]
+image::images/177.png["",270]
 
 a| 
 徒歩道の横断方向に存在する15㎝以上の高さの差を取得する。 +
  +
 ①15㎝以上の段は、段の形状を取得する。
 
-image::images/178.webp["",270]
+image::images/178.png["",270]
 
 a| 
 徒歩道の横断方向に存在する2㎝以上の高さの差を取得する。 +
  +
 ①2㎝以上の段は、段の形状を取得する。
 
-image::images/179.webp["",270]
+image::images/179.png["",270]
 
 a| 
 ②15㎝以上のスロープは、スロープの形状を取得する。
 
-image::images/180.webp["",270]
+image::images/180.png["",270]
 
 a| 
 ②2㎝以上のスロープは、スロープの形状を取得する。
 
-image::images/181.webp["",270]
+image::images/181.png["",270]
 
 .2+a| 
 ③高さの差が15㎝未満の段が複数あり、合計15㎝以上の高さの差がある場合は、スロープとして取得する。
 
-image::images/182.webp["",270]
+image::images/182.png["",270]
 
 歩道と車道との間や車道と島との間に存在する縁石による段を表現できる。
 
 a| 
 ③高さの差が2㎝未満の段が複数あり、合計2㎝以上の高さの差がある場合は、スロープとして取得する。
 
-image::images/183.webp["",270]
+image::images/183.png["",270]
 
 a| 
 歩道に設けられた切り下げ部に存在する段が表現できる。
 
-image::images/184.webp["",300]
+image::images/184.png["",300]
 
 |===
 
@@ -858,21 +858,21 @@ LOD2以上では、tran:Squareの面を、tran:TrafficAreaとtran:AuxiliaryTraff
 2+a| 
 • LOD0における広場の取得例
 
-image::images/186.webp["",380]
+image::images/186.png["",380]
 
 ネットワークで取得する場合は、広場の中心線とする。広場の中心線は、これに接する道路の中心線まで伸ばす。
 
 2+a| 
 • LOD1における広場の取得例
 
-image::images/187.webp["",450]
+image::images/187.png["",450]
 
 広場のLOD1（面）は、都市計画図書の計画図に示された、都市計画の区域とする。
 
 2+a| 
 • LOD2における広場の取得例
 
-image::images/188.webp["",450]
+image::images/188.png["",450]
 
 広場のLOD2は、LOD1（面）をtran:TrafficArea（車道部、車道交差部、歩道部）及びtran:AuxiliaryTrafficArea（島）に区分する。このとき、隣接するの面の境界線は、座標が一致していなければならない。 +
 また、広場の面が道路の面と重なる場合、重なる範囲に存在するtran:TrafficArea（車道、車道交差部、歩道）及びtran:AuxiliaryTrafficArea（島）は、道路の構成要素であり、かつ、広場の構成要素となる。
@@ -882,7 +882,7 @@ image::images/188.webp["",450]
 広場のLOD3は、LOD2と同様に、広場の面をtran:TrafficArea及びtran:AuxiliaryTrafficAreaに区分する。このとき、それぞれの面は高さをもつ。また、LOD2よりもさらに細かい種類にtran:TrafficArea及びtran:AuxiliaryTrafficAreaを分けることができる。「高さの表現」及び「広場内の表現」の組み合わせにより、LOD3.0、LOD3.1、LOD3.2、LOD3.3及び LOD3.4に分かれるが、標準製品仕様は、原則としてLOD3.0とする。 +
 LOD3.0では、広場の高さは車道の高さとし、段の表現は行わない。歩道及び島には、車道の高さを与えるが、歩道及び島の面を構成する境界線上の各点に、これと接する車道の高さを付与する。高さが異なる車道に囲まれた歩道や島の面は、傾きをもった面となる。 +
 
-image::images/189.webp["",500]
+image::images/189.png["",500]
 
 LOD2と同様、隣接する道路の境界線と一致していなければならず、広場の区域と道路の区域とが重なる場合は、この範囲に存在するtran:TrafficArea（車道、車道交差部、歩道）及びtran:AuxiliaryTrafficArea（島）を広場と道路が共有しなければならない。
 

@@ -93,7 +93,7 @@ image::images/428.svg[]
 4) 内周と外周が線分で重ならない。 +
 5) 外周及び内周に自己交差がなく、始終点以外の点で一致する点がない。
 
-image::images/429.webp["",550]
+image::images/429.png["",550]
 
 | 上位の型 2+| gml:_GeometricPrimitive
 | ステレオタイプ 2+| << Type >>
@@ -131,7 +131,7 @@ image::images/429.webp["",550]
 面の集まり。ただし、構成要素となる全ての面は連続していなければならない。 +
 立体の外殻や内殻として使用される。
 
-image::images/430.webp["",550]
+image::images/430.png["",550]
 
 | 上位の型 2+| gml:_Surface
 | ステレオタイプ 2+| << Type >>
@@ -156,7 +156,7 @@ image::images/430.webp["",550]
 4) gml:Solidの境界を構成する曲面が、適切な方向を向いている。 +
 5) gml:Solidの境界を構成する曲面が、重なっていない。
 
-image::images/431.webp["",550,title=" 妥当なgml:Solidの例"]
+image::images/431.png["",550,title=" 妥当なgml:Solidの例"]
 
 | 上位の型 2+| gml:_GeometricPrimitive
 | ステレオタイプ 2+| << Type >>
