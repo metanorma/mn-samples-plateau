@@ -37,7 +37,7 @@ image::images/411.svg[]
 地物の外観。 +
 地物の幾何オブジェクトとなる面に色又はテクスチャを指定する。
 
-image::images/412.webp["",350,title=" 図　Apperanceを使用してbldg:Buildingの外観を設定した例　　　　（左：色の指定　右：テクスチャの指定）"]
+image::images/412.png["",350,title=" 図　Apperanceを使用してbldg:Buildingの外観を設定した例　　　　（左：色の指定　右：テクスチャの指定）"]
 
 | 上位の型 2+| core:_CityObject
 | ステレオタイプ 2+| << FeatureType >>
@@ -65,7 +65,7 @@ image::images/412.webp["",350,title=" 図　Apperanceを使用してbldg:Buildin
 2+a| 
 地物インスタンスに貼り付ける画像と貼り付け方をパラメータにより指定するための型。
 
-image::images/413.webp["",250,title=" 図　bldg:Buildingの外観としてテクスチャを指定した例"]
+image::images/413.png["",250,title=" 図　bldg:Buildingの外観としてテクスチャを指定した例"]
 
 | 上位の型 2+| app:_Texture
 | ステレオタイプ 2+| << FeatureType >>
@@ -125,7 +125,7 @@ app:TexCoordListを使用する。
 2+a| 
 地物インスタンスの表面色を指定するための型。
 
-image::images/414.webp["",220,title=" 図　bldg:Buildingの外観として色を指定した例"]
+image::images/414.png["",220,title=" 図　bldg:Buildingの外観として色を指定した例"]
 
 | 上位の型 2+| app:_SurfaceData
 | ステレオタイプ 2+| << FeatureType >>
