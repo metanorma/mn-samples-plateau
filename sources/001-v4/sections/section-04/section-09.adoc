@@ -1,0 +1,890 @@
+[[toc4_09]]
+=== 　災害リスクモデルの応用スキーマ
+
+災害リスクとは、標準製品仕様書では、以下の7種類を指す。
+
+　
+
+●　洪水浸水想定区域図データ電子化ガイドラインが対象とする「洪水浸水想定区域」
+
+●　内水浸水想定区域図作成マニュアル（案）に定める「内水浸水想定区域」
+
+●　水防法第14条の3第1項に定める「高潮浸水想定区域」
+
+●　津波防災地域づくりに関する法律第8条第1項に定める「津波浸水想定」
+
+●　ため池ハザードマップ作成の手引き（案）に定める「ため池ハザードマップ」
+
+●　土砂災害警戒区域等における土砂災害防止対策の推進に関する法律第7条第1項に定める「土砂災害警戒区域」
+
+●　土砂災害警戒区域等における土砂災害防止対策の推進に関する法律第9条第1項に定める「土砂災害特別警戒区域」
+
+　
+
+「洪水浸水想定区域」は、水防法第14条第1項に定める洪水浸水想定区域のほか、これに類する河川が氾濫した場合に浸水が想定される区域を含む。
+
+　また、「内水浸水想定区域」は、水防法に基づく想定最大規模降雨に対する内水による浸水が想定される区域（水防法第14条の2第1項に定める「雨水出水浸水想定区域」）、地域の既往最大降雨や他地域での大規模な降雨など一定の被害が想定される降雨に対する内水による浸水が想定される区域及び計画降雨等に対する内水による浸水が想定される区域を含む。
+
+　
+
+標準製品仕様書では、洪水浸水想定区域、内水浸水想定区域、高潮浸水想定区域及び津波浸水想定を「災害リスク（浸水）モデル」、土砂災害警戒区域及び土砂災害特別警戒区域を「災害リスク（土砂災害）モデル」と区分する。
+
+　
+
+[[toc4_09_01]]
+==== 　災害リスクモデルのLOD
+
+標準製品仕様書が対象とする災害リスク（浸水）モデル及び災害リスク（土砂災害）モデルのLODは、LOD1とする。
+
+　
+
+[[toc4_09_01_01]]
+===== (1)　災害リスク（浸水）モデル（LOD1）
+
+===== 1)　災害リスク（浸水）モデル（LOD1）の概要
+
+災害リスク（浸水）モデル（LOD1）では、浸水面を表現する。災害リスク（浸水）モデル（LOD1）の取得イメージを表 4-55に示す。
+
+[cols="1,9"]
+.表 4-55　災害リスク（浸水）モデル（LOD1）の取得イメージ
+|===
+| ^| LOD1
+| 取得例
+a| image::images/199.webp["",600]
+
+| 説明
+a| 洪水浸水想定区域、津波浸水想定、高潮浸水想定区域、内水浸水想定区域及びため池ハザードマップの浸水面を取得する。 +
+高さは標高に水位を加えた高さとする。
+
+|===
+
+　
+
+===== 2)　災害リスク（浸水）モデル（LOD1）の定義
+
+災害リスク（浸水）モデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
+
+[cols="7,7,7,7,16,20,16"]
+|===
+| LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
+
+| LOD1
+| ●
+| WaterBody
+| MultiSurface
+| 
+a| • 浸水面を取得する。 +
+• 各頂点の標高に水位を加えた高さを与える。
+| 
+
+|===
+
+[none]
+**** ●：必須
+
+**** ■：条件付必須
+
+**** 〇：任意（ユースケースに応じて要否を決定してよい）
+
+　
+
+[[toc4_09_01_02]]
+===== (2)　災害リスク（土砂災害）モデル（LOD1）
+
+===== 1)　災害リスク（土砂災害）モデル（LOD1）の概要
+
+災害リスク（土砂災害）モデル（LOD1）では、区域を表現する。災害リスク（土砂災害）モデル（LOD1）の取得イメージを表 4-56に示す。
+
+[cols="1,9"]
+.表 4-56　災害リスク（土砂災害）モデル（LOD1）の取得イメージ
+|===
+| ^| LOD1
+| 取得例
+a| image::images/200.webp["",300]
+
+| 説明
+a| 土砂災害警戒区域及び土砂災害特別警戒区域に指定された範囲を取得する。 +
+高さは0とする。
+
+|===
+
+　
+
+===== 2)　災害リスク（土砂災害）モデル（LOD1）の定義
+
+災害リスク（土砂災害）モデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
+
+[cols="7,7,7,7,16,20,16"]
+|===
+| | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
+
+| LOD1
+| ●
+| SedimentDisasterProneArea
+| MultiSurface
+| 
+a| • 区域の境界線に囲まれた範囲を取得する。 +
+• 高さは0とする。
+| 
+
+|===
+
+[none]
+**** ●：必須
+
+**** ■：条件付必須
+
+**** 〇：任意（ユースケースに応じて要否を決定してよい）
+
+　
+
+[[toc4_09_01_03]]
+===== (3)　各LODにおいて使用可能な地物型と空間属性
+
+災害リスクモデルの各LODにおいて使用可能な地物型と空間属性を表 4-57に示す。
+
+[cols=7]
+.表 4-57　災害リスクモデルの記述に使用する地物型と空間属性
+|===
+| 地物型 | 空間属性 ^| LOD0 ^| LOD1 ^| LOD2 ^| LOD3 | 適用
+.2+| wtr:WaterBody | | ^| ● | | .2+| 災害リスク（浸水）モデルに使用する。
+| wtr:lod1MultiSurface | ^| ● | | 
+.2+| urf:SedimentDisasterProneArea | | ^| ● | | .2+| 災害リスク（土砂災害）モデルに使用する。
+| urf:lod1MultiSurface | ^| ● | | 
+
+|===
+
+[none]
+**** ●：必須
+
+**** ■：条件付必須
+
+**** 〇：任意（ユースケースに応じて要否を決定してよい）
+
+[[toc4_09_02]]
+==== 　災害リスクモデルの応用スキーマクラス図
+
+[[toc4_09_02_01]]
+===== (1)　WaterBody （CityGML）
+
+災害リスク（浸水）モデル（LOD1）で表現する浸水面の記述には、CityGMLのWaterBodyを使用する。
+
+image::images/201.svg[]
+
+　
+
+[[toc4_09_02_02]]
+===== (2)　Urban Object （i-UR）
+
+===== 1)　洪水浸水想定区域、内水浸水想定区域、高潮浸水想定区域、津波浸水想定、ため池ハザードマップ
+
+image::images/202.svg[]
+
+　
+
+===== 2)　災害リスク属性
+
+橋梁等の都市オブジェクトに、災害リスク属性を付与するためのデータ型である。
+
+image::images/203.svg[]
+
+[[toc4_09_02_03]]
+===== (3)　Urban Function（i-UR）
+
+災害リスク（土砂災害）モデルは、urf::SedimentDisasterProneAreaを使用して記述する。
+
+image::images/204.svg[]
+
+[[toc4_09_03]]
+==== 　災害リスクモデルの応用スキーマ文書
+
+[[toc4_09_03_01]]
+===== (1)　WaterBody （CityGML）
+
+===== 1)　wtr:WaterBody
+
+[cols="1,1,2"]
+|===
+| 型の定義
+2+a| 
+河川、湖沼のように陸地内に存在する水の存在する部分及び海。水路や貯水槽、プールのような人工的に存在する水を含む。 +
+標準製品仕様では、「wtr:WaterBody」を用いて、洪水浸水想定区域、津波浸水想定、高潮浸水想定区域、内水浸水想定区域及びため池ハザードマップ（以下、浸水想定区域等と呼ぶ）の浸水面を記述する。 +
+浸水面を構成する図形の頂点の高さは、標高に水位を加えた高さとする。 +
+浸水面は以下の場所で区切る。 +
+・ランクが変化する場所 +
+・ファイル単位となるメッシュの境界
+
+image::images/205.webp["",400,title=" 図　wtr:WaterBodyの例（PlateauView上でbldg:BuildingのLOD1モデルと重畳表示）"]
+
+| 上位の型 2+| wtr:_WaterObject
+| ステレオタイプ 2+| << FeatureType >>
+3+| 継承する属性
+| 属性名 | 属性の型及び多重度 | 定義
+| (gml:description) | gml:StringOrRefType [0..1] | 水部の説明。
+| gml:name | gml:CodeType [0..1] | 水部を識別する名称。浸水想定区域等の図面に示される、図面の名称を記述する。文字列とする。運用上必須とする。
+| (gml:boundedBy) | gml:Envelope [0..1] | オブジェクトの範囲と空間参照系。
+| core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
+| core:terminationDate | xs:date [0..1] | データが削除された日。
+| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+| 自身に定義された属性
+| 属性名 | 属性の型及び多重度 | 定義
+| wtr:class | gml:CodeType [0..1] | 水部の分類。コードリスト（WaterBody_class.xml）から選択する。浸水想定区域等の場合は、1140とする。
+| wtr:function | gml:CodeType [0..*] | 浸水想定区域等の種類。コードリスト（WaterBody_function.xml）より選択する。必須とする。
+| (wtr:usage) | gml:CodeType [0..*] | 水部の利用方法。
+3+| 継承する関連役割
+| 関連役割名 | 関連役割の型及び多重度 | 定義
+| gen:stringAttribute | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+| gen:intAttribute | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+| gen:doubleAttribute | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+| gen:dateAttribute | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+| gen:uriAttribute | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+| gen:measureAttribute | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+| gen:genericAttributeSet | gen:GenericAttributeSet [0..*] | 汎用属性のセット（集合）。属性を追加したい場合に使用する。
+3+| 自身に定義された関連役割
+| 関連役割名 | 関連役割の型及び多重度 | 定義
+| wtr:lod1MultiSurface
+| gml:MultiSurface [0..1]
+a| 水面の範囲。水平面に投影した場合に隣り合う水部のインスタンスは、連続でなければならない。 +
+各頂点の高さは、水位＋標高となる。
+
+| uro:wtrKeyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
+| uro:wtrDataQualityAttribute | uro:DataQualityAttribute [0..1] | 作成したデータの品質に関する情報。必須とする。
+| uro:floodingRiskAttribute | uro:FloodingRiskAttribute [0..1] | 浸水リスクに関する情報。最大1個作成する。
+
+|===
+
+[[toc4_09_03_02]]
+===== (2)　Urban Object （i-UR）
+
+===== 1)　uro:RiverFloodingRiskAttribute
+
+[cols="1,1,2"]
+|===
+| 型の定義
+2+a| 
+洪水浸水想定区域内に存在する構造物に、浸水想定区域がもつ属性を与えるための属性型。 同一の浸水想定区域図において、複数の区域に一つ構造物が跨って存在する場合は、同一浸水ランクを持つ浸水ランクのメッシュを一つの区域とし、その区域と構造物が重なる面積が最も大きい浸水ランクの値を採用する。（面積が等しい場合は、浸水ランクがより危険な区域を採用する） 浸水深は採用した浸水ランクを持つ浸水深のメッシュのうち、構造物と重なる面積が最も大きいメッシュの浸水深を採用する。（同じ浸水深を持つメッシュは面積算出の際に合算する） 浸水継続時間は採用した浸水深のメッシュと重なる浸水継続時間のメッシュの浸水継続時間を採用する。複数の浸水継続時間のメッシュが重なる場合は最も大きい浸水継続時間の値を採用する。
+
+image::images/206.webp["",400]
+
+| 上位の型 2+| uro: FloodingRiskAttribute
+| ステレオタイプ 2+| << DataType >>
+3+| 継承する属性
+| 属性名 | 属性の型及び多重度 | 定義
+| uro:description
+| gml:CodeType [1]
+a| 指定河川の名称。コードリスト（RiverFloodingRiskAttribute_description.xml）より選択する。都市ごとにコードリストを作成する。 +
+指定河川の名称には、水防法に基づき指定された洪水浸水想定区域図の対象となる洪水予報河川又は水位周知河川として示された、「水系名」及び「指定河川名」を用いることを基本とする。 +
+一つの浸水想定区域図に複数の洪水予報河川又は水位周知河川が含まれている場合は、「指定河川名」を列挙する。指定河川名を列挙する場合の区切り文字は「・」（全角中点）を使用する。また、都道府県が独自に作成している浸水の区域図は、当該浸水想定区域の名称から、対象となる区域を指す名称を用いる。
+
+| uro:rank
+| gml:CodeType [0..1]
+a| 浸水深に応じた区分。コードリスト（RiverFloodingRiskAttribute_rank.xml）より選択する。 +
+uro:rank又はuro:rankOrgのいずれか一つをもつ。
+
+| uro:rankOrg
+| gml:CodeType [0..1]
+a| 都道府県独自に設定した浸水深の区分。コードリスト（RiverFloodingRiskAttribute_rankOrg.xml）より選択する。この属性を使用する場合は、コードリストを作成する。 +
+uro:rank又はuro:rankOrgのいずれか一つをもつ。
+
+| uro:depth | gml:LengthType [0..1] | 浸水の深さ。単位はm（uom=”m”）とする。
+3+| 自身に定義された属性
+| uro:adminType | gml:CodeType [1] | 洪水予報河川又は水位周知河川を指定した機関の別。コードリスト（RiverFloodingRiskAttribute_adminType.xml）より選択する。
+| uro:scale | gml:CodeType [1] | 想定最大規模降雨あるいは計画規模降雨のいずれにより作成されたかの区分。コードリスト（RiverFloodingRiskAttribute_scale.xml）より選択する。
+| uro:duration | gml:MeasureType [0..1] | 浸水が継続する時間。単位は時間（uom=”hour”）とする。
+
+|===
+
+　
+
+===== 2)　uro:TsunamiRiskAttribute
+
+[cols="1,1,2"]
+|===
+| 型の定義
+2+a| 津波洪水浸水想定の区域内に存在する構造物に、津波浸水想定の区域の属性を与えるための属性型。 +
+一回の津波浸水シミュレ－ションに関して、複数の区域が一つの構造物に跨って存在する場合は、同一浸水ランクを持つ浸水ランクのメッシュを一つの区域とし、その区域と構造物が重なる面積が最も大きい浸水ランクの値を採用する。（面積が等しい場合は、浸水ランクがより危険な区域を採用する） +
+浸水深は採用した浸水ランクを持つ浸水深のメッシュのうち、構造物と重なる面積が最も大きいメッシュの浸水深を採用する。（同じ浸水深を持つメッシュは面積算出の際に合算する）
+
+| 上位の型 2+| uro:FloodingRiskAttribute
+| ステレオタイプ 2+| << DataType >>
+3+| 継承する属性
+| 属性名 | 属性の型及び多重度 | 定義
+| uro:description | gml:CodeType [1] | 津波浸水想定の属性を付与する元となる図又はデータの名称。コードリスト（TsunamiRiskAttribute_description.xml）より選択する。都市ごとにコードリストを作成する。
+| uro:rank | gml:CodeType [0..1] | 水位に応じた区分。コードリスト（TsunamiRiskAttribute_rank.xml）より選択する。 uro:rank又はuro:rankOrgのいずれか一つをもつ。 水位は、「津波基準水位」がある場合はこれを採用し、ない場合は「津波浸水想定に定める水深に係る水位」とする。「津波基準水位」とは、「津波浸水想定に定める水深に係る水位に建築物等への衝突による津波の水位の上昇（せき上げ）を考慮して必要と認められる値を加えて定める水位」（『津波浸水想定の設定の手引き』参照）である。
+| uro:rankOrg | gml:CodeType [0..1] | 都道府県独自に設定した水位の区分。コードリスト（TsunamiRiskAttribute_rankOrg.xml）より選択する。この属性を使用する場合は、コードリストを作成する。uro:rank又はuro:rankOrgのいずれか一つをもつ。 水位は、「津波基準水位」がある場合はこれを採用し、ない場合は「津波浸水想定に定める水深に係る水位」とする。「津波基準水位」とは、「津波浸水想定に定める水深に係る水位に建築物等への衝突による津波の水位の上昇（せき上げ）を考慮して必要と認められる値を加えて定める水位」（『津波浸水想定の設定の手引き』参照）である。
+| uro:depth | gml:LengthType [0..1] | 陸上の各地点で水面が最も高い位置にきたときの地面から水面までの高さ。単位はm（uom=”m”）とする。
+
+|===
+
+　
+
+===== 3)　uro:HighTideRiskAttribute
+
+[cols="1,1,2"]
+|===
+| 型の定義
+2+a| 高潮浸水想定区域に存在する構造物に、高潮浸水想定区域の属性に与えるための属性型。 +
+一回の高潮浸水シミュレ－ションに関して、複数の区域が一つの構造物が跨って存在する場合は同一浸水ランクを持つ浸水ランクのメッシュを一つの区域とし、その区域と構造物が重なる面積が最も大きい浸水ランクの値を採用する。（面積が等しい場合は、より危険な区域を採用する） +
+浸水深は採用した浸水ランクを持つ浸水深のメッシュのうち、構造物と重なる面積が最も大きいメッシュの浸水深を採用する。（同じ浸水深を持つメッシュは面積算出の際に合算する）
+
+| 上位の型 2+| uro:FloodingRiskAttribute
+| ステレオタイプ 2+| << DataType >>
+3+| 継承する属性
+| 属性名 | 属性の型及び多重度 | 定義
+| uro:description | gml:CodeType [1] | 高潮浸水想定区域の属性を付与する元となる図又はデ－タ集合の名称。コードリスト（HighTideRiskAttribute_description.xml）より選択する。都市ごとにコードリストを作成する。
+| uro:rank
+| gml:CodeType [0..1]
+a| 浸水深に応じた区分。コードリスト（HighTideRiskAttribute_rank.xml）より選択する。 +
+uro:rank又はuro:rankOrgのいずれか一つをもつ。
+
+| uro:rankOrg | gml:CodeType [0..1] | 都道府県独自に設定した浸水深の区分。コードリスト（HighTideRiskAttribute_rankOrg.xml）より選択する。この属性を使用する場合は、コードリストを作成する。uro:rank又はuro:rankOrgのいずれか一つをもつ。
+| uro:depth | gml:LengthType [0..1] | 陸上の各地点で水面が最も高い位置にきたときの地面から水面までの高さ。単位はm（uom=”m”）とする。
+
+|===
+
+　
+
+===== 4)　uro:InlandFloodingRiskAttribute
+
+[cols="1,1,2"]
+|===
+| 型の定義
+2+a| 内水浸水想定区域に存在する構造物に、内水浸水想定区域の属性を与えるための属性型。 +
+一回の内水浸水シミュレ－ションに関して、複数の区域が一つの構造物が跨って存在する場合は、同一浸水ランクを持つ浸水ランクのメッシュを一つの区域とし、その区域と構造物が重なる面積が最も大きい浸水ランクの値を採用する。（面積が等しい場合は、より危険な区域を採用する） +
+浸水深は採用した浸水ランクを持つ浸水深のメッシュのうち、構造物と重なる面積が最も大きいメッシュの浸水深を採用する。（同じ浸水深を持つメッシュは面積算出の際に合算する）
+
+| 上位の型 2+| uro:FloodingRiskAttribute
+| ステレオタイプ 2+| << DataType >>
+3+| 継承する属性
+| 属性名 | 属性の型及び多重度 | 定義
+| uro:description | gml:CodeType [1] | 内水浸水想定区域の属性を付与する元となる図又はデータの名称。コードリスト（InlandFloodingRiskAttribute_description.xml）より選択する。都市ごとにコードリストを作成する。
+| uro:rank
+| gml:CodeType [0..1]
+a| 浸水深に応じた区分。コードリスト（InlandFloodingRiskAttribute_rank.xml）より選択する。 +
+uro:rank又はuro:rankOrgのいずれか一つをもつ。
+
+| uro:rankOrg | gml:CodeType [0..1] | 都道府県独自に設定した浸水深の区分。コードリスト（InlandFloodingRiskAttribute_rankOrg.xml）より選択する。この属性を使用する場合は、コードリストを作成する。uro:rank又はuro:rankOrgのいずれか一つをもつ。
+| uro:depth | gml:LengthType [0..1] | 陸上の各地点で水面が最も高い位置にきたときの地面から水面までの高さ。単位はm（uom=”m”）とする。
+
+|===
+
+　
+
+===== 5)　uro:ReservoirFloodingRiskAttribute
+
+[cols="1,1,2"]
+|===
+| 型の定義 2+| ため池ハザードマップ内に存在する構造物に、ため池ハザードマップの属性を与えるための属性型。
+
+| 上位の型 2+| uro:FloodingRiskAttribute
+| ステレオタイプ 2+| << DataType >>
+3+| 継承する属性
+| 属性名 | 属性の型及び多重度 | 定義
+| uro:description | gml:CodeType [1] | ため池ハザードマップの属性を付与する元となる図又はデータの名称。コードリスト（ReservoirFloodingRiskAttribute_description.xml）より選択する。都市ごとにコードリストを作成する。
+| uro:rank
+| gml:CodeType [0..1]
+a| 浸水深に応じた区分。コードリスト（ReservoirFloodingRiskAttribute_rank.xml）より選択する。 +
+uro:rank又はuro:rankOrgのいずれか一つをもつ。
+
+| uro:rankOrg
+| gml:CodeType [0..1]
+a| 市町村が独自に設定した浸水深の区分。コードリスト（ReservoirFloodingRiskAttribute_rankOrg.xml）より選択する。この属性を使用する場合は、コードリストを作成する。 +
+uro:rank又はuro:rankOrgのいずれか一つをもつ。
+
+| (uro:depth) | gml:LengthType [0..1] | 陸上の各地点で水面が最も高い位置にきたときの地面から水面までの高さ。単位はm（uom=”m”）とする。
+
+|===
+
+　
+
+===== 6)　uro:LandSlideRiskAttribute
+
+[cols="1,1,2"]
+|===
+| 型の定義
+2+a| 土砂災害警戒区域及び土砂災害特別警戒区域に存在する構造物に、いずれの区域に含まれているかを属性として付与する。 +
+一つの構造物に、複数の「区域区分」が重なっている場合は、以下の優先順位に基づき、最も優先順位の高い区域区分のみを付与する。区域区分の優先順位は優先順位の高いほうから、 +
+　土砂災害特別警戒区域（指定済） +
+　土砂災害警戒区域（指定済） +
+　土砂災害特別警戒区域（指定前） +
+　土砂災害警戒区域（指定前） +
+とする。 +
+なお、一つの構造物に、複数の「現象区分」が重なっている場合は、それぞれを土砂災害リスク属性として記述する。
+
+| 上位の型 2+| uro:DisasterRiskAttribute
+| ステレオタイプ 2+| << DataType >>
+3+| 継承する属性
+| 属性名 | 属性の型及び多重度 | 定義
+| uro:description | gml:CodeType [1] | 発生が想定されている災害の種類。コードリスト（LandSlideRiskAttribute_description.xml）より選択する。
+3+| 自身に定義された属性
+| uro:areaType | gml:CodeType [1] | 土砂災害警戒区域に含まれているのか、土砂災害特別警戒区域に含まれているのかの区分。コードリスト（LandSlideRiskAttribute_areaType.xml）より選択する。
+
+|===
+
+　
+
+===== 7)　uro:KeyValuePairAttribute
+
+[cols="1,1,2"]
+|===
+| 型の定義
+2+a| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外に情報を追加したい場合に使用する。 +
+属性名称と属性の値の対で構成される。拡張属性は、コ－ド値をとる属性にのみ適用する。コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
+
+| 上位の型 2+| ―
+| ステレオタイプ 2+| << DataType >>
+3+| 自身に定義された属性
+| 属性名 | 属性の型及び多重度 | 定義
+| uro:key | gml:CodeType [1] | 拡張する属性の名称。名称は、コ－ドリスト（KeyValuePairAttribute_key.xml）より選択する。コード値をとる属性を追加する場合は、コードリストを作成する。
+| uro:codeValue
+| gml:CodeType [0..1]
+a| 拡張された属性の値。値はコ－ド型となる。 +
+uro:KeyValuePairAttributeを使用する場合は、必ずuro:codeValueを作成する。
+
+|===
+
+　
+
+===== 8)　uro:DataQualityAttribute
+
+[cols="1,1,2"]
+|===
+| 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
+
+| 上位の型 2+| ―
+| ステレオタイプ 2+| << DataType >>
+3+| 自身に定義された属性
+| 属性名 | 属性の型及び多重度 | 定義
+| (uro:geometrySrcDescLod0) | gml:CodeType [0..*] | LOD0の幾何オブジェクトの作成に使用した原典資料の種類。
+| uro:geometrySrcDescLod1
+| gml:CodeType [1..*]
+a| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。 +
+コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。
+
+| (uro:geometrySrcDescLod2) | gml:CodeType [0..*] | LOD2の幾何オブジェクトの作成に使用した原典資料の種類。
+| (uro:geometrySrcDescLod3) | gml:CodeType [0..*] | LOD3の幾何オブジェクトの作成に使用した原典資料の種類。
+| (uro:geometrySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
+| uro:thematicSrcDesc
+| gml:CodeType [0..\*]
+a| 主題属性の作成に使用した原典資料の種類。 +
+コードリスト（DataQualityAttribute_thematicSrcDesc.xml）より選択する。 +
+主題属性が作成対象となっている場合は必須とする。
+
+| (uro:appearanceSrcDescLod0) | gml:CodeType [0..*] | LOD0の幾何オブジェクトのアピアランスに使用した原典資料の種類。
+| uro:appearanceSrcDescLod1
+| gml:CodeType [0..*]
+a| LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
+コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 +
+拡張製品仕様書LOD1の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD1の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
+
+| (uro:appearanceSrcDescLod2) | gml:CodeType [0..*] | LOD2の幾何オブジェクトのアピアランスに使用した原典資料の種類。
+| (uro:appearanceSrcDescLod3) | gml:CodeType [0..*] | LOD3の幾何オブジェクトのアピアランスに使用した原典資料の種類。
+| uro:appearanceSrcDescLod4 | gml:CodeType [0..*] | LOD4の幾何オブジェクトのアピアランスに使用した原典資料の種類。
+| (uro:lodType) | gml:CodeType[0..*] | オブジェクトに適用されたLODの詳細な区分。
+| (uro:lod1HeightType) | gml:CodeType [0..1] | LOD1の立体図形を作成する際に使用した高さの算出方法。
+| (uro:tranDataAcquisition) | xs:string [0..1] | 「道路基盤地図情報（整備促進版）製品仕様書（案）」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
+3+| 自身に定義された関連役割
+| 関連役割名 | 関連役割の型及び多重度 | 定義
+| (uro:publicSurveyDataQualityAttribute) | uro:PublicSurveyDataQualityAttribute [0..1] | 使用した公共測量成果の地図情報レベルと種類。
+
+|===
+
+　
+
+[[toc4_09_03_03]]
+===== (3)　Urban Function （i-UR）
+
+===== 1)　urf:SedimentDisasterProneArea
+
+[cols="1,1,2"]
+|===
+| 型の定義 2+| 土砂災害警戒区域等における土砂災害防止対策の推進に関する法律（土砂災害防止法）により指定された、土砂災害警戒区域及び土砂災害特別警戒区域。
+
+| 上位の型 2+| urf:Zone
+| ステレオタイプ 2+| << FeatureType >>
+3+| 継承する属性
+| 属性名 | 属性の型及び多重度 | 定義
+| (gml:description) | gml:StringOrRefType [0..1] | オブジェクトの概要。
+| (gml:name) | gml:CodeType [0..1] | オブジェクトを識別する名称。
+| (gml:boundedBy) | gml:Envelope [0..1] | オブジェクトの範囲と空間参照系。
+| core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
+| core:terminationDate | xs:date [0..1] | データが削除された日。
+| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+| (urf:class) | gml:CodeType [0..1] | 区域の分類。
+| (urf:function) | gml:CodeType [0..*] | 区域の機能。
+| (urf:usage) | gml:CodeType [0..*] | 区域の用途。
+| urf:validFrom | xs:date [0..1] | 土砂災害警戒区域が公示された年月日。効力を生じる日（当初の決定日）の年月日を西暦（YYYY-MM-DD）で記述する。
+| urf:validFromType | gml:CodeType [0..1] | 効力を生じる日（当初の決定日）の種類。コードリスト（Common_validType.xml）より選択する。
+| (urf:enactmentFiscalYear) | xs:gYear[0..1] | 決定年度。
+| (urf:validTo) | xs:date [0..1] | 効力を失う日。
+| (urf:validToType) | gml:CodeType [0..1] | 効力を失う日の種類。
+| (urf:expirationFiscalYear) | xs:gYear[0..1] | 効力を失う日の年度。
+| (urf:legalGrounds) | xs:string [0..1] | 法的根拠。
+| (urf:custodian) | xs:string [0..1] | 決定主体。
+| (urf:notificationNumber) | xs:string [0..1] | 告示番号。
+| (urf:finalNotificationNumber) | xs:string [0..1] | 告示番号（最終）。
+| (urf:finalNotificationDate) | xs:date [0..1] | 告示（最終）の日付。
+| (urf:urbanPlanType) | gml:CodeType [0..1] | 都市計画区域。
+| (urf:areaClassificationType) | gml:CodeType [0..1] | 区域区分。
+| (urf:nominalArea) | gml:MeasureType[0..1] | 公式の面積。
+| urf:prefecture | gml:CodeType [0..1] | 土砂災害警戒区域を指定した都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。JIS X0401に定義される2桁の半角数字。必須とする。
+| (urf:city) | gml:CodeType [0..1] | 市区町村。
+| (urf:reference) | xs:anyURI [0..1] | 参照情報。
+| (urf:reason) | gml:StringOrRefType [0..1] | 指定の事由。
+| (urf:note) | gml:StringOrRefType [0..1] | 備考。
+| (urf:surveyYear) | xs:gYear[0..1] | 調査年。
+| urf:location | xs:string [0..1] | 土砂災害警戒区域が位置する地名。
+3+| 当該型に定義された属性
+| 属性名 | 属性の型及び多重度 | 定義
+| urf:disasterType | gml:CodeType [1] | 土砂災害警戒区域で起こりうる災害の内容。コードリスト（LandSlideRiskAttribute_description.xml）より選択する。
+| urf:areaType | gml:CodeType [1] | 土砂災害警戒区域に含まれているのか、土砂災害特別警戒区域に含まれているのかの区分。コードリスト（LandSlideRiskAttribute_areaType.xml）より選択する。
+| urf:zoneNumber | xs:string [1] | 土砂災害警戒区域を識別する番号。
+| urf:zoneName | xs:string [1] | 土砂災害警戒区域の名称。
+| urf:status | gml:CodeType [0..1] | 土砂災害警戒区域（イエローゾーン）のみ公示を行っているが、土砂災害特別警戒区域（レッドゾーン）の調査・公示を行っていないことを示すフラグ。コードリスト（LandSlideRiskAttribute_status.xml）より選択する。
+3+| 継承する関連役割
+| 関連役割名 | 関連役割の型及び多重度 | 定義
+| urf:lod1MultiSurface | gml:MultiSurface [0..1] | 土砂災害警戒区域の範囲。高さを0とする。
+| urf:dataQualityAttribute | uro:DataQualityAttribute [0..1] | 作成したデータの品質に関する情報。必須とする。
+| urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
+
+|===
+
+[[toc4_09_04]]
+==== 　災害リスクモデルで使用するコードリストと列挙型
+
+[[toc4_09_04_01]]
+===== (1)　WaterBody （CityGML）
+
+===== 1) WaterBody_class.xml
+
+[cols="3,22"]
+|===
+| ファイル名 | WaterBody_class.xml
+
+| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/WaterBody_class.xml
+^| コード ^| 説明
+| 1140 | flooded land（浸水域）
+
+|===
+
+===== 2)　WaterBody_function.xml
+
+[cols="3,22"]
+|===
+| ファイル名 | WaterBody_function.xml
+
+| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/WaterBody_function.xml
+^| コード ^| 説明
+| 1 | 洪水浸水想定区域
+| 2 | 津波浸水想定
+| 3 | 高潮浸水想定区域
+| 4 | 内水浸水想定区域
+| 5 | ため池ハザードマップ
+
+|===
+
+　
+
+[[toc4_09_04_02]]
+===== (2)　Urban Object（i-UR）
+
+===== 1)　RiverFloodingRiskAttribute_adminType.xml
+
+[cols="3,22"]
+|===
+| ファイル名 | RiverFloodingRiskAttribute_adminType.xml
+
+| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/RiverFloodingRiskAttribute_adminType.xml
+| コード | 説明
+| 1 | 国
+| 2 | 都道府県
+
+|===
+
+[none]
+**** 出典：洪水浸水想定区域図作成マニュアル（第4版）
+
+　
+
+===== 2)　RiverFloodingRiskAttribute_scale.xml
+
+[cols="3,22"]
+|===
+| ファイル名 | RiverFloodingRiskAttribute_scale.xml
+
+| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/RiverFloodingRiskAttribute_scale.xml
+| コード | 説明
+| 1 | L1（計画規模）
+| 2 | L2（想定最大規模）
+
+|===
+
+[none]
+**** 出典：洪水浸水想定区域図作成マニュアル（第4版）
+
+　
+
+===== 3)　RiverFloodingRiskAttribute_rank.xml
+
+[cols="3,22"]
+|===
+| ファイル名 | RiverFloodingRiskAttribute_rank.xml
+
+| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/RiverFloodingRiskAttribute_rank.xml
+| コード | 説明
+| 1 | 0.5m未満
+| 2 | 0.5m以上3m未満
+| 3 | 3m以上5m未満
+| 4 | 5m以上10m未満
+| 5 | 10m以上20m未満
+| 6 | 20m以上
+
+|===
+
+[none]
+**** 出典：洪水浸水想定区域図作成マニュアル（第4版）
+
+　
+
+===== 4)　TsunamiRiskAttribute_rank.xml
+
+[cols="3,22"]
+|===
+| ファイル名 | TsunamiRiskAttribute_rank.xml
+
+| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/TsunamiRiskAttribute_rank.xml
+| コード | 説明
+| 1 | 0.5m未満
+| 2 | 0.5m以上3m未満
+| 3 | 3m以上5m未満
+| 4 | 5m以上10m未満
+| 5 | 10m以上20m未満
+| 6 | 20m以上
+
+|===
+
+[none]
+**** 出典：津波浸水想定の設定の手引き
+
+　
+
+===== 5)　HighTideRiskAttribute_rank.xml
+
+[cols="3,22"]
+|===
+| ファイル名 | HighTideRiskAttribute_rank.xml
+
+| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/HighTideRiskAttribute_rank.xml
+| コード | 説明
+| 1 | 0.5m未満
+| 2 | 0.5m以上3m未満
+| 3 | 3m以上5m未満
+| 4 | 5m以上10m未満
+| 5 | 10m以上20m未満
+| 6 | 20m以上
+
+|===
+
+[none]
+**** 出典：高潮浸水想定区域図作成の手引き
+
+　
+
+===== 6)　InlandFloodingRiskAttribute_rank.xml
+
+[cols="3,22"]
+|===
+| ファイル名 | InlandFloodingRiskAttribute_rank.xml
+
+| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/InlandFloodingRiskAttribute_rank.xml
+| コード | 説明
+| 1 | 0.5m未満
+| 2 | 0.5m以上3m未満
+| 3 | 3m以上5m未満
+| 4 | 5m以上10m未満
+| 5 | 10m以上20m未満
+| 6 | 20m以上
+
+|===
+
+[none]
+**** 出典：内水浸水想定区域図作成マニュアル（案）
+
+　
+
+===== 7) ReservoirFloodingRiskAttribute_rank.xml
+
+[cols="3,22"]
+|===
+| ファイル名 | ReservoirFloodingRiskAttribute_rank.xml
+
+| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/InlandFloodingRiskAttribute_rank.xml
+| コード | 説明
+| 1 | 0.5m未満
+| 2 | 0.5m以上1m未満
+| 3 | 1m以上2m未満
+| 4 | 2m以上3m未満
+| 5 | 3m以上5m未満
+| 6 | 5m以上
+
+|===
+
+[none]
+**** 出典：ため池ハザードマップ作成の手引き（案）
+
+　
+
+[[toc4_09_04_03]]
+===== (3)　Urban Function（i-UR）
+
+===== 1)　LandSlideRiskAttribute_description.xml
+
+[cols="3,22"]
+|===
+| ファイル名 | LandSlideRiskAttribute_description.xml
+
+| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/LandSlideRiskAttribute_description.xml
+| コード | 説明
+| 1 | 急傾斜地の崩落　
+| 2 | 土石流
+| 3 | 地すべり
+
+|===
+
+[none]
+**** 出典：国土数値情報（土砂災害危険箇所）製品仕様書
+
+　
+
+===== 2)　LandSlideRiskAttribute_areaType.xml
+
+[cols="3,22"]
+|===
+| ファイル名 | LandSlideRiskAttribute_areaType.xml
+
+| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/LandSlideRiskAttribute_areaType.xml
+| コード | 説明
+| 1 | 土砂災害警戒区域（指定済）
+| 2 | 土砂災害特別警戒区域（指定済）
+| 3 | 土砂災害警戒区域（指定前）
+| 4 | 土砂災害特別警戒区域（指定前）
+
+|===
+
+[none]
+**** 出典：国土数値情報（土砂災害危険箇所）製品仕様書
+
+　
+
+===== 3)　LandSlideRiskAttribute_status.xml
+
+[cols="3,22"]
+|===
+| ファイル名 | LandSlideRiskAttribute_status.xml
+
+| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/LandSlideRiskAttribute_status.xml
+| コード | 説明
+| 0 | 特別警戒区域指定済み
+| 1 | 特別警戒区域未指定
+
+|===
+
+===== 4)　DataQualityAttribute_geometrySrcDesc.xml
+
+[cols="3,22"]
+|===
+| ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
+
+| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml
+| コード | 説明
+| 000 | 公共測量成果
+| 101 | （公共測量ではない）現地測量の測量成果
+| 102 | （公共測量ではない）UAV写真測量の測量成果
+| 103 | （公共測量ではない）空中写真測量の測量成果
+| 104 | （公共測量ではない）既成図数値化の測量成果
+| 105 | （公共測量ではない）修正測量の測量成果
+| 106 | （公共測量ではない）写真地図作成の測量成果
+| 107 | （公共測量ではない）地図編集の測量成果
+| 108 | （公共測量ではない）地上レーザ測量の測量成果
+| 109 | （公共測量ではない）UAV写真点群測量の測量成果
+| 110 | （公共測量ではない）UAVレーザ測量の測量成果
+| 111 | （公共測量ではない）車載写真レーザ測量の測量成果
+| 112 | （公共測量ではない）航空レーザ測量の測量成果
+| 113 | （公共測量ではない）航空レーザ測深測量の測量成果
+| 114 | （公共測量ではない）路線測量の測量成果
+| 115 | （公共測量ではない）河川測量の測量成果
+| 116 | （公共測量ではない）用地測量の測量成果
+| 117 | （公共測量ではない）その他の応用測量の測量成果
+| 118 | （公共測量ではない）LidarSLAM計測の測量成果
+| 119 | （公共測量ではない）高密度航空レーザ測量の測量成果
+| 120 | （公共測量ではない）写真点群測量の測量成果
+| 121 | （公共測量ではない）三次元数値図化の測量成果
+| 201 | 都市計画基礎調査
+| 202 | 都市計画図書
+| 300 | 台帳
+| 301 | 道路台帳
+| 400 | その他のGISデータ
+| 500 | BIMモデル、CADデータ、設計図、完成図、一般図（平面図、配置図、断面図等）
+| 700 | その他の資料
+| 801 | 現地調査
+| 803 | GISデータ演算
+| 901 | 推定
+| 999 | 未作成
+
+|===
+
+参考：作業規程の準則、3D都市モデル整備のための測量マニュアル、3D都市モデル標準作業手順書
+
+　
+
+===== 5)　DataQualityAttribute_thematicSrcDesc.xml
+
+[cols="3,22"]
+|===
+| ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
+
+| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml
+| コード | 説明
+| 000 | 公共測量成果
+| 022 | 基盤地図情報
+| 023 | 数値地形図データ
+| 100 | 公共測量成果ではない測量成果
+| 201 | 都市計画基礎調査
+| 202 | 都市計画図書
+| 300 | 台帳（分類しない）
+| 301 | 道路台帳
+| 400 | その他のGISデータ
+| 500 | BIMモデル、CADデータ、設計図、完成図、一般図（平面図、配置図、断面図等）
+| 600 | 統計データ
+| 701 | 建築計画概要書
+| 700 | その他の資料
+| 801 | 現地調査
+| 802 | 写真判読
+| 803 | GISデータ演算
+| 999 | 未作成
+
+|===
+
+参考：作業規程の準則、3D都市モデル整備のための測量マニュアル、3D都市モデル標準作業手順書
+
+　
+
+===== 6)　DataQualityAttribute_appearanceSrcDesc.xml
+
+[cols="3,22"]
+|===
+| ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
+
+| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml
+| コード | 説明
+| 1 | 空中写真
+| 2 | 衛星写真
+| 3 | 車載写真レーザ測量システムにより撮影した写真
+| 4 | 手持ちカメラにより撮影した写真
+| 5 | 疑似テクスチャ
+| 99 | 未作成
+
+|===
+

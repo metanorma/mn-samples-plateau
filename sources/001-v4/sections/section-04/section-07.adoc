@@ -1,0 +1,615 @@
+[[toc4_07]]
+=== 　交通（航路）モデルの応用スキーマ
+
+航路とは、船舶の通路として法令で定める海域である。標準製品仕様書では、原則として、以下に示す港則法や海上交通安全法によって規定される航路（法定航路）を対象とする。
+
+* 港則法施行規則第8条
+
+* 海上交通安全法第2条
+
+法定航路とは、港則法における特定港、及び特定港以外の港では海上交通安全法によって規定された航路をいう。[国土数値情報　航路データ]
+
+なお、ユースケースの必要に応じて港湾法によって規定される開発保全航路を航路に含むことができる。
+
+開発保全航路とは、港湾法の規定による港湾区域及び河川法に規定する河川区域以外の水域における船舶の交通を確保するため、開発及び保全に関する工事を必要とする航路をいう。[国土数値情報　航路データ]
+
+　
+
+[[toc4_07_01]]
+==== 　交通（航路）モデルのLOD
+
+[[toc4_07_01_01]]
+===== (1)　交通（航路）モデル（LOD0）
+
+===== 1)　交通（航路）モデル（LOD0）の概要
+
+交通（航路）モデル（LOD0）では、航路の形状を線（ネットワーク）により表現する。交通（航路）モデル（LOD0）の取得イメージを表 4-49に示す。
+
+[cols="1,9"]
+.表 4-49　交通（航路）モデル（LOD0）の取得イメージ
+|===
+| ^| LOD0
+| 取得例
+a| image::images/190.webp["",220]
+
+| 説明 | 航路の区域の中心線を取得する。
+
+|===
+
+　
+
+===== 2)　交通（航路）モデル（LOD0）の定義
+
+交通（航路）モデル（LOD0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
+
+[cols="1,1,1,1,1,3,2"]
+|===
+| LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
+
+| LOD0
+| ●
+| Waterway
+a| Geometric +
+Complex
+| • 航路
+a| • 航路の区域の中心線を取得する。 +
+• 高さは0とする。
+| 
+
+|===
+
+[none]
+**** ●：必須
+
+**** ■：条件付必須
+
+**** 〇：任意（ユースケースに応じて要否を決定してよい）
+
+[[toc4_07_01_02]]
+===== (2)　交通（航路）モデル（LOD1）
+
+===== 1)　交通（航路）モデル（LOD1）の概要
+
+交通（航路）モデル（LOD1）では、航路の形状を面により表現する。交通（航路）モデル（LOD1）の取得イメージを表 4-50に示す。
+
+　
+
+[cols="1,9"]
+.表 4-50　交通（航路）モデル（LOD1）の取得イメージ
+|===
+| ^| LOD1
+| 取得例
+a| image::images/191.webp["",250]
+
+| 説明
+a| 法令により指定された航路の区域を取得する。 +
+高さは0とする。
+
+|===
+
+　
+
+===== 2)　交通（航路）モデル（LOD1）の定義
+
+交通（航路）モデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
+
+[cols="1,1,1,1,1,3,2"]
+|===
+| LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
+
+| LOD1
+| ●
+| Waterway
+| MultiSurface
+| • 航路
+a| • 航路の区域の境界線をつないだ面を取得する。 +
+• 以下の場所で区切る。 +
+　• 航路が交差する区間 +
+• 高さは0とする。
+| 
+
+|===
+
+[none]
+**** ●：必須
+
+**** ■：条件付必須
+
+**** 〇：任意（ユースケースに応じて要否を決定してよい）
+
+[[toc4_07_01_03]]
+===== (3)　交通（航路）モデル（LOD2）
+
+===== 1)　交通（航路）モデル（LOD2）の概要
+
+交通（航路）モデル（LOD2）では、航路の形状を面により表現し、海上交通安全法により指定された船舶の進行方向ごとに、面を区分する。交通（航路）モデル（LOD2）の取得イメージを表 4-51に示す。
+
+　
+
+[cols=2]
+.表 4-51　交通（航路）モデル（LOD2）の取得イメージ
+|===
+| ^| LOD2
+| 取得例
+a| image::images/192.webp["",250]
+
+| 説明
+a| 航路の境界線をつないだ面を取得する。 +
+航路の区域に一つの航路しか存在しない場合、LOD1の形状に一致する。 +
+高さは0とする。
+
+|===
+
+　
+
+===== 2)　交通（航路）モデル（LOD2）の定義
+
+交通（航路）モデル（LOD2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
+
+[cols="2,2,2,2,3,5,4"]
+|===
+| LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
+
+| LOD2 | ● | Waterway | MultiSurface | • 航路 | • TrafficAreaの集まりとして作成する。 | 
+| LOD2 | ● | TrafficArea | MultiSurface | • 港則法及び海上交通安全法により指定された航法 | • 航路の境界をつないだ面を取得する。 • 高さは0とする。 | 航路の区域内に一つの航路しか存在しない場合、LOD1の形状と一致する。
+| LOD2 | | AuxiliaryTrafficArea | | | | 航路は航行可能な区域が指定されることから、航路には、AuxiliaryTrafficAreaが存在しない。
+
+|===
+
+[none]
+**** ●：必須
+
+**** ■：条件付必須
+
+**** 〇：任意（ユースケースに応じて要否を決定してよい）
+
+　
+
+[[toc4_07_01_04]]
+===== (4)　各LODにおいて使用可能な地物型と空間属性
+
+交通（航路）モデルの各LODにおいて使用可能な地物型と空間属性を表 4-52に示す。
+
+[cols="5,5,3,3,3,3,3"]
+.表 4-52　交通（航路）モデルに使用する地物型と空間属性
+|===
+^| 地物型 ^| 空間属性 ^| LOD0 ^| LOD1 ^| LOD2 ^| LOD3 ^| 適用
+.5+| uro:Waterway | ^| ● ^| ● ^| ● | | LOD0、LOD1及びLOD2を対象とする。
+| tran:lod0Network ^| ● | | | | 
+| tran:lod1MultiSurface | ^| ● | | | 
+| tran:lod2MultiSurface | | ^| ● | | 
+| tran:lod3MultiSurface | | | | | 
+.3+| tran:TrafficArea | | | ^| ● | | 
+| tran:lod2MultiSurface | | ^| ● | | 
+| tran:lod3MultiSurface | | | | | 
+.3+| tran:AuxiliaryTrafficArea | | | | | | 対象としない。
+| tran:lod2MultiSurface | | | | | 
+| tran:lod3MultiSurface | | | | | 
+
+|===
+
+[none]
+**** ●：必須
+
+[[toc4_07_02]]
+==== 　交通（航路）モデルの応用スキーマクラス図
+
+[[toc4_07_02_01]]
+===== (1)　Urban Object（i-UR）
+
+image::images/193.svg[]
+
+[[toc4_07_03]]
+==== 　交通（航路）モデルの応用スキーマ文書
+
+[[toc4_07_03_01]]
+===== (1)　Urban Object （i-UR）
+
+===== 1)　uro:Waterway
+
+[cols="1,1,2"]
+|===
+| 型の定義
+2+a| 
+航路とは、船舶の通路として法令で定める海域である。標準製品仕様書では、原則として、以下に示す港則法や海上交通安全法によって規定される航路（法定航路）を対象とする。 • 港則法施行規則第8条 • 海上交通安全法第2条 法定航路とは、港則法における特定港、及び特定港以外の港では海上交通安全法によって規定された航路をいう。[国土数値情報　航路データ] なお、ユースケースの必要に応じて港湾法によって規定される開発保全航路を航路に含むことができる。 開発保全航路とは、港湾法の規定による港湾区域及び河川法に規定する河川区域以外の水域における船舶の交通を確保するため、開発及び保全に関する工事を必要とする航路をいう。[国土数値情報　航路データ] 航路の延長方向は、以下の場所で区切る。 • 航路が交差する部分（二つ以上の航路が交わる部分）
+
+image::images/194.webp["",350]
+
+tran:Waterwayに含まれるtran:TrafficAreaは、同一航路でなければならない。 +
+同一のLODにおいて、連続する航路の境界は一致しなければならない。
+
+| 上位の型 2+| tran:TrafficComplex
+| ステレオタイプ 2+| << FeatureType >>
+3+| 継承する属性
+| 属性名 | 属性の型及び多重度 | 定義
+| gml:description | gml:StringOrRefType [0..1] | 航路の概要。
+| gml:name | gml:CodeType [0..1] | 航路を識別する名称。文字列とする。
+| (gml:boundedBy) | gml:Envelope [0..1] | 航路の範囲及び適用される空間参照系。
+| core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
+| core:terminationDate | xs:date [0..1] | データが削除された日。
+| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+| tran:class | gml:CodeType [0..1] | 交通の分類。
+| tran:function | gml:CodeType [0..*] | 航路種別コード。コードリスト（Waterway_function.xml）より選択する。
+| (tran:usage) | gml:CodeType [0..*] | 航路の用途。
+3+| 継承する関連役割
+| 関連役割名 | 関連役割の型及び多重度 | 定義
+| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+| (gen:measureAttribute) | gen:measureAttribute[0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+| tran:trafficArea | tran:TrafficArea [0..*] | 航路を構成する要素のうち、船舶が航行可能な領域への参照。
+| (tran:auxiliaryTrafficArea) | tran:AuxiliaryTrafficArea [0..*] | 航路を構成する要素のうち、航行領域の機能を補助するために設けられた領域への参照。
+| tran:lod0Network | gml:GeometricComplex [0..*] | 航路の区域の中心線。
+| tran:lod1MultiSurface
+| gml:MultiSurface [0..1]
+a| 法令により定められた航路の区域。 +
+法令に定められた航路を構成する地点を結ぶ面とする。 +
+なお、航路が交差する場合は、交差する部分の四隅を結ぶ位置で区切る。
+
+| tran:lod2MultiSurface
+| gml:MultiSurface [0..1]
+a| 法令により定められた航路の区域。 +
+lod1MultiSurfaceの形状に一致する。 +
+tran:Waterwayが参照するtran:TrafficAreaのtran:lod2MultiSurfaceに含まれる、全てのgml:Polygonにより構成する。
+
+| (tran:lod3MultiSurface) | gml:MultiSurface [0..1] | 標準製品仕様書では使用しない。
+| uro:tranKeyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | 属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
+| uro:tranDataQualityAttribute | uro:DataQualityAttribute [1] | 作成したデータの品質に関する情報。必須とする。
+| uro:tranFacilityTypeAttribute | uro:FacilityTypeAttribute [0..*] | 特定分野における施設の分類情報。
+| uro:tranFacilityIdAttribute | uro:FacilityIdAttribute [0..1] | uro:tranFacilityTypeAttribute.classによって指定された分野における施設の識別情報。
+| urotranFacilityAttribute | uro:FacilityAttribute [0..*] | uro:tranFacilityTypeAttribute.classによって指定された分野における施設管理情報。
+| (uro:tranDmAttribute) | uro:DmAttribute [0..*] | 公共測量標準図式による図形表現に必要な情報。
+3+| 自身に定義された関連役割
+| 関連役割名 | 関連役割の型及び多重度 | 定義
+| uro:watewayDetailAttribute | uro:WaterwayDetailAttribute [0..1] | 航路の詳細情報。
+
+|===
+
+　
+
+===== 2)　tran:TrafficArea
+
+[cols="1,1,2"]
+|===
+| 型の定義
+2+a| 
+法令により指定された進行方向に区切った航路の部分。 +
+高さは0とする。
+
+image::images/195.webp["",250,title=" 図　LOD2における航路のtran:TrafficAreaの例"]
+
+| 上位の型 2+| tran:_TransportationObject
+| ステレオタイプ 2+| << FeatureType >>
+3+| 継承する属性
+| 属性名 | 属性の型及び多重度 | 定義
+| gml:description | gml:StringOrRefType [0..1] | 概要。
+| gml:name | gml:CodeType [0..1] | 航路の進行方向を識別する名称。文字列とする。
+| (gml:boundedBy) | gml:Envelope [0..1] | オブジェクトの範囲と空間参照系。
+| core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
+| core:terminationDate | xs:date [0..1] | データが削除された日。
+| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+| 自身に定義された属性
+| (tran:class) | gml:CodeType [0..1] | 交通の分類。
+| (tran:function) | gml:CodeType [0..*] | 交通領域の機能。
+| (tran:usage) | gml:CodeType [0..*] | 交通領域の利用方法。
+| (tran:surfaceMaterial) | gml:CodeType [0..1] | 表層舗装の有無及び材質。
+3+| 継承する関連役割
+| 関連役割名 | 関連役割の型及び多重度 | 定義
+| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット（集合）。属性を追加したい場合に使用する。
+3+| 自身に定義された関連役割
+| 関連役割名 | 関連役割の型及び多重度 | 定義
+| tran:lod2MultiSurface
+| gml:MultiSurface [0..1]
+a| 進行方向に区切られた航路の正射影の外周を取得する。 +
+高さは0とする。
+
+| (tran:lod3MultiSurface) | gml:MultiSurface [0..1] | 標準製品仕様書では使用しない。
+
+|===
+
+　
+
+[[toc4_07_03_02]]
+===== (2)　Urban Object（i-UR）
+
+===== 1)　uro:KeyValuePairAttribute
+
+[cols="1,1,2"]
+|===
+| 型の定義
+2+a| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。 +
+属性名称と属性の値の対で構成される。コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
+
+| 上位の型 2+| ― 
+| ステレオタイプ 2+| << DataType >>
+3+| 自身に定義された属性
+| 属性名 | 属性の型及び多重度 | 定義
+| uro:key | gml:CodeType [1] | 拡張する属性の名称。名称は、コ－ドリスト（KeyValuePairAttribute_key.xml）を作成し、選択する。
+| uro:codeValue
+| gml:CodeType [1]
+a| 拡張された属性の値。値は名称は、コ－ドリスト（KeyValuePairAttribute_key[key].xml）を作成し、選択する。 +
+[key]は、属性uro:keyの値に一致する。
+
+|===
+
+　
+
+===== 2)　uro:DataQualityAttribute
+
+[cols="1,1,2"]
+|===
+| 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
+
+| 上位の型 2+| ― 
+| ステレオタイプ 2+| << DataType >>
+3+| 自身に定義された属性
+| 属性名 | 属性の型及び多重度 | 定義
+| uro:geometrySrcDescLod0
+| gml:CodeType [0..*]
+a| LOD0の幾何オブジェクトの作成に使用した原典資料の種類。 +
+コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD0の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、交通（航路）モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
+
+| uro:geometrySrcDescLod1
+| gml:CodeType [1..*]
+a| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。 +
+コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。具体的な都市オブジェクトがLOD1の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
+
+| uro:geometrySrcDescLod2
+| gml:CodeType [0..*]
+a| LOD2の幾何オブジェクトの作成に使用した原典資料の種類。 +
+コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD2の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、交通（航路）モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
+
+| (uro:geometrySrcDescLod3) | gml:CodeType [0..*] | LOD3の幾何オブジェクトの作成に使用した原典資料の種類。
+| (uro:geometrySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
+| uro:thematicSrcDesc
+| gml:CodeType [0..*]
+a| 主題属性の作成に使用した原典資料の種類。 +
+コードリスト（DataQualityAttribute_thematicSrcDesc.xml）より選択する。 +
+主題属性が作成対象となっている場合は必須とする。
+
+| uro:appearanceSrcDescLod0
+| gml:CodeType [0..*]
+a| LOD0の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
+コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 +
+拡張製品仕様書でLOD0の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
+
+| uro:appearanceSrcDescLod1
+| gml:CodeType [0..*]
+a| LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
+コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 +
+拡張製品仕様書LOD1の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD1の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
+
+| uro:appearanceSrcDescLod2
+| gml:CodeType [0..*]
+a| LOD2の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
+コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 +
+拡張製品仕様書でLOD2の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
+
+| (uro:appearanceSrcDescLod3) | gml:CodeType [0..*] | LOD3の幾何オブジェクトのアピアランスに使用した原典資料の種類。
+| uro:appearanceSrcDescLod4 | gml:CodeType [0..*] | LOD4の幾何オブジェクトのアピアランスに使用した原典資料の種類。
+| (uro:lodType) | gml:CodeType[0..*] | オブジェクトに適用されたLODの詳細な区分。
+| (uro:lod1HeightType) | gml:CodeType [0..1] | LOD1の立体図形を作成する際に使用した高さの算出方法。
+| (uro:tranDataAcquisition) | xs:string [0..1] | 「道路基盤地図情報（整備促進版）製品仕様書（案）」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
+3+| 自身に定義された関連役割
+| 関連役割名 | 関連役割の型及び多重度 | 定義
+| (uro:publicSurveyDataQualityAttribute) | uro:PublicSurveyDataQualityAttribute [0..1] | 使用した公共測量成果の地図情報レベルと種類。
+
+|===
+
+　
+
+===== 3)　uro:WaterwayDetailAttribute
+
+[cols="1,1,2"]
+|===
+| 型の定義 2+| 航路の詳細な情報を定義したデータ型。
+
+| 上位の型 2+| ー
+| ステレオタイプ 2+| << DataType >>
+3+| 属性
+| 属性名 | 属性の型及び多重度 | 定義
+| uro:routeID | xs:string [1] | 航路の番号及び航路に与えられた管理番号。
+| uro: routeDirection | gml:CodeType [0..1] | 進行方向。コードリスト（WaterwayDetailAttribute \_routeDirection .xml）より選択する。
+| uro:minimumWidth
+| gml:LengthType[0..1]
+a| 最小の幅員。単位はm（uom=”m”）とする。 +
+幅員が固定値である場合は、uro:minimumWidthを使用する。
+
+| uro:maximumWidth
+| gml:LengthType [0..1]
+a| 最大の幅員。単位はm（uom=”m”）とする。 +
+幅員が固定値である場合は、uro:minimumWidthを使用し、本属性は使用しない。
+
+| uro:length | gml:LengthType [0..1] | 航路の延長。単位はkm（uom=”km”）とする。
+| uro:navigation | xs:string [0..1] | 航法。
+| uro:plannedDepth | gml:LengthType [0..1] | 計画水深。単位はm（uom=”m”）とする。
+| uro:speedLimit | gml:MeasureType. [0..1] | 速力制限。単位はkt（uom=” kt”）とする。
+| uro:targetShipType | xs:string [0..*] | 対象船型。
+
+|===
+
+　
+
+[[toc4_07_03_03]]
+===== (3)　施設管理のための拡張属性
+
+===== 1)　uro:FacilityIdAttribute
+
+　施設管理属性の応用スキーマ文書　参照
+
+　
+
+===== 2)　uro:FacilityTypeAttribute
+
+　施設管理属性の応用スキーマ文書　参照
+
+　
+
+===== 3)　uro:FacilityAttribute
+
+　施設管理属性の応用スキーマ文書　参照
+
+　
+
+[[toc4_07_03_04]]
+===== (4)　数値地形図のための拡張属性
+
+===== 1)　uro:DmGeometricAttribute
+
+　公共測量標準図式の応用スキーマ文書　参照
+
+　
+
+===== 2)　uro:DmElement
+
+　公共測量標準図式の応用スキーマ文書　参照
+
+[[toc4_07_04]]
+==== 　交通（航路）モデルで使用するコードリストと列挙型
+
+[[toc4_07_04_01]]
+===== (1)　Urban Object （i-UR）
+
+===== 1)　Waterway_function.xml
+
+[cols="3,22"]
+|===
+| ファイル名 | Waterway_function.xml
+
+| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Watwaway_function.xml
+| コード | 説明
+| 01 | 法定航路
+
+|===
+
+　
+
+===== 2)　WaterwayDetailAttribute_routeDirection.xml
+
+[cols="3,22"]
+|===
+| ファイル名 | WaterwayDetailAttribute_routeDirection.xml
+
+| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/WaterwayDetailAttribute_routeDirection.xml
+| コード | 説明
+| 01 | 両方向
+| 02 | 指定無
+| 03 | 一方方向（0度～179度）
+| 04 | 一方方向（180度～359度）
+
+|===
+
+　
+
+===== 3)　DataQualityAttribute_geometrySrcDesc.xml
+
+[cols="3,22"]
+|===
+| ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
+
+| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml
+| コード | 説明
+| 000 | 公共測量成果
+| 101 | （公共測量ではない）現地測量の測量成果
+| 102 | （公共測量ではない）UAV写真測量の測量成果
+| 103 | （公共測量ではない）空中写真測量の測量成果
+| 104 | （公共測量ではない）既成図数値化の測量成果
+| 105 | （公共測量ではない）修正測量の測量成果
+| 106 | （公共測量ではない）写真地図作成の測量成果
+| 107 | （公共測量ではない）地図編集の測量成果
+| 108 | （公共測量ではない）地上レーザ測量の測量成果
+| 109 | （公共測量ではない）UAV写真点群測量の測量成果
+| 110 | （公共測量ではない）UAVレーザ測量の測量成果
+| 111 | （公共測量ではない）車載写真レーザ測量の測量成果
+| 112 | （公共測量ではない）航空レーザ測量の測量成果
+| 113 | （公共測量ではない）航空レーザ測深測量の測量成果
+| 114 | （公共測量ではない）路線測量の測量成果
+| 115 | （公共測量ではない）河川測量の測量成果
+| 116 | （公共測量ではない）用地測量の測量成果
+| 117 | （公共測量ではない）その他の応用測量の測量成果
+| 118 | （公共測量ではない）LidarSLAM計測の測量成果
+| 119 | （公共測量ではない）高密度航空レーザ測量の測量成果
+| 120 | （公共測量ではない）写真点群測量の測量成果
+| 121 | （公共測量ではない）三次元数値図化の測量成果
+| 201 | 都市計画基礎調査
+| 202 | 都市計画図書
+| 300 | 台帳
+| 301 | 道路台帳
+| 400 | その他のGISデータ
+| 500 | BIMモデル、CADデータ、設計図、完成図、一般図（平面図、配置図、断面図等）
+| 700 | その他の資料
+| 801 | 現地調査
+| 803 | GISデータ演算
+| 901 | 推定
+| 999 | 未作成
+
+|===
+
+[none]
+**** 参考：作業規程の準則、3D都市モデル整備のための測量マニュアル、3D都市モデル標準作業手順書
+
+　
+
+===== 4)　DataQualityAttribute_thematicSrcDesc.xml
+
+[cols="3,22"]
+|===
+| ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
+
+| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml
+| コード | 説明
+| 000 | 公共測量成果
+| 022 | 基盤地図情報
+| 023 | 数値地形図データ
+| 100 | 公共測量成果ではない測量成果
+| 201 | 都市計画基礎調査
+| 202 | 都市計画図書
+| 300 | 台帳
+| 301 | 道路台帳
+| 400 | その他のGISデータ
+| 500 | BIMモデル、CADデータ、設計図、完成図、一般図（平面図、配置図、断面図等）
+| 600 | 統計データ
+| 701 | 建築計画概要書
+| 700 | その他の資料
+| 801 | 現地調査
+| 802 | 写真判読
+| 803 | GISデータ演算
+| 999 | 未作成
+
+|===
+
+[none]
+**** 参考：作業規程の準則、3D都市モデル整備のための測量マニュアル、3D都市モデル標準作業手順書
+
+　
+
+===== 5)　DataQualityAttribute_appearanceSrcDesc.xml
+
+[cols="3,22"]
+|===
+| ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
+
+| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml
+| コード | 説明
+| 1 | 空中写真
+| 2 | 衛星写真
+| 3 | 車載写真レーザ測量システムにより撮影した写真
+| 4 | 手持ちカメラにより撮影した写真
+| 5 | 疑似テクスチャ
+| 99 | 未作成
+
+|===
+
+　
+

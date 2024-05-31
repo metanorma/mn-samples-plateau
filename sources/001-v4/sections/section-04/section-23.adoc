@@ -1,0 +1,247 @@
+[[toc4_23]]
+=== 　都市オブジェクトグループモデルの応用スキーマ
+
+都市オブジェクトグループは、都市オブジェクトの集まりである。標準製品仕様書では、建築物モデル（LOD4）において、複数の部屋をグループ化して「階」を表現するために使用する。
+
+　
+
+[[toc4_23_01]]
+==== 　都市オブジェクトグループモデルのLOD
+
+都市オブジェクトグループは地物の集まりであり、それ自身の空間属性をもたないため、LODは定義しない。
+
+[[toc4_23_02]]
+==== 　都市オブジェクトグループモデルの応用スキーマクラス図
+
+[[toc4_23_02_01]]
+===== (1)　CityObjectGroup（CityGML）
+
+CityObjectCroupパッケージは、都市オブジェクト（core:_CityObject）をグループ化するgrp:CityObjectGroupを定義する。 
+
+image::images/415.svg[]
+
+[[toc4_23_02_02]]
+===== (2)　Urban Object（i-UR）
+
+image::images/416.svg[]
+
+[[toc4_23_03]]
+==== 　都市オブジェクトグループモデルの応用スキーマ文書
+
+[[toc4_23_03_01]]
+===== (1)　CityObjectGroup（CityGML）
+
+===== 1)　grp:CityObjectGroup
+
+[cols="1,1,2"]
+|===
+.2+| 型の定義
+2+a| 
+都市オブジェクトの集まり。 +
+建築物モデル（LOD4）では、多数の層からなる建築物における、それぞれの層（階）を部屋（bldg:Room）の集まりとして表現する場合及び施設管理者等により任意に設定された防火区画等の領域（任意設定空間）を部屋の集まりとして表現する場合に使用する。 +
+ +
+下図は、建築物の1階の部屋をgrp:CityObjectGroupとしてグループ化した例である。
+
+image::images/417.webp["",300,title=" 図　grp:CityObjectGroupの使用例"]
+
+2+a| 
+CityGMLでは、建築物の階や任意設定空間に相当する地物は存在しない。そこで、グループ化の仕組みであるgrp:CityObjectGroupを建築物の階を表現するために使用する。 +
+属性gml:nameにより階又は任意設定空間を識別する名称を付与し、関連役割grp:groupMemberにより同じ階又は任意に設定空間に存在する部屋（bldg:Room）を参照することで、建築物の階を表現する。
+
+image::images/418.webp["",500]
+
+例えば、1階に六つの部屋が存在する場合、上図のように、1階を示すgrp:CityObjectGroupは、六つのbldg:Roomを関連役割grp:groupMemberにより参照する。
+
+| 上位の型 2+| core:_CityObject
+| ステレオタイプ 2+| << FeatureType >>
+3+| 継承する属性
+| 属性名 | 属性の型及び多重度 | 定義
+| gml:description | gml:StringOrRefType [0..1] | gml:name以外に階を識別する名称が必要な場合に記述する。
+| gml:name | gml:CodeType [0..1] | 階又は任意設定空間を特定する名称。階の場合は、“storeyNo_X”とする。Xは、下層階から上層階に昇順となる10進数の数値とする。文字列とする。
+| (gml:boundedBy) | gml:Envelope [0..1] | グループの範囲及び適用される空間参照系。
+| core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
+| core:terminationDate | xs:date [0..1] | データが削除された日。
+| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+| 継承する関連役割
+| 関連役割名 | 関連役割の型及び多重度 | 定義
+| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+3+| 自身に定義された属性
+| 属性名 | 属性の型及び多重度 | 定義
+| grp:class | gml:CodeType [0..1] | グループの区分。コードリスト（CityObjectGroup_class.xml）から選択する。
+| grp:function | gml:CodeType [0..*] | グループの機能。コードリスト（CityObjectGroup_function.xml）より選択する。
+| (grp:usage) | gml:CodeType [0..*] | グループの主な使い道。
+3+| 自身に定義された関連役割
+| 関連役割名 | 関連役割の型及び多重度 | 定義
+| grp:groupMember
+| core:_CityObject [0..*]
+a| グループに含まれる都市オブジェクト。 +
+同じ階に含まれる、bldg:Roomを参照する。
+
+| grp:parent | core:_CityObject [0..1] | この階を含む建築物（bldg:Building）への参照。
+| uro:ifcBuildingStoreyAttribute
+| uro:IfcAttribute [0..*]
+a| IDM・MVDで定義されるIFCに含まれる情報。 +
+建築物の階を表現するgrp:CityObjectGroupに付与可能なデータ型は以下とする。 +
+uro:IfcBuildingStorey
+
+| uro:indoorStoreyAttribute
+| uro:IndoorAttribute [0..*]
+a| 屋内ナビゲーションに必要な情報。 +
+建築物の階を表現するgrp:CityObjectGroupに付与可能なデータ型は以下とする。 +
+uro:IndoorStoreyAttribute +
+uro:IndoorZoneAttribute +
+uro:IndoorUserDefinedAttribute
+
+|===
+
+　
+
+[[toc4_23_03_02]]
+===== (2)　建築物モデル（LOD4）の拡張属性
+
+===== 1)　uro:IfcBuildingStorey
+
+[cols="1,1,2"]
+|===
+| 型の定義 2+| IFCで記述された建築物の階数の属性。
+
+| 上位の型 2+| uro:IfcSpatialStructureElement
+| ステレオタイプ 2+| << DataType >>
+3+| 継承する属性
+| 属性名 | 属性の型及び多重度 | 定義
+| uro:globalId | xs:string [0..1] | そのオブジェクトが単一に識別できる唯一な識別子。22桁の文字列により表現する。
+| uro:name | xs:string [0..1] | オブジェクトの名称。uro:IfcBuildingStoreyの場合は、階名称とする。bldg:CityObjectGroup.nameと一致する。
+| uro:description | xs:string [0..1] | オブジェクトの文字情報による追加説明。
+| uro:objectType | xs:string [0..1] | オブジェクトの特定の型を示す。
+| uro:longName | xs:string[0..1] | 階名称の補足的な情報。
+| uro:compositionType
+| uro:IfcElementCompositionEnum [0..1]
+a| 建物階の空間構成の区分。 +
+• ELEMENT：通常の独立している建物階。 +
+• COMPLEX：複合建物階を表現する場合。 +
+• PARTIAL：部分的な空間で表現される建物階。
+
+3+| 属性
+| 属性名 | 属性の型及び多重度 | 定義
+| uro:elevation | gml:LengthType [0..1] | 建物階の建物の基準高さからの相対的高さ。単位はm。
+
+|===
+
+　
+
+===== 2)　uro:IfcZone
+
+[cols="1,1,2"]
+|===
+| 型の定義 2+| IFCで記述された施設管理者により任意に設定された空間の属性。
+
+| 上位の型 2+| uro:IfcObject
+| ステレオタイプ 2+| << DataType >>
+3+| 継承する属性
+| 属性名 | 属性の型及び多重度 | 定義
+| uro:globalId | xs:string [0..1] | そのオブジェクトが単一に識別できる唯一な識別子。22桁の文字列により表現する。
+| uro:name | xs:string [0..1] | オブジェクトの名称。uro:IfcZoneの場合は、空間の名称とする。bldg:CityObjectGroup.nameと一致する。
+| uro:description | xs:string [0..1] | オブジェクトの文字情報による追加説明。
+| uro:objectType | xs:string [0..1] | オブジェクトの特定の型を示す。
+
+|===
+
+　
+
+[[toc4_23_03_03]]
+===== (3)　屋内ナビゲーションのための拡張属性
+
+===== 1)　uro:IndoorZoneAttribute
+
+[cols="1,1,2"]
+|===
+| 型の定義 2+| 任意の空間に追加するナビゲーション用の属性。
+
+| 上位の型 2+| uro:IndoorAttribute
+| ステレオタイプ 2+| << DataType >>
+3+| 継承する属性
+| 属性名 | 属性の型及び多重度 | 定義
+| uro:source | gml:CodeType [0..1] | 原典資料。コードリスト（Common_indoorSource.xml）から選択する。
+3+| 属性
+| 属性名 | 属性の型及び多重度 | 定義
+| uro:floorId | xs:string [0..1] | 任意の空間が紐づけられている階層の固有ID。
+
+|===
+
+　
+
+===== 2)　uro:IndoorStoreyAttribute
+
+[cols="1,1,2"]
+|===
+| 型の定義 2+| 階層に追加するナビゲーション用の属性。
+
+| 上位の型 2+| uro:IndoorAttribute
+| ステレオタイプ 2+| << DataType >>
+3+| 継承する属性
+| 属性名 | 属性の型及び多重度 | 定義
+| uro:source | gml:CodeType [0..1] | 原典資料。コードリスト（Common_indoorSource.xml）から選択する。
+3+| 属性
+| 属性名 | 属性の型及び多重度 | 定義
+| uro:category
+| xs:boolean [0..1]
+a| 屋内外区分。 +
+1：屋内 +
+0：屋外
+
+| uro:ordinal | xs:double [0..1] | 階層数。
+
+|===
+
+　
+
+===== 3)　uro:IndoorUserDefinedAttribute
+
+建築物モデルの応用スキーマ文書　を参照。
+
+[[toc4_23_04]]
+==== 　都市オブジェクトグループモデルで使用するコードリストと列挙型
+
+[[toc4_23_04_01]]
+===== (1)　CityObjectGroup（i-UR）
+
+===== 1)　CityObjectGroup_class.xml
+
+[cols="3,22"]
+|===
+| ファイル名 | CityObjectGroup_class.xml
+
+| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/CityObjectGroup_class.xml
+| コード | 説明
+| 2000 | assembly
+
+|===
+
+[none]
+**** 出典：CityGML2.0 Annex C.10
+
+　
+
+===== 2)　CityObjectGroup_function.xml
+
+[cols="3,22"]
+|===
+| ファイル名 | CityObjectGroup_function.xml
+
+| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/CityObjectGroup_usage.xml
+| コード | 説明
+| 1030 | lod4Storey
+| 1040 | zone
+
+|===
+
+[none]
+**** 参考：CityGML2.0 Annex C.10
+

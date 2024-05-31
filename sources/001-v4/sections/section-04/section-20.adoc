@@ -1,0 +1,399 @@
+[[toc4_20]]
+=== 　区域モデルの応用スキーマ
+
+区域とは、一般に、区画された一定の範囲の土地及び水面を意味する。地域団体の地域的構成範囲（普通地方公共団体の区域）、行政庁の地域的管轄範囲（農業委員会の区域）、公物の地域的限界（道路の区域）、河川区域、土地をその構成部分とする権利の地域的範囲（鉱区）等を示す場合に用いられる。[有斐閣法律用語辞典第4版]
+
+　
+
+[[toc4_20_01]]
+==== 　区域モデルのLOD
+
+[[toc4_20_01_01]]
+===== (1)　区域モデル（LOD1）
+
+===== 1)　区域モデル（LOD1）の概要
+
+区域モデル（LOD1）では、区域の形状を、面により表現する。区域モデル（LOD1）の取得イメージを表 4-116に示す。
+
+[cols="5,9"]
+.表 4-116　区域モデル（LOD1）の取得イメージ
+|===
+| ^| LOD1
+| 取得例
+a| image::images/407.webp["",300]
+
+| 説明
+a| 区域の境界により囲まれた面を取得する。 +
+高さは0とする。
+
+|===
+
+===== 2)　区域モデル（LOD1）の定義
+
+[cols="7,7,7,7,7,18,7"]
+|===
+| | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
+
+| LOD1
+| ●
+| Zone
+| MultiSurface
+| 
+a| • 区域の境界に囲まれた面を取得する。 +
+• 高さは0とする。
+| • 都市計画の区域は、Zoneを継承するクラスを用いて記述する。
+
+|===
+
+[none]
+**** ●：必須
+
+**** ■：条件付必須
+
+**** 〇：任意（ユースケースに応じて要否を決定してよい）
+
+[[toc4_20_01_02]]
+===== (2)　各LODにおいて使用可能な地物型と空間属性
+
+区域モデルの各LODにおいて使用可能な地物型と空間属性を表 4-117に示す。
+
+[cols="4,4,1,1,1,1,8"]
+.表 4-117　区域モデルの記述に使用する地物型と空間属性
+|===
+^| 地物型 ^| 空間属性 ^| LOD0 ^| LOD1 ^| LOD2 ^| LOD3 ^| 適用
+| urf:Zone | ^| ^| ● ^| ^| .2+| 
+| | urf:lod1MultiSurface ^| ^| ● | | 
+
+|===
+
+[none]
+**** ●：必須
+
+**** ■：条件付必須
+
+**** 〇：任意（ユースケースに応じて要否を決定してよい）
+
+[[toc4_20_02]]
+==== 　区域モデルの応用スキーマクラス図
+
+[[toc4_20_02_01]]
+===== (1)　Urban Function（i-UR）
+
+image::images/408.svg[]
+
+[[toc4_20_03]]
+==== 　区域モデルの応用スキーマ文書
+
+[[toc4_20_03_01]]
+===== (1)　Urban Function（i-UR）
+
+===== 1)　urf:Zone
+
+[cols="1,1,2"]
+|===
+| 型の定義 2+| 法令により定められた区域。 標準製品仕様書では、以下を対象とする。 　• 河川法における河川区域、高規格堤防特別区域、樹林帯区域、河川保全区域、河川立体区域 　• 港湾法における港湾区域、港湾隣接区域 　• 漁港漁場整備法における漁港の区域 　• 海岸法における海岸保全区域 　• 道路法における道路の区域 　• 都市公園法における都市公園の区域 上記以外の法令により定められた区域についても、urf:Zoneを継承する下位のクラスとして定義されていない場合は、urf:Zoneを使用して記述する。
+
+| 上位の型 2+| urf:_UrbanFunction
+| ステレオタイプ 2+| << FeatureType >>
+3+| 継承する属性
+| 属性名 | 属性の型及び多重度 | 定義
+| gml:description | gml:StringOrRefType [0..1] | 区域の概要。
+| gml:name | gml:CodeType [0..1] | 区域を識別する名称。文字列とする。 都市公園の区域の場合は、都市公園の名称とする。
+| (gml:boundedBy) | gml:Envelope [0..1] | 区域の範囲と空間参照系。
+| core:creationDate | xs:date [0..1] | オブジェクト（データ）が作成された日。
+| core:terminationDate | xs:date [0..1] | オブジェクト（データ）が削除された日。
+| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+| (urf:class) | gml:CodeType [0..1] | 区域の分類。
+| urf:function | gml:CodeType [0..*] | 区域の種類。コードリスト（Zone_function.xml）より選択する。多重度は任意となっているが、運用上必須とする。
+| (urf:usage) | gml:CodeType [0..*] | 区域の用途。
+| urf:validFrom | xs:date [0..1] | 効力を生じる日（当初の決定日）の年月日を西暦（YYYY-MM-DD）で記述する。多重度は任意となっているが、運用上必須とする。
+| urf:validFromType | gml:CodeType [0..1] | 効力を生じる日（当初の決定日）の種類。コードリスト（Common_validType.xml）より選択する。多重度は任意となっているが、運用上必須とする。
+| (urf:enactmentFiscalYear) | xs:gYear[0..1] | 決定された年度（西暦）。
+| urf:validTo | xs:date [0..1] | 効力を失う日の年月日を西暦（YYYY-MM-DD）で記述する。
+| urf:validToType | gml:CodeType [0..1] | 効力を失う日の種類。コードリスト（Common_validType.xml）より選択する。
+| urf:expirationFiscalYear | xs:gYear[0..1] | 効力を失う日の年度。
+| urf:legalGrounds | xs:string [0..1] | 法的根拠。
+| urf:custodian | xs:string [0..1] | 決定主体。
+| urf:notificationNumber | xs:string [0..1] | 告示番号。
+| (urf:finalNotificationNumber) | xs:string [0..1] | 告示番号（最終）。
+| (urf:finalNotificationDate) | xs:date [0..1] | 告示（最終）の日付。
+| (urf:urbanPlanType) | gml:CodeType [0..1] | 都市計画区域。
+| (urf:areaClassificationType) | gml:CodeType [0..1] | 区域区分。
+| urf:nominalArea | gml:MeasureType[0..1] | 公式の面積。単位はha（uom=”ha”）とする。 区域の総面積とし、複数の市区町村に跨っている場合は合計とする。 都市公園の区域の場合は、開園面積（供用開始の面積）とする。
+| urf:prefecture | gml:CodeType [0..1] | 区域が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
+| urf:city | gml:CodeType [0..1] | 区域が所在する市区町村の市区町村コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
+| urf:reference | xs:anyURI [0..1] | 参照情報。
+| urf:reason | gml:StringOrRefType [0..1] | 指定の事由。
+| urf:note | gml:StringOrRefType [0..1] | 備考。
+| (urf:surveyYear) | xs:gYear[0..1] | 調査年。
+3+| 当該型に定義された属性
+| 属性名 | 属性の型及び多重度 | 定義
+| urf:location | xs:string [0..1] | 区域が位置する地名。 [記述例] 新潟県長岡市大字宮本東方町、大字高頭町、大字深沢町、大字親沢町及び大字大積町一丁目
+3+| 継承する関連役割
+| 関連役割名 | 関連役割の型及び多重度 | 定義
+| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット（集合）。属性を追加したい場合に使用する。
+| urf:lod1MultiSurface
+| gml:MultiSurface [0..1]
+a| 区域の範囲。区域の境界線に囲まれた面とする。 +
+高さを0とする。
+
+| urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
+| urf:dataQualityAttribute | uro:DataQualityAttribute [0..1] | 作成したデータの品質に関する情報。必須とする。
+| urf:boundary | urf:Boundary [0..*] | 区域を構成する境界。 区域の境界線に、道路縁や行政界線等の区分を行いたい場合に使用する。
+3+| 当該型に定義された関連役割
+| 関連役割名 | 関連役割の型及び多重度 | 定義
+| urf:urbanParkAttribute | urf:UrbanParkAttribute [0..1] | 都市公園に関するデータ型を保持する。区域が都市公園の区域の場合に使用する。
+
+|===
+
+　
+
+===== 2)　urf:Boundary
+
+[cols="1,1,2"]
+|===
+| 型の定義 2+| 区域の境界線。 都市計画決定された区域を区分する境界線。都市計画決定された区域区域の境界に確定根拠等の情報を付与したい場合に作成する。
+
+| 上位の型 2+| ―
+| ステレオタイプ 2+| << DataType >>
+3+| 自身に定義された属性
+| 属性名 | 属性の型及び多重度 | 定義
+| (urf:class) | gml:CodeType [0..1] | 境界線の区分。
+| urf:function | gml:CodeType [1..*] | 境界線の種類。コードリスト（Boundary_function.xml）より選択する。
+| (urf:usage) | gml:CodeType [0..*] | 区域界が区切る区域の種類。コードリスト（Zone_function.xml）より選択する。 都市計画の区域を区分する境界の場合に、区域の種類を特定する
+| urf:offset | gml:LengthType [0..1] | オフセットされている場合の量。単位はm（uom=”m”）とする。
+| urf:offsetDirection | xs:string [0..1] | 基準となる線に対するオフセットの方向。
+3+| 自身に定義された関連役割
+| 関連役割名 | 関連役割の型及び多重度 | 定義
+| urf:location | gml:MultiCurve [0..1] | 境界線の位置。高さを0とする。
+
+|===
+
+===== 3)　urf:UrbanParkAttribute
+
+[cols="1,1,2"]
+|===
+| 型の定義 2+| 都市公園法第２条第１項で定義する都市公園に関する情報を定義したデータ型。 都市公園は、上位の型がもつ属性「gml:name」、「urf:function」、「urf:nominalArea」、「urf:location」及び当該型に定義する属性を記述する。 なお、都市公園のうち、国又は地方公共団体が設置する都市計画施設である公園又は緑地に該当するときは、「urf:OpenSpaceForPublicUse」を必要に応じ別途作成する。
+
+| 上位の型 2+| ―
+| ステレオタイプ 2+| << DataType >>
+3+| 属性
+| 属性名 | 属性の型及び多重度 | 定義
+| urf:parkCode | gml:CodeType [1] | 公園を一意に識別するコード。 コードリスト（Common_parkCode.xml）より選択する。
+| urf:startFrom | xs:date [1] | 公園の設置の年月日（供用開始の日付）。
+| urf:breakdownOfNominalArea | uro:BreakdownOfNominalArea[0..*] | 都市公園の敷地面積の内訳。
+
+|===
+
+===== 4)　urf:BreakdownOfNominalArea
+
+[cols="1,1,2"]
+|===
+| 型の定義 2+| 都市公園の敷地面積の内訳に関する情報を定義したデータ型。
+
+| 上位の型 2+| ―
+| ステレオタイプ 2+| << DataType >>
+3+| 属性
+| 属性名 | 属性の型及び多重度 | 定義
+| urf:breakdown | xs:string [1] | 都市公園の敷地の内訳。 [記述例] 国有地、長岡市所有地
+| urf:areaInSquareMeter | gml:MeasureType [1] | 都市公園の敷地の内訳面積。単位はm2（uom=“m2“）とする。
+
+|===
+
+===== 5)　uro:DataQualityAttribute
+
+[cols="1,1,2"]
+|===
+| 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
+
+| 上位の型 2+| ―
+| ステレオタイプ 2+| << DataType >>
+3+| 自身に定義された属性
+| 属性名 | 属性の型及び多重度 | 定義
+| (uro:geometrySrcDescLod0) | gml:CodeType [0..*] | LOD0の幾何オブジェクトの作成に使用した原典資料の種類。
+| uro:geometrySrcDescLod1 | gml:CodeType [1..*] | LOD1の幾何オブジェクトの作成に使用した原典資料の種類。 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。
+| (uro:geometrySrcDescLod2) | gml:CodeType [0..*] | LOD2の幾何オブジェクトの作成に使用した原典資料の種類。
+| (uro:geometrySrcDescLod3) | gml:CodeType [0..*] | LOD3の幾何オブジェクトの作成に使用した原典資料の種類。
+| (uro:geometrySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
+| uro:thematicSrcDesc | gml:CodeType [0..\*] | 主題属性の作成に使用した原典資料の種類。 コードリスト（DataQualityAttribute_thematicSrcDesc.xml）より選択する。 主題属性が作成対象となっている場合は必須とする。
+| (uro:appearanceSrcDescLod0) | gml:CodeType [0..*] | LOD0の幾何オブジェクトのアピアランスに使用した原典資料の種類。
+| uro:appearanceSrcDescLod1 | gml:CodeType [0..*] | LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 拡張製品仕様書LOD1の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD1の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
+| (uro:appearanceSrcDescLod2) | gml:CodeType [0..*] | LOD2の幾何オブジェクトのアピアランスに使用した原典資料の種類。
+| (uro:appearanceSrcDescLod3) | gml:CodeType [0..*] | LOD3の幾何オブジェクトのアピアランスに使用した原典資料の種類。
+| uro:appearanceSrcDescLod4 | gml:CodeType [0..*] | LOD4の幾何オブジェクトのアピアランスに使用した原典資料の種類。
+| (uro:lodType) | gml:CodeType[0..*] | オブジェクトに適用されたLODの詳細な区分。
+| (uro:lod1HeightType) | gml:CodeType [0..1] | LOD1の立体図形を作成する際に使用した高さの算出方法。
+| (uro:tranDataAcquisition) | xs:string [0..1] | 「道路基盤地図情報（整備促進版）製品仕様書（案）」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
+3+| 自身に定義された関連役割
+| 関連役割名 | 関連役割の型及び多重度 | 定義
+| (uro:publicSurveyDataQualityAttribute) | uro:PublicSurveyDataQualityAttribute [0..1] | 使用した公共測量成果の地図情報レベルと種類。
+
+|===
+
+===== 6)　uro:KeyValuePairAttribute
+
+[cols="1,1,2"]
+|===
+| 型の定義 2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。 属性名称と属性の値の対で構成される。コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
+
+| 上位の型 2+| ―
+| ステレオタイプ 2+| << DataType >>
+3+| 自身に定義された属性
+| 属性名 | 属性の型及び多重度 | 定義
+| uro:key | gml:CodeType [1] | 拡張する属性の名称。名称は、コ－ドリスト（KeyValuePairAttribute_key.xml）を作成し、選択する。
+| uro:codeValue | gml:CodeType [1] | 拡張された属性の値。値は名称は、コ－ドリスト（KeyValuePairAttribute_key[key].xml）を作成し、選択する。 [key]は、属性uro:keyの値に一致する。
+
+|===
+
+[[toc4_20_04]]
+==== 　区域モデルで使用するコードリストと列挙型
+
+[[toc4_20_04_01]]
+===== (1)　Urban Function（i-UR）
+
+===== 1)　Zone_function.xml
+
+[cols="3,22"]
+|===
+| ファイル名 | Zone_function.xml
+
+| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Zone_function.xml
+| コード | 説明
+| 0101 | 河川区域
+| 0102 | 高規格堤防特別区域
+| 0103 | 樹林帯区域
+| 0201 | 港湾区域
+| 0202 | 港湾隣接区域
+| 0301 | 海岸保全区域
+| 0401 | 漁港の区域
+| 0501 | 道路の区域
+| 0601 | 都市公園の区域
+
+|===
+
+　
+
+===== 2)　Common_validType.xml
+
+都市計画決定情報のコードリストを参照。
+
+　
+
+===== 3)　Boundary_function.xml
+
+都市計画決定情報のコードリストを参照。
+
+　
+
+===== 4)　Common_parkCode.xml
+
+公園施設長寿命化計画のための拡張属性のコードリストを参照。
+
+　
+
+===== 5)　DataQualityAttribute_geometrySrcDesc.xml
+
+[cols="3,22"]
+|===
+| ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
+
+| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml
+| コード | 説明
+| 000 | 公共測量成果
+| 101 | （公共測量ではない）現地測量の測量成果
+| 102 | （公共測量ではない）UAV写真測量の測量成果
+| 103 | （公共測量ではない）空中写真測量の測量成果
+| 104 | （公共測量ではない）既成図数値化の測量成果
+| 105 | （公共測量ではない）修正測量の測量成果
+| 106 | （公共測量ではない）写真地図作成の測量成果
+| 107 | （公共測量ではない）地図編集の測量成果
+| 108 | （公共測量ではない）地上レーザ測量の測量成果
+| 109 | （公共測量ではない）UAV写真点群測量の測量成果
+| 110 | （公共測量ではない）UAVレーザ測量の測量成果
+| 111 | （公共測量ではない）車載写真レーザ測量の測量成果
+| 112 | （公共測量ではない）航空レーザ測量の測量成果
+| 113 | （公共測量ではない）航空レーザ測深測量の測量成果
+| 114 | （公共測量ではない）路線測量の測量成果
+| 115 | （公共測量ではない）河川測量の測量成果
+| 116 | （公共測量ではない）用地測量の測量成果
+| 117 | （公共測量ではない）その他の応用測量の測量成果
+| 118 | （公共測量ではない）LidarSLAM計測の測量成果
+| 119 | （公共測量ではない）高密度航空レーザ測量の測量成果
+| 120 | （公共測量ではない）写真点群測量の測量成果
+| 121 | （公共測量ではない）三次元数値図化の測量成果
+| 201 | 都市計画基礎調査
+| 202 | 都市計画図書
+| 300 | 台帳
+| 301 | 道路台帳
+| 400 | その他のGISデータ
+| 500 | BIMモデル、CADデータ、設計図、完成図、一般図（平面図、配置図、断面図等）
+| 700 | その他の資料
+| 801 | 現地調査
+| 803 | GISデータ演算
+| 901 | 推定
+| 999 | 未作成
+
+|===
+
+[none]
+**** 参考：作業規程の準則、3D都市モデル整備のための測量マニュアル、3D都市モデル標準作業手順書
+
+　
+
+===== 6)　DataQualityAttribute_thematicSrcDesc.xml
+
+[cols="3,22"]
+|===
+| ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
+
+| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml
+| コード | 説明
+| 000 | 公共測量成果
+| 022 | 基盤地図情報
+| 023 | 数値地形図データ
+| 100 | 公共測量成果ではない測量成果
+| 201 | 都市計画基礎調査
+| 202 | 都市計画図書
+| 300 | 台帳（分類しない）
+| 301 | 道路台帳
+| 400 | その他のGISデータ
+| 500 | BIMモデル、CADデータ、設計図、完成図、一般図（平面図、配置図、断面図等）
+| 600 | 統計データ
+| 701 | 建築計画概要書
+| 700 | その他の資料
+| 801 | 現地調査
+| 802 | 写真判読
+| 803 | GISデータ演算
+| 999 | 未作成
+
+|===
+
+[none]
+**** 参考：作業規程の準則、3D都市モデル整備のための測量マニュアル、3D都市モデル標準作業手順書
+
+　
+
+===== 7)　DataQualityAttribute_appearanceSrcDesc.xml
+
+[cols="3,22"]
+|===
+| ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
+
+| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml
+| コード | 説明
+| 1 | 空中写真
+| 2 | 衛星写真
+| 3 | 車載写真レーザ測量システムにより撮影した写真
+| 4 | 手持ちカメラにより撮影した写真
+| 5 | 疑似テクスチャ
+| 99 | 未作成
+
+|===
+
