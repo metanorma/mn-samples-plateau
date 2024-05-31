@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 595.276001 450.1100159" style="enable-background:new 0 0 595.276001 450.1100159;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFCC;}
+	.st1{fill:none;stroke:#000000;stroke-width:1.0285715;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:10;}
+	.st2{font-family:'YuGothicUI-Regular';}
+	.st3{font-size:7.0386257px;}
+	.st4{font-size:6.6857147px;}
+	.st5{font-family:'YuGothicUI-Bold';}
+	.st6{fill-rule:evenodd;clip-rule:evenodd;fill:#FFCCFF;}
+	.st7{fill:none;stroke:#000000;stroke-width:0.1910204;stroke-miterlimit:10;}
+	.st8{fill-rule:evenodd;clip-rule:evenodd;}
+	.st9{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+</style>
+<polygon class="st0" points="268.9749451,171.0571289 376.6442261,171.0571289 376.6442261,106.7714233 268.9749451,106.7714233 "/>
+<polygon class="st1" points="268.9749451,171.0571289 376.6442261,171.0571289 376.6442261,106.7714233 268.9749451,106.7714233 "/>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 309.6006165 115.5211105)" class="st2 st3">_TransportationObject</text>
+<text transform="matrix(0.85 0 0 1 300.96875 127.3354492)" class="st2 st4">«FeatureType»</text>
+<text transform="matrix(0.85 0 0 1 292.3359375 136.0776367)" class="st5 st4">tran::TrafficComplex</text>
+<line class="st1" x1="268.9749451" y1="140.1999512" x2="376.1363525" y2="140.1999512"/>
+<text transform="matrix(0.85 0 0 1 271.5078125 149.4604492)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 276.0771484 149.4604492)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 282.6796875 149.4604492)" class="st2 st4">class: gml::CodeType [0..1]</text>
+<text transform="matrix(0.85 0 0 1 271.5078125 158.1948242)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 276.0771484 158.1948242)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 282.6796875 158.1948242)" class="st2 st4">function: gml::CodeType [0..*]</text>
+<text transform="matrix(0.85 0 0 1 271.5078125 166.9370117)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 276.0771484 166.9370117)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 282.6796875 166.9370117)" class="st2 st4">usage: gml::CodeType [0..*]</text>
+<polygon class="st6" points="476.187561,161.7999878 537.1324463,161.7999878 537.1324463,120.6571045 476.187561,120.6571045 "/>
+<polygon class="st1" points="476.187561,161.7999878 537.1324463,161.7999878 537.1324463,120.6571045 476.187561,120.6571045 "/>
+<text transform="matrix(0.85 0 0 1 484.8203125 130.9448242)" class="st2 st4">«FeatureType»</text>
+<text transform="matrix(0.85 0 0 1 484.3125 139.6791992)" class="st5 st4">uro::Waterway</text>
+<polygon class="st6" points="452.8253479,341.2857056 581.3175049,341.2857056 581.3175049,234.8285522 452.8253479,234.8285522 "/>
+<polygon class="st1" points="452.8253479,341.2857056 581.3175049,341.2857056 581.3175049,234.8285522 452.8253479,234.8285522 "/>
+<text transform="matrix(0.85 0 0 1 499.546875 245.109375)" class="st2 st4">«DataType»</text>
+<text transform="matrix(0.85 0 0 1 472.125 253.8515625)" class="st5 st4">uro::WaterwayDetailAttribute</text>
+<line class="st1" x1="452.8253479" y1="257.9714355" x2="580.8096313" y2="257.9714355"/>
+<text transform="matrix(0.85 0 0 1 455.3671875 267.2265625)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 459.9365234 267.2265625)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 466.5390625 267.2265625)" class="st2 st4">routeId: xs::string</text>
+<text transform="matrix(0.85 0 0 1 455.3671875 275.96875)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 459.9365234 275.96875)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 466.5390625 275.96875)" class="st2 st4">routeDirection: gml::CodeType [0..1]</text>
+<text transform="matrix(0.85 0 0 1 455.3671875 284.7109375)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 459.9365234 284.7109375)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 466.5390625 284.7109375)" class="st2 st4">minimumWidth: gml::LengthType [0..1]</text>
+<text transform="matrix(0.85 0 0 1 455.3671875 293.4609375)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 459.9365234 293.4609375)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 466.5390625 293.4609375)" class="st2 st4">maximumWidth: gml::LengthType [0..1]</text>
+<text transform="matrix(0.85 0 0 1 455.3671875 302.203125)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 459.9365234 302.203125)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 466.5390625 302.203125)" class="st2 st4">length: gml::LengthType [0..1]</text>
+<text transform="matrix(0.85 0 0 1 455.3671875 310.9453125)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 459.9365234 310.9453125)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 466.5390625 310.9453125)" class="st2 st4">navigation: xs::string [0..1]</text>
+<text transform="matrix(0.85 0 0 1 455.3671875 319.6796875)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 459.9365234 319.6796875)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 466.5390625 319.6796875)" class="st2 st4">plannedDepth: gml::LengthType [0..1]</text>
+<text transform="matrix(0.85 0 0 1 455.3671875 328.421875)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 459.9365234 328.421875)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 466.5390625 328.421875)" class="st2 st4">speedLimit: gml::MeasureType [0..1]</text>
+<text transform="matrix(0.85 0 0 1 455.3671875 337.171875)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 459.9365234 337.171875)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 466.5390625 337.171875)" class="st2 st4">targetShipType: xs::string [0..*]</text>
+<polygon class="st6" points="126.2623367,444.1428223 235.96315,444.1428223 235.96315,320.1999512 126.2623367,320.1999512 "/>
+<polygon class="st1" points="126.2623367,444.1428223 235.96315,444.1428223 235.96315,320.1999512 126.2623367,320.1999512 "/>
+<text transform="matrix(0.85 0 0 1 163.3359375 330.484375)" class="st2 st4">«DataType»</text>
+<text transform="matrix(0.85 0 0 1 146.578125 339.2265625)" class="st5 st4">uro::FacilityIdAttribute</text>
+<line class="st1" x1="126.2623367" y1="343.3428955" x2="235.4552765" y2="343.3428955"/>
+<text transform="matrix(0.85 0 0 1 128.796875 352.6015625)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 133.3662109 352.6015625)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 139.9765625 352.6015625)" class="st2 st4">id: xs::string [0..1]</text>
+<text transform="matrix(0.85 0 0 1 128.796875 361.34375)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 133.3662109 361.34375)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 139.9765625 361.34375)" class="st2 st4">partId: xs::string [0..1]</text>
+<text transform="matrix(0.85 0 0 1 128.796875 370.0859375)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 133.3662109 370.0859375)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 139.9765625 370.0859375)" class="st2 st4">branchId: xs::string [0..1]</text>
+<text transform="matrix(0.85 0 0 1 128.796875 378.8359375)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 133.3662109 378.8359375)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 139.9765625 378.8359375)" class="st2 st4">prefecture: gml::CodeType [0..*]</text>
+<text transform="matrix(0.85 0 0 1 128.796875 387.5703125)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 133.3662109 387.5703125)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 139.9765625 387.5703125)" class="st2 st4">city: gml::CodeType [0..*]</text>
+<text transform="matrix(0.85 0 0 1 128.796875 396.3125)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 133.3662109 396.3125)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 139.9765625 396.3125)" class="st2 st4">route: xs::string [0..1]</text>
+<text transform="matrix(0.85 0 0 1 128.796875 405.0546875)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 133.3662109 405.0546875)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 139.9765625 405.0546875)" class="st2 st4">startPost: xs::string [0..1]</text>
+<text transform="matrix(0.85 0 0 1 128.796875 413.7890625)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 133.3662109 413.7890625)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 139.9765625 413.7890625)" class="st2 st4">endPost: xs::string [0..1]</text>
+<text transform="matrix(0.85 0 0 1 128.796875 422.5390625)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 133.3662109 422.5390625)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 139.9765625 422.5390625)" class="st2 st4">startLat: xs::double [0..1]</text>
+<text transform="matrix(0.85 0 0 1 128.796875 431.28125)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 133.3662109 431.28125)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 139.9765625 431.28125)" class="st2 st4">startLong: xs::double [0..1]</text>
+<text transform="matrix(0.85 0 0 1 128.796875 440.0234375)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 133.3662109 440.0234375)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 139.9765625 440.0234375)" class="st2 st4">alternativeName: xs::string [0..*]</text>
+<polygon class="st6" points="248.1521149,365.4571533 350.7426758,365.4571533 350.7426758,320.1999512 248.1521149,320.1999512 "/>
+<polygon class="st1" points="248.1521149,365.4571533 350.7426758,365.4571533 350.7426758,320.1999512 248.1521149,320.1999512 "/>
+<text transform="matrix(0.85 0 0 1 281.6640625 330.484375)" class="st2 st4">«DataType»</text>
+<text transform="matrix(0.85 0 0 1 260.8515625 339.2265625)" class="st5 st4">uro::FacilityTypeAttribute</text>
+<line class="st1" x1="248.1521149" y1="343.3428955" x2="350.2348022" y2="343.3428955"/>
+<text transform="matrix(0.85 0 0 1 250.6953125 352.6015625)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 255.2646484 352.6015625)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 261.8671875 352.6015625)" class="st2 st4">class: gml::CodeType [0..1]</text>
+<text transform="matrix(0.85 0 0 1 250.6953125 361.34375)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 255.2646484 361.34375)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 261.8671875 361.34375)" class="st2 st4">function: gml::CodeType [0..*]</text>
+<polygon class="st6" points="359.8843994,361.3428955 445.7151184,361.3428955 445.7151184,320.1999512 359.8843994,320.1999512 "/>
+<polygon class="st1" points="359.8843994,361.3428955 445.7151184,361.3428955 445.7151184,320.1999512 359.8843994,320.1999512 "/>
+<text transform="matrix(0.85 0 0 1 385.2734375 330.484375)" class="st2 st4">«DataType»</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 371.5706787 339.2281799)" class="st2 st3">u</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 371.5706787 339.2281799)" class="st7 st2 st3">u</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 375.630249 339.2281799)" class="st2 st3">r</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 375.630249 339.2281799)" class="st7 st2 st3">r</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 378.1634521 339.2281799)" class="st2 st3">o</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 378.1634521 339.2281799)" class="st7 st2 st3">o</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 382.223999 339.2281799)" class="st2 st3">::</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 382.223999 339.2281799)" class="st7 st2 st3">::</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 385.2581787 339.2281799)" class="st2 st3">F</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 385.2581787 339.2281799)" class="st7 st2 st3">F</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 388.8118896 339.2281799)" class="st2 st3">a</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 388.8118896 339.2281799)" class="st7 st2 st3">a</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 392.3626709 339.2281799)" class="st2 st3">c</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 392.3626709 339.2281799)" class="st7 st2 st3">c</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 395.4124756 339.2281799)" class="st2 st3">ili</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 395.4124756 339.2281799)" class="st7 st2 st3">ili</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 399.9915771 339.2281799)" class="st2 st3">t</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 399.9915771 339.2281799)" class="st7 st2 st3">t</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 402.5257568 339.2281799)" class="st2 st3">y</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 402.5257568 339.2281799)" class="st7 st2 st3">y</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 406.0775146 339.2281799)" class="st2 st3">A</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 406.0775146 339.2281799)" class="st7 st2 st3">A</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 410.645874 339.2281799)" class="st2 st3">tt</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 410.645874 339.2281799)" class="st7 st2 st3">tt</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 415.71521 339.2281799)" class="st2 st3">r</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 415.71521 339.2281799)" class="st7 st2 st3">r</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 418.2484131 339.2281799)" class="st2 st3">i</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 418.2484131 339.2281799)" class="st7 st2 st3">i</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 419.7747803 339.2281799)" class="st2 st3">b</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 419.7747803 339.2281799)" class="st7 st2 st3">b</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 423.8343506 339.2281799)" class="st2 st3">u</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 423.8343506 339.2281799)" class="st7 st2 st3">u</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 427.8939209 339.2281799)" class="st2 st3">t</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 427.8939209 339.2281799)" class="st7 st2 st3">t</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 430.4281006 339.2281799)" class="st2 st3">e</text>
+<text transform="matrix(0.85 0 -0.3126727 0.9498609 430.4281006 339.2281799)" class="st7 st2 st3">e</text>
+<line class="st1" x1="359.8843994" y1="343.3428955" x2="445.2072449" y2="343.3428955"/>
+<text transform="matrix(0.85 0 0 1 362.421875 352.6015625)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 366.9912109 352.6015625)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 373.59375 352.6015625)" class="st2 st4">facilityId: xs::string [0..1]</text>
+<polygon class="st6" points="50.0812225,55.3428192 191.2702179,55.3428192 191.2702179,7.514267 50.0812225,7.514267 "/>
+<polygon class="st1" points="50.0812225,55.3428192 191.2702179,55.3428192 191.2702179,7.514267 50.0812225,7.514267 "/>
+<text transform="matrix(0.85 0 0 1 102.8984375 17.7963867)" class="st2 st4">«DataType»</text>
+<text transform="matrix(0.85 0 0 1 80.046875 26.5463867)" class="st5 st4">uro::KeyValuePairAttribute</text>
+<line class="st1" x1="50.0812225" y1="30.6570892" x2="190.7623444" y2="30.6570892"/>
+<text transform="matrix(0.85 0 0 1 52.6171875 39.9135742)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 57.1865234 39.9135742)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 63.7890625 39.9135742)" class="st2 st4">key: gml::CodeType</text>
+<text transform="matrix(0.85 0 0 1 52.6171875 48.6557617)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 57.1865234 48.6557617)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 63.7890625 48.6557617)" class="st2 st4">codeValue: gml::CodeType [0..1]</text>
+<polygon class="st6" points="13.514286,226.5999756 165.8765106,226.5999756 165.8765106,76.4285278 13.514286,76.4285278 "/>
+<polygon class="st1" points="13.514286,226.5999756 165.8765106,226.5999756 165.8765106,76.4285278 13.514286,76.4285278 "/>
+<text transform="matrix(0.85 0 0 1 71.921875 86.7104492)" class="st2 st4">«DataType»</text>
+<text transform="matrix(0.85 0 0 1 50.5859375 95.4526367)" class="st5 st4">uro::DataQualityAttribute</text>
+<line class="st1" x1="13.514286" y1="99.5714111" x2="165.3686371" y2="99.5714111"/>
+<text transform="matrix(0.85 0 0 1 16.0546875 108.8354492)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 20.6240234 108.8354492)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 27.2265625 108.8354492)" class="st2 st4">geometrySrcDescLod0: gml::CodeType [0..*]</text>
+<text transform="matrix(0.85 0 0 1 16.0546875 117.5698242)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 20.6240234 117.5698242)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 27.2265625 117.5698242)" class="st2 st4">geometrySrcDescLod1: gml::CodeType [1..*]</text>
+<text transform="matrix(0.85 0 0 1 16.0546875 126.3120117)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 20.6240234 126.3120117)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 27.2265625 126.3120117)" class="st2 st4">geometrySrcDescLod2: gml::CodeType [0..*]</text>
+<text transform="matrix(0.85 0 0 1 16.0546875 135.0541992)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 20.6240234 135.0541992)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 27.2265625 135.0541992)" class="st2 st4">geometrySrcDescLod3: gml::CodeType [0..*]</text>
+<text transform="matrix(0.85 0 0 1 16.0546875 143.7885742)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 20.6240234 143.7885742)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 27.2265625 143.7885742)" class="st2 st4">geometrySrcDescLod4: gml::CodeType [0..*]</text>
+<text transform="matrix(0.85 0 0 1 16.0546875 152.5385742)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 20.6240234 152.5385742)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 27.2265625 152.5385742)" class="st2 st4">thematicSrcDesc: gml::CodeType [0..*]</text>
+<text transform="matrix(0.85 0 0 1 16.0546875 161.2807617)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 20.6240234 161.2807617)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 27.2265625 161.2807617)" class="st2 st4">appearanceSrcDescLod0: gml::CodeType [0..*]</text>
+<text transform="matrix(0.85 0 0 1 16.0546875 170.0229492)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 20.6240234 170.0229492)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 27.2265625 170.0229492)" class="st2 st4">appearanceSrcDescLod1: gml::CodeType [0..*]</text>
+<text transform="matrix(0.85 0 0 1 16.0546875 178.7729492)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 20.6240234 178.7729492)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 27.2265625 178.7729492)" class="st2 st4">appearanceSrcDescLod2: gml::CodeType [0..*]</text>
+<text transform="matrix(0.85 0 0 1 16.0546875 187.5151367)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 20.6240234 187.5151367)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 27.2265625 187.5151367)" class="st2 st4">appearanceSrcDescLod3: gml::CodeType [0..*]</text>
+<text transform="matrix(0.85 0 0 1 16.0546875 196.2573242)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 20.6240234 196.2573242)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 27.2265625 196.2573242)" class="st2 st4">appearanceSrcDescLod4: gml::CodeType [0..*]</text>
+<text transform="matrix(0.85 0 0 1 16.0546875 205.0073242)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 20.6240234 205.0073242)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 27.2265625 205.0073242)" class="st2 st4">lodType: gml::CodeType [0..*]</text>
+<text transform="matrix(0.85 0 0 1 16.0546875 213.7416992)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 20.6240234 213.7416992)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 27.2265625 213.7416992)" class="st2 st4">lod1HeightType: gml::CodeType [0..1]</text>
+<text transform="matrix(0.85 0 0 1 16.0546875 222.4838867)" class="st2 st4">+</text>
+<text transform="matrix(0.85 0 0 1 20.6240234 222.4838867)" class="st2 st4"> </text>
+<text transform="matrix(0.85 0 0 1 27.2265625 222.4838867)" class="st2 st4">tranDataAcquisition: xs::string [0..1]</text>
+<line class="st1" x1="402.0379333" y1="319.6856689" x2="402.0379333" y2="196.7714233"/>
+<line class="st1" x1="402.0379333" y1="196.7714233" x2="322.8096008" y2="196.7714233"/>
+<line class="st1" x1="322.8096008" y1="196.7714233" x2="322.8096008" y2="171.5714111"/>
+<polyline class="st8" points="325.3489685,176.7142334 322.8096008,171.5714111 320.2702026,176.7142334 322.8096008,181.8571167 
+	325.3489685,176.7142334 "/>
+<polyline class="st1" points="325.3489685,176.7142334 322.8096008,171.5714111 320.2702026,176.7142334 322.8096008,181.8571167 
+	"/>
+<polyline class="st1" points="405.0851746,311.9714355 402.0379333,319.6856689 398.9906921,311.9714355 "/>
+<line class="st1" x1="298.9395142" y1="319.6856689" x2="298.9395142" y2="196.7714233"/>
+<polyline class="st8" points="325.3489685,176.7142334 322.8096008,171.5714111 320.2702026,176.7142334 322.8096008,181.8571167 
+	325.3489685,176.7142334 "/>
+<polyline class="st1" points="325.3489685,176.7142334 322.8096008,171.5714111 320.2702026,176.7142334 322.8096008,181.8571167 
+	"/>
+<polyline class="st1" points="301.9867554,311.9714355 298.9395142,319.6856689 295.8922729,311.9714355 "/>
+<line class="st1" x1="180.6048584" y1="319.6856689" x2="180.6048584" y2="196.7714233"/>
+<line class="st1" x1="180.6048584" y1="196.7714233" x2="322.8096008" y2="196.7714233"/>
+<polyline class="st8" points="325.3489685,176.7142334 322.8096008,171.5714111 320.2702026,176.7142334 322.8096008,181.8571167 
+	325.3489685,176.7142334 "/>
+<polygon class="st1" points="325.3489685,176.7142334 322.8096008,171.5714111 320.2702026,176.7142334 322.8096008,181.8571167 "/>
+<polyline class="st1" points="183.6521149,311.9714355 180.6048584,319.6856689 177.5576172,311.9714355 "/>
+<line class="st1" x1="509.7072754" y1="234.31427" x2="508.6915283" y2="162.31427"/>
+<polyline class="st8" points="511.230896,167.4571533 508.6915283,162.31427 506.1520996,167.4571533 508.6915283,172.5999756 
+	511.230896,167.4571533 "/>
+<polygon class="st1" points="511.230896,167.4571533 508.6915283,162.31427 506.1520996,167.4571533 508.6915283,172.5999756 "/>
+<polyline class="st1" points="512.7545166,226.5999756 509.7072754,234.31427 506.6599731,226.5999756 "/>
+<line class="st1" x1="475.6796875" y1="140.1999512" x2="377.1520996" y2="141.2285767"/>
+<polyline class="st9" points="385.2781067,138.1428223 385.2781067,144.31427 377.1520996,141.2285767 385.2781067,138.1428223 "/>
+<polygon class="st1" points="385.2781067,138.1428223 385.2781067,144.31427 377.1520996,141.2285767 "/>
+<line class="st1" x1="191.7780914" y1="30.142807" x2="243.5812531" y2="30.142807"/>
+<line class="st1" x1="243.5812531" y1="30.142807" x2="243.5812531" y2="138.6571045"/>
+<line class="st1" x1="243.5812531" y1="138.6571045" x2="268.4670715" y2="138.6571045"/>
+<polyline class="st8" points="263.3883362,141.2285767 268.4670715,138.6571045 263.3883362,136.0856934 258.3095703,138.6571045 
+	263.3883362,141.2285767 "/>
+<polygon class="st1" points="263.3883362,141.2285767 268.4670715,138.6571045 263.3883362,136.0856934 258.3095703,138.6571045 "/>
+<polyline class="st1" points="199.3962097,33.2285004 191.7780914,30.142807 199.3962097,27.0571136 "/>
+<line class="st1" x1="166.3843842" y1="162.31427" x2="268.4670715" y2="162.31427"/>
+<polyline class="st8" points="263.3883362,164.8856812 268.4670715,162.31427 263.3883362,159.7428589 258.3095703,162.31427 
+	263.3883362,164.8856812 "/>
+<polygon class="st1" points="263.3883362,164.8856812 268.4670715,162.31427 263.3883362,159.7428589 258.3095703,162.31427 "/>
+<polyline class="st1" points="174.0025024,165.3999634 166.3843842,162.31427 174.0025024,159.2285767 "/>
+<text transform="matrix(0.85 0 0 1 330.9375 316.078125)" class="st2 st4">+tranFacilityAttribute</text>
+<text transform="matrix(0.85 0 0 1 410.671875 317.1171875)" class="st2 st4">0..*</text>
+<text transform="matrix(0.85 0 0 1 200.40625 19.8588867)" class="st2 st4">+tranKeyValuePairAttribute</text>
+<text transform="matrix(0.85 0 0 1 201.9296875 39.9135742)" class="st2 st4">0..*</text>
+<text transform="matrix(0.85 0 0 1 428.953125 220.9448242)" class="st2 st4">+waterwayDetailAttribute</text>
+<text transform="matrix(0.85 0 0 1 514.2734375 222.4838867)" class="st2 st4">0..1</text>
+<text transform="matrix(0.85 0 0 1 215.6484375 315.0546875)" class="st2 st4">+tranFacilityTypeAttribute</text>
+<text transform="matrix(0.85 0 0 1 313.1640625 314.5390625)" class="st2 st4">0..*</text>
+<text transform="matrix(0.85 0 0 1 167.90625 158.1948242)" class="st2 st4">+tranDataQualityAttribute</text>
+<text transform="matrix(0.85 0 0 1 167.90625 172.0854492)" class="st2 st4">1</text>
+<text transform="matrix(0.85 0 0 1 108.484375 306.3125)" class="st2 st4">+tranFacilityIdAttribute</text>
+<text transform="matrix(0.85 0 0 1 189.234375 315.5703125)" class="st2 st4">0..1</text>
+</svg>

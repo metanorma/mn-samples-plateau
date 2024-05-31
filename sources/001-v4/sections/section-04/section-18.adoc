@@ -1,0 +1,769 @@
+[[toc4_18]]
+=== 　地形モデルの応用スキーマ
+
+地形とは、地表の起伏の状態をいう。[公共測量標準図式]
+
+　
+
+[[toc4_18_01]]
+==== 　地形のLOD
+
+[[toc4_18_01_01]]
+===== (1)　地形モデル（LOD0）
+
+===== 1)　地形（LOD0）の概要
+
+地形モデル（LOD0）では、地形を点又は線により表現する。地形モデル（LOD0）の取得イメージを表 4-107に示す。
+
+[cols="5,9,9,9,9,9"]
+.表 4-107　地形モデル（LOD0）の取得イメージ
+|===
+| 5+^| LOD0
+| 取得例
+^a| image::images/368.webp["",150]
+^a| image::images/369.webp["",150]
+^a| image::images/370.webp["",130]
+^a| image::images/371.webp["",170]
+^a| image::images/372.webp["",150]
+
+| 説明 | 等高線及び等深線は等値線を取得する。 | 凹地は高い方を左に見るように等値線を取得する。 | 凹地（小）は高い方を1点目、低い方を2点目として取得する。 | 洞口は正射影の方向に一致させて記号を表示する。 | 露岩は、高度の高い方を右に見る形で界線を取得する。
+| 5+^| LOD0
+| 取得例
+^a| image::images/373.webp["",120]
+^a| image::images/374.webp["",150]
+^a| image::images/375.webp["",170]
+^a| image::images/376.webp["",150]
+^a| image::images/377.webp["",170]
+
+| 説明
+| 土がけは、頂部を示す線と射影部を示す短線を頂部から最大傾斜方向へ図上2.0mmまで表示し、それ以上の射影部は下端を破線で表示する。また、正射影の幅が図上1.0㎝以上の場合には記号の挿入位置を取得する。
+a| 岩がけは、頂部を山型に表示し、傾斜を示す +
+短線は頂部を示す線から最大傾斜方向に、壁面を示す短線は傾斜を示す短線と直角に表示する。傾斜を示す短線は、最大図上2.5mmを表示し射影部の下端を破線で表示する。正射影の幅が図上1.0cm以上の場合には、適宜の位置に（岩）の記号を添えて表示する。
+a| 雨裂は、地図情報レベル500及び1000では土がけの記号で表示する。地図情報レベル2500は雨裂の正射影を表示する。 +
+急斜面は、地図情報レベル500及び1000の場合にのみ土がけの記号で表示する。
+a| 散岩は、高度の高い方を右に見る形で界線を取得する。 +
+極小は記号表示位置の点を取得する。
+| さんご礁は、高度の高い方を右に見る形で界線を取得する。
+
+|===
+
+　
+
+===== 2)　地形モデル（LOD0）の定義
+
+地形モデル（LOD0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
+
+[cols="43,43,43,48,43,100,80"]
+|===
+| | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
+
+| LOD0
+| ●
+| ReliefFeature
+| ―
+| • 等高線、凹地、土がけ、雨裂、急斜面、洞口、岩がけ、露岩、散岩、さんご礁
+a| • BreaklineRelief又はMassPointReliefの集まりとして取得する。 +
+• 高さは0とする。
+| ReliefFeatureは地物の集まりとして表現し、空間属性はもたない。
+
+.3+| LOD0
+.3+| ■
+.3+| BreaklineRelief
+.3+| MultiCurve
+| • 等高線、凹地
+a| • 等値線を取得する。 +
+• 高さは0とする。
+| 
+
+| • 土がけ、雨裂、急斜面、岩がけ
+a| • 上端線及び下端線を取得する。このとき、上端線は低い方を右に見る形で、下端線は高い方を右に見る形で取得する。 +
+• 高さは0とする。
+| 
+
+| • 露岩、散岩、さんご礁
+a| • 高度の高い方を右に見る形で界線を取得する。 +
+• 高さは0とする。
+| 
+
+.3+| LOD0
+.3+| ■
+.3+| MassPointRelief
+.3+| MultiPoint
+| • 岩がけ、土がけ
+a| • 記号表示位置の点を取得する。 +
+• 高さは0とする。
+| 正射影の幅が図上1.0cm以上の場合に、適宜の位置に記号を添えて表示する。
+
+| • 洞口
+a| • 記号表示位置の点と向きを示す方向を取得する。 +
+• 高さは0とする。
+| 入口の正射影の方向に一致させて記号を表示する。
+
+| • 散岩
+a| • 記号表示位置の点を取得する。 +
+• 高さは0とする。
+| 数値地形図の取得方法に従う。
+
+|===
+
+[none]
+**** ●：必須
+
+**** ■：条件付必須
+
+**** 〇：任意（ユースケースに応じて要否を決定してよい）
+
+[[toc4_18_01_02]]
+===== (2)　地形モデル（LOD1）
+
+===== 1)　地形モデル（LOD1）の概要
+
+地形モデル（LOD1）では、地形を、標高をもつ点の集まり又は標高をもつ点から構成する三角形の集合により表現する。地形モデル（LOD1）の取得イメージを表 4-108に示す。
+
+[cols="2,9,9"]
+.表 4-108　地形モデル（LOD1）の取得イメージ
+|===
+| 2+^| LOD1
+| 取得例
+^a| image::images/378.webp["",350]
+^a| image::images/379.webp["",400]
+
+| 説明 | 地形を、標高をもつ点の集まりとして表現する。 | 地形を、標高をもつ任意の三点で構成される三角形の集合として表現する。
+
+|===
+
+　
+
+===== 2)　地形モデル（LOD1）の定義
+
+地形モデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
+
+[cols="43,43,43,48,43,100,80"]
+|===
+| | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
+
+| LOD1 | ● | ReliefFeature | ― | • | • MassPointRelief又はTINReliefの集まりとして取得する。 | ReliefFeatureは地物の集まりとして表現し、空間属性はもたない。
+| LOD1
+| ■
+| MassPointRelief
+| MultiPoint
+a| • レーザ点群の場合は、点密度0.04点/m2以上 +
+• 数値標高モデルの場合は、点密度0.04点/m2以上のレーザ点群を使用して作成し、標高点格子間隔5m以内
+| • 標高をもつ点の集合を取得する。
+| 地形のLODは、その作成に使用する原典資料の点密度又は標高点格子間隔により決定する。
+
+| LOD1
+| ■
+| TINRelief
+| TIN
+a| • レーザ点群の場合は、点密度0.04点/m2以上 +
+• 数値標高モデルの場合は、点密度0.04点/m2以上のレーザ点群を使用して作成し、標高点格子間隔5m以内
+| • 標高をもつ3点で構成される三角形の集合を取得する。
+| 地形のLODは、その作成に使用する原典資料の点密度又は標高点格子間隔により決定する。
+
+|===
+
+[none]
+**** ●：必須
+
+**** ■：条件付必須
+
+**** 〇：任意（ユースケースに応じて要否を決定してよい）
+
+　
+
+[none]
+**** なお、地形のLODは、作業規程の準則第417条に示される「地図情報レベルと格子間隔」（表 4-109）を参考に決定している。地形モデル（LOD1）を格子間隔5m以内（地図情報レベル5000）と設定した。
+
+[cols=2]
+.表 4-109　地図情報レベルと格子間隔の関係
+|===
+| 地図情報レベル | 格子間隔
+| 500 | 0.5m以内
+| 1000 | 1m以内
+| 2500 | 2m以内
+| 5000 | 5m以内
+
+|===
+
+[none]
+**** 出典：作業規程の準則（付録７　公共測量標準図式）
+
+[[toc4_18_01_03]]
+===== (3)　地形モデル（LOD2）
+
+===== 1)　地形モデル（LOD2）の概要
+
+地形モデル（LOD2）では、地形を、標高をもつ点の集まり又は標高をもつ点から構成する三角形の集合により表現する。
+
+地形モデル（LOD2）は、格子間隔2m以内（地図情報レベル2500）としている。
+
+===== 2)　地形モデル（LOD2）の定義
+
+地形モデル（LOD2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
+
+[cols="43,43,43,48,43,100,80"]
+|===
+| | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
+
+| LOD2 | ● | ReliefFeature | ― | | • MassPointRelief又はTINReliefの集まりとして取得する。 | ReliefFeatureは地物の集まりとして表現し、空間属性はもたない。
+| LOD2
+| ■
+| MassPointRelief
+| MultiPoint
+a| • レーザ点群の場合は、点密度0.25点/m2以上 +
+• 数値標高モデルの場合は、点密度0.25点/m2以上のレーザ点群を使用して作成し、標高点格子間隔2m以内
+| • 標高をもつ点の集合を取得する。
+| 地形のLODは、その作成に使用する原典資料の点密度又は標高点格子間隔により決定する。
+
+| LOD2
+| ■
+| TINRelief
+| TIN
+a| • レーザ点群の場合は、点密度0.25点/m2以上 +
+• 数値標高モデルの場合は、点密度0.25点/m2以上のレーザ点群を使用して作成し、標高点格子間隔2m以内
+| • 標高をもつ3点で構成される三角形の集合を取得する。
+| 地形のLODは、その作成に使用する原典資料の点密度又は標高点格子間隔により決定する。
+
+|===
+
+[none]
+**** ●：必須
+
+**** ■：条件付必須
+
+**** 〇：任意（ユースケースに応じて要否を決定してよい）
+
+　
+
+[cols=3]
+|===
+.2+| LOD 2+^| 原典資料
+
+^a| レーザ点群の場合 +
+点密度
+^a| 数値標高モデル（DEM）の場合 +
+作成に使用したレーザ点群の密度及び +
+標高点格子間隔
+
+| LOD2
+| 0.25点/m2以上
+a| ・点密度0.25点/m2以上のレーザ点群を使用して作成 +
+・標高点格子間隔2m以内
+
+|===
+
+[[toc4_18_01_04]]
+===== (4)　地形モデル（LOD3）
+
+===== 1)　地形モデル（LOD3）の概要
+
+地形モデル（LOD3）では、地形を、標高をもつ点の集まり又は標高をもつ点から構成する三角形の集合により表現する。
+
+地形モデル（LOD3）は、格子間隔1m以内（地図情報レベル1000）としている。
+
+===== 2)　地形モデル（LOD3）の定義
+
+地形モデル（LOD3）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
+
+[cols="43,43,43,48,43,100,80"]
+|===
+| | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
+
+| LOD3 | ● | ReliefFeature | ― | 　 | • MassPointRelief又はTINReliefの集まりとして取得する。 | ReliefFeatureは地物の集まりとして表現し、空間属性はもたない。
+| LOD3
+| ■
+| MassPointRelief
+| MultiPoint
+a| • レーザ点群の場合は、点密度1点/m2以上 +
+• 数値標高モデルの場合は、点密度1点/m2以上のレーザ点群を使用して作成し、標高点格子間隔1m以内
+| • 標高をもつ点の集合を取得する。
+| 地形のLODは、その作成に使用する原典資料の点密度又は標高点格子間隔により決定する。
+
+| LOD3
+| ■
+| TINRelief
+| TIN
+a| • レーザ点群の場合は、点密度1点/m2以上 +
+• 数値標高モデルの場合は、点密度1点/m2以上のレーザ点群を使用して作成し、標高点格子間隔1m以内
+| • 標高をもつ3点で構成される三角形の集合を取得する。
+| 地形のLODは、その作成に使用する原典資料の点密度又は標高点格子間隔により決定する。
+
+|===
+
+　
+
+[[toc4_18_01_05]]
+===== (5)　各LODにおいて使用可能な地物型と空間属性
+
+地形モデルの各LODにおいて使用可能な地物型と空間属性を表 4-110に示す。
+
+[cols="43,43,43,48,43,100,80"]
+.表 4-110　地形モデルの記述に使用する地物型と空間属性
+|===
+| 地物型 | 空間属性 ^| LOD0 ^| LOD1 ^| LOD2 ^| LOD3 | 適用
+| dem:ReliefFeature | ^| ● ^| ● ^| ● ^| ● | dem:ReliefFeatureを作成する場合は、dem:BreaklineRelief 、dem:TINRelief又はdem:ReliefFeatureのいずれかを必須とする
+.2+| dem:BreaklineRelief | ^| ■ ^| ^| ^| .2+| 
+| dem:ridgeOrValleyLines ^| ■ ^| ^| ^| 
+.2+| dem:TINRelief | ^| ■ ^| ■ ^| ■ ^| ■ .4+| LOD1、LOD2及びLOD3では、dem:TINReliefを基本とする。
+| dem:tin ^| ■ ^| ■ ^| ■ ^| ■
+.2+| dem:MassPointRelief | ^| ■ ^| ■ ^| ■ ^| ■
+| dem:reliefPoints ^| ■ ^| ■ ^| ■ ^| ■
+
+|===
+
+[[toc4_18_02]]
+==== 　地形モデルの応用スキーマクラス図
+
+[[toc4_18_02_01]]
+===== (1)　Relief（CityGML）
+
+image::images/380.svg[]
+
+[[toc4_18_02_02]]
+===== (2)　Urban Object（i-UR）
+
+image::images/381.svg[]
+
+[[toc4_18_03]]
+==== 　地形モデルの応用スキーマ文書
+
+[[toc4_18_03_01]]
+===== (1)　Relief（CityGML）
+
+===== 1)　dem:ReliefFeature
+
+[cols="1,1,2"]
+|===
+| 型の定義
+2+a| 地形の凹凸を表現した地物。 +
+基準地域メッシュ（第三次地域区画、一辺の長さ約1km）を地物の単位とする（基準地域メッシュの境界で区切る）。
+
+| 上位の型 2+| core:_CityObject
+| ステレオタイプ 2+| << FeatureType >>
+3+| 継承する属性
+| 属性名 | 属性の型及び多重度 | 定義
+| (gml:description) | gml:StringOrRefType [0..1] | 地形の概要。
+| gml:name | gml:CodeType [0..1] | 当該エリアの標準地域メッシュコード（基準地域メッシュ）。文字列とする。
+| (gml:boundedBy) | gml:Envelope [0..1] | オブジェクトの範囲と空間参照系。
+| core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
+| core:terminationDate | xs:date [0..1] | データが削除された日。
+| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+| 自身に定義された属性
+| dem:lod
+| core:integerBetween0and4 [1]
+a| この地形に適用されるLOD0～4までの半角数字のいずれかとする。LOD1の場合は1となる。 +
+dem:ReliefFeatureがもつdem:TINRelief、dem:MassPointRelief又はdem:BreaklineReliefのlodと一致させる。
+
+3+| 継承する関連役割
+| 関連役割名 | 関連役割の型及び多重度 | 定義
+| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット（集合）。属性を追加したい場合に使用する。
+3+| 自身に定義された関連役割
+| 関連役割名 | 関連役割の型及び多重度 | 定義
+| dem:reliefComponent | dem:_ReliefComponent [1..*] | 同じ基準地域メッシュ（第3次地域区画）に限り、dem:TINRelief又はdem:MassPointReliefのいずれか1つを複数もつことができる。
+| uro:demDataQualityAttribute | uro:DataQualityAttribute [1] | 作成されたデータの品質に関する情報。必須とする。
+| uro:demKeyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
+
+|===
+
+　
+
+===== 2)　dem:TINRelief
+
+[cols="1,1,2"]
+|===
+| 型の定義
+2+a| 
+三角形の集まりにより地形の起伏を表現した地物。基準地域メッシュ（第三次地域区画、一辺の長さ約1km）を地物の単位とすることを基本とする。
+
+image::images/382.webp["",300,title=" 図　dem:TINReliefの例"]
+
+| 上位の型 2+| dem:_ReliefComponent
+| ステレオタイプ 2+| << FeatureType >>
+3+| 継承する属性
+| 属性名 | 属性の型及び多重度 | 定義
+| gml:description | gml:StringOrRefType [0..1] | 地形の概要。
+| gml:name | gml:CodeType [0..1] | 当該エリアの標準地域メッシュコード（基準地域メッシュ）。文字列とする。
+| (gml:boundedBy) | gml:Envelope [0..1] | オブジェクトの範囲と空間参照系。
+| core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
+| core:terminationDate | xs:date [0..1] | データが削除された日。
+| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+| dem:lod | core:integerBetween0and4[1] | この地形に適用されるLOD0～4までの半角数字のいずれかとする。LOD1の場合は1となる。
+3+| 継承する関連役割
+| 関連役割名 | 関連役割の型及び多重度 | 定義
+| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット（集合）。属性を追加したい場合に使用する。
+| dem:extent
+| gml:Polygon [0..1]
+a| 空間範囲。extentのexteriorとして、地形の外形を多角形で記述し、 +
+extentのinteriorは地形の内空を記述する。
+
+| uro:demDmAttribute | uro:DmAttribute [0..*] | 公共測量標準図式による表現に必要な情報。
+3+| 自身に定義された属性
+| 関連役割名 | 関連役割の型及び多重度 | 定義
+| dem:tin
+| gml:TrianglatedSurface [1]
+a| 起伏を表現する三角網。 +
+原典資料にて点群が欠落している範囲（水域等）はdem:tinを生成しない。
+
+|===
+
+　
+
+===== 3)　dem:MassPointRelief
+
+[cols="1,1,2"]
+|===
+| 型の定義
+2+a| 
+点の集まりにより地形の起伏を表現した地物。基準地域メッシュ（第三次地域区画、一辺の長さ約1km）を地物の単位とする。
+
+image::images/383.webp["",300,title=" 図　dem:MassPointReliefの例"]
+
+| 上位の型 2+| dem:_ReliefComponent
+| ステレオタイプ 2+| << FeatureType >>
+3+| 継承する属性
+| 属性名 | 属性の型及び多重度 | 定義
+| gml:description | gml:StringOrRefType [0..1] | 原典資料に適用される座標参照系及び格子点間隔を記述する。 原典資料が航空機レーザ測量等で取得したランダム点群の場合は、irregularとする。 原典資料がDEM（デジタル標高モデル）から作成した点群の場合は、grid_epsg:[epsgcode]_[size]_[size]とする。 このとき、[epsgcode]には、原典資料に適用される座標参照系のepsgコードを記述する。 [size]には、座標系の軸に対する格子点の間隔と単位を記述する。また、軸の順序と単位は、座標参照系の定義に従う。 例えば、基盤地図情報数値標高モデル5mメッシュを使用した場合は、grid_epsg:6697_0.2sec_0.2secとなり、平面直角座標系Ⅸ系のDEM（格子点間隔1m）の場合は、grid_epsg:6677_1m_1mとなる。
+| gml:name | gml:CodeType [0..1] | 当該エリアの標準地域メッシュコード（基準地域メッシュ）。文字列とする。
+| (gml:boundedBy) | gml:Envelope [0..1] | オブジェクトの範囲と空間参照系。
+| core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
+| core:terminationDate | xs:date [0..1] | データが削除された日。
+| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+| dem:lod | core:integerBetween0and4 [1] | この地形に適用されるLOD0～4までの半角数字のいずれかとする。LOD1の場合は1となる。
+3+| 継承する関連役割
+| 関連役割名 | 関連役割の型及び多重度 | 定義
+| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット（集合）。属性を追加したい場合に使用する。
+| dem:extent
+| gml:Polygon [0..1]
+a| 空間範囲。extentのexteriorとして、地形の外形を多角形で記述し、 +
+extentのinteriorは地形の内空を記述する。ランダム点群の場合（gml:descriptionの値がirregularの場合）は、exteriorは運用上必須とする。
+
+| uro:demDmAttribute | uro:DmAttribute [0..*] | 公共測量標準図式による表現に必要な情報。
+3+| 自身に定義された属性
+| 関連役割名 | 関連役割の型及び多重度 | 定義
+| dem:reliefPoints | gml:MultiPoint [1] | 起伏を表現する点の集まり。
+
+|===
+
+　
+
+===== 4)　dem:BreaklineRelief
+
+[cols="1,1,2"]
+|===
+| 型の定義
+2+a| 
+線の集まりにより地形の起伏を表現した地物。基準地域メッシュ（第三次地域区画、一辺の長さ約1km）を地物の単位とする。
+
+image::images/384.webp["",300,title=" 図　dem:BreaklineReliefの例"]
+
+| 上位の型 2+| dem:_ReliefComponent
+| ステレオタイプ 2+| << FeatureType >>
+3+| 継承する属性
+| 属性名 | 属性の型及び多重度 | 定義
+| gml:description | gml:StringOrRefType [0..1] | 地形の概要。
+| gml:name | gml:CodeType [0..1] | 当該エリアの標準地域メッシュコード（基準地域メッシュ）。文字列とする。
+| (gml:boundedBy) | gml:Envelope [0..1] | オブジェクトの範囲と空間参照系。
+| core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
+| core:terminationDate | xs:date [0..1] | データが削除された日。
+| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+| dem:lod | core:integerBetween0and4 [1] | この地形に適用されるLOD0～4までの半角数字のいずれかとする。LOD1の場合は1となる。
+3+| 継承する関連役割
+| 関連役割名 | 関連役割の型及び多重度 | 定義
+| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット（集合）。属性を追加したい場合に使用する。
+| dem:extent | gml:Polygon [0..1] | 空間範囲。extentのexteriorとして、地形の外形を多角形で記述し、 extentのinteriorは地形の内空を記述する。
+| uro:demDmAttribute | uro:DmAttribute [0..*] | 公共測量標準図式による表現に必要な情報。
+3+| 自身に定義された属性
+| 関連役割名 | 関連役割の型及び多重度 | 定義
+| dem:ridgeOrValleyLines | gml:MultiMultiCurve [0..1] | 谷や尾根を表現する線の集まり。
+| (dem:breaklines) | gml:MultiMultiCurve [0..1] | 抑止線を表現する線の集まり。
+
+|===
+
+　
+
+[[toc4_18_03_02]]
+===== (2)　Urban Object（i-UR）
+
+===== 1)　 uro:KeyValuePairAttribute
+
+[cols="1,1,2"]
+|===
+| 型の定義 2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。 属性名称と属性の値の対で構成される。コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
+
+| 上位の型 2+| ―
+| ステレオタイプ 2+| << DataType >>
+3+| 自身に定義された属性
+| 属性名 | 属性の型及び多重度 | 定義
+| uro:key | gml:CodeType [1] | 拡張する属性の名称。名称は、コ－ドリスト（KeyValuePairAttribute_key.xml）を作成し、選択する。
+| uro:codeValue | gml:CodeType [1] | 拡張された属性の値。値は名称は、コ－ドリスト（KeyValuePairAttribute_key[key].xml）を作成し、選択する。 [key]は、属性uro:keyの値に一致する。
+
+|===
+
+　
+
+===== 2)　 uro:DataQualityAttribute
+
+[cols="1,1,2"]
+|===
+| 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
+
+| 上位の型 2+| ―
+| ステレオタイプ 2+| << DataType >>
+3+| 自身に定義された属性
+| 属性名 | 属性の型及び多重度 | 定義
+| uro:geometrySrcDescLod0
+| gml:CodeType [0..*]
+a| LOD0の幾何オブジェクトの作成に使用した原典資料の種類。 +
+コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD0の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、地形モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。 +
+
+| uro:geometrySrcDescLod1
+| gml:CodeType [1..*]
+a| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。 +
+コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。具体的な都市オブジェクトがLOD1の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
+
+| uro:geometrySrcDescLod2 | gml:CodeType [0..*] | LOD2の幾何オブジェクトの作成に使用した原典資料の種類。 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD2の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、地形モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
+| uro:geometrySrcDescLod3 | gml:CodeType [0..*] | コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD3の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD3の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、地形モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
+| (uro:geometrySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
+| uro:thematicSrcDesc | gml:CodeType [0..*] | 主題属性の作成に使用した原典資料の種類 コードリスト（DataQualityAttribute_thematicSrcDesc.xml）より選択する。 主題属性が作成対象となっている場合は必須とする。
+| uro:appearanceSrcDescLod0 | gml:CodeType [0..*] | LOD0の幾何オブジェクトのアピアランスに使用した原典資料の種類。 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 拡張製品仕様書でLOD0の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
+| uro:appearanceSrcDescLod1 | gml:CodeType [0..*] | LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 拡張製品仕様書LOD1の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD1の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
+| uro:appearanceSrcDescLod2 | gml:CodeType [0..*] | LOD2の幾何オブジェクトのアピアランスに使用した原典資料の種類。 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 拡張製品仕様書でLOD2の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
+| uro:appearanceSrcDescLod3 | gml:CodeType [0..*] | LOD3の幾何オブジェクトのアピアランスに使用した原典資料の種類。 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 拡張製品仕様書でLOD3の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD3の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
+| (uro:appearanceSrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトのアピアランスに使用した原典資料の種類。
+| (uro:lodType) | gml:CodeType[0..*] | 幾何オブジェクトに適用されたLODの詳細な区分。
+| (uro:lod1HeightType) | gml:CodeType [0..1] | LOD1の立体図形を作成する際に使用した高さの算出方法。
+| (uro:tranDataAcquisition) | xs:string [0..1] | 「道路基盤地図情報（整備促進版）製品仕様書（案）」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
+3+| 自身に定義された関連役割
+| 関連役割名 | 関連役割の型及び多重度 | 定義
+| uro:publicSurveyDataQualityAttribute | uro:PublicSurveyDataQualityAttribute [0..1] | 使用した公共測量成果の地図情報レベルと種類。 各LODの幾何オブジェクトの作成に使用した原典資料の種類に関する属性（uro:geometrySrcDescLod0等）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）となっている場合は、必須とする。
+
+|===
+
+　
+
+===== 3)　 uro:PublicSurveyDataQualityAttribute
+
+[cols="1,1,2"]
+|===
+| 型の定義 2+| 使用した公共測量成果の地図情報レベルと種類を、LODごとに記述するためのデータ型。
+
+| 上位の型 2+| ―
+| ステレオタイプ 2+| << DataType >>
+3+| 自身に定義された属性
+| 属性名 | 属性の型及び多重度 | 定義
+| uro:srcScaleLod0 | gml:CodeType [0..1] | LOD0の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 「LOD0の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
+| uro:srcScaleLod1 | gml:CodeType [0..1] | LOD1の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
+| uro:srcScaleLod2 | gml:CodeType [0..1] | LOD2の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 「LOD2の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod2）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば地図情報レベル2500の公共測量成果と地図情報レベル500の公共測量成果を使用した場合は、地図情報レベル2500となる。
+| uro:srcScaleLod3 | gml:CodeType [0..1] | LOD3の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 「LOD3の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod3）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば地図情報レベル2500の公共測量成果と地図情報レベル500の公共測量成果を使用した場合は、地図情報レベル2500となる。
+| uro:srcScaleLod4 | gml:CodeType [0..1] | LOD4の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
+| uro:publicSurveySrcDescLod0 | gml:CodeType [0..*] | LOD0の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 「LOD0の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 複数の種類の原典資料を使用した場合は、それぞれを記述する。
+| uro:publicSurveySrcDescLod1 | gml:CodeType [0..*] | LOD1の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 複数の種類の原典資料を使用した場合は、それぞれを記述する。
+| uro:publicSurveySrcDescLod2 | gml:CodeType [0..*] | LOD2の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 「LOD2の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod2）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 複数の種類の原典資料を使用した場合は、それぞれを記述する。
+| uro:publicSurveySrcDescLod3 | gml:CodeType [0..*] | LOD3の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 「LOD3の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod3）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 複数の種類の原典資料を使用した場合は、それぞれを記述する。
+| (uro:publicSurveySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
+
+|===
+
+　
+
+===== 4)　uro:DmAttribute
+
+公共測量標準図式の応用スキーマ文書 参照
+
+　
+
+[[toc4_18_04]]
+==== 　地形モデルで使用するコードリストと列挙型
+
+[[toc4_18_04_01]]
+===== (1)　Relief（CityGML）
+
+なし
+
+Urban Object（i-UR）
+
+===== 1)　 DataQualityAttribute_geometrySrcDesc.xml
+
+[cols="3,22"]
+|===
+| ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
+
+| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml
+| コード | 説明
+| 000 | 公共測量成果
+| 101 | （公共測量ではない）現地測量の測量成果
+| 102 | （公共測量ではない）UAV写真測量の測量成果
+| 103 | （公共測量ではない）空中写真測量の測量成果
+| 104 | （公共測量ではない）既成図数値化の測量成果
+| 105 | （公共測量ではない）修正測量の測量成果
+| 106 | （公共測量ではない）写真地図作成の測量成果
+| 107 | （公共測量ではない）地図編集の測量成果
+| 108 | （公共測量ではない）地上レーザ測量の測量成果
+| 109 | （公共測量ではない）UAV写真点群測量の測量成果
+| 110 | （公共測量ではない）UAVレーザ測量の測量成果
+| 111 | （公共測量ではない）車載写真レーザ測量の測量成果
+| 112 | （公共測量ではない）航空レーザ測量の測量成果
+| 113 | （公共測量ではない）航空レーザ測深測量の測量成果
+| 114 | （公共測量ではない）路線測量の測量成果
+| 115 | （公共測量ではない）河川測量の測量成果
+| 116 | （公共測量ではない）用地測量の測量成果
+| 117 | （公共測量ではない）その他の応用測量の測量成果
+| 118 | （公共測量ではない）LidarSLAM計測の測量成果
+| 119 | （公共測量ではない）高密度航空レーザ測量の測量成果
+| 120 | （公共測量ではない）写真点群測量の測量成果
+| 121 | （公共測量ではない）三次元数値図化の測量成果
+| 201 | 都市計画基礎調査
+| 202 | 都市計画図書
+| 300 | 台帳（分類しない）
+| 301 | 道路台帳
+| 400 | その他のGISデータ
+| 500 | BIMモデル、CADデータ、設計図、完成図、一般図（平面図、配置図、断面図等）
+| 700 | その他の資料
+| 801 | 現地調査
+| 803 | GISデータ演算
+| 901 | 推定
+| 999 | 未作成
+
+|===
+
+[none]
+**** 参考：作業規程の準則、3D都市モデル整備のための測量マニュアル、3D都市モデル標準作業手順書
+
+　
+
+===== 2)　 DataQualityAttribute_thematicSrcDesc.xml
+
+[cols="3,22"]
+|===
+| ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
+
+| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml
+| コード | 説明
+| 000 | 公共測量成果
+| 022 | 基盤地図情報
+| 023 | 数値地形図データ
+| 100 | 公共測量成果ではない測量成果
+| 201 | 都市計画基礎調査
+| 202 | 都市計画図書
+| 300 | 台帳（分類しない）
+| 301 | 道路台帳
+| 400 | その他のGISデータ
+| 500 | BIMモデル、CADデータ、設計図、完成図、一般図（平面図、配置図、断面図等）
+| 600 | 統計データ
+| 701 | 建築計画概要書
+| 700 | その他の資料
+| 801 | 現地調査
+| 802 | 写真判読
+| 803 | GISデータ演算
+| 999 | 未作成
+
+|===
+
+[none]
+**** 参考：作業規程の準則、3D都市モデル整備のための測量マニュアル、3D都市モデル標準作業手順書
+
+　
+
+===== 3)　 DataQualityAttribute_appearanceSrcDesc.xml
+
+[cols="3,22"]
+|===
+| ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
+
+| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml
+| コード | 説明
+| 1 | 空中写真
+| 2 | 衛星写真
+| 3 | 車載写真レーザ測量システムにより撮影した写真
+| 4 | 手持ちカメラにより撮影した写真
+| 5 | 疑似テクスチャ
+| 99 | 未作成
+
+|===
+
+　
+
+===== 4)　 PublicSurveyDataQualityAttribute_srcScale.xml
+
+[cols="3,22"]
+|===
+| ファイル名 | PublicSurveyDataQualityAttribute_srcScale.xml
+
+| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml
+| コード | 説明
+| 1 | 地図情報レベル2500
+| 2 | 地図情報レベル1000
+| 3 | 地図情報レベル500
+
+|===
+
+　
+
+===== 5)　 PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
+
+[cols="3,22"]
+|===
+| ファイル名 | PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
+
+| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
+| コード | 説明
+| 001 | 現地測量の測量成果
+| 002 | UAV写真測量の測量成果
+| 003 | 空中写真測量の測量成果
+| 004 | 既成図数値化の測量成果
+| 005 | 修正測量の測量成果
+| 006 | 写真地図作成の測量成果
+| 007 | 地図編集の測量成果
+| 008 | 地上レーザ測量の測量成果
+| 009 | UAV写真点群測量の測量成果
+| 010 | UAVレーザ測量の測量成果
+| 011 | 車載写真レーザ測量の測量成果
+| 012 | 航空レーザ測量の測量成果
+| 013 | 航空レーザ測深測量の測量成果
+| 014 | 路線測量の測量成果
+| 015 | 河川測量の測量成果
+| 016 | 用地測量の測量成果
+| 017 | その他の応用測量の測量成果
+| 018 | LidarSLAM計測の測量成果
+| 019 | 高密度航空レーザ測量の測量成果
+| 020 | 写真点群測量の測量成果
+| 021 | 三次元数値図化の測量成果
+| 022 | 基盤地図情報
+| 023 | 数値地形図データ
+
+|===
+
+[none]
+**** 参考：作業規程の準則、3D都市モデル整備のための測量マニュアル
+
+　
+
