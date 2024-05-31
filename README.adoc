@@ -161,6 +161,32 @@ metanorma site generate
 ----
 
 
+== Converting documents from HTML
+
+Steps:
+
+. Install `coradoc` (run `bundle install`)
+. Obtain the `index.html` from https://www.mlit.go.jp/plateaudocument02/
+. Load the page entirely, and then copy/paste the HTML DOM content into
+a new `index.html` file.
+. Run the `reverse_adoc` command:
+
+[source,sh]
+----
+$ bundle exec reverse_adoc -rcoradoc/reverse_adoc/plugins/plateau --split-sections 2 --external-images -o plateau-document-01/index.adoc reference-docs/plateau-document-01.html
+----
+
+Where:
+
+`reference-docs/plateau-document-01.html`:: is the input document
+`-o plateau-document-01/index.adoc`:: is the output document path
+`--split-sections`:: means to split files at Clause level 2
+`--external-images`:: means to extract out all images to separate files
+`-rcoradoc/reverse_adoc/plugins/plateau`:: applies Plateau-specific conversions
+
+
+
+
 == Editor usage
 
 === Convert images from webp to PNG
