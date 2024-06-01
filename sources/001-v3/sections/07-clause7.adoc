@@ -324,162 +324,162 @@ h| オプション h| 適用するフォルダ名 h| オプションの意味
 
 .30+a|
 [%unnumbered]
-image::images/figure431.png.png[]
+image::images/figure431.webp.png[]
 | |
 | [都市コード]_[都市名英名]_[提供者区分]_[整備年度]_citygml_[更新回数]_[オプション]
 | 成果品を格納するフォルダのルート。 このフォルダの直下に格納するファイルは索引図及びREADMEのみであり、その他のファイルはこのフォルダに設けたサブフォルダに格納する。 フォルダの名称は、ルートフォルダの命名規則に従う。
 
 a|
 [%unnumbered]
-image::images/figure432.png.png[]
+image::images/figure432.webp.png[]
 |
 | codelists
 | ルートフォルダ直下に作成された、コードリストを格納するフォルダ。 3D都市モデルが参照する全てのコードリストを格納する。
 
 a|
 [%unnumbered]
-image::images/figure433.png.png[]
+image::images/figure433.webp.png[]
 |
 | metadata | ルートフォルダ直下に作成された、メタデータを格納するフォルダ。
 
 a|
 [%unnumbered]
-image::images/figure434.png.png[]
+image::images/figure434.webp.png[]
 |
 | schemas
 | 3D都市モデルのGMLSchemaを格納するフォルダ。GMLSchemaは指定された版のi-URをG空間情報センターより入手する。 以下に示す構造でサブフォルダを設け、GMLSchemaファイルを格納する。 /iur/uro/3.0/urbanObject.xsd /iur/urf/3.0/urbanFunction.xsd
 
 a|
 [%unnumbered]
-image::images/figure435.png.png[]
+image::images/figure435.webp.png[]
 |
 | specification
 | ルートフォルダ直下に作成された、拡張製品仕様書（PDF形式、エクセル形式）を格納するフォルダ。
 
 .25+a|
 [%unnumbered]
-image::images/figure436.png.png[]
+image::images/figure436.webp.png[]
 |
 | udx | ルートフォルダ直下に作成された、3D都市モデルを格納するフォルダ。 このフォルダの直下に、接頭辞ごとのサブフォルダ（例：bldg）を作成し、そのサブフォルダの中に指定されたファイル単位で区切られた全ての3D都市モデルのファイルを格納する。
 
 a|
 [%unnumbered]
-image::images/figure437.png.png[]
+image::images/figure437.webp.png[]
 | area | 区域モデルを格納するフォルダ
 
 a|
 [%unnumbered]
-image::images/figure438.png.png[]
+image::images/figure438.webp.png[]
 | bldg | 建築物モデルを格納するフォルダ。
 
 a|
 [%unnumbered]
-image::images/figure439.png.png[]
+image::images/figure439.webp.png[]
 | brid | 橋梁モデルを格納するフォルダ。
 
 a|
 [%unnumbered]
-image::images/figure440.png.png[]
+image::images/figure440.webp.png[]
 | cons | その他の構造物モデルを格納するフォルダ
 
 a|
 [%unnumbered]
-image::images/figure441.png.png[]
+image::images/figure441.webp.png[]
 | dem | 地形モデルを格納するフォルダ。
 
 a|
 [%unnumbered]
-image::images/figure442.png.png[]
+image::images/figure442.webp.png[]
 | fld | 災害リスク（浸水）モデルのうち、洪水浸水想定区域を格納するフォルダ。区域図ごとにサブフォルダを作成する。サブフォルダの構成及び名称は、別途示す。
 
 a|
 [%unnumbered]
-image::images/figure443.png.png[]
+image::images/figure443.webp.png[]
 | frn | 都市設備を格納するフォルダ。
 
 a|
 [%unnumbered]
-image::images/figure444.png.png[]
+image::images/figure444.webp.png[]
 | gen | 汎用都市オブジェクトを格納するフォルダ。
 
 a|
 [%unnumbered]
-image::images/figure445.png.png[]
+image::images/figure445.webp.png[]
 | htd | 災害リスク（浸水）モデルのうち、高潮浸水想定区域を格納するフォルダ。区域図ごとにサブフォルダを作成する。サブフォルダの構成及び名称は、別途示す。
 
 a|
 [%unnumbered]
-image::images/figure446.png.png[]
+image::images/figure446.webp.png[]
 | ifld | 災害リスク（浸水）モデルのうち、内水浸水想定区域を格納するフォルダ。区域図ごとにサブフォルダを作成する。サブフォルダの構成及び名称は、別途示す。
 
 a|
 [%unnumbered]
-image::images/figure447.png.png[]
+image::images/figure447.webp.png[]
 | lsld | 災害リスク（土砂災害）モデルを格納するフォルダ。
 
 a|
 [%unnumbered]
-image::images/figure448.png.png[]
+image::images/figure448.webp.png[]
 | luse | 土地利用モデルを格納するフォルダ。
 
 a|
 [%unnumbered]
-image::images/figure449.png.png[]
+image::images/figure449.webp.png[]
 | rwy | 交通（鉄道）モデルを格納するフォルダ。
 
 a|
 [%unnumbered]
-image::images/figure450.png.png[]
+image::images/figure450.webp.png[]
 | squr | 交通（広場）モデルを格納するフォルダ。
 
 a|
 [%unnumbered]
-image::images/figure451.png.png[]
+image::images/figure451.webp.png[]
 | tnm | 災害リスク（浸水）モデルのうち、津波浸水想定を格納するフォルダ。津波浸水想定ごとにサブフォルダを作成する。サブフォルダの構成及び名称は、別途示す。
 
 a|
 [%unnumbered]
-image::images/figure452.png.png[]
+image::images/figure452.webp.png[]
 | tran | 道路モデルのデータを格納するフォルダ。
 
 a|
 [%unnumbered]
-image::images/figure453.png.png[]
+image::images/figure453.webp.png[]
 | trk | 交通（徒歩道）モデルを格納するフォルダ。
 
 a|
 [%unnumbered]
-image::images/figure454.png.png[]
+image::images/figure454.webp.png[]
 | tun | トンネルモデルを格納するフォルダ。
 
 a|
 [%unnumbered]
-image::images/figure455.png.png[]
+image::images/figure455.webp.png[]
 | ubld | 地下街モデルを格納するフォルダ。
 
 a|
 [%unnumbered]
-image::images/figure456.png.png[]
+image::images/figure456.webp.png[]
 | urf | 都市計画決定情報モデルを格納するフォルダ。
 
 a|
 [%unnumbered]
-image::images/figure457.png.png[]
+image::images/figure457.webp.png[]
 | unf | 地下埋設物モデルの格納するフォルダ。
 
 a|
 [%unnumbered]
-image::images/figure458.png.png[]
+image::images/figure458.webp.png[]
 | veg | 植生モデルを格納するフォルダ。
 
 a|
 [%unnumbered]
-image::images/figure459.png.png[]
+image::images/figure459.webp.png[]
 | wtr | 水部モデルを格納するフォルダ。
 
 a|
 [%unnumbered]
-image::images/figure460.png.png[]
+image::images/figure460.webp.png[]
 | wwy | 交通（航路）モデルを格納するフォルダ
 
 |===
