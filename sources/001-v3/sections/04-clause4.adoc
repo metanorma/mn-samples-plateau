@@ -55,14 +55,17 @@ image::images/figure3.svg[]
 
 各パッケージは、CityGML及びi-URに定義されたパッケージを引用する（<<table_4-2>>）。
 
+[%landscape]
+<<<
+
 [[table_4-2]]
 .3D都市モデルが引用するCityGML及びi-URのパッケージ
 [cols="17",options="noheader"]
 |===
 .2+h| モデル .2+h| GML 13+h| CityGML 2+h| i-UR
-h| Core h| Appearance h| Bridge h| Building h| CityFurniture h| CityObjectGroup
-h| Generic h| LandUse h| Relief h| Transportation h| Tunnel
-h| Vegetation h| WaterBody h| Urban Object h| Urban Function
+h| Core h| Appearance h| Bridge h| Building h| City{zwsp}Furniture h| City{zwsp}Object{zwsp}Group
+h| Generic h| Land{zwsp}Use h| Relief h| Transportation h| Tunnel
+h| Vegetation h| Water{zwsp}Body h| Urban Object h| Urban Function
 | 建築物 ^| ✓ ^| ✓ ^| *1 | ^| ✓ | ^| *3 ^| *2 | | | | | | ^| ✓ |
 | 交通（道路）| ✓ ^| ✓ ^| *1 | | | | ^| *2 | | ^| ✓ | | | ^| ✓ |
 | 交通（鉄道） ^| ✓ ^| ✓ ^| *1 | | | | ^| *2 | | ^| ✓ | | | ^| ✓ |
@@ -92,6 +95,10 @@ h| Vegetation h| WaterBody h| Urban Object h| Urban Function
 *3:: 建築物の「階」を表現する場合に引用する。
 
 *4:: 複数の都市計画決定情報をグループ化する場合に引用する。
+
+
+[%portrait]
+<<<
 
 [[sec_4.1.3]]
 ==== 応用スキーマクラス図の記法
