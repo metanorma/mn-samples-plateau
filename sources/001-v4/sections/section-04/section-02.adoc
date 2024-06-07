@@ -1,21 +1,17 @@
 [[toc4_02]]
-=== 　建築物モデルの応用スキーマ
+=== 建築物モデルの応用スキーマ
 
 建築物は、普通建物、堅ろう建物、普通無壁舎及び堅ろう無壁舎をいう。普通建物とは、3階未満の建物及び3階以上の木造等で建築された建物をいう。堅ろう建物とは、鉄筋コンクリート等で建築された建物で、地上3階以上又は3階相当以上の高さのものやスタンドを備えた競技場をいう。普通無壁舎とは、側壁のない建物、温室及び工場内の建物類似の構築物で、3階未満のものをいう。堅ろう無壁舎とは、鉄筋コンクリート等で建築された側壁のない建物及び建物類似の構築物で、地上3階以上又は3階相当以上の高さのものをいう。（参考：作業規程の準則　付録７　公共測量標準図式）
 
-　
-
 [[toc4_02_01]]
-==== 　建築物モデルのLOD
+==== 建築物モデルのLOD
 
 標準製品仕様書が対象とする建築物モデル（bldg:Building）のLODは、LOD0からLOD4までとする。
 
-　
-
 [[toc4_02_01_01]]
-===== (1)　建築物モデル（LOD0）
+===== 建築物モデル（LOD0）
 
-===== 1)　建築物モデル（LOD0）の概要
+====== 建築物モデル（LOD0）の概要
 
 建築物モデル（LOD0）では、建築物の形状を面により表現する。
 
@@ -25,16 +21,14 @@
 .表 4-7　建築物モデル（LOD0）の取得イメージ
 |===
 2+^| LOD0
-a| image::images/009.png["",300]
-a| image::images/010.png["",300]
+a| image::images/009.webp["",300]
+a| image::images/010.webp["",300]
 
 ^| RoofEdge ^| FootPrint
 
 |===
 
-　
-
-===== 2)　建築物モデル（LOD0）の定義
+====== 建築物モデル（LOD0）の定義
 
 建築物モデル（LOD0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
@@ -56,9 +50,9 @@ a| image::images/010.png["",300]
 *** ※1：正射影とは、ある図形上の各点から、直線又は平面上に下ろした垂線の足の集まり。LOD0の場合は、上方からの正射影をいう。［参考　作業規程の準則　付録７公共測量標準図式］
 
 [[toc4_02_01_02]]
-===== (2)　建築物モデル（LOD1）
+===== 建築物モデル（LOD1）
 
-===== 1)　建築物モデル（LOD1）の概要
+====== 建築物モデル（LOD1）の概要
 
 建築物モデル（LOD1）では、建築物の形状を、面を一律の高さで上向きに押し出した立体により表現する。
 
@@ -67,14 +61,12 @@ a| image::images/010.png["",300]
 [cols=1]
 .表 4-8　建築物モデル（LOD1）の取得イメージ
 |===
-^| LOD1
-a| image::images/011.png["",300]
+^h| LOD1
+a| image::images/011.webp["",300]
 
 |===
 
-　
-
-===== 2)　建築物モデル（LOD1）の定義
+====== 建築物モデル（LOD1）の定義
 
 建築物モデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
@@ -94,9 +86,9 @@ a| image::images/011.png["",300]
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_02_01_03]]
-===== (3)　建築物モデル（LOD2）
+===== 建築物モデル（LOD2）
 
-===== 1)　建築物モデル（LOD2）の概要
+====== 建築物モデル（LOD2）の概要
 
 建築物モデル（LOD2）では、建築物の形状を、屋根形状を含む立体として表現し、立体の境界面を、屋根面、外壁面及び底面に区分するとともに、建築物の外側の付属物を区分する。
 
@@ -109,12 +101,12 @@ LOD2.0、LOD2.1及びLOD2.2は、航空写真等上空から取得したデー�
 [cols=5]
 .表 4-9　LOD2.0,LOD2.1及びLOD2.2の区分
 |===
-^| 建築物モデル（LOD2）に含むべき地物
+^h| 建築物モデル（LOD2）に含むべき地物
 ^a| 対応するCityGMLの +
 地物型
-^| LOD2.0
-^| LOD2.1
-^| LOD2.2
+^h| LOD2.0
+^h| LOD2.1
+^h| LOD2.2
 
 | 建築物 | Building ^| ● ^| ● ^| ●
 | 屋根
@@ -169,34 +161,28 @@ a| 屋外付属物 +
 
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
-　
-
 建築物モデル（LOD2）に含むべき地物は、建築物の以下に示す部分をいう。建築物モデル（LOD2）では、屋外天井面を使用しないため、下の階よりも上の階が張り出したような構造は表現されない。
 
-image::images/012.png[title=" 図 4-1　建築物モデル（LOD2）に含むべき地物"]
-
-　
+image::images/012.webp[title=" 図 4-1　建築物モデル（LOD2）に含むべき地物"]
 
 LOD2.0、LOD2.1及びLOD2.2それぞれの取得イメージを表 4-10に示す。
 
 [cols="1,3,3,3"]
 .表 4-10　建築物モデル（LOD2）の取得例
 |===
-^| LOD ^| LOD2.0 ^| LOD2.1 ^| LOD2.2
-^| 取得例
-^a| image::images/013.png["",200]
-a| image::images/014.png["",220]
-a| image::images/015.png["",220]
+^h| LOD ^h| LOD2.0 ^h| LOD2.1 ^h| LOD2.2
+^h| 取得例
+^a| image::images/013.webp["",200]
+a| image::images/014.webp["",220]
+a| image::images/015.webp["",220]
 
 ^h| 説明 | 屋根の主要な外形が再現される。LOD2.0では付属物は取得しないため、バルコニーも屋根として取得する。 なお、LOD2では屋根面は詳細化されるが外壁面は詳細化されないため、バルコニーの下部も建築物の一部として表現される。 | 小屋根のうち規模が大きいものが再現される。LOD2.0では切妻屋根として表現されたが、LOD2.1の条件を満たしたため、小屋根として表現された。 また、LOD2.1の条件を満たすバルコニーが、付属物として区分される。 | 小屋根のうち規模の小さいものが再現される。LOD2.1では無視された屋根窓の屋根がLOD2.2の条件を満たしたため、この屋根形状が表現された。 また、LOD2.2の条件を満たす屋根上の煙突が付属物として、さらに区分される。
 
 |===
 
-image::images/016.png[]
+image::images/016.webp[]
 
-　
-
-===== 2)　建築物モデル（LOD2.0）の定義
+====== 建築物モデル（LOD2.0）の定義
 
 建築物モデル（LOD2.0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
@@ -215,7 +201,7 @@ a|
 屋根の棟及び谷で区切ることにより、屋根の傾斜や向きを再現する。 +
 屋根の棟及び谷は、以下を指す。
 
-image::images/017.png["",150]
+image::images/017.webp["",150]
 
 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 
@@ -252,9 +238,7 @@ a| • BuildingPartを使用する場合、一棟のBuildingには必ず2つ以�
 
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
-　
-
-===== 3)　建築物モデル（LOD2.1）の定義
+====== 建築物モデル（LOD2.1）の定義
 
 建築物モデル（LOD2.1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
@@ -313,9 +297,7 @@ a| • 屋外付属物の外形（外側から見える形）を構成する面�
 
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
-　
-
-===== 4)　建築物モデル（LOD2.2）の定義
+====== 建築物モデル（LOD2.2）の定義
 
 建築物モデル（LOD2.2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
@@ -366,9 +348,9 @@ a| • 屋外付属物の外形（外側から見える形）を構成する面�
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_02_01_04]]
-===== (4)　建築物モデル（LOD3）
+===== 建築物モデル（LOD3）
 
-===== 1)　建築物モデル（LOD3）の概要
+====== 建築物モデル（LOD3）の概要
 
 建築物モデル（LOD3）は、含むべき地物により、LOD3.0、LOD3.1、LOD3.2及びLOD3.3に分かれる（表 4-11）。
 
@@ -379,13 +361,13 @@ LOD3.0、LOD3.1、LOD3.2及びLOD3.3は、MMSによる点群や画像等、側�
 [cols="9,9,8,8,8,8"]
 .表 4-11　LOD3.0, LOD3.1, LOD3.2及びLOD3.3の区分
 |===
-| 建築物モデル（LOD3）に含むべき地物
+h| 建築物モデル（LOD3）に含むべき地物
 a| 対応するCityGMLの +
 地物型
-^| LOD3.0
-^| LOD3.1
-^| LOD3.2
-^| LOD3.3
+^h| LOD3.0
+^h| LOD3.1
+^h| LOD3.2
+^h| LOD3.3
 
 | 建築物 | Building ^| ● ^| ● ^| ● ^| ●
 | 屋根面
@@ -485,41 +467,35 @@ a| 屋外付属物 +
 
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
-　
-
 建築物モデル（LOD3）では、建築物モデル（LOD2）に含むべき地物に加え、開口部（窓及び扉）が追加される。また、建築物の側面が詳細化されるが、屋根の外周と外壁面との距離や外壁面の大きさにより、各LODにおいて表現される内容が異なる（図 4-2）。
 
-image::images/018.png[title=" 図 4-2　建築物モデル（LOD3）に含むべき地物と取得基準"]
-
-　
+image::images/018.webp[title=" 図 4-2　建築物モデル（LOD3）に含むべき地物と取得基準"]
 
 建築物モデル（LOD3.0）、建築物モデル（LOD3.1）、建築物モデル（LOD3.2）及び建築物モデル（LOD3.3）それぞれの取得イメージを表4-12に示す。
 
 [cols="2,10,9"]
 .表 4-12　建築物モデル（LOD3）の取得イメージ
 |===
-| ^| 取得イメージ ^| 説明
-| LOD3.0
-a| image::images/019.png["",450]
+h| ^h| 取得イメージ ^h| 説明
+h| LOD3.0
+a| image::images/019.webp["",450]
 | 屋根のうち短辺3m以上の屋根面が表現される。 付属物のうち、短辺3m以上の規模の大きな付属物が再現される。 LOD3では外壁面が詳細化されるため、LOD2では表現されない付属物の下部の形状も表現される。 また、外壁面に設けられた短辺1m以上の開口部（窓、扉）が再現される。 なお、上図の場合、軒裏は3m以内であったため、表現されなかった。 下図に3m以上の軒を表現した例を示す。LOD3.0において軒を表現する建築物として、寺社や城といった特殊な建築物あるいは倉庫等の規模が大きな建築物が該当する。
 
-| LOD3.1
-a| image::images/020.png["",430]
+h| LOD3.1
+a| image::images/020.webp["",430]
 | 短辺の実長1m以上かつ上方からの正射影の面積3m2以上の屋根面が表現される。 この結果、左図の例では、LOD3.0では切妻屋根として表現されたが、LOD3.1の条件を満たしたため、入母屋屋根として表現された。 また、この例図では、軒裏の距離が1m以上あったため、表現された。 開口部及び屋外付属物の表現は、LOD3.0と同様の表現となる。
 
-| LOD3.2
-a| image::images/021.png["",400]
+h| LOD3.2
+a| image::images/021.webp["",400]
 | LOD3.2ではさらに詳細な表現が可能となり、短辺の実長1m 以上又は上方からの正射影の面積1m2 以上の屋根が再現される。 左図の例では、屋根に設けられた小屋根がこの条件に該当し、再現されている。 また、LOD3.2では、短辺が実長1m以上又は上方又は側方からの正射影の面積1m2以上の屋外付属物が表現される。 左図の例では、屋根上の煙突と外壁面に設けられた庇がこの条件を満たしたため屋外付属物として表現された。 LOD3.2では、面積1m2以上の窓や扉も表現されるため、この条件に該当する窓が追加された。
 
-| LOD3.3
-a| image::images/022.png["",400]
+h| LOD3.3
+a| image::images/022.webp["",400]
 | LOD3.3では、短辺の実長が1m未満の細かな屋根の形状が表現される。 左図の例では、LOD3.1及びLOD3.2では1枚の屋根面として表現されていたが、LOD3.3では傾斜の異なる2枚の屋根面として区分された。 また、軒裏のうち、屋根の外周との距離が1m未満の狭い軒裏も表現された。 さらに、LOD3.3の条件を満たす1m未満の小さな開口部や付属物が追加された。
 
 |===
 
-　
-
-===== 2)　建築物モデル（LOD3.0）の定義
+====== 建築物モデル（LOD3.0）の定義
 
 建築物モデル（LOD3.0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
@@ -537,7 +513,7 @@ a| image::images/022.png["",400]
 a| 
 • 屋根の棟及び谷で区切ることにより、屋根の傾斜や向きを再現する。屋根の棟及び谷は、以下を指す。
 
-image::images/023.png["",150]
+image::images/023.webp["",150]
 
 • 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 
@@ -558,7 +534,7 @@ a| 【屋根の上方からの正射影の外周と、地表面と外壁面の�
 
 | 幅3m以上の軒裏
 | •屋根の上方からの正射影の外周と、地表面と外壁面との交線により囲まれた面を取得する。 •高さは、各頂点の高さとする。
-a| image::images/024.png["",150]
+a| image::images/024.webp["",150]
 
 | LOD3.0 | ■ | BuildingPart | Solid | 一棟の建築物を、属性の異なる複数の部分に分ける場合に必須とする。 | • 屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）、閉鎖面（ClosureSurface）、扉（Door）及び窓（Window）を境界面とする立体を作成する。 | 
 | LOD3.0 | ■ | ClosureSurface | MultiSurface | BuildingPartを作成する場合に必須とする。 | • BuildingPartと連続するBuildingPartとの境界線により囲まれた面を取得する。 | 
@@ -624,9 +600,7 @@ LOD3.0では3m未満の軒裏を表現せず、外壁面を屋根面の外周か
 
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
-　
-
-===== 3)　建築物モデル（LOD3.1）の定義
+====== 建築物モデル（LOD3.1）の定義
 
 建築物モデル（LOD3.1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
@@ -721,9 +695,7 @@ LOD3.1では1m未満の軒裏を表現せず、外壁面を屋根面の外周か
 
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
-　
-
-===== 4)　建築物モデル（LOD3.2）の定義
+====== 建築物モデル（LOD3.2）の定義
 
 建築物モデル（LOD3.2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
@@ -817,9 +789,7 @@ LOD3.2では1m未満の軒裏を表現せず、外壁面を屋根面の外周か
 
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
-　
-
-===== 5)　建築物モデル（LOD3.3）の定義
+====== 建築物モデル（LOD3.3）の定義
 
 建築物モデル（LOD3.3）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
@@ -890,9 +860,9 @@ a| • 屋外付属物の外形（外側から見える形）を構成する面�
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_02_01_05]]
-===== (5)　建築物モデル（LOD4）
+===== 建築物モデル（LOD4）
 
-===== 1)　建築物モデル（LOD4）の概要
+====== 建築物モデル（LOD4）の概要
 
 建築物モデル（LOD4）は、建築物モデル（LOD3）により表現される建築物の外側の形状に加え、建築物の内側の形状（屋内空間）を表現する。 +
 建築物モデル（LOD4）は、BIMモデルからの変換又は屋内測量によって取得する。BIMモデルからの変換フローは、「3D都市モデル整備のためのBIM活用マニュアル（第3.0版）」を参照のこと。
@@ -906,10 +876,10 @@ a| • 屋外付属物の外形（外側から見える形）を構成する面�
 |===
 2+^a| 建築物モデル（LOD4）に +
 含むべき地物
-^| 対応するCityGMLの地物型
-^| LOD4.0
-^| LOD4.1
-^| LOD4.2
+^h| 対応するCityGMLの地物型
+^h| LOD4.0
+^h| LOD4.1
+^h| LOD4.2
 
 2+| 建築物 | bldg:Building ^| ● ^| ● ^| ●
 2+| 建築物部分
@@ -963,31 +933,27 @@ BuildingPartを使用する場合、及び、内壁面、天井面、床面が�
 
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
-　
-
 建築物モデル（LOD4）に含むべき地物を、図 4-3に示す。
 
-image::images/025.png[title=" 図 4-3　建築物モデル（LOD4）に含むべき地物"]
-
-　
+image::images/025.webp[title=" 図 4-3　建築物モデル（LOD4）に含むべき地物"]
 
 LOD4.0、LOD4.1及びLOD4.2それぞれの取得イメージを表 4-14に示す。
 
 [cols="1,9"]
 .表 4-14　建築物モデル（LOD4）の取得イメージ
 |===
-| LOD | 取得イメージと説明
+h| LOD h| 取得イメージと説明
 | LOD4.0
 a| 
 
-image::images/026.png["",750]
+image::images/026.webp["",750]
 
- LOD4.0は建築物の外形（上図１）に加え、建築物の内部を表現する。このとき、建築物の内部を部屋（bldg:Room）に区切り、各部屋の形状を立体として表現する（上図２）。また、部屋の立体の境界面を、天井面（bldg:CeilingSurface）、内壁面（bldg:InteriorWallSurface）、床面（bldg:FloorSurface）又は閉鎖面（bldg:ClosureSurface）のいずれかに区分する（上図３）。さらに、各部屋の天井面、内壁面又は床面に存在する扉（bldg:Door）及び窓（bldg:Window）を区分する（上図４）。 閉鎖面は、内壁面や天井面、床面はないが、建築確認申請では部屋となっている空間を区切る場合に仮想的な境界面として使用する。 建築物の階を表現する場合は、CityObjectGroupを使用する。上図１のように、建築物が複数の階から構成される場合、上図４に示す同じ階の部屋を、CityObjectGroupを使用してグループ化する。このとき、CityObjectGroupの名称（gml:name）は階を識別する名称となる。 なお、CityGMLでは、壁面や天井面などは全て面として表現する。一方、現実世界の壁には厚みがある。1つの壁が建築物の外形を示す外壁と部屋の外形を示す内壁との機能を備えていた場合（上図5）、建築物の外形となる面（bldg:WallSurface）と部屋の外形となる面（bldg:InteriorWallSurface）の2枚の面として表現され、それらの面の間には隙間（壁の厚み）ができる（何もない）。 また、LOD4.0では建築物の内部に存在する付属物や家具を表現しない。
+LOD4.0は建築物の外形（上図１）に加え、建築物の内部を表現する。このとき、建築物の内部を部屋（bldg:Room）に区切り、各部屋の形状を立体として表現する（上図２）。また、部屋の立体の境界面を、天井面（bldg:CeilingSurface）、内壁面（bldg:InteriorWallSurface）、床面（bldg:FloorSurface）又は閉鎖面（bldg:ClosureSurface）のいずれかに区分する（上図３）。さらに、各部屋の天井面、内壁面又は床面に存在する扉（bldg:Door）及び窓（bldg:Window）を区分する（上図４）。 閉鎖面は、内壁面や天井面、床面はないが、建築確認申請では部屋となっている空間を区切る場合に仮想的な境界面として使用する。 建築物の階を表現する場合は、CityObjectGroupを使用する。上図１のように、建築物が複数の階から構成される場合、上図４に示す同じ階の部屋を、CityObjectGroupを使用してグループ化する。このとき、CityObjectGroupの名称（gml:name）は階を識別する名称となる。 なお、CityGMLでは、壁面や天井面などは全て面として表現する。一方、現実世界の壁には厚みがある。1つの壁が建築物の外形を示す外壁と部屋の外形を示す内壁との機能を備えていた場合（上図5）、建築物の外形となる面（bldg:WallSurface）と部屋の外形となる面（bldg:InteriorWallSurface）の2枚の面として表現され、それらの面の間には隙間（壁の厚み）ができる（何もない）。 また、LOD4.0では建築物の内部に存在する付属物や家具を表現しない。
 
 | LOD4.1
 a| 
 
-image::images/027.png["",600]
+image::images/027.webp["",600]
 
 LOD4.1ではLOD4.0に、屋内の付属物（bldg:IntBuildingInstallation）として、階段、スロープ、輸送設備（エスカレータ、エレベータ及び動く歩道）、柱及びデッキ・ステージが追加される。 +
 上図の例では、LOD4.0に加えて、階段、踊り場、エレベータ、柱が付属物として追加された。
@@ -995,7 +961,7 @@ LOD4.1ではLOD4.0に、屋内の付属物（bldg:IntBuildingInstallation）と�
 | LOD4.2
 a| 
 
-image::images/028.png["",600]
+image::images/028.webp["",600]
 
 LOD4.2ではLOD4.1に屋内の付属物（bldg:IntBuildingInstallation）として、手すり、パネル及び梁が付属物として追加される。 +
 また、机やいすなどの移動可能な家具（bldg:BuildingFurniture）が追加される。 +
@@ -1003,9 +969,7 @@ LOD4.2ではLOD4.1に屋内の付属物（bldg:IntBuildingInstallation）とし�
 
 |===
 
-　
-
-===== 2)　建築物モデル（LOD4.0）の定義
+====== 建築物モデル（LOD4.0）の定義
 
 建築物モデル（LOD4.0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
@@ -1025,7 +989,7 @@ a|
 • 屋根の棟及び谷で区切ることにより、屋根の傾斜や向きを再現する。 +
 屋根の棟及び谷は、以下を指す。
 
-image::images/029.png["",150]
+image::images/029.webp["",150]
 
 •曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 
@@ -1107,9 +1071,7 @@ a| • 部屋（Room）を区切る内壁の角を結ぶ外周を取得する。
 
 *** ※CityObjectGroupは空間属性をもたないため、「―」としている。
 
-　
-
-===== 3)　建築物モデル（LOD4.1）の定義
+====== 建築物モデル（LOD4.1）の定義
 
 建築物モデル（LOD4.1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
@@ -1203,9 +1165,7 @@ a| • 屋内付属物の外形（外側から見える形）を構成する面�
 
 *** ※CityObjectGroupは空間属性をもたないため、空間属性の型及び取得方法を「―」としている。
 
-　
-
-===== 4)　建築物モデル（LOD4.2）の定義
+====== 建築物モデル（LOD4.2）の定義
 
 建築物モデル（LOD4.2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
@@ -1308,7 +1268,7 @@ a| • 家具の外形（外側から見える形）を構成する面を取得�
 *** ※CityObjectGroupは空間属性をもたないため、空間属性の型及び取得方法を「―」としている。
 
 [[toc4_02_01_06]]
-===== (6)　各LODにおいて使用可能な地物型と空間属性
+===== 各LODにおいて使用可能な地物型と空間属性
 
 建築物モデルの各LODにおいて使用可能な地物型と空間属性を表 4-15に示す。
 
@@ -1394,36 +1354,36 @@ MultiSufaceを使用することを基本とする。
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_02_02]]
-==== 　建築物の応用スキーマクラス図
+==== 建築物の応用スキーマクラス図
 
 [[toc4_02_02_01]]
-===== (1)　Buiding（CityGML）
+===== Buiding（CityGML）
 
 image::images/030.svg[]
 
 [[toc4_02_02_02]]
-===== (2)　Urban Object（i-UR）
+===== Urban Object（i-UR）
 
-===== 1)　bldg:Buildingの拡張属性
+====== bldg:Buildingの拡張属性
 
 建築物モデルに付与する詳細な属性のためのデータ型を定義する。
 
 image::images/031.svg[]
 
-===== 2)　施設管理のための拡張属性
+====== 施設管理のための拡張属性
 
 建築物モデルに付与する詳細な属性のうち、施設管理のための属性のデータ型を定義する。 +
 uro::FacilityAttributeは抽象クラスであり、これを継承する具象クラスを、施設管理属性の応用スキーマに定義する。
 
 image::images/032.svg[]
 
-===== 3)　数値地形図のための拡張属性
+====== 数値地形図のための拡張属性
 
 以下に示すクラスは、数値地形図データとの互換性を保つために、地図情報レベル2500数値地形図データ作成のための標準製品仕様書（案）に定義された属性を建築物の属性として付与することを可能にするためのデータ型である。
 
 image::images/033.svg[]
 
-===== 4)　建築物モデル（LOD4）の拡張属性
+====== 建築物モデル（LOD4）の拡張属性
 
 以下に示すクラスは、建築物モデル（LOD4）を構成するbldg:Buildingなどの地物に、BIMモデルから変換した詳細な情報を属性として付与するためのデータ型である。①から⑥に示すデータ型は、「3D都市モデル整備のためのBIM活用マニュアル（第3.0版）（別冊）3D都市モデルとの連携のためのBIMモデルIDM・MVD（第2.0版）」（以下、「IDM・MVD」という）に定義されたクラスの属性及びプロパティセットに対応する。また、⑦に示すデータ型は「3次元屋内地理空間データ製品仕様書（案）」に定義されたクラスの属性及びプロパティセットに対応する。
 
@@ -1463,12 +1423,12 @@ image::images/039.svg[]
 image::images/040.svg[]
 
 [[toc4_02_03]]
-==== 　建築物の応用スキーマ文書
+==== 建築物の応用スキーマ文書
 
 [[toc4_02_03_01]]
-===== (1)　Building（CityGML）
+===== Building（CityGML）
 
-===== 1) bldg:Building
+====== bldg:Building
 
 [cols="1,1,2"]
 |===
@@ -1476,24 +1436,24 @@ image::images/040.svg[]
 2+a| 
 居住その他の目的をもって構築された建築物。 普通建物、堅ろう建物、普通無壁舎及び堅ろう無壁舎に区分する。 普通建物とは、3階未満の建物及び3階以上の木造等で建築された建物をいう。 堅ろう建物とは、鉄筋コンクリート等で建築された建物で、地上3階以上又は3階相当以上の高さのものやスタンドを備えた競技場をいう。 普通無壁舎とは、側壁のない建物、温室及び工場内の建物類似の構築物で、3階未満のものをいう。 堅ろう無壁舎とは、鉄筋コンクリート等で建築された側壁のない建物及び建物類似の構築物で、地上3階以上又は3階相当以上の高さのものをいう。 （作業規程の準則　付録７　公共測量標準図式）
 
-image::images/041.png["",600,title=" 図　bldg:Buildingの例"]
+image::images/041.webp["",600,title=" 図　bldg:Buildingの例"]
 
 LOD0からLOD3 までは、建築物の屋外の形状を表現する。 +
 LOD4では、建築物の屋外の形状に加え、屋内の形状を表現する。
 
-| 上位の型 2+| bldg:_AbstractBuilding
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| bldg:_AbstractBuilding
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | gml:description | gml:StringOrRefType [0..1] | 建築物の概要。
 | gml:name | gml:CodeType [0..1] | 建築物を識別する名称。文字列とする。
-| (gml:boundedBy) | gml:Envelope [0..1] | 建築物の範囲及び適用される空間参照系。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 建築物の範囲及び適用される空間参照系。
 | core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
 | core:terminationDate | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 建築物と地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 建築物と水面との相対的な位置関係。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 建築物と地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 建築物と水面との相対的な位置関係。
 | bldg:class | gml:CodeType [0..1] | 建築物の形態による区分。コードリスト（Building_class.xml）より選択する。
-| (bldg:function) | gml:CodeType [0..*] | 建築物の主たる働き。
+h| (bldg:function) | gml:CodeType [0..*] | 建築物の主たる働き。
 | bldg:usage | gml:CodeType [0..*] | 建築物の主な使い道。コードリスト（Building_usage.xml）より選択する。用途の区分は、都市計画基礎調査実施要領（国土交通省都市局）による区分とする。複数の建築物で一体の施設を構成しているものについては、一体としての用途とする。店舗等併用住宅、同共同住宅、作業所併用住宅は、1/3 以上が住宅のものとする。複合用途の建築物（商業系複合施設及び併用住宅を除く）については、主たる用途により分類する。複数の用途を記述する場合は、主たる用途を最初に記載する。
 | bldg:yearOfConstruction | xs:gYear [0..1] | 建築物が建築された年。
 | bldg:yearOfDemolition | xs:gYear [0..1] | 建築物が解体された年。
@@ -1501,17 +1461,17 @@ LOD4では、建築物の屋外の形状に加え、屋内の形状を表現す�
 | bldg:measuredHeight | gml:LengthType [0..1] | 計測により取得した建築物の地上の最低点から最高点までの高さ。単位はm（uom=”m”）とする。
 | bldg:storeysAboveGround | xs:nonNegativeInteger [0..1] | 地上階の階数。
 | bldg:storeysBelowGround | xs:nonNegativeInteger [0..1] | 地下階の階数。
-| (bldg:storeyHeightsAboveGround) | gml:MeasureOrNullListType [0..1] | 地上の各階の高さを、地表面に最も近い階から列挙する。
-| (bldg:storeyHeightsBelowGround) | gml:MeasureOrNullListType [0..1] | 地下の各階の高さを、地表面に最も近い階から列挙する。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute[0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+h| (bldg:storeyHeightsAboveGround) | gml:MeasureOrNullListType [0..1] | 地上の各階の高さを、地表面に最も近い階から列挙する。
+h| (bldg:storeyHeightsBelowGround) | gml:MeasureOrNullListType [0..1] | 地下の各階の高さを、地表面に最も近い階から列挙する。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute[0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
 | bldg:lod0FootPrint
 | gml:MultiSurface [0..1]
 a| 地表面と外壁面との交線に囲まれた面。 +
@@ -1529,7 +1489,7 @@ bldg:lod0RoofEdgeを使用することを原則とする。
 a| 
 建築物の外周の上方からの正射影を取得し、地上から一律の高さを与えて上向きに押し出した立体。
 
-image::images/042.png["",200,title=" 図　LOD1立体イメージ"]
+image::images/042.webp["",200,title=" 図　LOD1立体イメージ"]
 
 一律の高さは中央値を原則とする。
 
@@ -1538,11 +1498,11 @@ image::images/042.png["",200,title=" 図　LOD1立体イメージ"]
 a| 
 建築物の主要構造の外形を示す立体であり、屋根面（RoofSurface）、外壁面（WallSurface）及び底面（GroundSurface）を境界面とする。
 
-image::images/043.png["",250,title=" 図　LOD2立体イメージ"]
+image::images/043.webp["",250,title=" 図　LOD2立体イメージ"]
 
 建築物をbldg:BuildingPartの集まりとして記述する場合、この空間属性は空となる。
 
-| (bldg:lod2MultiSurface) | gml:MultiSurface [0..1] | 建築物の主要構造を保護又はこれに付随する設備の外形を示す面。Solidにより記述するため、MultiSurfaceは使用しない。
+h| (bldg:lod2MultiSurface) | gml:MultiSurface [0..1] | 建築物の主要構造を保護又はこれに付随する設備の外形を示す面。Solidにより記述するため、MultiSurfaceは使用しない。
 | bldg:outerBuildingInstallation | bldg:BuildingInstallation [0..*] | 建築物に外側に付属する小屋根、外階段、バルコニー等の設備。建築物の外側の外観を特徴づける設備であり、恒久的に設置されているもののみを対象とする。
 | bldg:boundedBy | bldg:_BoundarySurface [0..*] | 建築物を構成する外壁、屋根等の境界面。
 | bldg:lod3Solid
@@ -1550,11 +1510,11 @@ image::images/043.png["",250,title=" 図　LOD2立体イメージ"]
 a| 
 建築物の詳細な形状を示す立体であり、屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）及び開口部の面（境界面の内空として作成されている場合）を境界面とする。
 
-image::images/044.png["",250,title=" 図　LOD3立体イメージ"]
+image::images/044.webp["",250,title=" 図　LOD3立体イメージ"]
 
 建築物をbldg:BuildingPartの集まりとして記述する場合、この空間属性は空となる。
 
-| (bldg:lod3MultiSurface) | gml:MultiSurface [0..1] | 建築物の主要構造を保護又はこれに付随する設備の詳細な外形を示す面。Solidにより記述するため、MultiSurfaceは使用しない。
+h| (bldg:lod3MultiSurface) | gml:MultiSurface [0..1] | 建築物の主要構造を保護又はこれに付随する設備の詳細な外形を示す面。Solidにより記述するため、MultiSurfaceは使用しない。
 | bldg:interiorBuildingInstallation
 | bldg:IntBuildingInstallation [0..*]
 a| 建築物の内部に付属する、階段、手すり、柱等の固定設備。 +
@@ -1613,9 +1573,7 @@ uro:IndoorUserDefinedAttribute
 
 |===
 
-　
-
-===== 2)　bldg:BuildingPart
+====== bldg:BuildingPart
 
 [cols="1,1,2"]
 |===
@@ -1626,23 +1584,23 @@ uro:IndoorUserDefinedAttribute
 この地物型を使用する場合、一つの建築物には、複数の建築物部分が存在しなければならない。 +
 また、一棟の建築物を構成する建築物部分は同じ建築物を構成する他の建築物部分と接していなければならない。
 
-image::images/045.png["",500]
+image::images/045.webp["",500]
 
 この地物型は、LOD2、LOD3及びLOD４の建築物を記述する際に使用可能であるが、ユースケースにより、建築物と建築物部分を区分する必要がない場合には、建築物部分として分けず、一体的な建築物としてよい。
 
-| 上位の型 2+| bldg:_AbstractBuilding
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| bldg:_AbstractBuilding
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | gml:description | gml:StringOrRefType [0..1] | 建築物の概要。
 | gml:name | gml:CodeType [0..1] | 建築物を識別する名称。建築物部分を識別する必要がある場合のみ使用する。文字列とする。
-| (gml:boundedBy) | gml:Envelope [0..1] | 建築物の範囲及び適用される空間参照系。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 建築物の範囲及び適用される空間参照系。
 | core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
 | core:terminationDate | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 建築物と地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 建築物と水面との相対的な位置関係。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 建築物と地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 建築物と水面との相対的な位置関係。
 | bldg:class | gml:CodeType [0..1] | 建築物の形態による区分。コードリスト（Building_class.xml）より選択する。
-| (bldg:function) | gml:CodeType [0..*] | 建築物の主たる働き。
+h| (bldg:function) | gml:CodeType [0..*] | 建築物の主たる働き。
 | bldg:usage | gml:CodeType [0..*] | 建築物の主な使い道。コードリスト（Building_usage.xml）より選択する。用途の区分は、都市計画基礎調査実施要領（国土交通省都市局）による区分とする。複数の建築物で一体の施設を構成しているものについては、一体としての用途とする。店舗等併用住宅、同共同住宅、作業所併用住宅は、1/3 以上が住宅のものとする。複合用途の建築物（商業系複合施設及び併用住宅を除く）については、主たる用途により分類する。複数の用途を記述する場合は、主たる用途を最初に記載する。
 | bldg:yearOfConstruction | xs:gYear [0..1] | 建築物が建築された年。
 | bldg:yearOfDemolition | xs:gYear [0..1] | 建築物が解体された年。
@@ -1650,17 +1608,17 @@ image::images/045.png["",500]
 | bldg:measuredHeight | gml:LengthType [0..1] | 計測により取得した建築物の地上の最低点から最高点までの高さ。単位はm（uom=”m”）とする。
 | bldg:storeysAboveGround | xs:nonNegativeInteger [0..1] | 地上階の階数。
 | bldg:storeysBelowGround | xs:nonNegativeInteger [0..1] | 地下階の階数。
-| (bldg:storeyHeightsAboveGround) | gml:MeasureOrNullListType [0..1] | 地上の各階の高さを、地表面に最も近い階から列挙する。
-| (bldg:storeyHeightsBelowGround) | gml:MeasureOrNullListType [0..1] | 地下の各階の高さを、地表面に最も近い階から列挙する。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット（集合）。属性を追加したい場合に使用する。
+h| (bldg:storeyHeightsAboveGround) | gml:MeasureOrNullListType [0..1] | 地上の各階の高さを、地表面に最も近い階から列挙する。
+h| (bldg:storeyHeightsBelowGround) | gml:MeasureOrNullListType [0..1] | 地下の各階の高さを、地表面に最も近い階から列挙する。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット（集合）。属性を追加したい場合に使用する。
 | bldg:lod0FootPrint
 | gml:MultiSurface [0..1]
 a| 地表面と外壁面との交線に囲まれた面。 +
@@ -1675,16 +1633,16 @@ bldg:lod0RoofEdgeを使用することを原則とする。
 
 | bldg:lod1Solid | gml:_Solid [0..1] | 建築物の外周の上方からの正射影を取得し、地上から一律の高さを与えて上向きに押し出した立体。 一律の高さは中央値を原則とする。
 | bldg:lod2Solid | gml:_Solid [0..1] | 建築物の主要構造の外形を示す立体であり、屋根面（RoofSurface）、外壁面（WallSurface）及び底面（GroundSurface）を境界面とする。
-| (bldg:lod2MultiSurface) | gml:MultiSurface [0..1] | 建築物の主要構造を保護又はこれに付随する設備の外形を示す面。Solidにより記述するため、MultiSurfaceは使用しない。
+h| (bldg:lod2MultiSurface) | gml:MultiSurface [0..1] | 建築物の主要構造を保護又はこれに付随する設備の外形を示す面。Solidにより記述するため、MultiSurfaceは使用しない。
 | bldg:outerBuildingInstallation | bldg:BuildingInstallation [0..*] | 建築物に付属する屋根、外階段、バルコニ－等の設備。ユ－スケ－スにより必要な場合には、区分して取得する。
 | bldg:boundedBy | bldg:_BoundarySurface [0..*] | 建築物を構成する外壁、屋根等の境界面。
 | bldg:lod3Solid | gml:Solid [0..1] | 建築物の詳細な形状を示す立体であり、屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）及び開口部の面（境界面の内空として作成されている場合）を境界面とする。
-| (bldg:lod3MultiSurface) | gml:MultiSurface [0..1] | 建築物の主要構造を保護又はこれに付随する設備の詳細な外形を示す面。Solidにより記述するため、MultiSurfaceは使用しない。
+h| (bldg:lod3MultiSurface) | gml:MultiSurface [0..1] | 建築物の主要構造を保護又はこれに付随する設備の詳細な外形を示す面。Solidにより記述するため、MultiSurfaceは使用しない。
 | bldg:interiorBuildingInstallation | bldg:IntBuildingInstallation [0..*] | 建築物の内部に付属する、階段、手すり、柱等の固定設備。 建築物の内部の外観を特徴づける設備であり、恒久的に設置されている、固定されたもののみを対象とする。 なお、bldg:interiorBuildingInstallationを用いて記述する内部の固定設備は、個々の部屋（bldg:Room）に属さない設備を対象とする。 個々の部屋に付属する設備は、bldg:Roomのbldg:roomInstallationとして記述する。 bldg:interiorBuildingInstallationにより建築物内部の付属物を取得する場合、この建築物には、必ずLOD4の形状（bldg:lod4Solid又はbldg:lod4MultiSurface）が無ければならない。
 | bldg:lod4Solid | gml:Solid [0..1] | 建築物の詳細な形状を示す立体であり、屋根面（RoofSurface）、外壁面（WallSurface）、屋外床面（OuterFloorSurface）、屋外天井面（OuterCeilingSurface）、及び底面（GroundSurface）を境界面とする。 bldg:lod4Solid又はbldg:lod4MultiSurfaceのいずれかが出現する。 測量により取得する場合は、Solidとする。
 | bldg:lod4MultiSurface | gml:MultiSurface [0..1] | 建築物の詳細な形状を示す面の集まりであり、屋根面（RoofSurface）、外壁面（WallSurface）、屋外床面（OuterFloorSurface）、屋外天井面（OuterCeilingSurface）、及び底面（GroundSurface）から構成する。 bldg:lod4Solid又はbldg:lod4MultiSurfaceのいずれかが出現する。 BIMモデルからの変換により取得する場合はMultiSurfaceとする。
 | bldg:interiorRoom | bldg:Room [0..*] | 建築物の内部に存在する部屋。 bldg:interiorRoomにより建築物内部の部屋を取得する場合、この建築物には、必ずLOD4の形状（bldg:lod4Solid又はbldg:lod4MultiSurface）が無ければならない。
-| (bldg:consistsOfBuildingPart) | bldg:BuildingPart [0..*] | bldg:BuildingPartには作成しない。（bldg:Buildingにのみ作成する。）
+h| (bldg:consistsOfBuildingPart) | bldg:BuildingPart [0..*] | bldg:BuildingPartには作成しない。（bldg:Buildingにのみ作成する。）
 | bldg:address | core:Address [0..*] | 建築物に付与された住所。CityGMLでは複数この記述が可能であるが、標準製品仕様書では、最大1個とする。
 | uro:buildingIDAttribute | uro:BuildingIDAttribute [1] | 建築物の識別情報。必ず1個作成する。
 | uro:buildingDetailAttribute
@@ -1692,22 +1650,20 @@ bldg:lod0RoofEdgeを使用することを原則とする。
 a| 建築物に関する基礎的な情報。都市計画基礎調査結果を入力する場合に作成する。一棟の建築物に含まれる部分毎に都市計画基礎調査の情報を付与したい場合にのみ用いる。 +
 この属性が作成された場合、bldg:BuildingPartを含むbldg:Buildingには、uro:buildingDetailAttributeを記述しない。
 
-| (uro:largeCustomerFacilityAttribute) | uro:LargeCustomerFacilityAttribute [0..*] | bldg:BuildingPartには作成しない。（bldg:Buildingにのみ作成する。）
-| (uro:buildingDisasterRiskAttribute) | uro:DisasterRiskAttribute [0..*] | bldg:BuildingPartには作成しない。（bldg:Buildingにのみ作成する。）
-| (uro:bldgKeyValuePairAttribute) | uro:KeyValuePairAttribute [0..*] | bldg:BuildingPartには作成しない。（bldg:Buildingにのみ作成する。）
+h| (uro:largeCustomerFacilityAttribute) | uro:LargeCustomerFacilityAttribute [0..*] | bldg:BuildingPartには作成しない。（bldg:Buildingにのみ作成する。）
+h| (uro:buildingDisasterRiskAttribute) | uro:DisasterRiskAttribute [0..*] | bldg:BuildingPartには作成しない。（bldg:Buildingにのみ作成する。）
+h| (uro:bldgKeyValuePairAttribute) | uro:KeyValuePairAttribute [0..*] | bldg:BuildingPartには作成しない。（bldg:Buildingにのみ作成する。）
 | uro:bldgDataQualityAttribute | uro:DataQualityAttribute [0..1] | 作成したデータの品質に関する情報。 bldg:Buildingが品質属性をもつ場合は、省略する。 bldg:Buildingが品質属性をもたない場合は、必ず作成する。
-| (uro:ifcBuildingAttribute) | uro:IfcAttribute [0..*] | IDM・MVDで定義されるIFCのクラス及びプロパティセットに含まれる情報。
-| (uro:indoorBuildingAttribute) | uro:IndoorAttribute [0..*] | 屋内ナビゲーションに必要な情報。
-| (uro:bldgFacilityTypeAttribute) | uro:FacilityTypeAttribute [0..*] | 特定分野における施設の分類情報。
-| (uro:bldgFacilityIdAttribute) | uro:FacilityIdAttribute [0..1] | 指定された分野における施設の識別情報。
-| (uro:bldgFacilityAttribute) | uro:FacilityAttribute [0..*] | 指定された分野における施設管理情報。
-| (uro:bldgDmAttribute) | uro:DmAttribute [0..*] | 公共測量標準図式による図形表現に必要な情報。
+h| (uro:ifcBuildingAttribute) | uro:IfcAttribute [0..*] | IDM・MVDで定義されるIFCのクラス及びプロパティセットに含まれる情報。
+h| (uro:indoorBuildingAttribute) | uro:IndoorAttribute [0..*] | 屋内ナビゲーションに必要な情報。
+h| (uro:bldgFacilityTypeAttribute) | uro:FacilityTypeAttribute [0..*] | 特定分野における施設の分類情報。
+h| (uro:bldgFacilityIdAttribute) | uro:FacilityIdAttribute [0..1] | 指定された分野における施設の識別情報。
+h| (uro:bldgFacilityAttribute) | uro:FacilityAttribute [0..*] | 指定された分野における施設管理情報。
+h| (uro:bldgDmAttribute) | uro:DmAttribute [0..*] | 公共測量標準図式による図形表現に必要な情報。
 
 |===
 
-　
-
-===== 3)　bldg:Room
+====== bldg:Room
 
 [cols="1,1,2"]
 |===
@@ -1715,7 +1671,7 @@ a| 建築物に関する基礎的な情報。都市計画基礎調査結果を�
 2+a| 
 壁、間仕切り、床、天井などで仕切られ、生活の場などに用いられる、建物内部の隔てられた空間の区画（部屋）。
 
-image::images/046.png["",300,title=" 図　bldg:Roomの例"]
+image::images/046.webp["",300,title=" 図　bldg:Roomの例"]
 
 bldg:Roomは、bldg:Buildingに含まれる地物として記述する。 +
 このとき、bldg:Roomは、複数の地物の集まりとして表現する。bldg:Roomに含まれる地物とは、以下である。 +
@@ -1723,18 +1679,18 @@ bldg:Roomは、bldg:Buildingに含まれる地物として記述する。 +
 部屋に付属する固定的な設備（bldg:InteriorBuildingInstallation） +
 部屋の中に設置された移動可能な家具（bldg:BuildingFurniture） さらに、部屋を区切る境界面及び部屋に付属する固定的な設備は、開口部（bldg:_Opening）の下位型を含むことができる。
 
-| 上位の型 2+| bldg:_CityObject
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| bldg:_CityObject
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | gml:description | gml:StringOrRefType [0..1] | 部屋の概要。
 | gml:name | gml:CodeType [0..1] | 部屋を識別する名称。
-| (gml:boundedBy) | gml:Envelope [0..1] | 部屋の範囲及び適用される空間参照系。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 部屋の範囲及び適用される空間参照系。
 | core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
 | core:terminationDate | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 自身に定義された属性
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 自身に定義された属性
 | bldg:class
 | gml:CodeType [0..1]
 a| 部屋の形態による区分。 +
@@ -1745,24 +1701,24 @@ a| 部屋の形態による区分。 +
 a| 部屋の主たる働き。 +
 コードリスト（Room_function.xml）より選択する。
 
-| (bldg:usage) | gml:CodeType [0..*] | 部屋の主な使い道。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-3+| 自身に定義された関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
+h| (bldg:usage) | gml:CodeType [0..*] | 部屋の主な使い道。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | bldg:lod4Solid
 | gml:Solid [0..1]
 a| 部屋の外形を示す立体。 +
 gml:Solidを構成するgml:Polygonは、以下のいずれかの地物のLOD4幾何オブジェクトに含まれなければならない。 ・　境界面（bldg:_BoundarySurface）及びその開口部（bldg:_Opening） ただし、境界面は、このbldg:Roomが、関連役割bldg:boundedByにより 参照する境界面であること。また、開口部は、その境界面に包含されていること。 ・　屋内付属物（bldg:IntBuildingInstallation）の境界面及びその開口部 ただし、屋内付属物は、このbldg:Roomが、関連役割bldg:roomInstallationにより参照する付属物であること。また、開口部はその付属物に包含されていること。 bldg:lod4Solid 又はbldg:lod4MultiSurface のいずれかを必須とするが、bldg:lod4Solidにより記述することを基本とする。
 
-| (bldg:lod4MultiSurface) | gml:MultiSurface [0..1] | 部屋の主要構造の外形を示す面の集まり。 gml:MultiSurfaceを構成するgml:Polygonは、以下のいずれかの地物のLOD4幾何オブジェクトに含まれなければならない。 ・　境界面（bldg:_BoundarySurface）及びその開口部（bldg:_Opening） ただし、境界面は、このbldg:Roomが、関連役割bldg:boundedByにより参照する境界面であること。また、開口部は、その境界面に包含されていること。 ・　屋内付属物（bldg:IntBuildingInstallation）の境界面及びその開口部 ただし、屋内付属物は、このbldg:Roomが、関連役割bldg:roomInstallationにより参照する付属物であること。また、開口部はその付属物に包含されていること。 bldg:lod4Solidを作成しない場合は、bldg:lod4MultiSurfaceを必ず作成する。
+h| (bldg:lod4MultiSurface) | gml:MultiSurface [0..1] | 部屋の主要構造の外形を示す面の集まり。 gml:MultiSurfaceを構成するgml:Polygonは、以下のいずれかの地物のLOD4幾何オブジェクトに含まれなければならない。 ・　境界面（bldg:_BoundarySurface）及びその開口部（bldg:_Opening） ただし、境界面は、このbldg:Roomが、関連役割bldg:boundedByにより参照する境界面であること。また、開口部は、その境界面に包含されていること。 ・　屋内付属物（bldg:IntBuildingInstallation）の境界面及びその開口部 ただし、屋内付属物は、このbldg:Roomが、関連役割bldg:roomInstallationにより参照する付属物であること。また、開口部はその付属物に包含されていること。 bldg:lod4Solidを作成しない場合は、bldg:lod4MultiSurfaceを必ず作成する。
 | bldg:boundedBy
 | bldg:\_ BoundarySurface [0..*]
 a| 部屋の外形を示す境界面。 +
@@ -1781,9 +1737,7 @@ uro:IndoorUserDefinedAttribute
 
 |===
 
-　
-
-===== 4)　bldg:RoofSurface
+====== bldg:RoofSurface
 
 [cols="1,1,2"]
 |===
@@ -1791,28 +1745,28 @@ uro:IndoorUserDefinedAttribute
 2+a| 
 主に建築物の上部を覆う構造物。
 
-image::images/047.png["",300,title=" 図　bldg:RoofSurfaceの例"]
+image::images/047.webp["",300,title=" 図　bldg:RoofSurfaceの例"]
 
-| 上位の型 2+| bldg:_BoundarySurface
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
-| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
-| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
-| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
+h| 上位の型 2+| bldg:_BoundarySurface
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
+h| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
 | core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
 | core:terminationDate | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
 | bldg:lod2MultiSurface | gml:MultiSurface [0..1] | 建築物モデル（LOD2）において屋根の形状・起伏を再現した面。取得基準及び取得方法は、4.2.1に従う。
 | bldg:lod3MultiSurface | gml:MultiSurface [0..1] | 建築物モデル（LOD3）において屋根の形状・起伏を再現した面。取得基準及び取得方法は、4.2.1に従う。
 | bldg:lod4MultiSurface | gml:MultiSurface [0..1] | 建築物モデル（LOD4）において屋根の形状・起伏を再現した面。取得基準及び取得方法は、4.2.1に従う。
@@ -1821,9 +1775,7 @@ image::images/047.png["",300,title=" 図　bldg:RoofSurfaceの例"]
 
 |===
 
-　
-
-===== 5)　bldg:WallSurface
+====== bldg:WallSurface
 
 [cols="1,1,2"]
 |===
@@ -1831,31 +1783,31 @@ image::images/047.png["",300,title=" 図　bldg:RoofSurfaceの例"]
 2+a| 
 建築物の外周を構成する壁面（外壁面）。
 
-image::images/048.png["",300,title=" 図　bldg:WallSurfaceの例"]
+image::images/048.webp["",300,title=" 図　bldg:WallSurfaceの例"]
 
 カーテンウォールはbldg:WallSurfaceにより表現する。カーテンウォールとは、建築物の外側に配置され、建築物を囲む非耐荷重の壁である。 +
 [参考 ISO 6707-1:2020 Buildings and civil engineering works — Vocabulary — Part 1: General terms]
 
-| 上位の型 2+| bldg:_BoundarySurface
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
-| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
-| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
-| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
+h| 上位の型 2+| bldg:_BoundarySurface
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
+h| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
 | core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
 | core:terminationDate | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
 | bldg:lod2MultiSurface | gml:MultiSurface [0..1] | 建築物モデル（LOD2）において外壁面の形状・起伏を再現した面。取得基準及び取得方法は、4.2.1に従う。
 | bldg:lod3MultiSurface | gml:MultiSurface [0..1] | 建築物モデル（LOD3）において外壁面の形状・起伏を再現した面。取得基準及び取得方法は、4.2.1に従う。
 | bldg:lod4MultiSurface | gml:MultiSurface [0..1] | 建築物モデル（LOD4）において外壁面の形状・起伏を再現した面。取得基準及び取得方法は、4.2.1に従う。
@@ -1864,9 +1816,7 @@ image::images/048.png["",300,title=" 図　bldg:WallSurfaceの例"]
 
 |===
 
-　
-
-===== 6)　bldg:GroundSurface
+====== bldg:GroundSurface
 
 [cols="1,1,2"]
 |===
@@ -1875,28 +1825,28 @@ image::images/048.png["",300,title=" 図　bldg:WallSurfaceの例"]
 建築物の立体形状の底面。 +
 建築物の底面又は建築物の外壁面と地表面との交線を境界とする面を取得する。
 
-image::images/049.png["",450,title=" 図　bldg:GroundSurface"]
+image::images/049.webp["",450,title=" 図　bldg:GroundSurface"]
 
-| 上位の型 2+| bldg:_BoundarySurface
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
-| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
-| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
-| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
+h| 上位の型 2+| bldg:_BoundarySurface
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
+h| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
 | core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
 | core:terminationDate | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
 | bldg:lod2MultiSurface | gml:MultiSurface [0..1] | 建築物モデル（LOD2）において底面の形状・起伏を再現した面。取得基準及び取得方法は、4.2.1に従う。
 | bldg:lod3MultiSurface | gml:MultiSurface [0..1] | 建築物モデル（LOD3）において底面の形状・起伏を再現した面。取得基準及び取得方法は、4.2.1に従う。
 | bldg:lod4MultiSurface
@@ -1917,9 +1867,7 @@ uro:IfcBuildingElement このとき、uro:IfcBuildingElement の属性uro:elemen
 
 |===
 
-　
-
-===== 7)　bldg:OuterCeilingSurface
+====== bldg:OuterCeilingSurface
 
 [cols="1,1,2"]
 |===
@@ -1927,32 +1875,32 @@ uro:IfcBuildingElement このとき、uro:IfcBuildingElement の属性uro:elemen
 2+a| 
 建築物の外側を覆う部分であり、天井としての機能を有する部分。
 
-image::images/050.png["",400,title=" 図　bldg:OuterCeilingSurfaceの例"]
+image::images/050.webp["",400,title=" 図　bldg:OuterCeilingSurfaceの例"]
 
 ユースケースで屋外の天井と外壁面との区分が必要な場合に、bldg:OuterCeilingSurfaceを使用する。 +
 ユースケースで屋外の天井と外壁面との区分が不要な場合には、この型は使用せず、bldg:WallSurfaceを使用する。
 
-| 上位の型 2+| bldg:_BoundarySurface
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
-| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
-| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
-| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
+h| 上位の型 2+| bldg:_BoundarySurface
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
+h| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
 | core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
 | core:terminationDate | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-| (bldg:lod2MultiSurface)
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+h| (bldg:lod2MultiSurface)
 | gml:MultiSurface [0..1]
 a| 建築物モデル（LOD2）において屋外にある天井面の形状・起伏を再現した面。 +
 取得基準及び取得方法は、4.2.1に従う。
@@ -1968,16 +1916,14 @@ a| 建築物モデル（LOD4）において屋外にある天井面の形状・�
 取得基準及び取得方法は、4.2.1に従う。
 
 | bldg:opening | bldg:_Opening [0..*] | 屋外にある天井に設置される、窓や扉への参照。LOD3又はLOD4の空間属性をもつ場合のみ開口部への参照を作成できる。
-| (uro:ifcBoundarySurfaceAttribute)
+h| (uro:ifcBoundarySurfaceAttribute)
 | uro:IfcAttribute [0..*]
 a| IDM・MVDで定義されるIFCのクラス及びプロパティセットに含まれる情報。 +
 BIMモデルからの変換により作成する場合は、bldg:OuterCeilingSurfaceに変換されるIfcクラスは無いため、本関連役割は使用しない。
 
 |===
 
-　
-
-===== 8)　bldg:OuterFloorSurface
+====== bldg:OuterFloorSurface
 
 [cols="1,1,2"]
 |===
@@ -1985,31 +1931,31 @@ BIMモデルからの変換により作成する場合は、bldg:OuterCeilingSur
 2+a| 
 建築物の外側を覆う部分であり、通行可能な床面としての機能を有する部分。例えば、屋上や通路として利用されている面が該当する。
 
-image::images/051.png["",400,title=" 図　OuterFloorSurfaceの例"]
+image::images/051.webp["",400,title=" 図　OuterFloorSurfaceの例"]
 
 ユースケースで通行可能な床面と屋根面の区分が必要な場合に、bldg:OuterFloorSurfaceを使用する。 +
 ユースケースで通行可能な床面と屋根面との区分が不要な場合には、この型は使用せず、bldg:RoofSurfaceを使用する。
 
-| 上位の型 2+| bldg:_BoundarySurface
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
-| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
-| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
-| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
-| (core:creationDate) | xs:date [0..1] | データが作成された日。運用上必須とする。
-| (core:terminationDate) | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+h| 上位の型 2+| bldg:_BoundarySurface
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
+h| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
+h| (core:creationDate) | xs:date [0..1] | データが作成された日。運用上必須とする。
+h| (core:terminationDate) | xs:date [0..1] | データが削除された日。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
 | bldg:lod2MultiSurface
 | gml:MultiSurface [0..1]
 a| 建築物モデル（LOD２）において屋外にある床面の形状・起伏を再現した面。 +
@@ -2036,45 +1982,43 @@ uro:IfcBuildingElement +
 
 |===
 
-　
+====== bldg:ClosureSurface
 
-===== 9)　bldg:ClosureSurface
-
-[cols="1,1,2"]
+[cols="1,1,2",options="noheader"]
 |===
 .3+| 型の定義
 2+a| 
 建築物の立体又は部屋の立体を構成するために仮想的に設ける閉鎖面。 一棟の建築物を、主題属性の異なる複数の部分に分ける場合に、その境界面として使用する。
 
-image::images/052.png["",450,title=" 図　LOD2又はLOD3でのbldg:ClosureSurfaceの例"]
+image::images/052.webp["",450,title=" 図　LOD2又はLOD3でのbldg:ClosureSurfaceの例"]
 
 2+a| 
 屋内においては、境界面となる内壁面や天井面、床面はないが、建築確認申請では部屋となっている空間を区切る場合に、部屋の境界面として便宜上設けられた仮想的な面をさす。
 
-image::images/053.png["",500,title=" 図　LOD4でのbldg:ClosureSurfaceの例"]
+image::images/053.webp["",500,title=" 図　LOD4でのbldg:ClosureSurfaceの例"]
 
-2+a| image::images/054.png["",500,title=" 図　LOD4でのbldg:ClosureSurfaceを非表示にした例"]
+2+a| image::images/054.webp["",500,title=" 図　LOD4でのbldg:ClosureSurfaceを非表示にした例"]
 
-| 上位の型 2+| bldg:_BoundarySurface
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
-| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
-| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
-| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
-| (core:creationDate) | xs:date [0..1] | データが作成された日。運用上必須とする。
-| (core:terminationDate) | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+h| 上位の型 2+| bldg:_BoundarySurface
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
+h| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
+h| (core:creationDate) | xs:date [0..1] | データが作成された日。運用上必須とする。
+h| (core:terminationDate) | xs:date [0..1] | データが削除された日。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
 | bldg:lod2MultiSurface
 | gml:MultiSurface [0..1]
 a| 建築物モデル（LOD２）において、BuildingPartと連続する他のBuildingPartとの境界線により囲まれた面。 +
@@ -2086,14 +2030,12 @@ a| 建築物モデル（LOD3）において、BuildingPartと連続する他のB
 取得基準及び取得方法は、4.2.1に従う。
 
 | bldg:lod4MultiSurface | gml:MultiSurface [0..1] | 建築物モデル（LOD4）において、BuildingPartと連続する他のBuildingPartとの境界線により囲まれた面又は内壁面、天井面若しくは床面が無いが建築確認申請上部屋として区分されている空間を区切る面。 取得基準及び取得方法は、4.2.1に従う。
-| (bldg:opening) | bldg:_Opening [0..*] | 境界面に設置される、窓や扉への参照。
-| (uro:ifcBoundarySurfaceAttribute) | uro:IfcAttribute [0..*] | IDM・MVDで定義されるIFCに含まれる情報。
+h| (bldg:opening) | bldg:_Opening [0..*] | 境界面に設置される、窓や扉への参照。
+h| (uro:ifcBoundarySurfaceAttribute) | uro:IfcAttribute [0..*] | IDM・MVDで定義されるIFCに含まれる情報。
 
 |===
 
-　
-
-===== 10) bldg:InteriorWallSurface
+====== bldg:InteriorWallSurface
 
 [cols="1,1,2"]
 |===
@@ -2101,30 +2043,30 @@ a| 建築物モデル（LOD3）において、BuildingPartと連続する他のB
 2+a| 
 建築物の内側に向いた壁や仕切り。部屋（bldg:Room）の立体を構成する垂直方向の境界面となる。
 
-image::images/055.png["",500,title=" 図　bldg:InteriorWallSurfaceの例"]
+image::images/055.webp["",500,title=" 図　bldg:InteriorWallSurfaceの例"]
 
 CityGMLでは、壁は面として表現し、1つの壁は、内側の面と外側の面の2つの面として表現する。 例えば、屋外と屋内を仕切る壁があった場合、屋外に面する壁の面は、bldg:WallSurace（外壁面）として表現し、屋内に面する壁の面は、bldg:InteriorWallSurface（内壁面）として表現する。このとき、bldg:WallSurfaceと、bldg:InteriorSurfaceとの間（壁の厚みに相当する空間）には何も存在しない。 bldg:InteriorWallSurfaceの法線ベクトルは、部屋の内側を向く。
 
-| 上位の型 2+| bldg:_BoundarySurface
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| bldg:_BoundarySurface
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | gml:description | gml:StringOrRefType [0..1] | 境界面の概要。
 | gml:name | gml:CodeType [0..1] | 境界面を識別する名称。文字列とする。
-| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
 | core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
 | core:terminationDate | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
 | bldg:lod4MultiSurface
 | gml:MultiSurface [0..1]
 a| 内壁の仕上げ面の形状・起伏を再現した面。 +
@@ -2146,7 +2088,7 @@ uro:IndoorUserDefinedAttribute
 
 |===
 
-===== 11)　bldg:CeilingSurface
+====== bldg:CeilingSurface
 
 [cols="1,1,2"]
 |===
@@ -2154,30 +2096,30 @@ uro:IndoorUserDefinedAttribute
 2+a| 
 部屋など構造物内部の上側の面（天井）。部屋（bldg:Room）の境界面となる。
 
-image::images/056.png["",500,title=" 図　bldg:CeilingSurfaceの例"]
+image::images/056.webp["",500,title=" 図　bldg:CeilingSurfaceの例"]
 
 bldg:CeilingSurfaceの法線ベクトルは下向き（部屋の内側に向く方向が正）となる。
 
-| 上位の型 2+| bldg:_BoundarySurface
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| bldg:_BoundarySurface
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | gml:description | gml:StringOrRefType [0..1] | 境界面の概要。
 | gml:name | gml:CodeType [0..1] | 境界面を識別する名称。文字列とする。
-| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
 | core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
 | core:terminationDate | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
 | bldg:lod4MultiSurface
 | gml:MultiSurface [0..1]
 a| 天井の仕上げ面の形状・起伏を再現した面。 +
@@ -2198,9 +2140,7 @@ uro:IndoorUserDefinedAttribute
 
 |===
 
-　
-
-===== 12)　bldg:FloorSurface
+====== bldg:FloorSurface
 
 [cols="1,1,2"]
 |===
@@ -2208,30 +2148,30 @@ uro:IndoorUserDefinedAttribute
 2+a| 
 建物の内部空間の各階下面に位置する水平で平らな板状の構造物（床面）。部屋（bldg:Room）の境界面となる。
 
-image::images/057.png["",400,title=" 図　bldg:FloorSurfaceの例"]
+image::images/057.webp["",400,title=" 図　bldg:FloorSurfaceの例"]
 
 bldg:FloorSurfaceの法線ベクトルは上向き（部屋の内側に向く方向が正）となる。
 
-| 上位の型 2+| bldg:_BoundarySurface
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| bldg:_BoundarySurface
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | gml:description | gml:StringOrRefType [0..1] | 境界面の概要。
 | gml:name | gml:CodeType [0..1] | 境界面を識別する名称。文字列とする。
-| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
 | core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
 | core:terminationDate | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
 | bldg:lod4MultiSurface
 | gml:MultiSurface [0..1]
 a| 床面の仕上げ面の形状・起伏を再現した面。 +
@@ -2252,9 +2192,7 @@ uro:IndoorUserDefinedAttribute
 
 |===
 
-　
-
-===== 13)　bldg:Window
+====== bldg:Window
 
 [cols="1,1,2"]
 |===
@@ -2262,34 +2200,34 @@ uro:IndoorUserDefinedAttribute
 2+a| 
 採光、通風、換気、眺望などの目的のため、建築物の屋根又は壁、部屋の天井、壁、床に設けられた開口部のうち、人や物の出入りを目的としないもの。
 
-image::images/058.png["",500,title=" 図 bldg:Windowの例"]
+image::images/058.webp["",500,title=" 図 bldg:Windowの例"]
 
 CityGMLでは、窓を面として表現し、一つの窓を外側と内側の二つのbldg:Windowのオブジェクトとして表現する。例えば、屋内と屋外をつなぐ窓があった場合、 外側となるbldg:Windowは、建築物の外壁面（bldg:WallSurface）等の境界面に含まれる。 内側となるbldg:Windowは、部屋の内壁面（bldg:InteriorWallSurface）等の境界面に含まれる。 このとき、屋外の境界面（bldg:WallSurface、bldg:GroundSurface、bldg:OuterFloorSurface、bldg:OuterCeilingSurface）に設けられた開口部は、常にその法線ベクトルが建築物の外側を向く。部屋の境界面（bldg:InteriorWallSurface、bldg:FloorSurface、bldg:CeilingSurface）に設けられた開口部は、常にその法線ベクトルが部屋の内側を向く。
 
-| 上位の型 2+| bldg:_Opening
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
-| (gml:description) | gml:StringOrRefType [0..1] | 開口部の概要。
+h| 上位の型 2+| bldg:_Opening
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 開口部の概要。
 | gml:name
 | gml:CodeType [0..1]
 a| 開口部を識別する名称。文字列とする。 +
 1つの窓を構成する二つのbldg:Window（外側の面、内側の面）は、同じ名称をもつ。
 
-| (gml:boundedBy) | gml:Envelope [0..1] | 開口部の範囲及び適用される空間参照系。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 開口部の範囲及び適用される空間参照系。
 | core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
 | core:terminationDate | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
 | bldg:lod4MultiSurface | gml:MultiSurface [0..1] | 開口部の外周に囲まれた面。必須とする。
 | uro:ifcOpeningAttribute
 | uro:IfcAttribute [0..*]
@@ -2309,9 +2247,7 @@ uro:IndoorUserDefinedAttribute
 
 |===
 
-　
-
-===== 14)　bldg:Door
+====== bldg:Door
 
 [cols="1,1,2"]
 |===
@@ -2319,30 +2255,30 @@ uro:IndoorUserDefinedAttribute
 2+a| 
 採光、通風、換気、眺望、通行などの目的のため、建築物の屋根、天井、壁、床などに設けられた開口部のうち、人や物の出入りを目的とするもの。
 
-image::images/059.png["",500,title=" 図　bldg:Doorの例"]
+image::images/059.webp["",500,title=" 図　bldg:Doorの例"]
 
 CityGMLでは、扉を面として表現し、一つの扉を外側と内側の二つのbldg:Doorのオブジェクトとして表現する。例えば、屋内と屋外をつなぐ窓があった場合、 外側となるbldg:Doorは、建築物の外壁面（bldg:WallSurface）等の境界面に含まれる。 内側となるbldg:Doorは、部屋の内壁面（bldg:InteriorWallSurface）等の境界面に含まれる。 このとき、屋外の境界面（bldg:WallSurface、bldg:GroundSurface、bldg:OuterFloorSurface、bldg:OuterCeilingSurface）に設けられた開口部は、常にその法線ベクトルが建築物の外側を向く。部屋の境界面（bldg:InteriorWallSurface、bldg:FloorSurface、bldg:CeilingSurface）に設けられた開口部は、常にその法線ベクトルが部屋の内側を向く。
 
-| 上位の型 2+| bldg:_Opening
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
-| (gml:description) | gml:StringOrRefType [0..1] | 開口部の概要。
+h| 上位の型 2+| bldg:_Opening
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 開口部の概要。
 | gml:name | gml:CodeType [0..1] | 開口部を識別する名称。名称で識別する必要がある場合にのみ作成する。文字列とする。
-| (gml:boundedBy) | gml:Envelope [0..1] | 開口部の範囲及び適用される空間参照系。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 開口部の範囲及び適用される空間参照系。
 | core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
 | core:terminationDate | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
 | bldg:lod4MultiSurface | gml:MultiSurface [0..1] | 開口部の外周に囲まれた面。必須とする。
 | uro:ifcOpeningAttribute | uro:IfcAttribute [0..*] | IDM・MVDで定義されるIFCのクラス及びプロパティセットに含まれる情報。 bldg:Doorに付与可能なデータ型は、以下とする。 uro:IfcOpeningElement uro:IfcDoor uro:IfcPsetOpeningElementCommon uro:IfcPsetDoorCommon
 | uro:indoorOpeningAttribute
@@ -2354,9 +2290,7 @@ uro:IndoorUserDefinedAttribute
 
 |===
 
-　
-
-===== 15)　bldg:BuildingInstallation
+====== bldg:BuildingInstallation
 
 [cols="1,1,2"]
 |===
@@ -2364,43 +2298,43 @@ uro:IndoorUserDefinedAttribute
 2+a| 
 建築物の外側（屋外）に設置され、建築物の外観を特徴づける設備。 建築物の付帯的な設備であり、主要な部分であってはならない。また、建築物（bldg:Building）と接していなければならない。 建築物の屋外付属物には以下を含む。ただし、全て屋外に設置され、建築物と接するもののみを対象とする。 バルコニー、ポーチ、アーケード、テラス、サンテラス、回廊、エントランスホール、ダクト、装飾的な柱、デッキ、屋根飾り、出窓、ドーマー、（建築物の一部としての）煙突、看板、換気口、（建築物の一部としての）塔、階段、カーポート、物置、アンテナ、外階段や歩道に設けられた屋根、手すり、スロープ、パネル（内装・外装の仕上げ等で利用される板材）、エレベータ、エスカレータ、動く歩道など。
 
-image::images/060.png["",500,title=" 図　bldg:BuildingInstallationの例"]
+image::images/060.webp["",500,title=" 図　bldg:BuildingInstallationの例"]
 
 （左：屋根面に設置された建築物の屋外付属物　右：外壁面に設置された建築物の屋外付属物） +
 ユースケースの要求に応じて、取得対象とする建築物の屋外付属物を限定してもよく、また、建築物の屋外付属物として取得せず建築物の一部として取得してもよい。
 
-| 上位の型 2+| bldg:_CityObject
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| bldg:_CityObject
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | gml:description | gml:StringOrRefType [0..1] | 建築物の屋外付属物の概要。
 | gml:name | gml:CodeType [0..1] | 建築物の屋外付属物を識別する名称。文字列とする。
-| (gml:boundedBy) | gml:Envelope [0..1] | 建築物の屋外付属物の範囲及び適用される空間参照系。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 建築物の屋外付属物の範囲及び適用される空間参照系。
 | core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
 | core:terminationDate | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 自身に定義された属性
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 自身に定義された属性
 | bldg:class | gml:CodeType [0..1] | 建築物の屋外付属物の形態による区分。コードリスト（BuildingInstallation_class.xml）より選択する。建築物の外側に取り付けられた付属物の場合は、1000となる。
 | bldg:function | gml:CodeType [0..*] | 建築物の屋外付属物の主たる働き。コードリスト（BuildingInstallation_function.xml）より選択する。
-| (bldg:usage) | gml:CodeType [0..*] | 建築物の屋外付属物の主な使い道。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-| 自身に定義された関連役割 | | 
-| 関連役割名 | 関連役割の型及び多重度 | 定義
+h| (bldg:usage) | gml:CodeType [0..*] | 建築物の屋外付属物の主な使い道。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+h| 自身に定義された関連役割 h| h| 
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | bldg:lod2Geometry
 | gml:_Geometry [0..1]
 a| 
 建築物の屋外付属物のLOD2の形状。 屋外付属物の外形（外側から見える形）を構成する面を取得し、面の各頂点に屋外付属物の高さを与える。各面は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう取得する。 gml:MultiSurfaceを使用することを基本とする。 容積の算出等、ユースケースで必要な場合はgml:Solidを使用する。
 
-image::images/061.png["",200,title=" 図　bldg:BuildingInstallationの取得例（屋外階段）"]
+image::images/061.webp["",200,title=" 図　bldg:BuildingInstallationの取得例（屋外階段）"]
 
 | bldg:lod3Geometry | gml:_Geometry [0..1] | 建築物の屋外付属物のLOD3の形状。 屋外付属物の外形（外側から見える形）を構成する面を取得し、面の各頂点に屋外付属物の高さを与える。各面は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう取得する。 gml:MultiSurfaceを使用することを基本とする。容積の算出等ユースケースで必要な場合は、gml:Solidを使用する。
 | bldg:lod4Geometry | gml:_Geometry [0..1] | 建築物の屋外付属物のLOD4の外形。 屋外付属物の外形（外側から見える形）を構成する面を取得し、面の各頂点に屋外付属物の高さを与える。各面は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう取得する。 gml:MultiSurfaceにより記述することを基本とする。容積の算出等ユースケースで必要な場合は、gml:Solidを使用する。
@@ -2410,12 +2344,12 @@ a|
 建築物の屋外付属物を構成する外壁、屋根等の境界面への参照。建築物の屋外付属物の境界面が建築物（bldg:Building）の境界面となる場合にのみ作成する。 +
 例えば、下図（平面図）のように建築物に建築物の屋外付属物があった場合、この建築物の屋外付属物を含む空間（gml:Solid）をBuildingとしたい場合は、建築物の屋外付属物の境界面を外壁面（bldg:WallSurface）とする。
 
-image::images/062.png["",250]
+image::images/062.webp["",250]
 
 建築物の空間に建築物の屋外付属物を含まない場合は、建築物の屋外付属物を構成する面を、境界面（bldg:_BoundarySurface）に区別する必要はない。
 
-3+| 自身に定義された関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | uro:ifcBuildingInstallationAttribute
 | uro:IfcAttribute [0..*]
 a| IDM・MVDで定義されるIFCに含まれる情報。 +
@@ -2425,9 +2359,7 @@ uro:IfcBuildingElement +
 
 |===
 
-　
-
-===== 16)　bldg:IntBuildingInstallation
+====== bldg:IntBuildingInstallation
 
 [cols="1,1,2"]
 |===
@@ -2436,39 +2368,39 @@ uro:IfcBuildingElement +
 建築物の内側に設置された、恒久的に存在する固定的な設備（屋内付属物）。 +
 屋内付属物は、建築物の付帯的な設備であり、主要な部分であってはならない。また、屋内付属物は、建築物（bldg:Building）又は部屋（bldg:Room）と接していなければならない。
 
-image::images/063.png["",500,title=" 図　bldg:IntBuildingInstallationの例（階段、手すり）"]
+image::images/063.webp["",500,title=" 図　bldg:IntBuildingInstallationの例（階段、手すり）"]
 
 LOD4では、この屋内付属物を含む建築物に適用されたLOD4の細分に従い、以下を取得する。 +
 LOD4.0：屋内付属物を取得しない（bldg:IntBuildingInstallationは取得しない）。 +
 LOD4.1：階段、スロープ、輸送設備（エレベータ、エスカレータ及び動く歩道）、柱、デッキ・ステージ +
 LOD4.2：LOD4.1の取得対象に加え、梁・手すり・パネル等の全ての建築物の屋外付属物及び全ての建築物の屋外付属物
 
-| 上位の型 2+| bldg:_CityObject
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| bldg:_CityObject
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | gml:description | gml:StringOrRefType [0..1] | 屋内付属物の概要。
 | gml:name | gml:CodeType [0..1] | 屋内付属物を識別する名称。文字列とする。
-| (gml:boundedBy) | gml:Envelope [0..1] | 屋内付属物の範囲及び適用される空間参照系。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 屋内付属物の範囲及び適用される空間参照系。
 | core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
 | core:terminationDate | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 自身に定義された属性
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 自身に定義された属性
 | bldg:class | gml:CodeType [0..1] | 屋内付属物の形態による区分。コードリスト（IntBuildingInstallation_class.xml）より選択する。
 | bldg:function | gml:CodeType [0..*] | 屋内付属物の主たる働き。コードリスト（IntBuildingInstallation_function.xml）より選択する。
-| (bldg:usage) | gml:CodeType [0..*] | 屋内付属物の主な使い道。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-3+| 自身に定義された関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
+h| (bldg:usage) | gml:CodeType [0..*] | 屋内付属物の主な使い道。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | bldg:lod4Geometry
 | gml:_Geometry [0..1]
 a| 屋内付属物のLOD4の外形。 +
@@ -2483,13 +2415,13 @@ a|
 屋内付属物を構成する内壁、天井等の境界面への参照。屋内付属物の境界面が部屋（bldg:Room）の境界面となる場合にのみ作成する。 +
 例えば、下図（平面図）のように部屋内に屋内付属物があった場合、この屋内付属物を除く空間（gml:Solid）をRoomとしたい場合は、屋内付属物の境界面を内壁面（bldg:InteriorWallSurface）とする。
 
-image::images/064.png["",250]
+image::images/064.webp["",250]
 
 ただし、部屋の空間から屋内付属物を除く必要が無い場合は、屋内付属物の形状を構成する面を、境界面（bldg:_BoundarySurface）にする必要はない。 +
 また、ユースケースによりエレベータの出入口を、エレベータの扉を使って表現する必要がある場合は、bldg:boundedBy関連役割により、エレベータの扉が存在する境界面を内壁面（bldg:InteriorWallSurface）として区分し、この内壁面に扉（bldg:Door）を作成することでエレベータの扉を表現可能となる。
 
-| 自身に定義された関連役割 | | 
-| 関連役割名 | 関連役割の型及び多重度 | 定義
+h| 自身に定義された関連役割 h| h| 
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | uro:ifcIntBuildingInstallationAttribute
 | uro:IfcAttribute [0..*]
 a| IDM・MVDで定義されるIFCに含まれる情報。 +
@@ -2511,9 +2443,7 @@ uro:IndoorUserDefinedAttribute
 
 |===
 
-　
-
-===== 17)　bldg:BuildingFurniture
+====== bldg:BuildingFurniture
 
 [cols="1,1,2"]
 |===
@@ -2523,37 +2453,37 @@ uro:IndoorUserDefinedAttribute
  +
 bldg:IntBuildingInstallationが、建築物内部に設置された恒久的かつ固定的な設備であることと対照的に、bldg:BuildingFurnitureは椅子やテーブルのような、動かすことができる備品である。
 
-image::images/065.png["",400,title=" 図　bldg:BuildingFurnitureの例（机、椅子）"]
+image::images/065.webp["",400,title=" 図　bldg:BuildingFurnitureの例（机、椅子）"]
 
 LOD4.2の場合にのみ取得する。 +
 ただし、ユースケースの要求に応じて、取得対象とする家具を限定してよい。
 
-| 上位の型 2+| bldg:_CityObject
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| bldg:_CityObject
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | gml:description | gml:StringOrRefType [0..1] | 家具の概要。
 | gml:name | gml:CodeType [0..1] | 家具を識別する名称。文字列とする。
-| (gml:boundedBy) | gml:Envelope [0..1] | 家具の範囲及び適用される空間参照系。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 家具の範囲及び適用される空間参照系。
 | core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
 | core:terminationDate | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 自身に定義された属性
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 自身に定義された属性
 | bldg:class | gml:CodeType [0..1] | 家具の形態による区分。コードリスト（BuildingFurniture_class.xml）より選択する。
 | bldg:function | gml:CodeType [0..*] | 家具の主たる働き。コードリスト（BuildingFurniture_function.xml）より選択する。
-| (bldg:usage) | gml:CodeType [0..*] | 家具の主な使い道。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-3+| 自身に定義された関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
+h| (bldg:usage) | gml:CodeType [0..*] | 家具の主な使い道。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | bldg:lod4Geometry
 | gml:_Geometry [0..1]
 a| 家具の形状。 +
@@ -2578,22 +2508,20 @@ uro:IndoorUserDefinedAttribute
 |===
 
 [[toc4_02_03_02]]
-===== (2)　bldg: Buildingの拡張属性
+===== bldg: Buildingの拡張属性
 
 CityGMLを拡張し、bldg:Buildingに詳細な属性を付与するのためのデータ型を定義する。
 
-　
-
-===== 1)　uro:BuildingIDAttribute
+====== uro:BuildingIDAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 建築物を識別するための情報。
 
-| 上位の型 2+| uro:BuildingAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:BuildingAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:buildingID | xs:string [1] | 主たる建築物を識別するための番号。必須とする。 [市区町村コード]-[接頭辞]-[オブジェクト連番] とする。 [市区町村コード] は、当該地物が存在する市区町村に該当するコードとする。 先頭の0は省略せず、5桁で記述する。 [接頭辞]は地物型の区分を示す3桁又は4桁のコードとする。 建築物の場合は、bldgとする。 [オブジェクト連番]は半角数字の連番とする。
 | uro:branchID | xs:integer [0..1] | 主たる建築物に対して付帯する建築物を識別するための番号。
 | uro:partID | xs:integer [0..1] | 主たる建築物を複数のbldg:BuildingPartに分けて記述する場合の、建築物部分を識別するための番号。bldg:BuildingPartには必須とする。
@@ -2602,18 +2530,16 @@ CityGMLを拡張し、bldg:Buildingに詳細な属性を付与するのための
 
 |===
 
-　
-
-===== 2)　uro:BuildingDetailAttribute
+====== uro:BuildingDetailAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 都市計画法に基づき実施される都市計画基礎調査において収集された、建築物に関する基礎的な情報。
 
-| 上位の型 2+| uro:BuildingAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:BuildingAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:serialNumberOfBuildingCertification | xs:string [0..1] | 建築確認申請番号。
 | uro:siteArea | gml:MeasureType [0..1] | 当該建築物が立地する敷地の面積。単位はm2（uom=“m2“）とする。
 | uro:totalFloorArea | gml:MeasureType [0..1] | 当該建築物の各階の床面積の合計。単位はm2（uom=“m2“）とする。
@@ -2739,18 +2665,16 @@ a| 空き家か否かの別。 +
 
 |===
 
-　
-
-===== 3)　uro:LargeCustomerFacilityAttribute
+====== uro:LargeCustomerFacilityAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 都市計画法に基づき実施される都市計画基礎調査において収集された、大規模小売店舗や大規模集客施設に関する基礎的な情報。
 
-| 上位の型 2+| uro:BuildingAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:BuildingAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:class
 | gml:CodeType [0..1]
 a| 集客施設の種類。 +
@@ -2792,9 +2716,7 @@ a| 集客施設が立地する土地の土地利用区分。 +
 
 |===
 
-　
-
-===== 4)　uro:RiverFloodingRiskAttribute
+====== uro:RiverFloodingRiskAttribute
 
 [cols="1,1,2"]
 |===
@@ -2802,12 +2724,12 @@ a| 集客施設が立地する土地の土地利用区分。 +
 2+a| 
 洪水浸水想定区域内に存在する建築物に、浸水想定区域がもつ属性を与えるための属性型。 同一の浸水想定区域図において、複数の区域に建築物が跨って存在する場合は、同一浸水ランクを持つ浸水ランクのメッシュを一つの区域とし、その区域と建築物が重なる面積が最も大きい浸水ランクの値を採用する。（面積が等しい場合は、浸水ランクがより危険な区域を採用する） 浸水深は採用した浸水ランクを持つ浸水深のメッシュのうち、建築物と重なる面積が最も大きいメッシュの浸水深を採用する。（同じ浸水深を持つメッシュは面積算出の際に合算する） 浸水継続時間は採用した浸水深のメッシュと重なる浸水継続時間のメッシュの浸水継続時間を採用する。複数の浸水継続時間のメッシュが重なる場合は最も大きい浸水継続時間の値を採用する。 浸水深の有効桁数は、「浸水想定区域図データ電子化ガイドライン（第4版）」に従い、浸水深の有効桁数は、小数点以下 3 桁まで登録可能とするが、小数点以下 2 桁でもよいとする。 面積の有効桁数は、小数点2桁（3桁目で四捨五入）とする。
 
-image::images/066.png["",400]
+image::images/066.webp["",400]
 
-| 上位の型 2+| uro:FloodingRiskAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:FloodingRiskAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:description
 | gml:CodeType [1]
 a| 指定河川の名称。 +
@@ -2828,7 +2750,7 @@ a| 都道府県独自に設定した浸水深の区分。コードリスト（Bu
 uro:rank又はuro:rankOrgのいずれか一つをもつ。
 
 | uro:depth | gml:LengthType [0..1] | 浸水の深さ。単位はm（uom=”m”）とする。
-3+| 自身に定義された属性
+3+h| 自身に定義された属性
 | uro:adminType
 | gml:CodeType [1]
 a| 洪水予報河川又は水位周知河川を指定した機関の別。 +
@@ -2843,18 +2765,16 @@ a| 想定最大規模降雨あるいは計画規模降雨のいずれにより�
 
 |===
 
-　
-
-===== 5)　uro:TsunamiRiskAttribute
+====== uro:TsunamiRiskAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 津波洪水浸水想定の区域内に存在する建築物に、津波浸水想定の区域の属性を与えるための属性型。 1回の津波浸水シミュレ－ションに関して、複数の区域が一棟の建築物に跨って存在する場合は、同一浸水ランクを持つ浸水ランクのメッシュを一つの区域とし、その区域と建築物が重なる面積が最も大きい浸水ランクの値を採用する。（面積が等しい場合は、より危険な区域を採用する） 浸水深は採用した浸水ランクを持つ浸水深のメッシュのうち、建築物と重なる面積が最も大きいメッシュの浸水深を採用する。（同じ浸水深を持つメッシュは面積算出の際に合算する） 浸水深の有効桁数は、「浸水想定区域図データ電子化ガイドライン（第4版）」に従い、浸水深の有効桁数は、小数点以下 3 桁まで登録可能とするが、小数点以下 2 桁でもよいとする。 面積の有効桁数は、小数点2桁（3桁目で四捨五入）とする。
 
-| 上位の型 2+| uro:BuildingFloodingRiskAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:BuildingFloodingRiskAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:description
 | gml:CodeType [1]
 a| 津波浸水想定の属性を付与する元となる図又はデータの名称。 +
@@ -2878,18 +2798,16 @@ a| 都道府県独自に設定した水位の区分。 +
 
 |===
 
-　
-
-===== 6)　uro:HighTideRiskAttribute
+====== uro:HighTideRiskAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 高潮浸水想定区域に存在する建築物に、高潮浸水想定区域の属性に与えるための属性型。 一回の高潮浸水シミュレ－ションに関して、複数の区域が一棟の建築物に跨って存在する場合は同一浸水ランクを持つ浸水ランクのメッシュを一つの区域とし、その区域と建築物が重なる面積が最も大きい浸水ランクの値を採用する。（面積が等しい場合は、浸水ランクがより危険な区域を採用する） 浸水深は採用した浸水ランクを持つ浸水深のメッシュのうち、建築物と重なる面積が最も大きいメッシュの浸水深を採用する。（同じ浸水深を持つメッシュは面積算出の際に合算する） 浸水深の有効桁数は、「浸水想定区域図データ電子化ガイドライン（第4版）」に従い、浸水深の有効桁数は、小数点以下 3 桁まで登録可能とするが、小数点以下 2 桁でもよいとする。 面積の有効桁数は、小数点2桁（3桁目で四捨五入）とする。
 
-| 上位の型 2+| uro:BuildingFloodingRiskAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:BuildingFloodingRiskAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:description | gml:CodeType [1] | 高潮浸水想定区域の属性を付与する元となる図又はデータ集合の名称。コードリスト（HighTideRiskAttribute_description.xml）より選択する。都市ごとにコードリストを作成する。
 | uro:rank
 | gml:CodeType [0..1]
@@ -2905,18 +2823,16 @@ a| 都道府県独自に設定した浸水深の区分。 +
 
 |===
 
-　
-
-===== 7)　uro:InlandFloodingRiskAttribute
+====== uro:InlandFloodingRiskAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 内水浸水想定区域に存在する建築物に、内水浸水想定区域の属性を与えるための属性型。 1回の内水浸水シミュレ－ションに関して、複数の区域が一棟の建築物に跨って存在する場合は、同一浸水ランクを持つ浸水ランクのメッシュを一つの区域とし、その区域と建築物が重なる面積が最も大きい浸水ランクの値を採用する。（面積が等しい場合は、浸水ランクがより危険な区域を採用する） 浸水深は採用した浸水ランクを持つ浸水深のメッシュのうち、建築物と重なる面積が最も大きいメッシュの浸水深を採用する。（同じ浸水深を持つメッシュは面積算出の際に合算する） 浸水深の有効桁数は、「浸水想定区域図データ電子化ガイドライン（第4版）」に従い、浸水深の有効桁数は、小数点以下 3 桁まで登録可能とするが、小数点以下 2 桁でもよいとする。 面積の有効桁数は、小数点2桁（3桁目で四捨五入）とする。
 
-| 上位の型 2+| uro:BuildingFloodingRiskAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:BuildingFloodingRiskAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:description
 | gml:CodeType [1]
 a| 内水浸水想定区域の属性を付与する元となる図又はデータの名称。 +
@@ -2933,9 +2849,7 @@ uro:rank又はuro:rankOrgのいずれか一つをもつ。
 
 |===
 
-　
-
-===== 8)　uro:ReservoirFloodingRiskAttribute
+====== uro:ReservoirFloodingRiskAttribute
 
 [cols="1,1,2"]
 |===
@@ -2943,10 +2857,10 @@ uro:rank又はuro:rankOrgのいずれか一つをもつ。
 2+a| ため池ハザードマップに存在する建築物に、ため池ハザードマップの属性を与えるための属性型。 +
 「ため池ハザードマップ」とは、ため池が決壊する恐れのある場合又は決壊した場合に迅速かつ安全に非難するための参考資料である（参考：「ため池ハザードマップ作成の手引き」農林水産省農村振興局防災課,　2013年5月）。 複数の区域が一棟の建築物に跨って存在する場合は 、同一浸水ランクを持つ浸水ランクのメッシュを一つの区域とし、その区域と建築物が重なる面積が最も大きい浸水ランクの値を採用する。（面積が等しい場合は、より浸水ランクの危険な区域 を採用する） 浸水深は採用した浸水ランクを持つ浸水深のメッシュのうち、建築物と重なる面積が最も大きいメッシュの浸水深を採用する。（同じ浸水深を持つメッシュは面積算出の際に合算する） 面積の有効桁数は、小数点2桁（3桁目で四捨五入）とする。
 
-| 上位の型 2+| uro:BuildingFloodingRiskAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:BuildingFloodingRiskAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:description | gml:CodeType [1] | ため池ハザードマップの属性を付与する元となる図又はデ－タの名称。 コードリスト（ReservoirFloodingRiskAttribute_description.xml）より選択する。都市ごとにコードリストを作成する。
 | uro:rank | gml:CodeType [0..1] | 浸水深に応じた区分。 コードリスト（ReservoirFloodingRiskAttribute_rank.xml）より選択する。 uro:rank又はuro:rankOrgのいずれか一つをもつ。
 | uro:rankOrg | gml:CodeType [0..1] | 都道府県独自に設定した浸水深の区分。コードリスト（ReservoirFloodingRiskAttribute_rankOrg.xml）より選択する。この属性を使用する場合は、コードリストを作成する。uro:rank又はuro:rankOrgのいずれか一つをもつ。
@@ -2954,9 +2868,7 @@ uro:rank又はuro:rankOrgのいずれか一つをもつ。
 
 |===
 
-　
-
-===== 9)　uro:LandSlideRiskAttribute
+====== uro:LandSlideRiskAttribute
 
 [cols="1,1,2"]
 |===
@@ -2971,16 +2883,16 @@ uro:rank又はuro:rankOrgのいずれか一つをもつ。
 とする。 +
 なお、一つの建築物に、複数の「現象区分」が重なっている場合は、それぞれを土砂災害リスク属性として記述する。
 
-| 上位の型 2+| uro:DisasterRiskAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:DisasterRiskAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:description
 | gml:CodeType [1]
 a| 発生が想定されている災害の種類。 +
 コードリスト（LandSlideRiskAttribute_description.xml）より選択する。
 
-3+| 自身に定義された属性
+3+h| 自身に定義された属性
 | uro:areaType
 | gml:CodeType [1]
 a| 土砂災害警戒区域に含まれているのか、否かの区分。 +
@@ -2988,18 +2900,16 @@ a| 土砂災害警戒区域に含まれているのか、否かの区分。 +
 
 |===
 
-　
-
-===== 10)　uro:KeyValuePairAttribute
+====== uro:KeyValuePairAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。 属性名称と属性の値の対で構成される。 コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
 
-| 上位の型 2+| ―
-| ステレオタイプ 2+| << DataType >>
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:key | gml:CodeType [1] | 拡張する属性の名称。名称は、コ－ドリスト（KeyValuePairAttribute_key.xml）を作成し、選択する。
 | uro:codeValue
 | gml:CodeType [1]
@@ -3008,18 +2918,16 @@ a| 拡張された属性の値。値は名称は、コ－ドリスト（KeyValue
 
 |===
 
-　
-
-===== 11)　uro:DataQualityAttribute
+====== uro:DataQualityAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
 
-| 上位の型 2+| ―
-| ステレオタイプ 2+| << DataType >>
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:geometrySrcDescLod0 | gml:CodeType [0..*] | LOD0の幾何オブジェクトの作成に使用した原典資料の種類。 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD0の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、建築物モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
 | uro:geometrySrcDescLod1 | gml:CodeType [1..*] | LOD1の幾何オブジェクトの作成に使用した原典資料の種類。 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。具体的な都市オブジェクトがLOD1の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 | uro:geometrySrcDescLod2 | gml:CodeType [0..*] | LOD2の幾何オブジェクトの作成に使用した原典資料の種類。 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD2の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、建築物モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
@@ -3077,25 +2985,23 @@ a| LOD1の立体図形を作成する際に使用した高さの算出方法。 
 コードリスト（DataQualityAttribute_lod1HeightType.xml）より選択する。 +
 LOD1の幾何オブジェクトを作成する場合は必須とする。
 
-| (uro:tranDataAcquisition) | xs:string [0..1] | 「道路基盤地図情報（整備促進版）製品仕様書（案）」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
-3+| 自身に定義された関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
+h| (uro:tranDataAcquisition) | xs:string [0..1] | 「道路基盤地図情報（整備促進版）製品仕様書（案）」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | uro:publicSurveyDataQualityAttribute | uro:PublicSurveyDataQualityAttribute [0..1] | 使用した公共測量成果の地図情報レベルと種類。 各LODの幾何オブジェクトの作成に使用した原典資料の種類に関する属性（uro:geometrySrcDescLod0等）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）となっている場合は、必須とする。
 
 |===
 
-　
-
-===== 12) uro:PublicSurveyDataQualityAttribute
+====== uro:PublicSurveyDataQualityAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 都市オブジェクトのデータ作成情報を記述するためのデータ型。
 
-| 上位の型 2+| ―
-| ステレオタイプ 2+| << DataType >>
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:srcScale
 | gml:CodeType [1..*]
 a| 元となるデータの地図情報レベル。 +
@@ -3140,11 +3046,11 @@ Tunnel_lodType.xml +
 uro:OtherConstructionの場合 +
 OtherConstruction_lodType.xml
 
-| 型の定義 2+| 使用した公共測量成果の地図情報レベルと種類を、LODごとに記述するためのデータ型。
-| 上位の型 2+| ―
-| ステレオタイプ 2+| << DataType >>
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 型の定義 2+| 使用した公共測量成果の地図情報レベルと種類を、LODごとに記述するためのデータ型。
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:srcScaleLod0
 | gml:CodeType [0..1]
 a| LOD0の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
@@ -3211,18 +3117,16 @@ a| LOD4の幾何オブジェクトの作成に使用した原典資料の種類�
 
 |===
 
-　
-
-===== 13) uro:RealEstateIDAttribute
+====== uro:RealEstateIDAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 建築物が存在する土地及び建築物に紐づく不動産IDを、建築物の属性として付与するためのデータ型。 不動産IDとは、「不動産を一意に特定することができる、各不動産の共通コード」である。 （不動産IDルールガイドライン）
 
-| 上位の型 2+| uro:BuildingAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:BuildingAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:realEstateIDOfBuilding | xs:string [1] | 建築物の「建築物全体」に付された不動産ID。不動産IDルールガイドライン（国土交通省）に基づく「不動産番号13桁+”-”（ハイフン）+4桁」で記載される。
 | uro:numberOfBuildingUnitOwnership | xs:integer [0..1] | 当該建築物が区分所有の場合の、当該建築物の区分所有の数量。
 | uro:realEstateIDOfBuildingUnitOwnership | xs:string [0..*] | 当該建築物が区分所有の場合の、当該建築物の各専有部分の不動産IDの一覧。不動産IDルールガイドライン（国土交通省）に基づく「不動産番号13桁+”-”（ハイフン）+4桁」で記載される。
@@ -3236,75 +3140,63 @@ a| 建築物に不動産IDを付与する際に、Project PLATEAUが2023年度�
 |===
 
 [[toc4_02_03_03]]
-===== (3)　施設管理のための拡張属性
+===== 施設管理のための拡張属性
 
-===== 1)　uro:FacilityIdAttribute
-
-施設管理属性の応用スキーマ文書　参照
-
-　
-
-===== 2)　uro:FacilityTypeAttribute
+====== uro:FacilityIdAttribute
 
 施設管理属性の応用スキーマ文書　参照
 
-　
-
-===== 3)　uro:FacilityAttribute
+====== uro:FacilityTypeAttribute
 
 施設管理属性の応用スキーマ文書　参照
 
-　
+====== uro:FacilityAttribute
+
+施設管理属性の応用スキーマ文書　参照
 
 [[toc4_02_03_04]]
-===== (4)　数値地形図のための拡張属性
+===== 数値地形図のための拡張属性
 
-===== 1)　uro:DmGeometricAttribute
+====== uro:DmGeometricAttribute
 
-　公共測量標準図式の応用スキーマ文書　参照
+公共測量標準図式の応用スキーマ文書　参照
 
-　
+====== uro:DmElement
 
-===== 2)　uro:DmElement
-
-　公共測量標準図式の応用スキーマ文書　参照
+公共測量標準図式の応用スキーマ文書　参照
 
 [[toc4_02_03_05]]
-===== (5)　建築物モデル（LOD4）の拡張属性
+===== 建築物モデル（LOD4）の拡張属性
 
 本項では、IDM・MVDで定義されるIFCに含まれる情報を保持するためのデータ型及び屋内ナビゲーションのためのデータ型の定義を示す。各データ型は、IFCのクラス又はプロパティセットに対応づく。 +
 なお、屋内ナビゲーションのためのデータ型は、「3次元屋内地理空間情報データ仕様書（案）」に定義されたプロパティセットに対応する。
 
-　
-
-===== 1)　uro:IfcAxis2Placement3D
+====== uro:IfcAxis2Placement3D
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| ローカル座標系の変換を定義する座標系情報を設定するためのデータ型。
 
-| 上位の型 2+| ―
-| ステレオタイプ 2+| << DataType >>
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:location | gml:Point [1] | 3次元ローカル座標系における原点。
 | uro:axis | gml:doubleList [0..1] | ローカル座標系におけるZ軸ベクトルを示し、アフィン変換のパラメータとして使用する。デフォルト値は (0, 0, 1)。uro:refDirectionを設定した場合は必ず設定する。
 | uro:refDirection | gml:doubleList [0..1] | ローカル座標系におけるX軸ベクトルを示し、アフィン変換のパラメータとして使用する。デフォルト値は(1, 0, 0)。uro:axisを設定した場合は必ず設定する。
 
 |===
 
-　
-
-===== 2)　uro:IfcBuilding
+====== uro:IfcBuilding
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| IFCで記述された建築物の属性。
 
-| 上位の型 2+| uro:IfcSpatialStructureElement
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:IfcSpatialStructureElement
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:globalId | xs:string [0..1] | そのオブジェクトが単一に識別できる唯一な識別子。22桁の文字列により表現する。
 | uro:name | xs:string [0..1] | オブジェクトの名称。uro:IfcBuildingの場合は、建物名称とする。
 | uro:description | xs:string [0..1] | オブジェクトの文字情報による追加説明。
@@ -3321,8 +3213,8 @@ a| 空間構成の区分。 +
 • 複数から構成される場合はCOMPLEXを設定。 +
 • 部分的な空間を表現している場合はPARTIALを設定する。
 
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:elevationOfRefHeight
 | gml:LengthType [0..1]
 a| 建築物の基準となる海抜高度。通常基準となる階（1階）のスラブ上部面。 +
@@ -3333,25 +3225,23 @@ a| 建築物の基準となる海抜高度。通常基準となる階（1階）�
 
 |===
 
-　
-
-===== 3)　uro:IfcBuildingElement
+====== uro:IfcBuildingElement
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 建築物の部材を記述するデータ型。
 
-| 上位の型 2+| uro:IfcElement
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:IfcElement
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:globalId | xs:string [0..1] | そのオブジェクトが単一に識別できる唯一な識別子。22桁の文字列により表現する。
 | uro:name | xs:string [0..1] | オブジェクトの名称。
 | uro:description | xs:string [0..1] | オブジェクトの文字情報による追加説明。
 | uro:objectType | xs:string [0..1] | オブジェクトの特定の型を示す。
 | uro:tag | xs:string [0..1] | オブジェクトのシリアルナンバー、ポジションナンバーなどの識別番号。
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:elementType
 | gml:CodeType [0..1]
 a| 建築物の部材の区分。コードリスト（IfcBuildingElement_elementType.xml）から選択する。 +
@@ -3404,18 +3294,16 @@ uro:elementTypeがTransportElementに区分される場合にこの属性を使�
 
 |===
 
-　
-
-===== 4)　uro:IfcClassification
+====== uro:IfcClassification
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| IFCで記述された分類の諸元に関する属性。
 
-| 上位の型 2+| ー
-| ステレオタイプ 2+| << DataType >>
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ー
+h| ステレオタイプ 2+| << DataType >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:source | xs:string [0..1] | この分類のソース（又は発行者）。
 | uro:edition | xs:string [0..1] | 分類表記の版。
 | uro:editionDate | xs:date [0..1] | 使用された版が有効になった日付。
@@ -3423,18 +3311,16 @@ uro:elementTypeがTransportElementに区分される場合にこの属性を使�
 
 |===
 
-　
-
-===== 5)　uro:IfcClassificationReference
+====== uro:IfcClassificationReference
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| IFCで記述された分類に関する属性。
 
-| 上位の型 2+| uro:IfcAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:IfcAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:location | xs:anyURI [0..1] | 分類の外部ソース情報。
 | uro:itemReference | gml:CodeType [0..1] | 分類コード。コードリスト（IfcClassificationReference_itemReference.xml）から選択する。この属性を使用する場合は、コードリストを作成する。
 | uro:name | xs:string [0..1] | コードに対応するラベル。
@@ -3442,18 +3328,16 @@ uro:elementTypeがTransportElementに区分される場合にこの属性を使�
 
 |===
 
-　
-
-===== 6)　uro:IfcCoordinateReferenceSystem
+====== uro:IfcCoordinateReferenceSystem
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 座標参照系の情報を記述するためのデータ型
 
-| 上位の型 2+| uro:IfcAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:IfcAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:name
 | xs:string [0..1]
 a| 座標参照系の名称。 +
@@ -3470,9 +3354,7 @@ JGD2011とする。
 
 |===
 
-　
-
-===== 7)　uro:IfcCoordinateReferenceSystemSelect
+====== uro:IfcCoordinateReferenceSystemSelect
 
 [cols="1,1,2"]
 |===
@@ -3480,27 +3362,25 @@ JGD2011とする。
 2+a| 座標参照系の記述する方法を指定する共用体型。 +
 uro:IfcCoordinateReferenceSystem又はuro:IfcGeometricRepresentationContextのいずれかを選択する。
 
-| 上位の型 2+| ―
-| ステレオタイプ 2+| << Union >>
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << Union >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:crs | uro:IfcCoordinateReferenceSystem | uro:IfcCoordinateReferenceSystemを用いた座標参照系の記述。
 | uro:context | uro:IfcGeometricRepresentationContext | uro:IfcGeometricRepresentationContextを用いた座標参照系の記述。
 
 |===
 
-　
-
-===== 8)　uro:IfcCurtainWall
+====== uro:IfcCurtainWall
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| IFCで記述されたカーテンウォールの属性。
 
-| 上位の型 2+| uro:IfcBuildingElement
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:IfcBuildingElement
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:globalId | xs:string [0..1] | そのオブジェクトが単一に識別できる唯一な識別子。22桁の文字列により表現する。
 | uro:name | xs:string [0..1] | オブジェクトの名称。
 | uro:description | xs:string [0..1] | オブジェクトの文字情報による追加説明。
@@ -3511,39 +3391,37 @@ uro:IfcCoordinateReferenceSystem又はuro:IfcGeometricRepresentationContextの�
 a| 建築物の部材の区分。コードリスト（IfcBuildingElement_elementType.xml）から選択する。 +
 uro:elementTypeの値により、uro:predefinedType以降の使用可能な属性が異なる。
 
-| (uro:predefinedType) | gml:CodeType [0..1] | 定義済み型に基づく区分。
-| (uro:shapeType) | gml:CodeType [0..1] | 形状の区分。
-| (uro:numberOfRiser) | xs:integer [0..1] | 蹴上数。
-| (uro:numberOfTreads) | xs:integer [0..1] | 踏面数。
-| (uro:riserHeight)
+h| (uro:predefinedType) | gml:CodeType [0..1] | 定義済み型に基づく区分。
+h| (uro:shapeType) | gml:CodeType [0..1] | 形状の区分。
+h| (uro:numberOfRiser) | xs:integer [0..1] | 蹴上数。
+h| (uro:numberOfTreads) | xs:integer [0..1] | 踏面数。
+h| (uro:riserHeight)
 | gml:LengthType [0..1]
 a| 蹴上の高さ。 +
 
-| (uro:treadLength)
+h| (uro:treadLength)
 | gml:LengthType [0..1]
 a| 踏面の奥行の長さ。 +
 
-| (uro:operationType) | IfcTransportElementTypeEnum [0..1] | 輸送設備の区分。
-| (uro:capacityByWeight)
+h| (uro:operationType) | IfcTransportElementTypeEnum [0..1] | 輸送設備の区分。
+h| (uro:capacityByWeight)
 | gml:MeasureType [0..1]
 a| 許容積載量。 +
 
-| (uro:capacityByNumber) | xs:integer [0..1] | 許容定員数。
+h| (uro:capacityByNumber) | xs:integer [0..1] | 許容定員数。
 
 |===
 
-　
-
-===== 9)　uro:IfcDoor
+====== uro:IfcDoor
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| IFCで記述された扉の属性。
 
-| 上位の型 2+| uro:IfcBuildingElement
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:IfcBuildingElement
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:globalId | xs:string [0..1] | そのオブジェクトが単一に識別できる唯一な識別子。22桁の文字列により表現する。
 | uro:name | xs:string [0..1] | オブジェクトの名称。
 | uro:description | xs:string [0..1] | オブジェクトの文字情報による追加説明。
@@ -3554,34 +3432,32 @@ a| 許容積載量。 +
 a| 建築物の部材の区分。コードリスト（IfcBuildingElement_elementType.xml）から選択する。 +
 uro:elementTypeの値により、uro:predefinedType以降の使用可能な属性が異なる。
 
-| (uro:predefinedType) | gml:CodeType [0..1] | 定義済み型に基づく区分。
-| (uro:shapeType) | gml:CodeType [0..1] | 形状の区分。
-| (uro:numberOfRiser) | xs:integer [0..1] | 蹴上数。
-| (uro:numberOfTreads) | xs:integer [0..1] | 踏面数。
-| (uro:riserHeight) | gml:LengthType [0..1] | 蹴上の高さ。
-| (uro:treadLength) | gml:LengthType [0..1] | 踏面の奥行の長さ。
-| (uro:operationType) | IfcTransportElementTypeEnum [0..1] | 輸送設備の区分。
-| (uro:capacityByWeight) | gml:MeasureType[0..1] | 許容積載量。
-| (uro:capacityByNumber) | xs:integer [0..1] | 許容定員数。
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| (uro:predefinedType) | gml:CodeType [0..1] | 定義済み型に基づく区分。
+h| (uro:shapeType) | gml:CodeType [0..1] | 形状の区分。
+h| (uro:numberOfRiser) | xs:integer [0..1] | 蹴上数。
+h| (uro:numberOfTreads) | xs:integer [0..1] | 踏面数。
+h| (uro:riserHeight) | gml:LengthType [0..1] | 蹴上の高さ。
+h| (uro:treadLength) | gml:LengthType [0..1] | 踏面の奥行の長さ。
+h| (uro:operationType) | IfcTransportElementTypeEnum [0..1] | 輸送設備の区分。
+h| (uro:capacityByWeight) | gml:MeasureType[0..1] | 許容積載量。
+h| (uro:capacityByNumber) | xs:integer [0..1] | 許容定員数。
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:overallHeight | gml:LengthType [0..1] | 扉全体の高さ。単位はm。
 | uro:overallWidth | gml:LengthType [0..1] | 扉全体の幅。単位はm。
 
 |===
 
-　
-
-===== 10)　uro:IfcFurnishingElement
+====== uro:IfcFurnishingElement
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| IFCで記述された家具の属性。
 
-| 上位の型 2+| uro:IfcElement
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:IfcElement
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:globalId | xs:string [0..1] | そのオブジェクトが単一に識別できる唯一な識別子。22桁の文字列により表現する。
 | uro:name | xs:string [0..1] | オブジェクトの名称。
 | uro:description | xs:string [0..1] | オブジェクトの文字情報による追加説明。
@@ -3590,7 +3466,7 @@ uro:elementTypeの値により、uro:predefinedType以降の使用可能な属�
 
 |===
 
-===== 11)　uro:IfcGeomericRepresentationContext
+====== uro:IfcGeomericRepresentationContext
 
 [cols="1,1,2"]
 |===
@@ -3598,10 +3474,10 @@ uro:elementTypeの値により、uro:predefinedType以降の使用可能な属�
 2+a| プロジェクト内のIfcProduct オブジェクトの形状表現に適用されるコンテキストを定義する、3Dのモデル表現形式のためのデータ型。 +
 コンテキスト情報とは、形状表現が定義されるコンテキストのタイプと、このコンテキストで定義される形状表現項目に適用される数値精度を定義、さらに、uro:worldCoordinateSystem属性を使用して、グローバルな原点からプロジェクト座標系をオフセットする情報となる。uro:worldCoordinateSystemのy軸が真北を指していない場合、uro:trueNorth属性を指定することができる。
 
-| 上位の型 2+| ー
-| ステレオタイプ 2+| << DataType >>
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ー
+h| ステレオタイプ 2+| << DataType >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:contentIdentidfier | xs:string [0..1] | 識別子。
 | uro:contentType | xs:string [0..1] | “Model”とする。
 | uro:coordinateSpaceDimension | xs:integer [0..1] | 次元数。3とする。
@@ -3612,22 +3488,20 @@ uro:elementTypeの値により、uro:predefinedType以降の使用可能な属�
 a| 
 北方角との差を2次元ベクトルで設定する。角度表現のラジアン又は度の設定は、MVD-IfcProject.UnitsInContext（短径設定情報）を参照。北が0時の方向であれば値は(0,1)。
 
-image::images/067.png["",400]
+image::images/067.webp["",400]
 
 |===
 
-　
-
-===== 12)　uro:IfcMapConversion
+====== uro:IfcMapConversion
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 座標参照系の変換情報を記述するためのデータ型
 
-| 上位の型 2+| uro:IfcAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:IfcAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | sourceCRS | uro:IfcCoordinateReferenceSystemSelect [0..1] | 変換元となる座標参照系の情報。
 | targetCRS | uro:IfcCordinateReferenceSystem [0..1] | 変換先となる座標参照系の情報。
 | eastings | gml:LengthType [0..1] | 変換先の座標参照系の座標系の東座標に沿った位置を指定する。右手デカルト座標系の場合、これはx軸に沿った位置を定める。
@@ -3649,42 +3523,38 @@ a| 施工基準座標参照系のローカルx軸の位置を示すベクトル�
 
 |===
 
-　
-
-===== 13)　uro:IfcOpeningElement
+====== uro:IfcOpeningElement
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| IFCで記述された、床や壁に設けられた開口部の属性。
 
-| 上位の型 2+| uro:IfcElement
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:IfcElement
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:globalId | xs:string [0..1] | そのオブジェクトが単一に識別できる唯一な識別子。22桁の文字列により表現する。
 | uro:name | xs:string [0..1] | オブジェクトの名称。uro:IfcWindowの場合は、窓の名称とする。
 | uro:description | xs:string [0..1] | オブジェクトの文字情報による追加説明。
 | uro:objectType | xs:string [0..1] | オブジェクトの特定の型を示す。
 | uro:tag | xs:string [0..1] | オブジェクトのシリアルナンバー、ポジションナンバーなどの識別番号。
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:nominalArea | gml:MeasureType [0..1] | 全体の面積。単位はm2。
 | uro:nominalVolume | gml:MeasureType [0..1] | 全体の体積。単位はm3。
 
 |===
 
-　
-
-===== 14)　uro:IfcProject
+====== uro:IfcProject
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| IFCで記述されたプロジェクトに適用される属性。
 
-| 上位の型 2+| uro:IfcObject
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:IfcObject
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:globalId | xs:string [0..1] | そのオブジェクトが単一に識別できる唯一な識別子。22桁の文字列により表現する。
 | uro:name
 | xs:string [0..1]
@@ -3694,8 +3564,8 @@ uro:IfcProjectの場合は、プロジェクト名称とする。
 
 | uro:description | xs:string [0..1] | オブジェクトの文字情報による追加説明。
 | uro:objectType | xs:string [0..1] | オブジェクトの特定の型を示す。
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:longName | xs:string [0..1] | 人が認識可能なプロジェクト名称。
 | uro:phase | xs:string [0..1] | プロジェクトの状態。計画、完成、など。
 | uro:representationContexts | uro:IfcGeometricRepresentationContext [0..1] | プロジェクト内のIfcProductオブジェクトの形状表現に適用されるコンテキスト。
@@ -3703,18 +3573,16 @@ uro:IfcProjectの場合は、プロジェクト名称とする。
 
 |===
 
-　
-
-===== 15)　uro:IfcProjectedCRS
+====== uro:IfcProjectedCRS
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 投影座標参照系の情報を記述するためのデータ型
 
-| 上位の型 2+| uro:IfcCoordinateReferenceSystem
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:IfcCoordinateReferenceSystem
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:name
 | xs:string [0..1]
 a| 座標参照系の名称。 +
@@ -3728,26 +3596,24 @@ a| 測地原子の識別子。 +
 JGD2011とする。
 
 | uro:verticalDatum | xs:string [0..1] | 垂直原子。TPを原則とする。
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:mapUnit | xs:string [0..1] | 座標軸の単位。mとする。
 | uro:mapProjection | xs:string [0..1] | 投影座標系の名称。Japan PlaneRectangularとする。
 | uro:mapZone | xs:string [0..1] | 平面直角座標系の系。半角数字1～19までのいずれかとする。
 
 |===
 
-　
-
-===== 16)　uro:IfcPsetBuildingCommon
+====== uro:IfcPsetBuildingCommon
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| IFCで記述された建築物に共通となる属性の集まり。
 
-| 上位の型 2+| uro:IfcAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:IfcAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:buildingId | xs:string [0..1] | 建築物に付与される固有の識別子。計画申請時に一時的な識別子が付与される。この一時的な識別子は、建物が法的な建物とプロパティのデータベースに登録されると、恒久的な識別子に変更される。
 | uro:isPermanentId
 | xs:boolean [0..1]
@@ -3782,18 +3648,16 @@ a| この建築物が歴史的建造物として登録されているか否か�
 
 |===
 
-　
-
-===== 17)　uro:IfcPsetDoorCommon
+====== uro:IfcPsetDoorCommon
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| IFCで記述された扉に共通の属性。
 
-| 上位の型 2+| uro:IfcAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:IfcAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:reference | xs:string [0..1] | このプロジェクトのための参照記号。
 | uro:acousticRating | xs:string [0..1] | 遮音等級情報。関連する建築基準法を参照。
 | uro:firerating | xs:string [0..1] | 主要な耐火等級。関連する建築基準法、消防法などの国家基準を参照。
@@ -3833,18 +3697,16 @@ a| オブジェクトが煙止めを提供するように設計されている�
 
 |===
 
-　
-
-===== 18)　uro:IfcPsetOpeningElementCommon
+====== uro:IfcPsetOpeningElementCommon
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 開口部に付与するデータ型。
 
-| 上位の型 2+| uro:IfcAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:IfcAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:reference | xs:string [0..1] | 参照用のID。
 | uro:purpose | xs:string [0..1] | この開口部の目的。（例：換気、アクセス）
 | uro:fireExit
@@ -3867,36 +3729,32 @@ a| 湾曲した開口部のわき柱が平行になるように意図されて�
 
 |===
 
-　
-
-===== 19)　uro:IfcPsetSiteCommon
+====== uro:IfcPsetSiteCommon
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| IFCで記述されたプロジェクトに共通となる属性の集まり。
 
-| 上位の型 2+| uro:IfcAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:IfcAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:buildableArea | gml:MeasureType [0..1] | 建築基準法により建築可能な最大の面積。単位はm2。
 | uro:totalArea | gml:MeasureType [0..1] | 敷地の総面積。建築基準法に従って測定される。単位はm2。
 | uro:buildingHeightLimit | gml:LengthType [0..1] | 建築基準法により建築可能な建物の最大の高さ。単位はm。
 
 |===
 
-　
-
-===== 20)　uro:IfcPsetSpaceCommon
+====== uro:IfcPsetSpaceCommon
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| IFCで記述された部屋に共通の属性。
 
-| 上位の型 2+| uro:IfcAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:IfcAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:reference | xs:string [0..1] | このプロジェクトのための参照記号。
 | uro:category | xs:string [0..1] | この部屋の用途。
 | uro:floorCovering | xs:string [0..1] | この部屋の床材の材質又は仕上げ。
@@ -3931,16 +3789,16 @@ a| この部屋が隠し天井として定義されているか。隠し天井�
 
 |===
 
-===== 21)　uro:IfcPsetWindowCommon
+====== uro:IfcPsetWindowCommon
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| IFCで記述された窓に共通の属性。
 
-| 上位の型 2+| uro:IfcAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:IfcAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:reference | xs:string [0..1] | このプロジェクトのための参照記号。
 | uro:acousticRating | xs:string [0..1] | 遮音等級情報。関連する建築基準法を参照。
 | uro:fireRating | xs:string [0..1] | 主要な耐火等級。関連する建築基準法、消防法などの国家基準を参照。
@@ -3962,18 +3820,16 @@ a| オブジェクトが煙止めを提供するように設計されている�
 
 |===
 
-　
-
-===== 22)　uro:IfcRoof
+====== uro:IfcRoof
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| IFCで記述された屋根の属性。
 
-| 上位の型 2+| uro:IfcBuildingElement
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:IfcBuildingElement
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:globalId | xs:string [0..1] | そのオブジェクトが単一に識別できる唯一な識別子。22桁の文字列により表現する。
 | uro:name | xs:string [0..1] | オブジェクトの名称。
 | uro:description | xs:string [0..1] | オブジェクトの文字情報による追加説明。
@@ -3984,34 +3840,32 @@ a| オブジェクトが煙止めを提供するように設計されている�
 a| 建築物の部材の区分。コードリスト（IfcBuildingElement_elementType.xml）から選択する。 +
 uro:elementTypeの値により、uro:predefinedType以降の使用可能な属性が異なる。
 
-| (uro:predefinedType) | gml:CodeType [0..1] | 定義済み型に基づく区分。
+h| (uro:predefinedType) | gml:CodeType [0..1] | 定義済み型に基づく区分。
 | uro:shapeType
 | gml:CodeType [0..1]
 a| 形状の区分。コードリスト(IfcBuildingElement_shapeType.xml)から選択する。 +
 uro:elementTypeがRamp, Stairに区分される場合にこの属性を使用できる。
 
-| (uro:numberOfRiser) | xs:integer [0..1] | 蹴上数。
-| (uro:numberOfTreads) | xs:integer [0..1] | 踏面数。
-| (uro:riserHeight) | gml:LengthType [0..1] | 蹴上の高さ。
-| (uro:treadLength) | gml:LengthType [0..1] | 踏面の奥行の長さ。
-| (uro:operationType) | IfcTransportElementTypeEnum [0..1] | 輸送設備の区分。
-| (uro:capacityByWeight) | gml:MeasureType [0..1] | 許容積載量。
-| (uro:capacityByNumber) | xs:integer [0..1] | 許容定員数。
+h| (uro:numberOfRiser) | xs:integer [0..1] | 蹴上数。
+h| (uro:numberOfTreads) | xs:integer [0..1] | 踏面数。
+h| (uro:riserHeight) | gml:LengthType [0..1] | 蹴上の高さ。
+h| (uro:treadLength) | gml:LengthType [0..1] | 踏面の奥行の長さ。
+h| (uro:operationType) | IfcTransportElementTypeEnum [0..1] | 輸送設備の区分。
+h| (uro:capacityByWeight) | gml:MeasureType [0..1] | 許容積載量。
+h| (uro:capacityByNumber) | xs:integer [0..1] | 許容定員数。
 
 |===
 
-　
-
-===== 23)　uro:IfcSite
+====== uro:IfcSite
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| IFCで記述されたプロジェクトの敷地に適用される属性の集まり。
 
-| 上位の型 2+| uro:IfcSpatialStructureElement
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:IfcSpatialStructureElement
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:globalId | xs:string [0..1] | そのオブジェクトが単一に識別できる唯一な識別子。22桁の文字列により表現する。
 | uro:name | xs:string [0..1] | オブジェクトの名称。uro:IfcSiteの場合は、敷地名称とする。
 | uro:description | xs:string [0..1] | オブジェクトの文字情報による追加説明。
@@ -4024,8 +3878,8 @@ a| 敷地(IfcSite)の構成を設定するために使用される列挙型。 +
 • ELEMENT：通常の独立している敷地。 +
 • PARTIAL：部分的な空間で表現される敷地。
 
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:refLongitude | xs:double [0..1] | 敷地の参照ポイントの経度。
 | uro:refLatitude | xs:double [0..1] | 敷地の参照ポイントの緯度。
 | uro:refElevation | gml:LengthType [0..1] | 敷地の参照ポイントの標高。
@@ -4034,18 +3888,16 @@ a| 敷地(IfcSite)の構成を設定するために使用される列挙型。 +
 
 |===
 
-　
-
-===== 24)　uro:IfcSpace
+====== uro:IfcSpace
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| IFCで記述された部屋の属性。
 
-| 上位の型 2+| uro:IfcSpatialStructureElement
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:IfcSpatialStructureElement
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:globalId | xs:string [0..1] | そのオブジェクトが単一に識別できる唯一な識別子。22桁の文字列により表現する。
 | uro:name | xs:string [0..1] | オブジェクトの名称。uro:IfcSpaceの場合は、部屋番号とする。
 | uro:description | xs:string [0..1] | オブジェクトの文字情報による追加説明。
@@ -4061,25 +3913,23 @@ a| •単一であればELEMENTを設定。 +
 • 複数から構成される場合はCOMPLEXを設定。 +
 • 部分的な空間を表現している場合はPARTIALを設定する。
 
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:interiorOrExteriorSpace | uro:IfcInternalOrExternalEnum [0..1] | INTERNAL/EXTERNAL/NOTDEFINED のいずれかを設定する。建物内部空間はINTERNAL、外部空間はEXTERNAL、不明/未定の場合はNOTDEFINED を設定する。
 | elevationWithFlooring | gml:LengthType [0..1] | 床面（スラブの上にあるフロアリング材の上面）の高さ。建物の基準海抜高度からの相対的高さ。0.0 が建物の基準海抜高度と一致する。
 
 |===
 
-　
-
-===== 25)　uro:IfcSpaceBaseQuantity
+====== uro:IfcSpaceBaseQuantity
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| IFCで記述されたSpaceの数量に関する属性。
 
-| 上位の型 2+| uro:IfcAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:IfcAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:nominalHeight
 | gml:LengthType [0..1]
 a| スラブ上端から上階スラブ下端までの高さ（予備寸法）。 +
@@ -4100,18 +3950,16 @@ a| スラブ上端から上階スラブ下端までの高さ（予備寸法）�
 
 |===
 
-　
-
-===== 26)　uro:IfcUnit
+====== uro:IfcUnit
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 単位を記述するデータ型
 
-| 上位の型 2+| ー
-| ステレオタイプ 2+| << DataType >>
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ー
+h| ステレオタイプ 2+| << DataType >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:dimensions | xs:integer [0..1] | 次元数。
 | uro:unitType | uro:IfcUnitEnum[0..1] | 単位の種類。
 | uro:prefix | xs:string [0..1] | 単位のプリフィクス。
@@ -4119,18 +3967,16 @@ a| スラブ上端から上階スラブ下端までの高さ（予備寸法）�
 
 |===
 
-　
-
-===== 27)　uro:IfcWall
+====== uro:IfcWall
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| IFCで記述された壁の属性。厚さが不均一な壁等、特殊な壁を表す。
 
-| 上位の型 2+| uro:IfcBuildingElement
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:IfcBuildingElement
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:globalId | xs:string [0..1] | そのオブジェクトが単一に識別できる唯一な識別子。22桁の文字列により表現する。
 | uro:name | xs:string [0..1] | オブジェクトの名称。
 | uro:description | xs:string [0..1] | オブジェクトの文字情報による追加説明。
@@ -4141,17 +3987,17 @@ a| スラブ上端から上階スラブ下端までの高さ（予備寸法）�
 a| 建築物の部材の区分。コードリスト（IfcBuildingElement_elementType.xml）から選択する。 +
 uro:elementTypeの値により、uro:predefinedType以降の使用可能な属性が異なる。
 
-| (uro:predefinedType) | gml:CodeType [0..1] | 定義済み型に基づく区分。
-| (uro:shapeType) | gml:CodeType [0..1] | 形状の区分。
-| (uro:numberOfRiser) | xs:integer [0..1] | 蹴上数。
-| (uro:numberOfTreads) | xs:integer [0..1] | 踏面数。
-| (uro:riserHeight) | gml:LengthType [0..1] | 蹴上の高さ。
-| (uro:treadLength) | gml:LengthType [0..1] | 踏面の奥行の長さ。
-| (uro:operationType) | IfcTransportElementTypeEnum [0..1] | 輸送設備の区分。
-| (uro:capacityByWeight) | gml:MeasureType [0..1] | 許容積載量。
-| (uro:capacityByNumber) | xs:integer [0..1] | 許容定員数。
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| (uro:predefinedType) | gml:CodeType [0..1] | 定義済み型に基づく区分。
+h| (uro:shapeType) | gml:CodeType [0..1] | 形状の区分。
+h| (uro:numberOfRiser) | xs:integer [0..1] | 蹴上数。
+h| (uro:numberOfTreads) | xs:integer [0..1] | 踏面数。
+h| (uro:riserHeight) | gml:LengthType [0..1] | 蹴上の高さ。
+h| (uro:treadLength) | gml:LengthType [0..1] | 踏面の奥行の長さ。
+h| (uro:operationType) | IfcTransportElementTypeEnum [0..1] | 輸送設備の区分。
+h| (uro:capacityByWeight) | gml:MeasureType [0..1] | 許容積載量。
+h| (uro:capacityByNumber) | xs:integer [0..1] | 許容定員数。
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:nominalLength
 | gml:LengthType [0..1]
 a| 壁の中心線に沿った長さ。単位はm2。 +
@@ -4219,18 +4065,16 @@ uro:elementTypeがWall又はWallStandardCaseに区分される場合にこの属
 
 |===
 
-　
-
-===== 28)　uro:IfcWallStandardCase
+====== uro:IfcWallStandardCase
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| IFCで記述された壁の属性。厚さが均一な標準的な壁を表す。
 
-| 上位の型 2+| uro:IfcBuildingElement
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:IfcBuildingElement
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:globalId | xs:string [0..1] | そのオブジェクトが単一に識別できる唯一な識別子。22桁の文字列により表現する。
 | uro:name | xs:string [0..1] | オブジェクトの名称。
 | uro:description | xs:string [0..1] | オブジェクトの文字情報による追加説明。
@@ -4241,15 +4085,15 @@ uro:elementTypeがWall又はWallStandardCaseに区分される場合にこの属
 a| 建築物の部材の区分。コードリスト（IfcBuildingElement_elementType.xml）から選択する。 +
 uro:elementTypeの値により、uro:predefinedType以降の使用可能な属性が異なる。
 
-| (uro:predefinedType) | gml:CodeType [0..1] | 定義済み型に基づく区分。
-| (uro:shapeType) | gml:CodeType [0..1] | 形状の区分。
-| (uro:numberOfRiser) | xs:integer [0..1] | 蹴上数。
-| (uro:numberOfTreads) | xs:integer [0..1] | 踏面数。
-| (uro:riserHeight) | gml:LengthType [0..1] | 蹴上の高さ。
-| (uro:treadLength) | gml:LengthType [0..1] | 踏面の奥行の長さ。
-| (uro:operationType) | IfcTransportElementTypeEnum [0..1] | 輸送設備の区分。
-| (uro:capacityByWeight) | gml:MeasureType [0..1] | 許容積載量。
-| (uro:capacityByNumber) | xs:integer [0..1] | 許容定員数。
+h| (uro:predefinedType) | gml:CodeType [0..1] | 定義済み型に基づく区分。
+h| (uro:shapeType) | gml:CodeType [0..1] | 形状の区分。
+h| (uro:numberOfRiser) | xs:integer [0..1] | 蹴上数。
+h| (uro:numberOfTreads) | xs:integer [0..1] | 踏面数。
+h| (uro:riserHeight) | gml:LengthType [0..1] | 蹴上の高さ。
+h| (uro:treadLength) | gml:LengthType [0..1] | 踏面の奥行の長さ。
+h| (uro:operationType) | IfcTransportElementTypeEnum [0..1] | 輸送設備の区分。
+h| (uro:capacityByWeight) | gml:MeasureType [0..1] | 許容積載量。
+h| (uro:capacityByNumber) | xs:integer [0..1] | 許容定員数。
 | uro:nominalLength
 | gml:LengthType [0..1]
 a| 壁の中心線に沿った長さ。単位はm2。 +
@@ -4317,18 +4161,16 @@ uro:elementTypeがWall又はWallStandardCaseに区分される場合にこの属
 
 |===
 
-　
-
-===== 29)　uro:IfcWindow
+====== uro:IfcWindow
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| IFCで記述された窓の属性。
 
-| 上位の型 2+| uro:IfcBuildingElement
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:IfcBuildingElement
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:globalId | xs:string [0..1] | そのオブジェクトが単一に識別できる唯一な識別子。22桁の文字列により表現する。
 | uro:name | xs:string [0..1] | オブジェクトの名称。窓の名称とする。
 | uro:description | xs:string [0..1] | オブジェクトの文字情報による追加説明。
@@ -4339,41 +4181,39 @@ uro:elementTypeがWall又はWallStandardCaseに区分される場合にこの属
 a| 建築物の部材の区分。コードリスト（IfcBuildingElement_elementType.xml）から選択する。 +
 uro:elementTypeの値により、uro:predefinedType以降の使用可能な属性が異なる。
 
-| (uro:predefinedType) | gml:CodeType [0..1] | 定義済み型に基づく区分。
-| (uro:shapeType) | gml:CodeType [0..1] | 形状の区分。
-| (uro:numberOfRiser)
+h| (uro:predefinedType) | gml:CodeType [0..1] | 定義済み型に基づく区分。
+h| (uro:shapeType) | gml:CodeType [0..1] | 形状の区分。
+h| (uro:numberOfRiser)
 | xs:integer [0..1]
 a| 蹴上数。 +
 uro:elementTypeがStairFlightに区分される場合にこの属性を使用できる。
 
-| (uro:numberOfTreads) | xs:integer [0..1] | 踏面数。
-| (uro:riserHeight) | gml:LengthType [0..1] | 蹴上の高さ。
-| (uro:treadLength) | gml:LengthType [0..1] | 踏面の奥行の長さ。
-| (uro:operationType) | IfcTransportElementTypeEnum [0..1] | 輸送設備の区分。
-| (uro:capacityByWeight) | gml:MeasureType[0..1] | 許容積載量。
-| (uro:capacityByNumber) | xs:integer [0..1] | 許容定員数。
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| (uro:numberOfTreads) | xs:integer [0..1] | 踏面数。
+h| (uro:riserHeight) | gml:LengthType [0..1] | 蹴上の高さ。
+h| (uro:treadLength) | gml:LengthType [0..1] | 踏面の奥行の長さ。
+h| (uro:operationType) | IfcTransportElementTypeEnum [0..1] | 輸送設備の区分。
+h| (uro:capacityByWeight) | gml:MeasureType[0..1] | 許容積載量。
+h| (uro:capacityByNumber) | xs:integer [0..1] | 許容定員数。
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:overallHeight | gml:LengthType [0..1] | 窓全体の高さ。単位はm。
 | uro:overallWidth | gml:LengthType [0..1] | 窓全体の幅。単位はm。
 
 |===
 
-　
-
-===== 30)　uro:IndoorFacilityAttribute
+====== uro:IndoorFacilityAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 施設に追加するナビゲーション用の属性。
 
-| 上位の型 2+| uro:IndoorAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:IndoorAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:source | gml:CodeType [0..1] | 原典資料。コードリスト（Common_indoorSource.xml）から選択する。
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:weekdayHours | xs:string [0..1] | 施設の営業時間（平日）。平日でも曜日により営業時間が異なる場合は、各曜日の営業時間を記載。
 | uro:weekendHours | xs:string [0..1] | 施設の営業時間（土日祝祭日）。土日祝祭日により営業時間が異なる場合は、それぞれの営業時間を記載。
 | uro:phone | xs:string [0..1] | 施設の電話番号。
@@ -4381,57 +4221,53 @@ uro:elementTypeがStairFlightに区分される場合にこの属性を使用で
 
 |===
 
-===== 31)　uro:IndoorFurnishingAttribute
+====== uro:IndoorFurnishingAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 設備に追加するナビゲーション用の属性。
 
-| 上位の型 2+| uro:IndoorAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:IndoorAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:source | gml:CodeType [0..1] | 原典資料。コードリスト（Common_indoorSource.xml）から選択する。
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:floorId | xs:string [0..1] | 固定設置物が紐づけられている階層の固有ID。
 
 |===
 
-　
-
-===== 32)　uro:IndoorPublicTagAttribute
+====== uro:IndoorPublicTagAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| パブリックタグに追加するナビゲーション用の属性。
 
-| 上位の型 2+| uro:IndoorAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:IndoorAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:source | gml:CodeType [0..1] | 原典資料。コードリスト（Common_indoorSource.xml）から選択する。
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:ucode | xs:string [0..1] | 場所情報コード。
 
 |===
 
-　
-
-===== 33)　uro:IndoorSpaceAttribute
+====== uro:IndoorSpaceAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 物理的な空間に追加するナビゲーション用の属性。
 
-| 上位の型 2+| uro:IndoorAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:IndoorAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:source | gml:CodeType [0..1] | 原典資料。コードリスト（Common_indoorSource.xml）から選択する。
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:floorId | xs:string [0..1] | 物理的な空間が紐づけられている階層の固有ID。
 | uro:isRestricted
 | xs:boolean [0..1]
@@ -4450,21 +4286,19 @@ a| 地図情報としての公開可否。 +
 
 |===
 
-　
-
-===== 34)　uro:IndoorTactileTileAttribute
+====== uro:IndoorTactileTileAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 視覚障碍者用誘導ブロックに追加するナビゲーション用の属性。
 
-| 上位の型 2+| uro:IndoorAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:IndoorAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:source | gml:CodeType [0..1] | 原典資料。コードリスト（Common_indoorSource.xml）から選択する。
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:startNode | xs:string [0..1] | 視覚障碍者誘導用ブロック等の開始位置の固有ID。接続するブロック（点）がある場合に入力する。
 | uro:endNode | xs:string [0..1] | 視覚障碍者誘導用ブロック等の終了位置の固有ID。接続するブロック（点）がある場合に入力する。
 | uro:category | gml:CodeType [0..1] | 視覚障碍者誘導用ブロック等の種類。コードリスト（IndoorTactileTileAttribute_category.xml）より選択する。
@@ -4473,40 +4307,36 @@ a| 地図情報としての公開可否。 +
 
 |===
 
-　
-
-===== 35)　uro:IndoorZoneAttribute
+====== uro:IndoorZoneAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 任意の空間に追加するナビゲーション用の属性。
 
-| 上位の型 2+| uro:IndoorAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:IndoorAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:source | gml:CodeType [0..1] | 原典資料。コードリスト（Common_indoorSource.xml）から選択する。
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:floorId | xs:string [0..1] | 任意の空間が紐づけられている階層の固有ID。
 
 |===
 
-　
-
-===== 36)　uro:IndoorUserDefinedAttribute
+====== uro:IndoorUserDefinedAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 任意に追加するナビゲーション用の属性。
 
-| 上位の型 2+| uro:IndoorAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:IndoorAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:source | gml:CodeType [0..1] | 原典資料。コードリスト（Common_indoorSource.xml）から選択する。
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:name | xs:string [0..1] | フィールド名。
 | uro:nominalValue | uro:UserDefinedValue [0..1] | フィールド名に対応する属性値。
 | uro:description | xs:string [0..1] | 説明情報。
@@ -4514,18 +4344,16 @@ a| 地図情報としての公開可否。 +
 
 |===
 
-　
-
-===== 37)　uro: UserDefinedValue
+====== uro: UserDefinedValue
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 任意に追加するナビゲーション用の属性の値。いずれか一つの属性を選択する。
 
-| 上位の型 2+| ―
-| ステレオタイプ 2+| << Union >>
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << Union >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:stringValue | xs:string [0..1] | 文字列。
 | uro:intValue | xs:integer [0..1] | 整数。
 | uro:doubleValue | xs:double [0..1] | 実数。
@@ -4537,19 +4365,19 @@ a| 地図情報としての公開可否。 +
 |===
 
 [[toc4_02_04]]
-==== 　建築物で使用するコードリストと列挙型
+==== 建築物で使用するコードリストと列挙型
 
 [[toc4_02_04_01]]
-===== (1)　Building（CityGML）
+===== Building（CityGML）
 
-===== 1)　Building_class.xml
+====== Building_class.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | Building_class.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Building_class.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Building_class.xml
+h| コード h| 説明
 | 3001 | 普通建物
 | 3002 | 堅ろう建物
 | 3003 | 普通無壁舎
@@ -4561,16 +4389,14 @@ a| 地図情報としての公開可否。 +
 [none]
 **** 出典：地図情報レベル 2500 数値地形図データ作成のための標準製品仕様書（案）
 
-　
-
-===== 2)　Building_usage.xml
+====== Building_usage.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | Building_usage.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Building_usage.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Building_usage.xml
+h| コード h| 説明
 | 401 | 業務施設
 | 402 | 商業施設
 | 403 | 宿泊施設
@@ -4595,16 +4421,14 @@ a| 地図情報としての公開可否。 +
 [none]
 **** 出典：都市計画基礎調査実施要領（第4版）
 
-　
-
-===== 3)　Building_roofType.xml
+====== Building_roofType.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | Building_roofType.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Building_roofType.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Building_roofType.xml
+h| コード h| 説明
 | 1 | 切妻屋根
 | 2 | 寄棟屋根
 | 3 | 方形屋根
@@ -4640,16 +4464,14 @@ a| 地図情報としての公開可否。 +
 [none]
 **** 参考：OGC CityGML2.0 AnnexC.1及びISO6701-1
 
-　
-
-===== 4)　BuildingInstallation_class.xml
+====== BuildingInstallation_class.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | BuildingInstallation_class.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/BuildingInstallation_class.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/BuildingInstallation_class.xml
+h| コード h| 説明
 | 1000 | 外観の特徴
 | 1020 | 廃棄物管理
 | 1030 | 維持管理
@@ -4662,16 +4484,14 @@ a| 地図情報としての公開可否。 +
 [none]
 **** 出典　OGC CityGML2.0 AnnexC.1
 
-　
-
-===== 5)　BuildingInstallation_function.xml
+====== BuildingInstallation_function.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | BuildingInstallation_function.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/BuildingInstallation_function.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/BuildingInstallation_function.xml
+h| コード h| 説明
 | 1000 | バルコニー
 | 1001 | ポーチ
 | 1002 | テラス
@@ -4707,16 +4527,14 @@ a| 地図情報としての公開可否。 +
 [none]
 **** 参考　OGC CityGML2.0 AnnexC.1及びISO6701-1
 
-　
-
-===== 6)　Room_class.xml
+====== Room_class.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| Room_class.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Room_class.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Room_class.xml
+h| コード 2+h| 説明
 | SL_20 | Administrative, commercial and protective service spaces | 管理事務、商業、保安の空間
 | SL_25 | Cultural, educational, scientific and information spaces | 文化教育の空間
 | SL_30 | Industrial spaces | 産業の空間
@@ -4739,16 +4557,14 @@ a| 地図情報としての公開可否。 +
 [none]
 **** 出典　Uniclass
 
-　
-
-===== 7)　Room_function.xml
+====== Room_function.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| Room_function.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Road_function.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Road_function.xml
+h| コード 2+h| 説明
 | SL_20_10 | Legislative spaces | 議会スペース
 | SL_20_15 | Administrative spaces | 管理事務活動の空間
 | SL_20_45 | Motor vehicle maintenance and :ueling spaces | 自動車整備および燃料補給空間
@@ -4875,16 +4691,14 @@ a| 地図情報としての公開可否。 +
 [none]
 **** 出典　Uniclass
 
-　
-
-===== 8)　IntBuildingInstallation_class.xml
+====== IntBuildingInstallation_class.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | IntBuildingInstallation_class.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/IntBuildingInstallation_class.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/IntBuildingInstallation_class.xml
+h| コード h| 説明
 | BE_01 | IfcBeam
 | BE_02 | IfcColumn
 | BE_05 | IfcPlate
@@ -4901,16 +4715,14 @@ a| 地図情報としての公開可否。 +
 [none]
 **** 出典：IFC
 
-　
-
-===== 9)　IntBuildingInstallation_function.xml
+====== IntBuildingInstallation_function.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| IntBuildingInstallation_function.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/IntBuildingInstallation_function.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/IntBuildingInstallation_function.xml
+h| コード 2+h| 説明
 | EF_25 | Wall and barrier elements | 壁およびバリア（バリケード）エレメント
 | EF_30 | Roofs, floor and paving elements | 屋根、床、舗装エレメント
 | EF_35 | Stairs and ramps | 階段および傾斜路（スロープ）エレメント
@@ -4930,16 +4742,14 @@ a| 地図情報としての公開可否。 +
 [none]
 **** 出典：Uniclass
 
-　
-
-===== 10)　BuildingFurniture_class.xml
+====== BuildingFurniture_class.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| BuildingFurniture_class.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/BuildingFurniture_class.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/BuildingFurniture_class.xml
+h| コード 2+h| 説明
 | Pr_40_10 | Signature products | サイネージ製品
 | Pr_40_20 | Sanitari fittings and accessories | 衛生器具および付属品
 | Pr_40_30 | Fittings | 継手
@@ -4951,16 +4761,14 @@ a| 地図情報としての公開可否。 +
 [none]
 **** 出典　Uniclass
 
-　
-
-===== 11)　BuildingFurniture_function.xml
+====== BuildingFurniture_function.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| BuildingFurniture_function.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/BuildingFurniture_function.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/BuildingFurniture_function.xml
+h| コード 2+h| 説明
 | Pr_40_10_57 | Notices, identification and labels | 通知、識別、ラベル
 | Pr_40_10_77 | Signs and markers | サインとマーカー
 | Pr_40_10_90 | Water and navigation aids | 水と航行援助標識
@@ -5054,16 +4862,16 @@ a| 地図情報としての公開可否。 +
 **** 出典　Uniclass
 
 [[toc4_02_04_02]]
-===== (2)　Urban Object（i-UR）
+===== Urban Object（i-UR）
 
-===== 1)　BuildingDetailAttribute_detailedUsage.xml
+====== BuildingDetailAttribute_detailedUsage.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | BuildingDetailAttribute_detailedUsage.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/BuildingDetailAttribute_detailedUsage.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/BuildingDetailAttribute_detailedUsage.xml
+h| コード h| 説明
 | 401 | 業務施設
 | 401101 | 事務所
 | 401102 | 銀行
@@ -5232,16 +5040,14 @@ a| 地図情報としての公開可否。 +
 [none]
 **** 出典：都市計画基礎調査実施要領（第4版）
 
-　
-
-===== 2)　BuildingDetailAttribute_buildingStructureType.xml
+====== BuildingDetailAttribute_buildingStructureType.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | BuildingDetailAttribute_buildingStructureType.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/BuildingDetailAttribute_buildingStructureType.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/BuildingDetailAttribute_buildingStructureType.xml
+h| コード h| 説明
 | 601 | 木造・土蔵造
 | 602 | 鉄骨鉄筋コンクリート造
 | 603 | 鉄筋コンクリート造
@@ -5256,16 +5062,14 @@ a| 地図情報としての公開可否。 +
 [none]
 **** 出典：都市計画基礎調査実施要領（第4版）
 
-　
-
-===== 3)　BuildingDetailAttribute_fireproofStructureType.xml
+====== BuildingDetailAttribute_fireproofStructureType.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | BuildingDetailAttribute_fireproofStructureType.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/BuildingDetailAttribute_fireproofStructureType.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/BuildingDetailAttribute_fireproofStructureType.xml
+h| コード h| 説明
 | 1001 | 耐火
 | 1002 | 準耐火造
 | 1003 | その他
@@ -5276,31 +5080,27 @@ a| 地図情報としての公開可否。 +
 [none]
 **** 出典：都市計画基礎調査実施要領（第4版）
 
-　
-
-===== 4)　BuildingDetailAttribute_vacancy.xml
+====== BuildingDetailAttribute_vacancy.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | BuildingDetailAttribute_vacancy.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/BuildingDetailAttribute_vacancy.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/BuildingDetailAttribute_vacancy.xml
+h| コード h| 説明
 | 1 | 空き家
 | 0 | 空き家以外
 
 |===
 
-　
-
-===== 5)　LargeCustomerFacilityAttribute_class.xml
+====== LargeCustomerFacilityAttribute_class.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | LargeCustomerFacilityAttribute_class.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/LargeCustomerFacilityAttribute_class.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/LargeCustomerFacilityAttribute_class.xml
+h| コード h| 説明
 | 1 | 大規模小売店舗（食品スーパー）
 | 2 | 大規模小売店舗（百貨店・スーパー・ショッピングセンター・寄合百貨店・小売市場）
 | 3 | 大規模小売店舗（ホームセンター・専門店（家具・家電・書籍等））
@@ -5311,16 +5111,14 @@ a| 地図情報としての公開可否。 +
 
 出典：都市計画基礎調査実施要領（第4版）
 
-　
-
-===== 6)　DataQualityAttribute_geometrySrcDesc.xml
+====== DataQualityAttribute_geometrySrcDesc.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml
+h| コード h| 説明
 | 000 | 公共測量成果
 | 101 | （公共測量ではない）現地測量の測量成果
 | 102 | （公共測量ではない）UAV写真測量の測量成果
@@ -5359,16 +5157,14 @@ a| 地図情報としての公開可否。 +
 
 参考：作業規程の準則、3D都市モデル整備のための測量マニュアル、3D都市モデル標準作業手順書
 
-　
-
-===== 7)　DataQualityAttribute_thematicSrcDesc.xml
+====== DataQualityAttribute_thematicSrcDesc.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml
+h| コード h| 説明
 | 000 | 公共測量成果
 | 022 | 基盤地図情報
 | 023 | 数値地形図データ
@@ -5391,16 +5187,14 @@ a| 地図情報としての公開可否。 +
 
 参考：作業規程の準則、3D都市モデル整備のための測量マニュアル、3D都市モデル標準作業手順書
 
-　
-
-===== 8)　DataQualityAttribute_appearanceSrcDesc.xml
+====== DataQualityAttribute_appearanceSrcDesc.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml
+h| コード h| 説明
 | 1 | 空中写真
 | 2 | 衛星写真
 | 3 | 車載写真レーザ測量システムにより撮影した写真
@@ -5410,14 +5204,14 @@ a| 地図情報としての公開可否。 +
 
 |===
 
-===== 9)　DataQualityAttribute_lod1HeightType.xml
+====== DataQualityAttribute_lod1HeightType.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | DataQualityAttribute_lod1HeightType.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml
+h| コード h| 説明
 | 1 | 点群から取得_最高高さ
 | 2 | 点群から取得_中央値
 | 3 | 点群から取得_平均値
@@ -5434,16 +5228,14 @@ a| 地図情報としての公開可否。 +
 
 参考：建物三次元データ作成マニュアル（案）
 
-　
-
-===== 10)　Building_lodType.xml
+====== Building_lodType.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | Building_lodType.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Building_lodType.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Building_lodType.xml
+h| コード h| 説明
 | 2.0 | LOD2.0（屋根面を簡略化し、切妻、寄棟、陸屋根など一般的な屋根形状及びその組み合わせで表現する。軒の表現は行わない。また、付属物も作成しない。）
 | 2.1 | LOD2.1（「一辺3m以上」又は「面積3m2以上かつ一辺1m以上」の屋根面を表現する。軒の表現は行わない。屋根に設置された「一辺3m以上」又は「面積3m2以上かつ一辺1m以上」の付属物を表現する。）
 | 2.2 | LOD2.2（「一辺1m以上」の屋根面を表現する。軒の表現は行わない。屋根に設置された「一辺1m以上」の付属物を表現する。
@@ -5457,30 +5249,28 @@ a| 地図情報としての公開可否。 +
 
 |===
 
-　
-
-===== 11)　PublicSurveyDataQualityAttribute_srcScale.xml
+====== PublicSurveyDataQualityAttribute_srcScale.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | PublicSurveyDataQualityAttribute_srcScale.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml
+h| コード h| 説明
 | 1 | 地図情報レベル2500
 | 2 | 地図情報レベル1000
 | 3 | 地図情報レベル500
 
 |===
 
-===== 12)　PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
+====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
+h| コード h| 説明
 | 001 | 現地測量の測量成果
 | 002 | UAV写真測量の測量成果
 | 003 | 空中写真測量の測量成果
@@ -5510,16 +5300,14 @@ a| 地図情報としての公開可否。 +
 [none]
 **** 参考：作業規程の準則、3D都市モデル整備のための測量マニュアル
 
-　
-
-===== 13)　IfcBuildingElement_elementType.xml
+====== IfcBuildingElement_elementType.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | IfcBuildingElement_elementType.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/IfcBuildingElement_elementType.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/IfcBuildingElement_elementType.xml
+h| コード h| 説明
 | BE_01 | IfcBeam
 | BE_02 | IfcColumn
 | BE_03 | IfcCurtainWall
@@ -5543,16 +5331,14 @@ a| 地図情報としての公開可否。 +
 [none]
 **** 参考：IFC 2ｘ３
 
-　
-
-===== 14)　IfcBuildingElement_predefinedType.xml
+====== IfcBuildingElement_predefinedType.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | IfcBuildingElement_predefinedType.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/IfcBuildingElement_predefinedType.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/IfcBuildingElement_predefinedType.xml
+h| コード h| 説明
 | 01 | IfcColumn：COLUMN（柱）
 | 02 | IfcColumn：PILASTER（壁に貼り付けられる、又は埋め込まれる装飾用の柱）
 | 03 | IfcColumn：PIERSTEM（橋脚の個々の部分）
@@ -5582,15 +5368,13 @@ a| 地図情報としての公開可否。 +
 [none]
 **** 出典：IFC 2ｘ３
 
-　
-
-===== 15)　IfcElementCompositionEnum
+====== IfcElementCompositionEnum
 
 [cols="3,22"]
 |===
 | 列挙型 | IfcElementCompositionEnum
 
-| 値 | 説明
+h| 値 h| 説明
 | COMPLEX | 通常の単一の建物であればELEMENTを設定
 | ELEMENT | 複数の建物から構成される複合建物の場合はCOMPLEXを設定
 | PARTIAL | 部分的な空間を表現している建物の場合はPARTIALを設定
@@ -5600,16 +5384,14 @@ a| 地図情報としての公開可否。 +
 [none]
 **** 出典：IFC 2ｘ3
 
-　
-
-===== 16)　IfcBuildingElement_shapeType.xml
+====== IfcBuildingElement_shapeType.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | IfcBuildingElement_shapeType.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/IfcBuildingElement_shapeType.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/IfcBuildingElement_shapeType.xml
+h| コード h| 説明
 | 01 | IfcRamp：STRAIGHT_RUN_RAMP（直線的なスロープ）
 | 02 | IfcRamp：TWO_STRAIGHT_RUN_RAMP （1ヵ所の踊り場のある直線的なスロープ）
 | 03 | IfcRamp：QUARTER_TURN_RAMP （1ヵ所の踊り場で90度転回するスロープ）
@@ -5636,15 +5418,13 @@ a| 地図情報としての公開可否。 +
 [none]
 **** 出典：IFC 2ｘ3
 
-　
-
-===== 17)　IfcInternalOrExternalEnum
+====== IfcInternalOrExternalEnum
 
 [cols="3,22"]
 |===
 | 列挙型 | IfcInternalOrExternalEnum
 
-| 値 | 説明
+h| 値 h| 説明
 | INTERNAL | 内部空間
 | EXTERNAL | 外部空間
 | NOTDEFINED | 未定／不明
@@ -5654,15 +5434,13 @@ a| 地図情報としての公開可否。 +
 [none]
 **** 出典：IFC 2ｘ3
 
-　
-
-===== 18)　IfcSIPrefix
+====== IfcSIPrefix
 
 [cols="3,22"]
 |===
 | 列挙型 | IfcSIPrefix
 
-| 値 | 説明
+h| 値 h| 説明
 | EXA | 10^18
 | PETA | 10^15
 | TERA | 10^12
@@ -5685,15 +5463,13 @@ a| 地図情報としての公開可否。 +
 [none]
 **** 出典：IFC 2ｘ3
 
-　
-
-===== 19)　IfcSlabTypeEnum
+====== IfcSlabTypeEnum
 
 [cols="3,22"]
 |===
 | 列挙型 | IfcSlabTypeEnum
 
-| 値 | 説明
+h| 値 h| 説明
 | USERDEFINED | 利用者定義
 | NOTDEFINED | 定義なし
 
@@ -5702,15 +5478,13 @@ a| 地図情報としての公開可否。 +
 [none]
 **** 出典：IFC 2ｘ3
 
-　
-
-===== 20)　IfcStairTypeEnum
+====== IfcStairTypeEnum
 
 [cols="3,22"]
 |===
 | 列挙型 | IfcStairTypeEnum
 
-| 値 | 説明
+h| 値 h| 説明
 | STRAIGHTRUNSTAIR | 直線的な階段
 | TWOSTRAIGHTRUNSTAIR | 踊り場が1ヵ所設けられた直線的な階段
 | QUARTERWINDINGSTAIR | 90度転回する階段
@@ -5733,15 +5507,13 @@ a| 地図情報としての公開可否。 +
 [none]
 **** 出典：IFC 2ｘ3
 
-　
-
-===== 21)　IfcStairFlightTypeEnum
+====== IfcStairFlightTypeEnum
 
 [cols="3,22"]
 |===
 | 列挙型 | IfcStairFlightTypeEnum
 
-| 値 | 説明
+h| 値 h| 説明
 | StraightRunStair | 直線的な階段
 | STRAIGHT | 直線
 | WINDER | 直線部分と曲線部分
@@ -5756,15 +5528,13 @@ a| 地図情報としての公開可否。 +
 [none]
 **** 出典：IFC 2ｘ3
 
-　
-
-===== 22)　IfcStateEnum
+====== IfcStateEnum
 
 [cols="3,22"]
 |===
 | 列挙型 | IfcStateEnum
 
-| 値 | 説明
+h| 値 h| 説明
 | READWRITE | 読み取り/書き込み状態。アプリケーションにより変更される場合がある。
 | READONLY | 読み取り専用状態。アプリケーションで表示可、変更不可。
 | LOCKED | ロック状態。アプリケーションからアクセスできない場合がある。
@@ -5776,15 +5546,13 @@ a| 地図情報としての公開可否。 +
 [none]
 **** 出典：IFC 2ｘ3
 
-　
-
-===== 23)　IfcUnitEnum
+====== IfcUnitEnum
 
 [cols="3,22"]
 |===
 | 列挙型 | IfcUnitEnum
 
-| 値 | 説明
+h| 値 h| 説明
 | ABSORBEDDOSEUNIT | 吸収線量
 | AMOUNTOFSUBSTANCEUNIT | 物質量
 | AREAUNIT | 面積
@@ -5821,15 +5589,13 @@ a| 地図情報としての公開可否。 +
 [none]
 **** 出典：IFC 2ｘ3
 
-　
-
-===== 24)　IfcTransportElementTypeEnum
+====== IfcTransportElementTypeEnum
 
 [cols="3,22"]
 |===
 | 列挙型 | IfcTransportElementTypeEnum
 
-| 値 | 説明
+h| 値 h| 説明
 | ELEVATOR | エレベータ
 | ESCALATOR | エスカレータ
 | MOVINGWALKWAY | 動く歩道
@@ -5841,16 +5607,14 @@ a| 地図情報としての公開可否。 +
 [none]
 **** 出典：IFC 2ｘ3
 
-　
-
-===== 25)　Common_indoorSource.xml
+====== Common_indoorSource.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | Common_indoorSource.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Common_indoorSource.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Common_indoorSource.xml
+h| コード h| 説明
 | 1 | フロアマップ
 | 2 | CADデータ
 | 3 | BIMデータ
@@ -5862,16 +5626,14 @@ a| 地図情報としての公開可否。 +
 [none]
 **** 出典：3次元屋内地理空間情報データ仕様書（案）
 
-　
-
-===== 26)　IndoorTactileTileAttribute_category.xml
+====== IndoorTactileTileAttribute_category.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | IndoorTactileTileAttribute_category.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/IndoorTactileTileAttribute_category.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/IndoorTactileTileAttribute_category.xml
+h| コード h| 説明
 | 1 | 線状ブロック等
 | 2 | プラットホーム縁等警告用内方表示ブロック
 | 3 | エスコートゾーン
@@ -5881,16 +5643,14 @@ a| 地図情報としての公開可否。 +
 [none]
 **** 出典：3次元屋内地理空間情報データ仕様書（案）
 
-　
-
-===== 27)　IndoorTactileTileAttribute_roof.xml
+====== IndoorTactileTileAttribute_roof.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | IndoorTactileTileAttribute_roof.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/IndoorTactileTileAttribute_roof.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/IndoorTactileTileAttribute_roof.xml
+h| コード h| 説明
 | 1 | なし
 | 2 | あり
 | 3 | 不明（未調査）
@@ -5900,16 +5660,14 @@ a| 地図情報としての公開可否。 +
 [none]
 **** 出典：3次元屋内地理空間情報データ仕様書（案）
 
-　
-
-===== 28)　IndoorSpaceAttribute_tollType.xml
+====== IndoorSpaceAttribute_tollType.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | IndoorSpaceAttribute_tollType.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/IndoorSpaceAttribute_tollType.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/IndoorSpaceAttribute_tollType.xml
+h| コード h| 説明
 | 1 | 不明
 | 2 | 有料
 | 3 | 無料

@@ -1,18 +1,16 @@
 [[toc4_14]]
-=== 　都市設備モデルの応用スキーマ
+=== 都市設備モデルの応用スキーマ
 
 都市設備とは、都市の屋外（道路、住宅街、広場、造成地等）に設置されている、移動しない小規模な設備である（例：街路灯、道路標識、交通信号機、花壇、広告板、ベンチ、境界杭、バス停）。 +
 [出典：OGC City Geography Markup Language (CityGML) EncodingStandard]
 
-　
-
 [[toc4_14_01]]
-==== 　都市設備モデルのLOD
+==== 都市設備モデルのLOD
 
 [[toc4_14_01_01]]
-===== (1)　都市設備モデル（LOD0）
+===== 都市設備モデル（LOD0）
 
-===== 1)　都市設備モデル（LOD0）の概要
+====== 都市設備モデル（LOD0）の概要
 
 都市設備モデル（LOD0）では、都市設備の形状を、点、線又は面により表現する。
 
@@ -21,20 +19,18 @@
 [cols="4,9,9,9,9"]
 .表 4-83　都市設備モデル（LOD0）の取得イメージ
 |===
-| 4+^| LOD0
-| 取得例
-^a| image::images/284.png["",20]
-a| image::images/285.png["",150]
-a| image::images/286.png["",150]
-a| image::images/287.png["",150]
+h| 4+^h| LOD0
+h| 取得例
+^a| image::images/284.webp["",20]
+a| image::images/285.webp["",150]
+a| image::images/286.webp["",150]
+a| image::images/287.webp["",150]
 
-| 説明 | 記号の表示位置を取得する。 | 中心線を取得する。 | 外周を線として取得する。 | 外周を面として取得する。
+h| 説明 | 記号の表示位置を取得する。 | 中心線を取得する。 | 外周を線として取得する。 | 外周を面として取得する。
 
 |===
 
-　
-
-===== 2)　都市設備モデル（LOD0）の定義
+====== 都市設備モデル（LOD0）の定義
 
 都市設備モデル（LOD0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
@@ -80,25 +76,25 @@ a| ※1数値地形図の取得方法に従う。 +
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_14_01_02]]
-===== (2)　都市設備モデル（LOD1）
+===== 都市設備モデル（LOD1）
 
-===== 1)　都市設備モデル（LOD1）の概要
+====== 都市設備モデル（LOD1）の概要
 
 都市設備モデル（LOD1）では、都市設備の形状を、立体又は面により表現する。都市設備モデル（LOD1）の取得イメージを表 4-84に示す。
 
 [cols="2,9,9"]
 .表 4-84　都市設備モデル（LOD1）の取得イメージ
 |===
-| 2+^| LOD1
-| 取得例
-^a| image::images/288.png["",100]
-^a| image::images/289.png["",300]
+h| 2+^h| LOD1
+h| 取得例
+^a| image::images/288.webp["",100]
+^a| image::images/289.webp["",300]
 
-| 説明 | 都市設備の上方からの正射影の外周を地表面からの一律の高さで押し出した立体を作成する。 一律の高さは、都市設備の最高高さとする。 | 路面標示やマンホールのように、他の地物の面と一体として表現されるべきものは、都市設備を包含する最小の矩形又は矩形の組み合わせとして表現する。
+h| 説明 | 都市設備の上方からの正射影の外周を地表面からの一律の高さで押し出した立体を作成する。 一律の高さは、都市設備の最高高さとする。 | 路面標示やマンホールのように、他の地物の面と一体として表現されるべきものは、都市設備を包含する最小の矩形又は矩形の組み合わせとして表現する。
 
 |===
 
-===== 2)　都市設備モデル（LOD1）の定義
+====== 都市設備モデル（LOD1）の定義
 
 都市設備モデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
@@ -127,25 +123,25 @@ a| • 都市設備を包含する最小の矩形又は矩形の組合せを取�
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_14_01_03]]
-===== (3)　都市設備モデル（LOD2）
+===== 都市設備モデル（LOD2）
 
-===== 1)　都市設備モデル（LOD2）の概要
+====== 都市設備モデル（LOD2）の概要
 
 都市設備モデル（LOD2）では、都市設備の形状を、面の集まり又は立体により表現する。都市設備モデル（LOD2）の取得イメージを表 4-85に示す。
 
 [cols="2,9,9"]
 .表 4-85　都市設備モデル（LOD2）の取得イメージ
 |===
-| 2+^| LOD2
-| 取得例
-^a| image::images/290.png["",300]
-^a| image::images/291.png["",200]
+h| 2+^h| LOD2
+h| 取得例
+^a| image::images/290.webp["",300]
+^a| image::images/291.webp["",200]
 
-| 説明 | 都市設備の主要な部分について、上方から見た外周の形状が変化する高さでの各外周を取得し、それぞれの外周の頂点をつないだ立体を作成する。 | 都市設備の主要な部分の外周を取得する。外周を構成する各頂点に、路面等この都市設備が設置されている地物の高さを与える。
+h| 説明 | 都市設備の主要な部分について、上方から見た外周の形状が変化する高さでの各外周を取得し、それぞれの外周の頂点をつないだ立体を作成する。 | 都市設備の主要な部分の外周を取得する。外周を構成する各頂点に、路面等この都市設備が設置されている地物の高さを与える。
 
 |===
 
-===== 2)　都市設備モデル（LOD2）の定義
+====== 都市設備モデル（LOD2）の定義
 
 都市設備モデル（LOD2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
@@ -171,9 +167,9 @@ a| • 都市設備の外周の形状が変化する高さで、各外周を取�
 |===
 
 [[toc4_14_01_04]]
-===== (4)　都市設備モデル（LOD3）
+===== 都市設備モデル（LOD3）
 
-===== 1)　都市設備モデル（LOD3）の概要
+====== 都市設備モデル（LOD3）の概要
 
 都市設備モデル（LOD3）では、都市設備の形状を、立体又は面の集まりとして表現する。
 
@@ -182,13 +178,13 @@ a| • 都市設備の外周の形状が変化する高さで、各外周を取�
 [cols="2,9,9,9"]
 .表 4-86　都市設備モデル（LOD3）の取得イメージ
 |===
-| 2+^| LOD3.0 ^| LOD3.1
-| 取得例
-^a| image::images/292.png["",150]
-^a| image::images/293.png["",100]
-^a| image::images/294.png["",100]
+h| 2+^h| LOD3.0 ^h| LOD3.1
+h| 取得例
+^a| image::images/292.webp["",150]
+^a| image::images/293.webp["",100]
+^a| image::images/294.webp["",100]
 
-| 説明
+h| 説明
 a| 都市設備の外周を取得する。 +
 その形状はLOD2よりも詳細化される。 外周を構成する各頂点に、路面等この都市設備が設置されている地物の高さを与える。
 | 都市設備の主要な部分について、それぞれの外形を構成する特徴点※により作成した立体。 主要な部分同士の接続部は表現不要とする。 ※一定高さごとに横断面を作成し、この頂点を結び外形を構成する。
@@ -196,7 +192,7 @@ a| 都市設備の外周を取得する。 +
 
 |===
 
-===== 2)　都市設備モデル（LOD3.0）の定義
+====== 都市設備モデル（LOD3.0）の定義
 
 [cols="7,7,7,7,16,20,16"]
 |===
@@ -227,9 +223,7 @@ a| • 都市設備の主要な部分について、一定高さごとの横断�
 
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
-　
-
-===== 3)　都市設備モデル（LOD3.1）の定義
+====== 都市設備モデル（LOD3.1）の定義
 
 [cols="7,7,7,7,16,20,16"]
 |===
@@ -253,17 +247,15 @@ a| • 都市設備の主要な部分及び接続部について、外形を構�
 
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
-　
-
 [[toc4_14_01_05]]
-===== (5) 各LODにおいて使用可能な地物型と空間属性
+===== 各LODにおいて使用可能な地物型と空間属性
 
 都市設備の各LODにおいて使用可能な地物型と空間属性を表4-87に示す。
 
 [cols="5,5,3,3,3,3,3"]
 .表 4-87　都市設備の記述に使用する地物型と空間属性
 |===
-^| 地物型 ^| 空間属性 ^| LOD0 ^| LOD1 ^| LOD2 ^| LOD3 ^| 適用
+^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| 適用
 .5+| frn:CityFurniture | ^| ● ^| ● ^| ● ^| ● | 
 | uro:lod0Geometry ^| ● | | | | 数値地形図の取得方法に従う。
 | frn:lod1Geometry | ^| ● | | | 面又は立体とする。
@@ -279,28 +271,26 @@ a| • 都市設備の主要な部分及び接続部について、外形を構�
 
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
-　
-
 [[toc4_14_02]]
-==== 　都市設備モデルの応用スキーマクラス図
+==== 都市設備モデルの応用スキーマクラス図
 
 [[toc4_14_02_01]]
-===== (1)　CityFurniture（CityGML）
+===== CityFurniture（CityGML）
 
 image::images/295.svg[]
 
 [[toc4_14_02_02]]
-===== (2)　Urban Object（i-UR）
+===== Urban Object（i-UR）
 
 image::images/296.svg[]
 
 [[toc4_14_03]]
-==== 　都市設備モデルの応用スキーマ文書
+==== 都市設備モデルの応用スキーマ文書
 
 [[toc4_14_03_01]]
-===== (1)　CityFurniture（CityGML）
+===== CityFurniture（CityGML）
 
-===== 1)　frn:CityFurniture
+====== frn:CityFurniture
 
 [cols="1,1,2"]
 |===
@@ -309,19 +299,19 @@ image::images/296.svg[]
  +
 なお、建築物に付属する設備は、bldg:BuildingInstallationとして取得する。
 
-| 上位の型 2+| core:_CityObject
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| core:_CityObject
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | gml:description | gml:StringOrRefType [0..1] | 都市設備の概要。
 | gml:name | gml:CodeType [0..1] | 都市設備を識別する名称。文字列とする。
-| (gml:boundedBy) | gml:Envelope [0..1] | 都市設備の範囲及び適用される空間参照系。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 都市設備の範囲及び適用される空間参照系。
 | core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
 | core:terminationDate | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | gen:stringAttribute | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
 | gen:intAttribute | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
 | gen:doubleAttribute | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
@@ -329,8 +319,8 @@ image::images/296.svg[]
 | gen:uriAttribute | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
 | gen:measureAttribute | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
 | gen:genericAttributeSet | gen:GenericAttributeSet [0..*] | 汎用属性のセット（集合）。属性を追加したい場合に使用する。
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | frn:class
 | gml:CodeType [0..1]
 a| 都市設備の区分。コードリスト（CityFurniture_class.xml）より選択する。 +
@@ -345,8 +335,8 @@ a| 都市設備の種類。コードリスト（CityFurniture_function.xml）よ
 なお、区画線と道路標示について、形状・寸法・色が同一、かつ、設置される場所が同一のものは、区画線とする。
 
 | frn:usage | gml:CodeType [0..*] | 都市設備の主な使い道。コードリストより選択する。本属性を使用する場合は、コードリスト（CityFurniture_usage.xml）を作成する。
-3+| 自身に定義された関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | frn:lod1Geometry | gml:_Geometry [0..1] | 都市設備の形状をそれが占有している範囲（面）に一律の高さを与えて押し出した立体（gml:Solid）として表現する。ただし、路面標示やマンホールのように他の地物の面と一体として表現されるべきものは面（gml:MultiSurface）として表現する。 接地している地物は、道路面から一律の高さで押し出す。
 | frn:lod2Geomerty | gml:_Geometry [0..1] | 都市設備の形状を立体とし、その主要な部分の外形を面の集まり又は立体として区分して表現する。他の地物の面と一体化した都市設備（道路標示、マンホール、点字ブロック）は、gml:MultiSurfaceにより記述し、それ以外の都市設備はgml:Solid又はgml:MultiSurfaceにより記述する。 連続する面の集まりの場合は、CompositeSurfaceを使用できる。
 | frn:lod3Geometry | gml:_Geometry [0..1] | 都市設備の形状を立体とし、その主要な部分の外形を面の集まり又は立体として詳細に区分して表現する。他の地物の面と一体化した都市設備（道路標示、マンホール、点字ブロック）は、gml:MultiSurfaceにより記述し、それ以外の都市設備はgml:Solid又はgml:MultiSurfaceにより記述する。 連続する面の集まりの場合は、CompositeSurfaceを使用できる。
@@ -364,27 +354,25 @@ a| 都市設備の詳細な内容。 +
 
 |===
 
-　
-
 [[toc4_14_03_02]]
-===== (2)　Urban Object（i-UR）
+===== Urban Object（i-UR）
 
-===== 1)　uro:CityFurnitureDetailAttribute
+====== uro:CityFurnitureDetailAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 都市設備の詳細な区分を行うための属性型。
 
-| 上位の型 2+| uro:CityFurnitureAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 自身に定義された属性
-| 属性 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:CityFurnitureAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性 h| 属性の型及び多重度 h| 定義
 | uro:facilityType | gml:CodeType [0..1] | 都市設備の、より詳細な区分。frn:functionよりもさらに詳細に区分したい場合に使用する。 地下埋設物モデルにて使用する場合は、コードリスト（CityFurnitureDetailAttribute_facilityType.xml）より選択する。 地下埋設物モデル以外で使用する場合は、文字列とし下記定義域に従う。 定義域を「別表 uro:facilityTypeの定義域」に示す。frn:functionの値によりuro:facilityTypeの定義域は異なる。また、定義域に該当しない区分が存在する場合は、定義域を拡張してよい。 なお、「道路標識、区画線及び道路標示に関する命令」別表第4及び第6に示された区画線及び道路標示の形状・寸法・色が同一、かつ設置される場所が同一の場合は、以下の場合を除き、「区画線」の区分を採用する。 ・「安全地帯又は路上障害物に接近」のうち、安全地帯に接近する場合は「道路標示」として取得する。 ・「路側帯」のうち、歩道の設けられていない道路、又は道路の歩道の設けられていない側の路端よりに設けられ、かつ、実線で示されているものは「道路標示」として取得する。
 | uro:description | xs:string [0..1] | 都市施設の詳細な内容。 都市設備が道路標識又は路面標示の場合は、文字や数字で記載されている内容。 以下に示す道路標識又は路面標示の記載内容を対象とする。 最大幅、重量制限、高さ制限、最高速度、最低速度、車両通行区分、専用通行帯
 
 |===
 
-　
+// FIXME
 
 ===== 別表：uro:facilityTypeの定義域
 
@@ -422,63 +410,61 @@ a| 都市設備の詳細な内容。 +
 [none]
 **** 出典：道路基盤地図情報製品仕様書（案）、作業規程の準則　付録７　公共測量標準図式
 
-　
-
-===== 2)　 uro:KeyValuePairAttribute
+====== uro:KeyValuePairAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。 属性名称と属性の値の対で構成される。コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
 
-| 上位の型 2+| ―
-| ステレオタイプ 2+| << DataType >>
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:key | gml:CodeType [1] | 拡張する属性の名称。名称は、コ－ドリスト（KeyValuePairAttribute_key.xml）を作成し、選択する。
 | uro:codeValue | gml:CodeType [1] | 拡張された属性の値。値は名称は、コ－ドリスト（KeyValuePairAttribute_key[key].xml）を作成し、選択する。 [key]は、属性uro:keyの値に一致する。
 
 |===
 
-===== 3)　uro:DataQualityAttribute
+====== uro:DataQualityAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
 
-| 上位の型 2+| ―
-| ステレオタイプ 2+| << DataType >>
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:geometrySrcDescLod0 | gml:CodeType [0..*] | LOD0の幾何オブジェクトの作成に使用した原典資料の種類。 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD0の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、都市設備モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
 | uro:geometrySrcDescLod1 | gml:CodeType [1..*] | LOD1の幾何オブジェクトの作成に使用した原典資料の種類。 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。具体的な都市オブジェクトがLOD1の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 | uro:geometrySrcDescLod2 | gml:CodeType [0..*] | LOD2の幾何オブジェクトの作成に使用した原典資料の種類。 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD2の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、都市設備モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
 | uro:geometrySrcDescLod3 | gml:CodeType [0..*] | コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD3の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD3の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、都市設備モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
-| (uro:geometrySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
+h| (uro:geometrySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
 | uro:thematicSrcDesc | gml:CodeType [0..\*] | 主題属性の作成に使用した原典資料の種類コードリスト（DataQualityAttribute_thematicSrcDesc.xml）より選択する。主題属性が作成対象となっている場合は必須とする。
 | uro:appearanceSrcDescLod0 | gml:CodeType [0..*] | LOD0の幾何オブジェクトのアピアランスに使用した原典資料の種類。 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 拡張製品仕様書でLOD0の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 | uro:appearanceSrcDescLod1 | gml:CodeType [0..*] | LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 拡張製品仕様書LOD1の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD1の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 | uro:appearanceSrcDescLod2 | gml:CodeType [0..*] | LOD2の幾何オブジェクトのアピアランスに使用した原典資料の種類。コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 拡張製品仕様書でLOD2の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 | uro:appearanceSrcDescLod3 | gml:CodeType [0..*] | LOD3の幾何オブジェクトのアピアランスに使用した原典資料の種類。 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 拡張製品仕様書でLOD3の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD3の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
-| uro:appearanceSrcDescLod4 | gml:CodeType [0..*] | LOD4の幾何オブジェクトのアピアランスに使用した原典資料の種類。
+h| uro:appearanceSrcDescLod4 | gml:CodeType [0..*] | LOD4の幾何オブジェクトのアピアランスに使用した原典資料の種類。
 | uro:lodType | gml:CodeType[0..*] | 幾何オブジェクトに適用されたLODの詳細な区分。コードリスト（CityFurniture_lodType.xml）より選択する。LOD3の幾何オブジェクトを作成する場合は必須とする。
-| uro:lod1HeightType | gml:CodeType [0..1] | LOD1の立体図形を作成する際に使用した高さの算出方法。コードリスト（DataQualityAttribute_lod1HeightType.xml）より選択する。LOD1の幾何オブジェクトをgml:Solidを用いて作成する場合は必須とする。
-| (uro:tranDataAcquisition) | xs:string [0..1] | 「道路基盤地図情報（整備促進版）製品仕様書（案）」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
-3+| 自身に定義された関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
+h| uro:lod1HeightType | gml:CodeType [0..1] | LOD1の立体図形を作成する際に使用した高さの算出方法。コードリスト（DataQualityAttribute_lod1HeightType.xml）より選択する。LOD1の幾何オブジェクトをgml:Solidを用いて作成する場合は必須とする。
+h| (uro:tranDataAcquisition) | xs:string [0..1] | 「道路基盤地図情報（整備促進版）製品仕様書（案）」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | uro:publicSurveyDataQualityAttribute | uro:PublicSurveyDataQualityAttribute [0..1] | 使用した公共測量成果の地図情報レベルと種類。各LODの幾何オブジェクトの作成に使用した原典資料の種類に関する属性（uro:geometrySrcDescLod0等）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）となっている場合は、必須とする。
 
 |===
 
-===== 4)　uro:PublicSurveyDataQualityAttribute
+====== uro:PublicSurveyDataQualityAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 使用した公共測量成果の地図情報レベルと種類を、LODごとに記述するためのデータ型。
 
-| 上位の型 2+| ―
-| ステレオタイプ 2+| << DataType >>
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:srcScaleLod0 | gml:CodeType [0..1] | LOD0の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 「LOD0の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
 | uro:srcScaleLod1 | gml:CodeType [0..1] | LOD1の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
 | uro:srcScaleLod2 | gml:CodeType [0..1] | LOD2の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 「LOD2の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod2）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば地図情報レベル2500の公共測量成果と地図情報レベル500の公共測量成果を使用した場合は、地図情報レベル2500となる。
@@ -488,50 +474,40 @@ a| 都市設備の詳細な内容。 +
 | uro:publicSurveySrcDescLod1 | gml:CodeType [0..*] | LOD1の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 複数の種類の原典資料を使用した場合は、それぞれを記述する。
 | uro:publicSurveySrcDescLod2 | gml:CodeType [0..*] | LOD2の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 「LOD2の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod2）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 複数の種類の原典資料を使用した場合は、それぞれを記述する。
 | uro:publicSurveySrcDescLod3 | gml:CodeType [0..*] | LOD3の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 「LOD3の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod3）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 複数の種類の原典資料を使用した場合は、それぞれを記述する。
-| (uro:publicSurveySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
+h| (uro:publicSurveySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
 
 |===
 
-　
-
-===== 5)　 uro:FacilityIdAttribute 
+====== uro:FacilityIdAttribute
 
 施設管理属性の応用スキーマ文書　参照。
 
-　
-
-===== 6)　 uro:FacilityTypeAttribute 
+====== uro:FacilityTypeAttribute
 
 施設管理属性の応用スキーマ文書　参照。
 
-　
-
-===== 7)　uro:FacilityAttribute 
+====== uro:FacilityAttribute
 
 施設管理属性の応用スキーマ文書　参照。
 
-　
-
-===== 8)　 uro:DmAttribute
+====== uro:DmAttribute
 
 公共測量標準図式の応用スキーマ文書　参照。
 
-　
-
 [[toc4_14_04]]
-==== 　都市設備モデルで使用するコードリストと列挙型
+==== 都市設備モデルで使用するコードリストと列挙型
 
 [[toc4_14_04_01]]
-===== (1) 　CityFurniture（CityGML）
+===== CityFurniture（CityGML）
 
-===== 1)　CityFurniture_class.xml
+====== CityFurniture_class.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | CityFurniture_class.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/CityFurniture_class.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/CityFurniture_class.xml
+h| コード h| 説明
 | 1000 | 交通施設
 | 1010 | 通信施設
 | 1020 | 保安施設
@@ -542,16 +518,14 @@ a| 都市設備の詳細な内容。 +
 [none]
 **** 出典：CityGML 2.0　Annex C.4
 
-　
-
-===== 2)　CityFurniture_function.xml
+====== CityFurniture_function.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | CityFurniture_function.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/CityFurniture_function.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/CityFurniture_function.xml
+h| コード h| 説明
 | 1000 | 道路標示
 | 1010 | 区画線
 | 1020 | 車道中央線
@@ -651,19 +625,17 @@ a| 都市設備の詳細な内容。 +
 [none]
 **** 参考：道路基盤地図情報製品仕様書（案）、作業規程の準則（付録７ 公共測量標準図式）
 
-　
-
 [[toc4_14_04_02]]
-===== (2)　Urban Object（i-UR）
+===== Urban Object（i-UR）
 
-===== 1)　DataQualityAttribute_geometrySrcDesc.xml
+====== DataQualityAttribute_geometrySrcDesc.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml
+h| コード h| 説明
 | 000 | 公共測量成果
 | 101 | （公共測量ではない）現地測量の測量成果
 | 102 | （公共測量ではない）UAV写真測量の測量成果
@@ -703,16 +675,14 @@ a| 都市設備の詳細な内容。 +
 [none]
 **** 参考：作業規程の準則、3D都市モデル整備のための測量マニュアル、3D都市モデル標準作業手順書
 
-　
-
-===== 2)　DataQualityAttribute_thematicSrcDesc.xml
+====== DataQualityAttribute_thematicSrcDesc.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml
+h| コード h| 説明
 | 000 | 公共測量成果
 | 022 | 基盤地図情報
 | 023 | 数値地形図データ
@@ -736,16 +706,14 @@ a| 都市設備の詳細な内容。 +
 [none]
 **** 参考：作業規程の準則、3D都市モデル整備のための測量マニュアル、3D都市モデル標準作業手順書
 
-　
-
-===== 3)　DataQualityAttribute_appearanceSrcDesc.xml
+====== DataQualityAttribute_appearanceSrcDesc.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml
+h| コード h| 説明
 | 1 | 空中写真
 | 2 | 衛星写真
 | 3 | 車載写真レーザ測量システムにより撮影した写真
@@ -755,16 +723,14 @@ a| 都市設備の詳細な内容。 +
 
 |===
 
-　
-
-===== 4)　DataQualityAttribute_lod1HeightType.xml
+====== DataQualityAttribute_lod1HeightType.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | DataQualityAttribute_lod1HeightType.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml
+h| コード h| 説明
 | 1 | 点群から取得_最高高さ
 | 2 | 点群から取得_中央値
 | 3 | 点群から取得_平均値
@@ -782,32 +748,28 @@ a| 都市設備の詳細な内容。 +
 [none]
 **** 参考：建物三次元データ作成マニュアル（案）
 
-　
-
-===== 5)　PublicSurveyDataQualityAttribute_srcScale.xml
+====== PublicSurveyDataQualityAttribute_srcScale.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | PublicSurveyDataQualityAttribute_srcScale.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml
+h| コード h| 説明
 | 1 | 地図情報レベル2500
 | 2 | 地図情報レベル1000
 | 3 | 地図情報レベル500
 
 |===
 
-　
-
-===== 6)　 PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
+====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
+h| コード h| 説明
 | 001 | 現地測量の測量成果
 | 002 | UAV写真測量の測量成果
 | 003 | 空中写真測量の測量成果
@@ -837,31 +799,27 @@ a| 都市設備の詳細な内容。 +
 [none]
 **** 参考：作業規程の準則、3D都市モデル整備のための測量マニュアル
 
-　
-
-===== 7)　CityFurniture_lodType.xml
+====== CityFurniture_lodType.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | CityFurniture_lodType.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/CityFurniture_lodType.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/CityFurniture_lodType.xml
+h| コード h| 説明
 | 3.0 | 都市設備の主要な部分同士の接続部を表現しない。
 | 3.1 | 都市設備の主要な部分同士の接続部を表現する。
 
 |===
 
-　
-
-===== 8)　CityFurnitureDetailAttribute_facilityType.xml
+====== CityFurnitureDetailAttribute_facilityType.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | CityFurnitureDetailAttribute_facilityType.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/CityFurnitureDetailAttribute_facilityType.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/CityFurnitureDetailAttribute_facilityType.xml
+h| コード h| 説明
 | 1 | 基幹管路
 | 2 | 支線
 | 3 | 高圧管

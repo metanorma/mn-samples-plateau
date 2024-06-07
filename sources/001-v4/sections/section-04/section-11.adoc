@@ -1,5 +1,5 @@
 [[toc4_11]]
-=== 　橋梁モデルの応用スキーマ
+=== 橋梁モデルの応用スキーマ
 
 橋梁とは、道路、鉄道、水路等の輸送路において、輸送の障害となる河川、渓谷、湖沼、海峡あるいは他の道路、鉄道、水路等の上方にこれらを横断するために建設される構造物の総称である。市街地において効率的な土地利用の観点から、道路上あるいは河川上の空間に連続して建設される高架橋も橋梁の一形態である。 [土木工学ハンドブック]
 
@@ -21,36 +21,32 @@
 
 また、標準製品仕様書では、建築基準法第44条第1項第4号において示された公共用歩廊で、道路上に設けられた高架の歩行者専用道路（ペデストリアンデッキ、スカイウェイ、スカイウォークなどと呼ばれる）を含む。
 
-　
-
 [[toc4_11_01]]
-==== 　橋梁モデルのLOD
+==== 橋梁モデルのLOD
 
 [[toc4_11_01_01]]
-===== (1)　橋梁モデル（LOD0）
+===== 橋梁モデル（LOD0）
 
-===== 1)　橋梁モデル（LOD0）の概要
+====== 橋梁モデル（LOD0）の概要
 
 橋梁モデル（LOD0）では、橋梁の形状を、線又は面により表現する。橋梁モデル（LOD0）の取得イメージを表 4-60に示す。
 
 [cols="5,9,9,9,9,9"]
 .表 4-60　橋梁モデル（LOD0）の取得イメージ
 |===
-| 5+^| LOD0
-| 取得例
-^a| image::images/231.png["",150]
-^a| image::images/232.png["",120]
-^a| image::images/233.png["",150]
-^a| image::images/234.png["",120]
-^a| image::images/235.png["",120]
+h| 5+^h| LOD0
+h| 取得例
+^a| image::images/231.webp["",150]
+^a| image::images/232.webp["",120]
+^a| image::images/233.webp["",150]
+^a| image::images/234.webp["",120]
+^a| image::images/235.webp["",120]
 
-| 説明 | 道路橋は、地図情報レベル2500では、縁線を取得する。また、ひ開部を表示する。地図情報レベル500及び1000では、縁線のほか、高欄、橋脚及び親柱（橋の両端に高欄の続きとして設けられる高欄より大きな柱）の外周を取得する。 | 桟道橋は、橋桁が斜面に接していない側の縁線を取得し、橋脚の外周を取得する。 | 鉄道橋は、地図情報レベル2500では、縁線を取得する。地図情報レベル500及び1000では、橋の縁線と橋脚の縁線を取得する。 | 横断歩道橋、跨線橋及び公共用歩廊は、外周の正射影を取得する。 | 徒橋は、中心線を取得する。ひ開部を表示する。
+h| 説明 | 道路橋は、地図情報レベル2500では、縁線を取得する。また、ひ開部を表示する。地図情報レベル500及び1000では、縁線のほか、高欄、橋脚及び親柱（橋の両端に高欄の続きとして設けられる高欄より大きな柱）の外周を取得する。 | 桟道橋は、橋桁が斜面に接していない側の縁線を取得し、橋脚の外周を取得する。 | 鉄道橋は、地図情報レベル2500では、縁線を取得する。地図情報レベル500及び1000では、橋の縁線と橋脚の縁線を取得する。 | 横断歩道橋、跨線橋及び公共用歩廊は、外周の正射影を取得する。 | 徒橋は、中心線を取得する。ひ開部を表示する。
 
 |===
 
-　
-
-===== 2)　橋梁モデル（LOD0）の定義
+====== 橋梁モデル（LOD0）の定義
 
 橋梁モデル（LOD0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
@@ -118,23 +114,23 @@ a| • 構造物の外周を取得する。 +
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_11_01_02]]
-===== (2)　橋梁モデル（LOD1）
+===== 橋梁モデル（LOD1）
 
-===== 1)　橋梁モデル（LOD1）の概要
+====== 橋梁モデル（LOD1）の概要
 
 橋梁モデル（LOD1）では、橋梁の形状を、立体により表現する。橋梁モデル（LOD1）の取得イメージを表 4-61に示す。
 
 [cols="4,9,9,9,9"]
 .表 4-61　橋梁モデル（LOD1）の取得イメージ
 |===
-| 4+^| LOD1
-| 取得例
-^a| image::images/236.png["",190]
-^a| image::images/237.png["",150]
-^a| image::images/238.png["",150]
-^a| image::images/239.png["",150]
+h| 4+^h| LOD1
+h| 取得例
+^a| image::images/236.webp["",190]
+^a| image::images/237.webp["",150]
+^a| image::images/238.webp["",150]
+^a| image::images/239.webp["",150]
 
-| 説明
+h| 説明
 a| 道路橋及び鉄道橋は、橋梁の縁線をつないだ外周を、地表面から一律の高さで下向きに押し出した立体とする。 +
 ひ開部は含めない。 +
 橋梁モデル（LOD0）に橋脚の外周が含まれている場合は、橋脚を含めた外周に一律の高さを与える。
@@ -144,9 +140,7 @@ a| 道路橋及び鉄道橋は、橋梁の縁線をつないだ外周を、地�
 
 |===
 
-　
-
-===== 2)　橋梁モデル（LOD1）の定義
+====== 橋梁モデル（LOD1）の定義
 
 橋梁モデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
@@ -205,9 +199,9 @@ a| • 一律の高さは、最高高さを原則とする。 +
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_11_01_03]]
-===== (3)　橋梁モデル（LOD2）
+===== 橋梁モデル（LOD2）
 
-===== 1)　橋梁モデル（LOD2）の概要
+====== 橋梁モデル（LOD2）の概要
 
 橋梁モデル（LOD2）では、橋梁の形状を、主要な部分を簡略化した立体又は面の集まりとして表現する。
 
@@ -218,7 +212,7 @@ a| • 一律の高さは、最高高さを原則とする。 +
 [cols=4]
 .表 4-62　LOD2.0及びLOD2.1の区分
 |===
-| その他の構造物モデル（LOD2）に含むべき地物 | 対応するCityGMLの地物型 ^| LOD2.0 ^| LOD2.1
+h| その他の構造物モデル（LOD2）に含むべき地物 h| 対応するCityGMLの地物型 ^h| LOD2.0 ^h| LOD2.1
 a| 橋梁 +
 道路橋、鉄道橋及び桟道橋の場合は、主桁と床版を含む。 +
 それ以外の橋梁の場合は、上部工（床版及び主桁）、階段、及び踊り場を含む。
@@ -286,32 +280,30 @@ a| 屋外付属物 +
 
 **** 〇：任意
 
-　
-
-image::images/240.png[title=" 図 4-5　橋梁の部材の名称"]
+image::images/240.webp[title=" 図 4-5　橋梁の部材の名称"]
 
 橋梁モデル（LOD2）の取得イメージを表 4-63に示す。
 
 [cols="4,18,9,9"]
 .表 4-63　橋梁モデル（LOD2）の取得イメージ
 |===
-| 3+^| LOD2.0
-| 取得例
-a| image::images/241.png["",250]
-2+a| image::images/242.png["",350]
+h| 3+^h| LOD2.0
+h| 取得例
+a| image::images/241.webp["",250]
+2+a| image::images/242.webp["",350]
 
-| 説明
+h| 説明
 | 道路橋、桟道橋及び鉄道橋は、床版の外周を、高さをもった面として表現する。
 2+a| 横断歩道橋、ペデストリアンデッキ及び跨線橋は、本体（上部工、階段及び踊り場）の外周を取得し、高さをもった面として表現する。 +
 階段の個々の段は取得せず、下端と上端を結んだ平面として表現する。
 
-| 3+^| LOD2.1
-| 取得例
-a| image::images/243.png["",300]
-a| image::images/244.png["",300]
-a| image::images/245.png["",330]
+h| 3+^h| LOD2.1
+h| 取得例
+a| image::images/243.webp["",300]
+a| image::images/244.webp["",300]
+a| image::images/245.webp["",330]
 
-| 説明
+h| 説明
 a| 道路橋、桟道橋及び鉄道橋は、床版及び主桁によって、厚みと高さをもった立体として表現する。 +
 橋脚などの構造上不可欠な部材（BuildingConstructionElement）を表現してもよい。 +
 上図では、橋脚を表現している。
@@ -323,9 +315,7 @@ a| 横断歩道橋等に本体と一体的な屋根があった場合は、境�
 
 |===
 
-　
-
-===== 2)　橋梁モデル（LOD2.0）の定義
+====== 橋梁モデル（LOD2.0）の定義
 
 橋梁モデル（LOD2.0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
@@ -382,9 +372,7 @@ Element
 
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
-　
-
-===== 3)　橋梁モデル（LOD2.1）の定義
+====== 橋梁モデル（LOD2.1）の定義
 
 橋梁モデル（LOD2.1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
@@ -492,9 +480,9 @@ a| • 構造物の外形（外側から見える形）を構成する面を取�
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_11_01_04]]
-===== (4)　橋梁モデル（LOD3）
+===== 橋梁モデル（LOD3）
 
-===== 1)　橋梁モデル（LOD3）の概要
+====== 橋梁モデル（LOD3）の概要
 
 橋梁モデル（LOD3）では、橋梁の形状を、主要な部分の外形を構成する特徴点から構成する面を境界面とする立体、又は面の集まりとして表現する。橋梁モデル（LOD3）に含むべき地物を表 4-64に示す。
 
@@ -503,8 +491,8 @@ a| • 構造物の外形（外側から見える形）を構成する面を取�
 |===
 2+a| その他の構造物モデル（LOD3） +
 に含むべき地物
-| 対応するCityGMLの地物型
-^| LOD3
+h| 対応するCityGMLの地物型
+^h| LOD3
 
 2+| 橋梁 | Bridge ^| ●
 2+| 橋梁部分
@@ -553,34 +541,30 @@ WallSurfaceとの区分が必要な場合に必須とする。
 
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
-　
-
 [cols="2,9,9"]
 .表 4-65　橋梁モデル（LOD3）の取得イメージ
 |===
-| 2+^| LOD3
-| 取得例
-a| image::images/246.png["",280]
-a| image::images/247.png["",270]
+h| 2+^h| LOD3
+h| 取得例
+a| image::images/246.webp["",280]
+a| image::images/247.webp["",270]
 
-| 説明 | 道路橋及び鉄道橋の場合は、床版及び主桁以外の構造上不可欠な部材をBridgeConstructionElementとして取得する。上図の例では橋脚が該当する。それ以外の橋梁の外観を構成する部材をBridgeInstallationとして取得する。上図の例では高欄が該当する。 | 跨線橋の場合は、道路橋及び鉄道橋と同様に、床版及び主桁以外の構造上不可欠な部材をBridgeConstructionElementとして取得する。上図の例では橋脚が該当する。それ以外の橋梁の外観を構成する部材をBridgeInstallationとして取得する。上図の例では高欄が該当する。
-| 2+^| LOD3
-| 取得例
-a| image::images/248.png["",260]
-a| image::images/249.png["",370]
+h| 説明 | 道路橋及び鉄道橋の場合は、床版及び主桁以外の構造上不可欠な部材をBridgeConstructionElementとして取得する。上図の例では橋脚が該当する。それ以外の橋梁の外観を構成する部材をBridgeInstallationとして取得する。上図の例では高欄が該当する。 | 跨線橋の場合は、道路橋及び鉄道橋と同様に、床版及び主桁以外の構造上不可欠な部材をBridgeConstructionElementとして取得する。上図の例では橋脚が該当する。それ以外の橋梁の外観を構成する部材をBridgeInstallationとして取得する。上図の例では高欄が該当する。
+h| 2+^h| LOD3
+h| 取得例
+a| image::images/248.webp["",260]
+a| image::images/249.webp["",370]
 
-| 説明
+h| 説明
 a| ケーブル橋の場合、パイロン、ケーブル及び吊材を構造上不可欠な部材（BuildingConstructionElement）として取得する。 +
 この時、吊材は一本ずつ取得せず、吊材が存在する範囲をまとめて一つの面として取得してもよい。
 | 横断歩道橋、ペデストリアンデッキ及び跨線橋の場合は、本体（上部工、階段及び踊り場）以外の構造上不可欠な部材をBridgeConstructionElementとして取得する。上図の例では橋脚が該当する。それ以外の橋梁の外観を構成する部材をBridgeInstallationとして取得する。上図の例では高欄が該当する。横断歩道橋、ペデストリアンデッキ及び跨線橋の本体（上部工、階段及び踊り場）に屋根がある場合、庇はBridgeInstallationとして取得する。
 
 |===
 
-　
+====== 橋梁モデル（LOD3）の定義
 
-===== 2)　橋梁モデル（LOD3）の定義
-
-　橋梁モデル（LOD3）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
+橋梁モデル（LOD3）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
 [cols="7,7,7,7,16,20,16"]
 |===
@@ -700,9 +684,9 @@ a| 【道路橋の場合】 +
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_11_01_05]]
-===== (5) 橋梁モデル（LOD4）
+===== 橋梁モデル（LOD4）
 
-===== 1) 橋梁モデル（LOD4）の概要
+====== 橋梁モデル（LOD4）の概要
 
 橋梁モデル（LOD4）は、橋梁の詳細な形状及び橋梁内部の空間を表現する。
 
@@ -711,7 +695,7 @@ a| 【道路橋の場合】 +
 [cols="3,3,6,8"]
 .表 4-66　橋梁モデル（LOD4）に含むべき地物
 |===
-2+| 橋梁モデル（LOD4）に含むべき地物 | 対応するCityGMLの地物型 ^| LOD4
+2+h| 橋梁モデル（LOD4）に含むべき地物 h| 対応するCityGMLの地物型 ^h| LOD4
 2+| 橋梁 | Bridge ^| ●
 2+| 橋梁部分
 | BridgePart
@@ -753,8 +737,6 @@ a| 【道路橋の場合】 +
 
 **** 〇：任意
 
-　
-
 橋梁の詳細な形状は、IFCにおける橋梁モデル（IFC Bridge）と整合を図る。 +
 ただし、IFCにおける橋梁モデルはまだ国際標準となっていないことから、IFC Bridge Fast Track Project Report WP2: Conceptual Modelを参考に、IFC Bridgeを構成するクラスとCityGMLのBridgeモジュールとの対応付けを示す（表 4-67）。 +
 なお、橋梁内部の空間は、建築物モデル（LOD4）と整合を図る。このときの橋梁内部の空間とは、橋梁にこれと一体的な建屋が設けられていた場合の、建屋の内部の空間を指す。
@@ -762,7 +744,7 @@ a| 【道路橋の場合】 +
 [cols=3]
 .表 4-67　（参考）CityGMLのクラスとIFCのクラスとの対応
 |===
-| CityGMLの地物型 | 対応付けるIFCのクラス | 説明
+h| CityGMLの地物型 h| 対応付けるIFCのクラス h| 説明
 | Bridge
 a| IfcBridgePart, +
 IfcElementAssembly
@@ -786,9 +768,9 @@ IFCでは、梁（IfcBeam）やスラブ（IfcSlab）、支承（IfcBearing）�
 そこで、これらの部材クラスの集まりであるIfcBridgePart及びIfcElementAssemblyとCityGMLの地物型とを対応付けた。 +
 このとき、IfcBridgePart及びIfcElementAssemblyの属性PredefinedTypeによりCityGMLの地物型であるbrid:Bridge、brid:BridgeConstructionElement又はbrid:BridgeInstallationへの振り分けを行っている。
 
-image::images/250.png[title=" 図 4-6　IfcBridgeにおけるクラス間の階層構造（出典：IFC Bridge Fast Track Project Report WP2: Conceptual Model）"]
+image::images/250.webp[title=" 図 4-6　IfcBridgeにおけるクラス間の階層構造（出典：IFC Bridge Fast Track Project Report WP2: Conceptual Model）"]
 
-===== 2)　橋梁モデル（LOD4）の定義
+====== 橋梁モデル（LOD4）の定義
 
 橋梁モデル（LOD4）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
@@ -927,14 +909,14 @@ a| • 可動設備の外形（外側から見える形）を構成する面を�
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_11_01_06]]
-===== (6)　各LODにおいて使用可能な地物型と空間属性
+===== 各LODにおいて使用可能な地物型と空間属性
 
 橋梁モデルの各LODにおいて使用可能な地物型と空間属性を表 4-68に示す。
 
 [cols=8]
 .表 4-68　橋梁モデルの記述に使用する地物型と空間属性
 |===
-^| 地物型 ^| 空間属性 ^| LOD0 ^| LOD1 ^| LOD2 ^| LOD3 ^| LOD4 ^| 適用
+^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| LOD4 ^h| 適用
 .9+| brid:Bridge | ^| ● ^| ● ^| ● ^| ● ^| ● | 
 | uro:lod0Geometry ^| ● | | | | | 数値地形図の取得方法に従う。
 | brid:lod1Solid | ^| ● | | | | 
@@ -1039,25 +1021,25 @@ MultiSufaceを基本とする。
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_11_02]]
-==== 　橋梁モデルの応用スキーマクラス図
+==== 橋梁モデルの応用スキーマクラス図
 
 [[toc4_11_02_01]]
-===== (1) Bridge（CityGML）
+===== Bridge（CityGML）
 
 image::images/251.svg[]
 
 [[toc4_11_02_02]]
-===== (2)　Urban Object（i-UR）
+===== Urban Object（i-UR）
 
 image::images/252.svg[]
 
 [[toc4_11_03]]
-==== 　橋梁モデルの応用スキーマ文書
+==== 橋梁モデルの応用スキーマ文書
 
 [[toc4_11_03_01]]
-===== (1)　Bridge（CityGML）
+===== Bridge（CityGML）
 
-===== 1)　brid:Bridge
+====== brid:Bridge
 
 [cols="1,1,2"]
 |===
@@ -1065,17 +1047,17 @@ image::images/252.svg[]
 2+a| 橋梁。 橋梁とは、道路、鉄道、水路等の輸送路において、輸送の障害となる河川、渓谷、湖沼、海峡あるいは他の道路、鉄道、水路等の上方にこれらを横断するために建設される構造物の総称である。市街地において効率的な土地利用の観点から、道路上あるいは河川上の空間に連続して建設される高架橋も橋梁の一形態である。[土木工学ハンドブック] 標準製品仕様書では以下を対象とする。 • 道路法（昭和27年法律第180号）第２条第１項に規定する「橋」。橋長２.０m以上を対象とし、高架橋及び桟道橋を含む[参考 中部地方整備局　道路施設台帳作成マニュアル]。 ▶ 桟道橋：斜面を通過する道路で、橋桁の一側が斜面に接し、反対側が橋脚になっている部分 [公共測量標準図式]。 • 鉄道事業者法施行規則別表第一に定める鉄道施設の「橋りょう」。 • 鉄道事業者法施行規則別表第一に定める鉄道施設の「こ線橋」。 ▶ こ（跨）線橋：駅構内の鉄道を横断するために構築された橋 [公共測量標準図式]。 • 道路法第30条第1項第10号に定める「横断歩道橋」。 ▶ 横断歩道橋：車道を横断する歩行者を車道から分離するための通路が、道路の上方に設置される道路横断施設[道路基盤地図情報]。 また、標準製品仕様書では、建築基準法第44条第1項第4号において示された公共用歩廊で、道路上に設けられた高架の歩行者専用道路（ペデストリアンデッキ、スカイウェイ、スカイウォークなどと呼ばれる）を含む。 +
 高架橋のように延長の長い橋梁は、管理区間及び上部工の境界（伸縮装置の設置部）で区切ることができる。
 
-| 上位の型 2+| brid:_AbstractBridge
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
-| (gml:description) | gml:StringOrRefType [0..1] | 橋梁の概要。
+h| 上位の型 2+| brid:_AbstractBridge
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 橋梁の概要。
 | gml:name | gml:CodeType [0..1] | 橋梁を識別する名称。文字列とする。
-| (gml:boundedBy) | gml:Envelope [0..1] | 橋梁の範囲及び適用される空間参照系。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 橋梁の範囲及び適用される空間参照系。
 | core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
 | core:terminationDate | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 橋梁と地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 橋梁と水面との相対的な位置関係。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 橋梁と地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 橋梁と水面との相対的な位置関係。
 | brid:class
 | gml:CodeType [0..1]
 a| 橋梁の形態による区分。コードリスト（Bridge_class.xml）より選択する。 +
@@ -1086,7 +1068,7 @@ a| 橋梁の形態による区分。コードリスト（Bridge_class.xml）よ�
 a| 橋梁の主たる機能による区分。コードリスト（Bridge_function.xml）より選択する。 +
 多重度は任意となっているが、運用上必須とする。
 
-| (brid:usage) | gml:CodeType [0..*] | 橋梁の用途。brid:functionで指定された機能と異なる場合に実際の用途を示すためにこの属性を用いる。
+h| (brid:usage) | gml:CodeType [0..*] | 橋梁の用途。brid:functionで指定された機能と異なる場合に実際の用途を示すためにこの属性を用いる。
 | brid:yearOfConstruction
 | xs:gYear [0..1]
 a| 橋梁が建築された年度。完成した年度とする。 +
@@ -1099,23 +1081,23 @@ a| 可動橋か否かの別。 +
 1：可動橋である +
 0：可動橋ではない
 
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute[0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute[0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
 | brid:lod1Solid
 | gml:Solid [0..1]
 a| 橋梁の外周に一律の高さを与えた立体。 +
 一律の高さは、水面（陸上に設置されている場合は地表面）から橋梁の最高高さとする。 +
 橋梁の起点側と終点側の間での高さの変化（橋梁中央部の高さ）は表現しない。
 
-| (brid:lod1MultiSurface) | gml:MultiSurface [0..1] | 橋梁の外形を構成する面の集まり。
-| (brid:lod1TerrainIntersection) | gml:MutiCurve [0..1] | LOD1における橋梁と地形との交線。
+h| (brid:lod1MultiSurface) | gml:MultiSurface [0..1] | 橋梁の外形を構成する面の集まり。
+h| (brid:lod1TerrainIntersection) | gml:MutiCurve [0..1] | LOD1における橋梁と地形との交線。
 | brid:lod2Solid
 | gml:Solid [0..1]
 a| 橋梁の主要構造の外形を示す立体。この時の立体は外壁等の、境界面により構成される。 +
@@ -1127,8 +1109,8 @@ a| 橋梁の主要構造の外形を構成する面の集まり。 +
 面の集まりが立体の境界としての要件を満たすことが出来ない場合に、LOD2の幾何オブジェクトとして使用する。 +
 橋梁をbrid:BridgePartの集まりとして記述する場合、この空間属性は空となる。
 
-| (brid:lod2MultiCurve) | gml:MutiCurve [0..1] | 橋梁の立体表現に加え、線状の表現を行う場合に使用する。
-| (brid:lod2TerrainIntersection) | gml:MutiCurve [0..1] | LOD2における橋梁と地形との交線。
+h| (brid:lod2MultiCurve) | gml:MutiCurve [0..1] | 橋梁の立体表現に加え、線状の表現を行う場合に使用する。
+h| (brid:lod2TerrainIntersection) | gml:MutiCurve [0..1] | LOD2における橋梁と地形との交線。
 | brid:outerBridgeConstruction | brid:BridgeConstructionElement [0..*] | 橋梁を構成する部分のうち、橋脚、橋台のような構造上不可欠な部分（brid:BridgeConstructionElement）。
 | brid:outerBridgeInstallation | brid:BridgeInstallation [0..*] | 橋梁の外観を特徴付ける部分のうち、アンテナや航空障害灯、管理用通路・階段のような、橋梁の構造上不可欠ではない付属物（brid:BridgeInstallation）。
 | brid:InteriorBridgeInstallation | brid:IntBridgeInstallation [0..*] | 橋梁の内部空間において、その外観を特徴付ける部分のうち、管理用通路・階段のような、橋梁の構造上不可欠ではない付属物（brid:IntBridgeInstallation）。
@@ -1143,8 +1125,8 @@ a| 橋梁の主要構造の外形を示す立体。 +
 a| 橋梁の主要構造の外形を構成する面の集まり。 +
 面の集まりが立体の境界としての要件を満たすことが出来ない場合に、LOD3の幾何オブジェクトとして使用する。
 
-| (brid:lod3MultiCurve) | gml:MutiCurve [0..1] | 橋梁の立体表現に加え、線状の表現を行う場合に使用する。これらの表現に意味を持たせる場合は、brid:BridgeInstallationやbrid:BridgeConstructionElementを使用する。
-| (brid:lod3TerrainIntersection) | gml:MutiCurve [0..1] | LOD3における橋梁と地形との交線。
+h| (brid:lod3MultiCurve) | gml:MutiCurve [0..1] | 橋梁の立体表現に加え、線状の表現を行う場合に使用する。これらの表現に意味を持たせる場合は、brid:BridgeInstallationやbrid:BridgeConstructionElementを使用する。
+h| (brid:lod3TerrainIntersection) | gml:MutiCurve [0..1] | LOD3における橋梁と地形との交線。
 | brid:lod4Solid
 | gml:Solid [0..1]
 a| 橋梁の詳細構造の外形を示す立体。 +
@@ -1155,11 +1137,11 @@ a| 橋梁の詳細構造の外形を示す立体。 +
 a| 橋梁の外形を構成する面の集まり。 +
 面の集まりが立体の境界としての要件を満たすことが出来ない場合に、LOD4の幾何オブジェクトとして使用する。
 
-| (brid:lod4MultiCurve) | gml:MutiCurve [0..1] | 橋梁の立体表現に加え、線状の表現を行う場合に使用する。
-| (brid:lod4TerrainIntersection) | gml:MutiCurve [0..1] | LOD4における橋梁と地形との交線。
+h| (brid:lod4MultiCurve) | gml:MutiCurve [0..1] | 橋梁の立体表現に加え、線状の表現を行う場合に使用する。
+h| (brid:lod4TerrainIntersection) | gml:MutiCurve [0..1] | LOD4における橋梁と地形との交線。
 | brid:interiorBridgeRoom | brid:InteriorBridgeRoom [0..*] | 橋梁の内部空間（brid:InteriorBridgeRoom）
 | brid:consistsOfBridgePart | brid:BridgePart [0..*] | 橋梁の部分（brid:BridgePart）。
-| (brid:address) | core:Address [0..*] | 橋梁に紐づけられた住所。
+h| (brid:address) | core:Address [0..*] | 橋梁に紐づけられた住所。
 | uro:bridBaseAttribute | uro:ConstructionBaseAttribute [0..1] | 橋梁の管理に関する基本的な情報。
 | uro:bridStructureAttribute | uro:BridgeStructureAttribute [0..1] | 橋梁の構造に関する情報。
 | uro:bridFunctionalAttribute | uro:BridgeFunctionalAttribute [0..1] | 橋梁の機能に関する情報。
@@ -1182,9 +1164,7 @@ brid:BridgePartが品質属性をもつ場合は、省略できる。
 
 |===
 
-　
-
-===== 2)　brid:BridgePart
+====== brid:BridgePart
 
 [cols="1,1,2"]
 |===
@@ -1194,17 +1174,17 @@ brid:BridgePartが品質属性をもつ場合は、省略できる。
 横断歩道橋の場合は階段、スロープ、踊り場を分ける場合に使用する。ただし、道路橋、桟道橋及び鉄道橋の場合、階段、スロープ、踊り場は付属物（BridgeInstallation）となる。 +
 この地物型を使用する場合、一つのbrid:Bridgeには、複数のbrid:BridgePartが存在しなければならない。
 
-| 上位の型 2+| brid:_AbstractBridge
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
-| (gml:description) | gml:StringOrRefType [0..1] | 橋梁の部分の概要。
+h| 上位の型 2+| brid:_AbstractBridge
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 橋梁の部分の概要。
 | gml:name | gml:CodeType [0..1] | 橋梁の部分を識別する名称。文字列とする。
-| (gml:boundedBy) | gml:Envelope [0..1] | 橋梁の部分の範囲及び適用される空間参照系。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 橋梁の部分の範囲及び適用される空間参照系。
 | core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
 | core:terminationDate | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 橋梁の部分と地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 橋梁の部分と水面との相対的な位置関係。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 橋梁の部分と地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 橋梁の部分と水面との相対的な位置関係。
 | brid:class
 | gml:CodeType [0..1]
 a| 橋梁の形態による区分。コードリスト（Bridge_class.xml）より選択する。 +
@@ -1215,7 +1195,7 @@ a| 橋梁の形態による区分。コードリスト（Bridge_class.xml）よ�
 a| 橋梁の主たる機能による区分。コードリスト（Bridge_function.xml）より選択する。 +
 多重度は任意となっているが、運用上必須とする。
 
-| (brid:usage) | gml:CodeType [0..*] | 橋梁の部分の用途。brid:functionで指定された機能と異なる場合に実際の用途を示すためにこの属性を用いる。
+h| (brid:usage) | gml:CodeType [0..*] | 橋梁の部分の用途。brid:functionで指定された機能と異なる場合に実際の用途を示すためにこの属性を用いる。
 | brid:yearOfConstruction | xs:gYear [0..1] | 橋梁の部分が建築された年。
 | brid:yearOfDemolition | xs:gYear [0..1] | 橋梁の部分が解体された年。
 | brid:isMovable
@@ -1224,31 +1204,31 @@ a| 可動橋か否かの別。 +
 1：可動橋である +
 0：可動橋ではない
 
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute[0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute[0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
 | brid:lod1Solid
 | gml:Solid [0..1]
 a| 橋梁の外周に一律の高さを与えた立体。 +
 一律の高さは、水面（陸上に設置されている場合は地表面）から橋梁の最高高さとする。 +
 橋梁の起点側と終点側の間での高さの変化（橋梁中央部の高さ）は表現しない。
 
-| (brid:lod1MultiSurface) | gml:MultiSurface [0..1] | 橋梁部分の外形を構成する面の集まり。
-| (brid:lod1TerrainIntersection) | gml:MutiCurve [0..1] | LOD1における橋梁の部分と地形との交線。
+h| (brid:lod1MultiSurface) | gml:MultiSurface [0..1] | 橋梁部分の外形を構成する面の集まり。
+h| (brid:lod1TerrainIntersection) | gml:MutiCurve [0..1] | LOD1における橋梁の部分と地形との交線。
 | brid:lod2Solid | gml:Solid [0..1] | 橋梁の部分の主要構造の外形を示す立体。この時の立体は外壁等の、境界面により構成される。
 | brid:lod2MultiSurface
 | gml:MultiSurface [0..1]
 a| 橋梁の部分の主要構造の外形を構成する面の集まり。 +
 面の集まりが立体の境界としての要件を満たすことが出来ない場合に、LOD2の幾何オブジェクトとして使用する。
 
-| (brid:lod2MultiCurve) | gml:MutiCurve [0..1] | 橋梁の部分の立体表現に加え、線状の表現を行う場合に使用する。
-| (brid:lod2TerrainIntersection) | gml:MutiCurve [0..1] | LOD2における橋梁の部分と地形との交線。
+h| (brid:lod2MultiCurve) | gml:MutiCurve [0..1] | 橋梁の部分の立体表現に加え、線状の表現を行う場合に使用する。
+h| (brid:lod2TerrainIntersection) | gml:MutiCurve [0..1] | LOD2における橋梁の部分と地形との交線。
 | brid:outerBridgeConstruction | brid:BridgeConstructionElement [0..*] | 橋梁の部分を構成する部分のうち、橋脚、橋台のような構造上不可欠な部分（brid:BridgeConstructionElement）。
 | brid:outerBridgeInstallation | brid:BridgeInstallation [0..*] | 橋梁の部分の外観を特徴付ける部分のうち、アンテナや航空障害灯、管理用通路・階段のような、橋梁の構造上不可欠ではない付属物（brid:BridgeInstallation）。
 | brid:interiorBridgeInstallation | brid:IntBridgeInstallation [0..*] | 橋梁の部分の内部空間において、その外観を特徴付ける部分のうち、管理用通路・階段のような、橋梁の構造上不可欠ではない付属物（brid:IntBridgeInstallation）。
@@ -1263,8 +1243,8 @@ a| 橋梁の部分の主要構造の外形を示す立体。 +
 a| 橋梁の部分の主要構造の外形を構成する面の集まり。 +
 面の集まりが立体の境界としての要件を満たすことが出来ない場合に、LOD3の幾何オブジェクトとして使用する。
 
-| (brid:lod3MultiCurve) | gml:MutiCurve [0..1] | 橋梁の部分の立体表現に加え、線状の表現を行う場合に使用する。
-| (brid:lod3TerrainIntersection) | gml:MutiCurve [0..1] | LOD3における橋梁の部分と地形との交線。
+h| (brid:lod3MultiCurve) | gml:MutiCurve [0..1] | 橋梁の部分の立体表現に加え、線状の表現を行う場合に使用する。
+h| (brid:lod3TerrainIntersection) | gml:MutiCurve [0..1] | LOD3における橋梁の部分と地形との交線。
 | brid:lod4Solid
 | gml:Solid [0..1]
 a| 橋梁の部分の詳細構造の外形を示す立体。 +
@@ -1275,33 +1255,31 @@ a| 橋梁の部分の詳細構造の外形を示す立体。 +
 a| 橋梁の部分の外形を構成する面の集まり。 +
 面の集まりが立体の境界としての要件を満たすことが出来ない場合に、LOD4の幾何オブジェクトとして使用する。
 
-| (brid:lod4MultiCurve) | gml:MutiCurve [0..1] | 橋梁の部分の立体表現に加え、線状の表現を行う場合に使用する。
-| (brid:lod4TerrainIntersection) | gml:MutiCurve [0..1] | LOD4における橋梁の部分と地形との交線。
+h| (brid:lod4MultiCurve) | gml:MutiCurve [0..1] | 橋梁の部分の立体表現に加え、線状の表現を行う場合に使用する。
+h| (brid:lod4TerrainIntersection) | gml:MutiCurve [0..1] | LOD4における橋梁の部分と地形との交線。
 | brid:interiorBridgeRoom | brid:InteriorBridgeRoom [0..*] | 橋梁の部分の内部空間（brid:InteriorBridgeRoom）
-| (brid:consistsOfBridgePart) | brid:BridgePart [0..*] | 橋梁の部分の部分（brid:BridgePart）。
-| (brid:address) | core:Address [0..*] | 橋梁の部分に紐づけられた住所。
+h| (brid:consistsOfBridgePart) | brid:BridgePart [0..*] | 橋梁の部分の部分（brid:BridgePart）。
+h| (brid:address) | core:Address [0..*] | 橋梁の部分に紐づけられた住所。
 | uro:bridBaseAttribute | uro:ConstructionBaseAttribute [0..1] | 橋梁の部分の管理に関する基本的な情報。
 | uro:bridStructureAttribute | uro:BridgeStructureAttribute [0..1] | 橋梁の部分の構造に関する情報。
 | uro:bridFunctionalAttribute | uro:BridgeFunctionalAttribute [0..1] | 橋梁の部分の機能に関する情報。
 | uro:bridRiskAssessmentAttribute | uro:ConstructionRiskAssessmentAttribute [0..1] | 橋梁の部分の損傷に関する情報。
-| (uro:bridDisasterRiskAttribute) | uro:DisasterRiskAttribute [0..*] | 橋梁の部分の災害リスクに関する情報。
-| (uro:bridKeyValuePairAttribute) | uro:KeyValuePairAttribute [0..*] | brid:BridgePartには作成しない。（brid:Bridgeにのみ作成する。）
+h| (uro:bridDisasterRiskAttribute) | uro:DisasterRiskAttribute [0..*] | 橋梁の部分の災害リスクに関する情報。
+h| (uro:bridKeyValuePairAttribute) | uro:KeyValuePairAttribute [0..*] | brid:BridgePartには作成しない。（brid:Bridgeにのみ作成する。）
 | uro:bridDataQualityAttribute
 | uro:DataQualityAttribute [0..1]
 a| 作成するデータの品質に関する情報。 +
 brid:Bridgeが品質属性をもつ場合は、省略する。 +
 brid:Bridgeが品質属性をもたない場合は、必ず作成する。
 
-| (uro:bridFacilityTypeAttribute) | uro:FacilityTypeAttribute [0..*] | 特定分野における施設の分類情報。
-| (uro:bridFacilityIdAttribute) | uro:FacilityIdAttribute [0..1] | uro:bridFacilityTypeAttribute.classによって指定された分野における施設の識別情報。
-| (uro:bridFacilityAttribute) | uro:FacilityAttribute [0..*] | uro:bridFacilityTypeAttribute.classによって指定された分野における施設管理情報。
-| (uro:bridDmAttribute) | uro:DmAttribute [0..*] | 公共測量標準図式による図形表現に必要な情報。
+h| (uro:bridFacilityTypeAttribute) | uro:FacilityTypeAttribute [0..*] | 特定分野における施設の分類情報。
+h| (uro:bridFacilityIdAttribute) | uro:FacilityIdAttribute [0..1] | uro:bridFacilityTypeAttribute.classによって指定された分野における施設の識別情報。
+h| (uro:bridFacilityAttribute) | uro:FacilityAttribute [0..*] | uro:bridFacilityTypeAttribute.classによって指定された分野における施設管理情報。
+h| (uro:bridDmAttribute) | uro:DmAttribute [0..*] | 公共測量標準図式による図形表現に必要な情報。
 
 |===
 
-　
-
-===== 3)　brid:BridgeConstructionElement
+====== brid:BridgeConstructionElement
 
 [cols="1,1,2"]
 |===
@@ -1310,35 +1288,35 @@ brid:Bridgeが品質属性をもたない場合は、必ず作成する。
 橋梁の構造上重要な部材。 +
 橋脚、橋台、トラス、アーチ、吊材、パイロン、ケーブルをさす。
 
-image::images/253.png["",600,title=" 図　brid:BridgeConstructionElementの例"]
+image::images/253.webp["",600,title=" 図　brid:BridgeConstructionElementの例"]
 
-| 上位の型 2+| brid:_CityObject
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
-| (gml:description) | gml:StringOrRefType [0..1] | 部材の概要。
-| (gml:name) | gml:CodeType [0..1] | 部材を識別する名称。
-| (gml:boundedBy) | gml:Envelope [0..1] | 部材の範囲及び適用される空間参照系。
-| (core:creationDate) | xs:date [0..1] | データが作成された日。
-| (core:terminationDate) | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 自身に定義された属性
-| (brid:class) | gml:CodeType [0..1] | 部材の形態による区分。
+h| 上位の型 2+| brid:_CityObject
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 部材の概要。
+h| (gml:name) | gml:CodeType [0..1] | 部材を識別する名称。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 部材の範囲及び適用される空間参照系。
+h| (core:creationDate) | xs:date [0..1] | データが作成された日。
+h| (core:terminationDate) | xs:date [0..1] | データが削除された日。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 自身に定義された属性
+h| (brid:class) | gml:CodeType [0..1] | 部材の形態による区分。
 | brid:function | gml:CodeType [0..*] | 部材の主たる働き。コードリスト（BridgeConstructionElement_function.xml）より選択する。
-| (brid:usage) | gml:CodeType [0..*] | 部材の主な使い道。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-3+| 自身に定義された関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (brid:lod1Geometry) | gml:_Geometry [0..1] | 部材のLOD1の形状。
+h| (brid:usage) | gml:CodeType [0..*] | 部材の主な使い道。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (brid:lod1Geometry) | gml:_Geometry [0..1] | 部材のLOD1の形状。
 | brid:lod2Geometry
 | gml:_Geometry [0..1]
 a| 部材のLOD2の形状。 +
@@ -1367,9 +1345,7 @@ gml:MultiSurfaceにより記述することを基本とする。 +
 
 |===
 
-　
-
-===== 4)　brid:BridgeRoom
+====== brid:BridgeRoom
 
 [cols="1,1,2"]
 |===
@@ -1378,32 +1354,32 @@ gml:MultiSurfaceにより記述することを基本とする。 +
 橋梁にこれと一体となった建屋が存在し、その内部空間を表現する場合に使用する。 +
 brid:BridgeRoomは橋梁内部の区画を区切る境界面（brid:_BoundarySurfaceの下位型）及びこの境界面の開口部（brid:_Openingの下位型）、brid:BridgeRoomに付属する固定的な設備（brid:IntBridgeInstallation）及び、brid:BridgeRoomに設置された可動設備（brid:BridgeFurniture）の集まりからなる。
 
-| 上位の型 2+| brid:_CityObject
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| brid:_CityObject
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | gml:description | gml:StringOrRefType [0..1] | 区画の概要。
 | gml:name | gml:CodeType [0..1] | 区画を識別する名称。文字列とする。
-| (gml:boundedBy) | gml:Envelope [0..1] | 区画の範囲及び適用される空間参照系。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 区画の範囲及び適用される空間参照系。
 | core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
 | core:terminationDate | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 自身に定義された属性
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 自身に定義された属性
 | brid:class | gml:CodeType [0..1] | 区画の形態による区分。コードリスト（Room_class.xml）より選択する。
 | brid:function | gml:CodeType [0..*] | 区画の主たる働き。コードリスト（Room_function.xml）より選択する。
-| (brid:usage) | gml:CodeType [0..*] | 区画の主な使い道。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-3+| 自身に定義された関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
+h| (brid:usage) | gml:CodeType [0..*] | 区画の主な使い道。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | brid:lod4Solid
 | gml:Solid [0..1]
 a| 区画の主要構造の外形を示す立体。 +
@@ -1430,34 +1406,32 @@ a| 区画の主要構造の外形を示す境界面。 +
 
 |===
 
-　
-
-===== 5)　brid:RoofSurface
+====== brid:RoofSurface
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 主に橋梁の上部を覆う構造物。上部工と一体的に整備されたし、上部工、階段、踊り場の全体が屋根で覆われている場合を対象とする。 庇は含まない。
 
-| 上位の型 2+| brid:_BoundarySurface
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
-| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
-| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
-| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
-| (core:creationDate) | xs:date [0..1] | データが作成された日。
-| (core:terminationDate) | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+h| 上位の型 2+| brid:_BoundarySurface
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
+h| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
+h| (core:creationDate) | xs:date [0..1] | データが作成された日。
+h| (core:terminationDate) | xs:date [0..1] | データが削除された日。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
 | brid:lod2MultiSurface
 | gml:MultiSurface [0..1]
 a| LOD2において屋根の形状・起伏を再現した面。 +
@@ -1477,34 +1451,32 @@ a| LOD4において屋根の形状・起伏を再現した面。 +
 
 |===
 
-　
-
-===== 6)　brid:WallSurface
+====== brid:WallSurface
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 橋梁の外周を構成する壁面（外壁）。
 
-| 上位の型 2+| brid:_BoundarySurface
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
-| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
-| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
-| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
-| (core:creationDate) | xs:date [0..1] | データが作成された日。
-| (core:terminationDate) | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+h| 上位の型 2+| brid:_BoundarySurface
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
+h| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
+h| (core:creationDate) | xs:date [0..1] | データが作成された日。
+h| (core:terminationDate) | xs:date [0..1] | データが削除された日。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
 | brid:lod2MultiSurface
 | gml:MultiSurface [0..1]
 a| LOD2において壁面の形状・起伏を再現した面。 +
@@ -1524,9 +1496,7 @@ a| LOD3において壁面の形状・起伏を再現した面。 +
 
 |===
 
-　
-
-===== 7)　brid:GroundSurface
+====== brid:GroundSurface
 
 [cols="1,1,2"]
 |===
@@ -1534,26 +1504,26 @@ a| LOD3において壁面の形状・起伏を再現した面。 +
 2+a| 橋梁の立体形状の底面。 +
 橋梁の底面又は橋梁の壁面と地形との交線を境界とする面とする。
 
-| 上位の型 2+| brid:_BoundarySurface
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
-| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
-| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
-| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
-| (core:creationDate) | xs:date [0..1] | データが作成された日。
-| (core:terminationDate) | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+h| 上位の型 2+| brid:_BoundarySurface
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
+h| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
+h| (core:creationDate) | xs:date [0..1] | データが作成された日。
+h| (core:terminationDate) | xs:date [0..1] | データが削除された日。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
 | brid:lod2MultiSurface
 | gml:MultiSurface [0..1]
 a| LOD2.1において底面の形状・起伏を再現した面。 +
@@ -1572,13 +1542,11 @@ a| LOD4において底面の形状・起伏を再現した面。 +
 橋梁の側面と、地表との交線により囲まれた面を取得する。 +
 面の各頂点に、地表面の高さを与える。
 
-| (brid:opening) | brid:_Opening [0..*] | 底面に設置される、窓や扉への参照。
+h| (brid:opening) | brid:_Opening [0..*] | 底面に設置される、窓や扉への参照。
 
 |===
 
-　
-
-===== 8)　brid:OuterCeilingSurface
+====== brid:OuterCeilingSurface
 
 [cols="1,1,2"]
 |===
@@ -1586,26 +1554,26 @@ a| LOD4において底面の形状・起伏を再現した面。 +
 2+a| 橋梁の外側を覆う部分であり、天井としての機能を有する部分。上部工の下面が該当する。 +
 ユースケースで屋外の天井面と壁面との区分が不要な場合には、この型は使用せず、brid:WallSurfaceを使用する。
 
-| 上位の型 2+| brid:_BoundarySurface
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
-| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
-| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
-| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
-| (core:creationDate) | xs:date [0..1] | データが作成された日。
-| (core:terminationDate) | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+h| 上位の型 2+| brid:_BoundarySurface
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
+h| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
+h| (core:creationDate) | xs:date [0..1] | データが作成された日。
+h| (core:terminationDate) | xs:date [0..1] | データが削除された日。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
 | brid:lod2MultiSurface | gml:MultiSurface [0..1] | LOD2において屋外にある天井の形状・起伏を再現した面。
 | brid:lod3MultiSurface
 | gml:MultiSurface [0..1]
@@ -1623,34 +1591,32 @@ a| LOD4において屋外にある天井の形状・起伏を再現した面。 
 
 |===
 
-　
-
-===== 9)　brid:OuterFloorSurface
+====== brid:OuterFloorSurface
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 橋梁の外側を覆う部分であり、通行可能な床面としての機能を有する部分。上部工の床版（道路や線路が敷設されている面）が該当する。
 
-| 上位の型 2+| brid:_BoundarySurface
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
-| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
-| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
-| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
-| (core:creationDate) | xs:date [0..1] | データが作成された日。
-| (core:terminationDate) | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+h| 上位の型 2+| brid:_BoundarySurface
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
+h| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
+h| (core:creationDate) | xs:date [0..1] | データが作成された日。
+h| (core:terminationDate) | xs:date [0..1] | データが削除された日。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
 | brid:lod2MultiSurface
 | gml:MultiSurface [0..1]
 a| LOD2において屋外にある床面の形状・起伏を再現した面。 +
@@ -1662,9 +1628,7 @@ a| LOD2において屋外にある床面の形状・起伏を再現した面。 
 
 |===
 
-　
-
-===== 10)　brid:ClosureSurface
+====== brid:ClosureSurface
 
 [cols="1,1,2"]
 |===
@@ -1674,67 +1638,65 @@ a| LOD2において屋外にある床面の形状・起伏を再現した面。 
 橋梁の境界面に開口部が存在するが、開口部内の詳細なデータ作成が不要である場合に、開口部を閉じるために便宜上設けられた面。 +
 LOD2において、ユースケースで外壁と開口部、あるいは屋根面と開口部との区分が不要な場合には、この型は使用せず、brid:WallSurface又brid:RoofSurfaceを使用する。
 
-| 上位の型 2+| brid:_BoundarySurface
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
-| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
-| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
-| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
-| (core:creationDate) | xs:date [0..1] | データが作成された日。
-| (core:terminationDate) | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-| (brid:lod2MultiSurface) | gml:MultiSurface [0..1] | 閉鎖面の外周に囲まれた面。
+h| 上位の型 2+| brid:_BoundarySurface
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
+h| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
+h| (core:creationDate) | xs:date [0..1] | データが作成された日。
+h| (core:terminationDate) | xs:date [0..1] | データが削除された日。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+h| (brid:lod2MultiSurface) | gml:MultiSurface [0..1] | 閉鎖面の外周に囲まれた面。
 | brid:lod3MultiSurface | gml:MultiSurface [0..1] | 閉鎖面の外周に囲まれた面。
 | brid:lod4MultiSurface | gml:MultiSurface [0..1] | 閉鎖面の外周に囲まれた面。
-| (brid:opening) | brid:_Opening [0..*] | 境界面に設置される、窓や扉への参照。
+h| (brid:opening) | brid:_Opening [0..*] | 境界面に設置される、窓や扉への参照。
 
 |===
 
-===== 11)　brid:InteriorWallSurface
+====== brid:InteriorWallSurface
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 橋梁の内部空間の区画を区切る壁や仕切り。
 
-| 上位の型 2+| brid:_BoundarySurface
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| brid:_BoundarySurface
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | gml:description | gml:StringOrRefType [0..1] | 境界面の概要。
 | gml:name | gml:CodeType [0..1] | 境界面を識別する名称。文字列とする。
-| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
 | core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
 | core:terminationDate | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
 | brid:lod4MultiSurface | gml:MultiSurface [0..1] | 内壁の形状・起伏を再現した面。
 | brid:opening | brid:_Opening [0..*] | 内壁に設置される、窓や扉への参照。
 
 |===
 
-　
-
-===== 12)　brid:CeilingSurface
+====== brid:CeilingSurface
 
 [cols="1,1,2"]
 |===
@@ -1742,34 +1704,32 @@ LOD2において、ユースケースで外壁と開口部、あるいは屋根�
 2+a| 区画など構造物内部の上側の面（天井）。 +
 brid:CeilingSurfaceの法線ベクトルは下向きとなる。
 
-| 上位の型 2+| brid:_BoundarySurface
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| brid:_BoundarySurface
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | gml:description | gml:StringOrRefType [0..1] | 境界面の概要。
 | gml:name | gml:CodeType [0..1] | 境界面を識別する名称。文字列とする。
-| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
 | core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
 | core:terminationDate | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
 | brid:lod4MultiSurface | gml:MultiSurface [0..1] | 天井面の形状・起伏を再現した面。
 | brid:opening | brid:_Opening [0..*] | 天井に設置される、窓や扉への参照。
 
 |===
 
-　
-
-===== 13)　brid:FloorSurface
+====== brid:FloorSurface
 
 [cols="1,1,2"]
 |===
@@ -1777,100 +1737,94 @@ brid:CeilingSurfaceの法線ベクトルは下向きとなる。
 2+a| 橋梁の内部空間の下面に位置する水平で平らな板状の構造物（床面）。 +
 brid:FloorSurfaceの法線ベクトルは上向きとなる。
 
-| 上位の型 2+| brid:_BoundarySurface
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| brid:_BoundarySurface
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | gml:description | gml:StringOrRefType [0..1] | 境界面の概要。
 | gml:name | gml:CodeType [0..1] | 境界面を識別する名称。文字列とする。
-| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
 | core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
 | core:terminationDate | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
 | brid:lod4MultiSurface | gml:MultiSurface [0..1] | 床面の形状・起伏を再現した面。
 | brid:opening | brid:_Opening [0..*] | 床面に設置される、窓や扉への参照。
 
 |===
 
-　
-
-===== 14)　brid:Window
+====== brid:Window
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 採光、通風、換気、眺望などの目的のため、橋梁の屋根、天井、壁、床などに設けられた開口部のうち、人や物の出入りを目的としないもの。
 
-| 上位の型 2+| brid:_Opening
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
-| (gml:description) | gml:StringOrRefType [0..1] | 開口部の概要。
-| (gml:name) | gml:CodeType [0..1] | 開口部を識別する名称。
-| (gml:boundedBy) | gml:Envelope [0..1] | 開口部の範囲及び適用される空間参照系。
-| (core:creationDate) | xs:date [0..1] | データが作成された日。
-| (core:terminationDate) | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+h| 上位の型 2+| brid:_Opening
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 開口部の概要。
+h| (gml:name) | gml:CodeType [0..1] | 開口部を識別する名称。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 開口部の範囲及び適用される空間参照系。
+h| (core:creationDate) | xs:date [0..1] | データが作成された日。
+h| (core:terminationDate) | xs:date [0..1] | データが削除された日。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
 | brid:lod3MultiSurface | gml:MultiSurface [0..1] | 開口部の外周に囲まれた面。
 | brid:lod4MultiSurface | gml:MultiSurface [0..1] | 開口部の外周に囲まれた面。
 
 |===
 
-　
-
-===== 15)　brid:Door
+====== brid:Door
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 採光、通風、換気、眺望、通行などの目的のため、橋梁の屋根、天井、壁、床などに設けられた開口部のうち、人や物の出入りを目的とするもの。
 
-| 上位の型 2+| brid:_Opening
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
-| (gml:description) | gml:StringOrRefType [0..1] | 開口部の概要。
-| (gml:name) | gml:CodeType [0..1] | 開口部を識別する名称。名称で識別する必要がある場合にのみ作成する。
-| (gml:boundedBy) | gml:Envelope [0..1] | 開口部の範囲及び適用される空間参照系。
-| (core:creationDate) | xs:date [0..1] | データが作成された日。
-| (core:terminationDate) | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+h| 上位の型 2+| brid:_Opening
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 開口部の概要。
+h| (gml:name) | gml:CodeType [0..1] | 開口部を識別する名称。名称で識別する必要がある場合にのみ作成する。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 開口部の範囲及び適用される空間参照系。
+h| (core:creationDate) | xs:date [0..1] | データが作成された日。
+h| (core:terminationDate) | xs:date [0..1] | データが削除された日。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
 | brid:lod3MultiSurface | gml:MultiSurface [0..1] | 開口部の外周に囲まれた面。
 | brid:lod4MultiSurface | gml:MultiSurface [0..1] | 開口部の外周に囲まれた面。
 
 |===
 
-　
-
-===== 16)　brid:BridgeInstallation
+====== brid:BridgeInstallation
 
 [cols="1,1,2"]
 |===
@@ -1881,32 +1835,32 @@ brid:FloorSurfaceの法線ベクトルは上向きとなる。
 支承、落橋防止装置、伸縮装置、排水施設、高欄、防護柵、遮音壁、遮光壁、航空障害灯など。 +
 ただし、ユースケースの要求に応じて、取得対象とする付属物を限定してもよく、また、付属物として取得せず橋梁の一部として取得してもよい。
 
-| 上位の型 2+| brid:_CityObject
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
-| (gml:description) | gml:StringOrRefType[0..1] | 外部付属物の概要。
-| (gml:name) | gml:CodeType [0..1] | 外部付属物を識別する名称。
-| (gml:boundedBy) | gml:Envelope [0..1] | 外部付属物の範囲及び適用される空間参照系。
-| (core:creationDate) | xs:date [0..1] | データが作成された日。
-| (core:terminationDate) | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 自身に定義された属性
+h| 上位の型 2+| brid:_CityObject
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType[0..1] | 外部付属物の概要。
+h| (gml:name) | gml:CodeType [0..1] | 外部付属物を識別する名称。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 外部付属物の範囲及び適用される空間参照系。
+h| (core:creationDate) | xs:date [0..1] | データが作成された日。
+h| (core:terminationDate) | xs:date [0..1] | データが削除された日。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 自身に定義された属性
 | brid:class | gml:CodeType [0..1] | 外部付属物の形態による区分。
 | brid:function | gml:CodeType [0..*] | 外部付属物の主たる働き。コードリスト（BridgeInstallation_function.xml）より選択する。
 | brid:usage | gml:CodeType [0..*] | 付属物の主な使い道。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-3+| 自身に定義された関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | brid:lod2Geometry | gml:_Geometry [0..1] | 外部付属物のLOD2の形状。 gml:MultiSurfaceにより記述することを基本とする。 付属物の外形（外側から見える形）を構成する面を取得し、面の各頂点に屋外付属物の高さを与える。 容積の算出等ユースケースで必要な場合は、gml:Solidを使用する。
 | brid:lod3Geometry | gml:_Geometry [0..1] | 外部付属物のLOD3の形状。gml:MultiSurfaceにより記述することを基本とする。 付属物の外形（外側から見える形）を構成する面を取得し、面の各頂点に屋外付属物の高さを与える。 容積の算出等ユースケースで必要な場合は、gml:Solidを使用する。
 | brid:lod4Geometry | gml:_Geometry [0..1] | 外部付属物のLOD4の形状。gml:MultiSurfaceにより記述することを基本とする。 付属物の外形（外側から見える形）を構成する面を取得し、面の各頂点に屋外付属物の高さを与える。 容積の算出等ユースケースで必要な場合は、gml:Solidを使用する。
@@ -1917,9 +1871,7 @@ a| 外部付属物を構成する外壁、屋根等の境界面への参照。�
 
 |===
 
-　
-
-===== 17)　brid:IntBridgeInstallation
+====== brid:IntBridgeInstallation
 
 [cols="1,1,2"]
 |===
@@ -1928,32 +1880,32 @@ a| 外部付属物を構成する外壁、屋根等の境界面への参照。�
 内部付属物は、橋梁の付帯的な設備であり、主要な部分であってはならない。また、内部付属物は、橋梁（brid:Bridge又はbrid:BridgePart）又は区画（brid:BridgeRoom）と接していなければならない。 +
 ただし、ユースケースの要求に応じて、取得対象とする内部付属物を限定してもよく、また、内部付属物として取得せず建築物の一部として取得してもよい。
 
-| 上位の型 2+| brid:_CityObject
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
-| (gml:description) | gml:StringOrRefType [0..1] | 内部付属物の概要。
-| (gml:name) | gml:CodeType [0..1] | 内部付属物を識別する名称。
-| (gml:boundedBy) | gml:Envelope [0..1] | 内部付属物の範囲及び適用される空間参照系。
+h| 上位の型 2+| brid:_CityObject
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 内部付属物の概要。
+h| (gml:name) | gml:CodeType [0..1] | 内部付属物を識別する名称。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 内部付属物の範囲及び適用される空間参照系。
 | core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
 | core:terminationDate | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 自身に定義された属性
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 自身に定義された属性
 | brid:class | gml:CodeType [0..1] | 内部付属物の形態による区分。コードリスト（IntBuildingInstallation_class.xml）より選択する。
 | brid:function | gml:CodeType [0..*] | 内部付属物の主たる働き。コードリスト（IntBuildingInstallation_function.xml）より選択する。
-| (brid:usage) | gml:CodeType [0..*] | 内部付属物の主な使い道。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-3+| 自身に定義された関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
+h| (brid:usage) | gml:CodeType [0..*] | 内部付属物の主な使い道。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | brid:lod4Geometry | gml:_Geometry [0..1] | 内部付属物のLOD4の形状。 gml:MultiSurfaceにより記述することを基本とする。 内部付属物の外形（外側から見える形）を構成する面を取得し、面の各頂点に屋内付属物の高さを与える。 容積の算出等ユースケースで必要な場合は、gml:Solidを使用する。
 | brid:boundedBy
 | brid:_BoundarySurface [0..*]
@@ -1962,9 +1914,7 @@ a| 内部付属物を構成する内壁、天井等の境界面への参照。�
 
 |===
 
-　
-
-===== 18)　brid:BridgeFurniture
+====== brid:BridgeFurniture
 
 [cols="1,1,2"]
 |===
@@ -1973,49 +1923,49 @@ a| 内部付属物を構成する内壁、天井等の境界面への参照。�
 brid:IntBridgeInstallationが、橋梁内部に設置された恒久的かつ固定的な設備であることと対照的に、brid:BridgeFurnitureは椅子や机のような、動かすことができる（位置が固定されない）設備である。 +
 ただし、ユースケースの要求に応じて、取得対象とする可動設備を限定してよい。
 
-| 上位の型 2+| brid:_CityObject
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| brid:_CityObject
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | gml:description | gml:StringOrRefType [0..1] | 可動設備の概要。
 | gml:name | gml:CodeType [0..1] | 可動設備を識別する名称。
-| (gml:boundedBy) | gml:Envelope [0..1] | 可動設備の範囲及び適用される空間参照系。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 可動設備の範囲及び適用される空間参照系。
 | core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
 | core:terminationDate | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 自身に定義された属性
-| (brid:class) | gml:CodeType [0..1] | 可動設備の形態による区分。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 自身に定義された属性
+h| (brid:class) | gml:CodeType [0..1] | 可動設備の形態による区分。
 | brid:function | gml:CodeType [0..*] | 可動設備の主たる働き。コードリスト（BuildingFurniture_function.xml）より選択する。
-| (brid:usage) | gml:CodeType [0..*] | 可動設備の主な使い道。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-3+| 自身に定義された関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
+h| (brid:usage) | gml:CodeType [0..*] | 可動設備の主な使い道。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | brid:lod4Geometry | gml:_Geometry [0..1] | 可動設備のLOD4の形状。gml:MultiSurfaceにより記述することを基本とする。可動設備の外形（外側から見える形）を構成する面を取得し、面の各頂点に可動設備の高さを与える。
 
 |===
 
 [[toc4_11_03_02]]
-===== (2)　Urban Object（i-UR）
+===== Urban Object（i-UR）
 
-===== 1)　uro:BridgeStructureAttribute
+====== uro:BridgeStructureAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 橋梁の構造に関する情報を定義したデータ型。
 
-| 上位の型 2+| ―
-| ステレオタイプ 2+| << DataType >>
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:material | gml:CodeType [0..1] | 橋梁の主たる材質。コードリスト（BridgeStructureAttribute_material.xml）より選択する。
 | uro:bridgeType | gml:CodeType [0..1] | 橋梁の種類。コードリスト（BridgeStructureAttribute_bridgeType.xml）より選択する。
 | uro:length | gml:LengthType [0..1] | 橋梁の長さ。単位はmとする。
@@ -2034,26 +1984,22 @@ a| 橋梁が橋側歩道橋、横断歩道橋又はペデストリアンデッ�
 
 |===
 
-　
-
-===== 2) uro:BridgeFunctionalAttribute
+====== uro:BridgeFunctionalAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 橋梁の機能に関する情報を定義したデータ型。
 
-| 上位の型 2+| ―
-| ステレオタイプ 2+| << DataType >>
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:directionType | gml:CodeType [0..1] | 橋梁の進行方向の区分。コードリスト（ConstructionFunctionalAttribute_directionType.xml）より選択する。
 | uro:userType | gml:CodeType [0..1] | 橋梁の利用者の種類。コードリスト（BridgeFunctionalAttribute_userType.xml）より選択する。
 
 |===
 
-　
-
-===== 3) uro:KeyValuePairAttribute
+====== uro:KeyValuePairAttribute
 
 [cols="1,1,2"]
 |===
@@ -2061,10 +2007,10 @@ a| 橋梁が橋側歩道橋、横断歩道橋又はペデストリアンデッ�
 2+a| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。 +
 属性名称と属性の値の対で構成される。コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
 
-| 上位の型 2+| ―
-| ステレオタイプ 2+| << DataType >>
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:key | gml:CodeType [1] | 拡張する属性の名称。名称は、コ－ドリスト（KeyValuePairAttribute_key.xml）を作成し、選択する。
 | uro:codeValue
 | gml:CodeType [1]
@@ -2073,18 +2019,16 @@ a| 拡張された属性の値。値は名称は、コ－ドリスト（KeyValue
 
 |===
 
-　
-
-===== 4)　uro:DataQualityAttribute
+====== uro:DataQualityAttribute
 
 [cols=3]
 |===
 | 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
 
-| 上位の型 2+| ―
-| ステレオタイプ 2+| << DataType >>
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:geometrySrcDescLod0
 | gml:CodeType [0..*]
 a| LOD0の幾何オブジェクトの作成に使用した原典資料の種類。 +
@@ -2154,9 +2098,9 @@ a| 幾何オブジェクトに適用されたLODの詳細な区分。 +
 LOD2以上の幾何オブジェクトを作成する場合は必須とする。
 
 | uro:lod1HeightType | gml:CodeType [0..1] | LOD1の立体図形を作成する際に使用した高さの算出方法。コードリスト（DataQualityAttribute_lod1HeightType.xml）より選択する。LOD1の幾何オブジェクトを作成する場合は必須とする。
-| (uro:tranDataAcquisition) | xs:string [0..1] | 「道路基盤地図情報（整備促進版）製品仕様書（案）」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
-| 自身に定義された関連役割 | 　 | 　
-| 関連役割名 | 関連役割の型及び多重度 | 定義
+h| (uro:tranDataAcquisition) | xs:string [0..1] | 「道路基盤地図情報（整備促進版）製品仕様書（案）」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
+h| 自身に定義された関連役割 h| 　 h| 　
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | uro:publicSurveyDataQualityAttribute
 | uro:PublicSurveyDataQualityAttribute [0..1]
 a| 使用した公共測量成果の地図情報レベルと種類。 +
@@ -2164,18 +2108,16 @@ a| 使用した公共測量成果の地図情報レベルと種類。 +
 
 |===
 
-　
-
-===== 5) uro:PublicSurveyDataQualityAttribute
+====== uro:PublicSurveyDataQualityAttribute
 
 [cols=3]
 |===
 | 型の定義 2+| 使用した公共測量成果の地図情報レベルと種類を、LODごとに記述するためのデータ型。
 
-| 上位の型 2+| ―
-| ステレオタイプ 2+| << DataType >>
-| 自身に定義された属性 2+| 　
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+h| 自身に定義された属性 2+h| 　
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:srcScaleLod0
 | gml:CodeType [0..1]
 a| LOD0の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
@@ -2241,9 +2183,7 @@ a| LOD4の幾何オブジェクトの作成に使用した原典資料の種類�
 
 |===
 
-　
-
-===== 6) uro:ConstructionBaseAttribute
+====== uro:ConstructionBaseAttribute
 
 [cols=3]
 |===
@@ -2252,10 +2192,10 @@ a| LOD4の幾何オブジェクトの作成に使用した原典資料の種類�
 構造物が橋梁、トンネル、護岸、床止め、堰、水門・閘門・陸閘、樋門・樋管、伏せ越し及び水制の場合に本データ型を用いて記述する。 +
 構造物がダム及び堤防の場合は、これを継承するデータ型を用いて記述する。
 
-| 上位の型 2+| ―
-| ステレオタイプ 2+| << DataType >>
-| 自身に定義された属性 2+| 　
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+h| 自身に定義された属性 2+h| 　
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:adminType | gml:CodeType [0..1] | 構造物の管理者の区分。コードリスト（ConstructionBaseAttribute_adminType.xml）から選択する。
 | uro:administorator | xs:string [0..1] | 構造物の管理者の名称。
 | uro:adminOffice | xs:string [0..1] | 構造物の管理事務所所在地。
@@ -2273,18 +2213,16 @@ a| LOD4の幾何オブジェクトの作成に使用した原典資料の種類�
 
 |===
 
-　
-
-===== 7) uro:ConstructionRiskAssessmentAttribute
+====== uro:ConstructionRiskAssessmentAttribute
 
 [cols=3]
 |===
 | 型の定義 2+| 構造物の損傷及び対応状況に関する情報を定義したデータ型。
 
-| 上位の型 2+| ―
-| ステレオタイプ 2+| << DataType >>
-| 属性 2+| 　
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+h| 属性 2+h| 　
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:surveyYear | xs:gYear [0..1] | 点検が実施された年度。
 | uro:riskType | gml:CodeType [1] | 判定区分。コードリスト（ConstructionRiskAssessmentAttribute_riskType.xml）より選択する。
 | uro:status | gml:CodeType [0..1] | 対応状況。コードリスト（ ConstructionRiskAssessmentAttribute_status.xml）より選択する。
@@ -2292,82 +2230,60 @@ a| LOD4の幾何オブジェクトの作成に使用した原典資料の種類�
 
 |===
 
-　
-
-===== 8) uro:FacilityIdAttribute
+====== uro:FacilityIdAttribute
 
 施設管理属性の応用スキーマ文書　参照。
 
-　
-
-===== 9) uro:FacilityTypeAttribute 
+====== uro:FacilityTypeAttribute
 
 施設管理属性の応用スキーマ文書　参照。
 
-　
-
-===== 10) uro:FacilityAttribute
+====== uro:FacilityAttribute
 
 施設管理属性の応用スキーマ文書　参照。
 
-　
-
-===== 11) uro:DmAttribute
+====== uro:DmAttribute
 
 公共測量標準図式の応用スキーマ文書　参照
 
-　
-
-===== 12) uro:RiverFloodingRiskAttribute
+====== uro:RiverFloodingRiskAttribute
 
 災害リスクモデルの応用スキーマ文書参照。
 
-　
-
-===== 13) uro:TsunamiRiskAttribute
+====== uro:TsunamiRiskAttribute
 
 災害リスクモデルの応用スキーマ文書参照。
 
-　
-
-===== 14) uro:HighTideRiskAttribute
+====== uro:HighTideRiskAttribute
 
 災害リスクモデルの応用スキーマ文書参照。
 
-　
-
-===== 15) uro:InlandFloodingRiskAttribute
+====== uro:InlandFloodingRiskAttribute
 
 災害リスクモデルの応用スキーマ文書参照。
 
-　
-
-===== 16) uro:ReservoirFloodingRiskAttribute
+====== uro:ReservoirFloodingRiskAttribute
 
 災害リスクモデルの応用スキーマ文書参照。
 
-　
-
-===== 17) uro:LandSlideRiskAttribute
+====== uro:LandSlideRiskAttribute
 
 災害リスクモデルの応用スキーマ文書参照。
-
-　
 
 [[toc4_11_04]]
-==== 　橋梁モデルで使用するコードリストと列挙型
+==== 橋梁モデルで使用するコードリストと列挙型
 
 [[toc4_11_04_01]]
-===== (1) Bridge（CityGML）
+===== Bridge（CityGML）
 
-===== 1) Bridge_class.xml
+====== Bridge_class.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | Bridge_class.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Bridge_class.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Bridge_class.xml
+h| コード h| 説明
 | 01 | 桁橋
 | 02 | トラス橋
 | 03 | アーチ橋
@@ -2380,16 +2296,14 @@ a| LOD4の幾何オブジェクトの作成に使用した原典資料の種類�
 [none]
 **** 出典　道路基盤地図情報
 
-　
-
-===== 2) Bridge_function.xml
+====== Bridge_function.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | Bridge_function.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Bridge_function.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Bridge_function.xml
+h| コード h| 説明
 | 01 | 道路橋
 | 02 | 鉄道橋
 | 03 | 水路橋
@@ -2404,16 +2318,14 @@ a| LOD4の幾何オブジェクトの作成に使用した原典資料の種類�
 [none]
 **** 参考：CityGML2.0 Annex C
 
-　
-
-===== 3) BridgeConstructionElement_function.xml
+====== BridgeConstructionElement_function.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | BridgeConstructionElement_function.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/BridgeConstructionElement_function.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/BridgeConstructionElement_function.xml
+h| コード h| 説明
 | 01 | 橋脚
 | 02 | 橋台
 | 03 | トラス
@@ -2427,16 +2339,14 @@ a| LOD4の幾何オブジェクトの作成に使用した原典資料の種類�
 [none]
 **** 参考：CityGML2.0 Annex C
 
-　
-
-===== 4) BridgeInstallation_function.xml
+====== BridgeInstallation_function.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | BridgeInstallation_function.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/BridgeInstallation_function.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/BridgeInstallation_function.xml
+h| コード h| 説明
 | 01 | 支承
 | 02 | 落橋防止装置
 | 03 | 伸縮装置
@@ -2460,16 +2370,16 @@ a| LOD4の幾何オブジェクトの作成に使用した原典資料の種類�
 **** 参考：橋梁施設台帳
 
 [[toc4_11_04_02]]
-===== (2) Urban Object（i-UR）
+===== Urban Object（i-UR）
 
-===== 1) BridgeStructureAttribute_material.xml
+====== BridgeStructureAttribute_material.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | BridgeStructureAttribute_material.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/BridgeStructureAttribute_material.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/BridgeStructureAttribute_material.xml
+h| コード h| 説明
 | 01 | 鋼溶接橋
 | 02 | 鋼（鉄）リベット橋
 | 03 | RC橋
@@ -2482,48 +2392,42 @@ a| LOD4の幾何オブジェクトの作成に使用した原典資料の種類�
 
 |===
 
-　
-
-===== 2) BridgeStructureAttribute_bridgeType.xml
+====== BridgeStructureAttribute_bridgeType.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | BridgeStructureAttribute_bridgeType.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/BridgeStructureAttribute_bridgeType.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/BridgeStructureAttribute_bridgeType.xml
+h| コード h| 説明
 | 01 | 橋
 | 02 | 高架橋
 | 03 | 桟道橋
 
 |===
 
-　
-
-===== 3) BridgeFunctionalAttribute_userType.xml
+====== BridgeFunctionalAttribute_userType.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | BridgeFunctionalAttribute_userType.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/BridgeFunctionalAttribute_userType.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/BridgeFunctionalAttribute_userType.xml
+h| コード h| 説明
 | 01 | 歩行者専用
 | 02 | 自転車専用
 | 03 | 自転車歩行者専用
 
 |===
 
-　
-
-===== 4) ConstructionStructureAttribute_slopeType.xml
+====== ConstructionStructureAttribute_slopeType.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | ConstructionStructureAttribute_slopeType.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/ConstructionStructureAttribute_slopeType.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/ConstructionStructureAttribute_slopeType.xml
+h| コード h| 説明
 | 01 | 階段式
 | 02 | 押上式
 | 03 | スロープ式
@@ -2533,16 +2437,14 @@ a| LOD4の幾何オブジェクトの作成に使用した原典資料の種類�
 
 |===
 
-　
-
-===== 5) ConstructionBaseAttribute_adminType.xml
+====== ConstructionBaseAttribute_adminType.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | ConstructionBaseAttribute_adminType.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/ConstructionBaseAttribute_adminType.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/ConstructionBaseAttribute_adminType.xml
+h| コード h| 説明
 | 1 | 港湾局
 | 2 | 都道府県（港湾管理者）
 | 3 | 都道府県（海岸管理者）
@@ -2594,16 +2496,14 @@ a| LOD4の幾何オブジェクトの作成に使用した原典資料の種類�
 [none]
 **** 出典：河川基盤地図ガイドライン（案）、国土数値情報、サイバーポート
 
-　
-
-===== 6) ConstructionBaseAttribute_installerType.xmlりんりりｎ
+====== ConstructionBaseAttribute_installerType.xmlりんりりｎ
 
 [cols="3,22"]
 |===
 | ファイル名 | ConstructionBaseAttribute_installerType.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/ConstructionBaseAttribute_installerType.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/ConstructionBaseAttribute_installerType.xml
+h| コード h| 説明
 | 01 | 国土交通省（各地方整備局、北海道開発局含む）
 | 02 | 沖縄開発庁
 | 03 | 農林水産省（各地方農政局含む）
@@ -2625,16 +2525,14 @@ a| LOD4の幾何オブジェクトの作成に使用した原典資料の種類�
 [none]
 **** 出典：サイバーポート
 
-　
-
-===== 7) ConstructionRiskAssessmentAttribute_riskType.xml
+====== ConstructionRiskAssessmentAttribute_riskType.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | ConstructionRiskAssessmentAttribute_riskType.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/ConstructionRiskAssessmentAttribute_riskType.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/ConstructionRiskAssessmentAttribute_riskType.xml
+h| コード h| 説明
 | 01 | 判定区分Ⅰ　（健全）
 | 02 | 判定区分Ⅱ　（予防保全段階）
 | 03 | 判定区分Ⅲ　（早期措置段階）
@@ -2647,16 +2545,14 @@ a| LOD4の幾何オブジェクトの作成に使用した原典資料の種類�
 [none]
 **** 出典：　損傷マップ
 
-　
-
-===== 8) ConstructionRiskAssessmentAttribute_status.xml
+====== ConstructionRiskAssessmentAttribute_status.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | ConstructionRiskAssessmentAttribute_status.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/ConstructionRiskAssessmentAttribute_status.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/ConstructionRiskAssessmentAttribute_status.xml
+h| コード h| 説明
 | 01 | 予防保全段階
 | 02 | 措置完了済み
 | 03 | 措置着手済み
@@ -2667,17 +2563,15 @@ a| LOD4の幾何オブジェクトの作成に使用した原典資料の種類�
 [none]
 **** 出典：　損傷マップ
 
-　
-
-===== 9) DataQualityAttribute_geometrySrcDesc.xml
+====== DataQualityAttribute_geometrySrcDesc.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml
-| コード | 説明
-| 　 | 　
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml
+h| コード h| 説明
+h| 　 | 　
 | 000 | 公共測量成果
 | 101 | （公共測量ではない）現地測量の測量成果
 | 102 | （公共測量ではない）UAV写真測量の測量成果
@@ -2717,16 +2611,14 @@ a| LOD4の幾何オブジェクトの作成に使用した原典資料の種類�
 [none]
 **** 参考：作業規程の準則、3D都市モデル整備のための測量マニュアル、3D都市モデル標準作業手順書
 
-　
-
-===== 10) DataQualityAttribute_thematicSrcDesc.xml
+====== DataQualityAttribute_thematicSrcDesc.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml
+h| コード h| 説明
 | 000 | 公共測量成果
 | 022 | 基盤地図情報
 | 023 | 数値地形図データ
@@ -2750,16 +2642,14 @@ a| LOD4の幾何オブジェクトの作成に使用した原典資料の種類�
 [none]
 **** 参考：作業規程の準則、3D都市モデル整備のための測量マニュアル、3D都市モデル標準作業手順書
 
-　
-
-===== 11) DataQualityAttribute_appearanceSrcDesc.xml
+====== DataQualityAttribute_appearanceSrcDesc.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml
+h| コード h| 説明
 | 1 | 空中写真
 | 2 | 衛星写真
 | 3 | 車載写真レーザ測量システムにより撮影した写真
@@ -2769,16 +2659,14 @@ a| LOD4の幾何オブジェクトの作成に使用した原典資料の種類�
 
 |===
 
-　
-
-===== 12) DataQualityAttribute_lod1HeightType.xml
+====== DataQualityAttribute_lod1HeightType.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | DataQualityAttribute_lod1HeightType.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml
+h| コード h| 説明
 | 1 | 点群から取得_最高高さ
 | 2 | 点群から取得_中央値
 | 3 | 点群から取得_平均値
@@ -2796,32 +2684,28 @@ a| LOD4の幾何オブジェクトの作成に使用した原典資料の種類�
 [none]
 **** 参考：建物三次元データ作成マニュアル（案）
 
-　
-
-===== 13) PublicSurveyDataQualityAttribute_srcScale.xml
+====== PublicSurveyDataQualityAttribute_srcScale.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | PublicSurveyDataQualityAttribute_srcScale.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml
+h| コード h| 説明
 | 1 | 地図情報レベル2500
 | 2 | 地図情報レベル1000
 | 3 | 地図情報レベル500
 
 |===
 
-　
-
-===== 14) PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
+====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
+h| コード h| 説明
 | 001 | 現地測量の測量成果
 | 002 | UAV写真測量の測量成果
 | 003 | 空中写真測量の測量成果
@@ -2851,16 +2735,14 @@ a| LOD4の幾何オブジェクトの作成に使用した原典資料の種類�
 [none]
 **** 参考：作業規程の準則、3D都市モデル整備のための測量マニュアル
 
-　
-
-===== 15) Bridge_lodType.xml
+====== Bridge_lodType.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | Bridge_lodType.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Bridge_lodType.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Bridge_lodType.xml
+h| コード h| 説明
 | 2.0 | 道路橋、桟道橋及び鉄道橋は、床版の外周を、高さをもった面として表現する。横断歩道橋、ペデストリアンデッキ及び跨線橋は、本体（上部工、階段及び踊り場）の外周を取得し、高さをもった面として表現する。階段の個々の段は取得せず、下端と上端を結んだ平面として表現する。
 | 2.1
 a| 道路橋、桟道橋及び鉄道橋は、床版及び主桁によって、厚みと高さをもった立体として表現する。橋脚などの構造上不可欠な部材を表現してもよい。 +
@@ -2868,6 +2750,4 @@ a| 道路橋、桟道橋及び鉄道橋は、床版及び主桁によって、�
 上部工、階段及び踊り場は分けて取得できる。階段の個々の段は取得せず、下端と上端を結んだ面として表現する。
 
 |===
-
-　
 
