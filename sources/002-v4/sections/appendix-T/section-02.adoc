@@ -12,7 +12,7 @@
 
 表T- 1　水部モデルの概要
 
-image::images/505.webp[]
+image::images/505.webp.png[]
 
 水部モデル（LOD0）では、水部の形状を、線により表現する。水部の形状の線は、河川ネットワーク又は水涯線のいずれかとする。
 
@@ -41,18 +41,18 @@ LOD0では、Wtr:Waterbodyのみを使用し、水部の形状を線として表
 .表T- 2　水部の記述に使用する地物型と空間属性
 |===
 ^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| 適用
-.6+| wtr:WaterBody | ^| ● ^| ● ^| ● ^| ● | 
+.6+| wtr:WaterBody | ^| ● ^| ● ^| ● ^| ● |
 | lod0MultiCurve ^| ■ ^| ^| ^| .2+| 河川中心線（wtr:lod0MultiCurve）を基本とする。縁線、界線又は点として取得する場合はuro:lod0Geometryを使用する。
-| lod0Geometry ^| ■ ^| ^| ^| 
-| lod1MultiSurface ^| ^| ● ^| ^| | 
-| lod2Solid ^| ^| ^| ● ^| | 
-| lod3Solid ^| ^| ^| ^| ● | 
+| lod0Geometry ^| ■ ^| ^| ^|
+| lod1MultiSurface ^| ^| ● ^| ^| |
+| lod2Solid ^| ^| ^| ● ^| |
+| lod3Solid ^| ^| ^| ^| ● |
 .3+| wtr:WaterSurface　 | ^| ^| ^| ● ^| ● | 水部の形状を構成する面のうち、水面に使用する。
-| lod2Surface ^| ^| ^| ● ^| | 
-| lod3Surface ^| ^| ^| ^| ● | 
+| lod2Surface ^| ^| ^| ● ^| |
+| lod3Surface ^| ^| ^| ^| ● |
 .3+| wtr:WaterGroundSurface　 | ^| ^| ^| ● ^| ● | 水底の境界面に使用する。
-| lod2Surface ^| ^| ^| ● ^| | 
-| lod3Surface ^| ^| ^| ^| ● | 
+| lod2Surface ^| ^| ^| ● ^| |
+| lod3Surface ^| ^| ^| ^| ● |
 .3+| wtr:WaterClosureSurface | ^| ^| ^| ■ ^| ■ | 仮想的な面を作成したい場合に使用する。
 | lod2Surface ^| ^| ^| ■ ^| .2+| WaterClosureSurfaceを作る場合は必須とする。
 | lod3Surface ^| ^| ^| ^| ■
@@ -92,7 +92,7 @@ LOD0では、Wtr:Waterbodyのみを使用し、水部の形状を線として表
 |===
 ^h| ^h| LOD1
 ^h| 取得例
-a| image::images/506.webp[]
+a| image::images/506.webp.png[]
 
 ^h| 説明 | 水涯線により囲まれた面を取得する。中洲がある場合は、中洲を除いた面となる。
 
@@ -111,7 +111,7 @@ a| image::images/506.webp[]
 |===
 ^h| ^h| LOD2
 ^h| 取得例
-a| image::images/507.webp[]
+a| image::images/507.webp.png[]
 
 ^h| 説明
 a| 水涯線に囲まれた水面（WaterSurface）及び水底面（WaterGroundSurface）を境界面とする立体を作成する。 +
@@ -135,7 +135,7 @@ a| 水涯線に囲まれた水面（WaterSurface）及び水底面（WaterGround
 |===
 ^h| ^h| LOD3
 ^h| 取得例
-a| image::images/508.webp[]
+a| image::images/508.webp.png[]
 
 ^h| 説明 | 水部モデル（LOD2）である、水涯線により囲まれた水面（WaterSurface）、水底面（WaterGroundSurface）及び閉鎖面（WaterClosureSurface）を境界面とする立体から、橋梁下部の橋脚部分など水中にある構造物を除いた立体となる。 水中にある構造物と水部の境界面は水底面とする。
 

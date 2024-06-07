@@ -24,7 +24,7 @@
 
 表L- 1　橋梁モデルの概要
 
-image::images/303.webp[]
+image::images/303.webp.png[]
 
 橋梁モデル（LOD0）は、橋梁の形状を、「公共測量標準図式」に従い、線又は面により表現する。
 
@@ -63,9 +63,9 @@ image::images/303.webp[]
 .表 L-2　橋梁モデルに使用する地物型と空間属性
 |===
 ^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| LOD4 ^h| 適用
-.9+| brid:Bridge | ^| ● ^| ● ^| ● ^| ● ^| ● | 
+.9+| brid:Bridge | ^| ● ^| ● ^| ● ^| ● ^| ● |
 | uro:lod0Geometry ^| ● ^| ^| ^| ^| | 数値地形図の取得方法に従う。
-| brid:lod1Solid ^| ^| ● ^| ^| ^| | 
+| brid:lod1Solid ^| ^| ● ^| ^| ^| |
 | brid:lod2MultiSurface ^| ^| ^| ■ ^| ^| | LOD2.0の場合は必須とする。
 | brid:lod2Solid ^| ^| ^| ■ ^| ^| | LOD2.1の場合は必須とする。
 | brid:lod3MultiSurface ^| ^| ^| ^| ■ ^| | MultiSurfaceまたはSolidとする。
@@ -73,8 +73,8 @@ image::images/303.webp[]
 | brid:lod4MultiSurface ^| ^| ^| ^| ^| ■ | MultiSurfaceまたはSolidとする。
 | brid:lod4Solid ^| ^| ^| ^| ^| ■ | MultiSurfaceまたはSolidとする。
 .8+| brid:BridgePart
-| 
-^| 
+|
+^|
 ^| ■
 ^| ■
 ^| ■
@@ -89,7 +89,7 @@ a| 一つの橋梁を複数に分け、それぞれに属性を与えたい場�
 | brid:lod3Solid ^| ^| ^| ^| ■ ^| | MultiSurfaceまたはSolidとする。
 | brid:lod4MultiSurface ^| ^| ^| ^| ^| ■ | MultiSurfaceまたはSolidとする。
 | brid:lod4Solid ^| ^| ^| ^| ^| ■ | MultiSurfaceまたはSolidとする。
-.5+| brid:BridgeConstructionElement　 | ^| ^| ^| ○ ^| ■ ^| ● | LOD2.1で使用できる。 LOD3では、橋脚及び橋台は、横断歩道橋、ペデストリアンデッキ及び跨線橋の場合に必須とする。 
+.5+| brid:BridgeConstructionElement　 | ^| ^| ^| ○ ^| ■ ^| ● | LOD2.1で使用できる。 LOD3では、橋脚及び橋台は、横断歩道橋、ペデストリアンデッキ及び跨線橋の場合に必須とする。
 | brid:lod1Geometry ^| ^| ^| ^| ^| | 対象外とする。
 | brid:lod2Geometry ^| ^| ^| ■ ^| ^| | MultiSurfaceを基本とする。
 | brid:lod3Geometry ^| ^| ^| ^| ■ ^| | MultiSurfaceを基本とする。
@@ -107,13 +107,13 @@ a| 一つの橋梁を複数に分け、それぞれに属性を与えたい場�
 | brid:lod3MultiSurface ^| ^| ^| ^| ■ ^| | brid: OuterFloorSurfaceを作る場合は必須とする。
 | brid:lod4MultiSurface ^| ^| ^| ^| ^| ■ | brid: OuterFloorSurfaceを作る場合は必須とする。
 .4+| brid:WallSurface　 | ^| ^| ^| ■ ^| ● ^| ● | 橋梁の形状を構成する面のうち、側方の面に使用する。 LOD2.1の場合は必須とする。
-| brid:lod2MultiSurface ^| ^| ^| ■ ^| ^| | 
-| brid:lod3MultiSurface ^| ^| ^| ^| ● ^| | 
-| brid:lod4MultiSurface ^| ^| ^| ^| ^| ● | 
+| brid:lod2MultiSurface ^| ^| ^| ■ ^| ^| |
+| brid:lod3MultiSurface ^| ^| ^| ^| ● ^| |
+| brid:lod4MultiSurface ^| ^| ^| ^| ^| ● |
 .4+| brid:GroundSurface　 | ^| ^| ^| ■ ^| ● ^| ● | 橋梁の形状を構成する面のうち、接地する下向きの面に使用する。 LOD2.1では必須とする。
-| brid:lod2MultiSurface ^| ^| ^| ■ ^| ^| | 
-| brid:lod3MultiSurface ^| ^| ^| ^| ● ^| |  
-| brid:lod4MultiSurface ^| ^| ^| ^| ^| ● | 
+| brid:lod2MultiSurface ^| ^| ^| ■ ^| ^| |
+| brid:lod3MultiSurface ^| ^| ^| ^| ● ^| |
+| brid:lod4MultiSurface ^| ^| ^| ^| ^| ● |
 .4+| brid:OuterCeilingSurface　 | ^| ^| ^| ■ ^| ■ ^| ■ | 壁面のうち、接地しない下向きの面に使用する。
 | brid:lod2MultiSurface ^| ^| ^| ■ ^| ^| | brid:OuterCeilingSurfaceを作る場合は必須とする。
 | brid:lod3MultiSurface ^| ^| ^| ^| ■ ^| | brid:OuterCeilingSurfaceを作る場合は必須とする。
@@ -122,37 +122,37 @@ a| 一つの橋梁を複数に分け、それぞれに属性を与えたい場�
 | brid:lod2MultiSurface ^| ^| ^| ■ ^| ^| | ClosureSurfaceを作成する場合は必須とする。
 | brid:lod3MultiSurface ^| ^| ^| ^| ■ ^| | ClosureSurfaceを作成する場合は必須とする。
 | brid:lod4MultiSurface ^| ^| ^| ^| ^| ■ | ClosureSurfaceを作成する場合は必須とする。
-.2+| brid:InteriorWallSurface　　 | ^| ^| ^| ^| ^| ○ | 
+.2+| brid:InteriorWallSurface　　 | ^| ^| ^| ^| ^| ○ |
 | brid:lod4MultiSurface ^| ^| ^| ^| ^| ■ | InteriorWallSurfaceを作成する場合は必須とする。
-.2+| brid:CeilingSurface　　 | ^| ^| ^| ^| ^| ○ | 
+.2+| brid:CeilingSurface　　 | ^| ^| ^| ^| ^| ○ |
 | brid:lod4MultiSurface ^| ^| ^| ^| ^| ■ | CeilingSurfaceを作成する場合は必須とする。
-.2+| brid:FloorSurface　　 | ^| ^| ^| ^| ^| ○ | 
+.2+| brid:FloorSurface　　 | ^| ^| ^| ^| ^| ○ |
 | brid:lod4MultiSurface ^| ^| ^| ^| ^| ■ | FloorSurfaceを作成する場合は必須とする。
-.3+| brid:Door | ^| ^| ^| ^| ○ ^| ○ | 
+.3+| brid:Door | ^| ^| ^| ^| ○ ^| ○ |
 | brid:lod3MultiSurface ^| ^| ^| ^| ■ ^| | Doorを作成する場合は必須とする。
 | brid:lod4MultiSurface ^| ^| ^| ^| ^| ■ | Doorを作成する場合は必須とする。
-.3+| brid:Window | ^| ^| ^| ^| ○ ^| ○ | 
+.3+| brid:Window | ^| ^| ^| ^| ○ ^| ○ |
 | brid:lod3MultiSurface ^| ^| ^| ^| ■ ^| | Windowを作成する場合は必須とする。
 | brid:lod4MultiSurface ^| ^| ^| ^| ^| ■ | Windowを作成する場合は必須とする。
-.3+| brid:BridgeRoom　 | ^| ^| ^| ^| ^| ○ | 
+.3+| brid:BridgeRoom　 | ^| ^| ^| ^| ^| ○ |
 | brid:lod4Solid ^| ^| ^| ^| ^| ■ | Solidを基本とする。
 | brid:lod4MultiSurface ^| ^| ^| ^| ^| ■ | Solidを構成できない場合はMultiSurfaceとする。
-.2+| brid:IntBridgeInstallation　　 | ^| ^| ^| ^| ^| ○ | 
+.2+| brid:IntBridgeInstallation　　 | ^| ^| ^| ^| ^| ○ |
 | brid:lod4Geometry
-^| 
-^| 
-^| 
-^| 
+^|
+^|
+^|
+^|
 ^| ■
 a| IntBridgeInstallation を作成する場合は必須とする。 +
 MultiSufaceを基本とする。
 
-.2+| brid:BridgeFurniture　 | ^| ^| ^| ^| ^| ○ | 
+.2+| brid:BridgeFurniture　 | ^| ^| ^| ^| ^| ○ |
 | brid:lod4Geometry
-^| 
-^| 
-^| 
-^| 
+^|
+^|
+^|
+^|
 ^| ■
 a| IntBridgeInstallation を作成する場合は必須とする。 +
 MultiSufaceを基本とする。
@@ -208,21 +208,21 @@ LOD0は、数値地形図との互換性を考慮した区分である。LOD1は
 |===
 ^h| 4+^h| LOD1
 ^h| 取得例
-a| image::images/304.webp["",200]
-a| 
+a| image::images/304.webp.png["",200]
+a|
 　 +
 　 +
 　
 
-image::images/305.webp["",200]
+image::images/305.webp.png["",200]
 
-a| image::images/306.webp["",200]
-a| 
+a| image::images/306.webp.png["",200]
+a|
 　 +
 　 +
 　
 
-image::images/307.webp["",200]
+image::images/307.webp.png["",200]
 
 ^h| 説明 | 道路橋及び鉄道橋は、橋梁の縁線をつないだ外周を、地上から一律の高さで下向きに押し出した立体とする。ひ開部は含めない。 橋梁モデル（LOD0）に橋脚の外周が含まれている場合は、橋脚を含めた外周とする。 | 桟道橋は、縁線又は斜面に接している側の道路縁及び橋脚の外周を含む桟道橋の外周を、地表面から一律の高さで下向き押し出した立体とする。 | 横断歩道橋、跨線橋及びペデストリアンデッキは、構造物の上方からの正射影の外周を、地表面から一律の高さで上向きに押し出した立体とする。 | 徒橋の縁線をつないだ外周を、地表面から一律の高さで下向きに押し出した立体とする。
 
@@ -243,8 +243,8 @@ image::images/307.webp["",200]
 |===
 ^h| 3+^h| LOD2.0
 ^h| 取得例
-a| image::images/308.webp["",180]
-2+a| image::images/309.webp[]
+a| image::images/308.webp.png["",180]
+2+a| image::images/309.webp.png[]
 
 ^h| 説明
 | 道路橋、桟道橋及び鉄道橋は、床版の外周を、高さをもった面として表現する。
@@ -253,9 +253,9 @@ a| image::images/308.webp["",180]
 
 ^h| 3+^h| LOD2.1
 ^h| 取得例
-a| image::images/310.webp["",250]
-a| image::images/311.webp[]
-a| image::images/312.webp["",250]
+a| image::images/310.webp.png["",250]
+a| image::images/311.webp.png[]
+a| image::images/312.webp.png["",250]
 
 ^h| 説明
 a| 道路橋、桟道橋及び鉄道橋は、床版及び主桁によって、厚みと高さをもった立体として表現する。 +
@@ -281,14 +281,14 @@ a| 横断歩道橋等に本体と一体的な屋根があった場合は、境�
 |===
 h| 2+^h| LOD3
 ^h| 取得例
-a| image::images/313.webp["",300]
-a| image::images/314.webp["",300]
+a| image::images/313.webp.png["",300]
+a| image::images/314.webp.png["",300]
 
 ^h| 説明 | 道路橋及び鉄道橋の場合は、床版及び主桁以外の構造上不可欠な部材をBridgeConstructionElementとして取得する。上図の例では橋脚が該当する。それ以外の橋梁の外観を構成する部材をBridgeInstallationとして取得する。上図の例では高欄が該当する。 | 跨線橋の場合は、道路橋及び鉄道橋と同様に、床版及び主桁以外の構造上不可欠な部材をBridgeConstructionElementとして取得する。上図の例では橋脚が該当する。それ以外の橋梁の外観を構成する部材をBridgeInstallationとして取得する。上図の例では高欄が該当する。
 h| 2+^h| LOD3
 ^h| 取得例
-a| image::images/315.webp["",300]
-a| image::images/316.webp["",300]
+a| image::images/315.webp.png["",300]
+a| image::images/316.webp.png["",300]
 
 ^h| 説明
 a| ケーブル橋の場合、パイロン、ケーブル及び吊材を構造上不可欠な部材（BridgeConstructionElement）として取得する。 +

@@ -43,5 +43,5 @@
 
 「空間属性」は「地物型」をデータとして記述するために「幾何型」を指定する論理的な構造（応用スキーマ）であり、これに従い「都市オブジェクト」と「幾何オブジェクト」の関係が具体的に記述される。例えば、建築物型（bldg:Building）は立体型（gml:Solid）によって、壁面型（bldg:WallSurface）は面型（gml:Polygon）によって記述することが空間属性によって定義されている。これに従い、建築物オブジェクト（bldg:Building）は立体オブジェクト（gml:Solid）によって、壁面オブジェクト（bldg:WallSurface）は面オブジェクト（gml:Polygon）によって具体的なデータとして記述される。
 
-image::images/002.webp[title=" 図 0-2　用語間の関係"]
+image::images/002.webp.png[title=" 図 0-2　用語間の関係"]
 

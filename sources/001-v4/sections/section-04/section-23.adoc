@@ -34,19 +34,19 @@ image::images/416.svg[]
 [cols="1,1,2",options="noheader"]
 |===
 .2+| 型の定義
-2+a| 
+2+a|
 都市オブジェクトの集まり。 +
 建築物モデル（LOD4）では、多数の層からなる建築物における、それぞれの層（階）を部屋（bldg:Room）の集まりとして表現する場合及び施設管理者等により任意に設定された防火区画等の領域（任意設定空間）を部屋の集まりとして表現する場合に使用する。 +
  +
 下図は、建築物の1階の部屋をgrp:CityObjectGroupとしてグループ化した例である。
 
-image::images/417.webp["",300,title=" 図　grp:CityObjectGroupの使用例"]
+image::images/417.webp.png["",300,title=" 図　grp:CityObjectGroupの使用例"]
 
-2+a| 
+2+a|
 CityGMLでは、建築物の階や任意設定空間に相当する地物は存在しない。そこで、グループ化の仕組みであるgrp:CityObjectGroupを建築物の階を表現するために使用する。 +
 属性gml:nameにより階又は任意設定空間を識別する名称を付与し、関連役割grp:groupMemberにより同じ階又は任意に設定空間に存在する部屋（bldg:Room）を参照することで、建築物の階を表現する。
 
-image::images/418.webp["",500]
+image::images/418.webp.png["",500]
 
 例えば、1階に六つの部屋が存在する場合、上図のように、1階を示すgrp:CityObjectGroupは、六つのbldg:Roomを関連役割grp:groupMemberにより参照する。
 

@@ -26,17 +26,17 @@
 .表 H-1　交通（航路）モデルに使用する地物型と空間属性
 |===
 h| 地物型 | 空間属性 ^| LOD0 ^| LOD1 ^| LOD2 ^| LOD3 ^| 適用
-.5+| uro:Waterway | ^| ● ^| ● ^| ● ^| | 
-| lod0Network ^| ● ^| ^| ^| | 
-| lod1MultiSurface ^| ^| ● ^| ^| | 
-| lod2MultiSurface ^| ^| ^| ● ^| | 
-| lod3MultiSurface ^| ^| ^| ^| | 
-.3+| tran:TrafficArea | 　 ^| ^| ^| ● ^| | 
-| lod2MultiSurface ^| ^| ^| ● ^| | 
-| lod3MultiSurface ^| ^| ^| ^| ^| 
+.5+| uro:Waterway | ^| ● ^| ● ^| ● ^| |
+| lod0Network ^| ● ^| ^| ^| |
+| lod1MultiSurface ^| ^| ● ^| ^| |
+| lod2MultiSurface ^| ^| ^| ● ^| |
+| lod3MultiSurface ^| ^| ^| ^| |
+.3+| tran:TrafficArea | 　 ^| ^| ^| ● ^| |
+| lod2MultiSurface ^| ^| ^| ● ^| |
+| lod3MultiSurface ^| ^| ^| ^| ^|
 .3+| tran:AuxiliaryTrafficArea | ^| ^| ^| ^| | 航路には存在しない。
-| lod2MultiSurface ^| ^| ^| ^| | 
-| lod3MultiSurface ^| ^| ^| ^| | 
+| lod2MultiSurface ^| ^| ^| ^| |
+| lod3MultiSurface ^| ^| ^| ^| |
 
 |===
 
@@ -56,7 +56,7 @@ h| 地物型 | 空間属性 ^| LOD0 ^| LOD1 ^| LOD2 ^| LOD3 ^| 適用
 
 <center><b>表 H-2　交通（航路）モデルの概要</b></center>
 
-image::images/287.webp[]
+image::images/287.webp.png[]
 
 交通（航路）モデルは、高さを持たない。航路オブジェクトを3次元の地形データに貼り付けることで3次元的に表示して利用することを想定している。
 

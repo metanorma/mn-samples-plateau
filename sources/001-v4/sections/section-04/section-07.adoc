@@ -28,7 +28,7 @@
 |===
 h| ^h| LOD0
 h| 取得例
-a| image::images/190.webp["",220]
+a| image::images/190.webp.png["",220]
 
 h| 説明 | 航路の区域の中心線を取得する。
 
@@ -50,7 +50,7 @@ Complex
 | • 航路
 a| • 航路の区域の中心線を取得する。 +
 • 高さは0とする。
-| 
+|
 
 |===
 
@@ -73,7 +73,7 @@ a| • 航路の区域の中心線を取得する。 +
 |===
 h| ^h| LOD1
 h| 取得例
-a| image::images/191.webp["",250]
+a| image::images/191.webp.png["",250]
 
 h| 説明
 a| 法令により指定された航路の区域を取得する。 +
@@ -98,7 +98,7 @@ a| • 航路の区域の境界線をつないだ面を取得する。 +
 • 以下の場所で区切る。 +
 　• 航路が交差する区間 +
 • 高さは0とする。
-| 
+|
 
 |===
 
@@ -121,7 +121,7 @@ a| • 航路の区域の境界線をつないだ面を取得する。 +
 |===
 h| ^h| LOD2
 h| 取得例
-a| image::images/192.webp["",250]
+a| image::images/192.webp.png["",250]
 
 h| 説明
 a| 航路の境界線をつないだ面を取得する。 +
@@ -138,7 +138,7 @@ a| 航路の境界線をつないだ面を取得する。 +
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
-| LOD2 | ● | Waterway | MultiSurface | • 航路 | • TrafficAreaの集まりとして作成する。 | 
+| LOD2 | ● | Waterway | MultiSurface | • 航路 | • TrafficAreaの集まりとして作成する。 |
 | LOD2 | ● | TrafficArea | MultiSurface | • 港則法及び海上交通安全法により指定された航法 | • 航路の境界をつないだ面を取得する。 • 高さは0とする。 | 航路の区域内に一つの航路しか存在しない場合、LOD1の形状と一致する。
 | LOD2 | | AuxiliaryTrafficArea | | | | 航路は航行可能な区域が指定されることから、航路には、AuxiliaryTrafficAreaが存在しない。
 
@@ -161,16 +161,16 @@ a| 航路の境界線をつないだ面を取得する。 +
 |===
 ^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| 適用
 .5+| uro:Waterway | ^| ● ^| ● ^| ● | | LOD0、LOD1及びLOD2を対象とする。
-| tran:lod0Network ^| ● | | | | 
-| tran:lod1MultiSurface | ^| ● | | | 
-| tran:lod2MultiSurface | | ^| ● | | 
-| tran:lod3MultiSurface | | | | | 
-.3+| tran:TrafficArea | | | ^| ● | | 
-| tran:lod2MultiSurface | | ^| ● | | 
-| tran:lod3MultiSurface | | | | | 
+| tran:lod0Network ^| ● | | | |
+| tran:lod1MultiSurface | ^| ● | | |
+| tran:lod2MultiSurface | | ^| ● | |
+| tran:lod3MultiSurface | | | | |
+.3+| tran:TrafficArea | | | ^| ● | |
+| tran:lod2MultiSurface | | ^| ● | |
+| tran:lod3MultiSurface | | | | |
 .3+| tran:AuxiliaryTrafficArea | | | | | | 対象としない。
-| tran:lod2MultiSurface | | | | | 
-| tran:lod3MultiSurface | | | | | 
+| tran:lod2MultiSurface | | | | |
+| tran:lod3MultiSurface | | | | |
 
 |===
 
@@ -196,10 +196,10 @@ image::images/193.svg[]
 [cols="1,1,2"]
 |===
 | 型の定義
-2+a| 
+2+a|
 航路とは、船舶の通路として法令で定める海域である。標準製品仕様書では、原則として、以下に示す港則法や海上交通安全法によって規定される航路（法定航路）を対象とする。 • 港則法施行規則第8条 • 海上交通安全法第2条 法定航路とは、港則法における特定港、及び特定港以外の港では海上交通安全法によって規定された航路をいう。[国土数値情報　航路データ] なお、ユースケースの必要に応じて港湾法によって規定される開発保全航路を航路に含むことができる。 開発保全航路とは、港湾法の規定による港湾区域及び河川法に規定する河川区域以外の水域における船舶の交通を確保するため、開発及び保全に関する工事を必要とする航路をいう。[国土数値情報　航路データ] 航路の延長方向は、以下の場所で区切る。 • 航路が交差する部分（二つ以上の航路が交わる部分）
 
-image::images/194.webp["",350]
+image::images/194.webp.png["",350]
 
 tran:Waterwayに含まれるtran:TrafficAreaは、同一航路でなければならない。 +
 同一のLODにおいて、連続する航路の境界は一致しなければならない。
@@ -260,11 +260,11 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 [cols="1,1,2"]
 |===
 | 型の定義
-2+a| 
+2+a|
 法令により指定された進行方向に区切った航路の部分。 +
 高さは0とする。
 
-image::images/195.webp["",250,title=" 図　LOD2における航路のtran:TrafficAreaの例"]
+image::images/195.webp.png["",250,title=" 図　LOD2における航路のtran:TrafficAreaの例"]
 
 h| 上位の型 2+| tran:_TransportationObject
 h| ステレオタイプ 2+| << FeatureType >>
@@ -313,7 +313,7 @@ h| (tran:lod3MultiSurface) | gml:MultiSurface [0..1] | 標準製品仕様書で�
 2+a| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。 +
 属性名称と属性の値の対で構成される。コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
 
-h| 上位の型 2+| ― 
+h| 上位の型 2+| ―
 h| ステレオタイプ 2+| << DataType >>
 3+h| 自身に定義された属性
 h| 属性名 h| 属性の型及び多重度 h| 定義
@@ -331,7 +331,7 @@ a| 拡張された属性の値。値は名称は、コ－ドリスト（KeyValue
 |===
 | 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
 
-h| 上位の型 2+| ― 
+h| 上位の型 2+| ―
 h| ステレオタイプ 2+| << DataType >>
 3+h| 自身に定義された属性
 h| 属性名 h| 属性の型及び多重度 h| 定義

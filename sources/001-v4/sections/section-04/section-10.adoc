@@ -20,7 +20,7 @@
 |===
 ^h| ^h| LOD1
 ^h| 取得例
-a| image::images/207.webp["",600]
+a| image::images/207.webp.png["",600]
 
 ^h| 説明 | 区域の境界により囲まれた面を取得する。 高さは0とする。
 
@@ -60,7 +60,7 @@ a| • 区域の境界に囲まれた面を取得する。 +
 |===
 h| 地物型 h| 空間属性 h| LOD0 h| LOD1 h| LOD2 h| LOD3 h| 適用
 2+| urf:Zoneを継承する地物型 | ^| ● | | .2+| 都市計画の区域は、Zoneを継承するクラスを用いて記述する。
-| | urf:lod1MultiSurface | ^| ● | | 
+| | urf:lod1MultiSurface | ^| ● | |
 
 |===
 
@@ -298,10 +298,10 @@ image::images/227.svg[]
 [cols="1,1,2"]
 |===
 | 型の定義
-2+a| 
+2+a|
 都市計画区域。都市の実態や将来の計画を勘案して、一体の都市地域となるべき区域として指定された区域。（都市計画法第5条第1項）
 
-image::images/228.webp["",250,title=" 図　都市計画区域の例"]
+image::images/228.webp.png["",250,title=" 図　都市計画区域の例"]
 
 複数の市区町村にまたがる都市計画区域の場合は、市区町村の境界で区切る。
 
@@ -441,10 +441,10 @@ a| 準都市計画区域の範囲。高さを0とする。 +
 [cols="1,1,2"]
 |===
 | 型の定義
-2+a| 
+2+a|
 都市計画法第7条に基づき、無秩序な市街地の拡大による環境悪化の防止、計画的な公共施設整備などによる良好な市街地の形成などを行うため、都市計画区域について区分された、計画的な市街化を図るべき区域「市街化区域」と、市街化を抑制すべき「市街化調整区域」。（都市計画法第7条）
 
-image::images/229.webp["",250,title=" 図　区域区分（市街化調整地域）の例"]
+image::images/229.webp.png["",250,title=" 図　区域区分（市街化調整地域）の例"]
 
 複数の市区町村にまたがる市街化区域又は市街化調整区域の場合は、市区町村の境界で区切る。
 
@@ -507,11 +507,11 @@ a| 市街化区域又は市街化調整区域の範囲。高さを0とする。 
 [cols="1,1,2"]
 |===
 | 型の定義
-2+a| 
+2+a|
 地域地区。都市計画法第8条に基づき、都市計画区域内の土地をその利用目的によって区分し、建築物などに対するルールを決め、土地の合理的な利用を図るために指定された区域。 +
 下位の地物型として定義されていない地域地区を記述したい場合にのみ、この地物型を使用し、属性「urf:function」でその内容を識別する。下位の地物型として定義されている場合は、必ず下位の地物型を使用すること。
 
-image::images/230.webp["",350,title=" 図　urf:DistrictsAndZones及び下位型の例"]
+image::images/230.webp.png["",350,title=" 図　urf:DistrictsAndZones及び下位型の例"]
 
 （3D地形の上でLOD1のbldg:Buildingと重畳表示している）
 
@@ -3338,7 +3338,7 @@ h| (gml:boundedBy) | gml:Envelope [0..1] | オブジェクトの範囲と空間�
 h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
 h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
 h| (urf:class) | gml:CodeType [0..1] | 区域の分類。
-| urf:function | gml:CodeType [0..*] | 都市計画法第11条第2項に定める都市施設の種類。コードリスト（UrbanFacility_function.xml）に定義されていない医療施設を記述する場合は、その種類を文字列で記述する。多重度は任意となっているが、運用上必須とする。 
+| urf:function | gml:CodeType [0..*] | 都市計画法第11条第2項に定める都市施設の種類。コードリスト（UrbanFacility_function.xml）に定義されていない医療施設を記述する場合は、その種類を文字列で記述する。多重度は任意となっているが、運用上必須とする。
 h| (urf:usage) | gml:CodeType [0..*] | 区域の用途。
 | urf:validFrom | xs:date [0..1] | 効力を生じる日（当初の決定日）の年月日を西暦（YYYY-MM-DD）で記述する。多重度は任意となっているが、運用上必須とする。年月日が不明な場合は、0001-01-01とする。
 | urf:validFromType | gml:CodeType [0..1] | 効力を生じる日（当初の決定日）の種類。コードリスト（Common_validType.xml）より選択する。多重度は任意となっているが、運用上必須とする。
@@ -5621,7 +5621,7 @@ a| 都市計画法第12条の4第2項に定める区域。高さを0とする。
 | urf:keyValuePairAttributeurf:dataQualityAttribute | uro:DataQualityAttribute [0..1] | 作成したデータの品質に関する情報。必須とする。
 | urf:boundary | urf:Boundary [0..*] | 区域を構成する境界。区域の外周及び内周となる境界線。
 | urf:districtDevelopmentPlan | urf:DistrictDevelopmentPlan [0..*] | 地域における歴史的風致の維持及び向上に関する法律第31条第2項第1号に示される「歴史的風致維持向上地区整備計画」。
-h| (urf:promotionDistrict) | urf:PromotionDistrict [0..*] | 
+h| (urf:promotionDistrict) | urf:PromotionDistrict [0..*] |
 
 |===
 
@@ -5682,7 +5682,7 @@ a| 都市計画法第12条の4第2項に定める区域。高さを0とする。
 | urf:keyValuePairAttributeurf:dataQualityAttribute | uro:DataQualityAttribute [0..1] | 作成したデータの品質に関する情報。必須とする。
 | urf:boundary | urf:Boundary [0..*] | 区域を構成する境界。区域の外周及び内周となる境界線。
 | urf:districtDevelopmentPlan | urf:DistrictDevelopmentPlan [0..*] | 防災街区整備地区計画に定められた特定建築物地区整備計画及び防災街区整備地区整備計画。
-h| (urf:promotionDistrict) | urf:PromotionDistrict [0..*] | 
+h| (urf:promotionDistrict) | urf:PromotionDistrict [0..*] |
 3+h| 自身に定義された関連役割
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:zonalDisasterPreventionFacilities | urf:ZonalDisasterPreventionFacility [0..*] | 防災街区整備地区計画に計画された地区防災施設及び特定地区防災施設。
@@ -5793,11 +5793,11 @@ h| (urf:city) | gml:CodeType [0..1] | 区域が所在する市区町村の市区
 | urf:note | gml:StringOrRefType [0..1] | その他区域に関して特筆すべき事項。
 h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）。
 | urf:location | xs:string [0..1] | 地区整備計画の位置。町丁目又は字まで記載する。
-h| (urf:districtFacilitiesAllocation) | gml:StringOrRefType [0..1] | 
+h| (urf:districtFacilitiesAllocation) | gml:StringOrRefType [0..1] |
 | urf:buildingRestrictions | gml:StringOrRefType [0..1] | 密集市街地整備法第32条第4項第2号に定める建築物等の制限。
-h| (urf:urbanGreenSpaceConservation) | gml:StringOrRefType [0..1] | 
-h| (urf:activityRestrictionInFarmland) | gml:StringOrRefType [0..1] | 
-h| (urf:landuseRestrictions) | gml:StringOrRefType [0..1] | 
+h| (urf:urbanGreenSpaceConservation) | gml:StringOrRefType [0..1] |
+h| (urf:activityRestrictionInFarmland) | gml:StringOrRefType [0..1] |
+h| (urf:landuseRestrictions) | gml:StringOrRefType [0..1] |
 3+h| 継承する関連役割
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
@@ -5806,7 +5806,7 @@ a| 都市計画法第12条の4第2項に定める区域。高さを0とする。
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:boundary | urf:Boundary [0..*] | 区域を構成する境界。区域の外周及び内周となる境界線。
-h| (urf:districtFacility) | urf:DistrictFacility [0..*] | 
+h| (urf:districtFacility) | urf:DistrictFacility [0..*] |
 | urf:district | urf:District [0..*] | 当該地区整備計画に定められた防災地区。
 
 |===
@@ -5865,7 +5865,7 @@ a| 都市計画法第12条の4第2項に定める区域。高さを0とする。
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:boundary | urf:Boundary [0..*] | 区域を構成する境界。区域の外周及び内周となる境界線。
-h| (urf:districtFacility) | urf:DistrictFacility [0..*] | 
+h| (urf:districtFacility) | urf:DistrictFacility [0..*] |
 | urf:district | urf:District [0..*] | 当該地区整備計画に定められた防災地区。
 
 |===
@@ -5913,10 +5913,10 @@ h| (urf:city) | gml:CodeType [0..1] | 区域が所在する市区町村の市区
 | urf:note | gml:StringOrRefType [0..1] | その他区域に関して特筆すべき事項。
 h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）。
 | urf:location | xs:string [0..1] | 地区整備計画の位置。町丁目又は字まで記載する。
-h| (urf:districtFacilitiesAllocation) | gml:StringOrRefType [0..1] | 
+h| (urf:districtFacilitiesAllocation) | gml:StringOrRefType [0..1] |
 | urf:buildingRestrictions | gml:StringOrRefType [0..1] | 幹線道路の沿道の整備に関する法律第9条第6号第2号に定める建築物等の制限。
 | urf:urbanGreenSpaceConservation | gml:StringOrRefType [0..1] | 幹線道路の沿道の整備に関する法律第9条第6号第3号に定める現に存する樹林地、草地等で良好な居住環境を確保するため必要なものの保全に関する事項。
-h| (urf:activityRestrictionInFarmland) | gml:StringOrRefType [0..1] | 
+h| (urf:activityRestrictionInFarmland) | gml:StringOrRefType [0..1] |
 | urf:landuseRestrictions | gml:StringOrRefType [0..1] | 幹線道路の沿道の整備に関する法律第9条第6号第4号に定める土地の利用に関する事項その他沿道の整備に関する事項。
 3+h| 自身に定義された属性
 h| 属性名 h| 属性の型及び多重度 h| 定義
@@ -5977,7 +5977,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 | urf:location | xs:string [0..1] | 地区整備計画の位置。町丁目又は字まで記載する。
 | urf:districtFacilitiesAllocation | gml:StringOrRefType [0..1] | 集落地域整備法第5条第5項第2号に定める建築物等の制限。
 | urf:buildingRestrictions | gml:StringOrRefType [0..1] | 集落地域整備法第5条第5項第3号に定める現に存する樹林地、草地等で良好な居住環境を確保するため必要なものの保全に関する事項。
-h| (urf:urbanGreenSpaceConservation) | gml:StringOrRefType [0..1] | 
+h| (urf:urbanGreenSpaceConservation) | gml:StringOrRefType [0..1] |
 | urf:activityRestrictionInFarmland | gml:StringOrRefType [0..1] | 集落地域整備法第5条第5項第4号に定める土地の利用に関する事項。
 | urf:landuseRestrictions | gml:StringOrRefType [0..1] | 集落地域整備法第5条第5項第1号に定める集落地区施設の配置及び規模。
 3+h| 自身に定義された属性
@@ -6046,7 +6046,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 | urf:districtFacilitiesAllocation | gml:StringOrRefType [0..1] | 地域における歴史的風致の維持及び向上に関する法律第31条第4項第1号に定める地区施設の配置及び規模。
 | urf:buildingRestrictions | gml:StringOrRefType [0..1] | 地域における歴史的風致の維持及び向上に関する法律第31条第4項第2号に定める建築物等の制限。
 | urf:urbanGreenSpaceConservation | gml:StringOrRefType [0..1] | 地域における歴史的風致の維持及び向上に関する法律第31条第4項第3号に定める現に存する樹林地、草地等で良好な居住環境を確保するため必要なものの保全に関する事項。
-h| (urf:activityRestrictionInFarmland) | gml:StringOrRefType [0..1] | 
+h| (urf:activityRestrictionInFarmland) | gml:StringOrRefType [0..1] |
 | urf:landuseRestrictions | gml:StringOrRefType [0..1] | 地域における歴史的風致の維持及び向上に関する法律第31条第4項第4号に定める土地の利用に関する事項。
 3+h| 継承する関連役割
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
@@ -6056,7 +6056,7 @@ a| 都市計画法第12条の4第2項に定める区域。高さを0とする。
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:boundary | urf:Boundary [0..*] | 区域を構成する境界。区域の外周及び内周となる境界線。
-h| (urf:districtFacility) | urf:DistrictFacility [0..*] | 
+h| (urf:districtFacility) | urf:DistrictFacility [0..*] |
 | urf:district | urf:District [0..*] | 当該地区整備計画に定められた地区。
 
 |===
@@ -6572,7 +6572,7 @@ h| (urf:usage) | gml:CodeType [0..*] | 用途。
 | urf:finalNotificationDate | xs:date [0..1] | 告示（最終）の日付。
 | urf:urbanPlanType | gml:CodeType [0..1] | 指定された区域が属する都市計画区域の区分。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された区域が属する区域区分。
-| urf:nominalArea | gml:MeasureType | 公式な面積。単位はm2。 
+| urf:nominalArea | gml:MeasureType | 公式な面積。単位はm2。
 | urf:prefecture | gml:CodeType [0..1] | 都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
 | urf:city | gml:CodeType [0..1] | 市区町村コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
 | urf:reference | xs:anyURI | 位置図対応番号。
