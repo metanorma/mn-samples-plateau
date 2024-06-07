@@ -1,54 +1,52 @@
 [[toc4_25]]
-=== 　施設管理の応用スキーマ
+=== 施設管理の応用スキーマ
 
 施設を管理するために必要な情報を定義する。
 
 これらは、都市オブジェクトの属性となる。
 
-　
-
 [[toc4_25_01]]
-==== 　施設管理属性のLOD
+==== 施設管理属性のLOD
 
 施設管理属性はそれ自身で空間属性をもたないため、LODは定義しない。
 
 [[toc4_25_02]]
-==== 　施設管理属性の応用スキーマクラス図
+==== 施設管理属性の応用スキーマクラス図
 
 [[toc4_25_02_01]]
-===== (1)　Urban Object（i-UR）
+===== Urban Object（i-UR）
 
-===== 1)　施設管理のための拡張属性
+====== 施設管理のための拡張属性
 
 image::images/420.svg[]
 
-===== 2)　河川管理施設の拡張属性
+====== 河川管理施設の拡張属性
 
 image::images/421.svg[]
 
-===== 3)　港湾施設の拡張属性
+====== 港湾施設の拡張属性
 
 image::images/422.svg[]
 
-===== 4)　漁港施設の拡張属性
+====== 漁港施設の拡張属性
 
 image::images/423.svg[]
 
-===== 5)　工事・点検記録の拡張属性
+====== 工事・点検記録の拡張属性
 
 image::images/424.svg[]
 
-===== 6)　公園長寿命化計画の拡張属性
+====== 公園長寿命化計画の拡張属性
 
 image::images/425.svg[]
 
 [[toc4_25_03]]
-==== 　施設管理属性の応用スキーマ文書
+==== 施設管理属性の応用スキーマ文書
 
 [[toc4_25_03_01]]
-===== (1)　施設管理の拡張属性：Urban Object（i-UR）
+===== 施設管理の拡張属性：Urban Object（i-UR）
 
-===== 1)　uro:FacilityIdAttribute
+====== uro:FacilityIdAttribute
 
 [cols="1,1,2"]
 |===
@@ -56,10 +54,10 @@ image::images/425.svg[]
 2+a| 管理施設の識別に関する情報を定義したデータ型。 +
 河川管理施設の場合にはこれを継承する下位型を用いて記述する。
 
-| 上位の型 2+| ―
-| ステレオタイプ 2+| << DataType >>
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:id | xs:string [0..1] | 構造物の識別子。
 | uro:partId | xs:string[0..1] | 構造物を部分（Part）に分けて記述する場合の各部分を識別するための番号。
 | uro:branchId | xs:string [0..1] | 枝番。同一の構造物ではないが、一連の構造物として管理したい場合に、それぞれを識別するための番号。
@@ -78,27 +76,25 @@ a| 構造物が所在する市区町村の市区町村コ－ド。JIS X0401に�
 
 |===
 
-　
-
-===== 2)　uro:FacilityTypeAttribute
+====== uro:FacilityTypeAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 管理施設の用途に関する情報を定義したデータ型。
 
-| 上位の型 2+| ―
-| ステレオタイプ 2+| << DataType >>
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:class | gml:CodeType [0..1] | 管理施設の区分。コードリスト（FacilityTypeAttribute_class.xml）から選択する。
 | uro:function | gml:CodeType [0..*] | 管理施設の用途。コードリスト（FacilityTypeAttribute_function.xml）から選択する。
 
 |===
 
 [[toc4_25_03_02]]
-===== (2)　河川管理の拡張属性：Urban Object（i-UR）
+===== 河川管理の拡張属性：Urban Object（i-UR）
 
-===== 1) uro:RiverFacilityIdAttribute
+====== uro:RiverFacilityIdAttribute
 
 [cols="1,1,2"]
 |===
@@ -106,12 +102,12 @@ a| 構造物が所在する市区町村の市区町村コ－ド。JIS X0401に�
 2+a| 河川管理施設の識別に関する情報を定義したデータ型。 +
 堤防及び護岸の場合は、上流側及び下流側の距離標及び追加距離を記述する。
 
-| 上位の型 2+| uro:FacilityIdAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:FacilityIdAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:id | xs:string [0..1] | 構造物の識別子。
-| (uro:partID) | xs:integer [0..1] | 構造物を部分（Part）に分けて記述する場合の各部分を識別するための番号。
+h| (uro:partID) | xs:integer [0..1] | 構造物を部分（Part）に分けて記述する場合の各部分を識別するための番号。
 | uro:branchID | xs:integer [0..1] | 枝番。同一の構造物ではないが、一連の構造物として管理したい場合に、それぞれを識別するための番号。
 | uro:prefecture | gml:CodeType [0..*] | 構造物が所在する都道府県の都道府県コ－ド。JIS X0401に定義される2桁の半角数字。コードリスト（Common_localPublicAuthorities.xml）より選択する。複数の都道府県に跨って存在する場合は、複数の都道府県コードを記述する。
 | uro:city
@@ -119,14 +115,14 @@ a| 構造物が所在する市区町村の市区町村コ－ド。JIS X0401に�
 a| 構造物が所在する市区町村の市区町村コ－ド。JIS X0401に定義される2桁の半角数字とJIS X0402に定義される3桁の半角数字とを組み合わせた5桁の半角数字。政令市の場合は、区の市区町村コードとする。コードリスト（Common_localPublicAuthorities.xml）より選択する。 +
 複数の市区町村に跨って存在する場合は、複数の市区町村コードを記述する。
 
-| (uro:route) | xs:string [0..1] | 構造物が存在する路線名。
-| (uro:startPost) | xs:string [0..1] | 構造物の開始位置の距離標。
-| (uro:endPost) | xs:string [0..1] | 構造物の終了位置の距離標。
-| (uro:startLat) | xs:string [0..1] | 構造物の開始位置の緯度（北緯）。10進数により記述する。
-| (uro:startLong) | xs:string [0..1] | 構造物の開始位置の経度（東経）。10進数により記述する。
+h| (uro:route) | xs:string [0..1] | 構造物が存在する路線名。
+h| (uro:startPost) | xs:string [0..1] | 構造物の開始位置の距離標。
+h| (uro:endPost) | xs:string [0..1] | 構造物の終了位置の距離標。
+h| (uro:startLat) | xs:string [0..1] | 構造物の開始位置の緯度（北緯）。10進数により記述する。
+h| (uro:startLong) | xs:string [0..1] | 構造物の開始位置の経度（東経）。10進数により記述する。
 | uro:alternativeName | xs:string [0..*] | 別名。gml:nameで記述する正式な名称以外に、一般に普及している名称がある場合に記述する。
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:riverCode
 | gml:CodeType [1]
 a| 河川管理施設が存在する河川の河川コード。文字列とする。 +
@@ -153,21 +149,19 @@ a| 河川の名称。 +
 
 |===
 
-　
-
 [[toc4_25_03_03]]
-===== (3)　港湾施設の拡張属性：Urban Object（i-UR）
+===== 港湾施設の拡張属性：Urban Object（i-UR）
 
-===== 1)　uro:HarborFacility
+====== uro:HarborFacility
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 港湾施設である水域施設の属性を記述するためのデータ型。
 
-| 上位の型 2+| uro:PortAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:PortAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:facilityId | xs:string [0..1] | 水域施設の管理ID
 | uro:portFacilityDetailsType | gml:CodeType [1] | 宿泊施設、休憩所 等の施設の種類。コードリスト（PortAttribute_facilityDetailType.xml）より選択する。
 | uro:portName | xs:string [1] | 港湾名。
@@ -181,8 +175,8 @@ a| 特定技術基準対象施設 +
 「技術基準対象施設であつて、外郭施設その他の非常災害により損壊した場合において船舶の交通に支障を及ぼすおそれのあるものとして国土交通省令で定めるもの」 （港湾法第56条の2の21）。
 
 | uro:degradationLevel | xs:integer [0..1] | 性能低下度。
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:geologicalType | gml:CodeType [0..1] | 海底の地質名。コードリスト（PortAttribute_geologicalType.xml）より選択する。
 | uro:obstructingStructures | xs:string [0..1] | 構造物による制限－構造物名。
 | uro:structuralLimitations | gml:LengthType [0..1] | 構造物による制限。
@@ -201,18 +195,16 @@ a| 特定技術基準対象施設 +
 
 |===
 
-　
-
-===== 2)　uro:PortProtectiveFacility
+====== uro:PortProtectiveFacility
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 港湾施設である外郭施設の属性を記述するためのデータ型。
 
-| 上位の型 2+| uro:PortAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:PortAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:facilityId | xs:string [0..1] | 外殻施設の管理ID
 | uro:portFacilityDetailsType | gml:CodeType [1] | 宿泊施設、休憩所 等の施設の種類。コードリスト（PortAttribute_facilityDetailType.xml）より選択する。
 | uro:portName | xs:string [1] | 港湾名。
@@ -226,8 +218,8 @@ a| 特定技術基準対象施設 +
 「技術基準対象施設であつて、外郭施設その他の非常災害により損壊した場合において船舶の交通に支障を及ぼすおそれのあるものとして国土交通省令で定めるもの」 （港湾法第56条の2の21）。
 
 | uro:degradationLevel | xs:integer [0..1] | 性能低下度。
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:structureType | gml:CodeType [0..1] | 構造形式。コードリスト（ProtectiveFacility_structureType.xml）から選択する。
 | uro:mainMaterial | gml:CodeType [0..1] | 主要用材。コードリスト（Common_mainMaterial.xml）より選択する。
 | uro:totalCost | xs:integer [0..1] | 事業費－総額。
@@ -236,18 +228,16 @@ a| 特定技術基準対象施設 +
 
 |===
 
-　
-
-===== 3)　uro:MooringFacility
+====== uro:MooringFacility
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 港湾施設である係留施設の属性を記述するためのデータ型。
 
-| 上位の型 2+| uro:PortAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:PortAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:facilityId | xs:string [0..1] | 係留施設の管理ID
 | uro:portFacilityDetailsType | gml:CodeType [1] | 宿泊施設、休憩所 等の施設の種類。コードリスト（PortAttribute_facilityDetailType.xml）より選択する。
 | uro:portName | xs:string [1] | 港湾名。
@@ -261,8 +251,8 @@ a| 特定技術基準対象施設。 +
 「技術基準対象施設であつて、外郭施設その他の非常災害により損壊した場合において船舶の交通に支障を及ぼすおそれのあるものとして国土交通省令で定めるもの」 （港湾法第56条の2の21）。
 
 | uro:degradationLevel | xs:integer [0..1] | 性能低下度。
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:mainPartLength | gml:LengthType [0..1] | 延長－取付部を除く延長。
 | uro:totalLength | gml:LengthType [0..1] | 延長－取付部を含む延長。
 | uro:facilityWidth | gml:LengthType [0..1] | 施設の幅。
@@ -295,18 +285,16 @@ a| 特定技術基準対象施設。 +
 
 |===
 
-　
-
-===== 4)　uro:PortTransportationFacility
+====== uro:PortTransportationFacility
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 港湾施設である臨港交通施設の属性を記述するためのデータ型。
 
-| 上位の型 2+| uro:PortAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:PortAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:facilityId | xs:string [0..1] | 臨港交通施設の管理ID
 | uro:portFacilityDetailsType | gml:CodeType [1] | 宿泊施設、休憩所 等の施設の種類。コードリスト（PortAttribute_facilityDetailType.xml）より選択する。
 | uro:portName | xs:string [1] | 港湾名。
@@ -320,8 +308,8 @@ a| 特定技術基準対象施設 +
 「技術基準対象施設であつて、外郭施設その他の非常災害により損壊した場合において船舶の交通に支障を及ぼすおそれのあるものとして国土交通省令で定めるもの」 （港湾法第56条の2の21）。
 
 | uro:degradationLevel | xs:integer [0..1] | 性能低下度。
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:structureType | gml:CodeType [0..1] | 構造形式。コードリスト（PortAttribute_structureType.xml）より選択する。
 | uro:startingPoint | xs:string [0..1] | 起終点。
 | uro:length | gml:LengthType [0..1] | 規模_延長。
@@ -344,18 +332,16 @@ a| 特定技術基準対象施設 +
 
 |===
 
-　
-
-===== 5)　uro:NavigationAssistanceFacility
+====== uro:NavigationAssistanceFacility
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 港湾施設である航行補助施設の属性を記述するためのデータ型。
 
-| 上位の型 2+| uro:PortAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:PortAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:facilityId | xs:string [0..1] | 航行補助施設の管理ID
 | uro:portFacilityDetailsType | gml:CodeType [1] | 宿泊施設、休憩所 等の施設の種類。コードリスト（PortAttribute_facilityDetailType.xml）より選択する。
 | uro:portName | xs:string [1] | 港湾名。
@@ -369,26 +355,24 @@ a| 特定技術基準対象施設 +
 「技術基準対象施設であつて、外郭施設その他の非常災害により損壊した場合において船舶の交通に支障を及ぼすおそれのあるものとして国土交通省令で定めるもの」 （港湾法第56条の2の21）。
 
 | uro:degradationLevel | xs:integer [0..1] | 性能低下度。
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:totalCost | xs:integer [0..1] | 事業費－総額。
 | uro:subsidy | xs:string [0..1] | 事業費－補助金額。
 | uro:note | xs:string [0..1] | 備考。
 
 |===
 
-　
-
-===== 6)　uro:CargoHandlingFacility
+====== uro:CargoHandlingFacility
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 港湾施設である荷さばき施設の属性を記述するためのデータ型。
 
-| 上位の型 2+| uro:PortAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:PortAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:facilityId | xs:string [0..1] | 荷さばき施設の管理ID
 | uro:portFacilityDetailsType | gml:CodeType [1] | 宿泊施設、休憩所 等の施設の種類。コードリスト（PortAttribute_facilityDetailType.xml）より選択する。
 | uro:portName | xs:string [1] | 港湾名。
@@ -402,8 +386,8 @@ a| 特定技術基準対象施設 +
 「技術基準対象施設であつて、外郭施設その他の非常災害により損壊した場合において船舶の交通に支障を及ぼすおそれのあるものとして国土交通省令で定めるもの」 （港湾法第56条の2の21）。
 
 | uro:degradationLevel | xs:integer [0..1] | 性能低下度。
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:mainCargo | gml:CodeType [0..1] | 主要取扱貨物名。コードリスト（PortAttribute_mainCargo.xml）より選択する。
 | uro:mooringFacility | xs:string [0..1] | 係留施設名。
 | uro:liftableLoad | gml:MeasureType [0..1] | 荷役能力_吊り上げ荷重。
@@ -420,18 +404,16 @@ a| 特定技術基準対象施設 +
 
 |===
 
-　
-
-===== 7)　uro:PortPassengerFacility
+====== uro:PortPassengerFacility
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 港湾施設である旅客施設の属性を記述するためのデータ型。
 
-| 上位の型 2+| uro:PortAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:PortAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:facilityId | xs:string [0..1] | 旅客施設の管理ID
 | uro:portFacilityDetailsType | gml:CodeType [1] | 宿泊施設、休憩所 等の施設の種類。コードリスト（PortAttribute_facilityDetailType.xml）より選択する。
 | uro:portName | xs:string [1] | 港湾名。
@@ -445,8 +427,8 @@ a| 特定技術基準対象施設 +
 「技術基準対象施設であつて、外郭施設その他の非常災害により損壊した場合において船舶の交通に支障を及ぼすおそれのあるものとして国土交通省令で定めるもの」 （港湾法第56条の2の21）。
 
 | uro:degradationLevel | xs:integer [0..1] | 性能低下度。
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:length | gml:LengthType [0..1] | 長さ。
 | uro:width | gml:LengthType [0..1] | 幅員。
 | uro:mainMaterial | gml:CodeType [0..1] | 主要用材。コードリスト（Common_mainMaterial.xml）より選択する。
@@ -457,18 +439,16 @@ a| 特定技術基準対象施設 +
 
 |===
 
-　
-
-===== 8)　uro:PortStorageFacility
+====== uro:PortStorageFacility
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 港湾施設である保管施設の属性を記述するためのデータ型。
 
-| 上位の型 2+| uro:PortAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:PortAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:facilityId | xs:string [0..1] | 保管施設の管理ID
 | uro:portFacilityDetailsType | gml:CodeType [1] | 宿泊施設、休憩所 等の施設の種類。コードリスト（PortAttribute_facilityDetailType.xml）より選択する。
 | uro:portName | xs:string [1] | 港湾名。
@@ -482,8 +462,8 @@ a| 特定技術基準対象施設 +
 「技術基準対象施設であつて、外郭施設その他の非常災害により損壊した場合において船舶の交通に支障を及ぼすおそれのあるものとして国土交通省令で定めるもの」 （港湾法第56条の2の21）。
 
 | uro:degradationLevel | xs:integer [0..1] | 性能低下度。
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:innerTotalFloorArea | gml:MeasureType [0..1] | 臨港地区内－総床面積。
 | uro:innerOfSiteArea | gml:MeasureType [0..1] | 臨港地区内－敷地面積。
 | uro:outerOfTotalFloorArea | gml:MeasureType [0..1] | 臨港地区外－総床面積。
@@ -497,18 +477,16 @@ a| 特定技術基準対象施設 +
 
 |===
 
-　
-
-===== 9)　uro:ShipServiceFacility
+====== uro:ShipServiceFacility
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 港湾施設である船舶役務用施設の属性を記述するためのデータ型。
 
-| 上位の型 2+| uro:PortAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:PortAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:facilityId | xs:string [0..1] | 船舶役務用施設の管理ID
 | uro:portFacilityDetailsType | gml:CodeType [1] | 宿泊施設、休憩所 等の施設の種類。コードリスト（PortAttribute_facilityDetailType.xml）より選択する。
 | uro:portName | xs:string [1] | 港湾名。
@@ -522,8 +500,8 @@ a| 特定技術基準対象施設 +
 「技術基準対象施設であつて、外郭施設その他の非常災害により損壊した場合において船舶の交通に支障を及ぼすおそれのあるものとして国土交通省令で定めるもの」 （港湾法第56条の2の21）。
 
 | uro:degradationLevel | xs:integer [0..1] | 性能低下度。
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:shipType | xs:string [0..1] | 対象船舶－船型（D／W）。
 | uro:supplyAbility | xs:integer [0..1] | 供給能力容量。
 | uro:supplyAbilityUnit | gml:CodeType [0..1] | 供給能力単位。コードリスト（ShipServiceFacility_supplyAbilityUnit.xml）より選択する。
@@ -537,18 +515,16 @@ a| 特定技術基準対象施設 +
 
 |===
 
-　
-
-===== 10)　uro:PortWasteTreatmentFacility
+====== uro:PortWasteTreatmentFacility
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 港湾施設である廃棄物処理施設の属性を記述するためのデータ型。
 
-| 上位の型 2+| uro:PortAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:PortAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:facilityId | xs:string [0..1] | 廃棄物処理施設の管理ID
 | uro:portFacilityDetailsType | gml:CodeType [1] | 宿泊施設、休憩所 等の施設の種類。コードリスト（PortAttribute_facilityDetailType.xml）より選択する。
 | uro:portName | xs:string [1] | 港湾名。
@@ -562,8 +538,8 @@ a| 特定技術基準対象施設 +
 「技術基準対象施設であつて、外郭施設その他の非常災害により損壊した場合において船舶の交通に支障を及ぼすおそれのあるものとして国土交通省令で定めるもの」 （港湾法第56条の2の21）。
 
 | uro:degradationLevel | xs:integer [0..1] | 性能低下度。
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:structureType | gml:CodeType [0..1] | 構造形式。コードリスト（PortAttribute_structureType.xml）より選択する。
 | uro:perimeter | gml:LengthType [0..1] | 延長_外周建設延長。
 | uro:mainPartLength | gml:LengthType [0..1] | 延長_機能保有延長。
@@ -584,18 +560,16 @@ a| 特定技術基準対象施設 +
 
 |===
 
-　
-
-===== 11)　uro:PortEnvironmentalImprovementFacility
+====== uro:PortEnvironmentalImprovementFacility
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 港湾施設である環境整備施設の属性を記述するためのデータ型。
 
-| 上位の型 2+| uro:PortAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:PortAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:facilityId | xs:string [0..1] | 環境整備施設の管理ID
 | uro:portFacilityDetailsType | gml:CodeType [1] | 宿泊施設、休憩所 等の施設の種類。コードリスト（PortAttribute_facilityDetailType.xml）より選択する。
 | uro:portName | xs:string [1] | 港湾名。
@@ -609,8 +583,8 @@ a| 特定技術基準対象施設 +
 「技術基準対象施設であつて、外郭施設その他の非常災害により損壊した場合において船舶の交通に支障を及ぼすおそれのあるものとして国土交通省令で定めるもの」 （港湾法第56条の2の21）。
 
 | uro:degradationLevel | xs:integer [0..1] | 性能低下度。
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:usage | xs:string [0..1] | 用途等。
 | uro:length | gml:LengthType [0..1] | 延長。
 | uro:area | gml:MeasureType [0..1] | 面積。
@@ -621,18 +595,16 @@ a| 特定技術基準対象施設 +
 
 |===
 
-　
-
-===== 12)　uro:PortPollutionControlFacility
+====== uro:PortPollutionControlFacility
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 港湾施設である公害防止施設の属性を記述するためのデータ型。
 
-| 上位の型 2+| uro:PortAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:PortAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:facilityId | xs:string [0..1] | 公害防止施設の管理ID
 | uro:portFacilityDetailsType | gml:CodeType [1] | 宿泊施設、休憩所 等の施設の種類。コードリスト（PortAttribute_facilityDetailType.xml）より選択する。
 | uro:portName | xs:string [1] | 港湾名。
@@ -646,8 +618,8 @@ a| 特定技術基準対象施設 +
 「技術基準対象施設であつて、外郭施設その他の非常災害により損壊した場合において船舶の交通に支障を及ぼすおそれのあるものとして国土交通省令で定めるもの」 （港湾法第56条の2の21）。
 
 | uro:degradationLevel | xs:integer [0..1] | 性能低下度。
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:length | gml:LengthType [0..1] | 延長。
 | uro:width | gml:LengthType [0..1] | 幅員。
 | uro:crossSectionalArea | gml:MeasureType [0..1] | 断面積。
@@ -660,18 +632,16 @@ a| 特定技術基準対象施設 +
 
 |===
 
-　
-
-===== 13)　uro: PortWelfareFacility
+====== uro: PortWelfareFacility
 
 [cols=3]
 |===
 | 型の定義 2+| 港湾施設である厚生施設の属性を記述するためのデータ型。
 
-| 上位の型 2+| uro:PortAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:PortAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:facilityId | xs:string [0..1] | 厚生施設の管理ID
 | uro:portFacilityDetailsType | gml:CodeType [1] | 宿泊施設、休憩所 等の施設の種類。コードリスト（PortAttribute_facilityDetailType.xml）より選択する。
 | uro:portName | xs:string [1] | 港湾名。
@@ -685,25 +655,23 @@ a| 特定技術基準対象施設 +
 「技術基準対象施設であつて、外郭施設その他の非常災害により損壊した場合において船舶の交通に支障を及ぼすおそれのあるものとして国土交通省令で定めるもの」 （港湾法第56条の2の21）。
 
 | uro:degradationLevel | xs:integer [0..1] | 性能低下度。
-| 属性名 | 属性の型及び多重度 | 定義
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:totalFloorArea | gml:MeasureType [0..1] | 面積_防波堤等の外側。
 | uro:totalCost | xs:integer [0..1] | 事業費－総額。
 | uro:note | xs:string [0..1] | 備考。
 
 |===
 
-　
-
-===== 14)　uro: PortManagementFacility
+====== uro: PortManagementFacility
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 港湾施設である管理施設の属性を記述するためのデータ型。
 
-| 上位の型 2+| uro:PortAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:PortAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:facilityId | xs:string [0..1] | 管理施設の管理ID
 | uro:portFacilityDetailsType | gml:CodeType [1] | 宿泊施設、休憩所 等の施設の種類。コードリスト（PortAttribute_facilityDetailType.xml）より選択する。
 | uro:portName | xs:string [1] | 港湾名。
@@ -717,8 +685,8 @@ a| 特定技術基準対象施設 +
 「技術基準対象施設であつて、外郭施設その他の非常災害により損壊した場合において船舶の交通に支障を及ぼすおそれのあるものとして国土交通省令で定めるもの」 （港湾法第56条の2の21）。
 
 | uro:degradationLevel | xs:integer [0..1] | 性能低下度。
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:totalFloorArea | gml:MeasureType [0..1] | 総床面積。
 | uro:numberOfShipTypes | xs:integer [0..1] | 船型数量。
 | uro:unitOfShipType | gml:CodeType [0..1] | 船型単位。コードリスト（PortManagementFacility_unitOfShipType.xml）より選択する。
@@ -731,18 +699,16 @@ a| 特定技術基準対象施設 +
 
 |===
 
-　
-
-===== 15)　uro:CyberportMarinaAndPBS
+====== uro:CyberportMarinaAndPBS
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 港湾施設であるマリーナ/PBSの属性を記述するためのデータ型。
 
-| 上位の型 2+| uro:PortAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:PortAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:facilityId | xs:string [0..1] | マリーナ/PBSの管理ID
 | uro:portFacilityDetailsType | gml:CodeType [1] | 宿泊施設、休憩所 等の施設の種類。コードリスト（PortAttribute_facilityDetailType.xml）より選択する。
 | uro:portName | xs:string [1] | 港湾名。
@@ -756,8 +722,8 @@ a| 特定技術基準対象施設 +
 「技術基準対象施設であつて、外郭施設その他の非常災害により損壊した場合において船舶の交通に支障を及ぼすおそれのあるものとして国土交通省令で定めるもの」 （港湾法第56条の2の21）。
 
 | uro:degradationLevel | xs:integer [0..1] | 性能低下度。
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:geologicalType | gml:CodeType [0..1] | 海底の地質名。コードリスト（PortAttribute_geologicalType.xml）より選択する。
 | uro:obstructingStructures | xs:string [0..1] | 構造物による制限－構造物名。
 | uro:mainPartLength | gml:LengthType [0..1] | 延長－取付部を除く延長。
@@ -802,21 +768,21 @@ a| 特定技術基準対象施設 +
 |===
 
 [[toc4_25_03_04]]
-===== (4)　漁港施設の拡張属性：Urban Object（i-UR）
+===== 漁港施設の拡張属性：Urban Object（i-UR）
 
-===== 1)　uro:FishingPortFacilityAttribute
+====== uro:FishingPortFacilityAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 漁港施設の内容を表すデータ型。
 
-| 上位の型 2+| uro:FishingPortAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:FishingPortAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:facilityId | xs:string [0..1] | 漁港施設の管理ID
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:facilityDetailsType | gml:CodeType [1] | 宿泊施設、休憩所 等の施設の種類。コードリスト（FishingPortFacilityAttribute_facilityDetailsType.xml）より選択する。
 | uro:portName | xs:string [1] | 漁港の名称。
 | uro:portType
@@ -847,21 +813,19 @@ a| 漁港漁場整備法施行規則 第九条に基づく漁港の種類。 +
 
 |===
 
-　
-
-===== 2)　uro:FishingPortCapacityAttribute
+====== uro:FishingPortCapacityAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 漁港施設の能力を記述するためのデータ型。
 
-| 上位の型 2+| uro:FishingPortAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:FishingPortAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:facilityId | xs:string [0..1] | 漁港施設の管理ID
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:capacity
 | xs:string [0..1]
 a| 能力。 +
@@ -970,21 +934,21 @@ a| 能力_その他。 +
 |===
 
 [[toc4_25_03_05]]
-===== (5)　工事・点検記録のための拡張属性：Urban Object（i-UR）
+===== 工事・点検記録のための拡張属性：Urban Object（i-UR）
 
-===== 1)　uro:MaintenanceHistoryAttribute
+====== uro:MaintenanceHistoryAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 施設の工事・点検情報を記録するためのデータ型。
 
-| 上位の型 2+| uro:FacilityAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:FacilityAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:facilityId | xs:string [0..1] | 工事・点検の対象となる施設の識別子。
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:maintenanceType | gml:CodeType [1] | 点検・工事の種類。コードリスト（MaintenanceHistoryAttribute_maintenanceType.xml）より選択する。
 | uro:maintenanceFiscalYear | xs:gYear [0..1] | 点検・工事を行った西暦年度。
 | uro:maintenanceYear | xs:gYear [0..1] | 点検・工事を行った西暦年。
@@ -994,24 +958,22 @@ a| 能力_その他。 +
 
 |===
 
-　
-
 [[toc4_25_03_06]]
-===== (6)　公園施設長寿命化計画属性のための拡張属性
+===== 公園施設長寿命化計画属性のための拡張属性
 
-===== 1)　uro:ParkFacilityLongevityPlan 
+====== uro:ParkFacilityLongevityPlan
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 公園施設長寿命化計画に関する情報を定義したデータ型。 公園施設とは、都市公園法第2条第2項、都市公園法施行令第5条で定義する施設のうち、建物又は工作物に係る全ての施設を指す（公園施設長寿命化計画策定指針（案）【改定版】（平成30年10月））。
 
-| 上位の型 2+| uro:FacilityAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:FacilityAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:facilityId | xs:string [0..1] | 工事・点検の対象となる施設の識別子。 公園施設を一意に識別するコード（施設コード）を記述する。 公園施設の種類を表す3文字と、4桁の通し番号を公園施設の識別子とする。[記述例] BEN0001 ENR：園路広場、SYU：修景施設、KYU：休養施設、YUG：遊戯施設、 UND：運動施設、KYO：教養施設、BEN：便益施設、KAN：管理施設、 SNO：その他施設 都市公園内の植生は、植生の種類を表す3文字と、4桁の通し番号を識別子とする。 GRN：植生
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:parkCode | gml:CodeType [1] | 国営公園を一意に識別するコード。 コードリスト（Common_parkCode.xml）より選択する。 国営公園以外の都市公園を追加する場合は、Common_parkCode.xmlを拡張する。
 | uro:parkName | gml:CodeType [1] | 国営公園の名称。 コードリスト（Common_parkName.xml）より選択する。 国営公園以外の都市公園を追加する場合は、Common_parkCode.xmlを拡張する。
 | uro:parkType | gml:CodeType [1] | 都市公園の種別。 コードリスト（Common_parkType.xml）より選択する。
@@ -1034,52 +996,46 @@ a| 能力_その他。 +
 
 |===
 
-　
-
-===== 2)　uro:NumberOfFacilities
+====== uro:NumberOfFacilities
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 公園施設の数量に関する情報を定義したデータ型。
 
-| 上位の型 2+| ―
-| ステレオタイプ 2+| << DataType >>
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:quantity | xs:integer [1] | 公園施設の数量。
 | uro:quantityUnit | gml:CodeType [1] | 公園施設の数量単位。コードリスト（Common_unitOfNumberOfParkFacilities.xml）から選択する。
 
 |===
 
-　
-
-===== 3)　uro:RepairsBeforeParkHealthAssessment
+====== uro:RepairsBeforeParkHealthAssessment
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 健全度調査以前に実施した補修に関する情報を定義したデータ型。
 
-| 上位の型 2+| ―
-| ステレオタイプ 2+| << DataType >>
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:repair | gml:CodeType [1] | 健全度調査以前に実施した補修の有無。コードリスト（Common_parkRepair）から選択する。
 | uro:repairFiscalYear | xs:gYear[0..1] | 補修の実施年度。
 
 |===
 
-　
-
-===== 4)　uro:ParkHealthAssessment
+====== uro:ParkHealthAssessment
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 健全度調査結果に関する情報を定義したデータ型。
 
-| 上位の型 2+| ―
-| ステレオタイプ 2+| << DataType >>
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:assessmentFiscalYear | xs:gYear [1] | 健全度調査の実施年度。
 | uro:deteriorationStatus | xs:string[0..1] | 健全度調査結果で確認した劣化状況。
 | uro:condition | gml:CodeType[0..1] | 健全度調査結果で確認した健全度。 コードリスト（Common_parkHealthAssessmentCondition.xml）より選択する。
@@ -1087,57 +1043,51 @@ a| 能力_その他。 +
 
 |===
 
-　
-
-===== 5)　uro:LongevityMeasures
+====== uro:LongevityMeasures
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 長寿命化対策に関する情報を定義したデータ型。
 
-| 上位の型 2+| ―
-| ステレオタイプ 2+| << DataType >>
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:fiscalYearForCountermeasures | xs:gYear [1] | 対策実施の年度（将来の予定を含む）。
 | uro:countermeasuresCost | uro:CountermeasuresCostPropertyType[0..1] | 対策費用（将来の予定を含む）。
 | uro:description | xs:string[0..1] | 対策の内容（将来の予定を含む）。
 
 |===
 
-　
-
-===== 6)　uro:CountermeasuresCost
+====== uro:CountermeasuresCost
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 長寿命化対策の費用に関する情報を定義したデータ型。
 
-| 上位の型 2+| ―
-| ステレオタイプ 2+| << DataType >>
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:cost | xs:integer[0..1] | 対策の費用（将来の予定を含む）。
 | uro:costUnit | xs:string [1] | 費用の単位。通常は“千円”。
 
 |===
 
-　
-
 [[toc4_25_04]]
-==== 　施設管理属性で使用するコードリストと列挙型
+==== 施設管理属性で使用するコードリストと列挙型
 
 [[toc4_25_04_01]]
-===== (1)　施設管理の拡張属性で使用するコードリスト
+===== 施設管理の拡張属性で使用するコードリスト
 
-===== 1)　FacilityTypeAttribute_class.xml
+====== FacilityTypeAttribute_class.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| FacilityTypeAttribute_class.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/FacilityTypeAttribute_class.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/FacilityTypeAttribute_class.xml
+h| コード 2+h| 説明
 | 01 2+| 河川管理施設
 | 02 2+| 砂防施設
 | 03 2+| 道路施設
@@ -1149,16 +1099,14 @@ a| 能力_その他。 +
 
 |===
 
-　
-
-===== 2)　FacilityTypeAttribute_function.xml
+====== FacilityTypeAttribute_function.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| FacilityTypeAttribute_function.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/FacilityTypeAttribute_function.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/FacilityTypeAttribute_function.xml
+h| コード 2+h| 説明
 | 0501 2+| 港湾水域施設
 | 0502 2+| 港湾外郭施設
 | 0503 2+| 港湾係留施設
@@ -1211,16 +1159,16 @@ a| 能力_その他。 +
 |===
 
 [[toc4_25_04_02]]
-===== (2)　河川管理施設の拡張属性で使用するコードリスト
+===== 河川管理施設の拡張属性で使用するコードリスト
 
-===== 1)　RiverFacilityIdAttribute_sideType.xml
+====== RiverFacilityIdAttribute_sideType.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| RiverFacilityIdAttribute_sideType.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/RiverFacilityIdAttribute_sideType.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/RiverFacilityIdAttribute_sideType.xml
+h| コード 2+h| 説明
 | 1 2+| 左岸
 | 2 2+| 右岸
 | 3 2+| 中洲
@@ -1233,16 +1181,16 @@ a| 能力_その他。 +
 **** 出典：河川基盤地図ガイドライン（案）
 
 [[toc4_25_04_03]]
-===== (3)　港湾施設の拡張属性で使用するコードリスト
+===== 港湾施設の拡張属性で使用するコードリスト
 
-===== 1)　PortAttribute_facilityDetailType.xml
+====== PortAttribute_facilityDetailType.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| PortAttribute_facilityDetailType.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortAttribute_facilityDetailType.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortAttribute_facilityDetailType.xml
+h| コード 2+h| 説明
 | 1 2+| 上屋
 | 2 2+| 移動式
 | 3 2+| 待合所
@@ -1297,16 +1245,14 @@ a| 能力_その他。 +
 
 |===
 
-　
-
-===== 2)　PortAttribute_portStatus.xml
+====== PortAttribute_portStatus.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| PortAttribute_portStatus.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortAttribute_portStatus.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortAttribute_portStatus.xml
+h| コード 2+h| 説明
 | 1 2+| 国際拠点
 | 2 2+| 重要
 | 3 2+| 地方
@@ -1317,78 +1263,68 @@ a| 能力_その他。 +
 
 |===
 
-　
-
-===== 3)　PortAttribute_grantType.xml
+====== PortAttribute_grantType.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| PortAttribute_grantType.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortAttribute_grantType.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortAttribute_grantType.xml
+h| コード 2+h| 説明
 | 1 2+| 国有施設
 | 2 2+| 補助施設
 | 3 2+| 単独施設
 
 |===
 
-　
-
-===== 4)　PortAttribute_storageCapacityUnit.xml
+====== PortAttribute_storageCapacityUnit.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| PortAttribute_storageCapacityUnit.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortAttribute_storageCapacityUnit.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortAttribute_storageCapacityUnit.xml
+h| コード 2+h| 説明
 | 1 2+| m3
 | 2 2+| kl
 | 3 2+| 隻
 
 |===
 
-　
-
-===== 5)　ShipServiceFacility_supplyAbilityUnit.xml
+====== ShipServiceFacility_supplyAbilityUnit.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| ShipServiceFacility_supplyAbilityUnit.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/ShipServiceFacility_supplyAbilityUnit.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/ShipServiceFacility_supplyAbilityUnit.xml
+h| コード 2+h| 説明
 | 1 2+| kl/時間
 | 2 2+| ton/時間
 
 |===
 
-　
-
-===== 6)　PortManagementFacility_unitOfShipType.xml
+====== PortManagementFacility_unitOfShipType.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| PortManagementFacility_unitOfShipType.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortManagementFacility_unitOfShipType.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortManagementFacility_unitOfShipType.xml
+h| コード 2+h| 説明
 | 1 2+| G/T
 | 2 2+| ton
 
 |===
 
-　
-
-===== 7)　PortAttribute_geologicalType.xml
+====== PortAttribute_geologicalType.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| PortAttribute_geologicalType.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortAttribute_geologicalType.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortAttribute_geologicalType.xml
+h| コード 2+h| 説明
 | 1 2+| 岩
 | 2 2+| 礫
 | 3 2+| 砂
@@ -1401,16 +1337,14 @@ a| 能力_その他。 +
 
 |===
 
-　
-
-===== 8)　CyberportMarinaAndPBS_mainVessels.xml
+====== CyberportMarinaAndPBS_mainVessels.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| CyberportMarinaAndPBS_mainVessels.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/CyberportMarinaAndPBS_mainVessels.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/CyberportMarinaAndPBS_mainVessels.xml
+h| コード 2+h| 説明
 | 1 2+| 一般貨物船（荷役）
 | 2 2+| 旅 客 船（その他）
 | 3 2+| フェリー（荷役）
@@ -1418,16 +1352,14 @@ a| 能力_その他。 +
 
 |===
 
-　
-
-===== 9)　MooringFacility_mainVessels.xml
+====== MooringFacility_mainVessels.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| MooringFacility_mainVessels.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/MooringFacility_mainVessels.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/MooringFacility_mainVessels.xml
+h| コード 2+h| 説明
 | 1 2+| 一般貨物船（荷役）
 | 2 2+| 旅客船（その他）
 | 3 2+| フェリー（荷役）
@@ -1473,32 +1405,28 @@ a| 能力_その他。 +
 
 |===
 
-　
-
-===== 10)　PortAttribute_form.xml
+====== PortAttribute_form.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| PortAttribute_form.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortAttribute_form.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortAttribute_form.xml
+h| コード 2+h| 説明
 | 1 2+| 島式
 | 2 2+| 突堤式
 | 3 2+| さん橋式
 
 |===
 
-　
-
-===== 11)　CargoHandlingFacility_packingName.xml
+====== CargoHandlingFacility_packingName.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| CargoHandlingFacility_packingName.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/CargoHandlingFacility_packingName.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/CargoHandlingFacility_packingName.xml
+h| コード 2+h| 説明
 | 1 2+| コンテナ
 | 2 2+| ばら荷
 | 3 2+| パレット
@@ -1506,32 +1434,28 @@ a| 能力_その他。 +
 
 |===
 
-　
-
-===== 12)　HarborFacility_areaType.xml
+====== HarborFacility_areaType.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| HarborFacility_areaType.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/HarborFacility_areaType.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/HarborFacility_areaType.xml
+h| コード 2+h| 説明
 | 1 2+| 防波堤沖
 | 2 2+| 防波堤内
 | 3 2+| 防波堤内・沖
 
 |===
 
-　
-
-===== 13)　PortTransportationFacility_pavementType.xml
+====== PortTransportationFacility_pavementType.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| PortTransportationFacility_pavementType.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortTransportationFacility_pavementType.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortTransportationFacility_pavementType.xml
+h| コード 2+h| 説明
 | 1 2+| 砂利敷
 | 2 2+| アスファルト舗装
 | 3 2+| コンクリート舗装
@@ -1539,16 +1463,14 @@ a| 能力_その他。 +
 
 |===
 
-　
-
-===== 14)　PortTransportationFacility_routeType.xml
+====== PortTransportationFacility_routeType.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| PortTransportationFacility_routeType.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortTransportationFacility_routeType.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortTransportationFacility_routeType.xml
+h| コード 2+h| 説明
 | 1 2+| 単線
 | 2 2+| 複線
 | 3 2+| 複々線
@@ -1556,16 +1478,14 @@ a| 能力_その他。 +
 
 |===
 
-　
-
-===== 15)　PortAttribute_mainCargo.xml
+====== PortAttribute_mainCargo.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| PortAttribute_mainCargo.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortAttribute_mainCargo.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortAttribute_mainCargo.xml
+h| コード 2+h| 説明
 | 1 2+| 麦
 | 2 2+| 米
 | 3 2+| とうもろこし
@@ -1652,16 +1572,14 @@ a| 能力_その他。 +
 
 |===
 
-　
-
-===== 16)　ProtectiveFacility_structureType.xml
+====== ProtectiveFacility_structureType.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| ProtectiveFacility_structureType.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/ProtectiveFacility_structureType.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/ProtectiveFacility_structureType.xml
+h| コード 2+h| 説明
 | 1 2+| 直立
 | 2 2+| 傾斜
 | 3 2+| 混成
@@ -1692,16 +1610,14 @@ a| 能力_その他。 +
 
 |===
 
-　
-
-===== 17)　PortAttribute_structureType.xml
+====== PortAttribute_structureType.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| PortAttribute_structureType.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortAttribute_structureType.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortAttribute_structureType.xml
+h| コード 2+h| 説明
 | 1 2+| ケーソン（異形、消波ケーソンを含む）
 | 2 2+| ハイブリッドケーソン（異形、消波ケーソンを含む）
 | 3 2+| スリットケーソン（異形、消波ケーソンを含む）
@@ -1753,16 +1669,14 @@ a| 能力_その他。 +
 
 |===
 
-　
-
-===== 18)　PortWasteTreatmentFacilityAttribute_wasteType.xml
+====== PortWasteTreatmentFacilityAttribute_wasteType.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| PortWasteTreatmentFacilityAttribute_wasteType.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortWasteTreatmentFacilityAttribute_wasteType.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortWasteTreatmentFacilityAttribute_wasteType.xml
+h| コード 2+h| 説明
 | 1 2+| 一般廃棄物
 | 2 2+| 産業廃棄物
 | 3 2+| 公共残土
@@ -1771,16 +1685,16 @@ a| 能力_その他。 +
 |===
 
 [[toc4_25_04_04]]
-===== (4)　漁港施設の拡張属性で使用するコードリスト
+===== 漁港施設の拡張属性で使用するコードリスト
 
-===== 1)　FishingPortFacilityAttribute_facilityDetailsType.xml
+====== FishingPortFacilityAttribute_facilityDetailsType.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| FishingPortFacilityAttribute_facilityDetailsType.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/FishingPortFacilityAttribute_facilityDetailsType.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/FishingPortFacilityAttribute_facilityDetailsType.xml
+h| コード 2+h| 説明
 | 1 2+| 係船浮標
 | 2 2+| 護岸
 | 3 2+| 公害防止のための導水施設
@@ -1820,16 +1734,14 @@ a| 能力_その他。 +
 
 |===
 
-　
-
-===== 2)　FishingPortFacilityAttribute_portType.xml
+====== FishingPortFacilityAttribute_portType.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| FishingPortFacilityAttribute_portType.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/FishingPortFacilityAttribute_portType.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/FishingPortFacilityAttribute_portType.xml
+h| コード 2+h| 説明
 | 1 2+| 第1種
 | 2 2+| 第2種
 | 3 2+| 第3種
@@ -1837,16 +1749,14 @@ a| 能力_その他。 +
 
 |===
 
-　
-
-===== 3)　FishingPortFacilityAttribute_structureType.xml
+====== FishingPortFacilityAttribute_structureType.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| FishingPortFacilityAttribute_structureType.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/FishingPortFacilityAttribute_structureType.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/FishingPortFacilityAttribute_structureType.xml
+h| コード 2+h| 説明
 | 1 2+| 直立提
 | 2 2+| 傾斜堤
 | 3 2+| 混成提
@@ -1873,16 +1783,14 @@ a| 能力_その他。 +
 
 |===
 
-　
-
-===== 4)　Common_mainMaterial.xml
+====== Common_mainMaterial.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| Common_mainMaterial.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_mainMaterial.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_mainMaterial.xml
+h| コード 2+h| 説明
 | 1 2+| コンクリ－ト
 | 2 2+| 鉄筋コンクリ－ト
 | 3 2+| 鋼材・コンクリート
@@ -1898,16 +1806,16 @@ a| 能力_その他。 +
 |===
 
 [[toc4_25_04_05]]
-===== (5)　工事・点検記録の拡張属性で使用するコードリスト
+===== 工事・点検記録の拡張属性で使用するコードリスト
 
-===== 1)　MaintenanceHistoryAttribute_maintenanceType.xml
+====== MaintenanceHistoryAttribute_maintenanceType.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| MaintenanceHistoryAttribute_maintenanceType.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/MaintenanceHistoryAttribute_maintenanceType.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/MaintenanceHistoryAttribute_maintenanceType.xml
+h| コード 2+h| 説明
 | 1 2+| 初期工事
 | 2 2+| 改良工事
 | 3 2+| 補修工事
@@ -1922,16 +1830,16 @@ a| 能力_その他。 +
 |===
 
 [[toc4_25_04_06]]
-===== (6)　公園施設長寿命化計画の拡張属性で使用するコードリスト
+===== 公園施設長寿命化計画の拡張属性で使用するコードリスト
 
-===== 1)　Common_parkCode.xml
+====== Common_parkCode.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| Common_parkCode.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_parkCode.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_parkCode.xml
+h| コード 2+h| 説明
 | 1 2+| N1
 | 2 2+| N2
 | 3 2+| N3
@@ -1952,14 +1860,14 @@ a| 能力_その他。 +
 
 |===
 
-===== 2)　Common_parkName.xml
+====== Common_parkName.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| Common_parkName.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_parkName.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_parkName.xml
+h| コード 2+h| 説明
 | 1 2+| 国営武蔵丘陵森林公園
 | 2 2+| 国営飛鳥・平城宮跡歴史公園
 | 3 2+| 淀川河川公園
@@ -1980,14 +1888,14 @@ a| 能力_その他。 +
 
 |===
 
-===== 3)　Common_parkType.xml
+====== Common_parkType.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| Common_parkType.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_parkType.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_parkType.xml
+h| コード 2+h| 説明
 | 1 2+| 街区
 | 2 2+| 近隣
 | 3 2+| 地区
@@ -2005,14 +1913,14 @@ a| 能力_その他。 +
 
 |===
 
-===== 4)　Common_parkFacilityName.xml
+====== Common_parkFacilityName.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| Common_parkFacilityName.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_parkFacilityName.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_parkFacilityName.xml
+h| コード 2+h| 説明
 | 1010 2+| 舗装
 | 1020 2+| 縁石
 | 1030 2+| 橋梁
@@ -2185,14 +2093,14 @@ a| 能力_その他。 +
 
 |===
 
-===== 5)　Common_unitOfNumberOfParkFacilities.xml
+====== Common_unitOfNumberOfParkFacilities.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| Common_unitOfNumberOfParkFacilities.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_unitOfNumberOfParkFacilities.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_unitOfNumberOfParkFacilities.xml
+h| コード 2+h| 説明
 | 1 2+| ｍ
 | 2 2+| ㎡
 | 3 2+| ㎥
@@ -2210,28 +2118,28 @@ a| 能力_その他。 +
 
 |===
 
-===== 6)　Common_parkRepair.xml
+====== Common_parkRepair.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| Common_parkRepair.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_parkRepair.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_parkRepair.xml
+h| コード 2+h| 説明
 | 1 2+| 〇（施設の設置から今回の健全度調査までに補修を実施した）
 | 2 2+| ×（施設の設置から今回の健全度調査までに補修を実施していない）
 | 3 2+| -（施設の設置から今回の健全度調査までに補修を実施しているか不明）
 
 |===
 
-===== 7)　Common_parkFacilityMainMaterial.xml
+====== Common_parkFacilityMainMaterial.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| Common_parkFacilityMainMaterial.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_parkFacilityMainMaterial.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_parkFacilityMainMaterial.xml
+h| コード 2+h| 説明
 | 1 2+| アスファルト
 | 2 2+| コンクリート
 | 3 2+| レンガ
@@ -2260,27 +2168,27 @@ a| 能力_その他。 +
 
 |===
 
-===== 8)　Common_parkFacilityManagementType.xml
+====== Common_parkFacilityManagementType.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| Common_parkFacilityManagementType.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_parkFacilityManagementType.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_parkFacilityManagementType.xml
+h| コード 2+h| 説明
 | 1 2+| 予防
 | 2 2+| 事後
 
 |===
 
-===== 9)　Common_parkHealthAssessmentCondition.xml
+====== Common_parkHealthAssessmentCondition.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| Common_parkHealthAssessmentCondition.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_parkHealthAssessmentCondition.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_parkHealthAssessmentCondition.xml
+h| コード 2+h| 説明
 | 1 2+| A
 | 2 2+| B
 | 3 2+| C
@@ -2288,14 +2196,14 @@ a| 能力_その他。 +
 
 |===
 
-===== 10)　Common_parkHealthAssessmentUrgency.xml
+====== Common_parkHealthAssessmentUrgency.xml
 
 [cols="3,11,11"]
 |===
 | ファイル名 2+| Common_parkHealthAssessmentUrgency.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_parkHealthAssessmentUrgency.xml
-| コード 2+| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_parkHealthAssessmentUrgency.xml
+h| コード 2+h| 説明
 | 1 2+| 低
 | 2 2+| 中
 | 3 2+| 高

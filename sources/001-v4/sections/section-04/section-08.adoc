@@ -1,47 +1,39 @@
 [[toc4_08]]
-=== 　土地利用モデルの応用スキーマ
+=== 土地利用モデルの応用スキーマ
 
 土地利用とは、都市計画基礎調査の土地利用現況をいう。（都市計画法第6条）
-
-　
 
 出典： https://www.mlit.go.jp/toshi/tosiko/toshi_tosiko_tk_000187.html +
 　　　都市計画情報のデジタル化・オープンデータガイダンス +
 　　　都市計画基礎調査実施要領 +
 　　　都市計画データ標準製品仕様書
 
-　
-
 [[toc4_08_01]]
-==== 　土地利用モデルのLOD
+==== 土地利用モデルのLOD
 
 標準製品仕様書が対象とする土地利用（luse:LandUse）のLODは、LOD1とする。
 
-　
-
 [[toc4_08_01_01]]
-===== (1)　土地利用モデル（LOD1）
+===== 土地利用モデル（LOD1）
 
-===== 1)　土地利用モデル（LOD1）の概要
+====== 土地利用モデル（LOD1）の概要
 
 土地利用モデル（LOD1）では、土地利用の形状を面により表現する。土地利用モデル（LOD1）の取得イメージを表 4-53に示す。
 
 [cols="1,9"]
 .表 4-53　土地利用モデル（LOD1）の取得イメージ
 |===
-| ^| LOD1
-| 取得例
-a| image::images/196.png["",800]
+h| ^h| LOD1
+h| 取得例
+a| image::images/196.webp["",800]
 
-| 説明
+h| 説明
 a| 都市計画基礎調査の土地利用現況において作成された面に一致する。 +
 高さは0とする。
 
 |===
 
-　
-
-===== 2)　土地利用モデル（LOD1）の定義
+====== 土地利用モデル（LOD1）の定義
 
 [cols="1,1,1,1,1,3,2"]
 |===
@@ -65,17 +57,15 @@ a| • 土地利用現況を取得する。 +
 
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
-　
-
 [[toc4_08_01_02]]
-===== (2)　各LODにおける使用可能な地物型と空間属性
+===== 各LODにおける使用可能な地物型と空間属性
 
 土地利用モデルの各LODにおいて使用可能な地物型と空間属性を表 4-54に示す。
 
 [cols="2,2,1,1,1,1,2"]
 .表 4-54　土地利用モデルの記述に使用する地物型と空間属性
 |===
-^| 地物型 ^| 空間属性 ^| LOD0 ^| LOD1 ^| LOD2 ^| LOD3 ^| 適用
+^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| 適用
 .2+| luse:LandUse | | ^| ● | | .2+| 
 | luse:lod1MultiSurface | ^| ● | | 
 
@@ -89,61 +79,61 @@ a| • 土地利用現況を取得する。 +
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_08_02]]
-==== 　土地利用モデルの応用スキーマクラス図
+==== 土地利用モデルの応用スキーマクラス図
 
 [[toc4_08_02_01]]
-===== (1)　LandUse（CityGML）
+===== LandUse（CityGML）
 
 image::images/197.svg[]
 
 [[toc4_08_02_02]]
-===== (2)　Urban Object （i-UR）
+===== Urban Object （i-UR）
 
 image::images/198.svg[]
 
 [[toc4_08_03]]
-==== 　土地利用モデルの応用スキーマ文書
+==== 土地利用モデルの応用スキーマ文書
 
 [[toc4_08_03_01]]
-===== (1)　LandUse（CityGML）
+===== LandUse（CityGML）
 
-===== 1)　luse:LandUse
+====== luse:LandUse
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 都市計画基礎調査の土地利用現況。
 
-| 上位の型 2+| core:_CityObject
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| core:_CityObject
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | gml:description | gml:StringOrRefType [0..1] | 土地利用の概要。
 | gml:name | gml:CodeType [0..1] | 土地利用を識別する名称。文字列とする。
-| (gml:boundedBy) | gml:Envelope [0..1] | オブジェクトの範囲と空間参照系。
+h| (gml:boundedBy) | gml:Envelope [0..1] | オブジェクトの範囲と空間参照系。
 | core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
 | core:terminationDate | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | luse:class
 | gml:CodeType [0..1]
 a| 土地利用用途の大まかな区分。 +
 土地利用用途の区分は、都市計画基礎調査実施要領（国土交通省都市局）による区分とする。コードリスト（Common_landUseType.xml）より選択する。
 
-| (luse:function) | gml:CodeType [0..*] | 土地利用の機能。
-| (luse:usage) | gml:CodeType [0..*] | 土地利用の用途。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-3+| 自身に定義された関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
+h| (luse:function) | gml:CodeType [0..*] | 土地利用の機能。
+h| (luse:usage) | gml:CodeType [0..*] | 土地利用の用途。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | luse:lod1MultiSurface | gml:MultiSurface[0..1] | 土地利用が変化する境界により囲われた同一の土地利用の範囲。
 | uro:landUseDetailAttribute | uro:LandUseDetailAttribute [0..1] | 土地利用現況調査により得られた土地の詳細情報。
 | uro:luseKeyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | 属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -158,21 +148,19 @@ a| 作成したデータの品質に関する情報。 +
 
 |===
 
-　
-
 [[toc4_08_03_02]]
-===== (2)　Urban Object （i-UR）
+===== Urban Object （i-UR）
 
-===== 1)　uro:LandUseDetailAttribute
+====== uro:LandUseDetailAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 都市計画に関する基礎調査の一つとして、土地利用の現況と変化の動向を把握することを目的とし都市計画法第6条の規定に基づき実施される調査の結果。
 
-| 上位の型 2+| ー
-| ステレオタイプ 2+| << DataType >>
-3+| 属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ー
+h| ステレオタイプ 2+| << DataType >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:id | xs:string [0..1] | 土地利用現況図における識別子。
 | uro:orgLandUse | gml:CodeType [0..1] | 都市独自の分類による土地利用用途。コードリスト（LandUseDetailAttribute \_orgLandUse.xml）より選択する。本属性を使用する場合は、コードリストを作成すること。
 | uro:nominalArea | gml:MeasureType [0..1] | 図上計測面積を調整した値。単位はm2（uom=”m2”）とする。
@@ -201,9 +189,7 @@ JIS X0401に定義される2桁の半角数字とJIS X0402に定義される3桁
 
 |===
 
-　
-
-===== 2)　uro:KeyValuePairAttribute
+====== uro:KeyValuePairAttribute
 
 [cols="1,1,2"]
 |===
@@ -212,10 +198,10 @@ JIS X0401に定義される2桁の半角数字とJIS X0402に定義される3桁
 属性名称と属性の値の対で構成される。拡張属性は、コ－ド値をとる属性にのみ適用する。 +
 コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
 
-| 上位の型 2+| ― 
-| ステレオタイプ 2+| << DataType >>
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ― 
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:key | gml:CodeType [1] | 拡張する属性の名称。名称は、コ－ドリスト（KeyValuePairAttribute_key.xml）より選択する。コード値をとる属性を追加する場合は、コードリストを作成する。
 | uro:codeValue
 | gml:CodeType [0..1]
@@ -224,86 +210,76 @@ uro:KeyValuePairAttributeを使用する場合は、必ずuro:codeValueを作成
 
 |===
 
-　
-
-===== 3)　uro:DataQualityAttribute
+====== uro:DataQualityAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
 
-| 上位の型 2+| ― 
-| ステレオタイプ 2+| << DataType >>
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
-| (uro:geometrySrcDescLod0) | gml:CodeType [0..*] | LOD0の幾何オブジェクトの作成に使用した原典資料の種類。
+h| 上位の型 2+| ― 
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (uro:geometrySrcDescLod0) | gml:CodeType [0..*] | LOD0の幾何オブジェクトの作成に使用した原典資料の種類。
 | uro:geometrySrcDescLod1
 | gml:CodeType [1..*]
 a| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。
 
-| (uro:geometrySrcDescLod2) | gml:CodeType [0..*] | LOD2の幾何オブジェクトの作成に使用した原典資料の種類。
-| (uro:geometrySrcDescLod3) | gml:CodeType [0..*] | LOD3の幾何オブジェクトの作成に使用した原典資料の種類。
-| (uro:geometrySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
+h| (uro:geometrySrcDescLod2) | gml:CodeType [0..*] | LOD2の幾何オブジェクトの作成に使用した原典資料の種類。
+h| (uro:geometrySrcDescLod3) | gml:CodeType [0..*] | LOD3の幾何オブジェクトの作成に使用した原典資料の種類。
+h| (uro:geometrySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
 | uro:thematicSrcDesc
 | gml:CodeType [0..*]
 a| 主題属性の作成に使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_thematicSrcDesc.xml）より選択する。 +
 主題属性が作成対象となっている場合は必須とする。
 
-| (uro:appearanceSrcDescLod0) | gml:CodeType [0..*] | LOD0の幾何オブジェクトのアピアランスに使用した原典資料の種類。
+h| (uro:appearanceSrcDescLod0) | gml:CodeType [0..*] | LOD0の幾何オブジェクトのアピアランスに使用した原典資料の種類。
 | uro:appearanceSrcDescLod1
 | gml:CodeType [0..*]
 a| LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 +
 拡張製品仕様書LOD1の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD1の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 
-| (uro:appearanceSrcDescLod2) | gml:CodeType [0..*] | LOD2の幾何オブジェクトのアピアランスに使用した原典資料の種類。
-| (uro:appearanceSrcDescLod3) | gml:CodeType [0..*] | LOD3の幾何オブジェクトのアピアランスに使用した原典資料の種類。
-| uro:appearanceSrcDescLod4 | gml:CodeType [0..*] | LOD4の幾何オブジェクトのアピアランスに使用した原典資料の種類。
-| (uro:lodType) | gml:CodeType[0..*] | オブジェクトに適用されたLODの詳細な区分。
-| (uro:lod1HeightType) | gml:CodeType [0..1] | LOD1の立体図形を作成する際に使用した高さの算出方法。
-| (uro:tranDataAcquisition) | xs:string [0..1] | 「道路基盤地図情報（整備促進版）製品仕様書（案）」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
-3+| 自身に定義された関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (uro:publicSurveyDataQualityAttribute) | uro:PublicSurveyDataQualityAttribute [0..1] | 使用した公共測量成果の地図情報レベルと種類。
+h| (uro:appearanceSrcDescLod2) | gml:CodeType [0..*] | LOD2の幾何オブジェクトのアピアランスに使用した原典資料の種類。
+h| (uro:appearanceSrcDescLod3) | gml:CodeType [0..*] | LOD3の幾何オブジェクトのアピアランスに使用した原典資料の種類。
+h| uro:appearanceSrcDescLod4 | gml:CodeType [0..*] | LOD4の幾何オブジェクトのアピアランスに使用した原典資料の種類。
+h| (uro:lodType) | gml:CodeType[0..*] | オブジェクトに適用されたLODの詳細な区分。
+h| (uro:lod1HeightType) | gml:CodeType [0..1] | LOD1の立体図形を作成する際に使用した高さの算出方法。
+h| (uro:tranDataAcquisition) | xs:string [0..1] | 「道路基盤地図情報（整備促進版）製品仕様書（案）」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (uro:publicSurveyDataQualityAttribute) | uro:PublicSurveyDataQualityAttribute [0..1] | 使用した公共測量成果の地図情報レベルと種類。
 
 |===
 
-　
-
-===== 4)　uro:FacilityIdAttribute
+====== uro:FacilityIdAttribute
 
 施設管理属性の応用スキーマ文書　参照
 
-　
-
-===== 5)　uro:FacilityTypeAttribute
+====== uro:FacilityTypeAttribute
 
 施設管理属性の応用スキーマ文書　参照
 
-　
-
-===== 6)　uro:FacilityAttribute
+====== uro:FacilityAttribute
 
 施設管理属性の応用スキーマ文書　参照
-
-　
 
 [[toc4_08_04]]
-==== 　土地利用モデルで使用するコードリストと列挙型
+==== 土地利用モデルで使用するコードリストと列挙型
 
 [[toc4_08_04_01]]
-===== (1)　LandUse（CityGML）
+===== LandUse（CityGML）
 
-===== 1)　Common_landUseType.xml
+====== Common_landUseType.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | Common_landUseType.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Common_landUseType.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Common_landUseType.xml
+h| コード h| 説明
 | 201 | 田（水田）
 | 202 | 畑（畑、樹園地、採草地、養鶏（牛・豚）場）
 | 203 | 山林（樹林地）
@@ -333,19 +309,17 @@ a| LOD1の幾何オブジェクトのアピアランスに使用した原典資�
 
 |===
 
-　
-
 [[toc4_08_04_02]]
-===== (2)　Urban Object（i-UR）
+===== Urban Object（i-UR）
 
-===== 1)　Common_ownerType.xml
+====== Common_ownerType.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | Common_ownerType.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Common_ownerType.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Common_ownerType.xml
+h| コード h| 説明
 | 1010 | 国
 | 1020 | 都道府県
 | 1030 | 市区町村
@@ -356,16 +330,14 @@ a| LOD1の幾何オブジェクトのアピアランスに使用した原典資�
 
 |===
 
-　
-
-===== 2)　DataQualityAttribute_geometrySrcDesc.xml
+====== DataQualityAttribute_geometrySrcDesc.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml
+h| コード h| 説明
 | 000 | 公共測量成果
 | 101 | （公共測量ではない）現地測量の測量成果
 | 102 | （公共測量ではない）UAV写真測量の測量成果
@@ -405,16 +377,14 @@ a| LOD1の幾何オブジェクトのアピアランスに使用した原典資�
 [none]
 **** 参考：作業規程の準則、3D都市モデル整備のための測量マニュアル、3D都市モデル標準作業手順書
 
-　
-
-===== 3)　DataQualityAttribute_thematicSrcDesc.xml
+====== DataQualityAttribute_thematicSrcDesc.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml
+h| コード h| 説明
 | 000 | 公共測量成果
 | 022 | 基盤地図情報
 | 023 | 数値地形図データ
@@ -438,16 +408,14 @@ a| LOD1の幾何オブジェクトのアピアランスに使用した原典資�
 [none]
 **** 参考：作業規程の準則、3D都市モデル整備のための測量マニュアル、3D都市モデル標準作業手順書
 
-　
-
-===== 4)　DataQualityAttribute_appearanceSrcDesc.xml
+====== DataQualityAttribute_appearanceSrcDesc.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml
+h| コード h| 説明
 | 1 | 空中写真
 | 2 | 衛星写真
 | 3 | 車載写真レーザ測量システムにより撮影した写真
@@ -456,6 +424,4 @@ a| LOD1の幾何オブジェクトのアピアランスに使用した原典資�
 | 99 | 未作成
 
 |===
-
-　
 
