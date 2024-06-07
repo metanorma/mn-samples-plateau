@@ -88,7 +88,7 @@ urf:Zoneは具象の地物型であり、これを使用して都市オブジェ
 　都市計画の変更や廃止により都市計画が効力を失った日付（xs:date）は、属性urf:validToにより記述できる。また、その時の都市計画の区分（変更又は廃止）は、属性urf:validToTypeにより記述できる。 +
 　例えば、ある都市計画が新規に決定され、その後、変更され、さらに変更された内容が廃止されたとする（図K- 1）。この場合、当初の都市計画のurf:validFromには決定された日付が入り、urf:validFromTypeは「決定」となる。また、urf:validToには、変更により効力を失った日付が入る。このときのurf:validToTypeは「変更」となる。また、変更後の都市計画のurf:validFromには決定された日付が入り、urf:validFromTypeは「変更」となる。また、urf:validToには、廃止により効力を失った日付が入る。このときのurf:validToTypeは「廃止」となる。
 
-image::images/296.webp.png[title=" 図 K-1　都市計画の変遷"]
+image::images/296.webp.png[title="都市計画の変遷"]
 
 留意事項2：　urf:validTo及びurf:validToTypeの運用
 
@@ -133,5 +133,5 @@ h| 全体となる地物 h| 部品となる地物 h| 説明
 
 図K- 2に例を示す。urf:DistrictDevelopmentPlan（地区整備計画）とurf:District（地区）との間には、応用スキーマ図では集約で関連付けられ、urf:DistrictDevelopmentPlanが全体、urf:Districtが部品として定義されている。この場合、CityGML形式に符号化する際にはurf:DistrictDevelopmentPlanのタグの子要素としてurf:Districtが出現しなければならない。
 
-image::images/297.webp.png[title=" 図 K-2　階層構造をもつ地物のXMLインスタンス"]
+image::images/297.webp.png[title="階層構造をもつ地物のXMLインスタンス"]
 
