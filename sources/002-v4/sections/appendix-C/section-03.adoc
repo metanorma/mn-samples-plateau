@@ -560,7 +560,8 @@ image::images/151.webp[title=" 図C- 14　点群に含まれるノイズ"]
 [none]
 *** 構造化する場合の記述例：
 
-....
+[source,xml]
+----
 <core:Address>
 	<core:xalAddress>
 	  <xAL:AddressDetails>
@@ -578,14 +579,15 @@ image::images/151.webp[title=" 図C- 14　点群に含まれるノイズ"]
       </xAL:AddressDetails>
     </core:xalAddress>
 </core:Address>
-....
+----
 
 [none]
 *** なお、構造化せずに略式（1行の住所文字列）で記述する場合は、以下のように記載する。
 
 *** 住所の記述例：
 
-....
+[source,xml]
+----
 <core:Address>
 	<core:xalAddress>
 	  <xAL:AddressDetails>
@@ -598,7 +600,7 @@ image::images/151.webp[title=" 図C- 14　点群に含まれるノイズ"]
       </xAL:AddressDetails>
     </core:xalAddress>
 </core:Address>
-....
+----
 
 　建築物の識別属性（uro:BuildingIDAttribute）
 
