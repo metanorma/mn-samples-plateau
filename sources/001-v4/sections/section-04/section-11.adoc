@@ -280,7 +280,7 @@ a| 屋外付属物 +
 
 **** 〇：任意
 
-image::images/240.webp.png[title=" 図 4-5　橋梁の部材の名称"]
+image::images/240.webp.png[title="橋梁の部材の名称"]
 
 橋梁モデル（LOD2）の取得イメージを表 4-63に示す。
 
@@ -768,7 +768,7 @@ IFCでは、梁（IfcBeam）やスラブ（IfcSlab）、支承（IfcBearing）�
 そこで、これらの部材クラスの集まりであるIfcBridgePart及びIfcElementAssemblyとCityGMLの地物型とを対応付けた。 +
 このとき、IfcBridgePart及びIfcElementAssemblyの属性PredefinedTypeによりCityGMLの地物型であるbrid:Bridge、brid:BridgeConstructionElement又はbrid:BridgeInstallationへの振り分けを行っている。
 
-image::images/250.webp.png[title=" 図 4-6　IfcBridgeにおけるクラス間の階層構造（出典：IFC Bridge Fast Track Project Report WP2: Conceptual Model）"]
+image::images/250.webp.png[title="IfcBridgeにおけるクラス間の階層構造（出典：IFC Bridge Fast Track Project Report WP2: Conceptual Model）"]
 
 ====== 橋梁モデル（LOD4）の定義
 
