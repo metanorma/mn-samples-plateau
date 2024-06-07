@@ -1,17 +1,15 @@
 [[toc4_03]]
-=== 　交通（道路）モデルの応用スキーマ
+=== 交通（道路）モデルの応用スキーマ
 
 道路とは、一般交通の用に供する道であり、道路法第3条に示された道路の種類及び建築基準法第42条の定義を含む。
 
-　
-
 [[toc4_03_01]]
-==== 　交通（道路）モデルのLOD
+==== 交通（道路）モデルのLOD
 
 [[toc4_03_01_01]]
-===== (1)　交通（道路）モデル（LOD0）
+===== 交通（道路）モデル（LOD0）
 
-===== 1)　交通（道路）モデル（LOD0）の概要
+====== 交通（道路）モデル（LOD0）の概要
 
 交通（道路）モデル（LOD0）では、道路の形状を線により表現する。
 
@@ -28,18 +26,16 @@
 [cols="2,9,9"]
 .表 4-16　交通（道路）モデル（LOD0）の取得イメージ
 |===
-| 2+^| LOD0
-| 取得例
-a| image::images/068.png["",300]
-a| image::images/069.png["",300]
+h| 2+^h| LOD0
+h| 取得例
+a| image::images/068.webp["",300]
+a| image::images/069.webp["",300]
 
-| 説明 | 左右両側の道路縁から等距離となる点をつないだ線分を取得する。 | 道路縁を取得する。
+h| 説明 | 左右両側の道路縁から等距離となる点をつないだ線分を取得する。 | 道路縁を取得する。
 
 |===
 
-　
-
-===== 2)　交通（道路）モデル（LOD0）の定義
+====== 交通（道路）モデル（LOD0）の定義
 
 交通（道路）モデル（LOD0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
@@ -80,26 +76,24 @@ a| • 道路縁を取得する。 +
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_03_01_02]]
-===== (2)　交通（道路）モデル（LOD1）
+===== 交通（道路）モデル（LOD1）
 
-===== 1)　交通（道路）モデル（LOD1）の概要
+====== 交通（道路）モデル（LOD1）の概要
 
 交通（道路）モデル（LOD1）では、道路の形状を面により表現する。交通（道路）モデル（LOD1）の取得イメージを表 4-17に示す。
 
 [cols="1,9"]
 .表 4-17　交通（道路）モデル（LOD1）の取得イメージ
 |===
-| ^| LOD1
-| 取得例
-a| image::images/070.png["",750]
+h| ^h| LOD1
+h| 取得例
+a| image::images/070.webp["",750]
 
-| 説明 | 道路縁により囲まれた範囲を面として取得し、以下の場所で区切る。 • 交差部（四差路、多差路及び三差路） • 道路構造（トンネル、橋梁）が変化する場所 • 位置正確度や取得方法が変わる場所 高さは0とする。
+h| 説明 | 道路縁により囲まれた範囲を面として取得し、以下の場所で区切る。 • 交差部（四差路、多差路及び三差路） • 道路構造（トンネル、橋梁）が変化する場所 • 位置正確度や取得方法が変わる場所 高さは0とする。
 
 |===
 
-　
-
-===== 2)　交通（道路）モデル（LOD1）の定義
+====== 交通（道路）モデル（LOD1）の定義
 
 交通（道路）モデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
@@ -132,24 +126,22 @@ a| • 道路縁をつないだ面を作成する。 +
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_03_01_03]]
-===== (3)　交通（道路）モデル（LOD2）
+===== 交通（道路）モデル（LOD2）
 
-===== 1)　交通（道路）モデル（LOD2）の概要
+====== 交通（道路）モデル（LOD2）の概要
 
 交通（道路）モデル（LOD2）では、道路の形状を面により表現し、面を車道部、車道交差部、歩道部及び島に区分する。交通（道路）モデル（LOD2）の取得イメージを表 4-18に示す。
 
 [cols="1,9"]
 .表 4-18　交通（道路）モデル（LOD2）の取得イメージ
 |===
-| ^| LOD2
-| 取得例
-a| image::images/071.png["",800]
+h| ^h| LOD2
+h| 取得例
+a| image::images/071.webp["",800]
 
-| 説明 | 道路縁により囲まれた範囲を面として取得し、面を以下に区分する。 • 車道部 • 車道交差部 • 歩道部 • 島 高さは0とする。
+h| 説明 | 道路縁により囲まれた範囲を面として取得し、面を以下に区分する。 • 車道部 • 車道交差部 • 歩道部 • 島 高さは0とする。
 
 |===
-
-　
 
 車道部とは、主として自動車が利用する道路の部分で、車線、すりつけ区間、分離帯が切断された車道の部分、側帯、路肩、停車帯、待避所、乗合自動車停車所、非常駐車帯、副道を含む。 +
 [道路基盤地図情報（整備促進版）製品仕様書（案）]
@@ -163,9 +155,7 @@ a| image::images/071.png["",800]
 島とは、車両の走行を制御し、安全な交通を確保するために設置される分離帯及び交通島の部分をいう。 +
 [出典：道路基盤地図情報（整備促進版）製品仕様書（案）]
 
-　
-
-===== 2)　交通（道路）モデル（LOD2）の定義
+====== 交通（道路）モデル（LOD2）の定義
 
 交通（道路）モデル（LOD2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
@@ -198,12 +188,12 @@ a|
 隅切りとは、道路構造令第27条第2項に示された、道路が同一平面で交差又は接続する場合に隅角部を切り取り、適当な見とおしができる構造としたものをいう。 +
 また、建築基準法施行規則第144条の4第1項第2号に示される隅切りを含む。
 
-image::images/072.png["",180]
+image::images/072.webp["",180]
 
 | • 車道交差部（隅切りが無い場合）
 a| • 交差する道路の道路縁が接する点を結ぶ線に囲まれた車道部を取得する。 +
 • 高さは0とする。
-a| image::images/073.png["",180]
+a| image::images/073.webp["",180]
 
 | • 歩道部
 a| • 歩道の境界をつないだ面を取得する。 +
@@ -229,16 +219,16 @@ a| • 島の外周を取得する。 +
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_03_01_04]]
-===== (4)　交通（道路）モデル（LOD3）
+===== 交通（道路）モデル（LOD3）
 
-===== 1)　交通（道路）モデル（LOD3）の概要
+====== 交通（道路）モデル（LOD3）の概要
 
 交通（道路）モデル（LOD3）では、道路の形状を面により表現し、面を車道部、車道交差部、歩道部及び分離帯等に区分する。交通（道路）モデル（LOD3）は、「道路内の区分」（表 4-19）と「高さの取得方法」（表 4-20）の組み合わせが異なるLOD3.0、LOD3.1、LOD3.2、LOD3.3及び LOD3.4に区分する。標準製品仕様は、原則としてLOD3.0とする。ただし、ユースケースの必要に応じて、LOD3.1、LOD3.2、LOD3.3又はLOD3.4を採用できる。
 
 [cols="6,24,5,5,5,5,5,5"]
 .表 4-19　LOD3.0、LOD3.1、LOD3.2、LOD3.3及び LOD3.4の「道路内の区分」
 |===
-2+^| 交通（道路）モデル（LOD3）に含むべき地物 ^| 対応するCityGMLの地物型 ^| LOD3.0 ^| LOD3.1 ^| LOD3.2 ^| LOD3.3 ^| LOD3.4
+2+^h| 交通（道路）モデル（LOD3）に含むべき地物 ^h| 対応するCityGMLの地物型 ^h| LOD3.0 ^h| LOD3.1 ^h| LOD3.2 ^h| LOD3.3 ^h| LOD3.4
 2+| 道路 | Road ^| ● ^| ● ^| ● ^| ● ^| ●
 .5+| 車道部 | | TrafficArea ^| ● ^| ● ^| ● ^| ● ^| ●
 | 車道交差部 | TrafficArea ^| ● ^| ● ^| ● ^| ● ^| ●
@@ -260,12 +250,10 @@ a| • 島の外周を取得する。 +
 
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
-　
-
 [cols="45,11,11,11,11,11"]
 .表 4-20　LOD3.0、LOD3.1、LOD3.2、LOD3.3及び LOD3.4の「高さの取得方法」
 |===
-^| 取得方法 ^| LOD3.0 ^| LOD3.1 ^| LOD3.2 ^| LOD3.3 ^| LOD3.4
+^h| 取得方法 ^h| LOD3.0 ^h| LOD3.1 ^h| LOD3.2 ^h| LOD3.3 ^h| LOD3.4
 | 道路の横断方向の高さは一律とし、車道の高さとする。 ^| ● ^| ● | | | 
 | 道路の横断方向に15㎝以上&nbsp;の高さの差が存在した場合に、車道部、歩道部、島それぞれの高さを取得する。 | | ^| ● | | 
 | 道路の横断方向に2㎝以上の高さの差が存在した場合に、車道部、歩道部、島それぞれの高さを取得する。 | | | ^| ● ^| ●※
@@ -275,16 +263,12 @@ a| • 島の外周を取得する。 +
 [none]
 **** ※LOD3.4における取得の下限値は、ユースケースの必要に応じて定めることができる。
 
-　
-
-　　交通（道路）モデル（LOD3）の取得イメージを表 4-21及び表 4-22に示す。
-
-　
+交通（道路）モデル（LOD3）の取得イメージを表 4-21及び表 4-22に示す。
 
 [cols=4]
 .表 4-21　交通（道路）モデル（LOD3）の取得イメージ（道路内の区分）
 |===
-^| LOD3.0 ^| LOD3.1 ^| LOD3.2及びLOD3.3 ^| LOD3.4
+^h| LOD3.0 ^h| LOD3.1 ^h| LOD3.2及びLOD3.3 ^h| LOD3.4
 | 車道部、車道交差部、島及び歩道部を区分する。
 a| LOD3.0の区分を細分する。 +
 車道部のうち、車線を区分する。
@@ -292,74 +276,70 @@ a| LOD3.1の区分を細分する。 +
 歩道部のうち、植栽を区分する。
 | LOD3.3の区分を細分する。細分はユースケースに応じて決定する。
 
-^a| image::images/074.png["",140]
-^a| image::images/075.png["",200]
-^a| image::images/076.png["",210]
-^a| image::images/077.png["",230]
+^a| image::images/074.webp["",140]
+^a| image::images/075.webp["",200]
+^a| image::images/076.webp["",210]
+^a| image::images/077.webp["",230]
 
 |===
 
 [none]
 **** 青色着色している道路内の区分は、当該LODにおいて新たに区別ができるようになる区分である。
 
-　
-
 [cols=3]
 .表 4-22　交通（道路）モデル（LOD3）の取得イメージ（高さの取得方法）
 |===
-^| LOD3.0及びLOD3.1 ^| LOD3.2 ^| LOD3.3及びLOD3.4
+^h| LOD3.0及びLOD3.1 ^h| LOD3.2 ^h| LOD3.3及びLOD3.4
 .4+a| 
 道路内（車道部、歩道部、島）の高さは、横断方向に同一（全て車道の高さ）となる。 +
  +
 立体交差が表現できる。
 
-image::images/078.png["",250]
+image::images/078.webp["",250]
 
 a| 
 道路の横断方向に存在する15㎝以上の高さの差を取得する。 +
 ①高さの差が15㎝以上の段は、段の形状を取得する。
 
-image::images/079.png["",280]
+image::images/079.webp["",280]
 
 a| 
 道路の横断方向に存在する2㎝以上の高さの差を取得する。 +
  +
 ①高さの差が2㎝以上の段は、段の形状を取得する。
 
-image::images/080.png["",280]
+image::images/080.webp["",280]
 
 a| 
 ②高さの差が15㎝以上のスロープは、スロープの形状を取得する。
 
-image::images/081.png["",280]
+image::images/081.webp["",280]
 
 a| 
 ②高さの差が2㎝以上のスロープは、スロープの形状を取得する。
 
-image::images/082.png["",280]
+image::images/082.webp["",280]
 
 .2+a| 
 ③高さの差が15㎝未満の段が複数あり、合計15㎝以上の高さの差がある場合は、スロープとして取得する。
 
-image::images/083.png["",280]
+image::images/083.webp["",280]
 
 歩道と車道との間や車道と島との間に存在する縁石による段を表現できる。
 
 a| 
 ③高さの差が2㎝未満の段が複数あり、合計2㎝以上の高さの差がある場合は、スロープとして取得する。
 
-image::images/084.png["",280]
+image::images/084.webp["",280]
 
 a| 
 歩道に設けられた車道への切り下げ部に存在する段が表現できる。
 
-image::images/085.png["",280]
+image::images/085.webp["",280]
 
 |===
 
-　
-
-===== 2)　交通（道路）モデル（LOD3.0）の定義
+====== 交通（道路）モデル（LOD3.0）の定義
 
 交通（道路）モデル（LOD3.0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
@@ -393,7 +373,7 @@ a| • 隅切りで囲まれた車道部を取得する。 +
 | • 車道交差部（隅切りが無い場合）
 a| • 交差する道路の道路縁が接する点を結ぶ線に囲まれた車道部を取得する。 +
 • 高さは車道の路面高さとする。
-a| image::images/086.png["",200]
+a| image::images/086.webp["",200]
 
 | • 歩道部
 a| • 歩道の境界をつないだ面を取得する。 +
@@ -418,9 +398,7 @@ a| • 島の外周を取得する。 +
 
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
-　
-
-===== 3)　交通（道路）モデル（LOD3.1）の定義
+====== 交通（道路）モデル（LOD3.1）の定義
 
 交通（道路）モデル（LOD3.1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
@@ -484,9 +462,7 @@ a| • 島の外周を取得する。 +
 
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
-　
-
-===== 4)　交通（道路）モデル（LOD3.2）の定義
+====== 交通（道路）モデル（LOD3.2）の定義
 
 交通（道路）モデル（LOD3.2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
@@ -540,7 +516,7 @@ a| • 15㎝以上の段の場合は、段の上端と下端を結ぶ面を作�
 a| 
 高さの差を表現する面は、歩道部の一部として取得する。
 
-image::images/087.png["",200]
+image::images/087.webp["",200]
 
 .2+| LOD3.2
 .2+| ●
@@ -567,9 +543,7 @@ a| • 植栽の上端の外周を面として取得する。 +
 
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
-　
-
-===== 5)　交通（道路）モデル（LOD3.3）の定義
+====== 交通（道路）モデル（LOD3.3）の定義
 
 交通（道路）モデル（LOD3.3）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
@@ -622,7 +596,7 @@ a| • 2㎝以上の段の場合は、段の上端と下端を結ぶ面を作成
 a| 
 高さの差を表現する面は、歩道部の一部として取得する。
 
-image::images/088.png["",200]
+image::images/088.webp["",200]
 
 .2+| LOD3.3
 .2+| ●
@@ -649,9 +623,7 @@ a| • 植栽の上端の外周を面として取得する。 +
 
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
-　
-
-===== 6)　交通（道路）モデル（LOD3.4）の定義
+====== 交通（道路）モデル（LOD3.4）の定義
 
 交通（道路）モデル（LOD3.4）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
@@ -704,7 +676,7 @@ a| • 2㎝以上の段の場合は、段の上端と下端を結ぶ面を作成
 a| 
 高さの差を表現する面は、歩道部の一部として取得する。
 
-image::images/089.png["",200]
+image::images/089.webp["",200]
 
 | LOD3.4
 | 〇
@@ -769,14 +741,14 @@ a| • 分離帯又は交通島の上端の外周を面として取得する。 
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_03_01_05]]
-===== (5) 各LODにおいて使用可能な地物型と空間属性
+===== 各LODにおいて使用可能な地物型と空間属性
 
 交通（道路）モデルの各LODにおいて使用可能な地物型と空間属性を表 4-23に示す。
 
 [cols="7,7,7,7,7,7,18"]
 .表 4-23　交通（道路）モデルに使用する地物型と空間属性
 |===
-| 地物型 | 空間属性 ^| LOD0 ^| LOD1 ^| LOD2 ^| LOD3 | 適用
+h| 地物型 h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 h| 適用
 .6+| tran:Road | ^| ● ^| ● ^| ● ^| ● | 
 | tran:lod0Network ^| ■ | | | .2+| LOD0はネットワークを原則とするが、数値地形図との互換性を保つために、道路縁を選択できる。
 | uro:lod0Geometry ^| ■ | | | 
@@ -800,10 +772,10 @@ a| • 分離帯又は交通島の上端の外周を面として取得する。 
 **** 〇：任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_03_02]]
-==== 　交通（道路）モデルの応用スキーマクラス図
+==== 交通（道路）モデルの応用スキーマクラス図
 
 [[toc4_03_02_01]]
-===== (1)　Transportation（CityGML）
+===== Transportation（CityGML）
 
 Transportationパッケージは、交通に関する地物型を定義する。
 
@@ -814,29 +786,29 @@ Transportationパッケージは、交通に関する地物型を定義する。
 image::images/090.svg[]
 
 [[toc4_03_02_02]]
-===== (2)　Urban Object（i-UR）
+===== Urban Object（i-UR）
 
-===== 1)　tran:Roadの拡張属性
+====== tran:Roadの拡張属性
 
 image::images/091.svg[]
 
-===== 2)　tran:TrafficAreaの拡張属性
+====== tran:TrafficAreaの拡張属性
 
 image::images/092.svg[]
 
-===== 3)　tran:TransportationObject及びtran:TransportationComplexの拡張属性
+====== tran:TransportationObject及びtran:TransportationComplexの拡張属性
 
 image::images/093.svg[]
 
 [[toc4_03_03]]
-==== 　交通（道路）モデルの応用スキーマ文書
+==== 交通（道路）モデルの応用スキーマ文書
 
 [[toc4_03_03_01]]
-===== (1)　Transportation（CityGML）
+===== Transportation（CityGML）
 
-===== 1)　tran:Road
+====== tran:Road
 
-[cols="1,1,2"]
+[cols="1,1,2",options="noheader"]
 |===
 .3+| 型の定義
 2+a| 
@@ -844,35 +816,35 @@ image::images/093.svg[]
 • 交差部（四差路、多差路及び三差路） • 道路構造の変化点（トンネル、橋梁） • 位置正確度（地図情報レベル）や取得方法 +
 tran:Roadに含まれるtran:TrafficArea及びtran:AuxiliaryTrafficAreaは、同一路線に含まれなければならない。 同一のLODにおいて、連続する道路の境界は一致しなければならない。
 
-image::images/094.png["",300,title=" 図　LOD1における道路の取得例"]
+image::images/094.webp["",300,title=" 図　LOD1における道路の取得例"]
 
-2+a| image::images/095.png["",600,title=" 図　LOD2における道路の取得例"]
+2+a| image::images/095.webp["",600,title=" 図　LOD2における道路の取得例"]
 
-2+a| image::images/096.png["",600,title=" 図　LOD3における道路の取得例"]
+2+a| image::images/096.webp["",600,title=" 図　LOD3における道路の取得例"]
 
-| 上位の型 2+| tran:TrafficComplex
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| tran:TrafficComplex
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | gml:description | gml:StringOrRefType [0..1] | 道路の概要。
 | gml:name | gml:CodeType [0..1] | 道路を識別する名称。道路法に基づき路線が指定又は認定された路線名。文字列とする。
-| (gml:boundedBy) | gml:Envelope [0..1] | オブジェクトの範囲と空間参照系。
+h| (gml:boundedBy) | gml:Envelope [0..1] | オブジェクトの範囲と空間参照系。
 | core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
 | core:terminationDate | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
 | tran:class | gml:CodeType [0..1] | 交通の分類。コードリスト（TransportationComplex_class.xml）より選択する。
 | tran:function | gml:CodeType [0..*] | 道路法における道路の区分及び建築基準法における道路の区分。コードリスト（Road_function.xml）より選択する。
 | tran:usage | gml:CodeType [0..*] | 道路の利用方法。コードリスト（Road_usage.xml）より選択する。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット（集合）。属性を追加したい場合に使用する。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット（集合）。属性を追加したい場合に使用する。
 | tran:trafficArea | tran:TrafficArea [0..*] | 道路を構成する要素のうち、車両や人が通行可能な領域への参照。
 | tran:auxiliaryTrafficArea | tran:AuxiliaryTrafficArea [0..*] | 道路を構成する要素のうち、交通領域の機能を補助するために設けられた領域への参照。
 | tran:lod0Network | gml:GeometricComplex [0..*] | 道路の連続性を表現する線。
@@ -898,18 +870,16 @@ tran:Roadが参照するtran:TrafficArea及びtran:AuxiliaryTrafficAreaのtran:l
 | uro:tranFacilityTypeAttribute | uro:FacilityTypeAttribute [0..*] | 特定分野における施設の分類情報。
 | uro:tranFacilityIdAttribute | uro:FacilityIdAttribute [0..1] | uro:tranFacilityTypeAttribute.classによって指定された分野における施設の識別情報。
 | uro:tranFacilityAttribute | uro:FacilityAttribute [0..*] | uro:tranFacilityTypeAttribute.classによって指定された分野における施設管理情報。
-3+| 自身に定義された関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | uro:roadStructureAttribute | uro:RoadStructureAttribute [0..1] | 当該道路の道路構造に関する情報。
 | uro:trafficVolumeAttribute | uro:TrafficVolumeAttribute [0..1] | 当該道路を通行する車両の量に関する情報。
 
 |===
 
-　
+====== tran:TrafficArea
 
-===== 2)　tran:TrafficArea
-
-[cols="1,1,2"]
+[cols="1,1,2",options="noheader"]
 |===
 .4+| 型の定義
 2+a| 
@@ -917,52 +887,52 @@ tran:Roadが参照するtran:TrafficArea及びtran:AuxiliaryTrafficAreaのtran:l
  +
 • LOD2及びLOD3.0の場合は、車道部として、車両の利用が想定された車線や路肩その他一体的な舗装がされた全ての道路の部分を対象とする。また、歩道部として、歩道及び歩道上に設置された植栽の範囲を対象とする。
 
-image::images/097.png["",700,title=" 図　LOD2及びLOD3.0におけるtran:TrafficAreaの例"]
+image::images/097.webp["",700,title=" 図　LOD2及びLOD3.0におけるtran:TrafficAreaの例"]
 
 2+a| 
 • LOD3.1の場合は、LOD3.0の車道部のうち、車線を細分する。
 
-image::images/098.png["",700,title=" 図　LOD3.1におけるtran:TrafficAreaの例"]
+image::images/098.webp["",700,title=" 図　LOD3.1におけるtran:TrafficAreaの例"]
 
 2+a| 
 • LOD3.2及びLOD3.3の場合は、LOD3.1の歩道部から歩道上の植栽を除いた範囲を歩道部とする。
 
-image::images/099.png["",700,title=" 図　LOD3.2及びLOD3.3におけるtran:TrafficAreaの例"]
+image::images/099.webp["",700,title=" 図　LOD3.2及びLOD3.3におけるtran:TrafficAreaの例"]
 
 2+a| 
 • LOD3.4の場合は、コードリストの区分に従う。
 
-image::images/100.png["",700,title=" 図　LOD3.4におけるtran:TrafficAreaの例"]
+image::images/100.webp["",700,title=" 図　LOD3.4におけるtran:TrafficAreaの例"]
 
 1つの道路オブジェクトに含まれる交通領域は、属性の変化が無い限り、区分しない。
 
-| 上位の型 2+| tran:_TransportationObject
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
-| (gml:description) | gml:StringOrRefType [0..1] | 概要。
-| (gml:name) | gml:CodeType [0..1] | 識別する名称。
-| (gml:boundedBy) | gml:Envelope [0..1] | オブジェクトの範囲と空間参照系。
+h| 上位の型 2+| tran:_TransportationObject
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 概要。
+h| (gml:name) | gml:CodeType [0..1] | 識別する名称。
+h| (gml:boundedBy) | gml:Envelope [0..1] | オブジェクトの範囲と空間参照系。
 | core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
 | core:terminationDate | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 自身に定義された属性
-| (tran:class) | gml:CodeType [0..1] | 交通の分類。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 自身に定義された属性
+h| (tran:class) | gml:CodeType [0..1] | 交通の分類。
 | tran:function | gml:CodeType [0..*] | 区画線や路面標示、道路標識等により示された交通領域の機能。コードリスト（TrafficArea_function.xml）より選択する。
-| (tran:usage) | gml:CodeType [0..*] | 交通領域の利用方法。
+h| (tran:usage) | gml:CodeType [0..*] | 交通領域の利用方法。
 | tran:surfaceMaterial | gml:CodeType [0..1] | 表層舗装の有無及び材質。複数の表層舗装が混在している場合は、最も面積を占める舗装とする。コードリスト（TrafficArea\_ surfaceMaterial.xml）より選択する。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット（集合）。属性を追加したい場合に使用する。
-3+| 自身に定義された関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット（集合）。属性を追加したい場合に使用する。
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | tran:lod2MultiSurface
 | gml:MultiSurface [0..1]
 a| 区画線や縁石等により示される境界線に囲まれた領域のうち、通行可能な道路の部分（歩道部、車道部、車道交差部）。 +
@@ -990,58 +960,56 @@ a| 交通領域の構造。道路の交通領域の場合にのみ取得する�
 
 |===
 
-　
+====== tran:AuxiliaryTrafficArea
 
-===== 3)　tran:AuxiliaryTrafficArea
-
-[cols="1,1,2"]
+[cols="1,1,2",options="noheader"]
 |===
 .3+| 型の定義
 2+a| 
 道路を構成する領域のうち、交通領域の機能を補助するために設けられた領域。 +
 • LOD2、LOD3.0及びLOD3.1の場合は、道路内の島状の施設（交通島及び分離帯、路面電車停車所）を対象とする。
 
-image::images/101.png["",700,title=" 図　LOD2、LOD3.0及びLOD3.1での道路のtran:AuxiliaryTrafficAreaの取得例"]
+image::images/101.webp["",700,title=" 図　LOD2、LOD3.0及びLOD3.1での道路のtran:AuxiliaryTrafficAreaの取得例"]
 
 2+a| 
 • LOD3.2及びLOD3.3の場合は、上記に加え、歩道部に設置された植栽を対象とする。
 
-image::images/102.png["",700,title=" 図　LOD3.2及びLOD3.3での道路のtran:AuxiliaryTrafficAreaの取得例"]
+image::images/102.webp["",700,title=" 図　LOD3.2及びLOD3.3での道路のtran:AuxiliaryTrafficAreaの取得例"]
 
 2+a| 
 • LOD3.4に場合は、tran:functionにより指定されるコードリストの区分に従う。
 
-image::images/103.png["",700,title=" 図　LOD3.4での道路のtran:AuxiliaryTrafficAreaの取得例"]
+image::images/103.webp["",700,title=" 図　LOD3.4での道路のtran:AuxiliaryTrafficAreaの取得例"]
 
 1つの道路オブジェクトに含まれる交通補助領域は、属性の変化が無い限り、延長方向では区分しない（例：延長方向に連続する分離帯を細分しない）。
 
-| 上位の型 2+| tran:_TransportationObject
-| ステレオタイプ 2+| << FeatureType >>
-3+| 継承する属性
-| 属性名 | 属性の型及び多重度 | 定義
-| (gml:description) | gml:StringOrRefType [0..1] | 道路の概要。
-| (gml:name) | gml:CodeType [0..1] | 道路を識別する名称。道路法に基づき路線が指定又は認定された路線名。
-| (gml:boundedBy) | gml:Envelope [0..1] | オブジェクトの範囲と空間参照系。
+h| 上位の型 2+| tran:_TransportationObject
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 道路の概要。
+h| (gml:name) | gml:CodeType [0..1] | 道路を識別する名称。道路法に基づき路線が指定又は認定された路線名。
+h| (gml:boundedBy) | gml:Envelope [0..1] | オブジェクトの範囲と空間参照系。
 | core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
 | core:terminationDate | xs:date [0..1] | データが削除された日。
-| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+| 自身に定義された属性
-| (tran:class) | gml:CodeType [0..1] | 交通の分類。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 自身に定義された属性
+h| (tran:class) | gml:CodeType [0..1] | 交通の分類。
 | tran:function | gml:CodeType [0..*] | 区画線や路面標示、道路標識等により示された交通補助領域の機能。コードリスト（AuxiliaryTrafficArea_function.xml）より選択する。
-| (tran:usage) | gml:CodeType [0..*] | 交通補助領域の利用方法。
+h| (tran:usage) | gml:CodeType [0..*] | 交通補助領域の利用方法。
 | tran:surfaceMaterial | gml:CodeType [0..1] | 表層舗装の有無及び材質。複数の表層舗装が混在している場合は、最も面積を占める舗装とする。コードリスト（AuxiliaryTrafficArea\_ surfaceMaterial.xml）より選択する。
-3+| 継承する関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
-| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット（集合）。属性を追加したい場合に使用する。
-3+| 自身に定義された関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット（集合）。属性を追加したい場合に使用する。
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | tran:lod2MultiSurface
 | gml:MultiSurface [0..1]
 a| 縁石等により示される境界線に囲まれた領域のうち、通行の用に供しない道路の部分（分離帯、交通島、路面電車停車所）。高さは0とする。隣接するtran:TrafficArea又はtran:AuxiliaryTrafficAreaとの境界線の座標を一致させる。 +
@@ -1064,9 +1032,9 @@ LOD3.1～LOD3.4では、停止線がある場合にはこれの延長とし、�
 |===
 
 [[toc4_03_03_02]]
-===== (2)　Urban Object（i-UR）
+===== Urban Object（i-UR）
 
-===== 1)　uro:KeyValuePairAttribute
+====== uro:KeyValuePairAttribute
 
 [cols="1,1,2"]
 |===
@@ -1074,24 +1042,24 @@ LOD3.1～LOD3.4では、停止線がある場合にはこれの延長とし、�
 2+a| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。 +
 属性名称と属性の値の対で構成される。コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
 
-| 上位の型 2+| ―
-| ステレオタイプ 2+| << DataType >>
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:key | gml:CodeType [1] | 拡張する属性の名称。名称は、コ－ドリスト（KeyValuePairAttribute_key.xml）を作成し、選択する。
 | uro:codeValue
 | gml:CodeType [1]
 a| 拡張された属性の値。値は名称は、コ－ドリスト（KeyValuePairAttribute_key[key].xml）を作成し、選択する。 +
 [key]は、属性uro:keyの値に一致する。
 
-| 型の定義
+h| 型の定義
 2+a| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。 +
 属性名称と属性の値の対で構成される。コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
 
-| 上位の型 2+| ―
-| ステレオタイプ 2+| << DataType >>
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:key | gml:CodeType [1] | 拡張する属性の名称。名称は、コ－ドリスト（KeyValuePairAttribute_key.xml）を作成し、選択する。
 | uro:codeValue
 | gml:CodeType [1]
@@ -1100,18 +1068,16 @@ a| 拡張された属性の値。値は名称は、コ－ドリスト（KeyValue
 
 |===
 
-　
-
-===== 2)　uro:DataQualityAttribute
+====== uro:DataQualityAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
 
-| 上位の型 2+| ―
-| ステレオタイプ 2+| << DataType >>
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:geometrySrcDescLod0
 | gml:CodeType [0..*]
 a| LOD0の幾何オブジェクトの作成に使用した原典資料の種類。 +
@@ -1132,7 +1098,7 @@ a| LOD2の幾何オブジェクトの作成に使用した原典資料の種類�
 a| LOD3の幾何オブジェクトの作成に使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD3の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD3の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、交通（道路）モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
 
-| (uro:geometrySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
+h| (uro:geometrySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
 | uro:thematicSrcDesc
 | gml:CodeType [0..\*]
 a| 主題属性の作成に使用した原典資料の種類。 +
@@ -1163,22 +1129,22 @@ a| LOD3の幾何オブジェクトのアピアランスに使用した原典資�
 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 +
 拡張製品仕様書でLOD3の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD3の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 
-| uro:appearanceSrcDescLod4 | gml:CodeType [0..*] | LOD4の幾何オブジェクトのアピアランスに使用した原典資料の種類。
+h| uro:appearanceSrcDescLod4 | gml:CodeType [0..*] | LOD4の幾何オブジェクトのアピアランスに使用した原典資料の種類。
 | uro:lodType
 | gml:CodeType[0..*]
 a| 幾何オブジェクトに適用されたLODの詳細な区分。 +
 コードリスト（Road_lodType.xml）より選択する。 +
 LOD3の幾何オブジェクトを作成する場合は必須とする。
 
-| (uro:lod1HeightType) | gml:CodeType [0..1] | LOD1の立体図形を作成する際に使用した高さの算出方法。
+h| (uro:lod1HeightType) | gml:CodeType [0..1] | LOD1の立体図形を作成する際に使用した高さの算出方法。
 | uro:tranDataAcquisition
 | xs:string [0..1]
 a| 「道路基盤地図情報（整備促進版）製品仕様書（案）」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。 +
 tran:Roadの場合に記述することができる。 +
 文字列型で記述する内容は「道路基盤地図情報（整備促進版）製品仕様書（案）」に従う。例えば、道路モデルが空中写真測量成果を用いて作成されている場合はその旨と撮影縮尺を記述する（航空写真測量(１／４０００））。既成図数値化の場合は元となる図面の種類を記述する（既成数値化（道路台帳付図））。補備測量を行った場合はその旨を記述する（既存資源活用＋部分的補備測量）。
 
-3+| 自身に定義された関連役割
-| 関連役割名 | 関連役割の型及び多重度 | 定義
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | uro:publicSurveyDataQualityAttribute
 | uro:PublicSurveyDataQualityAttribute [0..1]
 a| 使用した公共測量成果の地図情報レベルと種類。 +
@@ -1186,18 +1152,16 @@ a| 使用した公共測量成果の地図情報レベルと種類。 +
 
 |===
 
-　
-
-===== 3)　uro:PublicSurveyDataQualityAttribute
+====== uro:PublicSurveyDataQualityAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 使用した公共測量成果の地図情報レベルと種類を、LODごとに記述するためのデータ型。
 
-| 上位の型 2+| ―
-| ステレオタイプ 2+| << DataType >>
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:srcScaleLod0
 | gml:CodeType [0..1]
 a| LOD0の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
@@ -1249,22 +1213,20 @@ a| LOD3の幾何オブジェクトの作成に使用した原典資料の種類�
 「LOD3の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod3）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
 複数の種類の原典資料を使用した場合は、それぞれを記述する。
 
-| (uro:publicSurveySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
+h| (uro:publicSurveySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
 
 |===
 
-　
-
-===== 4)　uro:RoadStructureAttribute
+====== uro:RoadStructureAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 道路を、路線、同等以上の道路との交差点、道路構造の変化点（トンネル、橋梁）で変化する場所で区切った区間における、道路の構造。
 
-| 上位の型 2+| ー
-| ステレオタイプ 2+| << DataType >>
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ー
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:widthType | gml:CodeType [0..1] | 幅員の区分。コードリスト（RoadStructureAttribute_widthType.xml）より選択する。都市計画基礎調査で収集されている場合にのみ作成する。
 | uro:width | gml:LengthType [0..1] | 中央帯、車道、路肩、植樹帯、歩道等及び環境施設帯（環境施設帯の中の路肩、植樹帯、歩道等の部分を除いた部分）の幅員を合計した幅員。単位はm（uom=”m”）とする。
 | uro:numberOfLanes
@@ -1278,18 +1240,16 @@ a| 上下線の合計（一方通行区間の場合を除く）の車線数。 +
 
 |===
 
-　
-
-===== 5)　uro:TrafficVolumeAttribute
+====== uro:TrafficVolumeAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 道路の交通量に関する情報。全国道路・街路交通情勢調査一般交通量調査の対象となる高速自動車国道、都市高速道路、一般国道、主要地方道である都道府県道及び指定市の市道、一般都道府県道、指定市の一部の一般市道を対象とする。
 
-| 上位の型 2+| ー
-| ステレオタイプ 2+| << DataType >>
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| ー
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:sectionID | xs:string [0..1] | 交通量調査において、調査の単位となる交通調査基本区間に付与される番号。原則として「都道府県（2 桁）」＋「道路種別（1 桁）」＋「路線番号（4 桁）」＋「順番号（4 桁）」からなる 11 桁の番号。
 | uro:routeName | xs:string [0..1] | 路線名。
 | uro:weekday12hourTrafficVolume | xs:integer [0..1] | 平日7時~19時までに通過する車両台数。単位は台とする。
@@ -1315,72 +1275,60 @@ a| 昼間非混雑時（9～17 時）における下り線平均旅行速度。 
 
 |===
 
-　
-
-===== 6)　uro:TarfficAreaStructureAttribute
+====== uro:TarfficAreaStructureAttribute
 
 [cols="1,1,2"]
 |===
 | 型の定義 2+| 交通領域の構造。
 
-| 上位の型 2+| uro:TrafficAreaAttribute
-| ステレオタイプ 2+| << DataType >>
-3+| 自身に定義された属性
-| 属性名 | 属性の型及び多重度 | 定義
+h| 上位の型 2+| uro:TrafficAreaAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:numberOfLanes | xs:integer [0..1] | 交通領域内の合計（一方通行区間の場合を除く）の車線数。 道路構造令第2条第7号の登坂車線、同第2条第6号にいう付加追越車線、同第2条8号の屈折車線、同第2条第9号の変速車線及び同第2条第14号の停車帯、及びゆずり車線は車線数には含めない。交差点付近において、右左折のための車線が設けられている場合はこの数を含まない。 LOD2及びLOD3.0の車道部のみにこの属性を付与する。
 
 |===
 
-　
-
 [[toc4_03_03_03]]
-===== (3)　施設管理のための拡張属性
+===== 施設管理のための拡張属性
 
-===== 1)　uro:FacilityIdAttribute
+====== uro:FacilityIdAttribute
 
-　施設管理属性の応用スキーマ文書　参照
+施設管理属性の応用スキーマ文書　参照
 
-　
+====== uro:FacilityTypeAttribute
 
-===== 2)　uro:FacilityTypeAttribute
+施設管理属性の応用スキーマ文書　参照
 
-　施設管理属性の応用スキーマ文書　参照
+====== uro:FacilityAttribute
 
-　
-
-===== 3) uro:FacilityAttribute
-
-　施設管理属性の応用スキーマ文書　参照
-
-　
+施設管理属性の応用スキーマ文書　参照
 
 [[toc4_03_03_04]]
-===== (4)　数値地形図のための拡張属性
+===== 数値地形図のための拡張属性
 
-===== 1)　uro:DmGeometricAttribute
+====== uro:DmGeometricAttribute
 
-　公共測量標準図式の応用スキーマ文書　参照
+公共測量標準図式の応用スキーマ文書　参照
 
-　
+====== uro:DmElement
 
-===== 2)　uro:DmElement
-
-　公共測量標準図式の応用スキーマ文書　参照
+公共測量標準図式の応用スキーマ文書　参照
 
 [[toc4_03_04]]
-==== 　交通（道路）で使用するコードリストと列挙型
+==== 交通（道路）で使用するコードリストと列挙型
 
 [[toc4_03_04_01]]
-===== (1)　Transportaion（CityGML）
+===== Transportaion（CityGML）
 
-===== 1)　TransportationComplex_class.xml
+====== TransportationComplex_class.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | TransportationComplex_class.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/TransportationComplex_class.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/TransportationComplex_class.xml
+h| コード h| 説明
 | 1020 | 徒歩道等
 | 1040 | 道路
 | 1060 | 鉄道
@@ -1393,16 +1341,14 @@ a| 昼間非混雑時（9～17 時）における下り線平均旅行速度。 
 [none]
 **** 参考：CityGML2.0 Annex C.8
 
-　
-
-===== 2)　Road_function.xml
+====== Road_function.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | Road_function.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Road_function.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Road_function.xml
+h| コード h| 説明
 | 1 | 高速自動車国道
 | 2 | 一般国道
 | 3 | 都道府県道
@@ -1422,16 +1368,14 @@ a| 昼間非混雑時（9～17 時）における下り線平均旅行速度。 
 [none]
 **** 参考：道路法及び建築基準法
 
-　
-
-===== 3)　Road_usage.xml
+====== Road_usage.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | Road_usage.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Road_usage.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Road_usage.xml
+h| コード h| 説明
 | 1 | 緊急輸送道路（第一次緊急輸送道路）
 | 2 | 緊急輸送道路（第二次緊急輸送道路）
 | 3 | 緊急輸送道路（第三次緊急輸送道路）
@@ -1443,9 +1387,7 @@ a| 昼間非混雑時（9～17 時）における下り線平均旅行速度。 
 [none]
 **** 参考：国土交通省ウェブサイト（ https://www.mlit.go.jp/road/bosai/measures/index3.html[]）及び地域防災計画の作成の基準（ https://www.mlit.go.jp/common/001036322.pdf[]）
 
-　
-
-===== 4)　TrafficArea_function.xml
+====== TrafficArea_function.xml
 
 コードリストTrafficArea_function.xmlは、適用するLODにより使用可能なコードが異なるため、LOD別に示す。
 
@@ -1455,9 +1397,9 @@ a| 昼間非混雑時（9～17 時）における下り線平均旅行速度。 
 |===
 | ファイル名 4+| TrafficArea_function.xml
 
-| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.1/TrafficArea_function.xml
-2+^| 大分類 2+^| 小分類 .2+^| 定義
-^| コード ^| 説明 ^| コード ^| 説明
+h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.1/TrafficArea_function.xml
+2+^h| 大分類 2+^h| 小分類 .2+^h| 定義
+^h| コード ^h| 説明 ^h| コード ^h| 説明
 .2+| 1000 .2+| 車道部 2+| | 主として自動車が利用する道路の部分。
 | 1020 | 車道交差部 | 十字路、丁字路、その他二つ以上の車道が交わる部分。
 | 2000 | 歩道部 2+| | 自転車や歩行者のために供される道路の部分。歩道上の植栽を含む。
@@ -1467,17 +1409,16 @@ a| 昼間非混雑時（9～17 時）における下り線平均旅行速度。 
 [none]
 **** 出典：道路基盤地図情報製品仕様書（案）
 
-　
-
+[disc]
 * LOD3.1で使用する場合
 
 [cols="3,3,3,3,13"]
 |===
 | ファイル名 4+| TrafficArea_function.xml
 
-| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.1/TrafficArea_function.xml
-2+^| 大分類 2+^| 小分類 .2+^| 定義
-^| コード ^| 説明 ^| コード ^| 説明
+h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.1/TrafficArea_function.xml
+2+^h| 大分類 2+^h| 小分類 .2+^h| 定義
+^h| コード ^h| 説明 ^h| コード ^h| 説明
 .3+| 1000 .3+| 車道部 2+| | 主として自動車が利用する道路の部分のうち、自動車の通行の用に供される部分。
 | 1010 | 車線 | 一縦列の自動車を安全かつ円滑に通行させるために設けられる帯状の車道の部分。
 | 1020 | 車道交差部 | 十字路、丁字路、その他二つ以上の車道が交わる部分。
@@ -1488,17 +1429,16 @@ a| 昼間非混雑時（9～17 時）における下り線平均旅行速度。 
 [none]
 **** 出典：道路基盤地図情報製品仕様書（案）
 
-　
-
+[disc]
 * LOD3.2及びLOD3.3で使用する場合
 
 [cols="3,3,3,3,13"]
 |===
 | ファイル名 4+| TrafficArea_function.xml
 
-| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.1/TrafficArea_function.xml
-2+^| 大分類 2+^| 小分類 .2+^| 定義
-^| コード ^| 説明 ^| コード ^| 説明
+h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.1/TrafficArea_function.xml
+2+^h| 大分類 2+^h| 小分類 .2+^h| 定義
+^h| コード ^h| 説明 ^h| コード ^h| 説明
 .3+| 1000 .3+| 車道部 2+| | 主として自動車が利用する道路の部分のうち、自動車の通行の用に供される部分。
 | 1010 | 車線 | 一縦列の自動車を安全かつ円滑に通行させるために設けられる帯状の車道の部分。
 | 1020 | 車道交差部 | 十字路、丁字路、その他二つ以上の車道が交わる部分。
@@ -1509,17 +1449,16 @@ a| 昼間非混雑時（9～17 時）における下り線平均旅行速度。 
 [none]
 **** 出典：道路基盤地図情報製品仕様書（案）
 
-　
-
+[disc]
 * LOD3.4で使用する場合
 
 [cols="3,3,3,3,13"]
 |===
 | ファイル名 4+| TrafficArea_function.xml
 
-| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.1/TrafficArea_function.xml
-2+^| 大分類 2+^| 小分類 .2+^| 定義
-^| コード ^| 説明 ^| コード ^| 説明
+h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.1/TrafficArea_function.xml
+2+^h| 大分類 2+^h| 小分類 .2+^h| 定義
+^h| コード ^h| 説明 ^h| コード ^h| 説明
 .8+| 1000
 .8+| 車道部
 2+| 
@@ -1545,9 +1484,7 @@ a| 主として自動車が利用する道路の部分のうち、自動車の�
 [none]
 **** 出典：道路基盤地図情報製品仕様書（案）
 
-　
-
-===== 5) AuxiliaryTrafficArea_function.xml
+====== AuxiliaryTrafficArea_function.xml
 
 コードリストTrafficArea_function.xml及びAuxiliaryTrafficArea_function.xmlは、適用するLODにより使用可能なコードが異なるため、LOD別に示す。
 
@@ -1557,9 +1494,9 @@ a| 主として自動車が利用する道路の部分のうち、自動車の�
 |===
 | ファイル名 2+| AuxiliaryTrafficArea_function.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/AuxiliaryTrafficArea_function.xml
-2+^| 大分類 .2+^| 定義
-^| コード ^| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/AuxiliaryTrafficArea_function.xml
+2+^h| 大分類 .2+^h| 定義
+^h| コード ^h| 説明
 | 3000 | 島 | 車両の走行を制御し、安全な交通を確保するために設置される分離帯及び交通島。路面電車停車所が設けられた島を含む。
 
 |===
@@ -1567,17 +1504,16 @@ a| 主として自動車が利用する道路の部分のうち、自動車の�
 [none]
 **** 出典：道路基盤地図情報製品仕様書（案）
 
-　
-
+[disc]
 * LOD3.2及びLOD3.3で使用する場合
 
 [cols="3,3,19"]
 |===
 | ファイル名 2+| AuxiliaryTrafficArea_function.xml
 
-| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/AuxiliaryTrafficArea_function.xml
-2+^| 大分類 .2+^| 定義
-^| コード ^| 説明
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/AuxiliaryTrafficArea_function.xml
+2+^h| 大分類 .2+^h| 定義
+^h| コード ^h| 説明
 | 3000 | 島 | 車両の走行を制御し、安全な交通を確保するために設置される分離帯及び交通島。路面電車停車所が設けられた島を含む。
 | 5000 | 植栽 | 植樹帯及び植樹ます。
 
@@ -1586,17 +1522,16 @@ a| 主として自動車が利用する道路の部分のうち、自動車の�
 [none]
 **** 参考：道路基盤地図情報製品仕様書（案）
 
-　
-
+[disc]
 * LOD3.4で使用する場合
 
 [cols="3,3,3,3,13"]
 |===
 | ファイル名 4+| AuxiliaryTrafficArea_function.xml
 
-| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.1/AuxiliaryTrafficArea_function.xml
-2+^| 大分類 2+^| 小分類 .2+^| 定義
-^| コード ^| 説明 ^| コード ^| 説明
+h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.1/AuxiliaryTrafficArea_function.xml
+2+^h| 大分類 2+^h| 小分類 .2+^h| 定義
+^h| コード ^h| 説明 ^h| コード ^h| 説明
 .7+| 1000
 .7+| 車道部
 2+| 
@@ -1624,20 +1559,18 @@ a| 主として自動車が利用する道路の部分のうち、自動車の�
 [none]
 **** 参考：道路基盤地図情報製品仕様書（案）
 
-　
-
-===== 6) TrafficArea_surfaceMaterial.xml、AuxiliaryTrafficArea_surfaceMaterial.xml
+====== TrafficArea_surfaceMaterial.xml、AuxiliaryTrafficArea_surfaceMaterial.xml
 
 [cols="6,19,6,19"]
 |===
 | ファイル名 3+| TrafficArea_surfaceMaterial.xml、AuxiliaryTrafficArea_surfaceMaterial.xml
 
-| ファイルURL
+h| ファイルURL
 3+a| https://www.geospatial.jp/iur/codelists/3.1/TrafficArea_surfaceMaterial.xml +
 https://www.geospatial.jp/iur/codelists/3.1/AuxiliaryTrafficArea_surfaceMaterial.xml
 
-2+^| 大分類 2+^| 小分類
-^| コード ^| 説明 ^| コード ^| 説明
+2+^h| 大分類 2+^h| 小分類
+^h| コード ^h| 説明 ^h| コード ^h| 説明
 .4+| 1000 .4+| アスファルト舗装 2+| 　
 | 1010 | 排水性アスファルト舗装
 | 1020 | 透水性アスファルト舗装
@@ -1654,19 +1587,17 @@ https://www.geospatial.jp/iur/codelists/3.1/AuxiliaryTrafficArea_surfaceMaterial
 [none]
 **** 参考：国土交通省道路局ウェブサイト（ https://www.mlit.go.jp/road/soudan/soudan_08b_01.html[]）
 
-　
-
 [[toc4_03_04_02]]
-===== (2)　Urban Object（i-UR）
+===== Urban Object（i-UR）
 
-===== 1)　RoadStructureAttribute_widthType.xml
+====== RoadStructureAttribute_widthType.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | RoadStructureAttribute_widthType.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/RoadStructureAttribute_widthType.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/RoadStructureAttribute_widthType.xml
+h| コード h| 説明
 | 1 | 15m以上
 | 2 | 6m以上15m未満
 | 3 | 4m以上6m未満
@@ -1677,16 +1608,14 @@ https://www.geospatial.jp/iur/codelists/3.1/AuxiliaryTrafficArea_surfaceMaterial
 [none]
 **** 出典：都市計画基礎調査実施要領
 
-　
-
-===== 2)　RoadStructureAttribute_sectionType.xml
+====== RoadStructureAttribute_sectionType.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | RoadStructureAttribute_sectionType.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/RoadStructureAttribute_sectionType.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/RoadStructureAttribute_sectionType.xml
+h| コード h| 説明
 | 1 | 土工区間・通常区間
 | 2 | 高架橋
 | 3 | 橋梁
@@ -1696,16 +1625,14 @@ https://www.geospatial.jp/iur/codelists/3.1/AuxiliaryTrafficArea_surfaceMaterial
 
 |===
 
-　
-
-===== 3)　DataQualityAttribute_geometrySrcDesc.xml
+====== DataQualityAttribute_geometrySrcDesc.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml
+h| コード h| 説明
 | 000 | 公共測量成果
 | 101 | （公共測量ではない）現地測量の測量成果
 | 102 | （公共測量ではない）UAV写真測量の測量成果
@@ -1745,16 +1672,14 @@ https://www.geospatial.jp/iur/codelists/3.1/AuxiliaryTrafficArea_surfaceMaterial
 [none]
 **** 参考：作業規程の準則、3D都市モデル整備のための測量マニュアル、3D都市モデル標準作業手順書
 
-　
-
-===== 4)　DataQualityAttribute_thematicSrcDesc.xml
+====== DataQualityAttribute_thematicSrcDesc.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml
+h| コード h| 説明
 | 000 | 公共測量成果
 | 022 | 基盤地図情報
 | 023 | 数値地形図データ
@@ -1778,16 +1703,14 @@ https://www.geospatial.jp/iur/codelists/3.1/AuxiliaryTrafficArea_surfaceMaterial
 [none]
 **** 参考：作業規程の準則、3D都市モデル整備のための測量マニュアル、3D都市モデル標準作業手順書
 
-　
-
-===== 5)　DataQualityAttribute_appearanceSrcDesc.xml
+====== DataQualityAttribute_appearanceSrcDesc.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml
+h| コード h| 説明
 | 1 | 空中写真
 | 2 | 衛星写真
 | 3 | 車載写真レーザ測量システムにより撮影した写真
@@ -1797,16 +1720,14 @@ https://www.geospatial.jp/iur/codelists/3.1/AuxiliaryTrafficArea_surfaceMaterial
 
 |===
 
-　
-
-===== 6)　Road_lodType.xml
+====== Road_lodType.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | Road_lodType.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Road_lodType.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Road_lodType.xml
+h| コード h| 説明
 | 3.0
 a| 道路の横断方向の高さは一律とし、車道の高さとする。 +
 車道、車道交差部、分離帯及び歩道を区分する。
@@ -1832,32 +1753,28 @@ a| 道路の横断方向に存在する2㎝以上の高さの差を取得する�
 
 |===
 
-　
-
-===== 7)　PublicSurveyDataQualityAttribute_srcScale.xml
+====== PublicSurveyDataQualityAttribute_srcScale.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | PublicSurveyDataQualityAttribute_srcScale.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml
+h| コード h| 説明
 | 1 | 地図情報レベル2500
 | 2 | 地図情報レベル1000
 | 3 | 地図情報レベル500
 
 |===
 
-　
-
-===== 8)　PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
+====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
 [cols="3,22"]
 |===
 | ファイル名 | PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
-| コード | 説明
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
+h| コード h| 説明
 | 001 | 現地測量の測量成果
 | 002 | UAV写真測量の測量成果
 | 003 | 空中写真測量の測量成果
@@ -1886,6 +1803,4 @@ a| 道路の横断方向に存在する2㎝以上の高さの差を取得する�
 
 [none]
 **** 参考：作業規程の準則、3D都市モデル整備のための測量マニュアル、3D都市モデル標準作業手順書
-
-　
 
