@@ -37,7 +37,7 @@ jobs:
           use-bundler: true
 
       - name: Metanorma generate site
-        uses: actions-mn/build-and-publish@v1
+        uses: actions-mn/build-and-publish@v2
         with:
           agree-to-terms: true
           destination: artifact
