@@ -24,14 +24,15 @@
 
 記述例：
 
-....
+[source,xml]
+----
 <gml:boundedBy>
 　<gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/6697" srsDimension="3">
 　　<gml:lowerCorner> 33.80 130.54 0.0 </gml:lowerCorner>
 　　<gml:upperCorner> 33.81 130.55 20.0 </gml:upperCorner>
 　</gml:Envelope>
 </gml:boundedBy>
-....
+----
 
 gml:Envelopeの属性srsNameに空間参照系のURIを記述する。属性srsDimensionには次元数を入れる。gml:lowerCornerには、緯度、経度及び標高の最小値を記載し、gml:upperCornerには最大値を記載する。
 

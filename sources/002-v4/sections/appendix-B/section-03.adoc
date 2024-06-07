@@ -16,13 +16,15 @@ gml:posは直接座標、gml:posListは直接座標のリストの記述に用�
 
 記述例：
 
-....
+[source,xml]
+----
 <gml:pos> 35.6778 139.71689 4.2 </gml:pos>
-....
+----
 
-....
+[source,xml]
+----
 <gml:posList> 33.80 130.54 10.4 33.81 130.53 10.6 </gml:posList>
-....
+----
 
 [[tocB_03_02]]
 ==== gml:Point
@@ -31,11 +33,12 @@ gml:Pointは、点を記述するための幾何オブジェクトである。gm
 
 記述例：
 
-....
+[source,xml]
+----
 <gml:Point gml:id=”pos001”>
 	<gml:pos>33.80 130.54 0</gml:pos>
 </gml:Point>
-....
+----
 
 [[tocB_03_03]]
 ==== gml:MultiPoint
@@ -44,7 +47,8 @@ gml:MultiPointは、点（gml:Point）の集まりを記述するための幾何
 
 記述例：
 
-....
+[source,xml]
+----
 <gml:MultiPoint>
 	<gml:pointMember>
 			<gml:Point>
@@ -52,7 +56,7 @@ gml:MultiPointは、点（gml:Point）の集まりを記述するための幾何
 			</gml:Point>
 		</gml:pointMember>
 </gml:MultiPoint>
-....
+----
 
 [[tocB_03_04]]
 ==== gml:_Curve, gml:LineString

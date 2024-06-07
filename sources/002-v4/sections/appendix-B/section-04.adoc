@@ -24,14 +24,15 @@ CityGMLでは、採用すべき空間参照系は規定されていない。一�
 
 記述例：
 
-....
+[source,xml]
+----
 <gml:boundedBy>
 	<gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/6697">
 		<gml:lowerCorner srsDimension="3">33.80 130.54 0.0</gml:lowerCorner>
 		<gml:upperCorner srsDimension="3">33.81 130.55 0.0</gml:upperCorner>
 	</gml:Envelope>
 </gml:boundedBy>
-....
+----
 
 　本来、「日本測地系2011における経緯度座標系」が適用された場合srsName属性で指定する空間参照系のURIは、「日本測地系2011における経緯度座標系」の定義を取得可能なURI（例： http://www.opengis.net/def/crs/EPSG/0/6668[]）であり、次元数を示すsrsDimension属性の値は2である。しかしながら、CityGMLは3次元座標の地理空間データの記述を対象としていることからCityGML対応のソフトウェアの中には、2次元座標の地理空間データを読み込めないものもある。そのため、暫定的な対応として高さの最小範囲・最大範囲に0.0を入れ、次元数に3を記述する。
 
