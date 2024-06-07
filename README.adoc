@@ -173,7 +173,7 @@ a new `index.html` file.
 
 [source,sh]
 ----
-$ bundle exec reverse_adoc -rcoradoc/reverse_adoc/plugins/plateau --split-sections 2 --external-images -o plateau-document-01/index.adoc reference-docs/plateau-document-01.html
+$ bundle exec reverse_adoc -rcoradoc/reverse_adoc/plugins/plateau --split-sections 2 --external-images -o sources/001-v4/document.adoc reference-docs/plateau-document-01.html
 ----
 
 Where:
@@ -201,21 +201,21 @@ Converting with parallel processing: (if you have GNU Parallel)
 
 [source,sh]
 ----
-$ parallel dwebp {} -o {}.png ::: *.png
+$ parallel dwebp {} -o {}.png ::: *.webp
 ----
 
 Converting sequentially:
 
 [source,sh]
 ----
-$ find . -name "*.png" -exec dwebp \{} -o \{}.png
+$ find . -name "*.webp" -exec dwebp \{} -o \{}.png
 ----
 
 Updating the files to refer to the new `.png` files:
 
 [source,sh]
 ----
-sed -i '' 's/\.png/.png.png/g' sources/001-v3/sections/*.adoc
+sed -i '' 's/\.webp/.webp.png/g' sources/001-v3/sections/*.adoc
 ----
 
 
