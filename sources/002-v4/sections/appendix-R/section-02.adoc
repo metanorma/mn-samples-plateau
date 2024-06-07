@@ -12,7 +12,7 @@
 
 表R- 1　植生モデルの概要
 
-image::images/495.webp[]
+image::images/495.webp.png[]
 
 [[]]
 ==== 使用可能な地物型とLOD
@@ -37,17 +37,17 @@ image::images/495.webp[]
 .表R- 2　植生モデルに使用する地物型と空間属性
 |===
 ^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| 適用
-.5+| veg:SolitaryVegetationObject | ^| ● ^| ● ^| ● ^| ● | 
+.5+| veg:SolitaryVegetationObject | ^| ● ^| ● ^| ● ^| ● |
 | uro:lod0Geometry ^| ● ^| ^| ^| | Point又は MultiPointとする。
 | veg:lod1Geometry ^| ^| ● ^| ^| | Solidとする。
 | veg:lod2 Geometry ^| ^| ^| ● ^| | MultiSurface又はSolidとする。
 | veg:lod3 Geometry ^| ^| ^| ^| ● | MultiSurface又はSolidとする。
-.8+| veg:PlantCover | ^| ● ^| ● ^| ● ^| ● | 
+.8+| veg:PlantCover | ^| ● ^| ● ^| ● ^| ● |
 | uro:lod0Geometry ^| ● ^| ^| ^| | Point、 MultiPoint又はMultiCurveとする。
-| veg:lod1MultiSurface ^| ^| ^| ^| | 
-| veg:lod1MultiSolid ^| ^| ● ^| ^| | 
+| veg:lod1MultiSurface ^| ^| ^| ^| |
+| veg:lod1MultiSolid ^| ^| ● ^| ^| |
 | veg:lod2MultiSurface ^| ^| ^| ■ ^| .2+| いずれかが必須となる。
-| veg:lod2MultiSolid ^| ^| ^| ■ ^| 
+| veg:lod2MultiSolid ^| ^| ^| ■ ^|
 | veg:lod3MultiSurface ^| ^| ^| ^| ■ .2+| いずれかが必須となる。
 | veg:lod3MultiSolid ^| ^| ^| ^| ■
 

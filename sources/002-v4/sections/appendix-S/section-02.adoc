@@ -16,7 +16,7 @@ CityGMLでは、地形の表現として、不規則三角網（TINRelief）に�
 
 表S- 1　地形モデルの概要
 
-image::images/503.webp[]
+image::images/503.webp.png[]
 
 [[]]
 ==== 使用可能な地物型とLOD
@@ -46,8 +46,8 @@ a| dem:ReliefFeatureを作成する場合は、 +
 dem:BreaklineRelief 、 +
 dem:TINRelief又はdem:ReliefFeatureのいずれかを必須とする。
 
-.2+| dem:BreaklineRelief | ^| ■ ^| ^| ^| .2+| 
-| dem:ridgeOrValleyLines ^| ■ ^| ^| ^| 
+.2+| dem:BreaklineRelief | ^| ■ ^| ^| ^| .2+|
+| dem:ridgeOrValleyLines ^| ■ ^| ^| ^|
 .2+| dem:TINRelief | ^| ■ ^| ■ ^| ■ ^| ■ .4+| LOD1、LOD2及びLOD3では、dem:TINReliefを基本とする。
 | dem:tin ^| ■ ^| ■ ^| ■ ^| ■
 .2+| dem:MassPointRelief | ^| ■ ^| ■ ^| ■ ^| ■

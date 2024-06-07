@@ -21,7 +21,7 @@ a| • GISデータ +
 
 都市計画決定情報モデル（LOD1）作成例を図K- 3に示す。
 
-image::images/298.webp[title=" 図K- 3　都市計画決定情報モデル（LOD1）の作成イメージ"]
+image::images/298.webp.png[title=" 図K- 3　都市計画決定情報モデル（LOD1）の作成イメージ"]
 
 幾何オブジェクトの作成方法として、「GISデータの変換により作成する方法」「既成図数値化により作成する方法」「新規に作成する方法」の3つがある。
 
@@ -66,9 +66,9 @@ GISデータが存在しない場合には、計画図から区域の形状を�
 　都市計画の効力が生じた告示の日付は属性urf:validFromに記述し、告示の番号はurf:notificationNumberに記述する。一方、当該都市計画を含む最終（最新）の都市計画の告示日と告示番号は、属性urf:finalNotificationDate とurf:finalNotificationNumberに記述する。 +
 　都市計画が変更となったが、当該区域の形状に変化がない場合、各区域のurf:validFrom及びurf:notificationNumberの値は変化しないが、最新の都市計画の告示日と告示番号を示すurf:finalNotificationDate とurf:finalNotificationNumberは、更新される。
 
-image::images/299.webp[]
+image::images/299.webp.png[]
 
-image::images/300.webp[title=" 図K- 4　区域の分割イメージ"]
+image::images/300.webp.png[title=" 図K- 4　区域の分割イメージ"]
 
 都市計画決定情報のデータセットに必須として含むべきデータはデータセットが作成された時点で有効である都市計画である。また、無効となった区域を把握したい場合にはこれを含むことができる。
 
@@ -96,7 +96,7 @@ image::images/300.webp[title=" 図K- 4　区域の分割イメージ"]
 
 なお、この場合、告示日（urf:validFrom）と告示番号（urf:notificationNuber）は、最終の告示日（urf:finalNotificationDate）及び告示番号（urf:finalNotificationNumber）と一致する。
 
-image::images/301.webp[title=" 図K- 5　最新のみ分かる場合のデータの作成例"]
+image::images/301.webp.png[title=" 図K- 5　最新のみ分かる場合のデータの作成例"]
 
 (2) 当初と最新（最終）のみ明らかな場合
 
@@ -104,5 +104,5 @@ image::images/301.webp[title=" 図K- 5　最新のみ分かる場合のデータ
 
 この場合、最新（最終）の変更に関する情報は、前項(1)と同様に作成する（図K- 6作成するデータ①）。これに加えて、当初の都市計画のデータを作成することができる（作成するデータ②）。このとき、作成するデータ②の告示日urf:validFromは当初の告示の日付となり、その区分urf:validFromTypeは新規を示す1となる。また、この都市計画は現在無効であるため、urf:validToとurf:validToTypeを作成するが、変遷が分からないため、urf:validToは無効を示す0001-01-01となり、urf:validToTypeは変更を示す3となる。都市計画の決定者urf:custodianは、この当初の告示を行った行政機関の名称となる。
 
-image::images/302.webp[title=" 図K- 6　変遷が分からない場合のデータの作成例"]
+image::images/302.webp.png[title=" 図K- 6　変遷が分からない場合のデータの作成例"]
 

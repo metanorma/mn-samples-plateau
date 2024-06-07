@@ -30,7 +30,7 @@
 
 表E- 1　交通（鉄道）モデルのLODの考え方
 
-image::images/230.webp[]
+image::images/230.webp.png[]
 
 交通（鉄道）モデル（LOD0）は鉄道を線として表現するが、このときの線は、ネットワーク（軌道中心線）又はレールのいずれかを選択できる。3Ｄ都市モデルでは、ネットワーク（軌道中心線）を採用することを原則とする。ネットワークデータとして記述することでマクロな人や物の流れを表現・分析可能となり、公共交通網の見直しや公共施設の再配置等に利用することを想定している。レールを採用する場合、「作業規程の準則　付録７　公共測量標準図式」（以下、「公共測量標準図式」という）に従う。これにより、従来の都市計画基本図の地図表現が可能となる。
 
@@ -55,20 +55,20 @@ tran:Railwayの空間属性は、LOD0では線とし、LOD1以降では面とす
 .表E- 2　交通（鉄道）モデルに使用する地物型と空間属性
 |===
 ^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| 適用
-.6+| tran:Railway | ^| ● ^| ● ^| ● ^| ● | 
+.6+| tran:Railway | ^| ● ^| ● ^| ● ^| ● |
 | tran:lod0Network ^| ■ ^| ^| ^| | LOD0はネットワークを原則とするが、数値地形図との互換性を保つために、レールの中心線を選択できる。
-| uro:lod0Geometry ^| ■ ^| ^| ^| | 
-| tran:lod1MultiSurface ^| ^| ● ^| ^| | 
-| tran:lod2MultiSurface ^| ^| ^| ● ^| | 
-| tran:lod3MultiSurface ^| ^| ^| ^| ● | 
-.5+| tran:TrafficArea　 | ^| ^| ^| ● ^| ● | 
-| tran:lod2MultiSurface ^| ^| ^| ● ^| | 
+| uro:lod0Geometry ^| ■ ^| ^| ^| |
+| tran:lod1MultiSurface ^| ^| ● ^| ^| |
+| tran:lod2MultiSurface ^| ^| ^| ● ^| |
+| tran:lod3MultiSurface ^| ^| ^| ^| ● |
+.5+| tran:TrafficArea　 | ^| ^| ^| ● ^| ● |
+| tran:lod2MultiSurface ^| ^| ^| ● ^| |
 | uro:lod2Network ^| ^| ^| ● ^| | CompositeCurveとする。
-| tran:lod3MultiSurface ^| ^| ^| ^| ● | 
-| uro:lod3Network ^| ^| ^| ^| ● | 
+| tran:lod3MultiSurface ^| ^| ^| ^| ● |
+| uro:lod3Network ^| ^| ^| ^| ● |
 .3+| tran:AuxiliaryTrafficArea　 | ^| ^| ^| ^| ● | CompositeCurveとする。
 | tran:lod2MultiSurface ^| ^| ^| ^| | 対象外。
-| tran:lod3MultiSurface ^| ^| ^| ^| ● | 
+| tran:lod3MultiSurface ^| ^| ^| ^| ● |
 
 |===
 
@@ -157,7 +157,7 @@ h| ^h| 取得基準 ^h| LOD3.0 ^h| LOD3.1 ^h| LOD3.2
 | 道床 ^| ● ^| ● ^| ●
 | 交通補助領域 ^| ^| ● ^| ●※
 .4+h| 高さの取得方法 | 軌道中心線上の勾配変化点に標高を与え、高さをもった線として表現する。 ^| ● ^| ● ^| ●
-| 道床に軌道中心線の高さを与える。 ^| ● ^| ● ^| 
+| 道床に軌道中心線の高さを与える。 ^| ● ^| ● ^|
 | 軌道の横断方向に存在する15㎝以上の高さの差を取得する。 ^| ^| ● ^| ●
 | 軌道の横断方向に存在する15㎝未満の高さの差を取得する。 ^| ^| ^| ●※
 
@@ -172,7 +172,7 @@ h| ^h| 取得基準 ^h| LOD3.0 ^h| LOD3.1 ^h| LOD3.2
 
 **** ※ユースケースの必要に応じて取得基準を設定できる。
 
-image::images/231.webp[title=" 図E- 1　線路の構造"]
+image::images/231.webp.png[title=" 図E- 1　線路の構造"]
 
 LOD3は「鉄道内の区分」及び「高さの取得方法」の組み合わせが異なるLOD3.0、LOD3.1及びLOD3.2に分かれる。標準製品仕様は、原則としてLOD3.0を採用する。ただし、ユースケースの必要に応じて、LOD3.1又はLOD3.2を採用できる。LOD3.0からLOD3.2に適用する「鉄道内の区分」及び「高さの取得方法」を表E- 4及び表E- 5に示す。
 
@@ -181,9 +181,9 @@ LOD3は「鉄道内の区分」及び「高さの取得方法」の組み合わ�
 |===
 h| ^h| LOD3.0 ^h| LOD3.1 ^h| LOD3.2
 h| 取得例
-a| image::images/232.webp[]
-a| image::images/233.webp[]
-a| image::images/234.webp[]
+a| image::images/232.webp.png[]
+a| image::images/233.webp.png[]
+a| image::images/234.webp.png[]
 
 h| 説明
 | 軌道中心線、レールに囲まれた範囲及び道床を面として取得する。
@@ -200,24 +200,24 @@ LOD3.0における鉄道内の区分は、LOD2と同様である。LOD3.1では�
 |===
 h| ^h| LOD3.0 ^h| LOD3.1 ^h| LOD3.2
 h| 取得例
-a| image::images/235.webp["",200]
-a| image::images/236.webp["",200]
-a| image::images/237.webp["",200]
+a| image::images/235.webp.png["",200]
+a| image::images/236.webp.png["",200]
+a| image::images/237.webp.png["",200]
 
 h| 説明
 | 軌道中心線の各点に標高を与える。 道床に軌道中心線上の標高を与える。 軌道中心線上の標高とは、レール面の標高とする。
-a| 
+a|
 軌道中心線の各点に標高を与える。 +
 レールの横断方向に存在する15㎝以上の高さの差を取得する。
 
-image::images/238.webp["",200]
+image::images/238.webp.png["",200]
 
-a| 
+a|
 軌道中心線の各点に標高を与える。 +
 レールの横断方向に存在する15㎝未満の高さの差を取得する。 +
 高さの差を取得する閾値は、ユースケースの必要に応じて定めることができる。
 
-image::images/239.webp["",200]
+image::images/239.webp.png["",200]
 
 |===
 

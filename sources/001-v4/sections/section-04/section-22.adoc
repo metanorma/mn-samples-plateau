@@ -31,11 +31,11 @@ image::images/411.svg[]
 [cols="1,1,2"]
 |===
 | クラスの定義
-2+a| 
+2+a|
 地物の外観。 +
 地物の幾何オブジェクトとなる面に色又はテクスチャを指定する。
 
-image::images/412.webp["",350,title=" 図　Apperanceを使用してbldg:Buildingの外観を設定した例　　　　（左：色の指定　右：テクスチャの指定）"]
+image::images/412.webp.png["",350,title=" 図　Apperanceを使用してbldg:Buildingの外観を設定した例　　　　（左：色の指定　右：テクスチャの指定）"]
 
 h| 上位の型 2+| core:_CityObject
 h| ステレオタイプ 2+| << FeatureType >>
@@ -58,10 +58,10 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 [cols="1,1,2"]
 |===
 | クラスの定義
-2+a| 
+2+a|
 地物インスタンスに貼り付ける画像と貼り付け方をパラメータにより指定するための型。
 
-image::images/413.webp["",250,title=" 図　bldg:Buildingの外観としてテクスチャを指定した例"]
+image::images/413.webp.png["",250,title=" 図　bldg:Buildingの外観としてテクスチャを指定した例"]
 
 h| 上位の型 2+| app:_Texture
 h| ステレオタイプ 2+| << FeatureType >>
@@ -114,10 +114,10 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 [cols="1,1,2"]
 |===
 | クラスの定義
-2+a| 
+2+a|
 地物インスタンスの表面色を指定するための型。
 
-image::images/414.webp["",220,title=" 図　bldg:Buildingの外観として色を指定した例"]
+image::images/414.webp.png["",220,title=" 図　bldg:Buildingの外観として色を指定した例"]
 
 h| 上位の型 2+| app:_SurfaceData
 h| ステレオタイプ 2+| << FeatureType >>

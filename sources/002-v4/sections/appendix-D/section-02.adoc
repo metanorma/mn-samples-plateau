@@ -22,18 +22,18 @@ tran:Roadの空間属性は、LOD0では、線として表現する。LOD1以降
 .表 D-1　交通（道路）モデルに使用する地物型及び空間属性
 |===
 ^h| 地物型 ^| 空間属性 ^| LOD0 ^| LOD1 ^| LOD2 ^| LOD3 ^| 適用
-.6+| tran:Road | ^| ● ^| ● ^| ● ^| ● | 
+.6+| tran:Road | ^| ● ^| ● ^| ● ^| ● |
 | tran:lod0Network ^| ■ ^| ^| ^| .2+| LOD0はネットワークを原則とするが、数値地形図との互換性を保つために、道路縁を選択できる。
-| uro:lod0Geometry ^| ■ ^| ^| ^| 
-| tran:lod1MultiSurface ^| ^| ● ^| ^| | 
-| tran:lod2MultiSurface ^| ^| ^| ● ^| | 
-| tran:lod3MultiSurface ^| ^| ^| ^| ● | 
-.3+| tran:TrafficArea | ^| ^| ^| ● ^| ● | 
-| tran:lod2MultiSurface ^| ^| ^| ● ^| | 
-| tran:lod3MultiSurface ^| ^| ^| ^| ● | 
-.3+| tran:AuxiliaryTrafficArea | ^| ^| ^| ● ^| ● | 
-| tran:lod2MultiSurface ^| ^| ^| ● ^| | 
-| tran:lod3MultiSurface ^| ^| ^| ^| ● | 
+| uro:lod0Geometry ^| ■ ^| ^| ^|
+| tran:lod1MultiSurface ^| ^| ● ^| ^| |
+| tran:lod2MultiSurface ^| ^| ^| ● ^| |
+| tran:lod3MultiSurface ^| ^| ^| ^| ● |
+.3+| tran:TrafficArea | ^| ^| ^| ● ^| ● |
+| tran:lod2MultiSurface ^| ^| ^| ● ^| |
+| tran:lod3MultiSurface ^| ^| ^| ^| ● |
+.3+| tran:AuxiliaryTrafficArea | ^| ^| ^| ● ^| ● |
+| tran:lod2MultiSurface ^| ^| ^| ● ^| |
+| tran:lod3MultiSurface ^| ^| ^| ^| ● |
 
 |===
 
@@ -53,7 +53,7 @@ tran:Roadの空間属性は、LOD0では、線として表現する。LOD1以降
 
 表D- 2　交通（道路）モデルのLODの考え方
 
-image::images/191.webp[]
+image::images/191.webp.png[]
 
 前述したように、LOD0における道路は線、LOD1以降では面として表現する。また、その座標はLOD0からLOD2までは高さを持たず、LOD3では高さを持つ。このとき、LOD0からLOD2では、交通（道路）オブジェクトを3次元の地形データに重畳することで3次元的に表示して利用することを想定している。
 
@@ -75,14 +75,14 @@ LOD3では道路内の区分と高さの取得方法により、LODを細分す�
 a| 車道部を車線、すりつけ区間、踏切道、軌道敷、待避所、副道、自動車駐車場、非常駐車帯、中央帯、側帯、路肩、停車帯、乗合自動車停車所に区分する。 +
 島を、交通島、分離帯、植樹帯、路面電車停車所に区分する。 +
 歩道を、歩道、自転車歩行者道、自転車道、植樹ますに区分する。
-^| 
-^| 
-^| 
-^| 
+^|
+^|
+^|
+^|
 ^| 〇※
 
-.3+h| 高さの取得方法 | 道路の横断方向の高さは一律とし、車道の高さとする。 ^| ● ^| ● ^| ^| ^| 
-| 道路の横断方向に15㎝以上の高さの差が存在した場合に、車道部、歩道部、島それぞれの高さを取得する。 ^| ^| ^| ● ^| ^| 
+.3+h| 高さの取得方法 | 道路の横断方向の高さは一律とし、車道の高さとする。 ^| ● ^| ● ^| ^| ^|
+| 道路の横断方向に15㎝以上の高さの差が存在した場合に、車道部、歩道部、島それぞれの高さを取得する。 ^| ^| ^| ● ^| ^|
 | 道路の横断方向に2㎝以上の高さの差が存在した場合に、車道部、歩道部、島それぞれの高さを取得する。 ^| ^| ^| ^| ● ^| ●※
 
 |===
@@ -99,50 +99,50 @@ LOD3は「道路内の区分」及び「高さの取得方法」の組み合わ�
 [cols=3]
 .表D-4　道路LOD3における「高さの取得方法」
 |===
-^h| LOD3.0及びLOD3.1 ^h| LOD3.2 ^h| LOD3.3及びLOD3.4 
-.4+a| 
+^h| LOD3.0及びLOD3.1 ^h| LOD3.2 ^h| LOD3.3及びLOD3.4
+.4+a|
 道路内（車道部、歩道部、島）の高さは、横断方向に同一（全て車道の高さ）となる。 +
 立体交差を表現できる。
 
-image::images/192.webp["",250]
+image::images/192.webp.png["",250]
 
-a| 
+a|
 道路の横断方向に存在する15㎝以上の高さの差を取得する。 +
 ①高さの差が15㎝以上の段は、段の形状を取得する。
 
-image::images/193.webp["",300]
+image::images/193.webp.png["",300]
 
-a| 
+a|
 道路の横断方向に存在する2㎝以上の高さの差を取得する。 +
 ①高さの差が2㎝以上の段は、段の形状を取得する。
 
-image::images/194.webp["",310]
+image::images/194.webp.png["",310]
 
-a| 
+a|
 ②高さの差が15㎝以上のスロープは、スロープの形状を取得する。
 
-image::images/195.webp["",300]
+image::images/195.webp.png["",300]
 
-a| 
+a|
 ②高さの差が2㎝以上のスロープは、スロープの形状を取得する。
 
-image::images/196.webp["",310]
+image::images/196.webp.png["",310]
 
-a| 
+a|
 ③高さの差が15㎝未満の段が複数あり、合計15㎝以上の高さの差がある場合は、スロープとして取得する。
 
-image::images/197.webp["",300]
+image::images/197.webp.png["",300]
 
-a| 
+a|
 ③高さの差が2㎝未満の段が複数あり、合計2㎝以上の高さの差がある場合は、スロープとして取得する。
 
-image::images/198.webp["",310]
+image::images/198.webp.png["",310]
 
 | 歩道と車道との間や車道と島との間に存在する縁石による段を表現できる。
-a| 
+a|
 歩道に設けられた車道への切り下げ部に存在する段が表現できる。
 
-image::images/199.webp["",300]
+image::images/199.webp.png["",300]
 
 |===
 
@@ -155,19 +155,19 @@ LOD3.2では、道路内の縁石による高さの差を表現する。この�
 [cols=4]
 .表 D-5　道路LOD3における「道路内の区分」
 |===
-^h| LOD3.0 ^| LOD3.1 ^| LOD3.2及びLOD3.3 ^| LOD3.4 
+^h| LOD3.0 ^| LOD3.1 ^| LOD3.2及びLOD3.3 ^| LOD3.4
 | 車道部、車道交差部、島及び歩道部を区分する。
 a| LOD3.0の区分を細分する。 +
 車道部のうち、車線を区分する。
 a| LOD3.1の区分を細分する。 +
-歩道部のうち、植栽を区分する。 
+歩道部のうち、植栽を区分する。
 a| LOD3.3の区分を細分する。 +
 細分はユースケースに応じて決定する。
 
-a| image::images/200.webp["",140]
-a| image::images/201.webp["",200]
-a| image::images/202.webp["",200]
-a| image::images/203.webp["",225]
+a| image::images/200.webp.png["",140]
+a| image::images/201.webp.png["",200]
+a| image::images/202.webp.png["",200]
+a| image::images/203.webp.png["",225]
 
 |===
 
