@@ -19,7 +19,8 @@ image::images/519.svg[title=" 図 V-1　テクスチャのためのプロファ�
 
 アピアランスモデルより記述されるテクスチャマッピングの情報は、3D都市モデルの一部としてCityGML形式で記述する。
 
-....
+[source,xml]
+----
 <app:ParameterizedTexture>
 　<app:imageURI>[テクスチャ画像への相対パス]</app:imageURI>
 　<app:mimeType>[テクスチャ画像のファイルタイプ]</app:mimeType>
@@ -29,7 +30,7 @@ image::images/519.svg[title=" 図 V-1　テクスチャのためのプロファ�
 	  </app:TexCoordList>
   </app:target>
 </app:ParameterizedTexture>
-....
+----
 
 ** app:imageURIには、参照するテクスチャ画像データのファイルの所在を、3D都市モデルファイルからの相対パスにより記述する。
 

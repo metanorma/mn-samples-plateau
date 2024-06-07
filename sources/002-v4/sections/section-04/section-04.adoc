@@ -160,9 +160,10 @@
 [none]
 *** 記述例：
 
-....
+[source,xml]
+----
 <uro:buildingFootprintArea uom="m2">189.78</uro:buildingFootprintArea>
-....
+----
 
 ** 標準製品仕様書では原則として、長さの単位は“メートル”、面積の単位は“平方メートル” 又は“ヘクタール”、時間の単位は“時間”を採用している。uom属性にはそれぞれ"m"、"m2"、"ha"、"hour"を記述する。
 
@@ -177,16 +178,18 @@
 
 *** 相対パスによるcodeSpaceの指定の例
 
-....
+[source,xml]
+----
 <bldg:usage codeSpace="../codelists/Building_usage.xml">422</bldg:usage>
-....
+----
 
 留意事項40：汎用属性セットを用いてコード型の属性を追加した場合には、コードが参照するコードリストの所在を記述する文字列型の汎用属性（name=“codeSpace”）とコードを記述する文字列型の汎用属性（name=“code”）との対として符号化する。
 
 [none]
 *** 記述例：都市設備（CityFurniture）に追加する場合
 
-....
+[source,xml]
+----
 <gen:genericAttributeSet name=“避難設備区分”>
 　<gen:stringAttribute name=“codeSpace”>
 　<gen:value>../../codelists/CityFurniture_generic-evacType.xml</gen:value>
@@ -195,12 +198,13 @@
 　<gen:value>11</gen:value>
 　</gen:stringAttribute>
 </gen:genericAttributeSet>
-....
+----
 
 [none]
 *** 記述例：汎用都市オブジェクト（GenericCityObject）に追加する場合
 
-....
+[source,xml]
+----
 <gen:genericAttributeSet name=“避難設備区分”>
 　<gen:stringAttribute name=“codeSpace”>
 　<gen:value>../../codelists/GenericCityObject_generic-20-type.xml</gen:value>
@@ -209,7 +213,7 @@
 　<gen:value>11</gen:value>
 　</gen:stringAttribute>
 </gen:genericAttributeSet>
-....
+----
 
 ** コードリストの所在の記述は、gml:CodeTypeを使用したcodeSpace属性による指定と同様とする。
 
