@@ -1,0 +1,45 @@
+[[tocC_09]]
+=== bldg:IntBuildingInstallation
+
+bldg:IntBuildingInstallationは、階段、スロープ、てすり、輸送設備（エレベータ、エスカレータ、動く歩道）のような、建築物の内側に設置された付属的な設備であり、かつ永続的に設置されている固定的な設備である。
+
+[[]]
+==== 建築物屋内付属物の空間属性
+
+bldg:BuildingInstallationの空間属性bldg:lod4Geomertyの型は、gml:_Geometryである。gml:_Geometryは、幾何オブジェクトの基底要素であり、実装においては、この下位型のうち、具象となる幾何オブジェクトを、地物の形状に合わせて選定する。
+
+****
+要件bldg-30.　bldg:BuildingInstallationの空間属性の型には、gml:MultiSurfaceを使用することを原則とする。
+****
+
+ある程度の広がりをもつ地物は、曲面の集まり又は立体を使用する。CityGMLでは、曲面や立体だけではなく、点や曲線も使用可能である。しかしながら3D都市モデルでは、3次元での利用を想定し、屋内付属物の形状に使用可能な幾何オブジェクトを曲面又は立体に限定する。原則として面の集まり（gml:MultiSurface）を使用するが、ユースケースの必要に応じてgml:Solidを使用できる。
+
+[[]]
+==== 建築物屋内付属物の主題属性
+
+bldg:IntBuildingInstallationは、建築物の内部に付属する恒久的に設置された設備の総称となる。そのため、それが何であるか（例：階段、エレベータ）は、主題属性により区分する。
+
+****
+要件bldg-31.　bldg:IntBuildingInstallationは、bldg:class及びbldg:functionによりその設備を区分する。
+****
+
+bldg:class及びbldg:functionが取りうる値は、コードリストにより定義されている。標準製品仕様書では、bldg:classの定義域として表C- 12に示す区分を定義している。この定義域は、BIMモデルの国際標準であるIFCでのクラスの区分に基づく。建築物モデル（LOD4）の場合、BIMモデルからの変換により作成されるケースが多いと考えられるためである。また、bldg:functionの定義域は、Uniclass2015に従う。Uniclassは、建築生産で必要とする建築部位、工法及び設備などの名称を体系的に整理したものである。
+
+[cols="3,17"]
+.表C- 12　 IntBuildingInstallation bldg:classの区分
+|===
+h| ファイル名 | IntBuildingInstallation_class.xml
+h| コード h| 説明
+| BE_01 | IfcBeam
+| BE_02 | IfcColumn
+| BE_05 | IfcPlate
+| BE_06 | IfcRailing
+| BE_07 | IfcRamp
+| BE_08 | IfcRampFlight
+| BE_11 | IfcStair
+| BE_12 | IfcStairFlight
+| BE_16 | IfcBuildingElementProxy
+| BE_17 | IfcTransportElement
+
+|===
+
