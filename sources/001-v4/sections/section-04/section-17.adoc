@@ -18,9 +18,9 @@
 |===
 h| 3+^h| LOD0
 h| 取得例
-^a| image::images/347.webp["",250]
-a| image::images/348.webp["",200]
-^a| image::images/349.webp["",200]
+^a| image::images/347.webp.png["",250]
+a| image::images/348.webp.png["",200]
+^a| image::images/349.webp.png["",200]
 
 h| 説明 | 並木、植樹、独立樹（広葉樹）、独立樹（針葉樹）は、記号の表示位置の点情報を取得する。 | 田、はす田、畑、さとうきび畑、パイナップル畑、わさび畑、桑畑、茶畑、果樹園、その他の樹木畑、牧草地、芝地、広葉樹林、針葉樹林、竹林、荒地、はい松地、しの地（笹地）、やし科樹林、湿地、砂れき地（未分類）、砂地、れき地、干潟は、記号表示位置又は記号代表点を点情報で取得する。 | 植生界（異なった植生の区分）及び耕地界（同一する種類の耕地の境で、一区画の短辺が図上概ね2.0㎝以上のものをいう）は、中心を取得する。
 
@@ -84,10 +84,10 @@ a| •&nbsp;&nbsp; 中心を取得する。 +
 |===
 h| 2+^h| LOD1
 h| 取得例
-^a| image::images/350.webp["",200]
-^a| image::images/351.webp["",400]
+^a| image::images/350.webp.png["",200]
+^a| image::images/351.webp.png["",400]
 
-h| 説明 | 樹冠の上方からの正射影の外周を、地表面から一律の高さで上向きに押し出した立体として表現する。 | 植被の上方からの正射影の外周を地表面から一律の高さで上向きに押し出した立体として表現する。 
+h| 説明 | 樹冠の上方からの正射影の外周を、地表面から一律の高さで上向きに押し出した立体として表現する。 | 植被の上方からの正射影の外周を地表面から一律の高さで上向きに押し出した立体として表現する。
 
 |===
 
@@ -116,8 +116,8 @@ h| 説明 | 樹冠の上方からの正射影の外周を、地表面から一�
 |===
 h| 2+^h| LOD2
 h| 取得例
-a| image::images/352.webp["",200]
-a| image::images/353.webp["",300]
+a| image::images/352.webp.png["",200]
+a| image::images/353.webp.png["",300]
 
 h| 説明
 a| 樹冠と樹幹をそれぞれ簡略化した立体※を組み合わせた立体として表現する。 +
@@ -179,8 +179,8 @@ a| •&nbsp;&nbsp;正射影に含まれる頂点は、3m以上の高さの差を
 |===
 h| 2+^h| LOD3
 h| 取得例
-a| image::images/354.webp["",200]
-a| image::images/355.webp["",300]
+a| image::images/354.webp.png["",200]
+a| image::images/355.webp.png["",300]
 
 h| 説明
 a| 樹冠及び樹幹の外形を構成する特徴点※により作成した立体。 +
@@ -239,17 +239,17 @@ a| •&nbsp;&nbsp;正射影に含まれる頂点は、1m以上の高さの差を
 .表 4-106　植生モデルの記述に使用する地物型と空間属性
 |===
 ^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| 適用
-.5+| veg:SolitaryVegetationObject | ^| ● ^| ● ^| ● ^| ● | 
+.5+| veg:SolitaryVegetationObject | ^| ● ^| ● ^| ● ^| ● |
 | uro:lod0Geometry ^| ● | | | | 点とする。
 | veg:lod1Geometry ^| ^| ● | | | Solidとする。
 | veg:lod2Geometry | ^| ^| ● | | Solid又はMultiSurfaceとする。
 | veg:lod3Geometry | | ^| ^| ● | Solid又はMultiSurfaceとする。
-.8+| veg:PlantCover | ^| ● ^| ● ^| ● ^| ● | 
+.8+| veg:PlantCover | ^| ● ^| ● ^| ● ^| ● |
 | uro:lod0Geometry ^| ● | | | | 点又は線とする。
-| veg:lod1MultiSurface ^| ^| | | | 
-| veg:lod1MultiSolid | ^| ● | | | 
+| veg:lod1MultiSurface ^| ^| | | |
+| veg:lod1MultiSolid | ^| ● | | |
 | veg:lod2MultiSurface | | ^| ■ ^| .2+| いずれかが必須となる。
-| veg:lod2MultiSolid | | ^| ■ | 
+| veg:lod2MultiSolid | | ^| ■ |
 | veg:lod3MultiSurface | | ^| ^| ■ .2+| いずれかが必須となる。
 | veg:lod3MultiSolid | | ^| ^| ■
 
@@ -279,10 +279,10 @@ image::images/357.svg[]
 [cols="13,14,13"]
 |===
 | 型の定義
-2+a| 
+2+a|
 独立した樹木。
 
-image::images/358.webp["",150,title=" 図　SolitaryVegetationObjectの例"]
+image::images/358.webp.png["",150,title=" 図　SolitaryVegetationObjectの例"]
 
 h| 上位の型 2+| veg:_VegetationObject
 h| ステレオタイプ 2+| << FeatureType >>
@@ -332,29 +332,29 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | veg:lod1Geometry
 | gml:_Geometry [0..1]
-a| 
+a|
 単独木の形状をそれが占有している範囲（面）に一律の高さを与えた立体として表現する。 +
 樹冠の情報からの正射影の外周を樹高の高さで上向きに押し出した立体となる。
 
-image::images/359.webp["",150,title=" 図　LOD1のSolitaryVegetationObjectの例"]
+image::images/359.webp.png["",150,title=" 図　LOD1のSolitaryVegetationObjectの例"]
 
 | veg:lod2Geometry
 | gml:_Geometry [0..1]
-a| 
+a|
 単独木の形状を立体とし、その主要な部分の外形を面の集まり又は立体として区分して表現する。 +
 樹冠と樹幹をそれぞれ簡略化した立体（楕円体、球体、円錐、角錐、角柱、円柱などの単純な立体図形）を組み合わせた立体として表現する。
 
-image::images/360.webp["",150,title=" 図　LOD2のSolitaryVegetationObjectの例"]
+image::images/360.webp.png["",150,title=" 図　LOD2のSolitaryVegetationObjectの例"]
 
 樹木量の算定等、容積が必要ではない場合には、gml:MultiSurfaceにより外形を構成する。
 
 | veg:lod3Geometry
 | gml:_Geometry [0..1]
-a| 
+a|
 単独木の形状を立体とし、その主要な部分の外形を面の集まり又は立体として詳細に区分して表現する。 +
 一定高さごとに樹冠の横断面を作成し、この頂点を結び外形を構成する（樹冠内部の主枝等の表現は行わない）。
 
-image::images/361.webp["",150,title=" 図　LOD3のSolitaryVegetationObjectの例"]
+image::images/361.webp.png["",150,title=" 図　LOD3のSolitaryVegetationObjectの例"]
 
 樹木量の算定等、容積が必要ではない場合には、gml:MultiSurfaceにより外形を構成する。
 
@@ -365,10 +365,10 @@ image::images/361.webp["",150,title=" 図　LOD3のSolitaryVegetationObjectの�
 [cols=3]
 |===
 | 型の定義
-2+a| 
+2+a|
 植被。芝生や茂みのように、植生に覆われた範囲を指し、個々の樹木を識別しない。
 
-image::images/362.webp["",400,title=" 図　veg:PlantCoverの例"]
+image::images/362.webp.png["",400,title=" 図　veg:PlantCoverの例"]
 
 h| 上位の型 2+| veg:_VegetationObject
 h| ステレオタイプ 2+| << FeatureType >>
@@ -411,39 +411,39 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 h| (veg:lod1MultiSurface) | gml:MultiSurface [0..1] | LOD1はSolidにより表現するため、使用しない。
 | veg:lod2MultiSurface
 | gml:MultiSurface [0..1]
-a| 
+a|
 植被の形状を立体とし、その主要な部分の外形を面の集まり又は立体として区分して表現する。 +
 植被の範囲内で比高3m以上の場合にこれを区分した面の集まりとなる。
 
-image::images/363.webp["",300,title=" 図　LOD2のPlantCoverの例"]
+image::images/363.webp.png["",300,title=" 図　LOD2のPlantCoverの例"]
 
 | veg:lod3MultiSurface
 | gml:MultiSurface [0..1]
-a| 
+a|
 植被の形状を立体とし、その主要な部分の外形を面の集まりとして詳細に区分して表現する。植被の範囲内で比高1m以上の場合にこれを区分した面の集まりとなる。
 
-image::images/364.webp["",300,title=" 図　LOD3のPlantCoverの例"]
+image::images/364.webp.png["",300,title=" 図　LOD3のPlantCoverの例"]
 
 | veg:lod1MultiSolid
 | gml:MultiSolid [0..1]
-a| 
+a|
 植被の形状をそれが占有している範囲（面）に一律の高さを与えた立体として表現する。植被の占有している範囲（面）に、その範囲内で中央値となる植被の高さで上向きに押し出した立体となる。
 
-image::images/365.webp["",300,title=" 図　LOD1のPlantCoverの例"]
+image::images/365.webp.png["",300,title=" 図　LOD1のPlantCoverの例"]
 
 | veg:lod2MultiSolid
 | gml:MultiSolid [0..1]
-a| 
+a|
 植被の形状を立体とし、その主要な部分の外形を立体として詳細に区分して表現する。植被の範囲内で比高3m以上の場合にこれを区分した面を境界とする立体となる。
 
-image::images/366.webp["",300,title=" 図　LOD2のPlantCoverの例"]
+image::images/366.webp.png["",300,title=" 図　LOD2のPlantCoverの例"]
 
 | veg:lod3MultiSolid
 | gml:MultiSolid [0..1]
-a| 
+a|
 植被の形状を立体とし、その主要な部分の外形を立体として詳細に区分して表現する。植被の範囲内で比高1m以上の場合にこれを区分した面を境界とする立体となる。
 
-image::images/367.webp["",300,title=" 図　LOD3のPlantCoverの例"]
+image::images/367.webp.png["",300,title=" 図　LOD3のPlantCoverの例"]
 
 |===
 

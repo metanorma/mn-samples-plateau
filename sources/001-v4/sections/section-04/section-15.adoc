@@ -18,11 +18,11 @@
 |===
 h| 5+^h| LOD0
 h| 取得例
-a| image::images/297.webp["",150]
-a| image::images/298.webp["",150]
-a| image::images/299.webp["",160]
-a| image::images/300.webp["",130]
-a| image::images/301.webp["",130]
+a| image::images/297.webp.png["",150]
+a| image::images/298.webp.png["",150]
+a| image::images/299.webp.png["",160]
+a| image::images/300.webp.png["",130]
+a| image::images/301.webp.png["",130]
 
 h| 説明
 a| 指定された管径よりも小さい管路は、管路の中心線を取得する。 +
@@ -38,10 +38,10 @@ a| 複数まとめて埋設されているケーブルの中心線を取得す�
 
 h| 5+^h| LOD0
 h| 取得例
-2+a| image::images/302.webp["",300]
-a| image::images/303.webp["",150]
-a| image::images/304.webp["",150]
-a| image::images/305.webp["",130]
+2+a| image::images/302.webp.png["",300]
+a| image::images/303.webp.png["",150]
+a| image::images/304.webp.png["",150]
+a| image::images/305.webp.png["",130]
 
 h| 説明
 2+a| トラフ（コンクリート製の樋）等構造物に格納されている場合は、その大きさにより中心線もしくは外周を取得する。 +
@@ -271,18 +271,18 @@ a| • ハンドホールの蓋の中心位置を取得する。 +
 |===
 h| 4+^h| LOD1
 h| 取得例
-a| image::images/306.webp["",170]
-a| image::images/307.webp["",170]
-a| image::images/308.webp["",160]
-a| image::images/309.webp["",170]
+a| image::images/306.webp.png["",170]
+a| image::images/307.webp.png["",170]
+a| image::images/308.webp.png["",160]
+a| image::images/309.webp.png["",170]
 
 h| 説明 | 管路の上方からの正射影の外周を、地表面から一律の高さで下向きに押し出した立体として表現する。 | 複数まとまって埋設されている管路の最外縁を外周とし、その正射影を、地表面から一律の高さで下向きに押し出した立体として表現する。 | ケーブルの上方からの正射影の外周を、地表面から一律の高さで下向きに押し出した立体として表現する。 | 複数まとまって埋設されているケーブルの最外縁を外周とし、その正射影を、地表面から一律の高さで下向きに押し出した立体として表現する。
 h| 4+^h| LOD1
 h| 取得例
-a| image::images/310.webp["",170]
-a| image::images/311.webp["",190]
-a| image::images/312.webp["",170]
-a| image::images/313.webp["",170]
+a| image::images/310.webp.png["",170]
+a| image::images/311.webp.png["",190]
+a| image::images/312.webp.png["",170]
+a| image::images/313.webp.png["",170]
 
 h| 説明 | 構造物の上方からの正射影の外周を、地表面から一律の高さで下向きに押し出した立体として表現する。 | 水栓やガバナ等の設備の上方からの正射影を包含する矩形を、地表面からの一律の高さで下向きに押し出した立体として表現する。 | マンホールの蓋の上方からの正射影を包含する矩形を、地表面から一律の高さで下向きに押し出した立体として表現する。 | ハンドホールの蓋の上方からの正射影を包含する矩形を、地表面から一律の高さで下向きに押し出した立体として表現する。
 
@@ -442,18 +442,18 @@ a| • ハンドホールの蓋の上方からの正射影を包含する矩形�
 |===
 h| 4+^h| LOD2
 h| 取得例
-a| image::images/314.webp["",170]
-a| image::images/315.webp["",150]
-a| image::images/316.webp["",150]
-a| image::images/317.webp["",150]
+a| image::images/314.webp.png["",170]
+a| image::images/315.webp.png["",150]
+a| image::images/316.webp.png["",150]
+a| image::images/317.webp.png["",150]
 
 h| 説明 | 管路の上方からの正射影の外周を、管路が埋設された深さから、管径の大きさで下向きに押し出した立体として表現する。 | 複数まとまって埋設されている管路の最外縁を外周とし、その上方からの正射影を、管路が埋設された深さから、管径の合計の大きさで、下向きに押し出した立体として表現する。 | ケーブルの上方からの正射影の外周を、ケーブルが埋設された深さからケーブルの径の大きさで下向きに押し出した立体として表現する。 | 複数まとまって埋設されているケーブルの最外縁を外周とし、その上方からの正射影を、ケーブルが埋設された深さからケーブルの径の合計の大きさで下向きに押し出した立体として表現する。
 h| 4+^h| LOD2
 h| 取得例
-a| image::images/318.webp["",170]
-a| image::images/319.webp["",150]
-a| image::images/320.webp["",150]
-a| image::images/321.webp["",150]
+a| image::images/318.webp.png["",170]
+a| image::images/319.webp.png["",150]
+a| image::images/320.webp.png["",150]
+a| image::images/321.webp.png["",150]
 
 h| 説明 | 構造物の上方からの正射影の外周を取得し、構造物が埋設された深さから構造物の高さで下向きに押し出した立体を作成する。 | 弁栓類、ガバナ等の設備を包含する矩形の正射影を、設備が埋設された深さから設備の高さで下向きに押し出した立体として表現する。 | マンホール本体の上方からの正射影の外周※1を、地表面からマンホールの深さで下向きに押し出した立体を作成する。 | ハンドホールの規格により定まる外径とハンドホールの中心をもとに推定したハンドホール本体の上方からの正射影の外周を、地表面からハンドホールの深さで下向きに押し出した立体を作成する。
 
@@ -465,7 +465,7 @@ h| 説明 | 構造物の上方からの正射影の外周を取得し、構造�
 
 例えば、図 4-7の左図のように、マンホール本体の片側が傾斜している場合は、マンホール蓋の中心とマンホール本体の中心が異なる。そのため、マンホール蓋の中心から推定した外周とこれを押し出して作成する立体は、マンホール本体の外周やこれを押し出して作成する立体と異なる。マンホール蓋の中心から推定した外周を押し出して作成する立体は、マンホール本体を包含する立体にはならない。図 4 3右図のように、マンホール本体が円筒形の場合は、マンホール蓋の中心とマンホール本体の中心が一致するため、推定により作成した外周とこれを押し出して作成する立体も一致する。
 
-image::images/322.webp[title=" 図 4-7　マンホールの取得の差異"]
+image::images/322.webp.png[title=" 図 4-7　マンホールの取得の差異"]
 
 ====== 地下埋設物モデル（LOD2）の定義
 
@@ -624,18 +624,18 @@ a| 設備が埋設された深さは、構造物の土被り量とする。 +
 |===
 h| 4+^h| LOD3
 h| 取得例
-a| image::images/323.webp["",150]
-a| image::images/324.webp["",150]
-a| image::images/325.webp["",150]
-a| image::images/326.webp["",150]
+a| image::images/323.webp.png["",150]
+a| image::images/324.webp.png["",150]
+a| image::images/325.webp.png["",150]
+a| image::images/326.webp.png["",150]
 
 h| 説明 | 管路の外形を構成する面を取得する。 | 複数まとまって埋設されている管路も、個々の管路の外形を構成する面を取得する。 | ケーブルの外形を構成する面を取得する。 | 複数まとまって埋設されているケーブルも、個々のケーブルの外形を構成する面を取得する。
 h| 4+^h| LOD3
 h| 取得例
-a| image::images/327.webp["",150]
-a| image::images/328.webp["",150]
-a| image::images/329.webp["",150]
-a| image::images/330.webp["",150]
+a| image::images/327.webp.png["",150]
+a| image::images/328.webp.png["",150]
+a| image::images/329.webp.png["",150]
+a| image::images/330.webp.png["",150]
 
 h| 説明
 a| 構造物の外形を構成する面を取得する。 +
@@ -651,7 +651,7 @@ a| 構造物の外形を構成する面を取得する。 +
 |===
 h| ^h| LOD3
 h| 取得例
-a| image::images/331.webp["",800]
+a| image::images/331.webp.png["",800]
 
 h| 説明 | マンホールの外形を構成する面を取得する。マンホールの横断面形状の変化を表現する。
 
@@ -803,10 +803,10 @@ a| • ハンドホールの外形（外側から見える形）を構成する�
 |===
 h| 4+^h| LOD4
 h| 取得例
-a| image::images/332.webp["",150]
-a| image::images/333.webp["",150]
-a| image::images/334.webp["",180]
-a| image::images/335.webp["",160]
+a| image::images/332.webp.png["",150]
+a| image::images/333.webp.png["",150]
+a| image::images/334.webp.png["",180]
+a| image::images/335.webp.png["",160]
 
 h| 説明 | 管路の外形を構成する面（埋設物モデル（LOD3））に加え、管路の内空を構成する面を取得する。 | 複数まとまって埋設されている管路の外形を構成する面（地下埋設物モデル（LOD3））に加え、各管路の内空を構成する面を取得する。 | 構造物の外形を構成する面を取得する。構造物のLOD4 を作成する場合は、構造物の内側の面を作成する。構造物に格納されている管路のLOD4を作成する場合は、各管路も、個々の管路の外形を構成する面に加え、内空を構成する面を取得する。 | マンホール・ハンドホール等の外形を構成する面（地下埋設物モデル（LOD3））に加え、内部を構成する面を取得する。
 
@@ -966,37 +966,37 @@ a| • ハンドホールの外形（外側から見える形）を構成する�
 .表 4-94　地下埋設物モデルの記述に使用する地物型と空間属性
 |===
 ^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| LOD4 ^h| 適用
-.6+| uro: Pipe及びこれを継承する地物型 | ^| ● ^| ● ^| ● ^| ● ^| ● | 
+.6+| uro: Pipe及びこれを継承する地物型 | ^| ● ^| ● ^| ● ^| ● ^| ● |
 | uro:lod0Geometry ^| ● ^| ^| ^| ^| | 原典資料の取得方法に従う。
 | frn:lod1Geometry ^| ^| ● ^| ^| ^| | Solidとする。
 | frn:lod2Geometry ^| ^| ^| ● ^| ^| | Solidとする。
 | frn:lod3Geometry ^| ^| ^| ^| ● ^| | CompositeSurface又はMultiSurfaceとする。
 | frn:lod4Geometry ^| ^| ^| ^| ^| ● | CompositeSurface又はMultiSurfaceとする。
-.6+| uro:Cable及びこれを継承する地物型 | ^| ● ^| ● ^| ● ^| ● ^| 〇※ | 
+.6+| uro:Cable及びこれを継承する地物型 | ^| ● ^| ● ^| ● ^| ● ^| 〇※ |
 | uro:lod0Geometry ^| ● ^| ^| ^| ^| | 原典資料の取得方法に従う。
 | frn:lod1Geometry ^| ^| ● ^| ^| ^| | Solidとする。
 | frn:lod2Geometry ^| ^| ^| ● ^| ^| | Solidとする。
 | frn:lod3Geometry ^| ^| ^| ^| ● ^| | CompositeSurface又はMultiSurfaceとする。
 | frn:lod4Geometry ^| ^| ^| ^| ^| ■ | LOD4を作成する場合は必須とする。
-.6+| uro: Duct | ^| ● ^| ● ^| ● ^| ● ^| ● | 
+.6+| uro: Duct | ^| ● ^| ● ^| ● ^| ● ^| ● |
 | uro:lod0Geometry ^| ● ^| ^| ^| ^| | 原典資料の取得方法に従う。
 | frn:lod1Geometry ^| ^| ● ^| ^| ^| | Solidとする。
 | frn:lod2Geometry ^| ^| ^| ● ^| ^| | Solidとする。
 | frn:lod3Geometry ^| ^| ^| ^| ● ^| | CompositeSurface又はMultiSurfaceとする。
 | frn:lod4Geometry ^| ^| ^| ^| ^| ● | CompositeSurface又はMultiSurfaceとする。
-.6+| uro:Appurtenance | ^| ● ^| ● ^| ● ^| ● ^| 〇※ | 
+.6+| uro:Appurtenance | ^| ● ^| ● ^| ● ^| ● ^| 〇※ |
 | uro:lod0Geometry ^| ● ^| ^| ^| ^| | 原典資料の取得方法に従う。
 | frn:lod1Geometry ^| ^| ● ^| ^| ^| | Solidとする。
 | frn:lod2Geometry ^| ^| ^| ● ^| ^| | Solidとする。
 | frn:lod3Geometry ^| ^| ^| ^| ● ^| | CompositeSurface又はMultiSurfaceとする。
 | frn:lod4Geometry ^| ^| ^| ^| ^| ■ | LOD4を作成する場合は必須とする。
-.6+| uro: Manhole | ^| ● ^| ● ^| ● ^| ● ^| ● | 
+.6+| uro: Manhole | ^| ● ^| ● ^| ● ^| ● ^| ● |
 | uro:lod0Geometry ^| ● ^| ^| ^| ^| | 原典資料の取得方法に従う。
 | frn:lod1Geometry ^| ^| ● ^| ^| ^| | Solidとする。
 | frn:lod2Geometry ^| ^| ^| ● ^| ^| | Solidとする。
 | frn:lod3Geometry ^| ^| ^| ^| ● ^| | CompositeSurface又はMultiSurfaceとする。
 | frn:lod4Geometry ^| ^| ^| ^| ^| ● | CompositeSurface又はMultiSurfaceとする。
-.6+| uro: Handhole | ^| ● ^| ● ^| ● ^| ● ^| ● | 
+.6+| uro: Handhole | ^| ● ^| ● ^| ● ^| ● ^| ● |
 | uro:lod0Geometry ^| ● ^| ^| ^| ^| | 原典資料の取得方法に従う。
 | frn:lod1Geometry ^| ^| ● ^| ^| ^| | Solidとする。
 | frn:lod2 Geometry ^| ^| ^| ● ^| ^| | Solidとする。
@@ -1036,7 +1036,7 @@ image::images/336.svg[]
 
 h| 上位の型 2+| uro:Pipe
 h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性 
+3+h| 継承する属性
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | gml:description | gml:StringOrRefType [0..1] | 埋設物の概要。
 | gml:name | gml:CodeType [0..1] | 埋設物を識別する名称。文字列とする。
@@ -1136,7 +1136,7 @@ LOD3及びLOD4では、管路ごとに一つのインスタンスを作成する
 
 h| 上位の型 2+| uro:Pipe
 h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性 
+3+h| 継承する属性
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | gml:description | gml:StringOrRefType [0..1] | 埋設物の概要。
 | gml:name | gml:CodeType [0..1] | 埋設物を識別する名称。文字列とする。
@@ -1243,7 +1243,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 h| 上位の型 2+| uro:Pipe
 h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性 
+3+h| 継承する属性
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | gml:description | gml:StringOrRefType [0..1] | 埋設物の概要。
 | gml:name | gml:CodeType [0..1] | 埋設物を識別する名称。文字列とする。
@@ -1340,7 +1340,7 @@ a| 埋設物の識別に関する情報。 +
 
 h| 上位の型 2+| uro:Pipe
 h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性 
+3+h| 継承する属性
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | gml:description | gml:StringOrRefType [0..1] | 埋設物の概要。
 | gml:name | gml:CodeType [0..1] | 埋設物を識別する名称。文字列とする。
@@ -1441,7 +1441,7 @@ a| 埋設物の識別に関する情報。 +
 
 h| 上位の型 2+| uro:UtilityLink
 h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性 
+3+h| 継承する属性
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | gml:description
 | gml:StringOrRefType [0..1]
@@ -1549,7 +1549,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 h| 上位の型 2+| uro:UtilityLink
 h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性 
+3+h| 継承する属性
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | gml:description | gml:StringOrRefType [0..1] | 埋設物の概要。
 | gml:name | gml:CodeType [0..1] | 埋設物を識別する名称。文字列とする。
@@ -1654,7 +1654,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 h| 上位の型 2+| uro:Cable
 h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性 
+3+h| 継承する属性
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | gml:description | gml:StringOrRefType [0..1] | 埋設物の概要。
 | gml:name | gml:CodeType [0..1] | 埋設物を識別する名称。文字列とする。
@@ -1737,7 +1737,7 @@ a| ケーブルの外形（外側から見える形）を構成する面を取�
 
 h| 上位の型 2+| uro:Cable
 h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性 
+3+h| 継承する属性
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | gml:description | gml:StringOrRefType [0..1] | 埋設物の概要。
 | gml:name | gml:CodeType [0..1] | 埋設物を識別する名称。文字列とする。
@@ -1821,7 +1821,7 @@ a| ケーブルの外形（外側から見える形）を構成する面を取�
 
 h| 上位の型 2+| uro:UtilityLink
 h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性 
+3+h| 継承する属性
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | gml:description | gml:StringOrRefType [0..1] | 埋設物の概要。
 | gml:name | gml:CodeType [0..1] | 埋設物を識別する名称。文字列とする。
@@ -2086,7 +2086,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 h| 上位の型 2+| uro:UtilityNodeContainer
 h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性 
+3+h| 継承する属性
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | gml:description | gml:StringOrRefType [0..1] | 埋設物の概要。
 | gml:name | gml:CodeType [0..1] | 埋設物を識別する名称。文字列とする。
@@ -2167,7 +2167,7 @@ a| 施設の識別に関する情報。 +
 
 h| 上位の型 2+| ―
 h| ステレオタイプ 2+| << DataType >>
-3+h| 自身に定義された属性 
+3+h| 自身に定義された属性
 h| 属性 h| 属性の型及び多重度 h| 定義
 | uro:pos | gml:DirectPosition [1] | オフセット及び土被りを計測した位置。
 | uro:offset | gml:LengthType [0..1] | オフセット量。単位はmとする。
@@ -2185,7 +2185,7 @@ h| 属性 h| 属性の型及び多重度 h| 定義
 
 h| 上位の型 2+| ―
 h| ステレオタイプ 2+| << DataType >>
-3+h| 自身に定義された属性 
+3+h| 自身に定義された属性
 h| 属性 h| 属性の型及び多重度 h| 定義
 | uro:shape | gml:_Geometry [1] | 形状。リンクに対しては高さをもった中心線（gml:CompositeCurve）、ノードに対しては高さをもった中心点（gml:Point）とする。
 | uro:heightType | gml:CodeType [0..1] | uro:shapeがもつ高さの種類。コードリスト（ThematicShape_heightType.xml）より選択する。
@@ -2201,7 +2201,7 @@ h| (uro:horizontalType) | gml:CodeType [0..1] | uro:shapeがもつ水平位置�
 
 h| 上位の型 2+| ―
 h| ステレオタイプ 2+| << DataType >>
-3+h| 自身に定義された属性 
+3+h| 自身に定義された属性
 h| 属性 h| 属性の型及び多重度 h| 定義
 | uro:length | gml:LengthType [0..1] | 延長。単位はｍ。
 | uro:measureType | gml:CodeType [0..1] | 延長の計測方法。コードリスト（LengthAttribute_measureType.xml）より選択する。
@@ -2237,7 +2237,7 @@ h| 属性 h| 属性の型及び多重度 h| 定義
 
 h| 上位の型 2+| ―
 h| ステレオタイプ 2+| << DataType >>
-3+h| 自身に定義された属性 
+3+h| 自身に定義された属性
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:key | gml:CodeType [1] | 拡張する属性の名称。名称は、コ－ドリスト（KeyValuePairAttribute_key.xml）を作成し、選択する。
 | uro:codeValue | gml:CodeType [1] | 拡張された属性の値。値は名称は、コ－ドリスト（KeyValuePairAttribute_key[key].xml）を作成し、選択する。 [key]は、属性uro:keyの値に一致する。
@@ -2252,7 +2252,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 h| 上位の型 2+| ―
 h| ステレオタイプ 2+| << DataType >>
-3+h| 自身に定義された属性 
+3+h| 自身に定義された属性
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:geometrySrcDescLod0 | gml:CodeType [0..*] | LOD0の幾何オブジェクトの作成に使用した原典資料の種類。 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD0の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、地下埋設物モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
 | uro:geometrySrcDescLod1 | gml:CodeType [1..*] | LOD1の幾何オブジェクトの作成に使用した原典資料の種類。 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。具体的な都市オブジェクトがLOD1の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
@@ -2268,7 +2268,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| (uro:lodType) | gml:CodeType [0..*] | 幾何オブジェクトに適用されたLODの詳細な区分。
 | uro:lod1HeightType | gml:CodeType [0..1] | LOD1の立体図形を作成する際に使用した高さの算出方法。コードリスト（DataQualityAttribute_lod1HeightType.xml）より選択する。LOD1 の幾何オブジェクトを作成する場合は必須とする。
 h| (uro:tranDataAcquisition) | xs:string [0..1] | 「道路基盤地図情報（整備促進版）製品仕様書（案）」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
-3+h| 自身に定義された関連役割 
+3+h| 自身に定義された関連役割
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 h| (uro:publicSurveyDataQualityAttribute) | uro:PublicSurveyDataQualityAttribute [0..1] | 使用した公共測量成果の地図情報レベルと種類。
 

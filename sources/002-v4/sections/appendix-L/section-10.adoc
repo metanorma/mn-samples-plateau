@@ -177,7 +177,7 @@ a| 以下のいずれかのデータを一つ以上使用する。 +
 
 ①　道路橋及び鉄道橋は、橋梁モデル（LOD0）で取得した縁線を結び、ポリゴンを作成する。橋梁モデル（LOD0）で取得した縁線に橋脚が含まれている場合は、橋脚を含むポリゴンとなり、橋梁モデル（LOD0）で取得した縁線に橋脚が含まれていない場合は、橋脚を含まないポリゴンとなる。
 
-image::images/317.webp[title=" 図L- 1　橋脚を含めた外周から作成したポリゴン"]
+image::images/317.webp.png[title=" 図L- 1　橋脚を含めた外周から作成したポリゴン"]
 
 桟道橋は、橋梁モデル（LOD0）で取得した斜面に接していない縁線と、道路縁から取得した斜面に接している縁線を結び、ポリゴンを作成する。
 
@@ -197,11 +197,11 @@ image::images/317.webp[title=" 図L- 1　橋脚を含めた外周から作成し
 
 水面の高さは水涯線と地形モデルとの交線の地形モデルの高さとする。地形モデルの傾斜により、水面の高さ又は地表面の高さに幅がある場合は、最低高さとする。
 
-image::images/318.webp[title=" 図L- 2　最高高さで作成した横断歩道橋と航空写真から作成した点群を重畳させた図"]
+image::images/318.webp.png[title=" 図L- 2　最高高さで作成した横断歩道橋と航空写真から作成した点群を重畳させた図"]
 
 橋梁モデル（LOD1）の作成イメージを以下に示す。
 
-image::images/319.webp[title=" 図L- 3　道路橋のLOD1の作成イメージ"]
+image::images/319.webp.png[title=" 図L- 3　道路橋のLOD1の作成イメージ"]
 
 　LOD2.0
 
@@ -238,7 +238,7 @@ a| 以下のいずれかのデータを一つ以上使用する。 +
 
 屋根がある橋梁は、橋梁モデル（LOD2.0）を作成しない。これは、橋梁モデル（LOD2.0）が橋梁の上面のみを使用して作成するからである。屋根がある橋梁の橋梁モデル（LOD2）は、橋梁モデル（LOD2.1）のみ作成できる。
 
-image::images/320.webp[title=" 図L- 4　橋梁の部材の名称"]
+image::images/320.webp.png[title=" 図L- 4　橋梁の部材の名称"]
 
 ②　①の各頂点に航空レーザ点群または航空写真から作成した点群の高さを付与し、平面となるようにポリゴンを分割する。
 
@@ -246,11 +246,11 @@ image::images/320.webp[title=" 図L- 4　橋梁の部材の名称"]
 
 また、下図のように橋梁上空に線路が跨っている等遮蔽物により測量成果から橋梁の高さが取得できない場合は、その遮蔽物の区間でポリゴンを区切り、区切られたそれぞれの区間をBridgePartとする。このとき、測量成果から高さを取得できない区間のBridgePartの高さは、前後の区間の連続性から推定して高さを与えるとともに、属性bridDataQualityAttributeにて、推定で高さを取得していることを明示する。
 
-image::images/321.webp[title=" 図L- 5　橋梁の高さを推定で付与する例"]
+image::images/321.webp.png[title=" 図L- 5　橋梁の高さを推定で付与する例"]
 
 横断歩道橋、ペデストリアンデッキ、徒橋、跨線橋の橋梁モデル（LOD2.0）では、階段の段差を表現しない。階段は、階段の上端と下端のみに高さを付与した斜面として取得する。
 
-image::images/322.webp[title=" 図L- 6　階段をスロープで表現したイメージ図"]
+image::images/322.webp.png[title=" 図L- 6　階段をスロープで表現したイメージ図"]
 
 ③　②で分割した高さ付きのポリゴンを、全てOuterFloorSurfaceとする。
 
@@ -258,11 +258,11 @@ image::images/322.webp[title=" 図L- 6　階段をスロープで表現したイ
 
 橋梁モデル（LOD2.0）の作成イメージを以下に示す。
 
-image::images/323.webp[title=" 図L- 7　ペデストリアンデッキのLOD2.0の作成イメージ"]
+image::images/323.webp.png[title=" 図L- 7　ペデストリアンデッキのLOD2.0の作成イメージ"]
 
-image::images/324.webp[title=" 図L- 8　横断歩道橋のLOD2.0の作成イメージ"]
+image::images/324.webp.png[title=" 図L- 8　横断歩道橋のLOD2.0の作成イメージ"]
 
-image::images/325.webp[title=" 図L- 9　道路橋のLOD2.0の作成イメージ"]
+image::images/325.webp.png[title=" 図L- 9　道路橋のLOD2.0の作成イメージ"]
 
 　LOD2.1
 
@@ -329,15 +329,15 @@ MMS点群等を入手できない場合は、各部材の厚みを推定する�
 
 作成する場合は、位置が分かる平面図やMMS点群などの側面方向から計測した計測データが必要となる。下図は境界面の区分に加え、橋脚を作成した例である。
 
-image::images/326.webp[title=" 図L- 10　 LOD2.1の境界面の区分イメージ"]
+image::images/326.webp.png[title=" 図L- 10　 LOD2.1の境界面の区分イメージ"]
 
 橋梁モデル（LOD2.1）の作成イメージを以下に示す。
 
-image::images/327.webp[title=" 図L- 11　横断歩道橋の橋梁モデル（LOD2.1）の作成イメージ"]
+image::images/327.webp.png[title=" 図L- 11　横断歩道橋の橋梁モデル（LOD2.1）の作成イメージ"]
 
-image::images/328.webp[title=" 図L- 12　ペデストリアンデッキの橋梁モデル（LOD2.1）の作成イメージ"]
+image::images/328.webp.png[title=" 図L- 12　ペデストリアンデッキの橋梁モデル（LOD2.1）の作成イメージ"]
 
-image::images/329.webp[title=" 図L- 13　道路橋の橋梁モデル（LOD2.1）の作成イメージ"]
+image::images/329.webp.png[title=" 図L- 13　道路橋の橋梁モデル（LOD2.1）の作成イメージ"]
 
 　LOD3
 
@@ -396,25 +396,25 @@ BridgeConstructionElementの取得にはMMS点群など側面から計測した�
 |===
 h| 部材名 h| 部材イメージ
 | トラス
-a| image::images/330.webp["",150]
+a| image::images/330.webp.png["",150]
 
 | アーチ
-a| image::images/331.webp["",150]
+a| image::images/331.webp.png["",150]
 
 | パイロン
-a| image::images/332.webp["",150]
+a| image::images/332.webp.png["",150]
 
 | 吊材
-a| image::images/333.webp["",150]
+a| image::images/333.webp.png["",150]
 
 | ケーブル
-a| image::images/334.webp["",150]
+a| image::images/334.webp.png["",150]
 
 | 橋脚
-a| image::images/335.webp["",150]
+a| image::images/335.webp.png["",150]
 
 | 橋台
-a| image::images/336.webp["",150]
+a| image::images/336.webp.png["",150]
 
 |===
 
@@ -429,39 +429,39 @@ BridgeInstallationの取得にはMMS点群など側面から計測したデー�
 |===
 h| 部材名 h| 部材イメージ
 | 高欄
-a| image::images/337.webp[]
+a| image::images/337.webp.png[]
 
 | 地覆
-a| image::images/338.webp[]
+a| image::images/338.webp.png[]
 
 | 親柱
-a| image::images/339.webp[]
+a| image::images/339.webp.png[]
 
 | 庇の柱
-a| image::images/340.webp["",200]
+a| image::images/340.webp.png["",200]
 
 | エレベータ
-a| image::images/341.webp["",200]
+a| image::images/341.webp.png["",200]
 
 | エスカレータ
-a| image::images/342.webp["",200]
+a| image::images/342.webp.png["",200]
 
 | 手すり&nbsp;
-a| image::images/343.webp["",200]
+a| image::images/343.webp.png["",200]
 
 |===
 
 橋梁モデル（LOD3）は階段やエスカレータなどの段差を表現する。
 
-image::images/344.webp[title=" 図L- 14　エスカレータおよび階段の作成イメージ"]
+image::images/344.webp.png[title=" 図L- 14　エスカレータおよび階段の作成イメージ"]
 
 橋梁モデル（LOD3）の作成イメージを以下に示す。
 
-image::images/345.webp[title=" 図L- 15　歩道橋の橋梁モデル（LOD3）の作成イメージ"]
+image::images/345.webp.png[title=" 図L- 15　歩道橋の橋梁モデル（LOD3）の作成イメージ"]
 
-image::images/346.webp[title=" 図L- 16　ペデストリアンデッキの橋梁モデル（LOD3）の作成イメージ"]
+image::images/346.webp.png[title=" 図L- 16　ペデストリアンデッキの橋梁モデル（LOD3）の作成イメージ"]
 
-image::images/347.webp[title=" 図L- 17　道路橋の橋梁モデル（LOD3）の作成イメージ"]
+image::images/347.webp.png[title=" 図L- 17　道路橋の橋梁モデル（LOD3）の作成イメージ"]
 
 　LOD4
 
@@ -471,7 +471,7 @@ image::images/347.webp[title=" 図L- 17　道路橋の橋梁モデル（LOD3）�
 .表 L- 14　 LOD4の原典資料
 |===
 h| h| 水平位置 h| 高さ h| 上面の形状 h| 構造上不可欠な部材 h| 付属物
-h| 
+h|
 a| 以下のいずれかのデータを一つ以上使用する。 +
 ・都市計画図等のDMデータ +
 ・航空写真 +
@@ -548,7 +548,7 @@ CityGMLの地物型は、IFCにおいて部材の集まりを示すIfcBridgePart
 
 IFCでは、梁（IfcBeam）やスラブ（IfcSlab）、支承（IfcBearing）といった橋梁を構成する部材がクラスとして定義されているが、これらのクラスとCityGMLの地物型とを対応付けると、3D都市モデルとしては詳細すぎる表現となるため、部材クラスの集まりであるIfcBridgePart及びIfcElementAssemblyとCityGMLの地物型とを対応づけ、橋梁モデル（LOD4）を作成する。
 
-image::images/348.webp[title=" 図L- 18　IfcBridgeにおけるクラス間の階層構造（出典：IFC Bridge Fast Track Project Report WP2: Conceptual Model）"]
+image::images/348.webp.png[title=" 図L- 18　IfcBridgeにおけるクラス間の階層構造（出典：IFC Bridge Fast Track Project Report WP2: Conceptual Model）"]
 
 [[]]
 ==== 作成上の留意事項

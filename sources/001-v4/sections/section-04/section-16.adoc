@@ -24,7 +24,7 @@
 |===
 h| ^h| LOD0
 h| 取得例
-a| image::images/337.webp["",600]
+a| image::images/337.webp.png["",600]
 
 h| 説明
 a| 地下街の上方からの正射影の外周を取得する。 +
@@ -44,7 +44,7 @@ a| 地下街の上方からの正射影の外周を取得する。 +
 | ●
 | UndergroundBuilding
 | MultiSurface
-| 
+|
 a| • 地下街の上方からの正射影の外周を取得する。 +
 • 高さは0とする。
 | 関連役割は屋根の外周（RoofEdge）を使用する。
@@ -70,7 +70,7 @@ a| • 地下街の上方からの正射影の外周を取得する。 +
 |===
 h| ^h| LOD1
 h| 取得例
-a| image::images/338.webp["",500]
+a| image::images/338.webp.png["",500]
 
 h| 説明 | 地下街の上からの正射影の外周を、地表面から地下街の下端まで下向きに押し出した立体として表現する。
 
@@ -88,7 +88,7 @@ h| 説明 | 地下街の上からの正射影の外周を、地表面から地�
 | ●
 | UndergroundBuilding
 | Solid
-| 
+|
 | • 地下街の上方からの正射影の外周を取得し、地表面から一律の高さで下向きに押し出した立体を作成する。　
 a| 一律の高さは、地表から地下街の最下端までとする。 +
 地表の高さは、地下街の上からの正射影の外周と地表面との交線の最下部点の高さ（最も低い標高）とする。
@@ -114,7 +114,7 @@ a| 一律の高さは、地表から地下街の最下端までとする。 +
 |===
 h| ^h| LOD2
 h| 取得例
-a| image::images/339.webp["",650]
+a| image::images/339.webp.png["",650]
 
 h| 説明
 a| 地下街の外形を立体として表現し、立体を構成する境界面のそれぞれを、上向きの面は屋根面、下向きの面は底面、それ以外は外壁面として区分する。 +
@@ -130,7 +130,7 @@ a| 地下街の外形を立体として表現し、立体を構成する境界�
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
-| LOD2 | ● | UndergroundBuilding | Solid | | • 屋根面（RoofSurface）、外壁面（WallSurface）及び底面（GroundSurface）を境界面とする立体を作成する。 | 
+| LOD2 | ● | UndergroundBuilding | Solid | | • 屋根面（RoofSurface）、外壁面（WallSurface）及び底面（GroundSurface）を境界面とする立体を作成する。 |
 | LOD2
 | ●
 | RoofSurface
@@ -147,7 +147,7 @@ a| • 地下街の外形を取得し、上向き面を屋根面（RoofSurface�
 | 全てを対象とする。
 a| • 地下街の外形を取得し、下向き面を底面（GroundSurface）とする。 +
 • 面を構成する各頂点にそれぞれの高さを与える。
-| 
+|
 
 | LOD2
 | ●
@@ -195,7 +195,7 @@ a| • BuildingPartを使用する場合、1棟のBuildingには必ず2つ以上
 |===
 h| ^h| LOD3
 h| 取得例
-a| image::images/340.webp["",500]
+a| image::images/340.webp.png["",500]
 
 h| 説明
 a| 地下街の外形を立体として表現し、立体を構成する境界面のそれぞれを、上向きの面は屋根面、下向きの面は底面、それ以外は外壁面として区分する。また、地下街への出入口を閉鎖面として取得する。 +
@@ -212,7 +212,7 @@ a| 地下街の外形を立体として表現し、立体を構成する境界�
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
-| LOD3 | ● | UndergroundBuilding | Solid | | • 屋根面（RoofSurface）、外壁面（WallSurface）及び底面（GroundSurface）を境界面とする立体を作成する。 | 
+| LOD3 | ● | UndergroundBuilding | Solid | | • 屋根面（RoofSurface）、外壁面（WallSurface）及び底面（GroundSurface）を境界面とする立体を作成する。 |
 | LOD3
 | ●
 | RoofSurface
@@ -229,7 +229,7 @@ a| • 地下街の外形を取得し、上向き面を屋根面（RoofSurface�
 | 全てを対象とする。
 a| • 地下街の外形を取得し、下向き面を底面（GroundSurface）とする。 +
 • 面を構成する各頂点にそれぞれの高さを与える。
-| 
+|
 
 | LOD3
 | ●
@@ -254,8 +254,8 @@ a| • BuildingPartを使用する場合、1棟のBuildingには必ず2つ以上
 | LOD3 | | OuterFloorSurface | | | | 対象外
 | LOD3 | | OuterCeilingSurface | | | | 対象外
 | LOD3 | | BuildingInstallation | | | | 対象外
-| LOD3 | 〇 | Door | MultiSurface | 短辺の実長1m以上 | • 外周を取得する。 | 
-| LOD3 | 〇 | Window | Window | 短辺の実長1m以上 | • 外周を取得する。 | 
+| LOD3 | 〇 | Door | MultiSurface | 短辺の実長1m以上 | • 外周を取得する。 |
+| LOD3 | 〇 | Window | Window | 短辺の実長1m以上 | • 外周を取得する。 |
 
 |===
 
@@ -286,9 +286,9 @@ h| 地下街モデル（LOD4）に含むべき地物 h| 対応する地物型 ^h
 | 屋根面 | bldg:RoofSurface ^| ● ^| ● ^| ●
 | 壁面 | bldg:WallSurface ^| ● ^| ● ^| ●
 | 底面 | bldg:GroundSurface ^| ● ^| ● ^| ●
-| 屋外天井面 | bldg:OuterGroundSurface | | | 
-| 屋外床面 | bldg:OuterFloorSurface | | | 
-| 屋外付属物 | bldg:BuildingInstallation | | | 
+| 屋外天井面 | bldg:OuterGroundSurface | | |
+| 屋外床面 | bldg:OuterFloorSurface | | |
+| 屋外付属物 | bldg:BuildingInstallation | | |
 | 部屋 | bldg:Room ^| ● ^| ● ^| ●
 | 天井面 | bldg:CeilingSurface ^| ● ^| ● ^| ●
 | 内壁面 | bldg:InteriorWallSurface ^| ● ^| ● ^| ●
@@ -324,24 +324,24 @@ LOD4.0、LOD4.1及びLOD4.2それぞれの取得イメージを 表 4-100に示�
 |===
 h| LOD ^h| 取得イメージと説明
 | LOD4.0
-a| 
+a|
 
-image::images/341.webp[]
+image::images/341.webp.png[]
 
 LOD4.0は建築物の外形（図１）に加え、建築物の内部を部屋に区分する（図２）。このとき、各部屋の形状は立体として表現し、部屋の立体の境界面を、天井面、内壁面、床面又は閉鎖面のいずれかに区分する（図３）。また、天井面、内壁面又は床面に存在する全ての扉及び窓を表現する（図４）。 CityGMLでは、壁面や天井面などは全て面として表現する。1つの壁が建築物の外形を示す外壁と部屋の外形を示す内壁との機能を備えていた場合、建築物の外形となる面と部屋の外形となる面の2枚の面として表現され、それらの面の間には隙間ができる（何もない）。LOD4.0では地下街の内部に存在する付属物や家具を表現しないため、上図の例でも、付属物である階段、エレベータ、柱等が表現されていない。 なお、地下街の地上への出入口に設けられた建屋は、都市設備（CityFurniture）として取得する。
 
 | LOD4.1
-a| 
+a|
 
-image::images/342.webp[]
+image::images/342.webp.png[]
 
 LOD4.1ではLOD4.0に、屋内の付属物（bldg:IntBuildingInstallation）として、階段、スロープ、輸送設備（エスカレータ、エレベータ及び動く歩道）、柱及びデッキ・ステージが追加される。 +
 上図の例では、LOD4.0に加えて、階段、エスカレータ、スロープ及び柱が付属物として追加された。
 
 | LOD4.2
-a| 
+a|
 
-image::images/343.webp[]
+image::images/343.webp.png[]
 
 LOD4.2ではLOD4.1に屋内の付属物（bldg:IntBuildingInstallation）として、手すり、パネル及び梁が付属物として追加される。また、机やいすなどの移動可能な家具（bldg:BuildingFurniture）が追加される。 +
 上図の例では、LOD4.2に加えて付属物として階段の手すり及び部屋の間仕切りとしてパネル、また、家具としてテーブルやいす及び棚が追加された。
@@ -373,7 +373,7 @@ a| • 地下街の外形を取得し、上向き面を屋根面（RoofSurface�
 | 全てを対象とする。
 a| • 地下街の外形を取得し、下向き面を底面（GroundSurface）とする。 +
 • 面を構成する各頂点にそれぞれの高さを与える。
-| 
+|
 
 | LOD4.0
 | ●
@@ -398,11 +398,11 @@ a| • BuildingPartを使用する場合、1棟のBuildingには必ず2つ以上
 | LOD4.0 | | OuterFloorSurface | | | | 対象外
 | LOD4.0 | | OuterCeilingSurface | | | | 対象外
 | LOD4.0 | | BuildingInstallation | | | | 対象外
-| LOD4.0 | ● | Door | MultiSurface | 全てを対象とする。 | • 扉（Door）の外周を取得する。 | 
-| LOD4.0 | ● | Window | MultiSurface | 全てを対象とする。 | • 窓（Window）の外周を取得する。 | 
+| LOD4.0 | ● | Door | MultiSurface | 全てを対象とする。 | • 扉（Door）の外周を取得する。 |
+| LOD4.0 | ● | Window | MultiSurface | 全てを対象とする。 | • 窓（Window）の外周を取得する。 |
 | LOD4.0 | | BuildingInstallation | MultiSurface | | | 対象外
-| LOD4.0 | ● | Room | Solid | 全てを対象とする。 | • 天井面（CeilingSurface）、内壁面（InteriorWallSurface）、閉鎖面（ClosureSurface）及び床面（FloorSurface）を境界面とする立体を作成する。 | 
-| LOD4.0 | ● | CeilingSurface | MultiSurface | 全てを対象とする。 | • 天井の外周を取得する。 | 
+| LOD4.0 | ● | Room | Solid | 全てを対象とする。 | • 天井面（CeilingSurface）、内壁面（InteriorWallSurface）、閉鎖面（ClosureSurface）及び床面（FloorSurface）を境界面とする立体を作成する。 |
+| LOD4.0 | ● | CeilingSurface | MultiSurface | 全てを対象とする。 | • 天井の外周を取得する。 |
 | LOD4.0
 | ●
 | InteriorWallSurface
@@ -412,9 +412,9 @@ a| • 部屋（Room）を区切る内壁の角を結ぶ外周を取得する。
 • 角となる場所で区切る。
 | •曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 
-| LOD4.0 | ● | FloorSurface | MultiSurface | 全てを対象とする。 | • 床の外周を取得する。 | 
+| LOD4.0 | ● | FloorSurface | MultiSurface | 全てを対象とする。 | • 床の外周を取得する。 |
 | LOD4.0 | | IntBuildingInstallation | | | | 対象外
-| LOD4.0 | ● | CeilingSurface | MultiSurface | 全てを対象とする。 | • 天井の外周を取得する。 | 
+| LOD4.0 | ● | CeilingSurface | MultiSurface | 全てを対象とする。 | • 天井の外周を取得する。 |
 | LOD4.0
 | ●
 | InteriorWallSurface
@@ -424,7 +424,7 @@ a| • 部屋（Room）を区切る内壁の角を結ぶ外周を取得する。
 • 角となる場所で区切る。
 | • 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 
-| LOD4.0 | ● | FloorSurface | MultiSurface | 全てを対象とする。 | • 床の外周を取得する。 | 
+| LOD4.0 | ● | FloorSurface | MultiSurface | 全てを対象とする。 | • 床の外周を取得する。 |
 | LOD4.0 | | BuildingFurniture | | | | 対象外
 | LOD4.0 | ● | CityObjectGroup | ー | 階 | ー | Roomの集まりとして表現する。
 
@@ -464,7 +464,7 @@ a| • 地下街の外形を取得し、上向き面を屋根面（RoofSurface�
 | 全てを対象とする。
 a| • 地下街の外形を取得し、下向き面を底面（GroundSurface）とする。 +
 • 面を構成する各頂点にそれぞれの高さを与える。
-| 
+|
 
 | LOD4.1
 | ●
@@ -498,10 +498,10 @@ a| • 屋外付属物の外形（外側から見える形）を構成する面�
 • 面の各頂点に屋外付属物の高さを与える。
 | • 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 
-| LOD4.1 | ● | Door | MultiSurface | 全てを対象とする。 | • 扉（Door）の外周を取得する。 | 
-| LOD4.1 | ● | Window | MultiSurface | 全てを対象とする。 | • 窓（Window）の外周を取得する。 | 
-| LOD4.1 | ● | Room | Solid | 全てを対象とする。 | • 天井面（CeilingSurface）、内壁面（InteriorWallSurface）、閉鎖面（ClosureSurface）及び床面（FloorSurface）を境界面とする立体を作成する。 | 
-| LOD4.1 | ● | CeilingSurface | MultiSurface | 全てを対象とする。 | • 天井の外周を取得する。 | 
+| LOD4.1 | ● | Door | MultiSurface | 全てを対象とする。 | • 扉（Door）の外周を取得する。 |
+| LOD4.1 | ● | Window | MultiSurface | 全てを対象とする。 | • 窓（Window）の外周を取得する。 |
+| LOD4.1 | ● | Room | Solid | 全てを対象とする。 | • 天井面（CeilingSurface）、内壁面（InteriorWallSurface）、閉鎖面（ClosureSurface）及び床面（FloorSurface）を境界面とする立体を作成する。 |
+| LOD4.1 | ● | CeilingSurface | MultiSurface | 全てを対象とする。 | • 天井の外周を取得する。 |
 | LOD4.1
 | ●
 | InteriorWallSurface
@@ -511,7 +511,7 @@ a| • 部屋（Room）を区切る内壁の角を結ぶ外周を取得する。
 • 角となる場所で区切る。
 | • 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 
-| LOD4.1 | ● | FloorSurface | MultiSurface | 全てを対象とする。 | • 床の外周を取得する。 | 
+| LOD4.1 | ● | FloorSurface | MultiSurface | 全てを対象とする。 | • 床の外周を取得する。 |
 | LOD4.1
 | ●
 | IntBuildingInstallation
@@ -560,7 +560,7 @@ a| • 地下街の外形を取得し、上向き面を屋根面（RoofSurface�
 | 全てを対象とする。
 a| • 地下街の外形を取得し、下向き面を底面（GroundSurface）とする。 +
 • 面を構成する各頂点にそれぞれの高さを与える。
-| 
+|
 
 | LOD4.2
 | ●
@@ -593,10 +593,10 @@ a| • 屋外付属物の外形（外側から見える形）を構成する面�
 • 面の各頂点に屋外付属物の高さを与える。
 | • 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 
-| LOD4.2 | ● | Door | MultiSurface | 全てを対象とする。 | • 扉（Door）の外周を取得する。 | 
-| LOD4.2 | ● | Window | MultiSurface | 全てを対象とする。 | • 窓（Window）の外周を取得する。 | 
-| LOD4.2 | ● | Room | Solid | 全てを対象とする。 | • 天井面（CeilingSurface）、内壁面（InteriorWallSurface）、閉鎖面（ClosureSurface）及び床面（FloorSurface）を境界面とする立体を作成する。 | 
-| LOD4.2 | ● | CeilingSurface | MultiSurface | 全てを対象とする。 | • 天井の外周を取得する。 | 
+| LOD4.2 | ● | Door | MultiSurface | 全てを対象とする。 | • 扉（Door）の外周を取得する。 |
+| LOD4.2 | ● | Window | MultiSurface | 全てを対象とする。 | • 窓（Window）の外周を取得する。 |
+| LOD4.2 | ● | Room | Solid | 全てを対象とする。 | • 天井面（CeilingSurface）、内壁面（InteriorWallSurface）、閉鎖面（ClosureSurface）及び床面（FloorSurface）を境界面とする立体を作成する。 |
+| LOD4.2 | ● | CeilingSurface | MultiSurface | 全てを対象とする。 | • 天井の外周を取得する。 |
 | LOD4.2
 | ●
 | InteriorWallSurface
@@ -606,7 +606,7 @@ a| • 部屋（Room）を区切る内壁の角を結ぶ外周を取得する。
 • 角となる場所で区切る。
 | • 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 
-| LOD4.2 | ● | FloorSurface | MultiSurface | 全てを対象とする。 | • 床の外周を取得する。 | 
+| LOD4.2 | ● | FloorSurface | MultiSurface | 全てを対象とする。 | • 床の外周を取得する。 |
 | LOD4.2
 | ●
 | IntBuildingInstallation
@@ -647,62 +647,62 @@ a| • 家具の外形（外側から見える形）を構成する面を取得�
 .表 4-101　地下街モデルに使用する地物型と空間属性
 |===
 ^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| LOD4 ^h| 適用
-.8+| uro:UndergroundBuilding | ^| ● ^| ● ^| ● ^| ● ^| ● | 
-| lod0FootPrint ^| | | | | | 
-| lod0RoofEdge ^| ● | | | | | 
-| lod1Solid | ^| ● | | | | 
-| lod2Solid | | ^| ● ^| | | 
-| lod3Solid | | ^| ^| ● | | 
+.8+| uro:UndergroundBuilding | ^| ● ^| ● ^| ● ^| ● ^| ● |
+| lod0FootPrint ^| | | | | |
+| lod0RoofEdge ^| ● | | | | |
+| lod1Solid | ^| ● | | | |
+| lod2Solid | | ^| ● ^| | |
+| lod3Solid | | ^| ^| ● | |
 | lod4Solid | ^| ^| | ^| ■ .2+| Solid又はMultiSurfaceのいずれかとする。
 | lod4MultiSurface | ^| ^| | ^| ■
 .6+| bldg:BuildingPart | ^| ^| ^| ■ ^| ■ ^| ■ | 一棟の建築物を、属性の異なる複数の部分に分ける場合に必須とする。
-| lod1Solid ^| ^| | | | | 
-| lod2Solid ^| | ^| ■ | | | 
-| lod3Solid | ^| | ^| ■ | | 
+| lod1Solid ^| ^| | | | |
+| lod2Solid ^| | ^| ■ | | |
+| lod3Solid | ^| | ^| ■ | |
 | lod4Solid | | ^| ^| ^| ■ .2+| Solid又はMultiSurfaceのいずれかとする。
 | lod4MultiSurface | | ^| ^| ^| ■
-2+| bldg:Room | ^| ^| ^| ^| ● | 
-| ^| lod4Solid | | | | ^| ● | 
-.4+| bldg:RoofSurface | ^| ^| ^| ^| ^| ● | 
-| lod2MultiSurface ^| | | ● | | | 
-| lod3MultiSurface ^| | | | ● | | 
-| lod4MultiSurface | ^| | | ^| ● | 
-.4+| bldg:WallSurface | ^| ^| ^| ^| ^| ● | 
-| lod2MultiSurface ^| | ^| ● | | | 
-| lod3MultiSurface ^| | | ^| ● | | 
-| lod4MultiSurface | ^| | | ^| ● | 
-.4+| bldg:GroundSurface | ^| ^| ^| ^| ^| ● | 
-| lod2MultiSurface ^| | ^| ● | | | 
-| lod3MultiSurface ^| | | ^| ● | | 
-| lod4MultiSurface | ^| | | ^| ● | 
+2+| bldg:Room | ^| ^| ^| ^| ● |
+| ^| lod4Solid | | | | ^| ● |
+.4+| bldg:RoofSurface | ^| ^| ^| ^| ^| ● |
+| lod2MultiSurface ^| | | ● | | |
+| lod3MultiSurface ^| | | | ● | |
+| lod4MultiSurface | ^| | | ^| ● |
+.4+| bldg:WallSurface | ^| ^| ^| ^| ^| ● |
+| lod2MultiSurface ^| | ^| ● | | |
+| lod3MultiSurface ^| | | ^| ● | |
+| lod4MultiSurface | ^| | | ^| ● |
+.4+| bldg:GroundSurface | ^| ^| ^| ^| ^| ● |
+| lod2MultiSurface ^| | ^| ● | | |
+| lod3MultiSurface ^| | | ^| ● | |
+| lod4MultiSurface | ^| | | ^| ● |
 .4+| bldg:OuterCeilingSurface | ^| ^| ^| ^| ^| | 対象外
-| lod2MultiSurface ^| | | | | | 
-| lod3MultiSurface ^| | | ^| | .2+| 
-| lod4MultiSurface | ^| | | ^| 
-.4+| bldg:OuterFloorSurface | ^| ^| ^| ^| ^| |  
+| lod2MultiSurface ^| | | | | |
+| lod3MultiSurface ^| | | ^| | .2+|
+| lod4MultiSurface | ^| | | ^|
+.4+| bldg:OuterFloorSurface | ^| ^| ^| ^| ^| |
 | lod2MultiSurface ^| | | | | | 対象外
-| lod3MultiSurface ^| | | ^| | .2+| 
-| lod4MultiSurface | ^| | | ^| 
+| lod3MultiSurface ^| | | ^| | .2+|
+| lod4MultiSurface | ^| | | ^|
 .4+| bldg:ClosureSurface | ^| ^| ^| ■ ^| ■ ^| ■ | BuildingPartを作成する場合は必須とする。 LOD4において、内壁面等はないが、建築確認申請では部屋となっている空間を区切る場合は必須とする。
 | lod2MultiSurface ^| | ^| ■ | | .3+| bldg:ClosureSurfaceを作る場合は必須とする。
-| lod3MultiSurface ^| | | ^| ■ | 
+| lod3MultiSurface ^| | | ^| ■ |
 | lod4MultiSurface | ^| | | ^| ■
-.2+| bldg:InteriorWallSurface | ^| ^| ^| ^| ^| ● | 
-| lod4MultiSurface ^| | | | ^| ● | 
-.2+| bldg:CeilingSurface | ^| ^| ^| ^| ^| ● ^| 
-| lod4MultiSurface ^| | | | ^| ● | 
-.2+| bldg:FloorSurface | ^| ^| ^| ^| ^| ● | 
-| lod4MultiSurface ^| | | | ^| ● | 
-.3+| bldg:Door | ^| ^| ^| ^| ● ^| ● | 
-| lod3MultiSurface ^| | | ^| ● ^| | 
-| lod4MultiSurface ^| | | | ^| ● | 
-.3+| bldg:Window | ^| ^| ^| ^| ● ^| ● | 
-| lod3MultiSurface ^| | | ^| ● ^| | 
-| lod4MultiSurface ^| | | | ^| ● | 
-.4+| bldg:BuildingInstallation | ^| ^| ^| ^| ^| |  
-| lod2Geometry ^| | ^| | | | 
-| lod3Geometry ^| | | ^| | | 
-| lod4Geometry ^| | | | ^| | 
+.2+| bldg:InteriorWallSurface | ^| ^| ^| ^| ^| ● |
+| lod4MultiSurface ^| | | | ^| ● |
+.2+| bldg:CeilingSurface | ^| ^| ^| ^| ^| ● ^|
+| lod4MultiSurface ^| | | | ^| ● |
+.2+| bldg:FloorSurface | ^| ^| ^| ^| ^| ● |
+| lod4MultiSurface ^| | | | ^| ● |
+.3+| bldg:Door | ^| ^| ^| ^| ● ^| ● |
+| lod3MultiSurface ^| | | ^| ● ^| |
+| lod4MultiSurface ^| | | | ^| ● |
+.3+| bldg:Window | ^| ^| ^| ^| ● ^| ● |
+| lod3MultiSurface ^| | | ^| ● ^| |
+| lod4MultiSurface ^| | | | ^| ● |
+.4+| bldg:BuildingInstallation | ^| ^| ^| ^| ^| |
+| lod2Geometry ^| | ^| | | |
+| lod3Geometry ^| | | ^| | |
+| lod4Geometry ^| | | | ^| |
 .2+| bldg:IntBuildingInstallation | ^| ^| ^| ^| ^| ■ | LOD4.1及び 4.2では必須とする。
 | lod4Geometry ^| | | | ^| ■ | MultiSufaceを使用することを基本とする。
 .2+| bldg:BuildingFurniture | ^| ^| ^| ^| ^| ■ | LOD4.2では必須とする。
@@ -736,17 +736,17 @@ image::images/344.svg[]
 [cols="1,1,2",options="noheader"]
 |===
 .2+| 型の定義
-2+a| 
+2+a|
 地下街とは、地下街その他地下に設けられた不特定かつ多数の者が利用する施設（地下に建設が予定されている施設又は地下に建設中の施設であつて、不特定かつ多数の者が利用すると見込まれるものを含む。）をいう。　[水防法　第15条第1項第4号イ] +
 参考： 消防法第8条の2第1項では、地下街を「地下の工作物内に設けられた店舗、事務所その他これらに類する施設で、連続して地下道に面して設けられたものと当該地下道とを合わせたもの」また同施行令別表第一では準地下街として「建築物の地階で連続して地下道に面して設けられたものと当該地下道とを合わせたもの」と定義している。 また、「地下街に関する基本方針」（昭和49年6月28日付建設省都計発第58号）では地下街を「公共の用に供される地下歩道（地下駅の改札口外の通路、コンコース等を含む。）と当該地下歩道に面して設けられる店舗、事務所その他これらに類する施設とが一体となった地下施設（地下駐車場が併設されている場合には、当該地下駐車場を含む。）であって、公共の用に供されている道路又は駅前広場（土地区画整理事業、市街地再開発事業等により建設中の道路又は駅前広場を含む。）の区域に係るもの」と定義している。
 
-image::images/345.webp["",600,title=" 図　uro:UndergroundBuildingの例"]
+image::images/345.webp.png["",600,title=" 図　uro:UndergroundBuildingの例"]
 
-2+a| 
+2+a|
 建築物の地階は、建築物（bldg:Building）として表現する。 +
 地下街から地上に出入りするために設けられた開口部（bldg:ClosureSurface）を覆うように設けられた建屋は、frn:CityFurnitureとして取得する。
 
-image::images/346.webp["",500,title=" 図　地下街の出入り口に設けられた建屋"]
+image::images/346.webp.png["",500,title=" 図　地下街の出入り口に設けられた建屋"]
 
 h| 上位の型 2+| bldg:_AbstractBuilding
 h| ステレオタイプ 2+| << FeatureType >>

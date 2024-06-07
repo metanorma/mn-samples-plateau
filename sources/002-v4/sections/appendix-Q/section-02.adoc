@@ -14,7 +14,7 @@
 
 表Q- 1　地下街モデルの概要
 
-image::images/481.webp[]
+image::images/481.webp.png[]
 
 地下街モデル（LOD0）は、地下街の上方からの正射影の外周である。高さは0とする。
 
@@ -57,46 +57,46 @@ image::images/481.webp[]
 .表Q- 2　地下街モデルに使用する地物型と空間属性
 |===
 ^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| LOD4 ^h| 適用
-.8+| uro:UndergroundBuilding | ^| ● ^| ● ^| ● ^| ● ^| ● | 
-| lod0FootPrint ^| ^| ^| ^| ^| | 
-| lod0RoofEdge ^| ● ^| ^| ^| ^| | 
-| lod1Solid ^| ^| ● ^| ^| ^| | 
-| lod2Solid ^| ^| ^| ● ^| ^| | 
-| lod3Solid ^| ^| ^| ^| ● ^| | 
+.8+| uro:UndergroundBuilding | ^| ● ^| ● ^| ● ^| ● ^| ● |
+| lod0FootPrint ^| ^| ^| ^| ^| |
+| lod0RoofEdge ^| ● ^| ^| ^| ^| |
+| lod1Solid ^| ^| ● ^| ^| ^| |
+| lod2Solid ^| ^| ^| ● ^| ^| |
+| lod3Solid ^| ^| ^| ^| ● ^| |
 | lod4Solid ^| ^| ^| ^| ^| ■ .2+| Solid又はMultiSurfaceのいずれかとする。
 | lod4MultiSurface ^| ^| ^| ^| ^| ■
 .6+| bldg:BuildingPart | ^| ^| ^| ■ ^| ■ ^| ■ | 1棟の建築物を、属性の異なる複数の部分に分ける場合に必須とする。
-| lod1Solid ^| ^| ^| ^| ^| | 
-| lod2Solid ^| ^| ^| ■ ^| ^| | 
-| lod3Solid ^| ^| ^| ^| ■ ^| | 
+| lod1Solid ^| ^| ^| ^| ^| |
+| lod2Solid ^| ^| ^| ■ ^| ^| |
+| lod3Solid ^| ^| ^| ^| ■ ^| |
 | lod4Solid ^| ^| ^| ^| ^| ■ .2+| Solid又はMultiSurfaceのいずれかとする。
 | lod4MultiSurface ^| ^| ^| ^| ^| ■
-.2+| bldg:Room | ^| ^| ^| ^| ^| ● | 
-| lod4Solid ^| ^| ^| ^| ^| ● | 
-.4+| bldg:RoofSurface | ^| ^| ^| ● ^| ● ^| ● | 
-| lod2MultiSurface ^| ^| ^| ● ^| ^| | 
-| lod3MultiSurface ^| ^| ^| ^| ● ^| | 
-| lod4MultiSurface ^| ^| ^| ^| ^| ● | 
-.4+| bldg:WallSurface | ^| ^| ^| ● ^| ● ^| ● | 
-| lod2MultiSurface ^| ^| ^| ● ^| ^| | 
-| lod3MultiSurface ^| ^| ^| ^| ● ^| | 
-| lod4MultiSurface ^| ^| ^| ^| ^| ● | 
-.4+| bldg:GroundSurface | ^| ^| ^| ● ^| ● ^| ● | 
-| lod2MultiSurface ^| ^| ^| ● ^| ^| | 
-| lod3MultiSurface ^| ^| ^| ^| ● ^| | 
-| lod4MultiSurface ^| ^| ^| ^| ^| ● | 
+.2+| bldg:Room | ^| ^| ^| ^| ^| ● |
+| lod4Solid ^| ^| ^| ^| ^| ● |
+.4+| bldg:RoofSurface | ^| ^| ^| ● ^| ● ^| ● |
+| lod2MultiSurface ^| ^| ^| ● ^| ^| |
+| lod3MultiSurface ^| ^| ^| ^| ● ^| |
+| lod4MultiSurface ^| ^| ^| ^| ^| ● |
+.4+| bldg:WallSurface | ^| ^| ^| ● ^| ● ^| ● |
+| lod2MultiSurface ^| ^| ^| ● ^| ^| |
+| lod3MultiSurface ^| ^| ^| ^| ● ^| |
+| lod4MultiSurface ^| ^| ^| ^| ^| ● |
+.4+| bldg:GroundSurface | ^| ^| ^| ● ^| ● ^| ● |
+| lod2MultiSurface ^| ^| ^| ● ^| ^| |
+| lod3MultiSurface ^| ^| ^| ^| ● ^| |
+| lod4MultiSurface ^| ^| ^| ^| ^| ● |
 .4+| bldg:OuterCeilingSurface　 | ^| ^| ^| ^| ^| | 対象外
-| lod2MultiSurface ^| ^| ^| ^| ^| | 
-| lod3MultiSurface ^| ^| ^| ^| ^| | 
-| lod4MultiSurface ^| ^| ^| ^| ^| | 
+| lod2MultiSurface ^| ^| ^| ^| ^| |
+| lod3MultiSurface ^| ^| ^| ^| ^| |
+| lod4MultiSurface ^| ^| ^| ^| ^| |
 .4+| bldg:OuterFloorSurface | ^| ^| ^| ^| ^| | 対象外
-| lod2MultiSurface ^| ^| ^| ^| ^| | 
-| lod3MultiSurface ^| ^| ^| ^| ^| | 
-| lod4MultiSurface ^| ^| ^| ^| ^| | 
+| lod2MultiSurface ^| ^| ^| ^| ^| |
+| lod3MultiSurface ^| ^| ^| ^| ^| |
+| lod4MultiSurface ^| ^| ^| ^| ^| |
 .4+| bldg:ClosureSurface
-| 
-^| 
-^| 
+|
+^|
+^|
 ^| ■
 ^| ■
 ^| ■
@@ -104,31 +104,31 @@ a| BuildingPartを作成する場合は必須とする。 +
 LOD4において、内壁面等はないが、建築確認申請では部屋となっている空間を区切る場合は必須とする。
 
 | lod2MultiSurface ^| ^| ^| ■ ^| ^| .3+| bldg:ClosureSurfaceを作る場合は必須とする。
-| lod3MultiSurface ^| ^| ^| ^| ■ ^| 
+| lod3MultiSurface ^| ^| ^| ^| ■ ^|
 | lod4MultiSurface ^| ^| ^| ^| ^| ■
-.2+| bldg:InteriorWallSurface　 | ^| ^| ^| ^| ^| ● | 
-| lod4MultiSurface ^| ^| ^| ^| ^| ● | 
-.2+| bldg:CeilingSurface　 | ^| ^| ^| ^| ^| ● | 
-| lod4MultiSurface ^| ^| ^| ^| ^| ● | 
-.2+| bldg:FloorSurface | ^| ^| ^| ^| ^| ● | 
-| lod4MultiSurface ^| ^| ^| ^| ^| ● | 
-.3+| bldg:Door | ^| ^| ^| ^| ○ ^| ● | 
-| lod3MultiSurface ^| ^| ^| ^| ○ ^| | 
-| lod4MultiSurface ^| ^| ^| ^| ^| ● | 
-.3+| bldg:Window | ^| ^| ^| ^| ○ ^| ● | 
-| lod3MultiSurface ^| ^| ^| ^| ○ ^| | 
-| lod4MultiSurface ^| ^| ^| ^| ^| ● | 
-.3+| bldg:BuildingInstallation　 | ^| ^| ^| ^| ^| | 対象外 
-| lod3Geometry ^| ^| ^| ^| ^| .2+| 
-| lod4Geometry ^| ^| ^| ^| ^| 
+.2+| bldg:InteriorWallSurface　 | ^| ^| ^| ^| ^| ● |
+| lod4MultiSurface ^| ^| ^| ^| ^| ● |
+.2+| bldg:CeilingSurface　 | ^| ^| ^| ^| ^| ● |
+| lod4MultiSurface ^| ^| ^| ^| ^| ● |
+.2+| bldg:FloorSurface | ^| ^| ^| ^| ^| ● |
+| lod4MultiSurface ^| ^| ^| ^| ^| ● |
+.3+| bldg:Door | ^| ^| ^| ^| ○ ^| ● |
+| lod3MultiSurface ^| ^| ^| ^| ○ ^| |
+| lod4MultiSurface ^| ^| ^| ^| ^| ● |
+.3+| bldg:Window | ^| ^| ^| ^| ○ ^| ● |
+| lod3MultiSurface ^| ^| ^| ^| ○ ^| |
+| lod4MultiSurface ^| ^| ^| ^| ^| ● |
+.3+| bldg:BuildingInstallation　 | ^| ^| ^| ^| ^| | 対象外
+| lod3Geometry ^| ^| ^| ^| ^| .2+|
+| lod4Geometry ^| ^| ^| ^| ^|
 .2+| bldg:IntBuildingInstallation　 | ^| ^| ^| ^| ^| ■ | LOD4.1及び 4.2では必須とする。
 | lod4Geometry ^| ^| ^| ^| ^| ■ | MultiSurfaceを使用することを基本とする。
 .2+| bldg:BuildingFurniture　 | ^| ^| ^| ^| ^| ■ | LOD4.2では必須とする。
 | lod4Geometry
-^| 
-^| 
-^| 
-^| 
+^|
+^|
+^|
+^|
 ^| ■
 a| bldg:BuildingFurnitureを作成する場合は必須とする。 +
 MultiSurfaceを使用することを基本とする。
@@ -148,7 +148,7 @@ LOD4は、BIMモデルからの変換を前提とした区分である。測量�
 要件ubld-2.　地下街のLOD0の形状は、地下街モデル（LOD0）の定義に従う。
 ****
 
- 
+
 
 　LOD1
 
@@ -158,7 +158,7 @@ LOD4は、BIMモデルからの変換を前提とした区分である。測量�
 要件ubld-3.　地下街のLOD1の形状は、地下街モデル（LOD1）の定義に従う。
 ****
 
- 
+
 
 地表面から一律の高さで下向きに押し出した立体として表現するため、地下街の正確な深さは分からないが、地下街が存在する可能性がある空間を表現できる。
 
@@ -172,7 +172,7 @@ LOD4は、BIMモデルからの変換を前提とした区分である。測量�
 要件ubld-4.　地下街のLOD2の形状は、地下街モデル（LOD2）の定義に従う。
 ****
 
- 
+
 
 地下街モデル（LOD2）は、開口部を区分しないため、地上に設けられた地下街の出入口は屋根面として取得する。
 
@@ -186,7 +186,7 @@ LOD4は、BIMモデルからの変換を前提とした区分である。測量�
 要件ubld-5.　地下街のLOD3の形状は、地下街モデル（LOD3）の定義に従う。
 ****
 
- 
+
 
 地下街モデル（LOD3）は、地下街モデル（LOD2）から、地下街への出入口を閉鎖面に区分したモデルである。
 
@@ -198,13 +198,13 @@ LOD4は、BIMモデルからの変換を前提とした区分である。測量�
 
 地下街モデル（LOD4）では、地下街モデル（LOD3）により表現される地下街の外側の形状に加え、地下街の内側の形状（屋内空間）を表現する。このとき、地下街オブジェクトは、地下街モデル（LOD4）の定義に従ったものでなければならない。
 
- 
+
 
 ****
 要件ubld-6.　地下街のLOD4の形状は、地下街モデル（LOD4）の定義に従う。
 ****
 
- 
+
 
 地下街モデル（LOD4）は、含むべき地物により、LOD4.0、LOD4.1及びLOD4.2に区分する（表Q- 3）。これは、建築物モデル（LOD4）の区分と同一である。
 
@@ -219,9 +219,9 @@ h| 地下街モデル（LOD4）に　含むべき地物 h| 対応する地物型
 | 屋根面 | bldg:RoofSurface ^| ● ^| ● ^| ●
 | 外壁面 | bldg:WallSurface ^| ● ^| ● ^| ●
 | 底面 | bldg:GroundSurface ^| ● ^| ● ^| ●
-| 屋外天井面 | bldg:OuterGroundSurface ^| ^| ^| 
-| 屋外床面 | bldg:OuterFloorSurface ^| ^| ^| 
-| 屋外付属物 | bldg:BuildingInstallation ^| ^| ^| 
+| 屋外天井面 | bldg:OuterGroundSurface ^| ^| ^|
+| 屋外床面 | bldg:OuterFloorSurface ^| ^| ^|
+| 屋外付属物 | bldg:BuildingInstallation ^| ^| ^|
 | 部屋 | bldg:Room ^| ● ^| ● ^| ●
 | 天井面 | bldg:CeilingSurface ^| ● ^| ● ^| ●
 | 内壁面 | bldg:InteriorWallSurface ^| ● ^| ● ^| ●
