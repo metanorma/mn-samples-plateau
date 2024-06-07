@@ -1,0 +1,160 @@
+[[tocC_02]]
+=== 建築物の記述とLOD
+
+[[tocC_02_01]]
+==== 建築物モデル
+
+建築物とは、普通建物、堅ろう建物、普通無壁舎及び堅ろう無壁舎をいう。普通建物とは、3階未満の建物及び3階以上の木造等で建築された建物をいう。堅ろう建物とは、鉄筋コンクリート等で建築された建物で、地上3階以上又は3階相当以上の高さのものやスタンドを備えた競技場をいう。普通無壁舎とは、側壁のない建物、温室及び工場内の建物類似の構築物で、3階未満のものをいう。堅ろう無壁舎とは、鉄筋コンクリート等で建築された側壁のない建物及び建物類似の構築物で、地上3階以上又は3階相当以上の高さのものをいう。（参考：作業規程の準則　付録７　公共測量標準図式）
+
+標準製品仕様書では、建築物の表現に必要な地物型等をCityGML及びi-URから抽出し、LODごとに、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を定めた「建築物モデル」を定義する。
+
+建築物モデルのLODは、LOD0からLOD4までを対象とする。
+
+表 C-1　建築物モデルの概要
+
+image::images/126.webp[]
+
+建築物モデル（LOD0）は、建築物の形状を面により表現する。
+
+建築物モデル（LOD1）は、LOD0の面を一律の高さで上向きに押し出した立体（箱モデル）により表現する。
+
+建築物モデル（LOD2）は、建築物の形状を、屋根形状を含む立体として表現し、立体の境界面を屋根面、外壁面及び底面に区分するとともに、建築物の外側の付属物を区分する。
+
+建築物モデル（LOD3）は、建築物の形状を立体として表現し、建築物モデル（LOD2）に含むべき地物に加え、開口部（窓及び扉）が追加される。また、建築物の側面が詳細化される。
+
+建築物モデル（LOD4）は、建築物モデル（LOD3）により表現される建築物の外側の形状に加え、建築物の内側の形状（屋内空間）を表現する。
+
+[[]]
+==== 使用可能な地物型とLOD
+
+建築物モデルは、LODごとに、使用すべき地物型やその空間属性が異なる。
+
+****
+要件bldg-1.　建築物の記述には、指定されたLODに対応する地物型及びその空間属性を使用する。
+****
+
+建築物の記述にはbldg:Buildingを使用する。bldg:Buildingには用途や地上階数といった地物属性が定義されている。
+
+建築物、これを構成する屋根及び壁、開口部（窓や扉）並びにバルコニー等の付属物は、LODに応じた空間属性をもつ。
+
+LOD0では、bldg:Buildingを使用し、建築物の幾何形状を平面で記述する。
+
+LOD1では、bldg:Buildingを使用し、建築物の幾何形状を立体で記述する。
+
+LOD2では、bldg:Buildingを使用し、建築物の幾何形状を立体で記述するとともに、立体の境界面を屋根面や外壁面等の地物型を用いて記述する。屋根面や外壁面はbldg:_BoundarySurfaceとして定義されている。bldg:_BoundarySurfaceは抽象地物であり、実装にはこれを継承する地物型（例：屋根はbldg:RoofSurface）を使用する。
+
+LOD3では、LOD2で使用可能な地物型に加え、屋根面や外壁面に扉（bldg:Door）や窓（bldg:Window）を付けることができる。
+
+　また、LOD2及びLOD3では、bldg:BuildingPart を使用できる。bldg:BuildingPartは、一棟の建築物を二つ以上の部分に分けた建築物の一部であり、bldg:Buildingと同様の属性をもつことができる。例えば、一棟の建築物について一部の階数や用途が異なっていたり、複合的な施設から構成され施設ごとに都市計画基礎調査の情報が作成されていたりする場合に、その建築物を複数に区切り、区切った建築物の部分（bldg:BuildingPart）ごとに階数や用途、都市計画基礎調査の情報といった属性を与えるために使用する。ただし、このとき、bldg:Buildingを構成するbldg:BuildingPartとは、一体的な建築物（bldg:BuildingPart同士が互いに接して一棟の建築物を構成する）でなければならない。
+
+またLOD2及びLOD3では、建築物に付属するバルコニーや屋外階段といった設備を、bldg:BuildingInstallationを用いて記述できる。
+
+なお、bldg:BuildingPartは建築物であるが、bldg:BuildingInstallationは建築物ではなく、建築物の付属物である。
+
+さらに、LOD4では屋内の空間が追加される。屋内空間は、部屋（bldg:Room）に区分される。部屋は立体として表現され、立体の境界面は、床面（bldg:FloorSurface）、内壁面（bldg:InteriorWallSurface）及び天井面（bldg:CeilingSurface）に区分される。部屋には、屋外と同様に壁や扉を設けられるほか、固定的な設備（bldg:IntBuildingInstallation）や家具などの設備（bldg:BuildingFurniture）を含めることができる。
+
+各LODにおいて使用可能な地物型及びその空間属性を表C- 2に示す。
+
+[cols=8]
+.表 C-2　建築物モデルに使用する地物型と空間属性
+|===
+^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| LOD4 ^h| 適用
+.8+| bldg:Building | ^| ● ^| ● ^| ● ^| ● ^| ● | 
+| lod0FootPrint ^| 〇 ^| ^| ^| ^| | 外周は、屋根の外周（RoofEdge）を原則とするが、地表面と外壁面との交線（FootPrint）で代替できる。
+| lod0RoofEdge ^| ■ ^| ^| ^| ^| | lod0FootPrintがある場合は不要とする。
+| lod1Solid ^| ^| ● ^| ^| ^| | 
+| lod2Solid ^| ^| ^| ● ^| ^| | 
+| lod3Solid ^| ^| ^| ^| ● ^| | 
+| lod4Solid ^| ^| ^| ^| ^| ■ .2+| Solid又はMultiSurfaceのいずれかとする。
+| lod4MultiSurface ^| ^| ^| ^| ^| ■
+.6+| bldg:BuildingPart | ^| ^| ^| ■ ^| ■ ^| ■ | 一棟の建築物を、属性の異なる複数の部分に分ける場合に必須とする。
+| lod1Solid ^| ^| ^| ^| ^| | 
+| lod2Solid ^| ^| ^| ■ ^| ^| | 
+| lod3Solid ^| ^| ^| ^| ■ ^| | 
+| lod4Solid ^| ^| ^| ^| ^| ■ .2+| Solid又はMultiSurfaceのいずれかとする。
+| lod4MultiSurface ^| ^| ^| ^| ^| ■
+.2+| bldg:Room | ^| ^| ^| ^| ^| ● | 
+| lod4Solid ^| ^| ^| ^| ^| ● | 
+.4+| bldg:RoofSurface | ^| ^| ^| ● ^| ● ^| ● | 
+| lod2MultiSurface ^| ^| ^| ● ^| ^| | 
+| lod3MultiSurface ^| ^| ^| ^| ● ^| | 
+| lod4MultiSurface ^| ^| ^| ^| ^| ● | 
+.4+| bldg:WallSurface | ^| ^| ^| ● ^| ● ^| ● | 
+| lod2MultiSurface ^| ^| ^| ● ^| ^| | 
+| lod3MultiSurface ^| ^| ^| ^| ● ^| | 
+| lod4MultiSurface ^| ^| ^| ^| ^| ● | 
+.4+| bldg:GroundSurface | ^| ^| ^| ● ^| ● ^| ● | 
+| lod2MultiSurface ^| ^| ^| ● ^| ^| | 
+| lod3MultiSurface ^| ^| ^| ^| ● ^| | 
+| lod4MultiSurface ^| ^| ^| ^| ^| ● | 
+.4+| bldg:OuterCeilingSurface | ^| ^| ^| ^| ○ ^| ○ | 外壁面のうち、天井の機能をもつ面を明示するために使用できる。
+| lod2MultiSurface ^| ^| ^| ^| ^| .3+| bldg:OuterCeilingSurfaceを作る場合は必須とする。
+| lod3MultiSurface ^| ^| ^| ^| ■ ^| 
+| lod4MultiSurface ^| ^| ^| ^| ^| ■
+.4+| bldg:OuterFloorSurface | ^| ^| ^| ○ ^| ○ ^| ○ | 屋根面のうち、通行可能な面を明示するために使用できる。
+| lod2MultiSurface ^| ^| ^| ■ ^| ^| .3+| bldg:OuterFloorSurfaceを作る場合は必須とする。
+| lod3MultiSurface ^| ^| ^| ^| ■ ^| 
+| lod4MultiSurface ^| ^| ^| ^| ^| ■
+.4+| bldg:ClosureSurface
+| 
+^| 
+^| 
+^| ■
+^| ■
+^| ■
+a| BuildingPartを作成する場合は必須とする。 +
+LOD4において、内壁面等はないが、建築確認申請では部屋となっている空間を区切る場合は必須とする。
+
+| lod2MultiSurface ^| ^| ^| ■ ^| ^| .3+| bldg:ClosureSurfaceを作る場合は必須とする。
+| lod3MultiSurface ^| ^| ^| ^| ■ ^| 
+| lod4MultiSurface ^| ^| ^| ^| ^| ■
+.2+| bldg:InteriorWallSurface | ^| ^| ^| ^| ^| ● | 
+| lod4MultiSurface ^| ^| ^| ^| ^| ● | 
+.2+| bldg:CeilingSurface | ^| ^| ^| ^| ^| ● | 
+| lod4MultiSurface ^| ^| ^| ^| ^| ● | 
+.2+| bldg:FloorSurface | ^| ^| ^| ^| ^| ● | 
+| lod4MultiSurface ^| ^| ^| ^| ^| ● | 
+.3+| bldg:Door | ^| ^| ^| ^| ● ^| ● | 
+| lod3MultiSurface ^| ^| ^| ^| ● ^| | 
+| lod4MultiSurface ^| ^| ^| ^| ^| ● | 
+.3+| bldg:Window | ^| ^| ^| ^| ● ^| ● | 
+| lod3MultiSurface ^| ^| ^| ^| ● ^| | 
+| lod4MultiSurface ^| ^| ^| ^| ^| ● | 
+.4+| bldg:BuildingInstallation | ^| ^| ^| ■ ^| ● ^| ● | LOD2.0では不要であるが、LOD2.1及びLOD2.2の場合は必須となる。
+| lod2Geometry ^| ^| ^| ■ ^| ^| .3+| MultiSufaceを使用することを基本とする。
+| lod3Geometry ^| ^| ^| ^| ● ^| 
+| lod4Geometry ^| ^| ^| ^| ^| ●
+.2+| bldg:IntBuildingInstallation | ^| ^| ^| ^| ^| ■ | LOD4.1及び 4.2では必須とする。
+| lod4Geometry ^| ^| ^| ^| ^| ■ | MultiSufaceを使用することを基本とする。
+.2+| bldg:BuildingFurniture | ^| ^| ^| ^| ^| ○ | 
+| lod4Geometry
+^| 
+^| 
+^| 
+^| 
+^| ■
+a| bldg:BuildingFurnitureを作成する場合は必須とする。 +
+MultiSufaceを使用することを基本とする。
+
+|===
+
+[none]
+**** ●：必須
+
+**** ■：条件付必須
+
+**** 〇：任意（ユースケースに応じて要否を決定してよい）
+
+[[]]
+==== 3D都市モデルに含むべき建築物のLOD
+
+3D都市モデルに建築物を含む場合には、幾何オブジェクトとして、LOD1（立体）とこれを作成する際に使用するLOD0（面）を必ず記述しなければならない。
+
+****
+要件bldg-2.　建築物の3D都市モデルには、LOD1及びこれを作成するために使用するLOD0の幾何オブジェクトを必ず含む。
+****
+
+一つの建築物オブジェクトには、LOD0からLOD4までの5段階の幾何オブジェクトを記述できる。LOD1及びLOD0は必須であるが、LOD2からLOD4はユースケースの必要に応じて記述することができる。
+
+なお、LOD3及びLOD4の幾何オブジェクトを記述する場合に、必ずしもLOD2の幾何オブジェクトを記述しなくてもよい。
+
