@@ -9,4 +9,4 @@ gem "coradoc", git: "https://github.com/metanorma/coradoc", branch: "main"
 # WARNING: only for developers
 #gem "metanorma-plateau", git: "git@github.com:metanorma/metanorma-plateau.git"
 #gem "metanorma-plateau", path: "~/src/mn/metanorma-plateau"
-#gem "sassc"
+gem "sassc"
