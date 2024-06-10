@@ -173,7 +173,8 @@ a new `index.html` file.
 
 [source,sh]
 ----
-$ bundle exec reverse_adoc -rcoradoc/reverse_adoc/plugins/plateau --split-sections 2 --external-images -o sources/001-v4/document.adoc reference-docs/plateau-document-01.html
+$ bundle exec reverse_adoc -rcoradoc/reverse_adoc/plugins/plateau --split-sections 2 --external-images -o sources/001-v4/document.adoc reference-docs/plateau-document-01-v4.html
+$ bundle exec reverse_adoc -rcoradoc/reverse_adoc/plugins/plateau --split-sections 2 --external-images -o sources/002-v4/document.adoc reference-docs/plateau-document-02-v4.html
 ----
 
 Where:
