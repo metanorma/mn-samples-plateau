@@ -1862,7 +1862,7 @@ LOD3又はLOD4の空間属性をもつ場合のみ開口部への参照を作成
 | uro:ifcBoundarySurfaceAttribute
 | uro:IfcAttribute [0..*]
 a| IDM・MVDで定義されるIFCのクラス及びプロパティセットに含まれる情報。bldg:GroundSurfaceに付与可能なデータ型は、以下とする。 +
- +
++
 uro:IfcBuildingElement このとき、uro:IfcBuildingElement の属性uro:elementTypeの値はIfcSlabとなる。
 
 |===
@@ -1976,7 +1976,7 @@ a| 建築物モデル（LOD4）において屋外にある床面の形状・起�
 | uro:IfcAttribute [0..*]
 a| IDM・MVDで定義されるIFCのクラス及びプロパティセットに含まれる情報。 +
 bldg:OuterFloorSurfaceに付与可能なデータ型は以下とする。 +
- +
++
 uro:IfcBuildingElement +
 このとき、uro:IfcBuildingElement の属性uro:elementTypeの値はIfcSlabとなる。
 
@@ -2427,7 +2427,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 a| IDM・MVDで定義されるIFCに含まれる情報。 +
 bldg:BuldingInstallationに使用可能なデータ型は以下とする。 +
 uro:IfcBuildingElement +
- +
++
 このとき、uro:IfcBuildingElementの属性uro:elementTypeの値は適用されたLOD4の詳細に応じて以下となる。 +
 LOD4.1： IfcRamp、IfcRampFlight、IfcStair、IfcStairFlight、IfcTransportElement 、IfcColumn、IfcBuildingElementProxyのいずれかとなる。 +
 LOD4.2：IfcBeam、IfcColumn、IfcPlate、IfcRailing、IfcRamp、IfcRampFlight、IfcStair、IfcStairFlight、IfcBuildingElementProxy、IfcTransportElementのいずれかとなる。
@@ -2450,7 +2450,7 @@ uro:IndoorUserDefinedAttribute
 | 型の定義
 2+a|
 室内の移動できる備品（家具）。 +
- +
++
 bldg:IntBuildingInstallationが、建築物内部に設置された恒久的かつ固定的な設備であることと対照的に、bldg:BuildingFurnitureは椅子やテーブルのような、動かすことができる備品である。
 
 image::images/065.webp.png["",400,title=" 図　bldg:BuildingFurnitureの例（机、椅子）"]

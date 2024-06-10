@@ -292,7 +292,7 @@ image::images/363.webp.png[title="   図M- 7　坑門工一般図の例　出�
 
 *** カルバート、シェッド及びシェルターの場合はこの工程は不要である。
 
-image::images/364.webp.png[title=" 図M- 8　道路中心線と坑口の中心線の交点の取得イメージ"]
+image::images/364.webp.png[title="道路中心線と坑口の中心線の交点の取得イメージ"]
 
 ④　構造物の最低標高値を算出する。
 
@@ -301,7 +301,7 @@ image::images/364.webp.png[title=" 図M- 8　道路中心線と坑口の中心�
 
 *** カルバート、シェッド及びシェルターの最低標高値は、構造物の上からの正射影と地形との交線の最下部点の高さ（最も低い標高）を取得する。
 
-image::images/365.webp.png[title=" 図M- 9　カルバート、シェッド及びシェルターの最低標高値の取得イメージ"]
+image::images/365.webp.png[title="カルバート、シェッド及びシェルターの最低標高値の取得イメージ"]
 
 ⑤ 構造物の最高標高値を算出する。
 
@@ -315,15 +315,15 @@ image::images/366.webp.png[title="  図M- 10　シェッド及びシェルタ�
 
 ⑥　②で作成したポリゴンに④で算出した構造物の最低標高値を付与する。
 
-image::images/367.webp.png[title=" 図M- 11　TunnelPartを用いない場合の側面イメージ（左）とTunnelPartを用いた場合の側面イメージ（右）"]
+image::images/367.webp.png[title="TunnelPartを用いない場合の側面イメージ（左）とTunnelPartを用いた場合の側面イメージ（右）"]
 
 ⑦ ⑥で構造物の最低標高値を持ったポリゴンを⑤で算出した構造物の最高標高値まで上向きに押し出し、立体とする。
 
-image::images/368.webp.png[title=" 図M- 12　TunnelPartを用いない場合の側面イメージ（左）とTunnelPartを用いた場合の側面イメージ（右）"]
+image::images/368.webp.png[title="TunnelPartを用いない場合の側面イメージ（左）とTunnelPartを用いた場合の側面イメージ（右）"]
 
 トンネルモデル（LOD1）の作成例を図M- 13に示す。
 
-image::images/369.webp.png[title=" 図M- 13　トンネルモデル（LOD1）の作成例"]
+image::images/369.webp.png[title="トンネルモデル（LOD1）の作成例"]
 
 (3)　作業手順（地下横断歩道）
 
@@ -334,14 +334,14 @@ image::images/369.webp.png[title=" 図M- 13　トンネルモデル（LOD1）の
 [none]
 *** 路面標高値は、計測によって取得した標高値又は図面に記載された標高値とする。
 
-image::images/370.webp.png[title=" 図M- 14　地下横断歩道の中心線と出入口の交点の取得イメージ"]
+image::images/370.webp.png[title="地下横断歩道の中心線と出入口の交点の取得イメージ"]
 
 ③ 地下横断歩道の最低標高値を算出する。
 
 [none]
 *** 最低標高値は、一般図に記載された地下横断歩道の深さと③の路面標高値から算出する。
 
-image::images/371.webp.png[title=" 図M- 15　地下横断歩道の一般図の例　出典：道路施設台帳サンプルデータD070"]
+image::images/371.webp.png[title="地下横断歩道の一般図の例　出典：道路施設台帳サンプルデータD070"]
 
 （ https://www.cbr.mlit.go.jp/architecture/kensetsugijutsu/download/index.htm[]）
 
@@ -395,7 +395,7 @@ a| 以下のデータを使用する。 +
 [none]
 *** トンネルの場合は、縦断面図の各測点毎で立体を区切る。カルバート、シェッド及びシェルターの場合は、一般図又は航空測量成果（航空写真、航空レーザ点群）から上下面の高さの変化点を特定し、立体を区切る。
 
-image::images/372.webp.png[title=" 図M- 16　縦断図の例"]
+image::images/372.webp.png[title="縦断図の例"]
 
 出典：国道13号　大鍋トンネル　設計図（ https://www.thr.mlit.go.jp/road/kouji/kouji-tunnel/24_R13_oonabe/data_05_.pdf[]）
 
@@ -404,14 +404,14 @@ image::images/372.webp.png[title=" 図M- 16　縦断図の例"]
 [none]
 *** トンネルの場合は、縦断面図から各測点毎のトンネル底面の高さを取得し、区切り位置の底面高さとする。カルバート、シェッド及びシェルターの場合は、 一般図又は航空測量成果（航空写真、航空レーザ点群）から区切り位置の上下面の高さを取得し、区切り位置の頂点の高さをその高さに変更する。
 
-image::images/373.webp.png[title=" 図M- 17　トンネル底面高さを反映後の側面イメージ"]
+image::images/373.webp.png[title="トンネル底面高さを反映後の側面イメージ"]
 
 ③　地質平面・縦断図から各測点間の設計パターン（断面形状）を特定する。
 
 [none]
 *** 設計パターンには適用するトンネル標準断面図が記載されている。カルバート、シェッド及びシェルターの場合は、この工程は不要である。
 
-image::images/374.webp.png[title=" 図M- 18　地質平面・縦断図の例"]
+image::images/374.webp.png[title="地質平面・縦断図の例"]
 
 出典：国道13号　大鍋トンネル　設計図（ https://www.thr.mlit.go.jp/road/kouji/kouji-tunnel/24_R13_oonabe/data_05_.pdf[]）
 
@@ -419,13 +419,13 @@ image::images/374.webp.png[title=" 図M- 18　地質平面・縦断図の例"]
 
 ⑤　④の立体の境界面をRoofSurface、WallSurface、GroundSurfaceに区分する。ただし、RoofSurface及びGroundSurfaceがWallSurfaceと区別できない場合は、全てWallSurfaceとして区分する。
 
-image::images/375.webp.png[title=" 図M- 19　断面形状を再現した後の側面イメージ"]
+image::images/375.webp.png[title="断面形状を再現した後の側面イメージ"]
 
 トンネルモデル（LOD2）の作成例を図M- 20及び図M- 21に示す。
 
-image::images/376.webp.png[title=" 図M- 20　トンネルモデル（LOD2）（トンネル）の作成例"]
+image::images/376.webp.png[title="トンネルモデル（LOD2）（トンネル）の作成例"]
 
-image::images/377.webp.png[title=" 図M- 21　トンネルモデル（LOD2）坑口の作成例（突出型・面壁型の正面）"]
+image::images/377.webp.png[title="トンネルモデル（LOD2）坑口の作成例（突出型・面壁型の正面）"]
 
 LOD2で再現する坑門の形状は上面のみであり、トンネルと一体として作成する。また、トンネルの開口部は境界面を分けない。
 
@@ -442,7 +442,7 @@ LOD2で再現する坑門の形状は上面のみであり、トンネルと一�
 
 ** ③ ②の立体の境界面をRoofSurface、WallSurface、GroundSurfaceに区分する。ただし、RoofSurface及びGroundSurfaceがWallSurfaceと区別できない場合は、全てWallSurfaceとして区分する。地下横断歩道の出入口はRoofSurfaceとする。
 
-image::images/378.webp.png[title=" 図M- 22　トンネルモデル（LOD2）（地下横断歩道）の作成イメージ"]
+image::images/378.webp.png[title="トンネルモデル（LOD2）（地下横断歩道）の作成イメージ"]
 
 　LOD3
 
@@ -496,7 +496,7 @@ a| 以下のデータを使用する。 +
 [none]
 *** トンネルの場合は、LOD2の段階で各測点毎の断面形状を再現しているため、トンネル本体の側面形状が既に再現されている場合がある。カルバート、シェッド及びシェルターの場合は、一般図又は測量成果（航空写真、航空レーザ点群、MMS点群）より側面形状を再現する。シェッド及びシェルターの側面形状が柱形状となっている場合、柱間に開口部があるが一つの立体とするために仮想的に面を作成する。
 
-image::images/379.webp.png[title=" 図M- 23　シェッド及びシェルターの側面の作成イメージ"]
+image::images/379.webp.png[title="シェッド及びシェルターの側面の作成イメージ"]
 
 ③ ②のモデルに対し、境界面の再区分を行う。
 
@@ -504,15 +504,15 @@ image::images/379.webp.png[title=" 図M- 23　シェッド及びシェルター�
 
 シェッド及びシェルターの場合かつ構造物の側面形状が柱形状となっている場合は、②のモデルに対し坑口の開口部及び柱間の開口部で境界面を分けて、その面をClosureSurfaceとする（図M- 25）。
 
-image::images/380.webp.png[title=" 図M- 24　LOD3の境界面の区分イメージ（トンネル）"]
+image::images/380.webp.png[title="LOD3の境界面の区分イメージ（トンネル）"]
 
-image::images/381.webp.png[title=" 図M- 25　 LOD3の境界面の区分イメージ（シェッド及びシェルター）"]
+image::images/381.webp.png[title=" LOD3の境界面の区分イメージ（シェッド及びシェルター）"]
 
 トンネルモデル（LOD3）の作成例を図M- 26及び図M- 27に示す。
 
-image::images/382.webp.png[title=" 図M- 26　トンネルモデルLOD3の作成例"]
+image::images/382.webp.png[title="トンネルモデルLOD3の作成例"]
 
-image::images/383.webp.png[title=" 図M- 27　トンネルモデル（LOD3）　坑口の作成例（正面）"]
+image::images/383.webp.png[title="トンネルモデル（LOD3）　坑口の作成例（正面）"]
 
 LOD3では坑門の側面形状も表現する。ClosureSurfaceは坑門の開口部ではなく、トンネル本体の開口部に作成する。
 
@@ -525,7 +525,7 @@ LOD3では坑門の側面形状も表現する。ClosureSurfaceは坑門の開�
 [none]
 *** 地下横断歩道の出入口で境界面を分けて、その面をClosureSurfaceとして作成する。
 
-image::images/384.webp.png[title=" 図M- 28　トンネルモデル（LOD3）の作成イメージ（地下横断歩道）"]
+image::images/384.webp.png[title="トンネルモデル（LOD3）の作成イメージ（地下横断歩道）"]
 
 　LOD4.0
 
@@ -582,13 +582,13 @@ a| 以下のいずれかのデータを一つ以上使用する。 +
 　② ①の内部形状の境界面をCeilingSurface、InteriorWallSurface、FloorSurface、ClosureSurfaceに区分する。 +
 　ただし、CeilingSurface及びFloorSurfaceがInteriorWallSurfaceと区別できない場合は、全てInteriorWallSurfaceとして区分する。
 
-image::images/385.webp.png[title=" 図M- 29　 LOD4の境界面の区分イメージ（シェッド及びシェルター）"]
+image::images/385.webp.png[title=" LOD4の境界面の区分イメージ（シェッド及びシェルター）"]
 
 トンネルモデル（LOD4.0）の作成例を図M- 30及び図M- 31に示す。
 
-image::images/386.webp.png[title=" 図M- 30　トンネルモデル（LOD4.0）作成例"]
+image::images/386.webp.png[title="トンネルモデル（LOD4.0）作成例"]
 
-image::images/387.webp.png[title=" 図M- 31　 LOD4.0内部の作成例"]
+image::images/387.webp.png[title=" LOD4.0内部の作成例"]
 
 (3) 作業手順（地下横断歩道）
 
@@ -658,11 +658,11 @@ a| 以下のいずれかのデータを一つ以上使用する。 +
 [none]
 *** トンネルモデル（LOD4.0）にMMS点群データを重畳表示（図M- 32）し、ジェットファン等、短辺の実長が3m以上又は短辺の実長1m以上かつ面積3m2以上に該当する付属物の外形を取得しモデル化する。
 
-image::images/388.webp.png[title=" 図M- 32　 MMS点群データを重畳表示した例"]
+image::images/388.webp.png[title=" MMS点群データを重畳表示した例"]
 
 トンネルモデル（LOD4.1）の作成例を図M- 33に示す。
 
-image::images/389.webp.png[title=" 図M- 33　トンネルモデル（LOD4.1）の作成例"]
+image::images/389.webp.png[title="トンネルモデル（LOD4.1）の作成例"]
 
 (3) 作業手順（地下横断歩道）
 
@@ -725,17 +725,17 @@ a| 以下のいずれかのデータを一つ以上使用する。 +
 [none]
 *** トンネルの場合、非常用施設配置図（図M- 34）及び非常用施設箱抜工図（図M- 35）等を補足資料として使用できる。
 
-image::images/390.webp.png[title=" 図M- 34　非常用施設割付図の例"]
+image::images/390.webp.png[title="非常用施設割付図の例"]
 
 出典：国道13号　浅川トンネル　設計図（ https://www.thr.mlit.go.jp/road/kouji/kouji-tunnel/24_R13_oonabe/data_05_.pdf[]）
 
-image::images/391.webp.png[title=" 図M- 35　非常用施設箱抜工図の例"]
+image::images/391.webp.png[title="非常用施設箱抜工図の例"]
 
 出典：国道13号　大鍋トンネル　設計図（ https://www.thr.mlit.go.jp/road/kouji/kouji-tunnel/24_R13_oonabe/data_05_.pdf[]）
 
 トンネルモデル（LOD4.2）の作成例を図M- 36に示す。
 
-image::images/392.webp.png[title=" 図M- 36　トンネルモデル（LOD4.2）の作成例"]
+image::images/392.webp.png[title="トンネルモデル（LOD4.2）の作成例"]
 
 (3)　作業手順（地下横断歩道）
 
