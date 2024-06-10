@@ -29,7 +29,7 @@ image::images/419.svg[]
 | 型の定義
 2+a| 都市計画基本図として、地物の形状を公共測量標準図式に従って表現するためのデータ型。 +
 uro:DmGeometrictAttributeは、地物の実体を表す図形だけではなく、地物を図式に従って表現する際に必要な情報（例：建物記号、建物の棟割線、記号の方向、指示点）を含む。 +
- +
++
 地物（ステレオタイプがFeatureTypeとなるクラス）は、関連役割uro:dmAttributeにより、このuro:DmGeometrictAttributeを保持できる。
 
 h| 上位の型 2+| uro:DmAttribute
@@ -182,13 +182,13 @@ a| 間断区分。 +
 |===
 | 型の定義
 a| 都市計画基本図として、注記を表現するために必要な情報のデータ型。 +
- +
++
 地物（ステレオタイプがFeatureType）は、関連役割uro:dmAttributeにより、uro:DmAnnotationを保持できる。このとき、uro:DmAnnotationは地物に付属する情報となる。
-| 
+|
 
-h| 上位の型 | uro:DmAttribute | 
-h| ステレオタイプ | << DataType >> | 
-2+h| 継承する属性 | 
+h| 上位の型 | uro:DmAttribute |
+h| ステレオタイプ | << DataType >> |
+2+h| 継承する属性 |
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:dmCode
 | gml:CodeType [1]
@@ -196,7 +196,7 @@ a| 公共測量標準図式の図式分類コード。レイヤ番号（2桁）�
 コードリスト（Common_dmCode.xml）より選択する。
 
 | uro:meshCode | gml:CodeType [0..1] | 数値地形図データファイル仕様にもとづいて設定される図郭識別番号。
-2+h| 自身に定義された属性 | 
+2+h| 自身に定義された属性 |
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:geometryType
 | gml:CodeType [1]
@@ -221,7 +221,7 @@ a| 縦書きか否か。 +
 | uro:orientation | xs:integer [1] | 注記の表示方向を示す角度。単位は度、範囲は縦書きの場合は-135°～-45°、横書きの場合は-45°～+45°とする。
 | uro:linewidth | xs:integer [1] | 注記の線の太さ。線号の号数を記述する。
 | uro:spacing | xs:integer [1] | 字の間隔。単位は10分の1ミリメートル。全角・半角が混在する場合には、全角を基準とする。
-2+h| 自身に定義された関連役割 | 
+2+h| 自身に定義された関連役割 |
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:lod0AnchorPoint
 | gml:_Geometry [0..1]
@@ -541,9 +541,9 @@ h| コード h| 説明
 
 [cols="3,11,11"]
 |===
-| ファイル名 | DmElement_precisionType.xml | 
+| ファイル名 | DmElement_precisionType.xml |
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DmElement_precisionType.xml | 
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DmElement_precisionType.xml |
 h| コード h| 説明（上位桁：数値化区分） h| 説明（下位桁：地図情報レベル）
 | 1 | 基準点測量成果を用いる方法 | 1～50
 | 2 | TS等を用いた数値実測 | ～100

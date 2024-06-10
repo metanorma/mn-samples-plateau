@@ -137,9 +137,9 @@ tran:Squareの空間属性は、いずれのLODにおいても、同一のLODに
 
 また、tran:TrafficAreaとtran:AuxiliaryTrafficArea をtran:Roadとtran:Squareの両方から参照する場合は、tran:Squareはtran:TrafficAreaとtran:AuxiliaryTrafficAreaの参照とtran:Squareのジオメトリの参照の両方が必要である。
 
-image::images/271.webp.png[title=" 図G- 1　道路（Road）を構成する歩道等が広場（Square）の一部参照する場合のイメージ"]
+image::images/271.webp.png[title="道路（Road）を構成する歩道等が広場（Square）の一部参照する場合のイメージ"]
 
-image::images/272.webp.png[title=" 図G- 2　交通（道路）モデルのtran:TrafficAreaを交通（広場）モデルで参照する場合の記載例"]
+image::images/272.webp.png[title="交通（道路）モデルのtran:TrafficAreaを交通（広場）モデルで参照する場合の記載例"]
 
 ****
 要件squr-9.　広場のLOD3の形状は、交通（広場）モデル（LOD3）の定義に従う。

@@ -166,7 +166,7 @@ h| LOD0 | 平面図 | ― | ― | ― | ―
 
 ① 平面図から地下街の上からの正射影の外周を取得する。複数の地下フロアが存在する場合は、それらをすべて含む外周を取得する。
 
-image::images/482.webp.png[title=" 図Q- 1　地下街の外周の取得イメージ"]
+image::images/482.webp.png[title="地下街の外周の取得イメージ"]
 
 ② ①で取得した外周線をポリゴンに変換する。
 
@@ -204,11 +204,11 @@ a| 以下のデータを使用する。 +
 
 最下面の高さは、断面図等の地下街の高さが分かる図面から取得する。
 
-image::images/483.webp.png[title=" 図Q- 2　地表面から最下点への立ち上げイメージ"]
+image::images/483.webp.png[title="地表面から最下点への立ち上げイメージ"]
 
 地下街モデル（LOD1）の作成例を図Q-3に示す。
 
-image::images/484.webp.png[title=" 図Q- 3　地下街モデル（LOD1）の作成イメージ"]
+image::images/484.webp.png[title="地下街モデル（LOD1）の作成イメージ"]
 
 　LOD2
 
@@ -487,5 +487,5 @@ image::images/493.webp.png[title=" 図Q-12　地下街モデル（LOD4.2）（�
 
 一つの内部付属物が内部空間を超えて地上部へ突き出している場合、地上部と地下の境界で内部付属物を区切らず、一つの内部付属物として作成する。その際、その内部付属物は部屋（bldg:Room）の子要素ではなく、地下街（uro:UndergroundBuilding）の子要素として作成する。
 
-image::images/494.webp.png[title=" 図Q- 13　地上部に続くエスカレーターの取得例"]
+image::images/494.webp.png[title="地上部に続くエスカレーターの取得例"]
 
