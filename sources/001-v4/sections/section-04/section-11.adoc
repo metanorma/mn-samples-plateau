@@ -36,11 +36,16 @@
 |===
 h| 5+^h| LOD0
 h| 取得例
-^a| image::images/231.webp.png["",150]
-^a| image::images/232.webp.png["",120]
-^a| image::images/233.webp.png["",150]
-^a| image::images/234.webp.png["",120]
-^a| image::images/235.webp.png["",120]
+^a|
+image::images/231.webp.png["",150]
+^a|
+image::images/232.webp.png["",120]
+^a|
+image::images/233.webp.png["",150]
+^a|
+image::images/234.webp.png["",120]
+^a|
+image::images/235.webp.png["",120]
 
 h| 説明 | 道路橋は、地図情報レベル2500では、縁線を取得する。また、ひ開部を表示する。地図情報レベル500及び1000では、縁線のほか、高欄、橋脚及び親柱（橋の両端に高欄の続きとして設けられる高欄より大きな柱）の外周を取得する。 | 桟道橋は、橋桁が斜面に接していない側の縁線を取得し、橋脚の外周を取得する。 | 鉄道橋は、地図情報レベル2500では、縁線を取得する。地図情報レベル500及び1000では、橋の縁線と橋脚の縁線を取得する。 | 横断歩道橋、跨線橋及び公共用歩廊は、外周の正射影を取得する。 | 徒橋は、中心線を取得する。ひ開部を表示する。
 
@@ -106,12 +111,10 @@ a| • 構造物の外周を取得する。 +
 
 |===
 
-[none]
-**** ●：必須
-
-**** ■：条件付必須
-
-**** 〇：任意（ユースケースに応じて要否を決定してよい）
+[key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_11_01_02]]
 ===== 橋梁モデル（LOD1）
@@ -125,10 +128,14 @@ a| • 構造物の外周を取得する。 +
 |===
 h| 4+^h| LOD1
 h| 取得例
-^a| image::images/236.webp.png["",190]
-^a| image::images/237.webp.png["",150]
-^a| image::images/238.webp.png["",150]
-^a| image::images/239.webp.png["",150]
+^a|
+image::images/236.webp.png["",190]
+^a|
+image::images/237.webp.png["",150]
+^a|
+image::images/238.webp.png["",150]
+^a|
+image::images/239.webp.png["",150]
 
 h| 説明
 a| 道路橋及び鉄道橋は、橋梁の縁線をつないだ外周を、地表面から一律の高さで下向きに押し出した立体とする。 +
@@ -191,12 +198,10 @@ a| • 一律の高さは、最高高さを原則とする。 +
 
 |===
 
-[none]
-**** ●：必須
-
-**** ■：条件付必須
-
-**** 〇：任意（ユースケースに応じて要否を決定してよい）
+[key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_11_01_03]]
 ===== 橋梁モデル（LOD2）
@@ -280,7 +285,9 @@ a| 屋外付属物 +
 
 **** 〇：任意
 
-image::images/240.webp.png[title="橋梁の部材の名称"]
+
+.橋梁の部材の名称
+image::images/240.webp.png[]
 
 橋梁モデル（LOD2）の取得イメージを表 4-63に示す。
 
@@ -289,8 +296,10 @@ image::images/240.webp.png[title="橋梁の部材の名称"]
 |===
 h| 3+^h| LOD2.0
 h| 取得例
-a| image::images/241.webp.png["",250]
-2+a| image::images/242.webp.png["",350]
+a|
+image::images/241.webp.png["",250]
+2+a|
+image::images/242.webp.png["",350]
 
 h| 説明
 | 道路橋、桟道橋及び鉄道橋は、床版の外周を、高さをもった面として表現する。
@@ -299,9 +308,12 @@ h| 説明
 
 h| 3+^h| LOD2.1
 h| 取得例
-a| image::images/243.webp.png["",300]
-a| image::images/244.webp.png["",300]
-a| image::images/245.webp.png["",330]
+a|
+image::images/243.webp.png["",300]
+a|
+image::images/244.webp.png["",300]
+a|
+image::images/245.webp.png["",330]
 
 h| 説明
 a| 道路橋、桟道橋及び鉄道橋は、床版及び主桁によって、厚みと高さをもった立体として表現する。 +
@@ -365,12 +377,10 @@ Element
 
 |===
 
-[none]
-**** ●：必須
-
-**** ■：条件付必須
-
-**** 〇：任意（ユースケースに応じて要否を決定してよい）
+[key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 ====== 橋梁モデル（LOD2.1）の定義
 
@@ -472,12 +482,10 @@ a| • 構造物の外形（外側から見える形）を構成する面を取�
 
 |===
 
-[none]
-**** ●：必須
-
-**** ■：条件付必須
-
-**** 〇：任意（ユースケースに応じて要否を決定してよい）
+[key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_11_01_04]]
 ===== 橋梁モデル（LOD3）
@@ -534,26 +542,28 @@ WallSurfaceとの区分が必要な場合に必須とする。
 
 |===
 
-[none]
-**** ●：必須
-
-**** ■：条件付必須
-
-**** 〇：任意（ユースケースに応じて要否を決定してよい）
+[key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 [cols="2,9,9"]
 .橋梁モデル（LOD3）の取得イメージ
 |===
 h| 2+^h| LOD3
 h| 取得例
-a| image::images/246.webp.png["",280]
-a| image::images/247.webp.png["",270]
+a|
+image::images/246.webp.png["",280]
+a|
+image::images/247.webp.png["",270]
 
 h| 説明 | 道路橋及び鉄道橋の場合は、床版及び主桁以外の構造上不可欠な部材をBridgeConstructionElementとして取得する。上図の例では橋脚が該当する。それ以外の橋梁の外観を構成する部材をBridgeInstallationとして取得する。上図の例では高欄が該当する。 | 跨線橋の場合は、道路橋及び鉄道橋と同様に、床版及び主桁以外の構造上不可欠な部材をBridgeConstructionElementとして取得する。上図の例では橋脚が該当する。それ以外の橋梁の外観を構成する部材をBridgeInstallationとして取得する。上図の例では高欄が該当する。
 h| 2+^h| LOD3
 h| 取得例
-a| image::images/248.webp.png["",260]
-a| image::images/249.webp.png["",370]
+a|
+image::images/248.webp.png["",260]
+a|
+image::images/249.webp.png["",370]
 
 h| 説明
 a| ケーブル橋の場合、パイロン、ケーブル及び吊材を構造上不可欠な部材（BuildingConstructionElement）として取得する。 +
@@ -676,12 +686,10 @@ a| 【道路橋の場合】 +
 
 |===
 
-[none]
-**** ●：必須
-
-**** ■：条件付必須
-
-**** 〇：任意（ユースケースに応じて要否を決定してよい）
+[key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_11_01_05]]
 ===== 橋梁モデル（LOD4）
@@ -768,7 +776,9 @@ IFCでは、梁（IfcBeam）やスラブ（IfcSlab）、支承（IfcBearing）�
 そこで、これらの部材クラスの集まりであるIfcBridgePart及びIfcElementAssemblyとCityGMLの地物型とを対応付けた。 +
 このとき、IfcBridgePart及びIfcElementAssemblyの属性PredefinedTypeによりCityGMLの地物型であるbrid:Bridge、brid:BridgeConstructionElement又はbrid:BridgeInstallationへの振り分けを行っている。
 
-image::images/250.webp.png[title="IfcBridgeにおけるクラス間の階層構造（出典：IFC Bridge Fast Track Project Report WP2: Conceptual Model）"]
+
+.IfcBridgeにおけるクラス間の階層構造（出典：IFC Bridge Fast Track Project Report WP2: Conceptual Model）
+image::images/250.webp.png[]
 
 ====== 橋梁モデル（LOD4）の定義
 
@@ -901,12 +911,10 @@ a| • 可動設備の外形（外側から見える形）を構成する面を�
 
 |===
 
-[none]
-**** ●：必須
-
-**** ■：条件付必須
-
-**** 〇：任意（ユースケースに応じて要否を決定してよい）
+[key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_11_01_06]]
 ===== 各LODにおいて使用可能な地物型と空間属性
@@ -1013,12 +1021,10 @@ MultiSufaceを基本とする。
 
 |===
 
-[none]
-**** ●：必須
-
-**** ■：条件付必須
-
-**** 〇：任意（ユースケースに応じて要否を決定してよい）
+[key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_11_02]]
 ==== 橋梁モデルの応用スキーマクラス図
@@ -1288,7 +1294,9 @@ h| (uro:bridDmAttribute) | uro:DmAttribute [0..*] | 公共測量標準図式に�
 橋梁の構造上重要な部材。 +
 橋脚、橋台、トラス、アーチ、吊材、パイロン、ケーブルをさす。
 
-image::images/253.webp.png["",600,title=" 図　brid:BridgeConstructionElementの例"]
+
+.図　brid:BridgeConstructionElementの例
+image::images/253.webp.png["",600]
 
 h| 上位の型 2+| brid:_CityObject
 h| ステレオタイプ 2+| << FeatureType >>

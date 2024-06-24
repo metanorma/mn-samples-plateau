@@ -1,7 +1,7 @@
 [[tocR_02]]
 === 植生の記述とLOD
 
-[[]]
+
 ==== 植生モデル
 
 植生とは、地表面の植物の種類及びその覆われている状態をいう。[公共測量標準図式]
@@ -13,7 +13,7 @@
 .植生モデルの概要
 image::images/495.webp.png[]
 
-[[]]
+
 ==== 使用可能な地物型とLOD
 
 植生モデルは、LODごとに、使用すべき地物型やその空間属性が異なる。
@@ -52,7 +52,7 @@ image::images/495.webp.png[]
 
 |===
 
-[[]]
+
 ==== 植生の空間属性
 
 　LOD0
@@ -97,7 +97,7 @@ image::images/495.webp.png[]
 要件veg-5.　植生オブジェクトのLOD3の形状は、植生モデル（LOD3）の定義に従う。
 ****
 
-[[]]
+
 ==== 植生の主題属性
 
 植生の主題属性には、あらかじめ CityGML 又は GML において定義された属性（接頭辞veg、gml）がある。また、標準製品仕様では、作成したデータの品質に関する情報を格納するための属性（uro:DataQualityAttribute）を定義している。さらに、植生が施設として管理されている場合に、施設管理に利用可能な属性（uro:FacilityTypeAttribute、uro:FaclityIdAttribute、uro:FacilityAttribute）ももつことができる。また、数値地形図との互換性を保つための情報（uro:vegDmAttribute）ももつことができる。

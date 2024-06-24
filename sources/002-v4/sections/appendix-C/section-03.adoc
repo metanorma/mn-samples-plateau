@@ -3,7 +3,7 @@
 
 bldg:Buildingは、建築物の記述に使用する地物型である。
 
-[[]]
+
 ==== 建築物の空間属性
 
 　LOD0
@@ -24,7 +24,9 @@ bldg:Buildingは、建築物の記述に使用する地物型である。
 
 建築物モデル（LOD1）は、LOD0で作成されたbldg:lod0RoofEdge又はbldg:lod0FootPrintにより作成された建築物の外周を示す平面に、一定の高さで上向きに押し出した角柱として表現したものである（図C- 1）。平面に一律の高さを与えるため、上下の面は水平となり、側面は垂直となる。
 
-image::images/127.webp.png[title="建築物モデル（LOD1）"]
+
+.建築物モデル（LOD1）
+image::images/127.webp.png[]
 
 ****
 要件bldg-5. LOD1で建築物を記述する場合には、bldg:lod1Solid で示される幾何形状に加え、LOD0の幾何形状（bldg:lod0RoofEdge又はbldg:lod0FootPrint）も、空間属性としてもたなければならない。
@@ -34,7 +36,9 @@ CityGMLでは、LOD0の建築物の空間属性として、屋根の外形線を
 
 LOD0の建築物の空間属性には、2次元のGISデータを使用できる。ただし、2次元のGISデータの構造が妥当な幾何オブジェクトの要件（Annex B）に適合しない場合は、GISデータを修正する必要がある。例えば、図C- 2は、内周と外周が一筆書きによりつながっているGISデータをLOD0の建築物の空間属性として使用し、LOD1に押し出した立体である。内周と外周が一筆書きによりつながっている面は、gml:Polygonの要件に適合しないため、このような外形データを押し出したLOD1の立体もCityGMLの要件に適合しない。
 
-image::images/128.webp.png[title="エラーとなる図形の例"]
+
+.エラーとなる図形の例
+image::images/128.webp.png[]
 
 ****
 要件bldg-6.　LOD1で建築物を記述する場合には、これに使用するLOD0の幾何形状（bldg:lod0RoofEdge又はbldg:lod0FootPrint）が、妥当な幾何オブジェクトでなければならない。
@@ -48,7 +52,9 @@ LOD1の下面の高さは以下の要件を満たさなければならない。
 
 LOD1で建築物を記述する場合、下面の高さは、図C- 3に示す二つの方法のいずれかにより決定する。建築物に地階が存在し、その最も低い高さが得られる場合にはその高さを使用する。地階の高さについての情報が得られない場合には、地形モデルとLOD0の平面形状との重ね合わせにより、最も低い点の高さを取得し、この値を使用する。
 
-image::images/129.webp.png[title="LOD1における下面の高さ"]
+
+.LOD1における下面の高さ
+image::images/129.webp.png[]
 
 地形モデルとLOD0の平面形状との重ね合わせにより最も低い点の高さを取得する方法を選択した場合に、建築物のLOD0の平面形状の範囲で地形モデルが欠落している場合は、以下の手順により建築物の下面の高さを取得する。
 
@@ -98,7 +104,9 @@ LOD1では建築物の上面及び下面は水平となる。つまり、建築�
 
 例：点群データを用いて建築物の相対的な高さを求め、地形モデルから求めた標高にこの高さを加えて建築物の高さを求める。
 
-image::images/130.webp.png[title="LOD1における下面と上面の高さの取得例"]
+
+.LOD1における下面と上面の高さの取得例
+image::images/130.webp.png[]
 
 　LOD2
 
@@ -108,7 +116,9 @@ image::images/130.webp.png[title="LOD1における下面と上面の高さの取
 要件bldg-10.　建築物のLOD2の形状は、建築物モデル（LOD2）の定義に従う。
 ****
 
-image::images/131.webp.png[title="LOD2により記述される建築物"]
+
+.LOD2により記述される建築物
+image::images/131.webp.png[]
 
 建築物モデル（LOD2）は、含むべき地物によりLOD2.0、LOD2.1及びLOD2.2に細分される。LOD2.0、LOD2.1及びLOD2.2は、航空写真等上空から取得したデータの利用を前提とした区分であり、屋根形状を含む建築物の上面を詳細化する。
 
@@ -120,13 +130,12 @@ image::images/131.webp.png[title="LOD2により記述される建築物"]
 ^h| LOD ^h| LOD2.0 ^h| LOD2.1 ^h| LOD2.2
 ^h| 取得例
 a|
-　 +
-　
-
 image::images/132.webp.png["",150]
 
-a| image::images/133.webp.png["",200]
-a| image::images/134.webp.png["",200]
+a|
+image::images/133.webp.png["",200]
+a|
+image::images/134.webp.png["",200]
 
 ^h| 説明
 ^a| 屋根の主要な外形が再現される。LOD2.0では付属物は取得しないため、バルコニーも屋根として取得する。 +
@@ -192,16 +201,16 @@ a| 屋外付属物 +
 
 |===
 
-[none]
-**** ●：必須
-
-**** ■：条件付必須
-
-**** 〇：任意（ユースケースに応じて要否を決定してよい）
+[key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 LOD2では、建築物は、屋根、壁等を境界として区切られた空間（立体）となる。そのため、建築物の立体を構成する境界面は、屋根、外壁等の境界面となる地物型の空間属性（面）と一致する。この関係性を図C- 6に示す。
 
-image::images/136.webp.png[title="LOD2における建築物の空間属性の記述"]
+
+.LOD2における建築物の空間属性の記述
+image::images/136.webp.png[]
 
 ****
 要件bldg-11.　bldg:lod2Solid で示される立体は、その境界面として、建築物の境界となる地物型（bldg:_BoundarySurface）の空間属性を外部参照しなければならない。
@@ -211,7 +220,9 @@ bldg:Buildingは空間属性bldg:lod2Solidによって立体（gml:Solid）を�
 
 外部参照の例を図C- 7に示す。建築物と、この建築物の外壁の形状を示す面（gml:id=”LOD2_1_S”）があった場合、立体の境界を構成する面として、外壁面（gml:WallSurface）の空間属性を、XLinkを用いて参照している（xlink:href="#LOD2_1_S"）。
 
-image::images/137.webp.png[title="建築物と境界面の外部参照例"]
+
+.建築物と境界面の外部参照例
+image::images/137.webp.png[]
 
 　LOD3
 
@@ -221,7 +232,9 @@ image::images/137.webp.png[title="建築物と境界面の外部参照例"]
 要件bldg-12.　建築物のLOD3の形状は、建築物モデル（LOD3）の定義に従う。
 ****
 
-image::images/138.webp.png[title="建築物モデル（LOD3）"]
+
+.建築物モデル（LOD3）
+image::images/138.webp.png[]
 
 建築物モデル（LOD3）は、含むべき地物により、LOD3.0、LOD3.1、LOD3.2及びLOD3.3に分かれる。これらは、MMS（Mobile Mapping System）による点群や画像等、側面から取得したデータの利用を前提とした区分であり、外壁面や開口部を含む建築物の側面を詳細化する。標準製品仕様書では原則としてLOD3.0を採用する。ただし、ユースケースの必要に応じてLOD3.1、LOD3.2又はLOD3.3を採用できる。
 
@@ -230,7 +243,8 @@ image::images/138.webp.png[title="建築物モデル（LOD3）"]
 |===
 h| ^h| 取得イメージ ^h| 説明
 h| LOD3.0
-a| image::images/139.webp.png["",400]
+a|
+image::images/139.webp.png["",400]
 a| +
 屋根のうち短辺3m以上の屋根面が表現される。 +
 付属物のうち、短辺3m以上の規模の大きな付属物が再現される。 +
@@ -242,7 +256,8 @@ LOD3では外壁面が詳細化されるため、LOD2では表現されない付
 
 h| | |
 h| LOD3.1
-a| image::images/140.webp.png["",400]
+a|
+image::images/140.webp.png["",400]
 a| +
 短辺の実長1m 以上かつ上方からの正射影の面積 3m2以上の屋根面が表現される。 +
 この結果、左図の例では、LOD3.0では切妻屋根として表現されたが、LOD3.1の条件を満たしたため、入母屋屋根として表現された。 +
@@ -250,7 +265,8 @@ a| +
 開口部及び屋外付属物の表現は、LOD3.0と同様の表現となる。
 
 h| LOD3.2
-a| image::images/141.webp.png["",400]
+a|
+image::images/141.webp.png["",400]
 a| +
 LOD3.2ではさらに詳細な表現が可能となり、短辺の実長1m 以上又は上方からの正射影の 1m2 以上屋根が再現される。 +
 左図の例では、屋根に設けられた小屋根がこの条件に該当し、再現されている。 +
@@ -259,7 +275,8 @@ LOD3.2ではさらに詳細な表現が可能となり、短辺の実長1m 以�
 LOD3.2では、面積1m2以上の窓や扉も表現されるため、この条件に該当する窓が追加された。
 
 h| LOD3.3
-a| image::images/142.webp.png["",400]
+a|
+image::images/142.webp.png["",400]
 a| +
 LOD3.3では、短辺の実長が1m未満の細かな屋根の形状が表現される。 +
 左図の例では、LOD3.1及びLOD3.2では1枚の屋根面として表現されていたが、LOD3.3では傾斜の異なる2枚の屋根面として区分された。 +
@@ -384,12 +401,10 @@ a| 屋外付属物 +
 
 |===
 
-[none]
-**** ●：必須
-
-**** ■：条件付必須
-
-**** 〇：任意（ユースケースに応じて要否を決定してよい）
+[key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 LOD3の建築物も、LOD2と同様に、建築物は、屋根、外壁等を境界として区切られた空間（立体）となる。そのため、建築物の立体を構成する境界面は、屋根、外壁等の境界面となる地物型の空間属性（面）から構成される。また、LOD3では屋根や外壁等の境界面に開口部（窓、扉）を設けることができる。この開口部を境界面の内空として作成する場合、建築物の立体を構成する境界面には、開口部の空間属性（面）も含まれる（図C- 9）。
 
@@ -397,22 +412,28 @@ LOD3の建築物も、LOD2と同様に、建築物は、屋根、外壁等を境
 　要件bldg-13.　bldg:lod3Solid で示される立体は、その境界面として、建築物の境界となる地物型（bldg:_BoundarySurface）の空間属性を外部参照しなければならない。
 ****
 
-image::images/143.webp.png[title="LOD3における建築物の空間属性の記述"]
+
+.LOD3における建築物の空間属性の記述
+image::images/143.webp.png[]
 
 なお、LOD3では、建築物の軒を表現することができる。軒とは、屋根の一部であり、外壁の線から外に突き出した部分である。通常は建物の外周に沿って連続した形となっている。この軒は、開口部の上部など部分的に取り付けられる庇（ひさし）とは区別する。軒を表現した例を図C- 10に示す。LOD2では屋根の形状は建築物の立体を構成する面であり、軒の表現は行わない。LOD3において屋根の軒を表現する場合には、屋根は厚みをもった面となり、軒を含む全ての境界面が建築物の立体を構成する面となる。
 
-image::images/144.webp.png[title="LOD3における建築物の軒の表現"]
+
+.LOD3における建築物の軒の表現
+image::images/144.webp.png[]
 
 建築物モデル（LOD0）から建築物モデル（LOD3）の作成手法を図C- 11に示す。LOD2は、航空写真等上空から取得したデータの利用を前提とした区分であり、屋根形状を含む建築物の上面を詳細化する。LOD3は、MMSによる点群や画像等、側面から取得したデータの利用を前提とした区分であり、外壁面や開口部を含む建築物の側面を詳細化する。なお、最も細かいLOD3.3では地上レーザ点群又はBIMデータの活用も想定される。
 
-image::images/145.webp.png[title="各LODで想定する作成手法"]
+
+.各LODで想定する作成手法
+image::images/145.webp.png[]
 
 　LOD4
 
 建築物モデル（LOD4）では、建築物の外形を面の集まり又は立体として表現するとともに、建築物の内部の空間を表現する。このとき、bldg:Buildingにより記述される建築物の外形は、LOD3の形状の取得基準と同様である。LOD4は測量によるデータ作成だけではなく、BIMモデルからの変換により作成される場合がある。測量により作成する場合にはbldg:lod4Solid、BIMモデルからの変換により作成する場合には、bldg:lod4MultiSurfaceを使用する。いずれの型を使用する場合でも、建築物オブジェクトは、建築物モデル（LOD4）の定義に従ったものでなければならない。
 
 ****
-要件bldg-14.&nbsp;　&nbsp;建築物のLOD4の形状は、建築物モデル（LOD4）の定義に従う。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+要件bldg-14. 建築物のLOD4の形状は、建築物モデル（LOD4）の定義に従う。
 ****
 
 建築物モデル（LOD4）は、含むべき地物により、LOD4.0、LOD4.1及びLOD4.2に区分される。標準製品仕様書では原則としてLOD4.0を採用する。ただし、ユースケースの必要に応じてLOD4.1又はLOD4.2を採用できる。
@@ -493,22 +514,24 @@ BuildingPartを使用する場合、及び、内壁面、天井面、床面が�
 
 |===
 
-[none]
-**** ●：必須
-
-**** ■：条件付必須
-
-**** 〇：任意（ユースケースに応じて要否を決定してよい）
+[key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 建築物モデル（LOD4）による建築物の外形は、建築物モデル（LOD3）と同様である。よって、建築物の立体を構成する境界面は、屋根面、外壁面等の境界面となる地物型の空間属性（面）から構成され、屋根面や外壁面等の境界面に開口部を境界面の内空として作成する場合には、建築物の立体を構成する境界面には、開口部の空間属性（面）も含まれる（図C- 12）。
 
-image::images/149.webp.png[title="LOD4 における建築物の空間属性の記述（bldg:lod4Solidを使用する場合）"]
+
+.LOD4 における建築物の空間属性の記述（bldg:lod4Solidを使用する場合）
+image::images/149.webp.png[]
 
 建築物モデル（LOD4）による建築物の形状を、面の集まりとして表現する場合も同様である。建築物を構成する面は、屋根面、外壁面等の境界面となる地物型の空間属性（面）や開口部の空間属性（面）となる（図C- 13）。
 
-image::images/150.webp.png[title="LOD4 における建築物の空間属性の記述（bldg:lod4MultiSurfaceを使用する場合）"]
 
-[[]]
+.LOD4 における建築物の空間属性の記述（bldg:lod4MultiSurfaceを使用する場合）
+image::images/150.webp.png[]
+
+
 ==== 建築物の主題属性
 
 bldg:Buildingの主題属性には、あらかじめCityGML又はGMLにおいて定義された属性（接頭辞bldg、gml）と、i-URにより拡張された属性（接頭辞uro）がある。CityGMLで定義された属性は、建築物の用途や階数など、基本的な情報となる。i-URにより拡張された属性には、建築物を識別するための属性（uro:BuildingIDAttribute）、都市計画基礎調査において収集された詳細な情報を格納するための属性（uro:BuildingDetailAttribute、uro:LargeCustomerFacilityAttribute）、災害リスク情報を格納するための属性（uro:BuildingDisasterRiskAttribute）、作成したデータの品質に関する情報を格納するための属性（uro:DataQualityAttribute）、建築物が存在する土地及び建築物に紐づく不動産IDを格納するための属性（uro:RealEstateIDAttribute）などがある。また、拡張製品仕様においてコード型の属性を追加した場合には、主題属性としてuro:KeyValuePairAttributeが含まれる。
@@ -537,7 +560,9 @@ bldg:Buildingの属性bldg:usageは、建築物の主な用途である。
 
 このうち、③及び④の方法により取得する場合、DSMには、建築物の屋根以外を計測した点（以下、「ノイズ」と称す）が含まれる（図C- 14）。そのため、このノイズを除去したうえで、建築物の最高点までの高さを取得する必要がある。
 
-image::images/151.webp.png[title="点群に含まれるノイズ"]
+
+.点群に含まれるノイズ
+image::images/151.webp.png[]
 
 ノイズを除去する場合、最高値から一定の割合（例：5％）を除去する、又は標準偏差の2σに含まれない点群を除去するというように閾値を設定しなければならない。しかしながら原典資料の状態や対象地域の地形により点群に含まれるノイズは一律でないことから、これらの条件を踏まえ、データ作成者が設定してよい。
 
@@ -566,18 +591,18 @@ image::images/151.webp.png[title="点群に含まれるノイズ"]
 	<core:xalAddress>
 	  <xAL:AddressDetails>
 		  <xAL:Country>
-          <xAL:CountryName>日本</xAL:CountryName>
-          <xAL:Locality>
-           <xAL:LocalityName Type="prefecture">東京都</xAL:LocalityName>
-           <xAL:LocalityName Type="city">渋谷区</xAL:LocalityName>
-           <xAL:DependentLocality Type="district">
-             <xAL:DependentLocalityName>神宮前</xAL:DependentLocalityName>
-             <xAL:DependentLocalityNumber>2-2-3</xAL:DependentLocalityNumber>
-            </xAL:DependentLocality>
-          </xAL:Locality>
-          </xAL:Country>
-      </xAL:AddressDetails>
-    </core:xalAddress>
+        <xAL:CountryName>日本</xAL:CountryName>
+        <xAL:Locality>
+          <xAL:LocalityName Type="prefecture">東京都</xAL:LocalityName>
+          <xAL:LocalityName Type="city">渋谷区</xAL:LocalityName>
+          <xAL:DependentLocality Type="district">
+            <xAL:DependentLocalityName>神宮前</xAL:DependentLocalityName>
+            <xAL:DependentLocalityNumber>2-2-3</xAL:DependentLocalityNumber>
+          </xAL:DependentLocality>
+        </xAL:Locality>
+      </xAL:Country>
+    </xAL:AddressDetails>
+  </core:xalAddress>
 </core:Address>
 ----
 
@@ -592,13 +617,13 @@ image::images/151.webp.png[title="点群に含まれるノイズ"]
 	<core:xalAddress>
 	  <xAL:AddressDetails>
 		  <xAL:Country>
-          <xAL:CountryName>日本</xAL:CountryName>
-          <xAL:Locality>
-           <xAL:LocalityName Type=“town”>東京都渋谷区神宮前2-2-3</xAL:LocalityName>
-          </xAL:Locality>
-          </xAL:Country>
-      </xAL:AddressDetails>
-    </core:xalAddress>
+        <xAL:CountryName>日本</xAL:CountryName>
+        <xAL:Locality>
+          <xAL:LocalityName Type=“town”>東京都渋谷区神宮前2-2-3</xAL:LocalityName>
+        </xAL:Locality>
+      </xAL:Country>
+    </xAL:AddressDetails>
+  </core:xalAddress>
 </core:Address>
 ----
 
@@ -636,7 +661,9 @@ ZZZZZZZZZZZZは連番を基本とするが、町字や街区等により細分�
 
 ここで、建築物に、ゴミ集積所や集会所といった付帯的な建築物があった場合には、一つの建築物とみなされるとして、uro:buildingIDの値は、同じものを付与してもよい。なお、これらは汎用属性「枝番」により主たる建築物と付帯的な建築物の区分を行うことができる。このとき、付帯的な建築物には空間属性のみを記述し、その他の属性は原則不要とする。属性を記述する場合には、属性uro:noteにゴミ集積所や集会所といった情報を補足的に記述する。
 
-image::images/152.webp.png[title=" 図C- 15 　一つとみなされる建築物の例"]
+
+.図C- 15 　一つとみなされる建築物の例
+image::images/152.webp.png[]
 
 uro:cityは、3Ｄ都市モデル内の建築物オブジェクトの空間的な範囲を特定するために使用する識別子である。一つのデータ集合には、数多くの建築物オブジェクトが含まれる。これを効率的に検索・表示するためにuro:cityを使用する目的でこの属性を必須とする。なお、uro:cityには、JIS X0401に示される2桁の都道府県コードとJIS X0402に示される市区町村コードを加えた5桁を記載するが、政令指定都市においては「区」に該当する市区町村コードとする。
 
@@ -703,7 +730,9 @@ uro:DisasterRiskAttributeは、災害リスク情報と建築物の位置関係�
 
 ** 浸水深の有効桁数は、「浸水想定区域図データ電子化ガイドライン（第4版）」に従い、浸水深の有効桁数は、小数点以下 3 桁（4桁目を四捨五入）まで登録可能とするが、小数点以下 2 桁（3桁目を四捨五入）でもよいとする。面積の有効桁数は、小数点2桁（3桁目で四捨五入）とする。
 
-image::images/153.webp.png[title=" 図C- 16 　境界上に存在する建築物の例"]
+
+.図C- 16 　境界上に存在する建築物の例
+image::images/153.webp.png[]
 
 * 土砂災害警戒区域の場合
 

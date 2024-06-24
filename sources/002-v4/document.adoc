@@ -12,18 +12,22 @@
 :title-intro-en: Handbook of 3D City Models
 :title-main-en: Standard Implementation Procedures for 3D City Model
 :doctype: international-standard
-:coverpage-image: images/coverpage.pdf
-:imagedir: images
+:coverpage-image:.2+^a|
+images/coverpage.pdf
+:imagedir:.2+^a|
+images
 :mn-document-class: plateau
 :mn-output-extensions: xml,html,pdf,rxl
 :local-cache-only:
 :data-uri-image:
 
-include::sections/abstract-01.adoc[]
+include::sections/00-foreword.adoc[]
 
-include::sections/abstract-02.adoc[]
+include::sections/00-history.adoc[]
 
-include::sections/abstract-03.adoc[]
+include::sections/00-overview.adoc[]
+
+include::sections/abstract-04.adoc[]
 
 include::sections/section-01.adoc[]
 

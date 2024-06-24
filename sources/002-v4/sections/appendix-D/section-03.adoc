@@ -3,7 +3,7 @@
 
 tran:Roadは、道路の記述に使用する地物型である。
 
-[[]]
+
 ==== 道路の空間属性
 
 tran:Roadの空間属性は、いずれのLODにおいても、同一のLODにおける道路の連続性を担保する必要がある。
@@ -99,7 +99,7 @@ image::images/211.webp.png[]
 要件tran-7.　LOD3におけるtran:Roadの空間属性は、これを構成するtran:TrafficArea及びtran:AuxiliaryTrafficAreaの空間属性の集まりと一致しなければならない。
 ****
 
-[[]]
+
 ==== 道路の主題属性
 
 道路の主題属性には、あらかじめCityGML又はGMLにおいて定義された属性（接頭辞tran、gml）と、i-URにより拡張された属性（接頭辞uro）がある。CityGMLで定義された属性は、道路の機能など、基本的な情報となる。i-URにより拡張された属性には、道路構造に関する情報を格納するための属性（uro:RoadStructureAttribute、uro:TrafficAreaStructureAttribute）、交通量に関する情報を格納するための属性（uro:TrafficVolumeAttribute）、さらに、作成したデータの品質に関する情報を格納するための属性（uro:RoadDataQualityAttribute）がある。
@@ -169,7 +169,9 @@ uro:setctionTypeは、道路構造の種別である。交差点とそれ以外�
 
 複数の道路構造の種別を持つ場合（高架内の交差部、アンダーパス内の交差部等）は、交差部を優先し入力する。
 
-image::images/212.webp.png[title="複数の道路構造の種別を持つ場合の取得イメージ"]
+
+.複数の道路構造の種別を持つ場合の取得イメージ
+image::images/212.webp.png[]
 
 　交通量（uro:TrafficVolumeAttribute）
 

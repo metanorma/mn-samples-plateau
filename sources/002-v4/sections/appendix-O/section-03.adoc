@@ -1,7 +1,7 @@
 [[tocO_03]]
 === 標準的な作業手順
 
-[[]]
+
 ==== 幾何オブジェクトの作成
 
 都市設備モデルの作成に必要となる原典資料を示す。
@@ -145,7 +145,9 @@ h| LOD2 | 以下のいずれかのデータを一つ以上使用する。 ・航
 
 　（ https://psgsv2.gsi.go.jp/koukyou/public/3dmapping/index.html[]）
 
-image::images/420.webp.png[title="LOD2における外周の取得イメージ"]
+
+.LOD2における外周の取得イメージ
+image::images/420.webp.png[]
 
 　留意事項2：　LOD2における幾何オブジェクトの取得について
 
@@ -199,7 +201,7 @@ h| LOD3 | 以下のいずれかのデータを一つ以上使用する。 ・航
 
 （https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0003_ver01.pdf）
 
-[[]]
+
 ==== 作業上の留意事項
 
 　都市設備の区分
@@ -312,7 +314,9 @@ h| コード h| 説明 h| 公共測量標準図式
 
 結果として、LOD1及びLOD2では、他の都市設備の下部に隠れ上空から見た正射影を取得できない場合は、これらの都市設備は作成されないことに留意する必要がある。複合的な都市設備に含まれる個々の都市設備の形状を再現するには、LOD3が必要である。
 
-image::images/421.webp.png[title="LODによる形状の再現性の違い"]
+
+.LODによる形状の再現性の違い
+image::images/421.webp.png[]
 
 　複合的な都市設備の取得
 
@@ -322,7 +326,9 @@ image::images/421.webp.png[title="LODによる形状の再現性の違い"]
 
 複合的な都市設備に含まれる個々の都市設備の形状を再現するには、LOD3が必要である。
 
-image::images/422.webp.png[title="複合的な都市設備の取得例"]
+
+.複合的な都市設備の取得例
+image::images/422.webp.png[]
 
 　点字ブロックの取得
 
@@ -330,5 +336,7 @@ image::images/422.webp.png[title="複合的な都市設備の取得例"]
 
 点字ブロックの本来の形状を再現するには、LOD2以上が必要である。
 
-image::images/423.webp.png[title="点字ブロックの取得例"]
+
+.点字ブロックの取得例
+image::images/423.webp.png[]
 
