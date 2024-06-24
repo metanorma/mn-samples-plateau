@@ -44,7 +44,7 @@ LOD2では、bldg:Buildingを使用し、建築物の幾何形状を立体で記
 
 LOD3では、LOD2で使用可能な地物型に加え、屋根面や外壁面に扉（bldg:Door）や窓（bldg:Window）を付けることができる。
 
-　また、LOD2及びLOD3では、bldg:BuildingPart を使用できる。bldg:BuildingPartは、一棟の建築物を二つ以上の部分に分けた建築物の一部であり、bldg:Buildingと同様の属性をもつことができる。例えば、一棟の建築物について一部の階数や用途が異なっていたり、複合的な施設から構成され施設ごとに都市計画基礎調査の情報が作成されていたりする場合に、その建築物を複数に区切り、区切った建築物の部分（bldg:BuildingPart）ごとに階数や用途、都市計画基礎調査の情報といった属性を与えるために使用する。ただし、このとき、bldg:Buildingを構成するbldg:BuildingPartとは、一体的な建築物（bldg:BuildingPart同士が互いに接して一棟の建築物を構成する）でなければならない。
+また、LOD2及びLOD3では、bldg:BuildingPart を使用できる。bldg:BuildingPartは、一棟の建築物を二つ以上の部分に分けた建築物の一部であり、bldg:Buildingと同様の属性をもつことができる。例えば、一棟の建築物について一部の階数や用途が異なっていたり、複合的な施設から構成され施設ごとに都市計画基礎調査の情報が作成されていたりする場合に、その建築物を複数に区切り、区切った建築物の部分（bldg:BuildingPart）ごとに階数や用途、都市計画基礎調査の情報といった属性を与えるために使用する。ただし、このとき、bldg:Buildingを構成するbldg:BuildingPartとは、一体的な建築物（bldg:BuildingPart同士が互いに接して一棟の建築物を構成する）でなければならない。
 
 またLOD2及びLOD3では、建築物に付属するバルコニーや屋外階段といった設備を、bldg:BuildingInstallationを用いて記述できる。
 

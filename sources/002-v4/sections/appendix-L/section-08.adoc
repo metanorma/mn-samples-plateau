@@ -18,39 +18,39 @@ CityGMLでは、橋梁の境界面としてbrid:_BoundarySurfaceの下位型と�
 
 ==== 境界面の下位型
 
-　brid:RoofSurface
+===== brid:RoofSurface
 
 brid:RoofSurfaceは、橋梁の屋根面を記述するために使用する地物型である。
 
-　brid:WallSurface
+===== brid:WallSurface
 
 brid:WallSurfaceは、橋梁の壁面を記述するために使用する地物型である。
 
-　brid:GroundSurface
+===== brid:GroundSurface
 
 brid:GroundSurfaceは、橋梁の底面を記述するために使用する地物型である。
 
-　brid:OuterFloorSurface
+===== brid:OuterFloorSurface
 
 brid:OuterFloorSurfaceは橋梁の外側を覆う部分であり、通行可能な床面としての機能を有する部分の記述に使用する地物型である。
 
-　brid:ClosureSurface
+===== brid:ClosureSurface
 
 brid:ClosureSurfaceは、橋梁部分を用いて橋梁を複数に分ける場合に、その境界面として利用する仮想的な面である。また、建屋がある橋梁について開口部が存在するが、開口部内の詳細なデータ作成が不要である場合に、開口部を閉じるために使用できる。
 
-　brid:OuterCeilingSurface
+===== brid:OuterCeilingSurface
 
 brid:OuterCeilingSurfaceは、橋梁の外側を覆う部分であり、天井としての機能を有する面を記述するために使用する地物型である。
 
-　brid:CeilingSurface
+===== brid:CeilingSurface
 
 brid:CeilingSurfaceは、橋梁の内部の天井面を記述するために使用する地物型である。
 
-　brid:InteriorWallSurface
+===== brid:InteriorWallSurface
 
 brid:InteriorWallSurface は、橋梁の内部空間の区画を区切る壁や仕切りとしての機能を有する面を記述するために使用する地物型である。
 
-　brid:FloorSurface
+===== brid:FloorSurface
 
 brid:FloorSurfaceは、橋梁の内部空間の下面に位置する水平で平らな板状の構造物（床面）を記述するために使用する地物型である。
 
