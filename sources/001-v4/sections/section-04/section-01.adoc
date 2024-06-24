@@ -52,7 +52,11 @@ image::images/003.svg[]
 
 各パッケージは、CityGML及びi-URに定義されたパッケージを引用する（表 4-2）。
 
-[cols="15,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",options="noheader"]
+[%landscape]
+<<<
+
+//[cols="15,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",options="noheader"]
+[cols=17,options="noheader"]
 .3D都市モデルが引用するCityGML及びi-URのパッケージ
 |===
 .2+a|
@@ -101,6 +105,9 @@ image::images/003.svg[]
 
 **** *4：複数の都市計画決定情報をグループ化する場合に引用する。
 
+[%portrait]
+<<<
+
 [[toc4_01_03]]
 ==== 応用スキーマクラス図の記法
 
@@ -126,7 +133,7 @@ a| 接頭辞：uro, urf +
 
 応用スキーマクラス図は、UML クラス図（ISO/IEC 19501:2005, Information technology — Open Distributed Processing — UnifiedModeling Language (UML) Version 1.4.2）に定められた記法に基づき、JPGISにおいて応用スキーマクラス図を記述するために抽出された記法により記述する。応用スキーマクラス図の記述に使用する記法を表 4-4に示す。
 
-[cols="1,4"]
+//[cols="1,4"]
 .応用スキーマクラス図の表記
 |===
 ^h| 表記 ^h| 意味

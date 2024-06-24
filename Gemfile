@@ -6,7 +6,6 @@ gem "isodoc", git: "https://github.com/metanorma/isodoc", branch: "main"
 gem "metanorma-cli"
 gem "coradoc"
 
-# WARNING: only for developers
-gem "metanorma-plateau", git: "git@github.com:metanorma/metanorma-plateau.git"
-#gem "metanorma-plateau", path: "~/src/mn/metanorma-plateau"
+#gem "metanorma-plateau", source: "https://github.com/metanorma/metanorma-plateau", branch: "main"
+gem "metanorma-plateau", git: "https://github.com/metanorma/metanorma-plateau", branch: "main"
 gem "sassc"
