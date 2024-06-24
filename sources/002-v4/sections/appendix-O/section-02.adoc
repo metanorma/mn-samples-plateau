@@ -152,19 +152,19 @@ uro:descriptionは、uro:facilityTypeをさらに詳細化するための属性�
 
 施設管理のための属性は、港湾施設及び漁港施設、河川管理施設や公園管理施設等の施設管理に必要な情報を定義した属性である。施設管理のための属性は以下のデータ型を用いて記述する。
 
-(1)　施設分類属性（uro:FacilityTypeAttribute）
+====== 施設分類属性（uro:FacilityTypeAttribute）
 
 uro:FacilityTypeAttributeは、各分野で定める施設の区分を記述するためのデータ型である。CityGMLは、地物型を物体としての性質に着目して定義し、機能や用途は属性で区分している。例えば、「都市設備（frn:CityFurniture）」という地物型を定義し、bldg:functionにより「照明施設」や「交通信号機」などを区分している。これにより、都市に存在する様々な地物を、分野を問わず網羅的に、かつ、矛盾が無く表現することを目指している。一方、各分野には独自の施設の区分がある。この区分は当該分野での施設管理に必要な情報であるが、CityGMLの地物型の区分とは一致しない。そこで、これらの地物型に分野独自の区分を付与するためにこのデータ型を用いる。uro:FacilityTypeAttributeは、二つの属性をもつ。uro:classは分野を特定するための属性である。またuro:functionは、uro:classにより特定した分野における施設の区分を示す。
 
 標準製品仕様書では、港湾施設、漁港施設及び公園施設については標準製品仕様書においてuro:functionの区分が示されている。その他の区分についてはuro:classへの分野の追加も含め、拡張製品仕様書において拡張できる。
 
-(2)　施設識別属性（uro:FacilityIdAttribute）
+====== 施設識別属性（uro:FacilityIdAttribute）
 
 uro:FacilityIdAttributeは、施設の位置を特定する情報及び施設を識別する情報を記述するためのデータ型である。uro:FacilityIdAttributeは、施設を識別するための情報として、識別子（uro:id）や正式な名称以外の呼称（uro:alternativeName）に加え、施設の位置を示すための、都道府県（uro:prefecture）、市区町村（uro:city）及び開始位置の経緯度（uro:startLat、uro:startLong）を属性としてもつ。また、鉄道上や道路上の施設については、路線や距離標での位置特定のための属性（uro:route、uro:startPost、uro:endPost）を使用できる。
 
 なお、河川管理施設の場合は、uro:FacilityIdAttributeを継承するuro:RiverFacilityIdAttributeを使用する。これにより、左右岸上での位置の情報を記述できる。
 
-(3)　施設詳細属性（uro:FacilityAttribute）
+====== 施設詳細属性（uro:FacilityAttribute）
 
 uro:FacilityAttributeは、各分野において施設管理に必要となる情報を記述するためのデータ型である。uro:FacilityAttributeは、抽象クラスであり、これを継承する具象となるデータ型に、施設の区分毎に必要となる情報を属性として定義している。
 
