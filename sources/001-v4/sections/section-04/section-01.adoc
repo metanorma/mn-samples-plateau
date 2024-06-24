@@ -59,11 +59,11 @@ image::images/003.svg[]
 
 モデル
 
-.2+| 　GML
+.2+| GML
 13+| CityGML
 2+| i-UR
 
-| 　Core | 　Appearance | 　Bridge | 　Building | 　CityFurniture | 　CityObjectGroup　 | 　Generic | 　LandUse | 　Relief | 　Transportation | 　Tunnel | 　Vegetation | 　WaterBody | 　Urban Object | 　Urban Function
+| Core | Appearance | Bridge | Building | CityFurniture | CityObjectGroup | Generic | LandUse | Relief | Transportation | Tunnel | Vegetation | WaterBody | Urban Object | Urban Function
 ^| 建築物 | ✓ | ✓ | *1 | | ✓ | | *3 | *2 | | | | | | | ✓ |
 ^| 交通（道路） | ✓ | ✓ | *1 | | | | | *2 | | | ✓ | | | | ✓ |
 ^| 交通（鉄道） | ✓ | ✓ | *1 | | | | | *2 | | | ✓ | | | | ✓ |
@@ -101,10 +101,11 @@ image::images/003.svg[]
 
 3D都市モデルに必要な地物の概念構造を記述した応用スキーマ（以下、「3D都市モデル応用スキーマ」と呼ぶ）は、同じく応用スキーマであるi-UR及びCityGMLから、標準製品仕様書に設定したユースケースに必要な地物型、地物属性及び地物関連を抽出したプロファイルとして構成する。そのため、応用スキーマクラス図では、それぞれの出典を明らかにするため、以下の記法を用いる。
 
-[cols="3,8"]
+[cols="3,8",option="header"]
 .応用スキーマクラス図における出典の明示
 |===
-^h| 出典 ^h| 地物型
+^| 出典 ^| 地物型
+
 | GML
 a| 接頭辞：gml +
 色：緑 rgb(204, 255,204)
@@ -179,7 +180,7 @@ h| 上位の型 2+| クラスが他のクラスを継承している場合、上
 h| ステレオタイプ 2+| クラスのステレオタイプを記載する。
 h| 継承する属性 2+h|
 h| 属性名 h| 属性の型及び多重度 h| 定義
-| 継承する属性の名称 | 属性の型と多重度 多重度は以下のように記載する。 [1] 　必ず1 [0..1] 0又は1 [0..*] 0以上 [1..*] 1以上 | 上位クラスに定義され、このクラスが継承する属性の定義。
+| 継承する属性の名称 | 属性の型と多重度 多重度は以下のように記載する。 [1] 必ず1 [0..1] 0又は1 [0..*] 0以上 [1..*] 1以上 | 上位クラスに定義され、このクラスが継承する属性の定義。
 h| 自身に定義された属性 2+h|
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | 自身に定義された属性の名称 | 属性の型と多重度 | 自身に定義された属性の定義。
