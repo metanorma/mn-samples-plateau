@@ -19,15 +19,15 @@
 h| 5+^h| LOD0
 h| 取得例
 a|
-image::images/297.webp.png["",150]
+image::images/297.webp.png[]
 a|
-image::images/298.webp.png["",150]
+image::images/298.webp.png[]
 a|
-image::images/299.webp.png["",160]
+image::images/299.webp.png[]
 a|
-image::images/300.webp.png["",130]
+image::images/300.webp.png[]
 a|
-image::images/301.webp.png["",130]
+image::images/301.webp.png[]
 
 h| 説明
 a| 指定された管径よりも小さい管路は、管路の中心線を取得する。 +
@@ -44,13 +44,13 @@ a| 複数まとめて埋設されているケーブルの中心線を取得す�
 h| 5+^h| LOD0
 h| 取得例
 2+a|
-image::images/302.webp.png["",300]
+image::images/302.webp.png[]
 a|
-image::images/303.webp.png["",150]
+image::images/303.webp.png[]
 a|
-image::images/304.webp.png["",150]
+image::images/304.webp.png[]
 a|
-image::images/305.webp.png["",130]
+image::images/305.webp.png[]
 
 h| 説明
 2+a| トラフ（コンクリート製の樋）等構造物に格納されている場合は、その大きさにより中心線もしくは外周を取得する。 +
@@ -279,25 +279,25 @@ a| • ハンドホールの蓋の中心位置を取得する。 +
 h| 4+^h| LOD1
 h| 取得例
 a|
-image::images/306.webp.png["",170]
+image::images/306.webp.png[]
 a|
-image::images/307.webp.png["",170]
+image::images/307.webp.png[]
 a|
-image::images/308.webp.png["",160]
+image::images/308.webp.png[]
 a|
-image::images/309.webp.png["",170]
+image::images/309.webp.png[]
 
 h| 説明 | 管路の上方からの正射影の外周を、地表面から一律の高さで下向きに押し出した立体として表現する。 | 複数まとまって埋設されている管路の最外縁を外周とし、その正射影を、地表面から一律の高さで下向きに押し出した立体として表現する。 | ケーブルの上方からの正射影の外周を、地表面から一律の高さで下向きに押し出した立体として表現する。 | 複数まとまって埋設されているケーブルの最外縁を外周とし、その正射影を、地表面から一律の高さで下向きに押し出した立体として表現する。
 h| 4+^h| LOD1
 h| 取得例
 a|
-image::images/310.webp.png["",170]
+image::images/310.webp.png[]
 a|
-image::images/311.webp.png["",190]
+image::images/311.webp.png[]
 a|
-image::images/312.webp.png["",170]
+image::images/312.webp.png[]
 a|
-image::images/313.webp.png["",170]
+image::images/313.webp.png[]
 
 h| 説明 | 構造物の上方からの正射影の外周を、地表面から一律の高さで下向きに押し出した立体として表現する。 | 水栓やガバナ等の設備の上方からの正射影を包含する矩形を、地表面からの一律の高さで下向きに押し出した立体として表現する。 | マンホールの蓋の上方からの正射影を包含する矩形を、地表面から一律の高さで下向きに押し出した立体として表現する。 | ハンドホールの蓋の上方からの正射影を包含する矩形を、地表面から一律の高さで下向きに押し出した立体として表現する。
 
@@ -456,25 +456,25 @@ a| • ハンドホールの蓋の上方からの正射影を包含する矩形�
 h| 4+^h| LOD2
 h| 取得例
 a|
-image::images/314.webp.png["",170]
+image::images/314.webp.png[]
 a|
-image::images/315.webp.png["",150]
+image::images/315.webp.png[]
 a|
-image::images/316.webp.png["",150]
+image::images/316.webp.png[]
 a|
-image::images/317.webp.png["",150]
+image::images/317.webp.png[]
 
 h| 説明 | 管路の上方からの正射影の外周を、管路が埋設された深さから、管径の大きさで下向きに押し出した立体として表現する。 | 複数まとまって埋設されている管路の最外縁を外周とし、その上方からの正射影を、管路が埋設された深さから、管径の合計の大きさで、下向きに押し出した立体として表現する。 | ケーブルの上方からの正射影の外周を、ケーブルが埋設された深さからケーブルの径の大きさで下向きに押し出した立体として表現する。 | 複数まとまって埋設されているケーブルの最外縁を外周とし、その上方からの正射影を、ケーブルが埋設された深さからケーブルの径の合計の大きさで下向きに押し出した立体として表現する。
 h| 4+^h| LOD2
 h| 取得例
 a|
-image::images/318.webp.png["",170]
+image::images/318.webp.png[]
 a|
-image::images/319.webp.png["",150]
+image::images/319.webp.png[]
 a|
-image::images/320.webp.png["",150]
+image::images/320.webp.png[]
 a|
-image::images/321.webp.png["",150]
+image::images/321.webp.png[]
 
 h| 説明 | 構造物の上方からの正射影の外周を取得し、構造物が埋設された深さから構造物の高さで下向きに押し出した立体を作成する。 | 弁栓類、ガバナ等の設備を包含する矩形の正射影を、設備が埋設された深さから設備の高さで下向きに押し出した立体として表現する。 | マンホール本体の上方からの正射影の外周※1を、地表面からマンホールの深さで下向きに押し出した立体を作成する。 | ハンドホールの規格により定まる外径とハンドホールの中心をもとに推定したハンドホール本体の上方からの正射影の外周を、地表面からハンドホールの深さで下向きに押し出した立体を作成する。
 
@@ -646,25 +646,25 @@ a| 設備が埋設された深さは、構造物の土被り量とする。 +
 h| 4+^h| LOD3
 h| 取得例
 a|
-image::images/323.webp.png["",150]
+image::images/323.webp.png[]
 a|
-image::images/324.webp.png["",150]
+image::images/324.webp.png[]
 a|
-image::images/325.webp.png["",150]
+image::images/325.webp.png[]
 a|
-image::images/326.webp.png["",150]
+image::images/326.webp.png[]
 
 h| 説明 | 管路の外形を構成する面を取得する。 | 複数まとまって埋設されている管路も、個々の管路の外形を構成する面を取得する。 | ケーブルの外形を構成する面を取得する。 | 複数まとまって埋設されているケーブルも、個々のケーブルの外形を構成する面を取得する。
 h| 4+^h| LOD3
 h| 取得例
 a|
-image::images/327.webp.png["",150]
+image::images/327.webp.png[]
 a|
-image::images/328.webp.png["",150]
+image::images/328.webp.png[]
 a|
-image::images/329.webp.png["",150]
+image::images/329.webp.png[]
 a|
-image::images/330.webp.png["",150]
+image::images/330.webp.png[]
 
 h| 説明
 a| 構造物の外形を構成する面を取得する。 +
@@ -681,7 +681,7 @@ a| 構造物の外形を構成する面を取得する。 +
 h| ^h| LOD3
 h| 取得例
 a|
-image::images/331.webp.png["",800]
+image::images/331.webp.png[]
 
 h| 説明 | マンホールの外形を構成する面を取得する。マンホールの横断面形状の変化を表現する。
 
@@ -832,13 +832,13 @@ a| • ハンドホールの外形（外側から見える形）を構成する�
 h| 4+^h| LOD4
 h| 取得例
 a|
-image::images/332.webp.png["",150]
+image::images/332.webp.png[]
 a|
-image::images/333.webp.png["",150]
+image::images/333.webp.png[]
 a|
-image::images/334.webp.png["",180]
+image::images/334.webp.png[]
 a|
-image::images/335.webp.png["",160]
+image::images/335.webp.png[]
 
 h| 説明 | 管路の外形を構成する面（埋設物モデル（LOD3））に加え、管路の内空を構成する面を取得する。 | 複数まとまって埋設されている管路の外形を構成する面（地下埋設物モデル（LOD3））に加え、各管路の内空を構成する面を取得する。 | 構造物の外形を構成する面を取得する。構造物のLOD4 を作成する場合は、構造物の内側の面を作成する。構造物に格納されている管路のLOD4を作成する場合は、各管路も、個々の管路の外形を構成する面に加え、内空を構成する面を取得する。 | マンホール・ハンドホール等の外形を構成する面（地下埋設物モデル（LOD3））に加え、内部を構成する面を取得する。
 
