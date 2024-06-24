@@ -66,7 +66,7 @@ image::images/158.webp.png[]
 bldg:GroundSurfaceは、底面を記述するために使用する地物型である。LOD2で底面を記述する場合に、その高さは、図C- 22に示す二つの方法のいずれかにより決定する。建築物に地階が存在し、その最も低い高さが得られる場合にはその高さを使用する。高さの情報が得られない場合には、bldg:GroundSurfaceの水平位置と地形モデルとの交線上で最も低い高さを取得し、この値を使用する。
 
 
-.図C -22　 LOD2における底面の実装例
+.LOD2における底面の実装例
 image::images/159.webp.png[]
 
 　bldg:OuterFloorSurface
@@ -76,19 +76,19 @@ bldg:OuterFloorSurfaceは、屋根以外の上向きの面を記述するため�
 屋外における歩行者のナビゲーションのように、人が通行可能な範囲を必要とするユースケースにおいて適用できる。
 
 
-.図C -23　屋外床面の例
+.屋外床面の例
 image::images/160.webp.png[]
 
 また、競技場や野球場等の屋外の観覧席もbldg:OuterFloorSurfaceに該当する（図C- 24）。
 
 
-.図C -24　屋外床面の取得例（野球場の観覧席）
+.屋外床面の取得例（野球場の観覧席）
 image::images/161.webp.png[]
 
 LOD2 で屋外の階段をbldg:OuterFloorSurfaceを用いて記述する場合、階段の一段一段の形状を区別することは不要であり、最上段と最下段を境界とする1個の面として記述してよい。
 
 
-.図C -25　屋外階段の例
+.屋外階段の例
 image::images/162.webp.png[]
 
 　bldg:OuterCeillingSurface
@@ -96,7 +96,7 @@ image::images/162.webp.png[]
 bldg:OuterCeillingSurfaceは、張り出した部分の裏側のように、屋外に存在する天井部分の面を記述するために使用する地物型である。
 
 
-.図C -26　屋外天井面の例
+.屋外天井面の例
 image::images/163.webp.png[]
 
 　bldg:ClosureSurface
