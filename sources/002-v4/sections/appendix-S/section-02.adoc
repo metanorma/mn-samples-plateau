@@ -64,7 +64,7 @@ dem:TINRelief又はdem:ReliefFeatureのいずれかを必須とする。
 
 ==== 地形の空間属性
 
-　LOD0
+===== LOD0
 
 地形モデル（LOD0）では、地形の形状を点、線又は面により表現する。このとき、地形オブジェクトは、地形モデル（LOD0）の定義に従ったものでなければならない。
 
@@ -74,7 +74,7 @@ dem:TINRelief又はdem:ReliefFeatureのいずれかを必須とする。
 
 地形モデル（LOD0）は、公共測量標準図式に従った表現となる。
 
-　LOD1
+===== LOD1
 
 地形モデル（LOD1）では、地形の形状を、高さをもつ三角形の集まり（dem:TINRelief）又は高さをもつ点の集まり（dem:MassPointRelief）として表現する。このとき、地形オブジェクトは、地形モデル（LOD1）の定義に従ったものでなければならない。
 
@@ -82,7 +82,7 @@ dem:TINRelief又はdem:ReliefFeatureのいずれかを必須とする。
 要件dem-3.　地形のLOD1の形状は、地形モデル（LOD1）の定義に従う。
 ****
 
-　LOD2
+===== LOD2
 
 地形モデル（LOD2）では、地形の形状を、高さをもつ三角形の集まり（dem:TINRelief）又は高さをもつ点の集まり（dem:MassPointRelief）として表現する。このとき、地形オブジェクトは、地形モデル（LOD2）の定義に従ったものでなければならない。
 
@@ -90,7 +90,7 @@ dem:TINRelief又はdem:ReliefFeatureのいずれかを必須とする。
 要件dem-4.　地形のLOD2の形状は、地形モデル（LOD2）の定義に従う。
 ****
 
-　LOD3
+===== LOD3
 
 地形モデル（LOD3）では、高さをもつ三角形の集まり（dem:TINRelief）又は高さをもつ点の集まり（dem:MassPointRelief）として表現する。このとき、地形オブジェクトは、地形モデル（LOD3）の定義に従ったものでなければならない。
 
@@ -104,7 +104,7 @@ dem:TINRelief又はdem:ReliefFeatureのいずれかを必須とする。
 
 地形モデルに主題属性を付与したい場合は、拡張製品仕様書において汎用属性（gen:_genAttribute）の下位型又は拡張属性（uro:KeyValuePairAttribute）を用いて追加する。
 
-　データ品質属性（uro:DataQualityAttribute）
+===== データ品質属性（uro:DataQualityAttribute）
 
 使用した原典資料やそれに基づくデータの品質、また、採用したLODは、データセットのメタデータに記録できる。ただし、データセット全体に対して一つのメタデータを作成することが基本となり、個々の都市オブジェクトの品質を記録することは困難である。
 

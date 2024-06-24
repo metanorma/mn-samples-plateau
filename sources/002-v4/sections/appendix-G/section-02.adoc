@@ -75,7 +75,7 @@ tran:Squareの空間属性は、いずれのLODにおいても、同一のLODに
 
 交差部（四差路、多差路及び三差路）での広場の区切り方は、交通（道路）モデルと同様とする。
 
-　LOD0
+===== LOD0
 
 交通（広場）モデル（LOD0）では、広場の形状を線により表現する。広場の形状の線は、ネットワークを基本とする。ただし、数値地形図との互換性を保つために、道路縁及び車道の界線を選択できる。このとき、交通（広場）オブジェクトは、交通（広場）モデル（LOD0）の定義に従ったものでなければならない。
 
@@ -87,7 +87,7 @@ tran:Squareの空間属性は、いずれのLODにおいても、同一のLODに
 
 交通（広場）モデル（LOD0）のうち、駅前広場及び交通広場は、交通（道路）モデル（LOD0）で表現される地物の集まりとして構成される。
 
-　LOD1
+===== LOD1
 
 交通（広場）モデル（LOD1）では、広場の形状を面として表現する。このとき、交通（広場）オブジェクトは、交通（広場）モデル（LOD1）の定義に従ったものでなければならない。
 
@@ -97,7 +97,7 @@ tran:Squareの空間属性は、いずれのLODにおいても、同一のLODに
 
 交通（広場）モデル（LOD1）の形状は、都市計画において指定された「駅前広場」、「自動車ターミナル」又は「交通広場」の区域に一致する。
 
-　LOD2
+===== LOD2
 
 交通（広場）モデル（LOD2）では、広場の形状を面として表現する。このとき広場（tran:Square）は、横断構成要素であるtran:TrafficAreaとtran:AuxiliaryTrafficAreaに分解される。すなわち、tran:Squareの空間属性は、これを構成するtran:TrafficAreaとtran:AuxiliaryTrafficAreaの空間属性の集まりとなる。
 
@@ -121,7 +121,7 @@ tran:Squareの空間属性は、いずれのLODにおいても、同一のLODに
 
 ** 島
 
-　LOD3
+===== LOD3
 
 交通（広場）モデル（LOD2）では、広場の形状を面として表現する。このとき広場（tran:Square）は、横断構成要素であるtran:TrafficAreaとtran:AuxiliaryTrafficAreaに分解される。すなわち、tran:Squareの空間属性は、これを構成するtran:TrafficAreaとtran:AuxiliaryTrafficAreaの空間属性の集まりとなる。
 
@@ -184,7 +184,7 @@ LOD2と同様に、「駅前広場」又は「交通広場」の場合、都市�
 
 広場の主題属性には、あらかじめCityGML又はGMLにおいて定義された属性（接頭辞tran、gml）と、i-URにより拡張された属性（接頭辞uro）がある。CityGMLで定義された属性は、道路の機能など、基本的な情報となる。i-URにより拡張された属性には、広場に関する情報を格納するための属性（uro:SquareUrbanPlanAttribute、uro:StationSquareAttribute、uro:TerminalAttribute）、数値地形図との互換性を保つための情報を格納するための属性（uro:DmAttribute）、さらに、作成したデータの品質に関する情報を格納するための属性（uro:DataQualityAttribute）がある。
 
-　データ品質属性（uro:DataQualityAttribute）
+===== データ品質属性（uro:DataQualityAttribute）
 
 3D都市モデルでは、データ集合全体としての品質はメタデータに記録する。しかしながら、メタデータでは、個々のデータに対して位置正確度や適用したLOD等の品質を記述することが困難である。
 

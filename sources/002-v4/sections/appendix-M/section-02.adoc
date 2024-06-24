@@ -136,7 +136,7 @@ a|
 
 ==== トンネルの空間属性
 
-　LOD0
+===== LOD0
 
 トンネルモデル(LOD0)では、トンネルの形状を点、線又は面として記述する。このとき、トンネルオブジェクトは、トンネルモデル（LOD0）の定義に従ったものでなければならない。
 
@@ -146,7 +146,7 @@ a|
 
 トンネルモデル（LOD0）の取得方法は、数値地形図に従う。
 
-　LOD1
+===== LOD1
 
 トンネルモデル（LOD1）では、トンネルの形状を立体として記述する。このとき、トンネルオブジェクトはトンネルモデル（LOD1）の定義に従ったものでなければならない。
 
@@ -221,7 +221,7 @@ a| 地下横断歩道の場合は、地下横断歩道の外周に、路面の�
 .ロックシェッド等のトンネルモデル（LOD1）における底面の高さ
 image::images/352.webp.png[]
 
-　LOD2
+===== LOD2
 
 トンネルモデル（LOD2）では、トンネルの形状を立体として記述する。このとき、トンネルオブジェクトはトンネルモデル（LOD2）の定義に従ったものでなければならない。
 
@@ -243,7 +243,7 @@ image::images/353.webp.png[]
 
 なお、トンネルモデル（LOD2）の坑口、行政界等で区切る場合の境界面及びtun:TunnelPartを使用する場合の隣接するtun:TunnelPartと接する境界面は、tun:WallSurfaceに区分する。
 
-　LOD3
+===== LOD3
 
 トンネルモデル（LOD3）では、トンネルの形状を立体として記述する。このとき、トンネルオブジェクトはトンネルモデル（LOD3）の定義に従ったものでなければならない。
 
@@ -271,7 +271,7 @@ a| 地下横断歩道の外形を立体として取得し、立体の各境界�
 
 |===
 
-　LOD4
+===== LOD4
 
 トンネルモデル（LOD4）では、トンネルの形状を面又は立体として記述する。また、トンネルの外形に加えて、トンネルの内部を記述する。このとき、トンネルオブジェクトはトンネルモデル（LOD4）の定義に従ったものでなければならない。
 
@@ -314,27 +314,27 @@ a| LOD4.1に加え、全ての固定された設備及び固定されていな�
 
 i-URにより拡張された属性には、大きく10種類の属性がある。トンネルの管理に関する基本的な情報（uro:tunBaseAttribute）、トンネルの構造に関する情報（uro:tunStructureAttribute）、トンネルの機能に関する情報（uro:tunFunctionalAttribute）、トンネルの損傷に関する情報（uro:tunRiskAssessmentAttribute）、トンネルの災害リスクに関する情報（uro:tunDisasterRiskAttribute）、作成したトンネルのデータ品質に関する情報（uro:DataQualityAttribute）、特定分野における施設の分類情報（uro:tunFacilityTypeAttribute）、uro:tunFacilityTypeAttribute.classによって指定された分野における施設の識別情報（uro:tunFacilityIdAttribute）、uro:tunFacilityTypeAttribute.classによって指定された分野における施設管理情報（uro:tunFacilityAttribute）、公共測量標準図式による図形表現に必要な情報（uro:tunDmAttribute）である。
 
-　構造物管理属性（uro:tunBaseAttribute）
+===== 構造物管理属性（uro:tunBaseAttribute）
 
 トンネルの管理者や建設に関する諸元等、トンネルの管理に必要な基本的な情報。
 
-　構造物構造属性（uro:tunStructureAttribute）
+===== 構造物構造属性（uro:tunStructureAttribute）
 
 トンネルの延長や幅員など、トンネルの構造に関する情報。
 
-　構造物機能属性（uro:tunFunctionalAttribute）
+===== 構造物機能属性（uro:tunFunctionalAttribute）
 
 トンネルの利用者や進行方向。
 
-　構造物損傷属性（uro:tunRiskAssessmentAttribute）
+===== 構造物損傷属性（uro:tunRiskAssessmentAttribute）
 
 構造物の損傷及び対応状況に関する情報。
 
-　災害リスク属性（uro:tunDisasterRiskAttribute）
+===== 災害リスク属性（uro:tunDisasterRiskAttribute）
 
 浸水想定区域や土砂災害警戒区域等の災害リスクに関する情報。
 
-　施設管理のための属性
+===== 施設管理のための属性
 
 uro:FacilityTypeAttributeは、施設管理のための属性は、港湾施設及び漁港施設、河川管理施設や公園管理施設等の施設管理に必要な情報を定義した属性である。施設管理のための属性は以下のデータ型を用いて記述する。
 
@@ -354,11 +354,11 @@ uro:FacilityAttributeは、各分野において施設管理に必要となる�
 
 標準製品仕様書では、港湾施設、漁港施設及び公園施設について、細分した施設の区分ごとにデータ型を定義している。また、施設に関する工事や点検の状況や内容を記述するためのデータ型（uro:MaintenanceHistoryAttribute）を定義している。
 
-　数値地形図属性（uro:tunDmAttribute）
+===== 数値地形図属性（uro:tunDmAttribute）
 
 公共測量標準図式に従った形状表現に必要な情報を記述するための属性である。LOD0の幾何オブジェクトのほか、数値地形図との互換性を保つために必要な情報が、属性として定義されている。
 
-　品質属性（uro:DataQualityAttribute）
+===== 品質属性（uro:DataQualityAttribute）
 
 トンネルオブジェクトの作成に使用した原典資料の記録や、適用した詳細なLODの区分を示すための属性である。
 

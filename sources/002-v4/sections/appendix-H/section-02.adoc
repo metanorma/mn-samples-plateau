@@ -67,11 +67,11 @@ uro:Waterwayの空間属性は、いずれのLODにおいても、同一のLOD�
 要件wwy-2.　連続するuro:Waterwayの幾何オブジェクトは、同一のLODにおいて、その境界の座標を一致させなければならない。
 ****
 
-　LOD0
+===== LOD0
 
 交通（航路）モデル（LOD0）では、航路（uro:Waterway）の形状を線として記述する。このとき、線はgml:GeometricComplexを用いて記述する。
 
-　LOD1
+===== LOD1
 
 交通（航路）モデル（LOD1）では、航路（uro:Waterway）の形状を面として記述する。このとき、面の境界は法令により指定された航路の区域の境界となる。交通（航路）オブジェクトは、以下の場所で区切る。
 
@@ -79,7 +79,7 @@ uro:Waterwayの空間属性は、いずれのLODにおいても、同一のLOD�
 要件wwy-3.　uro:Waterwayのオブジェクトは、以下に示す場所で区切る。 　　　　　　1)　二つ以上の航路が交わる部分
 ****
 
-　LOD2
+===== LOD2
 
 交通（航路）モデル（LOD2）では、航路（uro:Waterway）の形状を面として記述する。LOD2では、uro:Waterwayはtran:TrafficAreaに区分できる。このとき、uro:Waterwayの空間属性は、これを構成するtran:TrafficAreaの空間属性の集まりとなる。
 
@@ -96,13 +96,13 @@ uro:Waterwayの主題属性には、uro:Waterwayに定義された属性と、�
 
 なお、uro:Waterwayがtran:_TransportationObjectから継承するuro:tranDmAttributeは、数値地形図との互換性を保つための情報を格納するための属性であり、航路は数値地形図では表現されないことから、標準製品仕様書では使用しない。
 
-　航路詳細属性（uro:waterweyDetailAttribute）
+===== 航路詳細属性（uro:waterweyDetailAttribute）
 
 航路の詳細な属性として、航路の管理番号、進行方向、幅員、延長、航法、計画水深、速力制限、対象船型を定義する。
 
 幅員が幅をもって指定されている場合は、最小値（uro:minimumWidth）及び最大値（uro:maximumWidth）の両方を入力する。特定の値が指定されている場合は、最小値（uro:minimumWidth）のみを入力する。
 
-　データ品質属性（uro:DataQualityAttribute）
+===== データ品質属性（uro:DataQualityAttribute）
 
 航路のデータ作成に使用した原典資料を記述するための属性である。
 
@@ -112,7 +112,7 @@ uro:Waterwayの主題属性には、uro:Waterwayに定義された属性と、�
 
 3D都市モデルに含まれる全ての交通（航路）モデルは、このデータ品質属性を必ず作成しなければならない。ただし、航路（uro:Waterway）に対してデータ品質属性を付与することはできるが、これを構成する交通領域（tran:TrafficArea）や交通補助領域（tran:AuxiliaryTrafficArea）にデータ品質属性を付与することはできない。
 
-　施設管理のための属性
+===== 施設管理のための属性
 
 施設管理のための属性は、港湾施設及び漁港施設、河川管理施設や公園管理施設等の施設管理に必要な情報を定義した属性である。施設管理のための属性は以下のデータ型を用いて記述する。
 
