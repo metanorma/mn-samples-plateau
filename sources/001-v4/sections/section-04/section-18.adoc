@@ -18,20 +18,30 @@
 |===
 h| 5+^h| LOD0
 h| 取得例
-^a| image::images/368.webp.png["",150]
-^a| image::images/369.webp.png["",150]
-^a| image::images/370.webp.png["",130]
-^a| image::images/371.webp.png["",170]
-^a| image::images/372.webp.png["",150]
+^a|
+image::images/368.webp.png["",150]
+^a|
+image::images/369.webp.png["",150]
+^a|
+image::images/370.webp.png["",130]
+^a|
+image::images/371.webp.png["",170]
+^a|
+image::images/372.webp.png["",150]
 
 h| 説明 | 等高線及び等深線は等値線を取得する。 | 凹地は高い方を左に見るように等値線を取得する。 | 凹地（小）は高い方を1点目、低い方を2点目として取得する。 | 洞口は正射影の方向に一致させて記号を表示する。 | 露岩は、高度の高い方を右に見る形で界線を取得する。
 h| 5+^h| LOD0
 h| 取得例
-^a| image::images/373.webp.png["",120]
-^a| image::images/374.webp.png["",150]
-^a| image::images/375.webp.png["",170]
-^a| image::images/376.webp.png["",150]
-^a| image::images/377.webp.png["",170]
+^a|
+image::images/373.webp.png["",120]
+^a|
+image::images/374.webp.png["",150]
+^a|
+image::images/375.webp.png["",170]
+^a|
+image::images/376.webp.png["",150]
+^a|
+image::images/377.webp.png["",170]
 
 h| 説明
 | 土がけは、頂部を示す線と射影部を示す短線を頂部から最大傾斜方向へ図上2.0mmまで表示し、それ以上の射影部は下端を破線で表示する。また、正射影の幅が図上1.0㎝以上の場合には記号の挿入位置を取得する。
@@ -102,12 +112,10 @@ a| • 記号表示位置の点を取得する。 +
 
 |===
 
-[none]
-**** ●：必須
-
-**** ■：条件付必須
-
-**** 〇：任意（ユースケースに応じて要否を決定してよい）
+[key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_18_01_02]]
 ===== 地形モデル（LOD1）
@@ -121,8 +129,10 @@ a| • 記号表示位置の点を取得する。 +
 |===
 h| 2+^h| LOD1
 h| 取得例
-^a| image::images/378.webp.png["",350]
-^a| image::images/379.webp.png["",400]
+^a|
+image::images/378.webp.png["",350]
+^a|
+image::images/379.webp.png["",400]
 
 h| 説明 | 地形を、標高をもつ点の集まりとして表現する。 | 地形を、標高をもつ任意の三点で構成される三角形の集合として表現する。
 
@@ -157,12 +167,10 @@ a| • レーザ点群の場合は、点密度0.04点/m2以上 +
 
 |===
 
-[none]
-**** ●：必須
-
-**** ■：条件付必須
-
-**** 〇：任意（ユースケースに応じて要否を決定してよい）
+[key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 **** なお、地形のLODは、作業規程の準則第417条に示される「地図情報レベルと格子間隔」（表 4-109）を参考に決定している。地形モデル（LOD1）を格子間隔5m以内（地図情報レベル5000）と設定した。
 
@@ -218,12 +226,10 @@ a| • レーザ点群の場合は、点密度0.25点/m2以上 +
 
 |===
 
-[none]
-**** ●：必須
-
-**** ■：条件付必須
-
-**** 〇：任意（ユースケースに応じて要否を決定してよい）
+[key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 [cols=3,options="noheader"]
 |===
@@ -368,7 +374,9 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 2+a|
 三角形の集まりにより地形の起伏を表現した地物。基準地域メッシュ（第三次地域区画、一辺の長さ約1km）を地物の単位とすることを基本とする。
 
-image::images/382.webp.png["",300,title=" 図　dem:TINReliefの例"]
+
+.図　dem:TINReliefの例
+image::images/382.webp.png["",300]
 
 h| 上位の型 2+| dem:_ReliefComponent
 h| ステレオタイプ 2+| << FeatureType >>
@@ -414,7 +422,9 @@ a| 起伏を表現する三角網。 +
 2+a|
 点の集まりにより地形の起伏を表現した地物。基準地域メッシュ（第三次地域区画、一辺の長さ約1km）を地物の単位とする。
 
-image::images/383.webp.png["",300,title=" 図　dem:MassPointReliefの例"]
+
+.図　dem:MassPointReliefの例
+image::images/383.webp.png["",300]
 
 h| 上位の型 2+| dem:_ReliefComponent
 h| ステレオタイプ 2+| << FeatureType >>
@@ -457,7 +467,9 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 2+a|
 線の集まりにより地形の起伏を表現した地物。基準地域メッシュ（第三次地域区画、一辺の長さ約1km）を地物の単位とする。
 
-image::images/384.webp.png["",300,title=" 図　dem:BreaklineReliefの例"]
+
+.図　dem:BreaklineReliefの例
+image::images/384.webp.png["",300]
 
 h| 上位の型 2+| dem:_ReliefComponent
 h| ステレオタイプ 2+| << FeatureType >>

@@ -40,7 +40,9 @@ image::images/416.svg[]
 +
 下図は、建築物の1階の部屋をgrp:CityObjectGroupとしてグループ化した例である。
 
-image::images/417.webp.png["",300,title=" 図　grp:CityObjectGroupの使用例"]
+
+.図　grp:CityObjectGroupの使用例
+image::images/417.webp.png["",300]
 
 2+a|
 CityGMLでは、建築物の階や任意設定空間に相当する地物は存在しない。そこで、グループ化の仕組みであるgrp:CityObjectGroupを建築物の階を表現するために使用する。 +

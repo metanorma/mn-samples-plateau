@@ -58,7 +58,7 @@ LOD3.4の区分をどこまで詳細に行うかは、ユースケースに応�
 
 |===
 
-[[]]
+
 ==== 交通補助領域の空間属性
 
 tran:AuxiliaryTrafficAreaも、道路面を構成する要素であるため、tran: TrafficAreaと同様の要件を満たす必要がある。
@@ -67,7 +67,7 @@ tran:AuxiliaryTrafficAreaも、道路面を構成する要素であるため、t
 要件tran-11.　同一のtran:Roadに含まれるtran:AuxiliaryTrafficAreaの空間属性は、他のtran:TrafficAreaやtran:AuxiliaryTrafficAreaの空間属性と重なってはならない。 また、同一のtran:Roadに含まれるtran:AuxiliaryTrafficAreaの空間属性は、隣接するtran:TrafficAreaやtran:AuxiliaryTrafficAreaの空間属性と、境界線を共有しなければならない。
 ****
 
-[[]]
+
 ==== 交通補助領域の主題属性
 
 交通補助領域の主題属性であるtran:function及びtran:surfaceMaterialについては、交通領域と同様である。

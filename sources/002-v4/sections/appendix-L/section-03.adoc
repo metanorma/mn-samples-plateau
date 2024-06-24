@@ -9,14 +9,14 @@ brid:BridgePartは、橋梁の一部であり、橋梁モデル（LOD2）以上�
 
 また、一つの橋梁を構成する区間ごとに異なる原典資料を使用し、品質が異なるデータとなっている場合には、それぞれをbrid:BridgePartとして作成し、brid:BridgePartごとに使用した原典資料や地図情報レベルを属性として記録することができる。
 
-[[]]
+
 ==== 橋梁部分の空間属性
 
 brid:BridgePartの空間属性は、brid:Bridgeの空間属性の取得方法と同じである。
 
 なお、連続するbrid:BridgePartの境界面は、brid:ClosureSurfaceとなる。
 
-[[]]
+
 ==== 橋梁部分の主題属性
 
 brid:BridgePartは、brid:Bridgeと同様の主題属性をもつことができる。必要に応じてbrid:BridgePartごとに個別の属性をもつ。

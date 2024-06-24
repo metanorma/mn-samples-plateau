@@ -169,7 +169,7 @@ a| 以下のいずれかを入力する。 +
 a| CityGML 2.0 （固定値） +
 i-UR 3.0（固定値）
 
-| 配布情報>オンライン | 固定値としてG空間情報センターのURL「 https://front.geospatial.jp/[]」を記述する。 | https://front.geospatial.jp/[]（固定値）
+| 配布情報>オンライン | 固定値としてG空間情報センターのURL「 https://front.geospatial.jp/」を記述する。 | https://front.geospatial.jp/（固定値）
 | データ品質情報>データ品質
 a| 製品仕様書に示す品質要求の各項目について品質評価結果を記述する。 +
 系譜(データが作成されるまでの過去の記録や履歴、原典資料の概要)には、主題属性の作成方法や図形と属性のアンマッチへの対処方法等、データ品質に記載できないが、データ製品の利用にあたり注意が必要となるデータの品質に係る事項を記述する。 +
@@ -188,7 +188,7 @@ a| （系譜の例） +
 解説 　表 5-1に示す項目は、3D都市モデルの利用者がメタデータにより3D都市モデルの概要を得ようとした場合に、利用者が想定したユースケースに適合したデータであるか否かを判断する重要な情報である。そのため、必須項目とする。 　メタデータは、3D都市モデルを再利用する場合に、3D都市モデルの概要を把握するために必要な情報である。メタデータを充実させることでより価値の高いデータ製品となり、様々な人に使ってもらえるようになる。そのため、必須としない項目についても、可能な限り記述することが望ましい。
 ****
 
-[[]]
+
 ==== READMEファイルの作成手順
 
 データ製品の概要書として、READMEを作成する。
@@ -298,15 +298,15 @@ a| オープンデータの場合は、以下を記入する。 +
  「本データセットは[PLATEAU Site Policy 「３．著作権について」](https://www.mlit.go.jp/plateau/site-policy/)で定められた以下のライセンスを採用します。 +
 + 政府標準利用規約（第2.0版） +
 + [クリエイティブ・コモンズ・ライセンスの表示4.0国際](https://creativecommons.org/licenses/by/4.0/legalcode.ja) +
-+ ODC BY（ https://opendatacommons.org/licenses/by/1-0/[]） +
-+ OdbL（ https://opendatacommons.org/licenses/odbl/[]） +
++ ODC BY（ https://opendatacommons.org/licenses/by/1-0/） +
++ OdbL（ https://opendatacommons.org/licenses/odbl/） +
 利用者は、いずれかのライセンスを選択し、商用利用も含め、無償で自由にご利用いただけます。 +
 原典資料の位置の正しさの違いや、作成された時期の違いにより、現状を正確に反映していない場合があることにご注意ください。」
 a| 本データセットは[PLATEAU Site Policy 「３．著作権について」](https://www.mlit.go.jp/plateau/site-policy/)で定められた以下のライセンスを採用します。 +
 + 政府標準利用規約（第2.0版） +
 + [クリエイティブ・コモンズ・ライセンスの表示4.0国際](https://creativecommons.org/licenses/by/4.0/legalcode.ja) +
-+ ODC BY（ https://opendatacommons.org/licenses/by/1-0/[]） +
-+ OdbL（ https://opendatacommons.org/licenses/odbl/[]） +
++ ODC BY（ https://opendatacommons.org/licenses/by/1-0/） +
++ OdbL（ https://opendatacommons.org/licenses/odbl/） +
 利用者は、いずれかのライセンスを選択し、商用利用も含め、無償で自由にご利用いただけます。 +
 原典資料の位置の正しさの違いや、作成された時期の違いにより、現状を正確に反映していない場合があることにご注意ください。
 
@@ -323,7 +323,7 @@ a| 本データセットは[PLATEAU Site Policy 「３．著作権について�
 *** 製品仕様書作成用テンプレートは、以下のURLよりダウンロードできる +
 https://www.mlit.go.jp/plateau/file/libraries/doc/template.zip
 
-[[]]
+
 ==== 原典資料リストの作成手順
 
 JMP2.0は、データ製品を作成する際に使用した原典資料の諸元を詳細に記述できないことから、標準製品仕様書では、原典資料リストのための仕様を定めている。3D都市モデルを作成する際には、必ずこの原典資料リストを作成しなければならない。
@@ -450,7 +450,7 @@ h| 禁則文字 | 指定しない
 
 ただし、一つの項目内で複数の値を列挙する場合は、その他の項目（作成日、座標参照系等）は同一でなければならない。
 
-[[]]
+
 ==== 索引図
 
 索引図は、3Ｄ都市モデルの空間範囲を、LOD別に地図上で示す。

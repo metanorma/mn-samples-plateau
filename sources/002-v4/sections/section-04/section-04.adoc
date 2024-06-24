@@ -35,11 +35,21 @@
 *** https://www.geospatial.jp/iur/schemas/urf/3.1/urbanFunction.xsd
 
 *** なお、符号化仕様は最新のものであることをversion属性により確認すること。version属性は、符号化仕様内のxs:schemaタグに記載されている（以下のフラグメントの太字部分）。
-
-[disc]
-****
-<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:urf="https://www.geospatial.jp/iur/urf/3.1"xmlns:core="http://www.opengis.net/citygml/2.0"xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml"xmlns:uro="https://www.geospatial.jp/iur/uro/3.1"targetNamespace="https://www.geospatial.jp/iur/urf/3.1" elementFormDefault="qualified"attributeFormDefault="unqualified" version="3.1.0">
-****
++
+[source,xml]
+----
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+  xmlns:urf="https://www.geospatial.jp/iur/urf/3.1"
+  xmlns:core="http://www.opengis.net/citygml/2.0"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:gml="http://www.opengis.net/gml"
+  xmlns:uro="https://www.geospatial.jp/iur/uro/3.1"
+  targetNamespace="https://www.geospatial.jp/iur/urf/3.1"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="3.1.0">
+----
 
 [start=3]
 . コード型に対応するコードリストをXML形式に変換・出力する。XMLの形式は、GML 3.1.1 simple dictionary profileを使用する。
@@ -47,9 +57,30 @@
  GML 3.1.1 simple dictionary profileは、もともとは辞書として利用されることを想定したXML形式であり、名前（gml:name）とその説明（gml:description）の対の集まりから構成される。CityGMLでは、コードリストの符号化仕様としてこのGML 3.1.1 simple dictionary profileを使用していることから、標準製品仕様においてもコードリストの符号化仕様としてGML 3.1.1 simple dictionary profileを採用する。
 
  GML 3.1.1 simple dictionary profileに従ったXML形式のコードリスト例を以下に示す。
-
-****
-<?xml version="1.0" encoding="UTF-8"?><gml:Dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml" xsi:schemaLocation="http://www.opengis.net/gml http://schemas.opengis.net/gml/3.1.1/profiles/SimpleDictionary/1.0.0/gmlSimpleDictionaryProfile.xsd"gml:id="cl_f649301c-8e10-11ec-b909-0242ac120002"> 　<gml:name>Building_class</gml:name> 　<gml:dictionaryEntry> 　　<gml:Definition gml:id="id1"> 　　　<gml:description>普通建物</gml:description> 　　　<gml:name>3001</gml:name> 　　</gml:Definition> 　</gml:dictionaryEntry> 　　…略… 　<gml:dictionaryEntry> 　　<gml:Definition gml:id="id5"> 　　　<gml:description>分類しない建物</gml:description> 　　　<gml:name>3000</gml:name> 　　</gml:Definition> 　</gml:dictionaryEntry></gml:Dictionary>
++
+[source,xml]
+----
+<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:gml="http://www.opengis.net/gml"
+  xsi:schemaLocation="http://www.opengis.net/gml http://schemas.opengis.net/gml/3.1.1/profiles/SimpleDictionary/1.0.0/gmlSimpleDictionaryProfile.xsd"
+  gml:id="cl_f649301c-8e10-11ec-b909-0242ac120002">
+  <gml:name>Building_class</gml:name>
+  <gml:dictionaryEntry>
+  　<gml:Definition gml:id="id1">
+  　　<gml:description>普通建物</gml:description>
+  　　<gml:name>3001</gml:name>
+  　</gml:Definition>
+  </gml:dictionaryEntry>
+  <!-- …略… -->
+  <gml:dictionaryEntry>
+  　<gml:Definition gml:id="id5">
+  　　<gml:description>分類しない建物</gml:description>
+  　　<gml:name>3000</gml:name>
+  　</gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>
 ****
 
 ** gml:Dictionaryのgml:idは、[接頭辞]_[UUID]とする。
@@ -190,13 +221,13 @@
 
 [source,xml]
 ----
-<gen:genericAttributeSet name=“避難設備区分”>
-　<gen:stringAttribute name=“codeSpace”>
-　<gen:value>../../codelists/CityFurniture_generic-evacType.xml</gen:value>
-　</gen:stringAttribute>
-　<gen:stringAttribute name=“code”>
-　<gen:value>11</gen:value>
-　</gen:stringAttribute>
+<gen:genericAttributeSet name="避難設備区分">
+  <gen:stringAttribute name="codeSpace">
+    <gen:value>../../codelists/CityFurniture_generic-evacType.xml</gen:value>
+  </gen:stringAttribute>
+  <gen:stringAttribute name="code">
+    <gen:value>11</gen:value>
+  </gen:stringAttribute>
 </gen:genericAttributeSet>
 ----
 
@@ -205,13 +236,13 @@
 
 [source,xml]
 ----
-<gen:genericAttributeSet name=“避難設備区分”>
-　<gen:stringAttribute name=“codeSpace”>
-　<gen:value>../../codelists/GenericCityObject_generic-20-type.xml</gen:value>
-　</gen:stringAttribute>
-　<gen:stringAttribute name=“code”>
-　<gen:value>11</gen:value>
-　</gen:stringAttribute>
+<gen:genericAttributeSet name="避難設備区分">
+  <gen:stringAttribute name="codeSpace">
+    <gen:value>../../codelists/GenericCityObject_generic-20-type.xml</gen:value>
+  </gen:stringAttribute>
+  <gen:stringAttribute name="code">
+    <gen:value>11</gen:value>
+  </gen:stringAttribute>
 </gen:genericAttributeSet>
 ----
 

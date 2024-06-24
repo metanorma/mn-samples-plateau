@@ -1,7 +1,7 @@
 [[tocF_03]]
 === 標準的な作業手順
 
-[[]]
+
 ==== 幾何オブジェクトの作成
 
 作成に必要となる原典資料を示す。
@@ -135,11 +135,15 @@ a| 都市計画図等のDMデータ +
 
 ➀　都市計画図等のDMデータより該当箇所の徒歩道及び庭園路を抽出する。
 
-image::images/254.webp.png[title="DMデータより徒歩道と庭園路を抽出したイメージ"]
+
+.DMデータより徒歩道と庭園路を抽出したイメージ
+image::images/254.webp.png[]
 
 ➁　庭園路は外縁から中心線を取得する。徒歩道はDMデータが中心線であるため、そのまま使用できる。
 
-image::images/255.webp.png[title="中心線の取得"]
+
+.中心線の取得
+image::images/255.webp.png[]
 
 　LOD1
 
@@ -166,12 +170,16 @@ a| 以下のいずれかのデータを一つ以上使用する。 +
 
 ➂　交差部で区切る。
 
-image::images/256.webp.png[title="交通（徒歩道）モデルの取得イメージ"]
+
+.交通（徒歩道）モデルの取得イメージ
+image::images/256.webp.png[]
 
 [none]
 ** 交通（徒歩道）モデル（LOD1）の作成例を図F- 4に示す。
 
-image::images/257.webp.png[title="交通（徒歩道）モデル（LOD1）の作成例"]
+
+.交通（徒歩道）モデル（LOD1）の作成例
+image::images/257.webp.png[]
 
 　LOD2
 
@@ -204,11 +212,15 @@ a| 以下のいずれかのデータを一つ以上使用する。 +
 
 交通（徒歩道）モデル（LOD2）の作成例を図F- 5及び図F- 6に示す。
 
-image::images/258.webp.png[title="交通（徒歩道）モデル（LOD2）の車道交差部の例"]
+
+.交通（徒歩道）モデル（LOD2）の車道交差部の例
+image::images/258.webp.png[]
 
 図F5及び図F-6では、車道交差部が存在しないため交差部の区切りはあるが歩道部となる。
 
-image::images/259.webp.png[title="交通（徒歩道）モデル（LOD2）の作成例"]
+
+.交通（徒歩道）モデル（LOD2）の作成例
+image::images/259.webp.png[]
 
 　LOD3.0
 
@@ -247,7 +259,9 @@ a| 以下のいずれかのデータを一つ以上使用する。 +
 
 |===
 
-image::images/260.webp.png[title="横断方向が一律ではない区間のイメージ"]
+
+.横断方向が一律ではない区間のイメージ
+image::images/260.webp.png[]
 
 [cols="1,99"]
 |===
@@ -258,9 +272,13 @@ image::images/260.webp.png[title="横断方向が一律ではない区間のイ�
 [none]
 *** 交通（徒歩道）モデル（LOD3.0）の作成例を図F- 8及び図F- 9に示す。
 
-image::images/261.webp.png[title="交通（徒歩道）モデル（LOD3.0）の作成イメージ"]
 
-image::images/262.webp.png[title="交通（徒歩道）モデル（LOD3.0）の斜めから見た作成イメージ"]
+.交通（徒歩道）モデル（LOD3.0）の作成イメージ
+image::images/261.webp.png[]
+
+
+.交通（徒歩道）モデル（LOD3.0）の斜めから見た作成イメージ
+image::images/262.webp.png[]
 
 　LOD3.1
 
@@ -319,9 +337,13 @@ a| 以下のいずれかのデータを一つ以上使用する。 +
 [none]
 ** LOD3.1では、停止線がある場合はtran:Trackを停止線の延長で区切る。これにより、LOD1及びLOD2で作成したtran:Trackの形状と、LOD3.1で作成した面の形状は異なる。しかしながら、LOD3.1で作成した面が、LOD1及びLOD2で作成した面が同一のtran:Trackの幾何オブジェクトだと判断できる場合は、当該LOD1及びLOD2の面を空間属性としてもつtran:Trackの空間属性として作成したLOD3.1の面を扱う（すなわち、当該tran:Trackのtran:lod3MultiSurfaceとする）。
 
-image::images/263.webp.png[title="tran:Trackのインスタンスを統合する場合のイメージ"]
 
-image::images/264.webp.png[title="交通（徒歩道）モデル（LOD3.1）作成イメージ"]
+.tran:Trackのインスタンスを統合する場合のイメージ
+image::images/263.webp.png[]
+
+
+.交通（徒歩道）モデル（LOD3.1）作成イメージ
+image::images/264.webp.png[]
 
 　LOD3.2
 
@@ -359,7 +381,9 @@ a| 以下のいずれかのデータを一つ以上使用する。 +
 [none]
 ** 交通（徒歩道）モデル（LOD3.2）の作成例を図F- 12に示す。
 
-image::images/265.webp.png[title="交通（徒歩道）モデル（LOD3.2）の作成例"]
+
+.交通（徒歩道）モデル（LOD3.2）の作成例
+image::images/265.webp.png[]
 
 　LOD3.3
 
@@ -392,7 +416,9 @@ a| 以下のいずれかのデータを一つ以上使用する。 +
 
 交通（徒歩道）モデル（LOD3.3）の作成例を図F- 13に示す。
 
-image::images/266.webp.png[title="交通モデル（徒歩道）モデル（LOD3.3）の作成イメージ"]
+
+.交通モデル（徒歩道）モデル（LOD3.3）の作成イメージ
+image::images/266.webp.png[]
 
 　LOD3.4
 
@@ -425,5 +451,7 @@ a| 以下のいずれかのデータを一つ以上使用する。 +
 
 交通（徒歩道）モデル（LOD3.4）の作成例を図F- 13に示す。この例では、駐輪区画を区分している
 
-image::images/267.webp.png[title="交通モデル（徒歩道）モデル（LOD3.4）の作成イメージ"]
+
+.交通モデル（徒歩道）モデル（LOD3.4）の作成イメージ
+image::images/267.webp.png[]
 

@@ -40,8 +40,10 @@
 |===
 h| 4+^h| LOD0（河川ネットワークにより表現する場合）
 h| 取得例
-2+a| image::images/385.webp.png["",150]
-2+a| image::images/386.webp.png["",300]
+2+a|
+image::images/385.webp.png["",150]
+2+a|
+image::images/386.webp.png["",300]
 
 h| 説明
 2+| 河川、細流、かれ川、用水路及び地下水路の場合は、中心線を取得する。
@@ -50,18 +52,26 @@ h| 説明
 
 h| 4+^h| LOD0（公共測量標準図式により表現する場合）
 h| 取得例
-a| image::images/387.webp.png["",240]
-a| image::images/388.webp.png["",100]
-a| image::images/389.webp.png["",120]
-a| image::images/390.webp.png["",200]
+a|
+image::images/387.webp.png["",240]
+a|
+image::images/388.webp.png["",100]
+a|
+image::images/389.webp.png["",120]
+a|
+image::images/390.webp.png["",200]
 
 h| 説明 | 地図情報レベル500及び1000における河川、また、地図情報レベル2500における水涯線（河川、湖池等、海岸線）は界線を取得する。 | 地図情報レベル500及び1000における細流、また、地図情報レベル2500における一条河川は中心線を取得する。 | かれ川は、範囲を示す縁線を取得する。 | 用水路は、界線を取得する。
 h| 4+^h| LOD0（公共測量標準図式により表現する場合）
 h| 取得例
-a| image::images/391.webp.png["",120]
-a| image::images/392.webp.png["",200]
-a| image::images/393.webp.png["",100]
-a| image::images/394.webp.png["",50]
+a|
+image::images/391.webp.png["",120]
+a|
+image::images/392.webp.png["",200]
+a|
+image::images/393.webp.png["",100]
+a|
+image::images/394.webp.png["",50]
 
 h| 説明 | 注記されない湖沼は、界線に加えて記号挿入位置を取得する。 | 海岸線は、地図情報レベル500及び1000において、図上海部として識別が難しい場所においては、界線に加えて記号を表示する。 | 水路地下部は地下水路縁線を取得する。 | 低位水涯線（干潟線）は、界線を取得する。
 
@@ -132,12 +142,10 @@ a| • 界線を取得する。 +
 
 |===
 
-[none]
-**** ●：必須
-
-**** ■：条件付必須
-
-**** 〇：任意（ユースケースに応じて要否を決定してよい）
+[key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_19_01_02]]
 ===== 水部モデル（LOD1）
@@ -151,7 +159,8 @@ a| • 界線を取得する。 +
 |===
 h| ^h| LOD1
 h| 取得例
-a| image::images/395.webp.png["",450]
+a|
+image::images/395.webp.png["",450]
 
 h| 説明 | 水涯線により囲まれた面を取得する。中洲がある場合は、中洲を除いた面となる。
 
@@ -176,12 +185,10 @@ a| • 水涯線に囲まれた範囲を取得する。 +
 
 |===
 
-[none]
-**** ●：必須
-
-**** ■：条件付必須
-
-**** 〇：任意（ユースケースに応じて要否を決定してよい）
+[key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_19_01_03]]
 ===== 水部モデル（LOD2）
@@ -195,7 +202,8 @@ a| • 水涯線に囲まれた範囲を取得する。 +
 |===
 h| ^h| LOD2
 h| 取得例
-a| image::images/396.webp.png["",600]
+a|
+image::images/396.webp.png["",600]
 
 h| 説明
 a| 水涯線により囲まれた水面と、水底面に囲まれた立体を作成する。 +
@@ -234,12 +242,10 @@ a| • 水面（WaterSurface）と管理区間や行政界などの境界線と�
 
 |===
 
-[none]
-**** ●：必須
-
-**** ■：条件付必須
-
-**** 〇：任意（ユースケースに応じて要否を決定してよい）
+[key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_19_01_04]]
 ===== 水部モデル（LOD3）
@@ -255,7 +261,8 @@ a| • 水面（WaterSurface）と管理区間や行政界などの境界線と�
 |===
 h| ^h| LOD3
 h| 取得例
-a| image::images/397.webp.png["",500]
+a|
+image::images/397.webp.png["",500]
 
 h| 説明
 a| 水部モデル（LOD2）である、水涯線により囲まれた水面と、水底面に囲まれた立体から、橋梁下部の橋脚部分など水中にある構造物を除いた立体となる。 +
@@ -302,12 +309,10 @@ a| • 水面（WaterSurface）と管理区間や行政界などの境界線と�
 
 |===
 
-[none]
-**** ●：必須
-
-**** ■：条件付必須
-
-**** 〇：任意（ユースケースに応じて要否を決定してよい）
+[key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_19_01_05]]
 ===== 各LODにおいて使用可能な地物型と空間属性
@@ -363,22 +368,30 @@ image::images/399.svg[]
 2+a|
 河川、湖沼、等のように陸地内に存在する水の存在する部分及び海。水路や貯水槽、プールのような人工的に存在する水を含む。 LOD0は、ネットワーク又は、公共測量標準図式による表現のいずれかとし、ネットワークを原則とする。
 
-image::images/400.webp.png["",300,title=" 図　wtr:WaterBodyの例（LOD0）"]
+
+.図　wtr:WaterBodyの例（LOD0）
+image::images/400.webp.png["",300]
 
 2+a|
 LOD1は、水涯線により囲まれた面として表現する。
 
-image::images/401.webp.png["",200,title=" 図　wtr:WaterBodyの例（LOD1）"]
+
+.図　wtr:WaterBodyの例（LOD1）
+image::images/401.webp.png["",200]
 
 2+a|
 LOD2は、水面と水底面に囲まれた立体として表現する。
 
-image::images/402.webp.png["",400,title=" 図　wtr:WaterBodyの例（LOD2）"]
+
+.図　wtr:WaterBodyの例（LOD2）
+image::images/402.webp.png["",400]
 
 2+a|
 LOD3は、水面と水底面に囲まれた立体から、水中の構造物を除いた立体として表現する。
 
-image::images/403.webp.png["",400,title=" 図　wtr:WaterBodyの例（LOD3）"]
+
+.図　wtr:WaterBodyの例（LOD3）
+image::images/403.webp.png["",400]
 
 水部のインスタンスは基準地域メッシュ（第3次地域区画）の境界で区切る。 LOD2又はLOD3でインスタンスを分割する場合は、基準地域メッシュの水部の立体の境界面分割するための仮想的な境界面を「wtr:WaterClosureSurface」とする。
 
@@ -432,7 +445,9 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 2+a|
 水面。大気と水部の境界面とする。
 
-image::images/404.webp.png["",500,title=" 図　水部の断面イメージ"]
+
+.図　水部の断面イメージ
+image::images/404.webp.png["",500]
 
 h| 上位の型 2+| wtr:_BoundarySurface
 h| ステレオタイプ 2+| << FeatureType >>
@@ -470,7 +485,9 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 2+a|
 水底面。地形と水部の境界面及び水中の構造物と水部との境界面をいう。
 
-image::images/405.webp.png["",500,title=" 図　水部の断面イメージ"]
+
+.図　水部の断面イメージ
+image::images/405.webp.png["",500]
 
 h| 上位の型 2+| wtr:_BoundarySurface
 h| ステレオタイプ 2+| << FeatureType >>
@@ -505,7 +522,9 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 2+a|
 水部の立体を区切る仮想的な面。（閉鎖面） 複数の基準地域メッシュに跨って存在する河川、湖沼、海等を基準メッシュ単位に分割する場合や、河川、湖沼、海等の一部の範囲のみを作成する場合に、水部の立体を構成する境界面として使用する。
 
-image::images/406.webp.png["",500,title=" 図　水部の断面イメージ"]
+
+.図　水部の断面イメージ
+image::images/406.webp.png["",500]
 
 h| 上位の型 2+| wtr:_BoundarySurface
 h| ステレオタイプ 2+| << FeatureType >>

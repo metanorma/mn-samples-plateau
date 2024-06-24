@@ -32,9 +32,12 @@
 |===
 h| 3+^h| LOD0
 h| 取得例
-a| image::images/254.webp.png["",200]
-a| image::images/255.webp.png["",200]
-a| image::images/256.webp.png["",200]
+a|
+image::images/254.webp.png["",200]
+a|
+image::images/255.webp.png["",200]
+a|
+image::images/256.webp.png["",200]
 
 h| 説明 | 中央位置の点と方向を取得する。 | 坑口部分の外周を線として取得する。 | 坑口部分の外周を面として取得する。
 
@@ -53,8 +56,9 @@ h| 説明 | 中央位置の点と方向を取得する。 | 坑口部分の外�
 | Tunnel
 | Point
 | 坑口の正射影の幅（道路の横断方向）3.75m未満のトンネル※1
-a| • 中央位置の点と方向を取得する。 +
-• 高さは0とする。
+a|
+* 中央位置の点と方向を取得する。
+* 高さは0とする。
 a| 地下横断歩道は取得しない。 +
 ※1標準図式では地図情報レベル2500において図上1.5㎜未満は極小の記号を使用することになっており、これは実長3.75mに該当することから、ここでは幅3.75m未満のトンネルを点で取得することとしている。 +
 ※2数値地形図の取得方法に従う。
@@ -62,28 +66,29 @@ a| 地下横断歩道は取得しない。 +
 .3+|
 | MultiCurve
 | トンネル※２
-a| • 坑口部分の外周を取得する。 +
-• 高さは0とする。
+a|
+* 坑口部分の外周を取得する。
+* 高さは0とする。
 .3+|
 
 | MultiSurface
 | トンネル※２
-a| • 坑口部分の外周を取得する（始終点座標一致）。 +
-• 高さは0とする。
+a|
+* 坑口部分の外周を取得する（始終点座標一致）。
+* 高さは0とする。
 
 | MultiSurface
 | 延長5m以上の道路の雪覆い等
-a| • 外周を取得する（始終点座標一致）。 +
-• 高さは0とする。
+a|
+* 外周を取得する（始終点座標一致）。
+* 高さは0とする。
 
 |===
 
-[none]
-**** ●：必須
-
-**** ■：条件付必須
-
-**** 〇：任意（ユースケースに応じて要否を決定してよい）
+[key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_12_01_02]]
 ===== トンネルモデル（LOD1）
@@ -99,8 +104,10 @@ a| • 外周を取得する（始終点座標一致）。 +
 |===
 h| 2+^h| LOD1
 h| 取得例
-a| image::images/257.webp.png["",300]
-a| image::images/258.webp.png["",300]
+a|
+image::images/257.webp.png["",300]
+a|
+image::images/258.webp.png["",300]
 
 h| 説明 | トンネルの場合は、トンネルの坑口を含めた外周を一律の高さで押し出した立体として表現する。 一律の高さは、トンネルの最も低い高さから最も高い高さまでとする。 トンネル内部が傾斜している場合は、その標高差によりトンネルの形状が実際の形状と乖離する。 そのため、ユースケースの必要に応じて、トンネルをTunnelPartに区切り、区切った区間ごとに一律の高さを押し出すことで、より実際に近い形状で表現できる。 | 地下横断歩道の場合は、地下横断歩道の外周を、路面の高さから一律の高さ（設計図や竣工図に示された構造物の深さ）で下向きに押し出した立体として表現する。 地下横断歩道内部が傾斜している場合は、その標高差により地下横断歩道の形状が実際の形状と乖離する。 そのため、ユースケースの必要に応じて、地下横断歩道をTunnelPartに区切り、区切った区間ごとに一律の高さを押し出すことで、より実際に近い形状で表現できる。 なお、地下横断歩道の出入口に、防風・雨・雪及び採光を目的として設けられた建屋は、都市設備（frn:CityFurniture）として取得する。
 
@@ -119,42 +126,47 @@ h| 説明 | トンネルの場合は、トンネルの坑口を含めた外周�
 .3+| Tunnel
 .3+| Solid
 | トンネル
-a| • 道路縁から道路中心線を作成し、標準横断面図等の図面から、トンネルの厚みを含むトンネルの縁線を作成する。 +
-• 作成した外縁と、坑口を含む外周を作成する。 +
-•&nbsp;&nbsp;&nbsp;外周を一律の高さで押し出した立体を作成する。
-a| • 一律の高さは、トンネルの最も低い高さから最も高い高さまでの差分とする。 +
-• トンネルの入口となる坑口と、出口となる坑口に標高差がある場合は、トンネルの高さに、標高差が加わった高さで押し出すことになる。
+a|
+* 道路縁から道路中心線を作成し、標準横断面図等の図面から、トンネルの厚みを含むトンネルの縁線を作成する。
+* 作成した外縁と、坑口を含む外周を作成する。
+* 外周を一律の高さで押し出した立体を作成する。
+a|
+* 一律の高さは、トンネルの最も低い高さから最も高い高さまでの差分とする。
+* トンネルの入口となる坑口と、出口となる坑口に標高差がある場合は、トンネルの高さに、標高差が加わった高さで押し出すことになる。
 
 | 延長5m以上の道路の雪覆い等
-a| • 上方からの正射影の外周を取得する。 +
-• 外周を地表面から一律の高さで上向きに押し出した立体を作成する。
-| • 一律の高さは、雪覆いの最も低い高さから最も高い高さまでの差分とする。
+a|
+* 上方からの正射影の外周を取得する。
+* 外周を地表面から一律の高さで上向きに押し出した立体を作成する。
+|
+* 一律の高さは、雪覆いの最も低い高さから最も高い高さまでの差分とする。
 
 | 地下横断歩道
-a| • 上方からの正射影の外周を取得しする。 +
-• 外周を地表面から一律の高さで下向きに押し出した立体を作成する。
-a| • 一律の高さは、設計図や竣工図等の図面より得られた、地表面から構造物の最下面までの深さとする。 +
+a|
+* 上方からの正射影の外周を取得しする。
+* 外周を地表面から一律の高さで下向きに押し出した立体を作成する。
+a|
+* 一律の高さは、設計図や竣工図等の図面より得られた、地表面から構造物の最下面までの深さとする。
 路面が傾斜している場合は、地上の高さは最も高い路面の高さとする。 +
-• 地下横断歩道の出入口に設けられた建屋は、都市設備（CityFurniture）として取得する。
+* 地下横断歩道の出入口に設けられた建屋は、都市設備（CityFurniture）として取得する。
 
 | LOD1
 | 〇
 | TunnelPart
 | Solid
 | トンネルの傾斜を簡易的に再現する場合
-a| • トンネルを区間に区切る。 +
-• 区間ごとに上方からの正射影の外周を取得する。 +
-• 外周に最低高さを与えて最高高さまで押し出した立体とする。
+a|
+* トンネルを区間に区切る。
+* 区間ごとに上方からの正射影の外周を取得する。
+* 外周に最低高さを与えて最高高さまで押し出した立体とする。
 |
 
 |===
 
-[none]
-**** ●：必須
-
-**** ■：条件付必須
-
-**** 〇：任意（ユースケースに応じて要否を決定してよい）
+[key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_12_01_03]]
 ===== トンネルモデル（LOD2）
@@ -170,8 +182,10 @@ a| • トンネルを区間に区切る。 +
 |===
 h| 2+^h| LOD2
 h| 取得例
-a| image::images/259.webp.png["",300]
-a| image::images/260.webp.png["",300]
+a|
+image::images/259.webp.png["",300]
+a|
+image::images/260.webp.png["",300]
 
 h| 説明 | トンネルの外形を立体として表現し、立体の各境界面を、屋根や外壁に区分する。トンネルの外形には坑口を含む。 | 地下横断歩道の外形を立体として取得し、立体の各境界面を、屋根や外壁に区分する。 地下横断歩道の出入口に設けられた建屋は、都市設備（CityFurniture）として取得する。
 
@@ -185,14 +199,18 @@ h| 説明 | トンネルの外形を立体として表現し、立体の各境�
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
-| LOD2 | ● | Tunnel | Solid | | • 屋根面（RoofSurface）、外壁面（WallSurface）、及び底面（GroundSurface）を境界面とする立体を作成する。 |
+| LOD2 | ● | Tunnel | Solid |
+|
+* 屋根面（RoofSurface）、外壁面（WallSurface）、及び底面（GroundSurface）を境界面とする立体を作成する。
+|
 | LOD2
 | ■
 | RoofSurface
 | MultiSurface
 | トンネルの側面が垂直の場合に、その垂直面の上方に存在する面
-a| • トンネルの外形を取得し、上向きの面を屋根面（RoofSurface）とする。 +
-• 面を構成する各頂点に、屋根の高さを与える。
+a|
+* トンネルの外形を取得し、上向きの面を屋根面（RoofSurface）とする。
+* 面を構成する各頂点に、屋根の高さを与える。
 | トンネル上部が湾曲しており、トンネルの屋根と外壁との区分が難しい場合は、外壁面（WallSurface）として取得する。
 
 | LOD2
@@ -200,8 +218,9 @@ a| • トンネルの外形を取得し、上向きの面を屋根面（RoofSur
 | GroundSurface
 | MultiSurface
 | トンネルの側面が垂直の場合に、その垂直面の下方に存在する面
-a| • トンネルの外形を取得し、下向きの面を底面（GroundSurface）とする。 +
-• 面を構成する各頂点に、トンネル下面の高さを与える。
+a|
+* トンネルの外形を取得し、下向きの面を底面（GroundSurface）とする。
+* 面を構成する各頂点に、トンネル下面の高さを与える。
 | トンネル下部が湾曲しており、トンネルの底と外壁との区分が難しい場合は、外壁面（WallSurface）として取得する。
 
 | LOD2
@@ -209,8 +228,9 @@ a| • トンネルの外形を取得し、下向きの面を底面（GroundSurf
 | WallSurface
 | MultiSurface
 |
-a| • トンネルの外形を取得し、屋根面（RoofSurface）及び底面（GroundSurface）を除く面を外壁面（WallSurface）とする。 +
-• 面を構成する各頂点にそれぞれの高さを与える。
+a|
+* トンネルの外形を取得し、屋根面（RoofSurface）及び底面（GroundSurface）を除く面を外壁面（WallSurface）とする。
+* 面を構成する各頂点にそれぞれの高さを与える。
 | 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 
 | LOD2 | | ClosureSurface | | | | 対象外。
@@ -220,8 +240,9 @@ a| • トンネルの外形を取得し、屋根面（RoofSurface）及び底�
 | 〇
 | TunnelPart
 | Solid
-a| • 多連形のトンネルを一つのTunnelとして表現する場合に必須とする。 +
-• 一つのトンネルを、属性の異なる複数の部分に分ける場合に必須とする。
+a|
+* 多連形のトンネルを一つのTunnelとして表現する場合に必須とする。
+* 一つのトンネルを、属性の異なる複数の部分に分ける場合に必須とする。
 | 屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）及び閉鎖面（ClosureSurface）を境界面とする立体を作成する。
 |
 
@@ -229,12 +250,10 @@ a| • 多連形のトンネルを一つのTunnelとして表現する場合に�
 
 |===
 
-[none]
-**** ●：必須
-
-**** ■：条件付必須
-
-**** 〇：任意（ユースケースに応じて要否を決定してよい）
+[key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 image::images/261.webp.png[]
 
@@ -252,8 +271,10 @@ image::images/261.webp.png[]
 |===
 h| 2+^h| LOD3
 h| 取得例
-a| image::images/262.webp.png["",300]
-a| image::images/263.webp.png["",300]
+a|
+image::images/262.webp.png["",300]
+a|
+image::images/263.webp.png["",300]
 
 h| 説明 | トンネルの外形を立体として表現し、立体の各境界面を、屋根、外壁及び開口部に区分する。 さらにトンネルの外側に付いている付属物として、坑門や連絡坑を取得する。 | 地下横断歩道の外形を立体として取得し、立体の各境界面を、屋根や外壁に区分する。 地下横断歩道の出入口に設けられた建屋は、都市設備（CityFurniture）として取得する。
 
@@ -267,14 +288,18 @@ h| 説明 | トンネルの外形を立体として表現し、立体の各境�
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
-| LOD3 | ● | Tunnel | Solid又はMultiSurface | | • 屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）、及び閉鎖面（ClosureSurface）を境界面とする立体を作成する。 |
+| LOD3 | ● | Tunnel | Solid又はMultiSurface |
+|
+* 屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）、及び閉鎖面（ClosureSurface）を境界面とする立体を作成する。
+|
 | LOD3
 | ■
 | RoofSurface
 | MultiSurface
 | トンネルの側面が垂直の場合に、その垂直面の上方に存在する面
-a| • トンネルの外形を取得し、上向きの面を屋根面（RoofSurface）とする。 +
-• 面を構成する各頂点に、屋根の高さを与える。
+a|
+* トンネルの外形を取得し、上向きの面を屋根面（RoofSurface）とする。
+* 面を構成する各頂点に、屋根の高さを与える。
 | トンネル上部が湾曲しており、トンネルの屋根と外壁との区分が難しい場合は、外壁面（WallSurface）として取得する。
 
 | LOD3
@@ -282,8 +307,9 @@ a| • トンネルの外形を取得し、上向きの面を屋根面（RoofSur
 | GroundSurface
 | MultiSurface
 | トンネルの側面が垂直の場合に、その垂直面の下方に存在する面
-a| • トンネルの外形を取得し、下向きの面を底面（GroundSurface）とする。 +
-• 面を構成する各頂点に、トンネル下面の高さを与える。
+a|
+* トンネルの外形を取得し、下向きの面を底面（GroundSurface）とする。
+* 面を構成する各頂点に、トンネル下面の高さを与える。
 | トンネル下部が湾曲しており、トンネルの底と外壁との区分が難しい場合は、外壁面（WallSurface）として取得する。
 
 | LOD3
@@ -291,20 +317,26 @@ a| • トンネルの外形を取得し、下向きの面を底面（GroundSurf
 | WallSurface
 | MultiSurface
 |
-a| • トンネルの外形を取得し、屋根面（RoofSurface）及び底面（GroundSurface）を除く面を外壁面（WallSurface）とする。 +
-• 面を構成する各頂点にそれぞれの高さを与える。
+a|
+* トンネルの外形を取得し、屋根面（RoofSurface）及び底面（GroundSurface）を除く面を外壁面（WallSurface）とする。
+* 面を構成する各頂点にそれぞれの高さを与える。
 | 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 
-| LOD3 | ● | ClosureSurface | MultiSurface | | • 坑口の開口部の外周を取得する。 |
+| LOD3 | ● | ClosureSurface | MultiSurface |
+|
+* 坑口の開口部の外周を取得する。
+|
 | LOD3 | | OuterCeilingSurface | | | | 対象外。
 | LOD3 | | OuterFloorSurface | | | | 対象外。
 | LOD3
 | ■
 | TunnelPart
 | Solid
-a| • 多連形のトンネルを一つのTunnelとして表現する場合に必須とする。 +
-• 一つのトンネルを、属性の異なる複数の部分に分ける場合に必須とする。
-| • 屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）及び閉鎖面（ClosureSurface）を境界面とする立体を作成する。
+a|
+* 多連形のトンネルを一つのTunnelとして表現する場合に必須とする。
+* 一つのトンネルを、属性の異なる複数の部分に分ける場合に必須とする。
+|
+* 屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）及び閉鎖面（ClosureSurface）を境界面とする立体を作成する。
 |
 
 | LOD3
@@ -312,21 +344,26 @@ a| • 多連形のトンネルを一つのTunnelとして表現する場合に�
 | TunnelInstallation
 | MultiSurface
 |
-a| • 外部付属物の外形（外側から見える形）を構成する面を取得する。 +
-• 面の各頂点に屋外付属物の高さを与える。
+a|
+* 外部付属物の外形（外側から見える形）を構成する面を取得する。
+* 面の各頂点に屋外付属物の高さを与える。
 | 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 
-| LOD3 | ● | Door | MultiSurface | | • 扉（Door）の外周を取得する。 |
-| LOD3 | ● | Window | MultiSurface | | • 窓（Window）の外周を取得する。 |
+| LOD3 | ● | Door | MultiSurface |
+|
+* 扉（Door）の外周を取得する。
+|
+| LOD3 | ● | Window | MultiSurface |
+|
+* 窓（Window）の外周を取得する。
+|
 
 |===
 
-[none]
-**** ●：必須
-
-**** ■：条件付必須
-
-**** 〇：任意（ユースケースに応じて要否を決定してよい）
+[key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_12_01_05]]
 ===== トンネルモデル（LOD4）
@@ -376,12 +413,10 @@ h| トンネルモデル（LOD4）に含むべき地物 h| 対応するCityGML�
 
 |===
 
-[none]
-**** ●：必須
-
-**** ■：条件付必須
-
-**** 〇：任意（ユースケースに応じて要否を決定してよい）
+[key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 LOD4.0、LOD4.1、LOD4.2及びLOD4.3それぞれの取得イメージを表 4-74に示す。
 
@@ -390,19 +425,22 @@ LOD4.0、LOD4.1、LOD4.2及びLOD4.3それぞれの取得イメージを表 4-74
 |===
 h| ^h| 取得例 ^h| 説明
 h| LOD4.0
-a| image::images/264.webp.png["",400]
+a|
+image::images/264.webp.png["",400]
 a| LOD3.0の外形に加え、トンネル内部（内空）を再現する。 +
 内空の境界面を床（FloorSurface）、内壁面（InteriorWallSurface）又は天井面（CeilingSurface）に区分する。また、内壁等に扉や窓がある場合に区分する。 +
 トンネル内部の付属物は取得しない。
 
 h| LOD4.1
-a| image::images/265.webp.png["",400]
+a|
+image::images/265.webp.png["",400]
 a| LOD4.0に加え、「短辺の実長が3ｍ以上」又は「横断又は縦断面積が3m2以上かつ短辺の実長が1m以上」の固定された設備を取得する。 +
 +
 左図の例の場合は、換気用のジェットファンが短辺の実長が3m以上に該当し、また、手すりが縦断面積が3m2以上かつ短辺の実長が1m以上に該当したため、取得された。
 
 h| LOD4.2
-a| image::images/266.webp.png["",400]
+a|
+image::images/266.webp.png["",400]
 a| LOD4.1に加え、全ての固定された設備及び固定されていない設備を取得する。 +
 +
 左図の例の場合は、消火栓、警報標示板、トンネル照明及び非常口表示灯が固定された設備に該当し、また、看板が固定されていない設備に該当したため取得された。
@@ -417,14 +455,18 @@ a| LOD4.1に加え、全ての固定された設備及び固定されていな�
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
-| LOD4.0 | ● | Tunnel | Solid又はMultiSurface | 全てを対象とする。 | • 屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）及び閉鎖面（ClosureSurface）の集まり、又は、これらを境界面とする立体を作成する。 | Solidを原則とする。BIMモデルから作成する場合はMultiSurfaceとする。
+| LOD4.0 | ● | Tunnel | Solid又はMultiSurface | 全てを対象とする。
+|
+* 屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）及び閉鎖面（ClosureSurface）の集まり、又は、これらを境界面とする立体を作成する。
+| Solidを原則とする。BIMモデルから作成する場合はMultiSurfaceとする。
 | LOD4.0
 | ■
 | RoofSurface
 | MultiSurface
 | トンネルの側面が垂直の場合に、その垂直面の上方に存在する面
-a| • トンネルの外形を取得し、上向きの面を屋根面（RoofSurface）とする。 +
-• 面を構成する各頂点に、屋根の高さを与える。
+a|
+* トンネルの外形を取得し、上向きの面を屋根面（RoofSurface）とする。
+* 面を構成する各頂点に、屋根の高さを与える。
 | トンネル上部が湾曲しており、トンネルの屋根と外壁との区分が難しい場合は、外壁面（WallSurface）として取得する。
 
 | LOD4.0
@@ -432,8 +474,9 @@ a| • トンネルの外形を取得し、上向きの面を屋根面（RoofSur
 | GroundSurface
 | MultiSurface
 | トンネルの側面が垂直の場合に、その垂直面の下方に存在する面
-a| • トンネルの外形を取得し、下向きの面を底面（GroundSurface）とする。 +
-• 面を構成する各頂点に、トンネル下面の高さを与える。
+a|
+* トンネルの外形を取得し、下向きの面を底面（GroundSurface）とする。
+* 面を構成する各頂点に、トンネル下面の高さを与える。
 | トンネル下部が湾曲しており、トンネルの底と外壁との区分が難しい場合は、外壁面（WallSurface）として取得する。
 
 | LOD4.0
@@ -441,40 +484,65 @@ a| • トンネルの外形を取得し、下向きの面を底面（GroundSurf
 | WallSurface
 | MultiSurface
 |
-a| • トンネルの外形を取得し、屋根面（RoofSurface）及び底面（GroundSurface）以外の面を外壁面（WallSurface）とする。 +
-• 面を構成する各頂点にそれぞれの高さを与える。
+a|
+* トンネルの外形を取得し、屋根面（RoofSurface）及び底面（GroundSurface）以外の面を外壁面（WallSurface）とする。
+* 面を構成する各頂点にそれぞれの高さを与える。
 |
 
-| LOD4.0 | ● | ClosureSurface | MultiSurface | 坑口の開口部 | • トンネルの坑口の開口部の外周に囲まれた範囲を面として取得する。 |
-| LOD4.0 | ■ | TunnelPart | Solid又はMultiSurface | 多連形のトンネルを一つのTunnelとして表現する場合 | • 屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）及び閉鎖面（ClosureSurface）を境界面とする立体を作成する。 |
+| LOD4.0 | ● | ClosureSurface | MultiSurface | 坑口の開口部
+|
+* トンネルの坑口の開口部の外周に囲まれた範囲を面として取得する。
+|
+| LOD4.0 | ■ | TunnelPart | Solid又はMultiSurface | 多連形のトンネルを一つのTunnelとして表現する場合
+|
+* 屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）及び閉鎖面（ClosureSurface）を境界面とする立体を作成する。
+|
 | LOD4.0 | | OuterFloorSurface | | | |
 | LOD4.0 | | OuterCeilingSurface | | | |
-| LOD4.0 | ● | Door | MultiSurface | 全てを対象とする。 | • 扉（Door）の外周を取得する。 |
-| LOD4.0 | ● | Window | MultiSurface | 全てを対象とする。 | • 窓（Window）の外周を取得する。 |
+| LOD4.0 | ● | Door | MultiSurface | 全てを対象とする。
+|
+* 扉（Door）の外周を取得する。
+|
+| LOD4.0 | ● | Window | MultiSurface | 全てを対象とする。
+|
+* 窓（Window）の外周を取得する。
+|
 | LOD4.0
 | ●
 | TunnelInstallation
 | MultiSurface
 | 全てを対象とする。
-a| • 屋外付属物の外形（外側から見える形）を構成する面を取得する。 +
-• 面の各頂点に屋外付属物の高さを与える。
-| • 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
+a|
+* 屋外付属物の外形（外側から見える形）を構成する面を取得する。
+* 面の各頂点に屋外付属物の高さを与える。
+|
+* 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 
-| LOD4.0 | ● | HollowSpace | Solid | 全てを対象とする。 | • 天井面（CeilingSurface）、内壁面（InteriorWallSurface）、閉鎖面（ClosureSurface）及び床面（FloorSurface）を境界面とする立体を作成する。 |
-| LOD4.0 | ■ | CeilingSurface | MultiSurface | トンネル内部の側面が垂直の場合に、その垂直面の上方に存在する面 | • トンネル内部に存在する下向きの面の外周を取得する。 |
-| LOD4.0 | ● | InteriorWallSurface | MultiSurface | | • トンネル内部の壁面のうち、天井面（CeilingSurface）又は床面（FloorSuface）として取得する面を除いた面を取得する。 |
-| LOD4.0 | ■ | FloorSurface | MultiSurface | トンネル内部の側面が垂直の場合に、その垂直面の下方に存在する面 | • トンネル内部に存在する上向きの面の外周を取得する。 | 水路トンネルの場合は床面（FloorSurface）ではなく、内壁面（InteriorWallSurface）として取得する。
+| LOD4.0 | ● | HollowSpace | Solid | 全てを対象とする。
+|
+* 天井面（CeilingSurface）、内壁面（InteriorWallSurface）、閉鎖面（ClosureSurface）及び床面（FloorSurface）を境界面とする立体を作成する。
+|
+| LOD4.0 | ■ | CeilingSurface | MultiSurface | トンネル内部の側面が垂直の場合に、その垂直面の上方に存在する面
+|
+* トンネル内部に存在する下向きの面の外周を取得する。
+|
+| LOD4.0 | ● | InteriorWallSurface | MultiSurface |
+|
+* トンネル内部の壁面のうち、天井面（CeilingSurface）又は床面（FloorSuface）として取得する面を除いた面を取得する。
+|
+| LOD4.0 | ■ | FloorSurface | MultiSurface | トンネル内部の側面が垂直の場合に、その垂直面の下方に存在する面
+|
+* トンネル内部に存在する上向きの面の外周を取得する。
+| 水路トンネルの場合は床面（FloorSurface）ではなく、内壁面（InteriorWallSurface）として取得する。
 | LOD4.0 | | IntTunnelInstallation | | | |
 | LOD4.0 | | TunnelFurniture | | | |
 
 |===
 
-[none]
-**** ●：必須
-
-**** ■：条件付必須
-
-**** 〇：任意（ユースケースに応じて要否を決定してよい）
+[key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 ====== トンネルモデル（LOD4.1）の定義
 
@@ -484,14 +552,18 @@ a| • 屋外付属物の外形（外側から見える形）を構成する面�
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
-| LOD4.1 | ● | Tunnel | Solid又はMultiSurface | 全てを対象とする。 | • 屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）及び閉鎖面（ClosureSurface）の集まり、又は、これらを境界面とする立体を作成する。 | 測量により取得する場合は、Solidとする。BIMモデルからの変換により取得する場合はMultiSurfaceとする。
+| LOD4.1 | ● | Tunnel | Solid又はMultiSurface | 全てを対象とする。
+|
+* 屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）及び閉鎖面（ClosureSurface）の集まり、又は、これらを境界面とする立体を作成する。
+| 測量により取得する場合は、Solidとする。BIMモデルからの変換により取得する場合はMultiSurfaceとする。
 | LOD4.1
 | ■
 | RoofSurface
 | MultiSurface
 | トンネルの側面が垂直の場合に、その垂直面の上方に存在する面
-a| • トンネルの外形を取得し、上向きの面を屋根面（RoofSurface）とする。 +
-• 面を構成する各頂点に、屋根の高さを与える。
+a|
+* トンネルの外形を取得し、上向きの面を屋根面（RoofSurface）とする。
+* 面を構成する各頂点に、屋根の高さを与える。
 | トンネル上部が湾曲しており、トンネルの屋根と外壁との区分が難しい場合は、外壁面（WallSurface）として取得する。
 
 | LOD4.1
@@ -499,8 +571,9 @@ a| • トンネルの外形を取得し、上向きの面を屋根面（RoofSur
 | GroundSurface
 | MultiSurface
 | トンネルの側面が垂直の場合に、その垂直面の下方に存在する面
-a| • トンネルの外形を取得し、下向きの面を底面（GroundSurface）とする。 +
-• 面を構成する各頂点に、トンネル下面の高さを与える。
+a|
+* トンネルの外形を取得し、下向きの面を底面（GroundSurface）とする。
+* 面を構成する各頂点に、トンネル下面の高さを与える。
 | トンネル下部が湾曲しており、トンネルの底と外壁との区分が難しい場合は、外壁面（WallSurface）として取得する。
 
 | LOD4.1
@@ -508,49 +581,74 @@ a| • トンネルの外形を取得し、下向きの面を底面（GroundSurf
 | WallSurface
 | MultiSurface
 |
-a| • トンネルの外形を取得し、屋根面（RoofSurface）及び底面（GroundSurface）以外の面を外壁面（WallSurface）とする。 +
-• 面を構成する各頂点に、それぞれの高さを与える。
+a|
+* トンネルの外形を取得し、屋根面（RoofSurface）及び底面（GroundSurface）以外の面を外壁面（WallSurface）とする。
+* 面を構成する各頂点に、それぞれの高さを与える。
 |
 
-| LOD4.1 | ● | ClosureSurface | MultiSurface | 坑口の開口部 | • トンネルの坑口の開口部の外周に囲まれた範囲を面として取得する。 |
-| LOD4.1 | ■ | TunnelPart | Solid又はMultiSurface | 多連形のトンネルを一つのTunnelとして表現する場合 | • 屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）及び閉鎖面（ClosureSurface）を境界面とする立体を作成する。 |
+| LOD4.1 | ● | ClosureSurface | MultiSurface | 坑口の開口部
+|
+* トンネルの坑口の開口部の外周に囲まれた範囲を面として取得する。
+|
+| LOD4.1 | ■ | TunnelPart | Solid又はMultiSurface | 多連形のトンネルを一つのTunnelとして表現する場合
+|
+* 屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）及び閉鎖面（ClosureSurface）を境界面とする立体を作成する。
+|
 | LOD4.1 | | OuterFloorSurface | | | |
 | LOD4.1 | | OuterCeilingSurface | | | |
-| LOD4.1 | ● | Door | MultiSurface | 全てを対象とする。 | • 扉（Door）の外周を取得する。 |
-| LOD4.1 | ● | Window | MultiSurface | 全てを対象とする。 | • 窓（Window）の外周を取得する。 |
+| LOD4.1 | ● | Door | MultiSurface | 全てを対象とする。
+|
+* 扉（Door）の外周を取得する。
+|
+| LOD4.1 | ● | Window | MultiSurface | 全てを対象とする。
+|
+* 窓（Window）の外周を取得する。
+|
 | LOD4.1
 | ●
 | TunnelInstallation
 | MultiSurface
 | 全てを対象とする。
-a| • 屋外付属物の外形（外側から見える形）を構成する面を取得する。 +
-• 面の各頂点に屋外付属物の高さを与える。
+a|
+* 屋外付属物の外形（外側から見える形）を構成する面を取得する。
+* 面の各頂点に屋外付属物の高さを与える。
 | 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 
-| LOD4.1 | ● | HollowSpace | Solid | 全てを対象とする。 | • 天井面（CeilingSurface）、内壁面（InteriorWallSurface）、閉鎖面（ClosureSurface）及び床面（FloorSurface）を境界面とする立体を作成する。 |
-| LOD4.1 | ■ | CeilingSurface | MultiSurface | トンネル内部の側面が垂直の場合に、その垂直面の上方に存在する面 | • トンネル内部に存在する下向きの面の外周を取得する。 |
-| LOD4.1 | ● | InteriorWallSurface | MultiSurface | | • トンネル内部の壁面のうち、天井面（CeilingSurface）又は床面（FloorSuface）として取得する面を除いた面を取得する。 |
-| LOD4.1 | ■ | FloorSurface | MultiSurface | トンネル内部の側面が垂直の場合に、その垂直面の下方に存在する面 | • トンネル内部に存在する上向きの面の外周を取得する。 | 水路トンネルの場合は床面（FloorSurface）ではなく、内壁面（InteriorWallSurface）として取得する。
+| LOD4.1 | ● | HollowSpace | Solid | 全てを対象とする。
+|
+* 天井面（CeilingSurface）、内壁面（InteriorWallSurface）、閉鎖面（ClosureSurface）及び床面（FloorSurface）を境界面とする立体を作成する。
+|
+| LOD4.1 | ■ | CeilingSurface | MultiSurface | トンネル内部の側面が垂直の場合に、その垂直面の上方に存在する面
+|
+* トンネル内部に存在する下向きの面の外周を取得する。
+|
+| LOD4.1 | ● | InteriorWallSurface | MultiSurface |
+|
+* トンネル内部の壁面のうち、天井面（CeilingSurface）又は床面（FloorSuface）として取得する面を除いた面を取得する。
+|
+| LOD4.1 | ■ | FloorSurface | MultiSurface | トンネル内部の側面が垂直の場合に、その垂直面の下方に存在する面
+|
+* トンネル内部に存在する上向きの面の外周を取得する。
+| 水路トンネルの場合は床面（FloorSurface）ではなく、内壁面（InteriorWallSurface）として取得する。
 | LOD4.1
 | ●
 | IntTunnelInstallation
 | MultiSurface
 a| 短辺が実長3m以上又は +
 短辺が実長1m以上かつ横断又は縦断の面積が3m2以上
-a| • 屋内付属物の外形（外側から見える形）を構成する面を取得する。 +
-• 面の各頂点に屋内付属物の高さを与える。
+a|
+* 屋内付属物の外形（外側から見える形）を構成する面を取得する。
+* 面の各頂点に屋内付属物の高さを与える。
 | 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 
 | LOD4.1 | | TunnelFurniture | | | |
 
 |===
 
-[none]
-**** ●：必須
-
-**** ■：条件付必須
-
-**** 〇：任意（ユースケースに応じて要否を決定してよい）
+[key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 ====== トンネルモデル（LOD4.2）の定義
 
@@ -560,14 +658,18 @@ a| • 屋内付属物の外形（外側から見える形）を構成する面�
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
-| LOD4.2 | ● | Tunnel | Solid又はMultiSurface | 全てを対象とする。 | • 屋根面（RoofSurface）、壁面（WallSurface）、底面（GroundSurface）及び閉鎖面（ClosureSurface）の集まり、又は、これらを境界面とする立体を作成する。 | 測量により取得する場合は、Solidとする。BIMモデルからの変換により取得する場合はMultiSurfaceとする。
+| LOD4.2 | ● | Tunnel | Solid又はMultiSurface | 全てを対象とする。
+|
+* 屋根面（RoofSurface）、壁面（WallSurface）、底面（GroundSurface）及び閉鎖面（ClosureSurface）の集まり、又は、これらを境界面とする立体を作成する。
+| 測量により取得する場合は、Solidとする。BIMモデルからの変換により取得する場合はMultiSurfaceとする。
 | LOD4.2
 | ■
 | RoofSurface
 | MultiSurface
 | トンネルの側面が垂直の場合に、その垂直面の上方に存在する面
-a| • トンネルの外形を取得し、上向きの面を屋根面（RoofSurface）として取得する。 +
-• 面を構成する各頂点に、屋根の高さを与える。
+a|
+* トンネルの外形を取得し、上向きの面を屋根面（RoofSurface）として取得する。
+* 面を構成する各頂点に、屋根の高さを与える。
 | トンネル上部が湾曲しており、トンネルの屋根と外壁との区分が難しい場合は、外壁面（WallSurface）として取得する。
 
 | LOD4.2
@@ -575,8 +677,9 @@ a| • トンネルの外形を取得し、上向きの面を屋根面（RoofSur
 | GroundSurface
 | MultiSurface
 | トンネルの側面が垂直の場合に、その垂直面の下方に存在する面
-a| • トンネルの外形を取得し、下向きの面を底面（GroundSurface）として取得する。 +
-• 面を構成する各頂点に、トンネル下面の高さを与える。
+a|
+* トンネルの外形を取得し、下向きの面を底面（GroundSurface）として取得する。
+* 面を構成する各頂点に、トンネル下面の高さを与える。
 | トンネル下部が湾曲しており、トンネルの底と外壁との区分が難しい場合は、外壁面（WallSurface）として取得する。
 
 | LOD4.2
@@ -584,47 +687,77 @@ a| • トンネルの外形を取得し、下向きの面を底面（GroundSurf
 | WallSurface
 | MultiSurface
 |
-a| • トンネルの外形を取得し、屋根面（RoofSurface）及び底面（GroundSurface）以外の面を外壁面（WallSurface）として取得する。 +
-• 面を構成する各頂点に、それぞれの高さを与える。
+a|
+* トンネルの外形を取得し、屋根面（RoofSurface）及び底面（GroundSurface）以外の面を外壁面（WallSurface）として取得する。
+* 面を構成する各頂点に、それぞれの高さを与える。
 |
 
-| LOD4.2 | ● | ClosureSurface | MultiSurface | 坑口の開口部 | • トンネルの坑口の開口部の外周に囲まれた範囲を面として取得する。 |
-| LOD4.2 | ■ | TunnelPart | Solid又はMultiSurface | 多連形のトンネルを一つのTunnelとして表現する場合 | • 屋根面（RoofSurface）、壁面（WallSurface）、底面（GroundSurface）及び閉鎖面（ClosureSurface）を境界面とする立体を作成する。 |
+| LOD4.2 | ● | ClosureSurface | MultiSurface | 坑口の開口部
+|
+* トンネルの坑口の開口部の外周に囲まれた範囲を面として取得する。
+|
+| LOD4.2 | ■ | TunnelPart | Solid又はMultiSurface | 多連形のトンネルを一つのTunnelとして表現する場合
+|
+* 屋根面（RoofSurface）、壁面（WallSurface）、底面（GroundSurface）及び閉鎖面（ClosureSurface）を境界面とする立体を作成する。
+|
 | LOD4.2 | | OuterFloorSurface | | | |
 | LOD4.2 | | OuterCeilingSurface | | | |
-| LOD4.2 | ● | Door | MultiSurface | 全てを対象とする。 | • 扉（Door）の外周を取得する。 |
-| LOD4.2 | ● | Window | MultiSurface | 全てを対象とする。 | • 窓（Window）の外周を取得する。 |
-| LOD4.2 | ● | TunnelInstallation | MultiSurface | 全てを対象とする。 | • 外形を構成する面（上面、下面及び側面）を取得する。 |
-| LOD4.2 | ● | HollowSpace | Solid | 全てを対象とする。 | • 天井面（CeilingSurface）、内壁面（InteriorWallSurface）、閉鎖面（ClosureSurface）及び床面（FloorSurface）を境界面とする立体を作成する。 |
-| LOD4.2 | ■ | CeilingSurface | MultiSurface | トンネル内部の側面が垂直の場合に、その垂直面の上方に存在する面 | • トンネル内部に存在する下向きの面の外周を取得する。 |
-| LOD4.2 | ● | InteriorWallSurface | MultiSurface | | • トンネル内部の壁面のうち、天井面（CeilingSurface）又は床面（FloorSuface）として取得する面を除いた面を取得する。 |
-| LOD4.2 | ■ | FloorSurface | MultiSurface | トンネル内部の側面が垂直の場合に、その垂直面の下方に存在する面 | • トンネル内部に存在する上向きの面の外周を取得する。 | 水路トンネルの場合は床面（FloorSurface）ではなく、内壁面（InteriorWallSurface）として取得する。
+| LOD4.2 | ● | Door | MultiSurface | 全てを対象とする。
+|
+* 扉（Door）の外周を取得する。
+|
+| LOD4.2 | ● | Window | MultiSurface | 全てを対象とする。
+|
+* 窓（Window）の外周を取得する。
+|
+| LOD4.2 | ● | TunnelInstallation | MultiSurface | 全てを対象とする。
+|
+* 外形を構成する面（上面、下面及び側面）を取得する。
+|
+| LOD4.2 | ● | HollowSpace | Solid | 全てを対象とする。
+|
+* 天井面（CeilingSurface）、内壁面（InteriorWallSurface）、閉鎖面（ClosureSurface）及び床面（FloorSurface）を境界面とする立体を作成する。
+|
+| LOD4.2 | ■ | CeilingSurface | MultiSurface | トンネル内部の側面が垂直の場合に、その垂直面の上方に存在する面
+|
+* トンネル内部に存在する下向きの面の外周を取得する。
+|
+| LOD4.2 | ● | InteriorWallSurface | MultiSurface |
+|
+* トンネル内部の壁面のうち、天井面（CeilingSurface）又は床面（FloorSuface）として取得する面を除いた面を取得する。
+|
+| LOD4.2 | ■ | FloorSurface | MultiSurface | トンネル内部の側面が垂直の場合に、その垂直面の下方に存在する面
+|
+* トンネル内部に存在する上向きの面の外周を取得する。
+| 水路トンネルの場合は床面（FloorSurface）ではなく、内壁面（InteriorWallSurface）として取得する。
 | LOD4.2
 | ●
 | IntTunnelInstallation
 | MultiSurface
 | 全ての固定設備
-a| • 屋内付属物の外形（外側から見える形）を構成する面を取得する。 +
-• 面の各頂点に屋内付属物の高さを与える。
-| • 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
+a|
+* 屋内付属物の外形（外側から見える形）を構成する面を取得する。
+* 面の各頂点に屋内付属物の高さを与える。
+|
+* 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 
 | LOD4.2
 | 〇
 | TunnelFurniture
 | MultiSurface
 | 全ての可動設備
-a| • 可動設備の外形（外側から見える形）を構成する面を取得する。 +
-• 面の各頂点に可動設備の高さを与える。
-| • 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
+a|
+* 可動設備の外形（外側から見える形）を構成する面を取得する。
+* 面の各頂点に可動設備の高さを与える。
+|
+* 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 
 |===
 
-[none]
-**** ●：必須
-
-**** ■：条件付必須
-
-**** 〇：任意（ユースケースに応じて要否を決定してよい）
+[key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_12_01_06]]
 ===== 各LODにおいて使用可能な地物型と空間属性
@@ -642,7 +775,8 @@ a| • 可動設備の外形（外側から見える形）を構成する面を�
 | tun:lod3Solid | | | ^| ● | |
 | tun:lod4Solid | | | | ^| ■ |
 | | tun:lod4MultiSurface | | | | ^| ■ | Solidを原則とする。CADから作成する場合はMultiSurfaceとする。
-.5+| tun:TunnelPart | | ^| 〇 ^| 〇 ^| 〇 ^| 〇 | • LOD1において、より実際の形状に近い表現を行う場合に必須とする。 • LOD2以上において、多連形のトンネルを一つのTunnelとして表現する場合に必須とする。 • LOD2以上において、一つのトンネルを、属性の異なる複数の部分に分ける場合に必須とする。
+.5+| tun:TunnelPart | | ^| 〇 ^| 〇 ^| 〇 ^| 〇 |
+* LOD1において、より実際の形状に近い表現を行う場合に必須とする。 • LOD2以上において、多連形のトンネルを一つのTunnelとして表現する場合に必須とする。 • LOD2以上において、一つのトンネルを、属性の異なる複数の部分に分ける場合に必須とする。
 | tun:lod1Solid | ^| ■ | | | |
 | tun:lod2Solid | | ^| ■ | | .3+| tun:TunnelPartを使用する場合は必須とする。
 | tun:lod3Solid | | | ^| ■ |
@@ -696,12 +830,10 @@ a| • 可動設備の外形（外側から見える形）を構成する面を�
 
 |===
 
-[none]
-**** ●：必須
-
-**** ■：条件付必須
-
-**** 〇：任意（ユースケースに応じて要否を決定してよい）
+[key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_12_02]]
 ==== トンネルモデルの応用スキーマクラス図
@@ -962,8 +1094,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | gml:Solid [0..1]
 a| 区画の主要構造の外形を示す立体。 +
 gml:Solidを構成する境界面のgml:Polygonは、以下のいずれかの地物のLOD4幾何オブジェクトに含まれなければならない。 +
-• tun:boundedByによりこのtun:HollowSpaceが参照する境界面（tun:_BoundarySurface）及びその開口部（tun:_Opening） +
-• tun:hollowSpaceInstallationによりこのtun:HollowSpaceが参照する内部付属物（tun:IntTunnelInstallation）の境界面及びその開口部
+* tun:boundedByによりこのtun:HollowSpaceが参照する境界面（tun:_BoundarySurface）及びその開口部（tun:_Opening）
+* tun:hollowSpaceInstallationによりこのtun:HollowSpaceが参照する内部付属物（tun:IntTunnelInstallation）の境界面及びその開口部
 
 h| (tun:lod4MultiSurface) | gml:MultiSurface [0..1] | 区画の主要構造の外形を示す面の集まり。
 | tun:boundedBy
@@ -1893,7 +2025,7 @@ h| コード h| 説明
 |===
 | ファイル名 | TunnelStructureAttribute_tunnelSubType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/TunnelStructureAttribute_tunnelSubType.xml[https://www.geospatial.jp/iur/codelists/3.1/ TunnelStructureAttribute_tunnelSubType.xml]
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/TunnelStructureAttribute_tunnelSubType.xml
 h| コード h| 説明
 | 01 | ボックスカルバート
 | 02 | 門型カルバート

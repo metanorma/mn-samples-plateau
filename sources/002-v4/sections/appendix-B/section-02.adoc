@@ -19,9 +19,13 @@
 
 データ集合に記述する空間参照系は、これの定義を取得可能なURIにより指定する。
 
-[none]
-*** URIの例：http://www.opengis.net/def/crs/EPSG/0/6697
+[example]
+====
+URIの例：http://www.opengis.net/def/crs/EPSG/0/6697
+====
 
+[example]
+====
 記述例：
 
 [source,xml]
@@ -33,6 +37,6 @@
 　</gml:Envelope>
 </gml:boundedBy>
 ----
+====
 
 gml:Envelopeの属性srsNameに空間参照系のURIを記述する。属性srsDimensionには次元数を入れる。gml:lowerCornerには、緯度、経度及び標高の最小値を記載し、gml:upperCornerには最大値を記載する。
-

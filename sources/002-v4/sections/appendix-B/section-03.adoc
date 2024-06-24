@@ -14,23 +14,28 @@ gml:posは直接座標、gml:posListは直接座標のリストの記述に用�
 
 　「日本測地系2011 における経緯度座標系と東京湾平均海面を基準とする標高の複合座標参照系」は、水平方向の「日本測地系2011 における経緯度座標系」と高さ方向の「東京湾平均海面を基準とする標高」との複合座標参照系である。このとき、水平方向である「日本測地系2011 における経緯度座標系」（EPSGコード：6668）では、その軸が、緯度、経度の順序で定義されている（参照： https://epsg.org/crs_6668/JGD2011.html?sessionkey=avd2dpqnm9[]）。そのため、座標値が緯度、経度、標高の順列となる。
 
+====
 記述例：
 
 [source,xml]
 ----
 <gml:pos> 35.6778 139.71689 4.2 </gml:pos>
 ----
+====
 
+====
 [source,xml]
 ----
 <gml:posList> 33.80 130.54 10.4 33.81 130.53 10.6 </gml:posList>
 ----
+====
 
 [[tocB_03_02]]
 ==== gml:Point
 
 gml:Pointは、点を記述するための幾何オブジェクトである。gml:posによりその位置を示す座標値を記述する。gml:Pointは識別子をもち、これを構成要素とする曲線（gml:_Curve）が参照できる。
 
+====
 記述例：
 
 [source,xml]
@@ -39,24 +44,27 @@ gml:Pointは、点を記述するための幾何オブジェクトである。gm
 	<gml:pos>33.80 130.54 0</gml:pos>
 </gml:Point>
 ----
+====
 
 [[tocB_03_03]]
 ==== gml:MultiPoint
 
 gml:MultiPointは、点（gml:Point）の集まりを記述するための幾何オブジェクトである。gml:pointMemberにより構成する点を記述又は参照する。gml:MultiPointには、一つ以上の点が含まれていなくてはならない。
 
+====
 記述例：
 
 [source,xml]
 ----
 <gml:MultiPoint>
 	<gml:pointMember>
-			<gml:Point>
-				<gml:pos>36.34163 138.375027 586.52</gml:pos>
-			</gml:Point>
-		</gml:pointMember>
+    <gml:Point>
+      <gml:pos>36.34163 138.375027 586.52</gml:pos>
+    </gml:Point>
+  </gml:pointMember>
 </gml:MultiPoint>
 ----
+====
 
 [[tocB_03_04]]
 ==== gml:_Curve, gml:LineString
@@ -75,7 +83,9 @@ GMLには、gml:_Curveを継承する下位型として、様々な曲線を記�
 
 gml:LineStringは、2点以上の点から構成され、それらの点の順序は始点から終点までの順列になっていなければならない。始点と終点以外の点の座標が、他の点の座標と一致していてはならず、また、一つの折れ線に自己交差や重なりがあってはならない。
 
-image::images/117.webp.png[title="エラーとなるgml:LineStringの例"]
+
+.エラーとなるgml:LineStringの例
+image::images/117.webp.png[]
 
 [[tocB_03_05]]
 ==== gml:LinearRing
@@ -88,7 +98,9 @@ gml:LinearRingは、輪を記述するための幾何オブジェクトである
 
 gml:LinearRingは、平面を示すgml:Polygonの外周や内周として使用する。gml:LinearRingは、閉じた輪でなければならず、自己交差や始終点以外の一致を許さない。gml:LinearRingを構成する全ての点が同一平面上にある場合、そのgml:LinearRingは平面となる。
 
-image::images/118.webp.png[title="エラーとなるgml:LinearRingの例"]
+
+.エラーとなるgml:LinearRingの例
+image::images/118.webp.png[]
 
 [[tocB_03_06]]
 ==== gml:_Surface, gml:Polygon
@@ -111,13 +123,17 @@ gml:Polygonは、一個の外周をもち、また、0個以上の内周をも�
 要件gm-9.　外周の頂点の順列がgml:Polygonの向き（法線）を決める。頂点の順列が左回りのgml:Polygonは正の向きとなる。
 ****
 
-image::images/119.webp.png[title="gml:Polygonの向き"]
+
+.gml:Polygonの向き
+image::images/119.webp.png[]
 
 ****
 要件gm-10.　妥当なgml:Polygonは、以下を満たさなければならない。 1) 内周が、外周に完全に含まれている。 2) 内周が他の内周と重なっておらず、他の内周に包含されてもいない。 3) 内周が外周に接していてもよいが、gml:Polygonの内部を分断しない。 4) 内周と外周が線分で重ならない。 5) 外周及び内周に自己交差がなく、始終点以外の点で一致する点がない。
 ****
 
-image::images/120.webp.png[title="gml:Polygonの例"]
+
+.gml:Polygonの例
+image::images/120.webp.png[]
 
 [[tocB_03_07]]
 ==== gml:OrientableSurface
@@ -128,7 +144,9 @@ orientationの値が“+”となる場合は、元の曲面と同じ向きで�
 
 gml:OrientableSurfaceは、接する複数の立体（gml:Solid）の境界を記述する場合に使用する。
 
-image::images/121.webp.png[title="gml:OrientableSurfaceの例"]
+
+.gml:OrientableSurfaceの例
+image::images/121.webp.png[]
 
 例えば、図 B-5に示すような立体Solid1とSolid2があったとする。これら二つの立体は、曲面Poly1を境界として接している。ここで、立体の境界となる曲面の向きは、常に、立体の内部から離れる向き（外側）を向いていなければならない。このとき、Poly1の向きがSolid1に対して外側に向いているとすると、Solid2にとっては内側を向いていることになる。そのため、Solid2の境界となる曲面として、Poly1と同じ位置に、反対の向き（Solid2とって外側の向き）となる曲面が必要となる。gml:OrientableSurfaceはこのような場合に使用する。Solid2を構成する外側境界である有向曲面OrientableSurface2は、gml:baseSurfaceによりPoly1を参照し、向きが反対（orientation= “-”）となる。
 
@@ -146,7 +164,9 @@ gml:CompositeSurfaceは、合成曲面を記述するための幾何オブジェ
 要件gm-11.　妥当なgml:CompositeSurfaceは、以下を満たさなければならない。 1) 構成要素となる曲面が連続しており、全体として一個の曲面を構成する。
 ****
 
-image::images/122.webp.png[title="gml:CompositeSurfaceの例"]
+
+.gml:CompositeSurfaceの例
+image::images/122.webp.png[]
 
 gml:CompositeSurfaceの構成要素は、gml:_Surface を継承する幾何オブジェクトのみであり、gml:MultiSurfaceはその構成要素とはなりえないことに注意すること。これは、gml:MultiSurfaceがgml:_Surface を継承していないからである。
 
@@ -171,11 +191,15 @@ gml:Solidは、外側境界（殻）を必ずもたなければならない。�
 要件gm-14.　妥当なgml:Solidは、以下を満たさなければならない。 1) gml:Solidの境界を構成する曲面が、自己交差していない。 2) gml:Solidは閉じている（水密である）。 3) gml:Solidの内部が連続している。 4) gml:Solidの境界を構成する曲面が、適切な方向を向いている。 5) gml:Solidの境界を構成する曲面が、重なっていない。
 ****
 
-image::images/123.webp.png[title="妥当なgml:Solidの例"]
+
+.妥当なgml:Solidの例
+image::images/123.webp.png[]
 
 立体を構成する境界の記述には、合成曲面（gml:CompositeSurface）を使用する。合成曲面は連続していなければならず、重なったり、離れていたりしてはならない。また、立体の境界となる合成曲面は、閉じていなければならない。
 
-image::images/124.webp.png[title="エラーとなるgml:Solidの例"]
+
+.エラーとなるgml:Solidの例
+image::images/124.webp.png[]
 
 立体を構成する境界となる曲面の向きは、立体の内部から離れる方向を向いていなければならない。
 
@@ -197,7 +221,7 @@ gml:TriangulatedSurfaceは、複数の三角形だけから構成した合成曲
 要件gm-16.　gml:TrianglatedSurfaceは、gml:Triangleのみをその構成要素とする。
 ****
 
-gml:TriangulatedSufaceは、閉じておらず、境界をもつことができる。どのように三角形分割するかの制約はもたない。ここでの「閉じていない」とは、立体の境界のような「殻」にはなっていないという意味である。
+gml:TriangulatedSurfaceは、閉じておらず、境界をもつことができる。どのように三角形分割するかの制約はもたない。ここでの「閉じていない」とは、立体の境界のような「殻」にはなっていないという意味である。
 
 [[tocB_03_13]]
 ==== gml:Tin
@@ -210,7 +234,9 @@ gml:Tinは、ドローネアルゴリズム又はこれに抑止線、傾斜変�
 要件gm-17.　gml:Tinの制御点は、必ず三点以上を含まなければならない。また、制御点から構成される三角形の頂点を通過する円は、他の三角形の頂点を含んではならない。
 ****
 
-gml:Tinはアルゴリズムを使用し三角形が形成されるため、これを実装するアプリケーションソフトウェアによって異なる三角形が形成される可能性がある（図B- 9）。これは、gml:TriangulatedSufaceを使用し、明示的に三角形を保持することで回避できる。
+gml:Tinはアルゴリズムを使用し三角形が形成されるため、これを実装するアプリケーションソフトウェアによって異なる三角形が形成される可能性がある（図B- 9）。これは、gml:TriangulatedSurfaceを使用し、明示的に三角形を保持することで回避できる。
 
-image::images/125.webp.png[title="gml:Tinの例"]
+
+.gml:Tinの例
+image::images/125.webp.png[]
 
