@@ -171,7 +171,7 @@ LOD0は、数値地形図との互換性を考慮した区分である。LOD1は
 
 ==== 橋梁の空間属性
 
-　LOD0
+===== LOD0
 
 橋梁モデル(LOD0)では、橋梁の形状を線又は面により表現する。このとき、橋梁オブジェクトは、橋梁モデル（LOD0）の定義に従ったものでなければならない。
 
@@ -181,7 +181,7 @@ LOD0は、数値地形図との互換性を考慮した区分である。LOD1は
 
 橋梁モデル（LOD0）の取得方法は、「作業規程の準則　付録７　公共測量標準図式」（以下、「公共測量標準図式」という）に従う。
 
-　LOD1
+===== LOD1
 
 橋梁モデル（LOD1）では、橋梁の形状を立体により記述する。このとき、橋梁オブジェクトは、橋梁モデル（LOD1）の定義に従ったものでなければならない。
 
@@ -220,7 +220,7 @@ image::images/307.webp.png[]
 
 |===
 
-　LOD2
+===== LOD2
 
 橋梁モデル（LOD2）では、橋梁の形状を面又は立体により表現する。このとき、橋梁オブジェクトは、橋梁モデル（LOD2）の定義に従ったものでなければならない。橋梁モデル（LOD2）は、橋梁の形状を面で表現するか立体で表現するかによりLOD2.0及びLOD2.1に区分する。
 
@@ -265,7 +265,7 @@ a| 横断歩道橋等に本体と一体的な屋根があった場合は、境�
 
 |===
 
-　LOD3
+===== LOD3
 
 橋梁モデル（LOD3）では、橋梁の形状を、主要な部分の外形を構成する特徴点から構成する面の集まり又はこれらの面を境界面とする立体として表現する。
 
@@ -305,27 +305,27 @@ a| ケーブル橋の場合、パイロン、ケーブル及び吊材を構造�
 
 i-URにより拡張された属性には、大きく10種類の属性がある。橋梁の管理に関する基本的な情報（uro:bridBaseAttribute）、橋梁の構造に関する情報（uro:bridStructureAttribute）、橋梁の機能に関する情報（uro:bridFunctionalAttribute）、橋梁の損傷に関する情報（uro:bridRiskAssessmentAttribute）、橋梁の災害リスクに関する情報（uro:bridDisasterRiskAttribute）、作成した橋梁のデータ品質に関する情報（uro:DataQualityAttribute）、特定分野における施設の分類情報（uro:FacilityTypeAttribute）、その分野における施設の識別情報（uro:FacilityIdAttribute）、その分野における施設の詳細な属性（uro:FacilityAttribute）、公共測量標準図式による図形表現に必要な情報（uro:bridDmAttribute）である。
 
-　構造物管理属性（uro:bridBaseAttribute）
+===== 構造物管理属性（uro:bridBaseAttribute）
 
 橋梁の管理者や建設に関する諸元等、橋梁の管理に必要な基本的な情報。
 
-　構造物構造属性（uro:bridStructureAttribute）
+===== 構造物構造属性（uro:bridStructureAttribute）
 
 橋梁の延長や幅員など、橋梁の構造に関する情報。
 
-　構造物機能属性（uro:bridFunctionalAttribute）
+===== 構造物機能属性（uro:bridFunctionalAttribute）
 
 橋梁の利用者や進行方向。
 
-　構造物損傷属性（uro:bridRiskAssessmentAttribute）
+===== 構造物損傷属性（uro:bridRiskAssessmentAttribute）
 
 構造物の損傷及び対応状況に関する情報。
 
-　災害リスク属性（uro:bridDisasterRiskAttribute）
+===== 災害リスク属性（uro:bridDisasterRiskAttribute）
 
 浸水想定区域や土砂災害警戒区域等の災害リスクに関する情報。
 
-　施設管理のための属性
+===== 施設管理のための属性
 
 施設管理のための属性は、港湾施設及び漁港施設、河川管理施設や公園管理施設等の施設管理に必要な情報を定義した属性である。施設管理のための属性は以下のデータ型を用いて記述する。
 
@@ -347,11 +347,11 @@ uro:FacilityAttributeは、各分野において施設管理に必要となる�
 
 標準製品仕様書では、港湾施設、漁港施設及び公園施設について、細分した施設の区分ごとにデータ型を定義している。また、施設に関する工事や点検の状況や内容を記述するためのデータ型（uro:MaintenanceHistoryAttribute）を定義している。
 
-　数値地形図属性（uro:bridDmAttribute）
+===== 数値地形図属性（uro:bridDmAttribute）
 
 公共測量標準図式に従った形状表現に必要な情報を格納するための属性である。LOD0の幾何オブジェクトのほか、数値地形図との互換性を保つために必要な情報が、属性として定義されている。
 
-　品質属性（uro:DataQualityAttribute）
+===== 品質属性（uro:DataQualityAttribute）
 
 橋梁オブジェクトの作成に使用した原典資料の記録や、適用した詳細なLODの区分を示すための属性である。
 

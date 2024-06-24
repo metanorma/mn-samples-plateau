@@ -27,7 +27,7 @@ image::images/360.webp.png[]
 
 ==== 境界面の下位型
 
-　tun:RoofSurface
+===== tun:RoofSurface
 
 tun:RoofSurfaceは、屋根面を記述するために使用する地物型である。
 
@@ -36,19 +36,19 @@ tun:RoofSurfaceは、屋根面を記述するために使用する地物型で�
 
 ****
 
-　tun:WallSurface
+===== tun:WallSurface
 
 tun:WallSurfaceは、壁面を記述するために使用する地物型である。
 
-　tun:GroundSurface
+===== tun:GroundSurface
 
 tun:GroundSurfaceは、トンネルの底面を記述するために使用する地物型である。
 
-　tun:OuterFloorSurface
+===== tun:OuterFloorSurface
 
 tun:OuterFloorSurfaceはトンネルの外側を覆う部分であり、通行可能な床面としての機能を有する部分の記述に使用する地物型である。標準製品仕様書では使用しない。
 
-　tun:ClosureSurface
+===== tun:ClosureSurface
 
 tun:ClosureSurfaceは、トンネルの開口部を立体として閉じるために、境界面として設けられた仮想的な面である。トンネルの境界面に開口部が存在するが、開口部内の詳細なデータ作成が不要である場合に、開口部を閉じるために便宜上設けられている。内部空間で用途が異なる等により区分する場合は、tun:HollowSpaceを使用して空間を区分する。
 
@@ -56,11 +56,11 @@ tun:ClosureSurfaceは、トンネルの開口部を立体として閉じるた�
 .閉鎖面の例（出入り口の開口部を閉鎖）
 image::images/361.webp.png[]
 
-　tun:OuterCeilingSurface
+===== tun:OuterCeilingSurface
 
 tun:OuterCeilingSurfaceは、トンネルの外側を覆う部分であり、天井としての機能を有する面を記述するために使用する地物型である。標準製品仕様書では使用しない。
 
-　tun:CeilingSurface
+===== tun:CeilingSurface
 
 tun:CeilingSurfaceは、トンネルの内部の天井面を記述するために使用する地物型である。
 
@@ -69,11 +69,11 @@ tun:CeilingSurfaceは、トンネルの内部の天井面を記述するため�
 
 ****
 
-　tun:InteriorWallSurface
+===== tun:InteriorWallSurface
 
 tun:InteriorWallSurfaceは、トンネルの内部空間の区画を区切る壁や仕切りとしての機能を有する面を記述するために使用する地物型である。
 
-　tun:FloorSurface
+===== tun:FloorSurface
 
 tun:FloorSurfaceは、トンネルの内部空間の下面に位置する舗装等が存在する板状の構造物（床面）を記述するために使用する地物型である。
 

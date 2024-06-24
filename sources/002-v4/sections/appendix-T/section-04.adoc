@@ -20,7 +20,7 @@
 
 ※原典資料の一覧に示す平面図、断面図等は設計時や竣工時に作成された水中構造物の外形が取得できる図面を指す。また、図面は紙出力された資料及びＣＡＤデータを含む。
 
-　LOD0
+===== LOD0
 
 (1) 原典資料
 
@@ -46,7 +46,7 @@ h| LOD0 | 以下のいずれかのデータを一つ以上使用する。 ・河
 .湖沼、海岸線の作成イメージ
 image::images/509.webp.png[]
 
-　LOD1
+===== LOD1
 
 (1) 原典資料
 
@@ -92,7 +92,7 @@ image::images/511.webp.png[]
 .水部モデル（LOD1）の作成例
 image::images/512.webp.png[]
 
-　LOD2
+===== LOD2
 
 (1) 原典資料
 
@@ -134,7 +134,7 @@ image::images/514.webp.png[]
 .水部モデル（LOD2）における水底の作成例
 image::images/515.webp.png[]
 
-　LOD3
+===== LOD3
 
 (1) 原典資料
 
@@ -171,10 +171,9 @@ image::images/517.webp.png[]
 
 ==== 作業上の留意事項
 
-　水部を構成する境界面の作成単位
+===== 水部を構成する境界面の作成単位
 
-[none]
-** wtr:WaterBodyを構成するwtr:WaterSurface、wtr:WaterGroundSurface、wtr:WaterClosureSurfaceは同一種の境界面が連続する範囲は3次メッシュの単位で1つのBoundarySurfaceにする。
+* wtr:WaterBodyを構成するwtr:WaterSurface、wtr:WaterGroundSurface、wtr:WaterClosureSurfaceは同一種の境界面が連続する範囲は3次メッシュの単位で1つのBoundarySurfaceにする。
 
 
 .境界面の作成単位のイメージ
