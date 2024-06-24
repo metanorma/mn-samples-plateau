@@ -121,7 +121,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:longName | xs:string[0..1] | 階名称の補足的な情報。
 | uro:compositionType
 | uro:IfcElementCompositionEnum [0..1]
-a| 建物階の空間構成の区分。 +
+a| 建物階の空間構成の区分。
+
 * ELEMENT：通常の独立している建物階。 +
 * COMPLEX：複合建物階を表現する場合。 +
 * PARTIAL：部分的な空間で表現される建物階。

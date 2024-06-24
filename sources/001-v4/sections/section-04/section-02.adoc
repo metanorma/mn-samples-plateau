@@ -193,7 +193,9 @@ image::images/014.webp.png[]
 a|
 image::images/015.webp.png[]
 
-^h| 説明 | 屋根の主要な外形が再現される。LOD2.0では付属物は取得しないため、バルコニーも屋根として取得する。 なお、LOD2では屋根面は詳細化されるが外壁面は詳細化されないため、バルコニーの下部も建築物の一部として表現される。 | 小屋根のうち規模が大きいものが再現される。LOD2.0では切妻屋根として表現されたが、LOD2.1の条件を満たしたため、小屋根として表現された。 また、LOD2.1の条件を満たすバルコニーが、付属物として区分される。 | 小屋根のうち規模の小さいものが再現される。LOD2.1では無視された屋根窓の屋根がLOD2.2の条件を満たしたため、この屋根形状が表現された。 また、LOD2.2の条件を満たす屋根上の煙突が付属物として、さらに区分される。
+^h| 説明 | 屋根の主要な外形が再現される。LOD2.0では付属物は取得しないため、バルコニーも屋根として取得する。 なお、LOD2では屋根面は詳細化されるが外壁面は詳細化されないため、バルコニーの下部も建築物の一部として表現される。
+| 小屋根のうち規模が大きいものが再現される。LOD2.0では切妻屋根として表現されたが、LOD2.1の条件を満たしたため、小屋根として表現された。 また、LOD2.1の条件を満たすバルコニーが、付属物として区分される。
+| 小屋根のうち規模の小さいものが再現される。LOD2.1では無視された屋根窓の屋根がLOD2.2の条件を満たしたため、この屋根形状が表現された。 また、LOD2.2の条件を満たす屋根上の煙突が付属物として、さらに区分される。
 
 |===
 
@@ -230,7 +232,8 @@ image::images/017.webp.png[]
 | LOD2.0 | ● | GroundSurface | MultiSurface | 全て対象
 |
 * 建築物の上方からの正射影の外周を取得する。
-* 外周を構成する各頂点に、地表面の高さを与える。 | 地表面の高さは、建築物の上方からの正射影の外周に含まれる地
+* 外周を構成する各頂点に、地表面の高さを与える。
+| 地表面の高さは、建築物の上方からの正射影の外周に含まれる地
 面の高さのうち、最も低い高さとする。
 | LOD2.0
 | ●
@@ -286,17 +289,18 @@ Surface）を区切る線分となる。
 
 | LOD2.1 | ● | Building | Solid | 短辺の実長1m 以上
 |
-* 屋根面（RoofSurface）、外壁面（WallSurface）、屋外床面（OuterFloorSurface）及び底面（GroundSurf
-ce）を境界面とする立体を作成する。 | 屋外床面（OuterFloorSurface）を使用する場合は、これも境界面となる。
+* 屋根面（RoofSurface）、外壁面（WallSurface）、屋外床面（OuterFloorSurface）及び底面（GroundSurface）を境界面とする立体を作成する。
+| 屋外床面（OuterFloorSurface）を使用する場合は、これも境界面となる。
 | LOD2.1 | ● | RoofSurface | MultiSurface | 短辺の実長3m以上
 |
 * 屋根の上方からの正射影の外周を取得し、棟及び谷で区切る。
-* 区切った面の各頂点に屋根の高さを与える。 | 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差
+* 区切った面の各頂点に屋根の高さを与える。
+| 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差
 標準偏差に収まるよう平面に分割する。
 | LOD2.1 | ● | GroundSurface | MultiSurface | 全て対象
 |
-* 建築物の上方からの正射影の外周を取得し、外周を構成する各頂点に、地表面の高さを与える。 | 地表面の高さは、建築物の上方からの正射影の外周に含まれる地
-面の高さのうち、最も低い高さとする。
+* 建築物の上方からの正射影の外周を取得し、外周を構成する各頂点に、地表面の高さを与える。
+| 地表面の高さは、建築物の上方からの正射影の外周に含まれる地表面の高さのうち、最も低い高さとする。
 | LOD2.1
 | ●
 | WallSurface
@@ -319,14 +323,14 @@ ce）を境界面とする立体を作成する。 | 屋外床面（OuterFloorSu
 ace）を境界面とする立体を作成する。
 
 |
-* BuildingPartを使用する場合、一棟のBuildingには必ず2つ以上のBuildingPartが含まれていなければならず、そ
-らは互いに接していなければならない。
+* BuildingPartを使用する場合、一棟のBuildingには必ず2つ以上のBuildingPartが含まれていなければならず、それらは互いに接していなければならない。
 
 * Buildingの空間属性は空でなければならない。
 
 | LOD2.1 | ■ | ClosureSurface | MultiSurface | BuildingPartを作成する場合に必須とする。
 |
-* BuildingPartと連続する他のBuildingPartとの境界線により囲まれた面を取得する。 | ClosureSurfaceの境界線は、屋根面（RoofSurface）、外壁面（WallSurface）又は底面（Groun
+* BuildingPartと連続する他のBuildingPartとの境界線により囲まれた面を取得する。
+| ClosureSurfaceの境界線は、屋根面（RoofSurface）、外壁面（WallSurface）又は底面（Groun
 Surface）を区切る線分となる。
 | LOD2.1
 | 〇
@@ -353,8 +357,7 @@ a| 短辺の実長3m以上 +
 
 面の各頂点に屋外付属物の高さを与える。
 |
-* 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤
-の標準偏差に収まるよう平面に分割する。
+* 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 
 |===
 
@@ -373,8 +376,8 @@ a| 短辺の実長3m以上 +
 
 | LOD2.2 | ● | Building | Solid | 射影の短辺の実長1m以上
 |
-* 屋根面（RoofSurface）、外壁面（WallSurface）、屋外床面（OuterFloorSurface）及び底面（GroundSurf
-ce）を境界面とする立体を作成する。 | 屋外床面（OuterFloorSurface）を使用する場合は、これも境界面となる。
+* 屋根面（RoofSurface）、外壁面（WallSurface）、屋外床面（OuterFloorSurface）及び底面（GroundSurface）を境界面とする立体を作成する。
+| 屋外床面（OuterFloorSurface）を使用する場合は、これも境界面となる。
 | LOD2.2
 | ●
 | RoofSurface
@@ -389,7 +392,8 @@ a| 射影の短辺の実長1m以上 +
 
 | LOD2.2 | ● | GroundSurface | MultiSurface | 全て対象
 |
-* 建築物の上方からの正射影の外周を取得し、外周を構成する各頂点の水平座標に、地表面の高さを与える。 | 地表面の高さは、建築物の上方からの正射影の外周に含まれる地
+* 建築物の上方からの正射影の外周を取得し、外周を構成する各頂点の水平座標に、地表面の高さを与える。
+| 地表面の高さは、建築物の上方からの正射影の外周に含まれる地
 面の高さのうち、最も低い高さとする。
 | LOD2.2
 | ●
@@ -405,14 +409,17 @@ a| 射影の短辺の実長1m以上 +
 | LOD2.2 | ■ | BuildingPart | Solid | 一棟の建築物を、主題属性の異なる複数の部分に分ける場合に必須とする。
 |
 * 屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）及び閉鎖面（ClosureSurf
-ce）を境界面とする立体を作成する。 | BuildingPartを使用する場合、一棟のBuildingには必ず2つ以上のBuildingPartが含まれていなければならず、それらは互いに接していなければならない。また、Buildingの空間属性は空でなければならない。
+ce）を境界面とする立体を作成する。
+| BuildingPartを使用する場合、一棟のBuildingには必ず2つ以上のBuildingPartが含まれていなければならず、それらは互いに接していなければならない。また、Buildingの空間属性は空でなければならない。
 | LOD2.2 | ■ | ClosureSurface | MultiSurface | BuildingPartを作成する場合に必須とする。
 |
-* BuildingPartと連続する他のBuildingPartとの境界線により囲まれた面を取得する。 | ClosureSurfaceの境界線は、屋根面（RoofSurface）、外壁面（WallSurface）又は底面（Groun
+* BuildingPartと連続する他のBuildingPartとの境界線により囲まれた面を取得する。
+| ClosureSurfaceの境界線は、屋根面（RoofSurface）、外壁面（WallSurface）又は底面（Groun
 Surface）を区切る線分となる。
 | LOD2.2 | 〇 | OuterFloorSurface | MultiSurface | ユースケースで必要な場合
 |
-* 屋外床面（OuterFloorSurface）の外周を取得し、外周の各頂点にその位置の屋根の高さを与える。 | Roof
+* 屋外床面（OuterFloorSurface）の外周を取得し、外周の各頂点にその位置の屋根の高さを与える。
+| Roof
 urfaceの代替として使用できる。
 | LOD2.2 | | OuterCeilingSurface | MultiSurface | | | 対象外
 | LOD2.2
@@ -422,9 +429,8 @@ urfaceの代替として使用できる。
 | 短辺の実長1m以上
 
 |
-* 屋外付属物の外形（外側から見える形）を構成する面を取得する。 +
-
- 面の各頂点に屋外付属物の高さを与える。
+* 屋外付属物の外形（外側から見える形）を構成する面を取得する。
+* 面の各頂点に屋外付属物の高さを与える。
 | 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 
 |===
@@ -596,8 +602,7 @@ image::images/022.webp.png[]
 
 | LOD3.0 | ● | Building | Solid | 短辺の実長1m以上
 |
-* 屋根面（RoofSurface）、外壁面（WallSurface）、屋外床面（OuterFloorSurface）、屋外天井面（OuterCeilingSurface）、底面（GroundSurface）、閉鎖面（ClosureSurface）、扉（Door）及び窓（Win
-ow）を境界面とする立体を作成する。 |
+* 屋根面（RoofSurface）、外壁面（WallSurface）、屋外床面（OuterFloorSurface）、屋外天井面（OuterCeilingSurface）、底面（GroundSurface）、閉鎖面（ClosureSurface）、扉（Door）及び窓（Window）を境界面とする立体を作成する。 |
 | LOD3.0
 | ●
 | RoofSurface
@@ -773,7 +778,8 @@ a| 短辺3m以上 +
 
 【屋根の上方からの正射影の外周と、地表面と外壁面の交線の正射影との距離が1m以上】
 
-* 地表面と外壁面との交線を取得し、各頂点に地表面の高さを与える。 | 地表面の高さは、建築物の上方からの正射影の外周に含まれる地表面の頂点の標高のうち、最も低い標高とする。
+* 地表面と外壁面との交線を取得し、各頂点に地表面の高さを与える。
+| 地表面の高さは、建築物の上方からの正射影の外周に含まれる地表面の頂点の標高のうち、最も低い標高とする。
 .2+| LOD3.1
 .2+| ●
 .2+| WallSurface
@@ -1035,7 +1041,8 @@ LOD3.2では1m未満の軒裏を表現せず、外壁面を屋根面の外周か
 | LOD3.3 | ● | Building | Solid | 短辺が実長1m以上
 |
 * 屋根面（RoofSurface）、壁面（WallSurface）、屋外床面（OuterFloorSurface）、屋外天井面（OuterCeilingSurface）、底面（GroundSurface）、閉鎖面（ClosureSurface）、扉（Door）及び窓（Win
-ow）を境界面とする立体を作成する。 | 取得する建築物は、原則としてLOD0及びLOD1と同じである。
+ow）を境界面とする立体を作成する。
+| 取得する建築物は、原則としてLOD0及びLOD1と同じである。
 | LOD3.3
 | ●
 | RoofSurface
@@ -1052,7 +1059,8 @@ ow）を境界面とする立体を作成する。 | 取得する建築物は、
 
 | LOD3.3 | ● | GroundSurface | MultiSurface | 全てを対象とする。
 |
-* 地表面と外壁面との交線を取得し、各頂点に地表面の高さを与える。 | 地表面の高さは、上方からの正射影の外周に含まれる地表面の頂
+* 地表面と外壁面との交線を取得し、各頂点に地表面の高さを与える。
+| 地表面の高さは、上方からの正射影の外周に含まれる地表面の頂
 の標高のうち、最も低い標高とする。
 .2+| LOD3.3
 .2+| ●
@@ -1252,11 +1260,13 @@ LOD4.2ではLOD4.1に屋内の付属物（bldg:IntBuildingInstallation）とし�
 | LOD4.0 | ● | Building | Solid又はMultiSurface | 全てを対象とする。
 |
 * 屋根面（RoofSurface）、壁面（WallSurface）、屋外床面（OuterFloorSurface）、屋外天井面（OuterCeilingSurface）、底面（GroundSurface）、閉鎖面（ClosureSurface）、扉（Door）及び窓（Win
-ow）を境界面とする立体を作成する。 | 測量により取得する場合は、Solidとする。BIMモデルからの変換により取得する場合はMultiSurfaceとする。
+ow）を境界面とする立体を作成する。
+| 測量により取得する場合は、Solidとする。BIMモデルからの変換により取得する場合はMultiSurfaceとする。
 | LOD4.0 | ■ | BuildingPart | Solid | 一棟の建築物を、属性の異なる複数の部分に分ける場合に必須とする。
 |
 * 屋根面（RoofSurface）、外壁面（WallSurface）、屋外床面（OuterFloorSurface）、屋外天井面（OuterCeilingSurface）、底面（GroundSurface）、閉鎖面（ClosureSurface）、扉（Door）及び窓（Win
-ow）を境界面とする立体を作成する。 | BIMモデルからの変換により取得する場合は使用しない。
+ow）を境界面とする立体を作成する。
+| BIMモデルからの変換により取得する場合は使用しない。
 | LOD4.0
 | ●
 | RoofSurface
@@ -1342,7 +1352,8 @@ image::images/029.webp.png[]
 | LOD4.0 | ● | Room | Solid | 全てを対象とする。
 |
 * 天井面（CeilingSurface）、内壁面（InteriorWallSurface）、閉鎖面（ClosureSurface）及び床面（FloorSurf
-ce）を境界面とする立体を作成する。 | 建築確認申請書に部屋として記載されている区画を対象とする。
+ce）を境界面とする立体を作成する。
+| 建築確認申請書に部屋として記載されている区画を対象とする。
 | LOD4.0 | ● | CeilingSurface | MultiSurface | 全てを対象とする
 
 |
@@ -1407,11 +1418,13 @@ ce）を境界面とする立体を作成する。 | 建築確認申請書に部
 | LOD4.1 | ● | Building | Solid | 全てを対象とする。
 |
 * 屋根面（RoofSurface）、外壁面（WallSurface）、屋外床面（OuterFloorSurface）、屋外天井面（OuterCeilingSurface）、底面（GroundSurface）、閉鎖面（ClosureSurface）、扉（Door）及び窓（Win
-ow）を境界面とする立体を作成する。 | ユースケースに応じて、境界面の集まり（MultiSurface）又は立体（Solid）のいずれかを選択する。
+ow）を境界面とする立体を作成する。
+| ユースケースに応じて、境界面の集まり（MultiSurface）又は立体（Solid）のいずれかを選択する。
 | LOD4.1 | ■ | BuildingPart | Solid | 一棟の建築物を、属性の異なる複数の部分に分ける場合に必須とする。
 |
 * 屋根面（RoofSurface）、外壁面（WallSurface）、屋外床面（OuterFloorSurface）、屋外天井面（OuterCeilingSurface）、底面（GroundSurface）、閉鎖面（ClosureSurface）、扉（Door）及び窓（Win
-ow）を境界面とする立体を作成する。 | BIMからの変換により取得する場合は使用しない。
+ow）を境界面とする立体を作成する。
+| BIMからの変換により取得する場合は使用しない。
 | LOD4.1
 | ●
 | RoofSurface
@@ -1496,7 +1509,8 @@ ow）を境界面とする立体を作成する。 | BIMからの変換により
 | LOD4.1 | ● | Room | Solid | 全てを対象とする。
 |
 * 天井面（CeilingSurface）、内壁面（InteriorWallSurface）、閉鎖面（ClosureSurface）及び床面（FloorSurf
-ce）を境界面とする立体を作成する。 | 建築確認申請書に部屋として記載されている区画を対象とする。
+ce）を境界面とする立体を作成する。
+| 建築確認申請書に部屋として記載されている区画を対象とする。
 | LOD4.1 | ● | CeilingSurface | MultiSurface | 全てを対象とする
 
 |
@@ -1556,11 +1570,13 @@ ce）を境界面とする立体を作成する。 | 建築確認申請書に部
 | LOD4.2 | ● | Building | Solid | 全てを対象とする。
 |
 * 屋根面（RoofSurface）、外壁面（WallSurface）、屋外床面（OuterFloorSurface）、屋外天井面（OuterCeilingSurface）、底面（GroundSurface）、閉鎖面（ClosureSurface）、扉（Door）及び窓（Win
-ow）を境界面とする立体を作成する。 | 測量により取得する場合は立体（Solid）、BIMモデルからの変換により取得する場合は面の集まり（MultiSurface）とする。
+ow）を境界面とする立体を作成する。
+| 測量により取得する場合は立体（Solid）、BIMモデルからの変換により取得する場合は面の集まり（MultiSurface）とする。
 | LOD4.2 | ■ | BuildingPart | Solid | 一棟の建築物を、属性の異なる複数の部分に分ける場合に必須とする。
 |
 * 屋根面（RoofSurface）、外壁面（WallSurface）、屋外床面（OuterFloorSurface）、屋外天井面（OuterCeilingSurface）、底面（GroundSurface）、閉鎖面（ClosureSurface）、扉（Door）及び窓（Win
-ow）を境界面とする立体を作成する。 | BIMからの変換により取得する場合は使用しない。
+ow）を境界面とする立体を作成する。
+| BIMからの変換により取得する場合は使用しない。
 | LOD4.2
 | ●
 | RoofSurface
@@ -1641,7 +1657,8 @@ ow）を境界面とする立体を作成する。 | BIMからの変換により
 | LOD4.2 | ● | Room | Solid | 全てを対象とする。
 |
 * 天井面（CeilingSurface）、内壁面（InteriorWallSurface）、閉鎖面（ClosureSurface）及び床面（FloorSurf
-ce）を境界面とする立体を作成する。 | 建築確認申請書に部屋として記載されている区画を対象とする。
+ce）を境界面とする立体を作成する。
+| 建築確認申請書に部屋として記載されている区画を対象とする。
 | LOD4.2 | ● | CeilingSurface | MultiSurface | 全てを対象とする
 
 |

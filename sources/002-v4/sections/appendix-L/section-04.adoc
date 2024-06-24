@@ -9,7 +9,8 @@ brid:BridgeRoomは、橋梁の内部空間の記述に使用する地物型で�
 橋梁モデル（LOD4）において、橋梁の内部空間の形状は、立体により表現する。立体は境界面に区分し、それぞれの境界面は、brid:CeilingSurface、brid:FloorSurface、brid:InteriorWallSurface又はbrid:ClosureSurfaceのいずれかにならなければならない。
 
 ****
-要件brid-7.　brid:BridgeRoomのgml:Solidを構成する境界面のgml:Polygonは、以下のいずれかの地物型のLOD4幾何オブジェクトに含まれなければならない。 +
-・brid:boundedByによりこのbrid:BridgeRoomが参照する境界面（brid:_BoundarySurface）の下位型 ・境界面に含まれる開口部（brid:_Opening）
+要件brid-7.　brid:BridgeRoomのgml:Solidを構成する境界面のgml:Polygonは、以下のいずれかの地物型のLOD4幾何オブジェクトに含まれなければならない。
+
+* brid:boundedByによりこのbrid:BridgeRoomが参照する境界面（brid:_BoundarySurface）の下位型 ・境界面に含まれる開口部（brid:_Opening）
 ****
 
