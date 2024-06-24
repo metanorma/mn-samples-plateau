@@ -170,12 +170,12 @@ h| 取得例
 ^a|
 
 .トンネル
-image::images/350.webp.png["",400]
+image::images/350.webp.png[]
 
 ^a|
 
 .地下横断歩道
-image::images/351.webp.png["",400]
+image::images/351.webp.png[]
 
 h| 説明
 a| トンネルの場合は、トンネルの坑口を含めた外周に一律の高さで上向きに押し出した立体として表現する。 +
@@ -259,9 +259,9 @@ image::images/353.webp.png[]
 ^h| 2+^h| LOD3
 ^h| 取得例
 a|
-image::images/354.webp.png["",400]
+image::images/354.webp.png[]
 a|
-image::images/355.webp.png["",400]
+image::images/355.webp.png[]
 
 ^h| 説明
 a| トンネルの外形を立体として表現し、立体の各境界面を、屋根、外壁及び開口部に区分する。 +
@@ -287,20 +287,20 @@ a| 地下横断歩道の外形を立体として取得し、立体の各境界�
 ^h| ^h| 取得例 ^h| 説明
 ^h| LOD4.0
 a|
-image::images/356.webp.png["",400]
+image::images/356.webp.png[]
 a| LOD3.0の外形に加え、トンネル内部（内空）を再現する。 +
 内空の境界面を床（FloorSurface）、内壁面（InteriorWallSurface）又は天井面（CeilingSurface）に区分する。また、内壁等に扉や窓がある場合に区分する。 +
 トンネル内部の付属物は取得しない。
 
 ^h| LOD4.1
 a|
-image::images/357.webp.png["",400]
+image::images/357.webp.png[]
 a| LOD4.0に加え、「短辺の実長が3ｍ以上」又は「横断又は縦断面積が3m2以上かつ短辺の実長が1m以上」の固定された設備を取得する。 +
 左図の例の場合は、換気用のジェットファンが短辺の実長が3m以上に該当し、また、手すりが縦断面積が3m2以上かつ短辺の実長が1m以上に該当したため、取得された。
 
 ^h| LOD4.2
 a|
-image::images/358.webp.png["",400]
+image::images/358.webp.png[]
 a| LOD4.1に加え、全ての固定された設備及び固定されていない設備を取得する。 +
 +
 左図の例の場合は、消火栓、警報標示板、トンネル照明及び非常口表示灯が固定された設備に該当し、また、看板が固定されていない設備に該当したため取得された。
