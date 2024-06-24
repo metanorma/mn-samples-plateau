@@ -25,9 +25,9 @@
 h| 2+^h| LOD0
 h| 取得例
 a|
-image::images/138.webp.png["",300]
+image::images/138.webp.png[]
 a|
-image::images/139.webp.png["",300]
+image::images/139.webp.png[]
 
 h| 説明 | 左右両側の徒歩道縁から等距離となる点をつないだ線分を取得する。 | 徒歩道縁線を取得する。
 
@@ -84,7 +84,7 @@ a| • 徒歩道縁を取得する。 +
 h| ^h| LOD1
 h| 取得例
 ^a|
-image::images/140.webp.png["",750]
+image::images/140.webp.png[]
 
 h| 説明
 a| 徒歩道縁により囲まれた範囲を面として取得し、以下の場所で区切る。 +
@@ -141,7 +141,7 @@ a| • 徒歩道縁をつないだ面を作成する。 +
 h| ^h| LOD2
 h| 取得例
 a|
-image::images/141.webp.png["",600]
+image::images/141.webp.png[]
 
 h| 説明
 a| 徒歩道縁により囲まれた範囲を面として取得し、面を以下に区分する。 +
@@ -194,13 +194,13 @@ a| • 隅切りに囲まれた車道部を取得する。 +
 a|
 隅切りとは、道路構造令第27条第2項に示された、道路が同一平面で交差又は接続する場合に隅角部を切り取り、適当な見とおしができる構造としたものをいう。また、建築基準法施行規則第144条の4第1項第2号に示される隅切りを含む。
 
-image::images/142.webp.png["",200]
+image::images/142.webp.png[]
 
 | • 車道交差部（隅切りが無い場合）
 a| • 交差する道路の道路縁が接する点を結ぶ線に囲まれた車道部を取得する。 +
 • 高さは0とする。
 a|
-image::images/143.webp.png["",200]
+image::images/143.webp.png[]
 
 | • 歩道部
 a| • 歩道部の境界をつないだ面を取得する。 +
@@ -282,13 +282,13 @@ a| LOD3.1の区分を細分する。 +
 | LOD3.2の区分を細分する。細分はユースケースに応じて決定する。
 
 ^a|
-image::images/144.webp.png["",150]
+image::images/144.webp.png[]
 ^a|
-image::images/145.webp.png["",210]
+image::images/145.webp.png[]
 ^a|
-image::images/146.webp.png["",220]
+image::images/146.webp.png[]
 ^a|
-image::images/147.webp.png["",240]
+image::images/147.webp.png[]
 
 |===
 
@@ -304,48 +304,48 @@ image::images/147.webp.png["",240]
 +
 立体交差が表現できる。
 
-image::images/148.webp.png["",200]
+image::images/148.webp.png[]
 
 a|
 徒歩道の横断方向に存在する15㎝以上の高さの差を取得する。 +
 +
 ①15㎝以上の段は、段の形状を取得する。
 
-image::images/149.webp.png["",250]
+image::images/149.webp.png[]
 
 a|
 徒歩道の横断方向に存在する2㎝以上の高さの差を取得する。 +
 +
 ①2㎝以上の段は、段の形状を取得する。
 
-image::images/150.webp.png["",250]
+image::images/150.webp.png[]
 
 a|
 ②15㎝以上のスロープは、スロープの形状を取得する。
 
-image::images/151.webp.png["",250]
+image::images/151.webp.png[]
 
 a|
 ②2㎝以上のスロープは、スロープの形状を取得する。
 
-image::images/152.webp.png["",250]
+image::images/152.webp.png[]
 
 .2+a|
 ③高さの差が15㎝未満の段が複数あり、合計15㎝以上の高さの差がある場合は、スロープとして取得する。
 
-image::images/153.webp.png["",250]
+image::images/153.webp.png[]
 
 歩道と車道との間や車道と島との間に存在する縁石による段を表現できる。
 
 a|
 ③高さの差が2㎝未満の段が複数あり、合計2㎝以上の高さの差がある場合は、スロープとして取得する。
 
-image::images/154.webp.png["",250]
+image::images/154.webp.png[]
 
 a|
 歩道に設けられた切り下げ部に存在する段が表現できる。
 
-image::images/155.webp.png["",240]
+image::images/155.webp.png[]
 
 |===
 
@@ -525,7 +525,7 @@ a| • 15㎝以上の段の場合は、段の上端と下端を結ぶ面を作�
 a|
 高さの差を表現する面は、歩道部の一部として取得する。
 
-image::images/156.webp.png["",200]
+image::images/156.webp.png[]
 
 .2+| LOD3.2
 .2+| ●
@@ -604,7 +604,7 @@ a| • 2㎝以上の段の場合は、段の上端と下端を結ぶ面を作成
 a|
 高さの差を表現する面は、歩道部の一部として取得する。
 
-image::images/157.webp.png["",200]
+image::images/157.webp.png[]
 
 .2+| LOD3.3
 .2+| ●
@@ -684,7 +684,7 @@ a| • 2㎝以上の段の場合は、段の上端と下端を結ぶ面を作成
 a|
 高さの差を表現する面は、歩道部の一部として取得する。
 
-image::images/158.webp.png["",200]
+image::images/158.webp.png[]
 
 | LOD3.4
 | 〇
@@ -805,21 +805,21 @@ image::images/159.svg[]
 2+a|
 • LOD0における徒歩道の取得例
 
-image::images/160.webp.png["",180]
+image::images/160.webp.png[]
 
 ネットワークで取得する場合は、徒歩道の中心線とする。徒歩道が道路と接する場合、道路中心線まで伸ばす。
 
 2+a|
 • LOD1における徒歩道の取得例
 
-image::images/161.webp.png["",180]
+image::images/161.webp.png[]
 
 徒歩道のLOD1（面）は、徒歩道の境界に囲まれた範囲とする。徒歩道が道路と接する場合、その境界線は道路（tran:Road）の境界線と一致しなければならない。
 
 2+a|
 • LOD2における徒歩道の取得例
 
-image::images/162.webp.png["",250]
+image::images/162.webp.png[]
 
 徒歩道のLOD2は、LOD1（面）をtran:TrafficArea（車道、車道交差部、歩道）及びtran:AuxiliaryTrafficArea（島）に区分する。このとき、隣接するtran:TrafficArea及びtran:AuxiliaryTrafficAreaの面の境界線は座標が一致していなければならない。 +
 また、徒歩道が道路と接続する場合、接続する境界線は一致しなければならない。 +
@@ -830,13 +830,13 @@ image::images/162.webp.png["",250]
 徒歩道のLOD3は、LOD2と同様に徒歩道の面をtran:TrafficArea及びtran:AuxiliaryTrafficAreaに区分する。このとき、それぞれの面は高さをもつ。また、LOD2よりもさらに細かい種類にtran:TrafficArea及びtran:AuxiliaryTrafficAreaを分けることができる。「高さの表現」及び「広場内の表現」の組み合わせにより、LOD3.0、LOD3.1、LOD3.2、LOD3.3及び LOD3.4に分かれるが、標準製品仕様は、原則としてLOD3.0とする。 +
 LOD3.0では、徒歩道の横断方向に一律の高さ（車道の高さ）を付し、高さの差は表現しない。
 
-image::images/163.webp.png["",580]
+image::images/163.webp.png[]
 
 2+a|
 徒歩道に車道が無い場合は歩道の高さとする。 +
 段の表現を行わないため、徒歩道に階段が存在する場合、階段の段は表現されず、最下段と最上段を結ぶ一定の斜度をもった面として表現される。
 
-image::images/164.webp.png["",450]
+image::images/164.webp.png[]
 
 LOD2と同様、道路と接続する場合は、境界線が一致していなければならない。
 

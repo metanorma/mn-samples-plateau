@@ -25,7 +25,7 @@
 h| ^h| LOD0
 h| 取得例
 a|
-image::images/337.webp.png["",600]
+image::images/337.webp.png[]
 
 h| 説明
 a| 地下街の上方からの正射影の外周を取得する。 +
@@ -72,7 +72,7 @@ a|
 h| ^h| LOD1
 h| 取得例
 a|
-image::images/338.webp.png["",500]
+image::images/338.webp.png[]
 
 h| 説明 | 地下街の上からの正射影の外周を、地表面から地下街の下端まで下向きに押し出した立体として表現する。
 
@@ -116,7 +116,7 @@ a| 一律の高さは、地表から地下街の最下端までとする。 +
 h| ^h| LOD2
 h| 取得例
 a|
-image::images/339.webp.png["",650]
+image::images/339.webp.png[]
 
 h| 説明
 a| 地下街の外形を立体として表現し、立体を構成する境界面のそれぞれを、上向きの面は屋根面、下向きの面は底面、それ以外は外壁面として区分する。 +
@@ -212,7 +212,7 @@ a|
 h| ^h| LOD3
 h| 取得例
 a|
-image::images/340.webp.png["",500]
+image::images/340.webp.png[]
 
 h| 説明
 a| 地下街の外形を立体として表現し、立体を構成する境界面のそれぞれを、上向きの面は屋根面、下向きの面は底面、それ以外は外壁面として区分する。また、地下街への出入口を閉鎖面として取得する。 +
@@ -926,7 +926,7 @@ image::images/344.svg[]
 
 
 .図　uro:UndergroundBuildingの例
-image::images/345.webp.png["",600]
+image::images/345.webp.png[]
 
 2+a|
 建築物の地階は、建築物（bldg:Building）として表現する。 +
@@ -934,7 +934,7 @@ image::images/345.webp.png["",600]
 
 
 .図　地下街の出入り口に設けられた建屋
-image::images/346.webp.png["",500]
+image::images/346.webp.png[]
 
 h| 上位の型 2+| bldg:_AbstractBuilding
 h| ステレオタイプ 2+| << FeatureType >>

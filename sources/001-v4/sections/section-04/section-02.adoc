@@ -22,9 +22,9 @@
 |===
 2+^| LOD0
 a|
-image::images/009.webp.png["",300]
+image::images/009.webp.png[]
 a|
-image::images/010.webp.png["",300]
+image::images/010.webp.png[]
 
 ^| RoofEdge ^| FootPrint
 
@@ -63,7 +63,7 @@ image::images/010.webp.png["",300]
 |===
 ^h| LOD1
 a|
-image::images/011.webp.png["",300]
+image::images/011.webp.png[]
 
 |===
 
@@ -174,11 +174,11 @@ LOD2.0、LOD2.1及びLOD2.2それぞれの取得イメージを表 4-10に示す
 ^h| LOD ^h| LOD2.0 ^h| LOD2.1 ^h| LOD2.2
 ^h| 取得例
 ^a|
-image::images/013.webp.png["",200]
+image::images/013.webp.png[]
 a|
-image::images/014.webp.png["",220]
+image::images/014.webp.png[]
 a|
-image::images/015.webp.png["",220]
+image::images/015.webp.png[]
 
 ^h| 説明 | 屋根の主要な外形が再現される。LOD2.0では付属物は取得しないため、バルコニーも屋根として取得する。 なお、LOD2では屋根面は詳細化されるが外壁面は詳細化されないため、バルコニーの下部も建築物の一部として表現される。 | 小屋根のうち規模が大きいものが再現される。LOD2.0では切妻屋根として表現されたが、LOD2.1の条件を満たしたため、小屋根として表現された。 また、LOD2.1の条件を満たすバルコニーが、付属物として区分される。 | 小屋根のうち規模の小さいものが再現される。LOD2.1では無視された屋根窓の屋根がLOD2.2の条件を満たしたため、この屋根形状が表現された。 また、LOD2.2の条件を満たす屋根上の煙突が付属物として、さらに区分される。
 
@@ -208,7 +208,7 @@ a|
 屋根の棟及び谷で区切ることにより、屋根の傾斜や向きを再現する。 +
 屋根の棟及び谷は、以下を指す。
 
-image::images/017.webp.png["",150]
+image::images/017.webp.png[]
 
 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 
@@ -525,22 +525,22 @@ image::images/018.webp.png[]
 h| ^h| 取得イメージ ^h| 説明
 h| LOD3.0
 a|
-image::images/019.webp.png["",450]
+image::images/019.webp.png[]
 | 屋根のうち短辺3m以上の屋根面が表現される。 付属物のうち、短辺3m以上の規模の大きな付属物が再現される。 LOD3では外壁面が詳細化されるため、LOD2では表現されない付属物の下部の形状も表現される。 また、外壁面に設けられた短辺1m以上の開口部（窓、扉）が再現される。 なお、上図の場合、軒裏は3m以内であったため、表現されなかった。 下図に3m以上の軒を表現した例を示す。LOD3.0において軒を表現する建築物として、寺社や城といった特殊な建築物あるいは倉庫等の規模が大きな建築物が該当する。
 
 h| LOD3.1
 a|
-image::images/020.webp.png["",430]
+image::images/020.webp.png[]
 | 短辺の実長1m以上かつ上方からの正射影の面積3m2以上の屋根面が表現される。 この結果、左図の例では、LOD3.0では切妻屋根として表現されたが、LOD3.1の条件を満たしたため、入母屋屋根として表現された。 また、この例図では、軒裏の距離が1m以上あったため、表現された。 開口部及び屋外付属物の表現は、LOD3.0と同様の表現となる。
 
 h| LOD3.2
 a|
-image::images/021.webp.png["",400]
+image::images/021.webp.png[]
 | LOD3.2ではさらに詳細な表現が可能となり、短辺の実長1m 以上又は上方からの正射影の面積1m2 以上の屋根が再現される。 左図の例では、屋根に設けられた小屋根がこの条件に該当し、再現されている。 また、LOD3.2では、短辺が実長1m以上又は上方又は側方からの正射影の面積1m2以上の屋外付属物が表現される。 左図の例では、屋根上の煙突と外壁面に設けられた庇がこの条件を満たしたため屋外付属物として表現された。 LOD3.2では、面積1m2以上の窓や扉も表現されるため、この条件に該当する窓が追加された。
 
 h| LOD3.3
 a|
-image::images/022.webp.png["",400]
+image::images/022.webp.png[]
 | LOD3.3では、短辺の実長が1m未満の細かな屋根の形状が表現される。 左図の例では、LOD3.1及びLOD3.2では1枚の屋根面として表現されていたが、LOD3.3では傾斜の異なる2枚の屋根面として区分された。 また、軒裏のうち、屋根の外周との距離が1m未満の狭い軒裏も表現された。 さらに、LOD3.3の条件を満たす1m未満の小さな開口部や付属物が追加された。
 
 |===
@@ -566,7 +566,7 @@ ow）を境界面とする立体を作成する。 |
 a|
 • 屋根の棟及び谷で区切ることにより、屋根の傾斜や向きを再現する。屋根の棟及び谷は、以下を指す。
 
-image::images/023.webp.png["",150]
+image::images/023.webp.png[]
 
 • 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 
@@ -591,7 +591,7 @@ a| 【屋根の上方からの正射影の外周と、地表面と外壁面の�
 | •屋根の上方からの正射影の外周と、地表面と外壁面との交線により囲まれた面を取得
 る。 •高さは、各頂点の高さとする。
 a|
-image::images/024.webp.png["",150]
+image::images/024.webp.png[]
 
 | LOD3.0 | ■ | BuildingPart | Solid | 一棟の建築物を、属性の異なる複数の部分に分ける場合に必須とする。
 | • 屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）、閉鎖面（ClosureSurface）、扉（Door）及び窓（Win
@@ -1069,14 +1069,14 @@ h| LOD h| 取得イメージと説明
 | LOD4.0
 a|
 
-image::images/026.webp.png["",750]
+image::images/026.webp.png[]
 
 LOD4.0は建築物の外形（上図１）に加え、建築物の内部を表現する。このとき、建築物の内部を部屋（bldg:Room）に区切り、各部屋の形状を立体として表現する（上図２）。また、部屋の立体の境界面を、天井面（bldg:CeilingSurface）、内壁面（bldg:InteriorWallSurface）、床面（bldg:FloorSurface）又は閉鎖面（bldg:ClosureSurface）のいずれかに区分する（上図３）。さらに、各部屋の天井面、内壁面又は床面に存在する扉（bldg:Door）及び窓（bldg:Window）を区分する（上図４）。 閉鎖面は、内壁面や天井面、床面はないが、建築確認申請では部屋となっている空間を区切る場合に仮想的な境界面として使用する。 建築物の階を表現する場合は、CityObjectGroupを使用する。上図１のように、建築物が複数の階から構成される場合、上図４に示す同じ階の部屋を、CityObjectGroupを使用してグループ化する。このとき、CityObjectGroupの名称（gml:name）は階を識別する名称となる。 なお、CityGMLでは、壁面や天井面などは全て面として表現する。一方、現実世界の壁には厚みがある。1つの壁が建築物の外形を示す外壁と部屋の外形を示す内壁との機能を備えていた場合（上図5）、建築物の外形となる面（bldg:WallSurface）と部屋の外形となる面（bldg:InteriorWallSurface）の2枚の面として表現され、それらの面の間には隙間（壁の厚み）ができる（何もない）。 また、LOD4.0では建築物の内部に存在する付属物や家具を表現しない。
 
 | LOD4.1
 a|
 
-image::images/027.webp.png["",600]
+image::images/027.webp.png[]
 
 LOD4.1ではLOD4.0に、屋内の付属物（bldg:IntBuildingInstallation）として、階段、スロープ、輸送設備（エスカレータ、エレベータ及び動く歩道）、柱及びデッキ・ステージが追加される。 +
 上図の例では、LOD4.0に加えて、階段、踊り場、エレベータ、柱が付属物として追加された。
@@ -1084,7 +1084,7 @@ LOD4.1ではLOD4.0に、屋内の付属物（bldg:IntBuildingInstallation）と�
 | LOD4.2
 a|
 
-image::images/028.webp.png["",600]
+image::images/028.webp.png[]
 
 LOD4.2ではLOD4.1に屋内の付属物（bldg:IntBuildingInstallation）として、手すり、パネル及び梁が付属物として追加される。 +
 また、机やいすなどの移動可能な家具（bldg:BuildingFurniture）が追加される。 +
@@ -1117,7 +1117,7 @@ a|
 • 屋根の棟及び谷で区切ることにより、屋根の傾斜や向きを再現する。 +
 屋根の棟及び谷は、以下を指す。
 
-image::images/029.webp.png["",150]
+image::images/029.webp.png[]
 
 •曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 
@@ -1663,7 +1663,7 @@ image::images/040.svg[]
 
 
 .図　bldg:Buildingの例
-image::images/041.webp.png["",600]
+image::images/041.webp.png[]
 
 LOD0からLOD3 までは、建築物の屋外の形状を表現する。 +
 LOD4では、建築物の屋外の形状に加え、屋内の形状を表現する。
@@ -1718,7 +1718,7 @@ a|
 
 
 .図　LOD1立体イメージ
-image::images/042.webp.png["",200]
+image::images/042.webp.png[]
 
 一律の高さは中央値を原則とする。
 
@@ -1729,7 +1729,7 @@ a|
 
 
 .図　LOD2立体イメージ
-image::images/043.webp.png["",250]
+image::images/043.webp.png[]
 
 建築物をbldg:BuildingPartの集まりとして記述する場合、この空間属性は空となる。
 
@@ -1743,7 +1743,7 @@ a|
 
 
 .図　LOD3立体イメージ
-image::images/044.webp.png["",250]
+image::images/044.webp.png[]
 
 建築物をbldg:BuildingPartの集まりとして記述する場合、この空間属性は空となる。
 
@@ -1817,7 +1817,7 @@ uro:IndoorUserDefinedAttribute
 この地物型を使用する場合、一つの建築物には、複数の建築物部分が存在しなければならない。 +
 また、一棟の建築物を構成する建築物部分は同じ建築物を構成する他の建築物部分と接していなければならない。
 
-image::images/045.webp.png["",500]
+image::images/045.webp.png[]
 
 この地物型は、LOD2、LOD3及びLOD４の建築物を記述する際に使用可能であるが、ユースケースにより、建築物と建築物部分を区分する必要がない場合には、建築物部分として分けず、一体的な建築物としてよい。
 
@@ -1906,7 +1906,7 @@ h| (uro:bldgDmAttribute) | uro:DmAttribute [0..*] | 公共測量標準図式に�
 
 
 .図　bldg:Roomの例
-image::images/046.webp.png["",300]
+image::images/046.webp.png[]
 
 bldg:Roomは、bldg:Buildingに含まれる地物として記述する。 +
 このとき、bldg:Roomは、複数の地物の集まりとして表現する。bldg:Roomに含まれる地物とは、以下である。 +
@@ -1982,7 +1982,7 @@ uro:IndoorUserDefinedAttribute
 
 
 .図　bldg:RoofSurfaceの例
-image::images/047.webp.png["",300]
+image::images/047.webp.png[]
 
 h| 上位の型 2+| bldg:_BoundarySurface
 h| ステレオタイプ 2+| << FeatureType >>
@@ -2022,7 +2022,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 
 .図　bldg:WallSurfaceの例
-image::images/048.webp.png["",300]
+image::images/048.webp.png[]
 
 カーテンウォールはbldg:WallSurfaceにより表現する。カーテンウォールとは、建築物の外側に配置され、建築物を囲む非耐荷重の壁である。 +
 [参考 ISO 6707-1:2020 Buildings and civil engineering works — Vocabulary — Part 1: General terms]
@@ -2066,7 +2066,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 
 .図　bldg:GroundSurface
-image::images/049.webp.png["",450]
+image::images/049.webp.png[]
 
 h| 上位の型 2+| bldg:_BoundarySurface
 h| ステレオタイプ 2+| << FeatureType >>
@@ -2118,7 +2118,7 @@ uro:IfcBuildingElement このとき、uro:IfcBuildingElement の属性uro:elemen
 
 
 .図　bldg:OuterCeilingSurfaceの例
-image::images/050.webp.png["",400]
+image::images/050.webp.png[]
 
 ユースケースで屋外の天井と外壁面との区分が必要な場合に、bldg:OuterCeilingSurfaceを使用する。 +
 ユースケースで屋外の天井と外壁面との区分が不要な場合には、この型は使用せず、bldg:WallSurfaceを使用する。
@@ -2176,7 +2176,7 @@ BIMモデルからの変換により作成する場合は、bldg:OuterCeilingSur
 
 
 .図　OuterFloorSurfaceの例
-image::images/051.webp.png["",400]
+image::images/051.webp.png[]
 
 ユースケースで通行可能な床面と屋根面の区分が必要な場合に、bldg:OuterFloorSurfaceを使用する。 +
 ユースケースで通行可能な床面と屋根面との区分が不要な場合には、この型は使用せず、bldg:RoofSurfaceを使用する。
@@ -2237,19 +2237,19 @@ uro:IfcBuildingElement +
 
 
 .図　LOD2又はLOD3でのbldg:ClosureSurfaceの例
-image::images/052.webp.png["",450]
+image::images/052.webp.png[]
 
 2+a|
 屋内においては、境界面となる内壁面や天井面、床面はないが、建築確認申請では部屋となっている空間を区切る場合に、部屋の境界面として便宜上設けられた仮想的な面をさす。
 
 
 .図　LOD4でのbldg:ClosureSurfaceの例
-image::images/053.webp.png["",500]
+image::images/053.webp.png[]
 
 2+a|
 
 .図　LOD4でのbldg:ClosureSurfaceを非表示にした例
-image::images/054.webp.png["",500]
+image::images/054.webp.png[]
 
 h| 上位の型 2+| bldg:_BoundarySurface
 h| ステレオタイプ 2+| << FeatureType >>
@@ -2297,7 +2297,7 @@ h| (uro:ifcBoundarySurfaceAttribute) | uro:IfcAttribute [0..*] | IDM・MVDで定
 
 
 .図　bldg:InteriorWallSurfaceの例
-image::images/055.webp.png["",500]
+image::images/055.webp.png[]
 
 CityGMLでは、壁は面として表現し、1つの壁は、内側の面と外側の面の2つの面として表現する。 例えば、屋外と屋内を仕切る壁があった場合、屋外に面する壁の面は、bldg:WallSurace（外壁面）として表現し、屋内に面する壁の面は、bldg:InteriorWallSurface（内壁面）として表現する。このとき、bldg:WallSurfaceと、bldg:InteriorSurfaceとの間（壁の厚みに相当する空間）には何も存在しない。 bldg:InteriorWallSurfaceの法線ベクトルは、部屋の内側を向く。
 
@@ -2352,7 +2352,7 @@ uro:IndoorUserDefinedAttribute
 
 
 .図　bldg:CeilingSurfaceの例
-image::images/056.webp.png["",500]
+image::images/056.webp.png[]
 
 bldg:CeilingSurfaceの法線ベクトルは下向き（部屋の内側に向く方向が正）となる。
 
@@ -2406,7 +2406,7 @@ uro:IndoorUserDefinedAttribute
 
 
 .図　bldg:FloorSurfaceの例
-image::images/057.webp.png["",400]
+image::images/057.webp.png[]
 
 bldg:FloorSurfaceの法線ベクトルは上向き（部屋の内側に向く方向が正）となる。
 
@@ -2460,7 +2460,7 @@ uro:IndoorUserDefinedAttribute
 
 
 .図 bldg:Windowの例
-image::images/058.webp.png["",500]
+image::images/058.webp.png[]
 
 CityGMLでは、窓を面として表現し、一つの窓を外側と内側の二つのbldg:Windowのオブジェクトとして表現する。例えば、屋内と屋外をつなぐ窓があった場合、 外側となるbldg:Windowは、建築物の外壁面（bldg:WallSurface）等の境界面に含まれる。 内側となるbldg:Windowは、部屋の内壁面（bldg:InteriorWallSurface）等の境界面に含まれる。 このとき、屋外の境界面（bldg:WallSurface、bldg:GroundSurface、bldg:OuterFloorSurface、bldg:OuterCeilingSurface）に設けられた開口部は、常にその法線ベクトルが建築物の外側を向く。部屋の境界面（bldg:InteriorWallSurface、bldg:FloorSurface、bldg:CeilingSurface）に設けられた開口部は、常にその法線ベクトルが部屋の内側を向く。
 
@@ -2517,7 +2517,7 @@ uro:IndoorUserDefinedAttribute
 
 
 .図　bldg:Doorの例
-image::images/059.webp.png["",500]
+image::images/059.webp.png[]
 
 CityGMLでは、扉を面として表現し、一つの扉を外側と内側の二つのbldg:Doorのオブジェクトとして表現する。例えば、屋内と屋外をつなぐ窓があった場合、 外側となるbldg:Doorは、建築物の外壁面（bldg:WallSurface）等の境界面に含まれる。 内側となるbldg:Doorは、部屋の内壁面（bldg:InteriorWallSurface）等の境界面に含まれる。 このとき、屋外の境界面（bldg:WallSurface、bldg:GroundSurface、bldg:OuterFloorSurface、bldg:OuterCeilingSurface）に設けられた開口部は、常にその法線ベクトルが建築物の外側を向く。部屋の境界面（bldg:InteriorWallSurface、bldg:FloorSurface、bldg:CeilingSurface）に設けられた開口部は、常にその法線ベクトルが部屋の内側を向く。
 
@@ -2562,7 +2562,7 @@ uro:IndoorUserDefinedAttribute
 
 
 .図　bldg:BuildingInstallationの例
-image::images/060.webp.png["",500]
+image::images/060.webp.png[]
 
 （左：屋根面に設置された建築物の屋外付属物　右：外壁面に設置された建築物の屋外付属物） +
 ユースケースの要求に応じて、取得対象とする建築物の屋外付属物を限定してもよく、また、建築物の屋外付属物として取得せず建築物の一部として取得してもよい。
@@ -2600,7 +2600,7 @@ a|
 
 
 .図　bldg:BuildingInstallationの取得例（屋外階段）
-image::images/061.webp.png["",200]
+image::images/061.webp.png[]
 
 | bldg:lod3Geometry | gml:_Geometry [0..1] | 建築物の屋外付属物のLOD3の形状。 屋外付属物の外形（外側から見える形）を構成する面を取得し、面の各頂点に屋外付属物の高さを与える。各面は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう取得する。 gml:MultiSurfaceを使用することを基本とする。容積の算出等ユースケースで必要な場合は、gml:Solidを使用する。
 | bldg:lod4Geometry | gml:_Geometry [0..1] | 建築物の屋外付属物のLOD4の外形。 屋外付属物の外形（外側から見える形）を構成する面を取得し、面の各頂点に屋外付属物の高さを与える。各面は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう取得する。 gml:MultiSurfaceにより記述することを基本とする。容積の算出等ユースケースで必要な場合は、gml:Solidを使用する。
@@ -2610,7 +2610,7 @@ a|
 建築物の屋外付属物を構成する外壁、屋根等の境界面への参照。建築物の屋外付属物の境界面が建築物（bldg:Building）の境界面となる場合にのみ作成する。 +
 例えば、下図（平面図）のように建築物に建築物の屋外付属物があった場合、この建築物の屋外付属物を含む空間（gml:Solid）をBuildingとしたい場合は、建築物の屋外付属物の境界面を外壁面（bldg:WallSurface）とする。
 
-image::images/062.webp.png["",250]
+image::images/062.webp.png[]
 
 建築物の空間に建築物の屋外付属物を含まない場合は、建築物の屋外付属物を構成する面を、境界面（bldg:_BoundarySurface）に区別する必要はない。
 
@@ -2636,7 +2636,7 @@ uro:IfcBuildingElement +
 
 
 .図　bldg:IntBuildingInstallationの例（階段、手すり）
-image::images/063.webp.png["",500]
+image::images/063.webp.png[]
 
 LOD4では、この屋内付属物を含む建築物に適用されたLOD4の細分に従い、以下を取得する。 +
 LOD4.0：屋内付属物を取得しない（bldg:IntBuildingInstallationは取得しない）。 +
@@ -2683,7 +2683,7 @@ a|
 屋内付属物を構成する内壁、天井等の境界面への参照。屋内付属物の境界面が部屋（bldg:Room）の境界面となる場合にのみ作成する。 +
 例えば、下図（平面図）のように部屋内に屋内付属物があった場合、この屋内付属物を除く空間（gml:Solid）をRoomとしたい場合は、屋内付属物の境界面を内壁面（bldg:InteriorWallSurface）とする。
 
-image::images/064.webp.png["",250]
+image::images/064.webp.png[]
 
 ただし、部屋の空間から屋内付属物を除く必要が無い場合は、屋内付属物の形状を構成する面を、境界面（bldg:_BoundarySurface）にする必要はない。 +
 また、ユースケースによりエレベータの出入口を、エレベータの扉を使って表現する必要がある場合は、bldg:boundedBy関連役割により、エレベータの扉が存在する境界面を内壁面（bldg:InteriorWallSurface）として区分し、この内壁面に扉（bldg:Door）を作成することでエレベータの扉を表現可能となる。
@@ -2723,7 +2723,7 @@ bldg:IntBuildingInstallationが、建築物内部に設置された恒久的か�
 
 
 .図　bldg:BuildingFurnitureの例（机、椅子）
-image::images/065.webp.png["",400]
+image::images/065.webp.png[]
 
 LOD4.2の場合にのみ取得する。 +
 ただし、ユースケースの要求に応じて、取得対象とする家具を限定してよい。
@@ -2994,7 +2994,7 @@ a| 集客施設が立地する土地の土地利用区分。 +
 2+a|
 洪水浸水想定区域内に存在する建築物に、浸水想定区域がもつ属性を与えるための属性型。 同一の浸水想定区域図において、複数の区域に建築物が跨って存在する場合は、同一浸水ランクを持つ浸水ランクのメッシュを一つの区域とし、その区域と建築物が重なる面積が最も大きい浸水ランクの値を採用する。（面積が等しい場合は、浸水ランクがより危険な区域を採用する） 浸水深は採用した浸水ランクを持つ浸水深のメッシュのうち、建築物と重なる面積が最も大きいメッシュの浸水深を採用する。（同じ浸水深を持つメッシュは面積算出の際に合算する） 浸水継続時間は採用した浸水深のメッシュと重なる浸水継続時間のメッシュの浸水継続時間を採用する。複数の浸水継続時間のメッシュが重なる場合は最も大きい浸水継続時間の値を採用する。 浸水深の有効桁数は、「浸水想定区域図データ電子化ガイドライン（第4版）」に従い、浸水深の有効桁数は、小数点以下 3 桁まで登録可能とするが、小数点以下 2 桁でもよいとする。 面積の有効桁数は、小数点2桁（3桁目で四捨五入）とする。
 
-image::images/066.webp.png["",400]
+image::images/066.webp.png[]
 
 h| 上位の型 2+| uro:FloodingRiskAttribute
 h| ステレオタイプ 2+| << DataType >>
@@ -3758,7 +3758,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 a|
 北方角との差を2次元ベクトルで設定する。角度表現のラジアン又は度の設定は、MVD-IfcProject.UnitsInContext（短径設定情報）を参照。北が0時の方向であれば値は(0,1)。
 
-image::images/067.webp.png["",400]
+image::images/067.webp.png[]
 
 |===
 
