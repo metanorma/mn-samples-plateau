@@ -62,11 +62,11 @@ a| 応用スキーマごとに全数・自動検査を実施する。 +
 2．LOD又はLODの詳細な区分において、標準製品仕様書に示された使用可能な地物型を取得する。 +
 3．データ製品に、2．で取得した地物型以外のインスタンスが存在した場合に、エラーとしてその数を数える。 +
 +
-• 全体となる地物型とは、以下をいう。 +
+* 全体となる地物型とは、以下をいう。 +
 bldg:Building, brid:Bridge, frn:CityFurniture, luse:LandUse, tran:Road, tran:Railway, tran:Track, +
 tran:Square, tun:Tunnel, veg:SolitaryVegetationObject, veg:PlantCover, wtr:WaterBody, +
 dem:ReliefFeature, uro:OtherConstruction, uro:UndergroundBuilding, uro:UtilityNetworkElementを継承する都市オブジェクト, uro:Waterway, urf:Zone及びこれを継承する地物型 +
-• LOD又はLODの詳細な区分ごとに仕様可能な地物型は、標準製品仕様書の4.2～4.21に、応用スキーマごとに示す。
+* LOD又はLODの詳細な区分ごとに仕様可能な地物型は、標準製品仕様書の4.2～4.21に、応用スキーマごとに示す。
 
 |===
 
@@ -566,8 +566,8 @@ h| 適合品質水準 | エラー数が0なら合格、1以上なら不合格。
 h| 品質評価手法
 a| 全数検査を実施する。 +
 1．検査プログラムによって、bldg:lod4Solidにより記述される立体（gml:Solid）の境界面（gml:CompositeSurface）が参照する多角形（gml:Polygon）又はbldg:lod4MultiSurfaceにより記述される面の集まり（gml:MultiSurface）に含まれる多角形（gml:Polygon）のgml:idが、以下のいずれかに一致していない場合にエラーとする。 +
-• bldg:boundedByにより参照するbldg:RoofSurface, bldg:WallSurface, bldg:GroundSurface, bldg:OuterFloorSurface, bldg:OuterCeilingSurface, bldg:ClosureSurface及びこれらが参照する開口部（bldg:Door, bldg:Window）の面（gml:MultiSurface）の構成要素となる多角形（gml:Polygon）のgml:id +
-• bldg:outerBuildingInstallationにより参照するbldg:BuildingInstallationの境界面となるbldg:RoofSurface, bldg:WallSurface, bldg:GroundSurface, bldg:OuterFloorSurface, bldg:OuterCeilingSurface, bldg:ClosureSurface及びこれらが参照する開口部（bldg:Door, bldg:Window）の面（gml:MultiSurface）の構成要素となる多角形（gml:Polygon）のgml:id
+* bldg:boundedByにより参照するbldg:RoofSurface, bldg:WallSurface, bldg:GroundSurface, bldg:OuterFloorSurface, bldg:OuterCeilingSurface, bldg:ClosureSurface及びこれらが参照する開口部（bldg:Door, bldg:Window）の面（gml:MultiSurface）の構成要素となる多角形（gml:Polygon）のgml:id +
+* bldg:outerBuildingInstallationにより参照するbldg:BuildingInstallationの境界面となるbldg:RoofSurface, bldg:WallSurface, bldg:GroundSurface, bldg:OuterFloorSurface, bldg:OuterCeilingSurface, bldg:ClosureSurface及びこれらが参照する開口部（bldg:Door, bldg:Window）の面（gml:MultiSurface）の構成要素となる多角形（gml:Polygon）のgml:id
 
 |===
 
@@ -582,7 +582,7 @@ h| 適合品質水準 | エラー数が0なら合格、1以上なら不合格。
 h| 品質評価手法
 a| 全数検査を実施する。 +
 1．検査プログラムによって、bldg:lod4Solidにより記述される立体（gml:Solid）の境界面（gml:CompositeSurface）が参照する多角形（gml:Polygon）のgml:idが、以下のいずれかに一致していない場合にエラーとする。 +
-• bldg:boundedByにより参照するbldg:CeilingSurface, bldg:InteriorWallSurface, bldg:FloorSurface, bldg:ClosureSurface及びこれらが参照する開口部（bldg:Door, bldg:Window）の面（gml:MultiSurface）の構成要素となる多角形（gml:Polygon）のgml:id
+* bldg:boundedByにより参照するbldg:CeilingSurface, bldg:InteriorWallSurface, bldg:FloorSurface, bldg:ClosureSurface及びこれらが参照する開口部（bldg:Door, bldg:Window）の面（gml:MultiSurface）の構成要素となる多角形（gml:Polygon）のgml:id
 
 |===
 
@@ -597,10 +597,10 @@ h| 適合品質水準 | エラー数が0なら合格、1以上なら不合格。
 h| 品質評価手法
 a| 全数検査を実施する。 +
 1．検査プログラムによって、以下のエラーをカウントする。 +
-• bldg:Buildingのbldg:boundedByにより保持されるbldg:_BoundarySurfaceの法線ベクトルの向きが、建築物の内側を向いている場合 +
-• bldg:BuildingInstallaionのbldg:boundedByにより保持されるbldg:_BoundarySurfaceの法線ベクトルの向きが、建築物の内側を向いている場合 +
-• bldg:Roomのbldg:boundedByにより保持されるbldg:_BoundarySurfaceの法線ベクトルの向きが、建築物の外側を向いている場合 +
-• bldg:IntBuildingInstallationのbldg:boundedByにより保持されるbldg:_BoundarySurfaceの法線ベクトルの向きが、建築物の外側を向いている場合
+* bldg:Buildingのbldg:boundedByにより保持されるbldg:_BoundarySurfaceの法線ベクトルの向きが、建築物の内側を向いている場合 +
+* bldg:BuildingInstallaionのbldg:boundedByにより保持されるbldg:_BoundarySurfaceの法線ベクトルの向きが、建築物の内側を向いている場合 +
+* bldg:Roomのbldg:boundedByにより保持されるbldg:_BoundarySurfaceの法線ベクトルの向きが、建築物の外側を向いている場合 +
+* bldg:IntBuildingInstallationのbldg:boundedByにより保持されるbldg:_BoundarySurfaceの法線ベクトルの向きが、建築物の外側を向いている場合
 
 |===
 
@@ -615,8 +615,8 @@ h| 適合品質水準 | エラー数が0なら合格、1以上なら不合格。
 h| 品質評価手法
 a| 全数・自動検査を実施する。 +
 1．検査プログラムによって、bldg:Roomのbldg:lod4Solidにより記述される立体（gml:Solid）の境界面（gml:CompositeSurface）の構成要素（gml:surfaceMember）又はbldg:lod4MultiSurfaceにより記述される面の集まり（gml:MultiSurface）の構成要素（gml:surfaceMember）が、以下のいずれかに一致していない場合にエラーとする。 +
-• gml:surfaceMember により参照される面がorientationの値が”-“となるgml:OrientableSurfaceではない。 +
-• gml:OrientableSurfaceが、gml:baseSurfaceにより参照するgml:idが、以下のいずれにも該当しない。 +
+* gml:surfaceMember により参照される面がorientationの値が”-“となるgml:OrientableSurfaceではない。 +
+* gml:OrientableSurfaceが、gml:baseSurfaceにより参照するgml:idが、以下のいずれにも該当しない。 +
 ▶ bldg:boundedByにより参照するbldg:InteriorWallSurface, bldg:FloorSurface, bldg: CeilingSurface, bldg:ClosureSurface及びこれらが参照する開口部（bldg:Door, bldg:Window）の面（gml:MultiSurface）の構成要素となる多角形（gml:Polygon）のgml:id +
 ▶ bldg:roomInstallationにより参照する、bldg:IntBuildingInstallationがbldg:boundedByにより参照する、bldg:InteriorWallSurface, bldg:CeilingSurface, bldg: FloorSurface, bldg:ClosureSurface及びこれらが参照する開口部（bldg:Door, bldg:Window）により記述される面（gml:MultiSurface）に含まれる多角形（gml:Polygon）のgml:id
 
