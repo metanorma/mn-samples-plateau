@@ -311,7 +311,7 @@ image::images/357.svg[]
 独立した樹木。
 
 
-.図　SolitaryVegetationObjectの例
+.SolitaryVegetationObjectの例
 image::images/358.webp.png[]
 
 h| 上位の型 2+| veg:_VegetationObject
@@ -367,7 +367,7 @@ a|
 樹冠の情報からの正射影の外周を樹高の高さで上向きに押し出した立体となる。
 
 
-.図　LOD1のSolitaryVegetationObjectの例
+.LOD1のSolitaryVegetationObjectの例
 image::images/359.webp.png[]
 
 | veg:lod2Geometry
@@ -377,7 +377,7 @@ a|
 樹冠と樹幹をそれぞれ簡略化した立体（楕円体、球体、円錐、角錐、角柱、円柱などの単純な立体図形）を組み合わせた立体として表現する。
 
 
-.図　LOD2のSolitaryVegetationObjectの例
+.LOD2のSolitaryVegetationObjectの例
 image::images/360.webp.png[]
 
 樹木量の算定等、容積が必要ではない場合には、gml:MultiSurfaceにより外形を構成する。
@@ -389,7 +389,7 @@ a|
 一定高さごとに樹冠の横断面を作成し、この頂点を結び外形を構成する（樹冠内部の主枝等の表現は行わない）。
 
 
-.図　LOD3のSolitaryVegetationObjectの例
+.LOD3のSolitaryVegetationObjectの例
 image::images/361.webp.png[]
 
 樹木量の算定等、容積が必要ではない場合には、gml:MultiSurfaceにより外形を構成する。
@@ -405,7 +405,7 @@ image::images/361.webp.png[]
 植被。芝生や茂みのように、植生に覆われた範囲を指し、個々の樹木を識別しない。
 
 
-.図　veg:PlantCoverの例
+.veg:PlantCoverの例
 image::images/362.webp.png[]
 
 h| 上位の型 2+| veg:_VegetationObject
@@ -454,7 +454,7 @@ a|
 植被の範囲内で比高3m以上の場合にこれを区分した面の集まりとなる。
 
 
-.図　LOD2のPlantCoverの例
+.LOD2のPlantCoverの例
 image::images/363.webp.png[]
 
 | veg:lod3MultiSurface
@@ -463,7 +463,7 @@ a|
 植被の形状を立体とし、その主要な部分の外形を面の集まりとして詳細に区分して表現する。植被の範囲内で比高1m以上の場合にこれを区分した面の集まりとなる。
 
 
-.図　LOD3のPlantCoverの例
+.LOD3のPlantCoverの例
 image::images/364.webp.png[]
 
 | veg:lod1MultiSolid
@@ -472,7 +472,7 @@ a|
 植被の形状をそれが占有している範囲（面）に一律の高さを与えた立体として表現する。植被の占有している範囲（面）に、その範囲内で中央値となる植被の高さで上向きに押し出した立体となる。
 
 
-.図　LOD1のPlantCoverの例
+.LOD1のPlantCoverの例
 image::images/365.webp.png[]
 
 | veg:lod2MultiSolid
@@ -481,7 +481,7 @@ a|
 植被の形状を立体とし、その主要な部分の外形を立体として詳細に区分して表現する。植被の範囲内で比高3m以上の場合にこれを区分した面を境界とする立体となる。
 
 
-.図　LOD2のPlantCoverの例
+.LOD2のPlantCoverの例
 image::images/366.webp.png[]
 
 | veg:lod3MultiSolid
@@ -490,7 +490,7 @@ a|
 植被の形状を立体とし、その主要な部分の外形を立体として詳細に区分して表現する。植被の範囲内で比高1m以上の場合にこれを区分した面を境界とする立体となる。
 
 
-.図　LOD3のPlantCoverの例
+.LOD3のPlantCoverの例
 image::images/367.webp.png[]
 
 |===

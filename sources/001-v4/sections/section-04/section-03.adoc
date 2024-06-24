@@ -807,17 +807,17 @@ image::images/093.svg[]
 tran:Roadに含まれるtran:TrafficArea及びtran:AuxiliaryTrafficAreaは、同一路線に含まれなければならない。 同一のLODにおいて、連続する道路の境界は一致しなければならない。
 
 
-.図　LOD1における道路の取得例
+.LOD1における道路の取得例
 image::images/094.webp.png[]
 
 2+a|
 
-.図　LOD2における道路の取得例
+.LOD2における道路の取得例
 image::images/095.webp.png[]
 
 2+a|
 
-.図　LOD3における道路の取得例
+.LOD3における道路の取得例
 image::images/096.webp.png[]
 
 h| 上位の型 2+| tran:TrafficComplex
@@ -886,28 +886,28 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 • LOD2及びLOD3.0の場合は、車道部として、車両の利用が想定された車線や路肩その他一体的な舗装がされた全ての道路の部分を対象とする。また、歩道部として、歩道及び歩道上に設置された植栽の範囲を対象とする。
 
 
-.図　LOD2及びLOD3.0におけるtran:TrafficAreaの例
+.LOD2及びLOD3.0におけるtran:TrafficAreaの例
 image::images/097.webp.png[]
 
 2+a|
 • LOD3.1の場合は、LOD3.0の車道部のうち、車線を細分する。
 
 
-.図　LOD3.1におけるtran:TrafficAreaの例
+.LOD3.1におけるtran:TrafficAreaの例
 image::images/098.webp.png[]
 
 2+a|
 • LOD3.2及びLOD3.3の場合は、LOD3.1の歩道部から歩道上の植栽を除いた範囲を歩道部とする。
 
 
-.図　LOD3.2及びLOD3.3におけるtran:TrafficAreaの例
+.LOD3.2及びLOD3.3におけるtran:TrafficAreaの例
 image::images/099.webp.png[]
 
 2+a|
 • LOD3.4の場合は、コードリストの区分に従う。
 
 
-.図　LOD3.4におけるtran:TrafficAreaの例
+.LOD3.4におけるtran:TrafficAreaの例
 image::images/100.webp.png[]
 
 1つの道路オブジェクトに含まれる交通領域は、属性の変化が無い限り、区分しない。
@@ -976,21 +976,21 @@ a| 交通領域の構造。道路の交通領域の場合にのみ取得する�
 • LOD2、LOD3.0及びLOD3.1の場合は、道路内の島状の施設（交通島及び分離帯、路面電車停車所）を対象とする。
 
 
-.図　LOD2、LOD3.0及びLOD3.1での道路のtran:AuxiliaryTrafficAreaの取得例
+.LOD2、LOD3.0及びLOD3.1での道路のtran:AuxiliaryTrafficAreaの取得例
 image::images/101.webp.png[]
 
 2+a|
 • LOD3.2及びLOD3.3の場合は、上記に加え、歩道部に設置された植栽を対象とする。
 
 
-.図　LOD3.2及びLOD3.3での道路のtran:AuxiliaryTrafficAreaの取得例
+.LOD3.2及びLOD3.3での道路のtran:AuxiliaryTrafficAreaの取得例
 image::images/102.webp.png[]
 
 2+a|
 • LOD3.4に場合は、tran:functionにより指定されるコードリストの区分に従う。
 
 
-.図　LOD3.4での道路のtran:AuxiliaryTrafficAreaの取得例
+.LOD3.4での道路のtran:AuxiliaryTrafficAreaの取得例
 image::images/103.webp.png[]
 
 1つの道路オブジェクトに含まれる交通補助領域は、属性の変化が無い限り、延長方向では区分しない（例：延長方向に連続する分離帯を細分しない）。
