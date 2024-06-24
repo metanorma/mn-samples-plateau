@@ -62,11 +62,11 @@ a| 応用スキーマごとに全数・自動検査を実施する。 +
 2．LOD又はLODの詳細な区分において、標準製品仕様書に示された使用可能な地物型を取得する。 +
 3．データ製品に、2．で取得した地物型以外のインスタンスが存在した場合に、エラーとしてその数を数える。 +
 +
-•&nbsp;&nbsp; 全体となる地物型とは、以下をいう。 +
+• 全体となる地物型とは、以下をいう。 +
 bldg:Building, brid:Bridge, frn:CityFurniture, luse:LandUse, tran:Road, tran:Railway, tran:Track, +
 tran:Square, tun:Tunnel, veg:SolitaryVegetationObject, veg:PlantCover, wtr:WaterBody, +
 dem:ReliefFeature, uro:OtherConstruction, uro:UndergroundBuilding, uro:UtilityNetworkElementを継承する都市オブジェクト, uro:Waterway, urf:Zone及びこれを継承する地物型 +
-•&nbsp;&nbsp; LOD又はLODの詳細な区分ごとに仕様可能な地物型は、標準製品仕様書の4.2～4.21に、応用スキーマごとに示す。
+• LOD又はLODの詳細な区分ごとに仕様可能な地物型は、標準製品仕様書の4.2～4.21に、応用スキーマごとに示す。
 
 |===
 

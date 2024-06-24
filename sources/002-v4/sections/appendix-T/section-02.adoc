@@ -1,7 +1,7 @@
 [[tocT_02]]
 === 水部の記述とLOD
 
-[[]]
+
 ==== 水部モデル
 
 水部とは、河川、細流、一条河川、かれ川、用水路、湖池、海岸線、水路地下部及び低位水涯線をいう。[公共測量標準図式]
@@ -21,7 +21,7 @@ image::images/505.webp.png[]
 
 水部モデル（LOD3）では、水部の形状を立体として表現する。このとき、水部モデル（LOD2）の立体から水中にある構造物が占める空間を除いた立体となる。
 
-[[]]
+
 ==== 使用可能な地物型とLOD
 
 水部の記述には、CityGMLのWaterBodyモジュールに定義されたwtr:WaterBodyを用いて記述する。 wtr:WaterBodyは、詳細度（LOD）ごとに、使用すべき地物型やその空間属性が異なる。
@@ -58,14 +58,12 @@ LOD0では、Wtr:Waterbodyのみを使用し、水部の形状を線として表
 
 |===
 
-[none]
-**** ●：必須
+[key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
 
-**** ■：条件付必須
 
-**** 〇：任意（ユースケースに応じて要否を決定してよい）
-
-[[]]
 ==== 水部の空間属性
 
 　LOD0
@@ -91,7 +89,8 @@ LOD0では、Wtr:Waterbodyのみを使用し、水部の形状を線として表
 |===
 ^h| ^h| LOD1
 ^h| 取得例
-a| image::images/506.webp.png[]
+a|
+image::images/506.webp.png[]
 
 ^h| 説明 | 水涯線により囲まれた面を取得する。中洲がある場合は、中洲を除いた面となる。
 
@@ -110,7 +109,8 @@ a| image::images/506.webp.png[]
 |===
 ^h| ^h| LOD2
 ^h| 取得例
-a| image::images/507.webp.png[]
+a|
+image::images/507.webp.png[]
 
 ^h| 説明
 a| 水涯線に囲まれた水面（WaterSurface）及び水底面（WaterGroundSurface）を境界面とする立体を作成する。 +
@@ -134,7 +134,8 @@ a| 水涯線に囲まれた水面（WaterSurface）及び水底面（WaterGround
 |===
 ^h| ^h| LOD3
 ^h| 取得例
-a| image::images/508.webp.png[]
+a|
+image::images/508.webp.png[]
 
 ^h| 説明 | 水部モデル（LOD2）である、水涯線により囲まれた水面（WaterSurface）、水底面（WaterGroundSurface）及び閉鎖面（WaterClosureSurface）を境界面とする立体から、橋梁下部の橋脚部分など水中にある構造物を除いた立体となる。 水中にある構造物と水部の境界面は水底面とする。
 

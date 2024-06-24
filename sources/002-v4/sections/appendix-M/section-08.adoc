@@ -11,9 +11,11 @@ tun:_BoundarySurfaceは、トンネル（tun:Tunnel）やトンネルの部分�
 
 CityGMLでは、トンネルの境界面としてtun:_BoundarySurfaceの下位型となる地物型が用意されている。ただし外部天井面（tun:OuterCeillingSurface）、屋外床面（tun:OuterFloorSurface） は対象外とする（使用しない）。
 
-image::images/360.webp.png[title=" tun:_BoundarySurface"]
 
-[[]]
+.tun:_BoundarySurface
+image::images/360.webp.png[]
+
+
 ==== 境界面の空間属性
 
 屋根面及び壁面、底面の境界面となる地物型の空間属性（面）は、トンネルの立体を構成する境界面に一致する。
@@ -22,7 +24,7 @@ image::images/360.webp.png[title=" tun:_BoundarySurface"]
 要件tun-16.　境界面の空間属性を構成する幾何オブジェクトは、トンネルの立体を構成する境界面として参照されなければならない。
 ****
 
-[[]]
+
 ==== 境界面の下位型
 
 　tun:RoofSurface
@@ -50,7 +52,9 @@ tun:OuterFloorSurfaceはトンネルの外側を覆う部分であり、通行�
 
 tun:ClosureSurfaceは、トンネルの開口部を立体として閉じるために、境界面として設けられた仮想的な面である。トンネルの境界面に開口部が存在するが、開口部内の詳細なデータ作成が不要である場合に、開口部を閉じるために便宜上設けられている。内部空間で用途が異なる等により区分する場合は、tun:HollowSpaceを使用して空間を区分する。
 
-image::images/361.webp.png[title="閉鎖面の例（出入り口の開口部を閉鎖）"]
+
+.閉鎖面の例（出入り口の開口部を閉鎖）
+image::images/361.webp.png[]
 
 　tun:OuterCeilingSurface
 
