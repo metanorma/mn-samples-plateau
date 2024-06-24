@@ -369,28 +369,28 @@ image::images/399.svg[]
 河川、湖沼、等のように陸地内に存在する水の存在する部分及び海。水路や貯水槽、プールのような人工的に存在する水を含む。 LOD0は、ネットワーク又は、公共測量標準図式による表現のいずれかとし、ネットワークを原則とする。
 
 
-.図　wtr:WaterBodyの例（LOD0）
+.wtr:WaterBodyの例（LOD0）
 image::images/400.webp.png[]
 
 2+a|
 LOD1は、水涯線により囲まれた面として表現する。
 
 
-.図　wtr:WaterBodyの例（LOD1）
+.wtr:WaterBodyの例（LOD1）
 image::images/401.webp.png[]
 
 2+a|
 LOD2は、水面と水底面に囲まれた立体として表現する。
 
 
-.図　wtr:WaterBodyの例（LOD2）
+.wtr:WaterBodyの例（LOD2）
 image::images/402.webp.png[]
 
 2+a|
 LOD3は、水面と水底面に囲まれた立体から、水中の構造物を除いた立体として表現する。
 
 
-.図　wtr:WaterBodyの例（LOD3）
+.wtr:WaterBodyの例（LOD3）
 image::images/403.webp.png[]
 
 水部のインスタンスは基準地域メッシュ（第3次地域区画）の境界で区切る。 LOD2又はLOD3でインスタンスを分割する場合は、基準地域メッシュの水部の立体の境界面分割するための仮想的な境界面を「wtr:WaterClosureSurface」とする。
@@ -446,7 +446,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 水面。大気と水部の境界面とする。
 
 
-.図　水部の断面イメージ
+.水部の断面イメージ
 image::images/404.webp.png[]
 
 h| 上位の型 2+| wtr:_BoundarySurface
@@ -486,7 +486,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 水底面。地形と水部の境界面及び水中の構造物と水部との境界面をいう。
 
 
-.図　水部の断面イメージ
+.水部の断面イメージ
 image::images/405.webp.png[]
 
 h| 上位の型 2+| wtr:_BoundarySurface
@@ -523,7 +523,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 水部の立体を区切る仮想的な面。（閉鎖面） 複数の基準地域メッシュに跨って存在する河川、湖沼、海等を基準メッシュ単位に分割する場合や、河川、湖沼、海等の一部の範囲のみを作成する場合に、水部の立体を構成する境界面として使用する。
 
 
-.図　水部の断面イメージ
+.水部の断面イメージ
 image::images/406.webp.png[]
 
 h| 上位の型 2+| wtr:_BoundarySurface
