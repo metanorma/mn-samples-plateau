@@ -1662,7 +1662,7 @@ image::images/040.svg[]
 居住その他の目的をもって構築された建築物。 普通建物、堅ろう建物、普通無壁舎及び堅ろう無壁舎に区分する。 普通建物とは、3階未満の建物及び3階以上の木造等で建築された建物をいう。 堅ろう建物とは、鉄筋コンクリート等で建築された建物で、地上3階以上又は3階相当以上の高さのものやスタンドを備えた競技場をいう。 普通無壁舎とは、側壁のない建物、温室及び工場内の建物類似の構築物で、3階未満のものをいう。 堅ろう無壁舎とは、鉄筋コンクリート等で建築された側壁のない建物及び建物類似の構築物で、地上3階以上又は3階相当以上の高さのものをいう。 （作業規程の準則　付録７　公共測量標準図式）
 
 
-.図　bldg:Buildingの例
+.bldg:Buildingの例
 image::images/041.webp.png[]
 
 LOD0からLOD3 までは、建築物の屋外の形状を表現する。 +
@@ -1717,7 +1717,7 @@ a|
 建築物の外周の上方からの正射影を取得し、地上から一律の高さを与えて上向きに押し出した立体。
 
 
-.図　LOD1立体イメージ
+.LOD1立体イメージ
 image::images/042.webp.png[]
 
 一律の高さは中央値を原則とする。
@@ -1728,7 +1728,7 @@ a|
 建築物の主要構造の外形を示す立体であり、屋根面（RoofSurface）、外壁面（WallSurface）及び底面（GroundSurface）を境界面とする。
 
 
-.図　LOD2立体イメージ
+.LOD2立体イメージ
 image::images/043.webp.png[]
 
 建築物をbldg:BuildingPartの集まりとして記述する場合、この空間属性は空となる。
@@ -1742,7 +1742,7 @@ a|
 建築物の詳細な形状を示す立体であり、屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）及び開口部の面（境界面の内空として作成されている場合）を境界面とする。
 
 
-.図　LOD3立体イメージ
+.LOD3立体イメージ
 image::images/044.webp.png[]
 
 建築物をbldg:BuildingPartの集まりとして記述する場合、この空間属性は空となる。
@@ -1905,7 +1905,7 @@ h| (uro:bldgDmAttribute) | uro:DmAttribute [0..*] | 公共測量標準図式に�
 壁、間仕切り、床、天井などで仕切られ、生活の場などに用いられる、建物内部の隔てられた空間の区画（部屋）。
 
 
-.図　bldg:Roomの例
+.bldg:Roomの例
 image::images/046.webp.png[]
 
 bldg:Roomは、bldg:Buildingに含まれる地物として記述する。 +
@@ -1981,7 +1981,7 @@ uro:IndoorUserDefinedAttribute
 主に建築物の上部を覆う構造物。
 
 
-.図　bldg:RoofSurfaceの例
+.bldg:RoofSurfaceの例
 image::images/047.webp.png[]
 
 h| 上位の型 2+| bldg:_BoundarySurface
@@ -2021,7 +2021,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 建築物の外周を構成する壁面（外壁面）。
 
 
-.図　bldg:WallSurfaceの例
+.bldg:WallSurfaceの例
 image::images/048.webp.png[]
 
 カーテンウォールはbldg:WallSurfaceにより表現する。カーテンウォールとは、建築物の外側に配置され、建築物を囲む非耐荷重の壁である。 +
@@ -2065,7 +2065,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 建築物の底面又は建築物の外壁面と地表面との交線を境界とする面を取得する。
 
 
-.図　bldg:GroundSurface
+.bldg:GroundSurface
 image::images/049.webp.png[]
 
 h| 上位の型 2+| bldg:_BoundarySurface
@@ -2117,7 +2117,7 @@ uro:IfcBuildingElement このとき、uro:IfcBuildingElement の属性uro:elemen
 建築物の外側を覆う部分であり、天井としての機能を有する部分。
 
 
-.図　bldg:OuterCeilingSurfaceの例
+.bldg:OuterCeilingSurfaceの例
 image::images/050.webp.png[]
 
 ユースケースで屋外の天井と外壁面との区分が必要な場合に、bldg:OuterCeilingSurfaceを使用する。 +
@@ -2175,7 +2175,7 @@ BIMモデルからの変換により作成する場合は、bldg:OuterCeilingSur
 建築物の外側を覆う部分であり、通行可能な床面としての機能を有する部分。例えば、屋上や通路として利用されている面が該当する。
 
 
-.図　OuterFloorSurfaceの例
+.OuterFloorSurfaceの例
 image::images/051.webp.png[]
 
 ユースケースで通行可能な床面と屋根面の区分が必要な場合に、bldg:OuterFloorSurfaceを使用する。 +
@@ -2236,19 +2236,19 @@ uro:IfcBuildingElement +
 建築物の立体又は部屋の立体を構成するために仮想的に設ける閉鎖面。 一棟の建築物を、主題属性の異なる複数の部分に分ける場合に、その境界面として使用する。
 
 
-.図　LOD2又はLOD3でのbldg:ClosureSurfaceの例
+.LOD2又はLOD3でのbldg:ClosureSurfaceの例
 image::images/052.webp.png[]
 
 2+a|
 屋内においては、境界面となる内壁面や天井面、床面はないが、建築確認申請では部屋となっている空間を区切る場合に、部屋の境界面として便宜上設けられた仮想的な面をさす。
 
 
-.図　LOD4でのbldg:ClosureSurfaceの例
+.LOD4でのbldg:ClosureSurfaceの例
 image::images/053.webp.png[]
 
 2+a|
 
-.図　LOD4でのbldg:ClosureSurfaceを非表示にした例
+.LOD4でのbldg:ClosureSurfaceを非表示にした例
 image::images/054.webp.png[]
 
 h| 上位の型 2+| bldg:_BoundarySurface
@@ -2296,7 +2296,7 @@ h| (uro:ifcBoundarySurfaceAttribute) | uro:IfcAttribute [0..*] | IDM・MVDで定
 建築物の内側に向いた壁や仕切り。部屋（bldg:Room）の立体を構成する垂直方向の境界面となる。
 
 
-.図　bldg:InteriorWallSurfaceの例
+.bldg:InteriorWallSurfaceの例
 image::images/055.webp.png[]
 
 CityGMLでは、壁は面として表現し、1つの壁は、内側の面と外側の面の2つの面として表現する。 例えば、屋外と屋内を仕切る壁があった場合、屋外に面する壁の面は、bldg:WallSurace（外壁面）として表現し、屋内に面する壁の面は、bldg:InteriorWallSurface（内壁面）として表現する。このとき、bldg:WallSurfaceと、bldg:InteriorSurfaceとの間（壁の厚みに相当する空間）には何も存在しない。 bldg:InteriorWallSurfaceの法線ベクトルは、部屋の内側を向く。
@@ -2351,7 +2351,7 @@ uro:IndoorUserDefinedAttribute
 部屋など構造物内部の上側の面（天井）。部屋（bldg:Room）の境界面となる。
 
 
-.図　bldg:CeilingSurfaceの例
+.bldg:CeilingSurfaceの例
 image::images/056.webp.png[]
 
 bldg:CeilingSurfaceの法線ベクトルは下向き（部屋の内側に向く方向が正）となる。
@@ -2405,7 +2405,7 @@ uro:IndoorUserDefinedAttribute
 建物の内部空間の各階下面に位置する水平で平らな板状の構造物（床面）。部屋（bldg:Room）の境界面となる。
 
 
-.図　bldg:FloorSurfaceの例
+.bldg:FloorSurfaceの例
 image::images/057.webp.png[]
 
 bldg:FloorSurfaceの法線ベクトルは上向き（部屋の内側に向く方向が正）となる。
@@ -2516,7 +2516,7 @@ uro:IndoorUserDefinedAttribute
 採光、通風、換気、眺望、通行などの目的のため、建築物の屋根、天井、壁、床などに設けられた開口部のうち、人や物の出入りを目的とするもの。
 
 
-.図　bldg:Doorの例
+.bldg:Doorの例
 image::images/059.webp.png[]
 
 CityGMLでは、扉を面として表現し、一つの扉を外側と内側の二つのbldg:Doorのオブジェクトとして表現する。例えば、屋内と屋外をつなぐ窓があった場合、 外側となるbldg:Doorは、建築物の外壁面（bldg:WallSurface）等の境界面に含まれる。 内側となるbldg:Doorは、部屋の内壁面（bldg:InteriorWallSurface）等の境界面に含まれる。 このとき、屋外の境界面（bldg:WallSurface、bldg:GroundSurface、bldg:OuterFloorSurface、bldg:OuterCeilingSurface）に設けられた開口部は、常にその法線ベクトルが建築物の外側を向く。部屋の境界面（bldg:InteriorWallSurface、bldg:FloorSurface、bldg:CeilingSurface）に設けられた開口部は、常にその法線ベクトルが部屋の内側を向く。
@@ -2561,7 +2561,7 @@ uro:IndoorUserDefinedAttribute
 建築物の外側（屋外）に設置され、建築物の外観を特徴づける設備。 建築物の付帯的な設備であり、主要な部分であってはならない。また、建築物（bldg:Building）と接していなければならない。 建築物の屋外付属物には以下を含む。ただし、全て屋外に設置され、建築物と接するもののみを対象とする。 バルコニー、ポーチ、アーケード、テラス、サンテラス、回廊、エントランスホール、ダクト、装飾的な柱、デッキ、屋根飾り、出窓、ドーマー、（建築物の一部としての）煙突、看板、換気口、（建築物の一部としての）塔、階段、カーポート、物置、アンテナ、外階段や歩道に設けられた屋根、手すり、スロープ、パネル（内装・外装の仕上げ等で利用される板材）、エレベータ、エスカレータ、動く歩道など。
 
 
-.図　bldg:BuildingInstallationの例
+.bldg:BuildingInstallationの例
 image::images/060.webp.png[]
 
 （左：屋根面に設置された建築物の屋外付属物　右：外壁面に設置された建築物の屋外付属物） +
@@ -2599,7 +2599,7 @@ a|
 建築物の屋外付属物のLOD2の形状。 屋外付属物の外形（外側から見える形）を構成する面を取得し、面の各頂点に屋外付属物の高さを与える。各面は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう取得する。 gml:MultiSurfaceを使用することを基本とする。 容積の算出等、ユースケースで必要な場合はgml:Solidを使用する。
 
 
-.図　bldg:BuildingInstallationの取得例（屋外階段）
+.bldg:BuildingInstallationの取得例（屋外階段）
 image::images/061.webp.png[]
 
 | bldg:lod3Geometry | gml:_Geometry [0..1] | 建築物の屋外付属物のLOD3の形状。 屋外付属物の外形（外側から見える形）を構成する面を取得し、面の各頂点に屋外付属物の高さを与える。各面は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう取得する。 gml:MultiSurfaceを使用することを基本とする。容積の算出等ユースケースで必要な場合は、gml:Solidを使用する。
@@ -2635,7 +2635,7 @@ uro:IfcBuildingElement +
 屋内付属物は、建築物の付帯的な設備であり、主要な部分であってはならない。また、屋内付属物は、建築物（bldg:Building）又は部屋（bldg:Room）と接していなければならない。
 
 
-.図　bldg:IntBuildingInstallationの例（階段、手すり）
+.bldg:IntBuildingInstallationの例（階段、手すり）
 image::images/063.webp.png[]
 
 LOD4では、この屋内付属物を含む建築物に適用されたLOD4の細分に従い、以下を取得する。 +
@@ -2722,7 +2722,7 @@ uro:IndoorUserDefinedAttribute
 bldg:IntBuildingInstallationが、建築物内部に設置された恒久的かつ固定的な設備であることと対照的に、bldg:BuildingFurnitureは椅子やテーブルのような、動かすことができる備品である。
 
 
-.図　bldg:BuildingFurnitureの例（机、椅子）
+.bldg:BuildingFurnitureの例（机、椅子）
 image::images/065.webp.png[]
 
 LOD4.2の場合にのみ取得する。 +
