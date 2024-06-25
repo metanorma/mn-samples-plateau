@@ -32,8 +32,7 @@ image::images/360.webp.png[]
 tun:RoofSurfaceは、屋根面を記述するために使用する地物型である。
 
 ****
-要件tun-17.　外壁面（tun:WallSurface）と屋根面（tun:RoofSurface）との区分が構造上難しい場合は、外壁面（tun:WallSurface）として取得することを基本とする。 +
-
+要件tun-17.　外壁面（tun:WallSurface）と屋根面（tun:RoofSurface）との区分が構造上難しい場合は、外壁面（tun:WallSurface）として取得することを基本とする。
 ****
 
 ===== tun:WallSurface
@@ -65,8 +64,7 @@ tun:OuterCeilingSurfaceは、トンネルの外側を覆う部分であり、天
 tun:CeilingSurfaceは、トンネルの内部の天井面を記述するために使用する地物型である。
 
 ****
-要件tun-18.　内壁面（tun:InteriorWallSurface）と天井面（tun:CeilingSurface）との区分が構造上難しい場合は、内壁面（tun:InteriorWallSurface）として取得することを基本とする。 +
-
+要件tun-18.　内壁面（tun:InteriorWallSurface）と天井面（tun:CeilingSurface）との区分が構造上難しい場合は、内壁面（tun:InteriorWallSurface）として取得することを基本とする。
 ****
 
 ===== tun:InteriorWallSurface

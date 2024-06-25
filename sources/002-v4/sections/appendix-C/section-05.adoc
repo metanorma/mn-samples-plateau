@@ -12,7 +12,7 @@ bldg:_BoundarySurfaceは、建築物（bldg:Building）や建築物の部分（b
 CityGMLでは、建築物や建築物付属物の境界面としてbldg:_BoundarySurfaceの下位型となる地物型が用意されている。このうち、屋外の境界面の記述に使用できるのは、屋根面、外壁面、底面、外部天井面、外部床面又は閉鎖面である（表C- 10、図C- 20）。
 
 [cols=3]
-.表C- 10　 bldg:_BoundarySurfaceの下位型
+.bldg:_BoundarySurfaceの下位型
 |===
 h| _BoundarySurfaceの下位型 h| 意味 h| 説明
 | RoofSurface | 屋根面 | 外から見える上部の境界面。
@@ -28,7 +28,7 @@ h| _BoundarySurfaceの下位型 h| 意味 h| 説明
 |===
 
 
-.図 C -20　bldg:_BoundarySurfaceの下位型
+.bldg:_BoundarySurfaceの下位型
 image::images/157.webp.png[]
 
 
@@ -58,7 +58,7 @@ bldg:WallSurfaceは、外壁面を記述するために使用する地物型で�
 bldg:WallSurfaceの空間属性（bldg:lod2MultiSurface）の型はgml:MultiSurface（曲面の集まり）である。そのため、一棟の建築物の全ての外壁面を一つのgml:MultiSurfaceとして記述することは幾何オブジェクトとしては間違いではない。ただし、一棟の建築物の全ての外壁面を一つの外壁面として記述することが、LOD3以上のデータとの連携や他のユースケースへの活用の支障になると想定されるため、標準製品仕様書では一棟の建築物の外壁面を、方位等により区分し、それぞれをbldg:WallSurfaceとして記述することとしている（図C- 21）。
 
 
-.図 C -21　外壁面の実装例
+.外壁面の実装例
 image::images/158.webp.png[]
 
 ===== bldg:GroundSurface
