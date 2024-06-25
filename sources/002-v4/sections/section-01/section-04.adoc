@@ -151,13 +151,17 @@ h| コード h| 説明
 *** gen:measureAttribute（単位付き計測値型）
 
 [none]
-** ・ 　gen:measureAttributeを使用する場合は、uom属性により、その単位を指定しなければならない。長さの単位は「メートル」（uom=”m”）、大きさの単位は「平方メートル」（uom=”m2”） 又は「ヘクタール」（uom=”ha”）、時間の単位は「時間」（uom=”hour”）を基本とする。
+**
+
+* gen:measureAttributeを使用する場合は、uom属性により、その単位を指定しなければならない。長さの単位は「メートル」（uom=”m”）、大きさの単位は「平方メートル」（uom=”m2”） 又は「ヘクタール」（uom=”ha”）、時間の単位は「時間」（uom=”hour”）を基本とする。
 
 [disc]
 *** gen:genericAttributeSet（汎用属性セット型）
 
 [none]
-** ・ 　gen:genericAttributeSetは、複数の汎用属性の集まりである。gen:genericAttributeSetは、gen:stringAttribute やgen:intAttributeなどの汎用属性を複数個組み合わせてひとまとめにできる。
+**
+
+* gen:genericAttributeSetは、複数の汎用属性の集まりである。gen:genericAttributeSetは、gen:stringAttribute やgen:intAttributeなどの汎用属性を複数個組み合わせてひとまとめにできる。
 
 [disc]
 ** 地物関連の型は汎用属性の下位型である以下を選択する。
