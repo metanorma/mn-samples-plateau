@@ -51,17 +51,19 @@ image::images/349.webp.png[]
 トンネルの各LODにおいて使用可能な地物型とその空間属性の一覧を表M- 2に示す。
 
 [cols=9,options="header"]
-.表M- 2 トンネルモデルに使用する地物型と空間属性
+.トンネルモデルに使用する地物型と空間属性
 |===
 | 地物型 | 空間属性 | LOD0 | LOD1 | LOD2 | LOD3 | LOD4 | 適用 |
 
 .6+| tun:Tunnel | ^| ● ^| ● ^| ● ^| ● ^| ● | |
-| uro:lod0Geometry ^| ● ^| ^| ^| ^| | 数値地形図の取得方法に従う。 |
+| uro:lod0Geometry ^| ● ^| ^| ^| ^| | 数値地形図の取得方法に従う。
+|
 | tun:lod1Solid ^| ^| ● ^| ^| ^| | |
 | tun:lod2Solid ^| ^| ^| ● ^| ^| | |
 | tun:lod3Solid ^| ^| ^| ^| ● ^| | |
 | tun:lod4Solid ^| ^| ^| ^| ^| ■ | |
-^| | tun:lod4MultiSurface ^| ^| ^| ^| ^| ■ | Solidを原則とする。BIMから作成する場合はMultiSurfaceとする。 |
+^| | tun:lod4MultiSurface ^| ^| ^| ^| ^| ■ | Solidを原則とする。BIMから作成する場合はMultiSurfaceとする。
+|
 .5+| tun:TunnelPart　
 |
 ^|
@@ -75,35 +77,46 @@ a|
 * LOD2以上において、一つのトンネルを、属性の異なる複数の部分に分ける場合に必須とする。
 |
 
-| tun:lod1Solid ^| ^| ■ ^| ^| ^| .4+| tun:TunnelPartを使用する場合は必須とする。 |
+| tun:lod1Solid ^| ^| ■ ^| ^| ^| .4+| tun:TunnelPartを使用する場合は必須とする。
+|
 | tun:lod2Solid ^| ^| ^| ■ ^| ^| |
 | tun:lod3Solid ^| ^| ^| ^| ■ ^| |
 | tun:lod4Solid ^| ^| ^| ^| ^| ■ |
 .4+| tun:TunnelInstallation　 | ^| ^| ^| ^| ● ^| ● | |
 | tun:lod2Geometry ^| ^| ^| ^| ^| | |
-| tun:lod3Geometry ^| ^| ^| ^| ● ^| | MultiSurfaceとする。 |
-| tun:lod4Geometry ^| ^| ^| ^| ^| ● | MultiSurfaceとする。 |
-.4+| tun:RoofSurface　 | ^| ^| ^| ■ ^| ■ ^| ■ | トンネルの外形を構成する面のうち、上向きの面を区分する場合に必須とする。 |
-| tun:lod2MultiSurface ^| ^| ^| ■ ^| ^| .3+| tun:RoofSurfaceを作る場合は必須とする。 |
+| tun:lod3Geometry ^| ^| ^| ^| ● ^| | MultiSurfaceとする。
+|
+| tun:lod4Geometry ^| ^| ^| ^| ^| ● | MultiSurfaceとする。
+|
+.4+| tun:RoofSurface　 | ^| ^| ^| ■ ^| ■ ^| ■ | トンネルの外形を構成する面のうち、上向きの面を区分する場合に必須とする。
+|
+| tun:lod2MultiSurface ^| ^| ^| ■ ^| ^| .3+| tun:RoofSurfaceを作る場合は必須とする。
+|
 | tun:lod3MultiSurface ^| ^| ^| ^| ■ ^| |
 | tun:lod4MultiSurface ^| ^| ^| ^| ^| ■ |
-.4+| tun:WallSurface　 | ^| ^| ^| ● ^| ● ^| ● | トンネルの外形を構成する面のうち、側方の面に使用する。 |
+.4+| tun:WallSurface　 | ^| ^| ^| ● ^| ● ^| ● | トンネルの外形を構成する面のうち、側方の面に使用する。
+|
 | tun:lod2MultiSurface ^| ^| ^| ● ^| ^| .3+| |
 | tun:lod3MultiSurface ^| ^| ^| ^| ● ^| |
 | tun:lod4MultiSurface ^| ^| ^| ^| ^| ● |
-.4+| tun:GroundSurface　 | ^| ^| ^| ■ ^| ■ ^| ■ | トンネルの外形を構成する面のうち、下向きの面を区分する場合に必須とする。 |
-| tun:lod2MultiSurface ^| ^| ^| ■ ^| ^| .3+| tun:GroundSurfaceを作る場合は必須とする。 |
+.4+| tun:GroundSurface　 | ^| ^| ^| ■ ^| ■ ^| ■ | トンネルの外形を構成する面のうち、下向きの面を区分する場合に必須とする。
+|
+| tun:lod2MultiSurface ^| ^| ^| ■ ^| ^| .3+| tun:GroundSurfaceを作る場合は必須とする。
+|
 | tun:lod3MultiSurface ^| ^| ^| ^| ■ ^| |
 | tun:lod4MultiSurface ^| ^| ^| ^| ^| ■ |
-.4+| tun:OuterFloorSurface　 | ^| ^| ^| ^| ^| | 標準製品仕様書では使用しない。 |
+.4+| tun:OuterFloorSurface　 | ^| ^| ^| ^| ^| | 標準製品仕様書では使用しない。
+|
 | tun:lod2MultiSurface ^| ^| ^| ^| ^| .3+| |
 | tun:lod3MultiSurface ^| ^| ^| ^| ^| |
 | tun:lod4MultiSurface ^| ^| ^| ^| ^| |
-.4+| tun:OuterCeilingSurface　 | ^| ^| ^| ^| ^| | 標準製品仕様書では使用しない。 |
+.4+| tun:OuterCeilingSurface　 | ^| ^| ^| ^| ^| | 標準製品仕様書では使用しない。
+|
 | tun:lod2MultiSurface ^| ^| ^| ^| ^| .3+| |
 | tun:lod3MultiSurface ^| ^| ^| ^| ^| |
 | tun:lod4MultiSurface ^| ^| ^| ^| ^| |
-.4+| tun:ClosureSurface　 | ^| ^| ^| ^| ● ^| ● | 出入口をtun:ClosureSurfaceとして表現する。 |
+.4+| tun:ClosureSurface　 | ^| ^| ^| ^| ● ^| ● | 出入口をtun:ClosureSurfaceとして表現する。
+|
 | tun:lod2MultiSurface ^| ^| ^| ^| ^| .3+| |
 | tun:lod3MultiSurface ^| ^| ^| ^| ● ^| |
 | tun:lod4MultiSurface ^| ^| ^| ^| ^| ● |
@@ -121,10 +134,14 @@ a|
 | tun:lod4MultiSurface ^| ^| ^| ^| ^| ● | |
 .2+| tun:HollowSpace | ^| ^| ^| ^| ^| ● | |
 | tun:lod4Solid ^| ^| ^| ^| ^| ● | |
-.2+| tun:IntTunnelnstallation　　 | ^| ^| ^| ^| ^| ■ | LOD4.1及びLOD4.2では必須とする。 |
-| tun:lod4Geometry ^| ^| ^| ^| ^| ● | MultiSurfaceとする。 |
-.2+| tun:TunnelFurniture　 | ^| ^| ^| ^| ^| ■ | LOD4.2では必須とする。 |
-| tun:lod4Geometry ^| ^| ^| ^| ^| ● | MultiSurfaceとする。 |
+.2+| tun:IntTunnelnstallation　　 | ^| ^| ^| ^| ^| ■ | LOD4.1及びLOD4.2では必須とする。
+|
+| tun:lod4Geometry ^| ^| ^| ^| ^| ● | MultiSurfaceとする。
+|
+.2+| tun:TunnelFurniture　 | ^| ^| ^| ^| ^| ■ | LOD4.2では必須とする。
+|
+| tun:lod4Geometry ^| ^| ^| ^| ^| ● | MultiSurfaceとする。
+|
 
 |===
 
@@ -163,7 +180,7 @@ a|
 ****
 
 [cols="2,19,19"]
-.表M- 3　トンネルモデル（LOD1）の取得例
+.トンネルモデル（LOD1）の取得例
 |===
 ^h| 2+^h| LOD1
 h| 取得例
@@ -254,7 +271,7 @@ image::images/353.webp.png[]
 トンネルモデル（LOD3）では、LOD2と同様にトンネルの形状となる立体の各境界面を屋根面（tun:RoofSurface）、外壁面（tun:WallSurface）及び底面（tun:GroundSurface）に区分する。また、トンネルの外側についている付属物を区分する。さらに、トンネルの出入口部分は開口部となり、扉や窓がある場合には、tun:Door又はtun:Windowにより取得する。これらがない開口部は、tun:ClosureSurfaceとして取得する。
 
 [cols="2,19,19"]
-.表M- 4　トンネルモデル（LOD3）の取得例
+.トンネルモデル（LOD3）の取得例
 |===
 ^h| 2+^h| LOD3
 ^h| 取得例
@@ -282,7 +299,7 @@ a| 地下横断歩道の外形を立体として取得し、立体の各境界�
 ****
 
 [cols="1,9,9"]
-.表M- 5　トンネルモデル（LOD4）の取得例
+.トンネルモデル（LOD4）の取得例
 |===
 ^h| ^h| 取得例 ^h| 説明
 ^h| LOD4.0
