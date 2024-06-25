@@ -535,7 +535,11 @@ h| 品質評価手法 | 全数・自動検査を実施する。
 
 h| 品質要素 h| 論理一貫性・位相一貫性
 h| 品質適用範囲 | 全てのgml:CompositeSurfaceのインスタンス。
-h| 品質評価尺度 | gml:CompositeSurfaceを構成するgml:Polygonが、以下の場合にエラーとする。 ・同じgml:CompositeSurfaceを構成する他のgml:Polygonと重なる。 ・同じgml:CompositeSurfaceを構成する他のgml:Polygonのいずれとも接していない。
+h| 品質評価尺度 | gml:CompositeSurfaceを構成するgml:Polygonが、以下の場合にエラーとする
+
+* 同じgml:CompositeSurfaceを構成する他のgml:Polygonと重なる
+
+* 同じgml:CompositeSurfaceを構成する他のgml:Polygonのいずれとも接していない。
 h| 適合品質水準 | エラーの数が0個の場合に合格。1以上なら不合格。
 h| 品質評価手法 | 全数・自動検査を実施する。
 
