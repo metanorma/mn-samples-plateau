@@ -73,16 +73,25 @@ h| 品質評価手法
 a|
 応用スキーマごとに全数・自動検査を実施する。
 
-. データ製品に含まれる、全体となる地物型※のインスタンスがもつ空間属性のLOD（LODの詳細な区分が行われている場合には、その区分）を取得する。
-. LOD又はLODの詳細な区分において、標準製品仕様書に示された使用可能な地物型を取得する。
+. データ製品に含まれる、全体となる地物型 footnoteblock:[fn_feature_types] のインスタンスがもつ空間属性のLOD（LODの詳細な区分が行われている場合には、その区分）を取得する。
+. LOD又はLODの詳細な区分 footnoteblock:[fn_lod_details] において、標準製品仕様書に示された使用可能な地物型を取得する。
 . データ製品に、2．で取得した地物型以外のインスタンスが存在した場合に、エラーとしてその数を数える。
 
-* 全体となる地物型とは、以下をいう。
-bldg:Building, brid:Bridge, frn:CityFurniture, luse:LandUse, tran:Road, tran:Railway, tran:Track, tran:Square, tun:Tunnel, veg:SolitaryVegetationObject, veg:PlantCover, wtr:WaterBody, dem:ReliefFeature, uro:OtherConstruction, uro:UndergroundBuilding, uro:UtilityNetworkElementを継承する都市オブジェクト, uro:Waterway, urf:Zone及びこれを継承する地物型
-
-* LOD又はLODの詳細な区分ごとに仕様可能な地物型は、標準製品仕様書の4.2～4.21に、応用スキーマごとに示す。
-
 |===
+
+[[fn_feature_types]]
+[NOTE]
+--
+全体となる地物型とは、以下をいう。
+bldg:Building, brid:Bridge, frn:CityFurniture, luse:LandUse, tran:Road, tran:Railway, tran:Track, tran:Square, tun:Tunnel, veg:SolitaryVegetationObject, veg:PlantCover, wtr:WaterBody, dem:ReliefFeature, uro:OtherConstruction, uro:UndergroundBuilding, uro:UtilityNetworkElementを継承する都市オブジェクト, uro:Waterway, urf:Zone及びこれを継承する地物型
+--
+
+[[fn_lod_details]]
+[NOTE]
+--
+LOD又はLODの詳細な区分ごとに仕様可能な地物型は、標準製品仕様書の4.2～4.21に、応用スキーマごとに示す。
+--
+
 
 [cols="1,6"]
 |===
