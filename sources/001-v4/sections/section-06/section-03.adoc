@@ -49,14 +49,13 @@ h| 品質要素 | 完全性・過剰/漏れ
 h| 品質適用範囲 | データ集合内の全ての地物型のインスタンス。
 h| 品質評価尺度 | 参照データに存在しないのに地物インスタンスが存在する場合、あるいは参照データに存在するのに地物インスタンスが存在しない場合をエラーとする。1個以上のエラーが存在するサブメッシュをエラーサブメッシュとする。 誤率（％）＝エラーサブメッシュの数／100×100
 h| 適合品質水準 | 全ての検査単位の誤率が10%以下なら合格、10％を超える検査単位が1つ以上あれば不合格。
-h| 品質評価手法
-|
-抜取・目視検査を実施する。
+h| 品質評価手法 | 抜取・目視検査を実施する。
 
 . 抜取検査手法に従い、検査単位を抽出する。
 . 検査単位の各メッシュを10×10のサブメッシュに分割する。
 . 検査単位の範囲について、対象となる全ての地物インスタンスを抽出する。
-. 検査単位ごとに全サブメッシュについて、参照データと3．とを目視で比較して、どちらかと対応が取れない地物インスタンスがあった場合、そのサブメッシュをエラーとして、エラーの存在するサブメッシュ数を数える。
+. 検査単位ごとに全サブメッシュについて、参照データと
+. とを目視で比較して、どちらかと対応が取れない地物インスタンスがあった場合、そのサブメッシュをエラーとして、エラーの存在するサブメッシュ数を数える。
 . 4．の結果より、検査単位ごとに誤率を算出する。
 
 |===
@@ -71,17 +70,15 @@ h| 品質適用範囲 | データ集合内の全ての地物型のインスタ�
 h| 品質評価尺度 | 応用スキーマごとに定義された、各LODにおいて使用可能な地物型以外のインスタンスが含まれている場合にエラーとする。
 h| 適合品質水準 | エラーの数が0個の場合に合格。エラーの数が1以上の場合は不合格。
 h| 品質評価手法
-a| 応用スキーマごとに全数・自動検査を実施する。
+a|
+応用スキーマごとに全数・自動検査を実施する。
 
 . データ製品に含まれる、全体となる地物型※のインスタンスがもつ空間属性のLOD（LODの詳細な区分が行われている場合には、その区分）を取得する。
 . LOD又はLODの詳細な区分において、標準製品仕様書に示された使用可能な地物型を取得する。
 . データ製品に、2．で取得した地物型以外のインスタンスが存在した場合に、エラーとしてその数を数える。
 
-* 全体となる地物型とは、以下をいう。 +
-bldg:Building, brid:Bridge, frn:CityFurniture, luse:LandUse, tran:Road, tran:Railway, tran:Track, +
-tran:Square, tun:Tunnel, veg:SolitaryVegetationObject, veg:PlantCover, wtr:WaterBody, +
-dem:ReliefFeature, uro:OtherConstruction, uro:UndergroundBuilding, uro:UtilityNetworkElementを継承する都市オブジェクト, uro:Waterway, urf:Zone及びこれを継承する地物型
-
+* 全体となる地物型とは、以下をいう。
+bldg:Building, brid:Bridge, frn:CityFurniture, luse:LandUse, tran:Road, tran:Railway, tran:Track, tran:Square, tun:Tunnel, veg:SolitaryVegetationObject, veg:PlantCover, wtr:WaterBody, dem:ReliefFeature, uro:OtherConstruction, uro:UndergroundBuilding, uro:UtilityNetworkElementを継承する都市オブジェクト, uro:Waterway, urf:Zone及びこれを継承する地物型
 * LOD又はLODの詳細な区分ごとに仕様可能な地物型は、標準製品仕様書の4.2～4.21に、応用スキーマごとに示す。
 
 |===
@@ -98,12 +95,12 @@ h| 適合品質水準 | エラーの数が0個の場合に合格。エラーの�
 h| 品質評価手法
 a| 全数・自動検査を実施する。
 
-. 検査プログラムによって、各都市の拡張製品仕様書で作成対象とする主題属性及び関連役割のうち、必ず要素（タグ）として出現すべき主題属性及び関連役割が、都市オブジェクトの子要素として出現していない箇所をエラーとして数える。
-+
-作成対象とする主題属性及び関連役割とは、取得項目一覧のA.3.1_取得項目一覧シートにおいて、I列「作成対象」の欄に「○」が付いている全ての主題属性及び関連役割である。 +
-+
-必ず要素（タグ）として出現すべき主題属性及び関連役割とは、取得項目一覧のA.3.1_取得項目一覧シートにおいて、N列「不明な場合に不明値を出力する」の欄に「○」が付いている全ての主題属性及び関連役割である。 +
-+
+. 検査プログラムによって、各都市の拡張製品仕様書で作成対象とする主題属性及び関連役割のうち、必ず要素（タグ）として出現すべき主題属性及び関連役割が、都市オブジェクトの子要素として出現していない箇所をエラーとして数える。 +
+
+作成対象とする主題属性及び関連役割とは、取得項目一覧のA.3.1_取得項目一覧シートにおいて、I列「作成対象」の欄に「○」が付いている全ての主題属性及び関連役割である。
+
+必ず要素（タグ）として出現すべき主題属性及び関連役割とは、取得項目一覧のA.3.1_取得項目一覧シートにおいて、N列「不明な場合に不明値を出力する」の欄に「○」が付いている全ての主題属性及び関連役割である。
+
 作成対象とする主題属性及び関連役割（I列に「○」）のうち、出力すべき主題属性及び関連役割（N列に「○」）は、必ず要素（タグ）として出力しなければならない。
 
 |===
@@ -121,8 +118,9 @@ h| 品質評価手法
 a| 全数・自動検査を実施する。
 
 . 検査プログラムによって、地物型ごとに各都市の拡張製品仕様書で作成対象とする主題属性及び関連役割が、都市オブジェクトの子要素として出現している箇所を数える。
+
 . 出現している箇所が0か所（データセットにインスタンスが存在しない）となる主題属性及び関連役割の数を数える。
-+
+
 作成対象とする主題属性及び関連役割とは、取得項目一覧のA.3.1_取得項目一覧シートにおいて、I列「作成対象」の欄に「○」が付いている全ての主題属性及び関連役割である。
 
 |===
@@ -137,12 +135,13 @@ h| 品質適用範囲 | 全ての都市オブジェクト。
 h| 品質評価尺度 | 幾何オブジェクトの作成に使用する原典資料の種類の漏れ。
 h| 適合品質水準 | エラーの数が0個の場合に合格。エラーの数が1以上の場合は不合格。
 h| 品質評価手法
-a| 全数・自動検査を実施する。 +
+a| 全数・自動検査を実施する。
+
 地物型毎、かつ、拡張製品仕様書　表4‐1に示される、作成対象となるLODごとに実施する。
 
 . 品質属性（uro:DataQualityAttribute）のうち、あるLODの幾何オブジェクトが作成されているにもかかわらず、当該LODについての「幾何オブジェクトの作成に使用した原典資料の種類についての属性」が含まれていない場合にエラーとする。
 . 全ての地物型及び作成対象とする全てのLODに対して1．を実施し、エラーの数を合計する。
-+
+
 「幾何オブジェクト作成するために使用した原典資料の種類についての属性」とは、以下である。 +
 LOD0の場合：uro:geometrySrcDescLod0 +
 LOD1の場合：uro:geometrySrcDescLod1 +
@@ -162,28 +161,28 @@ h| 品質適用範囲 | 全ての都市オブジェクト。
 h| 品質評価尺度 | 幾何オブジェクトの作成に使用する公共測量成果の種類の漏れ。
 h| 適合品質水準 | エラーの数が0個の場合に合格。エラーの数が1以上の場合は不合格。
 h| 品質評価手法
-a| 全数・自動検査を実施する。 +
-地物型毎、かつ、拡張製品仕様書　表4‐1に示される、作成対象となるLODごとに実施する。 +
-+
+a| 全数・自動検査を実施する。
+
+地物型毎、かつ、拡張製品仕様書　表4‐1に示される、作成対象となるLODごとに実施する。
+
 . データセットに含まれる都市オブジェクトの品質属性（uro:DataQualityAttribute）について、各LODで「幾何オブジェクト作成するために使用した原典資料の種類についての属性」の値が「公共測量成果（コード「000」）」のみである属性の有無及びそのLODを特定する。
 . １．で「公共測量成果（コード「000」）」のみとなる属性がある場合は、uro:DataQualityAttributeの子要素としてuro:PublicSurveyDataQualityAttributeが出現し、かつ、そのLODにおける「公共測量成果の地図情報レベルについての属性」及び「公共測量成果の種類についての属性」が入力されていない場合に、エラーとする。
 . 全ての地物型及び作成対象とする全てのLODに対して1．及び2．を実施し、エラーの数を合計する。
-+
-+
+
 「幾何オブジェクト作成するために使用した原典資料の種類についての属性」とは、以下である。 +
 LOD0の場合：uro:geometrySrcDescLod0 +
 LOD1の場合：uro:geometrySrcDescLod1 +
 LOD2の場合：uro:geometrySrcDescLod2 +
 LOD3の場合：uro:geometrySrcDescLod3 +
 LOD4の場合：uro:geometrySrcDescLod4 +
-+
+
 「公共測量成果の地図情報レベルについての属性」とは、以下である。 +
 LOD0の場合：uro:srcScaleLod0 +
 LOD1の場合：uro:srcScaleLod1 +
 LOD2の場合：uro:srcScaleLod2 +
 LOD3の場合：uro:srcScaleLod3 +
 LOD4の場合：uro:srcScaleLod4 +
-+
+
 「公共測量成果の種類についての属性」とは、以下である。 +
 LOD0の場合：uro:publicSurveySrcDescLod0 +
 LOD1の場合：uro:publicSurveySrcDescLod1 +
@@ -281,7 +280,7 @@ a| 抜取・目視検査を実施する。
 
 h| 品質要素 h| 論理一貫性・書式一貫性
 h| 品質適用範囲 | データ製品に含まれる全ての都市モデル（core:CityModel）のインスタンス。
-h| 品質評価尺度 | 整形式（Well-Formed XML)になっていない箇所数。
+h| 品質評価尺度 | 整形式（Well-Formed XML）になっていない箇所数。
 h| 適合品質水準 | エラーの数が0個の場合に合格。エラーの数が1以上の場合は不合格。
 h| 品質評価手法 | 全数・自動検査を実施する。
 
@@ -329,7 +328,9 @@ h| 品質評価手法 | 全数・自動検査を実施する。
 
 . gml:CodeTypeに含まれるコードリストへの相対パスを取得する。
 . 相対パスで指定されたコードリストに定義された全てのコード値（gml:nameにより記述）を取得する。
-. 検査プログラムにより、地物属性の値と取得した全てのコード値との比較を行い、地物属性の値が、コード値と合致しない箇所を数える。 補足：コードリストへの相対パスは、gml:CodeTypeの属性であるcodeSpaceの値として記述されている。
+. 検査プログラムにより、地物属性の値と取得した全てのコード値との比較を行い、地物属性の値が、コード値と合致しない箇所を数える。
+
+補足：コードリストへの相対パスは、gml:CodeTypeの属性であるcodeSpaceの値として記述されている。
 
 |===
 
@@ -343,7 +344,9 @@ h| 品質評価尺度 | 都市モデルに指定された空間参照系の識�
 h| 適合品質水準 | エラーの数が0個の場合に合格。エラーの数が1以上の場合は不合格。
 h| 品質評価手法 | 全数・自動検査を実施する。
 
-. 都市モデルに含まれるgml:Envelopeに記述された空間参照系のURIが、製品仕様書に示されたURIに合致しない箇所を数える。 補足：空間参照系のURIは、gml:Envelopeの属性であるsrsNameの値として記述されている。
+. 都市モデルに含まれるgml:Envelopeに記述された空間参照系のURIが、製品仕様書に示されたURIに合致しない箇所を数える。
+
+補足：空間参照系のURIは、gml:Envelopeの属性であるsrsNameの値として記述されている。
 
 |===
 
@@ -476,6 +479,7 @@ h| 品質評価尺度 | gml:Solidを構成する全ての境界面が、以下�
 . 全ての境界面の向きが立体の外側を向いている。
 . 境界面が立体を分断していてはならない。
 . 境界面が交差してはならない。
+
 h| 適合品質水準 | エラーの数が0個の場合に合格。1以上なら不合格。
 h| 品質評価手法 | 全数・自動検査を実施する。
 
@@ -547,7 +551,10 @@ h| 品質要素 h| 論理一貫性・位相一貫性
 h| 品質適用範囲 | bldg:Buildingのインスタンス。
 h| 品質評価尺度 | bldg:Buildingが空間属性として保持する立体（gml:Solid）同士が重ならない。
 h| 適合品質水準 | エラーとなるインスタンスが0個の場合に合格。エラーとなるbldg:Buildingが1個以上の場合は不合格。
-h| 品質評価手法 | 全数・自動検査を実施する。 1.全てのインスタンスについて、bldg:lod1Solid及びbldg:lod2Solidにより構成されるgml:Solidを抽出する。 2. 抽出したgml:Solidのうち、重なるべきではないgml:Solid同士が交差している場合にエラーとする。
+h| 品質評価手法 | 全数・自動検査を実施する。
+
+. 全てのインスタンスについて、bldg:lod1Solid及びbldg:lod2Solidにより構成されるgml:Solidを抽出する。
+. 抽出したgml:Solidのうち、重なるべきではないgml:Solid同士が交差している場合にエラーとする。
 
 |===
 
@@ -559,7 +566,10 @@ h| 品質要素 h| 論理一貫性・位相一貫性
 h| 品質適用範囲 | bldg:BuildingPartをもつbldg:Buildingのインスタンス。
 h| 品質評価尺度 | 1つのbldg:Buildingについて、これを構成するbldg:BuildingPartが空間属性として保持する立体（gml:Solid）同士が離れていない。
 h| 適合品質水準 | エラーとなるインスタンスが0個の場合に合格。エラーとなるbldg:Buildingインスタンスが1個以上の場合は不合格。
-h| 品質評価手法 | 全数・自動検査を実施する。 1. bldg:BuildingPartをもつbldg:Buildingインスタンスを抽出する。 2. それぞれのインスタンスについて、これを構成する全てのgml:Solidを抽出し、境界面を共有していないgml:Solidが存在している場合にエラーとする。
+h| 品質評価手法 | 全数・自動検査を実施する。
+
+. bldg:BuildingPartをもつbldg:Buildingインスタンスを抽出する。
+. それぞれのインスタンスについて、これを構成する全てのgml:Solidを抽出し、境界面を共有していないgml:Solidが存在している場合にエラーとする。
 
 |===
 
@@ -571,7 +581,10 @@ h| 品質要素 h| 論理一貫性・位相一貫性
 h| 品質適用範囲 | bldg:Window及びbldg:Doorのインスタンス。
 h| 品質評価尺度 | bldg:_Openingの下位クラスのインスタンスが、これを集約するbldg:_BoundarySurfaceの下位クラスのインスタンスに包含されていない場合にエラーとする。
 h| 適合品質水準 | エラーとなるbldg:Window、bldg:Doorのインスタンスが0個の場合に合格。エラーとなるインスタンスが1個以上の場合は不合格。
-h| 品質評価手法 | 全数・自動検査を実施する。 1. 開口部（bldg:Window、bldg:Door）の空間属性として保持するgml:MultiSurfaceを、これを集約する境界面（bldg: \_BoundarySurfaceの下位クラス）の空間属性が保持するgml:MultiSurface上に投影する。 2. 投影されたbldg:Window及びbldg:Doorのgml:MultiSurfaceの一部又は全部が境界面の外側に存在するbldg:Window及びbldg:Doorのインスタンス数を数える。
+h| 品質評価手法 | 全数・自動検査を実施する。
+
+. 開口部（bldg:Window、bldg:Door）の空間属性として保持するgml:MultiSurfaceを、これを集約する境界面（bldg: \_BoundarySurfaceの下位クラス）の空間属性が保持するgml:MultiSurface上に投影する。
+. 投影されたbldg:Window及びbldg:Doorのgml:MultiSurfaceの一部又は全部が境界面の外側に存在するbldg:Window及びbldg:Doorのインスタンス数を数える。
 
 |===
 
@@ -630,7 +643,8 @@ h| 適合品質水準 | エラーとなるbldg:Window、bldg:Doorのインスタ
 h| 品質評価手法
 a| 全数・自動検査を実施する。
 
-. 開口部（bldg:Window、bldg:Door）の空間属性が保持するgml:MultiSurfaceを、これを集約する境界面（bldg: \_BoundarySurfaceの下位クラス）の空間属性が保持するgml:MultiSurfaceを抽出する。
+. 開口部（bldg:Window、bldg:Door）の空間属性が保持するgml:MultiSurfaceを、これを集約する境界面（bldg:_BoundarySurfaceの下位クラス）の空間属性が保持するgml:MultiSurfaceを抽出する。
+
 . bldg:Window及びbldg:Doorのgml:MultiSurfaceが境界面のgml:MultiSurface と境界線を共有していないbldg:Window及びbldg:Doorのインスタンス数を数える。
 
 |===
@@ -648,7 +662,7 @@ a| 全数検査を実施する。
 
 . 検査プログラムによって、bldg:lod4Solidにより記述される立体（gml:Solid）の境界面（gml:CompositeSurface）が参照する多角形（gml:Polygon）又はbldg:lod4MultiSurfaceにより記述される面の集まり（gml:MultiSurface）に含まれる多角形（gml:Polygon）のgml:idが、以下のいずれかに一致していない場合にエラーとする。
 
-* bldg:boundedByにより参照するbldg:RoofSurface, bldg:WallSurface, bldg:GroundSurface, bldg:OuterFloorSurface, bldg:OuterCeilingSurface, bldg:ClosureSurface及びこれらが参照する開口部（bldg:Door, bldg:Window）の面（gml:MultiSurface）の構成要素となる多角形（gml:Polygon）のgml:id +
+* bldg:boundedByにより参照するbldg:RoofSurface, bldg:WallSurface, bldg:GroundSurface, bldg:OuterFloorSurface, bldg:OuterCeilingSurface, bldg:ClosureSurface及びこれらが参照する開口部（bldg:Door, bldg:Window）の面（gml:MultiSurface）の構成要素となる多角形（gml:Polygon）のgml:id
 * bldg:outerBuildingInstallationにより参照するbldg:BuildingInstallationの境界面となるbldg:RoofSurface, bldg:WallSurface, bldg:GroundSurface, bldg:OuterFloorSurface, bldg:OuterCeilingSurface, bldg:ClosureSurface及びこれらが参照する開口部（bldg:Door, bldg:Window）の面（gml:MultiSurface）の構成要素となる多角形（gml:Polygon）のgml:id
 
 |===
@@ -683,9 +697,9 @@ a| 全数検査を実施する。
 
 . 検査プログラムによって、以下のエラーをカウントする。
 
-* bldg:Buildingのbldg:boundedByにより保持されるbldg:_BoundarySurfaceの法線ベクトルの向きが、建築物の内側を向いている場合 +
-* bldg:BuildingInstallaionのbldg:boundedByにより保持されるbldg:_BoundarySurfaceの法線ベクトルの向きが、建築物の内側を向いている場合 +
-* bldg:Roomのbldg:boundedByにより保持されるbldg:_BoundarySurfaceの法線ベクトルの向きが、建築物の外側を向いている場合 +
+* bldg:Buildingのbldg:boundedByにより保持されるbldg:_BoundarySurfaceの法線ベクトルの向きが、建築物の内側を向いている場合
+* bldg:BuildingInstallationのbldg:boundedByにより保持されるbldg:_BoundarySurfaceの法線ベクトルの向きが、建築物の内側を向いている場合
+* bldg:Roomのbldg:boundedByにより保持されるbldg:_BoundarySurfaceの法線ベクトルの向きが、建築物の外側を向いている場合
 * bldg:IntBuildingInstallationのbldg:boundedByにより保持されるbldg:_BoundarySurfaceの法線ベクトルの向きが、建築物の外側を向いている場合
 
 |===
@@ -705,7 +719,10 @@ a| 全数・自動検査を実施する。
 
 * gml:surfaceMember により参照される面がorientationの値が”-“となるgml:OrientableSurfaceではない。
 * gml:OrientableSurfaceが、gml:baseSurfaceにより参照するgml:idが、以下のいずれにも該当しない。
-** bldg:boundedByにより参照するbldg:InteriorWallSurface, bldg:FloorSurface, bldg: CeilingSurface, bldg:ClosureSurface及びこれらが参照する開口部（bldg:Door, bldg:Window）の面（gml:MultiSurface）の構成要素となる多角形（gml:Polygon）のgml:id +
+
+** bldg:boundedByにより参照するbldg:InteriorWallSurface, bldg:FloorSurface, bldg: CeilingSurface, bldg:ClosureSurface及びこれらが参照する開口部（bldg:Door, bldg:Window）の面（gml:MultiSurface）の構成要素となる多角形（gml:Polygon）のgml:id
+
+
 ** bldg:roomInstallationにより参照する、bldg:IntBuildingInstallationがbldg:boundedByにより参照する、bldg:InteriorWallSurface, bldg:CeilingSurface, bldg: FloorSurface, bldg:ClosureSurface及びこれらが参照する開口部（bldg:Door, bldg:Window）により記述される面（gml:MultiSurface）に含まれる多角形（gml:Polygon）のgml:id
 
 |===
@@ -746,7 +763,7 @@ h| 品質評価手法 | 全数・自動検査を実施する。
 | No | L-frn-01
 
 h| 品質要素 h| 論理一貫性・概念一貫性
-h| 品質適用範囲 | 空間属性として、 lod1Geometry, lod2Geometry又はlod3Geometryをもつ全ての地物型のインスタンス。
+h| 品質適用範囲 | 空間属性として、 lod1Geometry, lod2Geomatry又はlod3Geometryをもつ全ての地物型のインスタンス。
 h| 品質評価尺度 | 空間属性により保持又は参照する幾何オブジェクトの型が、応用スキーマ文書で指定された幾何オブジェクト（gml:MultiSurface又はgml:Solid）ではないインスタンスの個数。
 h| 適合品質水準 | エラーの箇所が0個の場合に合格。エラーの箇所数が1以上の場合は不合格。
 h| 品質評価手法 | 全数・自動検査を実施する。
@@ -794,6 +811,7 @@ h| 品質評価尺度 | 同一の道路インスタンスに含まれる交通�
 * 中央帯と分離帯（分離帯は中央帯に含まれる場合がある。）
 * 中央帯と側帯（側帯は中央帯に含まれる場合がある。）
 * 路肩と側帯（側帯は路肩に含まれる場合がある。）
+
 h| 適合品質水準 | エラーとなるインスタンスが0個の場合に合格。エラーとなるインスタンスが1個以上の場合は不合格。
 h| 品質評価手法 | 全数・自動検査を実施する。 同一のLODで記述されている空間属性に対して実施する。
 
@@ -810,7 +828,10 @@ h| 品質要素 h| 論理一貫性・位相一貫性
 h| 品質適用範囲 | tran:Road、tran:TrafficArea、tran:AuxiliaryTrafficArea
 h| 品質評価尺度 | tran:Roadインスタンスに含まれるtran:TrafficAreaインスタンス及びtran:AuxiliaryTrafficAreaインスタンスの空間属性（tran:lod2MultiSurface及びtran:lod3MultiSurface）に含まれる全てのMultiSurfaceを道路インスタンスが参照していない場合にエラーとする。
 h| 適合品質水準 | エラーとなるインスタンスが0個の場合に合格。エラーとなるインスタンスが1個以上の場合は不合格。
-h| 品質評価手法 | 全数・自動検査を実施する。 1. 対象となる地物の全インスタンス数を数える。 2. 全てのインスタンスのペアについて、“境界線で接する”に該当しないインスタンスの数を数える。
+h| 品質評価手法 | 全数・自動検査を実施する。
+
+. 対象となる地物の全インスタンス数を数える。
+. 全てのインスタンスのペアについて、“境界線で接する”に該当しないインスタンスの数を数える。
 
 |===
 
