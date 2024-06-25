@@ -98,11 +98,11 @@ a| 堰の場合は、上流部の中心線と下流部の中心線を取得す�
 .6+| ●
 .6+| OtherConstruction
 | Point
-| 堰、水門※
+| 堰、水門 footnoteblock:[fn_follow_diagram]
 a|
 * 中心位置と方向を取得する。
 * 高さは0とする。
-| ※数値地形図の取得基準に従う。
+|
 
 | MultiCurve
 | 水門、閘門・陸閘、樋門・樋管、伏せ越し
@@ -113,12 +113,11 @@ a|
 
 | MultiCurve
 a| ダム +
-堰※
+堰 footnoteblock:[fn_follow_diagram]
 a|
 * 上端線及び下端線を取得する。
 * 高さは0とする。
-| ※数値地形図の取得基準に従う。
-
+|
 | MultiCurve
 | 堤防
 a|
@@ -127,22 +126,30 @@ a|
 |
 
 | MultiCurve
-a| 防波堤※ +
+a| 防波堤 footnoteblock:[fn_follow_diagram]
+
 護岸、不透過水制、被覆
 a|
 * 構造物の上方からの正射影の外周を取得する。
 * 高さは0とする。
-| ※数値地形図の取得基準に従う。
+|
 
 | MultiSurface
-a| 防波堤※ +
+a| 防波堤 footnoteblock:[fn_follow_diagram]
+
 透過水制、敷石斜坂、船揚場
 a|
 * 構造物の上方からの正射影の外周を取得する。
 * 高さは0とする。
-| ※数値地形図の取得基準に従う。
+|
 
 |===
+
+[[fn_follow_diagram]]
+[NOTE]
+--
+数値地形図の取得基準に従う。
+--
 
 [key]
 ●:: 必須
