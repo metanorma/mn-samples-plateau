@@ -26,7 +26,7 @@ bldg:IntBuildingInstallationは、建築物の内部に付属する恒久的に�
 bldg:class及びbldg:functionが取りうる値は、コードリストにより定義されている。標準製品仕様書では、bldg:classの定義域として表C- 12に示す区分を定義している。この定義域は、BIMモデルの国際標準であるIFCでのクラスの区分に基づく。建築物モデル（LOD4）の場合、BIMモデルからの変換により作成されるケースが多いと考えられるためである。また、bldg:functionの定義域は、Uniclass2015に従う。Uniclassは、建築生産で必要とする建築部位、工法及び設備などの名称を体系的に整理したものである。
 
 [cols="3,17"]
-.表C- 12　 IntBuildingInstallation bldg:classの区分
+.IntBuildingInstallation bldg:classの区分
 |===
 h| ファイル名 | IntBuildingInstallation_class.xml
 h| コード h| 説明
