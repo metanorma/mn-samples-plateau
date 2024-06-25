@@ -38,37 +38,37 @@ uro:UtilityNodeContainerは、uro:UtilityNodeを格納し、自らもノード�
 |===
 | 地物型 | 空間属性 | LOD0 | LOD1 | LOD2 | LOD3 | LOD4 | 適用
 
-.6+| uro: Pipe及びこれを継承する地物型 | ^| ● ^| ● ^| ● ^| ● ^| ● |
+.6+| uro:Pipe及びこれを継承する地物型 | ^| ● ^| ● ^| ● ^| ● ^| ● |
 | uro:lod0Geometry ^| ● ^| ^| ^| ^| | 原典資料の取得方法に従う。
 | frn:lod1Geometry ^| ^| ● ^| ^| ^| | Solidとする。
 | frn:lod2Geometry ^| ^| ^| ● ^| ^| | Solidとする。
 | frn:lod3Geometry ^| ^| ^| ^| ● ^| | CompositeSurface又はMultiSurfaceとする。
 | frn:lod4Geometry ^| ^| ^| ^| ^| ● | CompositeSurface又はMultiSurfaceとする。
-.6+| uro:Cable及びこれを継承する地物型 | ^| ● ^| ● ^| ● ^| ● ^| ○※ |
+.6+| uro:Cable及びこれを継承する地物型 | ^| ● ^| ● ^| ● ^| ● ^| ○ footnoteblock:[fn_underground_model] |
 | uro:lod0Geometry ^| ● ^| ^| ^| ^| | 原典資料の取得方法に従う。
 | frn:lod1Geometry ^| ^| ● ^| ^| ^| | Solidとする。
 | frn:lod2Geometry ^| ^| ^| ● ^| ^| | Solidとする。
 | frn:lod3Geometry ^| ^| ^| ^| ● ^| | CompositeSurface又はMultiSurfaceとする。
 | frn:lod4Geometry ^| ^| ^| ^| ^| ■ | LOD4を作成する場合は必須とする。
-.6+| uro: Duct | ^| ● ^| ● ^| ● ^| ● ^| ● |
+.6+| uro:Duct | ^| ● ^| ● ^| ● ^| ● ^| ● |
 | uro:lod0Geometry ^| ● ^| ^| ^| ^| | 原典資料の取得方法に従う。
 | frn:lod1Geometry ^| ^| ● ^| ^| ^| | Solidとする。
 | frn:lod2Geometry ^| ^| ^| ● ^| ^| | Solidとする。
 | frn:lod3Geometry ^| ^| ^| ^| ● ^| | CompositeSurface又はMultiSurfaceとする。
 | frn:lod4Geometry ^| ^| ^| ^| ^| ● | CompositeSurface又はMultiSurfaceとする。
-.6+| uro: Appurtenance | ^| ● ^| ● ^| ● ^| ● ^| ○※ |
+.6+| uro:Appurtenance | ^| ● ^| ● ^| ● ^| ● ^| ○ footnoteblock:[fn_underground_model] |
 | uro:lod0Geometry ^| ● ^| ^| ^| ^| | 原典資料の取得方法に従う。
 | frn:lod1Geometry ^| ^| ● ^| ^| ^| | Solidとする。
 | frn:lod2Geometry ^| ^| ^| ● ^| ^| | Solidとする。
 | frn:lod3Geometry ^| ^| ^| ^| ● ^| | CompositeSurface又はMultiSurfaceとする。
 | frn:lod4Geometry ^| ^| ^| ^| ^| ■ | LOD4を作成する場合は必須とする。
-.6+| uro: Manhole | ^| ● ^| ● ^| ● ^| ● ^| ● |
+.6+| uro:Manhole | ^| ● ^| ● ^| ● ^| ● ^| ● |
 | uro:lod0Geometry ^| ● ^| ^| ^| ^| | 原典資料の取得方法に従う。
 | frn:lod1Geometry ^| ^| ● ^| ^| ^| | Solidとする。
 | frn:lod2Geometry ^| ^| ^| ● ^| ^| | Solidとする。
 | frn:lod3Geometry ^| ^| ^| ^| ● ^| | CompositeSurface又はMultiSurfaceとする。
 | frn:lod4Geometry ^| ^| ^| ^| ^| ● | CompositeSurface又はMultiSurfaceとする。
-.6+| uro: Handhole | ^| ● ^| ● ^| ● ^| ● ^| ● |
+.6+| uro:Handhole | ^| ● ^| ● ^| ● ^| ● ^| ● |
 | uro:lod0Geometry ^| ● ^| ^| ^| ^| | 原典資料の取得方法に従う。
 | frn:lod1Geometry ^| ^| ● ^| ^| ^| | Solidとする。
 | frn:lod2Geometry ^| ^| ^| ● ^| ^| | Solidとする。
@@ -77,12 +77,17 @@ uro:UtilityNodeContainerは、uro:UtilityNodeを格納し、自らもノード�
 
 |===
 
+[[fn_underground_model]]
+[NOTE]
+--
+地下埋設物モデル（LOD4）において、uro:Cable及びuro:Appurtenanceの形状表現は外部の形状のみとしてよい。このときの外部の形状は、地下埋設物モデル（LOD3）と一致する。内部の形状表現は、ユースケースに応じて要否を決定してよい。
+--
+
 [key]
 ●:: 必須
 ■:: 条件付必須
 〇:: 任意（ユースケースに応じて要否を決定してよい）
 
-※地下埋設物モデル（LOD4）において、uro:Cable及びuro:Appurtenanceの形状表現は外部の形状のみとしてよい。このときの外部の形状は、地下埋設物モデル（LOD3）と一致する。内部の形状表現は、ユースケースに応じて要否を決定してよい。
 
 
 ==== 地下埋設物の空間属性
@@ -140,7 +145,7 @@ uro:UtilityNodeContainerは、uro:UtilityNodeを格納し、自らもノード�
 
 地下埋設物モデル（LOD4）では、地下埋設物を面の集まりとして表現することを基本とするが、体積の演算が必要となる場合等、ユースケースで必要な場合には立体として表現できる。
 
-また、地下埋設物モデル（LOD4）における、uro:Cable及びこれを継承する地物型とuro: Apputenanceの内部の形状は、ユースケースの必要に応じて取得の要否を決定してよい。
+また、地下埋設物モデル（LOD4）における、uro:Cable及びこれを継承する地物型とuro:Apputenanceの内部の形状は、ユースケースの必要に応じて取得の要否を決定してよい。
 
 
 ==== 地下埋設物の主題属性
