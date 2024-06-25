@@ -2083,10 +2083,18 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | gml:Solid [0..1]
 a| 部屋の外形を示す立体。
 
-gml:Solidを構成するgml:Polygonは、以下のいずれかの地物のLOD4幾何オブジェクトに含まれなければならない。 ・　境界面（bldg:_BoundarySurface）及びその開口部（bldg:_Opening） ただし、境界面は、このbldg:Roomが、関連役割bldg:boundedByにより 参照する境界面であること。また、開口部は、その境界面に包含されていること。 ・　屋内付属物（bldg:IntBuildingInstallation）の境界面及びその開口部 ただし、屋内付属物は、このbldg:Roomが、関連役割bldg:roomInstallationにより参照する付属物であること。また、開口部はその付属物に包含されていること。 bldg:lod4Solid 又はbldg:lod4MultiSurface のいずれかを必須とするが、bldg:lod4Solidにより記述することを基本とする。
+gml:Solidを構成するgml:Polygonは、以下のいずれかの地物のLOD4幾何オブジェクトに含まれなければならない
+
+* 境界面（bldg:_BoundarySurface）及びその開口部（bldg:_Opening） ただし、境界面は、このbldg:Roomが、関連役割bldg:boundedByにより 参照する境界面であること。また、開口部は、その境界面に包含されていること
+
+* 屋内付属物（bldg:IntBuildingInstallation）の境界面及びその開口部 ただし、屋内付属物は、このbldg:Roomが、関連役割bldg:roomInstallationにより参照する付属物であること。また、開口部はその付属物に包含されていること。 bldg:lod4Solid 又はbldg:lod4MultiSurface のいずれかを必須とするが、bldg:lod4Solidにより記述することを基本とする。
 
 h| (bldg:lod4MultiSurface) | gml:MultiSurface [0..1]
-| 部屋の主要構造の外形を示す面の集まり。 gml:MultiSurfaceを構成するgml:Polygonは、以下のいずれかの地物のLOD4幾何オブジェクトに含まれなければならない。 ・　境界面（bldg:_BoundarySurface）及びその開口部（bldg:_Opening） ただし、境界面は、このbldg:Roomが、関連役割bldg:boundedByにより参照する境界面であること。また、開口部は、その境界面に包含されていること。 ・　屋内付属物（bldg:IntBuildingInstallation）の境界面及びその開口部 ただし、屋内付属物は、このbldg:Roomが、関連役割bldg:roomInstallationにより参照する付属物であること。また、開口部はその付属物に包含されていること。 bldg:lod4Solidを作成しない場合は、bldg:lod4MultiSurfaceを必ず作成する。
+| 部屋の主要構造の外形を示す面の集まり。 gml:MultiSurfaceを構成するgml:Polygonは、以下のいずれかの地物のLOD4幾何オブジェクトに含まれなければならない
+
+* 境界面（bldg:_BoundarySurface）及びその開口部（bldg:_Opening） ただし、境界面は、このbldg:Roomが、関連役割bldg:boundedByにより参照する境界面であること。また、開口部は、その境界面に包含されていること
+
+* 屋内付属物（bldg:IntBuildingInstallation）の境界面及びその開口部 ただし、屋内付属物は、このbldg:Roomが、関連役割bldg:roomInstallationにより参照する付属物であること。また、開口部はその付属物に包含されていること。 bldg:lod4Solidを作成しない場合は、bldg:lod4MultiSurfaceを必ず作成する。
 | bldg:boundedBy
 | bldg:\_ BoundarySurface [0..*]
 a| 部屋の外形を示す境界面。
