@@ -683,7 +683,9 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:area | gml:MeasureType[0..1] | 水部の範囲の実測により取得した面積。単位はm2（uom=”m2”）とする。
 | uro:measurementYearMonth | xs:gYearMonth[0..1] | 水部を測量した年月。
 | uro:prefecture | gml:CodeType[0..*] | 水部が所在する都道府県の都道府県コ－ド。JIS X0401に定義される2桁の半角数字。コードリスト（Common_localPublicAuthorities.xml）より選択する。複数の都道府県に跨って存在する場合は、複数の都道府県コードを記述する。
-| uro:city | gml:CodeType[0..*] | 水部が所在する市区町村の市区町村コ－ド。JIS X0401に定義される2桁の半角数字とJIS X0402に定義される3桁の半角数字とを組み合わせた5桁の半角数字。政令市の場合は、区の市区町村コードとする。コードリスト（Common_localPublicAuthorities.xml）より選択する。 複数の市区町村に跨って存在する場合は、複数の市区町村コードを記述する。
+| uro:city | gml:CodeType[0..*] | 水部が所在する市区町村の市区町村コ－ド。JIS X0401に定義される2桁の半角数字とJIS X0402に定義される3桁の半角数字とを組み合わせた5桁の半角数字。政令市の場合は、区の市区町村コードとする。コードリスト（Common_localPublicAuthorities.xml）より選択する。
+
+複数の市区町村に跨って存在する場合は、複数の市区町村コードを記述する。
 
 |===
 
@@ -714,16 +716,32 @@ h| 上位の型 2+| ―
 h| ステレオタイプ 2+| << DataType >>
 3+h| 自身に定義された属性
 h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:geometrySrcDescLod0 | gml:CodeType [0..*] | LOD0の幾何オブジェクトの作成に使用した原典資料の種類。 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD0の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、水部モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
-| uro:geometrySrcDescLod1 | gml:CodeType [1..*] | LOD1の幾何オブジェクトの作成に使用した原典資料の種類。 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。具体的な都市オブジェクトがLOD1の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
-| uro:geometrySrcDescLod2 | gml:CodeType [0..*] | LOD2の幾何オブジェクトの作成に使用した原典資料の種類。 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD2の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、水部モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
+| uro:geometrySrcDescLod0 | gml:CodeType [0..*] | LOD0の幾何オブジェクトの作成に使用した原典資料の種類。
+
+コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD0の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、水部モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
+| uro:geometrySrcDescLod1 | gml:CodeType [1..*] | LOD1の幾何オブジェクトの作成に使用した原典資料の種類。
+
+コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。具体的な都市オブジェクトがLOD1の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
+| uro:geometrySrcDescLod2 | gml:CodeType [0..*] | LOD2の幾何オブジェクトの作成に使用した原典資料の種類。
+
+コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD2の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、水部モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
 | uro:geometrySrcDescLod3 | gml:CodeType [0..*] | コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD3の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD3の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、水部モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
 h| (uro:geometrySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
-| uro:thematicSrcDesc | gml:CodeType [0..\*] | 主題属性の作成に使用した原典資料の種類 コードリスト（DataQualityAttribute_thematicSrcDesc.xml）より選択する。 主題属性が作成対象となっている場合は必須とする。
-| uro:appearanceSrcDescLod0 | gml:CodeType [0..*] | LOD0の幾何オブジェクトのアピアランスに使用した原典資料の種類。 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 拡張製品仕様書でLOD0の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
-| uro:appearanceSrcDescLod1 | gml:CodeType [0..*] | LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 拡張製品仕様書LOD1の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD1の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
-| uro:appearanceSrcDescLod2 | gml:CodeType [0..*] | LOD2の幾何オブジェクトのアピアランスに使用した原典資料の種類。 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 拡張製品仕様書でLOD2の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
-| uro:appearanceSrcDescLod3 | gml:CodeType [0..*] | LOD3の幾何オブジェクトのアピアランスに使用した原典資料の種類。 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 拡張製品仕様書でLOD3の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD3の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
+| uro:thematicSrcDesc | gml:CodeType [0..\*] | 主題属性の作成に使用した原典資料の種類 コードリスト（DataQualityAttribute_thematicSrcDesc.xml）より選択する。
+
+主題属性が作成対象となっている場合は必須とする。
+| uro:appearanceSrcDescLod0 | gml:CodeType [0..*] | LOD0の幾何オブジェクトのアピアランスに使用した原典資料の種類。 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。
+
+拡張製品仕様書でLOD0の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
+| uro:appearanceSrcDescLod1 | gml:CodeType [0..*] | LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。
+
+拡張製品仕様書LOD1の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD1の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
+| uro:appearanceSrcDescLod2 | gml:CodeType [0..*] | LOD2の幾何オブジェクトのアピアランスに使用した原典資料の種類。 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。
+
+拡張製品仕様書でLOD2の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
+| uro:appearanceSrcDescLod3 | gml:CodeType [0..*] | LOD3の幾何オブジェクトのアピアランスに使用した原典資料の種類。 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。
+
+拡張製品仕様書でLOD3の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD3の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 h| (uro:appearanceSrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトのアピアランスに使用した原典資料の種類。
 h| (uro:lodType) | gml:CodeType[0..*] | 幾何オブジェクトに適用されたLODの詳細な区分。
 h| (uro:lod1HeightType) | gml:CodeType [0..1] | LOD1の立体図形を作成する際に使用した高さの算出方法。
@@ -771,10 +789,18 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば地図情報レベル2500の公共測量成果と地図情報レベル500の公共測量成果を使用した場合は、地図情報レベル2500となる。
 h| (uro:srcScaleLod4) | gml:CodeType [0..1] | LOD4の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
-| uro:publicSurveySrcDescLod0 | gml:CodeType [0..*] | LOD0の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 「LOD0の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 複数の種類の原典資料を使用した場合は、それぞれを記述する。
-| uro:publicSurveySrcDescLod1 | gml:CodeType [0..*] | LOD1の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 複数の種類の原典資料を使用した場合は、それぞれを記述する。
-| uro:publicSurveySrcDescLod2 | gml:CodeType [0..*] | LOD2の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 「LOD2の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod2）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 複数の種類の原典資料を使用した場合は、それぞれを記述する。
-| uro:publicSurveySrcDescLod3 | gml:CodeType [0..*] | LOD3の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 「LOD3の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod3）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 複数の種類の原典資料を使用した場合は、それぞれを記述する。
+| uro:publicSurveySrcDescLod0 | gml:CodeType [0..*] | LOD0の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 「LOD0の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
+
+複数の種類の原典資料を使用した場合は、それぞれを記述する。
+| uro:publicSurveySrcDescLod1 | gml:CodeType [0..*] | LOD1の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
+
+複数の種類の原典資料を使用した場合は、それぞれを記述する。
+| uro:publicSurveySrcDescLod2 | gml:CodeType [0..*] | LOD2の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 「LOD2の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod2）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
+
+複数の種類の原典資料を使用した場合は、それぞれを記述する。
+| uro:publicSurveySrcDescLod3 | gml:CodeType [0..*] | LOD3の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 「LOD3の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod3）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
+
+複数の種類の原典資料を使用した場合は、それぞれを記述する。
 h| (uro:publicSurveySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
 
 |===

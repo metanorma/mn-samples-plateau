@@ -162,7 +162,9 @@ a| 区域の範囲。区域の境界線に囲まれた面とする。 +
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
 | urf:dataQualityAttribute | uro:DataQualityAttribute [0..1] | 作成したデータの品質に関する情報。必須とする。
-| urf:boundary | urf:Boundary [0..*] | 区域を構成する境界。 区域の境界線に、道路縁や行政界線等の区分を行いたい場合に使用する。
+| urf:boundary | urf:Boundary [0..*] | 区域を構成する境界。
+
+区域の境界線に、道路縁や行政界線等の区分を行いたい場合に使用する。
 3+h| 当該型に定義された関連役割
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:urbanParkAttribute | urf:UrbanParkAttribute [0..1] | 都市公園に関するデータ型を保持する。区域が都市公園の区域の場合に使用する。
@@ -183,7 +185,9 @@ h| ステレオタイプ 2+| << DataType >>
 h| 属性名 h| 属性の型及び多重度 h| 定義
 h| (urf:class) | gml:CodeType [0..1] | 境界線の区分。
 | urf:function | gml:CodeType [1..*] | 境界線の種類。コードリスト（Boundary_function.xml）より選択する。
-| (urf:usage) | gml:CodeType [0..*] | 区域界が区切る区域の種類。コードリスト（Zone_function.xml）より選択する。 都市計画の区域を区分する境界の場合に、区域の種類を特定する
+| (urf:usage) | gml:CodeType [0..*] | 区域界が区切る区域の種類。コードリスト（Zone_function.xml）より選択する。
+
+都市計画の区域を区分する境界の場合に、区域の種類を特定する
 | urf:offset | gml:LengthType [0..1] | オフセットされている場合の量。単位はm（uom=”m”）とする。
 | urf:offsetDirection | xs:string [0..1] | 基準となる線に対するオフセットの方向。
 3+h| 自身に定義された関連役割
@@ -240,13 +244,19 @@ h| ステレオタイプ 2+| << DataType >>
 3+h| 自身に定義された属性
 h| 属性名 h| 属性の型及び多重度 h| 定義
 h| (uro:geometrySrcDescLod0) | gml:CodeType [0..*] | LOD0の幾何オブジェクトの作成に使用した原典資料の種類。
-| uro:geometrySrcDescLod1 | gml:CodeType [1..*] | LOD1の幾何オブジェクトの作成に使用した原典資料の種類。 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。
+| uro:geometrySrcDescLod1 | gml:CodeType [1..*] | LOD1の幾何オブジェクトの作成に使用した原典資料の種類。
+
+コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。
 h| (uro:geometrySrcDescLod2) | gml:CodeType [0..*] | LOD2の幾何オブジェクトの作成に使用した原典資料の種類。
 h| (uro:geometrySrcDescLod3) | gml:CodeType [0..*] | LOD3の幾何オブジェクトの作成に使用した原典資料の種類。
 h| (uro:geometrySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
-| uro:thematicSrcDesc | gml:CodeType [0..\*] | 主題属性の作成に使用した原典資料の種類。 コードリスト（DataQualityAttribute_thematicSrcDesc.xml）より選択する。 主題属性が作成対象となっている場合は必須とする。
+| uro:thematicSrcDesc | gml:CodeType [0..\*] | 主題属性の作成に使用した原典資料の種類。 コードリスト（DataQualityAttribute_thematicSrcDesc.xml）より選択する。
+
+主題属性が作成対象となっている場合は必須とする。
 h| (uro:appearanceSrcDescLod0) | gml:CodeType [0..*] | LOD0の幾何オブジェクトのアピアランスに使用した原典資料の種類。
-| uro:appearanceSrcDescLod1 | gml:CodeType [0..*] | LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 拡張製品仕様書LOD1の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD1の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
+| uro:appearanceSrcDescLod1 | gml:CodeType [0..*] | LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。
+
+拡張製品仕様書LOD1の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD1の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 h| (uro:appearanceSrcDescLod2) | gml:CodeType [0..*] | LOD2の幾何オブジェクトのアピアランスに使用した原典資料の種類。
 h| (uro:appearanceSrcDescLod3) | gml:CodeType [0..*] | LOD3の幾何オブジェクトのアピアランスに使用した原典資料の種類。
 h| uro:appearanceSrcDescLod4 | gml:CodeType [0..*] | LOD4の幾何オブジェクトのアピアランスに使用した原典資料の種類。
