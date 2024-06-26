@@ -997,7 +997,9 @@ h| (tun:lod4TerrainIntersection) | gml:MutiCurve [0..1] | LOD4におけるトン
 a| トンネルの災害リスクに関する情報。 +
 uro:DisasterRiskAttributeの下位型を使用して記述する。
 
-| uro:tunDmAttribute | uro:DmAttribute [0..*] | LOD0の幾何形状。 トンネルのLODの幾何形状は、gml:MultiPoint、gml:MultiCurve又はgml:MultiSurfaceにより記述する。
+| uro:tunDmAttribute | uro:DmAttribute [0..*] | LOD0の幾何形状。
+
+トンネルのLODの幾何形状は、gml:MultiPoint、gml:MultiCurve又はgml:MultiSurfaceにより記述する。
 | uro:tunKeyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | 属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
 | uro:tunDataQualityAttribute
 | uro:DataQualityAttribute [0..1]
@@ -1598,7 +1600,9 @@ h| (tun:lod2Geometry) | gml:_Geometry [0..1] | 付属物のLOD2の形状。
 屋外付属物の外形（外側から見える形）を構成する面を取得し、面の各頂点に屋外付属物の高さを与える。
 
 容積の算出等ユースケースで必要な場合は、gml:Solidを使用する。
-| tun:boundedBy | tun:_BoundarySurface [0..*] | 外部付属物を構成する外壁面、屋根面等の境界面への参照。 付属物の境界面がトンネル（tun:Tunnel又はtun:TunnelPart）の境界面となる場合にのみ作成する。 トンネルの空間に付属物を含まない場合は、付属物を構成する面を、境界面（tun:_BoundarySurface）に区別する必要はない。
+| tun:boundedBy | tun:_BoundarySurface [0..*] | 外部付属物を構成する外壁面、屋根面等の境界面への参照。 付属物の境界面がトンネル（tun:Tunnel又はtun:TunnelPart）の境界面となる場合にのみ作成する。
+
+トンネルの空間に付属物を含まない場合は、付属物を構成する面を、境界面（tun:_BoundarySurface）に区別する必要はない。
 
 |===
 
@@ -1777,7 +1781,9 @@ a| LOD1の幾何オブジェクトの作成に使用した原典資料の種類�
 a| LOD2の幾何オブジェクトの作成に使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD2の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、トンネルモデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
 
-| uro:geometrySrcDescLod3 | gml:CodeType [0..*] | LOD3の幾何オブジェクトの作成に使用した原典資料の種類。 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD3の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD3の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、トンネルモデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
+| uro:geometrySrcDescLod3 | gml:CodeType [0..*] | LOD3の幾何オブジェクトの作成に使用した原典資料の種類。
+
+コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD3の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD3の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、トンネルモデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
 | uro:geometrySrcDescLod4
 | gml:CodeType [0..*]
 a| LOD4の幾何オブジェクトの作成に使用した原典資料の種類。 +
