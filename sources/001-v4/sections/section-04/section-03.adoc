@@ -936,7 +936,9 @@ image::images/093.svg[]
 * 道路構造の変化点（トンネル、橋梁）
 
 * 正確度（地図情報レベル）や取得方法
-** an:Roadに含まれるtran:TrafficArea及びtran:AuxiliaryTrafficAreaは、同一路線に含まれなければならない。 同一のLODにおいて、連続する道路の境界は一致しなければならない。
+** an:Roadに含まれるtran:TrafficArea及びtran:AuxiliaryTrafficAreaは、同一路線に含まれなければならない。
++
+同一のLODにおいて、連続する道路の境界は一致しなければならない。
 
 .LOD1における道路の取得例
 image::images/094.webp.png[]
