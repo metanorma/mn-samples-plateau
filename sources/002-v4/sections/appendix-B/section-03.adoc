@@ -80,8 +80,12 @@ GMLには、gml:_Curveを継承する下位型として、様々な曲線を記�
 ****
 要件gm-5.　妥当なgml:LineStringは、以下を満たさなければならない。
 
-. gml:LineStringを構成する点を、以下のいずれかの方法により記述する。 　
-** gml:pos又はgml:pointPropertyの順列で構成する。 　
+. gml:LineStringを構成する点を、以下のいずれかの方法により記述する。
+
+
+** gml:pos又はgml:pointPropertyの順列で構成する。
+
+
 ** gml:posListを用いて記述する。このとき、gml:posListには2点以上の座標値が含まれてなければならず、すべての座標値には同じ空間参照系が適用されなければならない。
 
 . gml:LineStringを構成する点の座標値は、始点と終点が一致する場合を除き、一意とする。

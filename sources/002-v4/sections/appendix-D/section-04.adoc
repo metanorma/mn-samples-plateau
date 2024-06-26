@@ -91,7 +91,9 @@ a| 主として自動車が利用する道路の部分のうち、自動車の�
 道路面は一体的な面であり、その一体的な面を機能により交通領域や交通補助領域に区分している。そのため、道路を構成する交通領域は、他の交通領域や交通補助領域と重なることはない。また、道路を構成する交通領域は、隣接する他の交通領域や交通補助領域と隙間が空いていてはならない。
 
 ****
-要件tran-9.　同一のtran:Roadに含まれるtran:TrafficAreaの空間属性は、他のtran:TrafficAreaやtran:AuxiliaryTrafficAreaの空間属性と重なってはならない。 　　　　　　また、同一のtran:Roadに含まれるtran:TrafficAreaの空間属性は、隣接するtran:TrafficAreaやtran:AuxiliaryTrafficAreaの空間属性と、境界線の座標が一致しなければならない。
+要件tran-9.　同一のtran:Roadに含まれるtran:TrafficAreaの空間属性は、他のtran:TrafficAreaやtran:AuxiliaryTrafficAreaの空間属性と重なってはならない。
+
+　　　　　また、同一のtran:Roadに含まれるtran:TrafficAreaの空間属性は、隣接するtran:TrafficAreaやtran:AuxiliaryTrafficAreaの空間属性と、境界線の座標が一致しなければならない。
 ****
 
 ただし、立体交差を2次元で表現する場合には空間属性が互いに重なってしまう。空間属性の重なりが妥当であるのか否かを判定するために、立体交差では必ず道路のインスタンスを分けなければならない。
