@@ -11,10 +11,11 @@ bldg:_BoundarySurfaceは、建築物（bldg:Building）や建築物の部分（b
 
 CityGMLでは、建築物や建築物付属物の境界面としてbldg:_BoundarySurfaceの下位型となる地物型が用意されている。このうち、屋外の境界面の記述に使用できるのは、屋根面、外壁面、底面、外部天井面、外部床面又は閉鎖面である（表C- 10、図C- 20）。
 
-[cols=3]
+[cols="a,a,a",options="header"]
 .bldg:_BoundarySurfaceの下位型
 |===
-h| _BoundarySurfaceの下位型 h| 意味 h| 説明
+| _BoundarySurfaceの下位型 | 意味 | 説明
+
 | RoofSurface | 屋根面 | 外から見える上部の境界面。
 | WallSurface | 外壁面 | 外から見える側面の境界面。
 | GroundSurface | 底面 | 下部の境界面。
