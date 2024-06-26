@@ -118,7 +118,9 @@ image::images/288.webp.png[]
 ^a|
 image::images/289.webp.png[]
 
-h| 説明 | 都市設備の上方からの正射影の外周を地表面からの一律の高さで押し出した立体を作成する。 一律の高さは、都市設備の最高高さとする。
+h| 説明 | 都市設備の上方からの正射影の外周を地表面からの一律の高さで押し出した立体を作成する。
+
+一律の高さは、都市設備の最高高さとする。
 |
 路面標示やマンホールのように、他の地物の面と一体として表現されるべきものは、都市設備を包含する最小の矩形又は矩形の組み合わせとして表現する。
 
@@ -149,7 +151,9 @@ a|
 |
 * 都市設備の上方からの正射影の外を、地表面から一律の高さで押し出した立体を作成する。
 |
-一律の高さは、都市設備の最高高さとする。 地表の高さは、都市設備の上方からの正射影の外周と地形との交線のなかで最も低い高さとする。
+一律の高さは、都市設備の最高高さとする。
+
+地表の高さは、都市設備の上方からの正射影の外周と地形との交線のなかで最も低い高さとする。
 
 |===
 
@@ -235,9 +239,15 @@ image::images/294.webp.png[]
 
 h| 説明
 a| 都市設備の外周を取得する。 +
-その形状はLOD2よりも詳細化される。 外周を構成する各頂点に、路面等この都市設備が設置されている地物の高さを与える。
-| 都市設備の主要な部分について、それぞれの外形を構成する特徴点 footnoteblock:[fn_cross_section] により作成した立体。 主要な部分同士の接続部は表現不要とする。
-| 都市設備の主要な部分について、それぞれの外形を構成する特徴点 footnoteblock:[fn_cross_section] により作成した立体。 主要な部分同士の接続部を表現する。
+その形状はLOD2よりも詳細化される。
+
+外周を構成する各頂点に、路面等この都市設備が設置されている地物の高さを与える。
+| 都市設備の主要な部分について、それぞれの外形を構成する特徴点 footnoteblock:[fn_cross_section] により作成した立体。
+
+主要な部分同士の接続部は表現不要とする。
+| 都市設備の主要な部分について、それぞれの外形を構成する特徴点 footnoteblock:[fn_cross_section] により作成した立体。
+
+主要な部分同士の接続部を表現する。
 |===
 
 [[fn_cross_section]]
@@ -398,9 +408,15 @@ a| 都市設備の種類。コードリスト（CityFurniture_function.xml）よ
 | frn:usage | gml:CodeType [0..*] | 都市設備の主な使い道。コードリストより選択する。本属性を使用する場合は、コードリスト（CityFurniture_usage.xml）を作成する。
 3+h| 自身に定義された関連役割
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-| frn:lod1Geometry | gml:_Geometry [0..1] | 都市設備の形状をそれが占有している範囲（面）に一律の高さを与えて押し出した立体（gml:Solid）として表現する。ただし、路面標示やマンホールのように他の地物の面と一体として表現されるべきものは面（gml:MultiSurface）として表現する。 接地している地物は、道路面から一律の高さで押し出す。
-| frn:lod2Geomerty | gml:_Geometry [0..1] | 都市設備の形状を立体とし、その主要な部分の外形を面の集まり又は立体として区分して表現する。他の地物の面と一体化した都市設備（道路標示、マンホール、点字ブロック）は、gml:MultiSurfaceにより記述し、それ以外の都市設備はgml:Solid又はgml:MultiSurfaceにより記述する。 連続する面の集まりの場合は、CompositeSurfaceを使用できる。
-| frn:lod3Geometry | gml:_Geometry [0..1] | 都市設備の形状を立体とし、その主要な部分の外形を面の集まり又は立体として詳細に区分して表現する。他の地物の面と一体化した都市設備（道路標示、マンホール、点字ブロック）は、gml:MultiSurfaceにより記述し、それ以外の都市設備はgml:Solid又はgml:MultiSurfaceにより記述する。 連続する面の集まりの場合は、CompositeSurfaceを使用できる。
+| frn:lod1Geometry | gml:_Geometry [0..1] | 都市設備の形状をそれが占有している範囲（面）に一律の高さを与えて押し出した立体（gml:Solid）として表現する。ただし、路面標示やマンホールのように他の地物の面と一体として表現されるべきものは面（gml:MultiSurface）として表現する。
+
+接地している地物は、道路面から一律の高さで押し出す。
+| frn:lod2Geomerty | gml:_Geometry [0..1] | 都市設備の形状を立体とし、その主要な部分の外形を面の集まり又は立体として区分して表現する。他の地物の面と一体化した都市設備（道路標示、マンホール、点字ブロック）は、gml:MultiSurfaceにより記述し、それ以外の都市設備はgml:Solid又はgml:MultiSurfaceにより記述する。
+
+連続する面の集まりの場合は、CompositeSurfaceを使用できる。
+| frn:lod3Geometry | gml:_Geometry [0..1] | 都市設備の形状を立体とし、その主要な部分の外形を面の集まり又は立体として詳細に区分して表現する。他の地物の面と一体化した都市設備（道路標示、マンホール、点字ブロック）は、gml:MultiSurfaceにより記述し、それ以外の都市設備はgml:Solid又はgml:MultiSurfaceにより記述する。
+
+連続する面の集まりの場合は、CompositeSurfaceを使用できる。
 | uro:cityFurnitureDetailAttribute
 | uro:CityFurnitureDetailAttribute [0..*]
 a| 都市設備の詳細な内容。 +
@@ -428,12 +444,26 @@ h| 上位の型 2+| uro:CityFurnitureAttribute
 h| ステレオタイプ 2+| << DataType >>
 3+h| 自身に定義された属性
 h| 属性 h| 属性の型及び多重度 h| 定義
-| uro:facilityType | gml:CodeType [0..1] | 都市設備の、より詳細な区分。frn:functionよりもさらに詳細に区分したい場合に使用する。 地下埋設物モデルにて使用する場合は、コードリスト（CityFurnitureDetailAttribute_facilityType.xml）より選択する。 地下埋設物モデル以外で使用する場合は、文字列とし下記定義域に従う。 定義域を「別表 uro:facilityTypeの定義域」に示す。frn:functionの値によりuro:facilityTypeの定義域は異なる。また、定義域に該当しない区分が存在する場合は、定義域を拡張してよい。 なお、「道路標識、区画線及び道路標示に関する命令」別表第4及び第6に示された区画線及び道路標示の形状・寸法・色が同一、かつ設置される場所が同一の場合は、以下の場合を除き、「区画線」の区分を採用する
+| uro:facilityType | gml:CodeType [0..1] | 都市設備の、より詳細な区分。frn:functionよりもさらに詳細に区分したい場合に使用する。
+
+地下埋設物モデルにて使用する場合は、コードリスト（CityFurnitureDetailAttribute_facilityType.xml）より選択する。
+
+地下埋設物モデル以外で使用する場合は、文字列とし下記定義域に従う。
+
+定義域を「別表 uro:facilityTypeの定義域」に示す。frn:functionの値によりuro:facilityTypeの定義域は異なる。また、定義域に該当しない区分が存在する場合は、定義域を拡張してよい。
+
+なお、「道路標識、区画線及び道路標示に関する命令」別表第4及び第6に示された区画線及び道路標示の形状・寸法・色が同一、かつ設置される場所が同一の場合は、以下の場合を除き、「区画線」の区分を採用する
 
 * 「安全地帯又は路上障害物に接近」のうち、安全地帯に接近する場合は「道路標示」として取得する
 
 * 「路側帯」のうち、歩道の設けられていない道路、又は道路の歩道の設けられていない側の路端よりに設けられ、かつ、実線で示されているものは「道路標示」として取得する。
-| uro:description | xs:string [0..1] | 都市施設の詳細な内容。 都市設備が道路標識又は路面標示の場合は、文字や数字で記載されている内容。 以下に示す道路標識又は路面標示の記載内容を対象とする。 最大幅、重量制限、高さ制限、最高速度、最低速度、車両通行区分、専用通行帯
+| uro:description | xs:string [0..1] | 都市施設の詳細な内容。
+
+都市設備が道路標識又は路面標示の場合は、文字や数字で記載されている内容。
+
+以下に示す道路標識又は路面標示の記載内容を対象とする。
+
+最大幅、重量制限、高さ制限、最高速度、最低速度、車両通行区分、専用通行帯
 
 |===
 
@@ -479,7 +509,9 @@ h| 属性 h| 属性の型及び多重度 h| 定義
 
 [cols="1,1,2"]
 |===
-| 型の定義 2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。 属性名称と属性の値の対で構成される。コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
+| 型の定義 2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。
+
+属性名称と属性の値の対で構成される。コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
 
 h| 上位の型 2+| ―
 h| ステレオタイプ 2+| << DataType >>
@@ -530,10 +562,30 @@ h| 上位の型 2+| ―
 h| ステレオタイプ 2+| << DataType >>
 3+h| 自身に定義された属性
 h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:srcScaleLod0 | gml:CodeType [0..1] | LOD0の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 「LOD0の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
-| uro:srcScaleLod1 | gml:CodeType [0..1] | LOD1の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
-| uro:srcScaleLod2 | gml:CodeType [0..1] | LOD2の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 「LOD2の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod2）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば地図情報レベル2500の公共測量成果と地図情報レベル500の公共測量成果を使用した場合は、地図情報レベル2500となる。
-| uro:srcScaleLod3 | gml:CodeType [0..1] | LOD3の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 「LOD3の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod3）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば地図情報レベル2500の公共測量成果と地図情報レベル500の公共測量成果を使用した場合は、地図情報レベル2500となる。
+| uro:srcScaleLod0 | gml:CodeType [0..1] | LOD0の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
+
+コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。
+
+「LOD0の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
+| uro:srcScaleLod1 | gml:CodeType [0..1] | LOD1の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
+
+コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。
+
+「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
+| uro:srcScaleLod2 | gml:CodeType [0..1] | LOD2の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
+
+コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。
+
+「LOD2の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod2）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
+
+複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば地図情報レベル2500の公共測量成果と地図情報レベル500の公共測量成果を使用した場合は、地図情報レベル2500となる。
+| uro:srcScaleLod3 | gml:CodeType [0..1] | LOD3の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
+
+コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。
+
+「LOD3の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod3）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
+
+複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば地図情報レベル2500の公共測量成果と地図情報レベル500の公共測量成果を使用した場合は、地図情報レベル2500となる。
 | uro:srcScaleLod4 | gml:CodeType [0..1] | LOD4の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
 | uro:publicSurveySrcDescLod0 | gml:CodeType [0..*] | LOD0の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 「LOD0の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 複数の種類の原典資料を使用した場合は、それぞれを記述する。
 | uro:publicSurveySrcDescLod1 | gml:CodeType [0..*] | LOD1の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 複数の種類の原典資料を使用した場合は、それぞれを記述する。
