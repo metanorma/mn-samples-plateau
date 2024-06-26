@@ -1096,13 +1096,19 @@ a| LOD0の幾何オブジェクトのアピアランスに使用した原典資�
 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 +
 拡張製品仕様書でLOD0の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 
-| uro:appearanceSrcDescLod1 | gml:CodeType[0..*] | LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。
+| uro:appearanceSrcDescLod1 | gml:CodeType[0..*] | LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。
+
+コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。
 
 拡張製品仕様書LOD1の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD1の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
-| uro:appearanceSrcDescLod2 | gml:CodeType[0..*] | LOD2の幾何オブジェクトのアピアランスに使用した原典資料の種類。 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。
+| uro:appearanceSrcDescLod2 | gml:CodeType[0..*] | LOD2の幾何オブジェクトのアピアランスに使用した原典資料の種類。
+
+コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。
 
 拡張製品仕様書でLOD2の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
-| uro:appearanceSrcDescLod3 | gml:CodeType [0..*] | LOD3の幾何オブジェクトのアピアランスに使用した原典資料の種類。 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。
+| uro:appearanceSrcDescLod3 | gml:CodeType [0..*] | LOD3の幾何オブジェクトのアピアランスに使用した原典資料の種類。
+
+コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。
 
 拡張製品仕様書でLOD3の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD3の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 h| (uro:appearanceSrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトのアピアランスに使用した原典資料の種類。
