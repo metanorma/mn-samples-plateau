@@ -480,7 +480,15 @@ h| 上位の型 2+| dem:_ReliefComponent
 h| ステレオタイプ 2+| << FeatureType >>
 3+h| 継承する属性
 h| 属性名 h| 属性の型及び多重度 h| 定義
-| gml:description | gml:StringOrRefType [0..1] | 原典資料に適用される座標参照系及び格子点間隔を記述する。 原典資料が航空機レーザ測量等で取得したランダム点群の場合は、irregularとする。 原典資料がDEM（デジタル標高モデル）から作成した点群の場合は、grid_epsg:[epsgcode]_[size]_[size]とする。 このとき、[epsgcode]には、原典資料に適用される座標参照系のepsgコードを記述する。 [size]には、座標系の軸に対する格子点の間隔と単位を記述する。また、軸の順序と単位は、座標参照系の定義に従う。 例えば、基盤地図情報数値標高モデル5mメッシュを使用した場合は、grid_epsg:6697_0.2sec_0.2secとなり、平面直角座標系Ⅸ系のDEM（格子点間隔1m）の場合は、grid_epsg:6677_1m_1mとなる。
+| gml:description | gml:StringOrRefType [0..1] | 原典資料に適用される座標参照系及び格子点間隔を記述する。
+
+原典資料が航空機レーザ測量等で取得したランダム点群の場合は、irregularとする。
+
+原典資料がDEM（デジタル標高モデル）から作成した点群の場合は、grid_epsg:[epsgcode]_[size]_[size]とする。
+
+このとき、[epsgcode]には、原典資料に適用される座標参照系のepsgコードを記述する。 [size]には、座標系の軸に対する格子点の間隔と単位を記述する。また、軸の順序と単位は、座標参照系の定義に従う。
+
+例えば、基盤地図情報数値標高モデル5mメッシュを使用した場合は、grid_epsg:6697_0.2sec_0.2secとなり、平面直角座標系Ⅸ系のDEM（格子点間隔1m）の場合は、grid_epsg:6677_1m_1mとなる。
 | gml:name | gml:CodeType [0..1] | 当該エリアの標準地域メッシュコード（基準地域メッシュ）。文字列とする。
 h| (gml:boundedBy) | gml:Envelope [0..1] | オブジェクトの範囲と空間参照系。
 | core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
@@ -557,7 +565,9 @@ h| (dem:breaklines) | gml:MultiMultiCurve [0..1] | 抑止線を表現する線�
 
 [cols="1,1,2"]
 |===
-| 型の定義 2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。 属性名称と属性の値の対で構成される。コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
+| 型の定義 2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。
+
+属性名称と属性の値の対で構成される。コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
 
 h| 上位の型 2+| ―
 h| ステレオタイプ 2+| << DataType >>
@@ -602,7 +612,9 @@ h| (uro:lod1HeightType) | gml:CodeType [0..1] | LOD1の立体図形を作成す�
 h| (uro:tranDataAcquisition) | xs:string [0..1] | 「道路基盤地図情報（整備促進版）製品仕様書（案）」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
 3+h| 自身に定義された関連役割
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-| uro:publicSurveyDataQualityAttribute | uro:PublicSurveyDataQualityAttribute [0..1] | 使用した公共測量成果の地図情報レベルと種類。 各LODの幾何オブジェクトの作成に使用した原典資料の種類に関する属性（uro:geometrySrcDescLod0等）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）となっている場合は、必須とする。
+| uro:publicSurveyDataQualityAttribute | uro:PublicSurveyDataQualityAttribute [0..1] | 使用した公共測量成果の地図情報レベルと種類。
+
+各LODの幾何オブジェクトの作成に使用した原典資料の種類に関する属性（uro:geometrySrcDescLod0等）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）となっている場合は、必須とする。
 
 |===
 
@@ -616,10 +628,30 @@ h| 上位の型 2+| ―
 h| ステレオタイプ 2+| << DataType >>
 3+h| 自身に定義された属性
 h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:srcScaleLod0 | gml:CodeType [0..1] | LOD0の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 「LOD0の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
-| uro:srcScaleLod1 | gml:CodeType [0..1] | LOD1の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
-| uro:srcScaleLod2 | gml:CodeType [0..1] | LOD2の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 「LOD2の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod2）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば地図情報レベル2500の公共測量成果と地図情報レベル500の公共測量成果を使用した場合は、地図情報レベル2500となる。
-| uro:srcScaleLod3 | gml:CodeType [0..1] | LOD3の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 「LOD3の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod3）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば地図情報レベル2500の公共測量成果と地図情報レベル500の公共測量成果を使用した場合は、地図情報レベル2500となる。
+| uro:srcScaleLod0 | gml:CodeType [0..1] | LOD0の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
+
+コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。
+
+「LOD0の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
+| uro:srcScaleLod1 | gml:CodeType [0..1] | LOD1の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
+
+コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。
+
+「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
+| uro:srcScaleLod2 | gml:CodeType [0..1] | LOD2の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
+
+コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。
+
+「LOD2の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod2）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
+
+複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば地図情報レベル2500の公共測量成果と地図情報レベル500の公共測量成果を使用した場合は、地図情報レベル2500となる。
+| uro:srcScaleLod3 | gml:CodeType [0..1] | LOD3の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
+
+コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。
+
+「LOD3の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod3）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
+
+複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば地図情報レベル2500の公共測量成果と地図情報レベル500の公共測量成果を使用した場合は、地図情報レベル2500となる。
 | uro:srcScaleLod4 | gml:CodeType [0..1] | LOD4の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
 | uro:publicSurveySrcDescLod0 | gml:CodeType [0..*] | LOD0の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 「LOD0の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 複数の種類の原典資料を使用した場合は、それぞれを記述する。
 | uro:publicSurveySrcDescLod1 | gml:CodeType [0..*] | LOD1の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 複数の種類の原典資料を使用した場合は、それぞれを記述する。

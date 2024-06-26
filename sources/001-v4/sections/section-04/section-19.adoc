@@ -513,13 +513,23 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 3+h| 自身に定義された関連役割
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | wtr:lod0MultiCurve | gml:MultiCurve [0..1] | 河川中心線。現況河道の中心線で湖沼域を含む河川の経路を指す。頂点の順列により流下方向を示す。第一点目の頂点を流下始点とし、最終点を流下終点とする。
-| wtr:lod1MultiSurface | gml:MultiSurface [0..1] | 水面の範囲。水平面に投影した場合に隣り合う水部のインスタンスは、連続でなければならない。 各頂点の高さは、水涯線の各頂点と同位置の地形の標高とする。
-| wtr:lod2Solid | gml:Solid [0..1] | 水面（wtr:WaterSurface）と、等深線や航空レーザ又はマルチビーム測深の点群データからから作成した不規則三角網（TIN）により表現する水底面（wtr:WaterGroundSurface）を境界面とする水部の外形を示す立体。 ただし、水面又は水底面が複数の基準地域メッシュに跨る場合は、基準地域メッシュとの境界線を用いて作成した垂直面で立体を分割し、分割された水面、水底面及び垂直面を境界面とする立体とする。このとき、垂直面はwtr:WaterClosureSurfaceとなる。
+| wtr:lod1MultiSurface | gml:MultiSurface [0..1] | 水面の範囲。水平面に投影した場合に隣り合う水部のインスタンスは、連続でなければならない。
+
+各頂点の高さは、水涯線の各頂点と同位置の地形の標高とする。
+| wtr:lod2Solid | gml:Solid [0..1] | 水面（wtr:WaterSurface）と、等深線や航空レーザ又はマルチビーム測深の点群データからから作成した不規則三角網（TIN）により表現する水底面（wtr:WaterGroundSurface）を境界面とする水部の外形を示す立体。
+
+ただし、水面又は水底面が複数の基準地域メッシュに跨る場合は、基準地域メッシュとの境界線を用いて作成した垂直面で立体を分割し、分割された水面、水底面及び垂直面を境界面とする立体とする。このとき、垂直面はwtr:WaterClosureSurfaceとなる。
 | wtr:boundedBy | wtr:_BoundarySurface [0..*] | 水部の外形を構成する水面（wtr:WaterSurface）や水底面（wtr:WaterGroundSurface）等の境界面。
-| wtr:lod3Solid | gml:Solid [0..1] | 水面（wtr:WaterSurface）と、航空レーザ又はマルチビーム測深の点群データから不規則三角網（TIN）を発生した水底面（wtr:WaterGroundSurface）を境界面とする水部の外形を示す立体。 ただし、水面又は水底面が複数の基準地域メッシュに跨る場合は、基準地域メッシュとの境界線を用いて作成した垂直面で立体を分割し、分割された水面、水底面及び垂直面を境界面とする立体とする。このとき、垂直面はwtr:WaterClosureSurfaceとなる。
+| wtr:lod3Solid | gml:Solid [0..1] | 水面（wtr:WaterSurface）と、航空レーザ又はマルチビーム測深の点群データから不規則三角網（TIN）を発生した水底面（wtr:WaterGroundSurface）を境界面とする水部の外形を示す立体。
+
+ただし、水面又は水底面が複数の基準地域メッシュに跨る場合は、基準地域メッシュとの境界線を用いて作成した垂直面で立体を分割し、分割された水面、水底面及び垂直面を境界面とする立体とする。このとき、垂直面はwtr:WaterClosureSurfaceとなる。
 | uro:waterBodyDetailAttribute | uro:WaterBodyDetailAttribute [0..1] | 水部の基礎的な情報。
 | uro:wtrKeyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
-| uro:wtrDataQualityAttribute | uro:DataQualityAttribute [0..1] | 作成されたデータの品質に関する情報。必須とする。 公共測量成果となる場合はuro:PublicSurveyDataQualityAttributeを使用して記述する。 公共測量成果とならない場合はuro:DataQualityAttributeを使用して記述する。
+| uro:wtrDataQualityAttribute | uro:DataQualityAttribute [0..1] | 作成されたデータの品質に関する情報。必須とする。
+
+公共測量成果となる場合はuro:PublicSurveyDataQualityAttributeを使用して記述する。
+
+公共測量成果とならない場合はuro:DataQualityAttributeを使用して記述する。
 | uro:wtrDmAttribute | uro:DmAttribute [0..*] | 公共測量標準図式による図形表現に必要な情報。
 | uro:wtrFacilityTypeAttribute | uro:FacilityTypeAttribute [0..*] | 特定分野における施設の分類情報。
 | uro:wtrFacilityIdAttribute | uro:FacilityIdAttribute [0..1] | uro:wtrFacilityTypeAttribute.classによって指定された分野における施設の識別情報。
@@ -597,8 +607,12 @@ h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を�
 h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
 h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
 h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-| wtr:lod2Surface | gml:_Surface [0..1] | LOD2において等深線から作成した不規則三角網（TIN）により水底の形状・起伏を再現した面。 複数の基準地域メッシュに跨る場合は、基準地域メッシュとの境界線にて面を分割する。
-| wtr:lod3Surface | gml:_Surface [0..1] | LOD3において航空レーザ又はマルチビーム測深の点群データから不規則三角網（TIN）を発生することで水底の形状・起伏を再現した面。 複数の基準地域メッシュに跨る場合は、基準地域メッシュとの境界線にて面を分割する。
+| wtr:lod2Surface | gml:_Surface [0..1] | LOD2において等深線から作成した不規則三角網（TIN）により水底の形状・起伏を再現した面。
+
+複数の基準地域メッシュに跨る場合は、基準地域メッシュとの境界線にて面を分割する。
+| wtr:lod3Surface | gml:_Surface [0..1] | LOD3において航空レーザ又はマルチビーム測深の点群データから不規則三角網（TIN）を発生することで水底の形状・起伏を再現した面。
+
+複数の基準地域メッシュに跨る場合は、基準地域メッシュとの境界線にて面を分割する。
 
 |===
 
@@ -652,8 +666,16 @@ h| ステレオタイプ 2+| << DataType >>
 3+h| 属性
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:kana | xs:string[0..1] | 水部の名称のフリガナ。カタカナで記述する。
-| uro:waterSystemCode | gml:CodeType [0..1] | 水系域コード。河川コード仕様書（国土交通省河川局）にて示された2桁の地域番号と4桁の水系番号からなる6桁の番号。 （水系域コード一覧： https://nlftp.mlit.go.jp/ksj/gml/codelist/WaterSystemCodeCd.html） 地域番号は、1級水系の場合は地方整備局等の番号、1級水系以外は都道府県の番号となる。また、水系番号は、一水系につき一つ与えられた番号であり、地域番号と併せて使用することで、水系の特定が可能となる。 コードリスト（WaterBodyDetailAttribute_SystemCode.xml）より選択する。
-| uro:riverCode | gml:CodeType [0..1] | 河川コード。河川コード仕様書（国土交通省河川局）にて示された、１級河川、２級河川、準用河川、普通河川に該当する個別の河川を一意に特定するために付与された2桁の地域番号、4桁の水系番号、4桁の河川番号からなる10桁の番号。 （河川コード一覧： https://nlftp.mlit.go.jp/ksj/gml/codelist/RiverCodeCd.html） 河川番号、同一水系内において河川を特定するための番号であり、一河川につき一つの番号が付与される。 コードリスト（WaterBodyDetailAttribute_riverCode.xml）より選択する。
+| uro:waterSystemCode | gml:CodeType [0..1] | 水系域コード。河川コード仕様書（国土交通省河川局）にて示された2桁の地域番号と4桁の水系番号からなる6桁の番号。
+
+（水系域コード一覧： https://nlftp.mlit.go.jp/ksj/gml/codelist/WaterSystemCodeCd.html） 地域番号は、1級水系の場合は地方整備局等の番号、1級水系以外は都道府県の番号となる。また、水系番号は、一水系につき一つ与えられた番号であり、地域番号と併せて使用することで、水系の特定が可能となる。
+
+コードリスト（WaterBodyDetailAttribute_SystemCode.xml）より選択する。
+| uro:riverCode | gml:CodeType [0..1] | 河川コード。河川コード仕様書（国土交通省河川局）にて示された、１級河川、２級河川、準用河川、普通河川に該当する個別の河川を一意に特定するために付与された2桁の地域番号、4桁の水系番号、4桁の河川番号からなる10桁の番号。
+
+（河川コード一覧： https://nlftp.mlit.go.jp/ksj/gml/codelist/RiverCodeCd.html） 河川番号、同一水系内において河川を特定するための番号であり、一河川につき一つの番号が付与される。
+
+コードリスト（WaterBodyDetailAttribute_riverCode.xml）より選択する。
 | uro:adminType | gml:CodeType [0..1] | 河川管理者が管理する区間種別。コードリスト（WaterBodyDetailAttribute_adminType.xml）より選択する。
 | uro:flowDirection | xs: boolean [0..1] | 水部の流下方向の判明状況。
 | uro:maximumDepth | gml:LengthType[0..1] | 最大水深。単位はｍ（uom=”m”）とする。
@@ -669,7 +691,9 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 [cols="1,1,2"]
 |===
-| 型の定義 2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。 属性名称と属性の値の対で構成される。コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
+| 型の定義 2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。
+
+属性名称と属性の値の対で構成される。コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
 
 h| 上位の型 2+| ―
 h| ステレオタイプ 2+| << DataType >>
@@ -706,7 +730,9 @@ h| (uro:lod1HeightType) | gml:CodeType [0..1] | LOD1の立体図形を作成す�
 h| (uro:tranDataAcquisition) | xs:string [0..1] | 「道路基盤地図情報（整備促進版）製品仕様書（案）」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
 3+h| 自身に定義された関連役割
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-| uro:publicSurveyDataQualityAttribute | uro:PublicSurveyDataQualityAttribute [0..1] | 使用した公共測量成果の地図情報レベルと種類。 各LODの幾何オブジェクトの作成に使用した原典資料の種類に関する属性（uro:geometrySrcDescLod0等）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）となっている場合は、必須とする。
+| uro:publicSurveyDataQualityAttribute | uro:PublicSurveyDataQualityAttribute [0..1] | 使用した公共測量成果の地図情報レベルと種類。
+
+各LODの幾何オブジェクトの作成に使用した原典資料の種類に関する属性（uro:geometrySrcDescLod0等）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）となっている場合は、必須とする。
 
 |===
 
@@ -720,10 +746,30 @@ h| 上位の型 2+| ―
 h| ステレオタイプ 2+| << DataType >>
 3+h| 自身に定義された属性
 h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:srcScaleLod0 | gml:CodeType [0..1] | LOD0の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 「LOD0の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
-| uro:srcScaleLod1 | gml:CodeType [0..1] | LOD1の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
-| uro:srcScaleLod2 | gml:CodeType [0..1] | LOD2の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 「LOD2の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod2）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば地図情報レベル2500の公共測量成果と地図情報レベル500の公共測量成果を使用した場合は、地図情報レベル2500となる。
-| uro:srcScaleLod3 | gml:CodeType [0..1] | LOD3の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 「LOD3の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod3）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば地図情報レベル2500の公共測量成果と地図情報レベル500の公共測量成果を使用した場合は、地図情報レベル2500となる。
+| uro:srcScaleLod0 | gml:CodeType [0..1] | LOD0の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
+
+コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。
+
+「LOD0の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
+| uro:srcScaleLod1 | gml:CodeType [0..1] | LOD1の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
+
+コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。
+
+「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
+| uro:srcScaleLod2 | gml:CodeType [0..1] | LOD2の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
+
+コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。
+
+「LOD2の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod2）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
+
+複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば地図情報レベル2500の公共測量成果と地図情報レベル500の公共測量成果を使用した場合は、地図情報レベル2500となる。
+| uro:srcScaleLod3 | gml:CodeType [0..1] | LOD3の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
+
+コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。
+
+「LOD3の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod3）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
+
+複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば地図情報レベル2500の公共測量成果と地図情報レベル500の公共測量成果を使用した場合は、地図情報レベル2500となる。
 h| (uro:srcScaleLod4) | gml:CodeType [0..1] | LOD4の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
 | uro:publicSurveySrcDescLod0 | gml:CodeType [0..*] | LOD0の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 「LOD0の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 複数の種類の原典資料を使用した場合は、それぞれを記述する。
 | uro:publicSurveySrcDescLod1 | gml:CodeType [0..*] | LOD1の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 複数の種類の原典資料を使用した場合は、それぞれを記述する。
