@@ -27,16 +27,16 @@
 
 トンネルモデル（LOD0）の取得イメージを表 4-69に示す。
 
-[cols="5,9,9,9"]
+[cols="5a,9a,9a,9a"]
 .トンネルモデル（LOD0）の取得イメージ
 |===
 h| 3+^h| LOD0
 h| 取得例
-a|
+|
 image::images/254.webp.png[]
-a|
+|
 image::images/255.webp.png[]
-a|
+|
 image::images/256.webp.png[]
 
 h| 説明 | 中央位置の点と方向を取得する。
@@ -51,7 +51,7 @@ h| 説明 | 中央位置の点と方向を取得する。
 
 トンネルモデル（LOD0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1,1,1,1,1,3,2"]
+[cols="1a,1a,1a,1a,1a,3a,2a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -61,29 +61,29 @@ h| 説明 | 中央位置の点と方向を取得する。
 | Point
 | 坑口の正射影の幅（道路の横断方向）3.75m未満のトンネル footnoteblock:[fn_tunnel_1]
 
-a|
+|
 * 中央位置の点と方向を取得する。
 * 高さは0とする。
 
-a| 地下横断歩道は取得しない。
+| 地下横断歩道は取得しない。
 
 .3+|
 | MultiCurve
 | トンネル footnoteblock:[fn_tunnel_2]
-a|
+|
 * 坑口部分の外周を取得する。
 * 高さは0とする。
 
 .3+|
 | MultiSurface
 | トンネル footnoteblock:[fn_tunnel_2]
-a|
+|
 * 坑口部分の外周を取得する（始終点座標一致）。
 * 高さは0とする。
 
 | MultiSurface
 | 延長5m以上の道路の雪覆い等
-a|
+|
 * 外周を取得する（始終点座標一致）。
 * 高さは0とする。
 
@@ -115,14 +115,14 @@ a|
 
 トンネルモデル（LOD1）の取得イメージを表 4-70に示す。
 
-[cols="2,9,9"]
+[cols="2a,9a,9a"]
 .トンネルモデル（LOD1）の取得イメージ
 |===
 h| 2+^h| LOD1
 h| 取得例
-a|
+|
 image::images/257.webp.png[]
-a|
+|
 image::images/258.webp.png[]
 
 h| 説明 | トンネルの場合は、トンネルの坑口を含めた外周を一律の高さで押し出した立体として表現する。
@@ -147,7 +147,7 @@ h| 説明 | トンネルの場合は、トンネルの坑口を含めた外周�
 
 トンネルモデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1,1,1,1,1,3,2"]
+[cols="1a,1a,1a,1a,1a,3a,2a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -156,26 +156,26 @@ h| 説明 | トンネルの場合は、トンネルの坑口を含めた外周�
 .3+| Tunnel
 .3+| Solid
 | トンネル
-a|
+|
 * 道路縁から道路中心線を作成し、標準横断面図等の図面から、トンネルの厚みを含むトンネルの縁線を作成する。
 * 作成した外縁と、坑口を含む外周を作成する。
 * 外周を一律の高さで押し出した立体を作成する。
-a|
+|
 * 一律の高さは、トンネルの最も低い高さから最も高い高さまでの差分とする。
 * トンネルの入口となる坑口と、出口となる坑口に標高差がある場合は、トンネルの高さに、標高差が加わった高さで押し出すことになる。
 
 | 延長5m以上の道路の雪覆い等
-a|
+|
 * 上方からの正射影の外周を取得する。
 * 外周を地表面から一律の高さで上向きに押し出した立体を作成する。
 |
 * 一律の高さは、雪覆いの最も低い高さから最も高い高さまでの差分とする。
 
 | 地下横断歩道
-a|
+|
 * 上方からの正射影の外周を取得しする。
 * 外周を地表面から一律の高さで下向きに押し出した立体を作成する。
-a|
+|
 * 一律の高さは、設計図や竣工図等の図面より得られた、地表面から構造物の最下面までの深さとする。
 * 路面が傾斜している場合は、地上の高さは最も高い路面の高さとする。
 * 地下横断歩道の出入口に設けられた建屋は、都市設備（CityFurniture）として取得する。
@@ -185,7 +185,7 @@ a|
 | TunnelPart
 | Solid
 | トンネルの傾斜を簡易的に再現する場合
-a|
+|
 * トンネルを区間に区切る。
 * 区間ごとに上方からの正射影の外周を取得する。
 * 外周に最低高さを与えて最高高さまで押し出した立体とする。
@@ -207,14 +207,14 @@ a|
 
 トンネルモデル（LOD2）の取得イメージを表 4-71に示す。
 
-[cols="2,9,9"]
+[cols="2a,9a,9a"]
 .トンネルモデル（LOD2）の取得イメージ
 |===
 h| 2+^h| LOD2
 h| 取得例
-a|
+|
 image::images/259.webp.png[]
-a|
+|
 image::images/260.webp.png[]
 
 h| 説明 | トンネルの外形を立体として表現し、立体の各境界面を、屋根や外壁に区分する。トンネルの外形には坑口を含む。
@@ -229,7 +229,7 @@ h| 説明 | トンネルの外形を立体として表現し、立体の各境�
 
 トンネルモデル（LOD2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1,1,1,1,1,3,2"]
+[cols="1a,1a,1a,1a,1a,3a,2a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -242,7 +242,7 @@ h| 説明 | トンネルの外形を立体として表現し、立体の各境�
 | RoofSurface
 | MultiSurface
 | トンネルの側面が垂直の場合に、その垂直面の上方に存在する面
-a|
+|
 * トンネルの外形を取得し、上向きの面を屋根面（RoofSurface）とする。
 * 面を構成する各頂点に、屋根の高さを与える。
 | トンネル上部が湾曲しており、トンネルの屋根と外壁との区分が難しい場合は、外壁面（WallSurface）として取得する。
@@ -252,7 +252,7 @@ a|
 | GroundSurface
 | MultiSurface
 | トンネルの側面が垂直の場合に、その垂直面の下方に存在する面
-a|
+|
 * トンネルの外形を取得し、下向きの面を底面（GroundSurface）とする。
 * 面を構成する各頂点に、トンネル下面の高さを与える。
 | トンネル下部が湾曲しており、トンネルの底と外壁との区分が難しい場合は、外壁面（WallSurface）として取得する。
@@ -262,7 +262,7 @@ a|
 | WallSurface
 | MultiSurface
 |
-a|
+|
 * トンネルの外形を取得し、屋根面（RoofSurface）及び底面（GroundSurface）を除く面を外壁面（WallSurface）とする。
 * 面を構成する各頂点にそれぞれの高さを与える。
 | 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
@@ -274,7 +274,7 @@ a|
 | 〇
 | TunnelPart
 | Solid
-a|
+|
 * 多連形のトンネルを一つのTunnelとして表現する場合に必須とする。
 * 一つのトンネルを、属性の異なる複数の部分に分ける場合に必須とする。
 | 屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）及び閉鎖面（ClosureSurface）を境界面とする立体を作成する。
@@ -300,14 +300,14 @@ image::images/261.webp[]
 
 トンネルモデル（LOD3）の取得イメージを表 4-72に示す。
 
-[cols="2,9,9"]
+[cols="2a,9a,9a"]
 .トンネルモデル（LOD3）の取得イメージ
 |===
 h| 2+^h| LOD3
 h| 取得例
-a|
+|
 image::images/262.webp.png[]
-a|
+|
 image::images/263.webp.png[]
 
 h| 説明 | トンネルの外形を立体として表現し、立体の各境界面を、屋根、外壁及び開口部に区分する。
@@ -324,7 +324,7 @@ h| 説明 | トンネルの外形を立体として表現し、立体の各境�
 
 トンネルモデル（LOD3）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1,1,1,1,1,3,2"]
+[cols="1a,1a,1a,1a,1a,3a,2a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -337,7 +337,7 @@ h| 説明 | トンネルの外形を立体として表現し、立体の各境�
 | RoofSurface
 | MultiSurface
 | トンネルの側面が垂直の場合に、その垂直面の上方に存在する面
-a|
+|
 * トンネルの外形を取得し、上向きの面を屋根面（RoofSurface）とする。
 * 面を構成する各頂点に、屋根の高さを与える。
 | トンネル上部が湾曲しており、トンネルの屋根と外壁との区分が難しい場合は、外壁面（WallSurface）として取得する。
@@ -347,7 +347,7 @@ a|
 | GroundSurface
 | MultiSurface
 | トンネルの側面が垂直の場合に、その垂直面の下方に存在する面
-a|
+|
 * トンネルの外形を取得し、下向きの面を底面（GroundSurface）とする。
 * 面を構成する各頂点に、トンネル下面の高さを与える。
 | トンネル下部が湾曲しており、トンネルの底と外壁との区分が難しい場合は、外壁面（WallSurface）として取得する。
@@ -357,7 +357,7 @@ a|
 | WallSurface
 | MultiSurface
 |
-a|
+|
 * トンネルの外形を取得し、屋根面（RoofSurface）及び底面（GroundSurface）を除く面を外壁面（WallSurface）とする。
 * 面を構成する各頂点にそれぞれの高さを与える。
 | 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
@@ -372,7 +372,7 @@ a|
 | ■
 | TunnelPart
 | Solid
-a|
+|
 * 多連形のトンネルを一つのTunnelとして表現する場合に必須とする。
 * 一つのトンネルを、属性の異なる複数の部分に分ける場合に必須とする。
 |
@@ -384,7 +384,7 @@ a|
 | TunnelInstallation
 | MultiSurface
 |
-a|
+|
 * 外部付属物の外形（外側から見える形）を構成する面を取得する。
 * 面の各頂点に屋外付属物の高さを与える。
 | 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
@@ -438,17 +438,17 @@ h| トンネルモデル（LOD4）に含むべき地物 h| 対応するCityGML�
 | トンネル内部付属物
 | IntTunnelInstallation
 |
-^a| ● +
+^| ● +
 短辺の実長が3m以上又は +
 短辺の実長1m以上かつ面積3m2以上
-^a| ● +
+^| ● +
 全ての屋内付属物
 
 | 可動設備
 | TunnelFurniture
 |
 |
-^a| 〇 +
+^| 〇 +
 全ての可動設備
 
 |===
@@ -460,28 +460,28 @@ h| トンネルモデル（LOD4）に含むべき地物 h| 対応するCityGML�
 
 LOD4.0、LOD4.1、LOD4.2及びLOD4.3それぞれの取得イメージを表 4-74に示す。
 
-[cols="2,9,9"]
+[cols="2a,9a,9a"]
 .トンネルモデル（LOD4）の取得イメージ
 |===
 h| ^h| 取得例 ^h| 説明
 h| LOD4.0
-a|
+|
 image::images/264.webp.png[]
-a| LOD3.0の外形に加え、トンネル内部（内空）を再現する。 +
+| LOD3.0の外形に加え、トンネル内部（内空）を再現する。 +
 内空の境界面を床（FloorSurface）、内壁面（InteriorWallSurface）又は天井面（CeilingSurface）に区分する。また、内壁等に扉や窓がある場合に区分する。 +
 トンネル内部の付属物は取得しない。
 
 h| LOD4.1
-a|
+|
 image::images/265.webp.png[]
-a| LOD4.0に加え、「短辺の実長が3ｍ以上」又は「横断又は縦断面積が3m2以上かつ短辺の実長が1m以上」の固定された設備を取得する。 +
+| LOD4.0に加え、「短辺の実長が3ｍ以上」又は「横断又は縦断面積が3m2以上かつ短辺の実長が1m以上」の固定された設備を取得する。 +
 +
 左図の例の場合は、換気用のジェットファンが短辺の実長が3m以上に該当し、また、手すりが縦断面積が3m2以上かつ短辺の実長が1m以上に該当したため、取得された。
 
 h| LOD4.2
-a|
+|
 image::images/266.webp.png[]
-a| LOD4.1に加え、全ての固定された設備及び固定されていない設備を取得する。 +
+| LOD4.1に加え、全ての固定された設備及び固定されていない設備を取得する。 +
 +
 左図の例の場合は、消火栓、警報標示板、トンネル照明及び非常口表示灯が固定された設備に該当し、また、看板が固定されていない設備に該当したため取得された。
 
@@ -491,7 +491,7 @@ a| LOD4.1に加え、全ての固定された設備及び固定されていな�
 
 トンネルモデル（LOD4.0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1,1,1,1,1,3,2"]
+[cols="1a,1a,1a,1a,1a,3a,2a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -505,7 +505,7 @@ Solidを原則とする。BIMモデルから作成する場合はMultiSurfaceと
 | RoofSurface
 | MultiSurface
 | トンネルの側面が垂直の場合に、その垂直面の上方に存在する面
-a|
+|
 * トンネルの外形を取得し、上向きの面を屋根面（RoofSurface）とする。
 * 面を構成する各頂点に、屋根の高さを与える。
 | トンネル上部が湾曲しており、トンネルの屋根と外壁との区分が難しい場合は、外壁面（WallSurface）として取得する。
@@ -515,7 +515,7 @@ a|
 | GroundSurface
 | MultiSurface
 | トンネルの側面が垂直の場合に、その垂直面の下方に存在する面
-a|
+|
 * トンネルの外形を取得し、下向きの面を底面（GroundSurface）とする。
 * 面を構成する各頂点に、トンネル下面の高さを与える。
 | トンネル下部が湾曲しており、トンネルの底と外壁との区分が難しい場合は、外壁面（WallSurface）として取得する。
@@ -525,7 +525,7 @@ a|
 | WallSurface
 | MultiSurface
 |
-a|
+|
 * トンネルの外形を取得し、屋根面（RoofSurface）及び底面（GroundSurface）以外の面を外壁面（WallSurface）とする。
 * 面を構成する各頂点にそれぞれの高さを与える。
 |
@@ -553,7 +553,7 @@ a|
 | TunnelInstallation
 | MultiSurface
 | 全てを対象とする。
-a|
+|
 * 屋外付属物の外形（外側から見える形）を構成する面を取得する。
 * 面の各頂点に屋外付属物の高さを与える。
 |
@@ -604,7 +604,7 @@ a|
 | RoofSurface
 | MultiSurface
 | トンネルの側面が垂直の場合に、その垂直面の上方に存在する面
-a|
+|
 * トンネルの外形を取得し、上向きの面を屋根面（RoofSurface）とする。
 * 面を構成する各頂点に、屋根の高さを与える。
 | トンネル上部が湾曲しており、トンネルの屋根と外壁との区分が難しい場合は、外壁面（WallSurface）として取得する。
@@ -614,7 +614,7 @@ a|
 | GroundSurface
 | MultiSurface
 | トンネルの側面が垂直の場合に、その垂直面の下方に存在する面
-a|
+|
 * トンネルの外形を取得し、下向きの面を底面（GroundSurface）とする。
 * 面を構成する各頂点に、トンネル下面の高さを与える。
 | トンネル下部が湾曲しており、トンネルの底と外壁との区分が難しい場合は、外壁面（WallSurface）として取得する。
@@ -624,7 +624,7 @@ a|
 | WallSurface
 | MultiSurface
 |
-a|
+|
 * トンネルの外形を取得し、屋根面（RoofSurface）及び底面（GroundSurface）以外の面を外壁面（WallSurface）とする。
 * 面を構成する各頂点に、それぞれの高さを与える。
 |
@@ -652,7 +652,7 @@ a|
 | TunnelInstallation
 | MultiSurface
 | 全てを対象とする。
-a|
+|
 * 屋外付属物の外形（外側から見える形）を構成する面を取得する。
 * 面の各頂点に屋外付属物の高さを与える。
 | 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
@@ -678,9 +678,9 @@ a|
 | ●
 | IntTunnelInstallation
 | MultiSurface
-a| 短辺が実長3m以上又は +
+| 短辺が実長3m以上又は +
 短辺が実長1m以上かつ横断又は縦断の面積が3m2以上
-a|
+|
 * 屋内付属物の外形（外側から見える形）を構成する面を取得する。
 * 面の各頂点に屋内付属物の高さを与える。
 | 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
@@ -712,7 +712,7 @@ a|
 | RoofSurface
 | MultiSurface
 | トンネルの側面が垂直の場合に、その垂直面の上方に存在する面
-a|
+|
 * トンネルの外形を取得し、上向きの面を屋根面（RoofSurface）として取得する。
 * 面を構成する各頂点に、屋根の高さを与える。
 | トンネル上部が湾曲しており、トンネルの屋根と外壁との区分が難しい場合は、外壁面（WallSurface）として取得する。
@@ -722,7 +722,7 @@ a|
 | GroundSurface
 | MultiSurface
 | トンネルの側面が垂直の場合に、その垂直面の下方に存在する面
-a|
+|
 * トンネルの外形を取得し、下向きの面を底面（GroundSurface）として取得する。
 * 面を構成する各頂点に、トンネル下面の高さを与える。
 | トンネル下部が湾曲しており、トンネルの底と外壁との区分が難しい場合は、外壁面（WallSurface）として取得する。
@@ -732,7 +732,7 @@ a|
 | WallSurface
 | MultiSurface
 |
-a|
+|
 * トンネルの外形を取得し、屋根面（RoofSurface）及び底面（GroundSurface）以外の面を外壁面（WallSurface）として取得する。
 * 面を構成する各頂点に、それぞれの高さを与える。
 |
@@ -781,7 +781,7 @@ a|
 | IntTunnelInstallation
 | MultiSurface
 | 全ての固定設備
-a|
+|
 * 屋内付属物の外形（外側から見える形）を構成する面を取得する。
 * 面の各頂点に屋内付属物の高さを与える。
 |
@@ -792,7 +792,7 @@ a|
 | TunnelFurniture
 | MultiSurface
 | 全ての可動設備
-a|
+|
 * 可動設備の外形（外側から見える形）を構成する面を取得する。
 * 面の各頂点に可動設備の高さを与える。
 |
@@ -810,7 +810,7 @@ a|
 
 トンネルモデルの各LODにおいて使用可能な地物型と空間属性を表 4-75に示す。
 
-[cols="45,45,13,13,13,13,13,45"]
+[cols="45a,45a,13a,13a,13a,13a,13a,45a"]
 .トンネルモデルの記述に使用する地物型と空間属性
 |===
 ^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| LOD4 ^h| 適用
@@ -905,7 +905,7 @@ image::images/268.svg[]
 
 ====== tun:Tunnel
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| トンネルとは、上方を含め周辺が地山や他の構造物で覆われている、交通、輸送等に供する構造物である。[道路基盤地図情報（整備促進版） 製品仕様書 （案）] 標準製品仕様書では、その設置の形態から、ボックスカルバート、シェッド、シェルター及び地下横断歩道もトンネルに含める。
 
@@ -924,18 +924,18 @@ h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | トンネル�
 h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | トンネルと水面との相対的な位置関係。
 | tun:class
 | gml:CodeType [0..1]
-a| トンネルの形態による区分。コードリスト（Tunnel_class.xml）より選択する。 +
+| トンネルの形態による区分。コードリスト（Tunnel_class.xml）より選択する。 +
 運用上必須とする。
 
 | tun:function
 | gml:CodeType [0..*]
-a| トンネルの主たる機能による区分。コードリスト（Tunnel_function.xml）より選択する。 +
+| トンネルの主たる機能による区分。コードリスト（Tunnel_function.xml）より選択する。 +
 運用上必須とする。
 
 h| (tun:usage) | gml:CodeType [0..*] | トンネルの用途。tun:functionで指定された機能と異なる場合に実際の用途を示すためにこの属性を用いる。
 | tun:yearOfConstruction
 | xs:gYear [0..1]
-a| トンネルが建築された年度。完成年度とする。 +
+| トンネルが建築された年度。完成年度とする。 +
 運用上必須とする。
 
 | tun:yearOfDemolition | xs:gYear [0..1] | トンネルが解体された年度。
@@ -962,13 +962,13 @@ h| (tun:lod2TerrainIntersection) | gml:MutiCurve [0..1] | LOD2におけるトン
 | tun:outerTunnelInstallation | tun:TunnelInstallation [0..*] | トンネルの外観を特徴付ける部分のうち、坑口や管理用通路、非常用階段のような、トンネルの構造上不可欠ではない付属物（tun:TunnelInstallation）。
 | tun:InteriorTunnelInstallation
 | tun:IntTunnelInstallation [0..*]
-a| トンネルの内部空間において、その外観を特徴付ける部分のうち、管理用通路・階段のような、トンネルの構造上不可欠ではない付属物（tun:IntTunnelInstallation）。 +
+| トンネルの内部空間において、その外観を特徴付ける部分のうち、管理用通路・階段のような、トンネルの構造上不可欠ではない付属物（tun:IntTunnelInstallation）。 +
 内空（tun:HollowSpace）に含まれない付属物を対象とする。
 
 | tun:boundedBy | tun:_BoundarySurface [0..*] | トンネルを構成する屋根面（tun:RoofSurface）等の境界面。
 | tun:lod3Solid
 | gml:Solid [0..1]
-a| トンネルの主要構造の外形を示す立体。 +
+| トンネルの主要構造の外形を示す立体。 +
 この時の立体は、外壁等を区分する境界面及び開口部の面（境界面の内空として作成されている場合）により構成される。
 
 h| (tun:lod3MultiSurface) | gml:MultiSurface [0..1] | トンネルの主要構造の外形を構成する面の集まり。
@@ -976,12 +976,12 @@ h| (tun:lod3MultiCurve) | gml:MutiCurve [0..1] | トンネルの立体表現に�
 h| (tun:lod3TerrainIntersection) | gml:MutiCurve [0..1] | LOD3におけるトンネルと地形との交線。
 | tun:lod4Solid
 | gml:Solid [0..1]
-a| トンネルの詳細構造の外形を示す立体。 +
+| トンネルの詳細構造の外形を示す立体。 +
 このときの立体は、外壁等を区分する境界面及び開口部の面（境界面の内空として作成されている場合）により構成される。 lod4Solid又はlod4MultiSurfaceのいずれかとする。
 
 | tun:lod4MultiSurface
 | gml:MultiSurface [0..1]
-a| トンネルの外形を構成する面の集まり。 +
+| トンネルの外形を構成する面の集まり。 +
 このときの面は、外壁等を区分する境界面及び開口部の面（境界面の内空として作成されている場合）により構成される。 lod4Solid又はlod4MultiSurfaceのいずれかとする。
 
 h| (tun:lod4MultiCurve) | gml:MutiCurve [0..1] | トンネルの立体表現に加え、線状の表現を行う場合に使用する。
@@ -994,7 +994,7 @@ h| (tun:lod4TerrainIntersection) | gml:MutiCurve [0..1] | LOD4におけるトン
 | uro:tunRiskAssessmentAttribute | uro:ConstructionRiskAssessmentAttribute [0..1] | トンネルの損傷に関する情報。
 | uro:tunDisasterRiskAttribute
 | uro:DisasterRiskAttribute [0..*]
-a| トンネルの災害リスクに関する情報。 +
+| トンネルの災害リスクに関する情報。 +
 uro:DisasterRiskAttributeの下位型を使用して記述する。
 
 | uro:tunDmAttribute | uro:DmAttribute [0..*] | LOD0の幾何形状。
@@ -1003,7 +1003,7 @@ uro:DisasterRiskAttributeの下位型を使用して記述する。
 | uro:tunKeyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | 属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
 | uro:tunDataQualityAttribute
 | uro:DataQualityAttribute [0..1]
-a| 作成するデータの品質に関する情報。原則必須とする。 +
+| 作成するデータの品質に関する情報。原則必須とする。 +
 tun:TunnelPartが品質属性をもつ場合は、省略できる。
 
 | uro:tunFacilityTypeAttribute | uro:FacilityTypeAttribute [0..*] | 特定分野における施設の分類情報。
@@ -1014,10 +1014,10 @@ tun:TunnelPartが品質属性をもつ場合は、省略できる。
 
 ====== tun:TunnelPart
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a|
+2+|
 トンネルの一部。
 
 一つのトンネルが、構造の異なる部分、あるいは用途が異なる部分から構成されており、それぞれを属性として保持する場合に、トンネルを複数の部分として分けて記述するために用いる。
@@ -1067,31 +1067,31 @@ h| (tun:lod2TerrainIntersection) | gml:MutiCurve [0..1] | LOD2におけるトン
 | tun:outerTunnelInstallation | tun:TunnelInstallation [0..*] | トンネルの外観を特徴付ける部分のうち、坑口や管理用通路、非常用階段のような、トンネルの構造上不可欠ではない付属物（tun:TunnelInstallation）。
 | tun:InteriorTunnelInstallation
 | tun:IntTunnelInstallation [0..*]
-a| トンネルの内部空間において、その外観を特徴付ける部分のうち、管理用通路・階段のような、トンネルの構造上不可欠ではない付属物（tun:IntTunnelInstallation）。 +
+| トンネルの内部空間において、その外観を特徴付ける部分のうち、管理用通路・階段のような、トンネルの構造上不可欠ではない付属物（tun:IntTunnelInstallation）。 +
 内空（tun:HollowSpace）に含まれない付属物を対象とする。
 
 | tun:boundedBy | tun:_BoundarySurface [0..*] | トンネルを構成する屋根面（tun:RoofSurface）等の境界面。
 | tun:lod3Solid
 | gml:Solid [0..1]
-a| トンネルの主要構造の外形を示す立体。 +
+| トンネルの主要構造の外形を示す立体。 +
 この時の立体は、外壁等を区分する境界面及び開口部の面（境界面の内空として作成されている場合）により構成される。 +
 lod3Solid又はlod3MultiCurveのいずれかとする。
 
 | tun:lod3MultiSurface
 | gml:MultiSurface [0..1]
-a| トンネルの主要構造の外形を構成する面の集まり。 +
+| トンネルの主要構造の外形を構成する面の集まり。 +
 lod3Solid又はlod3MultiCurveのいずれかとする。
 
 h| (tun:lod3MultiCurve) | gml:MutiCurve [0..1] | トンネルの立体表現に加え、線状の表現を行う場合に使用する。
 h| (tun:lod3TerrainIntersection) | gml:MutiCurve [0..1] | LOD3におけるトンネルと地形との交線。
 | tun:lod4Solid
 | gml:Solid [0..1]
-a| トンネルの詳細構造の外形を示す立体。 +
+| トンネルの詳細構造の外形を示す立体。 +
 この時の立体は、外壁等を区分する境界面及び開口部の面（境界面の内空として作成されている場合）により構成される。lod4Solid又はlod4MultiCurveのいずれかとする。
 
 | tun:lod4MultiSurface
 | gml:MultiSurface [0..1]
-a| トンネルの外形を構成する面の集まり。 +
+| トンネルの外形を構成する面の集まり。 +
 lod4Solid又はlod4MultiCurveのいずれかとする。
 
 h| (tun:lod4MultiCurve) | gml:MutiCurve [0..1] | トンネルの立体表現に加え、線状の表現を行う場合に使用する。
@@ -1104,14 +1104,14 @@ h| (tun:consistsOfTunnelPart) | tun:TunnelPart [0..*] | トンネルの部分（
 | uro:tunRiskAssessmentAttribute | uro:ConstructionRiskAssessmentAttribute [0..1] | トンネルの損傷に関する情報。
 h| uro:tunDisasterRiskAttribute
 | uro:DisasterRiskAttribute [0..*]
-a| トンネルの災害リスクに関する情報。 +
+| トンネルの災害リスクに関する情報。 +
 uro:DisasterRiskAttributeの下位型を使用して記述する。
 
 h| (uro:tunDmAttribute) | uro:DmAttribute [0..*] | LOD0の幾何形状。
 h| (uro:tunKeyValuePairAttribute) | uro:KeyValuePairAttribute [0..*] | tun:TunnelPartには作成しない。（tun:Tunnelにのみ作成する。）
 | uro:tunDataQualityAttribute
 | uro:DataQualityAttribute [0..1]
-a| 作成するデータの品質に関する情報。 +
+| 作成するデータの品質に関する情報。 +
 tun:Tunnelが品質属性をもつ場合は、省略する。 +
 tun:Tunnelが品質属性をもたない場合は、必ず作成する。
 
@@ -1123,10 +1123,10 @@ h| (uro:tunFacilityAttribute) | uro:FacilityAttribute [0..*] | uro:tunFacilityTy
 
 ====== tun:HollowSpace
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| トンネルの内空。 +
+2+| トンネルの内空。 +
 +
 tun:HollowSpaceはトンネルの内部空間を示す立体であり、輸送に使用する区画や管理点検に使用する区画等に分けることができる。各区画の立体の境界面（tun:_BoundarySurfaceの下位型）及びこの境界面の開口部（tun:_Openingの下位型）、tun:HollowSpaceに付属する固定的な設備（tun:IntTunnelInstallation）及び、tun:HollowSpaceに設置された可動設備（tun:TunnelFurniture）の集まりからなる。
 
@@ -1159,7 +1159,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | tun:lod4Solid
 | gml:Solid [0..1]
-a| 区画の主要構造の外形を示す立体。
+| 区画の主要構造の外形を示す立体。
 
 gml:Solidを構成する境界面のgml:Polygonは、以下のいずれかの地物のLOD4幾何オブジェクトに含まれなければならない。
 
@@ -1169,7 +1169,7 @@ gml:Solidを構成する境界面のgml:Polygonは、以下のいずれかの地
 h| (tun:lod4MultiSurface) | gml:MultiSurface [0..1] | 区画の主要構造の外形を示す面の集まり。
 | tun:boundedBy
 | tun:\_ BoundarySurface [0..*]
-a| 区画の主要構造の外形を示す境界面。 +
+| 区画の主要構造の外形を示す境界面。 +
 境界面は、壁面（tun:InteriorWallSurface）、天井面（tun:CeilingSurface）、床面（tun:FloorSurface）又は閉鎖面（tun :ClosureSurface）のいずれかでなければならない。 +
 壁面と天井面との区分が構造上難しい場合は、壁面（tun:WallSurface）として取得することを基本とする。
 
@@ -1180,10 +1180,10 @@ a| 区画の主要構造の外形を示す境界面。 +
 
 ====== tun:RoofSurface
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 主にトンネルの上部を覆う構造物。 +
+2+| 主にトンネルの上部を覆う構造物。 +
 トンネルの外部の境界面を区分する場合、外壁面（tun:WallSurface）と屋根面（tun:RoofSurface）との区分が構造上難しい場合は、外壁面として取得することを基本とする。
 
 h| 上位の型 2+| tun:_BoundarySurface
@@ -1215,10 +1215,10 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== tun:WallSurface
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| トンネルの外周を構成する外壁の面。 +
+2+| トンネルの外周を構成する外壁の面。 +
 トンネルの外部の境界面を区分する場合、外壁面（tun:WallSurface）と屋根面（tun:RoofSurface）との区分が構造上難しい場合は、外壁面（tun:WallSurface）として取得することを基本とする。
 
 h| 上位の型 2+| tun:_BoundarySurface
@@ -1250,10 +1250,10 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== tun:GroundSurface
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| トンネルの立体形状の底面。 +
+2+| トンネルの立体形状の底面。 +
 トンネルの外壁面と底面との区別が難しい場合は、外壁面（tun:WallSurface）として取得することを基本とする。
 
 h| 上位の型 2+| tun:_BoundarySurface
@@ -1285,10 +1285,10 @@ h| (tun:opening) | tun:_Opening [0..*] | 底面に設置される、窓や扉へ
 
 ====== tun:OuterCeilingSurface
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| トンネルの外側を覆う部分であり、天井としての機能を有する部分。 +
+2+| トンネルの外側を覆う部分であり、天井としての機能を有する部分。 +
 標準製品仕様書では使用しない。
 
 h| 上位の型 2+| tun:_BoundarySurface
@@ -1320,10 +1320,10 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== tun:OuterFloorSurface
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| トンネルの外側を覆う部分であり、通行可能な床面としての機能を有する部分。 +
+2+| トンネルの外側を覆う部分であり、通行可能な床面としての機能を有する部分。 +
 標準製品仕様書では使用しない。
 
 h| 上位の型 2+| tun:_BoundarySurface
@@ -1355,7 +1355,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== tun:ClosureSurface
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| トンネルの開口部を立体として閉じるために、境界面として設けられた仮想的な面。
 
@@ -1392,10 +1392,10 @@ h| (tun:opening) | tun:_Opening [0..*] | 境界面に設置される、窓や扉
 
 ====== tun:InteriorWallSurface
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| トンネルの内部空間の区画を区切る壁や仕切り（内壁）の面。 +
+2+| トンネルの内部空間の区画を区切る壁や仕切り（内壁）の面。 +
 トンネルの内部の境界面を区分する場合、内壁面（tun:InteriorWallSurface）と天井面（tun:CeilingSurface）との区分が構造上難しい場合は、内壁面（tun:InteriorWallSurface）として取得することを基本とする。
 
 h| 上位の型 2+| tun_BoundarySurface
@@ -1425,10 +1425,10 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== tun:CeilingSurface
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 区画など構造物内部の上側の面（天井）。 +
+2+| 区画など構造物内部の上側の面（天井）。 +
 tun:CeilingSurfaceの法線ベクトルは下向きとなる。 +
 トンネルの内部の境界面を区分する場合、壁面（tun:InteriorWallSurface）と天井面（tun:CeilingSurface）との区分が構造上難しい場合は、内壁面（tun:InteriorWallSurface）として取得することを基本とする。
 
@@ -1459,10 +1459,10 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== tun:FloorSurface
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| トンネルの内部空間の下面に位置する水平で平らな板状の構造物（床面）。 +
+2+| トンネルの内部空間の下面に位置する水平で平らな板状の構造物（床面）。 +
 tun:FloorSurfaceの法線ベクトルは上向きとなる。
 
 h| 上位の型 2+| tun:_BoundarySurface
@@ -1492,7 +1492,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== tun:Window
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 採光、通風、換気、眺望などの目的のため、トンネルの屋根、天井、壁、床などに設けられた開口部のうち、人や物の出入りを目的としないもの。
 
@@ -1523,7 +1523,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== tun:Door
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 採光、通風、換気、眺望、通行などの目的のため、トンネルの屋根、天井、壁、床などに設けられた開口部のうち、人や物の出入りを目的とするもの。
 
@@ -1554,10 +1554,10 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== tun:TunnelInstallation
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| トンネルの外部付属物。トンネル本体の外側に設置され、トンネルの外観を特徴づける恒久的な設備。 +
+2+| トンネルの外部付属物。トンネル本体の外側に設置され、トンネルの外観を特徴づける恒久的な設備。 +
 トンネルの付帯的な設備であり、主要な部分であってはならない。また、トンネル（tun:Tunnel又はtun:TunnelPart）と接していなければならない。 +
 トンネルの付属物には以下を含む。ただし、全て外部に設置され、トンネルと接するもののみを対象とする。 +
 避難連絡坑、受変電設備、予備電源設備、排水設備、換気設備、排水設備、監視制御設備、通報装置、非常用警報装置、消火設備、避難誘導設備、その他。 +
@@ -1610,7 +1610,7 @@ h| (tun:lod2Geometry) | gml:_Geometry [0..1] | 付属物のLOD2の形状。
 
 ====== tun:IntTunnelInstallation
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| トンネルの内部に設置された、恒久的に存在する固定的な設備（内部付属物）。
 
@@ -1651,17 +1651,17 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | tun:lod4Geometry | gml:_Geometry [0..1] | 内部付属物のLOD4の形状。gml:MultiSurfaceにより記述することを基本とする。容積の算出等ユースケースで必要な場合は、gml:Solidを使用する。
 | tun:boundedBy
 | tun:_BoundarySurface [0..*]
-a| 内部付属物を構成する内壁、天井等の境界面への参照。付属物の境界面が内部空間（tun:HollowSpace）の境界面となる場合にのみ作成する。 +
+| 内部付属物を構成する内壁、天井等の境界面への参照。付属物の境界面が内部空間（tun:HollowSpace）の境界面となる場合にのみ作成する。 +
 ただし、空間から内部付属物を除く必要が無い場合は、内部付属物の形状を構成する面を、境界面（tun:_BoundarySurface）にする必要はない。
 
 |===
 
 ====== tun:TunnelFurniture
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| トンネル内部の区画に配置された、可動設備。 +
+2+| トンネル内部の区画に配置された、可動設備。 +
 tun:IntTunnelInstallationが、トンネル内部に設置された恒久的かつ固定的な設備であることと対照的に、tun:TunnelFurnitureは椅子や机のような、動かすことができる（位置が固定されない）設備である。 +
 以下の設備のうち、固定されていない設備を対象とする。 +
 受変電設備、予備電源設備、排水設備、換気設備、排水設備、監視制御設備、通報装置、非常用警報装置、消火設備、避難誘導設備、その他。 +
@@ -1703,7 +1703,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:TunnelFunctionalAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| トンネルの機能に関する情報を定義したデータ型。
 
@@ -1718,7 +1718,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:TunnelStructureAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| トンネルの構造に関する情報を定義したデータ型。
 
@@ -1740,10 +1740,10 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:KeyValuePairAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。 +
+2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。 +
 属性名称と属性の値の対で構成される。コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
 
 h| 上位の型 2+| ―
@@ -1753,14 +1753,14 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:key | gml:CodeType [1] | 拡張する属性の名称。名称は、コ－ドリスト（KeyValuePairAttribute_key.xml）を作成し、選択する。
 | uro:codeValue
 | gml:CodeType [1]
-a| 拡張された属性の値。値は名称は、コ－ドリスト（KeyValuePairAttribute_key[%key].xml）を作成し、選択する。 +
+| 拡張された属性の値。値は名称は、コ－ドリスト（KeyValuePairAttribute_key[%key].xml）を作成し、選択する。 +
 [%key]は、属性uro:keyの値に一致する。
 
 |===
 
 ====== uro:DataQualityAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
 
@@ -1770,17 +1770,17 @@ h| ステレオタイプ 2+| << DataType >>
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:geometrySrcDescLod0
 | gml:CodeType [0..*]
-a| LOD0の幾何オブジェクトの作成に使用した原典資料の種類。 +
+| LOD0の幾何オブジェクトの作成に使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD0の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、トンネルモデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
 
 | uro:geometrySrcDescLod1
 | gml:CodeType [1..*]
-a| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。 +
+| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。具体的な都市オブジェクトがLOD1の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 
 | uro:geometrySrcDescLod2
 | gml:CodeType [0..*]
-a| LOD2の幾何オブジェクトの作成に使用した原典資料の種類。 +
+| LOD2の幾何オブジェクトの作成に使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD2の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、トンネルモデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
 
 | uro:geometrySrcDescLod3 | gml:CodeType [0..*] | LOD3の幾何オブジェクトの作成に使用した原典資料の種類。
@@ -1788,45 +1788,45 @@ a| LOD2の幾何オブジェクトの作成に使用した原典資料の種類�
 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD3の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD3の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、トンネルモデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
 | uro:geometrySrcDescLod4
 | gml:CodeType [0..*]
-a| LOD4の幾何オブジェクトの作成に使用した原典資料の種類。 +
+| LOD4の幾何オブジェクトの作成に使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD4の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD4の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、トンネルモデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
 
 | uro:thematicSrcDesc
 | gml:CodeType [0..\*]
-a| 主題属性の作成に使用した原典資料の種類。 +
+| 主題属性の作成に使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_thematicSrcDesc.xml）より選択する。 +
 主題属性が作成対象となっている場合は必須とする。
 
 | uro:appearanceSrcDescLod0
 | gml:CodeType [0..*]
-a| LOD0の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
+| LOD0の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 +
 拡張製品仕様書でLOD0の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 
 | uro:appearanceSrcDescLod1
 | gml:CodeType [0..*]
-a| LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
+| LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 +
 拡張製品仕様書LOD1の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD1の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 
 | uro:appearanceSrcDescLod2
 | gml:CodeType [0..*]
-a| LOD2の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
+| LOD2の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。拡張製品仕様書でLOD2の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 
 | uro:appearanceSrcDescLod3
 | gml:CodeType [0..*]
-a| LOD3の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
+| LOD3の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。拡張製品仕様書でLOD3の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD3の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 
 | uro:appearanceSrcDescLod4
 | gml:CodeType [0..*]
-a| LOD4の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
+| LOD4の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。拡張製品仕様書でLOD4の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD4の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 
 | uro:lodType
 | gml:CodeType[0..*]
-a| 幾何オブジェクトに適用されたLODの詳細な区分。 +
+| 幾何オブジェクトに適用されたLODの詳細な区分。 +
 コードリスト（Tunnel_lodType.xml）より選択する。LOD4の幾何オブジェクトを作成する場合は必須とする。
 
 | uro:lod1HeightType | gml:CodeType [0..1] | LOD1の立体図形を作成する際に使用した高さの算出方法。コードリスト（DataQualityAttribute_lod1HeightType.xml）より選択する。LOD1の幾何オブジェクトを作成する場合は必須とする。
@@ -1835,14 +1835,14 @@ h| (uro:tranDataAcquisition) | xs:string [0..1] | 「道路基盤地図情報（
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | uro:publicSurveyDataQualityAttribute
 | uro:PublicSurveyDataQualityAttribute [0..1]
-a| 使用した公共測量成果の地図情報レベルと種類。 +
+| 使用した公共測量成果の地図情報レベルと種類。 +
 各LODの幾何オブジェクトの作成に使用した原典資料の種類に関する属性（uro:geometrySrcDescLod0等）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）となっている場合は、必須とする。
 
 |===
 
 ====== uro:PublicSurveyDataQualityAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 使用した公共測量成果の地図情報レベルと種類を、LODごとに記述するためのデータ型。
 
@@ -1852,26 +1852,26 @@ h| ステレオタイプ 2+| << DataType >>
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:srcScaleLod0
 | gml:CodeType [0..1]
-a| LOD0の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
+| LOD0の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 +
 「LOD0の幾何オブジェクトの作成に使用した原典資料の種類に関する属性」（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
 
 | uro:srcScaleLod1
 | gml:CodeType [0..1]
-a| LOD1の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
+| LOD1の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 +
 「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
 
 | uro:srcScaleLod2
 | gml:CodeType [0..1]
-a| LOD2の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
+| LOD2の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 +
 「LOD2の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod2）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
 複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば、壁面は地図情報レベル1000、屋根面は地図情報レベル2500となる場合は、地図情報レベル2500とする。
 
 | uro:srcScaleLod3
 | gml:CodeType [0..1]
-a| LOD3の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
+| LOD3の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
 
 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 +
 「LOD3の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod3）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
@@ -1879,38 +1879,38 @@ a| LOD3の幾何オブジェクトの作成に使用した原典資料の地図�
 
 | uro:srcScaleLod4
 | gml:CodeType [0..1]
-a| LOD4の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
+| LOD4の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 +
 「LOD4の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod4）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
 複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば、外側の形状は地図情報レベル1000、屋内の形状は地図情報レベル500となる場合は地図情報レベル1000とする。
 
 | uro:publicSurveySrcDescLod0
 | gml:CodeType [0..*]
-a| LOD0の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
+| LOD0の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
 「LOD0の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
 複数の種類の原典資料を使用した場合は、それぞれを記述する。
 
 | uro:publicSurveySrcDescLod1
 | gml:CodeType [0..*]
-a| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
+| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
 「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
 複数の種類の原典資料を使用した場合は、それぞれを記述する。
 
 | uro:publicSurveySrcDescLod2
 | gml:CodeType [0..*]
-a| LOD2の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
+| LOD2の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
 「LOD2の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod2）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
 複数の種類の原典資料を使用した場合は、それぞれを記述する。
 
 | uro:publicSurveySrcDescLod3
 | gml:CodeType [0..*]
-a| LOD3の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
+| LOD3の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
 「LOD3の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod3）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
 複数の種類の原典資料を使用した場合は、それぞれを記述する。
 
 | uro:publicSurveySrcDescLod4
 | gml:CodeType [0..*]
-a| LOD4の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
+| LOD4の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
 「LOD4の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod4）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
 複数の種類の原典資料を使用した場合は、それぞれを記述する。
 
@@ -1918,10 +1918,10 @@ a| LOD4の幾何オブジェクトの作成に使用した原典資料の種類�
 
 ====== uro:ConstructionBaseAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 構造物の管理に必要となる基本的な情報及び、構造物の規模に関する基本的な情報を記述するためのデータ型。 +
+2+| 構造物の管理に必要となる基本的な情報及び、構造物の規模に関する基本的な情報を記述するためのデータ型。 +
 構造物が橋梁、トンネル、護岸、床止め、堰、水門・閘門・陸閘、樋門・樋管、伏せ越し及び水制の場合に本データ型を用いて記述する。 +
 構造物がダム及び堤防の場合は、これを継承するデータ型を用いて記述する。
 
@@ -1948,7 +1948,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:ConstructionRiskAssessmentAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 構造物の損傷及び対応状況に関する情報を定義したデータ型。
 
@@ -2011,7 +2011,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== Tunnel_class.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Tunnel_class.xml
 
@@ -2029,7 +2029,7 @@ h| コード h| 説明
 
 ====== Tunnel_function.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Tunnel_function.xml
 
@@ -2047,7 +2047,7 @@ h| コード h| 説明
 
 ====== TunnelInstallation_function.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | TunnelInstallation_function.xml
 
@@ -2075,7 +2075,7 @@ h| コード h| 説明
 
 ====== TunnelFunctionalAttribute_userType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | TunnelFunctionalAttribute_userType.xml
 
@@ -2099,7 +2099,7 @@ h| コード h| 説明
 
 ====== TunnelStructureAttribute_tunnelType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | TunnelStructureAttribute_tunnelType.xml
 
@@ -2118,7 +2118,7 @@ h| コード h| 説明
 
 ====== TunnelStructureAttribute_tunnelSubType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | TunnelStructureAttribute_tunnelSubType.xml
 
@@ -2140,7 +2140,7 @@ h| コード h| 説明
 
 ====== TunnelStructureAttribute_mouthType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | TunnelStructureAttribute_mouthType.xml
 
@@ -2158,7 +2158,7 @@ h| コード h| 説明
 
 ====== ConstructionStructureAttribute_slopeType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ConstructionStructureAttribute_slopeType.xml
 
@@ -2175,7 +2175,7 @@ h| コード h| 説明
 
 ====== ConstructionBaseAttribute_adminType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ConstructionBaseAttribute_adminType.xml
 
@@ -2234,7 +2234,7 @@ h| コード h| 説明
 
 ====== ConstructionBaseAttribute_installerType.xmlりんりりｎ
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ConstructionBaseAttribute_installerType.xml
 
@@ -2263,7 +2263,7 @@ h| コード h| 説明
 
 ====== ConstructionRiskAssessmentAttribute_riskType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ConstructionRiskAssessmentAttribute_riskType.xml
 
@@ -2283,7 +2283,7 @@ h| コード h| 説明
 
 ====== ConstructionRiskAssessmentAttribute_status.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ConstructionRiskAssessmentAttribute_status.xml
 
@@ -2301,7 +2301,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
 
@@ -2348,7 +2348,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
 
@@ -2379,7 +2379,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
 
@@ -2396,7 +2396,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_lod1HeightType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_lod1HeightType.xml
 
@@ -2421,7 +2421,7 @@ h| コード h| 説明
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | PublicSurveyDataQualityAttribute_srcScale.xml
 
@@ -2435,7 +2435,7 @@ h| コード h| 説明
 
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
@@ -2471,7 +2471,7 @@ h| コード h| 説明
 
 ====== Tunnel_lodType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Tunnel_lodType.xml
 

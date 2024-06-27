@@ -35,16 +35,16 @@
 
 災害リスク（浸水）モデル（LOD1）では、浸水面を表現する。災害リスク（浸水）モデル（LOD1）の取得イメージを表 4-55に示す。
 
-[cols="1,9"]
+[cols="1a,9a"]
 .災害リスク（浸水）モデル（LOD1）の取得イメージ
 |===
 h| ^h| LOD1
 h| 取得例
-a|
+|
 image::images/199.webp.png[]
 
 h| 説明
-a| 洪水浸水想定区域、津波浸水想定、高潮浸水想定区域、内水浸水想定区域及びため池ハザードマップの浸水面を取得する。 +
+| 洪水浸水想定区域、津波浸水想定、高潮浸水想定区域、内水浸水想定区域及びため池ハザードマップの浸水面を取得する。 +
 高さは標高に水位を加えた高さとする。
 
 |===
@@ -53,7 +53,7 @@ a| 洪水浸水想定区域、津波浸水想定、高潮浸水想定区域、�
 
 災害リスク（浸水）モデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7,7,7,7,16,20,16"]
+[cols="7a,7a,7a,7a,16a,20a,16a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -62,7 +62,7 @@ a| 洪水浸水想定区域、津波浸水想定、高潮浸水想定区域、�
 | WaterBody
 | MultiSurface
 |
-a|
+|
 * 浸水面を取得する。
 * 各頂点の標高に水位を加えた高さを与える。
 |
@@ -81,16 +81,16 @@ a|
 
 災害リスク（土砂災害）モデル（LOD1）では、区域を表現する。災害リスク（土砂災害）モデル（LOD1）の取得イメージを表 4-56に示す。
 
-[cols="1,9"]
+[cols="1a,9a"]
 .災害リスク（土砂災害）モデル（LOD1）の取得イメージ
 |===
 h| ^h| LOD1
 h| 取得例
-a|
+|
 image::images/200.webp.png[]
 
 h| 説明
-a| 土砂災害警戒区域及び土砂災害特別警戒区域に指定された範囲を取得する。 +
+| 土砂災害警戒区域及び土砂災害特別警戒区域に指定された範囲を取得する。 +
 高さは0とする。
 
 |===
@@ -99,7 +99,7 @@ a| 土砂災害警戒区域及び土砂災害特別警戒区域に指定され�
 
 災害リスク（土砂災害）モデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7,7,7,7,16,20,16"]
+[cols="7a,7a,7a,7a,16a,20a,16a"]
 |===
 | | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -108,7 +108,7 @@ a| 土砂災害警戒区域及び土砂災害特別警戒区域に指定され�
 | SedimentDisasterProneArea
 | MultiSurface
 |
-a|
+|
 * 区域の境界線に囲まれた範囲を取得する。
 * 高さは0とする。
 |
@@ -179,10 +179,10 @@ image::images/204.svg[]
 
 ====== wtr:WaterBody
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a|
+2+|
 河川、湖沼のように陸地内に存在する水の存在する部分及び海。水路や貯水槽、プールのような人工的に存在する水を含む。 +
 標準製品仕様では、「wtr:WaterBody」を用いて、洪水浸水想定区域、津波浸水想定、高潮浸水想定区域、内水浸水想定区域及びため池ハザードマップ（以下、浸水想定区域等と呼ぶ）の浸水面を記述する。
 
@@ -225,7 +225,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | wtr:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 水面の範囲。水平面に投影した場合に隣り合う水部のインスタンスは、連続でなければならない。 +
+| 水面の範囲。水平面に投影した場合に隣り合う水部のインスタンスは、連続でなければならない。 +
 各頂点の高さは、水位＋標高となる。
 
 | uro:wtrKeyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -239,10 +239,10 @@ a| 水面の範囲。水平面に投影した場合に隣り合う水部のイ�
 
 ====== uro:RiverFloodingRiskAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a|
+2+|
 洪水浸水想定区域内に存在する構造物に、浸水想定区域がもつ属性を与えるための属性型。
 
 同一の浸水想定区域図において、複数の区域に一つ構造物が跨って存在する場合は、同一浸水ランクを持つ浸水ランクのメッシュを一つの区域とし、その区域と構造物が重なる面積が最も大きい浸水ランクの値を採用する。（面積が等しい場合は、浸水ランクがより危険な区域を採用する） 浸水深は採用した浸水ランクを持つ浸水深のメッシュのうち、構造物と重なる面積が最も大きいメッシュの浸水深を採用する。（同じ浸水深を持つメッシュは面積算出の際に合算する） 浸水継続時間は採用した浸水深のメッシュと重なる浸水継続時間のメッシュの浸水継続時間を採用する。複数の浸水継続時間のメッシュが重なる場合は最も大きい浸水継続時間の値を採用する。
@@ -255,18 +255,18 @@ h| ステレオタイプ 2+| << DataType >>
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:description
 | gml:CodeType [1]
-a| 指定河川の名称。コードリスト（RiverFloodingRiskAttribute_description.xml）より選択する。都市ごとにコードリストを作成する。 +
+| 指定河川の名称。コードリスト（RiverFloodingRiskAttribute_description.xml）より選択する。都市ごとにコードリストを作成する。 +
 指定河川の名称には、水防法に基づき指定された洪水浸水想定区域図の対象となる洪水予報河川又は水位周知河川として示された、「水系名」及び「指定河川名」を用いることを基本とする。 +
 一つの浸水想定区域図に複数の洪水予報河川又は水位周知河川が含まれている場合は、「指定河川名」を列挙する。指定河川名を列挙する場合の区切り文字は「・」（全角中点）を使用する。また、都道府県が独自に作成している浸水の区域図は、当該浸水想定区域の名称から、対象となる区域を指す名称を用いる。
 
 | uro:rank
 | gml:CodeType [0..1]
-a| 浸水深に応じた区分。コードリスト（RiverFloodingRiskAttribute_rank.xml）より選択する。 +
+| 浸水深に応じた区分。コードリスト（RiverFloodingRiskAttribute_rank.xml）より選択する。 +
 uro:rank又はuro:rankOrgのいずれか一つをもつ。
 
 | uro:rankOrg
 | gml:CodeType [0..1]
-a| 都道府県独自に設定した浸水深の区分。コードリスト（RiverFloodingRiskAttribute_rankOrg.xml）より選択する。この属性を使用する場合は、コードリストを作成する。 +
+| 都道府県独自に設定した浸水深の区分。コードリスト（RiverFloodingRiskAttribute_rankOrg.xml）より選択する。この属性を使用する場合は、コードリストを作成する。 +
 uro:rank又はuro:rankOrgのいずれか一つをもつ。
 
 | uro:depth | gml:LengthType [0..1] | 浸水の深さ。単位はm（uom=”m”）とする。
@@ -279,10 +279,10 @@ uro:rank又はuro:rankOrgのいずれか一つをもつ。
 
 ====== uro:TsunamiRiskAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 津波洪水浸水想定の区域内に存在する構造物に、津波浸水想定の区域の属性を与えるための属性型。 +
+2+| 津波洪水浸水想定の区域内に存在する構造物に、津波浸水想定の区域の属性を与えるための属性型。 +
 一回の津波浸水シミュレ－ションに関して、複数の区域が一つの構造物に跨って存在する場合は、同一浸水ランクを持つ浸水ランクのメッシュを一つの区域とし、その区域と構造物が重なる面積が最も大きい浸水ランクの値を採用する。（面積が等しい場合は、浸水ランクがより危険な区域を採用する） +
 浸水深は採用した浸水ランクを持つ浸水深のメッシュのうち、構造物と重なる面積が最も大きいメッシュの浸水深を採用する。（同じ浸水深を持つメッシュは面積算出の際に合算する）
 
@@ -303,10 +303,10 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:HighTideRiskAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 高潮浸水想定区域に存在する構造物に、高潮浸水想定区域の属性に与えるための属性型。 +
+2+| 高潮浸水想定区域に存在する構造物に、高潮浸水想定区域の属性に与えるための属性型。 +
 一回の高潮浸水シミュレ－ションに関して、複数の区域が一つの構造物が跨って存在する場合は同一浸水ランクを持つ浸水ランクのメッシュを一つの区域とし、その区域と構造物が重なる面積が最も大きい浸水ランクの値を採用する。（面積が等しい場合は、より危険な区域を採用する） +
 浸水深は採用した浸水ランクを持つ浸水深のメッシュのうち、構造物と重なる面積が最も大きいメッシュの浸水深を採用する。（同じ浸水深を持つメッシュは面積算出の際に合算する）
 
@@ -317,7 +317,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:description | gml:CodeType [1] | 高潮浸水想定区域の属性を付与する元となる図又はデ－タ集合の名称。コードリスト（HighTideRiskAttribute_description.xml）より選択する。都市ごとにコードリストを作成する。
 | uro:rank
 | gml:CodeType [0..1]
-a| 浸水深に応じた区分。コードリスト（HighTideRiskAttribute_rank.xml）より選択する。 +
+| 浸水深に応じた区分。コードリスト（HighTideRiskAttribute_rank.xml）より選択する。 +
 uro:rank又はuro:rankOrgのいずれか一つをもつ。
 
 | uro:rankOrg | gml:CodeType [0..1] | 都道府県独自に設定した浸水深の区分。コードリスト（HighTideRiskAttribute_rankOrg.xml）より選択する。この属性を使用する場合は、コードリストを作成する。uro:rank又はuro:rankOrgのいずれか一つをもつ。
@@ -327,10 +327,10 @@ uro:rank又はuro:rankOrgのいずれか一つをもつ。
 
 ====== uro:InlandFloodingRiskAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 内水浸水想定区域に存在する構造物に、内水浸水想定区域の属性を与えるための属性型。 +
+2+| 内水浸水想定区域に存在する構造物に、内水浸水想定区域の属性を与えるための属性型。 +
 一回の内水浸水シミュレ－ションに関して、複数の区域が一つの構造物が跨って存在する場合は、同一浸水ランクを持つ浸水ランクのメッシュを一つの区域とし、その区域と構造物が重なる面積が最も大きい浸水ランクの値を採用する。（面積が等しい場合は、より危険な区域を採用する） +
 浸水深は採用した浸水ランクを持つ浸水深のメッシュのうち、構造物と重なる面積が最も大きいメッシュの浸水深を採用する。（同じ浸水深を持つメッシュは面積算出の際に合算する）
 
@@ -341,7 +341,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:description | gml:CodeType [1] | 内水浸水想定区域の属性を付与する元となる図又はデータの名称。コードリスト（InlandFloodingRiskAttribute_description.xml）より選択する。都市ごとにコードリストを作成する。
 | uro:rank
 | gml:CodeType [0..1]
-a| 浸水深に応じた区分。コードリスト（InlandFloodingRiskAttribute_rank.xml）より選択する。 +
+| 浸水深に応じた区分。コードリスト（InlandFloodingRiskAttribute_rank.xml）より選択する。 +
 uro:rank又はuro:rankOrgのいずれか一つをもつ。
 
 | uro:rankOrg | gml:CodeType [0..1] | 都道府県独自に設定した浸水深の区分。コードリスト（InlandFloodingRiskAttribute_rankOrg.xml）より選択する。この属性を使用する場合は、コードリストを作成する。uro:rank又はuro:rankOrgのいずれか一つをもつ。
@@ -351,7 +351,7 @@ uro:rank又はuro:rankOrgのいずれか一つをもつ。
 
 ====== uro:ReservoirFloodingRiskAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| ため池ハザードマップ内に存在する構造物に、ため池ハザードマップの属性を与えるための属性型。
 
@@ -362,12 +362,12 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:description | gml:CodeType [1] | ため池ハザードマップの属性を付与する元となる図又はデータの名称。コードリスト（ReservoirFloodingRiskAttribute_description.xml）より選択する。都市ごとにコードリストを作成する。
 | uro:rank
 | gml:CodeType [0..1]
-a| 浸水深に応じた区分。コードリスト（ReservoirFloodingRiskAttribute_rank.xml）より選択する。 +
+| 浸水深に応じた区分。コードリスト（ReservoirFloodingRiskAttribute_rank.xml）より選択する。 +
 uro:rank又はuro:rankOrgのいずれか一つをもつ。
 
 | uro:rankOrg
 | gml:CodeType [0..1]
-a| 市町村が独自に設定した浸水深の区分。コードリスト（ReservoirFloodingRiskAttribute_rankOrg.xml）より選択する。この属性を使用する場合は、コードリストを作成する。 +
+| 市町村が独自に設定した浸水深の区分。コードリスト（ReservoirFloodingRiskAttribute_rankOrg.xml）より選択する。この属性を使用する場合は、コードリストを作成する。 +
 uro:rank又はuro:rankOrgのいずれか一つをもつ。
 
 h| (uro:depth) | gml:LengthType [0..1] | 陸上の各地点で水面が最も高い位置にきたときの地面から水面までの高さ。単位はm（uom=”m”）とする。
@@ -376,10 +376,10 @@ h| (uro:depth) | gml:LengthType [0..1] | 陸上の各地点で水面が最も高
 
 ====== uro:LandSlideRiskAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 土砂災害警戒区域及び土砂災害特別警戒区域に存在する構造物に、いずれの区域に含まれているかを属性として付与する。 +
+2+| 土砂災害警戒区域及び土砂災害特別警戒区域に存在する構造物に、いずれの区域に含まれているかを属性として付与する。 +
 一つの構造物に、複数の「区域区分」が重なっている場合は、以下の優先順位に基づき、最も優先順位の高い区域区分のみを付与する。区域区分の優先順位は優先順位の高いほうから、 +
 　土砂災害特別警戒区域（指定済） +
 　土砂災害警戒区域（指定済） +
@@ -400,10 +400,10 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:KeyValuePairAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外に情報を追加したい場合に使用する。 +
+2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外に情報を追加したい場合に使用する。 +
 属性名称と属性の値の対で構成される。拡張属性は、コ－ド値をとる属性にのみ適用する。コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
 
 h| 上位の型 2+| ―
@@ -413,14 +413,14 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:key | gml:CodeType [1] | 拡張する属性の名称。名称は、コ－ドリスト（KeyValuePairAttribute_key.xml）より選択する。コード値をとる属性を追加する場合は、コードリストを作成する。
 | uro:codeValue
 | gml:CodeType [0..1]
-a| 拡張された属性の値。値はコ－ド型となる。 +
+| 拡張された属性の値。値はコ－ド型となる。 +
 uro:KeyValuePairAttributeを使用する場合は、必ずuro:codeValueを作成する。
 
 |===
 
 ====== uro:DataQualityAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
 
@@ -431,7 +431,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| (uro:geometrySrcDescLod0) | gml:CodeType [0..*] | LOD0の幾何オブジェクトの作成に使用した原典資料の種類。
 | uro:geometrySrcDescLod1
 | gml:CodeType [1..*]
-a| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。 +
+| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。
 
 h| (uro:geometrySrcDescLod2) | gml:CodeType [0..*] | LOD2の幾何オブジェクトの作成に使用した原典資料の種類。
@@ -439,14 +439,14 @@ h| (uro:geometrySrcDescLod3) | gml:CodeType [0..*] | LOD3の幾何オブジェ�
 h| (uro:geometrySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
 | uro:thematicSrcDesc
 | gml:CodeType [0..\*]
-a| 主題属性の作成に使用した原典資料の種類。 +
+| 主題属性の作成に使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_thematicSrcDesc.xml）より選択する。 +
 主題属性が作成対象となっている場合は必須とする。
 
 h| (uro:appearanceSrcDescLod0) | gml:CodeType [0..*] | LOD0の幾何オブジェクトのアピアランスに使用した原典資料の種類。
 | uro:appearanceSrcDescLod1
 | gml:CodeType [0..*]
-a| LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
+| LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 +
 拡張製品仕様書LOD1の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD1の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 
@@ -467,7 +467,7 @@ h| (uro:publicSurveyDataQualityAttribute) | uro:PublicSurveyDataQualityAttribute
 
 ====== urf:SedimentDisasterProneArea
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 土砂災害警戒区域等における土砂災害防止対策の推進に関する法律（土砂災害防止法）により指定された、土砂災害警戒区域及び土砂災害特別警戒区域。
 
@@ -529,7 +529,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== WaterBody_class.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | WaterBody_class.xml
 
@@ -541,7 +541,7 @@ h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/WaterBody_class
 
 ====== WaterBody_function.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | WaterBody_function.xml
 
@@ -560,7 +560,7 @@ h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/WaterBody_funct
 
 ====== RiverFloodingRiskAttribute_adminType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | RiverFloodingRiskAttribute_adminType.xml
 
@@ -576,7 +576,7 @@ h| コード h| 説明
 
 ====== RiverFloodingRiskAttribute_scale.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | RiverFloodingRiskAttribute_scale.xml
 
@@ -592,7 +592,7 @@ h| コード h| 説明
 
 ====== RiverFloodingRiskAttribute_rank.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | RiverFloodingRiskAttribute_rank.xml
 
@@ -612,7 +612,7 @@ h| コード h| 説明
 
 ====== TsunamiRiskAttribute_rank.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | TsunamiRiskAttribute_rank.xml
 
@@ -632,7 +632,7 @@ h| コード h| 説明
 
 ====== HighTideRiskAttribute_rank.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | HighTideRiskAttribute_rank.xml
 
@@ -652,7 +652,7 @@ h| コード h| 説明
 
 ====== InlandFloodingRiskAttribute_rank.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | InlandFloodingRiskAttribute_rank.xml
 
@@ -672,7 +672,7 @@ h| コード h| 説明
 
 ====== ReservoirFloodingRiskAttribute_rank.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ReservoirFloodingRiskAttribute_rank.xml
 
@@ -695,7 +695,7 @@ h| コード h| 説明
 
 ====== LandSlideRiskAttribute_description.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | LandSlideRiskAttribute_description.xml
 
@@ -712,7 +712,7 @@ h| コード h| 説明
 
 ====== LandSlideRiskAttribute_areaType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | LandSlideRiskAttribute_areaType.xml
 
@@ -730,7 +730,7 @@ h| コード h| 説明
 
 ====== LandSlideRiskAttribute_status.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | LandSlideRiskAttribute_status.xml
 
@@ -743,7 +743,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
 
@@ -789,7 +789,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
 
@@ -819,7 +819,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
 

@@ -13,23 +13,23 @@
 
 区域モデル（LOD1）では、区域の形状を、面により表現する。区域モデル（LOD1）の取得イメージを表 4-116に示す。
 
-[cols="5,9"]
+[cols="5a,9a"]
 .区域モデル（LOD1）の取得イメージ
 |===
 h| ^h| LOD1
 h| 取得例
-a|
+|
 image::images/407.webp.png[]
 
 h| 説明
-a| 区域の境界により囲まれた面を取得する。 +
+| 区域の境界により囲まれた面を取得する。 +
 高さは0とする。
 
 |===
 
 ====== 区域モデル（LOD1）の定義
 
-[cols="7,7,7,7,7,18,7"]
+[cols="7a,7a,7a,7a,7a,18a,7a"]
 |===
 | | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -38,7 +38,7 @@ a| 区域の境界により囲まれた面を取得する。 +
 | Zone
 | MultiSurface
 |
-a|
+|
 * 区域の境界に囲まれた面を取得する。
 * 高さは0とする。
 |
@@ -56,7 +56,7 @@ a|
 
 区域モデルの各LODにおいて使用可能な地物型と空間属性を表 4-117に示す。
 
-[cols="4,4,1,1,1,1,8"]
+[cols="4a,4a,1a,1a,1a,1a,8a"]
 .区域モデルの記述に使用する地物型と空間属性
 |===
 ^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| 適用
@@ -86,7 +86,7 @@ image::images/408.svg[]
 
 ====== urf:Zone
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+|
@@ -157,7 +157,7 @@ h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型�
 h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット（集合）。属性を追加したい場合に使用する。
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 区域の範囲。区域の境界線に囲まれた面とする。 +
+| 区域の範囲。区域の境界線に囲まれた面とする。 +
 高さを0とする。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -173,7 +173,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== urf:Boundary
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 区域の境界線。
 
@@ -198,7 +198,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== urf:UrbanParkAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市公園法第２条第１項で定義する都市公園に関する情報を定義したデータ型。
 
@@ -220,7 +220,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== urf:BreakdownOfNominalArea
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市公園の敷地面積の内訳に関する情報を定義したデータ型。
 
@@ -235,7 +235,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:DataQualityAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
 
@@ -275,7 +275,7 @@ h| (uro:publicSurveyDataQualityAttribute) | uro:PublicSurveyDataQualityAttribute
 
 ====== uro:KeyValuePairAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。
 
@@ -298,7 +298,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== Zone_function.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Zone_function.xml
 
@@ -330,7 +330,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
 
@@ -377,7 +377,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
 
@@ -408,7 +408,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
 

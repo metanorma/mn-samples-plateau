@@ -33,26 +33,26 @@
 
 交通（鉄道）モデル（LOD0）の取得イメージを表 4-24に示す。
 
-[cols="5,9,9,9,9,9"]
+[cols="5a,9a,9a,9a,9a,9a"]
 .交通（鉄道）モデル（LOD0）の取得イメージ
 |===
 h| 5+^h| LOD0
 h| 取得例
-5+^a|
+5+^|
 image::images/104.webp.png[]
 
 h| 説明 5+| 中心線を取得する。
 h| 5+^h| LOD0
 h| 取得例
-^a|
+^|
 image::images/105.webp.png[]
-^a|
+^|
 image::images/106.webp.png[]
-^a|
+^|
 image::images/107.webp.png[]
-^a|
+^|
 image::images/108.webp.png[]
-^a|
+^|
 image::images/109.webp.png[]
 
 h| 説明 | 普通鉄道、地下鉄地上部、路面鉄道は、地図情報レベル2500ではレールの中心線を取得し、地図情報レベル500及び1000ではレールを取得する。
@@ -71,7 +71,7 @@ h| 説明 | 普通鉄道、地下鉄地上部、路面鉄道は、地図情報�
 
 交通（鉄道）モデル（LOD0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7,7,7,7,16,20,16"]
+[cols="7a,7a,7a,7a,16a,20a,16a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -81,7 +81,7 @@ h| 説明 | 普通鉄道、地下鉄地上部、路面鉄道は、地図情報�
 | GeometricComplex
 |
 * 普通鉄道、地下鉄地上部、路面鉄道、モノレール、特殊鉄道、索道
-a|
+|
 * 中心線を取得する。
 * 高さは0とする。
 | ネットワークによる表現は、tran:lod0Networkを使用して記述する。トンネル内を含む。
@@ -89,38 +89,38 @@ a|
 | MultiCurve
 |
 * 普通鉄道、路面鉄道、特殊鉄道地図情報レベル2500
-a|
+|
 * 中心線を取得する。
 * 高さは0とする。
 .5+| 公共測量標準図式による表現は、uro:DmGeometricAttributeのuro:lod0Geometryを使用する。
 
 | MultiCurve
-a|
+|
 * 普通鉄道、地下鉄地上部、路面鉄道、特殊鉄道、トンネル内の鉄道（普通鉄道、路面鉄道、特殊鉄道）
 * 地図情報レベル500及び1000
-a|
+|
 * レールを取得する。
 * 高さは0とする。
 
 | MultiCurve
 |
 * モノレール、索道
-a|
+|
 * 中心線を取得する。
 * 高さは0とする。
 
 | MultiCurve
 |
 * 建設中の鉄道
-a|
+|
 * 外周を取得する。
 * 高さは0とする。
 
 | MultiCurve
-a|
+|
 * トンネル内のモノレール
 * 地図情報レベル500及び1000
-a|
+|
 * 中心線を取得する。
 * 高さは0とする。
 
@@ -138,23 +138,23 @@ a|
 
 交通（鉄道）モデル（LOD1）では、鉄道の形状を面により表現する。交通（鉄道）モデル（LOD1）の取得イメージを表 4-25に示す。
 
-[cols="2,9,9"]
+[cols="2a,9a,9a"]
 .交通（鉄道）モデル（LOD1）の取得イメージ
 |===
 h| 2+^h| LOD1
 h| 取得例
-^a|
+^|
 image::images/110.webp.png[]
-^a|
+^|
 image::images/111.webp.png[]
 
 h| 説明
-a| 普通鉄道、地下鉄、路面鉄道及び特殊軌道の場合は、レールの内側の領域を面として取得する。 +
+| 普通鉄道、地下鉄、路面鉄道及び特殊軌道の場合は、レールの内側の領域を面として取得する。 +
 同一路線に上下線などの複数の軌道が存在する場合は、路線ごとにまとめて一つの地物とする。 +
 軌道が分岐・合流する場所で地物を区切る。 +
 分岐・合流する場所では面が重複する。 +
 高さは0とする。
-a| モノレールの場合は、軌道桁の外周に囲まれた面を取得する。 +
+| モノレールの場合は、軌道桁の外周に囲まれた面を取得する。 +
 同一路線に上下線などの複数の軌道が存在する場合は、路線ごとにまとめて一つの地物とする。 +
 軌道が分岐・合流する場所で地物を区切る。 +
 分岐・合流する場所では面が重複する。 +
@@ -162,7 +162,7 @@ a| モノレールの場合は、軌道桁の外周に囲まれた面を取得�
 
 h| 2+^h| LOD1
 h| 取得例
-^a|
+^|
 image::images/112.webp.png[]
 |
 
@@ -175,7 +175,7 @@ h| 説明 | 索道の場合は、起点及び終点が同一となる索道の�
 
 交通（鉄道）モデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1,1,1,1,1,3,2"]
+[cols="1a,1a,1a,1a,1a,3a,2a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -185,7 +185,7 @@ h| 説明 | 索道の場合は、起点及び終点が同一となる索道の�
 | MultiSurface
 |
 * 普通鉄道、地下鉄、路面鉄道及び特殊軌道
-a|
+|
 * 左右のレールに囲まれた範囲を取得する。
 * 高さは0とする。
 .3+|
@@ -193,14 +193,14 @@ a|
 | MultiSurface
 |
 * モノレール
-a|
+|
 * 軌道桁の外周を取得する。
 * 高さは0とする。
 
 | MultiSurface
 |
 * 索道
-a|
+|
 * 起点及び終点が同一となる索道のケーブルに囲まれた範囲を面として取得する。
 * 高さは0とする。
 
@@ -218,7 +218,7 @@ a|
 
 交通（鉄道）モデル（LOD2）では、鉄道の形状を線及び面により表現する。
 
-[cols="7,7,14,12"]
+[cols="7a,7a,14a,12a"]
 .交通（鉄道）モデル（LOD2）に含むべき地物と地物型の対応
 |===
 2+h| 交通（鉄道）モデル（LOD2）に含むべき地物 h| 対応するCityGMLの地物型 ^h| LOD2
@@ -249,12 +249,12 @@ image::images/113.webp.png[]
 
 交通（鉄道）モデル（LOD2）の取得イメージを表 4-27に示す。
 
-[cols="1,9"]
+[cols="1a,9a"]
 .交通（鉄道）モデル（LOD2）の取得イメージ
 |===
 h| ^h| LOD2
 h| 取得例
-a|
+|
 image::images/114.webp.png[]
 
 h| 説明 | 軌道中心線、レールに囲まれた範囲 footnoteblock:[fn_rail_area] 、及び道床を取得する。高さは0とする。
@@ -281,7 +281,7 @@ h| 説明 | 軌道中心線、レールに囲まれた範囲 footnoteblock:[fn_r
 
 交通（鉄道）モデル（LOD2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7,7,7,7,16,20,16"]
+[cols="7a,7a,7a,7a,16a,20a,16a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -295,10 +295,10 @@ MultiSurfaceの集まりとして表現する。
 | TrafficArea
 | GeometricComplex
 | 普通鉄道、地下鉄地上部、路面鉄道、モノレール、特殊鉄道、索道、地下鉄地上部、路面鉄道、特殊鉄道、トンネル内の鉄道、地下鉄地下部
-a|
+|
 * 軌道中心線を取得する。
 * 高さは0とする。
-a|
+|
 * 交通（鉄道）モデル（LOD0）と同じ形状となる。
 * CompositeCurveを使用する。
 
@@ -307,7 +307,7 @@ a|
 | TrafficArea
 | MultiSurface
 | 普通鉄道、地下鉄地上部、路面鉄道、モノレール、特殊鉄道、地下鉄地上部、路面鉄道、特殊鉄道、トンネル内の鉄道、地下鉄地下部
-a|
+|
 * レールに囲まれた範囲を取得する。
 * 高さは0とする。
 |
@@ -318,7 +318,7 @@ a|
 | TrafficArea
 | MultiSurface
 | 普通鉄道、地下鉄地上部、路面鉄道、特殊鉄道、地下鉄地上部、路面鉄道、特殊鉄道、トンネル内の鉄道、地下鉄地下部
-a|
+|
 * 道床の外周を取得する。
 * 高さは0とする。
 |
@@ -342,7 +342,7 @@ a|
 [cols=6]
 .LOD3.0、LOD3.1及びLOD3.2の区分（鉄道内の区分）
 |===
-2+a| 交通（鉄道）モデル（LOD3）に +
+2+| 交通（鉄道）モデル（LOD3）に +
 含むべき地物
 h| 対応するCityGMLの地物型
 ^h| LOD3.0
@@ -370,11 +370,11 @@ h| 対応するCityGMLの地物型
 ユースケースの必要に応じて細分できる。
 --
 
-[cols="8,23,23,23,23"]
+[cols="8a,23a,23a,23a,23a"]
 .LOD3.0、LOD3.1及びLOD3.2（高さの取得方法）
 |===
 h| ^h| 取得基準 ^h| LOD3.0 ^h| LOD3.1 ^h| LOD3.2
-.4+a| 高さの +
+.4+| 高さの +
 取得 +
 方法
 | 軌道中心線上の勾配変化点に標高を与え、高さをもった線として表現する。
@@ -398,36 +398,36 @@ LOD3.2における取得の下限値は、ユースケースの必要に応じ�
 
 交通（鉄道）モデル（LOD3）の取得イメージを表 4-30及び表 4-31に示す。
 
-[cols="1,3,3,3"]
+[cols="1a,3a,3a,3a"]
 .交通（鉄道）モデル（LOD3）の取得イメージ（鉄道内の区分）
 |===
 h| ^h| LOD3.0 ^h| LOD3.1 ^h| LOD3.2
 h| 取得例
-^a|
+^|
 image::images/115.webp.png[]
-^a|
+^|
 image::images/116.webp.png[]
-^a|
+^|
 image::images/117.webp.png[]
 
 h| 説明
 | 軌道中心線、レールに囲まれた範囲及び道床を面として取得する。
 | 軌道中心線、レールに囲まれた範囲（レールの内側）、道床に加え、レールを取得する。また、道床外の鉄道用地を交通補助領域として取得する。
-a| 軌道中心線、レールに囲まれた範囲、道床に加え、レールを取得する。また、道床外の鉄道用地を交通補助領域として取得する。 +
+| 軌道中心線、レールに囲まれた範囲、道床に加え、レールを取得する。また、道床外の鉄道用地を交通補助領域として取得する。 +
 道床及び道床外の鉄道用地を、ユースケースの必要に応じて細分できる。
 
 |===
 
-[cols="1,3,3,3"]
+[cols="1a,3a,3a,3a"]
 .交通（鉄道）モデル（LOD3）の取得イメージ（高さの取得方法）
 |===
 h| ^h| LOD3.0 ^h| LOD3.1 ^h| LOD3.2
 h| 取得例
-^a|
+^|
 image::images/118.webp.png[]
-^a|
+^|
 image::images/119.webp.png[]
-^a|
+^|
 image::images/120.webp.png[]
 
 h| 説明
@@ -436,13 +436,13 @@ h| 説明
 道床に軌道中心線上の標高を与える。
 
 軌道中心線の標高は、レール面の標高とする。
-a|
+|
 軌道中心線の各点に標高を与える。 +
 レールの横断方向に存在する15㎝以上の高さの差を取得する。
 
 image::images/121.webp.png[]
 
-a|
+|
 軌道中心線の各点に標高を与える。 +
 レールの横断方向に存在する15㎝未満の高さの差を取得する。 +
 高さの差を取得する閾値は、ユースケースの必要に応じて定めることができる。
@@ -455,7 +455,7 @@ image::images/122.webp.png[]
 
 交通（鉄道）モデル（LOD3.0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7,7,7,7,16,20,16"]
+[cols="7a,7a,7a,7a,16a,20a,16a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -470,7 +470,7 @@ MultiSurfaceの集まりとして表現する。
 | GeometricComplex
 |
 * 普通鉄道、地下鉄地上部、路面鉄道、モノレール、特殊鉄道、索道、トンネル内の鉄道、地下鉄地下部
-a|
+|
 * 軌道中心線を取得する。
 * 勾配変化点の標高を用いて軌道中心線を構成する各頂点に高さを与える。
 | CompositeCurveを使用する。
@@ -484,7 +484,7 @@ a|
 |
 * 左右レールの内側を境界とする面を取得する。
 * 各頂点に軌道中心線上の高さを与える。
-a|
+|
 image::images/123.webp.png[]
 
 | LOD3.0 | ● | TrafficArea | MultiSurface
@@ -506,7 +506,7 @@ image::images/123.webp.png[]
 
 交通（鉄道）モデル（LOD3.1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="5,5,5,5,20,24,16"]
+[cols="5a,5a,5a,5a,20a,24a,16a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -540,7 +540,7 @@ CompositeCurveを使用する。
 |
 * 左右レールの内側を境界とする面を取得する。
 * 各頂点に軌道の高さを与える。
-a|
+|
 image::images/124.webp.png[]
 
 | LOD3.1
@@ -549,7 +549,7 @@ image::images/124.webp.png[]
 | MultiSurface
 |
 * 道床
-a|
+|
 * 上方からの正射影の外周を取得し、勾配が変化する場所で区切る。
 * 外周の各頂点に、水平位置に対応する標高を与える
 | 15㎝以上の高さの差を取得する。
@@ -574,7 +574,7 @@ a|
 
 交通（鉄道）モデル（LOD3.2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="5,5,5,5,20,24,16"]
+[cols="5a,5a,5a,5a,20a,24a,16a"]
 |===
 | | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -607,7 +607,7 @@ CompositeCurveを使用する。
 |
 * 左右レールの内側を境界とする面を取得する。
 * 各頂点に軌道の高さを与える。
-a|
+|
 image::images/125.webp.png[]
 
 | LOD3.2 | ● | TrafficArea | MultiSurface
@@ -642,7 +642,7 @@ image::images/125.webp.png[]
 
 交通（鉄道）モデルの各LODにおいて使用可能な地物型と空間属性を表 4-32に示す。
 
-[cols="5,5,3,3,3,3,3"]
+[cols="5a,5a,3a,3a,3a,3a,3a"]
 .交通（鉄道）モデルに使用する地物型と空間属性
 |===
 ^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| 適用
@@ -695,10 +695,10 @@ image::images/127.svg[]
 
 ====== tran:Railway
 
-[cols="1,1,2",options="noheader"]
+[cols="1a,1a,2a",options="noheader"]
 |===
 .4+| 型の定義
-2+a|
+2+|
 鉄道とは、人と物を迅速かつ大量に輸送するため、レールを敷いた専用の通路を用い、その上を車両が円滑に行き来できるように整備された一切の設備とシステムの集合体である。[一般社団法人日本民営鉄道協会] 標準製品仕様書では、鉄道事業法及び軌道法に基づいて敷設された線路を指し、以下を含む。
 
 * 普通鉄道：鉄道事業法又は軌道法に基づいて運行されている鉄道で、特殊軌道及び索道を除いたもの[公共測量標準図式]
@@ -720,17 +720,17 @@ image::images/127.svg[]
 .LOD0における鉄道の取得例
 image::images/128.webp.png[]
 
-2+a|
+2+|
 
 .LOD1における鉄道の取得例
 image::images/129.webp.png[]
 
-2+a|
+2+|
 
 .LOD2における鉄道の取得例
 image::images/130.webp.png[]
 
-2+a|
+2+|
 
 .LOD3における鉄道の取得例
 image::images/131.webp.png[]
@@ -762,22 +762,22 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 | tran:auxiliaryTrafficArea | tran:AuxiliaryTrafficArea [0..*] | 鉄道用地を構成する要素のうち、交通領域（軌道）の機能を補助するために設けられた領域への参照。
 | tran:lod0Network
 | gml:GeometricComplex [0..*]
-a| 軌道中心線。高さは0とする。 +
+| 軌道中心線。高さは0とする。 +
 路線ごとに作成する。路線に上下線等複数の軌道が存在する場合には、それぞれの軌道中心線を取得し、これらの組をgml:GeometricComplexとする。
 
 | tran:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 一対のレールとレールとの間の領域。高さは0とする。 +
+| 一対のレールとレールとの間の領域。高さは0とする。 +
 路線ごとに作成する。路線に上下線等複数の軌道が存在する場合には、それぞれのレールに囲まれた領域を取得し、これらの組をgml:MultiSurfaceとする。
 
 | tran:lod2MultiSurface
 | gml:MultiSurface [0..1]
-a| 道床の範囲。高さは0とする。 +
+| 道床の範囲。高さは0とする。 +
 tran:Railwayが参照するtran:TrafficAreaのtran:lo2MultiSurfaceに含まれる、全てのgml:Polygonにより構成する。
 
 | tran:lod3MultiSurface
 | gml:MultiSurface [0..1]
-a| 鉄道用地の範囲。 +
+| 鉄道用地の範囲。 +
 tran:Railwayが参照するtran:TrafficArea及びtran:AuxiliaryTrafficAreaのtran:lod3MultiSurfaceに含まれる、全てのgml:Polygonにより構成する。 +
 LOD3.0の場合、横断方向に連続する交通領域の高さは一律とし、軌道中心線の標高とする。 +
 LOD3.1及びLOD3.2では、各水平位置における標高とする。
@@ -796,10 +796,10 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== tran:TrafficArea
 
-[cols="1,1,2",options="noheader"]
+[cols="1a,1a,2a",options="noheader"]
 |===
 .4+| 型の定義
-2+a|
+2+|
 軌道。軌道とは、施工基面上の道床（スラブを含む）、軌きょう（レールとまくらぎとを，はしご状に組み立てたもの。）及び直接これらに付帯する施設。[JIS E1001 鉄道―線路用語]
 
 * LOD2の場合は、軌道中心線に加え、道床の外周に囲まれた範囲を取得する。高さは0とする。
@@ -808,21 +808,21 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 .LOD2における鉄道のtran:TrafficAreaの例
 image::images/132.webp.png[]
 
-2+a|
+2+|
 * LOD3.0の場合は軌道中心線に加え、道床の外周に囲まれた範囲を取得する。軌道中心線の各頂点には、軌道中心線上の勾配変化点の標高に基づき、高さを与える。また、道床の高さは、軌道中心線上の高さとする。
 
 
 .LOD3.0における鉄道のtran:TrafficAreaの例
 image::images/133.webp.png[]
 
-2+a|
+2+|
 * LOD3.1の場合は、LOD3.0の軌道中心線、道床に加え、レールを取得する。高さはそれぞれの水平位置における標高とする。15㎝以上の高さの差を取得する。
 
 
 .LOD3.1における鉄道のtran:TrafficAreaの例
 image::images/134.webp.png[]
 
-2+a|
+2+|
 * LOD3.2の場合は、LOD3.1の軌道中心線、道床及びレールの範囲を取得する。高さはそれぞれの水平位置における標高とする。15㎝未満の高さの差を取得する。
 
 
@@ -873,10 +873,10 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== tran:AuxiliaryTrafficArea
 
-[cols="1,1,2",options="noheader"]
+[cols="1a,1a,2a",options="noheader"]
 |===
 .2+| 型の定義
-2+a|
+2+|
 鉄道用地のうち、道床を除く範囲。
 
 * LOD2の場合は取得しない。（tran:TrafficAreaのみを取得する。）
@@ -886,7 +886,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 .LOD3.1におけるtran:AuxiliaryTrafficAreaの例
 image::images/136.webp.png[]
 
-2+a|
+2+|
 * LOD3.2の場合は、鉄道敷地界及び道床の外周に囲まれた範囲を取得する。高さはそれぞれの水平位置における標高とする。15㎝未満の高さの差を取得する。
 
 .LOD3.2におけるtran:AuxiliaryTrafficAreaの例
@@ -923,12 +923,12 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 h| (tran:lod2MultiSurface)
 | gml:MultiSurface [0..1]
-a| 鉄道敷地界及び道床の外周に囲まれた範囲。 +
+| 鉄道敷地界及び道床の外周に囲まれた範囲。 +
 LOD2の場合は取得しない。
 
 | tran:lod3MultiSurface
 | gml:MultiSurface [0..1]
-a| 鉄道敷地界及び道床の外周に囲まれた範囲。 +
+| 鉄道敷地界及び道床の外周に囲まれた範囲。 +
 LOD3.0の場合は取得しない。 +
 LOD3.1の場合は、15㎝以上の高さの差を取得する。 +
 LOD3.2の場合は、15㎝未満の高さの差を取得する。
@@ -940,10 +940,10 @@ LOD3.2の場合は、15㎝未満の高さの差を取得する。
 
 ====== uro:KeyValuePairAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。 +
+2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。 +
 属性名称と属性の値の対で構成される。コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
 
 h| 上位の型 2+| ―
@@ -953,14 +953,14 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:key | gml:CodeType [1] | 拡張する属性の名称。名称は、コ－ドリスト（KeyValuePairAttribute_key.xml）を作成し、選択する。
 | uro:codeValue
 | gml:CodeType [1]
-a| 拡張された属性の値。値は名称は、コ－ドリスト（KeyValuePairAttribute_key[%key].xml）を作成し、選択する。 +
+| 拡張された属性の値。値は名称は、コ－ドリスト（KeyValuePairAttribute_key[%key].xml）を作成し、選択する。 +
 [%key]は、属性uro:keyの値に一致する。
 
 |===
 
 ====== uro:DataQualityAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
 
@@ -970,55 +970,55 @@ h| ステレオタイプ 2+| << DataType >>
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:geometrySrcDescLod0
 | gml:CodeType [0..*]
-a| LOD0の幾何オブジェクトの作成に使用した原典資料の種類。 +
+| LOD0の幾何オブジェクトの作成に使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD0の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、交通（鉄道）モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
 
 | uro:geometrySrcDescLod1
 | gml:CodeType [1..*]
-a| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。 +
+| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。具体的な都市オブジェクトがLOD1の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 
 | uro:geometrySrcDescLod2
 | gml:CodeType [0..*]
-a| LOD2の幾何オブジェクトの作成に使用した原典資料の種類。 +
+| LOD2の幾何オブジェクトの作成に使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD2の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、交通（鉄道）モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
 
 | uro:geometrySrcDescLod3 | gml:CodeType [0..*] | コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD3の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD3の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、交通（鉄道）モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
 h| (uro:geometrySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
 | uro:thematicSrcDesc
 | gml:CodeType [0..\*]
-a| 主題属性の作成に使用した原典資料の種類 +
+| 主題属性の作成に使用した原典資料の種類 +
 コードリスト（DataQualityAttribute_thematicSrcDesc.xml）より選択する。 +
 主題属性が作成対象となっている場合は必須とする。
 
 | uro:appearanceSrcDescLod0
 | gml:CodeType [0..*]
-a| LOD0の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
+| LOD0の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 +
 拡張製品仕様書でLOD0の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 
 | uro:appearanceSrcDescLod1
 | gml:CodeType [0..*]
-a| LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
+| LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 +
 拡張製品仕様書LOD1の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD1の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 
 | uro:appearanceSrcDescLod2
 | gml:CodeType [0..*]
-a| LOD2の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
+| LOD2の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 +
 拡張製品仕様書でLOD2の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 
 | uro:appearanceSrcDescLod3
 | gml:CodeType [0..*]
-a| LOD3の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
+| LOD3の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 +
 拡張製品仕様書でLOD3の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD3の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 
 h| uro:appearanceSrcDescLod4 | gml:CodeType [0..*] | LOD4の幾何オブジェクトのアピアランスに使用した原典資料の種類。
 | uro:lodType
 | gml:CodeType[0..*]
-a| 幾何オブジェクトに適用されたLODの詳細な区分。 +
+| 幾何オブジェクトに適用されたLODの詳細な区分。 +
 コードリスト（Railway_lodType.xml）より選択する。 +
 LOD3の幾何オブジェクトを作成する場合は必須とする。
 
@@ -1028,14 +1028,14 @@ h| (uro:tranDataAcquisition) | xs:string [0..1] | 「道路基盤地図情報（
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | uro:publicSurveyDataQualityAttribute
 | uro:PublicSurveyDataQualityAttribute [0..1]
-a| 使用した公共測量成果の地図情報レベルと種類。 +
+| 使用した公共測量成果の地図情報レベルと種類。 +
 各LODの幾何オブジェクトの作成に使用した原典資料の種類に関する属性（uro:geometrySrcDescLod0等）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）となっている場合は、必須とする。
 
 |===
 
 ====== uro:PublicSurveyDataQualityAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 使用した公共測量成果の地図情報レベルと種類を、LODごとに記述するためのデータ型。
 
@@ -1045,26 +1045,26 @@ h| ステレオタイプ 2+| << DataType >>
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:srcScaleLod0
 | gml:CodeType [0..1]
-a| LOD0の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
+| LOD0の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 +
 「LOD0の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
 
 | uro:srcScaleLod1
 | gml:CodeType [0..1]
-a| LOD1の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
+| LOD1の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 +
 「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
 
 | uro:srcScaleLod2
 | gml:CodeType [0..1]
-a| LOD2の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
+| LOD2の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 +
 「LOD2の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod2）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
 複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば地図情報レベル2500の公共測量成果と地図情報レベル500の公共測量成果を使用した場合は、地図情報レベル2500となる。
 
 | uro:srcScaleLod3
 | gml:CodeType [0..1]
-a| LOD3の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
+| LOD3の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 +
 「LOD3の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod3）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
 複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば地図情報レベル2500の公共測量成果と地図情報レベル500の公共測量成果を使用した場合は、地図情報レベル2500となる。
@@ -1072,25 +1072,25 @@ a| LOD3の幾何オブジェクトの作成に使用した原典資料の地図�
 | uro:srcScaleLod4 | gml:CodeType [0..1] | LOD4の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
 | uro:publicSurveySrcDescLod0
 | gml:CodeType [0..*]
-a| LOD0の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
+| LOD0の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
 「LOD0の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
 複数の種類の原典資料を使用した場合は、それぞれを記述する。
 
 | uro:publicSurveySrcDescLod1
 | gml:CodeType [0..*]
-a| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
+| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
 「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
 複数の種類の原典資料を使用した場合は、それぞれを記述する。
 
 | uro:publicSurveySrcDescLod2
 | gml:CodeType [0..*]
-a| LOD2の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
+| LOD2の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
 「LOD2の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod2）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
 複数の種類の原典資料を使用した場合は、それぞれを記述する。
 
 | uro:publicSurveySrcDescLod3
 | gml:CodeType [0..*]
-a| LOD3の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
+| LOD3の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
 「LOD3の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod3）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
 複数の種類の原典資料を使用した場合は、それぞれを記述する。
 
@@ -1100,7 +1100,7 @@ h| (uro:publicSurveySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジ�
 
 ====== uro:RailwayRouteAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 鉄道路線の情報。路線ごとに作成する。
 
@@ -1119,10 +1119,10 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:RailwayTrackAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 軌道の情報。 +
+2+| 軌道の情報。 +
 軌道ごとに、LOD2以上で作成する。LOD3では軌道中心線の平面線形要素ごとに作成する。
 
 h| 上位の型 2+| ―
@@ -1136,7 +1136,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:endPost | xs:string [0..1] | 終了キロ程。
 | uro:alignmentType
 | gml:CodeType [0..1]
-a| 軌道中心線の線形要素の種別。 +
+| 軌道中心線の線形要素の種別。 +
 コードリスト（RailwayTrackAttribute_alignmentType.xml）から選択する。
 
 3+h| 自身に定義された関連役割
@@ -1149,10 +1149,10 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:ControlPoint
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 軌道中心線上の変化点。平面線形の変化点、縦断線形の変化点及び勾配変化点を含む。 +
+2+| 軌道中心線上の変化点。平面線形の変化点、縦断線形の変化点及び勾配変化点を含む。 +
 線形の変化点は、開始点と終了点の対となり、勾配変化点の場合は変化した点1点を指す。
 
 h| 上位の型 2+| ―
@@ -1161,18 +1161,18 @@ h| ステレオタイプ 2+| << DataType >>
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:startPost
 | xs:string [0..1]
-a| 平面線形の変化点及び縦断線形の変化点の場合は、円曲線、緩和曲線、縦曲線の開始点の起点からのキロ程。 +
+| 平面線形の変化点及び縦断線形の変化点の場合は、円曲線、緩和曲線、縦曲線の開始点の起点からのキロ程。 +
 勾配変化点の場合は、勾配変化点の起点からのキロ程。
 
 | uro:endPost
 | xs:string [0..1]
-a| 平面線形の変化点及び縦断線形の変化点の場合は、円曲線、緩和曲線、縦曲線の終了点の起点からのキロ程。 +
+| 平面線形の変化点及び縦断線形の変化点の場合は、円曲線、緩和曲線、縦曲線の終了点の起点からのキロ程。 +
 勾配変化点の場合は不要とする。
 
 | uro:function | gml:CodeType | 変化点の種類。コードリスト（ControlPoint_function.xml）から選択する。
 | uro:parameter
 | uro:ControlPointType[1]
-a| 変化点のパラメータ。 +
+| 変化点のパラメータ。 +
 変化点の種類に応じて、uro:ControlPointTypeの選択肢から一つを選択する。
 
 3+h| 自身に定義された関連役割
@@ -1184,10 +1184,10 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:ControlPointType
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 軌道中心線上の変化点の種類を指定するための共用型。 +
+2+| 軌道中心線上の変化点の種類を指定するための共用型。 +
 いずれか一つの属性を選択する。 +
 円曲線の変化点の場合は、uro:circularCurve、緩和曲線の変化点の場合はuro:slope、傾斜変化点の変化点の場合は、uro:slope、縦曲線の変化点の場合は、uro:verticalCurveを選択する。
 
@@ -1204,7 +1204,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:CircularCurveType
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 円曲線の線形パラメータ。
 
@@ -1221,7 +1221,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:TransitionCurveType
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 緩和曲線の線形パラメータ。
 
@@ -1237,7 +1237,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:VerticalCurveType
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 縦曲線の線形パラメータ。
 
@@ -1252,7 +1252,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:SlopeType
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 勾配の変化情報。
 
@@ -1277,7 +1277,7 @@ tran:Roadのコードリスト参照
 
 ====== Railway_function.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Railway_function.xml
 
@@ -1297,7 +1297,7 @@ h| コード ^h| 説明
 
 ====== TrafficArea_function.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | TrafficArea_function.xml
 
@@ -1320,7 +1320,7 @@ h| コード ^h| 説明
 
 ====== RailwayRouteAttribute_operatorType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | RailwayRouteAttribute_operatorType.xml
 
@@ -1339,7 +1339,7 @@ h| コード ^h| 説明
 
 ====== RailwayRouteAttribute_railwayType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | RailwayRouteAttribute_railwayType.xml
 
@@ -1365,7 +1365,7 @@ h| コード ^h| 説明
 
 ====== RailwayTrackAttribute_directionType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | RailwayTrackAttribute_directionType.xml
 
@@ -1379,7 +1379,7 @@ h| コード ^h| 説明
 
 ====== RailwayTrackAttribute_trackType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | RailwayTrackAttribute_trackType.xml
 
@@ -1393,7 +1393,7 @@ h| コード ^h| 説明
 
 ====== RailwayTrackAttribute_alignmentType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | RailwayTrackAttribute_alignmentType.xml
 
@@ -1409,7 +1409,7 @@ h| コード ^h| 説明
 
 ====== ControlPoint_function.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ControlPoint_function.xml
 
@@ -1426,7 +1426,7 @@ h| コード ^h| 説明
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
 
@@ -1473,7 +1473,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
 
@@ -1504,7 +1504,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
 
@@ -1521,7 +1521,7 @@ h| コード h| 説明
 
 ====== Railway_lodType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Railway_lodType.xml
 
@@ -1535,7 +1535,7 @@ h| コード ^h| 説明
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | PublicSurveyDataQualityAttribute_srcScale.xml
 
@@ -1549,7 +1549,7 @@ h| コード h| 説明
 
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
