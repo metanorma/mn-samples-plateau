@@ -2593,9 +2593,10 @@ h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型�
 h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
 | bldg:lod4MultiSurface
 | gml:MultiSurface [0..1]
-| 内壁の仕上げ面の形状・起伏を再現した面。
-部屋（Room）を区切る内壁の角を結ぶ外周を取得する。
-角となる場所で区切る。
+|
+* 内壁の仕上げ面の形状・起伏を再現した面。
+* 部屋（Room）を区切る内壁の角を結ぶ外周を取得する。
+* 角となる場所で区切る。
 
 | bldg:opening | bldg:_Opening [0..*] | 内壁に設置される、窓や扉への参照。
 | uro:ifcBoundarySurfaceAttribute
