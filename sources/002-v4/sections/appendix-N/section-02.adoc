@@ -44,10 +44,11 @@ LOD3は、MMSによる点群や画像等、側面から取得したデータや�
 
 その他の構造物の各LODにおいて使用可能な地物型と空間属性を、表N- 2に示す。
 
-[cols=7]
+[cols="3a,3a,^a,^a,^a,^a,6a"]
 .その他の構造物モデルに使用する地物型と空間属性
 |===
-^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| 適用
+| 地物型 |  空間属性 |  LOD0 |  LOD1 |  LOD2 |  LOD3 |  適用
+
 .5+| uro:OtherConstruction | |  ● |  ● |  ● |  ● |
 | uro:lod0Geometry |  ● |  |  |  | 数値地形図（DM）の取得方法に従う。
 | uro:lod1Geometry |  |  ● |  |  | 立体となる。
@@ -78,7 +79,8 @@ LOD3は、MMSによる点群や画像等、側面から取得したデータや�
 |
 |
 |  ■
-| OtherConstructionInstallationを作成する場合は必須とする。 +
+| OtherConstructionInstallationを作成する場合は必須とする。
+
 MultiSurfaceとする。
 
 |===
