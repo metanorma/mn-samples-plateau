@@ -13,53 +13,53 @@
 
 地下埋設物モデル（LOD0）では、地下埋設物の形状を、点及び線により表現する。地下埋設物モデル（LOD0）の取得イメージを表 4-88に示す。
 
-[cols="5,9,9,10,15,10"]
+[cols="5a,9a,9a,10a,15a,10a"]
 .地下埋設物モデル（LOD0）の取得イメージ
 |===
 h| 5+^h| LOD0
 h| 取得例
-a|
+|
 image::images/297.webp.png[]
-a|
+|
 image::images/298.webp.png[]
-a|
+|
 image::images/299.webp.png[]
-a|
+|
 image::images/300.webp.png[]
-a|
+|
 image::images/301.webp.png[]
 
 h| 説明
-a| 指定された管径よりも小さい管路は、管路の中心線を取得する。 +
+| 指定された管径よりも小さい管路は、管路の中心線を取得する。 +
 高さは0とする。
-a| 指定された管径よりも大きい管路は、管路の外周を取得する。 +
+| 指定された管径よりも大きい管路は、管路の外周を取得する。 +
 高さは0とする。
-a| 複数まとめて埋設されている管路の中心線を取得する。 +
+| 複数まとめて埋設されている管路の中心線を取得する。 +
 高さは0とする。
-a| ケーブルの中心線を取得する。 +
+| ケーブルの中心線を取得する。 +
 高さは0とする。
-a| 複数まとめて埋設されているケーブルの中心線を取得する。 +
+| 複数まとめて埋設されているケーブルの中心線を取得する。 +
 高さは0とする。
 
 h| 5+^h| LOD0
 h| 取得例
-2+a|
+2+|
 image::images/302.webp.png[]
-a|
+|
 image::images/303.webp.png[]
-a|
+|
 image::images/304.webp.png[]
-a|
+|
 image::images/305.webp.png[]
 
 h| 説明
-2+a| トラフ（コンクリート製の樋）等構造物に格納されている場合は、その大きさにより中心線もしくは外周を取得する。 +
+2+| トラフ（コンクリート製の樋）等構造物に格納されている場合は、その大きさにより中心線もしくは外周を取得する。 +
 高さは0とする。
-a| 弁栓類、ガバナ等の設備の中心位置を取得する。 +
+| 弁栓類、ガバナ等の設備の中心位置を取得する。 +
 高さは0とする。
-a| マンホールの蓋の中心位置を取得する。 +
+| マンホールの蓋の中心位置を取得する。 +
 高さは0とする。
-a| ハンドホールの蓋の中心位置を取得する。 +
+| ハンドホールの蓋の中心位置を取得する。 +
 高さは0とする。
 
 |===
@@ -68,7 +68,7 @@ a| ハンドホールの蓋の中心位置を取得する。 +
 
 地下埋設物モデル（LOD0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7,7,7,7,16,20,16"]
+[cols="7a,7a,7a,7a,16a,20a,16a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -76,19 +76,19 @@ a| ハンドホールの蓋の中心位置を取得する。 +
 .2+| ●
 .2+| WaterPipe
 | MultiCurve
-a|
+|
 * 水道管
 * 指定された管径よりも小さい管路
-a|
+|
 * 管路の中心線を取得する。
 * 高さは0とする。
 | 原典資料の取得方法に従う。
 
 | MultiSurface
-a|
+|
 * 水道管
 * 指定された管径よりも大きい管路
-a|
+|
 * 管路の外縁を取得する。
 * 高さは0とする。
 | 原典資料の取得方法に従う。
@@ -97,19 +97,19 @@ a|
 .2+| ●
 .2+| SewerPipe
 | MultiCurve
-a|
+|
 * 下水管
 * 指定された管径よりも小さい管路
-a|
+|
 * 管路の中心線を取得する。
 * 高さは0とする。
 | 原典資料の取得方法に従う。
 
 | MultiSurface
-a|
+|
 * 下水管
 * 指定された管径よりも大きい管路
-a|
+|
 * 管路の外縁を取得する。
 * 高さは0とする。
 | 原典資料の取得方法に従う。
@@ -118,19 +118,19 @@ a|
 .2+| ●
 .2+| ThermalPipe
 | MultiCurve
-a|
+|
 * 熱供給管
 * 指定された管径よりも小さい管路
-a|
+|
 * 管路の中心線を取得する。
 * 高さは0とする。
 | 原典資料の取得方法に従う。
 
 | MultiSurface
-a|
+|
 * 熱供給管
 * 指定された管径よりも大きい管路
-a|
+|
 * 管路の外縁を取得する。
 * 高さは0とする。
 | 原典資料の取得方法に従う。
@@ -139,19 +139,19 @@ a|
 .2+| ●
 .2+| OilGasChemicalPipe
 | MultiCurve
-a|
+|
 * ガス管
 * 指定された管径よりも小さい管路
-a|
+|
 * 管路の中心線を取得する。
 * 高さは0とする。
 | 原典資料の取得方法に従う。
 
 | MultiSurface
-a|
+|
 * ガス管
 * 指定された管径よりも大きい管路
-a|
+|
 * 管路の外縁を取得する。
 * 高さは0とする。
 | 原典資料の取得方法に従う。
@@ -160,28 +160,28 @@ a|
 .3+| ●
 .3+| Pipe
 | MultiCurve
-a|
+|
 * その他の管路
 * 単独で埋設されている管路
-a|
+|
 * 管路の中心線を取得する。
 * 高さは0とする。
 | 原典資料の取得方法に従う。
 
 | MultiCurve
-a|
+|
 * その他の管路
 * まとまって埋設されている管路
-a|
+|
 * 管路全体の中心線を取得する。
 * 高さは0とする。
 | 原典資料の取得方法に従う。
 
 | MultiSurface
-a|
+|
 * その他の管路
 * 指定された管径よりも大きい管路
-a|
+|
 * 管路の外縁を取得する。
 * 高さは0とする。
 | 原典資料の取得方法に従う。
@@ -190,19 +190,19 @@ a|
 .2+| ●
 .2+| TelecommunicationsCable
 | MultiCurve
-a|
+|
 * 通信ケーブル
 単独で埋設されているケーブル
-a|
+|
 * ケーブルの中心線を取得する。
 * 高さは0とする。
 | 原典資料の取得方法に従う。
 
 | MultiCurve
-a|
+|
 * 通信ケーブル
 まとまって埋設されているケーブル
-a|
+|
 * ケーブル全体の中心線を取得する。
 * 高さは0とする。
 | 原典資料の取得方法に従う。
@@ -211,19 +211,19 @@ a|
 .2+| ●
 .2+| ElectricityCable
 | MultiCurve
-a|
+|
 * 電気ケーブル
 単独で埋設されているケーブル
-a|
+|
 * ケーブルの中心線を取得する。
 * 高さは0とする。
 | 原典資料の取得方法に従う。
 
 | MultiCurve
-a|
+|
 * 電気ケーブル
 まとまって埋設されているケーブル
-a|
+|
 * ケーブル全体の中心線を取得する。
 * 高さは0とする。
 | 原典資料の取得方法に従う。
@@ -232,19 +232,19 @@ a|
 .2+| ●
 .2+| Cable
 | MultiCurve
-a|
+|
 * その他のケーブル
 単独で埋設されているケーブル
-a|
+|
 * ケーブルの中心線を取得する。
 * 高さは0とする。
 | 原典資料の取得方法に従う。
 
 | MultiCurve
-a|
+|
 * その他のケーブル
 まとまって埋設されているケーブル
-a|
+|
 * ケーブル全体の中心線を取得する。
 * 高さは0とする。
 | 原典資料の取得方法に従う。
@@ -255,16 +255,16 @@ a|
 | MultiCurve
 |
 * 指定された幅径よりも小さいトラフ
-a|
+|
 * 構造物の中心線を取得する。
 * 高さは0とする。
 | 原典資料の取得方法に従う。
 
 | MultiSurface
-a|
+|
 * 指定された幅径よりも大きいトラフ
 * とう道、CAB、CCBOX
-a|
+|
 * 構造物の上方からの正射影の外周を取得する。
 * 高さは0とする。
 | 原典資料の取得方法に従う。
@@ -273,10 +273,10 @@ a|
 | ●
 | Appurtenance
 | Point
-a|
+|
 * 弁栓類、消火栓、空気弁、その他配水弁栓、加圧ポンプ、計測施設、テレメータ
 * ガバナ、バルブ、水取器
-a|
+|
 * 設備の中心位置を取得する。
 * 高さは0とする。
 | 原典資料の取得方法に従う。
@@ -287,7 +287,7 @@ a|
 | Point
 |
 * マンホール
-a|
+|
 * マンホールの蓋の中心位置を取得する。
 * 高さは0とする。
 | 原典資料の取得方法に従う。
@@ -298,7 +298,7 @@ a|
 | Point
 |
 * ハンドホール
-a|
+|
 * ハンドホールの蓋の中心位置を取得する。
 * 高さは0とする。
 | 原典資料の取得方法に従う。
@@ -317,18 +317,18 @@ a|
 
 地下埋設物モデル（LOD1）では、地下埋設物の形状を、立体により表現する。地下埋設物モデル（LOD1）の取得イメージを表 4-89に示す。
 
-[cols="4,9,9,9,9"]
+[cols="4a,9a,9a,9a,9a"]
 .地下埋設物モデル（LOD1）の取得イメージ
 |===
 h| 4+^h| LOD1
 h| 取得例
-a|
+|
 image::images/306.webp.png[]
-a|
+|
 image::images/307.webp.png[]
-a|
+|
 image::images/308.webp.png[]
-a|
+|
 image::images/309.webp.png[]
 
 h| 説明 | 管路の上方からの正射影の外周を、地表面から一律の高さで下向きに押し出した立体として表現する。
@@ -340,13 +340,13 @@ h| 説明 | 管路の上方からの正射影の外周を、地表面から一�
 複数まとまって埋設されているケーブルの最外縁を外周とし、その正射影を、地表面から一律の高さで下向きに押し出した立体として表現する。
 h| 4+^h| LOD1
 h| 取得例
-a|
+|
 image::images/310.webp.png[]
-a|
+|
 image::images/311.webp.png[]
-a|
+|
 image::images/312.webp.png[]
-a|
+|
 image::images/313.webp.png[]
 
 h| 説明 | 構造物の上方からの正射影の外周を、地表面から一律の高さで下向きに押し出した立体として表現する。
@@ -363,7 +363,7 @@ h| 説明 | 構造物の上方からの正射影の外周を、地表面から�
 
 地下埋設物モデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="5,5,5,6,12,15,12"]
+[cols="5a,5a,5a,6a,12a,15a,12a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -373,7 +373,7 @@ h| 説明 | 構造物の上方からの正射影の外周を、地表面から�
 | Solid
 |
 * 水道管
-a|
+|
 * 管路の上方からの正射影の外周を取得する。
 * 外周を地表面から一律の高さで下向きに押し出した立体を作成する。
 | 一律の高さは、地表面から管路の下端までとする。
@@ -384,7 +384,7 @@ a|
 | Solid
 |
 * 下水管
-a|
+|
 * 管路の上方からの正射影の外周を取得する。
 * 外周を地表面から一律の高さで下向きに押し出した立体を作成する。
 | 一律の高さは、地表面から管路の下端までとする。
@@ -409,19 +409,19 @@ a|
 | Solid
 |
 * 単独で直接埋設されているその他の管路
-a|
+|
 * 管路の上方からの正射影の外周を取得する。
 * 外周を地表面から一律の高さで下向きに押し出した立体を作成する。
-a| 一律の高さは、地表面から管路の下端までとする。 +
+| 一律の高さは、地表面から管路の下端までとする。 +
 トラフに格納されている管路は除く。
 
 | Solid
 |
 * まとまって直接埋設されているその他の管路
-a|
+|
 * 管路の最外縁の上方から正射影を外周として取得する。
 * 外周を地表面から一律の高さで下向きに押し出した立体を作成する。
-a| 一律の高さは、地表面から管路の最下端までとする。 +
+| 一律の高さは、地表面から管路の最下端までとする。 +
 トラフに格納されている管路は除く。
 
 .2+| LOD1
@@ -430,19 +430,19 @@ a| 一律の高さは、地表面から管路の最下端までとする。 +
 | Solid
 |
 * 単独で直接埋設されている通信ケーブル
-a|
+|
 * ケーブルの上方からの正射影の外周を取得する。
 * 外周を地表面から一律の高さで下向きに押し出した立体を作成する。
-a| 一律の高さは、地表面からケーブルの下端までとする。 +
+| 一律の高さは、地表面からケーブルの下端までとする。 +
 管路に格納されているケーブルは取得しない。
 
 | Solid
 |
 * まとまって直接埋設されている通信ケーブル
-a|
+|
 * ケーブルの最外縁の正射影を外周として取得する。
 * 外周を地表面から一律の高さで下向きに押し出した立体を作成する。
-a| 一律の高さは、地表面からケーブルの最下端までとする。 +
+| 一律の高さは、地表面からケーブルの最下端までとする。 +
 管路に格納されているケーブルは取得しない。
 
 .2+| LOD1
@@ -451,19 +451,19 @@ a| 一律の高さは、地表面からケーブルの最下端までとする�
 | Solid
 |
 * 単独で直接埋設されている電気ケーブル
-a|
+|
 * ケーブルの上方からの正射影の外周を取得する。
 * 外周を地表面から一律の高さで下向きに押し出した立体を作成する。
-a| 一律の高さは、地表面からケーブルの下端までとする。 +
+| 一律の高さは、地表面からケーブルの下端までとする。 +
 管路に格納されているケーブルは取得しない。
 
 | Solid
 |
 * まとまって直接埋設されている電気ケーブル
-a|
+|
 * ケーブルの最外縁の正射影を外周として取得する。
 * 外周を地表面から一律の高さで下向きに押し出した立体を作成する。
-a| 一律の高さは、地表面からケーブルの最下端までとする。 +
+| 一律の高さは、地表面からケーブルの最下端までとする。 +
 管路に格納されているケーブルは取得しない。
 
 .2+| LOD1
@@ -472,19 +472,19 @@ a| 一律の高さは、地表面からケーブルの最下端までとする�
 | Solid
 |
 * 単独で直接埋設されているその他のケーブル
-a|
+|
 * ケーブルの上方からの正射影の外周を取得する。
 * 外周を地表面から一律の高さで下向きに押し出した立体を作成する。
-a| 一律の高さは、地表面からケーブルの下端までとする。 +
+| 一律の高さは、地表面からケーブルの下端までとする。 +
 管路に格納されているケーブルは取得しない。
 
 | Solid
 |
 * まとまって埋設されているその他のケーブル
-a|
+|
 * ケーブルの最外縁の正射影を外周として取得する。
 * 外周を地表面から一律の高さで下向きに押し出した立体を作成する。
-a| 一律の高さは、地表面からケーブルの最下端までとする。 +
+| 一律の高さは、地表面からケーブルの最下端までとする。 +
 管路に格納されているケーブルは取得しない。
 
 | LOD1
@@ -493,7 +493,7 @@ a| 一律の高さは、地表面からケーブルの最下端までとする�
 | Solid
 |
 * トラフ
-a|
+|
 * 構造物の上方からの正射影の外周取得する。
 * 外周を地表面から一律の高さで下向きに押し出した立体を作成する。
 | 一律の高さは、地表面から構造物の最下端までとする。
@@ -502,10 +502,10 @@ a|
 | ●
 | Appurtenance
 | Solid
-a|
+|
 * 弁栓類、消火栓、空気弁、その他配水弁栓、加圧ポンプ、計測施設、テレメータ
 * ガバナ、バルブ、水取器
-a|
+|
 * 設備が格納されたハンドホールの蓋の上方からの正射影を包含する矩形を取得する。
 * 矩形を地表面から一律の高さで下向きに押し出した立体を作成する。
 | 一律の高さは、地表面からハンドホールの最下端までとする。
@@ -516,7 +516,7 @@ a|
 | Solid
 |
 * マンホール
-a|
+|
 * マンホールの蓋の上方からの正射影を包含する矩形を取得する。
 * 矩形を地表面から一律の高さで下向きに押し出した立体を作成する。
 | 一律の高さは、地表面からマンホールの最下端までとする。
@@ -527,7 +527,7 @@ a|
 | Solid
 |
 * ハンドホール
-a|
+|
 * ハンドホールの蓋の上方からの正射影を包含する矩形を取得する。
 * 矩形を地表面から一律の高さで下向きに押し出した立体を作成する。
 | 一律の高さは、地表面からハンドホールの最下端までとする。
@@ -547,18 +547,18 @@ a|
 地下埋設物モデル（LOD2）では、地下埋設物の形状を、立体により表現する。地下埋設物モデル（LOD2）の取得イメージを<<table-4-90>>に示す。
 
 [[table-4-90]]
-[cols="4,9,9,9,9"]
+[cols="4a,9a,9a,9a,9a"]
 .地下埋設物モデル（LOD2）の取得イメージ
 |===
 h| 4+^h| LOD2
 h| 取得例
-a|
+|
 image::images/314.webp.png[]
-a|
+|
 image::images/315.webp.png[]
-a|
+|
 image::images/316.webp.png[]
-a|
+|
 image::images/317.webp.png[]
 
 h| 説明 | 管路の上方からの正射影の外周を、管路が埋設された深さから、管径の大きさで下向きに押し出した立体として表現する。
@@ -570,13 +570,13 @@ h| 説明 | 管路の上方からの正射影の外周を、管路が埋設さ�
 複数まとまって埋設されているケーブルの最外縁を外周とし、その上方からの正射影を、ケーブルが埋設された深さからケーブルの径の合計の大きさで下向きに押し出した立体として表現する。
 h| 4+^h| LOD2
 h| 取得例
-a|
+|
 image::images/318.webp.png[]
-a|
+|
 image::images/319.webp.png[]
-a|
+|
 image::images/320.webp.png[]
-a|
+|
 image::images/321.webp.png[]
 
 h| 説明 | 構造物の上方からの正射影の外周を取得し、構造物が埋設された深さから構造物の高さで下向きに押し出した立体を作成する。
@@ -607,7 +607,7 @@ image::images/322.webp.png[]
 
 地下埋設物モデル（LOD2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="5,5,5,6,12,15,12"]
+[cols="5a,5a,5a,6a,12a,15a,12a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -619,7 +619,7 @@ image::images/322.webp.png[]
 * 水道管
 |
 * 管路の上方からの正射影の外周を取得し、管路が埋設された深さから一律の高さで下向きに押し出した立体を作成する。
-a| 管路が埋設された深さは、管路の土被り量とする。 +
+| 管路が埋設された深さは、管路の土被り量とする。 +
 一律の高さは、管路の外径とする。
 
 | LOD2
@@ -630,7 +630,7 @@ a| 管路が埋設された深さは、管路の土被り量とする。 +
 * 下水管
 |
 * 管路の上方からの正射影の外周を取得し、管路が埋設された深さから一律の高さで下向きに押し出した立体を作成する。
-a| 管路が埋設された深さは、管路の土被り量とする。 +
+| 管路が埋設された深さは、管路の土被り量とする。 +
 一律の高さは、管路の外径とする。
 
 | LOD2
@@ -641,7 +641,7 @@ a| 管路が埋設された深さは、管路の土被り量とする。 +
 * 熱供給管
 |
 * 管路の上方からの正射影の外周を取得し、管路が埋設された深さから一律の高さで下向きに押し出した立体を作成する。　
-a| 管路が埋設された深さは、管路の土被り量とする。 +
+| 管路が埋設された深さは、管路の土被り量とする。 +
 一律の高さは、管路の外径とする。
 
 | LOD2
@@ -652,7 +652,7 @@ a| 管路が埋設された深さは、管路の土被り量とする。 +
 * ガス管
 |
 * 管路の上方からの正射影の外周を取得し、管路が埋設された深さから一律の高さで下向きに押し出した立体を作成する。
-a| 管路が埋設された深さは、管路の土被り量とする。 +
+| 管路が埋設された深さは、管路の土被り量とする。 +
 一律の高さは、管路の外径とする。
 
 .2+| LOD2
@@ -663,7 +663,7 @@ a| 管路が埋設された深さは、管路の土被り量とする。 +
 * 単独で直接埋設されているその他の管路
 |
 * 管路の上方からの正射影の外周を取得し、管路が埋設された深さから一律の高さで下向きに押し出した立体を作成する。
-a| 管路が埋設された深さは、管路の土被り量とする。 +
+| 管路が埋設された深さは、管路の土被り量とする。 +
 一律の高さは、管路の外径とする。 +
 トラフに格納されている管路は除く。
 
@@ -672,7 +672,7 @@ a| 管路が埋設された深さは、管路の土被り量とする。 +
 * まとまって直接埋設されているその他の管路
 |
 * 管路の最外縁の上方からの正射影を外周として取得し、管路が埋設された深さから一律の高さで下向きに押し出した立体を作成する。
-a| 管路が埋設された深さは、管路の土被り量とする。 +
+| 管路が埋設された深さは、管路の土被り量とする。 +
 一律の高さは、各段の管路の外径の合計とする。 +
 トラフに格納されている管路は除く。
 
@@ -684,7 +684,7 @@ a| 管路が埋設された深さは、管路の土被り量とする。 +
 * 単独で直接埋設されている通信ケーブル
 |
 * ケーブルの上方からの正射影の外周を取得し、ケーブルが埋設された深さから一律の高さで下向きに押し出した立体を作成する。
-a| ケーブルが埋設された深さは、ケーブルの土被り量とする。 +
+| ケーブルが埋設された深さは、ケーブルの土被り量とする。 +
 一律の高さは、ケーブルの径とする。 +
 管路に格納されているケーブルは取得しない。
 
@@ -693,7 +693,7 @@ a| ケーブルが埋設された深さは、ケーブルの土被り量とす�
 * まとまって直接埋設されている通信ケーブル
 |
 * ケーブルの最外縁の正射影を取得し、ケーブルが埋設された深さから一律の高さで下向きに押し出した立体を作成する。
-a| ケーブルが埋設された深さは、ケーブルの土被り量とする。 +
+| ケーブルが埋設された深さは、ケーブルの土被り量とする。 +
 一律の高さは、ケーブルの径の合計とする。 +
 管路に格納されているケーブルは取得しない。
 
@@ -705,7 +705,7 @@ a| ケーブルが埋設された深さは、ケーブルの土被り量とす�
 * 単独で直接埋設されている電気ケーブル
 |
 * ケーブルの上方からの正射影の外周を取得し、ケーブルが埋設された深さから一律の高さで下向きに押し出した立体を作成する。
-a| ケーブルが埋設された深さは、ケーブルの土被り量とする。 +
+| ケーブルが埋設された深さは、ケーブルの土被り量とする。 +
 一律の高さは、ケーブルの径とする。 +
 管路に格納されているケーブルは取得しない。
 
@@ -714,7 +714,7 @@ a| ケーブルが埋設された深さは、ケーブルの土被り量とす�
 * まとまって直接埋設されている電気ケーブル
 |
 * ケーブルの最外縁の正射影を取得し、ケーブルが埋設された深さから一律の高さで下向きに押し出した立体を作成する。
-a| ケーブルが埋設された深さは、ケーブルの土被り量とする。 +
+| ケーブルが埋設された深さは、ケーブルの土被り量とする。 +
 一律の高さは、ケーブルの径の合計とする。 +
 管路に格納されているケーブルは取得しない。
 
@@ -726,7 +726,7 @@ a| ケーブルが埋設された深さは、ケーブルの土被り量とす�
 * 単独で直接埋設されているその他のケーブル
 |
 * ケーブルの上方からの正射影の外周を取得し、ケーブルが埋設された深さから一律の高さで下向きに押し出した立体を作成する。
-a| ケーブルが埋設された深さは、ケーブルの土被り量とする。 +
+| ケーブルが埋設された深さは、ケーブルの土被り量とする。 +
 一律の高さは、ケーブルの径とする。 +
 管路に格納されているケーブルは取得しない。
 
@@ -735,7 +735,7 @@ a| ケーブルが埋設された深さは、ケーブルの土被り量とす�
 * まとまって埋設されているその他のケーブル
 |
 * ケーブルの最外縁の正射影を取得し、ケーブルが埋設された深さから一律の高さで下向きに押し出した立体を作成する。
-a| ケーブルが埋設された深さは、ケーブルの土被り量とする。 +
+| ケーブルが埋設された深さは、ケーブルの土被り量とする。 +
 一律の高さは、ケーブルの径の合計とする。 +
 管路に格納されているケーブルは取得しない。
 
@@ -747,19 +747,19 @@ a| ケーブルが埋設された深さは、ケーブルの土被り量とす�
 * トラフ
 |
 * 構造物の上方からの正射影の外周を取得し、構造物が埋設された深さから一律の高さで下向きに押し出した立体を作成する。
-a| 構造物が埋設された深さは、構造物の土被り量とする。 +
+| 構造物が埋設された深さは、構造物の土被り量とする。 +
 一律の高さは、構造物の高さとする。
 
 | LOD2
 | ●
 | Appurtenance
 | Solid
-a|
+|
 * 弁栓類、消火栓、空気弁、その他配水弁栓、加圧ポンプ、計測施設、テレメータ
 * ガバナ、バルブ、水取器
 |
 * ガバナ、バルブ等を包含する矩形の上方からの正射影を取得し、設備が埋設された深さから一律の高さで下向きに押し出した立体を作成する。
-a| 設備が埋設された深さは、構造物の土被り量とする。 +
+| 設備が埋設された深さは、構造物の土被り量とする。 +
 一律の高さは、設備の高さとする。
 
 | LOD2 | ● | Manhole | Solid
@@ -793,18 +793,18 @@ a| 設備が埋設された深さは、構造物の土被り量とする。 +
 
 地下埋設物モデル（LOD3）の取得イメージを表 4-91に示す。
 
-[cols="4,9,9,9,9"]
+[cols="4a,9a,9a,9a,9a"]
 .地下埋設物モデル（LOD3）の取得イメージ
 |===
 h| 4+^h| LOD3
 h| 取得例
-a|
+|
 image::images/323.webp.png[]
-a|
+|
 image::images/324.webp.png[]
-a|
+|
 image::images/325.webp.png[]
-a|
+|
 image::images/326.webp.png[]
 
 h| 説明 | 管路の外形を構成する面を取得する。
@@ -816,17 +816,17 @@ h| 説明 | 管路の外形を構成する面を取得する。
 複数まとまって埋設されているケーブルも、個々のケーブルの外形を構成する面を取得する。
 h| 4+^h| LOD3
 h| 取得例
-a|
+|
 image::images/327.webp.png[]
-a|
+|
 image::images/328.webp.png[]
-a|
+|
 image::images/329.webp.png[]
-a|
+|
 image::images/330.webp.png[]
 
 h| 説明
-a| 構造物の外形を構成する面を取得する。 +
+| 構造物の外形を構成する面を取得する。 +
 なお、構造物に格納されている管路も、個々の管路の外形を構成する面を取得する。
 | 弁栓類、ガバナ等の設備の主要な構造を、直方体及び円柱の組合せにより簡略化し、外形を構成する面を取得する。
 | マンホール本体の外形を構成する面を取得する。設備の横断面形状の変化を表現する（表 4-92）。
@@ -834,12 +834,12 @@ a| 構造物の外形を構成する面を取得する。 +
 
 |===
 
-[cols="1,9"]
+[cols="1a,9a"]
 .地下埋設物モデル（LOD3）の取得イメージ（マンホール）
 |===
 h| ^h| LOD3
 h| 取得例
-a|
+|
 image::images/331.webp.png[]
 
 h| 説明 | マンホールの外形を構成する面を取得する。マンホールの横断面形状の変化を表現する。
@@ -850,7 +850,7 @@ h| 説明 | マンホールの外形を構成する面を取得する。マン�
 
 地下埋設物モデル（LOD3）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7,7,7,7,16,20,16"]
+[cols="7a,7a,7a,7a,16a,20a,16a"]
 |===
 | | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -860,7 +860,7 @@ h| 説明 | マンホールの外形を構成する面を取得する。マン�
 | CompositeSurface又はMultiSurface
 |
 * 水道管
-a|
+|
 * 管路の外形（外側から見える形）を構成する面を取得する。
 * 面の各頂点に管路の高さを与える。
 |
@@ -873,7 +873,7 @@ a|
 | CompositeSurface又はMultiSurface
 |
 * 下水管
-a|
+|
 * 管路の外形（外側から見える形）を構成する面を取得する。
 * 面の各頂点に管路の高さを与える。
 |
@@ -886,7 +886,7 @@ a|
 | CompositeSurface又はMultiSurface
 |
 * 熱供給管
-a|
+|
 * 管路の外形（外側から見える形）を構成する面を取得する。
 * 面の各頂点に管路の高さを与える。
 |
@@ -899,7 +899,7 @@ a|
 | CompositeSurface又はMultiSurface
 |
 * ガス管
-a|
+|
 * 管路の外形（外側から見える形）を構成する面を取得する。
 * 面の各頂点に管路の高さを与える。
 |
@@ -912,7 +912,7 @@ a|
 | CompositeSurface又はMultiSurface
 |
 * 直接埋設されているその他の管路
-a|
+|
 * 管路の外形（外側から見える形）を構成する面を取得する。
 * 面の各頂点に管路の高さを与える。
 |
@@ -925,7 +925,7 @@ a|
 | CompositeSurface又はMultiSurface
 |
 * 直接埋設されている通信ケーブル
-a|
+|
 * ケーブルの外形（外側から見える形）を構成する面を取得する。
 * 面の各頂点にケーブルの高さを与える。
 |
@@ -938,7 +938,7 @@ a|
 | CompositeSurface又はMultiSurface
 |
 * 直接埋設されている電気ケーブル
-a|
+|
 * ケーブルの外形（外側から見える形）を構成する面を取得する。
 * 面の各頂点にケーブルの高さを与える。
 |
@@ -951,7 +951,7 @@ a|
 | CompositeSurface又はMultiSurface
 |
 * 単独で直接埋設されているその他のケーブル
-a|
+|
 * ケーブルの外形（外側から見える形）を構成する面を取得する。
 * 面の各頂点にケーブルの高さを与える。
 |
@@ -961,7 +961,7 @@ a|
 | CompositeSurface又はMultiSurface
 |
 * まとまって埋設されているその他のケーブル
-a|
+|
 * ケーブルの外形（外側から見える形）を構成する面を取得する。
 * 面の各頂点にケーブルの高さを与える。
 |
@@ -974,7 +974,7 @@ a|
 | CompositeSurface又はMultiSurface
 |
 * トラフ
-a|
+|
 * 構造物の外形（外側から見える形）を構成する面を取得する。
 * 面の各頂点に構造物の高さを与える。
 |
@@ -985,10 +985,10 @@ a|
 | ●
 | Appurtenance
 | CompositeSurface又はMultiSurface
-a|
+|
 * 弁栓類、消火栓、空気弁、その他配水弁栓、加圧ポンプ、計測施設、テレメータ
 * ガバナ、バルブ、水取器
-a|
+|
 * 設備の主要な構造を、直方体及び円柱の組合せにより簡略化し、外形を構成する面を取得する。
 * 面の各頂点に設備の高さを与える。
 |
@@ -1001,7 +1001,7 @@ a|
 | CompositeSurface又はMultiSurface
 |
 * マンホール
-a|
+|
 * マンホールの外形（外側から見える形）を構成する面を取得する。
 * 面の各頂点にマンホールの高さを与える。
 |
@@ -1014,7 +1014,7 @@ a|
 | CompositeSurface又はMultiSurface
 |
 * ハンドホール
-a|
+|
 * ハンドホールの外形（外側から見える形）を構成する面を取得する。
 * 面の各頂点にハンドホール等の高さを与える。
 |
@@ -1037,18 +1037,18 @@ a|
 
 （LOD4）の取得イメージを表 4-93に示す。
 
-[cols="4,9,9,9,9"]
+[cols="4a,9a,9a,9a,9a"]
 .地下埋設物モデル（LOD4）の取得イメージ
 |===
 h| 4+^h| LOD4
 h| 取得例
-a|
+|
 image::images/332.webp.png[]
-a|
+|
 image::images/333.webp.png[]
-a|
+|
 image::images/334.webp.png[]
-a|
+|
 image::images/335.webp.png[]
 
 h| 説明 | 管路の外形を構成する面（埋設物モデル（LOD3））に加え、管路の内空を構成する面を取得する。
@@ -1065,7 +1065,7 @@ h| 説明 | 管路の外形を構成する面（埋設物モデル（LOD3））�
 
 地下埋設物モデル（LOD4）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7,7,7,7,16,20,16"]
+[cols="7a,7a,7a,7a,16a,20a,16a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -1075,7 +1075,7 @@ h| 説明 | 管路の外形を構成する面（埋設物モデル（LOD3））�
 | CompositeSurface又はMultiSurface
 |
 * 水道管
-a|
+|
 * 管路の外形（外側から見える形）を構成する面を取得する。
 * 管路の内空を構成する面を取得する。
 * 面の各頂点に管路の高さを与える。
@@ -1088,7 +1088,7 @@ a|
 | CompositeSurface又はMultiSurface
 |
 * 下水管
-a|
+|
 * 管路の外形（外側から見える形）を構成する面を取得する。
 * 管路の内空を構成する面を取得する。
 * 面の各頂点に管路の高さを与える。
@@ -1102,7 +1102,7 @@ a|
 | CompositeSurface又はMultiSurface
 |
 * 熱供給管
-a|
+|
 * 管路の外形（外側から見える形）を構成する面を取得する。
 * 管路の内空を構成する面を取得する。
 * 面の各頂点に管路の高さを与える。
@@ -1116,7 +1116,7 @@ a|
 | CompositeSurface又はMultiSurface
 |
 * ガス管
-a|
+|
 * 管路の外形（外側から見える形）を構成する面を取得する。
 * 管路の内空を構成する面を取得する。
 * 面の各頂点に管路の高さを与える。
@@ -1130,7 +1130,7 @@ a|
 | CompositeSurface又はMultiSurface
 |
 * 単独で埋設されているその他の管路
-a|
+|
 * 管路の外形（外側から見える形）を構成する面を取得する。
 * 管路の内空を構成する面を取得する。
 * 面の各頂点に管路の高さを与える。
@@ -1141,7 +1141,7 @@ a|
 | CompositeSurface又はMultiSurface
 |
 * まとまって埋設されているその他の管路
-a|
+|
 * 管路の外形（外側から見える形）を構成する面を取得する。
 * 管路の内空を構成する面を取得する。
 * 面の各頂点に管路の高さを与える。
@@ -1155,7 +1155,7 @@ a|
 | CompositeSurface又はMultiSurface
 |
 * 通信ケーブル
-a|
+|
 * ケーブルの外形（外側から見える形）を構成する面を取得する。
 * ケーブルの内側を構成する面を取得する。
 * 面の各頂点にケーブルの高さを与える。
@@ -1169,7 +1169,7 @@ a|
 | CompositeSurface又はMultiSurface
 |
 * 電気ケーブル
-a|
+|
 * ケーブルの外形（外側から見える形）を構成する面を取得する。
 * ケーブルの内側を構成する面を取得する。
 * 面の各頂点にケーブルの高さを与える。
@@ -1183,7 +1183,7 @@ a|
 | CompositeSurface又はMultiSurface
 |
 * その他のケーブル
-a|
+|
 * ケーブルの外形（外側から見える形）を構成する面を取得する。
 * ケーブルの内側を構成する面を取得する。
 * 面の各頂点にケーブルの高さを与える。
@@ -1197,7 +1197,7 @@ a|
 | CompositeSurface又はMultiSurface
 |
 * トラフ
-a|
+|
 * 構造物の外形（外側から見える形）を構成する面を取得する。
 * 構造物の内側を構成する面を取得する。
 * 面の各頂点に構造物の高さを与える。
@@ -1209,10 +1209,10 @@ a|
 | ○
 | Appurtenance
 | CompositeSurface又はMultiSurface
-a|
+|
 * 弁栓類、消火栓、空気弁、その他配水弁栓、加圧ポンプ、計測施設、テレメータ
 * ガバナ、バルブ、水取器
-a|
+|
 * 設備の外形（外側から見える形）を構成する面を取得する。
 * 設備の内側を構成する面を取得する。
 * 面の各頂点に設備の高さを与える。
@@ -1226,7 +1226,7 @@ a|
 | CompositeSurface又はMultiSurface
 |
 * マンホール
-a|
+|
 * マンホールの外形（外側から見える形）を構成する面を取得する。
 * マンホールの内部を構成する面を取得する。
 * 面の各頂点にマンホールの高さを与える。
@@ -1240,7 +1240,7 @@ a|
 | CompositeSurface又はMultiSurface
 |
 * ハンドホール
-a|
+|
 * ハンドホールの外形（外側から見える形）を構成する面を取得する。
 * ハンドホールの内部を構成する面を取得する。
 * 面の各頂点にハンドホールの高さを与える。
@@ -1260,7 +1260,7 @@ a|
 
 地下埋設物モデルの各LODにおいて使用可能な地物型と空間属性を表 4-94に示す。
 
-[cols="2,2,1,1,1,1,1,1"]
+[cols="2a,2a,1a,1a,1a,1a,1a,1a"]
 .地下埋設物モデルの記述に使用する地物型と空間属性
 |===
 ^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| LOD4 ^h| 適用
@@ -1331,7 +1331,7 @@ image::images/336.svg[]
 
 ====== uro:WaterPipe
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 水道管。 LOD0、LOD1、LOD2では、単独で埋設されている管路又はまとまって埋設された複数の管路に対して一つのインスタンスを作成する。 LOD3及びLOD4では、管路ごとに一つのインスタンスを作成する。
 
@@ -1349,7 +1349,7 @@ h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対
 h| (frn:class) | gml:CodeType [0..1] | 埋設物の区分。
 | frn:function
 | gml:CodeType [0..*]
-a| 埋設物の種類。コードリスト（CityFurniture_function.xml）より選択する。 +
+| 埋設物の種類。コードリスト（CityFurniture_function.xml）より選択する。 +
 管路の場合は、5500となる。
 
 h| (frn:usage) | gml:CodeType [0..*] | 埋設物の主な使い道。
@@ -1361,13 +1361,13 @@ h| (frn:usage) | gml:CodeType [0..*] | 埋設物の主な使い道。
 | uro:routeStartNode | xs:string [0..1] | 路線又は系統の開始ノード。[路線名]又は[路線]-[区間名]とする。
 | uro:startNode
 | xs:string [0..1]
-a| 開始ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
+| 開始ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
 uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAttributeの属性idの値に一致する。
 
 | uro:routeEndNode | xs:string [0..1] | 路線又は系統の終了ノード。[路線名]又は[路線]-[区間名]とする。
 | uro:endNode
 | xs:string [0..1]
-a| 終了ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
+| 終了ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
 uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAttributeの属性idの値に一致する。
 
 | uro:depth | gml:LengthType [0..1] | 土被りの深さ。単位はm。
@@ -1377,7 +1377,7 @@ uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAt
 | uro:offset | gml:LengthType [0..1] | オフセット量。単位はm。
 | uro:material
 | gml:CodeType [0..1]
-a| 材質の種類。 +
+| 材質の種類。 +
 コードリスト（UtilityNetworkElement_material.xml）より選択する。
 
 | uro:innerDiameter | gml:LengthType [0..1] | 内径。単位は㎜又はinchとする。
@@ -1404,12 +1404,12 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 土被り量が幅をもつ場合は、最小の深さから最大の深さまでの一律高さとする。
 | frn:lod3Geometry
 | gml:_Geometry [0..1]
-a| 埋設物の外形（外側から見える形）を構成する面を取得する。 +
+| 埋設物の外形（外側から見える形）を構成する面を取得する。 +
 面の各頂点に管路の高さを与える。
 
 | frn:lod4Geometry
 | gml:_Geometry [0..1]
-a| 埋設物の外形（外側から見える形）を構成する面を取得する。 +
+| 埋設物の外形（外側から見える形）を構成する面を取得する。 +
 埋設物の内空を構成する面を取得する。 +
 面の各頂点に管路の高さを与える。
 
@@ -1419,12 +1419,12 @@ a| 埋設物の外形（外側から見える形）を構成する面を取得�
 | uro:frnFacilityTypeAttribute | uro:FacilityTypeAttribute [0..1] | 埋設物の種類に関する情報。
 | uro:frnFacilityAttribute
 | uro:FacilityAttribute [0..*]
-a| 埋設物の詳細についての情報。 +
+| 埋設物の詳細についての情報。 +
 工事・点検記録（uro:MaintenanceHistoryAttribute）を作成する。
 
 | uro:frnFacilityIdAttribute
 | uro:FacilityIdAttribute [0..1]
-a| 埋設物の識別に関する情報。 +
+| 埋設物の識別に関する情報。 +
 運用上必ず一つ作成する。
 
 | uro:frnDmAttribute | uro:DmAttribute [0..*] | LOD0の形状情報。埋設物の中心線を取得する。
@@ -1436,10 +1436,10 @@ a| 埋設物の識別に関する情報。 +
 
 ====== uro:SewerPipe
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 下水道管。 +
+2+| 下水道管。 +
 LOD0、LOD1、LOD2では、管路又はまとまって埋設された複数の管路に対して一つのインスタンスを作成する。 +
 LOD3及びLOD4では、管路ごとに一つのインスタンスを作成する。
 
@@ -1457,7 +1457,7 @@ h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対
 h| (frn:class) | gml:CodeType [0..1] | 埋設物の区分。
 | frn:function
 | gml:CodeType [0..*]
-a| 埋設物の種類。コードリスト（CityFurniture_function.xml）より選択する。 +
+| 埋設物の種類。コードリスト（CityFurniture_function.xml）より選択する。 +
 管路の場合は、5500となる。
 
 h| (frn:usage) | gml:CodeType [0..*] | 埋設物の主な使い道。
@@ -1469,13 +1469,13 @@ h| (frn:usage) | gml:CodeType [0..*] | 埋設物の主な使い道。
 | uro:routeStartNode | xs:string [0..1] | 路線又は系統の開始ノード。[路線名]又は[路線]-[区間名]とする。
 | uro:startNode
 | xs:string [0..1]
-a| 開始ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
+| 開始ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
 uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAttributeの属性idの値に一致する。
 
 | uro:routeEndNode | xs:string [0..1] | 路線又は系統の終了ノード。[路線名]又は[路線]-[区間名]とする。
 | uro:endNode
 | xs:string [0..1]
-a| 終了ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
+| 終了ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
 uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAttributeの属性idの値に一致する。
 
 | uro:depth | gml:LengthType [0..1] | 土被りの深さ。単位はm。
@@ -1485,7 +1485,7 @@ uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAt
 | uro:offset | gml:LengthType [0..1] | オフセット量。単位はm。
 | uro:material
 | gml:CodeType [0..1]
-a| 管渠材質の種類。 +
+| 管渠材質の種類。 +
 コードリスト（UtilityNetworkElement_material.xml）より選択する。
 
 | uro:innerDiameter | gml:LengthType [0..1] | 内径。単位は㎜又はinchとする。
@@ -1512,18 +1512,18 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 土被り量が幅をもつ場合は、最小の深さから最大の深さまでの一律高さとする。
 | frn:lod3Geometry
 | gml:_Geometry [0..1]
-a| 埋設物の外形（外側から見える形）を構成する面を取得する。 +
+| 埋設物の外形（外側から見える形）を構成する面を取得する。 +
 面の各頂点に管路の高さを与える。
 
 | frn:lod4Geometry
 | gml:_Geometry [0..1]
-a| 埋設物の外形（外側から見える形）を構成する面を取得する。 +
+| 埋設物の外形（外側から見える形）を構成する面を取得する。 +
 埋設物の内空を構成する面を取得する。 +
 面の各頂点に管路の高さを与える。
 
 | uro:cityFurnitureDetailAttribute
 | uro:CityFurnitureDetailAttribute [0..*]
-a| 埋設物の詳細な内容。 +
+| 埋設物の詳細な内容。 +
 管渠の機能を記述する。
 
 | uro:frnKeyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -1531,12 +1531,12 @@ a| 埋設物の詳細な内容。 +
 | uro:frnFacilityTypeAttribute | uro:FacilityTypeAttribute [0..1] | 埋設物の種類に関する情報。
 | uro:frnFacilityAttribute
 | uro:FacilityAttribute [0..*]
-a| 埋設物の詳細についての情報。 +
+| 埋設物の詳細についての情報。 +
 工事・点検記録（uro:MaintenanceHistoryAttribute）を作成する。
 
 | uro:frnFacilityIdAttribute
 | uro:FacilityIdAttribute [0..1]
-a| 埋設物の識別に関する情報。 +
+| 埋設物の識別に関する情報。 +
 運用上必ず一つ作成する。
 
 | uro:frnDmAttribute | uro:DmAttribute [0..*] | LOD0の形状情報。埋設物の中心線を取得する。
@@ -1554,7 +1554,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:ThermalPipe
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 熱供給管。 LOD0、LOD1、LOD2では、管路又はまとまって埋設された複数の管路に対して一つのインスタンスを作成する。 LOD3及びLOD4では、管路ごとに一つのインスタンスを作成する。
 
@@ -1572,7 +1572,7 @@ h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対
 h| (frn:class) | gml:CodeType [0..1] | 埋設物の区分。
 | frn:function
 | gml:CodeType [0..*]
-a| 埋設物の種類。コードリスト（CityFurniture_function.xml）より選択する。 +
+| 埋設物の種類。コードリスト（CityFurniture_function.xml）より選択する。 +
 管路の場合は、5500となる。
 
 h| (frn:usage) | gml:CodeType [0..*] | 埋設物の主な使い道。
@@ -1584,13 +1584,13 @@ h| (frn:usage) | gml:CodeType [0..*] | 埋設物の主な使い道。
 | uro:routeStartNode | xs:string [0..1] | 路線又は系統の開始ノード。[路線名]又は[路線]-[区間名]とする。
 | uro:startNode
 | xs:string [0..1]
-a| 開始ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
+| 開始ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
 uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAttributeの属性idの値に一致する。
 
 | uro:routeEndNode | xs:string [0..1] | 路線又は系統の終了ノード。[路線名]又は[路線]-[区間名]とする。
 | uro:endNode
 | xs:string [0..1]
-a| 終了ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
+| 終了ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
 uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAttributeの属性idの値に一致する。
 
 | uro:depth | gml:LengthType [0..1] | 土被りの深さ。単位はm。
@@ -1600,7 +1600,7 @@ uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAt
 | uro:offset | gml:LengthType [0..1] | オフセット量。単位はm。
 | uro:material
 | gml:CodeType [0..1]
-a| 管渠材質の種類。 +
+| 管渠材質の種類。 +
 コードリスト（UtilityNetworkElement_material.xml）より選択する。
 
 | uro:innerDiameter | gml:LengthType [0..1] | 内径。単位は㎜又はinchとする。
@@ -1627,12 +1627,12 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 土被り量が幅をもつ場合は、最小の深さから最大の深さまでの一律高さとする。
 | frn:lod3Geometry
 | gml:_Geometry [0..1]
-a| 埋設物の外形（外側から見える形）を構成する面を取得する。 +
+| 埋設物の外形（外側から見える形）を構成する面を取得する。 +
 面の各頂点に管路の高さを与える。
 
 | frn:lod4Geometry
 | gml:_Geometry [0..1]
-a| 埋設物の外形（外側から見える形）を構成する面を取得する。 +
+| 埋設物の外形（外側から見える形）を構成する面を取得する。 +
 埋設物の内空を構成する面を取得する。 +
 面の各頂点に管路の高さを与える。
 
@@ -1642,12 +1642,12 @@ a| 埋設物の外形（外側から見える形）を構成する面を取得�
 | uro:frnFacilityTypeAttribute | uro:FacilityTypeAttribute [0..1] | 埋設物の種類に関する情報。
 | uro:frnFacilityAttribute
 | uro:FacilityAttribute [0..*]
-a| 埋設物の詳細についての情報。 +
+| 埋設物の詳細についての情報。 +
 工事・点検記録（uro:MaintenanceHistoryAttribute）を作成する。
 
 | uro:frnFacilityIdAttribute
 | uro:FacilityIdAttribute [0..1]
-a| 埋設物の識別に関する情報。 +
+| 埋設物の識別に関する情報。 +
 運用上必ず一つ作成する。
 
 | uro:frnDmAttribute | uro:DmAttribute [0..*] | LOD0の形状情報。埋設物の中心線を取得する。
@@ -1659,7 +1659,7 @@ a| 埋設物の識別に関する情報。 +
 
 ====== uro:OilGasChemicalsPipe
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| ガス管。 LOD0、LOD1、LOD2では、管路又はまとまって埋設された複数の管路に対して一つのインスタンスを作成する。 LOD3及びLOD4では、管路ごとに一つのインスタンスを作成する。
 
@@ -1677,7 +1677,7 @@ h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対
 h| (frn:class) | gml:CodeType [0..1] | 埋設物の区分。
 | frn:function
 | gml:CodeType [0..*]
-a| 埋設物の種類。コードリスト（CityFurniture_function.xml）より選択する。 +
+| 埋設物の種類。コードリスト（CityFurniture_function.xml）より選択する。 +
 管路の場合は、5500となる。
 
 h| (frn:usage) | gml:CodeType [0..*] | 埋設物の主な使い道。
@@ -1689,13 +1689,13 @@ h| (frn:usage) | gml:CodeType [0..*] | 埋設物の主な使い道。
 | uro:routeStartNode | xs:string [0..1] | 路線又は系統の開始ノード。[路線名]又は[路線]-[区間名]とする。
 | uro:startNode
 | xs:string [0..1]
-a| 開始ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
+| 開始ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
 uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAttributeの属性idの値に一致する。
 
 | uro:routeEndNode | xs:string [0..1] | 路線又は系統の終了ノード。[路線名]又は[路線]-[区間名]とする。
 | uro:endNode
 | xs:string [0..1]
-a| 終了ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
+| 終了ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
 uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAttributeの属性idの値に一致する。
 
 | uro:depth | gml:LengthType [0..1] | 土被りの深さ。単位はm。
@@ -1705,7 +1705,7 @@ uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAt
 | uro:offset | gml:LengthType [0..1] | オフセット量。単位はm。
 | uro:material
 | gml:CodeType [0..1]
-a| 管渠材質の種類。 +
+| 管渠材質の種類。 +
 コードリスト（UtilityNetworkElement_material.xml）より選択する。
 
 | uro:innerDiameter | gml:LengthType [0..1] | 内径。単位は㎜又はinchとする。
@@ -1732,18 +1732,18 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 土被り量が幅をもつ場合は、最小の深さから最大の深さまでの一律高さとする。
 | frn:lod3Geometry
 | gml:_Geometry [0..1]
-a| 埋設物の外形（外側から見える形）を構成する面を取得する。 +
+| 埋設物の外形（外側から見える形）を構成する面を取得する。 +
 面の各頂点に管路の高さを与える。
 
 | frn:lod4Geometry
 | gml:_Geometry [0..1]
-a| 埋設物の外形（外側から見える形）を構成する面を取得する。 +
+| 埋設物の外形（外側から見える形）を構成する面を取得する。 +
 埋設物の内空を構成する面を取得する。 +
 面の各頂点に管路の高さを与える。
 
 | uro:cityFurnitureDetailAttribute
 | uro:CityFurnitureDetailAttribute [0..*]
-a| 埋設物の詳細な内容。 +
+| 埋設物の詳細な内容。 +
 管路の圧力コードを記述する。
 
 | uro:frnKeyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -1751,12 +1751,12 @@ a| 埋設物の詳細な内容。 +
 | uro:frnFacilityTypeAttribute | uro:FacilityTypeAttribute [0..1] | 埋設物の種類に関する情報。
 | uro:frnFacilityAttribute
 | uro:FacilityAttribute [0..*]
-a| 埋設物の詳細についての情報。 +
+| 埋設物の詳細についての情報。 +
 工事・点検記録（uro:MaintenanceHistoryAttribute）を作成する。
 
 | uro:frnFacilityIdAttribute
 | uro:FacilityIdAttribute [0..1]
-a| 埋設物の識別に関する情報。 +
+| 埋設物の識別に関する情報。 +
 運用上必ず一つ作成する。
 
 | uro:frnDmAttribute | uro:DmAttribute [0..*] | LOD0の形状情報。埋設物の中心線を取得する。
@@ -1768,7 +1768,7 @@ a| 埋設物の識別に関する情報。 +
 
 ====== uro:Pipe
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 管路。
 
@@ -1780,7 +1780,7 @@ h| ステレオタイプ 2+| << FeatureType >>
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | gml:description
 | gml:StringOrRefType [0..1]
-a| 埋設物の概要。 +
+| 埋設物の概要。 +
 複数の管路をまとめて記述する場合は、何段・何列であるかの情報を記述する。
 
 | gml:name | gml:CodeType [0..1] | 埋設物を識別する名称。文字列とする。
@@ -1792,7 +1792,7 @@ h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対
 h| (frn:class) | gml:CodeType [0..1] | 埋設物の区分。
 | frn:function
 | gml:CodeType [0..*]
-a| 埋設物の種類。コードリスト（CityFurniture_function.xml）より選択する。 +
+| 埋設物の種類。コードリスト（CityFurniture_function.xml）より選択する。 +
 管路の場合は、5500となる。
 
 h| (frn:usage) | gml:CodeType [0..*] | 埋設物の主な使い道。
@@ -1804,13 +1804,13 @@ h| (frn:usage) | gml:CodeType [0..*] | 埋設物の主な使い道。
 | uro:routeStartNode | xs:string [0..1] | 路線又は系統の開始ノード。[路線名]又は[路線]-[区間名]とする。
 | uro:startNode
 | xs:string [0..1]
-a| 開始ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
+| 開始ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
 uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAttributeの属性idの値に一致する。
 
 | uro:routeEndNode | xs:string [0..1] | 路線又は系統の終了ノード。[路線名]又は[路線]-[区間名]とする。
 | uro:endNode
 | xs:string [0..1]
-a| 終了ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
+| 終了ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
 uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAttributeの属性idの値に一致する。
 
 | uro:depth | gml:LengthType [0..1] | 土被りの深さ。単位はm。
@@ -1820,7 +1820,7 @@ uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAt
 | uro:offset | gml:LengthType [0..1] | オフセット量。単位はm。
 | uro:material
 | gml:CodeType [0..1]
-a| 管渠材質の種類。 +
+| 管渠材質の種類。 +
 コードリスト（UtilityNetworkElement_material.xml）より選択する。
 
 3+h| 継承する関連役割
@@ -1844,30 +1844,30 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 土被り量が幅をもつ場合は、最小の深さから最大の深さまでの一律高さとする。
 | frn:lod3Geometry
 | gml:_Geometry [0..1]
-a| 埋設物の外形（外側から見える形）を構成する面を取得する。 +
+| 埋設物の外形（外側から見える形）を構成する面を取得する。 +
 面の各頂点に管路の高さを与える。
 
 | frn:lod4Geometry
 | gml:_Geometry [0..1]
-a| 埋設物の外形（外側から見える形）を構成する面を取得する。 +
+| 埋設物の外形（外側から見える形）を構成する面を取得する。 +
 埋設物の内空を構成する面を取得する。 +
 面の各頂点に管路の高さを与える。
 
 | uro:cityFurnitureDetailAttribute
 | uro:CityFurnitureDetailAttribute [0..*]
-a| 埋設物の詳細な内容。 +
+| 埋設物の詳細な内容。 +
 管路の種類を細分したい場合に記述する。
 
 | uro:frnDataQualityAttribute | uro:DataQualityAttribute [1] | 作成するデータの品質に関する情報。必須とする。
 | uro:frnFacilityTypeAttribute | uro:FacilityTypeAttribute [0..1] | 埋設物の種類に関する情報。
 | uro:frnFacilityAttribute
 | uro:FacilityAttribute [0..*]
-a| 埋設物の詳細についての情報。 +
+| 埋設物の詳細についての情報。 +
 工事・点検記録（uro:MaintenanceHistoryAttribute）を作成する。
 
 | uro:frnFacilityIdAttribute
 | uro:FacilityIdAttribute [0..1]
-a| 埋設物の識別に関する情報。 +
+| 埋設物の識別に関する情報。 +
 運用上必ず一つ作成する。
 
 | uro:frnDmAttribute | uro:DmAttribute [0..*] | LOD0の形状情報。埋設物の中心線を取得する。
@@ -1884,10 +1884,10 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:Duct
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| トラフ、洞道、鞘管、CAB、情報BOX。 +
+2+| トラフ、洞道、鞘管、CAB、情報BOX。 +
 管路やケーブルを保護するための設備。
 
 h| 上位の型 2+| uro:UtilityLink
@@ -1904,7 +1904,7 @@ h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対
 h| (frn:class) | gml:CodeType [0..1] | 埋設物の区分。
 | frn:function
 | gml:CodeType [0..*]
-a| 埋設物の種類。コードリスト（CityFurniture_function.xml）より選択する。 +
+| 埋設物の種類。コードリスト（CityFurniture_function.xml）より選択する。 +
 管路の場合は、5500となる。
 
 h| (frn:usage) | gml:CodeType [0..*] | 埋設物の主な使い道。
@@ -1916,13 +1916,13 @@ h| (frn:usage) | gml:CodeType [0..*] | 埋設物の主な使い道。
 | uro:routeStartNode | xs:string [0..1] | 路線又は系統の開始ノード。[路線名]又は[路線]-[区間名]とする。
 | uro:startNode
 | xs:string [0..1]
-a| 開始ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
+| 開始ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
 uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAttributeの属性idの値に一致する。
 
 | uro:routeEndNode | xs:string [0..1] | 路線又は系統の終了ノード。[路線名]又は[路線]-[区間名]とする。
 | uro:endNode
 | xs:string [0..1]
-a| 終了ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
+| 終了ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
 uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAttributeの属性idの値に一致する。
 
 | uro:depth | gml:LengthType [0..1] | 土被りの深さ。単位はm。
@@ -1932,7 +1932,7 @@ uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAt
 | uro:offset | gml:LengthType [0..1] | オフセット量。単位はm。
 | uro:material
 | gml:CodeType [0..1]
-a| 材質の種類。 +
+| 材質の種類。 +
 コードリスト（UtilityNetworkElement_material.xml）より選択する。
 
 3+h| 継承する関連役割
@@ -1946,7 +1946,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | gen:genericAttributeSet | gen:GenericAttributeSet [0..*] | 汎用属性のセット（集合）。属性を追加したい場合に使用する。
 | frn:lod1Geometry
 | gml:_Geometry [0..1]
-a| 構造物の上方からの正射影の外周を取得し、地表面から一律の高さで下向きに押し出した立体とする。 +
+| 構造物の上方からの正射影の外周を取得し、地表面から一律の高さで下向きに押し出した立体とする。 +
 一律の土被り量が幅をもつ場合は、最大の深さとする。
 
 | frn:lod2Geomerty | gml:_Geometry [0..1] | 構造物の上方からの正射影の外周を取得し、構造物が埋設された深さから、一律の高さで下向きに押し出した立体を作成する。
@@ -1954,18 +1954,18 @@ a| 構造物の上方からの正射影の外周を取得し、地表面から�
 土被り量が幅をもつ場合は、最小の深さから最大の深さまでの一律高さとする。
 | frn:lod3Geometry
 | gml:_Geometry [0..1]
-a| 埋設物の外形（外側から見える形）を構成する面を取得する。 +
+| 埋設物の外形（外側から見える形）を構成する面を取得する。 +
 面の各頂点に管路の高さを与える。
 
 | frn:lod4Geometry
 | gml:_Geometry [0..1]
-a| 埋設物の外形（外側から見える形）を構成する面を取得する。 +
+| 埋設物の外形（外側から見える形）を構成する面を取得する。 +
 埋設物の内空を構成する面を取得する。 +
 面の各頂点に管路の高さを与える。
 
 | uro:cityFurnitureDetailAttribute
 | uro:CityFurnitureDetailAttribute [0..*]
-a| 埋設物の詳細な内容。 +
+| 埋設物の詳細な内容。 +
 構造物の種類を細分したい場合に記述する。
 
 | uro:frnKeyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -1973,12 +1973,12 @@ a| 埋設物の詳細な内容。 +
 | uro:frnFacilityTypeAttribute | uro:FacilityTypeAttribute [0..1] | 埋設物の種類に関する情報。
 | uro:frnFacilityAttribute
 | uro:FacilityAttribute [0..*]
-a| 埋設物の詳細についての情報。 +
+| 埋設物の詳細についての情報。 +
 工事・点検記録（uro:MaintenanceHistoryAttribute）を作成する。
 
 | uro:frnFacilityIdAttribute
 | uro:FacilityIdAttribute [0..1]
-a| 埋設物の識別に関する情報。 +
+| 埋設物の識別に関する情報。 +
 運用上必ず一つ作成する。
 
 | uro:frnDmAttribute | uro:DmAttribute [0..*] | LOD0の形状情報。埋設物の中心線を取得する。
@@ -1993,7 +1993,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:TelecommunicationsCable
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 通信ケーブル。
 
@@ -2013,7 +2013,7 @@ h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対
 h| (frn:class) | gml:CodeType [0..1] | 埋設物の区分。
 | frn:function
 | gml:CodeType [0..*]
-a| 埋設物の種類。コードリスト（CityFurniture_function.xml）より選択する。 +
+| 埋設物の種類。コードリスト（CityFurniture_function.xml）より選択する。 +
 管路の場合は、5500となる。
 
 h| (frn:usage) | gml:CodeType [0..*] | 埋設物の主な使い道。
@@ -2025,13 +2025,13 @@ h| (frn:usage) | gml:CodeType [0..*] | 埋設物の主な使い道。
 | uro:routeStartNode | xs:string [0..1] | 路線又は系統の開始ノード。[路線名]又は[路線]-[区間名]とする。
 | uro:startNode
 | xs:string [0..1]
-a| 開始ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
+| 開始ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
 uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAttributeの属性idの値に一致する。
 
 | uro:routeEndNode | xs:string [0..1] | 路線又は系統の終了ノード。[路線名]又は[路線]-[区間名]とする。
 | uro:endNode
 | xs:string [0..1]
-a| 終了ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
+| 終了ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
 uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAttributeの属性idの値に一致する。
 
 | uro:depth | gml:LengthType [0..1] | 土被りの深さ。単位はm。
@@ -2060,12 +2060,12 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 まとまって複数のケーブルが埋設されている場合は、ケーブルの最外縁の正射影を取得し、ケーブルが埋設された深さから一律の高さで下向きに押し出した立体を作成する。
 | frn:lod3Geometry
 | gml:_Geometry [0..1]
-a| ケーブルの外形（外側から見える形）を構成する面を取得する。 +
+| ケーブルの外形（外側から見える形）を構成する面を取得する。 +
 面の各頂点に管路の高さを与える。
 
 | frn:lod4Geometry
 | gml:_Geometry [0..1]
-a| ケーブルの外形（外側から見える形）を構成する面を取得する。 +
+| ケーブルの外形（外側から見える形）を構成する面を取得する。 +
 面の各頂点にケーブルの高さを与える。
 
 | uro:cityFurnitureDetailAttribute | uro:CityFurnitureDetailAttribute [0..*] | ケーブルの詳細な内容。
@@ -2082,7 +2082,7 @@ a| ケーブルの外形（外側から見える形）を構成する面を取�
 
 ====== uro:ElectricityCable
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 電力ケーブル。
 
@@ -2102,7 +2102,7 @@ h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対
 h| (frn:class) | gml:CodeType [0..1] | 埋設物の区分。
 | frn:function
 | gml:CodeType [0..*]
-a| 埋設物の種類。コードリスト（CityFurniture_function.xml）より選択する。 +
+| 埋設物の種類。コードリスト（CityFurniture_function.xml）より選択する。 +
 管路の場合は、5500となる。
 
 h| (frn:usage) | gml:CodeType [0..*] | 埋設物の主な使い道。
@@ -2114,13 +2114,13 @@ h| (frn:usage) | gml:CodeType [0..*] | 埋設物の主な使い道。
 | uro:routeStartNode | xs:string [0..1] | 路線又は系統の開始ノード。[路線名]又は[路線]-[区間名]とする。
 | uro:startNode
 | xs:string [0..1]
-a| 開始ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
+| 開始ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
 uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAttributeの属性idの値に一致する。
 
 | uro:routeEndNode | xs:string [0..1] | 路線又は系統の終了ノード。[路線名]又は[路線]-[区間名]とする。
 | uro:endNode
 | xs:string [0..1]
-a| 終了ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
+| 終了ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
 uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAttributeの属性idの値に一致する。
 
 | uro:depth | gml:LengthType [0..1] | 土被りの深さ。単位はm。
@@ -2149,12 +2149,12 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 まとまって複数のケーブルが埋設されている場合は、ケーブルの最外縁の正射影を取得し、ケーブルが埋設された深さから一律の高さで下向きに押し出した立体を作成する。
 | frn:lod3Geometry
 | gml:_Geometry [0..1]
-a| ケーブルの外形（外側から見える形）を構成する面を取得する。 +
+| ケーブルの外形（外側から見える形）を構成する面を取得する。 +
 面の各頂点に管路の高さを与える。
 
 | frn:lod4Geometry
 | gml:_Geometry [0..1]
-a| ケーブルの外形（外側から見える形）を構成する面を取得する。 +
+| ケーブルの外形（外側から見える形）を構成する面を取得する。 +
 面の各頂点にケーブルの高さを与える。
 
 | uro:cityFurnitureDetailAttribute | uro:CityFurnitureDetailAttribute [0..*] | ケーブルの詳細な内容。
@@ -2172,7 +2172,7 @@ a| ケーブルの外形（外側から見える形）を構成する面を取�
 
 ====== uro:Cable
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 通信ケーブル及び電力ケーブル以外のケーブル。
 
@@ -2192,7 +2192,7 @@ h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対
 h| (frn:class) | gml:CodeType [0..1] | 埋設物の区分。
 | frn:function
 | gml:CodeType [0..*]
-a| 埋設物の種類。コードリスト（CityFurniture_function.xml）より選択する。 +
+| 埋設物の種類。コードリスト（CityFurniture_function.xml）より選択する。 +
 管路の場合は、5500となる。
 
 h| (frn:usage) | gml:CodeType [0..*] | 埋設物の主な使い道。
@@ -2204,13 +2204,13 @@ h| (frn:usage) | gml:CodeType [0..*] | 埋設物の主な使い道。
 | uro:routeStartNode | xs:string [0..1] | 路線又は系統の開始ノード。[路線名]又は[路線]-[区間名]とする。
 | uro:startNode
 | xs:string [0..1]
-a| 開始ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
+| 開始ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
 uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAttributeの属性idの値に一致する。
 
 | uro:routeEndNode | xs:string [0..1] | 路線又は系統の終了ノード。[路線名]又は[路線]-[区間名]とする。
 | uro:endNode
 | xs:string [0..1]
-a| 終了ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
+| 終了ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
 uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAttributeの属性idの値に一致する。
 
 | uro:depth | gml:LengthType [0..1] | 土被りの深さ。単位はm。
@@ -2238,12 +2238,12 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 * 土被り（ケーブルの径の上面から地表までの高さ）の高さ
 | frn:lod3Geometry
 | gml:_Geometry [0..1]
-a| ケーブルの外形（外側から見える形）を構成する面を取得する。 +
+| ケーブルの外形（外側から見える形）を構成する面を取得する。 +
 面の各頂点に管路の高さを与える。
 
 | frn:lod4Geometry
 | gml:_Geometry [0..1]
-a| ケーブルの外形（外側から見える形）を構成する面を取得する。 +
+| ケーブルの外形（外側から見える形）を構成する面を取得する。 +
 面の各頂点にケーブルの高さを与える。
 
 | uro:cityFurnitureDetailAttribute | uro:CityFurnitureDetailAttribute [0..*] | ケーブルの詳細な内容。
@@ -2269,7 +2269,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 [cols=3]
 |===
 | 型の定義
-2+a| ユーティリティネットワークのノードとなる設備。 +
+2+| ユーティリティネットワークのノードとなる設備。 +
 水道における、弁栓類、ガスにおけるガバナ、バブル等をいう。
 
 h| 上位の型 2+| uro:UtilityNode
@@ -2286,7 +2286,7 @@ h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対
 h| (frn:class) | gml:CodeType [0..1] | 埋設物の区分。
 | frn:function
 | gml:CodeType [0..*]
-a| 埋設物の種類。コードリスト（CityFurniture_function.xml）より選択する。 +
+| 埋設物の種類。コードリスト（CityFurniture_function.xml）より選択する。 +
 管路の場合は、5500となる。
 
 h| (frn:usage) | gml:CodeType [0..*] | 埋設物の主な使い道。
@@ -2297,12 +2297,12 @@ h| (frn:usage) | gml:CodeType [0..*] | 埋設物の主な使い道。
 | uro:administrator | gml:CodeType [0..1] | 埋設物の主管事業者。コードリスト（UtilityNetworkElement_administrator.xml）より選択する。
 | uro:previousLink
 | xs:string [0..*]
-a| このノードを終点とするリンク（uro:UtilityLinkの下位クラス）の識別子。 +
+| このノードを終点とするリンク（uro:UtilityLinkの下位クラス）の識別子。 +
 uro:UtilityLinkの下位クラスuro:FacilityIdAttributeの属性idの値に一致する。
 
 | uro:nextLink
 | xs:string [0..*]
-a| このノードを起点とするリンク（uro:UtilityLinkの下位クラス）の識別子。 +
+| このノードを起点とするリンク（uro:UtilityLinkの下位クラス）の識別子。 +
 uro:UtilityLinkの下位クラスuro:FacilityIdAttributeの属性idの値に一致する。
 
 | uro:rotationAngle | xs:double [0..1] | 真北を0度とした時のノードとなる設備及びマンホール、ハンドホールの回転角度。
@@ -2319,18 +2319,18 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | frn:lod2Geomerty | gml:_Geometry [0..1] | 設備を包含する矩形の上方からの正射影を取得し、設備が埋設された深さから一律の高さで下向きに押し出した立体を作成する。
 | frn:lod3Geometry
 | gml:_Geometry [0..1]
-a| 設備の外形（外側から見える形）を構成する面を取得する。 +
+| 設備の外形（外側から見える形）を構成する面を取得する。 +
 面の各頂点に設備の高さを与える。
 
 | frn:lod4Geometry
 | gml:_Geometry [0..1]
-a| 設備の外形（外側から見える形）を構成する面を取得する。 +
+| 設備の外形（外側から見える形）を構成する面を取得する。 +
 設備の内部を構成する面を取得する。 +
 面の各頂点に設備の高さを与える。
 
 | uro:cityFurnitureDetailAttribute
 | uro:CityFurnitureDetailAttribute [0..*]
-a| 設備の詳細な内容。 +
+| 設備の詳細な内容。 +
 設備を細分する場合に使用する。
 
 | uro:frnKeyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -2339,7 +2339,7 @@ a| 設備の詳細な内容。 +
 | uro:frnFacilityAttribute | uro:FacilityAttribute [0..*] | 施設の詳細についての情報。
 | uro:frnFacilityIdAttribute
 | uro:FacilityIdAttribute [0..1]
-a| 施設の識別に関する情報。 +
+| 施設の識別に関する情報。 +
 必ず一つ作成する。
 
 | uro:frnDmAttribute | uro:DmAttribute [0..*] | LOD0の形状情報。中心位置を取得する。
@@ -2384,7 +2384,7 @@ h| (frn:usage) | gml:CodeType [0..*] | 埋設物の主な使い道。
 | uro:depth | gml:LengthType [0..1] | 深さ。単位はm。
 | uro:appurtenance
 | xs:string [0..*]
-a| 格納されている設備の識別子。 +
+| 格納されている設備の識別子。 +
 uro:Appurtenanceのuro:FacilityIdAttributeの属性idの値に一致する。
 
 | uro:rotationAngle | xs:double [0..1] | 真北を0度とした時のノードとなる設備及びマンホール、ハンドホールの回転角度。
@@ -2399,30 +2399,30 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | gen:genericAttributeSet | gen:GenericAttributeSet [0..*] | 汎用属性のセット（集合）。属性を追加したい場合に使用する。
 | frn:lod1Geometry
 | gml:_Geometry [0..1]
-a| マンホール等を包含する矩形の上方からの正射影を取得し、地表面から一律の高さで下向きに押し出した立体を作成する。 +
+| マンホール等を包含する矩形の上方からの正射影を取得し、地表面から一律の高さで下向きに押し出した立体を作成する。 +
 一律の高さは、マンホールの高さとする。
 
 | frn:lod2Geomerty
 | gml:_Geometry [0..1]
-a| マンホールの上方からの正射影の外周を取得し、地表面から一律の高さで下向きに押し出した立体を作成する。 +
+| マンホールの上方からの正射影の外周を取得し、地表面から一律の高さで下向きに押し出した立体を作成する。 +
 一律の高さは、マンホールの高さとする。
 
 | frn:lod3Geometry
 | gml:_Geometry [0..1]
-a| マンホールの外形（外側から見える形）を構成する面を取得する。 +
+| マンホールの外形（外側から見える形）を構成する面を取得する。 +
 面の各頂点にマンホールの高さを与える。 +
 高さ方向の断面形状の変化を表現する。
 
 | frn:lod4Geometry
 | gml:_Geometry [0..1]
-a| マンホールの外形（外側から見える形）を構成する面を取得する。 +
+| マンホールの外形（外側から見える形）を構成する面を取得する。 +
 マンホールの内部の形状を構成する面を取得すする。 +
 面の各頂点にマンホールの高さを与える。 +
 高さ方向の断面形状の変化を表現する。
 
 | uro:cityFurnitureDetailAttribute
 | uro:CityFurnitureDetailAttribute [0..*]
-a| 設備の詳細な内容。 +
+| 設備の詳細な内容。 +
 設備を細分する場合に使用する。
 
 | uro:frnKeyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -2431,7 +2431,7 @@ a| 設備の詳細な内容。 +
 | uro:frnFacilityAttribute | uro:FacilityAttribute [0..*] | 施設の詳細についての情報。
 | uro:frnFacilityIdAttribute
 | uro:FacilityIdAttribute [0..1]
-a| 施設の識別に関する情報。 +
+| 施設の識別に関する情報。 +
 必ず一つ作成する。
 
 | uro:frnDmAttribute | uro:DmAttribute [0..*] | LOD0の形状情報。中心位置を取得する。
@@ -2445,7 +2445,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:Handhole
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| ハンドホール
 
@@ -2476,7 +2476,7 @@ h| (frn:usage) | gml:CodeType [0..*] | 埋設物の主な使い道。
 | uro:depth | gml:LengthType [0..1] | 深さ。単位はm。
 | uro:appurtenance
 | xs:string [0..*]
-a| 格納されている設備の識別子。 +
+| 格納されている設備の識別子。 +
 uro:Appurtenanceのuro:FacilityIdAttributeの属性idの値に一致する。
 
 | uro:rotationAngle | xs:double [0..1] | 真北を0度とした時のノードとなる設備及びマンホール、ハンドホールの回転角度。
@@ -2497,20 +2497,20 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 一律の高さは、ハンドホールの高さとする。
 | frn:lod3Geometry
 | gml:_Geometry [0..1]
-a| ハンドホールの外形（外側から見える形）を構成する面を取得する。 +
+| ハンドホールの外形（外側から見える形）を構成する面を取得する。 +
 面の各頂点にハンドホールの高さを与える。 +
 高さ方向の断面形状の変化を表現する。
 
 | frn:lod4Geometry
 | gml:_Geometry [0..1]
-a| ハンドホールの外形（外側から見える形）を構成する面を取得する。 +
+| ハンドホールの外形（外側から見える形）を構成する面を取得する。 +
 ハンドホールの内部の形状を構成する面を取得する。 +
 面の各頂点にハンドホールの高さを与える。 +
 高さ方向の断面形状の変化を表現する。
 
 | uro:cityFurnitureDetailAttribute
 | uro:CityFurnitureDetailAttribute [0..*]
-a| 設備の詳細な内容。 +
+| 設備の詳細な内容。 +
 設備を細分する場合に使用する。
 
 | uro:frnKeyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -2519,7 +2519,7 @@ a| 設備の詳細な内容。 +
 | uro:frnFacilityAttribute | uro:FacilityAttribute [0..*] | 施設の詳細についての情報。
 | uro:frnFacilityIdAttribute
 | uro:FacilityIdAttribute [0..1]
-a| 施設の識別に関する情報。 +
+| 施設の識別に関する情報。 +
 必ず一つ作成する。
 
 | uro:frnDmAttribute | uro:DmAttribute [0..*] | LOD0の形状情報。中心位置を取得する。
@@ -2530,7 +2530,7 @@ a| 施設の識別に関する情報。 +
 
 ====== uro:OffsetDepth
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 地下埋設物の道路縁等からの距離（オフセット）及び土被りの深さを表すデータ型。
 
@@ -2548,7 +2548,7 @@ h| 属性 h| 属性の型及び多重度 h| 定義
 
 ====== uro:ThematicShape
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 地下埋設物の主題的な形状（高さをもった中心線又は中心点）を表すデータ型。
 
@@ -2564,7 +2564,7 @@ h| (uro:horizontalType) | gml:CodeType [0..1] | uro:shapeがもつ水平位置�
 
 ====== uro:LengthAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 地下埋設物の実長及び亘長を表すデータ型。
 
@@ -2600,7 +2600,7 @@ h| 属性 h| 属性の型及び多重度 h| 定義
 
 ====== uro:KeyValuePairAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。
 
@@ -2617,7 +2617,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:DataQualityAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
 
@@ -2673,7 +2673,7 @@ h| (uro:publicSurveyDataQualityAttribute) | uro:PublicSurveyDataQualityAttribute
 
 ====== UtilityNetworkElement_occupierType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | UtilityNetworkElement_occupierType.xml
 
@@ -2692,7 +2692,7 @@ h| コード h| 説明
 
 ====== UtilityNetworkElement_occupierName.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | UtilityNetworkElement_occupierName.xml
 
@@ -2710,7 +2710,7 @@ h| コード h| 説明
 
 ====== UtilityNetworkElement_yearType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | UtilityNetworkElement_yearType.xml
 
@@ -2726,7 +2726,7 @@ h| コード h| 説明
 
 ====== UtilityNetworkElement_administrator.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | UtilityNetworkElement_administrator.xml
 
@@ -2744,7 +2744,7 @@ h| コード h| 説明
 
 ====== UtilityNetworkElement_material.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | UtilityNetworkElement_material.xml
 
@@ -2777,7 +2777,7 @@ h| コード h| 説明
 
 ====== Pipe_sleeveType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Pipe_sleeveType.xml
 
@@ -2791,7 +2791,7 @@ h| コード h| 説明
 
 ====== Appurtenance_appurtenanceType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Appurtenance_appurtenanceType.xml
 
@@ -2813,7 +2813,7 @@ h| コード h| 説明
 
 ====== UtilityNodeContainer_containerType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | UtilityNodeContainer_containerType.xml
 
@@ -2843,7 +2843,7 @@ h| コード h| 説明
 
 ====== ThematicShape_heightType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ThematicShape_heightType.xml
 
@@ -2857,7 +2857,7 @@ h| コード h| 説明
 
 ====== LengthAttribute_measureType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | LengthAttribute_measureType.xml
 
@@ -2870,7 +2870,7 @@ h| コード h| 説明
 
 ====== LengthAttribute_phaseType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | LengthAttribute_phaseType.xml
 
@@ -2884,7 +2884,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
 
@@ -2930,7 +2930,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
 
@@ -2960,7 +2960,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
 
@@ -2977,7 +2977,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_lod1HeightType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_lod1HeightType.xml
 

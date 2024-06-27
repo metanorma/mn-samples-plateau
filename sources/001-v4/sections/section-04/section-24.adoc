@@ -24,10 +24,10 @@ image::images/419.svg[]
 
 ====== uro:DmGeometricAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画基本図として、地物の形状を公共測量標準図式に従って表現するためのデータ型。 +
+2+| 都市計画基本図として、地物の形状を公共測量標準図式に従って表現するためのデータ型。 +
 uro:DmGeometrictAttributeは、地物の実体を表す図形だけではなく、地物を図式に従って表現する際に必要な情報（例：建物記号、建物の棟割線、記号の方向、指示点）を含む。 +
 +
 地物（ステレオタイプがFeatureTypeとなるクラス）は、関連役割uro:dmAttributeにより、このuro:DmGeometrictAttributeを保持できる。
@@ -38,7 +38,7 @@ h| ステレオタイプ 2+| << DataType >>
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:dmCode
 | gml:CodeType [1]
-a| DMの図式分類コード。レイヤ番号（2桁）とデータ項目（2桁）からなる4桁の半角数字の列。 +
+| DMの図式分類コード。レイヤ番号（2桁）とデータ項目（2桁）からなる4桁の半角数字の列。 +
 コードリスト（Common_dmCode.xml）より選択する。
 
 | uro:meshCode | gml:CodeType [0..1] | 数値地形図データが含まれる国土基本図の図郭識別番号。
@@ -46,35 +46,35 @@ a| DMの図式分類コード。レイヤ番号（2桁）とデータ項目（2�
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:geometryType
 | gml:CodeType [1]
-a| レコードタイプ。 +
+| レコードタイプ。 +
 コードリスト（Common_geometryType.xml）より選択する。
 
 | uro:mapLevel
 | gml:CodeType [1]
-a| 地図情報レベル。 +
+| 地図情報レベル。 +
 コードリスト（Common_MapLevel.xml）より選択する。都市計画基本図の場合は、2500となる。
 
 | uro:shapeType
 | gml:CodeType [1]
-a| 図形区分。 +
+| 図形区分。 +
 コードリスト（Common_shapeType.xml）より選択する。
 
 | uro:visibility
 | xs:boolean [0..1]
-a| 可視性。上空から見た場合に、他の地物に遮蔽されておらず、上空から見えている（地図上に表現される）ことを示すフラグ。仮想的に設定された付属図形で描画対象としない場合にもこのフラグを0にする。 +
+| 可視性。上空から見た場合に、他の地物に遮蔽されておらず、上空から見えている（地図上に表現される）ことを示すフラグ。仮想的に設定された付属図形で描画対象としない場合にもこのフラグを0にする。 +
 1 ：他の地物に遮蔽されていない。（省略時値） +
 0：他の地物に遮蔽されている。
 
 | uro:is3d
 | xs:boolean [0..1]
-a| この図形の座標値が３次元データであることを示すフラグ。 +
+| この図形の座標値が３次元データであることを示すフラグ。 +
 1：この図形の座標値は3次元データである。 +
 0：この図形の座標値は2次元データである。（省略時値） +
 uro:is3d=0の場合、z値に示された”0”は意味を持たない。
 
 | uro:isInstallation
 | xs:boolean [0..1]
-a| この図形が地物の付属図形であることを示すフラグ。 +
+| この図形が地物の付属図形であることを示すフラグ。 +
 付属図形とは、地物の本質的な実体ではないが、描画処理などで地物を図形表現する際に利用可能な図形である。 +
 1 ：この図形は付属図形である。 +
 0：この図形は付属図形ではない。（省略時値） +
@@ -82,39 +82,39 @@ uro:isInstallationの値が1の場合、uro:dmShapeTypeの値は、0以外とな
 
 | uro:isEdited
 | xs:boolean [0..1]
-a| 個別の編集処理がおこなわれたことを示すフラグ。 +
+| 個別の編集処理がおこなわれたことを示すフラグ。 +
 1：編集処理が行われた。 +
 0：編集処理が行われていない。（省略時値）
 
 | uro:isSupplementarySymbol
 | xs:boolean [0..1]
-a| この図形が地物の補助記号であることを示すフラグ。 +
+| この図形が地物の補助記号であることを示すフラグ。 +
 補助記号とは、公共測量標準図式において自動発生が可能とされる図形を指す。自動発生が不可能な場合で図形を作成する必要がある場合にのみ使用する。 +
 1：この図形は補助記号である。 +
 0：この図形は補助記号ではない。（省略時値）
 
 | uro:angle
 | xs:double [0..1]
-a| 図形の角度。真北を0とし、時計まわりを正とする。 +
+| 図形の角度。真北を0とし、時計まわりを正とする。 +
 uro:dmGeometryTypeの値がE7（方向）の場合に多重度は任意となっているが、必須とする。
 
 | uro:elevation
 | gml:LengthType [0..1]
-a| この図形の標高。単位はmとする。 +
+| この図形の標高。単位はmとする。 +
 uro:dmCodeのレイヤ番号が73の場合は、必須とする。
 
 3+h| 継承する関連役割
 h| 関連役割名 h| 属性の型及び多重度 h| 定義
 | uro:dmElement
 | uro:DmElement [0..1]
-a| 数値地形図データファイル仕様に基づく要素レコードの情報。 +
+| 数値地形図データファイル仕様に基づく要素レコードの情報。 +
 数値地形図データファイルの要素レコード情報を保持したい場合に必須とする。
 
 3+h| 自身に定義された関連役割
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:lod0Geometry
 | gml:_Geometry [0..1]
-a| 地物の形状を示す幾何オブジェクト。 +
+| 地物の形状を示す幾何オブジェクト。 +
 参照先の幾何オブジェクトの型は、uro:dmCodeの値に応じて、gml:MultiPoint、gml:MultiCurve又はgml:MultiSurfaceのいずれかとする。 +
 いずれの幾何オブジェクトの型となるかは、数値地形図の取得方法に従う。
 
@@ -132,39 +132,39 @@ h| ステレオタイプ 2+| << DataType >>
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:locationType
 | gml:CodeType [0..1]
-a| 地域分類。文字列とする。 +
+| 地域分類。文字列とする。 +
 必要に応じて利用者が任意に定義するコード。
 
 | uro:infoType
 | gml:CodeType [0..1]
-a| 情報分類。文字列とする。 +
+| 情報分類。文字列とする。 +
 必要に応じて利用者が任意に定義するコード。
 
 | uro:elementKey | xs:string [0..1] | 要素識別番号。
 | uro:hierarchyLevel | xs:string [0..1] | 階層レベル。
 | uro:dataType
 | gml:CodeType [0..1]
-a| 実データ区分。 +
+| 実データ区分。 +
 コードリスト（DmElement_dataType.xml）から選択する。
 
 | uro:annotationType
 | gml:CodeType [0..1]
-a| 注記区分。 +
+| 注記区分。 +
 コードリスト（DmElement_annotationType.xml）から選択する。
 
 | uro:precisionType
 | gml:CodeType [0..1]
-a| 精度区分。 +
+| 精度区分。 +
 コードリスト（DmElement_precisionType.xml）から選択する。
 
 | uro:dislocationType
 | gml:CodeType [0..1]
-a| 転位区分。 +
+| 転位区分。 +
 コードリスト（DmElement_dislocationType.xml）から選択する。
 
 | uro:breakType
 | gml:CodeType [0..1]
-a| 間断区分。 +
+| 間断区分。 +
 コードリスト（DmElement_breakType.xml）から選択する。
 
 | uro:attributeValue | xs:string [0..1] | 属性数値。
@@ -178,10 +178,10 @@ a| 間断区分。 +
 
 ====== uro:DmAnnotation
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-a| 都市計画基本図として、注記を表現するために必要な情報のデータ型。 +
+| 都市計画基本図として、注記を表現するために必要な情報のデータ型。 +
 +
 地物（ステレオタイプがFeatureType）は、関連役割uro:dmAttributeにより、uro:DmAnnotationを保持できる。このとき、uro:DmAnnotationは地物に付属する情報となる。
 |
@@ -192,7 +192,7 @@ h| ステレオタイプ | << DataType >> |
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:dmCode
 | gml:CodeType [1]
-a| 公共測量標準図式の図式分類コード。レイヤ番号（2桁）とデータ項目（2桁）からなる4桁の半角数字の列。 +
+| 公共測量標準図式の図式分類コード。レイヤ番号（2桁）とデータ項目（2桁）からなる4桁の半角数字の列。 +
 コードリスト（Common_dmCode.xml）より選択する。
 
 | uro:meshCode | gml:CodeType [0..1] | 数値地形図データファイル仕様にもとづいて設定される図郭識別番号。
@@ -200,20 +200,20 @@ a| 公共測量標準図式の図式分類コード。レイヤ番号（2桁）�
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:geometryType
 | gml:CodeType [1]
-a| レコードタイプ。 +
+| レコードタイプ。 +
 コードリスト（Common_geometryType.xml）より選択する。 +
 注記の場合はE7となる。
 
 | uro:shapeType
 | gml:CodeType [1]
-a| 図形区分。 +
+| 図形区分。 +
 コードリスト（Common_shapeType.xml）より選択する。 +
 注記の場合は0となる。
 
 | uro:label | xs:string [1] | 注記の文字列。
 | uro:isVertical
 | xs:boolean [1]
-a| 縦書きか否か。 +
+| 縦書きか否か。 +
 1：縦書き +
 0：横書き
 
@@ -225,7 +225,7 @@ a| 縦書きか否か。 +
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:lod0AnchorPoint
 | gml:_Geometry [0..1]
-a| 注記を配置する位置。 +
+| 注記を配置する位置。 +
 点（gml:Point）を使用して記述する。
 
 |===
@@ -238,7 +238,7 @@ a| 注記を配置する位置。 +
 
 ====== Common_dmCode.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Common_dmCode.xml
 
@@ -436,7 +436,7 @@ h| コード h| 説明
 
 ====== Common_shapeType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Common_shapeType.xml
 
@@ -465,7 +465,7 @@ h| コード h| 説明
 
 ====== Common_MapLevel.xml
 
-[cols="37,88"]
+[cols="37a,88a"]
 |===
 | ファイル名 | Common_MapLevel.xml
 
@@ -482,7 +482,7 @@ h| 値 h| 説明
 
 ====== Common_geometryType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Common_geometryType.xml
 
@@ -501,7 +501,7 @@ h| コード h| 説明
 
 ====== DmElement_dataType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DmElement_dataType.xml
 
@@ -522,7 +522,7 @@ h| コード h| 説明
 
 ====== DmElement_annotationType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DmElement_annotationType.xml
 
@@ -539,7 +539,7 @@ h| コード h| 説明
 
 ====== DmElement_precisionType.xml
 
-[cols="3,11,11"]
+[cols="3a,11a,11a"]
 |===
 | ファイル名 | DmElement_precisionType.xml |
 
@@ -562,7 +562,7 @@ h| コード h| 説明（上位桁：数値化区分） h| 説明（下位桁：
 
 ====== DmElement_breakType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DmElement_breakType.xml
 
@@ -578,7 +578,7 @@ h| コード h| 説明
 
 ====== DmElement_dislocationType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DmElement_dislocationType.xml
 

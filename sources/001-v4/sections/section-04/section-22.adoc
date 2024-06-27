@@ -28,10 +28,10 @@ image::images/411.svg[]
 
 ====== app:Appearance
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | クラスの定義
-2+a|
+2+|
 地物の外観。 +
 地物の幾何オブジェクトとなる面に色又はテクスチャを指定する。
 
@@ -56,10 +56,10 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== app:ParameterizedTexture
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | クラスの定義
-2+a|
+2+|
 地物インスタンスに貼り付ける画像と貼り付け方をパラメータにより指定するための型。
 
 .bldg:Buildingの外観としてテクスチャを指定した例
@@ -77,13 +77,13 @@ h| (gml:boundedBy) | gml:Envelope [0..1] | テクスチャの空間範囲。
 | app:imageURI | xs:anyURI [0..1] | テクスチャの画像への参照URI。相対パスにより記述する。
 | app:mimeType
 | gml:CodeType [0..1]
-a| テクスチャの画像フォーマット。コードリスト（Appearance_mimeType.xml）より選択する。 +
+| テクスチャの画像フォーマット。コードリスト（Appearance_mimeType.xml）より選択する。 +
 画像フォーマットは、PNG又はJPEGとする。
 
 | app:textureType | app:TextureTypeType [0..1] | テクスチャの種類。
 | app:wrapMode
 | app:WrapModeType [0..1]
-a| テクスチャの貼り付け方。 +
+| テクスチャの貼り付け方。 +
 borderを選択した場合は、borderColorも指定すること。
 
 | app:borderColor | app:ColorPlusOpacity [0..1] | テクスチャの端の色表現の指定。RGBに加え、不透過率を0から1までの実数値で指定する。不透過率が0の時に透明となる。
@@ -91,14 +91,14 @@ borderを選択した場合は、borderColorも指定すること。
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | app:target
 | app:_TexureParameterization [0..*]
-a| テクスチャの貼り付けに使用する幾何への参照。 +
+| テクスチャの貼り付けに使用する幾何への参照。 +
 app:TexCoordListを使用する。
 
 |===
 
 ====== app:TexCoordList
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | クラスの定義 2+| テクスチャの座標とテクスチャを貼り付ける幾何オブジェクトへの参照の対。
 
@@ -113,10 +113,10 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== app:X3DMaterial
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | クラスの定義
-2+a|
+2+|
 地物インスタンスの表面色を指定するための型。
 
 .bldg:Buildingの外観として色を指定した例
@@ -150,7 +150,7 @@ h| (gml:boundedBy) | gml:Envelope [0..1] | マテリアルの空間範囲。
 
 ====== Appearance_mimeType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Appearance_mimeType.xml
 
@@ -166,7 +166,7 @@ h| コード h| 説明
 
 ====== TextureTypeType
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | 列挙型 | TextureTypeType
 
@@ -182,7 +182,7 @@ h| 値 h| 説明
 
 ====== WrapModeType
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | 列挙型 | WrapModeType
 

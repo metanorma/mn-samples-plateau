@@ -23,12 +23,12 @@
 
 交通（航路）モデル（LOD0）では、航路の形状を線（ネットワーク）により表現する。交通（航路）モデル（LOD0）の取得イメージを表 4-49に示す。
 
-[cols="1,9"]
+[cols="1a,9a"]
 .交通（航路）モデル（LOD0）の取得イメージ
 |===
 h| ^h| LOD0
 h| 取得例
-a|
+|
 image::images/190.webp.png[]
 
 h| 説明 | 航路の区域の中心線を取得する。
@@ -39,18 +39,18 @@ h| 説明 | 航路の区域の中心線を取得する。
 
 交通（航路）モデル（LOD0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1,1,1,1,1,3,2"]
+[cols="1a,1a,1a,1a,1a,3a,2a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
 | LOD0
 | ●
 | Waterway
-a| Geometric +
+| Geometric +
 Complex
 |
 * 航路
-a|
+|
 * 航路の区域の中心線を取得する。
 * 高さは0とする。
 |
@@ -69,16 +69,16 @@ a|
 
 交通（航路）モデル（LOD1）では、航路の形状を面により表現する。交通（航路）モデル（LOD1）の取得イメージを表 4-50に示す。
 
-[cols="1,9"]
+[cols="1a,9a"]
 .交通（航路）モデル（LOD1）の取得イメージ
 |===
 h| ^h| LOD1
 h| 取得例
-a|
+|
 image::images/191.webp.png[]
 
 h| 説明
-a| 法令により指定された航路の区域を取得する。 +
+| 法令により指定された航路の区域を取得する。 +
 高さは0とする。
 
 |===
@@ -87,7 +87,7 @@ a| 法令により指定された航路の区域を取得する。 +
 
 交通（航路）モデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1,1,1,1,1,3,2"]
+[cols="1a,1a,1a,1a,1a,3a,2a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -97,7 +97,7 @@ a| 法令により指定された航路の区域を取得する。 +
 | MultiSurface
 |
 * 航路
-a|
+|
 * 航路の区域の境界線をつないだ面を取得する。
 * 以下の場所で区切る。
 ** 航路が交差する区間
@@ -123,11 +123,11 @@ a|
 |===
 h| ^h| LOD2
 h| 取得例
-a|
+|
 image::images/192.webp.png[]
 
 h| 説明
-a| 航路の境界線をつないだ面を取得する。 +
+| 航路の境界線をつないだ面を取得する。 +
 航路の区域に一つの航路しか存在しない場合、LOD1の形状に一致する。 +
 高さは0とする。
 
@@ -137,7 +137,7 @@ a| 航路の境界線をつないだ面を取得する。 +
 
 交通（航路）モデル（LOD2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="2,2,2,2,3,5,4"]
+[cols="2a,2a,2a,2a,3a,5a,4a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -169,7 +169,7 @@ a| 航路の境界線をつないだ面を取得する。 +
 
 交通（航路）モデルの各LODにおいて使用可能な地物型と空間属性を表 4-52に示す。
 
-[cols="5,5,3,3,3,3,3"]
+[cols="5a,5a,3a,3a,3a,3a,3a"]
 .交通（航路）モデルに使用する地物型と空間属性
 |===
 ^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| 適用
@@ -206,10 +206,10 @@ image::images/193.svg[]
 
 ====== uro:Waterway
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a|
+2+|
 航路とは、船舶の通路として法令で定める海域である。標準製品仕様書では、原則として、以下に示す港則法や海上交通安全法によって規定される航路（法定航路）を対象とする。
 
 * 港則法施行規則第8条
@@ -258,13 +258,13 @@ h| (tran:auxiliaryTrafficArea) | tran:AuxiliaryTrafficArea [0..*] | 航路を構
 | tran:lod0Network | gml:GeometricComplex [0..*] | 航路の区域の中心線。
 | tran:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 法令により定められた航路の区域。 +
+| 法令により定められた航路の区域。 +
 法令に定められた航路を構成する地点を結ぶ面とする。 +
 なお、航路が交差する場合は、交差する部分の四隅を結ぶ位置で区切る。
 
 | tran:lod2MultiSurface
 | gml:MultiSurface [0..1]
-a| 法令により定められた航路の区域。 +
+| 法令により定められた航路の区域。 +
 lod1MultiSurfaceの形状に一致する。 +
 tran:Waterwayが参照するtran:TrafficAreaのtran:lod2MultiSurfaceに含まれる、全てのgml:Polygonにより構成する。
 
@@ -283,10 +283,10 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== tran:TrafficArea
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a|
+2+|
 法令により指定された進行方向に区切った航路の部分。 +
 高さは0とする。
 
@@ -322,7 +322,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | tran:lod2MultiSurface
 | gml:MultiSurface [0..1]
-a| 進行方向に区切られた航路の正射影の外周を取得する。 +
+| 進行方向に区切られた航路の正射影の外周を取得する。 +
 高さは0とする。
 
 h| (tran:lod3MultiSurface) | gml:MultiSurface [0..1] | 標準製品仕様書では使用しない。
@@ -334,10 +334,10 @@ h| (tran:lod3MultiSurface) | gml:MultiSurface [0..1] | 標準製品仕様書で�
 
 ====== uro:KeyValuePairAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。 +
+2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。 +
 属性名称と属性の値の対で構成される。コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
 
 h| 上位の型 2+| ―
@@ -347,14 +347,14 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:key | gml:CodeType [1] | 拡張する属性の名称。名称は、コ－ドリスト（KeyValuePairAttribute_key.xml）を作成し、選択する。
 | uro:codeValue
 | gml:CodeType [1]
-a| 拡張された属性の値。値は名称は、コ－ドリスト（KeyValuePairAttribute_key[%key].xml）を作成し、選択する。 +
+| 拡張された属性の値。値は名称は、コ－ドリスト（KeyValuePairAttribute_key[%key].xml）を作成し、選択する。 +
 [%key]は、属性uro:keyの値に一致する。
 
 |===
 
 ====== uro:DataQualityAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
 
@@ -364,42 +364,42 @@ h| ステレオタイプ 2+| << DataType >>
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:geometrySrcDescLod0
 | gml:CodeType [0..*]
-a| LOD0の幾何オブジェクトの作成に使用した原典資料の種類。 +
+| LOD0の幾何オブジェクトの作成に使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD0の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、交通（航路）モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
 
 | uro:geometrySrcDescLod1
 | gml:CodeType [1..*]
-a| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。 +
+| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。具体的な都市オブジェクトがLOD1の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 
 | uro:geometrySrcDescLod2
 | gml:CodeType [0..*]
-a| LOD2の幾何オブジェクトの作成に使用した原典資料の種類。 +
+| LOD2の幾何オブジェクトの作成に使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD2の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、交通（航路）モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
 
 h| (uro:geometrySrcDescLod3) | gml:CodeType [0..*] | LOD3の幾何オブジェクトの作成に使用した原典資料の種類。
 h| (uro:geometrySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
 | uro:thematicSrcDesc
 | gml:CodeType [0..*]
-a| 主題属性の作成に使用した原典資料の種類。 +
+| 主題属性の作成に使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_thematicSrcDesc.xml）より選択する。 +
 主題属性が作成対象となっている場合は必須とする。
 
 | uro:appearanceSrcDescLod0
 | gml:CodeType [0..*]
-a| LOD0の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
+| LOD0の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 +
 拡張製品仕様書でLOD0の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 
 | uro:appearanceSrcDescLod1
 | gml:CodeType [0..*]
-a| LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
+| LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 +
 拡張製品仕様書LOD1の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD1の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 
 | uro:appearanceSrcDescLod2
 | gml:CodeType [0..*]
-a| LOD2の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
+| LOD2の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 +
 拡張製品仕様書でLOD2の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 
@@ -416,7 +416,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:WaterwayDetailAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 航路の詳細な情報を定義したデータ型。
 
@@ -428,12 +428,12 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro: routeDirection | gml:CodeType [0..1] | 進行方向。コードリスト（WaterwayDetailAttribute_routeDirection.xml）より選択する。
 | uro:minimumWidth
 | gml:LengthType[0..1]
-a| 最小の幅員。単位はm（uom=”m”）とする。 +
+| 最小の幅員。単位はm（uom=”m”）とする。 +
 幅員が固定値である場合は、uro:minimumWidthを使用する。
 
 | uro:maximumWidth
 | gml:LengthType [0..1]
-a| 最大の幅員。単位はm（uom=”m”）とする。 +
+| 最大の幅員。単位はm（uom=”m”）とする。 +
 幅員が固定値である場合は、uro:minimumWidthを使用し、本属性は使用しない。
 
 | uro:length | gml:LengthType [0..1] | 航路の延長。単位はkm（uom=”km”）とする。
@@ -478,7 +478,7 @@ a| 最大の幅員。単位はm（uom=”m”）とする。 +
 
 ====== Waterway_function.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Waterway_function.xml
 
@@ -490,7 +490,7 @@ h| コード h| 説明
 
 ====== WaterwayDetailAttribute_routeDirection.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | WaterwayDetailAttribute_routeDirection.xml
 
@@ -505,7 +505,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
 
@@ -552,7 +552,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
 
@@ -583,7 +583,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
 

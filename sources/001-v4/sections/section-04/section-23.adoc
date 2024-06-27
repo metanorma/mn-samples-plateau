@@ -31,10 +31,10 @@ image::images/416.svg[]
 
 ====== grp:CityObjectGroup
 
-[cols="1,1,2",options="noheader"]
+[cols="1a,1a,2a",options="noheader"]
 |===
 .2+| 型の定義
-2+a|
+2+|
 都市オブジェクトの集まり。 +
 建築物モデル（LOD4）では、多数の層からなる建築物における、それぞれの層（階）を部屋（bldg:Room）の集まりとして表現する場合及び施設管理者等により任意に設定された防火区画等の領域（任意設定空間）を部屋の集まりとして表現する場合に使用する。 +
 +
@@ -43,7 +43,7 @@ image::images/416.svg[]
 .grp:CityObjectGroupの使用例
 image::images/417.webp.png[]
 
-2+a|
+2+|
 CityGMLでは、建築物の階や任意設定空間に相当する地物は存在しない。そこで、グループ化の仕組みであるgrp:CityObjectGroupを建築物の階を表現するために使用する。 +
 属性gml:nameにより階又は任意設定空間を識別する名称を付与し、関連役割grp:groupMemberにより同じ階又は任意に設定空間に存在する部屋（bldg:Room）を参照することで、建築物の階を表現する。
 
@@ -80,19 +80,19 @@ h| (grp:usage) | gml:CodeType [0..*] | グループの主な使い道。
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | grp:groupMember
 | core:_CityObject [0..*]
-a| グループに含まれる都市オブジェクト。 +
+| グループに含まれる都市オブジェクト。 +
 同じ階に含まれる、bldg:Roomを参照する。
 
 | grp:parent | core:_CityObject [0..1] | この階を含む建築物（bldg:Building）への参照。
 | uro:ifcBuildingStoreyAttribute
 | uro:IfcAttribute [0..*]
-a| IDM・MVDで定義されるIFCに含まれる情報。 +
+| IDM・MVDで定義されるIFCに含まれる情報。 +
 建築物の階を表現するgrp:CityObjectGroupに付与可能なデータ型は以下とする。 +
 uro:IfcBuildingStorey
 
 | uro:indoorStoreyAttribute
 | uro:IndoorAttribute [0..*]
-a| 屋内ナビゲーションに必要な情報。 +
+| 屋内ナビゲーションに必要な情報。 +
 建築物の階を表現するgrp:CityObjectGroupに付与可能なデータ型は以下とする。 +
 uro:IndoorStoreyAttribute +
 uro:IndoorZoneAttribute +
@@ -105,7 +105,7 @@ uro:IndoorUserDefinedAttribute
 
 ====== uro:IfcBuildingStorey
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| IFCで記述された建築物の階数の属性。
 
@@ -120,7 +120,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:longName | xs:string[0..1] | 階名称の補足的な情報。
 | uro:compositionType
 | uro:IfcElementCompositionEnum [0..1]
-a|
+|
 建物階の空間構成の区分。
 
 * ELEMENT：通常の独立している建物階。
@@ -135,7 +135,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IfcZone
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| IFCで記述された施設管理者により任意に設定された空間の属性。
 
@@ -155,7 +155,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IndoorZoneAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 任意の空間に追加するナビゲーション用の属性。
 
@@ -172,7 +172,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IndoorStoreyAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 階層に追加するナビゲーション用の属性。
 
@@ -185,7 +185,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:category
 | xs:boolean [0..1]
-a| 屋内外区分。 +
+| 屋内外区分。 +
 1：屋内 +
 0：屋外
 
@@ -205,7 +205,7 @@ a| 屋内外区分。 +
 
 ====== CityObjectGroup_class.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | CityObjectGroup_class.xml
 
@@ -220,7 +220,7 @@ h| コード h| 説明
 
 ====== CityObjectGroup_function.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | CityObjectGroup_function.xml
 

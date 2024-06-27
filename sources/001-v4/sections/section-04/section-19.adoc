@@ -35,30 +35,30 @@
 
 水部モデル（LOD0）の取得イメージを表 4-111に示す。
 
-[cols="4,9,9,9,9"]
+[cols="4a,9a,9a,9a,9a"]
 .水部モデル（LOD0）の取得イメージ
 |===
 h| 4+^h| LOD0（河川ネットワークにより表現する場合）
 h| 取得例
-2+a|
+2+|
 image::images/385.webp.png[]
-2+a|
+2+|
 image::images/386.webp.png[]
 
 h| 説明
 2+| 河川、細流、かれ川、用水路及び地下水路の場合は、中心線を取得する。
-2+a| 湖池は水涯線を取得する。 +
+2+| 湖池は水涯線を取得する。 +
 海岸線は、水涯線と河川区域の境界とを結ぶ線を取得する。
 
 h| 4+^h| LOD0（公共測量標準図式により表現する場合）
 h| 取得例
-a|
+|
 image::images/387.webp.png[]
-a|
+|
 image::images/388.webp.png[]
-a|
+|
 image::images/389.webp.png[]
-a|
+|
 image::images/390.webp.png[]
 
 h| 説明 | 地図情報レベル500及び1000における河川、また、地図情報レベル2500における水涯線（河川、湖池等、海岸線）は界線を取得する。
@@ -70,13 +70,13 @@ h| 説明 | 地図情報レベル500及び1000における河川、また、地�
 用水路は、界線を取得する。
 h| 4+^h| LOD0（公共測量標準図式により表現する場合）
 h| 取得例
-a|
+|
 image::images/391.webp.png[]
-a|
+|
 image::images/392.webp.png[]
-a|
+|
 image::images/393.webp.png[]
-a|
+|
 image::images/394.webp.png[]
 
 h| 説明 | 注記されない湖沼は、界線に加えて記号挿入位置を取得する。
@@ -93,7 +93,7 @@ h| 説明 | 注記されない湖沼は、界線に加えて記号挿入位置�
 
 水部モデル（LOD0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7,7,7,7,7,18,7"]
+[cols="7a,7a,7a,7a,7a,18a,7a"]
 |===
 | | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -101,15 +101,15 @@ h| 説明 | 注記されない湖沼は、界線に加えて記号挿入位置�
 .8+| ●
 .8+| WaterBody
 | MultiCurve
-a|
+|
 * 地図情報レベル500又は1000における河川
 * 地図情報レベル2500かつ、流水部の幅が1m以上の河川 footnoteblock:[fn_river_lod0]
 * 地図情報レベル2500かつ面積おおむね12.5m2以上の湖池等（湖、池、沼等、人工的に貯水したものを含む） footnoteblock:[fn_lake_lod0]
 * 地図情報レベル2500における海岸線
-a|
+|
 * 界線を取得する。
 * 高さは0とする。
-a|
+|
 footnoteblock:[fn_river_lod0]
 
 footnoteblock:[fn_lake_lod0]
@@ -117,7 +117,7 @@ footnoteblock:[fn_lake_lod0]
 | MultiCurve
 |
 * 平水時において流水部の幅が0.5m以上1.0m未満の河川 footnoteblock:[fn_flowing_water_lod0]
-a|
+|
 * 流水部の中心線を取得する。
 * 高さは0とする。
 |
@@ -126,7 +126,7 @@ footnoteblock:[fn_flowing_water_lod0]
 | MultiCurve
 |
 * かれ川
-a|
+|
 * 範囲を示す縁線を取得する。
 * 高さは0とする。
 |
@@ -134,7 +134,7 @@ a|
 | MultiCurve
 |
 * 地図情報レベル500の場合は流水部の幅が2m以上、地図情報レベル1000の場合は流水部の幅が4m以上用水路 footnoteblock:[fn_irrigation_lod0]
-a|
+|
 * 界線を取得する。
 * 高さは0とする。
 |
@@ -143,7 +143,7 @@ footnoteblock:[fn_irrigation_lod0]
 | Point
 |
 * 湖池 footnoteblock:[fn_lake_lod0]
-a|
+|
 * 記号表示位置を取得する。
 * 高さは0とする。
 |
@@ -152,7 +152,7 @@ footnoteblock:[fn_lake_lod0]
 | Point
 |
 * 地図情報レベル500及び1000における海岸線
-a|
+|
 * 記号表示位置を取得する。
 * 高さは0とする。
 | 標準図式の取得方法に従う。
@@ -160,7 +160,7 @@ a|
 | MultiCurve
 |
 * 地図情報レベル500及び1000、かつ、河川、用水路等における地下の部分で、経路の明確なもの
-a|
+|
 * 地下水路縁線を取得する。
 * 高さは0とする。
 |
@@ -168,7 +168,7 @@ a|
 | MultiCurve
 |
 * 地図情報レベル500及び1000における低位水涯線
-a|
+|
 * 界線を取得する。
 * 高さは0とする。
 |
@@ -222,7 +222,7 @@ a|
 |===
 h| ^h| LOD1
 h| 取得例
-a|
+|
 image::images/395.webp.png[]
 
 h| 説明 | 水涯線により囲まれた面を取得する。中洲がある場合は、中洲を除いた面となる。
@@ -243,7 +243,7 @@ h| 説明 | 水涯線により囲まれた面を取得する。中洲がある�
 | MultiSurface
 |
 * 河川、湖池、海、用水路の水面
-a|
+|
 * 水涯線に囲まれた範囲を取得する。
 * 各頂点に水涯線と地表面との交線の高さを与える。
 | 中洲がある場合には中洲を除いた面となる。
@@ -262,16 +262,16 @@ a|
 
 水部モデル（LOD2）では、水部の形状を、立体により表現する。水部モデル（LOD2）の取得イメージを表 4-113に示す。
 
-[cols="3,47"]
+[cols="3a,47a"]
 .水部モデル（LOD2）の取得イメージ
 |===
 h| ^h| LOD2
 h| 取得例
-a|
+|
 image::images/396.webp.png[]
 
 h| 説明
-a| 水涯線により囲まれた水面と、水底面に囲まれた立体を作成する。 +
+| 水涯線により囲まれた水面と、水底面に囲まれた立体を作成する。 +
 水面は水部モデル（LOD1）の面に一致する。また、水底面は、等深線や航空レーザ（ALB）又は、マルチビーム測深の点群データを用いて再現した、水底の起伏を表す面となる。 +
 境界面を水面、地表面に区分し、水部を管理区間や行政界など仮想的な面により区切りたい場合にはその境界面を閉鎖面に区分する。
 
@@ -298,7 +298,7 @@ a| 水涯線により囲まれた水面と、水底面に囲まれた立体を�
 | Surface
 |
 * 水面
-a|
+|
 * 水涯線に囲まれた面から、中洲を除く面を取得する。
 * 各頂点に水涯線と地形との交線の高さを与える。
 | 水部モデル（LOD1）と同じ形状となる。
@@ -315,7 +315,7 @@ a|
 | Surface
 |
 * 水部を管理区間や行政界で区切る等、仮想的な面で区切りたい場合は必須とする。
-a|
+|
 * 水面（WaterSurface）と管理区間や行政界などの境界線との交線及び水底面（WaterGroundSurface）と境界線との交線により囲まれた面を取得する。
 * 各頂点には水面又は水底の高さを与える。
 |
@@ -341,11 +341,11 @@ a|
 |===
 h| ^h| LOD3
 h| 取得例
-a|
+|
 image::images/397.webp.png[]
 
 h| 説明
-a| 水部モデル（LOD2）である、水涯線により囲まれた水面と、水底面に囲まれた立体から、橋梁下部の橋脚部分など水中にある構造物を除いた立体となる。 +
+| 水部モデル（LOD2）である、水涯線により囲まれた水面と、水底面に囲まれた立体から、橋梁下部の橋脚部分など水中にある構造物を除いた立体となる。 +
 水中にある構造物と水部の境界面はWaterGroundSurfaceとする。
 
 |===
@@ -368,7 +368,7 @@ a| 水部モデル（LOD2）である、水涯線により囲まれた水面と�
 | Surface
 |
 * 水面
-a|
+|
 * 水涯線に囲まれた面から、水面から突出する構造物の水面での断面を除く面を取得する。
 * 各頂点に水涯線と地形との交線の高さを与える。
 | 構造物が存在しない場合は、水部モデル（LOD2）と同じ形状となる。
@@ -385,7 +385,7 @@ a|
 | Surface
 |
 * 水中の構造物の外形
-a|
+|
 * 水中に存在する構造物の外形（外側から見える形）を構成する面を取得する。
 * 面の各頂点に構造物の高さを与える。
 |
@@ -396,7 +396,7 @@ a|
 | Surface
 |
 * 水部を管理区間や行政界で区切る等、仮想的な面で区切りたい場合は必須とする。
-a|
+|
 * 水面（WaterSurface）と管理区間や行政界などの境界線との交線及び水底面（WaterGroundSurface）と境界線との交線により囲まれた面を取得する。
 * 各頂点には水面又は水底の高さを与える。
 |
@@ -456,28 +456,28 @@ image::images/399.svg[]
 
 ====== wtr:WaterBody
 
-[cols="1,1,2",options="noheader"]
+[cols="1a,1a,2a",options="noheader"]
 |===
 .4+| 型の定義
-2+a|
+2+|
 河川、湖沼、等のように陸地内に存在する水の存在する部分及び海。水路や貯水槽、プールのような人工的に存在する水を含む。 LOD0は、ネットワーク又は、公共測量標準図式による表現のいずれかとし、ネットワークを原則とする。
 
 .wtr:WaterBodyの例（LOD0）
 image::images/400.webp.png[]
 
-2+a|
+2+|
 LOD1は、水涯線により囲まれた面として表現する。
 
 .wtr:WaterBodyの例（LOD1）
 image::images/401.webp.png[]
 
-2+a|
+2+|
 LOD2は、水面と水底面に囲まれた立体として表現する。
 
 .wtr:WaterBodyの例（LOD2）
 image::images/402.webp.png[]
 
-2+a|
+2+|
 LOD3は、水面と水底面に囲まれた立体から、水中の構造物を除いた立体として表現する。
 
 .wtr:WaterBodyの例（LOD3）
@@ -539,10 +539,10 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== wtr:WaterSurface
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a|
+2+|
 水面。大気と水部の境界面とする。
 
 .水部の断面イメージ
@@ -578,10 +578,10 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== wtr:WaterGroundSurface
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a|
+2+|
 水底面。地形と水部の境界面及び水中の構造物と水部との境界面をいう。
 
 .水部の断面イメージ
@@ -618,10 +618,10 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== wtr:WaterClosureSurface
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a|
+2+|
 水部の立体を区切る仮想的な面。（閉鎖面） 複数の基準地域メッシュに跨って存在する河川、湖沼、海等を基準メッシュ単位に分割する場合や、河川、湖沼、海等の一部の範囲のみを作成する場合に、水部の立体を構成する境界面として使用する。
 
 .水部の断面イメージ
@@ -657,7 +657,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== uro:WaterBodyDetailAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 水部の基盤的な情報。
 
@@ -691,7 +691,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:KeyValuePairAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。
 
@@ -708,7 +708,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:DataQualityAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
 
@@ -764,7 +764,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:PublicSurveyDataQualityAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 使用した公共測量成果の地図情報レベルと種類を、LODごとに記述するためのデータ型。
 
@@ -845,7 +845,7 @@ h| (uro:publicSurveySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジ�
 
 ====== WaterBody_class.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | WaterBody_class.xml
 
@@ -869,7 +869,7 @@ h| コード h| 説明
 
 ====== WaterBodyDetailAttribute_adminType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | WaterBodyDetailAttribute_adminType.xml
 
@@ -889,7 +889,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
 
@@ -936,7 +936,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
 
@@ -967,7 +967,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
 
@@ -984,7 +984,7 @@ h| コード h| 説明
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | PublicSurveyDataQualityAttribute_srcScale.xml
 
@@ -998,7 +998,7 @@ h| コード h| 説明
 
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 

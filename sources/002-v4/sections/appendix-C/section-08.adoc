@@ -51,7 +51,7 @@ bldg:BuildingInstallationは、建築物に付属する恒久的に設置され�
 
 bldg:functionが取りうる値は、コードリストにより定義されている。標準製品仕様書では、表C- 11に示す区分が用意されている。例えば、階段の場合には「1060」となる。この区分に該当しない付属物が存在する場合には、本付属書で示すコードリストの拡張手順に従い、コードを追加する。
 
-[cols="3,17"]
+[cols="3a,17a"]
 .BuildingInstallationの区分
 |===
 h| ファイル名 | BuildingInstallation_function.xml

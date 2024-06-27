@@ -20,23 +20,23 @@
 
 土地利用モデル（LOD1）では、土地利用の形状を面により表現する。土地利用モデル（LOD1）の取得イメージを表 4-53に示す。
 
-[cols="1,9"]
+[cols="1a,9a"]
 .土地利用モデル（LOD1）の取得イメージ
 |===
 h| ^h| LOD1
 h| 取得例
-a|
+|
 image::images/196.webp.png[]
 
 h| 説明
-a| 都市計画基礎調査の土地利用現況において作成された面に一致する。 +
+| 都市計画基礎調査の土地利用現況において作成された面に一致する。 +
 高さは0とする。
 
 |===
 
 ====== 土地利用モデル（LOD1）の定義
 
-[cols="1,1,1,1,1,3,2"]
+[cols="1a,1a,1a,1a,1a,3a,2a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -45,7 +45,7 @@ a| 都市計画基礎調査の土地利用現況において作成された面�
 | LandUse
 | MultiSurface
 | 土地利用現況
-a|
+|
 * 土地利用現況を取得する。
 * 高さは0とする。
 |
@@ -62,7 +62,7 @@ a|
 
 土地利用モデルの各LODにおいて使用可能な地物型と空間属性を表 4-54に示す。
 
-[cols="2,2,1,1,1,1,2"]
+[cols="2a,2a,1a,1a,1a,1a,2a"]
 .土地利用モデルの記述に使用する地物型と空間属性
 |===
 ^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| 適用
@@ -97,7 +97,7 @@ image::images/198.svg[]
 
 ====== luse:LandUse
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画基礎調査の土地利用現況。
 
@@ -116,7 +116,7 @@ h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | luse:class
 | gml:CodeType [0..1]
-a| 土地利用用途の大まかな区分。 +
+| 土地利用用途の大まかな区分。 +
 土地利用用途の区分は、都市計画基礎調査実施要領（国土交通省都市局）による区分とする。コードリスト（Common_landUseType.xml）より選択する。
 
 h| (luse:function) | gml:CodeType [0..*] | 土地利用の機能。
@@ -137,7 +137,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | uro:luseKeyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | 属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
 | uro:luseDataQualityAttribute
 | uro:DataQualityAttribute [1]
-a| 作成したデータの品質に関する情報。 +
+| 作成したデータの品質に関する情報。 +
 必須とする。
 
 | uro:luseFacilityTypeAttribute | uro:FacilityTypeAttribute [0..*] | 特定分野における施設の分類情報。
@@ -151,7 +151,7 @@ a| 作成したデータの品質に関する情報。 +
 
 ====== uro:LandUseDetailAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画に関する基礎調査の一つとして、土地利用の現況と変化の動向を把握することを目的とし都市計画法第6条の規定に基づき実施される調査の結果。
 
@@ -177,7 +177,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:prefecture | gml:CodeType [0..1] | 土地が所在する都道府県の都道府県コード。JIS X0401に定義される2桁の半角数字。コードリスト（Common_localPublicAuthorities.xml）より選択する。
 | uro:city
 | gml:CodeType [0..1]
-a| 土地が所在する市区町村の市区町村コード。 +
+| 土地が所在する市区町村の市区町村コード。 +
 JIS X0401に定義される2桁の半角数字とJIS X0402に定義される3桁の半角数字とを組み合わせた5桁の半角数字。政令市の場合は、区の市区町村コードとする。コードリスト（Common_localPublicAuthorities.xml）より選択する。 +
 運用上必須とする。
 
@@ -189,10 +189,10 @@ JIS X0401に定義される2桁の半角数字とJIS X0402に定義される3桁
 
 ====== uro:KeyValuePairAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外に情報を追加したい場合に使用する。 +
+2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外に情報を追加したい場合に使用する。 +
 属性名称と属性の値の対で構成される。拡張属性は、コ－ド値をとる属性にのみ適用する。 +
 コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
 
@@ -203,14 +203,14 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:key | gml:CodeType [1] | 拡張する属性の名称。名称は、コ－ドリスト（KeyValuePairAttribute_key.xml）より選択する。コード値をとる属性を追加する場合は、コードリストを作成する。
 | uro:codeValue
 | gml:CodeType [0..1]
-a| 拡張された属性の値。値はコ－ド型となる。 +
+| 拡張された属性の値。値はコ－ド型となる。 +
 uro:KeyValuePairAttributeを使用する場合は、必ずuro:codeValueを作成する。
 
 |===
 
 ====== uro:DataQualityAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
 
@@ -221,7 +221,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| (uro:geometrySrcDescLod0) | gml:CodeType [0..*] | LOD0の幾何オブジェクトの作成に使用した原典資料の種類。
 | uro:geometrySrcDescLod1
 | gml:CodeType [1..*]
-a| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。 +
+| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。
 
 h| (uro:geometrySrcDescLod2) | gml:CodeType [0..*] | LOD2の幾何オブジェクトの作成に使用した原典資料の種類。
@@ -229,14 +229,14 @@ h| (uro:geometrySrcDescLod3) | gml:CodeType [0..*] | LOD3の幾何オブジェ�
 h| (uro:geometrySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
 | uro:thematicSrcDesc
 | gml:CodeType [0..*]
-a| 主題属性の作成に使用した原典資料の種類。 +
+| 主題属性の作成に使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_thematicSrcDesc.xml）より選択する。 +
 主題属性が作成対象となっている場合は必須とする。
 
 h| (uro:appearanceSrcDescLod0) | gml:CodeType [0..*] | LOD0の幾何オブジェクトのアピアランスに使用した原典資料の種類。
 | uro:appearanceSrcDescLod1
 | gml:CodeType [0..*]
-a| LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
+| LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 +
 拡張製品仕様書LOD1の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD1の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 
@@ -272,7 +272,7 @@ h| (uro:publicSurveyDataQualityAttribute) | uro:PublicSurveyDataQualityAttribute
 
 ====== Common_landUseType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Common_landUseType.xml
 
@@ -312,7 +312,7 @@ h| コード h| 説明
 
 ====== Common_ownerType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Common_ownerType.xml
 
@@ -330,7 +330,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
 
@@ -377,7 +377,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
 
@@ -408,7 +408,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
 

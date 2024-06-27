@@ -16,18 +16,18 @@
 
 都市設備モデル（LOD0）の取得イメージを表 4-83に示す。
 
-[cols="4,9,9,9,9"]
+[cols="4a,9a,9a,9a,9a"]
 .都市設備モデル（LOD0）の取得イメージ
 |===
 h| 4+^h| LOD0
 h| 取得例
-^a|
+^|
 image::images/284.webp.png[]
-a|
+|
 image::images/285.webp.png[]
-a|
+|
 image::images/286.webp.png[]
-a|
+|
 image::images/287.webp.png[]
 
 h| 説明 | 記号の表示位置を取得する。
@@ -44,7 +44,7 @@ h| 説明 | 記号の表示位置を取得する。
 
 都市設備モデル（LOD0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="3,3,3,3,8,12,8"]
+[cols="3a,3a,3a,3a,8a,12a,8a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -53,31 +53,31 @@ h| 説明 | 記号の表示位置を取得する。
 .4+| CityFurniture
 | Point
 | 停留所、墓碑、記念碑、立像、路傍祠、灯ろう、自然災害伝承碑、油井・ガス井、起重機、タンク（極小）、煙突（極小）、高塔（極小）、電波塔、風車、灯台、灯標、水位観測所、三角点、水準点、多角点等、公共基準点、電子基準点
-a|
+|
 * 記号の表示位置を取得する。
 * 高さは0とする。
 | footnoteblock:[fn_follow_topographic]
 
 | MultiCurve
 | 鳥居、送電線、かき、へい
-a|
+|
 * 中心線を取得する。
 * 高さは0とする。
 | footnoteblock:[fn_follow_topographic]
 
 | MultiCurve
 | 石段、地下街・地下鉄出入口、屋門
-a|
+|
 * 外周を取得する。
 * 高さは0とする。
 | footnoteblock:[fn_follow_topographic]
 
 | MultiSurface
 | 門、タンク、煙突、高塔、灯台 footnoteblock:[fn_above_map] 、輸送管（地上）、輸送管（空間）
-a|
+|
 * 外周を取得する。
 * 高さは0とする。
-a|
+|
 footnoteblock:[fn_follow_topographic]
 
 footnoteblock:[fn_above_map]
@@ -108,14 +108,14 @@ footnoteblock:[fn_above_map]
 
 都市設備モデル（LOD1）では、都市設備の形状を、立体又は面により表現する。都市設備モデル（LOD1）の取得イメージを表 4-84に示す。
 
-[cols="2,9,9"]
+[cols="2a,9a,9a"]
 .都市設備モデル（LOD1）の取得イメージ
 |===
 h| 2+^h| LOD1
 h| 取得例
-^a|
+^|
 image::images/288.webp.png[]
-^a|
+^|
 image::images/289.webp.png[]
 
 h| 説明 | 都市設備の上方からの正射影の外周を地表面からの一律の高さで押し出した立体を作成する。
@@ -130,7 +130,7 @@ h| 説明 | 都市設備の上方からの正射影の外周を地表面から�
 
 都市設備モデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7,7,7,7,16,20,16"]
+[cols="7a,7a,7a,7a,16a,20a,16a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -140,7 +140,7 @@ h| 説明 | 都市設備の上方からの正射影の外周を地表面から�
 | MultiSurface
 |
 * 他の地物の面と一体として表現されるべき地物
-a|
+|
 * 都市設備を包含する最小の矩形又は矩形の組合せを取得する。
 * 矩形の各頂点に、都市設備が接している他の地物の高さを与える。
 | 外周の各頂点に与える高さとは、例えば、路面標示やマンホールの場合は、路面の高さとなる。
@@ -169,14 +169,14 @@ a|
 
 都市設備モデル（LOD2）では、都市設備の形状を、面の集まり又は立体により表現する。都市設備モデル（LOD2）の取得イメージを表 4-85に示す。
 
-[cols="2,9,9"]
+[cols="2a,9a,9a"]
 .都市設備モデル（LOD2）の取得イメージ
 |===
 h| 2+^h| LOD2
 h| 取得例
-^a|
+^|
 image::images/290.webp.png[]
-^a|
+^|
 image::images/291.webp.png[]
 
 h| 説明 | 都市設備の主要な部分について、上方から見た外周の形状が変化する高さでの各外周を取得し、それぞれの外周の頂点をつないだ立体を作成する。
@@ -189,7 +189,7 @@ h| 説明 | 都市設備の主要な部分について、上方から見た外�
 
 都市設備モデル（LOD2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7,7,7,7,16,20,16"]
+[cols="7a,7a,7a,7a,16a,20a,16a"]
 |===
 | | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -199,7 +199,7 @@ h| 説明 | 都市設備の主要な部分について、上方から見た外�
 | MultiSurface
 |
 * 他の地物の面と一体として表現されるべき地物
-a|
+|
 * 都市設備の外周を取得する。
 * 外周の各頂点に、都市設備が接している他の地物の高さを与える。
 |
@@ -209,7 +209,7 @@ a|
 | Solid又はMultiSurface
 |
 * 独立して存在する地物
-a|
+|
 * 都市設備の外周の形状が変化する高さで、各外周を取得する。
 * 外周の各頂点を結ぶ立体又は面の集まりを作成する。
 | 外周は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう取得する。
@@ -225,20 +225,20 @@ a|
 
 都市設備モデル（LOD3）は、接続部の形状の再現の程度によりLOD3.0とLOD3.1に細分する。都市設備モデル（LOD3）の取得イメージを表 4-86に示す。
 
-[cols="2,9,9,9"]
+[cols="2a,9a,9a,9a"]
 .都市設備モデル（LOD3）の取得イメージ
 |===
 h| 2+^h| LOD3.0 ^h| LOD3.1
 h| 取得例
-^a|
+^|
 image::images/292.webp.png[]
-^a|
+^|
 image::images/293.webp.png[]
-^a|
+^|
 image::images/294.webp.png[]
 
 h| 説明
-a| 都市設備の外周を取得する。 +
+| 都市設備の外周を取得する。 +
 その形状はLOD2よりも詳細化される。
 
 外周を構成する各頂点に、路面等この都市設備が設置されている地物の高さを与える。
@@ -258,7 +258,7 @@ a| 都市設備の外周を取得する。 +
 
 ====== 都市設備モデル（LOD3.0）の定義
 
-[cols="7,7,7,7,16,20,16"]
+[cols="7a,7a,7a,7a,16a,20a,16a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -268,7 +268,7 @@ a| 都市設備の外周を取得する。 +
 | MultiSurface
 |
 * 他の地物の面と一体として表現されるべき地物
-a|
+|
 * 都市設備の詳細な外周を取得する。
 * 外周を構成する各頂点に、路面等この都市設備が設置されている地物の高さを与える。
 |
@@ -278,7 +278,7 @@ a|
 | Solid又はMultiSurface
 |
 * 独立して存在する地物
-a|
+|
 * 都市設備の主要な部分について、一定高さごとの横断面を作成する。
 * 横断面の各頂点に高さを与える。
 * 各頂点をつなぐ立体又は面の集まりを作成する。
@@ -295,7 +295,7 @@ a|
 
 ====== 都市設備モデル（LOD3.1）の定義
 
-[cols="7,7,7,7,16,20,16"]
+[cols="7a,7a,7a,7a,16a,20a,16a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -305,7 +305,7 @@ a|
 | MultiSurface
 |
 * 独立して存在する地物
-a|
+|
 * 都市設備の主要な部分及び接続部について、外形を構成する特徴点を抽出する。
 * 特徴点をつなぐ面の集まりを作成する。
 |
@@ -325,7 +325,7 @@ a|
 
 都市設備の各LODにおいて使用可能な地物型と空間属性を表4-87に示す。
 
-[cols="5,5,3,3,3,3,3"]
+[cols="5a,5a,3a,3a,3a,3a,3a"]
 .都市設備の記述に使用する地物型と空間属性
 |===
 ^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| 適用
@@ -363,10 +363,10 @@ image::images/296.svg[]
 
 ====== frn:CityFurniture
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市の屋外（道路、住宅街、広場、造成地等）に設置されている、移動しない小規模な設備（例：街路灯、道路標識、交通信号機、花壇、広告板、ベンチ、境界杭、バス停）。 +
+2+| 都市の屋外（道路、住宅街、広場、造成地等）に設置されている、移動しない小規模な設備（例：街路灯、道路標識、交通信号機、花壇、広告板、ベンチ、境界杭、バス停）。 +
 +
 なお、建築物に付属する設備は、bldg:BuildingInstallationとして取得する。
 
@@ -394,7 +394,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | frn:class
 | gml:CodeType [0..1]
-a| 都市設備の区分。コードリスト（CityFurniture_class.xml）より選択する。 +
+| 都市設備の区分。コードリスト（CityFurniture_class.xml）より選択する。 +
 道路付属物は、1000とする。 +
 通信設備（例：電話ボックス、電柱）は1010とする。 +
 保安設備（例：門、フェンス）は1020とする。 +
@@ -402,7 +402,7 @@ a| 都市設備の区分。コードリスト（CityFurniture_class.xml）より
 
 | frn:function
 | gml:CodeType [0..*]
-a| 都市設備の種類。コードリスト（CityFurniture_function.xml）より選択する。 +
+| 都市設備の種類。コードリスト（CityFurniture_function.xml）より選択する。 +
 なお、区画線と道路標示について、形状・寸法・色が同一、かつ、設置される場所が同一のものは、区画線とする。
 
 | frn:usage | gml:CodeType [0..*] | 都市設備の主な使い道。コードリストより選択する。本属性を使用する場合は、コードリスト（CityFurniture_usage.xml）を作成する。
@@ -419,7 +419,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 連続する面の集まりの場合は、CompositeSurfaceを使用できる。
 | uro:cityFurnitureDetailAttribute
 | uro:CityFurnitureDetailAttribute [0..*]
-a| 都市設備の詳細な内容。 +
+| 都市設備の詳細な内容。 +
 一つの道路標識柱に複数の道路標識が存在する場合のように、複合的な設備の場合は、設備ごとに記述する。
 
 | uro:frnKeyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード型の属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -436,7 +436,7 @@ a| 都市設備の詳細な内容。 +
 
 ====== uro:CityFurnitureDetailAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市設備の詳細な区分を行うための属性型。
 
@@ -471,7 +471,7 @@ h| 属性 h| 属性の型及び多重度 h| 定義
 
 ===== 別表：uro:facilityTypeの定義域
 
-[cols="1,4"]
+[cols="1a,4a"]
 |===
 | urf:functionの値 | uro:facilityTypeの定義域
 
@@ -507,7 +507,7 @@ h| 属性 h| 属性の型及び多重度 h| 定義
 
 ====== uro:KeyValuePairAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。
 
@@ -524,7 +524,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:DataQualityAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
 
@@ -572,7 +572,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:PublicSurveyDataQualityAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 使用した公共測量成果の地図情報レベルと種類を、LODごとに記述するためのデータ型。
 
@@ -653,7 +653,7 @@ h| (uro:publicSurveySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジ�
 
 ====== CityFurniture_class.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | CityFurniture_class.xml
 
@@ -671,7 +671,7 @@ h| コード h| 説明
 
 ====== CityFurniture_function.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | CityFurniture_function.xml
 
@@ -781,7 +781,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
 
@@ -828,7 +828,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
 
@@ -859,7 +859,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
 
@@ -876,7 +876,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_lod1HeightType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_lod1HeightType.xml
 
@@ -901,7 +901,7 @@ h| コード h| 説明
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | PublicSurveyDataQualityAttribute_srcScale.xml
 
@@ -915,7 +915,7 @@ h| コード h| 説明
 
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
@@ -952,7 +952,7 @@ h| コード h| 説明
 
 ====== CityFurniture_lodType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | CityFurniture_lodType.xml
 
@@ -965,7 +965,7 @@ h| コード h| 説明
 
 ====== CityFurnitureDetailAttribute_facilityType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | CityFurnitureDetailAttribute_facilityType.xml
 
