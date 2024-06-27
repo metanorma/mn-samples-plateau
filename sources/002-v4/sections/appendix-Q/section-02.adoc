@@ -52,10 +52,11 @@ image::images/481.webp.png[]
 
 地下街の各LODにおいて使用可能な地物型とその空間属性を表Q- 2に示す。
 
-[cols=8]
+[cols="3a,3a,^a,^a,^a,^a,^a,6a"]
 .地下街モデルに使用する地物型と空間属性
 |===
-^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| LOD4 ^h| 適用
+| 地物型 |  空間属性 |  LOD0 |  LOD1 |  LOD2 |  LOD3 |  LOD4 | 適用
+
 .8+| uro:UndergroundBuilding | |  ● |  ● |  ● |  ● |  ● |
 | lod0FootPrint |  |  |  |  |  |
 | lod0RoofEdge |  ● |  |  |  |  |
@@ -99,7 +100,8 @@ image::images/481.webp.png[]
 |  ■
 |  ■
 |  ■
-| BuildingPartを作成する場合は必須とする。 +
+| BuildingPartを作成する場合は必須とする。
+
 LOD4において、内壁面等はないが、建築確認申請では部屋となっている空間を区切る場合は必須とする。
 
 | lod2MultiSurface |  |  |  ■ |  |
@@ -210,7 +212,7 @@ LOD4は、BIMモデルからの変換を前提とした区分である。測量�
 
 標準製品仕様書では原則としてLOD4.0を採用する。ただし、ユースケースの必要に応じてLOD4.1又はLOD4.2を採用できる。
 
-[cols=5]
+[cols="3a,3a,^a,^a,^a"]
 .LOD4.0、LOD4.1及びLOD4.2の区分
 |===
 h| 地下街モデル（LOD4）に　含むべき地物 h| 対応する地物型 h| LOD4.0 h| LOD4.1 h| LOD4.2
