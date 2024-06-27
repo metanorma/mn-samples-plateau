@@ -89,7 +89,7 @@ LOD0では、Wtr:Waterbodyのみを使用し、水部の形状を線として表
 |===
 ^h| ^h| LOD1
 ^h| 取得例
-a|
+|
 image::images/506.webp.png[]
 
 ^h| 説明 | 水涯線により囲まれた面を取得する。中洲がある場合は、中洲を除いた面となる。
@@ -109,11 +109,11 @@ image::images/506.webp.png[]
 |===
 ^h| ^h| LOD2
 ^h| 取得例
-a|
+|
 image::images/507.webp.png[]
 
 ^h| 説明
-a| 水涯線に囲まれた水面（WaterSurface）及び水底面（WaterGroundSurface）を境界面とする立体を作成する。 +
+| 水涯線に囲まれた水面（WaterSurface）及び水底面（WaterGroundSurface）を境界面とする立体を作成する。 +
 水面は水部モデル（LOD1）の面に一致する。また、水底面は等深線、航空レーザ（ALB）又はマルチビーム測深の点群データを用いて再現した、水底の起伏を表す面となる。 +
 水部を管理区間や行政界など仮想的な面により区切りたい場合には、その境界面を閉鎖面（WaterClosureSurface）に区分する。
 
@@ -134,7 +134,7 @@ a| 水涯線に囲まれた水面（WaterSurface）及び水底面（WaterGround
 |===
 ^h| ^h| LOD3
 ^h| 取得例
-a|
+|
 image::images/508.webp.png[]
 
 ^h| 説明 | 水部モデル（LOD2）である、水涯線により囲まれた水面（WaterSurface）、水底面（WaterGroundSurface）及び閉鎖面（WaterClosureSurface）を境界面とする立体から、橋梁下部の橋脚部分など水中にある構造物を除いた立体となる。

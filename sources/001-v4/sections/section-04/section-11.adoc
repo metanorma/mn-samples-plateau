@@ -31,20 +31,20 @@
 
 橋梁モデル（LOD0）では、橋梁の形状を、線又は面により表現する。橋梁モデル（LOD0）の取得イメージを表 4-60に示す。
 
-[cols="5,9,9,9,9,9"]
+[cols="5a,9a,9a,9a,9a,9a"]
 .橋梁モデル（LOD0）の取得イメージ
 |===
 h| 5+^h| LOD0
 h| 取得例
-^a|
+^|
 image::images/231.webp.png[]
-^a|
+^|
 image::images/232.webp.png[]
-^a|
+^|
 image::images/233.webp.png[]
-^a|
+^|
 image::images/234.webp.png[]
-^a|
+^|
 image::images/235.webp.png[]
 
 h| 説明 | 道路橋は、地図情報レベル2500では、縁線を取得する。また、ひ開部を表示する。地図情報レベル500及び1000では、縁線のほか、高欄、橋脚及び親柱（橋の両端に高欄の続きとして設けられる高欄より大きな柱）の外周を取得する。
@@ -63,7 +63,7 @@ h| 説明 | 道路橋は、地図情報レベル2500では、縁線を取得す�
 
 橋梁モデル（LOD0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="11,11,11,11,11,25,20"]
+[cols="11a,11a,11a,11a,11a,25a,20a"]
 |===
 | | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -71,64 +71,64 @@ h| 説明 | 道路橋は、地図情報レベル2500では、縁線を取得す�
 .7+| ●
 .7+| Bridge
 | MultiCurve
-a|
+|
 * 地図情報レベル2500かつ橋床部の長さが2.5m以上で幅員が1.0m以上の道路橋。
 * 正射影を表示する。
-a|
+|
 * 縁線を取得する。
 * ひ開部を取得する。
 * 高さは0とする。
-.7+a|
+.7+|
 * LOD0は、数値地形図（DM）に含まれている全ての図形区分のデータを含む。（ひ開部を含む）
 * 道路橋は、地図情報レベル500及び1000では、MultiCurveと面MultiSurfaceとの組み合わせになる。
 
 | MultiCurve
 |
 * 地図情報レベル2500の鉄道橋。
-a|
+|
 * 縁線を取得する。
 * 高さは0とする。
 
 | MultiCurve
-a|
+|
 * 地図情報レベル500又は1000となる、道路橋又は鉄道橋。
 * 橋脚は真形を表示する。
-a|
+|
 * 縁線を取得する。
 * 橋脚を取得する。
 * 高さは0とする。
 
 | MultiCurve
-a|
+|
 * 徒橋。
 * 地図情報レベル2500かつ幅員1m未満の道路橋。
-a|
+|
 * 中心線を取得する。
 * ひ開部を取得する。
 * 高さは0とする。
 
 | MultiCurve
-a|
+|
 * 桟道橋。
 * 橋脚は真形を表示する。
-a|
+|
 * 縁線を取得する。
 * 橋脚の外周を取得する。
 * 高さは0とする。
 
 | MultiSurface
-a|
+|
 * 地図情報レベル500又は1000となる道路橋。
 * 高欄は真形を表示する。
-a|
+|
 * 高欄の外周を取得する。
 * 親柱を取得する。
 
 | MultiSurface
-a|
+|
 * 横断歩道橋、跨線橋、ペデストリアンデッキ。
 * 正射影を表示する。
-a|
+|
 * 構造物の外周を取得する。
 * 高さは0とする。
 
@@ -146,22 +146,22 @@ a|
 
 橋梁モデル（LOD1）では、橋梁の形状を、立体により表現する。橋梁モデル（LOD1）の取得イメージを表 4-61に示す。
 
-[cols="4,9,9,9,9"]
+[cols="4a,9a,9a,9a,9a"]
 .橋梁モデル（LOD1）の取得イメージ
 |===
 h| 4+^h| LOD1
 h| 取得例
-^a|
+^|
 image::images/236.webp.png[]
-^a|
+^|
 image::images/237.webp.png[]
-^a|
+^|
 image::images/238.webp.png[]
-^a|
+^|
 image::images/239.webp.png[]
 
 h| 説明
-a| 道路橋及び鉄道橋は、橋梁の縁線をつないだ外周を、地表面から一律の高さで下向きに押し出した立体とする。 +
+| 道路橋及び鉄道橋は、橋梁の縁線をつないだ外周を、地表面から一律の高さで下向きに押し出した立体とする。 +
 ひ開部は含めない。 +
 橋梁モデル（LOD0）に橋脚の外周が含まれている場合は、橋脚を含めた外周に一律の高さを与える。
 | 桟道橋は、縁線、斜面に接している側の道路縁及び橋脚の外周を含む桟道橋の外周を、地表面から一律の高さで下向きに押し出した立体とする。
@@ -174,7 +174,7 @@ a| 道路橋及び鉄道橋は、橋梁の縁線をつないだ外周を、地�
 
 橋梁モデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="19,19,19,24,19,60,40"]
+[cols="19a,19a,19a,24a,19a,60a,40a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -182,37 +182,37 @@ a| 道路橋及び鉄道橋は、橋梁の縁線をつないだ外周を、地�
 .4+| ●
 .4+| Bridge
 .4+| Solid
-a|
+|
 * 橋床部の長さが2.5m以上で幅員が1.0m以上となる道路橋
 * 鉄道橋
-a|
+|
 * 橋梁の縁線をつないだ外周を作成する。
 * 外周を地表面から一律の高さで下向きに押し出した立体を作成する。
-a|
+|
 * 一律の高さは、水面（陸上に設置されている場合は地表面）から橋梁の最高高さとする。
 * 橋梁の起点側と終点側の間での高さの変化（橋梁中央部の高さ）は表現しない。
 
 | 徒橋
-a|
+|
 * 徒橋の縁線をつないだ外周を取得する。
 * 外周を地表面から一律の高さで下向きに押し出した立体を作成する。
-a|
+|
 * 一律の高さは、水面（陸上に設置されている場合は地表面）から橋梁の最高高さとする。
 * 橋梁の起点側と終点側の間での高さの変化（橋梁中央部の高さ）は表現しない。
 
 | 桟道橋
-a|
+|
 * 道路縁、縁線及び橋脚の外周を含む桟道橋の外周を作成する。
 * 外周を地表面から一律の高さで下向きに押し出した立体を作成する。
-a|
+|
 * 一律の高さは、水面（陸上に設置されている場合は地表面）から橋梁の最高高さとする。
 * 橋梁の起点側と終点側の間での高さの変化（橋梁中央部の高さ）は表現しない。
 
 | 横断歩道橋、ペデストリアンデッキ、跨線橋
-a|
+|
 * 構造物の上方からの正射影の外周を取得する。
 * 外周を地表面から一律の高さで上向きに押し出した立体を作成する。
-a|
+|
 * 一律の高さは、最高高さを原則とする。
 * 使用する高さは、属性lod1HeightTypeにより明示する。
 * 最高高さには、手すりや屋根の高さが含まれる。
@@ -222,10 +222,10 @@ a|
 | BridgePart
 | Solid
 | 一つの橋梁を、品質の異なる複数の部分に分ける場合に必須とする。
-a|
+|
 * 上方からの正射影の外周を取得する。
 * 外周を地表面から一律の高さで下向きに押し出した立体を作成する。
-a|
+|
 * 一律の高さは、最高高さを原則とする。
 * 使用する高さは、属性lod1HeightTypeにより明示する。
 * 最高高さには、手すりや屋根の高さが含まれる。
@@ -252,7 +252,7 @@ a|
 .LOD2.0及びLOD2.1の区分
 |===
 h| その他の構造物モデル（LOD2）に含むべき地物 h| 対応するCityGMLの地物型 ^h| LOD2.0 ^h| LOD2.1
-a| 橋梁 +
+| 橋梁 +
 道路橋、鉄道橋及び桟道橋の場合は、主桁と床版を含む。 +
 それ以外の橋梁の場合は、上部工（床版及び主桁）、階段、及び踊り場を含む。
 | Bridge
@@ -261,50 +261,50 @@ a| 橋梁 +
 
 | 橋梁部分
 | BridgePart
-^a| ■ +
+^| ■ +
 一つの橋梁を、主題属性の異なる複数の部分に分ける場合は必須とする。
-^a| ■ +
+^| ■ +
 一つの橋梁を、主題属性の異なる複数の部分に分ける場合は必須とする。
 
 | 屋根面
 | RoofSurface
 |
-^a| ■ +
+^| ■ +
 屋根がある場合は必須とする。
 
 | 底面
 | GroundSurface
 |
-^a| ■ +
+^| ■ +
 接地している部分がある場合は必須とする。
 
 | 外壁面 | WallSurface ^| ^| ●
 | 閉鎖面
 | ClosureSurface
 ^|
-^a| ■ +
+^| ■ +
 BridgePartを使用する場合は必須とする。
 
 | 屋外床面
 | OuterFloorSurface
-^a| ■ +
+^| ■ +
 屋根が無い場合は必須とする。
-^a| ■ +
+^| ■ +
 屋根が無い場合は必須とする。
 
 | 屋外天井面
 | OuterCeilingSurface
 |
-^a| ■ +
+^| ■ +
 WallSurfaceとの区分が必要な場合は必須とする。
 
-a| 構造上不可欠な要素 +
+| 構造上不可欠な要素 +
 トラス、アーチ、パイロン、吊材、ケーブル
 | BridgeConstructionElement
 |
 ^| 〇
 
-a| 屋外付属物 +
+| 屋外付属物 +
 高欄、手すり、庇、庇の柱。道路橋・鉄道橋の場合は、階段、踊り場スロープを含む。
 | BridgeInstallation
 |
@@ -322,38 +322,38 @@ image::images/240.webp.png[]
 
 橋梁モデル（LOD2）の取得イメージを表 4-63に示す。
 
-[cols="4,18,9,9"]
+[cols="4a,18a,9a,9a"]
 .橋梁モデル（LOD2）の取得イメージ
 |===
 h| 3+^h| LOD2.0
 h| 取得例
-a|
+|
 image::images/241.webp.png[]
-2+a|
+2+|
 image::images/242.webp.png[]
 
 h| 説明
 | 道路橋、桟道橋及び鉄道橋は、床版の外周を、高さをもった面として表現する。
-2+a| 横断歩道橋、ペデストリアンデッキ及び跨線橋は、本体（上部工、階段及び踊り場）の外周を取得し、高さをもった面として表現する。 +
+2+| 横断歩道橋、ペデストリアンデッキ及び跨線橋は、本体（上部工、階段及び踊り場）の外周を取得し、高さをもった面として表現する。 +
 階段の個々の段は取得せず、下端と上端を結んだ平面として表現する。
 
 h| 3+^h| LOD2.1
 h| 取得例
-a|
+|
 image::images/243.webp.png[]
-a|
+|
 image::images/244.webp.png[]
-a|
+|
 image::images/245.webp.png[]
 
 h| 説明
-a| 道路橋、桟道橋及び鉄道橋は、床版及び主桁によって、厚みと高さをもった立体として表現する。 +
+| 道路橋、桟道橋及び鉄道橋は、床版及び主桁によって、厚みと高さをもった立体として表現する。 +
 橋脚などの構造上不可欠な部材（BuildingConstructionElement）を表現してもよい。 +
 上図では、橋脚を表現している。
-a| 横断歩道橋、ペデストリアンデッキ及び跨線橋は、本体（上部工、階段及び踊り場）を、それぞれを厚みと高さを持った立体として表現する。 +
+| 横断歩道橋、ペデストリアンデッキ及び跨線橋は、本体（上部工、階段及び踊り場）を、それぞれを厚みと高さを持った立体として表現する。 +
 上部工、階段及び踊り場は分けて取得できる。 +
 階段の個々の段は取得せず、下端と上端を結んだ面として表現する。
-a| 横断歩道橋等に本体と一体的な屋根があった場合は、境界面を分けて取得する。上図では、上部工が屋根と壁に囲まれていたため、屋根（RoofSurface）及び外壁面（WallSurface）及び下面（OuterCeilingSurface）に境界線を分けて取得している。 +
+| 横断歩道橋等に本体と一体的な屋根があった場合は、境界面を分けて取得する。上図では、上部工が屋根と壁に囲まれていたため、屋根（RoofSurface）及び外壁面（WallSurface）及び下面（OuterCeilingSurface）に境界線を分けて取得している。 +
 橋脚などの構造上重要な部材（BuildingConstructionElement）を表現してもよい。上図では、橋脚を表現している。
 
 |===
@@ -362,7 +362,7 @@ a| 横断歩道橋等に本体と一体的な屋根があった場合は、境�
 
 橋梁モデル（LOD2.0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7,7,7,7,16,20,16"]
+[cols="7a,7a,7a,7a,16a,20a,16a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -373,7 +373,7 @@ a| 横断歩道橋等に本体と一体的な屋根があった場合は、境�
 | 道路橋、桟道橋、鉄道橋、横断歩道橋、ペデストリアンデッキ、徒橋、跨線橋
 |
 * 屋外床面（OuterFloorSurface）、屋根面（RoofSurface）及び外壁面（WallSurface）の集まりとして作成する。
-a|
+|
 * 道路橋、桟道橋及び鉄道橋は、床版及び主桁を対象とする。
 * 横断歩道橋、ペデストリアンデッキ、徒橋、跨線橋は、上部工（床版及び主桁）、階段、及び踊り場を対象とする。
 * 屋根がある場合は、LOD2.1のみとする。
@@ -398,7 +398,7 @@ a|
 | OuterFloorSurface
 | MultiSurface
 | 屋根が存在しない場合は必須とする。
-a|
+|
 
 【道路橋、桟道橋及び鉄道橋の場合】
 
@@ -415,7 +415,7 @@ a|
 
 | LOD2.0
 |
-a| Bridge +
+| Bridge +
 Construction +
 Element
 |
@@ -436,7 +436,7 @@ Element
 
 橋梁モデル（LOD2.1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7,7,7,7,16,20,16"]
+[cols="7a,7a,7a,7a,16a,20a,16a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -447,7 +447,7 @@ Element
 | 道路橋、鉄道橋、桟道橋、横断歩道橋、ペデストリアンデッキ、徒橋、跨線橋
 |
 * 屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）、屋外床面（OuterFloorSurface）、屋外天井面（OuterCeilingSurface）及び閉鎖面（ClosureSurface）を境界面とする立体を作成する。
-a|
+|
 * 道路橋、桟道橋及び鉄道橋は、床版及び主桁を対象とする。
 * 横断歩道橋、ペデストリアンデッキ、徒橋、跨線橋は、上部工、階段、及び踊り場を対象とする。
 
@@ -458,7 +458,7 @@ a|
 | 一つの橋梁を、主題属性の異なる複数の部分に分ける場合に必須とする。
 |
 * 屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）、屋外床面（OuterFloorSurface）、屋外天井面（OuterCeilingSurface）及び閉鎖面（ClosureSurface）を境界面とする立体を作成する。
-a|
+|
 * 取得方法が異なる場合は必須とする。
 * 本体を構造上分けて作成する場合は任意とする。（横断歩道橋の場合は階段、スロープ、踊り場を分ける場合に使用する）
 * 階段の段は表現しない。
@@ -469,10 +469,10 @@ a|
 | RoofSurface
 | MultiSurface
 | 屋根が存在する場合に必須とする。
-a|
+|
 * 屋根の上方からの正射影の外周を取得し、棟（屋根の頂部であり、屋根の分水嶺となる箇所）及び谷（屋根と屋根のつなぎの谷状の部分）で区切る。
 * 区切った面の各頂点に屋根の高さを与える。
-a|
+|
 * 屋根の棟及び谷で区切ることにより、屋根の傾斜や向きを再現する。
 * 上部工、階段、踊り場の全体が屋根で覆われている場合を対象とする。庇は、BridgeInstallationとして取得する。
 * 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
@@ -482,7 +482,7 @@ a|
 | GroundSurface
 | MultiSurface
 |
-a|
+|
 * 橋梁の側面と、地表との交線により囲まれた面を取得する。
 * 面の各頂点に、地表面の高さを与える。
 |
@@ -492,7 +492,7 @@ a|
 | WallSurface
 | MultiSurface
 |
-a|
+|
 
 【道路橋、桟道橋及び鉄道橋の場合】
 
@@ -519,19 +519,19 @@ a|
 | OuterFloorSurface
 | MultiSurface
 | 屋根が存在しない場合に必須とする。
-a|
+|
 * 床版の上方からの正射影の外周を取得する。
 * 外周の各頂点に床版の高さを与える。
 |
 
 .2+| LOD2.1
 .2+| 〇
-.2+a| Bridge +
+.2+| Bridge +
 Construction +
 Element
 | MultiSurface
 | トラス、アーチ、パイロン
-a|
+|
 
 【道路橋、鉄道橋の場合】
 
@@ -543,7 +543,7 @@ a|
 
 | MultiSurface
 | 吊材、ケーブル
-a|
+|
 * 同一の支間に存在する吊材、同一のパイロンに定着されたケーブルを包含する面として取得する。
 * 面の各頂点に構造物の高さを与える。
 |
@@ -553,9 +553,9 @@ a|
 | 〇
 | BridgeInstallation
 | MultiSurface
-a| 高欄、手すり、庇、庇の柱。 +
+| 高欄、手すり、庇、庇の柱。 +
 ただし、道路橋・鉄道橋の場合は、階段、踊り場スロープを含む。
-a|
+|
 * 構造物の外形（外側から見える形）を構成する面を取得する
 * 面の各頂点に構造物の高さを与える。ただし、階段は上端と下端をつなぐスロープとして表現する。
 |
@@ -574,10 +574,10 @@ a|
 
 橋梁モデル（LOD3）では、橋梁の形状を、主要な部分の外形を構成する特徴点から構成する面を境界面とする立体、又は面の集まりとして表現する。橋梁モデル（LOD3）に含むべき地物を表 4-64に示す。
 
-[cols="3,3,6,8"]
+[cols="3a,3a,6a,8a"]
 .橋梁モデル（LOD3）に含むべき地物と対応するCityGMLの地物型
 |===
-2+a| その他の構造物モデル（LOD3） +
+2+| その他の構造物モデル（LOD3） +
 に含むべき地物
 h| 対応するCityGMLの地物型
 ^h| LOD3
@@ -585,31 +585,31 @@ h| 対応するCityGMLの地物型
 2+| 橋梁 | Bridge ^| ●
 2+| 橋梁部分
 | BridgePart
-^a| ■ +
+^| ■ +
 一つの橋梁を主題属性の異なる複数の部分に分ける場合は必須とする。 +
 横断歩道橋・ペデストリアンデッキでは必須とする。
 
 2+| 屋根面
 | RoofSurface
-^a| ■ +
+^| ■ +
 屋根がある場合は必須とする。
 
 2+| 底面 | GroundSurface ^| ●
 2+| 外壁面 | WallSurface ^| ●
 2+| 閉鎖面
 | ClosureSurface
-^a| ■ +
+^| ■ +
 BridgePartを使用する場合は必須とする。 +
 扉のない出入口がある場合は必須とする。
 
 2+| 屋外床面
 | OuterFloorSurface
-^a| ■ +
+^| ■ +
 屋根が無い場合は必須とする。
 
 2+| 屋外天井面
 | OuterCeilingSurface
-^a| ■ +
+^| ■ +
 WallSurfaceとの区分が必要な場合に必須とする。
 
 .3+| 構造上不可欠な要素 | トラス、アーチ、パイロン | BridgeConstructionElement ^| ●
@@ -627,14 +627,14 @@ WallSurfaceとの区分が必要な場合に必須とする。
 ■:: 条件付必須
 〇:: 任意（ユースケースに応じて要否を決定してよい）
 
-[cols="2,9,9"]
+[cols="2a,9a,9a"]
 .橋梁モデル（LOD3）の取得イメージ
 |===
 h| 2+^h| LOD3
 h| 取得例
-a|
+|
 image::images/246.webp.png[]
-a|
+|
 image::images/247.webp.png[]
 
 h| 説明 | 道路橋及び鉄道橋の場合は、床版及び主桁以外の構造上不可欠な部材をBridgeConstructionElementとして取得する。上図の例では橋脚が該当する。それ以外の橋梁の外観を構成する部材をBridgeInstallationとして取得する。上図の例では高欄が該当する。
@@ -642,13 +642,13 @@ h| 説明 | 道路橋及び鉄道橋の場合は、床版及び主桁以外の�
 跨線橋の場合は、道路橋及び鉄道橋と同様に、床版及び主桁以外の構造上不可欠な部材をBridgeConstructionElementとして取得する。上図の例では橋脚が該当する。それ以外の橋梁の外観を構成する部材をBridgeInstallationとして取得する。上図の例では高欄が該当する。
 h| 2+^h| LOD3
 h| 取得例
-a|
+|
 image::images/248.webp.png[]
-a|
+|
 image::images/249.webp.png[]
 
 h| 説明
-a| ケーブル橋の場合、パイロン、ケーブル及び吊材を構造上不可欠な部材（BuildingConstructionElement）として取得する。 +
+| ケーブル橋の場合、パイロン、ケーブル及び吊材を構造上不可欠な部材（BuildingConstructionElement）として取得する。 +
 この時、吊材は一本ずつ取得せず、吊材が存在する範囲をまとめて一つの面として取得してもよい。
 | 横断歩道橋、ペデストリアンデッキ及び跨線橋の場合は、本体（上部工、階段及び踊り場）以外の構造上不可欠な部材をBridgeConstructionElementとして取得する。上図の例では橋脚が該当する。それ以外の橋梁の外観を構成する部材をBridgeInstallationとして取得する。上図の例では高欄が該当する。横断歩道橋、ペデストリアンデッキ及び跨線橋の本体（上部工、階段及び踊り場）に屋根がある場合、庇はBridgeInstallationとして取得する。
 
@@ -658,7 +658,7 @@ a| ケーブル橋の場合、パイロン、ケーブル及び吊材を構造�
 
 橋梁モデル（LOD3）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7,7,7,7,16,20,16"]
+[cols="7a,7a,7a,7a,16a,20a,16a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -669,7 +669,7 @@ a| ケーブル橋の場合、パイロン、ケーブル及び吊材を構造�
 | 道路橋、鉄道橋、桟道橋、横断歩道橋、ペデストリアンデッキ、徒橋、跨橋橋
 |
 * 屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）、屋外床面（OuterFloorSurface）、屋外天井面（OuterCeilingSurface）及び閉鎖面（ClosureSurface）の集まり、又は、これらを境界面とする立体を作成する。
-a|
+|
 * 道路橋、桟道橋及び鉄道橋は、床版及び主桁を対象とする。
 * 横断歩道橋、ペデストリアンデッキ、徒橋、跨線橋は、上部工、階段、及び踊り場を対象とする。
 
@@ -677,12 +677,12 @@ a|
 | ■
 | BridgePart
 | Solid又はMultiSurface
-a|
+|
 * 一つの橋梁を、主題属性の異なる複数の部分に分ける場合に必須とする。
 * 階段やスロープのある横断歩道橋、ペデストリアンデッキ及び跨線橋の場合は必須とする。
 |
 * 屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）、屋外床面（OuterFloorSurface）、屋外天井面（OuterCeilingSurface）及び閉鎖面（ClosureSurface）を境界面とする立体を作成する。
-a|
+|
 * 取得方法が異なる場合は必須とする。
 * 本体を構造上分けて作成したい場合は任意とする。
 * 横断歩道橋、ペデストリアンデッキ及び跨線橋の場合は階段、スロープ、踊り場を分ける。
@@ -694,10 +694,10 @@ a|
 | RoofSurface
 | MultiSurface
 | 屋根が存在する場合
-a|
+|
 * 屋根の外周を取得し、棟（屋根の頂部であり、屋根の分水嶺となる箇所）及び谷（屋根と屋根のつなぎの谷状の部分）で区切る。
 * 区切った面の各頂点に屋根の高さを与える。
-a|
+|
 * 屋根の棟及び谷で区切ることにより、屋根の傾斜や向きを再現する。
 * 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 
@@ -706,7 +706,7 @@ a|
 | GroundSurface
 | MultiSurface
 |
-a|
+|
 * 橋梁の側面と、地表との交線により囲まれた面を取得する。
 * 面の各頂点に、地表面の高さを与える。
 |
@@ -724,7 +724,7 @@ a|
 | OuterCeilingSurface
 | MultiSurface
 | WallSurfaceとの区分が必要な場合に必須とする。
-a|
+|
 * 橋梁の床版・主桁部分の外壁のうち、下向きとなる面の外周を取得する。
 * 面の各頂点に、外壁の高さを与える。
 |
@@ -734,7 +734,7 @@ a|
 | OuterFloorSurface
 | MultiSurface
 | 屋根が存在しない場合
-a|
+|
 * 上部工の外周を取得する。
 * 床版の外周を取得する。
 * 外周の各頂点に床版の高さを与える。
@@ -742,12 +742,12 @@ a|
 
 .3+| LOD3
 .3+| ●
-.3+a| Bridge +
+.3+| Bridge +
 Construction +
 Element
 | MultiSurface
 | トラス、アーチ、パイロン
-a|
+|
 
 【道路橋、鉄道橋の場合】
 
@@ -759,7 +759,7 @@ a|
 
 | MultiSurface
 | 吊材、ケーブル
-a|
+|
 * 同一の支間に存在する吊材、同一のパイロンに定着されたケーブルを包含する面として取得する。
 * 面の各頂点に構造物の高さを与える。
 |
@@ -767,7 +767,7 @@ a|
 
 | MultiSurface
 | 橋脚、橋台
-a|
+|
 * 構造物の外形（外側から見える形）を構成する面を取得する。
 * 面の各頂点に構造物の高さを与える。
 |
@@ -778,13 +778,13 @@ a|
 .2+| BridgeInstallation
 .2+| MultiSurface
 | 高欄、地覆、親柱、庇、庇の柱、エレベータ、エスカレータ、手すり
-a|
+|
 * 屋外付属物の外形（外側から見える形）を構成する面を取得する。
 * 面の各頂点に屋外付属物の高さを与える。
 |
 
 | 階段、踊り場、スロープ
-a|
+|
 
 【道路橋の場合】
 
@@ -819,20 +819,20 @@ a|
 
 橋梁モデル（LOD4）に含むべき地物を表 4-66に示す。
 
-[cols="3,3,6,8"]
+[cols="3a,3a,6a,8a"]
 .橋梁モデル（LOD4）に含むべき地物
 |===
 2+h| 橋梁モデル（LOD4）に含むべき地物 h| 対応するCityGMLの地物型 ^h| LOD4
 2+| 橋梁 | Bridge ^| ●
 2+| 橋梁部分
 | BridgePart
-^a| ■ +
+^| ■ +
 一つの橋梁を主題属性の異なる複数の部分に分ける場合は必須とする。 +
 横断歩道橋・ペデストリアンデッキは必須とする。
 
 2+| 屋根面
 | RoofSurface
-^a| ■ +
+^| ■ +
 屋根がある場合は必須とする。
 
 2+| 外壁面 | WallSurface ^| ●
@@ -840,7 +840,7 @@ a|
 2+| 屋外天井面 | OuterCeilingSurface ^| ●
 2+| 屋外床面
 | OuterFloorSurface
-^a| ■ +
+^| ■ +
 屋根が無い場合は必須とする。
 
 2+| 構造上不可欠な要素 | BridgeConstructionElement ^| ●
@@ -871,9 +871,9 @@ a|
 |===
 h| CityGMLの地物型 h| 対応付けるIFCのクラス h| 説明
 | Bridge
-a| IfcBridgePart, +
+| IfcBridgePart, +
 IfcElementAssembly
-a|
+|
 IfcBridgePartのうち、以下に区分されるものを対象とする。
 
 * DECK, DECK_SEGMENT
@@ -883,8 +883,8 @@ IfcElementAssemblyのうち、以下に区分されるものを対象とする�
 * DECK
 
 | BridgeConstructionElement
-a| IfcBridgePart, IfcElementAssembly
-a| IfcBridgePartのうち、以下に区分されるものを対象とする。
+| IfcBridgePart, IfcElementAssembly
+| IfcBridgePartのうち、以下に区分されるものを対象とする。
 
 * ABUTMENT, FOUNDATION, PIER, PIER_SEGMENT, PYLON, SUBSTRUCTURE, SUPERSTRUCTURE, SURFACESTRUCTURE, IfcElementAssemblyのうち、以下に区分されるものを対象とする。
 
@@ -906,7 +906,7 @@ image::images/250.webp.png[]
 
 橋梁モデル（LOD4）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7,7,7,7,16,20,16"]
+[cols="7a,7a,7a,7a,16a,20a,16a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -914,7 +914,7 @@ image::images/250.webp.png[]
 | ●
 | Bridge
 | MultiSurface
-a| IfcBridgePartのうち、DECK又はDECK_SEGMENTに区分されるもの。 +
+| IfcBridgePartのうち、DECK又はDECK_SEGMENTに区分されるもの。 +
 IfcElementAssemblyのうち、DECKに区分されるもの。
 |
 * 構成要素となる全ての部材の形状を統合し、面の集まりとして表現する。
@@ -924,7 +924,7 @@ IfcElementAssemblyのうち、DECKに区分されるもの。
 | ■
 | BridgePart
 | MultiSurfce
-a|
+|
 * 一つの橋梁を、主題属性の異なる複数の部分に分ける場合に必須とする。
 * 階段やスロープのある横断歩道橋、ペデストリアンデッキ及び跨線橋の場合必須とする。
 |
@@ -940,7 +940,7 @@ a|
 | RoofSurface
 | MultiSurface
 | 屋根が存在する場合
-a|
+|
 * 屋根の外周を取得し、棟（屋根の頂部であり、屋根の分水嶺となる箇所）及び谷（屋根と屋根のつなぎの谷状の部分）で区切る。
 * 区切った面の各頂点に屋根の高さを与える。
 |
@@ -951,7 +951,7 @@ a|
 | GroundSurface
 | MultiSurface
 |
-a|
+|
 * 橋梁の側面と、地表との交線により囲まれた面を取得する。
 * 面の各頂点に、地表面の高さを与える。
 |
@@ -969,7 +969,7 @@ a|
 | OuterCeilingSurface
 | MultiSurface
 |
-a|
+|
 * 橋梁の床版・主桁部分の外壁のうち、下向きとなる面の外周を取得する。
 * 面の各頂点に、外壁の高さを与える。
 |
@@ -979,7 +979,7 @@ a|
 | OuterFloorSurface
 | MultiSurface
 | 屋根が存在しない場合
-a|
+|
 * 上部工の外周を取得する。
 * 床版の外周を取得する。
 * 外周の各頂点に床版の高さを与える。 +
@@ -990,9 +990,9 @@ a|
 | ●
 | BridgeConstructionElement
 | MultiSurface
-a| IfcBridgePart +
+| IfcBridgePart +
 IfcElementAssembly (ARCH, BEAM_GRID, GIRDER, REINFORCEMENT_UNIT, RIGID_FRAME, SLAB_FIELD, TRUSS, ABUTMENT, PIAR, PYLON, CROSS_BRACING)
-a|
+|
 * 構造物の外形（外側から見える形）を構成する面を取得する。
 * 面の各頂点に構造物の高さを与える。
 |
@@ -1003,7 +1003,7 @@ a|
 | BridgeInstallation
 | MultiSurface
 | IfcElementAssembly (ACCESSORY＿ASSEMBLY)
-a|
+|
 * 屋外付属物の外形（外側から見える形）を構成する面を取得する。
 * 面の各頂点に屋外付属物の高さを与える。
 | 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
@@ -1029,7 +1029,7 @@ a|
 | InteriorWallSurface
 | MultiSurface
 | 全てを対象とする。
-a|
+|
 * 部屋（Room）を区切る内壁の角を結ぶ外周を取得する。
 * 角となる場所で区切る。
 |
@@ -1044,10 +1044,10 @@ a|
 | IntBridgeInstallation
 | MultiSurface
 | 階段、スロープ、エスカレータ、輸送設備（エレベータ、エスカレータ、動く歩道）、柱、デッキ、ステージ、手すり、パネル、梁
-a|
+|
 * 屋内付属物の外形（外側から見える形）を構成する面を取得する。
 * 面の各頂点に屋内付属物の高さを与える。
-a|
+|
 * 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 * 建築物モデル（LOD4）と同様とする。
 
@@ -1060,7 +1060,7 @@ a|
 | InteriorWallSurface
 | MultiSurface
 | 全てを対象とする。
-a|
+|
 * 部屋（Room）を区切る内壁の角を結ぶ外周を取得する。
 * 角となる場所で区切る。
 |
@@ -1075,7 +1075,7 @@ a|
 | BridgeFurniture
 |
 |
-a|
+|
 * 可動設備の外形（外側から見える形）を構成する面を取得する。
 * 面の各頂点に可動設備の高さを与える。
 | 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
@@ -1112,7 +1112,7 @@ a|
 ^| ■
 ^| ■
 ^| ■
-a| 一つの橋梁を複数に分け、それぞれに属性を与えたい場合に必須とする。 +
+| 一つの橋梁を複数に分け、それぞれに属性を与えたい場合に必須とする。 +
 横断歩道橋、ペデストリアンデッキ及び跨線橋の場合は階段、スロープ、踊り場を分ける。
 
 | brid:lod1Solid | ^| ■ | | | | BridgePartを使用する場合は必須とする。
@@ -1177,7 +1177,7 @@ a| 一つの橋梁を複数に分け、それぞれに属性を与えたい場�
 |
 |
 ^| ■
-a| IntBridgeInstallationを作成する場合は必須とする。 +
+| IntBridgeInstallationを作成する場合は必須とする。 +
 MultiSufaceを基本とする。
 
 .2+| brid:BridgeFurniture | | | | | ^| 〇 |
@@ -1187,7 +1187,7 @@ MultiSufaceを基本とする。
 |
 |
 ^| ■
-a| IntBridgeInstallationを作成する場合は必須とする。 +
+| IntBridgeInstallationを作成する場合は必須とする。 +
 MultiSufaceを基本とする。
 
 |===
@@ -1218,10 +1218,10 @@ image::images/252.svg[]
 
 ====== brid:Bridge
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a|
+2+|
 
 橋梁。
 
@@ -1254,24 +1254,24 @@ h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 橋梁と地�
 h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 橋梁と水面との相対的な位置関係。
 | brid:class
 | gml:CodeType [0..1]
-a| 橋梁の形態による区分。コードリスト（Bridge_class.xml）より選択する。 +
+| 橋梁の形態による区分。コードリスト（Bridge_class.xml）より選択する。 +
 多重度は任意となっているが、運用上必須とする。
 
 | brid:function
 | gml:CodeType [0..*]
-a| 橋梁の主たる機能による区分。コードリスト（Bridge_function.xml）より選択する。 +
+| 橋梁の主たる機能による区分。コードリスト（Bridge_function.xml）より選択する。 +
 多重度は任意となっているが、運用上必須とする。
 
 h| (brid:usage) | gml:CodeType [0..*] | 橋梁の用途。brid:functionで指定された機能と異なる場合に実際の用途を示すためにこの属性を用いる。
 | brid:yearOfConstruction
 | xs:gYear [0..1]
-a| 橋梁が建築された年度。完成した年度とする。 +
+| 橋梁が建築された年度。完成した年度とする。 +
 多重度は任意となっているが、運用上必須とする。
 
 | brid:yearOfDemolition | xs:gYear [0..1] | 橋梁が解体された年度。
 | brid:isMovable
 | xs:boolean [0..1]
-a| 可動橋か否かの別。 +
+| 可動橋か否かの別。 +
 1：可動橋である +
 0：可動橋ではない
 
@@ -1286,7 +1286,7 @@ h| (gen:measureAttribute) | gen:measureAttribute[0..*] | 単位付き数値型�
 h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
 | brid:lod1Solid
 | gml:Solid [0..1]
-a| 橋梁の外周に一律の高さを与えた立体。 +
+| 橋梁の外周に一律の高さを与えた立体。 +
 一律の高さは、水面（陸上に設置されている場合は地表面）から橋梁の最高高さとする。 +
 橋梁の起点側と終点側の間での高さの変化（橋梁中央部の高さ）は表現しない。
 
@@ -1294,12 +1294,12 @@ h| (brid:lod1MultiSurface) | gml:MultiSurface [0..1] | 橋梁の外形を構成�
 h| (brid:lod1TerrainIntersection) | gml:MutiCurve [0..1] | LOD1における橋梁と地形との交線。
 | brid:lod2Solid
 | gml:Solid [0..1]
-a| 橋梁の主要構造の外形を示す立体。この時の立体は外壁等の、境界面により構成される。 +
+| 橋梁の主要構造の外形を示す立体。この時の立体は外壁等の、境界面により構成される。 +
 橋梁をbrid:BridgePartの集まりとして記述する場合、この空間属性は空となる。
 
 | brid:lod2MultiSurface
 | gml:MultiSurface [0..1]
-a| 橋梁の主要構造の外形を構成する面の集まり。 +
+| 橋梁の主要構造の外形を構成する面の集まり。 +
 面の集まりが立体の境界としての要件を満たすことが出来ない場合に、LOD2の幾何オブジェクトとして使用する。 +
 橋梁をbrid:BridgePartの集まりとして記述する場合、この空間属性は空となる。
 
@@ -1311,24 +1311,24 @@ h| (brid:lod2TerrainIntersection) | gml:MutiCurve [0..1] | LOD2における橋�
 | brid:boundedBy | brid:_BoundarySurface [0..*] | 橋梁を構成する外壁面（brid:WallSurface）や屋外床面（brid:OuterFloorSurface）等の境界面。
 | brid:lod3Solid
 | gml:Solid [0..1]
-a| 橋梁の主要構造の外形を示す立体。 +
+| 橋梁の主要構造の外形を示す立体。 +
 この時の立体は、外壁等を区分する境界面及び開口部の面（境界面の内空として作成されている場合）により構成される。
 
 | brid:lod3MultiSurface
 | gml:MultiSurface [0..1]
-a| 橋梁の主要構造の外形を構成する面の集まり。 +
+| 橋梁の主要構造の外形を構成する面の集まり。 +
 面の集まりが立体の境界としての要件を満たすことが出来ない場合に、LOD3の幾何オブジェクトとして使用する。
 
 h| (brid:lod3MultiCurve) | gml:MutiCurve [0..1] | 橋梁の立体表現に加え、線状の表現を行う場合に使用する。これらの表現に意味を持たせる場合は、brid:BridgeInstallationやbrid:BridgeConstructionElementを使用する。
 h| (brid:lod3TerrainIntersection) | gml:MutiCurve [0..1] | LOD3における橋梁と地形との交線。
 | brid:lod4Solid
 | gml:Solid [0..1]
-a| 橋梁の詳細構造の外形を示す立体。 +
+| 橋梁の詳細構造の外形を示す立体。 +
 この時の立体は、外壁等を区分する境界面及び開口部の面（境界面の内空として作成されている場合）により構成される。
 
 | brid:lod4MultiSurface
 | gml:MultiSurface [0..1]
-a| 橋梁の外形を構成する面の集まり。 +
+| 橋梁の外形を構成する面の集まり。 +
 面の集まりが立体の境界としての要件を満たすことが出来ない場合に、LOD4の幾何オブジェクトとして使用する。
 
 h| (brid:lod4MultiCurve) | gml:MutiCurve [0..1] | 橋梁の立体表現に加え、線状の表現を行う場合に使用する。
@@ -1342,13 +1342,13 @@ h| (brid:address) | core:Address [0..*] | 橋梁に紐づけられた住所。
 | uro:bridRiskAssessmentAttribute | uro:ConstructionRiskAssessment Attribute [0..1] | 橋梁の損傷に関する情報。
 | uro:bridDisasterRiskAttribute
 | uro:DisasterRiskAttribute [0..*]
-a| 橋梁の災害リスクに関する情報。 +
+| 橋梁の災害リスクに関する情報。 +
 uro:DisasterRiskAttributeの下位型を使用して記述する。
 
 | uro:bridKeyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | 属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
 | uro:bridDataQualityAttribute
 | uro:DataQualityAttribute [0..1]
-a| 作成するデータの品質に関する情報。原則必須とする。 +
+| 作成するデータの品質に関する情報。原則必須とする。 +
 brid:BridgePartが品質属性をもつ場合は、省略できる。
 
 | uro:bridFacilityTypeAttribute | uro:FacilityTypeAttribute [0..*] | 特定分野における施設の分類情報。
@@ -1360,10 +1360,10 @@ brid:BridgePartが品質属性をもつ場合は、省略できる。
 
 ====== brid:BridgePart
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 橋梁の一部。一つの橋梁を場所により異なる方法で取得する場合は必須とする。 +
+2+| 橋梁の一部。一つの橋梁を場所により異なる方法で取得する場合は必須とする。 +
 本体を構造上分けて作成する場合は任意とする。 +
 横断歩道橋の場合は階段、スロープ、踊り場を分ける場合に使用する。ただし、道路橋、桟道橋及び鉄道橋の場合、階段、スロープ、踊り場は付属物（BridgeInstallation）となる。 +
 この地物型を使用する場合、一つのbrid:Bridgeには、複数のbrid:BridgePartが存在しなければならない。
@@ -1381,12 +1381,12 @@ h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 橋梁の部�
 h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 橋梁の部分と水面との相対的な位置関係。
 | brid:class
 | gml:CodeType [0..1]
-a| 橋梁の形態による区分。コードリスト（Bridge_class.xml）より選択する。 +
+| 橋梁の形態による区分。コードリスト（Bridge_class.xml）より選択する。 +
 多重度は任意となっているが、運用上必須とする。
 
 | brid:function
 | gml:CodeType [0..*]
-a| 橋梁の主たる機能による区分。コードリスト（Bridge_function.xml）より選択する。 +
+| 橋梁の主たる機能による区分。コードリスト（Bridge_function.xml）より選択する。 +
 多重度は任意となっているが、運用上必須とする。
 
 h| (brid:usage) | gml:CodeType [0..*] | 橋梁の部分の用途。brid:functionで指定された機能と異なる場合に実際の用途を示すためにこの属性を用いる。
@@ -1394,7 +1394,7 @@ h| (brid:usage) | gml:CodeType [0..*] | 橋梁の部分の用途。brid:function
 | brid:yearOfDemolition | xs:gYear [0..1] | 橋梁の部分が解体された年。
 | brid:isMovable
 | xs:boolean [0..1]
-a| 可動橋か否かの別。 +
+| 可動橋か否かの別。 +
 1：可動橋である +
 0：可動橋ではない
 
@@ -1409,7 +1409,7 @@ h| (gen:measureAttribute) | gen:measureAttribute[0..*] | 単位付き数値型�
 h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
 | brid:lod1Solid
 | gml:Solid [0..1]
-a| 橋梁の外周に一律の高さを与えた立体。 +
+| 橋梁の外周に一律の高さを与えた立体。 +
 一律の高さは、水面（陸上に設置されている場合は地表面）から橋梁の最高高さとする。 +
 橋梁の起点側と終点側の間での高さの変化（橋梁中央部の高さ）は表現しない。
 
@@ -1418,7 +1418,7 @@ h| (brid:lod1TerrainIntersection) | gml:MutiCurve [0..1] | LOD1における橋�
 | brid:lod2Solid | gml:Solid [0..1] | 橋梁の部分の主要構造の外形を示す立体。この時の立体は外壁等の、境界面により構成される。
 | brid:lod2MultiSurface
 | gml:MultiSurface [0..1]
-a| 橋梁の部分の主要構造の外形を構成する面の集まり。 +
+| 橋梁の部分の主要構造の外形を構成する面の集まり。 +
 面の集まりが立体の境界としての要件を満たすことが出来ない場合に、LOD2の幾何オブジェクトとして使用する。
 
 h| (brid:lod2MultiCurve) | gml:MutiCurve [0..1] | 橋梁の部分の立体表現に加え、線状の表現を行う場合に使用する。
@@ -1429,24 +1429,24 @@ h| (brid:lod2TerrainIntersection) | gml:MutiCurve [0..1] | LOD2における橋�
 | brid:boundedBy | brid:_BoundarySurface [0..*] | 橋梁の部分を構成する外壁面（brid:WallSurface）や屋外床面（brid:OuterFloorSurface）等の境界面。
 | brid:lod3Solid
 | gml:Solid [0..1]
-a| 橋梁の部分の主要構造の外形を示す立体。 +
+| 橋梁の部分の主要構造の外形を示す立体。 +
 この時の立体は、外壁等を区分する境界面及び開口部の面（境界面の内空として作成されている場合）により構成される。
 
 | brid:lod3MultiSurface
 | gml:MultiSurface [0..1]
-a| 橋梁の部分の主要構造の外形を構成する面の集まり。 +
+| 橋梁の部分の主要構造の外形を構成する面の集まり。 +
 面の集まりが立体の境界としての要件を満たすことが出来ない場合に、LOD3の幾何オブジェクトとして使用する。
 
 h| (brid:lod3MultiCurve) | gml:MutiCurve [0..1] | 橋梁の部分の立体表現に加え、線状の表現を行う場合に使用する。
 h| (brid:lod3TerrainIntersection) | gml:MutiCurve [0..1] | LOD3における橋梁の部分と地形との交線。
 | brid:lod4Solid
 | gml:Solid [0..1]
-a| 橋梁の部分の詳細構造の外形を示す立体。 +
+| 橋梁の部分の詳細構造の外形を示す立体。 +
 この時の立体は、外壁等を区分する境界面及び開口部の面（境界面の内空として作成されている場合）により構成される。
 
 | brid:lod4MultiSurface
 | gml:MultiSurface [0..1]
-a| 橋梁の部分の外形を構成する面の集まり。 +
+| 橋梁の部分の外形を構成する面の集まり。 +
 面の集まりが立体の境界としての要件を満たすことが出来ない場合に、LOD4の幾何オブジェクトとして使用する。
 
 h| (brid:lod4MultiCurve) | gml:MutiCurve [0..1] | 橋梁の部分の立体表現に加え、線状の表現を行う場合に使用する。
@@ -1462,7 +1462,7 @@ h| (uro:bridDisasterRiskAttribute) | uro:DisasterRiskAttribute [0..*] | 橋梁�
 h| (uro:bridKeyValuePairAttribute) | uro:KeyValuePairAttribute [0..*] | brid:BridgePartには作成しない。（brid:Bridgeにのみ作成する。）
 | uro:bridDataQualityAttribute
 | uro:DataQualityAttribute [0..1]
-a| 作成するデータの品質に関する情報。 +
+| 作成するデータの品質に関する情報。 +
 brid:Bridgeが品質属性をもつ場合は、省略する。 +
 brid:Bridgeが品質属性をもたない場合は、必ず作成する。
 
@@ -1475,10 +1475,10 @@ h| (uro:bridDmAttribute) | uro:DmAttribute [0..*] | 公共測量標準図式に�
 
 ====== brid:BridgeConstructionElement
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a|
+2+|
 橋梁の構造上重要な部材。 +
 橋脚、橋台、トラス、アーチ、吊材、パイロン、ケーブルをさす。
 
@@ -1514,7 +1514,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 h| (brid:lod1Geometry) | gml:_Geometry [0..1] | 部材のLOD1の形状。
 | brid:lod2Geometry
 | gml:_Geometry [0..1]
-a| 部材のLOD2の形状。 +
+| 部材のLOD2の形状。 +
 gml:MultiSurfaceにより記述することを基本とする。 +
 構造物の外形（外側から見える形）を構成する面を取得する。 +
 面の各頂点に構造物の高さを与える。 +
@@ -1522,7 +1522,7 @@ gml:MultiSurfaceにより記述することを基本とする。 +
 
 | brid:lod3Geometry
 | gml:_Geometry [0..1]
-a| 部材のLOD3の形状。 +
+| 部材のLOD3の形状。 +
 gml:MultiSurfaceにより記述することを基本とする。 +
 構造物の外形（外側から見える形）を構成する面を取得する。 +
 面の各頂点に構造物の高さを与える。 +
@@ -1530,7 +1530,7 @@ gml:MultiSurfaceにより記述することを基本とする。 +
 
 | brid:lod4Geometry
 | gml:_Geometry [0..1]
-a| 部材のLOD4の形状。 +
+| 部材のLOD4の形状。 +
 gml:MultiSurfaceにより記述することを基本とする。 +
 構造物の外形（外側から見える形）を構成する面を取得する。 +
 面の各頂点に構造物の高さを与える。 +
@@ -1542,10 +1542,10 @@ gml:MultiSurfaceにより記述することを基本とする。 +
 
 ====== brid:BridgeRoom
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 壁、間仕切り、床、天井などで仕切られた、橋梁内部に設けられた区画。 +
+2+| 壁、間仕切り、床、天井などで仕切られた、橋梁内部に設けられた区画。 +
 橋梁にこれと一体となった建屋が存在し、その内部空間を表現する場合に使用する。 +
 brid:BridgeRoomは橋梁内部の区画を区切る境界面（brid:_BoundarySurfaceの下位型）及びこの境界面の開口部（brid:_Openingの下位型）、brid:BridgeRoomに付属する固定的な設備（brid:IntBridgeInstallation）及び、brid:BridgeRoomに設置された可動設備（brid:BridgeFurniture）の集まりからなる。
 
@@ -1577,7 +1577,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | brid:lod4Solid
 | gml:Solid [0..1]
-a| 区画の主要構造の外形を示す立体。 +
+| 区画の主要構造の外形を示す立体。 +
 brid:lod4Solid 又はbrid:lod4MultiSurface のいずれかを必須とするが、brid:lod4Solidにより記述することを基本とする。 +
 gml:Solidを構成する境界面のgml:Polygonは、以下のいずれの地物のLOD4幾何オブジェクトに含まれなければならない。 +
 brid:boundedByによりこのbrid:BridgeRoomが参照する境界面（brid:_BoundarySurface）及びその開口部（brid:_Opening） +
@@ -1585,7 +1585,7 @@ brid:bridgeRoomInstallationによりこのbrid:BridgeRoomが参照する内部�
 
 | brid:lod4MultiSurface
 | gml:MultiSurface [0..1]
-a| 区画の主要構造の外形を示す面の集まり。 +
+| 区画の主要構造の外形を示す面の集まり。 +
 brid:BridgeRoomの形状は、brid:lod4Solidにより記述することを基本とするが、境界面により立体の境界を閉じることが出来ない場合には、brid:lod4MultiSurfaceにより記述することを可とする。 +
 gml:MultiSurfaceを構成するgml:Polygonは、以下のいずれの地物のLOD4幾何オブジェクトに含まれなければならない。 +
 brid:boundedByによりこのbrid:BridgeRoomが参照する境界面（brid:_BoundarySurface）及びその開口部（brid:_Opening） +
@@ -1593,7 +1593,7 @@ brid:bridgeRoomInstallationによりこのbrid:BridgeRoomが参照する内部�
 
 | brid:boundedBy
 | brid:\_ BoundarySurface [0..*]
-a| 区画の主要構造の外形を示す境界面。 +
+| 区画の主要構造の外形を示す境界面。 +
 境界面は、内壁面（brid:InteriorWallSurface）、天井面（brid:CeilingSurface）、床面（brid:FloorSurface）又は閉鎖面（brid:ClosureSurface）のいずれかでなければならない。
 
 | brid:interiorFurniture | brid:BridgeFurniture [0..*] | 区画に設置された可動設備（brid:BridgeFurniture）。
@@ -1603,7 +1603,7 @@ a| 区画の主要構造の外形を示す境界面。 +
 
 ====== brid:RoofSurface
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 主に橋梁の上部を覆う構造物。上部工と一体的に整備されたし、上部工、階段、踊り場の全体が屋根で覆われている場合を対象とする。
 
@@ -1631,17 +1631,17 @@ h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型�
 h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
 | brid:lod2MultiSurface
 | gml:MultiSurface [0..1]
-a| LOD2において屋根の形状・起伏を再現した面。 +
+| LOD2において屋根の形状・起伏を再現した面。 +
 屋根の上方からの正射影の外周を取得し、外周の各頂点に屋根の高さを与える。
 
 | brid:lod3MultiSurface
 | gml:MultiSurface [0..1]
-a| LOD3において屋根の形状・起伏を再現した面。 +
+| LOD3において屋根の形状・起伏を再現した面。 +
 屋根の上方からの正射影の外周を取得し、外周の各頂点に屋根の高さを与える。
 
 | brid:lod4MultiSurface
 | gml:MultiSurface [0..1]
-a| LOD4において屋根の形状・起伏を再現した面。 +
+| LOD4において屋根の形状・起伏を再現した面。 +
 屋根の上方からの正射影の外周を取得し、外周の各頂点に屋根の高さを与える。
 
 | brid:opening | brid:_Opening [0..*] | 屋根面に設置される、窓や扉への参照。
@@ -1650,7 +1650,7 @@ a| LOD4において屋根の形状・起伏を再現した面。 +
 
 ====== brid:WallSurface
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 橋梁の外周を構成する壁面（外壁）。
 
@@ -1676,17 +1676,17 @@ h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型�
 h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
 | brid:lod2MultiSurface
 | gml:MultiSurface [0..1]
-a| LOD2において壁面の形状・起伏を再現した面。 +
+| LOD2において壁面の形状・起伏を再現した面。 +
 床版及び主桁の外形のうち、側面を取得する。
 
 | brid:lod3MultiSurface
 | gml:MultiSurface [0..1]
-a| LOD3において壁面の形状・起伏を再現した面。 +
+| LOD3において壁面の形状・起伏を再現した面。 +
 橋梁の外形のうち、屋根面（RoofSurface）、底面（GroundSurface）、屋外床面（OuterFloorSurface）、屋外天井面（OuterCeilingSurface）及び閉鎖面（ClosureSurface）以外の面を取得する。
 
 | brid:lod4MultiSurface
 | gml:MultiSurface [0..1]
-a| LOD3において壁面の形状・起伏を再現した面。 +
+| LOD3において壁面の形状・起伏を再現した面。 +
 橋梁の外形のうち、屋根面（RoofSurface）、底面（GroundSurface）、屋外床面（OuterFloorSurface）、屋外天井面（OuterCeilingSurface）及び閉鎖面（ClosureSurface）以外の面を取得する。
 
 | brid:opening | brid:_Opening [0..*] | 壁面に設置される、窓や扉への参照。
@@ -1695,10 +1695,10 @@ a| LOD3において壁面の形状・起伏を再現した面。 +
 
 ====== brid:GroundSurface
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 橋梁の立体形状の底面。 +
+2+| 橋梁の立体形状の底面。 +
 橋梁の底面又は橋梁の壁面と地形との交線を境界とする面とする。
 
 h| 上位の型 2+| brid:_BoundarySurface
@@ -1723,19 +1723,19 @@ h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型�
 h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
 | brid:lod2MultiSurface
 | gml:MultiSurface [0..1]
-a| LOD2.1において底面の形状・起伏を再現した面。 +
+| LOD2.1において底面の形状・起伏を再現した面。 +
 橋梁の側面と、地表との交線により囲まれた面を取得する。 +
 面の各頂点に、地表面の高さを与える。
 
 | brid:lod3MultiSurface
 | gml:MultiSurface [0..1]
-a| LOD3において底面の形状・起伏を再現した面。 +
+| LOD3において底面の形状・起伏を再現した面。 +
 橋梁の側面と、地表との交線により囲まれた面を取得する。 +
 面の各頂点に、地表面の高さを与える。
 
 | brid:lod4MultiSurface
 | gml:MultiSurface [0..1]
-a| LOD4において底面の形状・起伏を再現した面。 +
+| LOD4において底面の形状・起伏を再現した面。 +
 橋梁の側面と、地表との交線により囲まれた面を取得する。 +
 面の各頂点に、地表面の高さを与える。
 
@@ -1745,10 +1745,10 @@ h| (brid:opening) | brid:_Opening [0..*] | 底面に設置される、窓や扉�
 
 ====== brid:OuterCeilingSurface
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 橋梁の外側を覆う部分であり、天井としての機能を有する部分。上部工の下面が該当する。 +
+2+| 橋梁の外側を覆う部分であり、天井としての機能を有する部分。上部工の下面が該当する。 +
 ユースケースで屋外の天井面と壁面との区分が不要な場合には、この型は使用せず、brid:WallSurfaceを使用する。
 
 h| 上位の型 2+| brid:_BoundarySurface
@@ -1774,13 +1774,13 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 | brid:lod2MultiSurface | gml:MultiSurface [0..1] | LOD2において屋外にある天井の形状・起伏を再現した面。
 | brid:lod3MultiSurface
 | gml:MultiSurface [0..1]
-a| LOD3において屋外にある天井の形状・起伏を再現した面。 +
+| LOD3において屋外にある天井の形状・起伏を再現した面。 +
 橋梁の床版・主桁を囲む面のうち、下向きとなる面を取得する。 +
 面の各頂点に、外壁の高さを与える。
 
 | brid:lod4MultiSurface
 | gml:MultiSurface [0..1]
-a| LOD4において屋外にある天井の形状・起伏を再現した面。 +
+| LOD4において屋外にある天井の形状・起伏を再現した面。 +
 橋梁の床版・主桁を囲む面のうち、下向きとなる面を取得する。 +
 面の各頂点に、外壁の高さを与える。
 
@@ -1790,7 +1790,7 @@ a| LOD4において屋外にある天井の形状・起伏を再現した面。 
 
 ====== brid:OuterFloorSurface
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 橋梁の外側を覆う部分であり、通行可能な床面としての機能を有する部分。上部工の床版（道路や線路が敷設されている面）が該当する。
 
@@ -1816,7 +1816,7 @@ h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型�
 h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
 | brid:lod2MultiSurface
 | gml:MultiSurface [0..1]
-a| LOD2において屋外にある床面の形状・起伏を再現した面。 +
+| LOD2において屋外にある床面の形状・起伏を再現した面。 +
 床版の上方からの正射影の外周を取得し、外周の各頂点に床版の高さを与える。
 
 | brid:lod3MultiSurface | gml:MultiSurface [0..1] | LOD3において屋外にある床面の形状・起伏を再現した面。
@@ -1827,10 +1827,10 @@ a| LOD2において屋外にある床面の形状・起伏を再現した面。 
 
 ====== brid:ClosureSurface
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 橋梁の形状の境界となる仮想的な面。 +
+2+| 橋梁の形状の境界となる仮想的な面。 +
 一つの橋梁を主題属性の異なる複数の部分に分ける場合は必須とする。 +
 橋梁の境界面に開口部が存在するが、開口部内の詳細なデータ作成が不要である場合に、開口部を閉じるために便宜上設けられた面。 +
 LOD2において、ユースケースで外壁と開口部、あるいは屋根面と開口部との区分が不要な場合には、この型は使用せず、brid:WallSurface又brid:RoofSurfaceを使用する。
@@ -1864,7 +1864,7 @@ h| (brid:opening) | brid:_Opening [0..*] | 境界面に設置される、窓や�
 
 ====== brid:InteriorWallSurface
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 橋梁の内部空間の区画を区切る壁や仕切り。
 
@@ -1895,10 +1895,10 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== brid:CeilingSurface
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 区画など構造物内部の上側の面（天井）。 +
+2+| 区画など構造物内部の上側の面（天井）。 +
 brid:CeilingSurfaceの法線ベクトルは下向きとなる。
 
 h| 上位の型 2+| brid:_BoundarySurface
@@ -1928,10 +1928,10 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== brid:FloorSurface
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 橋梁の内部空間の下面に位置する水平で平らな板状の構造物（床面）。 +
+2+| 橋梁の内部空間の下面に位置する水平で平らな板状の構造物（床面）。 +
 brid:FloorSurfaceの法線ベクトルは上向きとなる。
 
 h| 上位の型 2+| brid:_BoundarySurface
@@ -1961,7 +1961,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== brid:Window
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 採光、通風、換気、眺望などの目的のため、橋梁の屋根、天井、壁、床などに設けられた開口部のうち、人や物の出入りを目的としないもの。
 
@@ -1992,7 +1992,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== brid:Door
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 採光、通風、換気、眺望、通行などの目的のため、橋梁の屋根、天井、壁、床などに設けられた開口部のうち、人や物の出入りを目的とするもの。
 
@@ -2023,10 +2023,10 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== brid:BridgeInstallation
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 橋梁の外部付属物。橋梁の外側に設置され、橋梁の外観を特徴づける設備。 +
+2+| 橋梁の外部付属物。橋梁の外側に設置され、橋梁の外観を特徴づける設備。 +
 橋梁の付帯的な設備であり、主要な部分であってはならない。また、橋梁（brid:Bridge又はbrid:BridgePart）と接していなければならない。 +
 橋梁の外部付属物には以下を含む。ただし、全て外部に設置され、橋梁と接するもののみを対象とする。 +
 支承、落橋防止装置、伸縮装置、排水施設、高欄、防護柵、遮音壁、遮光壁、航空障害灯など。 +
@@ -2075,17 +2075,17 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 容積の算出等ユースケースで必要な場合は、gml:Solidを使用する。
 | brid:boundedBy
 | brid:_BoundarySurface [0..*]
-a| 外部付属物を構成する外壁、屋根等の境界面への参照。付属物の境界面が橋梁（brid:Bridge又はbrid:BridgePart）の境界面となる場合にのみ作成する。 +
+| 外部付属物を構成する外壁、屋根等の境界面への参照。付属物の境界面が橋梁（brid:Bridge又はbrid:BridgePart）の境界面となる場合にのみ作成する。 +
 橋梁の空間に付属物を含まない場合は、付属物を構成する面を、境界面（brid:_BoundarySurface）に区別する必要はない。
 
 |===
 
 ====== brid:IntBridgeInstallation
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 橋梁の内部に設置された、恒久的に存在する固定的な設備（内部付属物）。 +
+2+| 橋梁の内部に設置された、恒久的に存在する固定的な設備（内部付属物）。 +
 内部付属物は、橋梁の付帯的な設備であり、主要な部分であってはならない。また、内部付属物は、橋梁（brid:Bridge又はbrid:BridgePart）又は区画（brid:BridgeRoom）と接していなければならない。 +
 ただし、ユースケースの要求に応じて、取得対象とする内部付属物を限定してもよく、また、内部付属物として取得せず建築物の一部として取得してもよい。
 
@@ -2122,17 +2122,17 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 容積の算出等ユースケースで必要な場合は、gml:Solidを使用する。
 | brid:boundedBy
 | brid:_BoundarySurface [0..*]
-a| 内部付属物を構成する内壁、天井等の境界面への参照。付属物の境界面が区画（brid:BridgeRoom）の境界面となる場合にのみ作成する。 +
+| 内部付属物を構成する内壁、天井等の境界面への参照。付属物の境界面が区画（brid:BridgeRoom）の境界面となる場合にのみ作成する。 +
 ただし、区画の空間から内部付属物を除く必要が無い場合は、内部付属物の形状を構成する面を、境界面（brid:_BoundarySurface）にする必要はない。
 
 |===
 
 ====== brid:BridgeFurniture
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 橋梁内部の区画に配置された、可動設備。 +
+2+| 橋梁内部の区画に配置された、可動設備。 +
 brid:IntBridgeInstallationが、橋梁内部に設置された恒久的かつ固定的な設備であることと対照的に、brid:BridgeFurnitureは椅子や机のような、動かすことができる（位置が固定されない）設備である。 +
 ただし、ユースケースの要求に応じて、取得対象とする可動設備を限定してよい。
 
@@ -2171,7 +2171,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:BridgeStructureAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 橋梁の構造に関する情報を定義したデータ型。
 
@@ -2191,7 +2191,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:slopeType | gml:CodeType [0..1] | 橋梁が橋側歩道橋、横断歩道橋又はペデストリアンデッキの場合の、昇降形式。コードリスト（ConstructionStructureAttribute_slopeType.xml）より選択する。
 | uro:escalator
 | xs:boolean [0..1]
-a| 橋梁が橋側歩道橋、横断歩道橋又はペデストリアンデッキの場合の、エスカレータの有無。 +
+| 橋梁が橋側歩道橋、横断歩道橋又はペデストリアンデッキの場合の、エスカレータの有無。 +
 1：有 +
 0：無
 
@@ -2199,7 +2199,7 @@ a| 橋梁が橋側歩道橋、横断歩道橋又はペデストリアンデッ�
 
 ====== uro:BridgeFunctionalAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 橋梁の機能に関する情報を定義したデータ型。
 
@@ -2214,10 +2214,10 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:KeyValuePairAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。 +
+2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。 +
 属性名称と属性の値の対で構成される。コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
 
 h| 上位の型 2+| ―
@@ -2227,7 +2227,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:key | gml:CodeType [1] | 拡張する属性の名称。名称は、コ－ドリスト（KeyValuePairAttribute_key.xml）を作成し、選択する。
 | uro:codeValue
 | gml:CodeType [1]
-a| 拡張された属性の値。値は名称は、コ－ドリスト（KeyValuePairAttribute_key[%key].xml）を作成し、選択する。 +
+| 拡張された属性の値。値は名称は、コ－ドリスト（KeyValuePairAttribute_key[%key].xml）を作成し、選択する。 +
 [%key]は、属性uro:keyの値に一致する。
 
 |===
@@ -2244,69 +2244,69 @@ h| ステレオタイプ 2+| << DataType >>
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:geometrySrcDescLod0
 | gml:CodeType [0..*]
-a| LOD0の幾何オブジェクトの作成に使用した原典資料の種類。 +
+| LOD0の幾何オブジェクトの作成に使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD0の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、橋梁モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
 
 | uro:geometrySrcDescLod1
 | gml:CodeType [1..*]
-a| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。 +
+| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。具体的な都市オブジェクトがLOD1の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 
 | uro:geometrySrcDescLod2
 | gml:CodeType [0..*]
-a| LOD2の幾何オブジェクトの作成に使用した原典資料の種類。 +
+| LOD2の幾何オブジェクトの作成に使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD2の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、橋梁モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
 
 | uro:geometrySrcDescLod3
 | gml:CodeType [0..*]
-a| LOD3の幾何オブジェクトの作成に使用した原典資料の種類。 +
+| LOD3の幾何オブジェクトの作成に使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。 +
 拡張製品仕様書でLOD3の幾何オブジェクトが作成対象となっている場合は必須とする。 +
 この場合、具体的な都市オブジェクトがLOD3の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、橋梁モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
 
 | uro:geometrySrcDescLod4
 | gml:CodeType [0..*]
-a| LOD4の幾何オブジェクトの作成に使用した原典資料の種類。 +
+| LOD4の幾何オブジェクトの作成に使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD4の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD4の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、橋梁モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
 
 | uro:thematicSrcDesc
 | gml:CodeType [0..\*]
-a| 主題属性の作成に使用した原典資料の種類。 +
+| 主題属性の作成に使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_thematicSrcDesc.xml）より選択する。 +
 主題属性が作成対象となっている場合は必須とする。
 
 | uro:appearanceSrcDescLod0
 | gml:CodeType [0..*]
-a| LOD0の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
+| LOD0の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。拡張製品仕様書でLOD0の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 
 | uro:appearanceSrcDescLod1
 | gml:CodeType [0..*]
-a| LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
+| LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 +
 拡張製品仕様書LOD1の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD1の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 
 | uro:appearanceSrcDescLod2
 | gml:CodeType [0..*]
-a| LOD2の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
+| LOD2の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 +
 拡張製品仕様書でLOD2の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 
 | uro:appearanceSrcDescLod3
 | gml:CodeType [0..*]
-a| LOD3の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
+| LOD3の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 +
 拡張製品仕様書でLOD3の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD3の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 
 | uro:appearanceSrcDescLod4
 | gml:CodeType [0..*]
-a| LOD4の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
+| LOD4の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 +
 拡張製品仕様書でLOD4の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD4の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 
 | uro:lodType
 | gml:CodeType [0..*]
-a| 幾何オブジェクトに適用されたLODの詳細な区分。 +
+| 幾何オブジェクトに適用されたLODの詳細な区分。 +
 コードリスト（Bridge_lodType.xml）より選択する。 +
 LOD2以上の幾何オブジェクトを作成する場合は必須とする。
 
@@ -2316,7 +2316,7 @@ h| 自身に定義された関連役割 h| 　 h| 　
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | uro:publicSurveyDataQualityAttribute
 | uro:PublicSurveyDataQualityAttribute [0..1]
-a| 使用した公共測量成果の地図情報レベルと種類。 +
+| 使用した公共測量成果の地図情報レベルと種類。 +
 各LODの幾何オブジェクトの作成に使用した原典資料の種類に関する属性（uro:geometrySrcDescLod0等）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）となっている場合は、必須とする。
 
 |===
@@ -2333,64 +2333,64 @@ h| 自身に定義された属性 2+h| 　
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:srcScaleLod0
 | gml:CodeType [0..1]
-a| LOD0の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
+| LOD0の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 +
 「LOD0の幾何オブジェクトの作成に使用した原典資料の種類に関する属性」（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
 
 | uro:srcScaleLod1
 | gml:CodeType [0..1]
-a| LOD1の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
+| LOD1の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 +
 「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
 
 | uro:srcScaleLod2
 | gml:CodeType [0..1]
-a| LOD2の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
+| LOD2の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 +
 「LOD2の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod2）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
 複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば、壁面は地図情報レベル1000、屋根面は地図情報レベル2500となる場合は、地図情報レベル2500とする。
 
 | uro:srcScaleLod3
 | gml:CodeType [0..1]
-a| LOD3の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
+| LOD3の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 +
 「LOD3の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod3）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
 複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば、壁面は地図情報レベル1000、屋根面は地図情報レベル2500となる場合は、地図情報レベル2500とする。
 
 | uro:srcScaleLod4
 | gml:CodeType [0..1]
-a| LOD4の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
+| LOD4の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
 コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 +
 「LOD4の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod4）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
 複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば、外側の形状は地図情報レベル1000、屋内の形状は地図情報レベル500となる場合は地図情報レベル1000とする。
 
 | uro:publicSurveySrcDescLod0
 | gml:CodeType [0..*]
-a| LOD0の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
+| LOD0の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
 「LOD0の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
 複数の種類の原典資料を使用した場合は、それぞれを記述する。
 
 | uro:publicSurveySrcDescLod1
 | gml:CodeType [0..*]
-a| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
+| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
 「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
 複数の種類の原典資料を使用した場合は、それぞれを記述する。
 
 | uro:publicSurveySrcDescLod2
 | gml:CodeType [0..*]
-a| LOD2の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
+| LOD2の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
 「LOD2の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod2）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
 複数の種類の原典資料を使用した場合は、それぞれを記述する。
 
 | uro:publicSurveySrcDescLod3
 | gml:CodeType [0..*]
-a| LOD3の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
+| LOD3の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
 「LOD3の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod3）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
 複数の種類の原典資料を使用した場合は、それぞれを記述する。
 
 | uro:publicSurveySrcDescLod4
 | gml:CodeType [0..*]
-a| LOD4の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
+| LOD4の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
 「LOD4の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod4）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
 複数の種類の原典資料を使用した場合は、それぞれを記述する。
 
@@ -2401,7 +2401,7 @@ a| LOD4の幾何オブジェクトの作成に使用した原典資料の種類�
 [cols=3]
 |===
 | 型の定義
-2+a| 構造物の管理に必要となる基本的な情報及び、構造物の規模に関する基本的な情報を記述するためのデータ型。 +
+2+| 構造物の管理に必要となる基本的な情報及び、構造物の規模に関する基本的な情報を記述するためのデータ型。 +
 構造物が橋梁、トンネル、護岸、床止め、堰、水門・閘門・陸閘、樋門・樋管、伏せ越し及び水制の場合に本データ型を用いて記述する。 +
 構造物がダム及び堤防の場合は、これを継承するデータ型を用いて記述する。
 
@@ -2491,7 +2491,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== Bridge_class.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Bridge_class.xml
 
@@ -2511,7 +2511,7 @@ h| コード h| 説明
 
 ====== Bridge_function.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Bridge_function.xml
 
@@ -2533,7 +2533,7 @@ h| コード h| 説明
 
 ====== BridgeConstructionElement_function.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | BridgeConstructionElement_function.xml
 
@@ -2554,7 +2554,7 @@ h| コード h| 説明
 
 ====== BridgeInstallation_function.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | BridgeInstallation_function.xml
 
@@ -2587,7 +2587,7 @@ h| コード h| 説明
 
 ====== BridgeStructureAttribute_material.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | BridgeStructureAttribute_material.xml
 
@@ -2607,7 +2607,7 @@ h| コード h| 説明
 
 ====== BridgeStructureAttribute_bridgeType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | BridgeStructureAttribute_bridgeType.xml
 
@@ -2621,7 +2621,7 @@ h| コード h| 説明
 
 ====== BridgeFunctionalAttribute_userType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | BridgeFunctionalAttribute_userType.xml
 
@@ -2635,7 +2635,7 @@ h| コード h| 説明
 
 ====== ConstructionStructureAttribute_slopeType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ConstructionStructureAttribute_slopeType.xml
 
@@ -2652,7 +2652,7 @@ h| コード h| 説明
 
 ====== ConstructionBaseAttribute_adminType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ConstructionBaseAttribute_adminType.xml
 
@@ -2711,7 +2711,7 @@ h| コード h| 説明
 
 ====== ConstructionBaseAttribute_installerType.xmlりんりりｎ
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ConstructionBaseAttribute_installerType.xml
 
@@ -2740,7 +2740,7 @@ h| コード h| 説明
 
 ====== ConstructionRiskAssessmentAttribute_riskType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ConstructionRiskAssessmentAttribute_riskType.xml
 
@@ -2760,7 +2760,7 @@ h| コード h| 説明
 
 ====== ConstructionRiskAssessmentAttribute_status.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ConstructionRiskAssessmentAttribute_status.xml
 
@@ -2778,7 +2778,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
 
@@ -2826,7 +2826,7 @@ h| 　 | 　
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
 
@@ -2857,7 +2857,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
 
@@ -2874,7 +2874,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_lod1HeightType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_lod1HeightType.xml
 
@@ -2899,7 +2899,7 @@ h| コード h| 説明
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | PublicSurveyDataQualityAttribute_srcScale.xml
 
@@ -2913,7 +2913,7 @@ h| コード h| 説明
 
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
@@ -2950,7 +2950,7 @@ h| コード h| 説明
 
 ====== Bridge_lodType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Bridge_lodType.xml
 
@@ -2958,7 +2958,7 @@ h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Bridge_lodType.
 h| コード h| 説明
 | 2.0 | 道路橋、桟道橋及び鉄道橋は、床版の外周を、高さをもった面として表現する。横断歩道橋、ペデストリアンデッキ及び跨線橋は、本体（上部工、階段及び踊り場）の外周を取得し、高さをもった面として表現する。階段の個々の段は取得せず、下端と上端を結んだ平面として表現する。
 | 2.1
-a| 道路橋、桟道橋及び鉄道橋は、床版及び主桁によって、厚みと高さをもった立体として表現する。橋脚などの構造上不可欠な部材を表現してもよい。 +
+| 道路橋、桟道橋及び鉄道橋は、床版及び主桁によって、厚みと高さをもった立体として表現する。橋脚などの構造上不可欠な部材を表現してもよい。 +
 横断歩道橋、ペデストリアンデッキ及び跨線橋は、本体（上部工、階段及び踊り場）を、それぞれを厚みと高さを持った立体として表現する。 +
 上部工、階段及び踊り場は分けて取得できる。階段の個々の段は取得せず、下端と上端を結んだ面として表現する。
 

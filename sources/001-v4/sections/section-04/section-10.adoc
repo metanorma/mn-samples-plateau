@@ -15,12 +15,12 @@
 
 都市計画決定情報モデル（LOD1）では、都市計画の区域の形状を、面により表現する。都市計画決定情報モデル（LOD1）の取得イメージを表 4-58に示す。
 
-[cols="3,17"]
+[cols="3a,17a"]
 .都市計画決定情報モデル（LOD1）の取得イメージ
 |===
 ^h| ^h| LOD1
 ^h| 取得例
-a|
+|
 image::images/207.webp.png[]
 
 ^h| 説明 | 区域の境界により囲まれた面を取得する。
@@ -31,7 +31,7 @@ image::images/207.webp.png[]
 
 ====== 都市計画決定情報モデル（LOD1）の定義
 
-[cols="1,1,1,1,1,3,2"]
+[cols="1a,1a,1a,1a,1a,3a,2a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -40,7 +40,7 @@ image::images/207.webp.png[]
 | Zoneを継承する地物型
 | MultiSurface
 | 都市計画に定める区域
-a|
+|
 * 区域の境界に囲まれた面を取得する。
 * 高さは0とする。
 |
@@ -58,7 +58,7 @@ a|
 
 都市計画決定情報モデルの各LODにおいて使用可能な地物型と空間属性を表 4-59に示す。
 
-[cols="1,1,1,1,1,1,6"]
+[cols="1a,1a,1a,1a,1a,1a,6a"]
 .都市計画決定情報モデルの記述に使用する地物型と空間属性
 |===
 h| 地物型 h| 空間属性 h| LOD0 h| LOD1 h| LOD2 h| LOD3 h| 適用
@@ -78,7 +78,7 @@ h| 地物型 h| 空間属性 h| LOD0 h| LOD1 h| LOD2 h| LOD3 h| 適用
 [[toc4_10_02_01]]
 ===== 都市計画の区域とクラスとの対応
 
-[cols="3,3,3,37,37,37"]
+[cols="3a,3a,3a,37a,37a,37a"]
 |===
 4+^| 都市計画の区域 ^| 対応するクラス ^| クラス図
 
@@ -105,7 +105,7 @@ h| 地物型 h| 空間属性 h| LOD0 h| LOD1 h| LOD2 h| LOD3 h| 適用
 3+| 駐車場整備地区 | urf:ParkingPlaceDevelopmentZone
 3+| 臨港地区 | urf:PortZone
 3+| 歴史的風土特別保存地区 | urf:SpecialZoneForPreservationOfHistoricalLandscape
-3+a| 第一種歴史的風土保存地区 +
+3+| 第一種歴史的風土保存地区 +
 又は第二種歴史的風土保存地区
 | urf:ZoneForPreservationOfHistoricalLandscape
 
@@ -115,7 +115,7 @@ h| 地物型 h| 空間属性 h| LOD0 h| LOD1 h| LOD2 h| LOD3 h| 適用
 3+| 流通業務地区 | urf:DistributionBusinessZone
 3+| 生産緑地地区 | urf:ProductiveGreenZone
 3+| 伝統的建造物群保存地区 | urf:ConservationZoneForClustersOfTraditionalStructures
-3+a| 航空機騒音障害防止地区 +
+3+| 航空機騒音障害防止地区 +
 又は航空機騒音障害防止特別地区
 | urf:AircraftNoiseControlZoneurf:AircraftNoiseControlZone
 
@@ -296,10 +296,10 @@ image::images/227.svg[]
 
 ====== urf:UrbanPlanningArea
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a|
+2+|
 都市計画区域。都市の実態や将来の計画を勘案して、一体の都市地域となるべき区域として指定された区域。（都市計画法第5条第1項）
 
 .都市計画区域の例
@@ -336,7 +336,7 @@ h| (urf:urbanPlanType) | gml:CodeType [0..1] | 指定された区域が属する
 h| (urf:areaClassificationType) | gml:CodeType [0..1] | 指定された区域 が属する区域区分。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 公式の面積。単位はha（uom=”ha”）とする。 +
+| 公式の面積。単位はha（uom=”ha”）とする。 +
 都市計画区域の総面積とし、複数の市区町村に跨っている場合は合計とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 都市計画区域が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -360,7 +360,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画区域の範囲。高さを0とする。 +
+| 都市計画区域の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -371,10 +371,10 @@ a| 都市計画区域の範囲。高さを0とする。 +
 
 ====== urf:QuasiUrbanPlanningArea
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 準都市計画区域。そのまま土地利用を整序し、又は環境を保全するための措置を講ずることなく放置すれば、将来における一体の都市としての整備、開発及び保全に支障が生じるおそれがあると認められる一定の区域。（都市計画法第5条の2第1項） +
+2+| 準都市計画区域。そのまま土地利用を整序し、又は環境を保全するための措置を講ずることなく放置すれば、将来における一体の都市としての整備、開発及び保全に支障が生じるおそれがあると認められる一定の区域。（都市計画法第5条の2第1項） +
 +
 複数の市区町村にまたがる準都市計画区域の場合は、市区町村の境界で区切る。
 
@@ -407,7 +407,7 @@ h| (urf:urbanPlanType) | gml:CodeType [0..1] | 指定された区域が属する
 h| (urf:areaClassificationType) | gml:CodeType [0..1] | 指定された区域 が属する区域区分。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 公式の面積。単位はha（uom=”ha”）とする。 +
+| 公式の面積。単位はha（uom=”ha”）とする。 +
 準都市計画区域の総面積とし、複数の市区町村に跨っている場合は合計とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 準都市計画区域が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -426,7 +426,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 準都市計画区域の範囲。高さを0とする。 +
+| 準都市計画区域の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -440,10 +440,10 @@ a| 準都市計画区域の範囲。高さを0とする。 +
 
 ====== urf:AreaClassification
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a|
+2+|
 都市計画法第7条に基づき、無秩序な市街地の拡大による環境悪化の防止、計画的な公共施設整備などによる良好な市街地の形成などを行うため、都市計画区域について区分された、計画的な市街化を図るべき区域「市街化区域」と、市街化を抑制すべき「市街化調整区域」。（都市計画法第7条）
 
 .区域区分（市街化調整地域）の例
@@ -493,7 +493,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 市街化区域又は市街化調整区域の範囲。高さを0とする。 +
+| 市街化区域又は市街化調整区域の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -507,10 +507,10 @@ a| 市街化区域又は市街化調整区域の範囲。高さを0とする。 
 
 ====== urf:DistrictsAndZones
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a|
+2+|
 地域地区。都市計画法第8条に基づき、都市計画区域内の土地をその利用目的によって区分し、建築物などに対するルールを決め、土地の合理的な利用を図るために指定された区域。 +
 下位の地物型として定義されていない地域地区を記述したい場合にのみ、この地物型を使用し、属性「urf:function」でその内容を識別する。下位の地物型として定義されている場合は、必ず下位の地物型を使用すること。
 
@@ -548,7 +548,7 @@ h| (urf:usage) | gml:CodeType [0..*] | 区域の用途。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された地域地区 が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
+| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 地域地区が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -565,7 +565,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 区域の範囲。高さを0とする。 +
+| 区域の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -576,10 +576,10 @@ a| 区域の範囲。高さを0とする。 +
 
 ====== urf:UseDistrict
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画法第八条第1項第一号で定められる用途地域。 +
+2+| 都市計画法第八条第1項第一号で定められる用途地域。 +
 第一種低層住居専用地域、第二種低層住居専用地域、第一種中高層住居専用地域、第二種中高層住居専用地域、第一種住居地域、第二種住居地域、準住居地域、田園住居地域、近隣商業地域、商業地域、準工業地域、工業地域又は工業専用地域。
 
 h| 上位の型 2+| urf:DistrictsAndZones
@@ -611,7 +611,7 @@ h| (urf:usage) | gml:CodeType [0..*] | 区域の用途。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された地域地区 が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
+| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 地域地区が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -629,7 +629,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 | urf:buildingCoverageRate | xs:integer [0..1] | 都市計画法第8条第3項第2号ロ及びハに定める建ぺい率（建築面積の敷地面積に対する割合）。全体を「100」とする割合（百分率）で記述する。（単位は％）
 | urf:wallSetbackDistance
 | gml:StringOrRefType [0..1]
-a| 都市計画法第8条第3項第2号ロに定める外壁の後退距離。 +
+| 都市計画法第8条第3項第2号ロに定める外壁の後退距離。 +
 一律に距離が指定されている場合は、半角数字と単位(m）を記述する。複数の上限が設定されている場合はその条件を列挙する。
 
 | urf:buildingHeightLimits | gml:LengthType [0..1] | 都市計画法第8条第3項第2号ロに定める建築物の高さの限度。
@@ -644,7 +644,7 @@ a| 都市計画法第8条第3項第2号ロに定める外壁の後退距離。 +
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 区域の範囲。高さを0とする。 +
+| 区域の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -658,7 +658,7 @@ a| 区域の範囲。高さを0とする。 +
 [cols=3]
 |===
 | 型の定義
-2+a| 都市計画法第8条第1項第2号で定められる特別用途地区。 +
+2+| 都市計画法第8条第1項第2号で定められる特別用途地区。 +
 用途地域内の一定の地区における当該地区の特性にふさわしい土地利用の増進、環境の保護等の特別の目的の実現を図るため当該用途地域の指定を補完して定める地区。
 
 h| 上位の型 2+| urf:DistrictsAndZones
@@ -690,7 +690,7 @@ h| (urf:class) | gml:CodeType [0..1] | 区域の分類。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された地域地区 が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
+| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 地域地区が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -709,7 +709,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 区域の範囲。高さを0とする。 +
+| 区域の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -720,10 +720,10 @@ a| 区域の範囲。高さを0とする。 +
 
 ====== urf:SpecialUseRestrictionDistrict
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画法第8条第1項第2号で定められる特定用途制限地域。 +
+2+| 都市計画法第8条第1項第2号で定められる特定用途制限地域。 +
 用途地域が定められていない土地の区域（市街化調整区域を除く。）内において、その良好な環境の形成又は保持のため当該地域の特性に応じて合理的な土地利用が行われるよう、制限すべき特定の建築物等の用途の概要を定める地域。
 
 h| 上位の型 2+| urf:DistrictsAndZones
@@ -755,7 +755,7 @@ h| (urf:usage) | gml:CodeType [0..*] | 区域の用途。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された地域地区 が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
+| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 地域地区が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -774,7 +774,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 区域の範囲。高さを0とする。 +
+| 区域の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -785,10 +785,10 @@ a| 区域の範囲。高さを0とする。 +
 
 ====== urf:ExceptionalFloorAreaRateDistrict
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画法第8条第1項第2号の3で定められる特例容積率適用地区。 +
+2+| 都市計画法第8条第1項第2号の3で定められる特例容積率適用地区。 +
 第一種中高層住居専用地域、第二種中高層住居専用地域、第一種住居地域、第二種住居地域、準住居地域、近隣商業地域、商業地域、準工業地域又は工業地域内の適正な配置及び規模の公共施設を備えた土地の区域において、建築基準法第52条第1項から第9項までの規定による建築物の容積率の限度からみて未利用となっている建築物の容積の活用を促進して土地の高度利用を図るため定める地区。
 
 h| 上位の型 2+| urf:DistrictsAndZones
@@ -820,7 +820,7 @@ h| (urf:usage) | gml:CodeType [0..*] | 区域の用途。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された地域地区 が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
+| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
 単位はha（uom=”ha”）とする。多重度は任意となっているが、運用上必須とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 地域地区が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -835,14 +835,14 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | urf:buildingHeightLimits
 | gml:LengthType [0..1]
-a| 都市計画法第8条第3項第2号チに定める当該地区における市街地の環境を確保するために必要な場合に定められた建築物の高さの最高限度。 +
+| 都市計画法第8条第3項第2号チに定める当該地区における市街地の環境を確保するために必要な場合に定められた建築物の高さの最高限度。 +
 単位はm（uom=”m”）とする。
 
 3+h| 継承する関連役割
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 区域の範囲。高さを0とする。 +
+| 区域の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -853,10 +853,10 @@ a| 区域の範囲。高さを0とする。 +
 
 ====== urf:HighRiseResidentialAttractionDistrict
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画法第8条第1項第2号の4で定められる高層住居誘導地区。 +
+2+| 都市計画法第8条第1項第2号の4で定められる高層住居誘導地区。 +
 住居と住居以外の用途とを適正に配分し、利便性の高い高層住宅の建設を誘導するため、第一種住居地域、第二種住居地域、準住居地域、近隣商業地域又は準工業地域でこれらの地域に関する都市計画において建築基準法第五十二条第一項第二号に規定する建築物の容積率が十分の四十又は十分の五十と定められたものの内において、建築物の容積率の最高限度、建築物の建蔽率の最高限度及び建築物の敷地面積の最低限度を定める地区。
 
 h| 上位の型 2+| urf:DistrictsAndZones
@@ -888,7 +888,7 @@ h| (urf:usage) | gml:CodeType [0..*] | 区域の用途。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された地域地区 が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
+| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
 単位はha（uom=”ha”）とする。多重度は任意となっているが、運用上必須とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 地域地区が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -908,7 +908,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 区域の範囲。高さを0とする。 +
+| 区域の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -919,10 +919,10 @@ a| 区域の範囲。高さを0とする。 +
 
 ====== urf:HeightControlDistrict
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画法第8条第1項第3号で定められる高度地区。 +
+2+| 都市計画法第8条第1項第3号で定められる高度地区。 +
 用途地域内において市街地の環境を維持し、又は土地利用の増進を図るため、建築物の高さの最高限度又は最低限度を定める地区。
 
 h| 上位の型 2+| urf:DistrictsAndZones
@@ -954,7 +954,7 @@ h| (urf:class) | gml:CodeType [0..1] | 区域の分類。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された地域地区 が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
+| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 地域地区が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -973,7 +973,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 区域の範囲。高さを0とする。 +
+| 区域の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -984,10 +984,10 @@ a| 区域の範囲。高さを0とする。 +
 
 ====== urf:HighLevelUseDistrict
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画法第8条第1項第3号で定められる高度利用地区。 +
+2+| 都市計画法第8条第1項第3号で定められる高度利用地区。 +
 用途地域内の市街地における土地の合理的かつ健全な高度利用と都市機能の更新とを図るため、建築物の容積率の最高限度及び最低限度、建築物の建蔽率の最高限度、建築物の建築面積の最低限度並びに壁面の位置の制限を定める地区。
 
 h| 上位の型 2+| urf:DistrictsAndZones
@@ -1019,7 +1019,7 @@ h| (urf:usage) | gml:CodeType [0..*] | 区域の用途。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された地域地区 が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
+| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 地域地区が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -1041,7 +1041,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 区域の範囲。高さを0とする。 +
+| 区域の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -1052,10 +1052,10 @@ a| 区域の範囲。高さを0とする。 +
 
 ====== urf:SpecifiedBlock
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画法第8条第1項第4号で定められる特定街区。 +
+2+| 都市計画法第8条第1項第4号で定められる特定街区。 +
 市街地の整備改善を図るため街区の整備又は造成が行われる地区について、その街区内における建築物の容積率並びに建築物の高さの最高限度及び壁面の位置の制限を定める街区。
 
 h| 上位の型 2+| urf:DistrictsAndZones
@@ -1087,7 +1087,7 @@ h| (urf:usage) | gml:CodeType [0..*] | 区域の用途。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された地域地区 が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
+| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 地域地区が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -1098,7 +1098,7 @@ a| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
 h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）。
 | urf:location
 | xs:string [0..1]
-a| 都市計画法第8条第3項第1号に定める当該地区又は地域が設定された位置。町丁目又は字まで記載する。 +
+| 都市計画法第8条第3項第1号に定める当該地区又は地域が設定された位置。町丁目又は字まで記載する。 +
 多重度は任意となっているが、運用上必須とする。
 
 | urf:areaInTotal | gml:MeasureType [0..1] | 都市計画法第8条第3項第3号に定める区域の「面積」について、同一の種類となる区域の当該市区町村内における合計。単位はha（uom=”ha”）とする。
@@ -1118,7 +1118,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== urf:SpecialUrbanRenaissanceDistrict
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画法第8条第1項第4号の2で定められる都市再生特別地区。都市再生特別措置法（平成十四年法律第二十二号）第三十六条第一項の規定による都市再生特別地区。
 
@@ -1151,7 +1151,7 @@ h| (urf:usage) | gml:CodeType [0..*] | 区域の用途。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された地域地区 が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
+| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 地域地区が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -1167,7 +1167,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 | urf:useToBeInduced | gml:StringOrRefType [1] | 都市再生特別措置法第36条第2項に定める当該地区において建築物その他の構造物の誘導すべき用途。
 | urf:maximumFloorAreaRate
 | xs:integer [1]
-a| 都市再生特別措置法第36条第2項に定める容積率の最高限度（延べ面積の敷地面積に対する割合の最高限度）。全体を「100」とする割合（百分率）で記述する。（単位は％） +
+| 都市再生特別措置法第36条第2項に定める容積率の最高限度（延べ面積の敷地面積に対する割合の最高限度）。全体を「100」とする割合（百分率）で記述する。（単位は％） +
 複数存在する場合は、最高となる値とし、詳細は属性referenceにより計画書
 
 | urf:minimumFloorAreaRate | xs:integer [1] | 都市再生特別措置法第36条第2項に定める容積率の最低限度（延べ面積の敷地面積に対する割合の最低限度）。全体を「100」とする割合（百分率）で記述する。（単位は％）
@@ -1187,10 +1187,10 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== urf:HousingControlArea
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画法第8条第1項第4号の2で定められる地区。 +
+2+| 都市計画法第8条第1項第4号の2で定められる地区。 +
 都市再生特別措置法（平成十四年法律第二十二号）第八十九条の規定による居住調整地域。
 
 h| 上位の型 2+| urf:DistrictsAndZones
@@ -1222,7 +1222,7 @@ h| (urf:usage) | gml:CodeType [0..*] | 区域の用途。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された地域地区 が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
+| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 地域地区が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -1237,7 +1237,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 区域の範囲。高さを0とする。 +
+| 区域の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:dataQualityAttribute | uro:DataQualityAttribute [0..1] | 作成したデータの品質に関する情報。必須とする。
@@ -1248,7 +1248,7 @@ a| 区域の範囲。高さを0とする。 +
 
 ====== urf:ResidentialEnvironmentImprovementDistrict
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画法第8条第1項第4号の2で定められる地区。都市再生特別措置法（平成十四年法律第二十二号）第九十四条の二第一項の規定による居住環境向上用途誘導地区。
 
@@ -1281,7 +1281,7 @@ h| (urf:usage) | gml:CodeType [0..*] | 区域の用途。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された地域地区 が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
+| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 地域地区が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -1304,7 +1304,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 区域の範囲。高さを0とする。 +
+| 区域の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -1315,10 +1315,10 @@ a| 区域の範囲。高さを0とする。 +
 
 ====== urf:SpecialUseAttractionDistrict
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画法第8条第1項第4号の2で定められる地区。 +
+2+| 都市計画法第8条第1項第4号の2で定められる地区。 +
 都市再生特別措置法（平成十四年法律第二十二号）第百九条第一項の規定による特定用途誘導地区。
 
 h| 上位の型 2+| urf:DistrictsAndZones
@@ -1350,7 +1350,7 @@ h| (urf:usage) | gml:CodeType [0..*] | 区域の用途。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された地域地区 が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
+| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 地域地区が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -1373,7 +1373,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 区域の範囲。高さを0とする。 +
+| 区域の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -1384,10 +1384,10 @@ a| 区域の範囲。高さを0とする。 +
 
 ====== urf:FirePreventionDistrict
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画法第8条第1項第5号で定められる防火地域又は準防火地域。 +
+2+| 都市計画法第8条第1項第5号で定められる防火地域又は準防火地域。 +
 市街地における火災の危険を防除するため定める地域。
 
 h| 上位の型 2+| urf:DistrictsAndZones
@@ -1419,7 +1419,7 @@ h| (urf:class) | gml:CodeType [0..1] | 区域の分類。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された地域地区 が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
+| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 地域地区が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -1431,14 +1431,14 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 | urf:location | xs:string [0..1] | 都市計画法第8条第3項第1号に定める当該地区又は地域が設定された位置。町丁目又は字まで記載する。
 | urf:areaInTotal
 | gml:MeasureType [0..1]
-a| 都市計画法第8条第3項第3号に定める区域の「面積」について、同一の種類となる区域の当該市区町村内における合計。種類が「防火地域」の場合は、防火地域の合計面積とし、種類が「準防火地域」の場合は、準防火地域の合計面積。 +
+| 都市計画法第8条第3項第3号に定める区域の「面積」について、同一の種類となる区域の当該市区町村内における合計。種類が「防火地域」の場合は、防火地域の合計面積とし、種類が「準防火地域」の場合は、準防火地域の合計面積。 +
 単位はha（uom=”ha”）とする。
 
 3+h| 継承する関連役割
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 区域の範囲。高さを0とする。 +
+| 区域の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -1449,10 +1449,10 @@ a| 区域の範囲。高さを0とする。 +
 
 ====== urf:SpecifiedDisasterPreventionBlockImprovementZone
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画法第8条第1項第5号の2で定められる地区。 +
+2+| 都市計画法第8条第1項第5号の2で定められる地区。 +
 密集市街地整備法第三十一条第一項の規定による特定防災街区整備地区。
 
 h| 上位の型 2+| urf:DistrictsAndZones
@@ -1484,7 +1484,7 @@ h| (urf:usage) | gml:CodeType [0..*] | 区域の種類。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された地域地区 が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
+| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 地域地区が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -1505,7 +1505,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 区域の範囲。高さを0とする。 +
+| 区域の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -1516,10 +1516,10 @@ a| 区域の範囲。高さを0とする。 +
 
 ====== urf:LandscapeZone
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画法第8条第1項第6号で定められる景観地区。 +
+2+| 都市計画法第8条第1項第6号で定められる景観地区。 +
 景観法（平成十六年法律第百十号）第六十一条第一項の規定による景観地区。
 
 h| 上位の型 2+| urf:DistrictsAndZones
@@ -1551,7 +1551,7 @@ h| (urf:usage) | gml:CodeType [0..*] | 区域の種類。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された地域地区 が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
+| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 地域地区が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -1573,7 +1573,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 区域の範囲。高さを0とする。 +
+| 区域の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -1584,7 +1584,7 @@ a| 区域の範囲。高さを0とする。 +
 
 ====== urf:ScenicDistrict
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画法第8条第1項第7号で定められる風致地区。都市の風致を維持するため定める地区。
 
@@ -1617,7 +1617,7 @@ h| (urf:class) | gml:CodeType [0..1] | 区域の分類。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された地域地区 が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
+| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 地域地区が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -1638,7 +1638,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 区域の範囲。高さを0とする。 +
+| 区域の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -1649,10 +1649,10 @@ a| 区域の範囲。高さを0とする。 +
 
 ====== urf:ParkingPlaceDevelopmentZone
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画法第8条第1項第8号で定められる地区。 +
+2+| 都市計画法第8条第1項第8号で定められる地区。 +
 駐車場法（昭和三十二年法律第百六号）第三条第一項の規定による駐車場整備地区。
 
 h| 上位の型 2+| urf:DistrictsAndZones
@@ -1684,7 +1684,7 @@ h| (urf:usage) | gml:CodeType [0..*] | 区域の種類。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された地域地区 が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
+| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 地域地区が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -1699,7 +1699,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 区域の範囲。高さを0とする。 +
+| 区域の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -1710,7 +1710,7 @@ a| 区域の範囲。高さを0とする。 +
 
 ====== urf:PortZone
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画法第8条第1項第9号で定められる臨港地区。港湾を管理運営するため定める地区。
 
@@ -1743,7 +1743,7 @@ h| (urf:class) | gml:CodeType [0..1] | 区域の分類。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された地域地区 が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
+| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 地域地区が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -1761,7 +1761,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 区域の範囲。高さを0とする。 +
+| 区域の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -1772,7 +1772,7 @@ a| 区域の範囲。高さを0とする。 +
 
 ====== urf:SpecialZoneForPreservationOfHistoricalLandscape
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画法第8条第1項第10号で定められる地区。古都における歴史的風土の保存に関する特別措置法（昭和四十一年法律第一号）第六条第一項の規定による歴史的風土特別保存地区。
 
@@ -1805,7 +1805,7 @@ h| (urf:usage) | gml:CodeType [0..*] | 区域の種類。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された地域地区 が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
+| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 地域地区が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -1820,7 +1820,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 区域の範囲。高さを0とする。 +
+| 区域の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -1831,10 +1831,10 @@ a| 区域の範囲。高さを0とする。 +
 
 ====== urf:ZoneForPreservationOfHistoricalLandscape
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画法第8条第1項第11号で定められる地区。 +
+2+| 都市計画法第8条第1項第11号で定められる地区。 +
 明日香村における歴史的風土の保存及び生活環境の整備等に関する特別措置法（昭和五十五年法律第六十号）第三条第一項の規定による第一種歴史的風土保存地区又は第二種歴史的風土保存地区。
 
 h| 上位の型 2+| urf:DistrictsAndZones
@@ -1866,7 +1866,7 @@ h| (urf:usage) | gml:CodeType [0..*] | 区域の種類。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された地域地区 が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
+| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 地域地区が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -1888,10 +1888,10 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== urf:GreenSpaceConservationDistrict
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画法第8条第1項第12号で定められる地区。 +
+2+| 都市計画法第8条第1項第12号で定められる地区。 +
 都市緑地法（昭和四十八年法律第七十二号）第五条の規定による緑地保全地域。
 
 h| 上位の型 2+| urf:DistrictsAndZones
@@ -1923,7 +1923,7 @@ h| (urf:usage) | gml:CodeType [0..*] | 区域の種類。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された地域地区 が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
+| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 地域地区が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -1938,7 +1938,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 区域の範囲。高さを0とする。 +
+| 区域の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:dataQualityAttribute | uro:DataQualityAttribute [0..1] | 作成したデータの品質に関する情報。必須とする。
@@ -1949,10 +1949,10 @@ a| 区域の範囲。高さを0とする。 +
 
 ====== urf:SpecialGreenSpaceConservationDistrict
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画法第8条第1項第12号で定められる地区。 +
+2+| 都市計画法第8条第1項第12号で定められる地区。 +
 都市緑地法（昭和四十八年法律第七十二号）第十二条の規定による特別緑地保全地区。
 
 h| 上位の型 2+| urf:DistrictsAndZones
@@ -1984,7 +1984,7 @@ h| (urf:usage) | gml:CodeType [0..*] | 区域の種類。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された地域地区 が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
+| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 地域地区が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -2002,7 +2002,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 区域の範囲。高さを0とする。 +
+| 区域の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -2013,10 +2013,10 @@ a| 区域の範囲。高さを0とする。 +
 
 ====== urf:TreePlantingDistrict
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画法第8条第1項第12号で定められる地区。 +
+2+| 都市計画法第8条第1項第12号で定められる地区。 +
 都市緑地法（昭和四十八年法律第七十二号）第三十四条第一項の規定による緑化地域。
 
 h| 上位の型 2+| urf:DistrictsAndZones
@@ -2048,7 +2048,7 @@ h| (urf:usage) | gml:CodeType [0..*] | 区域の種類。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された地域地区 が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
+| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 地域地区が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -2066,7 +2066,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 区域の範囲。高さを0とする。 +
+| 区域の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -2077,7 +2077,7 @@ a| 区域の範囲。高さを0とする。 +
 
 ====== urf:DistributionBusinessZone
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画法第8条第1項第13号で定められる地区。流通業務市街地の整備に関する法律（昭和四十一年法律第百十号）第四条第一項の規定による流通業務地区。
 
@@ -2110,7 +2110,7 @@ h| (urf:usage) | gml:CodeType [0..*] | 区域の種類。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された地域地区 が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
+| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 地域地区が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -2128,7 +2128,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 区域の範囲。高さを0とする。 +
+| 区域の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -2139,10 +2139,10 @@ a| 区域の範囲。高さを0とする。 +
 
 ====== urf:ProductiveGreenZone
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画法第8条第1項第14号で定められる地区。 +
+2+| 都市計画法第8条第1項第14号で定められる地区。 +
 生産緑地法（昭和四十九年法律第六十八号）第三条第一項の規定による生産緑地地区。
 
 h| 上位の型 2+| urf:DistrictsAndZones
@@ -2174,7 +2174,7 @@ h| (urf:usage) | gml:CodeType [0..*] | 区域の種類。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された地域地区 が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
+| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 地域地区が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -2193,7 +2193,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 区域の範囲。高さを0とする。 +
+| 区域の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -2204,7 +2204,7 @@ a| 区域の範囲。高さを0とする。 +
 
 ====== urf:ConservationZoneForClustersOfTraditionalStructures
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画法第8条第1項第15号で定められる地区。文化財保護法（昭和二十五年法律第二百十四号）第百四十三条第一項の規定による伝統的建造物群保存地区。
 
@@ -2237,7 +2237,7 @@ h| (urf:usage) | gml:CodeType [0..*] | 区域の種類。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された地域地区 が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
+| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 地域地区が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -2252,7 +2252,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 区域の範囲。高さを0とする。 +
+| 区域の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -2263,10 +2263,10 @@ a| 区域の範囲。高さを0とする。 +
 
 ====== urf:AircraftNoiseControlZone
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画法第8条第1項第16号で定められる地区。 +
+2+| 都市計画法第8条第1項第16号で定められる地区。 +
 特定空港周辺航空機騒音対策特別措置法（昭和五十三年法律第二十六号）第四条第一項の規定による航空機騒音障害防止地区及び航空機騒音障害防止特別地区。
 
 h| 上位の型 2+| urf:DistrictsAndZones
@@ -2298,7 +2298,7 @@ h| (urf:usage) | gml:CodeType [0..*] | 区域の種類。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された地域地区 が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
+| 都市計画法第8条第3項第3号に定める区域の「面積」。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 地域地区が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -2313,7 +2313,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 区域の範囲。高さを0とする。 +
+| 区域の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -2327,10 +2327,10 @@ a| 区域の範囲。高さを0とする。 +
 
 ====== urf:ProjectPromotionArea
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画法第10条の2に基づき、都市計画区域に定められた促進区域。 +
+2+| 都市計画法第10条の2に基づき、都市計画区域に定められた促進区域。 +
 下位の地物型として定義されていない促進区域を記述したい場合には、この地物型を使用し、属性「urf:function」でその内容を識別する。
 
 h| 上位の型 2+| urf:Zone
@@ -2362,7 +2362,7 @@ h| (urf:usage) | gml:CodeType [0..*] | 区域の用途。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された区域が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第10条第2項に定める面積。 +
+| 都市計画法第10条第2項に定める面積。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 区域が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -2387,10 +2387,10 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== urf:UrbanRedevelopmentPromotionArea
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画法第10条の2第1項第1号で定められる区域。 +
+2+| 都市計画法第10条の2第1項第1号で定められる区域。 +
 都市再開発法第七条第一項の規定による市街地再開発促進区域。
 
 h| 上位の型 2+| urf:ProjectPromotionArea
@@ -2422,7 +2422,7 @@ h| (urf:usage) | gml:CodeType [0..*] | 区域の用途。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された区域が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第10条第2項に定める面積。 +
+| 都市計画法第10条第2項に定める面積。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 区域が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -2433,7 +2433,7 @@ a| 都市計画法第10条第2項に定める面積。 +
 h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）。
 | urf:location
 | xs:string [0..1]
-a| 都市計画法第10条の2第2項に定める促進区域が設定された位置。多重度は任意となっているが、運用上必須とする。町丁目又は字まで記載する。 +
+| 都市計画法第10条の2第2項に定める促進区域が設定された位置。多重度は任意となっているが、運用上必須とする。町丁目又は字まで記載する。 +
 多重度は任意となっているが、運用上必須とする。
 
 h| (urf:developmentPolicy) | gml:StringOrRefType [0..1] | 促進区域の開発の方針。
@@ -2446,7 +2446,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 区域の範囲。高さを0とする。 +
+| 区域の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -2457,7 +2457,7 @@ a| 区域の範囲。高さを0とする。 +
 
 ====== urf:LandReadjustmentPromotionArea
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画法第10条の2第1項第2号で定められる区域。大都市地域における住宅及び住宅地の供給の促進に関する特別措置法第五条第一項の規定による土地区画整理促進区域。
 
@@ -2490,7 +2490,7 @@ h| (urf:usage) | gml:CodeType [0..*] | 区域の用途。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された区域が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第10条第2項に定める面積。 +
+| 都市計画法第10条第2項に定める面積。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 区域が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -2513,7 +2513,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== urf:ResidentialBlockConstructionPromotionArea
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画法第10条の2第1項第3号で定められる区域。大都市地域における住宅及び住宅地の供給の促進に関する特別措置法第二十四条第一項の規定による住宅街区整備促進区域。
 
@@ -2546,7 +2546,7 @@ h| (urf:usage) | gml:CodeType [0..*] | 区域の用途。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された区域が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第10条第2項に定める面積。 +
+| 都市計画法第10条第2項に定める面積。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 区域が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -2562,7 +2562,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 区域の範囲。高さを0とする。 +
+| 区域の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -2573,10 +2573,10 @@ a| 区域の範囲。高さを0とする。 +
 
 ====== urf:LandReadjustmentPromotionAreasForCoreBusinessUrbanDevelopment
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画法第10条の2第1項第4号で定められる区域。 +
+2+| 都市計画法第10条の2第1項第4号で定められる区域。 +
 地方拠点都市地域の整備及び産業業務施設の再配置の促進に関する法律第十九条第一項の規定による拠点業務市街地整備土地区画整理促進区域。
 
 h| 上位の型 2+| urf:ProjectPromotionArea
@@ -2608,7 +2608,7 @@ h| (urf:usage) | gml:CodeType [0..*] | 区域の用途。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された区域が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第10条第2項に定める面積。 +
+| 都市計画法第10条第2項に定める面積。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 区域が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -2624,7 +2624,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 区域の範囲。高さを0とする。 +
+| 区域の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -2638,7 +2638,7 @@ a| 区域の範囲。高さを0とする。 +
 
 ====== urf:UnusedLandUsePromotionArea
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画法第10条の3第1項で定められる遊休土地転換利用促進地区。
 
@@ -2671,7 +2671,7 @@ h| (urf:usage) | gml:CodeType [0..*] | 区域の用途。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された区域が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第10条の3第2項に定める面積。 +
+| 都市計画法第10条の3第2項に定める面積。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 区域が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -2685,7 +2685,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第10条の3第2項に定める区域（区域の範囲）。高さを0とする。 +
+| 都市計画法第10条の3第2項に定める区域（区域の範囲）。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -2699,7 +2699,7 @@ a| 都市計画法第10条の3第2項に定める区域（区域の範囲）。�
 
 ====== urf:UrbanDisasterRecoveryPromotionArea
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画法第10条の4第1項で定められる被災市街地復興推進地域。
 
@@ -2732,7 +2732,7 @@ h| (urf:usage) | gml:CodeType [0..*] | 区域の用途。
 | urf:areaClassificationType | gml:CodeType [0..1] | 指定された区域が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
 | urf:nominalArea
 | gml:MeasureType [0..1]
-a| 都市計画法第10条の3第2項に定める面積。 +
+| 都市計画法第10条の3第2項に定める面積。 +
 単位はha（uom=”ha”）とする。
 
 | urf:prefecture | gml:CodeType [0..1] | 区域が所在する都道府県の都道府県コード。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -2751,7 +2751,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第10条の3第2項に定める区域（区域の範囲）。高さを0とする。 +
+| 都市計画法第10条の3第2項に定める区域（区域の範囲）。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -2765,10 +2765,10 @@ a| 都市計画法第10条の3第2項に定める区域（区域の範囲）。�
 
 ====== urf:UrbanFacility
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画において定められるべき都市計画法第11条第1項各号に掲げる施設。 +
+2+| 都市計画において定められるべき都市計画法第11条第1項各号に掲げる施設。 +
 下位の地物型として定義されていない都市施設を記述したい場合には、この地物型を使用し、属性「urf:function」で地物型の内容を識別する。
 
 h| 上位の型 2+| urf:Zone
@@ -2823,10 +2823,10 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== urf:TrafficFacility
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画において定められるべき都市計画法第11条第1項各号に掲げる施設。 +
+2+| 都市計画において定められるべき都市計画法第11条第1項各号に掲げる施設。 +
 道路、都市高速鉄道、駐車場、自動車ターミナルその他の交通施設。
 
 h| 上位の型 2+| urf:UrbanFacility
@@ -2876,7 +2876,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
+| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -2894,7 +2894,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== urf:UrbanRoadAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画法第11条第1項第1号に定める道路について定めるべき事項。
 
@@ -2917,7 +2917,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== urf:UrbanRapidTransitRailroadAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画法第11条第1項第1号に定める都市高速鉄道について定めるべき事項。
 
@@ -2933,7 +2933,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== urf:StructureDetails
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 道路及び都市高速鉄道の構造を区間ごとに記述するために使用する型。
 
@@ -2955,7 +2955,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== urf:ParkingPlaceAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画法第11条第1項第1号に定める駐車場について定めるべき事項。
 
@@ -2970,7 +2970,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== urf:VehicleTerminalAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画において定められるべき都市計画法第11条第1項第1号に定める自動車ターミナルについて定めるべき事項。
 
@@ -2984,7 +2984,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== urf:OpenSpaceForPublicUse
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画において定められるべき都市計画法第11条第1項第2号に定める公園、緑地、広場、墓園その他の公共空地。
 
@@ -3028,7 +3028,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
+| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -3043,7 +3043,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== urf:ParkAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画法第11条第1項第2号に定める公園について定めるべき事項。
 
@@ -3059,7 +3059,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== urf:SupplyFacility
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画において定められるべき都市計画法第11条第1項第3号に定める水道、電気供給施設、ガス供給施設その他の供給施設。
 
@@ -3103,7 +3103,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
+| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:dataQualityAttribute | uro:DataQualityAttribute [0..1] | 作成したデータの品質に関する情報。必須とする。
@@ -3117,7 +3117,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== urf:WaterWorksAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画法第11条第1項第3号に定める水道について定めるべき事項。
 
@@ -3132,7 +3132,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== urf:TreatmentFacility
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画において定められるべき都市計画法第11条第1項第3号に定める下水道、汚物処理場、ごみ焼却場その他の処理施設。
 
@@ -3176,7 +3176,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
+| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -3191,7 +3191,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== urf:SewerSystemAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画法第11条第1項第3号に定める下水道について定めるべき事項。
 
@@ -3208,7 +3208,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== urf:Waterway
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画において定められるべき都市計画法第11条第1項第4号に定める河川、運河、その他の水路。
 
@@ -3259,7 +3259,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
+| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:dataQualityAttribute | uro:DataQualityAttribute [0..1] | 作成したデータの品質に関する情報。必須とする。
@@ -3270,7 +3270,7 @@ a| 都市計画法第11条第2項に定める都市施設の区域。高さを0�
 
 ====== urf:EducationalAndCulturalFacility
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画において定められるべき都市計画法第11条第1項第5号に定める学校、図書館、研究施設その他の教育文化施設。
 
@@ -3314,7 +3314,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
+| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -3326,7 +3326,7 @@ h| (urf:threeDimensionalExtent) | gml:ThreeDimensionalExtent [0..*] | 都市施�
 
 ====== urf:MedicalFacility
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画において定められるべき都市計画法第11条第1項第6号に定める病院その他の医療施設。
 
@@ -3370,7 +3370,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
+| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -3382,7 +3382,7 @@ h| (urf:threeDimensionalExtent) | gml:ThreeDimensionalExtent [0..*] | 都市施�
 
 ====== urf:SocialWelfareFacility
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画において定められるべき都市計画法第11条第1項第6号に定める保育所その他の社会福祉施設。
 
@@ -3426,7 +3426,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
+| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttributeurf:dataQualityAttribute | uro:DataQualityAttribute [0..1] | 作成したデータの品質に関する情報。必須とする。
@@ -3437,7 +3437,7 @@ h| (urf:threeDimensionalExtent) | gml:ThreeDimensionalExtent [0..*] | 都市施�
 
 ====== urf:MarketsSlaughterhousesCrematoria
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画において定められるべき都市計画法第11条第1項第7号に定める市場、と畜場又は火葬場。
 
@@ -3481,7 +3481,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
+| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:dataQualityAttribute | uro:DataQualityAttribute [0..1] | 作成したデータの品質に関する情報。必須とする。
@@ -3492,7 +3492,7 @@ h| (urf:threeDimensionalExtent) | gml:ThreeDimensionalExtent [0..*] | 都市施�
 
 ====== urf:CollectiveHousingFacilities
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画において定められるべき都市計画法第11条第1項第8号に定める、一団地における50戸以上の集団住宅及びこれらに附帯する通路その他の施設（一団地の住宅施設）。
 
@@ -3546,7 +3546,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
+| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -3558,7 +3558,7 @@ h| (urf:threeDimensionalExtent) | gml:ThreeDimensionalExtent [0..*] | 都市施�
 
 ====== urf:CollectiveGovernmentAndPublicOfficeFacilities
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画において定められるべき都市計画法第11条第1項第9号に定める、一団地の国家機関又は地方公共団体の建築物及びこれらの付帯に関する通路その他の施設（一団地の官公庁施設）。
 
@@ -3608,7 +3608,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
+| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -3620,7 +3620,7 @@ h| (urf:threeDimensionalExtent) | gml:ThreeDimensionalExtent [0..*] | 都市施�
 
 ====== urf:DistributionBusinessPark
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画において定められるべき都市計画法第11条第1項第11号に定める施設（流通業務団地）。
 
@@ -3674,7 +3674,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
+| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -3686,10 +3686,10 @@ h| (urf:threeDimensionalExtent) | gml:ThreeDimensionalExtent [0..*] | 都市施�
 
 ====== urf:CollectiveFacilitiesForTsunamiDisasterPrevention
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画において定められるべき都市計画法第11条第1項第12号に定める施設。 +
+2+| 都市計画において定められるべき都市計画法第11条第1項第12号に定める施設。 +
 津波防災地域づくりに関する法律（平成二十三年法律第百二十三号）第二条第十五項に規定する一団地の津波防災拠点市街地形成施設。
 
 h| 上位の型 2+| urf:UrbanFacility
@@ -3743,7 +3743,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
+| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -3755,10 +3755,10 @@ h| (urf:threeDimensionalExtent) | gml:ThreeDimensionalExtent [0..*] | 都市施�
 
 ====== urf:CollectiveFacilitiesForReconstructionAndRevitalization
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画において定められるべき都市計画法第11条第1項第13号に定める施設。 +
+2+| 都市計画において定められるべき都市計画法第11条第1項第13号に定める施設。 +
 福島復興再生特別措置法（平成二十四年法律第二十五号）第三十二条第一項に規定する一団地の復興再生拠点市街地形成施設。
 
 h| 上位の型 2+| urf:UrbanFacility
@@ -3812,7 +3812,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
+| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -3824,10 +3824,10 @@ h| (urf:threeDimensionalExtent) | gml:ThreeDimensionalExtent [0..*] | 都市施�
 
 ====== urf:CollectiveFacilitiesForReconstruction
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画において定められるべき都市計画法第11条第1項第14号に定める施設。 +
+2+| 都市計画において定められるべき都市計画法第11条第1項第14号に定める施設。 +
 大規模災害からの復興に関する法律（平成二十五年法律第五十五号）第二条第八号に規定する一団地の復興拠点市街地形成施設。
 
 h| 上位の型 2+| urf:UrbanFacility
@@ -3881,7 +3881,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
+| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -3893,10 +3893,10 @@ h| (urf:threeDimensionalExtent) | gml:ThreeDimensionalExtent [0..*] | 都市施�
 
 ====== urf:CollectiveUrbanDisasterPreventionFacilities
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画において定められるべき都市計画法第11条第1項第10号に定める施設（一団地の都市安全確保拠点施設）。 +
+2+| 都市計画において定められるべき都市計画法第11条第1項第10号に定める施設（一団地の都市安全確保拠点施設）。 +
 溢水、湛水、津波、高潮その他の自然現象による災害が発生した場合における居住者等（居住者、来訪者又は滞在者をいう。以下同じ。）の安全を確保するための拠点となる一団地の特定公益的施設（避難場所の提供、生活関連物資の配布、保健医療サービスの提供その他の当該災害が発生した場合における居住者等の安全を確保するために必要な機能を有する集会施設、購買施設、医療施設その他の施設をいう。）及び公共施設をいう。
 
 h| 上位の型 2+| urf:UrbanFacility
@@ -3947,7 +3947,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
+| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -3959,7 +3959,7 @@ h| (urf:threeDimensionalExtent) | gml:ThreeDimensionalExtent [0..*] | 都市施�
 
 ====== urf:UrbanFacilityStipulatedByCabinetOrder
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画において定められるべき都市計画法第11条第1項第15号の政令で定める施設。
 
@@ -4007,7 +4007,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
+| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -4019,7 +4019,7 @@ h| (urf:threeDimensionalExtent) | gml:ThreeDimensionalExtent [0..*] | 都市施�
 
 ====== urf:TelecommunicationFacility
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画において定められるべき都市計画法第11条第1項第15号の政令で定める電気通信事業の用に供する施設。
 
@@ -4065,7 +4065,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
+| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -4077,7 +4077,7 @@ a| 都市計画法第11条第2項に定める都市施設の区域。高さを0�
 
 ====== urf:WindProtectionFacility
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画において定められるべき都市計画法第11条第1項第15号の政令で定める防風の施設。
 
@@ -4123,7 +4123,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
+| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -4135,7 +4135,7 @@ h| (urf:threeDimensionalExtent) | gml:ThreeDimensionalExtent [0..*] | 都市施�
 
 ====== urf:FireProtectionFacility
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画において定められるべき都市計画法第11条第1項第15号の政令で定める防火の施設。
 
@@ -4181,7 +4181,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
+| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -4193,7 +4193,7 @@ a| 都市計画法第11条第2項に定める都市施設の区域。高さを0�
 
 ====== urf:TideFacility
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画において定められるべき都市計画法第11条第1項第15号の政令で定める防潮の施設。
 
@@ -4239,7 +4239,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
+| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -4251,7 +4251,7 @@ h| (urf:threeDimensionalExtent) | gml:ThreeDimensionalExtent [0..*] | 都市施�
 
 ====== urf:FloodPreventionFacility
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画において定められるべき都市計画法第11条第1項第15号の政令で定める防水の施設。
 
@@ -4297,7 +4297,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
+| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -4309,7 +4309,7 @@ a| 都市計画法第11条第2項に定める都市施設の区域。高さを0�
 
 ====== urf:SnowProtectionFacility
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画において定められるべき都市計画法第11条第1項第15号の政令で定める防雪の施設。
 
@@ -4355,7 +4355,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
+| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -4367,7 +4367,7 @@ h| (urf:threeDimensionalExtent) | gml:ThreeDimensionalExtent [0..*] | 都市施�
 
 ====== urf:SandControlFacility
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画において定められるべき都市計画法第11条第1項第15号の政令で定める防砂の施設。
 
@@ -4413,7 +4413,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
+| 都市計画法第11条第2項に定める都市施設の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -4428,7 +4428,7 @@ h| (urf:threeDimensionalExtent) | gml:ThreeDimensionalExtent [0..*] | 都市施�
 
 ====== urf:UrbanDevelopmentProject
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画法第12条に定める市街地開発事業
 
@@ -4474,7 +4474,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第12条第2項に定める市街地開発事業の区域。高さを0とする。 +
+| 都市計画法第12条第2項に定める市街地開発事業の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -4485,10 +4485,10 @@ a| 都市計画法第12条第2項に定める市街地開発事業の区域。�
 
 ====== urf:LandReadjustmentProject
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画法第12条第1項第1号に定める事業。 +
+2+| 都市計画法第12条第1項第1号に定める事業。 +
 土地区画整理法（昭和二十九年法律第百十九号）による土地区画整理事業。
 
 h| 上位の型 2+| urf:UrbanDevelopmentProject
@@ -4535,7 +4535,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第12条第2項に定める市街地開発事業の区域。高さを0とする。 +
+| 都市計画法第12条第2項に定める市街地開発事業の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -4546,10 +4546,10 @@ a| 都市計画法第12条第2項に定める市街地開発事業の区域。�
 
 ====== urf:NewHousingAndUrbanDevelopmentProject
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画法第12条第1項第2号に定める事業。 +
+2+| 都市計画法第12条第1項第2号に定める事業。 +
 新住宅市街地開発法（昭和三十八年法律第百三十四号）による新住宅市街地開発事業。
 
 h| 上位の型 2+| urf:UrbanDevelopmentProject
@@ -4597,7 +4597,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第12条第2項に定める市街地開発事業の区域。高さを0とする。 +
+| 都市計画法第12条第2項に定める市街地開発事業の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -4608,10 +4608,10 @@ a| 都市計画法第12条第2項に定める市街地開発事業の区域。�
 
 ====== urf:IndustrialParkDevelopmentProject
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画法第12条第1項第3号に定める事業。 +
+2+| 都市計画法第12条第1項第3号に定める事業。 +
 首都圏の近郊整備地帯及び都市開発区域の整備に関する法律（昭和三十三年法律第九十八号）による工業団地造成事業又は近畿圏の近郊整備区域及び都市開発区域の整備及び開発に関する法律（昭和三十九年法律第百四十五号）による工業団地造成事業。
 
 h| 上位の型 2+| urf:UrbanDevelopmentProject
@@ -4658,7 +4658,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第12条第2項に定める市街地開発事業の区域。高さを0とする。 +
+| 都市計画法第12条第2項に定める市街地開発事業の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -4669,7 +4669,7 @@ a| 都市計画法第12条第2項に定める市街地開発事業の区域。�
 
 ====== urf:UrbanRedevelopmentProject
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画法第12条第1項第4号に定める事業。都市再開発法による市街地再開発事業。
 
@@ -4721,7 +4721,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第12条第2項に定める市街地開発事業の区域。高さを0とする。 +
+| 都市計画法第12条第2項に定める市街地開発事業の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -4732,10 +4732,10 @@ a| 都市計画法第12条第2項に定める市街地開発事業の区域。�
 
 ====== urf:NewUrbanInfrastructureProject
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画法第12条第1項第5号に定める事業。 +
+2+| 都市計画法第12条第1項第5号に定める事業。 +
 新都市基盤整備法（昭和四十七年法律第八十六号）による新都市基盤整備事業。
 
 h| 上位の型 2+| urf:UrbanDevelopmentProject
@@ -4783,7 +4783,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第12条第2項に定める市街地開発事業の区域。高さを0とする。 +
+| 都市計画法第12条第2項に定める市街地開発事業の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -4794,10 +4794,10 @@ a| 都市計画法第12条第2項に定める市街地開発事業の区域。�
 
 ====== urf:ResidentialBlockConstructionProject
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市計画法第12条第1項第6号に定める事業。 +
+2+| 都市計画法第12条第1項第6号に定める事業。 +
 大都市地域における住宅及び住宅地の供給の促進に関する特別措置法による住宅街区整備事業。
 
 h| 上位の型 2+| urf:UrbanDevelopmentProject
@@ -4846,7 +4846,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第12条第2項に定める市街地開発事業の区域。高さを0とする。 +
+| 都市計画法第12条第2項に定める市街地開発事業の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -4857,7 +4857,7 @@ a| 都市計画法第12条第2項に定める市街地開発事業の区域。�
 
 ====== urf:DisasterPreventionBlockImprovementProject
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画法第12条第1項第7号に定める事業。密集市街地整備法による防災街区整備事業。
 
@@ -4906,7 +4906,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第12条第2項に定める市街地開発事業の区域。高さを0とする。 +
+| 都市計画法第12条第2項に定める市街地開発事業の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -4917,7 +4917,7 @@ a| 都市計画法第12条第2項に定める市街地開発事業の区域。�
 
 ====== urf:UrbanRenewalProject
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 旧公共施設の整備に関連する市街地の改造に関する法律(昭和36年法律第109号)第3条で定められる、旧都市計画法(大正8年法律第36号)第3条の定める手続きによって都市計画として決定された市街地改造事業。
 
@@ -4969,7 +4969,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第12条の2第2項に定める区域。高さを0とする。 +
+| 都市計画法第12条の2第2項に定める区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -4983,7 +4983,7 @@ a| 都市計画法第12条の2第2項に定める区域。高さを0とする。
 
 ====== urf:ScheduledAreaForUrbanDevelopmentProject
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画法第12条の2に定める予定区域。
 
@@ -5036,7 +5036,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== urf:ScheduledAreaForNewHousingAndUrbanDevelopmentProjects
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画法第12条の2第1項第1号に定める新住宅市街地開発事業の予定区域。
 
@@ -5080,7 +5080,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第12条第2項に定める市街地開発事業の区域。高さを0とする。 +
+| 都市計画法第12条第2項に定める市街地開発事業の区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -5091,7 +5091,7 @@ a| 都市計画法第12条第2項に定める市街地開発事業の区域。�
 
 ====== urf:ScheduledAreaForIndustrialParkDevelopmentProjects
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画法第12条の2第1項第2号に定める工業団地造成事業の予定区域。
 
@@ -5135,7 +5135,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第12条の2第2項に定める区域。高さを0とする。 +
+| 都市計画法第12条の2第2項に定める区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -5146,7 +5146,7 @@ a| 都市計画法第12条の2第2項に定める区域。高さを0とする。
 
 ====== urf:ScheduledAreaForNewUrbanInfrastructureProjects
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画法第12条の2第1項第3号に定める新都市基盤整備事業の予定区域。
 
@@ -5190,7 +5190,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第12条の2第2項に定める区域。高さを0とする。 +
+| 都市計画法第12条の2第2項に定める区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -5201,7 +5201,7 @@ a| 都市計画法第12条の2第2項に定める区域。高さを0とする。
 
 ====== urf:ScheduledAreaForCollectiveHousingFacilities
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画法第12条の2第1項第4号に定める区域の面積が20ha以上の一団地の住宅施設の予定区域。
 
@@ -5245,7 +5245,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第12条の2第2項に定める区域。高さを0とする。 +
+| 都市計画法第12条の2第2項に定める区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -5256,7 +5256,7 @@ a| 都市計画法第12条の2第2項に定める区域。高さを0とする。
 
 ====== urf:ScheduledAreaForCollectiveGovernmentAndPublicOfficeFacilities
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画法第12条の2第1項第5号に定める一団地の官公庁施設の予定区域。
 
@@ -5300,7 +5300,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第12条の2第2項に定める区域。高さを0とする。 +
+| 都市計画法第12条の2第2項に定める区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -5311,7 +5311,7 @@ a| 都市計画法第12条の2第2項に定める区域。高さを0とする。
 
 ====== urf:ScheduledAreaForDistributionBusinessPark
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画法第12条の2第1項第6号に定める流通業務団地の予定区域。
 
@@ -5355,7 +5355,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第12条の2第2項に定める区域。高さを0とする。 +
+| 都市計画法第12条の2第2項に定める区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
@@ -5369,7 +5369,7 @@ a| 都市計画法第12条の2第2項に定める区域。高さを0とする。
 
 ====== urf:DistrictPlan
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 建築物の建築形態、公共施設その他の施設の配置等からみて、一体としてそれぞれの区域の特性にふさわしい態様を備えた良好な環境の各街区を整備し、開発し、及び保全するための計画。
 
@@ -5387,7 +5387,7 @@ h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対
 h| (urf:class) | gml:CodeType [0..1] | 区域の分類。
 | urf:function
 | gml:CodeType [0..*]
-a| 都市計画法第12条の4第2項に定める地区計画の種類。 +
+| 都市計画法第12条の4第2項に定める地区計画の種類。 +
 促進区を定める場合、当該地区計画は、再開発等促進区又は開発整備促進区を定める地区計画となる。コードリスト（DistrictPlan_function.xml）より選択する。多重度は任意となっているが、運用上必須とする。
 
 h| (urf:usage) | gml:CodeType [0..*] | 区域の用途。
@@ -5418,19 +5418,19 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | urf:facilityAllocation
 | gml:StringOrRefType [0..1]
-a| 道路、公園その他の政令で定める施設（都市計画施設及び沿道地区施設を除く。）の配置及び規模。 +
+| 道路、公園その他の政令で定める施設（都市計画施設及び沿道地区施設を除く。）の配置及び規模。 +
 地区計画に促進区を定める場合に作成する。（都市計画法第12条の5第5項第1号）
 
 | urf:landUsePolicy
 | gml:StringOrRefType [0..1]
-a| 土地利用に関する基本方針。 +
+| 土地利用に関する基本方針。 +
 地区計画に促進区を定める場合に作成する。（都市計画法第12条の5第5項第2号）
 
 3+h| 継承する関連役割
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第12条の4第2項に定める区域。高さを0とする。 +
+| 都市計画法第12条の4第2項に定める区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttributeurf:dataQualityAttribute | uro:DataQualityAttribute [0..1] | 作成したデータの品質に関する情報。必須とする。
@@ -5442,7 +5442,7 @@ a| 都市計画法第12条の4第2項に定める区域。高さを0とする。
 
 ====== urf:RoadsideDistrictPlan
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 幹線道路の沿道の整備に関する法律（昭和五十五年法律第三十四号）第九条第一項の規定による沿道地区計画。
 
@@ -5460,7 +5460,7 @@ h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対
 h| (urf:class) | gml:CodeType [0..1] | 区域の分類。
 | urf:function
 | gml:CodeType [0..*]
-a| 都市計画法第12条の4第2項に定める地区計画の種類。 +
+| 都市計画法第12条の4第2項に定める地区計画の種類。 +
 沿道再開発等促進区を定める場合は、沿道再開発等促進区を定める沿道地区計画となる。コードリスト（DistrictPlan_function.xml）より選択する。多重度は任意となっているが、運用上必須とする。
 
 h| (urf:usage) | gml:CodeType [0..*] | 区域の用途。
@@ -5491,12 +5491,12 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | urf:facilitiesAllocation
 | gml:StringOrRefType [0..1]
-a| 道路、公園その他の政令で定める施設（都市計画施設及び沿道地区施設を除く。）の配置及び規模。 +
+| 道路、公園その他の政令で定める施設（都市計画施設及び沿道地区施設を除く。）の配置及び規模。 +
 沿道再開発等促進区を定める沿道地区計画の場合に作成する（幹線道路の沿道の整備に関する法律第9条第4項）。
 
 | urf:landUsePolicy
 | gml:StringOrRefType [0..1]
-a| 土地利用に関する基本方針。 +
+| 土地利用に関する基本方針。 +
 沿道再開発等促進区を定める沿道地区計画の場合に作成する（幹線道路の沿道の整備に関する法律第9条第4項）。
 
 3+h| 継承する関連役割
@@ -5511,7 +5511,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== urf:RuralDistrictPlan
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 集落地域整備法（昭和六十二年法律第六十三号）第五条第一項の規定による集落地区計画。
 
@@ -5556,7 +5556,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第12条の4第2項に定める区域。高さを0とする。 +
+| 都市計画法第12条の4第2項に定める区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttributeurf:dataQualityAttribute | uro:DataQualityAttribute [0..1] | 作成したデータの品質に関する情報。必須とする。
@@ -5564,14 +5564,14 @@ a| 都市計画法第12条の4第2項に定める区域。高さを0とする。
 | urf:districtDevelopmentPlan | urf:DistrictDevelopmentPlan [0..*] | 幹線道路の沿道の整備に関する法律第9条第2項第1号に定める当該沿道地区計画に定められた沿道地区整備計画。
 | urf:promotionDistrict
 | urf:PromotionDistrict [0..*]
-a| 沿道再開発等促進区。 +
+| 沿道再開発等促進区。 +
 沿道再開発等促進区を定める沿道地区計画の場合にのみ作成する。
 
 |===
 
 ====== urf:HistoricSceneryMaintenanceAndImprovementDistrictPlan
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 地域における歴史的風致の維持及び向上に関する法律（平成二十年法律第四十号）第三十一条第一項の規定による歴史的風致維持向上地区計画。
 
@@ -5619,7 +5619,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第12条の4第2項に定める区域。高さを0とする。 +
+| 都市計画法第12条の4第2項に定める区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttributeurf:dataQualityAttribute | uro:DataQualityAttribute [0..1] | 作成したデータの品質に関する情報。必須とする。
@@ -5631,7 +5631,7 @@ h| (urf:promotionDistrict) | urf:PromotionDistrict [0..*] |
 
 ====== urf:DisasterPreventionBlockImprovementZonePlan
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 密集市街地整備法第32条第1項の規定による防災街区整備地区計画。
 
@@ -5680,7 +5680,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第12条の4第2項に定める区域。高さを0とする。 +
+| 都市計画法第12条の4第2項に定める区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:keyValuePairAttributeurf:dataQualityAttribute | uro:DataQualityAttribute [0..1] | 作成したデータの品質に関する情報。必須とする。
@@ -5695,7 +5695,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== urf:DistrictDevelopmentPlan
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 主として街区内の居住者等の利用に供される道路、公園その他の政令で定める施設（地区施設）及び建築物等の整備並びに土地の利用に関する計画。
 
@@ -5745,7 +5745,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第12条の4第2項に定める区域。高さを0とする。 +
+| 都市計画法第12条の4第2項に定める区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:boundary | urf:Boundary [0..*] | 区域を構成する境界。区域の外周及び内周となる境界線。
@@ -5758,7 +5758,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== urf:SpecifiedBuildingZoneImprovementPlan
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 当該区域における特定防災機能を確保するための防災公共施設（都市計画施設を除く。以下「地区防災施設」という。）の区域（地区防災施設のうち建築物等と一体となって当該特定防災機能を確保するために整備されるべきもの（特定地区防災施設）にあっては、当該特定地区防災施設の区域及び当該建築物等の整備に関する計画。
 
@@ -5806,7 +5806,7 @@ h| (urf:landuseRestrictions) | gml:StringOrRefType [0..1] |
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第12条の4第2項に定める区域。高さを0とする。 +
+| 都市計画法第12条の4第2項に定める区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:boundary | urf:Boundary [0..*] | 区域を構成する境界。区域の外周及び内周となる境界線。
@@ -5817,7 +5817,7 @@ h| (urf:districtFacility) | urf:DistrictFacility [0..*] |
 
 ====== urf:DistrictImprovementPlanForDisasterPreventionBlockImprovementZonePlan
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 防災街区整備地区整備計画。主として街区内の居住者等の利用に供される道路、公園その他の政令で定める施設（地区施設）及び建築物等（特定建築物地区整備計画の区域内の建築物等を除く。）の整備並びに土地の利用に関して、地区防災施設の区域以外の防災街区整備地区計画の区域について定める計画。
 
@@ -5865,7 +5865,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第12条の4第2項に定める区域。高さを0とする。 +
+| 都市計画法第12条の4第2項に定める区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:boundary | urf:Boundary [0..*] | 区域を構成する境界。区域の外周及び内周となる境界線。
@@ -5876,10 +5876,10 @@ h| (urf:districtFacility) | urf:DistrictFacility [0..*] |
 
 ====== urf:RoadsideDistrictImprovementPlan
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 沿道地区整備計画。 +
+2+| 沿道地区整備計画。 +
 緑地その他の緩衝空地及び主として当該区域内の居住者等の利用に供される道路その他政令で定める施設（都市計画施設を除く。「沿道地区施設」）並びに建築物その他の工作物の整備並びに土地の利用その他の沿道の整備に関する計画。
 
 h| 上位の型 2+| urf:DistrictDevelopmentPlan
@@ -5929,7 +5929,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第12条の4第2項に定める区域。高さを0とする。 +
+| 都市計画法第12条の4第2項に定める区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:boundary | urf:Boundary [0..*] | 区域を構成する境界。区域の外周及び内周となる境界線。
@@ -5940,7 +5940,7 @@ a| 都市計画法第12条の4第2項に定める区域。高さを0とする。
 
 ====== urf:RuralDistrictImprovementPlan
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 集落地区整備計画。主として当該区域内の居住者等の利用に供される道路、公園その他の政令で定める施設（集落地区施設）及び建築物その他の工作物（建築物等）の整備並びに土地の利用に関する計画。
 
@@ -5988,14 +5988,14 @@ h| (urf:urbanGreenSpaceConservation) | gml:StringOrRefType [0..1] |
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | urf:ruralDistrictFacilitiesAllocation
 | gml:StringOrRefType [0..1]
-a| 集落地域整備法第5条第5項第1号に定める集落地区施設の配置及び規模。 +
+| 集落地域整備法第5条第5項第1号に定める集落地区施設の配置及び規模。 +
 関連役割「urf:districtFacilities」により集落地区施設の区域を示さない場合は、この属性により集落地区施設を記述する。
 
 3+h| 継承する関連役割
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第12条の4第2項に定める区域。高さを0とする。 +
+| 都市計画法第12条の4第2項に定める区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:boundary | urf:Boundary [0..*] | 区域を構成する境界。区域の外周及び内周となる境界線。
@@ -6006,10 +6006,10 @@ a| 都市計画法第12条の4第2項に定める区域。高さを0とする。
 
 ====== urf:DistrictImprovementPlanForHistoricSceneryMaintenanceAndImprovementDistrict
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 歴史的風致維持向上地区整備計画。 +
+2+| 歴史的風致維持向上地区整備計画。 +
 主として街区内の居住者、滞在者その他の者の利用に供される道路、公園その他の政令で定める施設（都市計画施設を除く。地区施設）及び建築物等の整備並びに土地の利用に関する計画。
 
 h| 上位の型 2+| urf:DistrictDevelopmentPlan
@@ -6056,7 +6056,7 @@ h| (urf:activityRestrictionInFarmland) | gml:StringOrRefType [0..1] |
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 都市計画法第12条の4第2項に定める区域。高さを0とする。 +
+| 都市計画法第12条の4第2項に定める区域。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:boundary | urf:Boundary [0..*] | 区域を構成する境界。区域の外周及び内周となる境界線。
@@ -6067,7 +6067,7 @@ h| (urf:districtFacility) | urf:DistrictFacility [0..*] |
 
 ====== urf:PromotionDistrict
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 地区計画に定められる促進区。
 
@@ -6110,7 +6110,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 促進区の範囲。高さを0とする。 +
+| 促進区の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:boundary | urf:Boundary [0..*] | 促進の区域を構成する境界。区域の外周及び内周となる境界線。
@@ -6119,7 +6119,7 @@ a| 促進区の範囲。高さを0とする。 +
 
 ====== urf:District
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 地区整備計画に定められる地区。
 
@@ -6184,7 +6184,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 地区の範囲。高さを0とする。 +
+| 地区の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:boundary | urf:Boundary [0..*] | 地区の区域を構成する境界。区域の外周及び内周となる境界線。
@@ -6193,10 +6193,10 @@ a| 地区の範囲。高さを0とする。 +
 
 ====== urf:DistrictFacility
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 地区計画において定められる、主として街区内の居住者等の利用に供される道路、公園その他政令で定める施設。 +
+2+| 地区計画において定められる、主として街区内の居住者等の利用に供される道路、公園その他政令で定める施設。 +
 道路、公園、避難路、避難施設、雨水貯留浸透施設、緑地及び広場その他公共空地。
 
 h| 上位の型 2+| urf:Zone
@@ -6238,7 +6238,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 地区施設の範囲。高さを0とする。 +
+| 地区施設の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:boundary | urf:Boundary [0..*] | 地区施設の区域を構成する境界。区域の外周及び内周となる境界線。
@@ -6247,7 +6247,7 @@ a| 地区施設の範囲。高さを0とする。 +
 
 ====== urf:RuralDistrictFacility
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 集落地区計画において定められる、主として当該区域内の居住者等の利用に供される道路、公園その他の政令で定める施設。
 
@@ -6290,7 +6290,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 地区施設の範囲。高さを0とする。 +
+| 地区施設の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:boundary | urf:Boundary [0..*] | 地区施設の区域を構成する境界。区域の外周及び内周となる境界線。
@@ -6299,7 +6299,7 @@ a| 地区施設の範囲。高さを0とする。 +
 
 ====== urf:RoadsideDistrictFacility
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 沿道地区計画において定められる、緑地その他の緩衝空地及び主として当該区域内の居住者等の利用に供される道路その他政令で定める施設。（都市計画施設は除く）
 
@@ -6342,7 +6342,7 @@ h| (urf:surveyYear) | xs:gYear[0..1] | 調査が実施された年（西暦）�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 地区施設の範囲。高さを0とする。 +
+| 地区施設の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:boundary | urf:Boundary [0..*] | 地区施設の区域を構成する境界。区域の外周及び内周となる境界線。
@@ -6351,7 +6351,7 @@ a| 地区施設の範囲。高さを0とする。 +
 
 ====== urf:ZonalDisasterPreventionFacility
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 防災街区整備地区計画において定められる、当該区域における特定防災機能を確保するための防災公共施設。（都市計画施設は除く）
 
@@ -6397,7 +6397,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 地区防災施設の範囲。高さを0とする。 +
+| 地区防災施設の範囲。高さを0とする。 +
 計画図に示す区域の境界線に囲まれた平面的な範囲を指す。
 
 | urf:boundary | urf:Boundary [0..*] | 地区防災施設の区域を構成する境界。区域の外周及び内周となる境界線。
@@ -6409,7 +6409,7 @@ a| 地区防災施設の範囲。高さを0とする。 +
 
 ====== urf:ThreeDimensionalExtent
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画法第11条第3項に定められる, 都市施設について, 適正かつ合理的な土地利用を図るため必要があるときに当該都市施設の区域の地下又は空間設けられる当該都市施設を整備する立体的な範囲。
 
@@ -6455,7 +6455,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | urf:lod1MultiSurface
 | gml:MultiSurface [0..1]
-a| 区域の範囲。高さを0とする。 +
+| 区域の範囲。高さを0とする。 +
 計画図に示す立体的な範囲が指定された平面的な範囲を指す。
 
 |===
@@ -6465,10 +6465,10 @@ a| 区域の範囲。高さを0とする。 +
 
 ====== urf:Boundary
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a|
+2+|
 区域の境界線。
 
 都市計画決定された区域を区分する境界線。都市計画決定された区域の境界に確定根拠等の情報を付与したい場合に作成する。
@@ -6481,7 +6481,7 @@ h| (urf:class) | gml:CodeType [0..1] | 境界線の区分。
 | urf:function | gml:CodeType [1..*] | 境界線の種類。コードリスト（Boundary_function.xml）より選択する。
 | urf:usage
 | gml:CodeType [0..*]
-a| 境界界が区切る区域の種類。コードリスト（UrbanPlan_areaType.xml）より選択する。 +
+| 境界界が区切る区域の種類。コードリスト（UrbanPlan_areaType.xml）より選択する。 +
 都市計画の区域を区分する境界の場合に、区域の種類を特定する。
 
 | urf:offset | gml:LengthType [0..1] | オフセットされている場合の量。単位はm（uom=”m”）とする。
@@ -6497,7 +6497,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== urf:UrbanFunctionAttractionArea
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+|
@@ -6549,7 +6549,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== urf:ResidenceAttractionArea
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+| 都市再生特別措置法に基づく立地適正化計画に記載された、都市の居住者の居住を誘導すべき区域（居住誘導区域）。
@@ -6603,7 +6603,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:DataQualityAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+| 都市オブジェクトの品質を記述するためのデータ型。
@@ -6615,7 +6615,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 | (uro:geometrySrcDescLod0) | gml:CodeType [0..*] | LOD0の幾何オブジェクトの作成に使用した原典資料の種類。
 | uro:geometrySrcDescLod1
 | gml:CodeType [1..*]
-a| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。 +
+| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。
 
 | (uro:geometrySrcDescLod2) | gml:CodeType [0..*] | LOD2の幾何オブジェクトの作成に使用した原典資料の種類。
@@ -6623,14 +6623,14 @@ a| LOD1の幾何オブジェクトの作成に使用した原典資料の種類�
 | (uro:geometrySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
 | uro:thematicSrcDesc
 | gml:CodeType [0..\*]
-a| 主題属性の作成に使用した原典資料の種類。 +
+| 主題属性の作成に使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_thematicSrcDesc.xml）より選択する。 +
 主題属性が作成対象となっている場合は必須とする。
 
 | (uro:appearanceSrcDescLod0) | gml:CodeType [0..*] | LOD0の幾何オブジェクトのアピアランスに使用した原典資料の種類。
 | uro:appearanceSrcDescLod1
 | gml:CodeType [0..*]
-a| LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
+| LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 +
 拡張製品仕様書LOD1の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD1の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
 
@@ -6651,10 +6651,10 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:KeyValuePairAttribute
 
-[cols="1,1,2"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
-2+a| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。 +
+2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。 +
 属性名称と属性の値の対で構成される。コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
 
 h| 上位の型 2+| ―
@@ -6664,7 +6664,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:key | gml:CodeType [1] | 拡張する属性の名称。名称は、コ－ドリスト（KeyValuePairAttribute_key.xml）を作成し、選択する。
 | uro:codeValue
 | gml:CodeType [1]
-a| 拡張された属性の値。値は名称は、コ－ドリスト（KeyValuePairAttribute_key[%key].xml）を作成し、選択する。 +
+| 拡張された属性の値。値は名称は、コ－ドリスト（KeyValuePairAttribute_key[%key].xml）を作成し、選択する。 +
 [%key]は、属性uro:keyの値に一致する。
 
 |===
@@ -6677,7 +6677,7 @@ a| 拡張された属性の値。値は名称は、コ－ドリスト（KeyValue
 
 ====== Common_urbanPlanType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Common_urbanPlanType.xml
 
@@ -6691,7 +6691,7 @@ h| コード h| 説明
 
 ====== Common_areaClassificationType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Common_areaClassificationType.xml
 
@@ -6704,7 +6704,7 @@ h| コード h| 説明
 
 ====== Common_districtAndZonesType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Common_districtsAndZonesType.xml
 
@@ -6758,7 +6758,7 @@ h| コード h| 説明
 
 ====== Common_validType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Common_validType.xml
 
@@ -6773,7 +6773,7 @@ h| コード h| 説明
 
 ====== Common_availabilityType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Common_availabilityType.xml
 
@@ -6787,7 +6787,7 @@ h| コード h| 説明
 
 ====== SpecialUseDistrict_usage.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | SpecialUseDistrict_usage.xml
 
@@ -6810,7 +6810,7 @@ h| コード h| 説明
 
 ====== HeightConstrolDistrict_usage.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | HeightControlDistrict_usage.xml
 
@@ -6823,7 +6823,7 @@ h| コード h| 説明
 
 ====== FirePreventionDIstrict_usage.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | FirePreventionDistrict_usage.xml
 
@@ -6838,7 +6838,7 @@ h| コード h| 説明
 
 ====== ScenicDIstrict_usage.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ScenicDistrict_usage.xml
 
@@ -6853,7 +6853,7 @@ h| コード h| 説明
 
 ====== PortZone_usage.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | PortZone_usage.xml
 
@@ -6873,7 +6873,7 @@ h| コード h| 説明
 
 ====== SpecialGreenSpaceConservationDistrict_requirement.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | SpecialGreenSpaceConservationDistrict_requirement.xml
 
@@ -6889,7 +6889,7 @@ h| コード h| 説明
 
 ====== ProjectPromotionArea_function.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ProjectPromotionArea_function.xml
 
@@ -6904,7 +6904,7 @@ h| コード h| 説明
 
 ====== UrbanRoadAttribute_routeTypeNumber.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | UrbanRoadAttribute_routeTypeNumber.xml
 
@@ -6921,7 +6921,7 @@ h| コード h| 説明
 
 ====== UrbanRoadAttribute_routeSizeNumber.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | UrbanRoadAttribute_routeSizeNumber.xml
 
@@ -6939,7 +6939,7 @@ h| コード h| 説明
 
 ====== UrbanRoadAttribute_roadType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | UrbanRoadAttribute_roadType.xml
 
@@ -6954,7 +6954,7 @@ h| コード h| 説明
 
 ====== TrafficFacility_trafficFacilityStructureType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | TrafficFacility_trafficFacilityStructureType.xml
 
@@ -6969,7 +6969,7 @@ h| コード h| 説明
 
 ====== TrafficFacility_trafficFacilityCrossingType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | TrafficFacility_trafficFacilityCrossingType.xml
 
@@ -6982,7 +6982,7 @@ h| コード h| 説明
 
 ====== VehicleTerminalAttribute_terminalType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | VehicleTerminalAttribute_terminalType.xml
 
@@ -6995,7 +6995,7 @@ h| コード h| 説明
 
 ====== ParkAttribute_parkTypeNumber.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ParkAttribute_parkTypeNumber.xml
 
@@ -7014,7 +7014,7 @@ h| コード h| 説明
 
 ====== ParkAttribute_parkSizeNumber.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ParkAttribute_parkSizeNumber.xml
 
@@ -7031,7 +7031,7 @@ h| コード h| 説明
 
 ====== Waterway_structure.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Waterway_structure.xml
 
@@ -7055,7 +7055,7 @@ h| コード h| 説明
 
 ====== SewerSystemAttribute_systemType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | SewerSystemAttribute_systemType.xml
 
@@ -7069,7 +7069,7 @@ h| コード h| 説明
 
 ====== UrbanRedevelopmentProject_usage.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | UrbanRedevelopmentProject_usage.xml
 
@@ -7082,7 +7082,7 @@ h| コード h| 説明
 
 ====== UrbanDevelopmentProject_function.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | UrbanDevelopmentProject_function.xml
 
@@ -7099,7 +7099,7 @@ h| コード h| 説明
 
 ====== ScheduledAreaForUrbanDevelopment_function.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ScheduledAreaForUrbanDevelopment_function.xml
 
@@ -7116,7 +7116,7 @@ h| コード h| 説明
 
 ====== DistrictPlan_function.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DistrictPlan_function.xml
 
@@ -7141,7 +7141,7 @@ h| コード h| 説明
 
 ====== DistrictDevelopmentPlan_function.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DistrictDevelopmentPlan_function.xml
 
@@ -7158,7 +7158,7 @@ h| コード h| 説明
 
 ====== ZonalDisasterPreventionFacility_facilityType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ZonalDisasterPreventionFacility_facilityType.xml
 
@@ -7171,7 +7171,7 @@ h| コード h| 説明
 
 ====== Common_districtFacilityType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Common_districtFacilityType.xml
 
@@ -7185,7 +7185,7 @@ h| コード h| 説明
 
 ====== District_function.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | District_function.xml
 
@@ -7199,7 +7199,7 @@ h| コード h| 説明
 
 ====== PromotionArea_function.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | PromotionArea_function.xml
 
@@ -7213,7 +7213,7 @@ h| コード h| 説明
 
 ====== Boundary_function.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Boundary_function.xml
 
@@ -7238,7 +7238,7 @@ h| コード h| 説明
 
 ====== UrbanPlan_areaType.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | UrbanPlan_areaType.xml
 
@@ -7372,7 +7372,7 @@ h| コード h| 説明
 
 ====== UrbanFacility_function.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | UrbanFacility_function.xml
 
@@ -7451,7 +7451,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
 
@@ -7497,7 +7497,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
 
@@ -7527,7 +7527,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[cols="3,22"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
 
