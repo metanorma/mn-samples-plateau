@@ -392,7 +392,7 @@ JMP2.0は、データ製品を作成する際に使用した原典資料の諸�
 
 . 記載項目
 
-[cols=3]
+[cols="a,a,a"]
 |===
 | 原典資料リスト項目 | 記述する内容 | 記述例
 
@@ -406,13 +406,15 @@ JMP2.0は、データ製品を作成する際に使用した原典資料の諸�
 | 50305455
 
 | feature
-| 地物名を記述する。 +
+| 地物名を記述する。
+
 各モジュールに複数の地物が定義されている場合は、集成する地物（例：Building）を記述することを基本とする。集成する地物に束ねられ、部品として使われる地物（例：WallSurface, Door）は記述しなくてもよいが、特に明記したい場合は、記述してもよい。
 
 なお、Appearance（地物に貼るテクスチャ）は、貼り付ける対象となる地物（例：Building）のプロパティとして記述する。
 
 地物名には接頭辞を付する。
 
+[example]
 ====
 Buildingの場合は、bldg
 ====
@@ -429,12 +431,14 @@ Buildingの場合は、bldg
 
 地物の主題属性及び空間属性には、接頭辞を付する。
 
+[example]
 ====
 Buildingの属性の場合は、bldg
 ====
 
 地物のテクスチャは、”property”を”app:appearance”とする。
 
+[example]
 ====
 bldg:function, bldg:lod1Solid, bldg:lod2Solid, uro:buildingDetailAttribute, uro:buildingDetailAttribute.uro:vacancy, app:appearance
 ====
@@ -490,7 +494,7 @@ https://www.mlit.go.jp/plateau/file/libraries/doc/template.zip
 
 ** CSVファイル仕様
 
-[cols=2]
+[cols="a,a"]
 |===
 | 文字コード | UTF-8 （BOM付）
 

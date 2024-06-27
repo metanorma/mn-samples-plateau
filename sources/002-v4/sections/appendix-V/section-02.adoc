@@ -12,10 +12,8 @@
 
 建築物の壁面等の都市オブジェクトの表面にテクスチャを重畳する場合には、Appearanceモジュールに定義されたParameraterizedTextureを使用する。図V-1は、標準製品仕様書Part1に示すAppearanceモジュールのUMLクラス図である。このUMLクラス図は、CityGMLのAppearanceモジュールから、ParameterizedTextureを使用するために必要となる型のみを矛盾なく抽出したプロファイルである。
 
-
 .テクスチャのためのプロファイル
 image::images/519.svg[]
-
 
 ==== テクスチャの記述
 
@@ -34,28 +32,28 @@ image::images/519.svg[]
 </app:ParameterizedTexture>
 ----
 
-** app:imageURIには、参照するテクスチャ画像データのファイルの所在を、3D都市モデルファイルからの相対パスにより記述する。
+* app:imageURIには、参照するテクスチャ画像データのファイルの所在を、3D都市モデルファイルからの相対パスにより記述する。
 
-*** テクスチャ画像のファイルの格納については5.4.4フォルダ構成とフォルダ名称 (5)テクスチャのフォルダ構成を参照すること。
+** テクスチャ画像のファイルの格納については5.4.4フォルダ構成とフォルダ名称 (5)テクスチャのフォルダ構成を参照すること。
 
-*** テクスチャ画像のパスにフォルダを複数階層、含んでもよいこととする。
+** テクスチャ画像のパスにフォルダを複数階層、含んでもよいこととする。
 
-** app:mimeTypeには、テクスチャ画像のファイルタイプを指定する。image/png又は、image/jpegのいずれかとなる。
+* app:mimeTypeには、テクスチャ画像のファイルタイプを指定する。image/png又は、image/jpegのいずれかとなる。
 
-** app:target の属性uriには、テクスチャ画像を貼る対象となる面（gml:Polygon）のgml:idへの参照を記述する。
+* app:target の属性uriには、テクスチャ画像を貼る対象となる面（gml:Polygon）のgml:idへの参照を記述する。
 
-** app:textureCoordinatesの属性ringには、テクスチャ画像を貼る対象となる面の外周（gml:LinearRing）のgml:idへの参照を記述する。
+* app:textureCoordinatesの属性ringには、テクスチャ画像を貼る対象となる面の外周（gml:LinearRing）のgml:idへの参照を記述する。
 
-** app:textureCoordinatesの値には、gml:LinearRingを構成する各座標に対応するテクスチャ画像の座標を列挙する。
+* app:textureCoordinatesの値には、gml:LinearRingを構成する各座標に対応するテクスチャ画像の座標を列挙する。
 
-*** テクスチャ画像の座標として用いるUV座標は横方向をU軸、縦方向をV軸として、座標値は0から1の小数値を用いる。UV座標の定義は面ごとにU値、V値の順に、面の頂点定義の順に定義する。
+** テクスチャ画像の座標として用いるUV座標は横方向をU軸、縦方向をV軸として、座標値は0から1の小数値を用いる。UV座標の定義は面ごとにU値、V値の順に、面の頂点定義の順に定義する。
 
 
 ==== Appearanceモジュール利用上の留意事項
 
-** CityGMLでは、Appearanceモジュールには、テクスチャを記述する型として、GeoreferencedTextureも定義されている。ただし、GeoreferencedTextureは現時点でその実装例が存在しないため、3D都市モデルでは非推奨とする。
+* CityGMLでは、Appearanceモジュールには、テクスチャを記述する型として、GeoreferencedTextureも定義されている。ただし、GeoreferencedTextureは現時点でその実装例が存在しないため、3D都市モデルでは非推奨とする。
 
-** 地形（dem:ReliefFeature）に重畳する画像の記述には、ParametarizedTextureは使用しない。地形に重畳する画像のデータ形式にはGeoTIFFを適用する。
+* 地形（dem:ReliefFeature）に重畳する画像の記述には、ParametarizedTextureは使用しない。地形に重畳する画像のデータ形式にはGeoTIFFを適用する。
 
 ****
 CityGMLでは、様々な地物型等が用意されているが、必ずしも全ての実装例が存在しているわけではない。例えば、地形に画像を貼りつける表示を行いたい場合は、別途GeoTIFF等の画像を用意し、ソフトウェア側でレンダリングを行うことが一般的である。そのため、GeoreferencedTextureは使用されていない。

@@ -191,7 +191,8 @@ BuildingPartを使用する場合に必須とする
 | 屋外床面 | OuterFloorSurface |  |  ○ |  ○
 | 屋外天井面 | OuterCeilingSurface |  |  |
 
-| 屋外付属物 +=====  +
+| 屋外付属物
+
 バルコニー、屋外階段、スロープ、手すり、エレベータ、エスカレータ、庇、アンテナ、煙突、看板等
 | BuildingInstallation
 |
@@ -354,7 +355,8 @@ BuildingPartを使用する場合
 
 | 屋外床面 | OuterFloorSurface |  ○ |  ○ |  ○ |  ○
 | 屋外天井面 | OuterCeilingSurface |  ○ |  ○ |  ○ |  ○
-| 屋外付属物 +
+| 屋外付属物
+
 バルコニー、屋外階段、スロープ、手すり、エレベータ、エスカレータ、庇、アンテナ、煙突、看板等
 | BuildingInstallation
 |  ● +
@@ -441,10 +443,11 @@ image::images/145.webp.png[]
 
 建築物モデル（LOD4）は、含むべき地物により、LOD4.0、LOD4.1及びLOD4.2に区分される。標準製品仕様書では原則としてLOD4.0を採用する。ただし、ユースケースの必要に応じてLOD4.1又はLOD4.2を採用できる。
 
-[cols=2]
+[cols="a,a"]
 .建築物モデル（LOD4）の取得イメージ
 |===
-h| LOD h| 取得イメージと説明
+| LOD | 取得イメージと説明
+
 | LOD4.0
 |
 
@@ -596,6 +599,7 @@ image::images/151.webp.png[]
 構造化して記述する場合の記述例を以下に示す。
 
 
+[example]
 .構造化する場合の記述例
 ====
 [source,xml]
@@ -622,6 +626,7 @@ image::images/151.webp.png[]
 
 なお、構造化せずに略式（1行の住所文字列）で記述する場合は、以下のように記載する。
 
+[example]
 .住所の記述例
 ====
 [source,xml]
