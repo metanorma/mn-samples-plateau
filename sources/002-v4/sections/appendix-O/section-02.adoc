@@ -42,18 +42,18 @@ image::images/418.webp.png[]
 .都市設備モデルに使用する地物型と空間属性
 |===
 ^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| 適用
-.5+| frn:CityFurniture | ^| ● ^| ● ^| ● ^| ● |
+.5+| frn:CityFurniture | |  ● |  ● |  ● |  ● |
 | uro:lod0Geometry
-^| ●
-^|
-^|
-^|
+|  ●
+|
+|
+|
 | 数値地形図の取得方法に従う。 +
 点、線又は面とする。
 
-| frn:lod1Geometry ^| ^| ● ^| ^| | 面又は立体とする。
-| frn:lod2Geometry ^| ^| ^| ● ^| | 面又は立体とする。
-| frn:lod Geometry ^| ^| ^| ^| ● | 面又は立体とする。
+| frn:lod1Geometry |  |  ● |  |  | 面又は立体とする。
+| frn:lod2Geometry |  |  |  ● |  | 面又は立体とする。
+| frn:lod Geometry |  |  |  |  ● | 面又は立体とする。
 
 |===
 

@@ -38,18 +38,18 @@ tran:Trackの空間属性は、LOD0では、線として表現する。LOD1以�
 .交通（徒歩道）モデルに使用する地物型と空間属性
 |===
 ^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| 適用
-.6+| tran:Track | ^| ● ^| ● ^| ● ^| ● |
-| tran:lod0Network ^| ■ | | | .2+| LOD0はネットワークを原則とするが、数値地形図との互換性を保つために、徒歩道縁を選択できる。
-| uro:lod0Geometry ^| ■ | | |
-| tran:lod1MultiSurface | ^| ● | | |
-| tran:lod2MultiSurface | | ^| ● | |
-| tran:lod3MultiSurface | | | ^| ● |
-.3+| tran:TrafficArea | | | ^| ● ^| ● |
-| tran:lod2MultiSurface | | ^| ● | |
-| tran:lod3MultiSurface | | | ^| ● |
-.3+| tran:AuxiliaryTrafficArea | | | ^| ● ^| ● |
-| tran:lod2MultiSurface | | ^| ● | |
-| tran:lod3MultiSurface | | | ^| ● |
+.6+| tran:Track | |  ● |  ● |  ● |  ● |
+| tran:lod0Network |  ■ | | | .2+| LOD0はネットワークを原則とするが、数値地形図との互換性を保つために、徒歩道縁を選択できる。
+| uro:lod0Geometry |  ■ | | |
+| tran:lod1MultiSurface | |  ● | | |
+| tran:lod2MultiSurface | | |  ● | |
+| tran:lod3MultiSurface | | | |  ● |
+.3+| tran:TrafficArea | | | |  ● |  ● |
+| tran:lod2MultiSurface | | |  ● | |
+| tran:lod3MultiSurface | | | |  ● |
+.3+| tran:AuxiliaryTrafficArea | | | |  ● |  ● |
+| tran:lod2MultiSurface | | |  ● | |
+| tran:lod3MultiSurface | | | |  ● |
 
 |===
 

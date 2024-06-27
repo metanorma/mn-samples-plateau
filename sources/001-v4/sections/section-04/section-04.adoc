@@ -38,21 +38,21 @@
 |===
 h| 5+^h| LOD0
 h| 取得例
-5+^|
+5+|
 image::images/104.webp.png[]
 
 h| 説明 5+| 中心線を取得する。
 h| 5+^h| LOD0
 h| 取得例
-^|
+|
 image::images/105.webp.png[]
-^|
+|
 image::images/106.webp.png[]
-^|
+|
 image::images/107.webp.png[]
-^|
+|
 image::images/108.webp.png[]
-^|
+|
 image::images/109.webp.png[]
 
 h| 説明 | 普通鉄道、地下鉄地上部、路面鉄道は、地図情報レベル2500ではレールの中心線を取得し、地図情報レベル500及び1000ではレールを取得する。
@@ -143,9 +143,9 @@ h| 説明 | 普通鉄道、地下鉄地上部、路面鉄道は、地図情報�
 |===
 h| 2+^h| LOD1
 h| 取得例
-^|
+|
 image::images/110.webp.png[]
-^|
+|
 image::images/111.webp.png[]
 
 h| 説明
@@ -162,7 +162,7 @@ h| 説明
 
 h| 2+^h| LOD1
 h| 取得例
-^|
+|
 image::images/112.webp.png[]
 |
 
@@ -222,9 +222,9 @@ h| 説明 | 索道の場合は、起点及び終点が同一となる索道の�
 .交通（鉄道）モデル（LOD2）に含むべき地物と地物型の対応
 |===
 2+h| 交通（鉄道）モデル（LOD2）に含むべき地物 h| 対応するCityGMLの地物型 ^h| LOD2
-2+| 鉄道 | Railway ^| ●
-.2+| 交通領域 | 軌道中心線 | TrafficArea ^| ●
-| 道床 | TrafficArea ^| ●
+2+| 鉄道 | Railway |  ●
+.2+| 交通領域 | 軌道中心線 | TrafficArea |  ●
+| 道床 | TrafficArea |  ●
 2+| 交通補助領域 | AuxiliaryTrafficArea |
 
 |===
@@ -349,13 +349,13 @@ h| 対応するCityGMLの地物型
 ^h| LOD3.1
 ^h| LOD3.2
 
-2+| 鉄道 | Railway ^| ● ^| ● ^| ●
-.5+| 交通領域 | 軌道中心線 | TrafficArea ^| ● ^| ● ^| ●
-| レール | TrafficArea | ^| ● ^| ●
-| レールに囲まれた範囲 | TrafficArea ^| ● ^| ● ^| ●
-| 軌きょう | TrafficArea | | ^| 〇
-| 道床 | TrafficArea ^| ● ^| ● ^| 　● footnoteblock:[fn_use_case]
-2+| 交通補助領域 | AuxiliaryTrafficArea | ^| ● ^| 　● footnoteblock:[fn_use_case]
+2+| 鉄道 | Railway |  ● |  ● |  ●
+.5+| 交通領域 | 軌道中心線 | TrafficArea |  ● |  ● |  ●
+| レール | TrafficArea | |  ● |  ●
+| レールに囲まれた範囲 | TrafficArea |  ● |  ● |  ●
+| 軌きょう | TrafficArea | | |  〇
+| 道床 | TrafficArea |  ● |  ● |  　● footnoteblock:[fn_use_case]
+2+| 交通補助領域 | AuxiliaryTrafficArea | |  ● |  　● footnoteblock:[fn_use_case]
 
 |===
 
@@ -378,13 +378,13 @@ h| ^h| 取得基準 ^h| LOD3.0 ^h| LOD3.1 ^h| LOD3.2
 取得 +
 方法
 | 軌道中心線上の勾配変化点に標高を与え、高さをもった線として表現する。
-^| ●
-^| ●
-^| ●
+|  ●
+|  ●
+|  ●
 
-| 道床に軌道中心線の高さを与える。 ^| ● ^| ● ^|
-| 軌道の横断方向に存在する15㎝以上の高さの差を取得する。 ^| ^| ● ^| ●
-| 軌道の横断方向に存在する15㎝未満の高さの差を取得する。 ^| ^| ^| 　● footnoteblock:[fn_lod_use_case]
+| 道床に軌道中心線の高さを与える。 |  ● |  ● |
+| 軌道の横断方向に存在する15㎝以上の高さの差を取得する。 |  |  ● |  ●
+| 軌道の横断方向に存在する15㎝未満の高さの差を取得する。 |  |  |  　● footnoteblock:[fn_lod_use_case]
 
 |===
 
@@ -403,11 +403,11 @@ LOD3.2における取得の下限値は、ユースケースの必要に応じ�
 |===
 h| ^h| LOD3.0 ^h| LOD3.1 ^h| LOD3.2
 h| 取得例
-^|
+|
 image::images/115.webp.png[]
-^|
+|
 image::images/116.webp.png[]
-^|
+|
 image::images/117.webp.png[]
 
 h| 説明
@@ -423,11 +423,11 @@ h| 説明
 |===
 h| ^h| LOD3.0 ^h| LOD3.1 ^h| LOD3.2
 h| 取得例
-^|
+|
 image::images/118.webp.png[]
-^|
+|
 image::images/119.webp.png[]
-^|
+|
 image::images/120.webp.png[]
 
 h| 説明
@@ -646,20 +646,20 @@ image::images/125.webp.png[]
 .交通（鉄道）モデルに使用する地物型と空間属性
 |===
 ^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| 適用
-.6+| tran:Railway | ^| ● ^| ● ^| ● ^| ● |
-| tran:lod0Network ^| ■ | | | .2+| LOD0はネットワークを原則とするが、数値地形図との互換性を保つために、レールの中心線を選択できる。
-| uro:lod0Geometry ^| ■ | | |
-| tran:lod1MultiSurface | ^| ● | | |
-| tran:lod2MultiSurface | | ^| ● | |
-| tran:lod3MultiSurface | | | ^| ● |
-.5+| tran:TrafficArea | | | ^| ● ^| ● |
-| tran:lod2MultiSurface | | ^| ● | |
-| uro:lod2Network | | ^| ● | | CompositeCurveとする。
-| tran:lod3MultiSurface | | | ^| ● |
-| uro:lod3Network | | | ^| ● | CompositeCurveとする。
-.3+| tran:AuxiliaryTrafficArea | | | | ^| ● |
+.6+| tran:Railway | |  ● |  ● |  ● |  ● |
+| tran:lod0Network |  ■ | | | .2+| LOD0はネットワークを原則とするが、数値地形図との互換性を保つために、レールの中心線を選択できる。
+| uro:lod0Geometry |  ■ | | |
+| tran:lod1MultiSurface | |  ● | | |
+| tran:lod2MultiSurface | | |  ● | |
+| tran:lod3MultiSurface | | | |  ● |
+.5+| tran:TrafficArea | | | |  ● |  ● |
+| tran:lod2MultiSurface | | |  ● | |
+| uro:lod2Network | | |  ● | | CompositeCurveとする。
+| tran:lod3MultiSurface | | | |  ● |
+| uro:lod3Network | | | |  ● | CompositeCurveとする。
+.3+| tran:AuxiliaryTrafficArea | | | | |  ● |
 | tran:lod2MultiSurface | | | | |
-| tran:lod3MultiSurface | | | ^| ● |
+| tran:lod3MultiSurface | | | |  ● |
 
 |===
 

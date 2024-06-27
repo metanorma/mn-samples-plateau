@@ -18,15 +18,15 @@
 |===
 h| 5+^h| LOD0
 h| 取得例
-^|
+|
 image::images/368.webp.png[]
-^|
+|
 image::images/369.webp.png[]
-^|
+|
 image::images/370.webp.png[]
-^|
+|
 image::images/371.webp.png[]
-^|
+|
 image::images/372.webp.png[]
 
 h| 説明 | 等高線及び等深線は等値線を取得する。
@@ -40,15 +40,15 @@ h| 説明 | 等高線及び等深線は等値線を取得する。
 露岩は、高度の高い方を右に見る形で界線を取得する。
 h| 5+^h| LOD0
 h| 取得例
-^|
+|
 image::images/373.webp.png[]
-^|
+|
 image::images/374.webp.png[]
-^|
+|
 image::images/375.webp.png[]
-^|
+|
 image::images/376.webp.png[]
-^|
+|
 image::images/377.webp.png[]
 
 h| 説明
@@ -151,9 +151,9 @@ h| 説明
 |===
 h| 2+^h| LOD1
 h| 取得例
-^|
+|
 image::images/378.webp.png[]
-^|
+|
 image::images/379.webp.png[]
 
 h| 説明 | 地形を、標高をもつ点の集まりとして表現する。
@@ -275,11 +275,11 @@ ReliefFeatureは地物の集まりとして表現し、空間属性はもたな�
 
 [cols=3,options="noheader"]
 |===
-.2+| LOD 2+^| 原典資料
+.2+| LOD 2+|  原典資料
 
-^| レーザ点群の場合 +
+|  レーザ点群の場合 +
 点密度
-^| 数値標高モデル（DEM）の場合 +
+|  数値標高モデル（DEM）の場合 +
 作成に使用したレーザ点群の密度及び +
 標高点格子間隔
 
@@ -347,13 +347,13 @@ ReliefFeatureは地物の集まりとして表現し、空間属性はもたな�
 .地形モデルの記述に使用する地物型と空間属性
 |===
 h| 地物型 h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 h| 適用
-| dem:ReliefFeature | ^| ● ^| ● ^| ● ^| ● | dem:ReliefFeatureを作成する場合は、dem:BreaklineRelief 、dem:TINRelief又はdem:ReliefFeatureのいずれかを必須とする
-.2+| dem:BreaklineRelief | ^| ■ ^| ^| ^| .2+|
-| dem:ridgeOrValleyLines ^| ■ ^| ^| ^|
-.2+| dem:TINRelief | ^| ■ ^| ■ ^| ■ ^| ■ .4+| LOD1、LOD2及びLOD3では、dem:TINReliefを基本とする。
-| dem:tin ^| ■ ^| ■ ^| ■ ^| ■
-.2+| dem:MassPointRelief | ^| ■ ^| ■ ^| ■ ^| ■
-| dem:reliefPoints ^| ■ ^| ■ ^| ■ ^| ■
+| dem:ReliefFeature | |  ● |  ● |  ● |  ● | dem:ReliefFeatureを作成する場合は、dem:BreaklineRelief 、dem:TINRelief又はdem:ReliefFeatureのいずれかを必須とする
+.2+| dem:BreaklineRelief | |  ■ |  |  |  .2+|
+| dem:ridgeOrValleyLines |  ■ |  |  |
+.2+| dem:TINRelief | |  ■ |  ■ |  ■ |  ■ .4+| LOD1、LOD2及びLOD3では、dem:TINReliefを基本とする。
+| dem:tin |  ■ |  ■ |  ■ |  ■
+.2+| dem:MassPointRelief | |  ■ |  ■ |  ■ |  ■
+| dem:reliefPoints |  ■ |  ■ |  ■ |  ■
 
 |===
 
