@@ -39,15 +39,14 @@ h| 説明 | 航路の区域の中心線を取得する。
 
 交通（航路）モデル（LOD0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1a,1a,1a,1a,1a,3a,2a"]
+[cols="1a,^1a,1a,1a,1a,3a,2a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
 | LOD0
 | ●
 | Waterway
-| Geometric +
-Complex
+| Geometric Complex
 |
 * 航路
 |
@@ -78,7 +77,8 @@ h| 取得例
 image::images/191.webp.png[]
 
 h| 説明
-| 法令により指定された航路の区域を取得する。 +
+| 法令により指定された航路の区域を取得する。
+
 高さは0とする。
 
 |===
@@ -87,7 +87,7 @@ h| 説明
 
 交通（航路）モデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1a,1a,1a,1a,1a,3a,2a"]
+[cols="1a,^1a,1a,1a,1a,3a,2a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -118,17 +118,20 @@ h| 説明
 
 交通（航路）モデル（LOD2）では、航路の形状を面により表現し、海上交通安全法により指定された船舶の進行方向ごとに、面を区分する。交通（航路）モデル（LOD2）の取得イメージを表 4-51に示す。
 
-[cols=2]
+[cols="a,a"]
 .交通（航路）モデル（LOD2）の取得イメージ
 |===
-h| ^h| LOD2
+h| h| LOD2
 h| 取得例
+
 |
 image::images/192.webp.png[]
 
 h| 説明
-| 航路の境界線をつないだ面を取得する。 +
-航路の区域に一つの航路しか存在しない場合、LOD1の形状に一致する。 +
+| 航路の境界線をつないだ面を取得する。
+
+航路の区域に一つの航路しか存在しない場合、LOD1の形状に一致する。
+
 高さは0とする。
 
 |===
@@ -137,7 +140,7 @@ h| 説明
 
 交通（航路）モデル（LOD2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="2a,2a,2a,2a,3a,5a,4a"]
+[cols="2a,^2a,2a,2a,3a,5a,4a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -258,14 +261,18 @@ h| (tran:auxiliaryTrafficArea) | tran:AuxiliaryTrafficArea [0..*] | 航路を構
 | tran:lod0Network | gml:GeometricComplex [0..*] | 航路の区域の中心線。
 | tran:lod1MultiSurface
 | gml:MultiSurface [0..1]
-| 法令により定められた航路の区域。 +
-法令に定められた航路を構成する地点を結ぶ面とする。 +
+| 法令により定められた航路の区域。
+
+法令に定められた航路を構成する地点を結ぶ面とする。
+
 なお、航路が交差する場合は、交差する部分の四隅を結ぶ位置で区切る。
 
 | tran:lod2MultiSurface
 | gml:MultiSurface [0..1]
-| 法令により定められた航路の区域。 +
-lod1MultiSurfaceの形状に一致する。 +
+| 法令により定められた航路の区域。
+
+lod1MultiSurfaceの形状に一致する。
+
 tran:Waterwayが参照するtran:TrafficAreaのtran:lod2MultiSurfaceに含まれる、全てのgml:Polygonにより構成する。
 
 h| (tran:lod3MultiSurface) | gml:MultiSurface [0..1] | 標準製品仕様書では使用しない。
@@ -287,7 +294,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 |===
 | 型の定義
 2+|
-法令により指定された進行方向に区切った航路の部分。 +
+法令により指定された進行方向に区切った航路の部分。
+
 高さは0とする。
 
 .LOD2における航路のtran:TrafficAreaの例
@@ -322,7 +330,8 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | tran:lod2MultiSurface
 | gml:MultiSurface [0..1]
-| 進行方向に区切られた航路の正射影の外周を取得する。 +
+| 進行方向に区切られた航路の正射影の外周を取得する。
+
 高さは0とする。
 
 h| (tran:lod3MultiSurface) | gml:MultiSurface [0..1] | 標準製品仕様書では使用しない。
@@ -337,18 +346,20 @@ h| (tran:lod3MultiSurface) | gml:MultiSurface [0..1] | 標準製品仕様書で�
 [cols="1a,1a,2a"]
 |===
 | 型の定義
-2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。 +
+2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。
+
 属性名称と属性の値の対で構成される。コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
 
 h| 上位の型 2+| ―
 h| ステレオタイプ 2+| << DataType >>
 3+h| 自身に定義された属性
 h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:key | gml:CodeType [1] | 拡張する属性の名称。名称は、コ－ドリスト（KeyValuePairAttribute_key.xml）を作成し、選択する。
+| uro:key | gml:CodeType [1] | 拡張する属性の名称。名称は、コ－ドリスト（``KeyValuePairAttribute_key.xml``）を作成し、選択する。
 | uro:codeValue
 | gml:CodeType [1]
-| 拡張された属性の値。値は名称は、コ－ドリスト（KeyValuePairAttribute_key[%key].xml）を作成し、選択する。 +
-[%key]は、属性uro:keyの値に一致する。
+| 拡張された属性の値。値は名称は、コ－ドリスト（``KeyValuePairAttribute_key[%key].xml``）を作成し、選択する。
+
+``[%key]``は、属性uro:keyの値に一致する。
 
 |===
 

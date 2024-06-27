@@ -54,10 +54,11 @@ LOD3では、LOD2で使用可能な地物型に加え、屋根面や外壁面に
 
 各LODにおいて使用可能な地物型及びその空間属性を表C- 2に示す。
 
-[cols=8]
+[cols="3a,3a,^a,^a,^a,^a,^a,6a"]
 .建築物モデルに使用する地物型と空間属性
 |===
 ^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| LOD4 ^h| 適用
+
 .8+| bldg:Building | |  ● |  ● |  ● |  ● |  ● |
 | lod0FootPrint |  〇 |  |  |  |  | 外周は、屋根の外周（RoofEdge）を原則とするが、地表面と外壁面との交線（FootPrint）で代替できる。
 | lod0RoofEdge |  ■ |  |  |  |  | lod0FootPrintがある場合は不要とする。
@@ -101,7 +102,8 @@ LOD3では、LOD2で使用可能な地物型に加え、屋根面や外壁面に
 |  ■
 |  ■
 |  ■
-| BuildingPartを作成する場合は必須とする。 +
+| BuildingPartを作成する場合は必須とする。
+
 LOD4において、内壁面等はないが、建築確認申請では部屋となっている空間を区切る場合は必須とする。
 
 | lod2MultiSurface |  |  |  ■ |  |  .3+| bldg:ClosureSurfaceを作る場合は必須とする。

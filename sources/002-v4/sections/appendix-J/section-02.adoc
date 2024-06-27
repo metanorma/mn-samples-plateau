@@ -37,10 +37,11 @@
 
 災害リスクモデルの各LODにおいて使用可能な地物型と空間属性を、表 J-1に示す。
 
-[cols=7]
+[cols="3a,3a,^a,^a,^a,^a,6a"]
 .災害リスクモデルの記述に使用する地物型と空間属性
 |===
-^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| 適用
+| 地物型 |  空間属性 |  LOD0 |  LOD1 |  LOD2 |  LOD3 |  適用
+
 .2+| wtr:WaterBody | | |  ● | | .2+| 災害リスク（浸水）モデルに使用する。
 | wtr:lod1MultiSurface | |  ● | |
 .2+| urf:SedimentDisasterProneArea | | |  ● | | .2+| 災害リスク（土砂災害）モデルに使用する。

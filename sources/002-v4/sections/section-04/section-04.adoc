@@ -266,12 +266,12 @@ https://www.geospatial.jp/iur/codelists
 * CityGML形式に出力したファイルのschemaLocationの指定は、3D都市モデルの成果品に含めるi-URの符号化仕様のファイルへの相対パスとする。
 
 ** 地物型又はモジュールごとに分けられた3D都市モデルの成果品を格納するフォルダ（例：bldg, tran）の直下に格納した3D都市モデルファイルの場合、schemaLocationとして記述すべき符号化仕様への相対パスは以下となる。
++
+--
+`urbanObject.xsd`への相対パス：`../../schemas/iur/uro/3.1/urbanObject.xsd`
 
-[none]
-*** `urbanObject.xsd`への相対パス：`../../schemas/iur/uro/3.1/urbanObject.xsd`
-
-*** `urbanFunction.xsd`への相対パス：`../../schemas/iur/uro/3.1/urbanFunction.xsd`
-
+`urbanFunction.xsd`への相対パス：`../../schemas/iur/uro/3.1/urbanFunction.xsd`
+--
 
 
 留意事項43：部分更新となる場合は、統合したデータに漏れや重複が無いことを確認する。

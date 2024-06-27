@@ -12,7 +12,10 @@ image::images/154.webp.png[]
 bldg:BuildingPartを使用して建築物を記述する場合、bldg:Buildingはbldg:BuildginPartを束ねるコンテナとして機能する。
 
 ****
-要件bldg-18.　妥当なbldg:BuildingPartは、以下を満たさなければならない。 1) 唯一のbldg:Buildingからbldg:consistsOfBuildingPartにより参照される。（複数のbldg:Buildingから参照されていてはならない） 2) 別のbldg:BuildingPartと接している。（一棟のbldg:Buildingは二つ以上のbldg:BuildingPartから構成され、それらは連続している）
+要件bldg-18.　妥当なbldg:BuildingPartは、以下を満たさなければならない。
+
+. 唯一のbldg:Buildingからbldg:consistsOfBuildingPartにより参照される。（複数のbldg:Buildingから参照されていてはならない）
+. 別のbldg:BuildingPartと接している。（一棟のbldg:Buildingは二つ以上のbldg:BuildingPartから構成され、それらは連続している）
 ****
 
 一棟の建築物を、建築物部分や建築物付属物に分けて表現する場合には、必ず、一体的な建築物として作成しなければならない。建築物部分をbldg:BuildingPartを用いて記述する場合は、一棟のbldg:Buildingを構成するbldg:BuildingPartが互いに接していなければならない。
