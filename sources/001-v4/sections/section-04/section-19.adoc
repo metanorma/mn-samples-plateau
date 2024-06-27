@@ -417,21 +417,21 @@ h| 説明
 .水部モデルの記述に使用する地物型と空間属性
 |===
 h| 地物型 h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 h| 適用
-.6+| wtr:WaterBody | ^| ● ^| ● ^| ● ^| ● |
-| wtr:lod0MultiCurve ^| ■ ^| ^| ^| .5+| 河川中心線（wtr:lod0MultiCurve）を基本とする。縁線、界線又は点として取得する場合はuro:lod0Geometryを使用する。
-| uro:lod0Geometry ^| ■ ^| ^| ^|
-| wtr:lod1MultiSurface ^| ^| ● ^| ^|
-| wtr:lod2Solid ^| ^| ^| ● ^|
-| wtr:lod3Solid ^| ^| ^| ^| ●
-.3+| wtr:WaterSurface | ^| ^| ^| ● ^| ● .3+|
-| wtr:lod2Surface ^| ^| ^| ● ^|
-| wtr:lod3Surface ^| ^| ^| ^| ●
-.3+| wtr:WaterGroundSurface | ^| ^| ^| ● ^| ● .6+|
-| wtr:lod2Surface ^| ^| ^| ● ^|
-| wtr:lod3Surface ^| ^| ^| ^| ●
-.3+| wtr:WaterClosureSurface | ^| ^| ^| ■ ^| ■
-| wtr:lod2Surface ^| ^| ^| ■ ^|
-| wtr:lod3Surface ^| ^| ^| ^| ■
+.6+| wtr:WaterBody | |  ● |  ● |  ● |  ● |
+| wtr:lod0MultiCurve |  ■ |  |  |  .5+| 河川中心線（wtr:lod0MultiCurve）を基本とする。縁線、界線又は点として取得する場合はuro:lod0Geometryを使用する。
+| uro:lod0Geometry |  ■ |  |  |
+| wtr:lod1MultiSurface |  |  ● |  |
+| wtr:lod2Solid |  |  |  ● |
+| wtr:lod3Solid |  |  |  |  ●
+.3+| wtr:WaterSurface | |  |  |  ● |  ● .3+|
+| wtr:lod2Surface |  |  |  ● |
+| wtr:lod3Surface |  |  |  |  ●
+.3+| wtr:WaterGroundSurface | |  |  |  ● |  ● .6+|
+| wtr:lod2Surface |  |  |  ● |
+| wtr:lod3Surface |  |  |  |  ●
+.3+| wtr:WaterClosureSurface | |  |  |  ■ |  ■
+| wtr:lod2Surface |  |  |  ■ |
+| wtr:lod3Surface |  |  |  |  ■
 
 |===
 
