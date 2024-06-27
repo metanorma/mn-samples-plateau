@@ -183,6 +183,7 @@ https://www.geospatial.jp/iur/codelists
 
 * 単位付き数値とは、50.0m, 50haのように、数値に単位を付する属性の型である。原典資料では単位が省略されている場合があるが、符号化仕様において単位付き数値で記述することが指定されている場合には、単位を付与する。
 
+[example]
 .記述例
 ====
 [source,xml]
@@ -199,6 +200,7 @@ https://www.geospatial.jp/iur/codelists
 
 ** 相対パスは、成果品のフォルダ構成に従う（5参照）。
 
+[example]
 .記述例：相対パスによるcodeSpaceの指定の例
 ====
 [source,xml]
@@ -209,6 +211,7 @@ https://www.geospatial.jp/iur/codelists
 
 留意事項40：汎用属性セットを用いてコード型の属性を追加した場合には、コードが参照するコードリストの所在を記述する文字列型の汎用属性（name=“codeSpace”）とコードを記述する文字列型の汎用属性（name=“code”）との対として符号化する。
 
+[example]
 .記述例：都市設備（CityFurniture）に追加する場合
 ====
 [source,xml]
@@ -224,6 +227,7 @@ https://www.geospatial.jp/iur/codelists
 ----
 ====
 
+[example]
 .記述例：汎用都市オブジェクト（GenericCityObject）に追加する場合
 ====
 [source,xml]
