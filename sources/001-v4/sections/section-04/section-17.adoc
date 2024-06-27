@@ -18,11 +18,11 @@
 |===
 h| 3+^h| LOD0
 h| 取得例
-^|
+|
 image::images/347.webp.png[]
 |
 image::images/348.webp.png[]
-^|
+|
 image::images/349.webp.png[]
 
 h| 説明 | 並木、植樹、独立樹（広葉樹）、独立樹（針葉樹）は、記号の表示位置の点情報を取得する。
@@ -97,9 +97,9 @@ h| 説明 | 並木、植樹、独立樹（広葉樹）、独立樹（針葉樹�
 |===
 h| 2+^h| LOD1
 h| 取得例
-^|
+|
 image::images/350.webp.png[]
-^|
+|
 image::images/351.webp.png[]
 
 h| 説明 | 樹冠の上方からの正射影の外周を、地表面から一律の高さで上向きに押し出した立体として表現する。
@@ -294,19 +294,19 @@ h| 説明
 .植生モデルの記述に使用する地物型と空間属性
 |===
 ^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| 適用
-.5+| veg:SolitaryVegetationObject | ^| ● ^| ● ^| ● ^| ● |
-| uro:lod0Geometry ^| ● | | | | 点とする。
-| veg:lod1Geometry ^| ^| ● | | | Solidとする。
-| veg:lod2Geometry | ^| ^| ● | | Solid又はMultiSurfaceとする。
-| veg:lod3Geometry | | ^| ^| ● | Solid又はMultiSurfaceとする。
-.8+| veg:PlantCover | ^| ● ^| ● ^| ● ^| ● |
-| uro:lod0Geometry ^| ● | | | | 点又は線とする。
-| veg:lod1MultiSurface ^| ^| | | |
-| veg:lod1MultiSolid | ^| ● | | |
-| veg:lod2MultiSurface | | ^| ■ ^| .2+| いずれかが必須となる。
-| veg:lod2MultiSolid | | ^| ■ |
-| veg:lod3MultiSurface | | ^| ^| ■ .2+| いずれかが必須となる。
-| veg:lod3MultiSolid | | ^| ^| ■
+.5+| veg:SolitaryVegetationObject | |  ● |  ● |  ● |  ● |
+| uro:lod0Geometry |  ● | | | | 点とする。
+| veg:lod1Geometry |  |  ● | | | Solidとする。
+| veg:lod2Geometry | |  |  ● | | Solid又はMultiSurfaceとする。
+| veg:lod3Geometry | | |  |  ● | Solid又はMultiSurfaceとする。
+.8+| veg:PlantCover | |  ● |  ● |  ● |  ● |
+| uro:lod0Geometry |  ● | | | | 点又は線とする。
+| veg:lod1MultiSurface |  |  | | |
+| veg:lod1MultiSolid | |  ● | | |
+| veg:lod2MultiSurface | | |  ■ |  .2+| いずれかが必須となる。
+| veg:lod2MultiSolid | | |  ■ |
+| veg:lod3MultiSurface | | |  |  ■ .2+| いずれかが必須となる。
+| veg:lod3MultiSolid | | |  |  ■
 
 |===
 

@@ -48,13 +48,13 @@ h| 説明
 
 h| 2+^h| LOD0
 h| 取得例
-^|
+|
 
 image::images/167.webp.png[]
 
 自動車ターミナル
 
-^|
+|
 
 image::images/168.webp.png[]
 
@@ -68,13 +68,13 @@ h| 説明
 
 h| 2+^h| LOD0
 h| 取得例
-^|
+|
 
 image::images/169.webp.png[]
 
 交通広場
 
-^|
+|
 
 image::images/170.webp.png[]
 
@@ -290,17 +290,17 @@ h| 説明
 .LOD3.0、LOD3.1、LOD3.2、LOD3.3及び LOD3.4の「広場内の区分」
 |===
 2+h| 交通（広場）モデル（LOD3）に含むべき地物 h| 対応するCityGMLの地物型 ^h| LOD3.0 ^h| LOD3.1 ^h| LOD3.2 ^h| LOD3.3 ^h| LOD3.4
-2+| 広場（駅前広場、自動車ターミナル、交通広場） | Square ^| ● ^| ● ^| ● ^| ● ^| ●
-.5+| 車道部 | | TrafficArea ^| ● ^| ● ^| ● ^| ● ^| ●
-| 車道交差部 | TrafficArea ^| ● ^| ● ^| ● ^| ● ^| ●
-| 車線 | TrafficArea | ^| ● ^| ● ^| ● ^| ●
-| すりつけ区間、踏切道、軌道敷、待避所、副道、自動車駐車場（走路）、自転車駐車場（走路）、 | TrafficArea | | | | ^| 〇
-| 非常駐車帯、中央帯、側帯、路肩、停車帯、乗合自動車停車所、自動車駐車場（駐車区画）、自転車駐車場（駐車区画） | AuxiliaryTrafficArea | | | | ^| 〇
-.3+| 歩道部 | | TrafficArea ^| ● ^| ● ^| ● ^| ● ^| ●
-| 歩道上の植栽 | AuxiliaryTrafficArea | | ^| ● ^| ● ^| ●
-| 歩道、自転車歩行者道、自転車道 | TrafficArea | | | | ^| 〇
-.2+| 島 | | AuxiliaryTrafficArea ^| ● ^| ● ^| ● ^| ● ^| ●
-| 交通島、分離帯、植樹帯、路面電車停車所 | AuxiliaryTrafficArea | | | | ^| 〇
+2+| 広場（駅前広場、自動車ターミナル、交通広場） | Square |  ● |  ● |  ● |  ● |  ●
+.5+| 車道部 | | TrafficArea |  ● |  ● |  ● |  ● |  ●
+| 車道交差部 | TrafficArea |  ● |  ● |  ● |  ● |  ●
+| 車線 | TrafficArea | |  ● |  ● |  ● |  ●
+| すりつけ区間、踏切道、軌道敷、待避所、副道、自動車駐車場（走路）、自転車駐車場（走路）、 | TrafficArea | | | | |  〇
+| 非常駐車帯、中央帯、側帯、路肩、停車帯、乗合自動車停車所、自動車駐車場（駐車区画）、自転車駐車場（駐車区画） | AuxiliaryTrafficArea | | | | |  〇
+.3+| 歩道部 | | TrafficArea |  ● |  ● |  ● |  ● |  ●
+| 歩道上の植栽 | AuxiliaryTrafficArea | | |  ● |  ● |  ●
+| 歩道、自転車歩行者道、自転車道 | TrafficArea | | | | |  〇
+.2+| 島 | | AuxiliaryTrafficArea |  ● |  ● |  ● |  ● |  ●
+| 交通島、分離帯、植樹帯、路面電車停車所 | AuxiliaryTrafficArea | | | | |  〇
 
 |===
 
@@ -313,13 +313,13 @@ h| 説明
 .LOD3.0、LOD3.1、LOD3.2、LOD3.3及び LOD3.4の「高さの取得方法」
 |===
 ^h| 取得方法 ^h| LOD3.0 ^h| LOD3.1 ^h| LOD3.2 ^h| LOD3.3 ^h| LOD3.4
-| 広場の車道の横断方向の高さは一律とし、車道の高さとする。 ^| ● ^| ● | | |
+| 広場の車道の横断方向の高さは一律とし、車道の高さとする。 |  ● |  ● | | |
 | 広場の車道の横断方向に15㎝以上の高さの差が存在した場合に、車道部、歩道部、島それぞれの高さを取得する。
 |
-| ^| ● | |
+| |  ● | |
 | 広場の車道の横断方向に2㎝以上の高さの差が存在した場合に、車道部、歩道部、島それぞれの高さを取得する。
 |
-| | ^| ● ^| ● footnote:[LOD3.4における取得の下限値は、ユースケースの必要に応じて定めることができる。]
+| | |  ● |  ● footnote:[LOD3.4における取得の下限値は、ユースケースの必要に応じて定めることができる。]
 
 |===
 
@@ -337,13 +337,13 @@ h| 説明
 歩道部のうち、植栽を区分する。
 | LOD3.2の区分を細分する。細分はユースケースに応じて決定する。
 
-^|
+|
 image::images/173.webp.png[]
-^|
+|
 image::images/174.webp.png[]
-^|
+|
 image::images/175.webp.png[]
-^|
+|
 image::images/176.webp.png[]
 
 |===
@@ -869,18 +869,18 @@ image::images/184.webp.png[]
 .交通（広場）モデルに使用する地物型と空間属性
 |===
 ^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| 適用
-.6+| tran:Square | ^| ● ^| ● ^| ● ^| ● |
-| tran:lod0Network ^| ■ ^| ^| ^| .2+| LOD0はネットワークを原則とするが、数値地形図との互換性を保つために、道路縁及び車道の界線を選択できる。
-| uro:lod0Geometry ^| ■ ^| ^| ^|
-| tran:lod1MultiSurface ^| ^| ● ^| ^| |
-| tran:lod2MultiSurface ^| ^| ^| ● ^| |
-| tran:lod3MultiSurface ^| ^| ^| ^| ● |
-.3+| tran:TrafficArea | ^| ^| ^| ● ^| ● |
-| tran:lod2MultiSurface ^| ^| ^| ● ^| |
-| tran:lod3MultiSurface ^| ^| ^| ^| ● |
-.3+| tran:AuxiliaryTrafficArea | ^| ^| ^| ● ^| ● |
-| tran:lod2MultiSurface ^| ^| ^| ● ^| |
-| tran:lod3MultiSurface ^| ^| ^| ^| ● |
+.6+| tran:Square | |  ● |  ● |  ● |  ● |
+| tran:lod0Network |  ■ |  |  |  .2+| LOD0はネットワークを原則とするが、数値地形図との互換性を保つために、道路縁及び車道の界線を選択できる。
+| uro:lod0Geometry |  ■ |  |  |
+| tran:lod1MultiSurface |  |  ● |  |  |
+| tran:lod2MultiSurface |  |  |  ● |  |
+| tran:lod3MultiSurface |  |  |  |  ● |
+.3+| tran:TrafficArea | |  |  |  ● |  ● |
+| tran:lod2MultiSurface |  |  |  ● |  |
+| tran:lod3MultiSurface |  |  |  |  ● |
+.3+| tran:AuxiliaryTrafficArea | |  |  |  ● |  ● |
+| tran:lod2MultiSurface |  |  |  ● |  |
+| tran:lod3MultiSurface |  |  |  |  ● |
 
 |===
 

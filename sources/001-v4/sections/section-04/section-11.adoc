@@ -36,15 +36,15 @@
 |===
 h| 5+^h| LOD0
 h| 取得例
-^|
+|
 image::images/231.webp.png[]
-^|
+|
 image::images/232.webp.png[]
-^|
+|
 image::images/233.webp.png[]
-^|
+|
 image::images/234.webp.png[]
-^|
+|
 image::images/235.webp.png[]
 
 h| 説明 | 道路橋は、地図情報レベル2500では、縁線を取得する。また、ひ開部を表示する。地図情報レベル500及び1000では、縁線のほか、高欄、橋脚及び親柱（橋の両端に高欄の続きとして設けられる高欄より大きな柱）の外周を取得する。
@@ -151,13 +151,13 @@ h| 説明 | 道路橋は、地図情報レベル2500では、縁線を取得す�
 |===
 h| 4+^h| LOD1
 h| 取得例
-^|
+|
 image::images/236.webp.png[]
-^|
+|
 image::images/237.webp.png[]
-^|
+|
 image::images/238.webp.png[]
-^|
+|
 image::images/239.webp.png[]
 
 h| 説明
@@ -256,59 +256,59 @@ h| その他の構造物モデル（LOD2）に含むべき地物 h| 対応する
 道路橋、鉄道橋及び桟道橋の場合は、主桁と床版を含む。 +
 それ以外の橋梁の場合は、上部工（床版及び主桁）、階段、及び踊り場を含む。
 | Bridge
-^| ●
-^| ●
+|  ●
+|  ●
 
 | 橋梁部分
 | BridgePart
-^| ■ +
+|  ■ +
 一つの橋梁を、主題属性の異なる複数の部分に分ける場合は必須とする。
-^| ■ +
+|  ■ +
 一つの橋梁を、主題属性の異なる複数の部分に分ける場合は必須とする。
 
 | 屋根面
 | RoofSurface
 |
-^| ■ +
+|  ■ +
 屋根がある場合は必須とする。
 
 | 底面
 | GroundSurface
 |
-^| ■ +
+|  ■ +
 接地している部分がある場合は必須とする。
 
-| 外壁面 | WallSurface ^| ^| ●
+| 外壁面 | WallSurface |  |  ●
 | 閉鎖面
 | ClosureSurface
-^|
-^| ■ +
+|
+|  ■ +
 BridgePartを使用する場合は必須とする。
 
 | 屋外床面
 | OuterFloorSurface
-^| ■ +
+|  ■ +
 屋根が無い場合は必須とする。
-^| ■ +
+|  ■ +
 屋根が無い場合は必須とする。
 
 | 屋外天井面
 | OuterCeilingSurface
 |
-^| ■ +
+|  ■ +
 WallSurfaceとの区分が必要な場合は必須とする。
 
 | 構造上不可欠な要素 +
 トラス、アーチ、パイロン、吊材、ケーブル
 | BridgeConstructionElement
 |
-^| 〇
+|  〇
 
 | 屋外付属物 +
 高欄、手すり、庇、庇の柱。道路橋・鉄道橋の場合は、階段、踊り場スロープを含む。
 | BridgeInstallation
 |
-^| 〇
+|  〇
 
 |===
 
@@ -582,43 +582,43 @@ Element
 h| 対応するCityGMLの地物型
 ^h| LOD3
 
-2+| 橋梁 | Bridge ^| ●
+2+| 橋梁 | Bridge |  ●
 2+| 橋梁部分
 | BridgePart
-^| ■ +
+|  ■ +
 一つの橋梁を主題属性の異なる複数の部分に分ける場合は必須とする。 +
 横断歩道橋・ペデストリアンデッキでは必須とする。
 
 2+| 屋根面
 | RoofSurface
-^| ■ +
+|  ■ +
 屋根がある場合は必須とする。
 
-2+| 底面 | GroundSurface ^| ●
-2+| 外壁面 | WallSurface ^| ●
+2+| 底面 | GroundSurface |  ●
+2+| 外壁面 | WallSurface |  ●
 2+| 閉鎖面
 | ClosureSurface
-^| ■ +
+|  ■ +
 BridgePartを使用する場合は必須とする。 +
 扉のない出入口がある場合は必須とする。
 
 2+| 屋外床面
 | OuterFloorSurface
-^| ■ +
+|  ■ +
 屋根が無い場合は必須とする。
 
 2+| 屋外天井面
 | OuterCeilingSurface
-^| ■ +
+|  ■ +
 WallSurfaceとの区分が必要な場合に必須とする。
 
-.3+| 構造上不可欠な要素 | トラス、アーチ、パイロン | BridgeConstructionElement ^| ●
-| 吊材、ケーブル | BridgeConstructionElement ^| ●
-| 橋脚、橋台 | BridgeConstructionElement ^| ■
-.2+| 屋外付属物 | 高欄、地覆、親柱、庇、庇の柱、エレベータ、エスカレータ、手すり | BridgeInstallation ^| ●
-| 階段、踊り場、スロープ | BridgeInstallation ^| ●
-2+| 扉 | Door ^| 〇
-2+| 窓 | Window ^| 〇
+.3+| 構造上不可欠な要素 | トラス、アーチ、パイロン | BridgeConstructionElement |  ●
+| 吊材、ケーブル | BridgeConstructionElement |  ●
+| 橋脚、橋台 | BridgeConstructionElement |  ■
+.2+| 屋外付属物 | 高欄、地覆、親柱、庇、庇の柱、エレベータ、エスカレータ、手すり | BridgeInstallation |  ●
+| 階段、踊り場、スロープ | BridgeInstallation |  ●
+2+| 扉 | Door |  〇
+2+| 窓 | Window |  〇
 
 |===
 
@@ -823,37 +823,37 @@ Element
 .橋梁モデル（LOD4）に含むべき地物
 |===
 2+h| 橋梁モデル（LOD4）に含むべき地物 h| 対応するCityGMLの地物型 ^h| LOD4
-2+| 橋梁 | Bridge ^| ●
+2+| 橋梁 | Bridge |  ●
 2+| 橋梁部分
 | BridgePart
-^| ■ +
+|  ■ +
 一つの橋梁を主題属性の異なる複数の部分に分ける場合は必須とする。 +
 横断歩道橋・ペデストリアンデッキは必須とする。
 
 2+| 屋根面
 | RoofSurface
-^| ■ +
+|  ■ +
 屋根がある場合は必須とする。
 
-2+| 外壁面 | WallSurface ^| ●
-2+| 底面 | GroundSurface ^| ●
-2+| 屋外天井面 | OuterCeilingSurface ^| ●
+2+| 外壁面 | WallSurface |  ●
+2+| 底面 | GroundSurface |  ●
+2+| 屋外天井面 | OuterCeilingSurface |  ●
 2+| 屋外床面
 | OuterFloorSurface
-^| ■ +
+|  ■ +
 屋根が無い場合は必須とする。
 
-2+| 構造上不可欠な要素 | BridgeConstructionElement ^| ●
-2+| 外部付属物 | BridgeInstallation ^| ●
-2+| 窓 | Window ^| 〇
-2+| 扉 | Door ^| 〇
-2+| 部屋 | BridgeRoom ^| 〇
-2+| 天井面 | CeilingSurface ^| 〇
-2+| 内壁面 | InteriorWallSurface ^| 〇
-2+| 床面 | FloorSurface ^| 〇
-2+| 閉鎖面 | ClosureSurface ^| 〇
-2+| 内部付属物 | IntBridgeInstallation ^| 〇
-2+| 家具 | BridgeFurniture ^| 〇
+2+| 構造上不可欠な要素 | BridgeConstructionElement |  ●
+2+| 外部付属物 | BridgeInstallation |  ●
+2+| 窓 | Window |  〇
+2+| 扉 | Door |  〇
+2+| 部屋 | BridgeRoom |  〇
+2+| 天井面 | CeilingSurface |  〇
+2+| 内壁面 | InteriorWallSurface |  〇
+2+| 床面 | FloorSurface |  〇
+2+| 閉鎖面 | ClosureSurface |  〇
+2+| 内部付属物 | IntBridgeInstallation |  〇
+2+| 家具 | BridgeFurniture |  〇
 
 |===
 
@@ -1096,97 +1096,97 @@ IfcElementAssembly (ARCH, BEAM_GRID, GIRDER, REINFORCEMENT_UNIT, RIGID_FRAME, SL
 .橋梁モデルの記述に使用する地物型と空間属性
 |===
 ^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| LOD4 ^h| 適用
-.9+| brid:Bridge | ^| ● ^| ● ^| ● ^| ● ^| ● |
-| uro:lod0Geometry ^| ● | | | | | 数値地形図の取得方法に従う。
-| brid:lod1Solid | ^| ● | | | |
-| brid:lod2MultiSurface | | ^| ■ | | | LOD2.0の場合は必須とする。
-| brid:lod2Solid | | ^| ■ | | | LOD2.1の場合は必須とする。
-| brid:lod3MultiSurface | | | ^| ■ | | MultiSurface又はSolidとする。
-| brid:lod3Solid | | | ^| ■ | | MultiSurface又はSolidとする。
-| brid:lod4MultiSurface | | | | ^| ■ | MultiSurface又はSolidとする。
-| brid:lod4Solid | | | | ^| ■ | MultiSurface又はSolidとする。
+.9+| brid:Bridge | |  ● |  ● |  ● |  ● |  ● |
+| uro:lod0Geometry |  ● | | | | | 数値地形図の取得方法に従う。
+| brid:lod1Solid | |  ● | | | |
+| brid:lod2MultiSurface | | |  ■ | | | LOD2.0の場合は必須とする。
+| brid:lod2Solid | | |  ■ | | | LOD2.1の場合は必須とする。
+| brid:lod3MultiSurface | | | |  ■ | | MultiSurface又はSolidとする。
+| brid:lod3Solid | | | |  ■ | | MultiSurface又はSolidとする。
+| brid:lod4MultiSurface | | | | |  ■ | MultiSurface又はSolidとする。
+| brid:lod4Solid | | | | |  ■ | MultiSurface又はSolidとする。
 .8+| brid:BridgePart
 |
 |
-^| ■
-^| ■
-^| ■
-^| ■
+|  ■
+|  ■
+|  ■
+|  ■
 | 一つの橋梁を複数に分け、それぞれに属性を与えたい場合に必須とする。 +
 横断歩道橋、ペデストリアンデッキ及び跨線橋の場合は階段、スロープ、踊り場を分ける。
 
-| brid:lod1Solid | ^| ■ | | | | BridgePartを使用する場合は必須とする。
-| brid:lod2MultiSurface | | ^| ■ | | | LOD2.0の場合は必須とする。
-| brid:lod2Solid | | ^| ■ | | | LOD2.1の場合は必須とする。
-| brid:lod3MultiSurface | | | ^| ■ | | MultiSurface又はSolidとする。
-| brid:lod3Solid | | | ^| ■ | | MultiSurface又はSolidとする。
-| brid:lod4MultiSurface | | | | ^| ■ | MultiSurface又はSolidとする。
-| brid:lod4Solid | | | | ^| ■ | MultiSurface又はSolidとする。
-.5+| brid:BridgeConstructionElement | | | ^| ○ ^| ■ ^| ● | LOD2.1で使用できる。
+| brid:lod1Solid | |  ■ | | | | BridgePartを使用する場合は必須とする。
+| brid:lod2MultiSurface | | |  ■ | | | LOD2.0の場合は必須とする。
+| brid:lod2Solid | | |  ■ | | | LOD2.1の場合は必須とする。
+| brid:lod3MultiSurface | | | |  ■ | | MultiSurface又はSolidとする。
+| brid:lod3Solid | | | |  ■ | | MultiSurface又はSolidとする。
+| brid:lod4MultiSurface | | | | |  ■ | MultiSurface又はSolidとする。
+| brid:lod4Solid | | | | |  ■ | MultiSurface又はSolidとする。
+.5+| brid:BridgeConstructionElement | | | |  ○ |  ■ |  ● | LOD2.1で使用できる。
 | brid:lod1Geometry | | | | | | 対象外とする。
-| brid:lod2Geometry | | ^| ■ | | | MultiSurfaceを基本とする。
-| brid:lod3Geometry | | | ^| ■ | | MultiSurfaceを基本とする。
-| brid:lod4Geometry | | | | ^| ● | MultiSurfaceを基本とする。
-.4+| brid:BridgeInstallation | | | ^| ○ ^| ● ^| ● | LOD2.1で使用できる。
-| brid:lod2Geometry | | ^| ■ | | | BridgeInstallationを作成する場合は必須とする。
-| brid:lod3Geometry | | | ^| ● | | MultiSurfaceを基本とする。
-| brid:lod4Geometry | | | | ^| ● | MultiSurfaceを基本とする。
-.4+| brid:RoofSurface | | | ^| ■ ^| ■ ^| ■ | 屋根がある場合は必須とする。
-| brid:lod2MultiSurface | | ^| ■ | | | brid:RoofSurfaceを作る場合は必須とする。
-| brid:lod3MultiSurface | | | ^| ■ | | brid:RoofSurfaceを作る場合は必須とする。
-| brid:lod4MultiSurface | | | | ^| ■ | brid:RoofSurfaceを作る場合は必須とする。
-.4+| brid:OuterFloorSurface | | | ^| ■ ^| ■ ^| ■ | 屋根が無い場合は必須とする。
-| brid:lod2MultiSurface | | ^| ■ | | | brid:OuterFloorSurfaceを作る場合は必須とする。
-| brid:lod3MultiSurface | | | ^| ■ | | brid:OuterFloorSurfaceを作る場合は必須とする。
-| brid:lod4MultiSurface | | | | ^| ■ | brid:OuterFloorSurfaceを作る場合は必須とする。
-.4+| brid:WallSurface | | | ^| ■ ^| ● ^| ● | 橋梁の形状を構成する面のうち、側方の面に使用する。
-| brid:lod2MultiSurface | | ^| ■ | | | LOD2.1の場合は必須とする。
-| brid:lod3MultiSurface | | | ^| ● | |
-| brid:lod4MultiSurface | | | | ^| ● |
-.4+| brid:GroundSurface | | | ^| ■ ^| ● ^| ● | 橋梁の形状を構成する面のうち、接地する下向きの面に使用する。
-| brid:lod2MultiSurface | | ^| ■ | | | LOD2.1では必須とする。
-| brid:lod3MultiSurface | | | ^| ● | |
-| brid:lod4MultiSurface | | | | ^| ● |
-.4+| brid:OuterCeilingSurface | | | ^| ■ ^| ■ ^| ■ | 外壁面のうち、接地しない下向きの面に使用する。
-| brid:lod2MultiSurface | | ^| ■ | | | brid:OuterCeilingSurfaceを作る場合は必須とする。
-| brid:lod3MultiSurface | | | ^| ■ | | brid:OuterCeilingSurfaceを作る場合は必須とする。
-| brid:lod4MultiSurface | | | | ^| ■ | brid:OuterCeilingSurfaceを作る場合は必須とする。
-.4+| brid:ClosureSurface | | | ^| ■ ^| ■ ^| ■ | 一つの橋梁を主題属性の異なる複数の部分に分ける場合は必須とする。
-| brid:lod2MultiSurface | | ^| ■ | | | ClosureSurfaceを作成する場合は必須とする。
-| brid:lod3MultiSurface | | | ^| ■ | | ClosureSurfaceを作成する場合は必須とする。
-| brid:lod4MultiSurface | | | | ^| ■ | ClosureSurfaceを作成する場合は必須とする。
-.2+| brid:InteriorWallSurface | | | | | ^| 〇 |
-| brid:lod4MultiSurface | | | | ^| ■ | InteriorWallSurfaceを作成する場合は必須とする。
-.2+| brid:CeilingSurface | | | | ^| ^| 〇 |
-| brid:lod4MultiSurface | | | ^| ^| ■ | CeilingSurfaceを作成する場合は必須とする。
-.2+| brid:FloorSurface | | | | | ^| 〇 |
-| brid:lod4MultiSurface | | | | ^| ■ | FloorSurfaceを作成する場合は必須とする。
-.3+| brid:Door | | | | ^| 〇 ^| 〇 |
-| brid:lod3MultiSurface | | | ^| ■ | | Doorを作成する場合は必須とする。
-| brid:lod4MultiSurface | | | | ^| ■ | Doorを作成する場合は必須とする。
-.3+| brid:Window | | | | ^| 〇 ^| 〇 |
-| brid:lod3MultiSurface | | | ^| ■ | | Windowを作成する場合は必須とする。
-| brid:lod4MultiSurface | | | | ^| ■ | Windowを作成する場合は必須とする。
-.3+| brid:BridgeRoom | | | | | ^| 〇 |
-| brid:lod4Solid | | | | ^| ■ | Solidを基本とする。
-| brid:lod4MultiSurface | | | | ^| ■ | Solidを構成できない場合はMultiSurfaceとする。
-.2+| brid:IntBridgeInstallation | | | | | ^| 〇 |
+| brid:lod2Geometry | | |  ■ | | | MultiSurfaceを基本とする。
+| brid:lod3Geometry | | | |  ■ | | MultiSurfaceを基本とする。
+| brid:lod4Geometry | | | | |  ● | MultiSurfaceを基本とする。
+.4+| brid:BridgeInstallation | | | |  ○ |  ● |  ● | LOD2.1で使用できる。
+| brid:lod2Geometry | | |  ■ | | | BridgeInstallationを作成する場合は必須とする。
+| brid:lod3Geometry | | | |  ● | | MultiSurfaceを基本とする。
+| brid:lod4Geometry | | | | |  ● | MultiSurfaceを基本とする。
+.4+| brid:RoofSurface | | | |  ■ |  ■ |  ■ | 屋根がある場合は必須とする。
+| brid:lod2MultiSurface | | |  ■ | | | brid:RoofSurfaceを作る場合は必須とする。
+| brid:lod3MultiSurface | | | |  ■ | | brid:RoofSurfaceを作る場合は必須とする。
+| brid:lod4MultiSurface | | | | |  ■ | brid:RoofSurfaceを作る場合は必須とする。
+.4+| brid:OuterFloorSurface | | | |  ■ |  ■ |  ■ | 屋根が無い場合は必須とする。
+| brid:lod2MultiSurface | | |  ■ | | | brid:OuterFloorSurfaceを作る場合は必須とする。
+| brid:lod3MultiSurface | | | |  ■ | | brid:OuterFloorSurfaceを作る場合は必須とする。
+| brid:lod4MultiSurface | | | | |  ■ | brid:OuterFloorSurfaceを作る場合は必須とする。
+.4+| brid:WallSurface | | | |  ■ |  ● |  ● | 橋梁の形状を構成する面のうち、側方の面に使用する。
+| brid:lod2MultiSurface | | |  ■ | | | LOD2.1の場合は必須とする。
+| brid:lod3MultiSurface | | | |  ● | |
+| brid:lod4MultiSurface | | | | |  ● |
+.4+| brid:GroundSurface | | | |  ■ |  ● |  ● | 橋梁の形状を構成する面のうち、接地する下向きの面に使用する。
+| brid:lod2MultiSurface | | |  ■ | | | LOD2.1では必須とする。
+| brid:lod3MultiSurface | | | |  ● | |
+| brid:lod4MultiSurface | | | | |  ● |
+.4+| brid:OuterCeilingSurface | | | |  ■ |  ■ |  ■ | 外壁面のうち、接地しない下向きの面に使用する。
+| brid:lod2MultiSurface | | |  ■ | | | brid:OuterCeilingSurfaceを作る場合は必須とする。
+| brid:lod3MultiSurface | | | |  ■ | | brid:OuterCeilingSurfaceを作る場合は必須とする。
+| brid:lod4MultiSurface | | | | |  ■ | brid:OuterCeilingSurfaceを作る場合は必須とする。
+.4+| brid:ClosureSurface | | | |  ■ |  ■ |  ■ | 一つの橋梁を主題属性の異なる複数の部分に分ける場合は必須とする。
+| brid:lod2MultiSurface | | |  ■ | | | ClosureSurfaceを作成する場合は必須とする。
+| brid:lod3MultiSurface | | | |  ■ | | ClosureSurfaceを作成する場合は必須とする。
+| brid:lod4MultiSurface | | | | |  ■ | ClosureSurfaceを作成する場合は必須とする。
+.2+| brid:InteriorWallSurface | | | | | |  〇 |
+| brid:lod4MultiSurface | | | | |  ■ | InteriorWallSurfaceを作成する場合は必須とする。
+.2+| brid:CeilingSurface | | | | |  |  〇 |
+| brid:lod4MultiSurface | | | |  |  ■ | CeilingSurfaceを作成する場合は必須とする。
+.2+| brid:FloorSurface | | | | | |  〇 |
+| brid:lod4MultiSurface | | | | |  ■ | FloorSurfaceを作成する場合は必須とする。
+.3+| brid:Door | | | | |  〇 |  〇 |
+| brid:lod3MultiSurface | | | |  ■ | | Doorを作成する場合は必須とする。
+| brid:lod4MultiSurface | | | | |  ■ | Doorを作成する場合は必須とする。
+.3+| brid:Window | | | | |  〇 |  〇 |
+| brid:lod3MultiSurface | | | |  ■ | | Windowを作成する場合は必須とする。
+| brid:lod4MultiSurface | | | | |  ■ | Windowを作成する場合は必須とする。
+.3+| brid:BridgeRoom | | | | | |  〇 |
+| brid:lod4Solid | | | | |  ■ | Solidを基本とする。
+| brid:lod4MultiSurface | | | | |  ■ | Solidを構成できない場合はMultiSurfaceとする。
+.2+| brid:IntBridgeInstallation | | | | | |  〇 |
 | brid:lod4Geometry
 |
 |
 |
 |
-^| ■
+|  ■
 | IntBridgeInstallationを作成する場合は必須とする。 +
 MultiSufaceを基本とする。
 
-.2+| brid:BridgeFurniture | | | | | ^| 〇 |
+.2+| brid:BridgeFurniture | | | | | |  〇 |
 | brid:lod4Geometry
 |
 |
 |
 |
-^| ■
+|  ■
 | IntBridgeInstallationを作成する場合は必須とする。 +
 MultiSufaceを基本とする。
 

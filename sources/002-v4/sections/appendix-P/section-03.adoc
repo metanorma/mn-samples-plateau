@@ -38,42 +38,42 @@ uro:UtilityNodeContainerは、uro:UtilityNodeを格納し、自らもノード�
 |===
 | 地物型 | 空間属性 | LOD0 | LOD1 | LOD2 | LOD3 | LOD4 | 適用
 
-.6+| uro:Pipe及びこれを継承する地物型 | ^| ● ^| ● ^| ● ^| ● ^| ● |
-| uro:lod0Geometry ^| ● ^| ^| ^| ^| | 原典資料の取得方法に従う。
-| frn:lod1Geometry ^| ^| ● ^| ^| ^| | Solidとする。
-| frn:lod2Geometry ^| ^| ^| ● ^| ^| | Solidとする。
-| frn:lod3Geometry ^| ^| ^| ^| ● ^| | CompositeSurface又はMultiSurfaceとする。
-| frn:lod4Geometry ^| ^| ^| ^| ^| ● | CompositeSurface又はMultiSurfaceとする。
-.6+| uro:Cable及びこれを継承する地物型 | ^| ● ^| ● ^| ● ^| ● ^| ○ footnoteblock:[fn_underground_model] |
-| uro:lod0Geometry ^| ● ^| ^| ^| ^| | 原典資料の取得方法に従う。
-| frn:lod1Geometry ^| ^| ● ^| ^| ^| | Solidとする。
-| frn:lod2Geometry ^| ^| ^| ● ^| ^| | Solidとする。
-| frn:lod3Geometry ^| ^| ^| ^| ● ^| | CompositeSurface又はMultiSurfaceとする。
-| frn:lod4Geometry ^| ^| ^| ^| ^| ■ | LOD4を作成する場合は必須とする。
-.6+| uro:Duct | ^| ● ^| ● ^| ● ^| ● ^| ● |
-| uro:lod0Geometry ^| ● ^| ^| ^| ^| | 原典資料の取得方法に従う。
-| frn:lod1Geometry ^| ^| ● ^| ^| ^| | Solidとする。
-| frn:lod2Geometry ^| ^| ^| ● ^| ^| | Solidとする。
-| frn:lod3Geometry ^| ^| ^| ^| ● ^| | CompositeSurface又はMultiSurfaceとする。
-| frn:lod4Geometry ^| ^| ^| ^| ^| ● | CompositeSurface又はMultiSurfaceとする。
-.6+| uro:Appurtenance | ^| ● ^| ● ^| ● ^| ● ^| ○ footnoteblock:[fn_underground_model] |
-| uro:lod0Geometry ^| ● ^| ^| ^| ^| | 原典資料の取得方法に従う。
-| frn:lod1Geometry ^| ^| ● ^| ^| ^| | Solidとする。
-| frn:lod2Geometry ^| ^| ^| ● ^| ^| | Solidとする。
-| frn:lod3Geometry ^| ^| ^| ^| ● ^| | CompositeSurface又はMultiSurfaceとする。
-| frn:lod4Geometry ^| ^| ^| ^| ^| ■ | LOD4を作成する場合は必須とする。
-.6+| uro:Manhole | ^| ● ^| ● ^| ● ^| ● ^| ● |
-| uro:lod0Geometry ^| ● ^| ^| ^| ^| | 原典資料の取得方法に従う。
-| frn:lod1Geometry ^| ^| ● ^| ^| ^| | Solidとする。
-| frn:lod2Geometry ^| ^| ^| ● ^| ^| | Solidとする。
-| frn:lod3Geometry ^| ^| ^| ^| ● ^| | CompositeSurface又はMultiSurfaceとする。
-| frn:lod4Geometry ^| ^| ^| ^| ^| ● | CompositeSurface又はMultiSurfaceとする。
-.6+| uro:Handhole | ^| ● ^| ● ^| ● ^| ● ^| ● |
-| uro:lod0Geometry ^| ● ^| ^| ^| ^| | 原典資料の取得方法に従う。
-| frn:lod1Geometry ^| ^| ● ^| ^| ^| | Solidとする。
-| frn:lod2Geometry ^| ^| ^| ● ^| ^| | Solidとする。
-| frn:lod3Geometry ^| ^| ^| ^| ● ^| | CompositeSurface又はMultiSurfaceとする。
-| frn:lod4Geometry ^| ^| ^| ^| ^| ● | MultiSurface又はSolidとする。
+.6+| uro:Pipe及びこれを継承する地物型 | |  ● |  ● |  ● |  ● |  ● |
+| uro:lod0Geometry |  ● |  |  |  |  | 原典資料の取得方法に従う。
+| frn:lod1Geometry |  |  ● |  |  |  | Solidとする。
+| frn:lod2Geometry |  |  |  ● |  |  | Solidとする。
+| frn:lod3Geometry |  |  |  |  ● |  | CompositeSurface又はMultiSurfaceとする。
+| frn:lod4Geometry |  |  |  |  |  ● | CompositeSurface又はMultiSurfaceとする。
+.6+| uro:Cable及びこれを継承する地物型 | |  ● |  ● |  ● |  ● |  ○ footnoteblock:[fn_underground_model] |
+| uro:lod0Geometry |  ● |  |  |  |  | 原典資料の取得方法に従う。
+| frn:lod1Geometry |  |  ● |  |  |  | Solidとする。
+| frn:lod2Geometry |  |  |  ● |  |  | Solidとする。
+| frn:lod3Geometry |  |  |  |  ● |  | CompositeSurface又はMultiSurfaceとする。
+| frn:lod4Geometry |  |  |  |  |  ■ | LOD4を作成する場合は必須とする。
+.6+| uro:Duct | |  ● |  ● |  ● |  ● |  ● |
+| uro:lod0Geometry |  ● |  |  |  |  | 原典資料の取得方法に従う。
+| frn:lod1Geometry |  |  ● |  |  |  | Solidとする。
+| frn:lod2Geometry |  |  |  ● |  |  | Solidとする。
+| frn:lod3Geometry |  |  |  |  ● |  | CompositeSurface又はMultiSurfaceとする。
+| frn:lod4Geometry |  |  |  |  |  ● | CompositeSurface又はMultiSurfaceとする。
+.6+| uro:Appurtenance | |  ● |  ● |  ● |  ● |  ○ footnoteblock:[fn_underground_model] |
+| uro:lod0Geometry |  ● |  |  |  |  | 原典資料の取得方法に従う。
+| frn:lod1Geometry |  |  ● |  |  |  | Solidとする。
+| frn:lod2Geometry |  |  |  ● |  |  | Solidとする。
+| frn:lod3Geometry |  |  |  |  ● |  | CompositeSurface又はMultiSurfaceとする。
+| frn:lod4Geometry |  |  |  |  |  ■ | LOD4を作成する場合は必須とする。
+.6+| uro:Manhole | |  ● |  ● |  ● |  ● |  ● |
+| uro:lod0Geometry |  ● |  |  |  |  | 原典資料の取得方法に従う。
+| frn:lod1Geometry |  |  ● |  |  |  | Solidとする。
+| frn:lod2Geometry |  |  |  ● |  |  | Solidとする。
+| frn:lod3Geometry |  |  |  |  ● |  | CompositeSurface又はMultiSurfaceとする。
+| frn:lod4Geometry |  |  |  |  |  ● | CompositeSurface又はMultiSurfaceとする。
+.6+| uro:Handhole | |  ● |  ● |  ● |  ● |  ● |
+| uro:lod0Geometry |  ● |  |  |  |  | 原典資料の取得方法に従う。
+| frn:lod1Geometry |  |  ● |  |  |  | Solidとする。
+| frn:lod2Geometry |  |  |  ● |  |  | Solidとする。
+| frn:lod3Geometry |  |  |  |  ● |  | CompositeSurface又はMultiSurfaceとする。
+| frn:lod4Geometry |  |  |  |  |  ● | MultiSurface又はSolidとする。
 
 |===
 

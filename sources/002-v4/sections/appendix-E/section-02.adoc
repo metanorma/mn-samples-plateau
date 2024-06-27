@@ -54,20 +54,20 @@ tran:Railwayの空間属性は、LOD0では線とし、LOD1以降では面とす
 .交通（鉄道）モデルに使用する地物型と空間属性
 |===
 ^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| 適用
-.6+| tran:Railway | ^| ● ^| ● ^| ● ^| ● |
-| tran:lod0Network ^| ■ ^| ^| ^| | LOD0はネットワークを原則とするが、数値地形図との互換性を保つために、レールの中心線を選択できる。
-| uro:lod0Geometry ^| ■ ^| ^| ^| |
-| tran:lod1MultiSurface ^| ^| ● ^| ^| |
-| tran:lod2MultiSurface ^| ^| ^| ● ^| |
-| tran:lod3MultiSurface ^| ^| ^| ^| ● |
-.5+| tran:TrafficArea　 | ^| ^| ^| ● ^| ● |
-| tran:lod2MultiSurface ^| ^| ^| ● ^| |
-| uro:lod2Network ^| ^| ^| ● ^| | CompositeCurveとする。
-| tran:lod3MultiSurface ^| ^| ^| ^| ● |
-| uro:lod3Network ^| ^| ^| ^| ● |
-.3+| tran:AuxiliaryTrafficArea　 | ^| ^| ^| ^| ● | CompositeCurveとする。
-| tran:lod2MultiSurface ^| ^| ^| ^| | 対象外。
-| tran:lod3MultiSurface ^| ^| ^| ^| ● |
+.6+| tran:Railway | |  ● |  ● |  ● |  ● |
+| tran:lod0Network |  ■ |  |  |  | LOD0はネットワークを原則とするが、数値地形図との互換性を保つために、レールの中心線を選択できる。
+| uro:lod0Geometry |  ■ |  |  |  |
+| tran:lod1MultiSurface |  |  ● |  |  |
+| tran:lod2MultiSurface |  |  |  ● |  |
+| tran:lod3MultiSurface |  |  |  |  ● |
+.5+| tran:TrafficArea　 | |  |  |  ● |  ● |
+| tran:lod2MultiSurface |  |  |  ● |  |
+| uro:lod2Network |  |  |  ● |  | CompositeCurveとする。
+| tran:lod3MultiSurface |  |  |  |  ● |
+| uro:lod3Network |  |  |  |  ● |
+.3+| tran:AuxiliaryTrafficArea　 | |  |  |  |  ● | CompositeCurveとする。
+| tran:lod2MultiSurface |  |  |  |  | 対象外。
+| tran:lod3MultiSurface |  |  |  |  ● |
 
 |===
 
@@ -147,16 +147,16 @@ LOD3を、鉄道内の区分と高さの取得方法により、LOD3.0、LOD3.1�
 .交通（鉄道）モデル（LOD3）の概要
 |===
 h| ^h| 取得基準 ^h| LOD3.0 ^h| LOD3.1 ^h| LOD3.2
-.6+h| 鉄道内の区分 | 軌道中心線 ^| ● ^| ● ^| ●
-| レールに囲まれた範囲 ^| ● ^| ● ^| ●
-| レール ^| ^| ● ^| ●
-| 軌きょう ^| ^| ^| ○
-| 道床 ^| ● ^| ● ^| ●
-| 交通補助領域 ^| ^| ● ^| ● footnoteblock:[fn_rail_use_case]
-.4+h| 高さの取得方法 | 軌道中心線上の勾配変化点に標高を与え、高さをもった線として表現する。 ^| ● ^| ● ^| ●
-| 道床に軌道中心線の高さを与える。 ^| ● ^| ● ^|
-| 軌道の横断方向に存在する15㎝以上の高さの差を取得する。 ^| ^| ● ^| ●
-| 軌道の横断方向に存在する15㎝未満の高さの差を取得する。 ^| ^| ^| ● footnoteblock:[fn_rail_use_case]
+.6+h| 鉄道内の区分 | 軌道中心線 |  ● |  ● |  ●
+| レールに囲まれた範囲 |  ● |  ● |  ●
+| レール |  |  ● |  ●
+| 軌きょう |  |  |  ○
+| 道床 |  ● |  ● |  ●
+| 交通補助領域 |  |  ● |  ● footnoteblock:[fn_rail_use_case]
+.4+h| 高さの取得方法 | 軌道中心線上の勾配変化点に標高を与え、高さをもった線として表現する。 |  ● |  ● |  ●
+| 道床に軌道中心線の高さを与える。 |  ● |  ● |
+| 軌道の横断方向に存在する15㎝以上の高さの差を取得する。 |  |  ● |  ●
+| 軌道の横断方向に存在する15㎝未満の高さの差を取得する。 |  |  |  ● footnoteblock:[fn_rail_use_case]
 
 |===
 

@@ -25,18 +25,18 @@
 [cols=7]
 .交通（航路）モデルに使用する地物型と空間属性
 |===
-h| 地物型 | 空間属性 ^| LOD0 ^| LOD1 ^| LOD2 ^| LOD3 ^| 適用
-.5+| uro:Waterway | ^| ● ^| ● ^| ● ^| |
-| lod0Network ^| ● ^| ^| ^| |
-| lod1MultiSurface ^| ^| ● ^| ^| |
-| lod2MultiSurface ^| ^| ^| ● ^| |
-| lod3MultiSurface ^| ^| ^| ^| |
-.3+| tran:TrafficArea | 　 ^| ^| ^| ● ^| |
-| lod2MultiSurface ^| ^| ^| ● ^| |
-| lod3MultiSurface ^| ^| ^| ^| ^|
-.3+| tran:AuxiliaryTrafficArea | ^| ^| ^| ^| | 航路には存在しない。
-| lod2MultiSurface ^| ^| ^| ^| |
-| lod3MultiSurface ^| ^| ^| ^| |
+h| 地物型 | 空間属性 |  LOD0 |  LOD1 |  LOD2 |  LOD3 |  適用
+.5+| uro:Waterway | |  ● |  ● |  ● |  |
+| lod0Network |  ● |  |  |  |
+| lod1MultiSurface |  |  ● |  |  |
+| lod2MultiSurface |  |  |  ● |  |
+| lod3MultiSurface |  |  |  |  |
+.3+| tran:TrafficArea | 　 |  |  |  ● |  |
+| lod2MultiSurface |  |  |  ● |  |
+| lod3MultiSurface |  |  |  |  |
+.3+| tran:AuxiliaryTrafficArea | |  |  |  |  | 航路には存在しない。
+| lod2MultiSurface |  |  |  |  |
+| lod3MultiSurface |  |  |  |  |
 
 |===
 

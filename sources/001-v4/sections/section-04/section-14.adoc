@@ -21,7 +21,7 @@
 |===
 h| 4+^h| LOD0
 h| 取得例
-^|
+|
 image::images/284.webp.png[]
 |
 image::images/285.webp.png[]
@@ -113,9 +113,9 @@ footnoteblock:[fn_above_map]
 |===
 h| 2+^h| LOD1
 h| 取得例
-^|
+|
 image::images/288.webp.png[]
-^|
+|
 image::images/289.webp.png[]
 
 h| 説明 | 都市設備の上方からの正射影の外周を地表面からの一律の高さで押し出した立体を作成する。
@@ -174,9 +174,9 @@ h| 説明 | 都市設備の上方からの正射影の外周を地表面から�
 |===
 h| 2+^h| LOD2
 h| 取得例
-^|
+|
 image::images/290.webp.png[]
-^|
+|
 image::images/291.webp.png[]
 
 h| 説明 | 都市設備の主要な部分について、上方から見た外周の形状が変化する高さでの各外周を取得し、それぞれの外周の頂点をつないだ立体を作成する。
@@ -230,11 +230,11 @@ h| 説明 | 都市設備の主要な部分について、上方から見た外�
 |===
 h| 2+^h| LOD3.0 ^h| LOD3.1
 h| 取得例
-^|
+|
 image::images/292.webp.png[]
-^|
+|
 image::images/293.webp.png[]
-^|
+|
 image::images/294.webp.png[]
 
 h| 説明
@@ -329,11 +329,11 @@ h| 説明
 .都市設備の記述に使用する地物型と空間属性
 |===
 ^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| 適用
-.5+| frn:CityFurniture | ^| ● ^| ● ^| ● ^| ● |
-| uro:lod0Geometry ^| ● | | | | 数値地形図の取得方法に従う。
-| frn:lod1Geometry | ^| ● | | | 面又は立体とする。
-| frn:lod2Geometry | | ^| ● ^| | 面又は立体とする。
-| frn:lod3Geometry | | ^| ^| ● | 面又は立体とする。
+.5+| frn:CityFurniture | |  ● |  ● |  ● |  ● |
+| uro:lod0Geometry |  ● | | | | 数値地形図の取得方法に従う。
+| frn:lod1Geometry | |  ● | | | 面又は立体とする。
+| frn:lod2Geometry | | |  ● |  | 面又は立体とする。
+| frn:lod3Geometry | | |  |  ● | 面又は立体とする。
 
 |===
 
