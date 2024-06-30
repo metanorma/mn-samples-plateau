@@ -232,161 +232,161 @@
 フォルダの名称は、ルートフォルダの命名規則に従う。
 
 2+|
-2+| image::images/433.webp.png[]
+2+| image::images/432.webp.png[]
 2+|
 | codelists
 | ルートフォルダ直下に作成された、コードリストを格納するフォルダ。3D都市モデルが参照する全てのコードリストを格納する。
 
 2+|
-2+| image::images/434.webp.png[]
+2+| image::images/432.webp.png[]
 2+|
 | metadata
 | ルートフォルダ直下に作成された、メタデータを格納するフォルダ。
 
 2+|
-2+| image::images/435.webp.png[]
+2+| image::images/432.webp.png[]
 2+|
 | schemas
 | 3D都市モデルのGMLSchemaを格納するフォルダ。GMLSchemaは指定された版のi-URをG空間情報センターより入手する。以下に示す構造でサブフォルダを設け、GMLSchemaファイルを格納する。 /iur/uro/3.0/urbanObject.xsd /iur/urf/3.0/urbanFunction.xsd
 
 2+|
-2+| image::images/436.webp.png[]
+2+| image::images/432.webp.png[]
 2+|
 | specification
 | ルートフォルダ直下に作成された、拡張製品仕様書（PDF形式、Excel形式）を格納するフォルダ。
 
 4+|
-2+| image::images/437.webp.png[]
+2+| image::images/432.webp.png[]
 | udx
 | ルートフォルダ直下に作成された、3D都市モデルを格納するフォルダ。このフォルダの直下に、接頭辞ごとのサブフォルダ（例：bldg）を作成し、そのサブフォルダの中に指定されたファイル単位で区切られた全ての3D都市モデルのファイルを格納する。
 
 4+|
-2+| image::images/438.webp.png[]
+2+| image::images/432.webp.png[]
 | area
 | 区域モデルを格納するフォルダ。
 
 4+|
-2+| image::images/439.webp.png[]
+2+| image::images/432.webp.png[]
 | bldg
 | 建築物モデルを格納するフォルダ。
 
 4+|
-2+| image::images/440.webp.png[]
+2+| image::images/432.webp.png[]
 | brid
 | 橋梁モデルを格納するフォルダ。
 
 4+|
-2+| image::images/441.webp.png[]
+2+| image::images/432.webp.png[]
 | cons
 | その他の構造物モデルを格納するフォルダ
 
 4+|
-2+| image::images/442.webp.png[]
+2+| image::images/432.webp.png[]
 | dem
 | 地形モデルを格納するフォルダ。
 
 4+|
-2+| image::images/443.webp.png[]
+2+| image::images/432.webp.png[]
 | ext
 | 拡張製品仕様書で追加した地物を格納するフォルダ。
 
 4+|
-2+| image::images/444.webp.png[]
+2+| image::images/432.webp.png[]
 | fld
 | 災害リスク（浸水）モデルのうち、洪水浸水想定区域を格納するフォルダ。区域図ごとにサブフォルダを作成する。サブフォルダの構成及び名称は、別途示す。
 
 4+|
-2+| image::images/445.webp.png[]
+2+| image::images/432.webp.png[]
 | frn
 | 都市設備を格納するフォルダ。
 
 4+|
-2+| image::images/446.webp.png[]
+2+| image::images/432.webp.png[]
 | gen
 | 汎用都市オブジェクトを格納するフォルダ。
 
 4+|
-2+| image::images/447.webp.png[]
+2+| image::images/432.webp.png[]
 | htd
 | 災害リスク（浸水）モデルのうち、高潮浸水想定区域を格納するフォルダ。区域図ごとにサブフォルダを作成する。サブフォルダの構成及び名称は、別途示す。
 
 4+|
-2+| image::images/448.webp.png[]
+2+| image::images/432.webp.png[]
 | ifld
 | 災害リスク（浸水）モデルのうち、内水浸水想定区域を格納するフォルダ。区域図ごとにサブフォルダを作成する。サブフォルダの構成及び名称は、別途示す。
 
 4+|
-2+| image::images/449.webp.png[]
+2+| image::images/432.webp.png[]
 | lsld
 | 災害リスク（土砂災害）モデルを格納するフォルダ。
 
 4+|
-2+| image::images/450.webp.png[]
+2+| image::images/432.webp.png[]
 | luse
 | 土地利用モデルを格納するフォルダ。
 
 4+|
-2+| image::images/451.webp.png[]
+2+| image::images/432.webp.png[]
 | rfld
 | 災害リスク（浸水）モデルのうち、ため池ハザードマップを格納するフォルダ。ハザードマップごとにサブフォルダを作成する。サブフォルダの構成及び名称は、別途示す。
 
 4+|
-2+| image::images/452.webp.png[]
+2+| image::images/432.webp.png[]
 | rwy
 | 交通（鉄道）モデルを格納するフォルダ。
 
 4+|
-2+| image::images/453.webp.png[]
+2+| image::images/432.webp.png[]
 | squr
 | 交通（広場）モデルを格納するフォルダ。
 
 4+|
-2+| image::images/454.webp.png[]
+2+| image::images/432.webp.png[]
 | tnm
 | 災害リスク（浸水）モデルのうち、津波浸水想定を格納するフォルダ。津波浸水想定ごとにサブフォルダを作成する。サブフォルダの構成及び名称は、別途示す。
 
 4+|
-2+| image::images/455.webp.png[]
+2+| image::images/432.webp.png[]
 | tran
 | 道路モデルのデータを格納するフォルダ。
 
 4+|
-2+| image::images/456.webp.png[]
+2+| image::images/432.webp.png[]
 | trk
 | 交通（徒歩道）モデルを格納するフォルダ。
 
 4+|
-2+| image::images/457.webp.png[]
+2+| image::images/432.webp.png[]
 | tun
 | トンネルモデルを格納するフォルダ。
 
 4+|
-2+| image::images/458.webp.png[]
+2+| image::images/432.webp.png[]
 | ubld
 | 地下街モデルを格納するフォルダ。
 
 4+|
-2+| image::images/459.webp.png[]
+2+| image::images/432.webp.png[]
 | urf
 | 都市計画決定情報モデルを格納するフォルダ。
 
 4+|
-2+| image::images/460.webp.png[]
+2+| image::images/432.webp.png[]
 | unf
 | 地下埋設物モデルの格納するフォルダ。
 
 4+|
-2+| image::images/461.webp.png[]
+2+| image::images/432.webp.png[]
 | veg
 | 植生モデルを格納するフォルダ。
 
 4+|
-2+| image::images/462.webp.png[]
+2+| image::images/432.webp.png[]
 | wtr
 | 水部モデルを格納するフォルダ。
 
 4+|
-2+| image::images/463.webp.png[]
+2+| image::images/432.webp.png[]
 | wwy
 | 交通（航路）モデルを格納するフォルダ
 
