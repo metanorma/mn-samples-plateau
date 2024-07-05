@@ -3808,7 +3808,8 @@ bldg:lod0RoofEdge、bldg:lod1Solid、bldg:lod2Solid.RoofSurface、bldg:lod3Solid
 ===== 建築物モデル（LOD4）の拡張属性
 
 本項では、IDM・MVDで定義されるIFCに含まれる情報を保持するためのデータ型及び屋内ナビゲーションのためのデータ型の定義を示す。各データ型は、IFCのクラス又はプロパティセットに対応づく。
-なお、屋内ナビゲーションのためのデータ型は、「3次元屋内地理空間情報データ仕様書（案）」に定義されたプロパティセットに対応する。
+
+なお、屋内ナビゲーションのためのデータ型は、「3次元屋内地理空間情報データ仕様書（案）」(<<gsi_dps>>)に定義されたプロパティセットに対応する。
 
 ====== uro:IfcAxis2Placement3D
 
@@ -6284,7 +6285,7 @@ h| コード h| 説明
 |===
 
 [.source]
-<<3次元屋内地理空間情報データ仕様書（案）>>
+<<gsi_dps>>
 
 ====== IndoorTactileTileAttribute_category.xml
 
@@ -6301,7 +6302,7 @@ h| コード h| 説明
 |===
 
 [.source]
-<<3次元屋内地理空間情報データ仕様書（案）>>
+<<gsi_dps>>
 
 ====== IndoorTactileTileAttribute_roof.xml
 
@@ -6318,7 +6319,7 @@ h| コード h| 説明
 |===
 
 [.source]
-<<3次元屋内地理空間情報データ仕様書（案）>>
+<<gsi_dps>>
 
 ====== IndoorSpaceAttribute_tollType.xml
 
@@ -6335,5 +6336,5 @@ h| コード h| 説明
 |===
 
 [.source]
-<<3次元屋内地理空間情報データ仕様書（案）>>
+<<gsi_dps>>
 
