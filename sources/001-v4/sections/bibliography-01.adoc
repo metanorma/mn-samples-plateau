@@ -2,74 +2,102 @@
 [bibliography]
 == 参考文献
 
-[1]　3D都市モデル標準作業手順書, 国土交通省都市局, 2024年2月
+* [[[plateau_002,1]]],
+span:organization[国土交通省都市局].
+span:title[3D都市モデル標準作業手順書].
+span:date[2024-02].
 
-[2]　RFC 4122 A Universally Unique IDentifier (UUID) URN Namespace, IETF, 2005年7月,
+* [[[rfc_4122,IETF RFC 4122]]]
 
-https://datatracker.ietf.org/doc/html/rfc4122
+* [[[gml_311,OGC 07-036]]]
 
-[3]　OpenGIS® Geography Markup Language (GML) Implementation Specification version: 3.1.1, Open Geospatial Consortium, 2004年2月,
+* [[[xxx,4]]]
+span:organization[国土交通省道路局].
+span:title[道路緑化技術基準].
+span:uri.citation[https://www.mlit.go.jp/road/sisaku/ryokuka/index.html]
 
-https://www.ogc.org/standards/gml
+* [[[mlit_greenery_std,5]]]
+span:organization[国土交通省都市局].
+span:title[公共用緑化樹木等品質寸法規格基準（案）].
+span:date[2010-02].
+span:uri.citation[https://www.mlit.go.jp/notice/noticedata/sgml/035/76000224/76000224.html]
 
-[4]　道路緑化技術基準, 国土交通省道路局,
+* [[[nilim_street_trees,6]]]
+span:title[わが国の街路樹Ⅷ],
+span:date[2018-01]
+span:organization[国土交通省国土技術政策総合研究所].
+span:uri.citation[http://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1050.htm]
 
-https://www.mlit.go.jp/road/sisaku/ryokuka/index.html
+* [[[mlit_ks_ps_a31,7]]]
+span:organization[国土交通省国土政策局].
+span:title[国土数値情報（洪水浸水想定区域）製品仕様書].
+span:version[第2.1版]
+span:date[2020-03].
+span:uri.citation[https://nlftp.mlit.go.jp/ksj/gml/product_spec/KS-PS-A31-v2_1.pdf]
 
-[5]　公共用緑化樹木等品質寸法規格基準（案）, 国土交通省都市局, 2010年2月
+* [[[mlit_ks_ps_a33,8]]]
+span:organization[国土交通省不動産・建設経済局].
+span:title[国土数値情報（土砂災害警戒区域）製品仕様書]
+span:version[第 2.0 版].
+span:date[2021-03].
+span:uri.citation[https://nlftp.mlit.go.jp/ksj/gml/product_spec/KS-PS-A33-v2_0.pdf]
 
-https://www.mlit.go.jp/notice/noticedata/sgml/035/76000224/76000224.html
+* [[[mlit_flooding_guidelines,9]]]
+span:organization[国土交通省 水管理・国土保全局 河川環境課 水防企画室 下水道部 海岸室].
+span:title[浸水想定区域図データ電子化ガイドライン（第4版）].
+span:edition[4].
+span:date[2023-02].
+span:uri.citation[https://www.mlit.go.jp/river/shishin_guideline/index.html]
 
-[6]　わが国の街路樹Ⅷ, 2018年11月, 国土交通省国土技術政策総合研究所,
+* [[[mlit_deluge_guidelines,10]]]
+span:organization[国土交通省 水管理・国土保全局 河川環境課 水防企画室 国土技術政策総合研究所 河川研究部 水害研究室].
+span:title[洪水浸水想定区域図作成マニュアル（第4版）].
+span:edition[4].
+span:date[2017-01].
+span:uri.citation[https://www.mlit.go.jp/river/shishin_guideline/index.html]
 
-http://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1050.htm
+* [[[mlit_tsunami_guidelines,11]]]
+span:organization[国土交通省水管理・国土保全局海岸室　国土技術政策総合研究所河川研究部海岸研究室].
+span:title[津波浸水想定の設定の手引き].
+span:version[Ver 2.11].
+span:date[2023-04].
+span:uri.citation[https://www.mlit.go.jp/river/shishin_guideline/index.html]
 
-[7]　国土数値情報（洪水浸水想定区域）製品仕様書　第2.1版, 国土交通省国土政策局, 2020年3月,
+* [[[mlit_tide_guidelines,12]]]
+span:organization[農林水産省 農村振興局 整備部 防災課],
+span:organization[農林水産省 水産庁 漁港漁場整備部 防災漁村課],
+span:organization[国土交通省 水管理・国土保全局 河川環境課],
+span:organization[国土交通省 水管理・国土保全局 海岸室],
+span:organization[国土交通省 港湾局 海岸・防災課].
+span:title[高潮浸水想定区域図作成の手引き].
+span:version[Ver 2.11].
+span:date[2023-04].
+span:uri.citation[https://www.mlit.go.jp/river/shishin_guideline/index.html]
 
-https://nlftp.mlit.go.jp/ksj/gml/product_spec/KS-PS-A31-v2_1.pdf
+* [[[mlit_int_flood_guidelines,13]]]
+span:organization[国土交通省水管理・国土保全局下水道部].
+span:title[内水浸水想定区域図作成マニュアル（案）].
+span:date[2021-07].
+span:uri.citation[https://www.mlit.go.jp/river/shishin_guideline/index.html]
 
-[8]　国土数値情報（ 土砂災害警戒区域）製品仕様書　第2.0 版, 国土交通省不動産・建設経済局, 2021年3月,
+* [[[inspire_data_spec,14]]]
+span:organization[European Commission Joint Research Centre].
+span:title[D2.8.III.6 INSPIRE Data Specification on Utility and Government Services -- Technical Guidelines].
+span:date[2013-01-10].
+span:uri.citation[https://inspire.ec.europa.eu/Themes/136/2892]
 
-https://nlftp.mlit.go.jp/ksj/gml/product_spec/KS-PS-A33-v2_0.pdf
+* [[[ogc_23-024,OGC 23-024]]]
 
-[9]　浸水想定区域図データ電子化ガイドライン（第4版）, 国土交通省 水管理・国土保全局 河川環境課 水防企画室 下水道部 海岸室, 2023年2月,
+* [[[ifc_bridge_report,16]]]
+span:organization[buldingSMART International].
+span:title[IFC Bridge Fast Track Project Report WP2: Conceptual Model].
+span:date[2018-01-02].
+span:uri.citation[https://www.buildingsmart.org/standards/rooms/infrastructure/ifc-bridge/]
 
- https://www.mlit.go.jp/river/shishin_guideline/index.html
+* [[[iana_media_types,IANA media-types]]]
 
-[10]　洪水浸水想定区域図作成マニュアル（第4版）, 国土交通省 水管理・国土保全局 河川環境課 水防企画室 国土技術政策総合研究所 河川研究部 水害研究室, 2017年10月,
-
-https://www.mlit.go.jp/river/shishin_guideline/index.html
-
-[11]　津波浸水想定の設定の手引き　Ver.2.11, 国土交通省水管理・国土保全局海岸室　国土技術政策総合研究所河川研究部海岸研究室, 2023年4月,
-
-https://www.mlit.go.jp/river/shishin_guideline/index.html
-
-[12]　高潮浸水想定区域図作成の手引き Ver2.11, 農林水産省 農村振興局 整備部 防災課, 農林水産省 水産庁 漁港漁場整備部 防災漁村課, 国土交通省 水管理・国土保全局 河川環境課, 国土交通省 水管理・国土保全局 海岸室, 国土交通省 港湾局 海岸・防災課, 2023年4月,
-
-https://www.mlit.go.jp/river/shishin_guideline/index.html
-
-[13]　内水浸水想定区域図作成マニュアル（案）, 国土交通省水管理・国土保全局下水道部, 2021年7月,
-
-https://www.mlit.go.jp/river/shishin_guideline/index.html
-
-[14]　D2.8.III.6 INSPIRE Data Specification on Utility and Government Services –Technical Guidelines, European Commission Joint Research Centre, 2013年12月10日,
-
-https://inspire.ec.europa.eu/Themes/136/2892
-
-[15]　MUDDI v1.1 (Model for Underground Data Definition and Integration) Engineering Report, Open Geospatial Consortium, 2021年3月21日,
-
-http://www.opengis.net/doc/PER/MUDDI
-
-[16]　IFC Bridge Fast Track Project Report WP2: Conceputual Model, buldingSMART International, 2018年10月2日,
-
-https://www.buildingsmart.org/standards/rooms/infrastructure/ifc-bridge/
-
-[17]　IANA Media Types, Internet Assigned Numbers Authority,
-https://www.iana.org/assignments/media-types/media-types.xhtml
-
-[アクセス日]2024-03-04
-
-[18]　ため池ハザードマップ作成の手引き, 農林水産省農村振興局防災課, 2013年5月,
-
-https://www.maff.go.jp/j/nousin/bousai/bousai_saigai/b_tameike/pdf/tameike_manual_1rev.pdf
-
+* [[[maff_lake_hazards,18]]]
+span:organization[農林水産省農村振興局防災課].
+span:title[ため池ハザードマップ作成の手引き].
+span:date[2013-05].
+span:uri.citation[https://www.maff.go.jp/j/nousin/bousai/bousai_saigai/b_tameike/pdf/tameike_manual_1rev.pdf]
