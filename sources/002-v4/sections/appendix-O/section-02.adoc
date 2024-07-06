@@ -4,7 +4,10 @@
 
 ==== 都市設備モデル
 
-都市設備とは、都市の屋外（道路、住宅街、広場、造成地等）に設置されている、移動しない小規模な設備（例：街路灯、道路標識、交通信号機、花壇、広告板、ベンチ、境界杭、バス停）である。[出典：OGC City Geography Markup Language (CityGML) EncodingStandard]
+都市設備とは、都市の屋外（道路、住宅街、広場、造成地等）に設置されている、移動しない小規模な設備（例：街路灯、道路標識、交通信号機、花壇、広告板、ベンチ、境界杭、バス停）である。
+
+[.source]
+<<citygml_30_encoding>>
 
 都市設備の記述には、CityGMLのCityFurnitureモジュールに定義された、frn:CityFurnitureを使用する。
 

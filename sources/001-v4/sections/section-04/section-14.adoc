@@ -1,8 +1,11 @@
 [[toc4_14]]
 === 都市設備モデルの応用スキーマ
 
-都市設備とは、都市の屋外（道路、住宅街、広場、造成地等）に設置されている、移動しない小規模な設備である（例：街路灯、道路標識、交通信号機、花壇、広告板、ベンチ、境界杭、バス停）。 +
-[出典：OGC City Geography Markup Language (CityGML) EncodingStandard]
+都市設備とは、都市の屋外（道路、住宅街、広場、造成地等）に設置されている、移動しない小規模な設備である（例：街路灯、道路標識、交通信号機、花壇、広告板、ベンチ、境界杭、バス停）。
+
+[.source]
+<<citygml_30_encoding>>
+
 
 [[toc4_14_01]]
 ==== 都市設備モデルのLOD
@@ -504,7 +507,8 @@ h| 属性 h| 属性の型及び多重度 h| 定義
 |===
 
 [.source]
-<<道路基盤地図情報製品仕様書（案）、作業規程の準則　付録７　公共測量標準図式>>
+<<nilim_kiban_dps>>、<<gsi_ops,annex=7,付録７ 公共測量標準図式>>
+
 
 ====== uro:KeyValuePairAttribute
 
@@ -564,7 +568,7 @@ h| (uro:geometrySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェ�
 h| uro:appearanceSrcDescLod4 | gml:CodeType [0..*] | LOD4の幾何オブジェクトのアピアランスに使用した原典資料の種類。
 | uro:lodType | gml:CodeType[0..*] | 幾何オブジェクトに適用されたLODの詳細な区分。コードリスト（CityFurniture_lodType.xml）より選択する。LOD3の幾何オブジェクトを作成する場合は必須とする。
 h| uro:lod1HeightType | gml:CodeType [0..1] | LOD1の立体図形を作成する際に使用した高さの算出方法。コードリスト（DataQualityAttribute_lod1HeightType.xml）より選択する。LOD1の幾何オブジェクトをgml:Solidを用いて作成する場合は必須とする。
-h| (uro:tranDataAcquisition) | xs:string [0..1] | 「道路基盤地図情報（整備促進版）製品仕様書（案）」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
+h| (uro:tranDataAcquisition) | xs:string [0..1] | 「<<nilim_kiban_dps,道路基盤地図情報（整備促進版）製品仕様書（案）>>」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
 3+h| 自身に定義された関連役割
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | uro:publicSurveyDataQualityAttribute | uro:PublicSurveyDataQualityAttribute [0..1] | 使用した公共測量成果の地図情報レベルと種類。各LODの幾何オブジェクトの作成に使用した原典資料の種類に関する属性（uro:geometrySrcDescLod0等）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）となっている場合は、必須とする。
@@ -668,7 +672,7 @@ h| コード h| 説明
 |===
 
 [.source]
-<<CityGML 2.0　Annex C.4>>
+<<citygml_20,annex="C.4">>
 
 ====== CityFurniture_function.xml
 
@@ -775,7 +779,7 @@ h| コード h| 説明
 |===
 
 [.source]
-<<道路基盤地図情報製品仕様書（案）、作業規程の準則（付録７ 公共測量標準図式）>>
+<<nilim_kiban_dps>>、<<gsi_ops,annex=7,付録７ 公共測量標準図式>>
 
 [[toc4_14_04_02]]
 ===== Urban Object（i-UR）
@@ -825,7 +829,8 @@ h| コード h| 説明
 |===
 
 [.source]
-<<作業規程の準則、3D都市モデル整備のための測量マニュアル、3D都市モデル標準作業手順書>>
+<<gsi_ops>>、<<plateau_002>>、<<plateau_010>>
+
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
@@ -856,7 +861,8 @@ h| コード h| 説明
 |===
 
 [.source]
-<<作業規程の準則、3D都市モデル整備のための測量マニュアル、3D都市モデル標準作業手順書>>
+<<gsi_ops>>、<<plateau_002>>、<<plateau_010>>
+
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
@@ -898,7 +904,7 @@ h| コード h| 説明
 |===
 
 [.source]
-<<建物三次元データ作成マニュアル（案）>>
+<<gsi_building_data_manual>>
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
@@ -949,7 +955,8 @@ h| コード h| 説明
 |===
 
 [.source]
-<<作業規程の準則、3D都市モデル整備のための測量マニュアル>>
+<<gsi_ops>>、<<plateau_010>>
+
 
 ====== CityFurniture_lodType.xml
 

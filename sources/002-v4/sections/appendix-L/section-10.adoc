@@ -666,9 +666,11 @@ CityGMLの地物型は、IFCにおいて部材の集まりを示すIfcBridgePart
 IFCでは、梁（IfcBeam）やスラブ（IfcSlab）、支承（IfcBearing）といった橋梁を構成する部材がクラスとして定義されているが、これらのクラスとCityGMLの地物型とを対応付けると、3D都市モデルとしては詳細すぎる表現となるため、部材クラスの集まりであるIfcBridgePart及びIfcElementAssemblyとCityGMLの地物型とを対応づけ、橋梁モデル（LOD4）を作成する。
 
 
-.IfcBridgeにおけるクラス間の階層構造（出典：IFC Bridge Fast Track Project Report WP2: Conceptual Model）
+.IfcBridgeにおけるクラス間の階層構造
 image::images/348.webp.png[]
 
+[.source]
+<<ifc_bridge_wp2>>
 
 ==== 作成上の留意事項
 

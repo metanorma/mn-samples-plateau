@@ -338,12 +338,19 @@ h| LOD1
 
 TunnelPartを用いてトンネルを延長方向に区切る場合は、ポリゴンを任意の位置で区切る。
 
-.トンネル標準断面図の例　出典：国道13号　大鍋トンネル　設計図（https://www.thr.mlit.go.jp/road/kouji/kouji-tunnel/24_R13_oonabe/data_05_.pdf）
+.トンネル標準断面図の例
 image::images/362.webp.png[]
 
+[.source]
+<<tunnel_diagram_oonabe>>
 
-.坑門工一般図の例　出典：国道13号　大鍋トンネル　設計図（https://www.thr.mlit.go.jp/road/kouji/kouji-tunnel/24_R13_oonabe/data_05_.pdf）
+
+.坑門工一般図の例
 image::images/363.webp.png[]
+
+[.source]
+<<tunnel_diagram_oonabe>>
+
 
 --
 
@@ -376,10 +383,11 @@ image::images/365.webp.png[]
 
 カルバート及びシェッド、シェルターの最高標高値は一般図又は航空測量成果（航空写真、航空レーザ点群）より取得する。
 
-.シェッド及びシェルターの一般図の例　　出典：道路施設台帳サンプルデータD050
+.シェッド及びシェルターの一般図の例
 image::images/366.webp.png[]
 
-（ https://www.cbr.mlit.go.jp/architecture/kensetsugijutsu/download/index.htm）
+[.source]
+<<cbr_road_sample_data,道路施設台帳サンプルデータD050>>
 
 --
 
@@ -420,10 +428,12 @@ image::images/370.webp.png[]
 --
 最低標高値は、一般図に記載された地下横断歩道の深さと③の路面標高値から算出する。
 
-.地下横断歩道の一般図の例　出典：道路施設台帳サンプルデータD070
+.地下横断歩道の一般図の例
 image::images/371.webp.png[]
 
-（ https://www.cbr.mlit.go.jp/architecture/kensetsugijutsu/download/index.htm）
+[.source]
+<<cbr_road_sample_data,道路施設台帳サンプルデータD070>>
+
 --
 
 . ④ ①で作成したポリゴンに③で算出した地下横断歩道の最低標高値を付与する。
@@ -489,7 +499,8 @@ h| LOD2
 .縦断図の例
 image::images/372.webp.png[]
 
-出典：国道13号　大鍋トンネル　設計図（ https://www.thr.mlit.go.jp/road/kouji/kouji-tunnel/24_R13_oonabe/data_05_.pdf）
+[.source]
+<<tunnel_diagram_oonabe>>
 --
 
 . ② ①で区切った立体の頂点の高さを区切り位置の高さに変更する。
@@ -509,7 +520,8 @@ image::images/373.webp.png[]
 .地質平面・縦断図の例
 image::images/374.webp.png[]
 
-出典：国道13号　大鍋トンネル　設計図（ https://www.thr.mlit.go.jp/road/kouji/kouji-tunnel/24_R13_oonabe/data_05_.pdf）
+[.source]
+<<tunnel_diagram_oonabe>>
 --
 
 . ④ ②で高さを変更したモデルに対し、各測点に適用されるトンネル標準断面図から断面形状を再現する。カルバート、シェッド及びシェルターの場合は、この工程は不要である。
@@ -903,13 +915,15 @@ BIM/CIMモデル又は以下のいずれかのデータを一つ以上使用す�
 .非常用施設割付図の例
 image::images/390.svg.png[]
 
-出典：国道13号　浅川トンネル　設計図（ https://www.thr.mlit.go.jp/road/kouji/kouji-tunnel/24_R13_oonabe/data_05_.pdf）
+[.source]
+<<tunnel_diagram_asakawa>>
 
 
 .非常用施設箱抜工図の例
 image::images/391.webp.png[]
 
-出典：国道13号　大鍋トンネル　設計図（ https://www.thr.mlit.go.jp/road/kouji/kouji-tunnel/24_R13_oonabe/data_05_.pdf）
+[.source]
+<<tunnel_diagram_oonabe>>
 --
 
 トンネルモデル（LOD4.2）の作成例を図M- 36に示す。

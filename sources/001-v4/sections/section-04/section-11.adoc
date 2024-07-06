@@ -5,7 +5,7 @@
 
 標準製品仕様書では以下を対象とする。
 
-* 道路法（昭和27年法律第180号）第２条第１項に規定する「橋」。橋長２.０m以上を対象とし高架橋及び桟道橋を含む[参考 中部地方整備局　道路施設台帳作成マニュアル]。
+* 道路法（昭和27年法律第180号）第２条第１項に規定する「橋」。橋長２.０m以上を対象とし高架橋及び桟道橋を含む[参考 <<cbr_road_build_manual>>]。
 
 ** 桟道橋：斜面を通過する道路で、橋桁の一側が斜面に接し、反対側が橋脚になっている部分 [公共測量標準図式]。
 
@@ -862,8 +862,10 @@ Element
 ■:: 条件付必須
 〇:: 任意
 
-橋梁の詳細な形状は、IFCにおける橋梁モデル（IFC Bridge）と整合を図る。 +
-ただし、IFCにおける橋梁モデルはまだ国際標準となっていないことから、IFC Bridge Fast Track Project Report WP2: Conceptual Modelを参考に、IFC Bridgeを構成するクラスとCityGMLのBridgeモジュールとの対応付けを示す（表 4-67）。 +
+橋梁の詳細な形状は、IFCにおける橋梁モデル（IFC Bridge）と整合を図る。
+
+ただし、IFCにおける橋梁モデルはまだ国際標準となっていないことから、 <<ifc_bridge_wp2,IFC Bridge Fast Track Project Report WP2: Conceptual Model>> を参考に、IFC Bridgeを構成するクラスとCityGMLのBridgeモジュールとの対応付けを示す（表 4-67）。
+
 なお、橋梁内部の空間は、建築物モデル（LOD4）と整合を図る。このときの橋梁内部の空間とは、橋梁にこれと一体的な建屋が設けられていた場合の、建屋の内部の空間を指す。
 
 [cols="a,a,a"]
@@ -900,8 +902,11 @@ IFCでは、梁（IfcBeam）やスラブ（IfcSlab）、支承（IfcBearing）�
 そこで、これらの部材クラスの集まりであるIfcBridgePart及びIfcElementAssemblyとCityGMLの地物型とを対応付けた。 +
 このとき、IfcBridgePart及びIfcElementAssemblyの属性PredefinedTypeによりCityGMLの地物型であるbrid:Bridge、brid:BridgeConstructionElement又はbrid:BridgeInstallationへの振り分けを行っている。
 
-.IfcBridgeにおけるクラス間の階層構造（出典：IFC Bridge Fast Track Project Report WP2: Conceptual Model）
+.IfcBridgeにおけるクラス間の階層構造
 image::images/250.webp.png[]
+
+[.source]
+<<ifc_bridge_wp2>>
 
 ====== 橋梁モデル（LOD4）の定義
 
@@ -1231,7 +1236,7 @@ image::images/252.svg[]
 
 標準製品仕様書では以下を対象とする。
 
-* 道路法（昭和27年法律第180号）第２条第１項に規定する「橋」。橋長２.０m以上を対象とし、高架橋及び桟道橋を含む[参考 中部地方整備局　道路施設台帳作成マニュアル]。
+* 道路法（昭和27年法律第180号）第２条第１項に規定する「橋」。橋長２.０m以上を対象とし、高架橋及び桟道橋を含む[参考 <<cbr_road_build_manual>>]。
 ** 桟道橋：斜面を通過する道路で、橋桁の一側が斜面に接し、反対側が橋脚になっている部分 [公共測量標準図式]。
 * 鉄道事業者法施行規則別表第一に定める鉄道施設の「橋りょう」。
 * 鉄道事業者法施行規則別表第一に定める鉄道施設の「こ線橋」。
@@ -2313,7 +2318,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 LOD2以上の幾何オブジェクトを作成する場合は必須とする。
 
 | uro:lod1HeightType | gml:CodeType [0..1] | LOD1の立体図形を作成する際に使用した高さの算出方法。コードリスト（DataQualityAttribute_lod1HeightType.xml）より選択する。LOD1の幾何オブジェクトを作成する場合は必須とする。
-h| (uro:tranDataAcquisition) | xs:string [0..1] | 「道路基盤地図情報（整備促進版）製品仕様書（案）」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
+h| (uro:tranDataAcquisition) | xs:string [0..1] | 「<<nilim_kiban_dps,道路基盤地図情報（整備促進版）製品仕様書（案）>>」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
 h| 自身に定義された関連役割 h| 　 h| 　
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | uro:publicSurveyDataQualityAttribute
@@ -2441,7 +2446,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:surveyYear | xs:gYear [0..1] | 点検が実施された年度。
 | uro:riskType | gml:CodeType [1] | 判定区分。コードリスト（ConstructionRiskAssessmentAttribute_riskType.xml）より選択する。
 | uro:status | gml:CodeType [0..1] | 対応状況。コードリスト（ ConstructionRiskAssessmentAttribute_status.xml）より選択する。
-| uro:referenceDate | xs:date [1] | 判定区分や措置状況の情報が記載された損傷マップの更新時点。
+| uro:referenceDate | xs:date [1] | 判定区分や措置状況の情報が記載された<<mlit_road_damage_map,損傷マップ>>の更新時点。
 
 |===
 
@@ -2509,7 +2514,7 @@ h| コード h| 説明
 |===
 
 [.source]
-<<道路基盤地図情報>>
+<<nilim_kiban_dps>>
 
 ====== Bridge_function.xml
 
@@ -2531,7 +2536,7 @@ h| コード h| 説明
 |===
 
 [.source]
-<<CityGML2.0 Annex C>>
+<<citygml_20,annex="C">>
 
 ====== BridgeConstructionElement_function.xml
 
@@ -2552,7 +2557,7 @@ h| コード h| 説明
 |===
 
 [.source]
-<<CityGML2.0 Annex C>>
+<<citygml_20,annex="C">>
 
 ====== BridgeInstallation_function.xml
 
@@ -2709,9 +2714,9 @@ h| コード h| 説明
 |===
 
 [.source]
-<<河川基盤地図ガイドライン（案）、国土数値情報、サイバーポート>>
+<<mlit_kiban_chizu>>、<<nlftp>>、<<mlit_cyberport>>
 
-====== ConstructionBaseAttribute_installerType.xmlりんりりｎ
+====== ConstructionBaseAttribute_installerType.xml
 
 [cols="3a,22a"]
 |===
@@ -2738,7 +2743,7 @@ h| コード h| 説明
 |===
 
 [.source]
-<<サイバーポート>>
+<<mlit_cyberport>>
 
 ====== ConstructionRiskAssessmentAttribute_riskType.xml
 
@@ -2758,7 +2763,7 @@ h| コード h| 説明
 |===
 
 [.source]
-<<損傷マップ>>
+<<mlit_road_damage_map>>
 
 ====== ConstructionRiskAssessmentAttribute_status.xml
 
@@ -2776,7 +2781,7 @@ h| コード h| 説明
 |===
 
 [.source]
-<<損傷マップ>>
+<<mlit_road_damage_map>>
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
@@ -2824,7 +2829,8 @@ h| 　 | 　
 |===
 
 [.source]
-<<作業規程の準則、3D都市モデル整備のための測量マニュアル、3D都市モデル標準作業手順書>>
+<<gsi_ops>>、<<plateau_002>>、<<plateau_010>>
+
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
@@ -2855,7 +2861,8 @@ h| コード h| 説明
 |===
 
 [.source]
-<<作業規程の準則、3D都市モデル整備のための測量マニュアル、3D都市モデル標準作業手順書>>
+<<gsi_ops>>、<<plateau_002>>、<<plateau_010>>
+
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
@@ -2897,7 +2904,7 @@ h| コード h| 説明
 |===
 
 [.source]
-<<建物三次元データ作成マニュアル（案）>>
+<<gsi_building_data_manual>>
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
@@ -2948,7 +2955,8 @@ h| コード h| 説明
 |===
 
 [.source]
-<<作業規程の準則、3D都市モデル整備のための測量マニュアル>>
+<<gsi_ops>>、<<plateau_010>>
+
 
 ====== Bridge_lodType.xml
 
