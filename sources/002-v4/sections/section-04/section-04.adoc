@@ -108,8 +108,9 @@ https://www.geospatial.jp/iur/codelists
 
 * gml:idは、データ集合内でオブジェクトを識別するためのIDである。3D都市モデルでは、このgml:idに [接頭辞]_[UUID]を使用する。
 
-* [接頭辞]は、製品仕様書に示す、CityGML及びi-URの各パッケージに与えられた接頭辞（表 4-4） とする。また、[UUID]は、Universally Unique Identifierとする。
+* [接頭辞]は、製品仕様書に示す、CityGML及びi-URの各パッケージに与えられた接頭辞（<<tab-4-4>>） とする。また、[UUID]は、Universally Unique Identifierとする。
 
+[[tab-4-4]]
 [cols="2a,2a,1a"]
 .接頭辞
 |===
