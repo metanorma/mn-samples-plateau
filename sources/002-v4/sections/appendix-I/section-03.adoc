@@ -52,5 +52,5 @@ image::images/294.webp.png[]
 
 ===== コードリストの拡張
 
-土地利用の用途の区分である属性luse:classの定義域を示すコードリストCommon_landUseType.xmlは、拡張してはならない。このコードリストは、都市計画基礎調査実施要領（国土交通省都市局）に基づく区分である。この属性とコードリストを用いて広域での（uro:LandUseDetailAttribute）を使用して記述する。uro:LandUseDetailAttributeの属性uro:orgLandUseは、都市独自の分類による土地利用用途を示す属性である。uro:orgLandUseにより土地利用の用途を区分する場合は、LandUseDetailAttribute \_orgLandUse.xmlを作成し、コードと土地利用用途の区分の対応を明らかにしなければならない。
+土地利用の用途の区分である属性luse:classの定義域を示すコードリストCommon_landUseType.xmlは、拡張してはならない。このコードリストは、<<mlit_foundation_reqs,都市計画基礎調査実施要領（国土交通省都市局）>>に基づく区分である。この属性とコードリストを用いて広域での（uro:LandUseDetailAttribute）を使用して記述する。uro:LandUseDetailAttributeの属性uro:orgLandUseは、都市独自の分類による土地利用用途を示す属性である。uro:orgLandUseにより土地利用の用途を区分する場合は、LandUseDetailAttribute \_orgLandUse.xmlを作成し、コードと土地利用用途の区分の対応を明らかにしなければならない。
 
