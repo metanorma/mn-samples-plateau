@@ -583,7 +583,7 @@ h| (uro:geometrySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェ�
 h| (uro:appearanceSrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトのアピアランスに使用した原典資料の種類。
 h| (uro:lodType) | gml:CodeType [0..*] | 幾何オブジェクトに適用されたLODの詳細な区分。
 | uro:lod1HeightType | gml:CodeType [0..1] | LOD1の立体図形を作成する際に使用した高さの算出方法。
-h| (uro:tranDataAcquisition) | xs:string [0..1] | 「道路基盤地図情報（整備促進版）製品仕様書（案）」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
+h| (uro:tranDataAcquisition) | xs:string [0..1] | 「<<nilim_kiban_dps,道路基盤地図情報（整備促進版）製品仕様書（案）>>」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
 3+h| 自身に定義された関連役割
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | uro:publicSurveyDataQualityAttribute | uro:PublicSurveyDataQualityAttribute [0..1] | 使用した公共測量成果の地図情報レベルと種類。
@@ -669,7 +669,7 @@ h| コード h| 説明
 |===
 
 [.source]
-<<道路緑化技術基準、わが国の街路樹 Ⅷ>>
+<<mlit_green_roads>>、<<nilim_street_trees>>
 
 ====== SolitaryVegetationObject_function.xml
 
@@ -688,7 +688,7 @@ h| コード h| 説明
 |===
 
 [.source]
-<<わが国の街路樹 Ⅷ>>
+<<nilim_street_trees>>
 
 ====== PlantCover_class.xml
 
@@ -708,7 +708,7 @@ h| コード h| 説明
 |===
 
 [.source]
-<<道路緑化技術基準、わが国の街路樹 Ⅷ>>
+<<mlit_green_roads>>、<<nilim_street_trees>>
 
 [[toc4_17_04_02]]
 ===== Urban Object（i-UR）
@@ -758,7 +758,8 @@ h| コード h| 説明
 |===
 
 [.source]
-<<作業規程の準則、3D都市モデル整備のための測量マニュアル、3D都市モデル標準作業手順書>>
+<<gsi_ops>>、<<plateau_002>>、<<plateau_010>>
+
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
@@ -789,7 +790,8 @@ h| コード h| 説明
 |===
 
 [.source]
-<<作業規程の準則、3D都市モデル整備のための測量マニュアル、3D都市モデル標準作業手順書>>
+<<gsi_ops>>、<<plateau_002>>、<<plateau_010>>
+
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
@@ -831,7 +833,7 @@ h| コード h| 説明
 |===
 
 [.source]
-<<建物三次元データ作成マニュアル（案）>>
+<<gsi_building_data_manual>>
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
@@ -882,5 +884,6 @@ h| コード h| 説明
 |===
 
 [.source]
-<<作業規程の準則、3D都市モデル整備のための測量マニュアル>>
+<<gsi_ops>>、<<plateau_010>>
+
 

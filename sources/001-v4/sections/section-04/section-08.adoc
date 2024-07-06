@@ -3,10 +3,8 @@
 
 土地利用とは、都市計画基礎調査の土地利用現況をいう。（都市計画法第6条）
 
-出典： https://www.mlit.go.jp/toshi/tosiko/toshi_tosiko_tk_000187.html +
-　　　都市計画情報のデジタル化・オープンデータガイダンス +
-　　　都市計画基礎調査実施要領 +
-　　　都市計画データ標準製品仕様書
+[.source]
+<<mlit_urban_digitization>>、<<mlit_foundation_reqs>>、<<city_data_ps_sample>>
 
 [[toc4_08_01]]
 ==== 土地利用モデルのLOD
@@ -118,7 +116,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 | luse:class
 | gml:CodeType [0..1]
 | 土地利用用途の大まかな区分。 +
-土地利用用途の区分は、都市計画基礎調査実施要領（国土交通省都市局）による区分とする。コードリスト（Common_landUseType.xml）より選択する。
+土地利用用途の区分は、<<mlit_foundation_reqs,都市計画基礎調査実施要領（国土交通省都市局）>>による区分とする。コードリスト（Common_landUseType.xml）より選択する。
 
 h| (luse:function) | gml:CodeType [0..*] | 土地利用の機能。
 h| (luse:usage) | gml:CodeType [0..*] | 土地利用の用途。
@@ -246,7 +244,7 @@ h| (uro:appearanceSrcDescLod3) | gml:CodeType [0..*] | LOD3の幾何オブジェ
 h| uro:appearanceSrcDescLod4 | gml:CodeType [0..*] | LOD4の幾何オブジェクトのアピアランスに使用した原典資料の種類。
 h| (uro:lodType) | gml:CodeType[0..*] | オブジェクトに適用されたLODの詳細な区分。
 h| (uro:lod1HeightType) | gml:CodeType [0..1] | LOD1の立体図形を作成する際に使用した高さの算出方法。
-h| (uro:tranDataAcquisition) | xs:string [0..1] | 「道路基盤地図情報（整備促進版）製品仕様書（案）」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
+h| (uro:tranDataAcquisition) | xs:string [0..1] | 「<<nilim_kiban_dps,道路基盤地図情報（整備促進版）製品仕様書（案）>>」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
 3+h| 自身に定義された関連役割
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 h| (uro:publicSurveyDataQualityAttribute) | uro:PublicSurveyDataQualityAttribute [0..1] | 使用した公共測量成果の地図情報レベルと種類。
@@ -374,7 +372,8 @@ h| コード h| 説明
 |===
 
 [.source]
-<<作業規程の準則、3D都市モデル整備のための測量マニュアル、3D都市モデル標準作業手順書>>
+<<gsi_ops>>、<<plateau_002>>、<<plateau_010>>
+
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
@@ -405,7 +404,8 @@ h| コード h| 説明
 |===
 
 [.source]
-<<作業規程の準則、3D都市モデル整備のための測量マニュアル、3D都市モデル標準作業手順書>>
+<<gsi_ops>>、<<plateau_002>>、<<plateau_010>>
+
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 

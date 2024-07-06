@@ -1,7 +1,10 @@
 [[toc4_02]]
 === 建築物モデルの応用スキーマ
 
-建築物は、普通建物、堅ろう建物、普通無壁舎及び堅ろう無壁舎をいう。普通建物とは、3階未満の建物及び3階以上の木造等で建築された建物をいう。堅ろう建物とは、鉄筋コンクリート等で建築された建物で、地上3階以上又は3階相当以上の高さのものやスタンドを備えた競技場をいう。普通無壁舎とは、側壁のない建物、温室及び工場内の建物類似の構築物で、3階未満のものをいう。堅ろう無壁舎とは、鉄筋コンクリート等で建築された側壁のない建物及び建物類似の構築物で、地上3階以上又は3階相当以上の高さのものをいう。（参考：作業規程の準則　付録７　公共測量標準図式）
+建築物は、普通建物、堅ろう建物、普通無壁舎及び堅ろう無壁舎をいう。普通建物とは、3階未満の建物及び3階以上の木造等で建築された建物をいう。堅ろう建物とは、鉄筋コンクリート等で建築された建物で、地上3階以上又は3階相当以上の高さのものやスタンドを備えた競技場をいう。普通無壁舎とは、側壁のない建物、温室及び工場内の建物類似の構築物で、3階未満のものをいう。堅ろう無壁舎とは、鉄筋コンクリート等で建築された側壁のない建物及び建物類似の構築物で、地上3階以上又は3階相当以上の高さのものをいう。
+
+[.source]
+<<gsi_ops,annex=7,付録７　公共測量標準図式>>
 
 [[toc4_02_01]]
 ==== 建築物モデルのLOD
@@ -58,7 +61,10 @@
 [[fn_building_model_ext]]
 [NOTE]
 --
-正射影とは、ある図形上の各点から、直線又は平面上に下ろした垂線の足の集まり。LOD0の場合は、上方からの正射影をいう。［参考　作業規程の準則　付録７公共測量標準図式］
+正射影とは、ある図形上の各点から、直線又は平面上に下ろした垂線の足の集まり。LOD0の場合は、上方からの正射影をいう。
+
+[.source]
+<<gsi_ops,annex=7,付録７ 公共測量標準図式>>
 --
 
 [%key]
@@ -1159,7 +1165,7 @@ LOD3.2では1m未満の軒裏を表現せず、外壁面を屋根面の外周か
 
 建築物モデル（LOD4）は、建築物モデル（LOD3）により表現される建築物の外側の形状に加え、建築物の内側の形状（屋内空間）を表現する。
 
-建築物モデル（LOD4）は、BIMモデルからの変換又は屋内測量によって取得する。BIMモデルからの変換フローは、「3D都市モデル整備のためのBIM活用マニュアル（第3.0版）」を参照のこと。
+建築物モデル（LOD4）は、BIMモデルからの変換又は屋内測量によって取得する。BIMモデルからの変換フローは、「<<plateau_003>>」を参照のこと。
 
 建築物モデル（LOD4）は、含むべき地物により、LOD4.0、LOD4.1及びLOD4.2に区分する（表 4-13）。
 
@@ -1817,7 +1823,7 @@ image::images/033.svg[]
 
 ====== 建築物モデル（LOD4）の拡張属性
 
-以下に示すクラスは、建築物モデル（LOD4）を構成するbldg:Buildingなどの地物に、BIMモデルから変換した詳細な情報を属性として付与するためのデータ型である。①から⑥に示すデータ型は、「3D都市モデル整備のためのBIM活用マニュアル（第3.0版）（別冊）3D都市モデルとの連携のためのBIMモデルIDM・MVD（第2.0版）」（以下、「IDM・MVD」という）に定義されたクラスの属性及びプロパティセットに対応する。また、⑦に示すデータ型は「3次元屋内地理空間データ製品仕様書（案）」に定義されたクラスの属性及びプロパティセットに対応する。
+以下に示すクラスは、建築物モデル（LOD4）を構成するbldg:Buildingなどの地物に、BIMモデルから変換した詳細な情報を属性として付与するためのデータ型である。①から⑥に示すデータ型は、「<<plateau_003_annex>>」（以下、「IDM・MVD」という）に定義されたクラスの属性及びプロパティセットに対応する。また、⑦に示すデータ型は「3次元屋内地理空間データ製品仕様書（案）」に定義されたクラスの属性及びプロパティセットに対応する。
 
 . ① bldg:_AbstractBuildingの下位型に付与する属性
 +
@@ -1871,7 +1877,8 @@ image::images/040.svg[]
 
 堅ろう無壁舎とは、鉄筋コンクリート等で建築された側壁のない建物及び建物類似の構築物で、地上3階以上又は3階相当以上の高さのものをいう。
 
-（作業規程の準則　付録７　公共測量標準図式）
+[.source]
+<<gsi_ops,annex=7,付録７ 公共測量標準図式>>
 
 .bldg:Buildingの例
 image::images/041.webp.png[]
@@ -1892,7 +1899,7 @@ h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 建築物と�
 h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 建築物と水面との相対的な位置関係。
 | bldg:class | gml:CodeType [0..1] | 建築物の形態による区分。コードリスト（Building_class.xml）より選択する。
 h| (bldg:function) | gml:CodeType [0..*] | 建築物の主たる働き。
-| bldg:usage | gml:CodeType [0..*] | 建築物の主な使い道。コードリスト（Building_usage.xml）より選択する。用途の区分は、都市計画基礎調査実施要領（国土交通省都市局）による区分とする。複数の建築物で一体の施設を構成しているものについては、一体としての用途とする。店舗等併用住宅、同共同住宅、作業所併用住宅は、1/3 以上が住宅のものとする。複合用途の建築物（商業系複合施設及び併用住宅を除く）については、主たる用途により分類する。複数の用途を記述する場合は、主たる用途を最初に記載する。
+| bldg:usage | gml:CodeType [0..*] | 建築物の主な使い道。コードリスト（Building_usage.xml）より選択する。用途の区分は、<<mlit_foundation_reqs,都市計画基礎調査実施要領（国土交通省都市局）>>による区分とする。複数の建築物で一体の施設を構成しているものについては、一体としての用途とする。店舗等併用住宅、同共同住宅、作業所併用住宅は、1/3 以上が住宅のものとする。複合用途の建築物（商業系複合施設及び併用住宅を除く）については、主たる用途により分類する。複数の用途を記述する場合は、主たる用途を最初に記載する。
 | bldg:yearOfConstruction | xs:gYear [0..1] | 建築物が建築された年。
 | bldg:yearOfDemolition | xs:gYear [0..1] | 建築物が解体された年。
 | bldg:roofType | gml:CodeType [0..1] | 建築物の屋根形状の種類。コ－ドリスト（Building_roofType.xml）より選択する。
@@ -2054,7 +2061,7 @@ h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 建築物と�
 h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 建築物と水面との相対的な位置関係。
 | bldg:class | gml:CodeType [0..1] | 建築物の形態による区分。コードリスト（Building_class.xml）より選択する。
 h| (bldg:function) | gml:CodeType [0..*] | 建築物の主たる働き。
-| bldg:usage | gml:CodeType [0..*] | 建築物の主な使い道。コードリスト（Building_usage.xml）より選択する。用途の区分は、都市計画基礎調査実施要領（国土交通省都市局）による区分とする。複数の建築物で一体の施設を構成しているものについては、一体としての用途とする。店舗等併用住宅、同共同住宅、作業所併用住宅は、1/3 以上が住宅のものとする。複合用途の建築物（商業系複合施設及び併用住宅を除く）については、主たる用途により分類する。複数の用途を記述する場合は、主たる用途を最初に記載する。
+| bldg:usage | gml:CodeType [0..*] | 建築物の主な使い道。コードリスト（Building_usage.xml）より選択する。用途の区分は、<<mlit_foundation_reqs,都市計画基礎調査実施要領（国土交通省都市局）>>による区分とする。複数の建築物で一体の施設を構成しているものについては、一体としての用途とする。店舗等併用住宅、同共同住宅、作業所併用住宅は、1/3 以上が住宅のものとする。複合用途の建築物（商業系複合施設及び併用住宅を除く）については、主たる用途により分類する。複数の用途を記述する場合は、主たる用途を最初に記載する。
 | bldg:yearOfConstruction | xs:gYear [0..1] | 建築物が建築された年。
 | bldg:yearOfDemolition | xs:gYear [0..1] | 建築物が解体された年。
 | bldg:roofType | gml:CodeType [0..1] | 建築物の屋根形状の種類。コ－ドリスト（Building_roofType.xml）より選択する。
@@ -2289,7 +2296,9 @@ uro:IfcBuildingElement uro:IfcRoof このとき、uro:IfcBuildingElement の属�
 image::images/048.webp.png[]
 
 カーテンウォールはbldg:WallSurfaceにより表現する。カーテンウォールとは、建築物の外側に配置され、建築物を囲む非耐荷重の壁である。
- [参考 ISO 6707-1:2020 Buildings and civil engineering works — Vocabulary — Part 1: General terms]
+
+[.source]
+<<iso_6707-1>>
 
 h| 上位の型 2+| bldg:_BoundarySurface
 h| ステレオタイプ 2+| << FeatureType >>
@@ -3174,12 +3183,12 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 | uro:orgUsage
 | gml:CodeType [0..1]
-| 都市計画基礎調査実施要領（国土交通省都市局）に示された建築物の「用途分類」に相当する都市独自の分類。
+| <<mlit_foundation_reqs,都市計画基礎調査実施要領（国土交通省都市局）>>に示された建築物の「用途分類」に相当する都市独自の分類。
 コードリスト（BuildingDetailAttribute_orgUsage.xml）より選択する。本属性を使用する場合は、コードリストを作成すること。
 
 | uro:orgUsage2
 | gml:CodeType [0..1]
-| 都市計画基礎調査実施要領（国土交通省都市局）に示された建築物の「用途分類」のうち、商業施設、文教厚生施設、運輸倉庫施設、工場が詳細化された区分に相当する都市独自の分類。
+| <<mlit_foundation_reqs,都市計画基礎調査実施要領（国土交通省都市局）>>に示された建築物の「用途分類」のうち、商業施設、文教厚生施設、運輸倉庫施設、工場が詳細化された区分に相当する都市独自の分類。
 コードリスト（BuildingDetailAttribute_orgUsage2.xml）より選択する。本属性を使用する場合は、コードリストを作成すること。
 
 | uro:detailedUsage
@@ -3373,7 +3382,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 | gml:CodeType [0..1]
 | 水位に応じた区分。
 コードリスト（TsunamiRiskAttribute_rank.xml）より選択する。水位は、「津波基準水位」がある場合はこれを採用し、ない場合は「津波浸水想定に定める水深に係る水位」とする。
-「津波基準水位」とは、「津波浸水想定に定める水深に係る水位に建築物等への衝突による津波の水位の上昇（せき上げ）を考慮して必要と認められる値を加えて定める水位」（『津波浸水想定の設定の手引き』参照）である。
+「津波基準水位」とは、「津波浸水想定に定める水深に係る水位に建築物等への衝突による津波の水位の上昇（せき上げ）を考慮して必要と認められる値を加えて定める水位」（『<<mlit_tsunami_guidelines>>』参照）である。
 uro:rank又はuro:rankOrgのいずれか一つをもつ。
 
 | uro:rankOrg
@@ -3381,7 +3390,7 @@ uro:rank又はuro:rankOrgのいずれか一つをもつ。
 | 都道府県独自に設定した水位の区分。
 コードリスト（TsunamiRiskAttribute_rankOrg.xml）より選択する。この属性を使用する場合は、コードリストを作成する。uro:rank又はuro:rankOrgのいずれか一つをもつ。
 水位は、「津波基準水位」がある場合はこれを採用し、ない場合は「津波浸水想定に定める水深に係る水位」とする。
-「津波基準水位」とは、「津波浸水想定に定める水深に係る水位に建築物等への衝突による津波の水位の上昇（せき上げ）を考慮して必要と認められる値を加えて定める水位」（『津波浸水想定の設定の手引き』参照）である。
+「津波基準水位」とは、「津波浸水想定に定める水深に係る水位に建築物等への衝突による津波の水位の上昇（せき上げ）を考慮して必要と認められる値を加えて定める水位」（『<<mlit_tsunami_guidelines>>』参照）である。
 
 | uro:depth | gml:LengthType [0..1] | 陸上の各地点で水面が最も高い位置にきたときの地面から水面までの高さ。単位はm（uom=”m”）とする。
 
@@ -3452,7 +3461,10 @@ uro:rank又はuro:rankOrgのいずれか一つをもつ。
 |===
 | 型の定義
 2+| ため池ハザードマップに存在する建築物に、ため池ハザードマップの属性を与えるための属性型。
-「ため池ハザードマップ」とは、ため池が決壊する恐れのある場合又は決壊した場合に迅速かつ安全に非難するための参考資料である（参考：「ため池ハザードマップ作成の手引き」農林水産省農村振興局防災課,　2013年5月）。
+「ため池ハザードマップ」とは、ため池が決壊する恐れのある場合又は決壊した場合に迅速かつ安全に非難するための参考資料である。
+
+[.source]
+<<maff_reservoir_hazard_maps>>
 
 複数の区域が一棟の建築物に跨って存在する場合は 、同一浸水ランクを持つ浸水ランクのメッシュを一つの区域とし、その区域と建築物が重なる面積が最も大きい浸水ランクの値を採用する。（面積が等しい場合は、より浸水ランクの危険な区域 を採用する） 浸水深は採用した浸水ランクを持つ浸水深のメッシュのうち、建築物と重なる面積が最も大きいメッシュの浸水深を採用する。（同じ浸水深を持つメッシュは面積算出の際に合算する） 面積の有効桁数は、小数点2桁（3桁目で四捨五入）とする。
 
@@ -3602,7 +3614,7 @@ LOD2以上の幾何オブジェクトを作成する場合は必須とする。
 コードリスト（DataQualityAttribute_lod1HeightType.xml）より選択する。
 LOD1の幾何オブジェクトを作成する場合は必須とする。
 
-h| (uro:tranDataAcquisition) | xs:string [0..1] | 「道路基盤地図情報（整備促進版）製品仕様書（案）」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
+h| (uro:tranDataAcquisition) | xs:string [0..1] | 「<<nilim_kiban_dps,道路基盤地図情報（整備促進版）製品仕様書（案）>>」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
 3+h| 自身に定義された関連役割
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 | uro:publicSurveyDataQualityAttribute | uro:PublicSurveyDataQualityAttribute [0..1] | 使用した公共測量成果の地図情報レベルと種類。
@@ -5044,7 +5056,7 @@ h| コード h| 説明
 |===
 
 [.source]
-<<地図情報レベル 2500 数値地形図データ作成のための標準製品仕様書（案）>>
+<<gsi_map_level_dps>>
 
 ====== Building_usage.xml
 
@@ -5076,7 +5088,7 @@ h| コード h| 説明
 |===
 
 [.source]
-<<都市計画基礎調査実施要領（第4版）>>
+<<mlit_foundation_reqs>>
 
 ====== Building_roofType.xml
 
@@ -5119,7 +5131,8 @@ h| コード h| 説明
 |===
 
 [.source]
-<<OGC CityGML2.0 AnnexC.1及びISO6701-1>>
+<<citygml_20,annex="C.1">>、<<iso_6707-1>>.
+
 
 ====== BuildingInstallation_class.xml
 
@@ -5139,7 +5152,7 @@ h| コード h| 説明
 |===
 
 [.source]
-<<OGC CityGML2.0 AnnexC.1>>
+<<citygml_20,annex="C.1">>
 
 ====== BuildingInstallation_function.xml
 
@@ -5182,7 +5195,8 @@ h| コード h| 説明
 |===
 
 [.source]
-<<OGC CityGML2.0 AnnexC.1及びISO6701-1>>
+<<citygml_20,annex="C.1">>、<<iso_6707-1>>.
+
 
 ====== Room_class.xml
 
@@ -5212,7 +5226,7 @@ h| コード 2+h| 説明
 |===
 
 [.source]
-<<Uniclass>>
+<<uniclass>>
 
 ====== Room_function.xml
 
@@ -5224,7 +5238,7 @@ h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Road_function
 h| コード 2+h| 説明
 | SL_20_10 | Legislative spaces | 議会スペース
 | SL_20_15 | Administrative spaces | 管理事務活動の空間
-| SL_20_45 | Motor vehicle maintenance and :ueling spaces | 自動車整備および燃料補給空間
+| SL_20_45 | Motor vehicle maintenance and fueling spaces | 自動車整備および燃料補給空間
 | SL_20_50 | Commercial spaces | 商業活動の空間
 | SL_20_55 | Postal communications spaces | 郵便通信の空間
 | SL_20_60 | Military protective spaces | 軍事保安のための空間
@@ -5346,7 +5360,7 @@ h| コード 2+h| 説明
 |===
 
 [.source]
-<<Uniclass>>
+<<uniclass>>
 
 ====== IntBuildingInstallation_class.xml
 
@@ -5370,7 +5384,7 @@ h| コード h| 説明
 |===
 
 [.source]
-<<IFC>>
+<<ifc_2x3_cv>>
 
 ====== IntBuildingInstallation_function.xml
 
@@ -5397,7 +5411,7 @@ h| コード 2+h| 説明
 |===
 
 [.source]
-<<Uniclass>>
+<<uniclass>>
 
 ====== BuildingFurniture_class.xml
 
@@ -5416,7 +5430,7 @@ h| コード 2+h| 説明
 |===
 
 [.source]
-<<Uniclass>>
+<<uniclass>>
 
 ====== BuildingFurniture_function.xml
 
@@ -5516,7 +5530,7 @@ h| コード 2+h| 説明
 |===
 
 [.source]
-<<Uniclass>>
+<<uniclass>>
 
 [[toc4_02_04_02]]
 ===== Urban Object（i-UR）
@@ -5695,7 +5709,7 @@ h| コード h| 説明
 |===
 
 [.source]
-<<都市計画基礎調査実施要領（第4版）>>
+<<mlit_foundation_reqs>>
 
 ====== BuildingDetailAttribute_buildingStructureType.xml
 
@@ -5717,7 +5731,7 @@ h| コード h| 説明
 |===
 
 [.source]
-<<都市計画基礎調査実施要領（第4版）>>
+<<mlit_foundation_reqs>>
 
 ====== BuildingDetailAttribute_fireproofStructureType.xml
 
@@ -5735,7 +5749,7 @@ h| コード h| 説明
 |===
 
 [.source]
-<<都市計画基礎調査実施要領（第4版）>>
+<<mlit_foundation_reqs>>
 
 ====== BuildingDetailAttribute_vacancy.xml
 
@@ -5766,7 +5780,7 @@ h| コード h| 説明
 
 |===
 
-出典：都市計画基礎調査実施要領（第4版）
+<<mlit_foundation_reqs>>
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
@@ -5812,7 +5826,8 @@ h| コード h| 説明
 
 |===
 
-参考：作業規程の準則、3D都市モデル整備のための測量マニュアル、3D都市モデル標準作業手順書
+[.source]
+<<gsi_ops>>、<<plateau_002>>、<<plateau_010>>
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
@@ -5842,7 +5857,9 @@ h| コード h| 説明
 
 |===
 
-参考：作業規程の準則、3D都市モデル整備のための測量マニュアル、3D都市モデル標準作業手順書
+[.source]
+<<gsi_ops>>、<<plateau_002>>、<<plateau_010>>
+
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
@@ -5883,7 +5900,7 @@ h| コード h| 説明
 
 |===
 
-参考：建物三次元データ作成マニュアル（案）
+<<gsi_building_data_manual>>
 
 ====== Building_lodType.xml
 
@@ -5959,7 +5976,8 @@ h| コード h| 説明
 |===
 
 [.source]
-<<作業規程の準則、3D都市モデル整備のための測量マニュアル>>
+<<gsi_ops>>、<<plateau_010>>
+
 
 ====== IfcBuildingElement_elementType.xml
 
@@ -5990,7 +6008,7 @@ h| コード h| 説明
 |===
 
 [.source]
-<<IFC 2ｘ3>>
+<<ifc_2x3_cv>>
 
 ====== IfcBuildingElement_predefinedType.xml
 
@@ -6027,7 +6045,7 @@ h| コード h| 説明
 |===
 
 [.source]
-<<IFC 2ｘ3>>
+<<ifc_2x3_cv>>
 
 ====== IfcElementCompositionEnum
 
@@ -6043,7 +6061,7 @@ h| 値 h| 説明
 |===
 
 [.source]
-<<IFC 2ｘ3>>
+<<ifc_2x3_cv>>
 
 ====== IfcBuildingElement_shapeType.xml
 
@@ -6077,7 +6095,7 @@ h| コード h| 説明
 |===
 
 [.source]
-<<IFC 2ｘ3>>
+<<ifc_2x3_cv>>
 
 ====== IfcInternalOrExternalEnum
 
@@ -6093,7 +6111,7 @@ h| 値 h| 説明
 |===
 
 [.source]
-<<IFC 2ｘ3>>
+<<ifc_2x3_cv>>
 
 ====== IfcSIPrefix
 
@@ -6122,7 +6140,7 @@ h| 値 h| 説明
 |===
 
 [.source]
-<<IFC 2ｘ3>>
+<<ifc_2x3_cv>>
 
 ====== IfcSlabTypeEnum
 
@@ -6137,7 +6155,7 @@ h| 値 h| 説明
 |===
 
 [.source]
-<<IFC 2ｘ3>>
+<<ifc_2x3_cv>>
 
 ====== IfcStairTypeEnum
 
@@ -6166,7 +6184,7 @@ h| 値 h| 説明
 |===
 
 [.source]
-<<IFC 2ｘ3>>
+<<ifc_2x3_cv>>
 
 ====== IfcStairFlightTypeEnum
 
@@ -6187,7 +6205,7 @@ h| 値 h| 説明
 |===
 
 [.source]
-<<IFC 2ｘ3>>
+<<ifc_2x3_cv>>
 
 ====== IfcStateEnum
 
@@ -6205,7 +6223,7 @@ h| 値 h| 説明
 |===
 
 [.source]
-<<IFC 2ｘ3>>
+<<ifc_2x3_cv>>
 
 ====== IfcUnitEnum
 
@@ -6248,7 +6266,7 @@ h| 値 h| 説明
 |===
 
 [.source]
-<<IFC 2ｘ3>>
+<<ifc_2x3_cv>>
 
 ====== IfcTransportElementTypeEnum
 
@@ -6266,7 +6284,7 @@ h| 値 h| 説明
 |===
 
 [.source]
-<<IFC 2ｘ3>>
+<<ifc_2x3_cv>>
 
 ====== Common_indoorSource.xml
 

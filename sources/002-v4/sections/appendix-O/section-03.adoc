@@ -206,9 +206,8 @@ h| LOD2 | 以下のいずれかのデータを一つ以上使用する
 
 ②　各外周の頂点を結び、立体を作成する。
 
-参考：「i-Construction推進のための３次元数値地形図データ作成マニュアル」
-
-（ https://psgsv2.gsi.go.jp/koukyou/public/3dmapping/index.html）
+[.source]
+<<iconstruction>>
 
 
 .LOD2における外周の取得イメージ
@@ -278,9 +277,8 @@ h| LOD3 | 以下のいずれかのデータを一つ以上使用する
 
 一方、撮影角度や対象となる都市設備オブジェクトの大きさや形状によっては航空写真や航空レーザ点群も利用可能な場合がある。拡張製品仕様書において定めた品質要求を満たす場合には、都市設備モデル（LOD3）においても航空写真や航空レーザ点群を使用してよい。
 
-参考：「3D都市モデルLODデータ作成実証レポート」
-
-（https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0003_ver01.pdf）
+[.source]
+<<plateau_tr_03>>
 
 
 ==== 作業上の留意事項
