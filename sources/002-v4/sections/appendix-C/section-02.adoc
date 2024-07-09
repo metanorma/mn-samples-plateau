@@ -14,6 +14,7 @@
 
 建築物モデルのLODは、LOD0からLOD4までを対象とする。
 
+[[tab-C-1]]
 .建築物モデルの概要
 image::images/126.webp.png[]
 
@@ -56,8 +57,9 @@ LOD3では、LOD2で使用可能な地物型に加え、屋根面や外壁面に
 
 さらに、LOD4では屋内の空間が追加される。屋内空間は、部屋（bldg:Room）に区分される。部屋は立体として表現され、立体の境界面は、床面（bldg:FloorSurface）、内壁面（bldg:InteriorWallSurface）及び天井面（bldg:CeilingSurface）に区分される。部屋には、屋外と同様に壁や扉を設けられるほか、固定的な設備（bldg:IntBuildingInstallation）や家具などの設備（bldg:BuildingFurniture）を含めることができる。
 
-各LODにおいて使用可能な地物型及びその空間属性を表C- 2に示す。
+各LODにおいて使用可能な地物型及びその空間属性を<<tab-C-2>>に示す。
 
+[[tab-C-2]]
 [cols="3a,3a,^a,^a,^a,^a,^a,6a"]
 .建築物モデルに使用する地物型と空間属性
 |===

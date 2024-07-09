@@ -5,7 +5,7 @@ bldg:BuildingPartは、一棟の建築物を複数の部分に分割して記述
 
 標準製品仕様では、bldg:BuildingPartはLOD2、LOD3及びLOD4において使用可能としている。
 
-
+[[fig-C-17]]
 .BuildingPartの使用例
 image::images/154.webp.png[]
 
@@ -22,21 +22,21 @@ bldg:BuildingPartを使用して建築物を記述する場合、bldg:Building�
 
 bldg:BuildingPartもbldg:Buildingと同様に、空間属性や主題属性をもつことができる。例えば、高層階と低層階を組み合わせた建築物において、都市計画基礎調査が、高層階・低層階それぞれで実施されている場合には、それぞれの調査結果をbldg:BuildingPartに記述する。
 
-例えば、図C- 18のように、一棟の建築物が商業施設、業務施設、共同住宅からなる複合施設であり、それぞれの用途に対して都市計画基礎調査が実施されていたとする。この場合、商業施設、業務施設、共同住宅をそれぞれbldg:BuildingPartとして記述し、bldg:BuildingPartごとに都市計画基礎調査で得られた情報を属性として付与できる。
+例えば、<<fig-C-18>>のように、一棟の建築物が商業施設、業務施設、共同住宅からなる複合施設であり、それぞれの用途に対して都市計画基礎調査が実施されていたとする。この場合、商業施設、業務施設、共同住宅をそれぞれbldg:BuildingPartとして記述し、bldg:BuildingPartごとに都市計画基礎調査で得られた情報を属性として付与できる。
 
 このとき、それぞれのbldg:BuildingPartが幾何オブジェクト（gml:Solid）をもち、bldg:Buildingは、幾何オブジェクトをもたない。また、bldg:Buildingにはbldg:BuildingPartに共通となる属性を格納する。
 
 ただし、bldg:usageのように複数の値を列挙できる属性に関して、一つでも異なる値がある場合には、当該属性の全ての値をbldg:BuildingPartに記述する。
 
-
+[[fig-C-18]]
 .建築物部分（bldg:BuildingPart）を使用する例
 image::images/155.webp.png[]
 
 ただし、ユースケースで必要ない場合には、bldg:BuildingPartを使用しなくてもよい。
 
-例えば、図C- 19のように、複合施設であっても主たる用途についてのみ都市計画基礎調査が実施されている場合で、用途ごとに棟を分けて取得する必要が無い場合には、bldg:BuildingPartを使用せず、bldg:Buildingのみを使用して記述する。
+例えば、<<fig-C-19>>のように、複合施設であっても主たる用途についてのみ都市計画基礎調査が実施されている場合で、用途ごとに棟を分けて取得する必要が無い場合には、bldg:BuildingPartを使用せず、bldg:Buildingのみを使用して記述する。
 
-
+[[fig-C-19]]
 .建築物部分（bldg:BuildingPart）を使用しない例
 image::images/156.webp.png[]
 

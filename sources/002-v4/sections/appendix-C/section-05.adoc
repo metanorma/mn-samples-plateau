@@ -9,8 +9,9 @@ bldg:_BoundarySurfaceは、建築物（bldg:Building）や建築物の部分（b
 要件bldg-21.　bldg:_BoundarySurfaceは、屋根面（bldg:RoofSurface）、外壁面（bldg:WallSurface）、底面（bldg:GroundSurface）、外部天井面（bldg:OuterCeillingSurface）、外部床面（bldg:OuterFloorSurface）、閉鎖面（bldg:ClosureSurface）、天井面（bldg:CeilingSurface）、床面（bldg:FloorSurface）及び内壁面（bldg:InteriorSurface）のいずれかとなる。
 ****
 
-CityGMLでは、建築物や建築物付属物の境界面としてbldg:_BoundarySurfaceの下位型となる地物型が用意されている。このうち、屋外の境界面の記述に使用できるのは、屋根面、外壁面、底面、外部天井面、外部床面又は閉鎖面である（表C- 10、図C- 20）。
+CityGMLでは、建築物や建築物付属物の境界面としてbldg:_BoundarySurfaceの下位型となる地物型が用意されている。このうち、屋外の境界面の記述に使用できるのは、屋根面、外壁面、底面、外部天井面、外部床面又は閉鎖面である（<<tab-C-10>>、<<fig-C-20>>）。
 
+[[tab-C-10]]
 [cols="a,a,a",options="header"]
 .bldg:_BoundarySurfaceの下位型
 |===
@@ -28,7 +29,7 @@ CityGMLでは、建築物や建築物付属物の境界面としてbldg:_Boundar
 
 |===
 
-
+[[fig-C-20]]
 .bldg:_BoundarySurfaceの下位型
 image::images/157.webp.png[]
 
@@ -56,17 +57,17 @@ bldg:WallSurfaceは、外壁面を記述するために使用する地物型で�
 要件bldg-23.　方位が異なっていたり、構造上分割されたりする外壁面は、それぞれをbldg:WallSurfaceとして分けて記述する。
 ****
 
-bldg:WallSurfaceの空間属性（bldg:lod2MultiSurface）の型はgml:MultiSurface（曲面の集まり）である。そのため、一棟の建築物の全ての外壁面を一つのgml:MultiSurfaceとして記述することは幾何オブジェクトとしては間違いではない。ただし、一棟の建築物の全ての外壁面を一つの外壁面として記述することが、LOD3以上のデータとの連携や他のユースケースへの活用の支障になると想定されるため、標準製品仕様書では一棟の建築物の外壁面を、方位等により区分し、それぞれをbldg:WallSurfaceとして記述することとしている（図C- 21）。
+bldg:WallSurfaceの空間属性（bldg:lod2MultiSurface）の型はgml:MultiSurface（曲面の集まり）である。そのため、一棟の建築物の全ての外壁面を一つのgml:MultiSurfaceとして記述することは幾何オブジェクトとしては間違いではない。ただし、一棟の建築物の全ての外壁面を一つの外壁面として記述することが、LOD3以上のデータとの連携や他のユースケースへの活用の支障になると想定されるため、標準製品仕様書では一棟の建築物の外壁面を、方位等により区分し、それぞれをbldg:WallSurfaceとして記述することとしている（<<fig-C-21>>）。
 
-
+[[fig-C-21]]
 .外壁面の実装例
 image::images/158.webp.png[]
 
 ===== bldg:GroundSurface
 
-bldg:GroundSurfaceは、底面を記述するために使用する地物型である。LOD2で底面を記述する場合に、その高さは、図C- 22に示す二つの方法のいずれかにより決定する。建築物に地階が存在し、その最も低い高さが得られる場合にはその高さを使用する。高さの情報が得られない場合には、bldg:GroundSurfaceの水平位置と地形モデルとの交線上で最も低い高さを取得し、この値を使用する。
+bldg:GroundSurfaceは、底面を記述するために使用する地物型である。LOD2で底面を記述する場合に、その高さは、<<fig-C-22>>に示す二つの方法のいずれかにより決定する。建築物に地階が存在し、その最も低い高さが得られる場合にはその高さを使用する。高さの情報が得られない場合には、bldg:GroundSurfaceの水平位置と地形モデルとの交線上で最も低い高さを取得し、この値を使用する。
 
-
+[[fig-C-22]]
 .LOD2における底面の実装例
 image::images/159.webp.png[]
 
@@ -76,19 +77,19 @@ bldg:OuterFloorSurfaceは、屋根以外の上向きの面を記述するため�
 
 屋外における歩行者のナビゲーションのように、人が通行可能な範囲を必要とするユースケースにおいて適用できる。
 
-
+[[fig-C-23]]
 .屋外床面の例
 image::images/160.webp.png[]
 
-また、競技場や野球場等の屋外の観覧席もbldg:OuterFloorSurfaceに該当する（図C- 24）。
+また、競技場や野球場等の屋外の観覧席もbldg:OuterFloorSurfaceに該当する（<<fig-C-24>>）。
 
-
+[[fig-C-24]]
 .屋外床面の取得例（野球場の観覧席）
 image::images/161.webp.png[]
 
 LOD2 で屋外の階段をbldg:OuterFloorSurfaceを用いて記述する場合、階段の一段一段の形状を区別することは不要であり、最上段と最下段を境界とする1個の面として記述してよい。
 
-
+[[fig-C-25]]
 .屋外階段の例
 image::images/162.webp.png[]
 
@@ -96,53 +97,53 @@ image::images/162.webp.png[]
 
 bldg:OuterCeillingSurfaceは、張り出した部分の裏側のように、屋外に存在する天井部分の面を記述するために使用する地物型である。
 
-
+[[fig-C-26]]
 .屋外天井面の例
 image::images/163.webp.png[]
 
 ===== bldg:ClosureSurface
 
-bldg:ClosureSurfaceは、仮想的に作成した境界面である。通常、建築物の出入り口等の穴があった場合に、その内部を記述せず、仮想的な面を作成することで立体の境界を閉じるために使用する（図C- 27、図C- 29）。また、用途が異なる等により一棟の建築物を部分（bldg:BuildingPart）に分ける場合にその境界となる面を建築物の立体の境界面として使用するために仮想的な面が必要となる場合にも、このbldg:ClosureSurfaceを使用する（図C- 28）。
+bldg:ClosureSurfaceは、仮想的に作成した境界面である。通常、建築物の出入り口等の穴があった場合に、その内部を記述せず、仮想的な面を作成することで立体の境界を閉じるために使用する（<<fig-C-27>>、<<fig-C-29>>）。また、用途が異なる等により一棟の建築物を部分（bldg:BuildingPart）に分ける場合にその境界となる面を建築物の立体の境界面として使用するために仮想的な面が必要となる場合にも、このbldg:ClosureSurfaceを使用する（<<fig-C-28>>）。
 
 例えば、浸水時に、地下街等に水が流入することを想定したシミュレーションを行うような場合には、bldg:ClosureSurfaceを適用できる。
 
-
+[[fig-C-27]]
 .閉鎖面の例（出入り口等の開口部を閉鎖）
 image::images/164.webp.png[]
 
-
+[[fig-C-28]]
 .閉鎖面の例（境界を閉鎖）
 image::images/165.webp.png[]
 
-
+[[fig-C-29]]
 .閉鎖面の取得例（建物入口）
 image::images/166.webp.png[]
 
 ===== bldg:CeilingSurface
 
-bldg:CeilingSurfaceは、部屋など構造物内部の上側（天井）の面である。立体として構成する部屋（bldg:Room）の境界面のうち、上側の面を指す。図C- 30は、部屋を外から見た例である。部屋の立体を構成する境界面のうち、上側の面が天井面となる。
+bldg:CeilingSurfaceは、部屋など構造物内部の上側（天井）の面である。立体として構成する部屋（bldg:Room）の境界面のうち、上側の面を指す。<<fig-C-30>>は、部屋を外から見た例である。部屋の立体を構成する境界面のうち、上側の面が天井面となる。
 
 bldg:CeilingSurfaceの法線ベクトルは下向き（部屋の内側に向く方向が正）となる。
 
-
+[[fig-C-30]]
 .天井面の例
 image::images/167.webp.png[]
 
 ===== bldg:FloorSurface
 
-bldg:FloorSurfaceは、建物の内部空間の各階下面（床）に位置する面である。立体として構成する部屋（bldg:Room）の境界面のうち、下側の面（床面）を指す（図C- 31）。
+bldg:FloorSurfaceは、建物の内部空間の各階下面（床）に位置する面である。立体として構成する部屋（bldg:Room）の境界面のうち、下側の面（床面）を指す（<<fig-C-31>>）。
 
 なお、bldg:FloorSurfaceの法線ベクトルは上向き（部屋の内側に向く方向が正）となる。
 
-
+[[fig-C-31]]
 .床面の例
 image::images/168.webp.png[]
 
 ===== bldg:InteriorWallSurface
 
-bldg:InteriorWallSurfaceは、建築物の内側に向いた内壁又は仕切りの面である。部屋（bldg:Room）の立体を構成する垂直方向の境界面となる（図C- 32）。
+bldg:InteriorWallSurfaceは、建築物の内側に向いた内壁又は仕切りの面である。部屋（bldg:Room）の立体を構成する垂直方向の境界面となる（<<fig-C-32>>）。
 
-
+[[fig-C-32]]
 .内壁面の例
 image::images/169.webp.png[]
 
@@ -152,23 +153,23 @@ image::images/169.webp.png[]
 
 LOD2及びLOD3では、建築物（bldg:Building）の境界面をbldg:RoofSurface（屋根面：C.5.2.1）、bldg:WallSurface（外壁面：C.5.2.2）、bldg:GroundSurface（底面：C.5.2.3）に区分することを基本とする。
 
-
+[[fig-C-33]]
 .LOD2における境界面の区分
 image::images/170.webp.png[]
 
 ただし、ユースケースで必要な場合には、境界面の区分にbldg:OuterFloorSurface（屋外床面：C.5.2.4）及びbldg:ClosureSurface（閉鎖面：C.5.2.6）を使用できる。また、LOD3ではbldg:OuterCeilingSurface（屋外天井面：C.5.2.5）を使用できる。
 
-bldg:OuterFloorSurface（屋外床面）は、bldg:RoofSurfaceの代替として使用できる。建築物を構成する境界面のうち、上を向いている面は、bldg:RoofSurfaceとなるが、屋上のように、人が滞留可能な面と屋根面とを区別したい場合はbldg:OuterFloorSurfaceを使用し、これを区分する。図C- 34に例を示す。
+bldg:OuterFloorSurface（屋外床面）は、bldg:RoofSurfaceの代替として使用できる。建築物を構成する境界面のうち、上を向いている面は、bldg:RoofSurfaceとなるが、屋上のように、人が滞留可能な面と屋根面とを区別したい場合はbldg:OuterFloorSurfaceを使用し、これを区分する。<<fig-C-34>>に例を示す。
 
-
+[[fig-C-34]]
 .屋外床面の取得例
 image::images/171.webp.png[]
 
 bldg:OuterFloorSurfaceとして取得しない場合は、bldg:RoofSurfaceとして取得する。
 
-bldg:OuterCeilingSurface（屋外天井面）は、bldg:WallSurfaceの代替として使用できる。bldg:OuterCeilingSurface はbldg:WallSurfaceのうち下向きの面であり、天井の機能を有する面、これを区別したい場合に適用する。図C- 35に例を示す。
+bldg:OuterCeilingSurface（屋外天井面）は、bldg:WallSurfaceの代替として使用できる。bldg:OuterCeilingSurface はbldg:WallSurfaceのうち下向きの面であり、天井の機能を有する面、これを区別したい場合に適用する。<<fig-C-35>>に例を示す。
 
-
+[[fig-C-35]]
 .屋外天井面の取得例
 image::images/172.webp.png[]
 
@@ -176,7 +177,7 @@ bldg:OuterCeilingSurfaceとして取得しない場合は、bldg:WallSurfaceと�
 
 さらに、LOD2及びLOD3においてbldg:BuildingPartを用いて一棟の建築物を複数の部分に分割して記述する場合は、各bldg:BuildingPartが接する仮想的な境界面が必要となるため、これをbldg:ClosureSurface（閉鎖面）として取得する。
 
-
+[[fig-C-36]]
 .閉鎖面の取得例
 image::images/173.webp.png[]
 

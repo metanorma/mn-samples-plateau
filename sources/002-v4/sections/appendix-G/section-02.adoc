@@ -8,10 +8,11 @@
 
 広場の記述には、CityGMLに定義されたTransportationモジュールのtran:Squareを使用する。
 
-標準製品仕様書では、広場の表現に必要な地物型等をCityGML及びi-URから抽出し、LODごとに、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を定めた「交通（広場）モデル」を定義する（表G- 1）。
+標準製品仕様書では、広場の表現に必要な地物型等をCityGML及びi-URから抽出し、LODごとに、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を定めた「交通（広場）モデル」を定義する（<<tab-G-1>>）。
 
 交通（広場）モデルのLODは、LOD0からLOD3までを対象とする。
 
+[[tab-G-1]]
 .交通（広場）モデルのLODの考え方
 image::images/270.webp.png[]
 
@@ -32,8 +33,9 @@ LOD0は広場を線として表現するが、このときの線は、ネット�
 
 広場面は、歩道や車道のように、機能の異なる複数の要素から構成される。この広場を構成する要素は、tran:TrafficArea又はtran:AuxiliaryTrafficAreaを用いて記述する。tran:TrafficAreaは、車線や歩道のように、通行の用に供される領域である。一方、tran:AuxiliaryTrafficAreaは、車両待機所や車両乗降所のように補助的な役割を果たす領域である。tran:Squareは、tran:TrafficArea及びtran:AuxiliaryTrafficAreaの集まりとして構成される。
 
-tran:Squareの空間属性は、LOD0では、線として表現する。LOD1以降では面として表現する。tran:TrafficArea及びtran:AuxiliaryTrafficAreaは、いずれも面として表現する。ただし、これら二つの地物型はLOD2以降でのみ使用可能となる。すなわち、LOD1では広場は歩車道の区別がない面として表現され、LOD2以降では広場の歩道や車道あるいは車線など、広場内の構造を区別できるようになる。広場の各LODにおいて使用可能な地物型と空間属性を、表G- 2に示す。
+tran:Squareの空間属性は、LOD0では、線として表現する。LOD1以降では面として表現する。tran:TrafficArea及びtran:AuxiliaryTrafficAreaは、いずれも面として表現する。ただし、これら二つの地物型はLOD2以降でのみ使用可能となる。すなわち、LOD1では広場は歩車道の区別がない面として表現され、LOD2以降では広場の歩道や車道あるいは車線など、広場内の構造を区別できるようになる。広場の各LODにおいて使用可能な地物型と空間属性を、<<tab-G-2>>に示す。
 
+[[tab-G-2]]
 [cols="3a,3a,^a,^a,^a,^a,6a"]
 .交通（広場）モデルに使用する地物型と空間属性
 |===
@@ -140,11 +142,11 @@ tran:Squareの空間属性は、いずれのLODにおいても、同一のLODに
 
 また、tran:TrafficAreaとtran:AuxiliaryTrafficArea をtran:Roadとtran:Squareの両方から参照する場合は、tran:Squareはtran:TrafficAreaとtran:AuxiliaryTrafficAreaの参照とtran:Squareのジオメトリの参照の両方が必要である。
 
-
+[[fig-G-1]]
 .道路（Road）を構成する歩道等が広場（Square）の一部参照する場合のイメージ
 image::images/271.webp.png[]
 
-
+[[fig-G-2]]
 .交通（道路）モデルのtran:TrafficAreaを交通（広場）モデルで参照する場合の記載例
 image::images/272.webp.png[]
 
@@ -152,8 +154,9 @@ image::images/272.webp.png[]
 要件squr-9.　広場のLOD3の形状は、交通（広場）モデル（LOD3）の定義に従う。
 ****
 
-LOD3では広場内の区分と高さの取得方法により、LODを細分する。表G- 3に細分したLOD3の概要を示す。
+LOD3では広場内の区分と高さの取得方法により、LODを細分する。<<tab-G-3>>に細分したLOD3の概要を示す。
 
+[[tab-G-3]]
 [cols="3a,3a,3a,^a,^a,^a,^a,^a"]
 .交通（広場）モデル（LOD3）の概要
 |===
