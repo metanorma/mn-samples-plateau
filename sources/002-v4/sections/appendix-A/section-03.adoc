@@ -8,6 +8,7 @@
 
 本様式に記述した結果は、3D都市モデルとして整備する地理空間データの範囲となる。
 
+[[tab-A-1]]
 .取得項目一覧（一部）
 image::images/109.webp.png[]
 
@@ -28,6 +29,7 @@ image::images/109.webp.png[]
 
 本様式は、新たにコード型の地物属性を追加する場合に、コードリストを定義するために使用する。
 
+[[tab-A-2]]
 .コードリスト定義
 image::images/110.webp.png[]
 
@@ -36,6 +38,7 @@ image::images/110.webp.png[]
 
 本様式は、建築物に新たな地物属性を追加する場合に使用する。keyは100以上を使用する。
 
+[[tab-A-3]]
 .建築物の拡張属性リスト
 image::images/111.webp.png[]
 
@@ -44,6 +47,7 @@ image::images/111.webp.png[]
 
 本様式は、標準製品仕様書に定義されていない地物型等のうち、i-UR又はCityGMLに定義されている地物型を追加するために使用する。全ての都市オブジェクトが継承する属性及び関連役割はあらかじめ様式に記述しているため、ここに記載のない属性及び関連役割は追加する地物型ごとに記入すること。
 
+[[tab-A-4]]
 .応用スキーマ文書
 image::images/112.webp.png[]
 
@@ -52,6 +56,7 @@ image::images/112.webp.png[]
 
 本様式は、標準製品仕様書に定義されていない地物型等のうち、i-UR又はCityGMLにも定義されていない地物型を、汎用都市オブジェクト（gen:GenericCityObject）を用いて追加するために使用する。
 
+[[tab-A-5]]
 .GenericCityObjectの応用スキーマ文書（一部）
 image::images/113.webp.png[]
 
@@ -60,13 +65,15 @@ image::images/113.webp.png[]
 [[tocA_03_06]]
 ==== 汎用属性
 
-i-UR又はCityGMLに定義されていない地物属性や地物関連を、汎用属性（gen:_GenericAttribute）を用いて追加するために使用する様式を表A- 6に示す。
+i-UR又はCityGMLに定義されていない地物属性や地物関連を、汎用属性（gen:_GenericAttribute）を用いて追加するために使用する様式を<<tab-A-6>>に示す。
 
-汎用属性セット（gen:GenericAttributeSet）を使用する場合には、表A- 6に属性の型をgen:GenericAttributeSetとし、追加したい汎用属性セットの名称を示したうえで、表A- 7を用いて汎用属性セットに含むべき汎用属性の組を示すこと。
+汎用属性セット（gen:GenericAttributeSet）を使用する場合には、<<tab-A-6>>に属性の型をgen:GenericAttributeSetとし、追加したい汎用属性セットの名称を示したうえで、<<tab-A-7>>を用いて汎用属性セットに含むべき汎用属性の組を示すこと。
 
+[[tab-A-6]]
 .GenericAttributeによる地物属性/地物関連の追加
 image::images/114.webp.png[]
 
+[[tab-A-7]]
 .GenericAttributeSetによる地物属性/地物関連の追加
 image::images/115.webp.png[]
 
@@ -81,6 +88,7 @@ QE[識別番号]
 
 ここで、「QE」は拡張された品質要求であることを示す接頭辞、[識別番号]は 品質要求を識別する連番（先頭の0は省略する）とする。また、「品質要素」は、「品質の要求、評価及び報告のための規則」に定義された品質要素（15項目）から選択する。
 
+[[tab-A-8]]
 .品質要求
 image::images/116.webp.png[]
 
