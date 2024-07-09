@@ -26,9 +26,9 @@ bldg:BuildingInstallationも、その境界面をbldg:_BoundarySurfaceを用い�
 要件bldg-27.　bldg:BuildingInstallationの境界面をbldg:_BoundarySurfaceを用いて記述する場合、bldg:BuildingInstallation の空間属性bldg:lod2Geomerty又はbldg:lod3Geomertyは、bldg:_BoundarySurfaceの空間属性を外部参照しなければならない。
 ****
 
-図C- 37に建築物付属物と境界面の例を示す。図C- 37は建築物の外部に設置された階段であり、その大きさから立体として取得する。このとき、立体を構成する各境界面を、bldg:_BoundarySurfaceの下位型となる地物型にて取得する場合は、階段部分及び踊り場はbldg:OuterFloorSurface、側面はbldg:WallSurface、下面はbldg:GroundSurfaceとして取得する。また、建築物本体との境界面は仮想的にbldg:ClosureSurfaceとして取得する。この仮想的な面は、立体の外側境界を閉じるために必要である。
+<<fig-C-37>>に建築物付属物と境界面の例を示す。<<fig-C-37>>は建築物の外部に設置された階段であり、その大きさから立体として取得する。このとき、立体を構成する各境界面を、bldg:_BoundarySurfaceの下位型となる地物型にて取得する場合は、階段部分及び踊り場はbldg:OuterFloorSurface、側面はbldg:WallSurface、下面はbldg:GroundSurfaceとして取得する。また、建築物本体との境界面は仮想的にbldg:ClosureSurfaceとして取得する。この仮想的な面は、立体の外側境界を閉じるために必要である。
 
-
+[[fig-C-37]]
 .建築物付属物と境界面の実装例
 image::images/174.webp.png[]
 
@@ -49,7 +49,7 @@ bldg:BuildingInstallationは、建築物に付属する恒久的に設置され�
 要件bldg-29.　bldg:BuildingInstallationは、bldg:functionによりその設備を区分する。
 ****
 
-bldg:functionが取りうる値は、コードリストにより定義されている。標準製品仕様書では、表C- 11に示す区分が用意されている。例えば、階段の場合には「1060」となる。この区分に該当しない付属物が存在する場合には、本付属書で示すコードリストの拡張手順に従い、コードを追加する。
+bldg:functionが取りうる値は、コードリストにより定義されている。標準製品仕様書では、<<tab-C-11>>に示す区分が用意されている。例えば、階段の場合には「1060」となる。この区分に該当しない付属物が存在する場合には、本付属書で示すコードリストの拡張手順に従い、コードを追加する。
 
 [cols="3a,17a"]
 .BuildingInstallationの区分
@@ -83,9 +83,9 @@ h| コード h| 説明
 
 |===
 
-なお、bldg:BuildingInstallationは、建築物の外側に設置された、建築物の付属的な設備を指す。そのため、表C- 11に該当する設備であっても、建築物に付属していない設備は、bldg:BuildingInstallationとしては取得しない。例えば、商店街に設置された、独立して存在する規模の大きなアーケード（図C- 38）は、bldg:BuildingInstallationではなく、frn:CityFurnitureとして取得する。
+なお、bldg:BuildingInstallationは、建築物の外側に設置された、建築物の付属的な設備を指す。そのため、<<tab-C-11>>に該当する設備であっても、建築物に付属していない設備は、bldg:BuildingInstallationとしては取得しない。例えば、商店街に設置された、独立して存在する規模の大きなアーケード（<<fig-C-38>>）は、bldg:BuildingInstallationではなく、frn:CityFurnitureとして取得する。
 
-
+[[fig-C-38]]
 .frn:CityFurnitureで取得すべきアーケード
 image::images/175.webp.png[]
 

@@ -10,6 +10,7 @@
 
 水部モデルのLODは、LOD0からLOD3までを対象とする。
 
+[[tab-T-1]]
 .水部モデルの概要
 image::images/505.webp.png[]
 
@@ -34,8 +35,9 @@ WaterBodyモジュールには、水部（wtr:WaterBody）と、水部の境界�
 
 LOD0では、Wtr:Waterbodyのみを使用し、水部の形状を線として表現する。LOD1では、wtr:WaterBodyのみを使用し、水部の形状を面として表現する。LOD2及びLOD3では、wtr:WaterBody を使用して水部の形状を立体として表現し、その立体の境界面をwtr:WaterSurface、wtr:WaterGroundSurface又はwtr:WaterClosureSurfaceに区分する。
 
-水部の各LODにおいて使用可能な地物型とその空間属性を表T- 2に示す。
+水部の各LODにおいて使用可能な地物型とその空間属性を<<tab-T-2>>に示す。
 
+[[tab-T-2]]
 [cols="3a,3a,^a,^a,^a,^a,6a"]
 .水部の記述に使用する地物型と空間属性
 |===
@@ -85,6 +87,7 @@ LOD0では、Wtr:Waterbodyのみを使用し、水部の形状を線として表
 要件wtr-2 水部のLOD1の形状は水部モデル（LOD1）の定義に従う。
 ****
 
+[[tab-T-3]]
 [cols="a,a"]
 .水部モデル（LOD1）
 |===
@@ -106,6 +109,7 @@ h| 説明 | 水涯線により囲まれた面を取得する。中洲がある�
 要件wtr-3 水部のLOD2の形状は、水部モデル（LOD2）の定義に従う。
 ****
 
+[[tab-T-4]]
 [cols="a,a"]
 .水部モデル（LOD2）
 |===
@@ -133,6 +137,7 @@ h| 説明
 
 水中にある構造物と水部の境界面は水底面とする。
 
+[[tab-T-5]]
 [cols="a,a"]
 .水部モデル（LOD3）
 |===

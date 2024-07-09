@@ -19,6 +19,7 @@
 
 都市計画決定情報は、i-URのUrbanFunctionモジュールに定義されたurf:_UrbanFunctionの下位型を用いて記述する。urf:_UrbanFunctionを継承するurf:Zoneは、概念的な区域であり、これをさらに継承して、都市計画区域や用途地域、地区計画のような地物型が、都市計画決定情報として都市計画法及び関連法令に基づき定義されている。
 
+[[tab-K-1]]
 [cols="3a,3a,^a,^a,^a,^a,6a"]
 .都市計画決定情報モデルの記述に使用する地物型と空間属性
 |===
@@ -86,9 +87,9 @@ urf:Zoneは具象の地物型であり、これを使用して都市オブジェ
 
 都市計画の変更や廃止により都市計画が効力を失った日付（xs:date）は、属性urf:validToにより記述できる。また、その時の都市計画の区分（変更又は廃止）は、属性urf:validToTypeにより記述できる。
 
-例えば、ある都市計画が新規に決定され、その後、変更され、さらに変更された内容が廃止されたとする（図K- 1）。この場合、当初の都市計画のurf:validFromには決定された日付が入り、urf:validFromTypeは「決定」となる。また、urf:validToには、変更により効力を失った日付が入る。このときのurf:validToTypeは「変更」となる。また、変更後の都市計画のurf:validFromには決定された日付が入り、urf:validFromTypeは「変更」となる。また、urf:validToには、廃止により効力を失った日付が入る。このときのurf:validToTypeは「廃止」となる。
+例えば、ある都市計画が新規に決定され、その後、変更され、さらに変更された内容が廃止されたとする（<<fig-K-1>>）。この場合、当初の都市計画のurf:validFromには決定された日付が入り、urf:validFromTypeは「決定」となる。また、urf:validToには、変更により効力を失った日付が入る。このときのurf:validToTypeは「変更」となる。また、変更後の都市計画のurf:validFromには決定された日付が入り、urf:validFromTypeは「変更」となる。また、urf:validToには、廃止により効力を失った日付が入る。このときのurf:validToTypeは「廃止」となる。
 
-
+[[fig-K-1]]
 .都市計画の変遷
 image::images/296.webp.png[]
 
@@ -111,8 +112,9 @@ image::images/296.webp.png[]
 
 都市計画決定情報には、地物の階層構造（包含関係）が定義されている。階層構造をもつ場合は、全体となる地物の一部として、部品となる地物を記述できる。階層構造は、応用スキーマクラス図において、集成の関連で記述される。
 
-階層構造をもつ地物の組み合わせを表K- 2に示す。
+階層構造をもつ地物の組み合わせを<<tab-K-2>>に示す。
 
+[[tab-K-2]]
 [cols="a,a,a"]
 .階層構造をもつ地物の組合せ
 |===
@@ -134,9 +136,9 @@ image::images/296.webp.png[]
 要件urf-5.　階層構造をもつ地物の組み合わせでは、部品となる地物が全体となる地物の子要素として符号化しなければならない。
 ****
 
-図K- 2に例を示す。urf:DistrictDevelopmentPlan（地区整備計画）とurf:District（地区）との間には、応用スキーマ図では集約で関連付けられ、urf:DistrictDevelopmentPlanが全体、urf:Districtが部品として定義されている。この場合、CityGML形式に符号化する際にはurf:DistrictDevelopmentPlanのタグの子要素としてurf:Districtが出現しなければならない。
+<<fig-K-2>>に例を示す。urf:DistrictDevelopmentPlan（地区整備計画）とurf:District（地区）との間には、応用スキーマ図では集約で関連付けられ、urf:DistrictDevelopmentPlanが全体、urf:Districtが部品として定義されている。この場合、CityGML形式に符号化する際にはurf:DistrictDevelopmentPlanのタグの子要素としてurf:Districtが出現しなければならない。
 
-
+[[fig-K-2]]
 .階層構造をもつ地物のXMLインスタンス
 image::images/297.webp.png[]
 
