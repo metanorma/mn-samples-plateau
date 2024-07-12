@@ -349,9 +349,9 @@ NOTE: 青色着色している道路内の区分は、当該LODにおいて新�
 |===
 | LOD3.0及びLOD3.1 | LOD3.2 | LOD3.3及びLOD3.4
 
-.4+|
-道路内（車道部、歩道部、島）の高さは、横断方向に同一（全て車道の高さ）となる。 +
-+
+.4+a|
+道路内（車道部、歩道部、島）の高さは、横断方向に同一（全て車道の高さ）となる。
+
 立体交差が表現できる。
 
 image::images/078.webp.png[]
@@ -1181,14 +1181,14 @@ tran: AuxiliaryTrafficAreaのtran:lod2MultiSurfaceは、同一のtran:Roadのオ
 
 | tran:lod3MultiSurface
 | gml:MultiSurface [0..1]
-| 縁石等により示される境界線に囲まれた領域のうち、通行の用に供しない道路の部分。 +
+a| 縁石等により示される境界線に囲まれた領域のうち、通行の用に供しない道路の部分。 +
 LOD3.0の場合、横断方向に連続する交通領域の高さは一律とし、車道の標高とする。 +
 LOD3.1～LOD3.4では、各水平位置における標高とする。 +
 隣接するtran:TrafficArea又はtran:AuxiliaryTrafficAreaとの境界線の座標を一致させる。 +
 tran: AuxiliaryTrafficAreaのtran:lod3MultiSurfaceは、同一のtran:Roadのオブジェクトに含まれる他のtran:TrafficAreaやtran:AuxiliaryTrafficAreaのtran:lod3MultiSurfaceと重なることはない。 +
 LOD3.0の場合、車道交差部での区切りは、LOD2と同様とする。 +
-LOD3.1～LOD3.4では、停止線がある場合にはこれの延長とし、停止線がない場合には、LOD2と同様とするが、ユースケースに応じて決定できる。 +
-+
+LOD3.1～LOD3.4では、停止線がある場合にはこれの延長とし、停止線がない場合には、LOD2と同様とするが、ユースケースに応じて決定できる。
+
 境界線として区画線を使用する場合は、区画線の中心を境界線とする。
 
 |===
