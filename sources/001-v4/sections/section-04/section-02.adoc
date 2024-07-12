@@ -3659,13 +3659,13 @@ LOD別の幾何オブジェクトについてそれぞれ作成する。
 幾何オブジェクトについて、LOD別に作成する。必須とする。
 
 | uro:thematicSrcDesc
-| gml:CodeType [0..\*]
+| gml:CodeType [0..*]
 | 主題属性を作成する元となるデータの説明。
 コードリスト（DataQualityAttribute_thematicSrcDesc.xml）より選択する。
 主題属性を作成する場合は、必ず作成する。
 
 | uro:appearanceSrcDesc
-| gml:CodeType [0..\*]
+| gml:CodeType [0..*]
 | テクスチャ画像を作成する元となるデータの説明。
 コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。
 アピアランスを作成する場合は、必ず作成する。
