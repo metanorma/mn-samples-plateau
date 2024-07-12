@@ -42,8 +42,10 @@
 h| 4+^h| LOD0（河川ネットワークにより表現する場合）
 h| 取得例
 2+|
+[%unnumbered]
 image::images/385.webp.png[]
 2+|
+[%unnumbered]
 image::images/386.webp.png[]
 
 h| 説明
@@ -54,12 +56,16 @@ h| 説明
 h| 4+^h| LOD0（公共測量標準図式により表現する場合）
 h| 取得例
 |
+[%unnumbered]
 image::images/387.webp.png[]
 |
+[%unnumbered]
 image::images/388.webp.png[]
 |
+[%unnumbered]
 image::images/389.webp.png[]
 |
+[%unnumbered]
 image::images/390.webp.png[]
 
 h| 説明 | 地図情報レベル500及び1000における河川、また、地図情報レベル2500における水涯線（河川、湖池等、海岸線）は界線を取得する。
@@ -72,12 +78,16 @@ h| 説明 | 地図情報レベル500及び1000における河川、また、地�
 h| 4+^h| LOD0（公共測量標準図式により表現する場合）
 h| 取得例
 |
+[%unnumbered]
 image::images/391.webp.png[]
 |
+[%unnumbered]
 image::images/392.webp.png[]
 |
+[%unnumbered]
 image::images/393.webp.png[]
 |
+[%unnumbered]
 image::images/394.webp.png[]
 
 h| 説明 | 注記されない湖沼は、界線に加えて記号挿入位置を取得する。
@@ -225,6 +235,7 @@ footnoteblock:[fn_lake_lod0]
 h| h| LOD1
 h| 取得例
 |
+[%unnumbered]
 image::images/395.webp.png[]
 
 h| 説明 | 水涯線により囲まれた面を取得する。中洲がある場合は、中洲を除いた面となる。
@@ -271,6 +282,7 @@ h| 説明 | 水涯線により囲まれた面を取得する。中洲がある�
 h| ^h| LOD2
 h| 取得例
 |
+[%unnumbered]
 image::images/396.webp.png[]
 
 h| 説明
@@ -346,6 +358,7 @@ h| 説明
 h| h| LOD3
 h| 取得例
 |
+[%unnumbered]
 image::images/397.webp.png[]
 
 h| 説明
@@ -447,11 +460,13 @@ h| 地物型 h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 h| 適用
 [[toc4_19_02_01]]
 ===== WaterBody（CityGML）
 
+[%unnumbered]
 image::images/398.svg[]
 
 [[toc4_19_02_02]]
 ===== Urban Object（i-UR）
 
+[%unnumbered]
 image::images/399.svg[]
 
 [[toc4_19_03]]

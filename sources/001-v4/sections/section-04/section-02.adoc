@@ -90,6 +90,7 @@
 | LOD1
 
 |
+[%unnumbered]
 image::images/011.webp.png[]
 
 |===
@@ -212,10 +213,13 @@ LOD2.0、LOD2.1及びLOD2.2それぞれの取得イメージを<<tab-4-10>>に�
 
 h| 取得例
 |
+[%unnumbered]
 image::images/013.webp.png[]
 |
+[%unnumbered]
 image::images/014.webp.png[]
 |
+[%unnumbered]
 image::images/015.webp.png[]
 
 h| 説明 | 屋根の主要な外形が再現される。LOD2.0では付属物は取得しないため、バルコニーも屋根として取得する。
@@ -232,6 +236,7 @@ h| 説明 | 屋根の主要な外形が再現される。LOD2.0では付属物�
 
 |===
 
+[%unnumbered]
 image::images/016.webp.png[]
 
 ====== 建築物モデル（LOD2.0）の定義
@@ -258,6 +263,7 @@ image::images/016.webp.png[]
 屋根の棟及び谷で区切ることにより、屋根の傾斜や向きを再現する。
 屋根の棟及び谷は、以下を指す。
 
+[%unnumbered]
 image::images/017.webp.png[]
 
 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
@@ -591,6 +597,7 @@ image::images/018.webp.png[]
 h| h| 取得イメージ h| 説明
 h| LOD3.0
 |
+[%unnumbered]
 image::images/019.webp.png[]
 | 屋根のうち短辺3m以上の屋根面が表現される。
 
@@ -606,6 +613,7 @@ LOD3では外壁面が詳細化されるため、LOD2では表現されない付
 
 h| LOD3.1
 |
+[%unnumbered]
 image::images/020.webp.png[]
 | 短辺の実長1m以上かつ上方からの正射影の面積3m2以上の屋根面が表現される。
 
@@ -617,6 +625,7 @@ image::images/020.webp.png[]
 
 h| LOD3.2
 |
+[%unnumbered]
 image::images/021.webp.png[]
 | LOD3.2ではさらに詳細な表現が可能となり、短辺の実長1m 以上又は上方からの正射影の面積1m2 以上の屋根が再現される。
 
@@ -630,6 +639,7 @@ LOD3.2では、面積1m2以上の窓や扉も表現されるため、この条�
 
 h| LOD3.3
 |
+[%unnumbered]
 image::images/022.webp.png[]
 | LOD3.3では、短辺の実長が1m未満の細かな屋根の形状が表現される。
 
@@ -664,6 +674,7 @@ image::images/022.webp.png[]
 |
 * 屋根の棟及び谷で区切ることにより、屋根の傾斜や向きを再現する。屋根の棟及び谷は、以下を指す。
 
+[%unnumbered]
 image::images/023.webp.png[]
 
 * 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
@@ -705,6 +716,7 @@ image::images/023.webp.png[]
 * 屋根の上方からの正射影の外周と、地表面と外壁面との交線により囲まれた面を取得する。
 * 高さは、各頂点の高さとする。
 |
+[%unnumbered]
 image::images/024.webp.png[]
 
 | LOD3.0 | ■ | BuildingPart | Solid | 一棟の建築物を、属性の異なる複数の部分に分ける場合に必須とする。
@@ -1254,7 +1266,7 @@ LOD4.0、LOD4.1及びLOD4.2それぞれの取得イメージを<<tab-4-14>>に�
 
 | LOD4.0
 |
-
+[%unnumbered]
 image::images/026.webp.png[]
 
 LOD4.0は建築物の外形（上図１）に加え、建築物の内部を表現する。このとき、建築物の内部を部屋（bldg:Room）に区切り、各部屋の形状を立体として表現する（上図２）。また、部屋の立体の境界面を、天井面（bldg:CeilingSurface）、内壁面（bldg:InteriorWallSurface）、床面（bldg:FloorSurface）又は閉鎖面（bldg:ClosureSurface）のいずれかに区分する（上図３）。さらに、各部屋の天井面、内壁面又は床面に存在する扉（bldg:Door）及び窓（bldg:Window）を区分する（上図４）。
@@ -1269,7 +1281,7 @@ LOD4.0は建築物の外形（上図１）に加え、建築物の内部を表�
 
 | LOD4.1
 |
-
+[%unnumbered]
 image::images/027.webp.png[]
 
 LOD4.1ではLOD4.0に、屋内の付属物（bldg:IntBuildingInstallation）として、階段、スロープ、輸送設備（エスカレータ、エレベータ及び動く歩道）、柱及びデッキ・ステージが追加される。
@@ -1277,7 +1289,7 @@ LOD4.1ではLOD4.0に、屋内の付属物（bldg:IntBuildingInstallation）と�
 
 | LOD4.2
 |
-
+[%unnumbered]
 image::images/028.webp.png[]
 
 LOD4.2ではLOD4.1に屋内の付属物（bldg:IntBuildingInstallation）として、手すり、パネル及び梁が付属物として追加される。
@@ -1318,6 +1330,7 @@ BIMモデルからの変換により取得する場合は使用しない。
 
 屋根の棟及び谷は、以下を指す。
 
+[%unnumbered]
 image::images/029.webp.png[]
 
 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
@@ -1808,6 +1821,7 @@ MultiSurfaceを使用することを基本とする。
 [[toc4_02_02_01]]
 ===== Buiding（CityGML）
 
+[%unnumbered]
 image::images/030.svg[]
 
 [[toc4_02_02_02]]
@@ -1817,6 +1831,7 @@ image::images/030.svg[]
 
 建築物モデルに付与する詳細な属性のためのデータ型を定義する。
 
+[%unnumbered]
 image::images/031.svg[]
 
 ====== 施設管理のための拡張属性
@@ -1824,12 +1839,14 @@ image::images/031.svg[]
 建築物モデルに付与する詳細な属性のうち、施設管理のための属性のデータ型を定義する。
 uro::FacilityAttributeは抽象クラスであり、これを継承する具象クラスを、施設管理属性の応用スキーマに定義する。
 
+[%unnumbered]
 image::images/032.svg[]
 
 ====== 数値地形図のための拡張属性
 
 以下に示すクラスは、数値地形図データとの互換性を保つために、地図情報レベル2500数値地形図データ作成のための標準製品仕様書（案）に定義された属性を建築物の属性として付与することを可能にするためのデータ型である。
 
+[%unnumbered]
 image::images/033.svg[]
 
 ====== 建築物モデル（LOD4）の拡張属性
@@ -1838,31 +1855,52 @@ image::images/033.svg[]
 
 . ① bldg:_AbstractBuildingの下位型に付与する属性
 +
+--
+[%unnumbered]
 image::images/034.svg[]
+--
 
 . ② bldg:Roomの下位型に付与する属性
 +
+--
+[%unnumbered]
 image::images/035.svg[]
+--
 
 . ③ bldg:_BoundarySurfaceの下位型に付与する属性
 +
+--
+[%unnumbered]
 image::images/036.svg[]
+--
 
 . ④ bldg:_Openingの下位型に付与する属性
 +
+--
+[%unnumbered]
 image::images/037.svg[]
+--
 
 . ⑤ bldg:BuildingInstallation及びbldg:IntBuildingInstallationに付与する属性
 +
+--
+[%unnumbered]
 image::images/038.svg[]
+--
 
 . ⑥ bldg:BuildingFurnitureに付与する属性
 +
+--
+[%unnumbered]
 image::images/039.svg[]
+--
 
 . ⑦ 3次元屋内地理空間データに対応する属性
 +
+--
+[%unnumbered]
 image::images/040.svg[]
+--
 
 [[toc4_02_03]]
 ==== 建築物の応用スキーマ文書
@@ -2055,6 +2093,7 @@ uro:IndoorUserDefinedAttribute
 この地物型を使用する場合、一つの建築物には、複数の建築物部分が存在しなければならない。
 また、一棟の建築物を構成する建築物部分は同じ建築物を構成する他の建築物部分と接していなければならない。
 
+[%unnumbered]
 image::images/045.webp.png[]
 
 この地物型は、LOD2、LOD3及びLOD４の建築物を記述する際に使用可能であるが、ユースケースにより、建築物と建築物部分を区分する必要がない場合には、建築物部分として分けず、一体的な建築物としてよい。
@@ -2927,6 +2966,7 @@ gml:MultiSurfaceにより記述することを基本とする。容積の算出�
 建築物の屋外付属物を構成する外壁、屋根等の境界面への参照。建築物の屋外付属物の境界面が建築物（bldg:Building）の境界面となる場合にのみ作成する。
 例えば、下図（平面図）のように建築物に建築物の屋外付属物があった場合、この建築物の屋外付属物を含む空間（gml:Solid）をBuildingとしたい場合は、建築物の屋外付属物の境界面を外壁面（bldg:WallSurface）とする。
 
+[%unnumbered]
 image::images/062.webp.png[]
 
 建築物の空間に建築物の屋外付属物を含まない場合は、建築物の屋外付属物を構成する面を、境界面（bldg:_BoundarySurface）に区別する必要はない。
@@ -2999,6 +3039,7 @@ gml:MultiSurfaceにより記述することを基本とする。
 屋内付属物を構成する内壁、天井等の境界面への参照。屋内付属物の境界面が部屋（bldg:Room）の境界面となる場合にのみ作成する。
 例えば、下図（平面図）のように部屋内に屋内付属物があった場合、この屋内付属物を除く空間（gml:Solid）をRoomとしたい場合は、屋内付属物の境界面を内壁面（bldg:InteriorWallSurface）とする。
 
+[%unnumbered]
 image::images/064.webp.png[]
 
 ただし、部屋の空間から屋内付属物を除く必要が無い場合は、屋内付属物の形状を構成する面を、境界面（bldg:_BoundarySurface）にする必要はない。
@@ -3329,6 +3370,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 面積の有効桁数は、小数点2桁（3桁目で四捨五入）とする。
 
+[%unnumbered]
 image::images/066.webp.png[]
 
 h| 上位の型 2+| uro:FloodingRiskAttribute
@@ -4153,6 +4195,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |
 北方角との差を2次元ベクトルで設定する。角度表現のラジアン又は度の設定は、MVD-IfcProject.UnitsInContext（短径設定情報）を参照。北が0時の方向であれば値は(0,1)。
 
+[%unnumbered]
 image::images/067.webp.png[]
 
 |===

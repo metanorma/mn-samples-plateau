@@ -16,11 +16,13 @@
 
 CityObjectCroupパッケージは、都市オブジェクト（core:_CityObject）をグループ化するgrp:CityObjectGroupを定義する。
 
+[%unnumbered]
 image::images/415.svg[]
 
 [[toc4_23_02_02]]
 ===== Urban Object（i-UR）
 
+[%unnumbered]
 image::images/416.svg[]
 
 [[toc4_23_03]]
@@ -47,6 +49,7 @@ image::images/417.webp.png[]
 CityGMLでは、建築物の階や任意設定空間に相当する地物は存在しない。そこで、グループ化の仕組みであるgrp:CityObjectGroupを建築物の階を表現するために使用する。 +
 属性gml:nameにより階又は任意設定空間を識別する名称を付与し、関連役割grp:groupMemberにより同じ階又は任意に設定空間に存在する部屋（bldg:Room）を参照することで、建築物の階を表現する。
 
+[%unnumbered]
 image::images/418.webp.png[]
 
 例えば、1階に六つの部屋が存在する場合、上図のように、1階を示すgrp:CityObjectGroupは、六つのbldg:Roomを関連役割grp:groupMemberにより参照する。
