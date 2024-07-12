@@ -26,14 +26,14 @@ include::sections/abstract-02.adoc[]
 
 include::sections/section-01.adoc[]
 
-
-// [[conceptual-model]]
-// [xlutaml_uml_datamodel_description,./plateau_uml_20240708_all_packages_export.xmi,lutaml_data_dictionary.yml]
-// ----
-// [.diagram_include_block,base_path="../xmi-images/",format="png"]
-// ....
-// ....
-// ----
+// TODO: This section fails when parsing the XMI due to "GML" issues
+[[conceptual-model]]
+[lutaml_uml_datamodel_description,./plateau_uml_20240708_all_packages_export.xmi,lutaml_data_dictionary.yml]
+----
+[.diagram_include_block,base_path="../xmi-images/",format="png"]
+....
+....
+----
 
 
 include::sections/bibliography-01.adoc[]
