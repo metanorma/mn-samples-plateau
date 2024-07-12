@@ -38,14 +38,19 @@
 h| 5+^h| LOD0
 h| 取得例
 |
+[%unnumbered]
 image::images/231.webp.png[]
 |
+[%unnumbered]
 image::images/232.webp.png[]
 |
+[%unnumbered]
 image::images/233.webp.png[]
 |
+[%unnumbered]
 image::images/234.webp.png[]
 |
+[%unnumbered]
 image::images/235.webp.png[]
 
 h| 説明 | 道路橋は、地図情報レベル2500では、縁線を取得する。また、ひ開部を表示する。地図情報レベル500及び1000では、縁線のほか、高欄、橋脚及び親柱（橋の両端に高欄の続きとして設けられる高欄より大きな柱）の外周を取得する。
@@ -154,12 +159,16 @@ h| 説明 | 道路橋は、地図情報レベル2500では、縁線を取得す�
 h| 4+^h| LOD1
 h| 取得例
 |
+[%unnumbered]
 image::images/236.webp.png[]
 |
+[%unnumbered]
 image::images/237.webp.png[]
 |
+[%unnumbered]
 image::images/238.webp.png[]
 |
+[%unnumbered]
 image::images/239.webp.png[]
 
 h| 説明
@@ -331,8 +340,10 @@ image::images/240.webp.png[]
 h| 3+h| LOD2.0
 h| 取得例
 |
+[%unnumbered]
 image::images/241.webp.png[]
 2+|
+[%unnumbered]
 image::images/242.webp.png[]
 
 h| 説明
@@ -343,10 +354,13 @@ h| 説明
 h| 3+h| LOD2.1
 h| 取得例
 |
+[%unnumbered]
 image::images/243.webp.png[]
 |
+[%unnumbered]
 image::images/244.webp.png[]
 |
+[%unnumbered]
 image::images/245.webp.png[]
 
 h| 説明
@@ -637,8 +651,10 @@ WallSurfaceとの区分が必要な場合に必須とする。
 h| 2+^h| LOD3
 h| 取得例
 |
+[%unnumbered]
 image::images/246.webp.png[]
 |
+[%unnumbered]
 image::images/247.webp.png[]
 
 h| 説明 | 道路橋及び鉄道橋の場合は、床版及び主桁以外の構造上不可欠な部材をBridgeConstructionElementとして取得する。上図の例では橋脚が該当する。それ以外の橋梁の外観を構成する部材をBridgeInstallationとして取得する。上図の例では高欄が該当する。
@@ -647,8 +663,10 @@ h| 説明 | 道路橋及び鉄道橋の場合は、床版及び主桁以外の�
 h| 2+^h| LOD3
 h| 取得例
 |
+[%unnumbered]
 image::images/248.webp.png[]
 |
+[%unnumbered]
 image::images/249.webp.png[]
 
 h| 説明
@@ -1217,11 +1235,13 @@ MultiSufaceを基本とする。
 [[toc4_11_02_01]]
 ===== Bridge（CityGML）
 
+[%unnumbered]
 image::images/251.svg[]
 
 [[toc4_11_02_02]]
 ===== Urban Object（i-UR）
 
+[%unnumbered]
 image::images/252.svg[]
 
 [[toc4_11_03]]

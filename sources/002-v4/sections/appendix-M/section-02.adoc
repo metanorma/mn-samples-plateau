@@ -287,8 +287,10 @@ image::images/353.webp.png[]
 ^h| 2+^h| LOD3
 ^h| 取得例
 |
+[%unnumbered]
 image::images/354.webp.png[]
 |
+[%unnumbered]
 image::images/355.webp.png[]
 
 ^h| 説明
@@ -316,6 +318,7 @@ image::images/355.webp.png[]
 ^h| ^h| 取得例 ^h| 説明
 ^h| LOD4.0
 |
+[%unnumbered]
 image::images/356.webp.png[]
 | LOD3.0の外形に加え、トンネル内部（内空）を再現する。 +
 内空の境界面を床（FloorSurface）、内壁面（InteriorWallSurface）又は天井面（CeilingSurface）に区分する。また、内壁等に扉や窓がある場合に区分する。 +
@@ -323,12 +326,14 @@ image::images/356.webp.png[]
 
 ^h| LOD4.1
 |
+[%unnumbered]
 image::images/357.webp.png[]
 | LOD4.0に加え、「短辺の実長が3ｍ以上」又は「横断又は縦断面積が3m2以上かつ短辺の実長が1m以上」の固定された設備を取得する。 +
 左図の例の場合は、換気用のジェットファンが短辺の実長が3m以上に該当し、また、手すりが縦断面積が3m2以上かつ短辺の実長が1m以上に該当したため、取得された。
 
 ^h| LOD4.2
 |
+[%unnumbered]
 image::images/358.webp.png[]
 | LOD4.1に加え、全ての固定された設備及び固定されていない設備を取得する。
 

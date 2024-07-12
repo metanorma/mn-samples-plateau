@@ -40,20 +40,26 @@
 h| 5+^h| LOD0
 h| 取得例
 5+|
+[%unnumbered]
 image::images/104.webp.png[]
 
 h| 説明 5+| 中心線を取得する。
 h| 5+^h| LOD0
 h| 取得例
 |
+[%unnumbered]
 image::images/105.webp.png[]
 |
+[%unnumbered]
 image::images/106.webp.png[]
 |
+[%unnumbered]
 image::images/107.webp.png[]
 |
+[%unnumbered]
 image::images/108.webp.png[]
 |
+[%unnumbered]
 image::images/109.webp.png[]
 
 h| 説明 | 普通鉄道、地下鉄地上部、路面鉄道は、地図情報レベル2500ではレールの中心線を取得し、地図情報レベル500及び1000ではレールを取得する。
@@ -146,8 +152,10 @@ h| 説明 | 普通鉄道、地下鉄地上部、路面鉄道は、地図情報�
 h| 2+^h| LOD1
 h| 取得例
 |
+[%unnumbered]
 image::images/110.webp.png[]
 |
+[%unnumbered]
 image::images/111.webp.png[]
 
 h| 説明
@@ -165,6 +173,7 @@ h| 説明
 h| 2+^h| LOD1
 h| 取得例
 |
+[%unnumbered]
 image::images/112.webp.png[]
 |
 
@@ -258,6 +267,7 @@ image::images/113.webp.png[]
 h| ^h| LOD2
 h| 取得例
 |
+[%unnumbered]
 image::images/114.webp.png[]
 
 h| 説明 | 軌道中心線、レールに囲まれた範囲 footnoteblock:[fn_rail_area] 、及び道床を取得する。高さは0とする。
@@ -404,10 +414,13 @@ LOD3.2における取得の下限値は、ユースケースの必要に応じ�
 h| ^h| LOD3.0 ^h| LOD3.1 ^h| LOD3.2
 h| 取得例
 |
+[%unnumbered]
 image::images/115.webp.png[]
 |
+[%unnumbered]
 image::images/116.webp.png[]
 |
+[%unnumbered]
 image::images/117.webp.png[]
 
 h| 説明
@@ -425,10 +438,13 @@ h| 説明
 h| ^h| LOD3.0 ^h| LOD3.1 ^h| LOD3.2
 h| 取得例
 |
+[%unnumbered]
 image::images/118.webp.png[]
 |
+[%unnumbered]
 image::images/119.webp.png[]
 |
+[%unnumbered]
 image::images/120.webp.png[]
 
 h| 説明
@@ -441,6 +457,7 @@ h| 説明
 軌道中心線の各点に標高を与える。 +
 レールの横断方向に存在する15㎝以上の高さの差を取得する。
 
+[%unnumbered]
 image::images/121.webp.png[]
 
 |
@@ -448,6 +465,7 @@ image::images/121.webp.png[]
 レールの横断方向に存在する15㎝未満の高さの差を取得する。 +
 高さの差を取得する閾値は、ユースケースの必要に応じて定めることができる。
 
+[%unnumbered]
 image::images/122.webp.png[]
 
 |===
@@ -486,6 +504,7 @@ MultiSurfaceの集まりとして表現する。
 * 左右レールの内側を境界とする面を取得する。
 * 各頂点に軌道中心線上の高さを与える。
 |
+[%unnumbered]
 image::images/123.webp.png[]
 
 | LOD3.0 | ● | TrafficArea | MultiSurface
@@ -542,6 +561,7 @@ CompositeCurveを使用する。
 * 左右レールの内側を境界とする面を取得する。
 * 各頂点に軌道の高さを与える。
 |
+[%unnumbered]
 image::images/124.webp.png[]
 
 | LOD3.1
@@ -609,6 +629,7 @@ CompositeCurveを使用する。
 * 左右レールの内側を境界とする面を取得する。
 * 各頂点に軌道の高さを与える。
 |
+[%unnumbered]
 image::images/125.webp.png[]
 
 | LOD3.2 | ● | TrafficArea | MultiSurface
@@ -684,10 +705,12 @@ tran:Roadの応用スキーマクラス図参照
 
 ====== tran:Railwayの拡張属性
 
+[%unnumbered]
 image::images/126.svg[]
 
 ====== tran:TransportationObject及びtran:TransportationComplexの拡張属性
 
+[%unnumbered]
 image::images/127.svg[]
 
 [[toc4_04_03]]

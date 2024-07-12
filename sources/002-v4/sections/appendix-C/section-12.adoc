@@ -11,4 +11,5 @@ bldg:Buildingは、core:CityModelの子要素として出現する。このと�
 
 bldg:Buildingタグの直下には、bldg:Buildingに定義された属性及び関連役割が出現する。このとき、出現順序は上位の型から継承したものから順に出現する。まず、gml:_Featureから継承した属性（例：gml:name）が出現する。次に、core:_CityObjectから継承するタグが出現する。さらに、bldg:_AbstractBuildingから継承するタグ（例：bldg:usage）が出現する。最後にi-URで定義されたタグ（例：uro:buildingIDAttribute、uro:buildingDisasterRiskAttribute）が出現する。
 
+[%unnumbered]
 image::images/190.svg[]

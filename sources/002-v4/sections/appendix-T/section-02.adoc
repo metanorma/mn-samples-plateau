@@ -95,6 +95,7 @@ LOD0では、Wtr:Waterbodyのみを使用し、水部の形状を線として表
 
 h| 取得例
 |
+[%unnumbered]
 image::images/506.webp.png[]
 
 h| 説明 | 水涯線により囲まれた面を取得する。中洲がある場合は、中洲を除いた面となる。
@@ -117,6 +118,7 @@ h| 説明 | 水涯線により囲まれた面を取得する。中洲がある�
 
 h| 取得例
 |
+[%unnumbered]
 image::images/507.webp.png[]
 
 h| 説明
@@ -145,6 +147,7 @@ h| 説明
 
 h| 取得例
 |
+[%unnumbered]
 image::images/508.webp.png[]
 
 h| 説明 | 水部モデル（LOD2）である、水涯線により囲まれた水面（WaterSurface）、水底面（WaterGroundSurface）及び閉鎖面（WaterClosureSurface）を境界面とする立体から、橋梁下部の橋脚部分など水中にある構造物を除いた立体となる。
