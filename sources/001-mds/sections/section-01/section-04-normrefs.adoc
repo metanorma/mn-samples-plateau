@@ -1,0 +1,132 @@
+[title="Normative references"]
+[bibliography]
+=== 引用規格等
+
+標準製品仕様書は、以下の規格、規程及び仕様書を引用する。
+
+// .標準製品仕様書が引用する規格等
+
+* [[[iurban_des,1]]],
+span:title[Data Encoding Specification of i-Urban Revitalization -Urban Planning ADE- ver.3.0].
+span:organization[内閣府 地方創生推進事務局].
+span:uri.citation[https://www.chisou.go.jp/tiiki/toshisaisei/itoshisaisei/iur/index.html].
+
+* [[[ogc_12-019,(1)OGC 12-019]]],
+span:title[OpenGIS® OGC City Geography Markup Language (CityGML) Encoding Standard, Version 2.0, OGC document 12-019].
+span:uri.citation[https://www.ogc.org/standards/citygml]
+
+* [[[ogc_05-099r2,(1)OGC 05-099r2]]],
+span:title[OpenGIS® GML 3.1.1 simple dictionary profile, Version 1.0.0, OGC document 05-099r2].
+span:uri.citation[https://www.ogc.org/standards/gml]
+
+* [[[iso_iec_19501,(1)ISO/IEC 19501:2005]]],
+span:title[ISO/IEC 19501:2005, Information technology — Open Distributed Processing — Unified Modeling Language(UML) Version 1.4.2].
+span:uri.citation[https://www.iso.org/standard/32620.html]
+
+* [[[jpgis_2014,1]]],
+span:title[地理情報標準プロファイル（JPGIS）2014].
+span:organization[国土交通省 国土地理院].
+span:uri.citation[https://www.gsi.go.jp/GIS/jpgis-downloads.html]
+
+// TODO: This entry did not exist but we need it as a term reference
+* [[[jpgis_v1,1]]],
+span:title[地理情報標準プロファイル（JPGIS） Ver. 1.0　解説書].
+span:organization[国土交通省 国土地理院].
+span:uri.citation[https://www.gsi.go.jp/GIS/jpgis-rh.html]
+
+// TODO: This entry did not exist but we need it as a term reference
+* [[[gsi_ops,1]]],
+span:title[作業規程の準則].
+span:organization[国土交通省 国土地理院].
+span:uri.citation[https://psgsv2.gsi.go.jp/koukyou/jyunsoku/]
+
+* [[[jmp20,1]]],
+span:title[JMP2.0仕様書].
+span:organization[国土交通省 国土地理院].
+span:uri.citation[https://www.gsi.go.jp/GIS/jpgis-downloads.html]
+
+* [[[jpgis_spec_reqs,1]]],
+span:title[品質の要求，評価及び報告のための規則].
+span:organization[国土交通省 国土地理院].
+span:uri.citation[https://www.gsi.go.jp/GIS/jpgis-downloads.html]
+
+
+また、標準製品仕様書は、以下の仕様書を参照し、整合を図っている。
+
+// .標準製品仕様書が参照する仕様書等
+
+
+* [[[city_data_ps_sample,1]]],
+span:title[都市計画データ標準製品仕様書].
+span:organization[国土交通省 都市局].
+span:uri.citation[https://www.mlit.go.jp/toshi/tosiko/toshi_tosiko_tk_000187.html]
+
+* [[[nilim_kiban_dps,1]]]
+span:title[道路基盤地図情報（整備促進版）製品仕様書（案）].
+span:organization[国土交通省 国土技術政策総合研究所].
+span:date[2014-05].
+span:uri.citation[https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0848pdf/ks084811.pdf]
+
+* [[[gsi_map_level_dps,1]]],
+span:title[地図情報レベル 2500 数値地形図データ作成のための標準製品仕様書（案）].
+span:organization[国土交通省 国土地理院].
+span:uri.citation[https://psgsv2.gsi.go.jp/koukyou/public/seihinsiyou/seihinsiyou_index.html]
+// https://psgsv2.gsi.go.jp/koukyou/public/seihinsiyou/data/%E5%9C%B0%E5%9B%B3%E6%83%85%E5%A0%B1%E3%83%AC% E3%83%99%E3%83%AB2500%E6%95%B0%E5%80%A4%E5%9C%B0%E5%BD%A2%E5%9B%B3%E3%83%87%E3%83%BC %E3%82%BF%E4%BD%9C%E6%88%90%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E6%A8%99%E6%BA%96%E8 %A3%BD%E5%93%81%E4%BB%95%E6%A7%98%E6%9B%B8.pdf
+
+* [[[iconstruction,1]]],
+span:title[i-Construction推進のための3次元数値地形図データ作成マニュアル].
+span:organization[国土交通省 国土地理院].
+span:uri.citation[https://psgsv2.gsi.go.jp/koukyou/public/3dmapping/index.html]
+
+* [[[plateau_003,1]]],
+span:title[3D都市モデル整備のためのBIM活用マニュアル].
+span:organization[国土交通省 都市局].
+span:docid.PLATEAU[PLATEAU #03].
+span:edition[第3.0版].
+span:date[2023-03-27].
+span:uri.citation[https://www.mlit.go.jp/plateau/libraries/handbooks/].
+
+* [[[plateau_003_annex,1]]],
+span:title[3D都市モデル整備のためのBIM活用マニュアル（第3.0版）（別冊）3D都市モデルとの連携のためのBIMモデルIDM・MVD].
+span:organization[国土交通省 都市局].
+span:docid.PLATEAU[PLATEAU #03-1].
+span:edition[第2.0版].
+span:date[2023-03-27].
+span:uri.citation[https://www.mlit.go.jp/plateau/libraries/handbooks/].
+
+* [[[ifc_2x3_cv,1]]],
+span:title[IFC 2x3 Coordination View 2.0 (IFC2x3 CV2.0)].
+span:organization[buildingSMART International].
+span:uri.citation[https://standards.buildingsmart.org/IFC/RELEASE/IFC2x3/FINAL/HTML/]
+
+* [[[gsi_dps,1]]],
+span:title[3次元屋内地理空間情報データ仕様書（案）].
+span:organization[国土交通省 国土地理院].
+span:uri.citation[https://www.gsi.go.jp/common/000212582.pdf]
+
+* [[[iso_19106_2004,hidden(ISO 19106:2004)]]]
+
+* [[[mlit_kiban_chizu,1]]]
+span:title[河川基盤地図ガイドライン（案）].
+span:organization[国土交通省 都市局].
+span:edition[第2.1版].
+span:date[2001-12].
+span:uri.citation[https://www.mlit.go.jp/river/shishin_guideline/kasen/gis/pdf_docs/chizu/kiban_chizu.pdf]
+
+* [[[gsi_foundation_map_dps,1]]]
+span:title[電子国土基本図地図情報ファイル仕様書].
+span:edition[第1.1版]
+span:organization[国土交通省 国土地理院].
+span:date[2017-06-30].
+span:uri.citation[https://www.gsi.go.jp/common/000189294.pdf]
+
+
+* [[[mlit_tide_flood_map,1]]]
+span:title[高潮浸水想定区域図作成の手引き].
+span:edition[第2.11版]
+span:organization[国土交通省 国土地理院].
+span:date[2017-06-30].
+span:uri.citation[https://www.mlit.go.jp/river/shishin_guideline/kaigan/takashioshinsui_manual.pdf]
+
+
+引用規格等のうち、版の記載があるものは、その版を適用し、その後の改正版（追補を含む。）は適用しない。版の記載がないものは、その最新版（追補を含む。）を適用する
