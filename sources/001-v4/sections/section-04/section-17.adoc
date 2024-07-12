@@ -560,7 +560,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:geometrySrcDescLod3 | gml:CodeType [0..*] | コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD3の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD3の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、植生モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
 h| (uro:geometrySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
 | uro:thematicSrcDesc
-| gml:CodeType [0..\*]
+| gml:CodeType [0..*]
 | 主題属性の作成に使用した原典資料の種類コードリスト（DataQualityAttribute_thematicSrcDesc.xml）より選択する。 +
 主題属性が作成対象となっている場合は必須とする。
 
