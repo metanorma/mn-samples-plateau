@@ -41,7 +41,7 @@ h| 説明 | 航路の区域の中心線を取得する。
 
 交通（航路）モデル（LOD0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1a,^1a,1a,1a,1a,3a,2a"]
+[cols="1a,^1a,1a,1a,1a,3a,2a",options="unnumbered"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -91,7 +91,7 @@ h| 説明
 
 交通（航路）モデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1a,^1a,1a,1a,1a,3a,2a"]
+[cols="1a,^1a,1a,1a,1a,3a,2a",options="unnumbered"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -146,7 +146,7 @@ h| 説明
 
 交通（航路）モデル（LOD2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="2a,^2a,2a,2a,3a,5a,4a"]
+[cols="2a,^2a,2a,2a,3a,5a,4a",options="unnumbered"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -217,7 +217,7 @@ image::images/193.svg[]
 
 ====== uro:Waterway
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義
 2+|
@@ -299,7 +299,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== tran:TrafficArea
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義
 2+|
@@ -352,7 +352,7 @@ h| (tran:lod3MultiSurface) | gml:MultiSurface [0..1] | 標準製品仕様書で�
 
 ====== uro:KeyValuePairAttribute
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義
 2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。
@@ -374,7 +374,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:DataQualityAttribute
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
 
@@ -436,7 +436,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:WaterwayDetailAttribute
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| 航路の詳細な情報を定義したデータ型。
 
@@ -498,7 +498,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== Waterway_function.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | Waterway_function.xml
 
@@ -510,7 +510,7 @@ h| コード h| 説明
 
 ====== WaterwayDetailAttribute_routeDirection.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | WaterwayDetailAttribute_routeDirection.xml
 
@@ -525,7 +525,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
 
@@ -573,7 +573,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
 
@@ -605,7 +605,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
 
