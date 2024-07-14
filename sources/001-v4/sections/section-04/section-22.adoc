@@ -32,7 +32,7 @@ image::images/411.svg[]
 
 ====== app:Appearance
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | クラスの定義
 2+|
@@ -60,7 +60,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== app:ParameterizedTexture
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | クラスの定義
 2+|
@@ -102,7 +102,7 @@ app:TexCoordListを使用する。
 
 ====== app:TexCoordList
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | クラスの定義 2+| テクスチャの座標とテクスチャを貼り付ける幾何オブジェクトへの参照の対。
 
@@ -117,7 +117,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== app:X3DMaterial
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | クラスの定義
 2+|
@@ -154,7 +154,7 @@ h| (gml:boundedBy) | gml:Envelope [0..1] | マテリアルの空間範囲。
 
 ====== Appearance_mimeType.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | Appearance_mimeType.xml
 
@@ -170,7 +170,7 @@ h| コード h| 説明
 
 ====== TextureTypeType
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | 列挙型 | TextureTypeType
 
@@ -186,7 +186,7 @@ h| 値 h| 説明
 
 ====== WrapModeType
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | 列挙型 | WrapModeType
 
