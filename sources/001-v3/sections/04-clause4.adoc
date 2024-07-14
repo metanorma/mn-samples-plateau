@@ -547,7 +547,7 @@ a|
 image::images/figure14.webp.png[]
 a|
 [%unnumbered]
-image::images/figure15.webp.png[]
+fimages/figure15.webp.png[]
 
 h| 説明
 | 屋根の主要な外形が再現される。LOD2.0では付属物は取得しないため、バルコニーも屋根として取得する。 なお、LOD2では屋根面は詳細化されるが壁面は詳細化されないため、バルコニーの下部も建築物の一部として表現される。
@@ -563,7 +563,7 @@ image::images/figure16.webp.png[]
 
 建築物モデル（LOD2.0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7",options="header"]
+[cols="7",options="header,unnumbered"]
 |===
 | | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 

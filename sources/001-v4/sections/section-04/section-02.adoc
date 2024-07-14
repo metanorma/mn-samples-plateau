@@ -38,7 +38,7 @@
 
 建築物モデル（LOD0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1a,^1a,1a,1a,1a,3a,2a"]
+[cols="1a,^1a,1a,1a,1a,3a,2a",options="unnumbered"]
 |===
 | | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -99,7 +99,7 @@ image::images/011.webp.png[]
 
 建築物モデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1a,^1a,1a,1a,1a,3a,2a"]
+[cols="1a,^1a,1a,1a,1a,3a,2a",options="unnumbered"]
 |===
 | | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -243,7 +243,7 @@ image::images/016.webp.png[]
 
 建築物モデル（LOD2.0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^3a,7a,7a,16a,20a,16a"]
+[cols="7a,^3a,7a,7a,16a,20a,16a",options="unnumbered"]
 |===
 | | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -315,7 +315,7 @@ image::images/017.webp.png[]
 
 建築物モデル（LOD2.1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^3a,7a,7a,16a,20a,16a"]
+[cols="7a,^3a,7a,7a,16a,20a,16a",options="unnumbered"]
 |===
 | | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -395,7 +395,7 @@ ClosureSurfaceの境界線は、屋根面（RoofSurface）、外壁面（WallSur
 
 建築物モデル（LOD2.2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^3a,7a,7a,16a,20a,16a"]
+[cols="7a,^3a,7a,7a,16a,20a,16a",options="unnumbered"]
 |===
 | | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -655,7 +655,7 @@ image::images/022.webp.png[]
 
 建築物モデル（LOD3.0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1a,^1a,1a,1a,1a,3a,2a"]
+[cols="1a,^1a,1a,1a,1a,3a,2a",options="unnumbered"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -804,7 +804,7 @@ LOD3.0では3m未満の軒裏を表現せず、外壁面を屋根面の外周か
 
 建築物モデル（LOD3.1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^3a,7a,7a,16a,20a,16a"]
+[cols="7a,^3a,7a,7a,16a,20a,16a",options="unnumbered"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -943,7 +943,7 @@ LOD3.1では1m未満の軒裏を表現せず、外壁面を屋根面の外周か
 
 建築物モデル（LOD3.2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^3a,7a,7a,16a,20a,16a"]
+[cols="7a,^3a,7a,7a,16a,20a,16a",options="unnumbered"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -1082,7 +1082,7 @@ LOD3.2では1m未満の軒裏を表現せず、外壁面を屋根面の外周か
 
 建築物モデル（LOD3.3）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^3a,7a,7a,16a,20a,16a"]
+[cols="7a,^3a,7a,7a,16a,20a,16a",options="unnumbered"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -1302,7 +1302,7 @@ LOD4.2ではLOD4.1に屋内の付属物（bldg:IntBuildingInstallation）とし�
 
 建築物モデル（LOD4.0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="2a,a,2a,6a,6a,6a,6a"]
+[cols="2a,a,2a,6a,6a,6a,6a",options="unnumbered"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -1451,7 +1451,7 @@ NOTE: CityObjectGroupは空間属性をもたないため、「―」として�
 
 建築物モデル（LOD4.1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="2a,a,2a,6a,6a,6a,6a"]
+[cols="2a,a,2a,6a,6a,6a,6a",options="unnumbered"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -1587,7 +1587,7 @@ NOTE: CityObjectGroupは空間属性をもたないため、空間属性の型�
 
 建築物モデル（LOD4.2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="2a,a,2a,6a,6a,6a,6a"]
+[cols="2a,a,2a,6a,6a,6a,6a",options="unnumbered"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -1910,7 +1910,7 @@ image::images/040.svg[]
 
 ====== bldg:Building
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義
 2+|
@@ -2084,7 +2084,7 @@ uro:IndoorUserDefinedAttribute
 
 ====== bldg:BuildingPart
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義
 2+|
@@ -2199,7 +2199,7 @@ h| (uro:bldgDmAttribute) | uro:DmAttribute [0..*] | 公共測量標準図式に�
 
 ====== bldg:Room
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義
 2+|
@@ -2295,7 +2295,7 @@ uro:IndoorUserDefinedAttribute
 
 ====== bldg:RoofSurface
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義
 2+|
@@ -2336,7 +2336,7 @@ uro:IfcBuildingElement uro:IfcRoof このとき、uro:IfcBuildingElement の属�
 
 ====== bldg:WallSurface
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義
 2+|
@@ -2384,7 +2384,7 @@ uro:IfcWall uro:IfcWallStandardCase uro:IfcCurtainWall このとき、uro:IfcBui
 
 ====== bldg:GroundSurface
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義
 2+|
@@ -2436,7 +2436,7 @@ uro:IfcBuildingElement このとき、uro:IfcBuildingElement の属性uro:elemen
 
 ====== bldg:OuterCeilingSurface
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義
 2+|
@@ -2493,7 +2493,7 @@ BIMモデルからの変換により作成する場合は、bldg:OuterCeilingSur
 
 ====== bldg:OuterFloorSurface
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義
 2+|
@@ -2553,7 +2553,7 @@ uro:IfcBuildingElement +
 
 ====== bldg:ClosureSurface
 
-[cols="1a,1a,2a",options="noheader"]
+[cols="1a,1a,2a",options="noheader,unnumbered"]
 |===
 .3+| 型の定義
 2+|
@@ -2615,7 +2615,7 @@ h| (uro:ifcBoundarySurfaceAttribute) | uro:IfcAttribute [0..*] | IDM・MVDで定
 
 ====== bldg:InteriorWallSurface
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義
 2+|
@@ -2674,7 +2674,7 @@ uro:IndoorUserDefinedAttribute
 
 ====== bldg:CeilingSurface
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義
 2+|
@@ -2727,7 +2727,7 @@ uro:IndoorUserDefinedAttribute
 
 ====== bldg:FloorSurface
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義
 2+|
@@ -2780,7 +2780,7 @@ uro:IndoorUserDefinedAttribute
 
 ====== bldg:Window
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義
 2+|
@@ -2840,7 +2840,7 @@ uro:IndoorUserDefinedAttribute
 
 ====== bldg:Door
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義
 2+|
@@ -2892,7 +2892,7 @@ uro:IndoorUserDefinedAttribute
 
 ====== bldg:BuildingInstallation
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義
 2+|
@@ -2984,7 +2984,7 @@ uro:IfcBuildingElement +
 
 ====== bldg:IntBuildingInstallation
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義
 2+|
@@ -3070,7 +3070,7 @@ uro:IndoorUserDefinedAttribute
 
 ====== bldg:BuildingFurniture
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義
 2+|
@@ -3140,7 +3140,7 @@ CityGMLを拡張し、bldg:Buildingに詳細な属性を付与するのための
 
 ====== uro:BuildingIDAttribute
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| 建築物を識別するための情報。
 
@@ -3172,7 +3172,7 @@ i-URでは多重度が[0..1]となっているが、建築物の位置の把握�
 
 ====== uro:BuildingDetailAttribute
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| 都市計画法に基づき実施される都市計画基礎調査において収集された、建築物に関する基礎的な情報。
 
@@ -3307,7 +3307,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:LargeCustomerFacilityAttribute
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| 都市計画法に基づき実施される都市計画基礎調査において収集された、大規模小売店舗や大規模集客施設に関する基礎的な情報。
 
@@ -3358,7 +3358,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:RiverFloodingRiskAttribute
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義
 2+|
@@ -3414,7 +3414,7 @@ uro:rank又はuro:rankOrgのいずれか一つをもつ。
 
 ====== uro:TsunamiRiskAttribute
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| 津波洪水浸水想定の区域内に存在する建築物に、津波浸水想定の区域の属性を与えるための属性型。
 
@@ -3451,7 +3451,7 @@ uro:rank又はuro:rankOrgのいずれか一つをもつ。
 
 ====== uro:HighTideRiskAttribute
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| 高潮浸水想定区域に存在する建築物に、高潮浸水想定区域の属性に与えるための属性型。
 
@@ -3480,7 +3480,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:InlandFloodingRiskAttribute
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| 内水浸水想定区域に存在する建築物に、内水浸水想定区域の属性を与えるための属性型。
 
@@ -3510,7 +3510,7 @@ uro:rank又はuro:rankOrgのいずれか一つをもつ。
 
 ====== uro:ReservoirFloodingRiskAttribute
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義
 2+| ため池ハザードマップに存在する建築物に、ため池ハザードマップの属性を与えるための属性型。
@@ -3540,7 +3540,7 @@ uro:rank又はuro:rankOrgのいずれか一つをもつ。
 
 ====== uro:LandSlideRiskAttribute
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義
 2+| 土砂災害警戒区域及び土砂災害特別警戒区域に存在する建築物に、いずれの区域に含まれているかを属性として付与する。
@@ -3572,7 +3572,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:KeyValuePairAttribute
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。
 
@@ -3594,7 +3594,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:DataQualityAttribute
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
 
@@ -3678,7 +3678,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:PublicSurveyDataQualityAttribute
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| 都市オブジェクトのデータ作成情報を記述するためのデータ型。
 
@@ -3805,7 +3805,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:RealEstateIDAttribute
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| 建築物が存在する土地及び建築物に紐づく不動産IDを、建築物の属性として付与するためのデータ型。
 
@@ -3878,7 +3878,7 @@ bldg:lod0RoofEdge、bldg:lod1Solid、bldg:lod2Solid.RoofSurface、bldg:lod3Solid
 
 ====== uro:IfcAxis2Placement3D
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| ローカル座標系の変換を定義する座標系情報を設定するためのデータ型。
 
@@ -3894,7 +3894,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IfcBuilding
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| IFCで記述された建築物の属性。
 
@@ -3934,7 +3934,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IfcBuildingElement
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| 建築物の部材を記述するデータ型。
 
@@ -4003,7 +4003,7 @@ uro:elementTypeがTransportElementに区分される場合にこの属性を使�
 
 ====== uro:IfcClassification
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| IFCで記述された分類の諸元に関する属性。
 
@@ -4020,7 +4020,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IfcClassificationReference
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| IFCで記述された分類に関する属性。
 
@@ -4037,7 +4037,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IfcCoordinateReferenceSystem
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| 座標参照系の情報を記述するためのデータ型
 
@@ -4063,7 +4063,7 @@ JGD2011とする。
 
 ====== uro:IfcCoordinateReferenceSystemSelect
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義
 2+| 座標参照系の記述する方法を指定する共用体型。
@@ -4080,7 +4080,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IfcCurtainWall
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| IFCで記述されたカーテンウォールの属性。
 
@@ -4121,7 +4121,7 @@ h| (uro:capacityByNumber) | xs:integer [0..1] | 許容定員数。
 
 ====== uro:IfcDoor
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| IFCで記述された扉の属性。
 
@@ -4157,7 +4157,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IfcFurnishingElement
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| IFCで記述された家具の属性。
 
@@ -4175,7 +4175,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IfcGeomericRepresentationContext
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義
 2+| プロジェクト内のIfcProduct オブジェクトの形状表現に適用されるコンテキストを定義する、3Dのモデル表現形式のためのデータ型。
@@ -4202,7 +4202,7 @@ image::images/067.webp.png[]
 
 ====== uro:IfcMapConversion
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| 座標参照系の変換情報を記述するためのデータ型
 
@@ -4239,7 +4239,7 @@ NOTE: XAxisAbscissaとともに、マップ座標系の水平面内のローカ�
 
 ====== uro:IfcOpeningElement
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| IFCで記述された、床や壁に設けられた開口部の属性。
 
@@ -4261,7 +4261,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IfcProject
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| IFCで記述されたプロジェクトに適用される属性。
 
@@ -4289,7 +4289,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IfcProjectedCRS
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| 投影座標参照系の情報を記述するためのデータ型
 
@@ -4320,7 +4320,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IfcPsetBuildingCommon
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| IFCで記述された建築物に共通となる属性の集まり。
 
@@ -4364,7 +4364,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IfcPsetDoorCommon
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| IFCで記述された扉に共通の属性。
 
@@ -4415,7 +4415,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IfcPsetOpeningElementCommon
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| 開口部に付与するデータ型。
 
@@ -4447,7 +4447,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IfcPsetSiteCommon
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| IFCで記述されたプロジェクトに共通となる属性の集まり。
 
@@ -4463,7 +4463,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IfcPsetSpaceCommon
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| IFCで記述された部屋に共通の属性。
 
@@ -4507,7 +4507,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IfcPsetWindowCommon
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| IFCで記述された窓に共通の属性。
 
@@ -4542,7 +4542,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IfcRoof
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| IFCで記述された屋根の属性。
 
@@ -4578,7 +4578,7 @@ h| (uro:capacityByNumber) | xs:integer [0..1] | 許容定員数。
 
 ====== uro:IfcSite
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| IFCで記述されたプロジェクトの敷地に適用される属性の集まり。
 
@@ -4612,7 +4612,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IfcSpace
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| IFCで記述された部屋の属性。
 
@@ -4645,7 +4645,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IfcSpaceBaseQuantity
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| IFCで記述されたSpaceの数量に関する属性。
 
@@ -4675,7 +4675,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IfcUnit
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| 単位を記述するデータ型
 
@@ -4692,7 +4692,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IfcWall
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| IFCで記述された壁の属性。厚さが不均一な壁等、特殊な壁を表す。
 
@@ -4790,7 +4790,7 @@ uro:elementTypeがWall又はWallStandardCaseに区分される場合にこの属
 
 ====== uro:IfcWallStandardCase
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| IFCで記述された壁の属性。厚さが均一な標準的な壁を表す。
 
@@ -4886,7 +4886,7 @@ uro:elementTypeがWall又はWallStandardCaseに区分される場合にこの属
 
 ====== uro:IfcWindow
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| IFCで記述された窓の属性。
 
@@ -4926,7 +4926,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IndoorFacilityAttribute
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| 施設に追加するナビゲーション用の属性。
 
@@ -4946,7 +4946,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IndoorFurnishingAttribute
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| 設備に追加するナビゲーション用の属性。
 
@@ -4963,7 +4963,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IndoorPublicTagAttribute
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| パブリックタグに追加するナビゲーション用の属性。
 
@@ -4980,7 +4980,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IndoorSpaceAttribute
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| 物理的な空間に追加するナビゲーション用の属性。
 
@@ -5011,7 +5011,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IndoorTactileTileAttribute
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| 視覚障碍者用誘導ブロックに追加するナビゲーション用の属性。
 
@@ -5032,7 +5032,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IndoorZoneAttribute
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| 任意の空間に追加するナビゲーション用の属性。
 
@@ -5049,7 +5049,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IndoorUserDefinedAttribute
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| 任意に追加するナビゲーション用の属性。
 
@@ -5069,7 +5069,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro: UserDefinedValue
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| 任意に追加するナビゲーション用の属性の値。いずれか一つの属性を選択する。
 
@@ -5095,7 +5095,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== Building_class.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | Building_class.xml
 
@@ -5114,7 +5114,7 @@ h| コード h| 説明
 
 ====== Building_usage.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | Building_usage.xml
 
@@ -5146,7 +5146,7 @@ h| コード h| 説明
 
 ====== Building_roofType.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | Building_roofType.xml
 
@@ -5190,7 +5190,7 @@ h| コード h| 説明
 
 ====== BuildingInstallation_class.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | BuildingInstallation_class.xml
 
@@ -5210,7 +5210,7 @@ h| コード h| 説明
 
 ====== BuildingInstallation_function.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | BuildingInstallation_function.xml
 
@@ -5254,7 +5254,7 @@ h| コード h| 説明
 
 ====== Room_class.xml
 
-[cols="3a,11a,11a"]
+[cols="3a,11a,11a",options="unnumbered"]
 |===
 | ファイル名 2+| Room_class.xml
 
@@ -5284,7 +5284,7 @@ h| コード 2+h| 説明
 
 ====== Room_function.xml
 
-[cols="3a,11a,11a"]
+[cols="3a,11a,11a",options="unnumbered"]
 |===
 | ファイル名 2+| Room_function.xml
 
@@ -5418,7 +5418,7 @@ h| コード 2+h| 説明
 
 ====== IntBuildingInstallation_class.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | IntBuildingInstallation_class.xml
 
@@ -5442,7 +5442,7 @@ h| コード h| 説明
 
 ====== IntBuildingInstallation_function.xml
 
-[cols="3a,11a,11a"]
+[cols="3a,11a,11a",options="unnumbered"]
 |===
 | ファイル名 2+| IntBuildingInstallation_function.xml
 
@@ -5469,7 +5469,7 @@ h| コード 2+h| 説明
 
 ====== BuildingFurniture_class.xml
 
-[cols="3a,11a,11a"]
+[cols="3a,11a,11a",options="unnumbered"]
 |===
 | ファイル名 2+| BuildingFurniture_class.xml
 
@@ -5488,7 +5488,7 @@ h| コード 2+h| 説明
 
 ====== BuildingFurniture_function.xml
 
-[cols="3a,11a,11a"]
+[cols="3a,11a,11a",options="unnumbered"]
 |===
 | ファイル名 2+| BuildingFurniture_function.xml
 
@@ -5591,7 +5591,7 @@ h| コード 2+h| 説明
 
 ====== BuildingDetailAttribute_detailedUsage.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | BuildingDetailAttribute_detailedUsage.xml
 
@@ -5767,7 +5767,7 @@ h| コード h| 説明
 
 ====== BuildingDetailAttribute_buildingStructureType.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | BuildingDetailAttribute_buildingStructureType.xml
 
@@ -5789,7 +5789,7 @@ h| コード h| 説明
 
 ====== BuildingDetailAttribute_fireproofStructureType.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | BuildingDetailAttribute_fireproofStructureType.xml
 
@@ -5807,7 +5807,7 @@ h| コード h| 説明
 
 ====== BuildingDetailAttribute_vacancy.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | BuildingDetailAttribute_vacancy.xml
 
@@ -5820,7 +5820,7 @@ h| コード h| 説明
 
 ====== LargeCustomerFacilityAttribute_class.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | LargeCustomerFacilityAttribute_class.xml
 
@@ -5838,7 +5838,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
 
@@ -5885,7 +5885,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
 
@@ -5917,7 +5917,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
 
@@ -5934,7 +5934,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_lod1HeightType.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | DataQualityAttribute_lod1HeightType.xml
 
@@ -5958,7 +5958,7 @@ h| コード h| 説明
 
 ====== Building_lodType.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | Building_lodType.xml
 
@@ -5983,7 +5983,7 @@ h| コード h| 説明
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | PublicSurveyDataQualityAttribute_srcScale.xml
 
@@ -5997,7 +5997,7 @@ h| コード h| 説明
 
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
@@ -6035,7 +6035,7 @@ h| コード h| 説明
 
 ====== IfcBuildingElement_elementType.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | IfcBuildingElement_elementType.xml
 
@@ -6066,7 +6066,7 @@ h| コード h| 説明
 
 ====== IfcBuildingElement_predefinedType.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | IfcBuildingElement_predefinedType.xml
 
@@ -6103,7 +6103,7 @@ h| コード h| 説明
 
 ====== IfcElementCompositionEnum
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | 列挙型 | IfcElementCompositionEnum
 
@@ -6119,7 +6119,7 @@ h| 値 h| 説明
 
 ====== IfcBuildingElement_shapeType.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | IfcBuildingElement_shapeType.xml
 
@@ -6153,7 +6153,7 @@ h| コード h| 説明
 
 ====== IfcInternalOrExternalEnum
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | 列挙型 | IfcInternalOrExternalEnum
 
@@ -6169,7 +6169,7 @@ h| 値 h| 説明
 
 ====== IfcSIPrefix
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | 列挙型 | IfcSIPrefix
 
@@ -6198,7 +6198,7 @@ h| 値 h| 説明
 
 ====== IfcSlabTypeEnum
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | 列挙型 | IfcSlabTypeEnum
 
@@ -6213,7 +6213,7 @@ h| 値 h| 説明
 
 ====== IfcStairTypeEnum
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | 列挙型 | IfcStairTypeEnum
 
@@ -6242,7 +6242,7 @@ h| 値 h| 説明
 
 ====== IfcStairFlightTypeEnum
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | 列挙型 | IfcStairFlightTypeEnum
 
@@ -6263,7 +6263,7 @@ h| 値 h| 説明
 
 ====== IfcStateEnum
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | 列挙型 | IfcStateEnum
 
@@ -6281,7 +6281,7 @@ h| 値 h| 説明
 
 ====== IfcUnitEnum
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | 列挙型 | IfcUnitEnum
 
@@ -6324,7 +6324,7 @@ h| 値 h| 説明
 
 ====== IfcTransportElementTypeEnum
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | 列挙型 | IfcTransportElementTypeEnum
 
@@ -6342,7 +6342,7 @@ h| 値 h| 説明
 
 ====== Common_indoorSource.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | Common_indoorSource.xml
 
@@ -6361,7 +6361,7 @@ h| コード h| 説明
 
 ====== IndoorTactileTileAttribute_category.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | IndoorTactileTileAttribute_category.xml
 
@@ -6378,7 +6378,7 @@ h| コード h| 説明
 
 ====== IndoorTactileTileAttribute_roof.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | IndoorTactileTileAttribute_roof.xml
 
@@ -6395,7 +6395,7 @@ h| コード h| 説明
 
 ====== IndoorSpaceAttribute_tollType.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | IndoorSpaceAttribute_tollType.xml
 

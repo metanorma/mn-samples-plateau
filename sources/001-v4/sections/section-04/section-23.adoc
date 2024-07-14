@@ -33,7 +33,7 @@ image::images/416.svg[]
 
 ====== grp:CityObjectGroup
 
-[cols="1a,1a,2a",options="noheader"]
+[cols="1a,1a,2a",options="noheader,unnumbered"]
 |===
 .2+| 型の定義
 2+|
@@ -108,7 +108,7 @@ uro:IndoorUserDefinedAttribute
 
 ====== uro:IfcBuildingStorey
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| IFCで記述された建築物の階数の属性。
 
@@ -138,7 +138,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IfcZone
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| IFCで記述された施設管理者により任意に設定された空間の属性。
 
@@ -158,7 +158,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IndoorZoneAttribute
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| 任意の空間に追加するナビゲーション用の属性。
 
@@ -175,7 +175,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IndoorStoreyAttribute
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a",options="unnumbered"]
 |===
 | 型の定義 2+| 階層に追加するナビゲーション用の属性。
 
@@ -208,7 +208,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== CityObjectGroup_class.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | CityObjectGroup_class.xml
 
@@ -223,7 +223,7 @@ h| コード h| 説明
 
 ====== CityObjectGroup_function.xml
 
-[cols="3a,22a"]
+[cols="3a,22a",options="unnumbered"]
 |===
 | ファイル名 | CityObjectGroup_function.xml
 
