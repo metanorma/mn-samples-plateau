@@ -56,7 +56,7 @@ h| 説明
 
 災害リスク（浸水）モデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^3a,7a,7a,16a,20a,16a",options="unnumbered"]
+[cols="7a,^3a,7a,7a,16a,20a,16a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -104,7 +104,7 @@ h| 説明
 
 災害リスク（土砂災害）モデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^7a,7a,7a,16a,20a,16a",options="unnumbered"]
+[cols="7a,^7a,7a,7a,16a,20a,16a"]
 |===
 | | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -190,7 +190,7 @@ image::images/204.svg[]
 
 ====== wtr:WaterBody
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+|
@@ -250,7 +250,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:RiverFloodingRiskAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+|
@@ -291,7 +291,7 @@ uro:rank又はuro:rankOrgのいずれか一つをもつ。
 
 ====== uro:TsunamiRiskAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+| 津波洪水浸水想定の区域内に存在する構造物に、津波浸水想定の区域の属性を与えるための属性型。 +
@@ -315,7 +315,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:HighTideRiskAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+| 高潮浸水想定区域に存在する構造物に、高潮浸水想定区域の属性に与えるための属性型。 +
@@ -339,7 +339,7 @@ uro:rank又はuro:rankOrgのいずれか一つをもつ。
 
 ====== uro:InlandFloodingRiskAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+| 内水浸水想定区域に存在する構造物に、内水浸水想定区域の属性を与えるための属性型。 +
@@ -363,7 +363,7 @@ uro:rank又はuro:rankOrgのいずれか一つをもつ。
 
 ====== uro:ReservoirFloodingRiskAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| ため池ハザードマップ内に存在する構造物に、ため池ハザードマップの属性を与えるための属性型。
 
@@ -388,7 +388,7 @@ h| (uro:depth) | gml:LengthType [0..1] | 陸上の各地点で水面が最も高
 
 ====== uro:LandSlideRiskAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+| 土砂災害警戒区域及び土砂災害特別警戒区域に存在する構造物に、いずれの区域に含まれているかを属性として付与する。 +
@@ -412,7 +412,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:KeyValuePairAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外に情報を追加したい場合に使用する。 +
@@ -432,7 +432,7 @@ uro:KeyValuePairAttributeを使用する場合は、必ずuro:codeValueを作成
 
 ====== uro:DataQualityAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
 
@@ -479,7 +479,7 @@ h| (uro:publicSurveyDataQualityAttribute) | uro:PublicSurveyDataQualityAttribute
 
 ====== urf:SedimentDisasterProneArea
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 土砂災害警戒区域等における土砂災害防止対策の推進に関する法律（土砂災害防止法）により指定された、土砂災害警戒区域及び土砂災害特別警戒区域。
 
@@ -541,7 +541,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== WaterBody_class.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | WaterBody_class.xml
 
@@ -553,7 +553,7 @@ h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/WaterBody_class
 
 ====== WaterBody_function.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | WaterBody_function.xml
 
@@ -572,7 +572,7 @@ h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/WaterBody_funct
 
 ====== RiverFloodingRiskAttribute_adminType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | RiverFloodingRiskAttribute_adminType.xml
 
@@ -588,7 +588,7 @@ h| コード h| 説明
 
 ====== RiverFloodingRiskAttribute_scale.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | RiverFloodingRiskAttribute_scale.xml
 
@@ -604,7 +604,7 @@ h| コード h| 説明
 
 ====== RiverFloodingRiskAttribute_rank.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | RiverFloodingRiskAttribute_rank.xml
 
@@ -624,7 +624,7 @@ h| コード h| 説明
 
 ====== TsunamiRiskAttribute_rank.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | TsunamiRiskAttribute_rank.xml
 
@@ -644,7 +644,7 @@ h| コード h| 説明
 
 ====== HighTideRiskAttribute_rank.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | HighTideRiskAttribute_rank.xml
 
@@ -664,7 +664,7 @@ h| コード h| 説明
 
 ====== InlandFloodingRiskAttribute_rank.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | InlandFloodingRiskAttribute_rank.xml
 
@@ -684,7 +684,7 @@ h| コード h| 説明
 
 ====== ReservoirFloodingRiskAttribute_rank.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ReservoirFloodingRiskAttribute_rank.xml
 
@@ -707,7 +707,7 @@ h| コード h| 説明
 
 ====== LandSlideRiskAttribute_description.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | LandSlideRiskAttribute_description.xml
 
@@ -724,7 +724,7 @@ h| コード h| 説明
 
 ====== LandSlideRiskAttribute_areaType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | LandSlideRiskAttribute_areaType.xml
 
@@ -742,7 +742,7 @@ h| コード h| 説明
 
 ====== LandSlideRiskAttribute_status.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | LandSlideRiskAttribute_status.xml
 
@@ -755,7 +755,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
 
@@ -803,7 +803,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
 
@@ -835,7 +835,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
 

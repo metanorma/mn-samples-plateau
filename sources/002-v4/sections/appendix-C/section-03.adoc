@@ -678,7 +678,7 @@ uro:buildingIDは、建築物の存続期間（建設から取り壊されるま
 
 “XXXXX-YYY-ZZZZZZZZZZZZ”
 
-[cols="3a,17a",options="unnumbered"]
+[cols="3a,17a"]
 |===
 | XXXXX | 当該地物オブジェクトが存在する市区町村のコード。複数の市区町村に跨る場合には、データセットの市区町村のコードとする。先頭の0は省略せず、5桁で記述する。
 
@@ -714,7 +714,7 @@ uro:cityは、3Ｄ都市モデル内の建築物オブジェクトの空間的�
 
 uro:majorUsage、uro:orgUsage及びuro:detailedUsageは都市ごとの独自の区分に従った建築物の用途を格納するための属性である。これらの属性には、都市ごとに体系化された階層性をもつ用途のコードを記述できる。
 
-[cols="3a,17a",options="unnumbered"]
+[cols="3a,17a"]
 |===
 | 使用可能な属性 | 説明
 
