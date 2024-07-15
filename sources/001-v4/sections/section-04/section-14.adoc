@@ -52,7 +52,7 @@ h| 説明 | 記号の表示位置を取得する。
 
 都市設備モデル（LOD0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="3a,^3a,3a,3a,8a,12a,8a",options="unnumbered"]
+[cols="3a,^3a,3a,3a,8a,12a,8a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -141,7 +141,7 @@ h| 説明 | 都市設備の上方からの正射影の外周を地表面から�
 
 都市設備モデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^7a,7a,7a,16a,20a,16a",options="unnumbered"]
+[cols="7a,^7a,7a,7a,16a,20a,16a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -203,7 +203,7 @@ h| 説明 | 都市設備の主要な部分について、上方から見た外�
 
 都市設備モデル（LOD2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^3a,7a,7a,16a,20a,16a",options="unnumbered"]
+[cols="7a,^3a,7a,7a,16a,20a,16a"]
 |===
 | | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -276,7 +276,7 @@ h| 説明
 
 ====== 都市設備モデル（LOD3.0）の定義
 
-[cols="7a,^3a,7a,7a,16a,20a,16a",options="unnumbered"]
+[cols="7a,^3a,7a,7a,16a,20a,16a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -313,7 +313,7 @@ h| 説明
 
 ====== 都市設備モデル（LOD3.1）の定義
 
-[cols="7a,^3a,7a,7a,16a,20a,16a",options="unnumbered"]
+[cols="7a,^3a,7a,7a,16a,20a,16a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -385,7 +385,7 @@ image::images/296.svg[]
 
 ====== frn:CityFurniture
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+| 都市の屋外（道路、住宅街、広場、造成地等）に設置されている、移動しない小規模な設備（例：街路灯、道路標識、交通信号機、花壇、広告板、ベンチ、境界杭、バス停）。
@@ -458,7 +458,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:CityFurnitureDetailAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市設備の詳細な区分を行うための属性型。
 
@@ -493,7 +493,7 @@ h| 属性 h| 属性の型及び多重度 h| 定義
 
 ===== 別表：uro:facilityTypeの定義域
 
-[cols="1a,4a",options="unnumbered"]
+[cols="1a,4a"]
 |===
 | urf:functionの値 | uro:facilityTypeの定義域
 
@@ -530,7 +530,7 @@ h| 属性 h| 属性の型及び多重度 h| 定義
 
 ====== uro:KeyValuePairAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。
 
@@ -547,7 +547,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:DataQualityAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
 
@@ -595,7 +595,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:PublicSurveyDataQualityAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 使用した公共測量成果の地図情報レベルと種類を、LODごとに記述するためのデータ型。
 
@@ -676,7 +676,7 @@ h| (uro:publicSurveySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジ�
 
 ====== CityFurniture_class.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | CityFurniture_class.xml
 
@@ -694,7 +694,7 @@ h| コード h| 説明
 
 ====== CityFurniture_function.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | CityFurniture_function.xml
 
@@ -804,7 +804,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
 
@@ -852,7 +852,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
 
@@ -884,7 +884,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
 
@@ -901,7 +901,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_lod1HeightType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_lod1HeightType.xml
 
@@ -926,7 +926,7 @@ h| コード h| 説明
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | PublicSurveyDataQualityAttribute_srcScale.xml
 
@@ -940,7 +940,7 @@ h| コード h| 説明
 
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
@@ -978,7 +978,7 @@ h| コード h| 説明
 
 ====== CityFurniture_lodType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | CityFurniture_lodType.xml
 
@@ -991,7 +991,7 @@ h| コード h| 説明
 
 ====== CityFurnitureDetailAttribute_facilityType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | CityFurnitureDetailAttribute_facilityType.xml
 

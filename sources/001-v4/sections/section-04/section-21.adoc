@@ -40,7 +40,7 @@ core:_CityObjectは、0以上のgen:_genericAttributeをもつことができる
 
 ====== gen:stringAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | クラスの定義 2+| 文字列型の汎用属性。CityGML又はi-URに定義されていない文字列型の属性を追加したい場合に使用する。
 
@@ -57,7 +57,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== gen:intAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | クラスの定義 2+| 整数型の汎用属性。CityGML又はi-URに定義されていない整数型の属性を追加したい場合に使用する。
 
@@ -74,7 +74,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== gen:doubleAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | クラスの定義 2+| 実数型の汎用属性。CityGML又はi-URに定義されていない実数型の属性を追加したい場合に使用する。
 
@@ -91,7 +91,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== gen:dateAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | クラスの定義 2+| 日付型の汎用属性。CityGML又はi-URに定義されていない日付型の属性を追加したい場合に使用する。
 
@@ -108,7 +108,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== gen:uriAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | クラスの定義 2+| URI型の汎用属性。CityGML又はi-URに定義されていないURI型の属性を追加したい場合に使用する。
 
@@ -125,7 +125,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== gen:measureAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | クラスの定義 2+| 単位付き計測値型の汎用属性。CityGML又はi-URに定義されていない単位付き計測値型の属性を追加したい場合に使用する。
 
@@ -142,7 +142,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== gen:genericAttributeSet
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | クラスの定義 2+| 汎用属性のグループ。CityGML又はi-URに定義されていない属性をグループ化して追加したい場合に使用する。
 
@@ -162,7 +162,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== gen:GenericCityObject
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | クラスの定義 2+| CityGMLに定義されていない地物を定義するための汎用的な地物型。
 
