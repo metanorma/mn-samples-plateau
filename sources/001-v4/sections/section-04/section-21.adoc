@@ -20,14 +20,12 @@
 
 gen:GenericCityObjectは、CityGMLに定義されていない地物を作成したい場合に使用する汎用的な地物型である。
 
-[%unnumbered]
 image::images/409.svg[]
 
 ====== 汎用属性
 
 gen:_genericAttributeは、CityGMLに定義されていない属性を追加したい場合に使用する汎用的なデータ型である。文字列や整数のように、追加したい属性型に応じて、gen:_genericAttributeを継承するデータ型が定義されている。
 
-[%unnumbered]
 image::images/410.svg[]
 
 core:_CityObjectは、0以上のgen:_genericAttributeをもつことができる構造となっている。CityGMLに定義されたbldg:Buildingやbldg:LandUseなどの全ての地物型はcore:_CityObjectを継承しているため、bldg:Buildingやbldg:LandUseなどの全ての地物型も、0以上のgen:_genericAttributeをもつことができる（全ての地物型に汎用属性を追加できる）。

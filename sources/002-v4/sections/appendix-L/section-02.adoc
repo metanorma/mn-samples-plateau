@@ -209,19 +209,15 @@ LOD0は、数値地形図との互換性を考慮した区分である。LOD1は
 ^h| 4+^h| LOD1
 ^h| 取得例
 |
-[%unnumbered]
 image::images/304.webp.png[]
 
 |
-[%unnumbered]
 image::images/305.webp.png[]
 
 |
-[%unnumbered]
 image::images/306.webp.png[]
 
 |
-[%unnumbered]
 image::images/307.webp.png[]
 
 ^h| 説明 | 道路橋及び鉄道橋は、橋梁の縁線をつないだ外周を、地上から一律の高さで下向きに押し出した立体とする。ひ開部は含めない。
@@ -250,10 +246,8 @@ image::images/307.webp.png[]
 ^h| 3+^h| LOD2.0
 ^h| 取得例
 |
-[%unnumbered]
 image::images/308.webp.png[]
 2+|
-[%unnumbered]
 image::images/309.webp.png[]
 
 ^h| 説明
@@ -264,13 +258,10 @@ image::images/309.webp.png[]
 ^h| 3+^h| LOD2.1
 ^h| 取得例
 |
-[%unnumbered]
 image::images/310.webp.png[]
 |
-[%unnumbered]
 image::images/311.webp.png[]
 |
-[%unnumbered]
 image::images/312.webp.png[]
 
 ^h| 説明
@@ -299,10 +290,8 @@ image::images/312.webp.png[]
 h| 2+^h| LOD3
 ^h| 取得例
 |
-[%unnumbered]
 image::images/313.webp.png[]
 |
-[%unnumbered]
 image::images/314.webp.png[]
 
 ^h| 説明 | 道路橋及び鉄道橋の場合は、床版及び主桁以外の構造上不可欠な部材をBridgeConstructionElementとして取得する。上図の例では橋脚が該当する。それ以外の橋梁の外観を構成する部材をBridgeInstallationとして取得する。上図の例では高欄が該当する。
@@ -310,10 +299,8 @@ image::images/314.webp.png[]
 h| 2+^h| LOD3
 ^h| 取得例
 |
-[%unnumbered]
 image::images/315.webp.png[]
 |
-[%unnumbered]
 image::images/316.webp.png[]
 
 ^h| 説明
