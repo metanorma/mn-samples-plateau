@@ -31,7 +31,7 @@ h| 説明
 
 ====== 区域モデル（LOD1）の定義
 
-[cols="7a,^3a,7a,7a,7a,18a,7a",options="unnumbered"]
+[cols="7a,^3a,7a,7a,7a,18a,7a"]
 |===
 | | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -90,7 +90,7 @@ image::images/408.svg[]
 
 ====== urf:Zone
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+|
@@ -177,7 +177,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== urf:Boundary
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 区域の境界線。
 
@@ -202,7 +202,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== urf:UrbanParkAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市公園法第２条第１項で定義する都市公園に関する情報を定義したデータ型。
 
@@ -224,7 +224,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== urf:BreakdownOfNominalArea
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市公園の敷地面積の内訳に関する情報を定義したデータ型。
 
@@ -239,7 +239,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:DataQualityAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
 
@@ -279,7 +279,7 @@ h| (uro:publicSurveyDataQualityAttribute) | uro:PublicSurveyDataQualityAttribute
 
 ====== uro:KeyValuePairAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。
 
@@ -302,7 +302,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== Zone_function.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Zone_function.xml
 
@@ -334,7 +334,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
 
@@ -382,7 +382,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
 
@@ -414,7 +414,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
 

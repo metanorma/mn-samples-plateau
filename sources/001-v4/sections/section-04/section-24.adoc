@@ -25,7 +25,7 @@ image::images/419.svg[]
 
 ====== uro:DmGeometricAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+| 都市計画基本図として、地物の形状を公共測量標準図式に従って表現するためのデータ型。 +
@@ -123,7 +123,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:DmElement
 
-[cols="a,a,a",options="unnumbered"]
+[cols="a,a,a"]
 |===
 | 型の定義 2+| 数値地形図データの要素レコードの情報を保持するためのデータ型
 
@@ -179,7 +179,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:DmAnnotation
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 | 都市計画基本図として、注記を表現するために必要な情報のデータ型。 +
@@ -239,7 +239,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== Common_dmCode.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Common_dmCode.xml
 
@@ -438,7 +438,7 @@ h| コード h| 説明
 
 ====== Common_shapeType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Common_shapeType.xml
 
@@ -468,7 +468,7 @@ h| コード h| 説明
 
 ====== Common_MapLevel.xml
 
-[cols="37a,88a",options="unnumbered"]
+[cols="37a,88a"]
 |===
 | ファイル名 | Common_MapLevel.xml
 
@@ -485,7 +485,7 @@ h| 値 h| 説明
 
 ====== Common_geometryType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Common_geometryType.xml
 
@@ -505,7 +505,7 @@ h| コード h| 説明
 
 ====== DmElement_dataType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DmElement_dataType.xml
 
@@ -527,7 +527,7 @@ h| コード h| 説明
 
 ====== DmElement_annotationType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DmElement_annotationType.xml
 
@@ -545,7 +545,7 @@ h| コード h| 説明
 
 ====== DmElement_precisionType.xml
 
-[cols="3a,11a,11a",options="unnumbered"]
+[cols="3a,11a,11a"]
 |===
 | ファイル名 | DmElement_precisionType.xml |
 
@@ -569,7 +569,7 @@ h| コード h| 説明（上位桁：数値化区分） h| 説明（下位桁：
 
 ====== DmElement_breakType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DmElement_breakType.xml
 
@@ -586,7 +586,7 @@ h| コード h| 説明
 
 ====== DmElement_dislocationType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DmElement_dislocationType.xml
 

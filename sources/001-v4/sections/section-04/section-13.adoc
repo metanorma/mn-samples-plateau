@@ -5,7 +5,7 @@
 
 「構造物」とは、「目的とする機能を持ち、作用に対して抵抗することを意図として人為的に構築されるもの」（土木・建築にかかる設計の基本、国土交通省）であり、ダム、堤防、床止め、堰、水門・閘門・陸閘、樋門・樋管、伏せ越し、水制、護岸、防波堤その他の土木構造物を指す。
 
-[cols="3a,17a",options="unnumbered"]
+[cols="3a,17a"]
 |===
 | その他の構造物 | 説明
 
@@ -106,7 +106,7 @@ h| 説明
 
 その他の構造物モデル（LOD0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^7a,7a,7a,16a,20a,16a",options="unnumbered"]
+[cols="7a,^7a,7a,7a,16a,20a,16a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -210,7 +210,7 @@ h| 説明 | 構造物の上からの上方からの正射影の外周に一律�
 
 その他の構造物モデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^7a,7a,7a,16a,20a,16a",options="unnumbered"]
+[cols="7a,^7a,7a,7a,16a,20a,16a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -296,7 +296,7 @@ h| 説明
 
 その他の構造物モデル（LOD2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^7a,7a,7a,16a,20a,16a",options="unnumbered"]
+[cols="7a,^7a,7a,7a,16a,20a,16a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -400,7 +400,7 @@ h| 説明 | LOD3.1では、LOD3.0に加え、構造上不可欠ではない付�
 
 その他の構造物モデル（LOD3.0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^7a,7a,7a,16a,20a,16a",options="unnumbered"]
+[cols="7a,^7a,7a,7a,16a,20a,16a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -460,7 +460,7 @@ h| 説明 | LOD3.1では、LOD3.0に加え、構造上不可欠ではない付�
 
 その他の構造物モデル（LOD3.1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^7a,7a,7a,16a,20a,16a",options="unnumbered"]
+[cols="7a,^7a,7a,7a,16a,20a,16a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -612,7 +612,7 @@ image::images/283.svg[]
 
 ====== uro:OtherConstruction
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+|
@@ -710,7 +710,7 @@ LOD3.1の場合にのみ使用する。
 
 ====== uro:RoofSurface
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 構造物の上部となる面。
 
@@ -745,7 +745,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== uro:WallSurface
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+| 構造物の外周を構成する壁面（外壁）。 +
@@ -783,7 +783,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== uro:GroundSurface
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 構造物の立体形状の底面。
 
@@ -816,7 +816,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== uro:OuterCeilingSurface
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+| 構造物の外側を覆う部分であり、天井としての機能を有する部分。 +
@@ -849,7 +849,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== uro:OuterFloorSurface
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 構造物の外側を覆う部分であり、通行可能な床面としての機能を有する部分。構造物の上部に設けられた管理用の通路が該当する。
 
@@ -880,7 +880,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== uro:ClosureSurface
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+| 構造物の境界面に開口部が存在するが、開口部内の詳細なデータ作成が不要である場合に、開口部を閉じるために便宜上設けられた面。ダムの取水口等水が出入りする範囲がこれに該当する。 +
@@ -913,7 +913,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== uro:ConstructionInstallation
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+| 構造物の付属物。構造物を構成する構造上不可欠ではない固定的な設備。 +
@@ -951,7 +951,7 @@ h| (uro:lod2Geometry) | gml:_Geometry [0..1] | LOD2において付属物の外�
 
 ====== uro:ConstructionBaseAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 構造物の管理に必要となる基本的な情報及び、構造物の規模に関する基本的な情報を記述するためのデータ型。
 
@@ -982,7 +982,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:ConstructionStructureAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 構造物の規模に関する基本的な情報を記述するためのデータ型。
 
@@ -1004,7 +1004,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:EmbankmentAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 堤防の規模に関する基本的な情報を記述するためのデータ型。
 
@@ -1027,7 +1027,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:DamAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| ダムの規模に関する基本的な情報を記述するためのデータ型。
 
@@ -1053,7 +1053,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:KeyValuePairAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。
@@ -1080,7 +1080,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:DataQualityAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
 
@@ -1155,7 +1155,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:PublicSurveyDataQualityAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 使用した公共測量成果の地図情報レベルと種類を、LODごとに記述するためのデータ型。
 
@@ -1223,7 +1223,7 @@ h| (uro:publicSurveySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジ�
 
 ====== uro:ConstructionRiskAssessmentAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 構造物の損傷及び対応状況に関する情報を定義したデータ型。
 
@@ -1240,7 +1240,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:Elevation
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 構造物の指定された位置における標高を表すデータ型。
 
@@ -1255,7 +1255,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:Height
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 構造物の指定された2点間における高さを表すデータ型。
 
@@ -1272,7 +1272,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:ConstrucionEvent
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 構造物の設計から施工、維持管理にいたるイベント。
 
@@ -1288,7 +1288,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:Occupancy
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 構造物に居住又は格納される人、動物、その他の移動可能な物体についての定量的な情報。
 
@@ -1326,7 +1326,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== OtherConstruction_class.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | OtherConstruction_class.xml
 
@@ -1351,7 +1351,7 @@ h| コード h| 説明
 
 ====== OtherConstruction_function.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | OtherConstruction_function.xml
 
@@ -1389,7 +1389,7 @@ h| コード h| 説明
 
 ====== ConstructionInstallation_function.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ConstructionInstallation_function.xml
 
@@ -1406,7 +1406,7 @@ h| コード h| 説明
 
 ====== ConstructionBaseAttribute_purpose.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ConstructionBaseAttribute_purpose.xml
 
@@ -1430,7 +1430,7 @@ h| コード h| 説明
 
 ====== ConstructionStructureAttribute_structureType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ConstructionStructureAttribute_structureType.xml
 
@@ -1474,7 +1474,7 @@ h| コード h| 説明
 
 ====== ConstructionStructureAttribute_slopeType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ConstructionStructureAttribute_slopeType.xml
 
@@ -1491,7 +1491,7 @@ h| コード h| 説明
 
 ====== ConstructionBaseAttribute_adminType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ConstructionBaseAttribute_adminType.xml
 
@@ -1550,7 +1550,7 @@ h| コード h| 説明
 
 ====== ConstructionBaseAttribute_installerType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ConstructionBaseAttribute_installerType.xml
 
@@ -1579,7 +1579,7 @@ h| コード h| 説明
 
 ====== ConstructionRiskAssessmentAttribute_riskType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ConstructionRiskAssessmentAttribute_riskType.xml
 
@@ -1599,7 +1599,7 @@ h| コード h| 説明
 
 ====== ConstructionRiskAssessmentAttribute_status.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ConstructionRiskAssessmentAttribute_status.xml
 
@@ -1617,7 +1617,7 @@ h| コード h| 説明
 
 ====== ConstructionFunctionalAttribute_directionType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ConstructionFunctionalAttribute_directionType.xml
 
@@ -1631,7 +1631,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
 
@@ -1679,7 +1679,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
 
@@ -1711,7 +1711,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
 
@@ -1728,7 +1728,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_lod1HeightType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_lod1HeightType.xml
 
@@ -1753,7 +1753,7 @@ h| コード h| 説明
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | PublicSurveyDataQualityAttribute_srcScale.xml
 
@@ -1767,7 +1767,7 @@ h| コード h| 説明
 
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
@@ -1805,7 +1805,7 @@ h| コード h| 説明
 
 ====== OtherConstruction_lodType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | OtherConstruction_lodType.xml
 
@@ -1818,7 +1818,7 @@ h| 値 h| 説明
 
 ====== Elevation_elevationReference.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Elevation_elevationReference.xml
 
@@ -1840,7 +1840,7 @@ h| コード h| 説明
 
 ====== HightStatusValue
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | 列挙型 | HightStatusValue
 
@@ -1855,7 +1855,7 @@ h| 値 h| 説明
 
 ====== ConditionOfConstructionValue
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | 列挙型 | ConditionOfConstructionValue
 

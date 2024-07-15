@@ -78,7 +78,7 @@ h| 説明 | 普通鉄道、地下鉄地上部、路面鉄道は、地図情報�
 
 交通（鉄道）モデル（LOD0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^3a,7a,7a,16a,20a,16a",options="unnumbered"]
+[cols="7a,^3a,7a,7a,16a,20a,16a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -186,7 +186,7 @@ h| 説明 | 索道の場合は、起点及び終点が同一となる索道の�
 
 交通（鉄道）モデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1a,^1a,1a,1a,1a,3a,2a",options="unnumbered"]
+[cols="1a,^1a,1a,1a,1a,3a,2a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -293,7 +293,7 @@ h| 説明 | 軌道中心線、レールに囲まれた範囲 footnoteblock:[fn_r
 
 交通（鉄道）モデル（LOD2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^3a,7a,7a,16a,20a,16a",options="unnumbered"]
+[cols="7a,^3a,7a,7a,16a,20a,16a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -474,7 +474,7 @@ image::images/122.webp.png[]
 
 交通（鉄道）モデル（LOD3.0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^3a,7a,7a,16a,20a,16a",options="unnumbered"]
+[cols="7a,^3a,7a,7a,16a,20a,16a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -526,7 +526,7 @@ image::images/123.webp.png[]
 
 交通（鉄道）モデル（LOD3.1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="5a,5a,5a,5a,20a,24a,16a",options="unnumbered"]
+[cols="5a,5a,5a,5a,20a,24a,16a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -595,7 +595,7 @@ image::images/124.webp.png[]
 
 交通（鉄道）モデル（LOD3.2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="5a,5a,5a,5a,20a,24a,16a",options="unnumbered"]
+[cols="5a,5a,5a,5a,20a,24a,16a"]
 |===
 | | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -721,7 +721,7 @@ image::images/127.svg[]
 
 ====== tran:Railway
 
-[cols="1a,1a,2a",options="noheader,unnumbered"]
+[cols="1a,1a,2a",options="noheader"]
 |===
 .4+| 型の定義
 2+|
@@ -822,7 +822,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== tran:TrafficArea
 
-[cols="1a,1a,2a",options="noheader,unnumbered"]
+[cols="1a,1a,2a",options="noheader"]
 |===
 .4+| 型の定義
 2+|
@@ -899,7 +899,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== tran:AuxiliaryTrafficArea
 
-[cols="1a,1a,2a",options="noheader,unnumbered"]
+[cols="1a,1a,2a",options="noheader"]
 |===
 .2+| 型の定義
 2+|
@@ -966,7 +966,7 @@ LOD3.2の場合は、15㎝未満の高さの差を取得する。
 
 ====== uro:KeyValuePairAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。 +
@@ -986,7 +986,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:DataQualityAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
 
@@ -1061,7 +1061,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:PublicSurveyDataQualityAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 使用した公共測量成果の地図情報レベルと種類を、LODごとに記述するためのデータ型。
 
@@ -1126,7 +1126,7 @@ h| (uro:publicSurveySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジ�
 
 ====== uro:RailwayRouteAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 鉄道路線の情報。路線ごとに作成する。
 
@@ -1145,7 +1145,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:RailwayTrackAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+| 軌道の情報。 +
@@ -1175,7 +1175,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:ControlPoint
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+| 軌道中心線上の変化点。平面線形の変化点、縦断線形の変化点及び勾配変化点を含む。 +
@@ -1210,7 +1210,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:ControlPointType
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+| 軌道中心線上の変化点の種類を指定するための共用型。 +
@@ -1230,7 +1230,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:CircularCurveType
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 円曲線の線形パラメータ。
 
@@ -1247,7 +1247,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:TransitionCurveType
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 緩和曲線の線形パラメータ。
 
@@ -1263,7 +1263,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:VerticalCurveType
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 縦曲線の線形パラメータ。
 
@@ -1278,7 +1278,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:SlopeType
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 勾配の変化情報。
 
@@ -1303,7 +1303,7 @@ tran:Roadのコードリスト参照
 
 ====== Railway_function.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Railway_function.xml
 
@@ -1323,7 +1323,7 @@ h| コード ^h| 説明
 
 ====== TrafficArea_function.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | TrafficArea_function.xml
 
@@ -1346,7 +1346,7 @@ h| コード ^h| 説明
 
 ====== RailwayRouteAttribute_operatorType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | RailwayRouteAttribute_operatorType.xml
 
@@ -1365,7 +1365,7 @@ h| コード ^h| 説明
 
 ====== RailwayRouteAttribute_railwayType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | RailwayRouteAttribute_railwayType.xml
 
@@ -1391,7 +1391,7 @@ h| コード ^h| 説明
 
 ====== RailwayTrackAttribute_directionType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | RailwayTrackAttribute_directionType.xml
 
@@ -1405,7 +1405,7 @@ h| コード ^h| 説明
 
 ====== RailwayTrackAttribute_trackType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | RailwayTrackAttribute_trackType.xml
 
@@ -1419,7 +1419,7 @@ h| コード ^h| 説明
 
 ====== RailwayTrackAttribute_alignmentType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | RailwayTrackAttribute_alignmentType.xml
 
@@ -1435,7 +1435,7 @@ h| コード ^h| 説明
 
 ====== ControlPoint_function.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ControlPoint_function.xml
 
@@ -1452,7 +1452,7 @@ h| コード ^h| 説明
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
 
@@ -1500,7 +1500,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
 
@@ -1532,7 +1532,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
 
@@ -1549,7 +1549,7 @@ h| コード h| 説明
 
 ====== Railway_lodType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Railway_lodType.xml
 
@@ -1563,7 +1563,7 @@ h| コード ^h| 説明
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | PublicSurveyDataQualityAttribute_srcScale.xml
 
@@ -1577,7 +1577,7 @@ h| コード h| 説明
 
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 

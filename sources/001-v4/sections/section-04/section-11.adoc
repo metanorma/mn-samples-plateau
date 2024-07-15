@@ -69,7 +69,7 @@ h| 説明 | 道路橋は、地図情報レベル2500では、縁線を取得す�
 
 橋梁モデル（LOD0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="11a,11a,11a,11a,11a,25a,20a",options="unnumbered"]
+[cols="11a,11a,11a,11a,11a,25a,20a"]
 |===
 | | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -185,7 +185,7 @@ h| 説明
 
 橋梁モデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="2a,^a,2a,6a,2a,6a,6a",options="unnumbered"]
+[cols="2a,^a,2a,6a,2a,6a,6a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -379,7 +379,7 @@ h| 説明
 
 橋梁モデル（LOD2.0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^3a,7a,7a,16a,20a,16a",options="unnumbered"]
+[cols="7a,^3a,7a,7a,16a,20a,16a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -453,7 +453,7 @@ Element
 
 橋梁モデル（LOD2.1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^3a,7a,7a,16a,20a,16a",options="unnumbered"]
+[cols="7a,^3a,7a,7a,16a,20a,16a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -680,7 +680,7 @@ h| 説明
 
 橋梁モデル（LOD3）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^3a,7a,7a,16a,20a,16a",options="unnumbered"]
+[cols="7a,^3a,7a,7a,16a,20a,16a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -936,7 +936,7 @@ image::images/250.webp.png[]
 
 橋梁モデル（LOD4）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^3a,7a,7a,16a,20a,16a",options="unnumbered"]
+[cols="7a,^3a,7a,7a,16a,20a,16a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -1252,7 +1252,7 @@ image::images/252.svg[]
 
 ====== brid:Bridge
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+|
@@ -1394,7 +1394,7 @@ brid:BridgePartが品質属性をもつ場合は、省略できる。
 
 ====== brid:BridgePart
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+| 橋梁の一部。一つの橋梁を場所により異なる方法で取得する場合は必須とする。 +
@@ -1509,7 +1509,7 @@ h| (uro:bridDmAttribute) | uro:DmAttribute [0..*] | 公共測量標準図式に�
 
 ====== brid:BridgeConstructionElement
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+|
@@ -1576,7 +1576,7 @@ gml:MultiSurfaceにより記述することを基本とする。 +
 
 ====== brid:BridgeRoom
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+| 壁、間仕切り、床、天井などで仕切られた、橋梁内部に設けられた区画。 +
@@ -1637,7 +1637,7 @@ brid:bridgeRoomInstallationによりこのbrid:BridgeRoomが参照する内部�
 
 ====== brid:RoofSurface
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 主に橋梁の上部を覆う構造物。上部工と一体的に整備されたし、上部工、階段、踊り場の全体が屋根で覆われている場合を対象とする。
 
@@ -1684,7 +1684,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== brid:WallSurface
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 橋梁の外周を構成する壁面（外壁）。
 
@@ -1729,7 +1729,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== brid:GroundSurface
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+| 橋梁の立体形状の底面。 +
@@ -1779,7 +1779,7 @@ h| (brid:opening) | brid:_Opening [0..*] | 底面に設置される、窓や扉�
 
 ====== brid:OuterCeilingSurface
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+| 橋梁の外側を覆う部分であり、天井としての機能を有する部分。上部工の下面が該当する。 +
@@ -1824,7 +1824,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== brid:OuterFloorSurface
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 橋梁の外側を覆う部分であり、通行可能な床面としての機能を有する部分。上部工の床版（道路や線路が敷設されている面）が該当する。
 
@@ -1861,7 +1861,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== brid:ClosureSurface
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+| 橋梁の形状の境界となる仮想的な面。 +
@@ -1898,7 +1898,7 @@ h| (brid:opening) | brid:_Opening [0..*] | 境界面に設置される、窓や�
 
 ====== brid:InteriorWallSurface
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 橋梁の内部空間の区画を区切る壁や仕切り。
 
@@ -1929,7 +1929,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== brid:CeilingSurface
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+| 区画など構造物内部の上側の面（天井）。 +
@@ -1962,7 +1962,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== brid:FloorSurface
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+| 橋梁の内部空間の下面に位置する水平で平らな板状の構造物（床面）。 +
@@ -1995,7 +1995,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== brid:Window
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 採光、通風、換気、眺望などの目的のため、橋梁の屋根、天井、壁、床などに設けられた開口部のうち、人や物の出入りを目的としないもの。
 
@@ -2026,7 +2026,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== brid:Door
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 採光、通風、換気、眺望、通行などの目的のため、橋梁の屋根、天井、壁、床などに設けられた開口部のうち、人や物の出入りを目的とするもの。
 
@@ -2057,7 +2057,7 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== brid:BridgeInstallation
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+| 橋梁の外部付属物。橋梁の外側に設置され、橋梁の外観を特徴づける設備。 +
@@ -2116,7 +2116,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== brid:IntBridgeInstallation
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+| 橋梁の内部に設置された、恒久的に存在する固定的な設備（内部付属物）。 +
@@ -2163,7 +2163,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== brid:BridgeFurniture
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+| 橋梁内部の区画に配置された、可動設備。 +
@@ -2205,7 +2205,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:BridgeStructureAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 橋梁の構造に関する情報を定義したデータ型。
 
@@ -2233,7 +2233,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:BridgeFunctionalAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 橋梁の機能に関する情報を定義したデータ型。
 
@@ -2248,7 +2248,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:KeyValuePairAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。 +
@@ -2268,7 +2268,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:DataQualityAttribute
 
-[cols="a,a,a",options="unnumbered"]
+[cols="a,a,a"]
 |===
 | 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
 
@@ -2357,7 +2357,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:PublicSurveyDataQualityAttribute
 
-[cols="a,a,a",options="unnumbered"]
+[cols="a,a,a"]
 |===
 | 型の定義 2+| 使用した公共測量成果の地図情報レベルと種類を、LODごとに記述するためのデータ型。
 
@@ -2432,7 +2432,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:ConstructionBaseAttribute
 
-[cols="a,a,a",options="unnumbered"]
+[cols="a,a,a"]
 |===
 | 型の定義
 2+| 構造物の管理に必要となる基本的な情報及び、構造物の規模に関する基本的な情報を記述するためのデータ型。 +
@@ -2462,7 +2462,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:ConstructionRiskAssessmentAttribute
 
-[cols="a,a,a",options="unnumbered"]
+[cols="a,a,a"]
 |===
 | 型の定義 2+| 構造物の損傷及び対応状況に関する情報を定義したデータ型。
 
@@ -2525,7 +2525,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== Bridge_class.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Bridge_class.xml
 
@@ -2545,7 +2545,7 @@ h| コード h| 説明
 
 ====== Bridge_function.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Bridge_function.xml
 
@@ -2567,7 +2567,7 @@ h| コード h| 説明
 
 ====== BridgeConstructionElement_function.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | BridgeConstructionElement_function.xml
 
@@ -2588,7 +2588,7 @@ h| コード h| 説明
 
 ====== BridgeInstallation_function.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | BridgeInstallation_function.xml
 
@@ -2621,7 +2621,7 @@ h| コード h| 説明
 
 ====== BridgeStructureAttribute_material.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | BridgeStructureAttribute_material.xml
 
@@ -2641,7 +2641,7 @@ h| コード h| 説明
 
 ====== BridgeStructureAttribute_bridgeType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | BridgeStructureAttribute_bridgeType.xml
 
@@ -2655,7 +2655,7 @@ h| コード h| 説明
 
 ====== BridgeFunctionalAttribute_userType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | BridgeFunctionalAttribute_userType.xml
 
@@ -2669,7 +2669,7 @@ h| コード h| 説明
 
 ====== ConstructionStructureAttribute_slopeType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ConstructionStructureAttribute_slopeType.xml
 
@@ -2686,7 +2686,7 @@ h| コード h| 説明
 
 ====== ConstructionBaseAttribute_adminType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ConstructionBaseAttribute_adminType.xml
 
@@ -2745,7 +2745,7 @@ h| コード h| 説明
 
 ====== ConstructionBaseAttribute_installerType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ConstructionBaseAttribute_installerType.xml
 
@@ -2774,7 +2774,7 @@ h| コード h| 説明
 
 ====== ConstructionRiskAssessmentAttribute_riskType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ConstructionRiskAssessmentAttribute_riskType.xml
 
@@ -2794,7 +2794,7 @@ h| コード h| 説明
 
 ====== ConstructionRiskAssessmentAttribute_status.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | ConstructionRiskAssessmentAttribute_status.xml
 
@@ -2812,7 +2812,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
 
@@ -2861,7 +2861,7 @@ h| 　 | 　
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
 
@@ -2893,7 +2893,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
 
@@ -2910,7 +2910,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_lod1HeightType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_lod1HeightType.xml
 
@@ -2935,7 +2935,7 @@ h| コード h| 説明
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | PublicSurveyDataQualityAttribute_srcScale.xml
 
@@ -2949,7 +2949,7 @@ h| コード h| 説明
 
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
@@ -2987,7 +2987,7 @@ h| コード h| 説明
 
 ====== Bridge_lodType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Bridge_lodType.xml
 

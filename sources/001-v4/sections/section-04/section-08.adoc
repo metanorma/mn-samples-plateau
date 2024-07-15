@@ -36,7 +36,7 @@ h| 説明
 
 ====== 土地利用モデル（LOD1）の定義
 
-[cols="1a,^1a,1a,1a,1a,3a,2a",options="unnumbered"]
+[cols="1a,^1a,1a,1a,1a,3a,2a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -101,7 +101,7 @@ image::images/198.svg[]
 
 ====== luse:LandUse
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画基礎調査の土地利用現況。
 
@@ -155,7 +155,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:LandUseDetailAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画に関する基礎調査の一つとして、土地利用の現況と変化の動向を把握することを目的とし都市計画法第6条の規定に基づき実施される調査の結果。
 
@@ -193,7 +193,7 @@ JIS X0401に定義される2桁の半角数字とJIS X0402に定義される3桁
 
 ====== uro:KeyValuePairAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義
 2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外に情報を追加したい場合に使用する。 +
@@ -214,7 +214,7 @@ uro:KeyValuePairAttributeを使用する場合は、必ずuro:codeValueを作成
 
 ====== uro:DataQualityAttribute
 
-[cols="1a,1a,2a",options="unnumbered"]
+[cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
 
@@ -276,7 +276,7 @@ h| (uro:publicSurveyDataQualityAttribute) | uro:PublicSurveyDataQualityAttribute
 
 ====== Common_landUseType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Common_landUseType.xml
 
@@ -316,7 +316,7 @@ h| コード h| 説明
 
 ====== Common_ownerType.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | Common_ownerType.xml
 
@@ -334,7 +334,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
 
@@ -382,7 +382,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
 
@@ -414,7 +414,7 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[cols="3a,22a",options="unnumbered"]
+[cols="3a,22a"]
 |===
 | ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
 
