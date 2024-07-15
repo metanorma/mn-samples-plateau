@@ -27,7 +27,6 @@
 h| ^h| LOD0
 h| 取得例
 |
-[%unnumbered]
 image::images/337.webp.png[]
 
 h| 説明
@@ -75,7 +74,6 @@ h| 説明
 h| ^h| LOD1
 h| 取得例
 |
-[%unnumbered]
 image::images/338.webp.png[]
 
 h| 説明 | 地下街の上からの正射影の外周を、地表面から地下街の下端まで下向きに押し出した立体として表現する。
@@ -121,7 +119,6 @@ h| 説明 | 地下街の上からの正射影の外周を、地表面から地�
 h| ^h| LOD2
 h| 取得例
 |
-[%unnumbered]
 image::images/339.webp.png[]
 
 h| 説明
@@ -215,7 +212,6 @@ h| 説明
 h| ^h| LOD3
 h| 取得例
 |
-[%unnumbered]
 image::images/340.webp.png[]
 
 h| 説明
@@ -370,7 +366,7 @@ LOD4.0、LOD4.1及びLOD4.2それぞれの取得イメージを <<tab-4-100>>に
 h| LOD ^h| 取得イメージと説明
 | LOD4.0
 |
-[%unnumbered]
+
 image::images/341.webp.png[]
 
 LOD4.0は建築物の外形（図１）に加え、建築物の内部を部屋に区分する（図２）。このとき、各部屋の形状は立体として表現し、部屋の立体の境界面を、天井面、内壁面、床面又は閉鎖面のいずれかに区分する（図３）。また、天井面、内壁面又は床面に存在する全ての扉及び窓を表現する（図４）。 CityGMLでは、壁面や天井面などは全て面として表現する。1つの壁が建築物の外形を示す外壁と部屋の外形を示す内壁との機能を備えていた場合、建築物の外形となる面と部屋の外形となる面の2枚の面として表現され、それらの面の間には隙間ができる（何もない）。LOD4.0では地下街の内部に存在する付属物や家具を表現しないため、上図の例でも、付属物である階段、エレベータ、柱等が表現されていない。
@@ -379,7 +375,7 @@ LOD4.0は建築物の外形（図１）に加え、建築物の内部を部屋�
 
 | LOD4.1
 |
-[%unnumbered]
+
 image::images/342.webp.png[]
 
 LOD4.1ではLOD4.0に、屋内の付属物（bldg:IntBuildingInstallation）として、階段、スロープ、輸送設備（エスカレータ、エレベータ及び動く歩道）、柱及びデッキ・ステージが追加される。
@@ -389,7 +385,6 @@ LOD4.1ではLOD4.0に、屋内の付属物（bldg:IntBuildingInstallation）と�
 | LOD4.2
 |
 
-[%unnumbered]
 image::images/343.webp.png[]
 
 LOD4.2ではLOD4.1に屋内の付属物（bldg:IntBuildingInstallation）として、手すり、パネル及び梁が付属物として追加される。また、机やいすなどの移動可能な家具（bldg:BuildingFurniture）が追加される。
@@ -902,7 +897,6 @@ NOTE: CityObjectGroupは空間属性をもたないため、「―」として�
 [[toc4_16_02_01]]
 ===== Urban Object（i-UR）
 
-[%unnumbered]
 image::images/344.svg[]
 
 [[toc4_16_03]]
