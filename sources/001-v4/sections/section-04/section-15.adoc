@@ -1377,13 +1377,13 @@ h| (frn:usage) | gml:CodeType [0..*] | 埋設物の主な使い道。
 | uro:year | xs:gYear: [0..1] | 埋設された年度。
 | uro:yearType | gml:CodeType [0..1] | 埋設された年度の確からしさ。コードリスト（UtilityNetworkElement_yearType.xml）より選択する。
 | uro:administrator | gml:CodeType [0..1] | 埋設物の主管事業者。コードリスト（UtilityNetworkElement_administrator.xml）より選択する。
-| uro:routeStartNode | xs:string [0..1] | 路線又は系統の開始ノード。[路線名]又は[路線]-[区間名]とする。
+| uro:routeStartNode | xs:string [0..1] | 路線又は系統の開始ノード。``[路線名]``又は``[路線]-[区間名]``とする。
 | uro:startNode
 | xs:string [0..1]
 | 開始ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
 uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAttributeの属性idの値に一致する。
 
-| uro:routeEndNode | xs:string [0..1] | 路線又は系統の終了ノード。[路線名]又は[路線]-[区間名]とする。
+| uro:routeEndNode | xs:string [0..1] | 路線又は系統の終了ノード。``[路線名]``又は``[路線]-[区間名]``とする。
 | uro:endNode
 | xs:string [0..1]
 | 終了ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
@@ -1485,13 +1485,13 @@ h| (frn:usage) | gml:CodeType [0..*] | 埋設物の主な使い道。
 | uro:year | xs:gYear: [0..1] | 埋設された年度。
 | uro:yearType | gml:CodeType [0..1] | 埋設された年度の確からしさ。コードリスト（UtilityNetworkElement_yearType.xml）より選択する。
 | uro:administrator | gml:CodeType [0..1] | 埋設物の主管事業者。コードリスト（UtilityNetworkElement_administrator.xml）より選択する。
-| uro:routeStartNode | xs:string [0..1] | 路線又は系統の開始ノード。[路線名]又は[路線]-[区間名]とする。
+| uro:routeStartNode | xs:string [0..1] | 路線又は系統の開始ノード。``[路線名]``又は``[路線]-[区間名]``とする。
 | uro:startNode
 | xs:string [0..1]
 | 開始ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
 uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAttributeの属性idの値に一致する。
 
-| uro:routeEndNode | xs:string [0..1] | 路線又は系統の終了ノード。[路線名]又は[路線]-[区間名]とする。
+| uro:routeEndNode | xs:string [0..1] | 路線又は系統の終了ノード。``[路線名]``又は``[路線]-[区間名]``とする。
 | uro:endNode
 | xs:string [0..1]
 | 終了ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
@@ -1600,13 +1600,13 @@ h| (frn:usage) | gml:CodeType [0..*] | 埋設物の主な使い道。
 | uro:year | xs:gYear: [0..1] | 埋設された年度。
 | uro:yearType | gml:CodeType [0..1] | 埋設された年度の確からしさ。コードリスト（UtilityNetworkElement_yearType.xml）より選択する。
 | uro:administrator | gml:CodeType [0..1] | 埋設物の主管事業者。コードリスト（UtilityNetworkElement_administrator.xml）より選択する。
-| uro:routeStartNode | xs:string [0..1] | 路線又は系統の開始ノード。[路線名]又は[路線]-[区間名]とする。
+| uro:routeStartNode | xs:string [0..1] | 路線又は系統の開始ノード。``[路線名]``又は``[路線]-[区間名]``とする。
 | uro:startNode
 | xs:string [0..1]
 | 開始ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
 uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAttributeの属性idの値に一致する。
 
-| uro:routeEndNode | xs:string [0..1] | 路線又は系統の終了ノード。[路線名]又は[路線]-[区間名]とする。
+| uro:routeEndNode | xs:string [0..1] | 路線又は系統の終了ノード。``[路線名]``又は``[路線]-[区間名]``とする。
 | uro:endNode
 | xs:string [0..1]
 | 終了ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
@@ -1705,13 +1705,13 @@ h| (frn:usage) | gml:CodeType [0..*] | 埋設物の主な使い道。
 | uro:year | xs:gYear: [0..1] | 埋設された年度。
 | uro:yearType | gml:CodeType [0..1] | 埋設された年度の確からしさ。コードリスト（UtilityNetworkElement_yearType.xml）より選択する。
 | uro:administrator | gml:CodeType [0..1] | 埋設物の主管事業者。コードリスト（UtilityNetworkElement_administrator.xml）より選択する。
-| uro:routeStartNode | xs:string [0..1] | 路線又は系統の開始ノード。[路線名]又は[路線]-[区間名]とする。
+| uro:routeStartNode | xs:string [0..1] | 路線又は系統の開始ノード。``[路線名]``又は``[路線]-[区間名]``とする。
 | uro:startNode
 | xs:string [0..1]
 | 開始ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
 uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAttributeの属性idの値に一致する。
 
-| uro:routeEndNode | xs:string [0..1] | 路線又は系統の終了ノード。[路線名]又は[路線]-[区間名]とする。
+| uro:routeEndNode | xs:string [0..1] | 路線又は系統の終了ノード。``[路線名]``又は``[路線]-[区間名]``とする。
 | uro:endNode
 | xs:string [0..1]
 | 終了ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
@@ -1820,13 +1820,13 @@ h| (frn:usage) | gml:CodeType [0..*] | 埋設物の主な使い道。
 | uro:year | xs:gYear: [0..1] | 埋設された年度。
 | uro:yearType | gml:CodeType [0..1] | 埋設された年度の確からしさ。コードリスト（UtilityNetworkElement_yearType.xml）より選択する。
 | uro:administrator | gml:CodeType [0..1] | 埋設物の主管事業者。コードリスト（UtilityNetworkElement_administrator.xml）より選択する。
-| uro:routeStartNode | xs:string [0..1] | 路線又は系統の開始ノード。[路線名]又は[路線]-[区間名]とする。
+| uro:routeStartNode | xs:string [0..1] | 路線又は系統の開始ノード。``[路線名]``又は``[路線]-[区間名]``とする。
 | uro:startNode
 | xs:string [0..1]
 | 開始ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
 uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAttributeの属性idの値に一致する。
 
-| uro:routeEndNode | xs:string [0..1] | 路線又は系統の終了ノード。[路線名]又は[路線]-[区間名]とする。
+| uro:routeEndNode | xs:string [0..1] | 路線又は系統の終了ノード。``[路線名]``又は``[路線]-[区間名]``とする。
 | uro:endNode
 | xs:string [0..1]
 | 終了ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
@@ -1932,13 +1932,13 @@ h| (frn:usage) | gml:CodeType [0..*] | 埋設物の主な使い道。
 | uro:year | xs:gYear: [0..1] | 埋設された年度。
 | uro:yearType | gml:CodeType [0..1] | 埋設された年度の確からしさ。コードリスト（UtilityNetworkElement_yearType.xml）より選択する。
 | uro:administrator | gml:CodeType [0..1] | 埋設物の主管事業者。コードリスト（UtilityNetworkElement_administrator.xml）より選択する。
-| uro:routeStartNode | xs:string [0..1] | 路線又は系統の開始ノード。[路線名]又は[路線]-[区間名]とする。
+| uro:routeStartNode | xs:string [0..1] | 路線又は系統の開始ノード。``[路線名]``又は``[路線]-[区間名]``とする。
 | uro:startNode
 | xs:string [0..1]
 | 開始ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
 uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAttributeの属性idの値に一致する。
 
-| uro:routeEndNode | xs:string [0..1] | 路線又は系統の終了ノード。[路線名]又は[路線]-[区間名]とする。
+| uro:routeEndNode | xs:string [0..1] | 路線又は系統の終了ノード。``[路線名]``又は``[路線]-[区間名]``とする。
 | uro:endNode
 | xs:string [0..1]
 | 終了ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
@@ -2041,13 +2041,13 @@ h| (frn:usage) | gml:CodeType [0..*] | 埋設物の主な使い道。
 | uro:year | xs:gYear: [0..1] | 埋設された年度。
 | uro:yearType | gml:CodeType [0..1] | 埋設された年度の確からしさ。コードリスト（UtilityNetworkElement_yearType.xml）より選択する。
 | uro:administrator | gml:CodeType [0..1] | 埋設物の主管事業者。コードリスト（UtilityNetworkElement_administrator.xml）より選択する。
-| uro:routeStartNode | xs:string [0..1] | 路線又は系統の開始ノード。[路線名]又は[路線]-[区間名]とする。
+| uro:routeStartNode | xs:string [0..1] | 路線又は系統の開始ノード。``[路線名]``又は``[路線]-[区間名]``とする。
 | uro:startNode
 | xs:string [0..1]
 | 開始ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
 uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAttributeの属性idの値に一致する。
 
-| uro:routeEndNode | xs:string [0..1] | 路線又は系統の終了ノード。[路線名]又は[路線]-[区間名]とする。
+| uro:routeEndNode | xs:string [0..1] | 路線又は系統の終了ノード。``[路線名]``又は``[路線]-[区間名]``とする。
 | uro:endNode
 | xs:string [0..1]
 | 終了ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
@@ -2130,13 +2130,13 @@ h| (frn:usage) | gml:CodeType [0..*] | 埋設物の主な使い道。
 | uro:year | xs:gYear: [0..1] | 埋設された年度。
 | uro:yearType | gml:CodeType [0..1] | 埋設された年度の確からしさ。コードリスト（UtilityNetworkElement_yearType.xml）より選択する。
 | uro:administrator | gml:CodeType [0..1] | 埋設物の主管事業者。コードリスト（UtilityNetworkElement_administrator.xml）より選択する。
-| uro:routeStartNode | xs:string [0..1] | 路線又は系統の開始ノード。[路線名]又は[路線]-[区間名]とする。
+| uro:routeStartNode | xs:string [0..1] | 路線又は系統の開始ノード。``[路線名]``又は``[路線]-[区間名]``とする。
 | uro:startNode
 | xs:string [0..1]
 | 開始ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
 uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAttributeの属性idの値に一致する。
 
-| uro:routeEndNode | xs:string [0..1] | 路線又は系統の終了ノード。[路線名]又は[路線]-[区間名]とする。
+| uro:routeEndNode | xs:string [0..1] | 路線又は系統の終了ノード。``[路線名]``又は``[路線]-[区間名]``とする。
 | uro:endNode
 | xs:string [0..1]
 | 終了ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
@@ -2220,13 +2220,13 @@ h| (frn:usage) | gml:CodeType [0..*] | 埋設物の主な使い道。
 | uro:year | xs:gYear: [0..1] | 埋設された年度。
 | uro:yearType | gml:CodeType [0..1] | 埋設された年度の確からしさ。コードリスト（UtilityNetworkElement_yearType.xml）より選択する。
 | uro:administrator | gml:CodeType [0..1] | 埋設物の主管事業者。コードリスト（UtilityNetworkElement_administrator.xml）より選択する。
-| uro:routeStartNode | xs:string [0..1] | 路線又は系統の開始ノード。[路線名]又は[路線]-[区間名]とする。
+| uro:routeStartNode | xs:string [0..1] | 路線又は系統の開始ノード。``[路線名]``又は``[路線]-[区間名]``とする。
 | uro:startNode
 | xs:string [0..1]
 | 開始ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
 uro:Appurtenance又はuro:UtilityNodeContainerの下位クラスuro:FacilityIdAttributeの属性idの値に一致する。
 
-| uro:routeEndNode | xs:string [0..1] | 路線又は系統の終了ノード。[路線名]又は[路線]-[区間名]とする。
+| uro:routeEndNode | xs:string [0..1] | 路線又は系統の終了ノード。``[路線名]``又は``[路線]-[区間名]``とする。
 | uro:endNode
 | xs:string [0..1]
 | 終了ノードとなる設備（uro:Appurtenance）又は、格納設備（uro:UtilityNodeContainerの下位クラス）の識別子。 +
