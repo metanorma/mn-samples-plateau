@@ -3109,17 +3109,17 @@ h| ステレオタイプ 2+| << DataType >>
 h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:buildingID | xs:string [1] | 主たる建築物を識別するための番号。必須とする。
 
-[市区町村コード]-[接頭辞]-[オブジェクト連番] とする。
+``[市区町村コード]-[接頭辞]-[オブジェクト連番]`` とする。
 
-[市区町村コード] は、当該地物が存在する市区町村に該当するコードとする。
+``[市区町村コード]`` は、当該地物が存在する市区町村に該当するコードとする。
 
 先頭の0は省略せず、5桁で記述する。
 
-[接頭辞]は地物型の区分を示す3桁又は4桁のコードとする。
+``[接頭辞]``は地物型の区分を示す3桁又は4桁のコードとする。
 
 建築物の場合は、bldgとする。
 
-[オブジェクト連番]は半角数字の連番とする。
+``[オブジェクト連番]``は半角数字の連番とする。
 | uro:branchID | xs:integer [0..1] | 主たる建築物に対して付帯する建築物を識別するための番号。
 | uro:partID | xs:integer [0..1] | 主たる建築物を複数のbldg:BuildingPartに分けて記述する場合の、建築物部分を識別するための番号。bldg:BuildingPartには必須とする。
 | uro:prefecture | gml:CodeType [0..1] | 建築物が所在する都道府県の都道府県コ－ド。JIS X0401に定義される2桁の半角数字。コードリスト（Common_localPublicAuthorities.xml）より選択する。
@@ -4006,8 +4006,9 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:name
 | xs:string [0..1]
 | 座標参照系の名称。
-EPSG:[EPSGコード] +
-[EPSGコード]は、EPSGにより指定された半角数字の組合せによる識別子とする。
+``EPSG:[EPSGコード]``
+
+``[EPSGコード]``は、EPSGにより指定された半角数字の組合せによる識別子とする。
 
 | uro:description | xs:string [0..1] | EPSGコードの説明情報。
 | uro:geodeticDatum
@@ -4257,8 +4258,9 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:name
 | xs:string [0..1]
 | 座標参照系の名称。
-EPSG:[EPSGコード] +
-[EPSGコード]は、EPSGにより指定された半角数字の組合せによる識別子とする。
+``EPSG:[EPSGコード]``
+
+``[EPSGコード]``は、EPSGにより指定された半角数字の組合せによる識別子とする。
 
 | uro:description | xs:string [0..1] | EPSGコードの説明情報。
 | uro:geodeticDatum
@@ -5037,7 +5039,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:stringValue | xs:string [0..1] | 文字列。
 | uro:intValue | xs:integer [0..1] | 整数。
 | uro:doubleValue | xs:double [0..1] | 実数。
-| uro:codeValue | gml:CodeType [0..1] | コード。コードリスト（UserDefinedValue_codeValue[番号].xml）から選択する。[番号]は任意の半角数字とする。この属性を使用する場合は、コードリストを作成する。
+| uro:codeValue | gml:CodeType [0..1] | コード。コードリスト（``UserDefinedValue_codeValue[番号].xml``）から選択する。``[番号]``は任意の半角数字とする。この属性を使用する場合は、コードリストを作成する。
 | uro:dateValue | xs:date [0..1] | 日付。
 | uro:uriValue | xs:anyURI [0..1] | URI。
 | uro:measureValue | gml:MeasureType [0..1] | 単位付き数値。
@@ -5411,7 +5413,7 @@ h| コード 2+h| 説明
 | EF_37 | Tunnel, vessel and tower elements | トンネル、船舶（ベッセル）、煙突タワーエレメント
 | EF_40 | Signage, fittings, furnishings and equipment | 標識、付属品、備品および設備（FF＆E）エレメント
 | EF_45 | Flora and fauna elements | 動植物エレメント
-| EF_50 | Waste disposal functions | 廃棄物処理機能[発生材運搬処分機能]
+| EF_50 | Waste disposal functions | 廃棄物処理機能 [発生材運搬処分機能]
 | EF_55 | Piped supply functions | 配管供給機能
 | EF_60 | Heating, cooling and refrigeration functions | 暖房、冷房、冷凍（冷蔵）機能
 | EF_65 | Ventilation and air conditioning functions | 空調換気機能

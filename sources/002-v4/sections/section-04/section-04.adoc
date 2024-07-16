@@ -78,9 +78,9 @@ GML 3.1.1 simple dictionary profileに従ったXML形式のコードリスト例
 </gml:Dictionary>
 ----
 
-* `gml:Dictionary`の`gml:id`は、[接頭辞]_[UUID]とする。
+* `gml:Dictionary`の`gml:id`は、``[接頭辞]_[UUID]``とする。
 
-** [接頭辞]は、clとする。[UUID]は、Universally Unique Identifierとする。
+** ``[接頭辞]``は、clとする。``[UUID]``は、Universally Unique Identifierとする。
 
 * gml:nameには、当該3D都市モデルにおけるコードリストを識別する名称として、地物型名と属性名との組み合わせとする。地物型名と属性名とは_（アンダースコア）でつなぐ。
 
@@ -106,9 +106,9 @@ https://www.geospatial.jp/iur/codelists
 
 留意事項34：gml:idの付与ルールに従う。
 
-* gml:idは、データ集合内でオブジェクトを識別するためのIDである。3D都市モデルでは、このgml:idに [接頭辞]_[UUID]を使用する。
+* gml:idは、データ集合内でオブジェクトを識別するためのIDである。3D都市モデルでは、このgml:idに ``[接頭辞]_[UUID]``を使用する。
 
-* [接頭辞]は、製品仕様書に示す、CityGML及びi-URの各パッケージに与えられた接頭辞（<<tab-4-4>>） とする。また、[UUID]は、Universally Unique Identifierとする。
+* ``[接頭辞]``は、製品仕様書に示す、CityGML及びi-URの各パッケージに与えられた接頭辞（<<tab-4-4>>） とする。また、``[UUID]``は、Universally Unique Identifierとする。
 
 [[tab-4-4]]
 [cols="2a,2a,1a"]
