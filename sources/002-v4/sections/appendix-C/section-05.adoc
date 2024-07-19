@@ -5,9 +5,15 @@ bldg:_BoundarySurfaceは、建築物（bldg:Building）や建築物の部分（b
 
 この地物型は抽象地物であり、実装においては、この下位型の具象となる地物型を使用する。
 
-****
-要件bldg-21.　bldg:_BoundarySurfaceは、屋根面（bldg:RoofSurface）、外壁面（bldg:WallSurface）、底面（bldg:GroundSurface）、外部天井面（bldg:OuterCeilingSurface）、外部床面（bldg:OuterFloorSurface）、閉鎖面（bldg:ClosureSurface）、天井面（bldg:CeilingSurface）、床面（bldg:FloorSurface）及び内壁面（bldg:InteriorSurface）のいずれかとなる。
-****
+
+[requirement]
+.bldg:_BoundarySurfaceの種類
+====
+[%metadata]
+identifier:: /req/bldg/21
+subject:: 3D都市モデル
+description:: bldg:_BoundarySurfaceは、屋根面（bldg:RoofSurface）、外壁面（bldg:WallSurface）、底面（bldg:GroundSurface）、外部天井面（bldg:OuterCeilingSurface）、外部床面（bldg:OuterFloorSurface）、閉鎖面（bldg:ClosureSurface）、天井面（bldg:CeilingSurface）、床面（bldg:FloorSurface）及び内壁面（bldg:InteriorSurface）のいずれかとなる。
+====
 
 CityGMLでは、建築物や建築物付属物の境界面としてbldg:_BoundarySurfaceの下位型となる地物型が用意されている。このうち、屋外の境界面の記述に使用できるのは、屋根面、外壁面、底面、外部天井面、外部床面又は閉鎖面である（<<tab-C-10>>、<<fig-C-20>>）。
 
@@ -38,9 +44,15 @@ image::images/157.webp.png[]
 
 要件bldg-11で示したように、屋根、外壁等の境界面となる地物型の空間属性（面）は、建築物の立体を構成する境界面に一致する。
 
-****
-要件bldg-22.　境界面の空間属性を構成する幾何オブジェクトは、建築物の立体を構成する境界面として参照されなければならない。
-****
+
+[requirement]
+.境界面の幾何オブジェクト参照条件
+====
+[%metadata]
+identifier:: /req/bldg/22
+subject:: 3D都市モデル
+description:: 境界面の空間属性を構成する幾何オブジェクトは、建築物の立体を構成する境界面として参照されなければならない。
+====
 
 
 ==== 境界面の下位型
@@ -53,9 +65,15 @@ bldg:RoofSurfaceは、屋根を記述するために使用する地物型であ�
 
 bldg:WallSurfaceは、外壁面を記述するために使用する地物型である。
 
-****
-要件bldg-23.　方位が異なっていたり、構造上分割されたりする外壁面は、それぞれをbldg:WallSurfaceとして分けて記述する。
-****
+
+[requirement]
+.外壁面の分割記述方法
+====
+[%metadata]
+identifier:: /req/bldg/23
+subject:: 3D都市モデル
+description:: 方位が異なっていたり、構造上分割されたりする外壁面は、それぞれをbldg:WallSurfaceとして分けて記述する。
+====
 
 bldg:WallSurfaceの空間属性（bldg:lod2MultiSurface）の型はgml:MultiSurface（曲面の集まり）である。そのため、一棟の建築物の全ての外壁面を一つのgml:MultiSurfaceとして記述することは幾何オブジェクトとしては間違いではない。ただし、一棟の建築物の全ての外壁面を一つの外壁面として記述することが、LOD3以上のデータとの連携や他のユースケースへの活用の支障になると想定されるため、標準製品仕様書では一棟の建築物の外壁面を、方位等により区分し、それぞれをbldg:WallSurfaceとして記述することとしている（<<fig-C-21>>）。
 

@@ -27,9 +27,15 @@ image::images/505.webp.png[]
 
 水部の記述には、CityGMLのWaterBodyモジュールに定義されたwtr:WaterBodyを用いて記述する。 wtr:WaterBodyは、詳細度（LOD）ごとに、使用すべき地物型やその空間属性が異なる。
 
-****
-要件wtr-1.　水部の記述には、指定されたLODに対応する地物型及び空間属性を使用する。
-****
+
+[requirement]
+.水部記述のLOD対応条件
+====
+[%metadata]
+identifier:: /req/wtr/1
+subject:: 3D都市モデル
+description:: 水部の記述には、指定されたLODに対応する地物型及び空間属性を使用する。
+====
 
 WaterBodyモジュールには、水部（wtr:WaterBody）と、水部の境界面（wtr:_BoundarySurface）が定義される。水部の境界面は、水面（wtr:WaterSurface）、水底面（wtr:WaterGroundSurface）及び閉鎖面（wtr:WaterClosureSurface）に区分される。
 
@@ -73,9 +79,15 @@ LOD0では、Wtr:Waterbodyのみを使用し、水部の形状を線として表
 
 水部モデル（LOD0）は、水部の形状を線又は点として記述する。このとき水部オブジェクトは、水部モデル（LOD0）の定義に従ったものでなければならない。
 
-****
-要件wtr-1 水部のLOD0の形状は、水部モデル（LOD0）の定義に従う。
-****
+
+[requirement]
+.水部のLOD0形状定義
+====
+[%metadata]
+identifier:: /req/wtr/2
+subject:: 3D都市モデル
+description:: 水部のLOD0の形状は、水部モデル（LOD0）の定義に従う。
+====
 
 水部モデル（LOD0）は、河川中心線又は公共測量標準図式に従った表現となる。
 
@@ -83,9 +95,15 @@ LOD0では、Wtr:Waterbodyのみを使用し、水部の形状を線として表
 
 水部モデル（LOD1）は、水部の形状を面として表現する。このとき、水部オブジェクトは、水部モデル（LOD1）の定義に従ったものでなければならない。
 
-****
-要件wtr-2 水部のLOD1の形状は水部モデル（LOD1）の定義に従う。
-****
+
+[requirement]
+.水部のLOD1形状定義
+====
+[%metadata]
+identifier:: /req/wtr/3
+subject:: 3D都市モデル
+description:: 水部のLOD1の形状は水部モデル（LOD1）の定義に従う。
+====
 
 [[tab-T-3]]
 [cols="a,a"]
@@ -105,9 +123,15 @@ h| 説明 | 水涯線により囲まれた面を取得する。中洲がある�
 
 水部モデル（LOD2）は、水部の形状を立体として表現する。水部の立体は、水涯線により囲まれた面（水面）、水底面及び管理区間や行政区域を区切る面を境界面とする。このとき、水部オブジェクトは、水部モデル（LOD2）の定義に従ったものでなければならない。
 
-****
-要件wtr-3 水部のLOD2の形状は、水部モデル（LOD2）の定義に従う。
-****
+
+[requirement]
+.水部のLOD2形状定義
+====
+[%metadata]
+identifier:: /req/wtr/4
+subject:: 3D都市モデル
+description:: 水部のLOD2の形状は、水部モデル（LOD2）の定義に従う。
+====
 
 [[tab-T-4]]
 [cols="a,a"]
@@ -131,9 +155,15 @@ h| 説明
 
 水部モデル（LOD3）は、水部の形状を立体として表現する。立体は、水部モデル（LOD2）の立体から水中の構造物が占める空間を除いた空間となる。このとき、水部オブジェクトは、水部モデル（LOD3）の定義に従ったものでなければならない。
 
-****
-要件wtr-1 水部のLOD3の形状は、水部モデル（LOD3）の定義に従う。
-****
+
+[requirement]
+.水部のLOD3形状定義
+====
+[%metadata]
+identifier:: /req/wtr/5
+subject:: 3D都市モデル
+description:: 水部のLOD3の形状は、水部モデル（LOD3）の定義に従う。
+====
 
 水中にある構造物と水部の境界面は水底面とする。
 

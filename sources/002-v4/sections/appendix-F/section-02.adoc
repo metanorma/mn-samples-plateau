@@ -25,9 +25,15 @@ LOD0は徒歩道を線として表現するが、このときの線は、ネッ�
 
 交通（徒歩道）モデルは、LODごとに、使用すべき地物型やその空間属性が異なる。
 
-****
-要件trk-1.　徒歩道の記述には、指定されたLODに対応する地物型及び空間属性を使用する。
-****
+
+[requirement]
+.徒歩道記述のLOD対応条件
+====
+[%metadata]
+identifier:: /req/trk/1
+subject:: 3D都市モデル
+description:: 徒歩道の記述には、指定されたLODに対応する地物型及び空間属性を使用する。
+====
 
 徒歩道の記述に使用するtran:Trackは、道路と同様に、tran:TrafficAreaとtran:AuxiliaryTrafficAreaの集まりとして構成される。tran:TrafficAreaは、歩道や車線のように、通行の用に供される領域である。一方、tran:AuxiliaryTrafficAreaは、縁石や植栽のように補助的な役割を果たす領域である。
 
@@ -66,11 +72,17 @@ tran:Trackの空間属性は、LOD0では、線として表現する。LOD1以�
 
 tran:Trackの空間属性は道路と同様の定義となっている。いずれのLODにおいても、同一のLODにおける徒歩道の連続性を担保する必要がある。
 
-****
-要件trk-2.　連続するtran:Trackの幾何オブジェクトは、同一のLODにおいて、その境界の座標を一致させなければならない。
-
+[requirement]
+.連続Track幾何の座標一致条件
+====
+[%metadata]
+identifier:: /req/trk/2
+subject:: 3D都市モデル
+description::
+連続するtran:Trackの幾何オブジェクトは、同一のLODにおいて、その境界の座標を一致させなければならない。
++
 また、連続する道路（tran:Road）が存在する場合には、その境界の座標と一致しなければならない。
-****
+====
 
 ===== LOD0
 
@@ -78,9 +90,15 @@ tran:Trackの空間属性は道路と同様の定義となっている。いず�
 
 LOD0においてネットワーク（徒歩道中心線）として表現する場合、gml:GeometrixComplexを用いて記述する。このとき、gml:GeomericComplexに含む幾何オブジェクトは、gml:LineStringとする。gml:GeometrixComplexに含まれるgml:LineString同士は交差してはならない。
 
-****
-要件trk-3.　LOD0におけるtran:Trackの空間属性に含まれるgml:LineStringは互いに交差してはならない。
-****
+
+[requirement]
+.LOD0 tran:Trackの交差禁止条件
+====
+[%metadata]
+identifier:: /req/trk/3
+subject:: 3D都市モデル
+description:: LOD0におけるtran:Trackの空間属性に含まれるgml:LineStringは互いに交差してはならない。
+====
 
 なお、これは、一つの交通（徒歩道）オブジェクトに対して適用するものである。例えば、高架における上の徒歩道と下の徒歩道というように、異なる交通（徒歩道）オブジェクトの空間属性が交差することは許容する。
 
@@ -88,19 +106,30 @@ LOD0においてネットワーク（徒歩道中心線）として表現する�
 
 交通（徒歩道）モデル（LOD1）では、徒歩道の形状を面として表現する。このとき、交通（徒歩道）オブジェクトは、交通（徒歩道）モデル（LOD1）の定義に従ったものでなければならない。
 
-****
-要件trk-4.　徒歩道のLOD1の形状は、交通（徒歩道）モデル（LOD1）の定義に従う。
-****
+
+[requirement]
+.徒歩道のLOD1形状定義
+====
+[%metadata]
+identifier:: /req/trk/4
+subject:: 3D都市モデル
+description:: 徒歩道のLOD1の形状は、交通（徒歩道）モデル（LOD1）の定義に従う。
+====
 
 tran:Trackの境界は、徒歩道の横断方向は徒歩道縁となる。徒歩道の延長方向は、以下の場所で区切る。
 
-****
-要件trk-5.　tran:Trackのオブジェクトは、以下に示す場所で区切る。
 
-. 交差部（四差路 、多差路及び三差路）
-. 道路構造の変化点
-. 位置正確度や取得方法が変わる場所
-****
+[requirement]
+.tran:Trackオブジェクトの区切り位置
+====
+[%metadata]
+identifier:: /req/trk/5
+subject:: 3D都市モデル
+description:: tran:Trackのオブジェクトは、以下に示す場所で区切る。
+part:: 交差部（四差路 、多差路及び三差路）
+part:: 道路構造の変化点
+part:: 位置正確度や取得方法が変わる場所
+====
 
 交差部（四差路、多差路及び三差路）での徒歩道の区切り方は、交通（道路）モデルと同様とする。
 
@@ -108,29 +137,53 @@ tran:Trackの境界は、徒歩道の横断方向は徒歩道縁となる。徒�
 
 交通（徒歩道）モデル（LOD2）では、徒歩道の形状を面として表現する。このとき、徒歩道（tran:Track）は、横断構成要素であるtran:TrafficAreaとtran:AuxiliaryTrafficAreaに分解される。すなわち、tran:Trackの空間属性は、これを構成するtran:TrafficAreaとtran:AuxiliaryTrafficAreaの空間属性の集まりとなる。
 
-****
-要件trk-6.　LOD2におけるtran:Trackの空間属性は、これを構成するtran:TrafficArea及びtran:AuxiliaryTrafficAreaの空間属性の集まりと一致しなければならない。
-****
+
+[requirement]
+.LOD2 tran:Trackの空間属性一致条件
+====
+[%metadata]
+identifier:: /req/trk/6
+subject:: 3D都市モデル
+description:: LOD2におけるtran:Trackの空間属性は、これを構成するtran:TrafficArea及びtran:AuxiliaryTrafficAreaの空間属性の集まりと一致しなければならない。
+====
 
 このとき、交通（徒歩道）オブジェクトは、交通（徒歩道）モデル（LOD2）の定義に従ったものでなければならない。
 
-****
-要件trk-7.　徒歩道のLOD2の形状は、交通（徒歩道）モデル（LOD2）の定義に従う。
-****
+
+[requirement]
+.徒歩道のLOD2形状定義
+====
+[%metadata]
+identifier:: /req/trk/7
+subject:: 3D都市モデル
+description:: 徒歩道のLOD2の形状は、交通（徒歩道）モデル（LOD2）の定義に従う。
+====
 
 ===== LOD3
 
 交通（徒歩道）モデル（LOD3）では、徒歩道の形状を面として表現する。このとき、徒歩道（tran:Track）は、横断構成要素であるtran:TrafficAreaとtran:AuxiliaryTrafficAreaに分解される。すなわち、tran:Trackの空間属性は、これを構成するtran:TrafficAreaとtran:AuxiliaryTrafficAreaの空間属性の集まりとなる。
 
-****
-要件trk-8.　LOD3におけるtran:Trackの空間属性は、これを構成するtran:TrafficArea及びtran:AuxiliaryTrafficAreaの空間属性の集まりと一致しなければならない。
-****
+
+[requirement]
+.LOD3 tran:Trackの空間属性一致条件
+====
+[%metadata]
+identifier:: /req/trk/8
+subject:: 3D都市モデル
+description:: LOD3におけるtran:Trackの空間属性は、これを構成するtran:TrafficArea及びtran:AuxiliaryTrafficAreaの空間属性の集まりと一致しなければならない。
+====
 
 このとき、交通（徒歩道）オブジェクトは、交通（徒歩道）モデル（LOD3）の定義に従ったものでなければならない。
 
-****
-要件trk-9.　徒歩道のLOD3の形状は、交通（徒歩道）モデル（LOD3）の定義に従う。
-****
+
+[requirement]
+.徒歩道のLOD3形状定義
+====
+[%metadata]
+identifier:: /req/trk/9
+subject:: 3D都市モデル
+description:: 徒歩道のLOD3の形状は、交通（徒歩道）モデル（LOD3）の定義に従う。
+====
 
 
 ==== 徒歩道の主題属性

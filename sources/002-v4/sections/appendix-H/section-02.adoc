@@ -14,9 +14,15 @@
 
 標準製品仕様書では、交通（航路）モデルのLODは、LOD0からLOD2までを対象とする。
 
-****
-要件wwy-1.　航路の記述には、指定されたLODに対応する地物型及び空間属性を使用する。
-****
+
+[requirement]
+.航路記述のLOD対応条件
+====
+[%metadata]
+identifier:: /req/wwy/1
+subject:: 3D都市モデル
+description:: 航路の記述には、指定されたLODに対応する地物型及び空間属性を使用する。
+====
 
 航路（uro:Waterway）は、tran:TransportationComplex を継承していることから、tran:TrafficAreaとtran:AuxiliaryTrafficArea の集まりによって構成される。tran:TrafficAreaは船舶が通行可能な領域であり、tran:AuxiliaryTrafficAreaはtran:TrafficAreaの機能を補助する地物である。しかし、航路は航行可能な区域のみが指定されていることから、航路の区域にはtran:AuxiliaryTrafficAreaに該当する領域は存在しない。そこで、標準製品仕様書ではtran:AuxiliaryTrafficAreaを対象外とする。
 
@@ -65,9 +71,15 @@ image::images/287.webp.png[]
 
 uro:Waterwayの空間属性は、いずれのLODにおいても、同一のLODにおける航路の連続性を担保する必要がある。
 
-****
-要件wwy-2.　連続するuro:Waterwayの幾何オブジェクトは、同一のLODにおいて、その境界の座標を一致させなければならない。
-****
+
+[requirement]
+.uro:Waterwayの幾何座標一致条件
+====
+[%metadata]
+identifier:: /req/wwy/2
+subject:: 3D都市モデル
+description:: 連続するuro:Waterwayの幾何オブジェクトは、同一のLODにおいて、その境界の座標を一致させなければならない。
+====
 
 ===== LOD0
 
@@ -77,19 +89,30 @@ uro:Waterwayの空間属性は、いずれのLODにおいても、同一のLOD�
 
 交通（航路）モデル（LOD1）では、航路（uro:Waterway）の形状を面として記述する。このとき、面の境界は法令により指定された航路の区域の境界となる。交通（航路）オブジェクトは、以下の場所で区切る。
 
-****
-要件wwy-3.　uro:Waterwayのオブジェクトは、以下に示す場所で区切る。
 
-. 二つ以上の航路が交わる部分
-****
+[requirement]
+.uro:Waterwayの幾何座標一致条件
+====
+[%metadata]
+identifier:: /req/wwy/3
+subject:: 3D都市モデル
+description:: uro:Waterwayのオブジェクトは、以下に示す場所で区切る。
+part:: 二つ以上の航路が交わる部分
+====
 
 ===== LOD2
 
 交通（航路）モデル（LOD2）では、航路（uro:Waterway）の形状を面として記述する。LOD2では、uro:Waterwayはtran:TrafficAreaに区分できる。このとき、uro:Waterwayの空間属性は、これを構成するtran:TrafficAreaの空間属性の集まりとなる。
 
-****
-要件wwy-4.　LOD2におけるuro:Waterwayの空間属性は、これを構成するtran:TrafficAreaの空間属性の集まりと一致しなければならない。
-****
+
+[requirement]
+.LOD2 uro:Waterwayの空間属性一致条件
+====
+[%metadata]
+identifier:: /req/wwy/4
+subject:: 3D都市モデル
+description:: LOD2におけるuro:Waterwayの空間属性は、これを構成するtran:TrafficAreaの空間属性の集まりと一致しなければならない。
+====
 
 tran:TrafficAreaは、法令により指定された船舶の航行方向により区分する。航行方向の指定が無い場合、交通（航路）モデル（LOD2）においてtran:TrafficAreaの形状と、uro:Waterwayの形状は等しくなり、これは交通（航路）モデル（LOD1）と一致する。
 

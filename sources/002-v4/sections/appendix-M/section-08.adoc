@@ -5,9 +5,15 @@ tun:_BoundarySurfaceは、トンネル（tun:Tunnel）やトンネルの部分�
 
 この地物型は抽象地物であり、実装においては、この下位型の具象となる地物型を使用する。
 
-****
-要件tun-15.　tun:_BoundarySurfaceは、屋根面（tun:RoofSurface）、外壁面（tun:WallSurface）、底面（tun:GroundSurface）、外部床面（tun:OuterFloorSurface）、内壁面（tun:InteriorWallSurface）、天井面（tun:CeilingSurface）、床面（tun:FloorSurface）、閉鎖面（tun:ClosureSurface）のいずれかとなる。
-****
+
+[requirement]
+.tun:_BoundarySurfaceの種類
+====
+[%metadata]
+identifier:: /req/tun/15
+subject:: 3D都市モデル
+description:: tun:_BoundarySurfaceは、屋根面（tun:RoofSurface）、外壁面（tun:WallSurface）、底面（tun:GroundSurface）、外部床面（tun:OuterFloorSurface）、内壁面（tun:InteriorWallSurface）、天井面（tun:CeilingSurface）、床面（tun:FloorSurface）、閉鎖面（tun:ClosureSurface）のいずれかとなる。
+====
 
 CityGMLでは、トンネルの境界面としてtun:_BoundarySurfaceの下位型となる地物型が用意されている。ただし外部天井面（tun:OuterCeillingSurface）、屋外床面（tun:OuterFloorSurface） は対象外とする（使用しない）。
 
@@ -20,9 +26,15 @@ image::images/360.webp.png[]
 
 屋根面及び壁面、底面の境界面となる地物型の空間属性（面）は、トンネルの立体を構成する境界面に一致する。
 
-****
-要件tun-16.　境界面の空間属性を構成する幾何オブジェクトは、トンネルの立体を構成する境界面として参照されなければならない。
-****
+
+[requirement]
+.境界面の幾何オブジェクト参照条件
+====
+[%metadata]
+identifier:: /req/tun/16
+subject:: 3D都市モデル
+description:: 境界面の空間属性を構成する幾何オブジェクトは、トンネルの立体を構成する境界面として参照されなければならない。
+====
 
 
 ==== 境界面の下位型
@@ -31,9 +43,15 @@ image::images/360.webp.png[]
 
 tun:RoofSurfaceは、屋根面を記述するために使用する地物型である。
 
-****
-要件tun-17.　外壁面（tun:WallSurface）と屋根面（tun:RoofSurface）との区分が構造上難しい場合は、外壁面（tun:WallSurface）として取得することを基本とする。
-****
+
+[requirement]
+.外壁面と屋根面の区分条件
+====
+[%metadata]
+identifier:: /req/tun/17
+subject:: 3D都市モデル
+description:: 外壁面（tun:WallSurface）と屋根面（tun:RoofSurface）との区分が構造上難しい場合は、外壁面（tun:WallSurface）として取得することを基本とする。
+====
 
 ===== tun:WallSurface
 
@@ -63,9 +81,15 @@ tun:OuterCeilingSurfaceは、トンネルの外側を覆う部分であり、天
 
 tun:CeilingSurfaceは、トンネルの内部の天井面を記述するために使用する地物型である。
 
-****
-要件tun-18.　内壁面（tun:InteriorWallSurface）と天井面（tun:CeilingSurface）との区分が構造上難しい場合は、内壁面（tun:InteriorWallSurface）として取得することを基本とする。
-****
+
+[requirement]
+.内壁面と天井面の区分条件
+====
+[%metadata]
+identifier:: /req/tun/18
+subject:: 3D都市モデル
+description:: 内壁面（tun:InteriorWallSurface）と天井面（tun:CeilingSurface）との区分が構造上難しい場合は、内壁面（tun:InteriorWallSurface）として取得することを基本とする。
+====
 
 ===== tun:InteriorWallSurface
 
