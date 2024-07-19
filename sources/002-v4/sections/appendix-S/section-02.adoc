@@ -23,9 +23,15 @@ image::images/503.webp.png[]
 
 地形モデルは、LODごとに使用すべき地物型やその空間属性を定めている。
 
-****
-要件dem-1.　地形の記述には、指定されたLODに対応する地物型及び空間属性を使用する。
-****
+
+[requirement]
+.地形記述のLOD対応条件
+====
+[%metadata]
+identifier:: /req/dem/1
+subject:: 3D都市モデル
+description:: 地形の記述には、指定されたLODに対応する地物型及び空間属性を使用する。
+====
 
 地形の記述には、CityGMLのReliefモジュールに定義されたdem:ReliefFeatureを使用する。
 
@@ -69,9 +75,15 @@ image::images/503.webp.png[]
 
 地形モデル（LOD0）では、地形の形状を点、線又は面により表現する。このとき、地形オブジェクトは、地形モデル（LOD0）の定義に従ったものでなければならない。
 
-****
-要件dem-2.　地形のLOD0の形状は、地形モデル（LOD0）の定義に従う。
-****
+
+[requirement]
+.地形のLOD0形状定義
+====
+[%metadata]
+identifier:: /req/dem/2
+subject:: 3D都市モデル
+description:: 地形のLOD0の形状は、地形モデル（LOD0）の定義に従う。
+====
 
 地形モデル（LOD0）は、公共測量標準図式に従った表現となる。
 
@@ -79,25 +91,43 @@ image::images/503.webp.png[]
 
 地形モデル（LOD1）では、地形の形状を、高さをもつ三角形の集まり（dem:TINRelief）又は高さをもつ点の集まり（dem:MassPointRelief）として表現する。このとき、地形オブジェクトは、地形モデル（LOD1）の定義に従ったものでなければならない。
 
-****
-要件dem-3.　地形のLOD1の形状は、地形モデル（LOD1）の定義に従う。
-****
+
+[requirement]
+.地形のLOD1形状定義
+====
+[%metadata]
+identifier:: /req/dem/3
+subject:: 3D都市モデル
+description:: 地形のLOD1の形状は、地形モデル（LOD1）の定義に従う。
+====
 
 ===== LOD2
 
 地形モデル（LOD2）では、地形の形状を、高さをもつ三角形の集まり（dem:TINRelief）又は高さをもつ点の集まり（dem:MassPointRelief）として表現する。このとき、地形オブジェクトは、地形モデル（LOD2）の定義に従ったものでなければならない。
 
-****
-要件dem-4.　地形のLOD2の形状は、地形モデル（LOD2）の定義に従う。
-****
+
+[requirement]
+.地形のLOD2形状定義
+====
+[%metadata]
+identifier:: /req/dem/4
+subject:: 3D都市モデル
+description:: 地形のLOD2の形状は、地形モデル（LOD2）の定義に従う。
+====
 
 ===== LOD3
 
 地形モデル（LOD3）では、高さをもつ三角形の集まり（dem:TINRelief）又は高さをもつ点の集まり（dem:MassPointRelief）として表現する。このとき、地形オブジェクトは、地形モデル（LOD3）の定義に従ったものでなければならない。
 
-****
-要件dem-5.　地形のLOD3の形状は、地形モデル（LOD3）の定義に従う。
-****
+
+[requirement]
+.地形のLOD3形状定義
+====
+[%metadata]
+identifier:: /req/dem/5
+subject:: 3D都市モデル
+description:: 地形のLOD3の形状は、地形モデル（LOD3）の定義に従う。
+====
 
 ==== 地形の主題属性
 

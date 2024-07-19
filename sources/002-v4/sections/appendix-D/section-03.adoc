@@ -8,9 +8,15 @@ tran:Roadは、道路の記述に使用する地物型である。
 
 tran:Roadの空間属性は、いずれのLODにおいても、同一のLODにおける道路の連続性を担保する必要がある。
 
-****
-要件tran-3.　連続するtran:Roadの幾何オブジェクトは、同一のLODにおいて、その境界の座標を一致させなければならない。
-****
+
+[requirement]
+.tran:Roadの幾何座標一致条件
+====
+[%metadata]
+identifier:: /req/tran/3
+subject:: 3D都市モデル
+description:: 連続するtran:Roadの幾何オブジェクトは、同一のLODにおいて、その境界の座標を一致させなければならない。
+====
 
 ===== LOD0
 
@@ -20,9 +26,15 @@ tran:Roadの空間属性は、いずれのLODにおいても、同一のLODに�
 
 LOD0において、道路の形状の線をネットワーク（道路中心線）として記述する場合、gml:GeometrixComplexの下位型であるgml:CompositeCurveを用いて記述する。このとき、gml:CompositeCurveに含む幾何オブジェクトは、gml:LineStringとする。gml:CompositeCurveに含まれるgml:LineString同士は交差してはならない。
 
-****
-要件tran-4.　LOD0におけるtran:Roadの空間属性に含まれるgml:LineStringは互いに交差してはならない。
-****
+
+[requirement]
+.LOD0 tran:Roadの交差禁止条件
+====
+[%metadata]
+identifier:: /req/tran/4
+subject:: 3D都市モデル
+description:: LOD0におけるtran:Roadの空間属性に含まれるgml:LineStringは互いに交差してはならない。
+====
 
 これは、一つの交通（道路）オブジェクトに対して適用するものである。例えば、高架における上の道路と下の道路というように、異なる交通（道路）オブジェクトの空間属性が交差することを許容する。
 
@@ -30,13 +42,18 @@ LOD0において、道路の形状の線をネットワーク（道路中心線�
 
 交通（道路）モデル（LOD1）では、道路の形状を面として表現する。道路の横断方向の境界は道路縁となる。道路の延長方向は、以下の場所で区切る。
 
-****
-要件tran-5.　tran:Roadのオブジェクトは、以下に示す場所で区切る。
+[requirement]
+.tran:Roadオブジェクトの区切り位置
+====
+[%metadata]
+identifier:: /req/tran/5
+subject:: 3D都市モデル
+description:: tran:Roadのオブジェクトは、以下に示す場所で区切る。
+part:: 交差部（四差路、多差路及び三差路）
+part:: 道路構造の変化点（uro:RoadStructureAttribute）
+part:: 位置正確度や取得方法が変わる場所（uro:RoadDataQualityAttribute）
+====
 
-. 交差部（四差路、多差路及び三差路）
-. 道路構造の変化点（uro:RoadStructureAttribute）
-. 位置正確度や取得方法が変わる場所（uro:RoadDataQualityAttribute）
-****
 
 道路は、延長方向に連続して存在する地物であるため、データ作成者によって異なる区切り方になる可能性がある。そこで、標準製品仕様書では、道路を必ず区切るべき位置として、「交差部（四差路、多差路及び三差路）」「道路構造の変化点（トンネル、橋梁）」、及び「位置正確度や取得方法が変わる場所」を指定している。
 
@@ -88,17 +105,29 @@ image::images/211.webp.png[]
 
 交通（道路）モデル（LOD2）では、道路の形状を面として表現する。このとき、道路（tran:Road）は、横断構成要素であるtran:TrafficAreaとtran:AuxiliaryTrafficAreaに分解される。すなわち、tran:Roadの空間属性は、これを構成するtran:TrafficAreaとtran:AuxiliaryTrafficAreaの空間属性の集まりとなる。
 
-****
-要件tran-6.　LOD2におけるtran:Roadの空間属性は、これを構成するtran:TrafficArea及びtran:AuxiliaryTrafficAreaの空間属性の集まりと一致しなければならない。
-****
+
+[requirement]
+.LOD2 tran:Roadの空間属性一致条件
+====
+[%metadata]
+identifier:: /req/tran/6
+subject:: 3D都市モデル
+description:: LOD2におけるtran:Roadの空間属性は、これを構成するtran:TrafficArea及びtran:AuxiliaryTrafficAreaの空間属性の集まりと一致しなければならない。
+====
 
 ===== LOD3
 
 交通（道路）モデル（LOD3）では、道路の形状を面として表現する。このとき、道路（tran:Road）は、横断構成要素であるtran:TrafficAreaとtran:AuxiliaryTrafficAreaに分解される。すなわち、tran:Roadの空間属性は、これを構成するtran:TrafficAreaとtran:AuxiliaryTrafficAreaの空間属性の集まりとなる。
 
-****
-要件tran-7.　LOD3におけるtran:Roadの空間属性は、これを構成するtran:TrafficArea及びtran:AuxiliaryTrafficAreaの空間属性の集まりと一致しなければならない。
-****
+
+[requirement]
+.LOD3 tran:Roadの空間属性一致条件
+====
+[%metadata]
+identifier:: /req/tran/7
+subject:: 3D都市モデル
+description:: LOD3におけるtran:Roadの空間属性は、これを構成するtran:TrafficArea及びtran:AuxiliaryTrafficAreaの空間属性の集まりと一致しなければならない。
+====
 
 
 ==== 道路の主題属性

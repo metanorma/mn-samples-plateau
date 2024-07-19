@@ -10,9 +10,15 @@
 
 標準製品仕様書で対象とする都市計画決定情報のLODは、LOD1とする。
 
-****
-要件urf-1.　都市計画決定情報に適用されるLODは、LOD1とする。
-****
+
+[requirement]
+.都市計画決定情報のLOD条件
+====
+[%metadata]
+identifier:: /req/urf/1
+subject:: 3D都市モデル
+description:: 都市計画決定情報に適用されるLODは、LOD1とする。
+====
 
 
 ==== 使用可能な地物型とLOD
@@ -35,9 +41,15 @@
 ■:: 条件付必須
 〇:: 任意（ユースケースに応じて要否を決定してよい）
 
-****
-要件urf-2.　都市計画の区域は、urf:Zoneを継承する地物型を用いて記述する。
-****
+
+[requirement]
+.都市計画の区域記述条件
+====
+[%metadata]
+identifier:: /req/urf/2
+subject:: 3D都市モデル
+description:: 都市計画の区域は、urf:Zoneを継承する地物型を用いて記述する。
+====
 
 urf:Zoneは具象の地物型であり、これを使用して都市オブジェクトを作成できるが、都市計画決定情報は、urf:Zoneを継承する地物型（例：urf:UrbanPlanningArea）を使用して記述しなければならない。
 
@@ -80,9 +92,15 @@ urf:Zoneは具象の地物型であり、これを使用して都市オブジェ
 都市計画には、新規に決定される場合、変更される場合、また、変更に伴い実質廃止される場合がある。このような時間の経過に伴う都市計画の変遷を、属性urf:validFromとurf:validFromType、また、urf:validToとurf:validToTypeにより記述できる。 +
 属性urf:validFromは、その都市計画が効力を生じる日付（xs:date）を記述する。属性urf:validFromTypeは、この日付が「決定」又は「変更」であるかを区別するために用いる。
 
-****
-要件urf-3.　この都市計画の効力が生じる日付を属性urf:validFromに記述し、そのときの都市計画の種類（新規又は変更）を属性urf:validFromTypeに記述する。
-****
+
+[requirement]
+.都市計画の効力日付と種類記述条件
+====
+[%metadata]
+identifier:: /req/urf/3
+subject:: 3D都市モデル
+description:: この都市計画の効力が生じる日付を属性urf:validFromに記述し、そのときの都市計画の種類（新規又は変更）を属性urf:validFromTypeに記述する。
+====
 
 
 都市計画の変更や廃止により都市計画が効力を失った日付（xs:date）は、属性urf:validToにより記述できる。また、その時の都市計画の区分（変更又は廃止）は、属性urf:validToTypeにより記述できる。
@@ -103,9 +121,15 @@ image::images/296.webp.png[]
 
 標準製品仕様書では、道路や自動車ターミナルといった都市計画法第11条第1項各号に挙げられた都市施設の種類ごとに、都市計画に定める事項が異なる場合にはこれらを都市施設の種類ごとにデータ型として構造化している。都市施設の種類は、属性urf:functionによって分かる。そのため、属性urf:functionの値により、使用すべきデータ型が限定される。例えば、属性urf:functionの値が「道路」を示す場合には、道路のために構造化されたデータ型を使用できる。
 
-****
-要件urf-4.　都市施設ごとに構造化されたデータ型は、都市施設の属性urf:functionと一致していなければならない。
-****
+
+[requirement]
+.都市施設データ型の一致条件
+====
+[%metadata]
+identifier:: /req/urf/4
+subject:: 3D都市モデル
+description:: 都市施設ごとに構造化されたデータ型は、都市施設の属性urf:functionと一致していなければならない。
+====
 
 
 ==== 都市計画決定情報の階層構造
@@ -132,9 +156,15 @@ image::images/296.webp.png[]
 
 階層構造をもつ地物の組み合わせをCityGML形式に符号化する際には、部品となる地物を全体となる地物の子要素として出力しなければならない。
 
-****
-要件urf-5.　階層構造をもつ地物の組み合わせでは、部品となる地物が全体となる地物の子要素として符号化しなければならない。
-****
+
+[requirement]
+.階層構造地物の符号化条件
+====
+[%metadata]
+identifier:: /req/urf/5
+subject:: 3D都市モデル
+description:: 階層構造をもつ地物の組み合わせでは、部品となる地物が全体となる地物の子要素として符号化しなければならない。
+====
 
 <<fig-K-2>>に例を示す。urf:DistrictDevelopmentPlan（地区整備計画）とurf:District（地区）との間には、応用スキーマ図では集約で関連付けられ、urf:DistrictDevelopmentPlanが全体、urf:Districtが部品として定義されている。この場合、CityGML形式に符号化する際にはurf:DistrictDevelopmentPlanのタグの子要素としてurf:Districtが出現しなければならない。
 
