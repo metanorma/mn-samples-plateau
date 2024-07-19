@@ -19,9 +19,15 @@ bldg:Roomは立体（bldg:lod4Solid）として表現する。このとき、立
 
 bldg:Roomは、建築物の内部の部屋の総称となる。そのため、部屋の機能や用途は、主題属性bldg:class及びbldg:functionにより区分する。
 
-****
-要件bldg-24.　 bldg:Roomは、bldg:class及びbldg:functionによりその機能や用途を区分する。
-****
+
+[requirement]
+.bldg:Roomの機能区分方法
+====
+[%metadata]
+identifier:: /req/bldg/24
+subject:: 3D都市モデル
+description:: bldg:Roomは、bldg:class及びbldg:functionによりその機能や用途を区分する。
+====
 
 bldg:class及びbldg:functionが取りうる値は、コードリストにより定義されている。標準製品仕様書では、bldg:class及びbldg:functionの定義域として建築生産で必要とする建築部位、工法及び設備などの名称を体系的に整理したUniclass2015のうち、Space/Locationのカテゴリを採用している。これは、建築物モデル（LOD4）は、BIMモデルからの変換によるデータ作成が進むと想定され、bldg:Roomに対応するIFCのクラスとして、IfcSpaceが存在するからである。
 

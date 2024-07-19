@@ -8,23 +8,41 @@ bldg:BuildingInstallationは、バルコニー、煙突又は屋外階段のよ�
 
 bldg:BuildingInstallationの空間属性の型は、gml:_Geometryである。gml:_Geometryは、幾何オブジェクトの基底要素であり、実装においては、この下位型のうち、具象となる幾何オブジェクトを、地物の形状に合わせて選定する。
 
-****
-要件bldg-25.　bldg:BuildingInstallationの空間属性の型には、gml:MultiSurfaceを使用することを原則とする。
-****
+
+[requirement]
+.bldg:BuildingInstallationの空間属性タイプ
+====
+[%metadata]
+identifier:: /req/bldg/25
+subject:: 3D都市モデル
+description:: bldg:BuildingInstallationの空間属性の型には、gml:MultiSurfaceを使用することを原則とする。
+====
 
 ある程度の広がりをもつ地物は、曲面の集まり又は立体を使用する。CityGMLでは、曲面や立体だけではなく、点や曲線も使用可能である。しかしながら3D都市モデルでは、3次元での利用を想定し、付属物の形状に使用可能な幾何オブジェクトを曲面又は立体に限定する。原則として面の集まり（gml:MultiSurface）を使用するが、ユースケースの必要に応じてgml:Solidを使用できる。
 
-****
-要件bldg-26.　bldg:BuildingInstallationの空間属性は、bldg:Building又はbldg:BuildingPartと接していなければならない。
-****
+
+[requirement]
+.bldg:BuildingInstallationの接触条件
+====
+[%metadata]
+identifier:: /req/bldg/26
+subject:: 3D都市モデル
+description:: bldg:BuildingInstallationの空間属性は、bldg:Building又はbldg:BuildingPartと接していなければならない。
+====
 
 また、建築物付属物をbldg:BuildingInstallationを用いて記述する場合には、一棟のbldg:Building又はbldg:Buildingの一部でなければならず、孤立して存在することは許されない。
 
 bldg:BuildingInstallationも、その境界面をbldg:_BoundarySurfaceを用いて記述することができる。bldg:_BoundarySurfaceを用いて建築物付属物の外壁面等を記述する場合は、bldg:BuildingInstallationの空間属性は、この境界面となるbldg:_BoundarySurfaceの空間属性を外部参照しなければならない。
 
-****
-要件bldg-27.　bldg:BuildingInstallationの境界面をbldg:_BoundarySurfaceを用いて記述する場合、bldg:BuildingInstallation の空間属性bldg:lod2Geomerty又はbldg:lod3Geomertyは、bldg:_BoundarySurfaceの空間属性を外部参照しなければならない。
-****
+
+[requirement]
+.bldg:BuildingInstallationの境界面参照条件
+====
+[%metadata]
+identifier:: /req/bldg/27
+subject:: 3D都市モデル
+description:: bldg:BuildingInstallationの境界面をbldg:_BoundarySurfaceを用いて記述する場合、bldg:BuildingInstallation の空間属性bldg:lod2Geomerty又はbldg:lod3Geomertyは、bldg:_BoundarySurfaceの空間属性を外部参照しなければならない。
+====
 
 <<fig-C-37>>に建築物付属物と境界面の例を示す。<<fig-C-37>>は建築物の外部に設置された階段であり、その大きさから立体として取得する。このとき、立体を構成する各境界面を、bldg:_BoundarySurfaceの下位型となる地物型にて取得する場合は、階段部分及び踊り場はbldg:OuterFloorSurface、側面はbldg:WallSurface、下面はbldg:GroundSurfaceとして取得する。また、建築物本体との境界面は仮想的にbldg:ClosureSurfaceとして取得する。この仮想的な面は、立体の外側境界を閉じるために必要である。
 
@@ -34,9 +52,15 @@ image::images/174.webp.png[]
 
 ユースケースに不要な場合には、bldg:BuildingInstallationの境界面はbldg:_BoundarySurfaceを用いて記述しなくてもよい。ただし、bldg:BuildingInstallationの境界面が、bldg:Buildingの境界面を兼ねる場合には、必ずbldg:BuildingInstallationの境界面をbldg:_BoundarySurfaceを用いて記述しなければならない。
 
-****
-要件bldg-28.　bldg:BuildingInstallationの境界面が、bldg:Buildingの境界面を兼ねる場合、bldg:BuildingInstallationの境界面は、bldg:_BoundarySurfaceの下位型を用いて記述する。
-****
+
+[requirement]
+.bldg:BuildingInstallationの境界面記述条件
+====
+[%metadata]
+identifier:: /req/bldg/28
+subject:: 3D都市モデル
+description:: bldg:BuildingInstallationの境界面が、bldg:Buildingの境界面を兼ねる場合、bldg:BuildingInstallationの境界面は、bldg:_BoundarySurfaceの下位型を用いて記述する。
+====
 
 このとき、bldg:Buildingの境界面とbldg:BuildingInstallationの境界面とは、表裏の関係になる。
 
@@ -45,9 +69,15 @@ image::images/174.webp.png[]
 
 bldg:BuildingInstallationは、建築物に付属する恒久的に設置された設備の総称となる。そのため、それが何であるか（例：階段、バルコニー）は、主題属性により区分する。
 
-****
-要件bldg-29.　bldg:BuildingInstallationは、bldg:functionによりその設備を区分する。
-****
+
+[requirement]
+.bldg:BuildingInstallationの設備区分方法
+====
+[%metadata]
+identifier:: /req/bldg/29
+subject:: 3D都市モデル
+description:: bldg:BuildingInstallationは、bldg:functionによりその設備を区分する。
+====
 
 bldg:functionが取りうる値は、コードリストにより定義されている。標準製品仕様書では、<<tab-C-11>>に示す区分が用意されている。例えば、階段の場合には「1060」となる。この区分に該当しない付属物が存在する場合には、本付属書で示すコードリストの拡張手順に従い、コードを追加する。
 

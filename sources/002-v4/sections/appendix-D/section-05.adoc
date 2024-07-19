@@ -3,9 +3,15 @@
 
 tran:AuxiliaryTrafficAreaは、植樹帯や分離帯のように交通領域の機能を補助するために設けられた領域（交通補助領域）を示す。通常は、車両や人の通行には用いられない領域である。CityGMLでは、地物型として植樹帯や分離帯は用意されておらず、属性tran:functionを用いて区分する。3D都市モデルでは、LODに応じて交通補助領域を区分するために、LODごとに属性tran:functionの定義域を定めている。なお、この定義域は、<<nilim_kiban_dps,道路基盤地図情報（整備促進版）製品仕様書（案）>>において道路面を構成する地物の区分との整合を考慮している。
 
-****
-要件tran-10.　LODに応じた交通補助領域の区分には、属性tran:functionを用いる。
-****
+
+[requirement]
+.交通補助領域の区分方法
+====
+[%metadata]
+identifier:: /req/tran/10
+subject:: 3D都市モデル
+description:: LODに応じた交通補助領域の区分には、属性tran:functionを用いる。
+====
 
 LOD2、LOD3.0及びLOD3.1では、交通補助領域は、分離帯や交通島のように道路上に設けられた構造物を区分する（<<tab-D-11>>）。
 
@@ -68,11 +74,16 @@ LOD3.4の区分をどこまで詳細に行うかは、ユースケースに応�
 
 tran:AuxiliaryTrafficAreaも、道路面を構成する要素であるため、tran: TrafficAreaと同様の要件を満たす必要がある。
 
-****
-要件tran-11.　同一のtran:Roadに含まれるtran:AuxiliaryTrafficAreaの空間属性は、他のtran:TrafficAreaやtran:AuxiliaryTrafficAreaの空間属性と重なってはならない。
-
+[requirement]
+.tran:AuxiliaryTrafficAreaの重なり禁止条件
+====
+[%metadata]
+identifier:: /req/tran/11
+subject:: 3D都市モデル
+description:: 同一のtran:Roadに含まれるtran:AuxiliaryTrafficAreaの空間属性は、他のtran:TrafficAreaやtran:AuxiliaryTrafficAreaの空間属性と重なってはならない。
++
 また、同一のtran:Roadに含まれるtran:AuxiliaryTrafficAreaの空間属性は、隣接するtran:TrafficAreaやtran:AuxiliaryTrafficAreaの空間属性と、境界線を共有しなければならない。
-****
+====
 
 
 ==== 交通補助領域の主題属性

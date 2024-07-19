@@ -8,9 +8,15 @@ bldg:IntBuildingInstallationは、階段、スロープ、てすり、輸送設�
 
 bldg:BuildingInstallationの空間属性bldg:lod4Geomertyの型は、gml:_Geometryである。gml:_Geometryは、幾何オブジェクトの基底要素であり、実装においては、この下位型のうち、具象となる幾何オブジェクトを、地物の形状に合わせて選定する。
 
-****
-要件bldg-30.　bldg:BuildingInstallationの空間属性の型には、gml:MultiSurfaceを使用することを原則とする。
-****
+
+[requirement]
+.bldg:BuildingInstallationの空間属性タイプ
+====
+[%metadata]
+identifier:: /req/bldg/30
+subject:: 3D都市モデル
+description:: bldg:BuildingInstallationの空間属性の型には、gml:MultiSurfaceを使用することを原則とする。
+====
 
 ある程度の広がりをもつ地物は、曲面の集まり又は立体を使用する。CityGMLでは、曲面や立体だけではなく、点や曲線も使用可能である。しかしながら3D都市モデルでは、3次元での利用を想定し、屋内付属物の形状に使用可能な幾何オブジェクトを曲面又は立体に限定する。原則として面の集まり（gml:MultiSurface）を使用するが、ユースケースの必要に応じてgml:Solidを使用できる。
 
@@ -19,9 +25,15 @@ bldg:BuildingInstallationの空間属性bldg:lod4Geomertyの型は、gml:_Geomet
 
 bldg:IntBuildingInstallationは、建築物の内部に付属する恒久的に設置された設備の総称となる。そのため、それが何であるか（例：階段、エレベータ）は、主題属性により区分する。
 
-****
-要件bldg-31.　bldg:IntBuildingInstallationは、bldg:class及びbldg:functionによりその設備を区分する。
-****
+
+[requirement]
+.bldg:IntBuildingInstallationの設備区分方法
+====
+[%metadata]
+identifier:: /req/bldg/31
+subject:: 3D都市モデル
+description:: bldg:IntBuildingInstallationは、bldg:class及びbldg:functionによりその設備を区分する。
+====
 
 bldg:class及びbldg:functionが取りうる値は、コードリストにより定義されている。標準製品仕様書では、bldg:classの定義域として<<tab-C-12>>に示す区分を定義している。この定義域は、BIMモデルの国際標準であるIFCでのクラスの区分に基づく。建築物モデル（LOD4）の場合、BIMモデルからの変換により作成されるケースが多いと考えられるためである。また、bldg:functionの定義域は、Uniclass2015に従う。Uniclassは、建築生産で必要とする建築部位、工法及び設備などの名称を体系的に整理したものである。
 

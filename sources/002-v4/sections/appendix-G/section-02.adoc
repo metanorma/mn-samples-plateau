@@ -25,9 +25,15 @@ LOD0は広場を線として表現するが、このときの線は、ネット�
 
 交通（広場）モデルは、LODごとに、使用すべき地物型やその空間属性が異なる。
 
-****
-要件squr-1.　広場の記述には、指定されたLODに対応する地物型及び空間属性を使用する。
-****
+
+[requirement]
+.広場記述のLOD対応条件
+====
+[%metadata]
+identifier:: /req/squr/1
+subject:: 3D都市モデル
+description:: 広場の記述には、指定されたLODに対応する地物型及び空間属性を使用する。
+====
 
 広場は、CityGMLのTransportationモジュールに定義されたtran:Squareを用いて記述する。tran:Squareは広場面に該当する。
 
@@ -66,19 +72,29 @@ tran:Squareの空間属性は、LOD0では、線として表現する。LOD1以�
 
 tran:Squareの空間属性は、いずれのLODにおいても、同一のLODにおける広場の連続性を担保する必要がある。
 
-****
-要件squr-2.　連続するtran:Squareの幾何オブジェクトは、同一のLODにおいて、その境界の座標を一致させなければならない。
-****
+
+[requirement]
+.tran:Squareの幾何座標一致条件
+====
+[%metadata]
+identifier:: /req/squr/2
+subject:: 3D都市モデル
+description:: 連続するtran:Squareの幾何オブジェクトは、同一のLODにおいて、その境界の座標を一致させなければならない。
+====
 
 また、tran:Squareの境界は、広場の横断方向は道路縁又は車道の界線となる。広場に含まれる道路の延長方向は、以下の場所で区切る。
 
-****
-要件squr-3.　tran:Squareのオブジェクトは、以下に示す場所で区切る。
-
-. 交差部（四差路、多差路及び三差路）
-. 道路構造の変化点
-. 位置正確度や取得方法が変わる場所
-****
+[requirement]
+.tran:Squareオブジェクトの区切り位置
+====
+[%metadata]
+identifier:: /req/squr/3
+subject:: 3D都市モデル
+description:: tran:Squareのオブジェクトは、以下に示す場所で区切る。
+part:: 交差部（四差路、多差路及び三差路）
+part:: 道路構造の変化点
+part:: 位置正確度や取得方法が変わる場所
+====
 
 交差部（四差路、多差路及び三差路）での広場の区切り方は、交通（道路）モデルと同様とする。
 
@@ -86,9 +102,15 @@ tran:Squareの空間属性は、いずれのLODにおいても、同一のLODに
 
 交通（広場）モデル（LOD0）では、広場の形状を線により表現する。広場の形状の線は、ネットワークを基本とする。ただし、数値地形図との互換性を保つために、道路縁及び車道の界線を選択できる。このとき、交通（広場）オブジェクトは、交通（広場）モデル（LOD0）の定義に従ったものでなければならない。
 
-****
-要件squr-4.　広場のLOD0の形状は、交通（広場）モデル（LOD0）の定義に従う。
-****
+
+[requirement]
+.広場のLOD0形状定義
+====
+[%metadata]
+identifier:: /req/squr/4
+subject:: 3D都市モデル
+description:: 広場のLOD0の形状は、交通（広場）モデル（LOD0）の定義に従う。
+====
 
 道路縁及び車道の界線を採用する場合、公共測量標準図式に従う。
 
@@ -98,9 +120,15 @@ tran:Squareの空間属性は、いずれのLODにおいても、同一のLODに
 
 交通（広場）モデル（LOD1）では、広場の形状を面として表現する。このとき、交通（広場）オブジェクトは、交通（広場）モデル（LOD1）の定義に従ったものでなければならない。
 
-****
-要件squr-5.　広場のLOD1の形状は、交通（広場）モデル（LOD1）の定義に従う。
-****
+
+[requirement]
+.広場のLOD1形状定義
+====
+[%metadata]
+identifier:: /req/squr/5
+subject:: 3D都市モデル
+description:: 広場のLOD1の形状は、交通（広場）モデル（LOD1）の定義に従う。
+====
 
 交通（広場）モデル（LOD1）の形状は、都市計画において指定された「駅前広場」、「自動車ターミナル」又は「交通広場」の区域に一致する。
 
@@ -108,15 +136,27 @@ tran:Squareの空間属性は、いずれのLODにおいても、同一のLODに
 
 交通（広場）モデル（LOD2）では、広場の形状を面として表現する。このとき広場（tran:Square）は、横断構成要素であるtran:TrafficAreaとtran:AuxiliaryTrafficAreaに分解される。すなわち、tran:Squareの空間属性は、これを構成するtran:TrafficAreaとtran:AuxiliaryTrafficAreaの空間属性の集まりとなる。
 
-****
-要件squr-6.　LOD2におけるtran:Squareの空間属性は、これを構成するtran:TrafficArea及びtran:AuxiliaryTrafficAreaの空間属性の集まりと一致しなければならない。
-****
+
+[requirement]
+.LOD2 tran:Squareの空間属性一致条件
+====
+[%metadata]
+identifier:: /req/squr/6
+subject:: 3D都市モデル
+description:: LOD2におけるtran:Squareの空間属性は、これを構成するtran:TrafficArea及びtran:AuxiliaryTrafficAreaの空間属性の集まりと一致しなければならない。
+====
 
 交通（広場）モデル（LOD2）の外形は、交通（広場）モデル（LOD1）の外形と一致する。このとき、交通（広場）オブジェクトは、交通（広場）モデル（LOD2）の定義に従ったものでなければならない。
 
-****
-要件squr-7.　広場のLOD2の形状は、交通（広場）モデル（LOD2）の定義に従う。
-****
+
+[requirement]
+.広場のLOD2形状定義
+====
+[%metadata]
+identifier:: /req/squr/7
+subject:: 3D都市モデル
+description:: 広場のLOD2の形状は、交通（広場）モデル（LOD2）の定義に従う。
+====
 
 交通（広場）モデル（LOD2）は、都市計画において定められた広場の区域（交通（広場）モデル（LOD1））を以下に区分する。
 
@@ -132,9 +172,15 @@ tran:Squareの空間属性は、いずれのLODにおいても、同一のLODに
 
 交通（広場）モデル（LOD2）では、広場の形状を面として表現する。このとき広場（tran:Square）は、横断構成要素であるtran:TrafficAreaとtran:AuxiliaryTrafficAreaに分解される。すなわち、tran:Squareの空間属性は、これを構成するtran:TrafficAreaとtran:AuxiliaryTrafficAreaの空間属性の集まりとなる。
 
-****
-要件squr-8.　LOD3におけるtran:Squareの空間属性は、これを構成するtran:TrafficArea及びtran:AuxiliaryTrafficAreaの空間属性の集まりと一致しなければならない。
-****
+
+[requirement]
+.LOD3 tran:Squareの空間属性一致条件
+====
+[%metadata]
+identifier:: /req/squr/8
+subject:: 3D都市モデル
+description:: LOD3におけるtran:Squareの空間属性は、これを構成するtran:TrafficArea及びtran:AuxiliaryTrafficAreaの空間属性の集まりと一致しなければならない。
+====
 
 このとき、交通（広場）オブジェクトは、交通（広場）モデル（LOD3）の定義に従ったものでなければならない。
 
@@ -150,9 +196,15 @@ image::images/271.webp.png[]
 .交通（道路）モデルのtran:TrafficAreaを交通（広場）モデルで参照する場合の記載例
 image::images/272.webp.png[]
 
-****
-要件squr-9.　広場のLOD3の形状は、交通（広場）モデル（LOD3）の定義に従う。
-****
+
+[requirement]
+.広場のLOD3形状定義
+====
+[%metadata]
+identifier:: /req/squr/9
+subject:: 3D都市モデル
+description:: 広場のLOD3の形状は、交通（広場）モデル（LOD3）の定義に従う。
+====
 
 LOD3では広場内の区分と高さの取得方法により、LODを細分する。<<tab-G-3>>に細分したLOD3の概要を示す。
 

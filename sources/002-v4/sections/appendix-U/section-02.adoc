@@ -6,9 +6,15 @@
 
 i-URには、区域を記述するための地物型が用意されている。詳細度（LOD）ごとに、使用すべき地物型やその空間属性が異なる。
 
-****
-要件area-1.　区域の記述には、指定されたLODに対応する地物型及び空間属性を使用する。
-****
+
+[requirement]
+.区域記述のLOD対応条件
+====
+[%metadata]
+identifier:: /req/area/1
+subject:: 3D都市モデル
+description:: 区域の記述には、指定されたLODに対応する地物型及び空間属性を使用する。
+====
 
 区域は、i-URのUrban Functionモジュールに定義されたurf:Zoneを用いて記述する。urf:Zoneは法令で定められた区域に該当する。標準製品仕様書が対象とする区域モデルのLODはLOD1のみである。使用する地物型とLODを<<tab-U-1>>に示す。
 
@@ -59,9 +65,15 @@ h| h| h| 地物型 h| 空間属性の型 h| 取得基準 h| 取得方法 h| 補�
 
 区域は高さをもたない面として表現する。
 
-****
-要件area-2.　urf:lod1MultiSurfaceで示される面は、区域の境界により囲まれた、高さをもたない面とする。
-****
+
+[requirement]
+.urf:lod1MultiSurfaceの面定義
+====
+[%metadata]
+identifier:: /req/area/2
+subject:: 3D都市モデル
+description:: urf:lod1MultiSurfaceで示される面は、区域の境界により囲まれた、高さをもたない面とする。
+====
 
 
 ==== 区域の主題属性
@@ -70,15 +82,27 @@ h| h| h| 地物型 h| 空間属性の型 h| 取得基準 h| 取得方法 h| 補�
 
 urf:Zoneは、法令により定められた区域を定義する汎用的な地物型であり、属性urf:functionによりその区域の種類を識別する。
 
-****
-要件area-3.　urf:Zoneの種類は、属性urf:functionにより識別できなければならない。
-****
+
+[requirement]
+.urf:Zoneの識別方法
+====
+[%metadata]
+identifier:: /req/area/3
+subject:: 3D都市モデル
+description:: urf:Zoneの種類は、属性urf:functionにより識別できなければならない。
+====
 
 標準製品仕様書では、属性urf:functionの定義域として、港湾区域や河川区域等が用意されているが、この定義域が不足する場合には、定義域に必要な区域の名称を追加できる。定義域を追加する場合は、拡張製品仕様書においてurf:Zoneの定義に追加したい区域の名称を追記するとともに、urf:functionが参照するコードリストZone_function.xmlにコードとコードに対応する説明を追加する。
 
 ただし、都市計画の区域のように、urf:Zoneを継承し、地物型が定義されている場合には、urf:Zoneではなく、これを継承するそれぞれの地物型を使用して記述しなければならない。
 
-****
-要件area-4.　urf:Zoneを継承する地物型が存在する場合には、urf:Zoneを継承した地物型を使用して記述しなければならない。
-****
+
+[requirement]
+.urf:Zoneの継承地物型使用条件
+====
+[%metadata]
+identifier:: /req/area/4
+subject:: 3D都市モデル
+description:: urf:Zoneを継承する地物型が存在する場合には、urf:Zoneを継承した地物型を使用して記述しなければならない。
+====
 

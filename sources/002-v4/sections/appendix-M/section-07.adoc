@@ -14,9 +14,15 @@ tun:TunnelFurnitureは、トンネル内部の区画に配置された、可動�
 
 tun:TunnelIFurnitureの空間属性の空間属性の型は、gml:_Geometryである。gml:_Geometryは、幾何オブジェクトの基底要素であり、実装においては、この下位型のうち、具象となる幾何オブジェクトを、地物の形状に合わせて選定する。
 
-****
-要件tun-14.　tun:TunnelFurnitureの空間属性の型には、gml:MultiSurfaceを使用することを原則とする。
-****
+
+[requirement]
+.tun:TunnelFurnitureの空間属性タイプ
+====
+[%metadata]
+identifier:: /req/tun/14
+subject:: 3D都市モデル
+description:: tun:TunnelFurnitureの空間属性の型には、gml:MultiSurfaceを使用することを原則とする。
+====
 
 CityGMLでは、曲面や立体だけではなく、点や曲線も使用可能である。しかしながら3D都市モデルでは、3次元での利用を想定し、可動設備の形状に使用可能な幾何オブジェクトを曲面又は立体に限定する。原則として面の集まり（gmlMultiSurface）を使用するが、ユースケースの必要に応じてgml:Solidを使用できる。
 

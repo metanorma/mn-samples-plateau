@@ -8,9 +8,15 @@ urf:Boundaryは、区域の境界に属性をもたせたい場合に使用す�
 
 urf:Boundaryは、urf:Zoneの境界となる。そのため、urf:Boundaryの空間属性（gml:MultiCurve）は、urf:Zoneの空間属性（gml:MultiSurface）を構成する曲線と一致しなければならない。
 
-****
-要件area-1.　urf:Boundaryの空間属性（gml:MultiCurve）は、これをurf:boundaryによって参照するurf:Zoneの空間属性（gml:MultiSurface）に含まれるgml:Polygonの外周又は内周と重ならなければならない。
-****
+
+[requirement]
+.urf:Boundaryの重なり条件
+====
+[%metadata]
+identifier:: /req/area/5
+subject:: 3D都市モデル
+description:: urf:Boundaryの空間属性（gml:MultiCurve）は、これをurf:boundaryによって参照するurf:Zoneの空間属性（gml:MultiSurface）に含まれるgml:Polygonの外周又は内周と重ならなければならない。
+====
 
 
 ==== urf:Boundaryの主題属性

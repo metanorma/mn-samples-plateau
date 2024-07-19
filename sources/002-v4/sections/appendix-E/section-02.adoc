@@ -41,9 +41,15 @@ image::images/230.webp.png[]
 
 交通（鉄道）モデルは、LODごとに、使用すべき地物型やその空間属性が異なる。
 
-****
-要件rwy-1.　鉄道の記述には、指定されたLODに対応する地物型及び空間属性を使用する。
-****
+
+[requirement]
+.鉄道記述のLOD対応条件
+====
+[%metadata]
+identifier:: /req/rwy/1
+subject:: 3D都市モデル
+description:: 鉄道の記述には、指定されたLODに対応する地物型及び空間属性を使用する。
+====
 
 tran:Railwayは、列車又は車両を走らせるための通路となる範囲を示し、tran:TrafficAreaとtran:AuxiliaryTrafficAreaの集まりとして構成される。tran:TrafficAreaは、レールのような通行の用に供される地物を記述するための地物型である。一方、tran:AuxiliaryTrafficAreaは、軌道の構造を支える補助的な役割を果たす地物を記述するための地物型である。
 
@@ -88,22 +94,34 @@ LOD0からLOD2までは、軌道中心線は都市計画基本図からの加工
 
 鉄道は路線単位で作成し、鉄道の延長方向は以下の場所で区切る。
 
-****
-要件rwy-2.　交通（鉄道）オブジェクトは、以下に示す場所で区切る。
 
-. 軌道が分岐又は合流する地点
-. 鉄道構造の変化点（トンネル、橋梁）
-. 市区町村界
-. 位置正確度や取得方法が変わる場所
-****
+[requirement]
+.鉄道オブジェクトの区切り位置
+====
+[%metadata]
+identifier:: /req/rwy/2
+subject:: 3D都市モデル
+description:: 交通（鉄道）オブジェクトは、以下に示す場所で区切る。
+part:: 軌道が分岐又は合流する地点
+part:: 鉄道構造の変化点（トンネル、橋梁）
+part:: 市区町村界
+part:: 位置正確度や取得方法が変わる場所
+====
+
 
 ===== LOD0
 
 交通（鉄道）モデル（LOD0）では、鉄道の形状を線により表現する。このとき、交通（鉄道）オブジェクトは、交通（鉄道）モデル（LOD0）の定義に従ったものでなければならない。
 
-****
-要件rwy-3.　鉄道のLOD0の形状は、交通（鉄道）モデル（LOD0）の定義に従う。
-****
+
+[requirement]
+.鉄道のLOD0形状定義
+====
+[%metadata]
+identifier:: /req/rwy/3
+subject:: 3D都市モデル
+description:: 鉄道のLOD0の形状は、交通（鉄道）モデル（LOD0）の定義に従う。
+====
 
 LOD0は鉄道を線として表現するが、このときの線は、ネットワーク（軌道中心線）又はレールの中心線のいずれかを選択できる。3Ｄ都市モデルでは、ネットワークを採用することを原則とする。レールを採用する場合、「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」（以下、「公共測量標準図式」という）に従う。
 
@@ -113,37 +131,67 @@ LOD0は鉄道を線として表現するが、このときの線は、ネット�
 
 交通（鉄道）モデル（LOD1）では、鉄道の形状を面として表現する。このとき、交通（鉄道）オブジェクトは、交通（鉄道）モデル（LOD1）の定義に従ったものでなければならない。
 
-****
-要件rwy-4.　鉄道のLOD1の形状は、交通（鉄道）モデル（LOD1）の定義に従う。
-****
+
+[requirement]
+.鉄道のLOD1形状定義
+====
+[%metadata]
+identifier:: /req/rwy/4
+subject:: 3D都市モデル
+description:: 鉄道のLOD1の形状は、交通（鉄道）モデル（LOD1）の定義に従う。
+====
 
 ===== LOD2
 
 交通（鉄道）モデル（LOD2）では、鉄道の形状を面として表現する。このとき、tran:Railwayは、横断構成要素であるtran:TrafficAreaに分解される。tran:Railwayの空間属性は、これを構成するtran:TrafficAreaの空間属性の集まりとなる。
 
-****
-要件rwy-5.　LOD2におけるtran:Railwayの空間属性は、これを構成するtran:TrafficAreaの空間属性の集まりと一致しなければならない。
-****
+
+[requirement]
+.LOD2 tran:Railwayの空間属性一致条件
+====
+[%metadata]
+identifier:: /req/rwy/5
+subject:: 3D都市モデル
+description:: LOD2におけるtran:Railwayの空間属性は、これを構成するtran:TrafficAreaの空間属性の集まりと一致しなければならない。
+====
 
 交通（鉄道）オブジェクトは、交通（鉄道）モデル（LOD2）の定義に従ったものでなければならない。
 
-****
-要件rwy-6.　鉄道のLOD2の形状は、交通（鉄道）モデル（LOD2）の定義に従う。
-****
+
+[requirement]
+.鉄道のLOD2形状定義
+====
+[%metadata]
+identifier:: /req/rwy/6
+subject:: 3D都市モデル
+description:: 鉄道のLOD2の形状は、交通（鉄道）モデル（LOD2）の定義に従う。
+====
 
 ===== LOD3
 
 交通（鉄道）モデル（LOD3）では、鉄道の形状を面として表現する。このとき、tran:Railwayは、横断構成要素であるtran:TrafficAreaとtran:AuxiliaryTrafficAreaに分解される。tran:Railwayの空間属性は、これを構成するtran:TrafficAreaとtran:AuxiliaryTrafficAreaの空間属性の集まりとなる。
 
-****
-要件rwy-7.　LOD3におけるtran:Railwayの空間属性は、これを構成するtran:TrafficArea及びtran:AuxiliaryTrafficAreaの空間属性の集まりと一致しなければならない。
-****
+
+[requirement]
+.LOD3 tran:Railwayの空間属性一致条件
+====
+[%metadata]
+identifier:: /req/rwy/7
+subject:: 3D都市モデル
+description:: LOD3におけるtran:Railwayの空間属性は、これを構成するtran:TrafficArea及びtran:AuxiliaryTrafficAreaの空間属性の集まりと一致しなければならない。
+====
 
 交通（鉄道）オブジェクトは、交通（鉄道）モデル（LOD3）の定義に従ったものでなければならない。
 
-****
-要件rwy-8.　鉄道のLOD3の形状は、交通（鉄道）モデル（LOD3）の定義に従う。
-****
+
+[requirement]
+.鉄道のLOD3形状定義
+====
+[%metadata]
+identifier:: /req/rwy/8
+subject:: 3D都市モデル
+description:: 鉄道のLOD3の形状は、交通（鉄道）モデル（LOD3）の定義に従う。
+====
 
 LOD3を、鉄道内の区分と高さの取得方法により、LOD3.0、LOD3.1及びLOD3.2に細分する。<<tab-E-3>>に細分したLOD3の概要を示す。
 
