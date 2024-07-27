@@ -373,11 +373,11 @@ i-URの符号化仕様は相対パスによりschemaLocationを指定する。
 
 ** 地物型又はモジュールごとに分けられた3D都市モデルの成果品を格納するフォルダ（例：bldg, tran）の直下に格納した3D都市モデルファイルの場合、schemaLocationとして記述すべき符号化仕様への相対パスは以下となる。
 +
---
+---
 `urbanObject.xsd`への相対パス：`../../schemas/iur/uro/3.1/urbanObject.xsd`
 
 `urbanFunction.xsd`への相対パス：`../../schemas/iur/uro/3.1/urbanFunction.xsd`
---
+---
 --
 ====
 
