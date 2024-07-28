@@ -22,7 +22,7 @@
 
 メタデータ作成における留意点を以下に示す。
 
-[requirements]
+[requirement]
 .拡張地物のメタデータ一括作成
 ====
 [%metadata]
@@ -35,7 +35,7 @@ statement::
 --
 ====
 
-[requirements]
+[requirement]
 .3D都市モデルのメタデータ分割ルール
 ====
 [%metadata]
@@ -62,7 +62,7 @@ statement::
 --
 ====
 
-[requirements]
+[requirement]
 .3D都市モデル関連データのメタデータ作成ルール
 ====
 [%metadata]
@@ -572,7 +572,7 @@ h| 禁則文字 | 指定しない
 
 |===
 
-[requirements]
+[requirement]
 .異なる原典資料の地物属性は行を分ける
 ====
 [%metadata]
@@ -587,7 +587,7 @@ statement::
 --
 ====
 
-[requirements]
+[requirement]
 .複数値の列挙は、他項目が同一の場合のみ
 ====
 [%metadata]

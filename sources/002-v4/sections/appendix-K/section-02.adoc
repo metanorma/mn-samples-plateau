@@ -73,7 +73,7 @@ urf:Zoneは具象の地物型であり、これを使用して都市オブジェ
 
 3D都市モデルの属性として文字列で記述することが難しい場合は、xlink:hrefを用いて外部ファイルを参照してよい。この外部ファイルは、自治体のウェブサイト等から公開されている都市計画決定に関わる計画書や計画図となる。
 
-[requirements]
+[requirement]
 .都市計画図書からの主題属性入力
 ====
 [%metadata]
@@ -120,7 +120,7 @@ description:: この都市計画の効力が生じる日付を属性urf:validFro
 .都市計画の変遷
 image::images/296.webp.png[]
 
-[requirements]
+[requirement]
 .urf:validTo及びurf:validToTypeの運用
 ====
 [%metadata]

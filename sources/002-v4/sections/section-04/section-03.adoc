@@ -21,7 +21,7 @@
 
 以下に、本作業で生じうるエラーに対する留意事項を示す。
 
-[requirements]
+[requirement]
 .データ型の整合性
 ====
 [%metadata]
@@ -62,7 +62,7 @@ statement::
 --
 ====
 
-[requirements]
+[requirement]
 .不整合の対処方法
 ====
 [%metadata]
@@ -75,7 +75,7 @@ statement::
 --
 ====
 
-[requirements]
+[requirement]
 .建築物の属性「uro:city」の必須記述
 ====
 [%metadata]
@@ -92,7 +92,7 @@ statement::
 --
 ====
 
-[requirements]
+[requirement]
 .建築物の用途列挙
 ====
 [%metadata]
@@ -107,7 +107,7 @@ statement::
 --
 ====
 
-[requirements]
+[requirement]
 .コード型属性の追加
 ====
 [%metadata]
@@ -128,7 +128,7 @@ statement::
 --
 ==== 
 
-[requirements]
+[requirement]
 .不明値の指定方法
 ====
 [%metadata]
@@ -177,7 +177,7 @@ h| 属性の型 h| 不明な場合の対応
 ただし、属性を省略すると、不明だからデータがないのか、データが漏れている（エラー）なのかを区別できない。そこで、作成対象とするデータについては、属性値が不明な場合は<<tab-4-3>>に示す不明を表す値を入力する。
 --
 
-[requirements]
+[requirement]
 .NULL値と不明値の変換
 ====
 [%metadata]
@@ -196,7 +196,7 @@ statement::
 --
 ====
 
-[requirements]
+[requirement]
 .主題属性の品質記録
 ====
 [%metadata]

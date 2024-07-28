@@ -99,7 +99,7 @@
 そこで、3D都市モデルの提供者を識別するために、成果品のフォルダ名称に``[提供者区分]``を設け、提供者ごとに成果品を作成してよいこととしている。
 --
 
-[requirements]
+[requirement]
 .都道府県データセットは市区町村データセットと分ける
 ====
 [%metadata]
@@ -122,7 +122,7 @@ statement::
 
 ただし、行政界を跨ぐ都市オブジェクトは、行政界では区切らず、それぞれの市区町村のデータセットに重複して含めることを許容している。
 
-[requirements]
+[requirement]
 .行政界跨る都市オブジェクトは重複含む
 ====
 [%metadata]
@@ -137,7 +137,7 @@ statement::
 --
 ====
 
-[requirements]
+[requirement]
 .行政界跨ぎ地物の振り分け基準
 ====
 [%metadata]
@@ -159,7 +159,7 @@ statement::
 --
 ====
 
-[requirements]
+[requirement]
 .境界未確定部の取り扱いは基本通り
 ====
 [%metadata]
@@ -176,7 +176,7 @@ statement::
 --
 ====
 
-[requirements]
+[requirement]
 .市区町村内複数主体の3Dモデル統合
 ====
 [%metadata]
@@ -285,7 +285,7 @@ image::images/028.webp.png[]
 地域メッシュの区分方法や市区町村別メッシュコード一覧は、総務省統計局のウェブサイト「地域メッシュ統計」（ http://www.stat.go.jp/data/mesh/index.html ）を参照のこと。
 --
 
-[requirements]
+[requirement]
 .地下埋設物モデルの分割
 ====
 [%metadata]
@@ -1033,7 +1033,7 @@ image::images/033.webp.png[]
 
 ``[都市名英名]``は、都市コードに対応する市区町村名の英名とする。英名の表記は、デジタル庁が定める「行政基本情報データ連携モデル_住所」に従う。
 
-[requirements]
+[requirement]
 .英名表記は基本規程に従う
 ====
 [%metadata]
@@ -1780,7 +1780,7 @@ image::images/033.webp.png[]
 
 標準製品仕様書を拡張し、地物型等を追加した場合のフォルダ構成についての留意事項を示す。
 
-[requirements]
+[requirement]
 .フォルダ名は接頭辞に一致
 ====
 [%metadata]
