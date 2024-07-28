@@ -8,7 +8,7 @@
 
 地下埋設物の記述には、i-URのUrban Objectモジュールに定義された、uro:UtilityNetworkElementを継承する地物型を使用する。
 
-CityGMLには地下埋設物に該当する地物型は定義されていないため、i-URでは、欧州連合の空間データ基盤「Infrastructure for Spatial Information in Europe (INSPIRE)」において策定されたユーティリティネットワークの標準仕様「INSPIRE Data Specification on Utility and Government Services – Technical Guidelines」（ https://inspire.ec.europa.eu/Themes/136/2892[]）を参考に、地下埋設物を表現する地物型を定義している。
+CityGMLには地下埋設物に該当する地物型は定義されていないため、i-URでは、欧州連合の空間データ基盤「Infrastructure for Spatial Information in Europe (INSPIRE)」において策定されたユーティリティネットワークの標準仕様「INSPIRE Data Specification on Utility and Government Services – Technical Guidelines」（ [underline]#https://inspire.ec.europa.eu/Themes/136/2892[]#）を参考に、地下埋設物を表現する地物型を定義している。
 
 uro:UtilityNetworkElementは、地下埋設物を表す最上位の地物型であり、CityGMLの都市設備（frn:CityFurniture）を継承し、定義されている。さらに、uro:UtilityNetworkElementを継承する3つの地物型が定義され、これらが地下埋設物のネットワークを形成する。
 
