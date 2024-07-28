@@ -159,7 +159,7 @@ h| LOD1 | 以下のいずれかのデータを一つ以上使用する
 
 なお、地表面が傾斜している場合は、底面の高さを傾斜している最低の地表面の高さとする。これは都市設備が地表面から浮かないようにするためである。
 
-[requirements]
+[requirement]
 .LOD1における幾何オブジェクトの取得について
 ====
 [%metadata]
@@ -227,7 +227,7 @@ h| LOD2 | 以下のいずれかのデータを一つ以上使用する
 .LOD2における外周の取得イメージ
 image::images/420.webp.png[]
 
-[requirements]
+[requirement]
 .LOD2における幾何オブジェクトの取得について
 ====
 [%metadata]
@@ -242,7 +242,7 @@ statement::
 --
 ====
 
-[requirements]
+[requirement]
 .LOD2における外周の取得について
 ====
 [%metadata]
@@ -304,7 +304,7 @@ h| LOD3 | 以下のいずれかのデータを一つ以上使用する
 
 ② 外周の各頂点に、都市設備が添付されている構造物・地表面の高さを与える。
 
-[requirements]
+[requirement]
 .LOD3における航空写真や航空レーザ点群の利用について
 ====
 [%metadata]

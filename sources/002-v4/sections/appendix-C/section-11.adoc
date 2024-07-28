@@ -132,7 +132,7 @@ h| 分類コード h| 名称 h| 対応するクラス
 
 |===
 
-[requirements]
+[requirement]
 .2次元のGISデータのエラーについて
 ====
 [%metadata]
@@ -149,7 +149,7 @@ image::images/176.webp.png[]
 --
 ====
 
-[requirements]
+[requirement]
 .より詳細な建築物モデルに基づく建築物モデル（LOD0）の修正について
 ====
 [%metadata]
@@ -184,7 +184,7 @@ h| LOD1 | 都市計画基本図等のDMデータ又は航空写真 | 航空レ�
 
 . ③ 前項で作成した高さをもった外周を、地表面の高さまで押し下げ、立体を作成する。地表面が傾斜している場合は、最低となる高さまで押し下げる。
 
-[requirements]
+[requirement]
 .面の向きについて
 ====
 [%metadata]
@@ -197,7 +197,7 @@ LOD1では、建築物を立体として作成する。立体を構成する各�
 --
 ====
 
-[requirements]
+[requirement]
 .より詳細な建築物モデルに基づく建築物モデル（LOD1）の修正について
 ====
 [%metadata]
@@ -220,7 +220,7 @@ image::images/177.webp.png[]
 --
 ====
 
-[requirements]
+[requirement]
 .LOD1の押し出し高さについて
 ====
 [%metadata]
@@ -417,7 +417,7 @@ BIMモデルからの建築物モデル（LOD4）の作成については、以�
 
 . ④ （LOD4.2の場合）平面図、断面図等または点群データを参考に手すり、パネル（部屋の間仕切りのパネル）及び梁を取得する。また、椅子や机などの家具を作成する。
 
-[requirements]
+[requirement]
 .建築物モデル（LOD4）における部屋の区分について
 ====
 [%metadata]
@@ -430,7 +430,7 @@ statement::
 --
 ====
 
-[requirements]
+[requirement]
 .建築物モデル（LOD4）における付属物の取得について
 ====
 [%metadata]
