@@ -51,8 +51,7 @@ LOD1の立体は、平面を一律の高さで押し出した幾何オブジェ�
 [%metadata]
 identifier:: /att/planning/1
 subject:: 3D都市モデル
-statement::
-+
+[statement]
 --
 LOD1の押し出しに使用する平面の外形データが線の場合は面として編集する必要がある
 
@@ -87,8 +86,7 @@ LOD2やLOD3の立体は一律の高さで押し出すのではなく、より詳
 [%metadata]
 identifier:: /att/planning/2
 subject:: 3D都市モデル
-statement::
-+
+[statement]
 --
 LOD2の立体となる底面は、LOD0及びLOD1の底面と一致する。
 
@@ -104,8 +102,7 @@ LOD2の立体となる底面は、LOD0及びLOD1の底面と一致する。
 [%metadata]
 identifier:: /att/planning/3
 subject:: 3D都市モデル
-statement::
-+
+[statement]
 --
 LOD3の立体となる底面は、LOD0、LOD1又はLOD2の底面と一致しない場合がある。
 
@@ -149,8 +146,7 @@ BIMデータの活用については、「<<plateau_003>>」を参照する。
 [%metadata]
 identifier:: /att/planning/4
 subject:: 3D都市モデル
-statement::
-+
+[statement]
 --
 決定した作業手順は、原典資料の収集後に、原典資料の状態により見直す必要が生じる場合があることに留意すること。
 --
@@ -162,8 +158,7 @@ statement::
 [%metadata]
 identifier:: /att/planning/5
 subject:: 3D都市モデル
-statement::
-+
+[statement]
 --
 例えば、原典資料として航空写真が存在する場合、トンネル内部や高架橋の下部のように、都市オブジェクトを作成できない場所が存在する。車載写真レーザ測量等の別の手法によりデータを新規に取得することが望ましいが、3D都市モデル整備にかかるコストは増大する。
 
@@ -196,8 +191,7 @@ statement::
 [%metadata]
 identifier:: /att/planning/6
 subject:: 3D都市モデル
-statement::
-+
+[statement]
 --
 既に3D都市モデルが存在する都市において、一部の都市オブジェクト又は一部の地域の3D都市モデルを更新する場合、納品する3D都市モデルには、更新した都市オブジェクトや地域の3D都市モデルだけではなく、更新対象としない都市オブジェクトや地域の3D都市モデルを全て含めること。このとき、統合したデータセットに適用する拡張製品仕様書の版は、更新に使用する版とし、一つのデータセット内に製品仕様の異なるデータが混在しないようにする。一部を更新した場合のデータセットの統合の考え方を、<<fig-2-5>>に示す。
 
@@ -213,8 +207,7 @@ image::images/009.webp.png[]
 [%metadata]
 identifier:: /att/planning/7
 subject:: 3D都市モデル
-statement::
-+
+[statement]
 --
 3D都市モデルのデータセットは基礎自治体を基本とする（5.4.1）が、行政界を跨いで存在する都市オブジェクトは、行政界で区切らず、それぞれの都市に含めることを許容する。
 
@@ -263,8 +256,7 @@ image::images/014.webp.png[]
 [%metadata]
 identifier:: /att/planning/8
 subject:: 3D都市モデル
-statement::
-+
+[statement]
 --
 3D都市モデルのデータセットの単位は基礎自治体である市区町村が基本となる。ただし、都市計画基礎調査、洪水浸水想定区域、土砂災害警戒区域、都市計画決定情報のように、市区町村を越えた広域で整備された都市オブジェクトは、都道府県の3D都市モデルとして整備することもできる。
 

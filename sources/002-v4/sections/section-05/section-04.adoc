@@ -105,8 +105,7 @@
 [%metadata]
 identifier:: /att/deliverable/6
 subject:: 3D都市モデル
-statement::
-+
+[statement]
 --
 都道府県のデータセットを作成する場合は、市区町村のデータセットとは別に作成する。
 
@@ -128,8 +127,7 @@ statement::
 [%metadata]
 identifier:: /att/deliverable/7
 subject:: 3D都市モデル
-statement::
-+
+[statement]
 --
 行政界を跨ぐ都市オブジェクトは、それぞれの都市の3D都市モデルに重複して含まれる。
 
@@ -143,8 +141,7 @@ statement::
 [%metadata]
 identifier:: /att/deliverable/8
 subject:: 3D都市モデル
-statement::
-+
+[statement]
 --
 行政界を跨ぐ地物のデータをそれぞれの都市で重複させない場合は、住所、管理主体又は地物の面積若しくは延長が含まれる割合により、いずれかの市区町村に振り分ける。このとき、面状の地物は上からの正射影の面積、線状の地物は上からの正射影の延長とする。
 
@@ -165,8 +162,7 @@ statement::
 [%metadata]
 identifier:: /att/deliverable/9
 subject:: 3D都市モデル
-statement::
-+
+[statement]
 --
 境界未確定部の取り扱いは、市区町村の都市計画基本図（数値地形データ）での取り扱いに準じることを基本とする。
 
@@ -182,8 +178,7 @@ statement::
 [%metadata]
 identifier:: /att/deliverable/10
 subject:: 3D都市モデル
-statement::
-+
+[statement]
 --
 複数のモデル整備主体が、同一市区町村の3D都市モデルを整備する場合は、一つのデータセットに統合する。
 
@@ -291,8 +286,7 @@ image::images/028.webp.png[]
 [%metadata]
 identifier:: /att/deliverable/11
 subject:: 3D都市モデル
-statement::
-+
+[statement]
 --
 地下埋設物モデルがファイルサイズの上限（1GB）を超える場合は、上限を超えるファイルのみを、国土基本図の図郭（地図情報レベル500）に分割する。
 --
@@ -1039,8 +1033,7 @@ image::images/033.webp.png[]
 [%metadata]
 identifier:: /att/deliverable/12
 subject:: 3D都市モデル
-statement::
-+
+[statement]
 --
 英名の表記は、デジタル庁が定める「行政基本情報データ連携モデル_住所」に従う。
 
@@ -1786,8 +1779,7 @@ image::images/033.webp.png[]
 [%metadata]
 identifier:: /att/deliverable/13
 subject:: 3D都市モデル
-statement::
-+
+[statement]
 --
 i-UR及びCityGMLに定義済みの地物は、指定されたフォルダに格納する。
 

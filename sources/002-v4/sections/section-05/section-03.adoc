@@ -28,11 +28,7 @@
 [%metadata]
 identifier:: /att/deliverable/1
 subject:: 3D都市モデル
-statement::
-+
---
-拡張製品仕様書に、地物型を追加した場合は、建築物や道路等とまとめて一式としてメタデータを作成してよい。
---
+statement:: 拡張製品仕様書に、地物型を追加した場合は、建築物や道路等とまとめて一式としてメタデータを作成してよい。
 ====
 
 [requirement]
@@ -41,8 +37,7 @@ statement::
 [%metadata]
 identifier:: /att/deliverable/2
 subject:: 3D都市モデル
-statement::
-+
+[statement]
 --
 3D都市モデルの管理上必要な場合にはメタデータを分ける。
 
@@ -68,8 +63,7 @@ statement::
 [%metadata]
 identifier:: /att/deliverable/3
 subject:: 3D都市モデル
-statement::
-+
+[statement]
 --
 3D都市モデルとは別に、関連するデータを納める場合には、それぞれにメタデータを作成する。
 
@@ -578,8 +572,7 @@ h| 禁則文字 | 指定しない
 [%metadata]
 identifier:: /att/deliverable/4
 subject:: 3D都市モデル
-statement::
-+
+[statement]
 --
 同一メッシュ内の同じ地物の同じ属性に対して異なる原典資料が使用されている場合は、行を分ける。
 
@@ -593,8 +586,7 @@ statement::
 [%metadata]
 identifier:: /att/deliverable/5
 subject:: 3D都市モデル
-statement::
-+
+[statement]
 --
 一つの項目内で複数の値を列挙する場合は、その他の項目の値が同一である場合に限る。
 

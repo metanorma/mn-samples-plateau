@@ -27,14 +27,13 @@
 [%metadata]
 identifier:: /att/quality/5
 subject:: 3D都市モデル
-statement::
-+
---
+[statement]
+---
 製品仕様では、データの値の型が厳密に定義されている。そのため、原典資料により得られた情報と型が一致しない場合には、定義された型に合わせて修正する。
 
 * 日付の記述には、JIS X0301により定義された、拡張形式による暦日付の完全表記（YYYY-MM-DD）を使用する。
 +
----
+--
 正しい記述例：
 
 * 2020-04-01
@@ -50,7 +49,7 @@ statement::
 * 不明（不明な場合は、0001-01-01を入れる）
 
 * 令和2年4月（年月のみ分かる場合は、YYYY-MM-01とするため、2020-04-01とする）
----
+--
 
 * コード型の属性におけるコードの記述は、コードリストに示されたコードと一致させる。
 +
@@ -59,7 +58,7 @@ statement::
 * 単位付き数値型の属性の値を記述する際は、原典資料の単位と拡張製品仕様書において指定した単位を確認する。
 +
 原典資料で使用されている数値の単位と拡張製品仕様書で使用する単位が異なる場合は、数値の変換が必要となる。
---
+---
 ====
 
 [requirement]
@@ -68,8 +67,7 @@ statement::
 [%metadata]
 identifier:: /att/quality/6
 subject:: 3D都市モデル
-statement::
-+
+[statement]
 --
 幾何オブジェクトは存在するが、記述すべき属性が既存資料等に無い、あるいは記述すべき属性が既存資料等に存在するが、該当する場所に幾何オブジェクトが無い、等の不整合が発見された場合には、2.4において決定した対処方法に従う。
 --
@@ -81,8 +79,7 @@ statement::
 [%metadata]
 identifier:: /att/quality/7
 subject:: 3D都市モデル
-statement::
-+
+[statement]
 --
 建築物の属性uro:city（市区町村）は、必ず記述する。
 
@@ -98,8 +95,7 @@ statement::
 [%metadata]
 identifier:: /att/quality/8
 subject:: 3D都市モデル
-statement::
-+
+[statement]
 --
 複合的な用途を有する建築物について、それぞれの用途を記述したい場合にはbldg: usageを複数列挙する。
 
@@ -113,8 +109,7 @@ statement::
 [%metadata]
 identifier:: /att/quality/9
 subject:: 3D都市モデル
-statement::
-+
+[statement]
 --
 建築物以外の地物型にコード型の属性を追加する場合には、汎用属性セットにより、コードだけではなく、参照するコードリストの所在を対として追加する。
 
@@ -134,8 +129,7 @@ statement::
 [%metadata]
 identifier:: /att/quality/10
 subject:: 3D都市モデル
-statement::
-+
+[statement]
 --
 属性の値が不明である場合は、属性の型ごとに指定された不明を表す値を入力する。
 
@@ -183,8 +177,7 @@ h| 属性の型 h| 不明な場合の対応
 [%metadata]
 identifier:: /att/quality/11
 subject:: 3D都市モデル
-statement::
-+
+[statement]
 --
 原典資料におけるNULL値や不明値の取り扱いに注意する。
 
@@ -202,8 +195,7 @@ statement::
 [%metadata]
 identifier:: /att/quality/12
 subject:: 3D都市モデル
-statement::
-+
+[statement]
 --
 主題属性の作成に関する品質情報を、都市オブジェクト毎に記録する。
 
