@@ -100,11 +100,11 @@ https://www.geospatial.jp/iur/codelists
 
 出力したデータについても、Annex B及びAnnex Uに示す要件を満たさなければならない。以下に、本作業で生じうるエラーに対する留意事項を示す。
 
-[requirements]
+[requirement]
 .要素への接頭辞付与
 ====
 [%metadata]
-identifier:: /con/33
+identifier:: /att/quality/13
 subject:: 3D都市モデル
 statement::
 +
@@ -115,11 +115,11 @@ statement::
 --
 ====
 
-[requirements]
+[requirement]
 .`gml:id`の付与ルール
 ====
 [%metadata]
-identifier:: /con/34
+identifier:: /att/quality/14
 subject:: 3D都市モデル
 statement::
 +
@@ -165,11 +165,11 @@ gml:idの付与ルールに従う。
 --
 ====
 
-[requirements]
+[requirement]
 .XMLタグの出現順序
 ====
 [%metadata]
-identifier:: /con/35
+identifier:: /att/quality/15
 subject:: 3D都市モデル
 statement::
 +
@@ -194,11 +194,11 @@ XML文書におけるタグの出現順序は、XMLSchemaにおいて定めら�
 --
 ====
 
-[requirements]
+[requirement]
 .主題属性には「不明」値も含めて出力
 ====
 [%metadata]
-identifier:: /con/36
+identifier:: /att/quality/16
 subject:: 3D都市モデル
 statement::
 +
@@ -217,11 +217,11 @@ statement::
 --
 ====
 
-[requirements]
+[requirement]
 .作成対象外のタグは作成しない
 ====
 [%metadata]
-identifier:: /con/37
+identifier:: /att/quality/17
 subject:: 3D都市モデル
 statement::
 +
@@ -232,11 +232,11 @@ statement::
 --
 ====
 
-[requirements]
+[requirement]
 .単位付き数値には必ずuom属性を指定
 ====
 [%metadata]
-identifier:: /con/38
+identifier:: /att/quality/18
 subject:: 3D都市モデル
 statement::
 +
@@ -258,11 +258,11 @@ statement::
 --
 ====
 
-[requirements]
+[requirement]
 .コードリストとcodeSpaceの指定
 ====
 [%metadata]
-identifier:: /con/39
+identifier:: /att/quality/19
 subject:: 3D都市モデル
 statement::
 +
@@ -284,11 +284,11 @@ statement::
 --
 ====
 
-[requirements]
+[requirement]
 .コード型属性の汎用属性セット
 ====
 [%metadata]
-identifier:: /con/40
+identifier:: /att/quality/20
 subject:: 3D都市モデル
 statement::
 +
@@ -331,11 +331,11 @@ statement::
 --
 ====
 
-[requirements]
+[requirement]
 .データ出力時の変換エラーに注意
 ====
 [%metadata]
-identifier:: /con/41
+identifier:: /att/quality/21
 subject:: 3D都市モデル
 statement::
 +
@@ -358,11 +358,11 @@ statement::
 --
 ====
 
-[requirements]
+[requirement]
 .i-URの符号化仕様は相対パスで指定
 ====
 [%metadata]
-identifier:: /con/42
+identifier:: /att/quality/22
 subject:: 3D都市モデル
 statement::
 +
@@ -381,11 +381,11 @@ i-URの符号化仕様は相対パスによりschemaLocationを指定する。
 --
 ====
 
-[requirements]
+[requirement]
 .部分更新時のデータ漏れ・重複確認
 ====
 [%metadata]
-identifier:: /con/43
+identifier:: /att/quality/23
 subject:: 3D都市モデル
 statement::
 +
@@ -396,11 +396,11 @@ statement::
 --
 ====
 
-[requirements]
+[requirement]
 .変換プログラムのデフォルト値確認
 ====
 [%metadata]
-identifier:: /con/44
+identifier:: /att/quality/24
 subject:: 3D都市モデル
 statement::
 +
@@ -413,11 +413,11 @@ statement::
 --
 ====
 
-[requirements]
+[requirement]
 .LOD別の地物は同一ファイルに出力
 ====
 [%metadata]
-identifier:: /con/45
+identifier:: /att/quality/25
 subject:: 3D都市モデル
 statement::
 +
@@ -449,11 +449,11 @@ statement::
 
 標準製品仕様書の品質要求に追加又は変更を行った場合には、完全性、論理一貫性及び主題正確度について、出力したデータに対して必要となる品質評価を実施する。
 
-[requirements]
+[requirement]
 .全ての都市オブジェクトにデータ品質属性を付与
 ====
 [%metadata]
-identifier:: /con/46
+identifier:: /att/quality/26
 subject:: 3D都市モデル
 statement::
 +
@@ -472,11 +472,11 @@ statement::
 --
 ====
 
-[requirements]
+[requirement]
 .公共測量成果を用いた場合の品質属性作成
 ====
 [%metadata]
-identifier:: /con/47
+identifier:: /att/quality/27
 subject:: 3D都市モデル
 statement::
 +
