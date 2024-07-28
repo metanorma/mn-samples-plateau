@@ -5,13 +5,13 @@
 
 3D都市モデルのメタデータとして、以下の四種類を作成する。それぞれ作成手順や内容を示す。
 
-** 　JMP2.0形式のメタデータ（5.3.2）
+* JMP2.0形式のメタデータ（5.3.2）
 
-** 　md形式のREADME（5.3.3）
+* md形式のREADME（5.3.3）
 
-** 　原典資料リスト（5.3.4）
+* 原典資料リスト（5.3.4）
 
-** 　索引図（5.3.5）
+* 索引図（5.3.5）
 
 [[toc5_03_01]]
 ==== メタデータの作成単位
@@ -26,7 +26,7 @@
 .拡張地物のメタデータ一括作成
 ====
 [%metadata]
-identifier:: /con/48
+identifier:: /att/deliverable/1
 subject:: 3D都市モデル
 statement::
 +
@@ -39,7 +39,7 @@ statement::
 .3D都市モデルのメタデータ分割ルール
 ====
 [%metadata]
-identifier:: /con/49
+identifier:: /att/deliverable/2
 subject:: 3D都市モデル
 statement::
 +
@@ -66,7 +66,7 @@ statement::
 .3D都市モデル関連データのメタデータ作成ルール
 ====
 [%metadata]
-identifier:: /con/50
+identifier:: /att/deliverable/3
 subject:: 3D都市モデル
 statement::
 +
@@ -576,7 +576,7 @@ h| 禁則文字 | 指定しない
 .異なる原典資料の地物属性は行を分ける
 ====
 [%metadata]
-identifier:: /con/51
+identifier:: /att/deliverable/4
 subject:: 3D都市モデル
 statement::
 +
@@ -591,7 +591,7 @@ statement::
 .複数値の列挙は、他項目が同一の場合のみ
 ====
 [%metadata]
-identifier:: /con/52
+identifier:: /att/deliverable/5
 subject:: 3D都市モデル
 statement::
 +

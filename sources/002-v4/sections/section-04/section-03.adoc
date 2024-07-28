@@ -25,7 +25,7 @@
 .データ型の整合性
 ====
 [%metadata]
-identifier:: /con/25
+identifier:: /att/quality/5
 subject:: 3D都市モデル
 statement::
 +
@@ -66,7 +66,7 @@ statement::
 .不整合の対処方法
 ====
 [%metadata]
-identifier:: /con/26
+identifier:: /att/quality/6
 subject:: 3D都市モデル
 statement::
 +
@@ -79,7 +79,7 @@ statement::
 .建築物の属性「uro:city」の必須記述
 ====
 [%metadata]
-identifier:: /con/27
+identifier:: /att/quality/7
 subject:: 3D都市モデル
 statement::
 +
@@ -96,7 +96,7 @@ statement::
 .建築物の用途列挙
 ====
 [%metadata]
-identifier:: /con/28
+identifier:: /att/quality/8
 subject:: 3D都市モデル
 statement::
 +
@@ -111,7 +111,7 @@ statement::
 .コード型属性の追加
 ====
 [%metadata]
-identifier:: /con/29
+identifier:: /att/quality/9
 subject:: 3D都市モデル
 statement::
 +
@@ -126,13 +126,13 @@ statement::
 
 ** コードに対応するコードリストを必ず作成する。
 --
-==== 
+====
 
 [requirement]
 .不明値の指定方法
 ====
 [%metadata]
-identifier:: /con/30
+identifier:: /att/quality/10
 subject:: 3D都市モデル
 statement::
 +
@@ -181,7 +181,7 @@ h| 属性の型 h| 不明な場合の対応
 .NULL値と不明値の変換
 ====
 [%metadata]
-identifier:: /con/31
+identifier:: /att/quality/11
 subject:: 3D都市モデル
 statement::
 +
@@ -200,7 +200,7 @@ statement::
 .主題属性の品質記録
 ====
 [%metadata]
-identifier:: /con/32
+identifier:: /att/quality/12
 subject:: 3D都市モデル
 statement::
 +
@@ -209,7 +209,7 @@ statement::
 
 全ての都市オブジェクトは、データの品質に関する情報を記録するデータ品質属性（uro:DataQualityAttribute）を作成しなければならない。このデータ品質属性は、主題属性に関する品質として以下の属性をもつ。
 
-** 主題属性に使用した原典資料の種類
+* 主題属性に使用した原典資料の種類
 
 都市オブジェクトごとに、これらの情報を記録すること。
 --
