@@ -1287,40 +1287,20 @@ tran:Roadのコードリスト参照
 
 ====== Railway_function.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | Railway_function.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Railway_function.xml
-h| コード ^h| 説明
-| 01 | 普通鉄道
-| 02 | 地下鉄
-| 03 | 路面鉄道
-| 04 | モノレール
-| 05 | 特殊鉄道
-| 06 | 索道
-
-|===
+[gml_dictionary,iur/codelists/3.1/Railway_function.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<gsi_ops,annex=7,付録７ 公共測量標準図式>>
 
 ====== TrafficArea_function.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | TrafficArea_function.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/TrafficArea_function.xml
-h| コード ^h| 説明
-| 8000 | 軌道中心線
-| 8100 | 軌道
-| 8110 | 軌きょう
-| 8111 | 軌間
-| 8112 | レール
-| 8120 | 道床
-
-|===
+[gml_dictionary,iur/codelists/3.1/TrafficArea_function.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<jis_e_1001>>
@@ -1330,153 +1310,59 @@ h| コード ^h| 説明
 
 ====== RailwayRouteAttribute_operatorType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | RailwayRouteAttribute_operatorType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/RailwayRouteAttribute_operatorType.xml
-h| コード ^h| 説明
-| 1 | 新幹線
-| 2 | JR在来線
-| 3 | 公営鉄道
-| 4 | 民間鉄道
-| 5 | 第三セクター
-
-|===
+[gml_dictionary,iur/codelists/3.1/RailwayRouteAttribute_operatorType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<nlftp>>
 
 ====== RailwayRouteAttribute_railwayType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | RailwayRouteAttribute_railwayType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/RailwayRouteAttribute_railwayType.xml
-h| コード ^h| 説明
-| 11 | 普通鉄道JR
-| 12 | 普通鉄道
-| 13 | 鋼索鉄道
-| 14 | 懸垂式鉄道
-| 15 | 跨座式鉄道
-| 16 | 案内軌条式鉄道
-| 17 | 無軌条鉄道
-| 21 | 軌道
-| 22 | 懸垂式モノレール
-| 23 | 跨座式モノレール
-| 24 | 案内軌条式
-| 25 | 浮上式
-
-|===
-
+[gml_dictionary,iur/codelists/3.1/RailwayRouteAttribute_railwayType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
+Road_lodType.xml
 [.source]
 <<nlftp>>
 
 ====== RailwayTrackAttribute_directionType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | RailwayTrackAttribute_directionType.xml
+[gml_dictionary,iur/codelists/3.1/RailwayTrackAttribute_directionType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/RailwayTrackAttribute_directionType.xml
-h| コード ^h| 説明
-| 01 | 上下線一体
-| 02 | 上り線
-| 03 | 下り線
-
-|===
 
 ====== RailwayTrackAttribute_trackType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | RailwayTrackAttribute_trackType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/RailwayTrackAttribute_trackType.xml
-h| コード ^h| 説明
-| 01 | 本線
-| 02 | 副本線
-| 03 | 側線
-
-|===
+[gml_dictionary,iur/codelists/3.1/RailwayTrackAttribute_trackType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== RailwayTrackAttribute_alignmentType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | RailwayTrackAttribute_alignmentType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/RailwayTrackAttribute_alignmentType.xml
-h| コード ^h| 説明
-| 01 | 直線
-| 02 | 円曲線
-| 03 | 緩和曲線
-| 04 | 中間緩和曲線
-| 05 | 腹心曲線
-
-|===
+[gml_dictionary,iur/codelists/3.1/RailwayTrackAttribute_alignmentType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== ControlPoint_function.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | ControlPoint_function.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/ControlPoint_function.xml
-h| コード ^h| 説明
-| 01 | 円曲線
-| 02 | 緩和曲線
-| 03 | 中間緩和曲線
-| 04 | 腹心曲線
-| 05 | 勾配
-| 06 | 縦曲線
-
-|===
+[gml_dictionary,iur/codelists/3.1/ControlPoint_function.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml
-h| コード h| 説明
-| 000 | 公共測量成果
-| 101 | （公共測量ではない）現地測量の測量成果
-| 102 | （公共測量ではない）UAV写真測量の測量成果
-| 103 | （公共測量ではない）空中写真測量の測量成果
-| 104 | （公共測量ではない）既成図数値化の測量成果
-| 105 | （公共測量ではない）修正測量の測量成果
-| 106 | （公共測量ではない）写真地図作成の測量成果
-| 107 | （公共測量ではない）地図編集の測量成果
-| 108 | （公共測量ではない）地上レーザ測量の測量成果
-| 109 | （公共測量ではない）UAV写真点群測量の測量成果
-| 110 | （公共測量ではない）UAVレーザ測量の測量成果
-| 111 | （公共測量ではない）車載写真レーザ測量の測量成果
-| 112 | （公共測量ではない）航空レーザ測量の測量成果
-| 113 | （公共測量ではない）航空レーザ測深測量の測量成果
-| 114 | （公共測量ではない）路線測量の測量成果
-| 115 | （公共測量ではない）河川測量の測量成果
-| 116 | （公共測量ではない）用地測量の測量成果
-| 117 | （公共測量ではない）その他の応用測量の測量成果
-| 118 | （公共測量ではない）LidarSLAM計測の測量成果
-| 119 | （公共測量ではない）高密度航空レーザ測量の測量成果
-| 120 | （公共測量ではない）写真点群測量の測量成果
-| 121 | （公共測量ではない）三次元数値図化の測量成果
-| 201 | 都市計画基礎調査
-| 202 | 都市計画図書
-| 300 | 台帳
-| 301 | 道路台帳
-| 400 | その他のGISデータ
-| 500 | BIMモデル、CADデータ、設計図、完成図、一般図（平面図、配置図、断面図等）
-| 700 | その他の資料
-| 801 | 現地調査
-| 803 | GISデータ演算
-| 901 | 推定
-| 999 | 未作成
-
-|===
+[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<gsi_ops>>
@@ -1490,31 +1376,10 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml
-h| コード h| 説明
-| 000 | 公共測量成果
-| 022 | 基盤地図情報
-| 023 | 数値地形図データ
-| 100 | 公共測量成果ではない測量成果
-| 201 | 都市計画基礎調査
-| 202 | 都市計画図書
-| 300 | 台帳
-| 301 | 道路台帳
-| 400 | その他のGISデータ
-| 500 | BIMモデル、CADデータ、設計図、完成図、一般図（平面図、配置図、断面図等）
-| 600 | 統計データ
-| 701 | 建築計画概要書
-| 700 | その他の資料
-| 801 | 現地調査
-| 802 | 写真判読
-| 803 | GISデータ演算
-| 999 | 未作成
-
-|===
+[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<gsi_ops>>
@@ -1528,82 +1393,31 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml
-h| コード h| 説明
-| 1 | 空中写真
-| 2 | 衛星写真
-| 3 | 車載写真レーザ測量システムにより撮影した写真
-| 4 | 手持ちカメラにより撮影した写真
-| 5 | 疑似テクスチャ
-| 99 | 未作成
-
-|===
+[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== Railway_lodType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | Railway_lodType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Railway_lodType.xml
-h| コード ^h| 説明
-| 3.0 | 軌道中心線（線）、軌間（面）及び道床（面）を取得する。横断方向に一律の高さとする。
-| 3.1 | 軌道中心線（線）、軌間（面）、レール、道床（面）及び交通補助領域を取得する。横断方向に15㎝以上の高さの差を取得する。
-| 3.2 | 軌道中心線（線）、軌間（面）、レール、道床（面）及び交通補助領域を取得する。横断方向に15㎝未満の高さの差を取得する。
-
-|===
+[gml_dictionary,iur/codelists/3.1/Railway_lodType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | PublicSurveyDataQualityAttribute_srcScale.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml
-h| コード h| 説明
-| 1 | 地図情報レベル2500
-| 2 | 地図情報レベル1000
-| 3 | 地図情報レベル500
-
-|===
+[gml_dictionary,iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
-h| コード h| 説明
-| 001 | 現地測量の測量成果
-| 002 | UAV写真測量の測量成果
-| 003 | 空中写真測量の測量成果
-| 004 | 既成図数値化の測量成果
-| 005 | 修正測量の測量成果
-| 006 | 写真地図作成の測量成果
-| 007 | 地図編集の測量成果
-| 008 | 地上レーザ測量の測量成果
-| 009 | UAV写真点群測量の測量成果
-| 010 | UAVレーザ測量の測量成果
-| 011 | 車載写真レーザ測量の測量成果
-| 012 | 航空レーザ測量の測量成果
-| 013 | 航空レーザ測深測量の測量成果
-| 014 | 路線測量の測量成果
-| 015 | 河川測量の測量成果
-| 016 | 用地測量の測量成果
-| 017 | その他の応用測量の測量成果
-| 018 | LidarSLAM計測の測量成果
-| 019 | 高密度航空レーザ測量の測量成果
-| 020 | 写真点群測量の測量成果
-| 021 | 三次元数値図化の測量成果
-| 022 | 基盤地図情報
-| 023 | 数値地形図データ
-
-|===
+[gml_dictionary,iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<gsi_ops>>
@@ -1613,5 +1427,3 @@ h| コード h| 説明
 
 [.source]
 <<plateau_010>>
-
-

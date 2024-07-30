@@ -279,105 +279,27 @@ h| (uro:publicSurveyDataQualityAttribute) | uro:PublicSurveyDataQualityAttribute
 
 ====== Common_landUseType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | Common_landUseType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Common_landUseType.xml
-h| コード h| 説明
-| 201 | 田（水田）
-| 202 | 畑（畑、樹園地、採草地、養鶏（牛・豚）場）
-| 203 | 山林（樹林地）
-| 204 | 水面（河川水面、湖沼、ため池、用水路、濠、運河水面）
-| 205 | その他自然地（原野・牧野、荒れ地（耕作放棄地等自然的状況のもの）、低湿地、河川敷・河原、海浜、湖岸）
-| 211 | 住宅用地（住宅、共同住宅、店舗等併用住宅、店舗等併用共同住宅、作業所併用住宅）
-| 212 | 商業用地（業務施設、商業施設、宿泊施設、商業系複合施設）
-| 213 | 工業用地（工場）
-| 219 | 農林漁業施設用地（農林漁業用施設）
-| 214 | 公益施設用地（官公庁施設、文教厚生施設、供給処理施設）
-| 215 | 道路用地（道路、駅前広場、私有地内に存在する沿道用途の「私道」または、私有地の一部分であるものの公共の通行に供されている土地の部分）
-| 216 | 交通施設用地（運輸倉庫施設）
-| 217 | 公共空地（公園・緑地、広場、運動場、墓園）
-| 218 | その他公的施設用地（防衛施設用地）
-| 220 | その他①（ゴルフ場）
-| 221 | その他②（太陽光発電のシステムを直接整備している土地）
-| 222 | その他③（平面駐車場）
-| 223 | その他④（その他①～③以外の用途に供されている都市的土地利用（建物跡地、資材置場、改変工事中の土地）、法面（道路、造成地等の主利用に含まれない法面））
-| 224 | 低未利用土地（用途に供されていない空地、空家・空き店舗・空施設の存する土地等）
-| 231 | 不明
-| 251 | 可住地
-| 252 | 非可住地
-| 260 | 農地（田、畑の区分がない）
-| 261 | 宅地（住宅用地、商業用地等の区分が無い）
-| 262 | 道路・鉄軌道敷（道路と交通施設用地が混在）
-| 263 | 空地（その他①～④の区分が無い）
-
-|===
+[gml_dictionary,iur/codelists/3.1/Common_landUseType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [[toc4_08_04_02]]
 ===== Urban Object（i-UR）
 
 ====== Common_ownerType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | Common_ownerType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Common_ownerType.xml
-h| コード h| 説明
-| 1010 | 国
-| 1020 | 都道府県
-| 1030 | 市区町村
-| 1040 | 公社等
-| 9000 | 未調査
-| 9010 | 調査対象外
-| 9020 | 不明
-
-|===
+[gml_dictionary,iur/codelists/3.1/Common_ownerType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml
-h| コード h| 説明
-| 000 | 公共測量成果
-| 101 | （公共測量ではない）現地測量の測量成果
-| 102 | （公共測量ではない）UAV写真測量の測量成果
-| 103 | （公共測量ではない）空中写真測量の測量成果
-| 104 | （公共測量ではない）既成図数値化の測量成果
-| 105 | （公共測量ではない）修正測量の測量成果
-| 106 | （公共測量ではない）写真地図作成の測量成果
-| 107 | （公共測量ではない）地図編集の測量成果
-| 108 | （公共測量ではない）地上レーザ測量の測量成果
-| 109 | （公共測量ではない）UAV写真点群測量の測量成果
-| 110 | （公共測量ではない）UAVレーザ測量の測量成果
-| 111 | （公共測量ではない）車載写真レーザ測量の測量成果
-| 112 | （公共測量ではない）航空レーザ測量の測量成果
-| 113 | （公共測量ではない）航空レーザ測深測量の測量成果
-| 114 | （公共測量ではない）路線測量の測量成果
-| 115 | （公共測量ではない）河川測量の測量成果
-| 116 | （公共測量ではない）用地測量の測量成果
-| 117 | （公共測量ではない）その他の応用測量の測量成果
-| 118 | （公共測量ではない）LidarSLAM計測の測量成果
-| 119 | （公共測量ではない）高密度航空レーザ測量の測量成果
-| 120 | （公共測量ではない）写真点群測量の測量成果
-| 121 | （公共測量ではない）三次元数値図化の測量成果
-| 201 | 都市計画基礎調査
-| 202 | 都市計画図書
-| 300 | 台帳（分類しない）
-| 301 | 道路台帳
-| 400 | その他のGISデータ
-| 500 | BIMモデル、CADデータ、設計図、完成図、一般図（平面図、配置図、断面図等）
-| 700 | その他の資料
-| 801 | 現地調査
-| 803 | GISデータ演算
-| 901 | 推定
-| 999 | 未作成
-
-|===
+[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<gsi_ops>>
@@ -391,31 +313,10 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml
-h| コード h| 説明
-| 000 | 公共測量成果
-| 022 | 基盤地図情報
-| 023 | 数値地形図データ
-| 100 | 公共測量成果ではない測量成果
-| 201 | 都市計画基礎調査
-| 202 | 都市計画図書
-| 300 | 台帳
-| 301 | 道路台帳
-| 400 | その他のGISデータ
-| 500 | BIMモデル、CADデータ、設計図、完成図、一般図（平面図、配置図、断面図等）
-| 600 | 統計データ
-| 701 | 建築計画概要書
-| 700 | その他の資料
-| 801 | 現地調査
-| 802 | 写真判読
-| 803 | GISデータ演算
-| 999 | 未作成
-
-|===
+[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<gsi_ops>>
@@ -429,18 +330,8 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml
-h| コード h| 説明
-| 1 | 空中写真
-| 2 | 衛星写真
-| 3 | 車載写真レーザ測量システムにより撮影した写真
-| 4 | 手持ちカメラにより撮影した写真
-| 5 | 疑似テクスチャ
-| 99 | 未作成
-
-|===
+[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
