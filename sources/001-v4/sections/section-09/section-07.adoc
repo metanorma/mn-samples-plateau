@@ -225,18 +225,11 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ===== ImplicitGeometry_mimeType.xml
 
-[cols="a,a"]
-|===
-| ファイル名 | ImplicitGeometry_mimeType.xml
+[gml_dictionary,iur/codelists/3.1/ImplicitGeometry_mimeType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ImplicitGeometry_mimeType.xml
-h| コード h| 説明
-| `model/gltf+json` | `.gltf`
-| `model/x3d+xml` | `.x3db`, `.x3d`
-| `model/x3+vrml` | `.x3dv`, `.x3dvz`
-| `model/obj` | `.obj`
-
-|===
 
 ===== ImplicitGeometryにより地下埋設物の形状を表現する場合の関連役割
 

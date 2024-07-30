@@ -238,198 +238,10 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== Common_dmCode.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | Common_dmCode.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Common_dmCode.xml
-h| コード h| 説明
-| 1101 | 都府県界
-| 1102 | 北海道の支庁界
-| 1103 | 郡市・東京都の区界
-| 1104 | 町村・指定都市の区界
-| 1106 | 大字・町（丁）界
-| 1110 | 所属界
-| 2101 | 真幅道路
-| 2103 | 徒歩道
-| 2106 | 庭園路
-| 2109 | 建設中の道路
-| 2203 | 道路橋
-| 2205 | 徒橋
-| 2211 | 横断歩道橋
-| 2213 | 歩道
-| 2214 | 石段
-| 2215 | 地下街・地下鉄等出入口
-| 2219 | 道路のトンネル
-| 2226 | 分離帯
-| 2228 | 道路の雪覆い等
-| 2238 | 並木
-| 2301 | 普通鉄道
-| 2303 | 路面電車
-| 2305 | 特殊鉄道
-| 2306 | 索道
-| 2309 | 建設中の鉄道
-| 2401 | 鉄道橋
-| 2411 | 跨線橋
-| 2419 | 鉄道のトンネル
-| 2421 | 停留所
-| 2424 | プラットホーム
-| 2428 | 鉄道の雪覆い等
-| 3000 | 分類しない建物
-| 3001 | 普通建物
-| 3002 | 堅ろう建物
-| 3003 | 普通無壁舎
-| 3004 | 堅ろう無壁舎
-| 3401 | 門
-| 3402 | 屋門
-| 4201 | 墓碑
-| 4202 | 記念碑
-| 4203 | 立像
-| 4204 | 路傍祠
-| 4205 | 灯ろう
-| 4207 | 鳥居
-| 4208 | 自然災害伝承碑
-| 4219 | 坑口
-| 4221 | 独立樹　（広葉樹）
-| 4222 | 独立樹　（針葉樹）
-| 4225 | 油井・ガス井
-| 4228 | 起重機
-| 4231 | タンク
-| 4234 | 煙突
-| 4235 | 高塔
-| 4236 | 電波塔
-| 4241 | 灯台
-| 4243 | 灯標
-| 4251 | 水位観測所
-| 4261 | 輸送管　（地上）
-| 4262 | 輸送管　（空間）
-| 4265 | 送電線
-| 5101 | 水がい線（河川）(湖池等)（海岸線）
-| 5102 | 一条河川
-| 5299 | 桟橋（鉄、ｺﾝｸﾘｰﾄ）
-| 5203 | 桟橋（木製・浮桟橋）
-| 5221 | 渡船発着所
-| 5226 | 滝
-| 5227 | せき
-| 5228 | 水門
-| 5232 | 透過水制
-| 5239 | 敷石斜坂
-| 5241 | 流水方向
-| 6101 | 人工斜面
-| 6102 | 土堤等
-| 6110 | 被覆
-| 6130 | かき
-| 6140 | へい
-| 6201 | 区域界
-| 6212 | 駐車場
-| 6214 | 園庭
-| 6215 | 墓地
-| 6216 | 材料置場
-| 6217 | 太陽光発電設備
-| 6221 | 噴火口・噴気口
-| 6222 | 温泉・鉱泉
-| 6301 | 植生界
-| 6302 | 耕地界
-| 6311 | 田
-| 6313 | 畑
-| 6314 | さとうきび畑
-| 6315 | パイナップル畑
-| 6317 | 桑畑
-| 6318 | 茶畑
-| 6319 | 果樹園
-| 6321 | その他の樹木畑
-| 6323 | 芝地
-| 6331 | 広葉樹林
-| 6332 | 針葉樹林
-| 6333 | 竹林
-| 6334 | 荒地
-| 6335 | はい松地
-| 6336 | しの地（笹地）
-| 6337 | やし科樹林
-| 6338 | 湿地
-| 6340 | 砂れき地
-| 7101 | 等高線（計曲線）
-| 7102 | 等高線（主曲線）
-| 7103 | 等高線（補助曲線）
-| 7105 | 凹地（計曲線）
-| 7106 | 凹地（主曲線）
-| 7107 | 凹地（補助曲線）
-| 7199 | 凹地（矢印）
-| 7201 | 土がけ
-| 7202 | 雨裂
-| 7206 | 洞口
-| 7211 | 岩がけ
-| 7212 | 露岩
-| 7213 | 散岩
-| 7214 | さんご礁
-| 7301 | 三角点
-| 7302 | 水準点
-| 7303 | 多角点等
-| 7304 | 公共基準点（三角点）
-| 7305 | 公共基準点（水準点）
-| 7308 | 電子基準点
-| 7311 | 標石を有しない標高点
-| 7312 | 図化機測定による標高点
-| 3503 | 官公署
-| 3504 | 裁判所
-| 3505 | 検察庁
-| 3507 | 税務署
-| 3509 | 郵便局
-| 3510 | 森林管理署
-| 3515 | 交番・駐在所
-| 3516 | 消防署
-| 3517 | 職業安定所
-| 3519 | 役場支所及び出張所
-| 3521 | 神社
-| 3522 | 寺院
-| 3523 | キリスト教会
-| 3524 | 学校
-| 3525 | 幼稚園・保育園
-| 3526 | 公会堂・公民館
-| 3530 | 老人ホーム
-| 3531 | 保健所
-| 3532 | 病院
-| 3534 | 銀行
-| 3536 | 協同組合
-| 3545 | 倉庫
-| 3546 | 火薬庫
-| 3548 | 工場
-| 3550 | 変電所
-| 3556 | 揚排水ポンプ場
-| 3560 | ガソリンスタンド
-| 8100 | 注記（未分類）
-| 8110 | 市・東京都の区
-| 8111 | 町・村・指定都市の区
-| 8112 | 市町村の飛び地
-| 8113 | 大区域
-| 8115 | 大字・町・丁目
-| 8116 | 小字・丁目
-| 8117 | その他の地名（大）
-| 8118 | その他の地名（中）
-| 8119 | その他の地名（小）
-| 8121 | 道路の路線名
-| 8122 | 道路施設、坂、峠、インターチェンジ
-| 8123 | 鉄道の路線名
-| 8124 | 鉄道施設、駅、操車場、信号所
-| 8125 | 橋
-| 8126 | トンネル
-| 8131 | 建物の名称
-| 8134 | 建物の付属物
-| 8140 | マンホール
-| 8141 | 電柱
-| 8142 | その他小物体
-| 8151 | 水部
-| 8152 | 水部施設
-| 8153 | 地下水部
-| 8161 | 法面、構囲
-| 8162 | 諸地、場地
-| 8163 | 植生
-| 8171 | 山地
-| 8173 | 標高注記
-| 8181 | 説明注記
-| 8199 | 指示点
-
-|===
+[gml_dictionary,iur/codelists/3.1/Common_dmCode.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<gsi_ops,annex=7,付録７ 公共測量標準図式>>
@@ -437,29 +249,11 @@ h| コード h| 説明
 
 ====== Common_shapeType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | Common_shapeType.xml
+[gml_dictionary,iur/codelists/3.1/Common_shapeType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Common_shapeType.xml
-h| コード h| 説明
-| 0 | 非区分（下記に該当しない全データ）
-| 11 | 射影部の上端
-| 12 | 射影部の下端
-| 21 | 高欄
-| 22 | 橋脚
-| 23 | 親柱
-| 26 | ガードレール
-| 27 | ガードパイプ
-| 31 | 中庭線
-| 32 | 棟割線
-| 33 | 階層線
-| 34 | 外付階段
-| 35 | ポーチ・ひさし
-| 46 | 両側敷地のへい
-| 47 | 輸送管（空間）
-
-|===
 
 [.source]
 <<gsi_ops,annex=7,付録７ 公共測量標準図式>>
@@ -467,36 +261,17 @@ h| コード h| 説明
 
 ====== Common_MapLevel.xml
 
-[cols="37a,88a"]
-|===
-| ファイル名 | Common_MapLevel.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Common_MapLevel.xml
-h| 値 h| 説明
-| 500 | 地図情報レベル500
-| 1000 | 地図情報レベル1000
-| 2500 | 地図情報レベル2500
-| 5000 | 地図情報レベル5000
-| 10000 | 地図情報レベル10000
-| 25000 | 地図情報レベル25000
-
-|===
+[gml_dictionary,iur/codelists/3.1/Common_MapLevel.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== Common_geometryType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | Common_geometryType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Common_geometryType.xml
-h| コード h| 説明
-| E1 | 面
-| E2 | 線
-| E5 | 点
-| E6 | 方向
-| E7 | 注記
-
-|===
+[gml_dictionary,iur/codelists/3.1/Common_geometryType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<gsi_ops,annex=7,付録７ 公共測量標準図式>>
@@ -504,21 +279,10 @@ h| コード h| 説明
 
 ====== DmElement_dataType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | DmElement_dataType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DmElement_dataType.xml
-h| コード h| 説明
-| 0 | 実データなし（地形表面の高さを計測したもの）
-| 1 | 実データなし（人口構造物等の地形表面以外の高さを計測したもの）
-| 2 | 二次元座標レコード
-| 3 | 三次元座標レコード（地形表面の高さを計測したもの）
-| 4 | 注記レコード
-| 5 | 属性レコード
-| 6 | 三次元座標レコード（人口構造物等の地形表面以外の高さを計測したもの）
-
-|===
+[gml_dictionary,iur/codelists/3.1/DmElement_dataType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<gsi_ops,annex=7,付録７ 公共測量標準図式>>
@@ -526,17 +290,10 @@ h| コード h| 説明
 
 ====== DmElement_annotationType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | DmElement_annotationType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DmElement_annotationType.xml
-h| コード h| 説明
-| 0 | 区分しない
-| 1 | 漢字
-| 2 | 英数カナ文字
-
-|===
+[gml_dictionary,iur/codelists/3.1/DmElement_annotationType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<gsi_ops,annex=7,付録７ 公共測量標準図式>>
@@ -568,13 +325,11 @@ h| コード h| 説明（上位桁：数値化区分） h| 説明（下位桁：
 
 ====== DmElement_breakType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | DmElement_breakType.xml
+[gml_dictionary,iur/codelists/3.1/DmElement_breakType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DmElement_breakType.xml
-h| コード h| 説明
-| 0 | 間断しない
 | 1～9 | 間断する（数値は優先順位）
 
 |===
@@ -585,13 +340,11 @@ h| コード h| 説明
 
 ====== DmElement_dislocationType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | DmElement_dislocationType.xml
+[gml_dictionary,iur/codelists/3.1/DmElement_dislocationType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DmElement_dislocationType.xml
-h| コード h| 説明
-| 0 | 転位しない
 | 1～9 | 座標列の方向に対して右側に転位する
 | -1～-9 | 座標列の方向に対して左側に転位する
 
