@@ -5054,94 +5054,30 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== Building_class.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | Building_class.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Building_class.xml
-h| コード h| 説明
-| 3001 | 普通建物
-| 3002 | 堅ろう建物
-| 3003 | 普通無壁舎
-| 3004 | 堅ろう無壁舎
-| 3000 | 分類しない建物
-
-|===
+[gml_dictionary,iur/codelists/3.1/Building_class.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<gsi_map_level_dps>>
 
 ====== Building_usage.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | Building_usage.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Building_usage.xml
-h| コード h| 説明
-| 401 | 業務施設
-| 402 | 商業施設
-| 403 | 宿泊施設
-| 404 | 商業系複合施設
-| 411 | 住宅
-| 412 | 共同住宅
-| 413 | 店舗等併用住宅
-| 414 | 店舗等併用共同住宅
-| 415 | 作業所併用住宅
-| 421 | 官公庁施設
-| 422 | 文教厚生施設
-| 431 | 運輸倉庫施設
-| 441 | 工場
-| 451 | 農林漁業用施設
-| 452 | 供給処理施設
-| 453 | 防衛施設
-| 454 | その他
-| 461 | 不明
-
-|===
+[gml_dictionary,iur/codelists/3.1/Building_usage.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<mlit_foundation_reqs>>
 
 ====== Building_roofType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | Building_roofType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Building_roofType.xml
-h| コード h| 説明
-| 1 | 切妻屋根
-| 2 | 寄棟屋根
-| 3 | 方形屋根
-| 4 | 陸屋根
-| 5 | 片流れ屋根
-| 6 | 袴腰屋根/半切妻屋根
-| 7 | 入母屋屋根
-| 8 | 錣（しころ）屋根
-| 9 | マンサード屋根
-| 10 | 越屋根
-| 11 | 招き屋根
-| 12 | 差し掛け屋根
-| 13 | バタフライ屋根
-| 14 | 鋸屋根
-| 15 | 六柱屋根
-| 16 | 八柱屋根
-| 17 | M型屋根
-| 18 | 下屋付招き屋根
-| 19 | 棟違い屋根
-| 20 | 乗り越し屋根
-| 21 | 腰折れ屋根
-| 22 | 隅切屋根
-| 23 | アーチ屋根
-| 24 | ドーム屋根
-| 25 | シェル屋根
-| 26 | カテナリー屋根
-| 27 | 膜構造
-| 28 | その他
-| 9020 | 不明
-
-|===
+[gml_dictionary,iur/codelists/3.1/Building_roofType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<citygml_20,annex="C.1">>
@@ -5152,63 +5088,20 @@ h| コード h| 説明
 
 ====== BuildingInstallation_class.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | BuildingInstallation_class.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/BuildingInstallation_class.xml
-h| コード h| 説明
-| 1000 | 外観の特徴
-| 1020 | 廃棄物管理
-| 1030 | 維持管理
-| 1040 | 通信設備
-| 1050 | 保安施設
-| 1060 | その他
-
-|===
+[gml_dictionary,iur/codelists/3.1/BuildingInstallation_class.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<citygml_20,annex="C.1">>
 
 ====== BuildingInstallation_function.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | BuildingInstallation_function.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/BuildingInstallation_function.xml
-h| コード h| 説明
-| 1000 | バルコニー
-| 1001 | ポーチ
-| 1002 | テラス
-| 1003 | エントランスホール
-| 1010 | 温室
-| 1011 | カーポート
-| 1012 | 物置
-| 1020 | アーケード
-| 1021 | 回廊
-| 1030 | 煙突（建築物の一部としての）
-| 1031 | ダクト
-| 1032 | 換気口
-| 1033 | アンテナ
-| 1040 | 塔（建築物の一部としての）
-| 1041 | 塔屋
-| 1050 | 柱・円柱
-| 1051 | 看板
-| 1052 | 屋根飾り
-| 1053 | ドーマー
-| 1054 | 出窓
-| 1055 | パネル
-| 1060 | 階段
-| 1061 | 手すり
-| 1062 | 外階段・歩道の庇
-| 1063 | スロープ
-| 1064 | エスカレータ
-| 1065 | エレベータ
-| 1066 | 動く歩道
-| 1070 | その他
-
-|===
+[gml_dictionary,iur/codelists/3.1/BuildingInstallation_function.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<citygml_20,annex="C.1">>
@@ -5383,24 +5276,10 @@ h| コード 2+h| 説明
 
 ====== IntBuildingInstallation_class.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | IntBuildingInstallation_class.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/IntBuildingInstallation_class.xml
-h| コード h| 説明
-| BE_01 | IfcBeam
-| BE_02 | IfcColumn
-| BE_05 | IfcPlate
-| BE_06 | IfcRailing
-| BE_07 | IfcRamp
-| BE_08 | IfcRampFlight
-| BE_11 | IfcStair
-| BE_12 | IfcStairFlight
-| BE_16 | IfcBuildingElementProxy
-| BE_17 | IfcTransportElement
-
-|===
+[gml_dictionary,iur/codelists/3.1/IntBuildingInstallation_class.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<ifc_2x3_cv>>
@@ -5556,294 +5435,58 @@ h| コード 2+h| 説明
 
 ====== BuildingDetailAttribute_detailedUsage.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | BuildingDetailAttribute_detailedUsage.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/BuildingDetailAttribute_detailedUsage.xml
-h| コード h| 説明
-| 401 | 業務施設
-| 401101 | 事務所
-| 401102 | 銀行
-| 401103 | 会議場・展示場
-| 401104 | 郵便局
-| 401105 | 電話局
-| 401106 | 民間研究所
-| 401107 | 研修所
-| 402 | 商業施設
-| 4021 | 商業施設1（百貨店、小売店、卸売店、ガソリンスタンド 等）
-| 402101 | 百貨店
-| 402102 | 小売店
-| 402103 | 卸売店
-| 402104 | ガソリンスタンド
-| 4022 | 商業施設2（食堂、喫茶店、弁当屋・宅配 等）
-| 402201 | 食堂
-| 402202 | 喫茶店
-| 402203 | 弁当屋・宅配
-| 4023 | 商業施設3（理容店、美容院、レンタル業、宴会場、結婚式場、習い事教室、予備校、自動車教習所、住宅展示場、その他のサービス施設）
-| 402301 | 理容店
-| 402302 | 美容院
-| 402303 | レンタル業
-| 402304 | 宴会場
-| 402305 | 結婚式場
-| 402306 | 習い事教室
-| 402307 | 予備校
-| 402308 | 自動車教習所
-| 402309 | 住宅展示場
-| 402310 | その他サービス施設
-| 4024 | 商業施設4（料理店、キャバレー、クラブ、バー、飲み屋 等）
-| 402401 | 料理店
-| 402402 | キャバレー
-| 402403 | クラブ
-| 402404 | バー
-| 402405 | 飲み屋
-| 4025 | 商業施設5（劇場、映画館 等）
-| 402501 | 劇場
-| 402502 | 映画館
-| 4026 | 商業施設6（ボーリング場、バッティングセンター、ゴルフ練習場、フィットネス、カラオケボックス、インターネットカフェ 等）
-| 402601 | ボーリング場
-| 402602 | バッティングセンター
-| 402603 | ゴルフ練習場
-| 402604 | フィットネス
-| 402605 | カラオケボックス
-| 402606 | インターネットカフェ
-| 4027 | 商業施設7（マージャン屋、パチンコ屋、馬券・車券発売所 等）
-| 402701 | マージャン屋
-| 402702 | パチンコ店
-| 402703 | 馬券・車券発売所
-| 403 | 宿泊施設
-| 403101 | ホテル
-| 403102 | 旅館
-| 403103 | 民宿
-| 403104 | ラブホテル
-| 404 | 商業系複合施設
-| 4041 | 商業系複合施設
-| 411 | 住宅
-| 4111 | 専用住宅（住宅に付随する物置、車庫を含む）
-| 412 | 共同住宅
-| 412101 | アパート
-| 412102 | マンション
-| 412103 | 長屋
-| 412104 | 寮
-| 413 | 店舗等併用住宅
-| 414 | 店舗等併用共同住宅
-| 415 | 作業所併用住宅
-| 421 | 官公庁施設
-| 421101 | 国県市町村庁舎
-| 421102 | 裁判所
-| 421103 | 税務署
-| 421104 | 警察署
-| 421105 | 消防署
-| 421106 | 駐在所
-| 422 | 文教厚生施設
-| 4221 | 文教厚生施設1（大学、高等専門学校、各種学校、公的研究所 等）
-| 422101 | 大学
-| 422102 | 高等専門学校
-| 422103 | 各種学校
-| 422104 | 公的研究所
-| 4222 | 文教厚生施設2（小・中・高等学校、保育所 等）
-| 422201 | 小・中・高等学校
-| 422202 | 保育所
-| 4223 | 文教厚生施設3（図書館、博物館、文化ホール、集会所、動物園 等）
-| 422301 | 図書館
-| 422302 | 博物館
-| 422303 | 文化ホール
-| 422304 | 集会所
-| 422305 | 動物園
-| 4224 | 文教厚生施設4（体育館、水泳場、野球場、陸上競技場その他のスポーツ施設（主に公共施設））
-| 422401 | 体育館
-| 422402 | 水泳場
-| 422403 | 野球場
-| 422404 | 陸上競技場その他のスポーツ施設（主に公共施設）
-| 4225 | 文教厚生施設5（病院）
-| 4226 | 文教厚生施設6（診療所、老人ホーム、介護福祉施設、公衆浴場、公衆便所 等）
-| 422601 | 診療所
-| 422602 | 老人ホーム
-| 422603 | 介護福祉施設
-| 422604 | 公衆浴場
-| 422605 | 公衆便所
-| 4227 | 文教厚生施設7（神社、寺院、教会 等）
-| 422701 | 神社
-| 422702 | 寺院
-| 422703 | 教会
-| 431 | 運輸倉庫施設
-| 4311 | 運輸倉庫施設1（駅舎、電車車庫、バスターミナル、港湾・空港施設 等）
-| 431101 | 駅舎
-| 431102 | 電車車庫
-| 431103 | バスターミナル
-| 431104 | 港湾・空港施設
-| 4312 | 運輸倉庫施設2（卸売市場、倉庫、トラックターミナル 等）
-| 431201 | 卸売市場
-| 431202 | 倉庫
-| 431203 | トラックターミナル
-| 4313 | 運輸倉庫施設3（立体駐車場、駐輪施設 等）
-| 431301 | 立体駐車場
-| 431302 | 駐輪施設
-| 441 | 工場
-| 4411 | 工場1（危険物の製造、液化ガスの製造、塩素･臭素等の製造、肥料の製造、製紙、製革、アスファルトの精製、セメントの製造、金属の溶融 等（準工業地域において立地不可））
-| 441101 | 危険物の製造
-| 441102 | 液化ガスの製造
-| 441103 | 塩素・臭素等の製造
-| 441104 | 肥料の製造
-| 441105 | 製紙
-| 441106 | 製革
-| 441107 | アスファルトの精製
-| 441108 | セメントの製造
-| 441109 | 金属の溶解
-| 4412 | 工場2（原動機を使用する 150 ㎡を超える工場、引火性溶剤を用いるドライクリー ニング、原動機を使用する岩石の粉砕、レディミクストコンクリートの製造、陶磁器・ガラスの製造 等（商業地域において立地不可））
-| 441201 | 原動機を使用する 150 ㎡を超える工場
-| 441202 | 引火性溶剤を用いるドライクリー ニング
-| 441203 | 原動機を使用する岩石の粉砕
-| 441204 | レディミクストコンクリートの製造
-| 441205 | 陶磁器・ガラスの製造
-| 4413 | 工場3（原動機を使用する 50 ㎡を超える工場、原動機を使用する魚肉の練製品の製造･セメント製品の製造･金属の加工・印刷、木工所、めっき 等（住居地域において立地不可）
-| 441301 | 原動機を使用する 50 ㎡を超える工場
-| 441302 | 原動機を使用する魚肉の練製品の製造･セメント製品の製造･金属の加工・印刷
-| 441303 | 木工所
-| 441304 | めっき
-| 4414 | 工場4（50 ㎡以内のパン屋、米屋、豆腐屋、菓子屋その他これらに類する食品製造業を営む工場 等）
-| 441401 | 50 ㎡以内のパン屋
-| 441402 | 米屋
-| 441403 | 豆腐屋
-| 441404 | 菓子屋その他これらに類する食品製造業を営む工場
-| 4415 | 工場5（自動車修理工場）
-| 451 | 農林漁業用施設
-| 451101 | 農業用納屋
-| 451102 | 畜舎
-| 451103 | 温室
-| 451104 | 船小屋
-| 451105 | 農林漁業用作業場
-| 452 | 供給処理施設
-| 452101 | 処理場
-| 452102 | 浄水場
-| 452103 | ポンプ場
-| 452104 | 火葬場
-| 452105 | 発電所
-| 452106 | 変電所
-| 452107 | ガス・熱供給施設
-| 453 | 防衛施設
-| 454 | その他
-| 461 | 不明
-
-|===
+[gml_dictionary,iur/codelists/3.1/BuildingDetailAttribute_detailedUsage.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<mlit_foundation_reqs>>
 
 ====== BuildingDetailAttribute_buildingStructureType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | BuildingDetailAttribute_buildingStructureType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/BuildingDetailAttribute_buildingStructureType.xml
-h| コード h| 説明
-| 601 | 木造・土蔵造
-| 602 | 鉄骨鉄筋コンクリート造
-| 603 | 鉄筋コンクリート造
-| 604 | 鉄骨造
-| 605 | 軽量鉄骨造
-| 606 | レンガ造・コンクリートブロック造・石造
-| 610 | 非木造
-| 611 | 不明
-
-|===
+[gml_dictionary,iur/codelists/3.1/BuildingDetailAttribute_buildingStructureType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<mlit_foundation_reqs>>
 
 ====== BuildingDetailAttribute_fireproofStructureType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | BuildingDetailAttribute_fireproofStructureType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/BuildingDetailAttribute_fireproofStructureType.xml
-h| コード h| 説明
-| 1001 | 耐火
-| 1002 | 準耐火造
-| 1003 | その他
-| 1011 | 不明
-
-|===
+[gml_dictionary,iur/codelists/3.1/BuildingDetailAttribute_fireproofStructureType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<mlit_foundation_reqs>>
 
 ====== BuildingDetailAttribute_vacancy.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | BuildingDetailAttribute_vacancy.xml
+[gml_dictionary,iur/codelists/3.1/BuildingDetailAttribute_vacancy.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/BuildingDetailAttribute_vacancy.xml
-h| コード h| 説明
-| 1 | 空き家
-| 0 | 空き家以外
-
-|===
 
 ====== LargeCustomerFacilityAttribute_class.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | LargeCustomerFacilityAttribute_class.xml
+[gml_dictionary,iur/codelists/3.1/LargeCustomerFacilityAttribute_class.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/LargeCustomerFacilityAttribute_class.xml
-h| コード h| 説明
-| 1 | 大規模小売店舗（食品スーパー）
-| 2 | 大規模小売店舗（百貨店・スーパー・ショッピングセンター・寄合百貨店・小売市場）
-| 3 | 大規模小売店舗（ホームセンター・専門店（家具・家電・書籍等））
-| 4 | 大規模小売店舗（その他）
-| 5 | 大規模集客施設（ 床面積１万㎡超の店舗、映画館、アミューズメント施設、展示場等）
-
-|===
-
+[.source]
 <<mlit_foundation_reqs>>
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml
-h| コード h| 説明
-| 000 | 公共測量成果
-| 101 | （公共測量ではない）現地測量の測量成果
-| 102 | （公共測量ではない）UAV写真測量の測量成果
-| 103 | （公共測量ではない）空中写真測量の測量成果
-| 104 | （公共測量ではない）既成図数値化の測量成果
-| 105 | （公共測量ではない）修正測量の測量成果
-| 106 | （公共測量ではない）写真地図作成の測量成果
-| 107 | （公共測量ではない）地図編集の測量成果
-| 108 | （公共測量ではない）地上レーザ測量の測量成果
-| 109 | （公共測量ではない）UAV写真点群測量の測量成果
-| 110 | （公共測量ではない）UAVレーザ測量の測量成果
-| 111 | （公共測量ではない）車載写真レーザ測量の測量成果
-| 112 | （公共測量ではない）航空レーザ測量の測量成果
-| 113 | （公共測量ではない）航空レーザ測深測量の測量成果
-| 114 | （公共測量ではない）路線測量の測量成果
-| 115 | （公共測量ではない）河川測量の測量成果
-| 116 | （公共測量ではない）用地測量の測量成果
-| 117 | （公共測量ではない）その他の応用測量の測量成果
-| 118 | （公共測量ではない）LidarSLAM計測の測量成果
-| 119 | （公共測量ではない）高密度航空レーザ測量の測量成果
-| 120 | （公共測量ではない）写真点群測量の測量成果
-| 121 | （公共測量ではない）三次元数値図化の測量成果
-| 201 | 都市計画基礎調査
-| 202 | 都市計画図書
-| 300 | 台帳
-| 301 | 道路台帳
-| 400 | その他のGISデータ
-| 500 | BIMモデル、CADデータ、設計図、完成図、一般図（平面図、配置図、断面図等）
-| 700 | その他の資料
-| 801 | 現地調査
-| 803 | GISデータ演算
-| 901 | 推定
-| 999 | 未作成
-
-|===
+[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<gsi_ops>>
@@ -5856,31 +5499,10 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml
-h| コード h| 説明
-| 000 | 公共測量成果
-| 022 | 基盤地図情報
-| 023 | 数値地形図データ
-| 100 | 公共測量成果ではない測量成果
-| 201 | 都市計画基礎調査
-| 202 | 都市計画図書
-| 300 | 台帳
-| 301 | 道路台帳
-| 400 | その他のGISデータ
-| 500 | BIMモデル、CADデータ、設計図、完成図、一般図（平面図、配置図、断面図等）
-| 600 | 統計データ
-| 701 | 建築計画概要書
-| 700 | その他の資料
-| 801 | 現地調査
-| 802 | 写真判読
-| 803 | GISデータ演算
-| 999 | 未作成
-
-|===
+[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<gsi_ops>>
@@ -5894,117 +5516,44 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
+[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml
-h| コード h| 説明
-| 1 | 空中写真
-| 2 | 衛星写真
-| 3 | 車載写真レーザ測量システムにより撮影した写真
-| 4 | 手持ちカメラにより撮影した写真
-| 5 | 疑似テクスチャ
-| 99 | 未作成
-
-|===
 
 ====== DataQualityAttribute_lod1HeightType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | DataQualityAttribute_lod1HeightType.xml
+[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml
-h| コード h| 説明
-| 1 | 点群から取得_最高高さ
-| 2 | 点群から取得_中央値
-| 3 | 点群から取得_平均値
-| 4 | 点群から取得_最頻値
-| 5 | 点群から取得_最低値
-| 6 | 航空写真図化_最高高さ
-| 7 | 建築確認申請書類等に記載された「建築物の高さ」
-| 8 | 都市計画基礎調査（建物利用現況）の「高さ（m）」
-| 9 | 階高3m×都市計画基礎調査（建物利用現況）の「階数・地上（階）」による推定値
-| 10 | 図面から取得した高さ
-| 0 | 取得不可のため一律値（3m）
-
-|===
-
+[.source]
 <<gsi_building_data_manual>>
 
 ====== Building_lodType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | Building_lodType.xml
+[gml_dictionary,iur/codelists/3.1/Building_lodType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Building_lodType.xml
-h| コード h| 説明
-| 2.0 | LOD2.0（屋根面を簡略化し、切妻、寄棟、陸屋根など一般的な屋根形状及びその組み合わせで表現する。軒の表現は行わない。また、付属物も作成しない。）
-| 2.1 | LOD2.1（「一辺3m以上」又は「面積3m2以上かつ一辺1m以上」の屋根面を表現する。軒の表現は行わない。屋根に設置された「一辺3m以上」又は「面積3m2以上かつ一辺1m以上」の付属物を表現する。）
-| 2.2 | LOD2.2（「一辺1m以上」の屋根面を表現する。軒の表現は行わない。屋根に設置された「一辺1m以上」の付属物を表現する。
-| 3.0 | LOD3.0（屋根面を簡略化し、切妻、寄棟、陸屋根など一般的な屋根形状及びその組み合わせで表現する。3m以上の軒の表現を行う。屋根及び外壁面に設置された「一辺3m以上」又は「面積3m2以上かつ一辺1m以上」の付属物を表現する。外壁面に設置された「一辺1m以上」の開口部を表現する。）
-| 3.1 | LOD3.1（「一辺3m以上」又は「面積3m2以上かつ一辺1m以上」の屋根面を表現する。1m以上の軒の表現を行う。屋根及び外壁面に設置された「一辺3m以上」又は「面積3m2以上かつ一辺1m以上」の付属物を表現する。外壁面に設置された「一辺1m以上」の開口部を表現する。）
-| 3.2 | LOD3.2（「一辺1m以上」の屋根面を表現する。1m以上の軒の表現を行う。屋根及び外壁面に設置された一辺「1m以上」の付属物を表現する。屋根面及び外壁面に設置された「面積1m2以上」の開口部を表現する。）
-| 3.3 | LOD3.3（「一辺1m未満」の屋根面を表現する。1m未満の軒の表現を行う。屋根及び外壁面に設置された一辺「1m未満」の付属物を表現する。屋根面及び外壁面に設置された「一辺1m未満」の開口部を表現する。）
-| 4.0 | 屋内の部屋（bldg:Room）を取得する。
-
-部屋の境界面を天井面（bldg:CeilingSurface）、床面（bldg:FloorSurface）、内壁面（bldg:InteriorWallSurface）又は閉鎖面（bldg:ClosureSurface）に区分する。
-
-境界面に存在する開口部（bldg:Door又はbldg:Window）を表現する。
-| 4.1 | LOD4.0に加え、屋内付属物（bldg:IntBuildingInstallation）として、階段、踊り場、スロープ、輸送設備、柱、及びデッキ・ステージを表現する。
-| 4.2 | LOD4.1に加え、全ての屋内付属物（bldg:IntBuildingInstallation）と屋内に設置された家具（bldg:BuildingFurniture）を表現する。
-
-|===
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | PublicSurveyDataQualityAttribute_srcScale.xml
+[gml_dictionary,iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml
-h| コード h| 説明
-| 1 | 地図情報レベル2500
-| 2 | 地図情報レベル1000
-| 3 | 地図情報レベル500
-
-|===
 
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
-h| コード h| 説明
-| 001 | 現地測量の測量成果
-| 002 | UAV写真測量の測量成果
-| 003 | 空中写真測量の測量成果
-| 004 | 既成図数値化の測量成果
-| 005 | 修正測量の測量成果
-| 006 | 写真地図作成の測量成果
-| 007 | 地図編集の測量成果
-| 008 | 地上レーザ測量の測量成果
-| 009 | UAV写真点群測量の測量成果
-| 010 | UAVレーザ測量の測量成果
-| 011 | 車載写真レーザ測量の測量成果
-| 012 | 航空レーザ測量の測量成果
-| 013 | 航空レーザ測深測量の測量成果
-| 014 | 路線測量の測量成果
-| 015 | 河川測量の測量成果
-| 016 | 用地測量の測量成果
-| 017 | その他の応用測量の測量成果
-| 018 | LidarSLAM計測の測量成果
-| 019 | 高密度航空レーザ測量の測量成果
-| 020 | 写真点群測量の測量成果
-| 021 | 三次元数値図化の測量成果
-| 022 | 基盤地図情報
-| 023 | 数値地形図データ
-
-|===
+[gml_dictionary,iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<gsi_ops>>
@@ -6015,68 +5564,20 @@ h| コード h| 説明
 
 ====== IfcBuildingElement_elementType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | IfcBuildingElement_elementType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/IfcBuildingElement_elementType.xml
-h| コード h| 説明
-| BE_01 | IfcBeam
-| BE_02 | IfcColumn
-| BE_03 | IfcCurtainWall
-| BE_04 | IfcDoor
-| BE_05 | IfcPlate
-| BE_06 | IfcRailing
-| BE_07 | IfcRamp
-| BE_08 | IfcRampFlight
-| BE_09 | IfcRoof
-| BE_10 | IfcSlab
-| BE_11 | IfcStair
-| BE_12 | IfcStairFlight
-| BE_13 | IfcWall
-| BE_14 | IfcWallStandardCase
-| BE_15 | IfcWindow
-| BE_16 | IfcBuildingElementProxy
-| BE_17 | IfcTransportElement
-
-|===
+[gml_dictionary,iur/codelists/3.1/IfcBuildingElement_elementType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<ifc_2x3_cv>>
 
 ====== IfcBuildingElement_predefinedType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | IfcBuildingElement_predefinedType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/IfcBuildingElement_predefinedType.xml
-h| コード h| 説明
-| 01 | IfcColumn：COLUMN（柱）
-| 02 | IfcColumn：PILASTER（壁に貼り付けられる、又は埋め込まれる装飾用の柱）
-| 03 | IfcColumn：PIERSTEM（橋脚の個々の部分）
-| 04 | IfcColumn：PIERSTEM_SEGMENT（橋脚柱の垂直部分）
-| 05 | IfcColumn：STANDCOLUMN（上部構造からその下のアーチに垂直荷重を伝達する柱）
-| 11 | IfcCovering：CEILING（天井）
-| 12 | IfcCovering：FLOORING（床）
-| 13 | IfcCovering：CLADDING（外壁の被覆材）
-| 14 | IfcCovering：ROOFING（屋根カバー）
-| 15 | IfcCovering：MOLDING（モールディング）
-| 16 | IfcCovering：SKIRTINGBOARD（幅木）
-| 17 | IfcCovering：INSULATION（絶縁）
-| 18 | IfcCovering：MEMBRANE（屋根カバー又は防湿の膜）
-| 19 | IfcCovering：SLEEVING（スリーブ）
-| 20 | IfcCovering：WRAPPING（テープを使用して配電要素を包む）
-| 21 | IfcCovering：COPING（壁又はパラペット保護）
-| 30 | IfcRailing：HANDRAIL（手すり）
-| 31 | IfcRailing：GUARDRAIL（防護柵）
-| 32 | IfcRailing：BALUSTRADE（欄干）
-| 41 | IfcSlab：FLOOR（床）
-| 42 | IfcSlab：ROOF（屋根）
-| 43 | IfcSlab：LANDING（階段又はスロープ内の踊り場）
-| 44 | IfcSlab：BASESLAB（地面に対する床スラブ）
-
-|===
+[gml_dictionary,iur/codelists/3.1/IfcBuildingElement_predefinedType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<ifc_2x3_cv>>
@@ -6099,34 +5600,31 @@ h| 値 h| 説明
 
 ====== IfcBuildingElement_shapeType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | IfcBuildingElement_shapeType.xml
+[gml_dictionary,iur/codelists/3.1/IfcBuildingElement_shapeType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/IfcBuildingElement_shapeType.xml
-h| コード h| 説明
-| 01 | IfcRamp：STRAIGHT_RUN_RAMP（直線的なスロープ）
-| 02 | IfcRamp：TWO_STRAIGHT_RUN_RAMP （1ヵ所の踊り場のある直線的なスロープ）
-| 03 | IfcRamp：QUARTER_TURN_RAMP （1ヵ所の踊り場で90度転回するスロープ）
-| 04 | IfcRamp：TWO_QUARTER_TURN_RAMP （2ヵ所の踊り場で各90度転回するスロープ）
-| 05 | IfcRamp：HALF_TURN_RAMP （1ヵ所の踊り場で180度転回するスロープ）
-| 06 | IfcRamp：SPIRAL_RAMP（円形又は楕円形のスロープ）
-| 21 | IfcRoof：FLAT_ROOF（陸屋根）
-| 22 | IfcRoof：SHED_ROOF（片流れ屋根）
-| 23 | IfcRoof：GABLE_ROOF（切妻屋根）
-| 24 | IfcRoof：HIP_ROOF（寄棟屋根）
-| 25 | IfcRoof：HIPPED_GABLE_ROOF（半切妻屋根）
-| 26 | IfcRoof：GAMBREL_ROOF（腰折屋根）
-| 27 | IfcRoof：MANSARD_ROOF（マンサード屋根）
-| 28 | IfcRoof：BARREL_ROOF（かまぼこ屋根）
-| 29 | IfcRoof：RAINBOW_ROOF（虹型屋根）
-| 30 | IfcRoof：BUTTEFLY_ROOF（バタフライ屋根）
-| 31 | IfcRoof：PAVILION_ROOF（方形屋根）
-| 32 | IfcRoof：DOOM_ROOF（ドーム屋根）
-| 99 | USERDEFINED（利用者定義）
-| 00 | NOTDEFINED（定義なし）
-
-|===
+// | 01 | IfcRamp：STRAIGHT_RUN_RAMP（直線的なスロープ）
+// | 02 | IfcRamp：TWO_STRAIGHT_RUN_RAMP （1ヵ所の踊り場のある直線的なスロープ）
+// | 03 | IfcRamp：QUARTER_TURN_RAMP （1ヵ所の踊り場で90度転回するスロープ）
+// | 04 | IfcRamp：TWO_QUARTER_TURN_RAMP （2ヵ所の踊り場で各90度転回するスロープ）
+// | 05 | IfcRamp：HALF_TURN_RAMP （1ヵ所の踊り場で180度転回するスロープ）
+// | 06 | IfcRamp：SPIRAL_RAMP（円形又は楕円形のスロープ）
+// | 21 | IfcRoof：FLAT_ROOF（陸屋根）
+// | 22 | IfcRoof：SHED_ROOF（片流れ屋根）
+// | 23 | IfcRoof：GABLE_ROOF（切妻屋根）
+// | 24 | IfcRoof：HIP_ROOF（寄棟屋根）
+// | 25 | IfcRoof：HIPPED_GABLE_ROOF（半切妻屋根）
+// | 26 | IfcRoof：GAMBREL_ROOF（腰折屋根）
+// | 27 | IfcRoof：MANSARD_ROOF（マンサード屋根）
+// | 28 | IfcRoof：BARREL_ROOF（かまぼこ屋根）
+// | 29 | IfcRoof：RAINBOW_ROOF（虹型屋根）
+// | 30 | IfcRoof：BUTTEFLY_ROOF（バタフライ屋根）
+// | 31 | IfcRoof：PAVILION_ROOF（方形屋根）
+// | 32 | IfcRoof：DOOM_ROOF（ドーム屋根）
+// | 99 | USERDEFINED（利用者定義）
+// | 00 | NOTDEFINED（定義なし）
 
 [.source]
 <<ifc_2x3_cv>>
@@ -6338,70 +5836,40 @@ h| 値 h| 説明
 
 ====== Common_indoorSource.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | Common_indoorSource.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Common_indoorSource.xml
-h| コード h| 説明
-| 1 | フロアマップ
-| 2 | CADデータ
-| 3 | BIMデータ
-| 4 | 3次元地図データ
-| 5 | その他
-
-|===
+[gml_dictionary,iur/codelists/3.1/Common_indoorSource.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<gsi_dps>>
 
 ====== IndoorTactileTileAttribute_category.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | IndoorTactileTileAttribute_category.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/IndoorTactileTileAttribute_category.xml
-h| コード h| 説明
-| 1 | 線状ブロック等
-| 2 | プラットホーム縁等警告用内方表示ブロック
-| 3 | エスコートゾーン
-
-|===
+[gml_dictionary,iur/codelists/3.1/IndoorTactileTileAttribute_category.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<gsi_dps>>
 
 ====== IndoorTactileTileAttribute_roof.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | IndoorTactileTileAttribute_roof.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/IndoorTactileTileAttribute_roof.xml
-h| コード h| 説明
-| 1 | なし
-| 2 | あり
-| 3 | 不明（未調査）
-
-|===
+[gml_dictionary,iur/codelists/3.1/IndoorTactileTileAttribute_roof.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<gsi_dps>>
 
 ====== IndoorSpaceAttribute_tollType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | IndoorSpaceAttribute_tollType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/IndoorSpaceAttribute_tollType.xml
-h| コード h| 説明
-| 1 | 不明
-| 2 | 有料
-| 3 | 無料
-
-|===
+[gml_dictionary,iur/codelists/3.1/IndoorSpaceAttribute_tollType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<gsi_dps>>

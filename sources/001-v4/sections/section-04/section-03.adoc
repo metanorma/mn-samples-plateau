@@ -1487,47 +1487,21 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== TransportationComplex_class.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | TransportationComplex_class.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/TransportationComplex_class.xml
-h| コード h| 説明
-| 1020 | 徒歩道等
-| 1040 | 道路
-| 1060 | 鉄道
-| 1070 | 水路
-| 1080 | 地下鉄
-| 1090 | その他
-
-|===
+[gml_dictionary,iur/codelists/3.1/TransportationComplex_class.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<citygml_20,annex="C.8">>
 
 ====== Road_function.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | Road_function.xml
+[gml_dictionary,iur/codelists/3.1/Road_function.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Road_function.xml
-h| コード h| 説明
-| 1 | 高速自動車国道
-| 2 | 一般国道
-| 3 | 都道府県道
-| 4 | 市町村道
-| 10 | 建築基準法第42条1項2号道路
-| 11 | 建築基準法第42条1項3号道路
-| 12 | 建築基準法第42条1項4号道路
-| 13 | 建築基準法第42条1項5号道路
-| 14 | 建築基準法第42条2項道路
-| 15 | 建築基準法第43条2項ただし書きの適用を受けたことがある道
-| 9000 | 未調査
-| 9010 | 対象外
-| 9020 | 不明
-
-|===
 
 [.source]
 <<jp_road_law>>
@@ -1537,19 +1511,10 @@ h| コード h| 説明
 
 ====== Road_usage.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | Road_usage.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Road_usage.xml
-h| コード h| 説明
-| 1 | 緊急輸送道路（第一次緊急輸送道路）
-| 2 | 緊急輸送道路（第二次緊急輸送道路）
-| 3 | 緊急輸送道路（第三次緊急輸送道路）
-| 4 | 緊急輸送道路（未指定）
-| 5 | 避難路／避難道路
-
-|===
+[gml_dictionary,iur/codelists/3.1/Road_usage.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<mlit_emergency_roads>>
@@ -1771,82 +1736,27 @@ https://www.geospatial.jp/iur/codelists/3.1/AuxiliaryTrafficArea_surfaceMaterial
 
 ====== RoadStructureAttribute_widthType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | RoadStructureAttribute_widthType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/RoadStructureAttribute_widthType.xml
-h| コード h| 説明
-| 1 | 15m以上
-| 2 | 6m以上15m未満
-| 3 | 4m以上6m未満
-| 4 | 4m未満
-
-|===
+[gml_dictionary,iur/codelists/3.1/RoadStructureAttribute_widthType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<mlit_foundation_reqs>>
 
 ====== RoadStructureAttribute_sectionType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | RoadStructureAttribute_sectionType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/RoadStructureAttribute_sectionType.xml
-h| コード h| 説明
-| 1 | 土工区間・通常区間
-| 2 | 高架橋
-| 3 | 橋梁
-| 4 | 交差部
-| 5 | アンダーパス
-| 6 | トンネル
-
-|===
+[gml_dictionary,iur/codelists/3.1/RoadStructureAttribute_sectionType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml
-h| コード h| 説明
-| 000 | 公共測量成果
-| 101 | （公共測量ではない）現地測量の測量成果
-| 102 | （公共測量ではない）UAV写真測量の測量成果
-| 103 | （公共測量ではない）空中写真測量の測量成果
-| 104 | （公共測量ではない）既成図数値化の測量成果
-| 105 | （公共測量ではない）修正測量の測量成果
-| 106 | （公共測量ではない）写真地図作成の測量成果
-| 107 | （公共測量ではない）地図編集の測量成果
-| 108 | （公共測量ではない）地上レーザ測量の測量成果
-| 109 | （公共測量ではない）UAV写真点群測量の測量成果
-| 110 | （公共測量ではない）UAVレーザ測量の測量成果
-| 111 | （公共測量ではない）車載写真レーザ測量の測量成果
-| 112 | （公共測量ではない）航空レーザ測量の測量成果
-| 113 | （公共測量ではない）航空レーザ測深測量の測量成果
-| 114 | （公共測量ではない）路線測量の測量成果
-| 115 | （公共測量ではない）河川測量の測量成果
-| 116 | （公共測量ではない）用地測量の測量成果
-| 117 | （公共測量ではない）その他の応用測量の測量成果
-| 118 | （公共測量ではない）LidarSLAM計測の測量成果
-| 119 | （公共測量ではない）高密度航空レーザ測量の測量成果
-| 120 | （公共測量ではない）写真点群測量の測量成果
-| 121 | （公共測量ではない）三次元数値図化の測量成果
-| 201 | 都市計画基礎調査
-| 202 | 都市計画図書
-| 300 | 台帳
-| 301 | 道路台帳
-| 400 | その他のGISデータ
-| 500 | BIMモデル、CADデータ、設計図、完成図、一般図（平面図、配置図、断面図等）
-| 700 | その他の資料
-| 801 | 現地調査
-| 803 | GISデータ演算
-| 901 | 推定
-| 999 | 未作成
-
-|===
+[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<gsi_ops>>
@@ -1860,31 +1770,10 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml
-h| コード h| 説明
-| 000 | 公共測量成果
-| 022 | 基盤地図情報
-| 023 | 数値地形図データ
-| 100 | 公共測量成果ではない測量成果
-| 201 | 都市計画基礎調査
-| 202 | 都市計画図書
-| 300 | 台帳
-| 301 | 道路台帳
-| 400 | その他のGISデータ
-| 500 | BIMモデル、CADデータ、設計図、完成図、一般図（平面図、配置図、断面図等）
-| 600 | 統計データ
-| 701 | 建築計画概要書
-| 700 | その他の資料
-| 801 | 現地調査
-| 802 | 写真判読
-| 803 | GISデータ演算
-| 999 | 未作成
-
-|===
+[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<gsi_ops>>
@@ -1898,101 +1787,33 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml
-h| コード h| 説明
-| 1 | 空中写真
-| 2 | 衛星写真
-| 3 | 車載写真レーザ測量システムにより撮影した写真
-| 4 | 手持ちカメラにより撮影した写真
-| 5 | 疑似テクスチャ
-| 99 | 未作成
-
-|===
+[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== Road_lodType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | Road_lodType.xml
+[gml_dictionary,iur/codelists/3.1/Road_lodType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Road_lodType.xml
-h| コード h| 説明
-| 3.0
-| 道路の横断方向の高さは一律とし、車道の高さとする。 +
-車道、車道交差部、分離帯及び歩道を区分する。
-
-| 3.1
-| 道路の横断方向の高さは一律とし、車道の高さとする。 +
-車道、車道交差部、分離帯及び歩道の区分に加え、車道を車線に区分する。
-
-| 3.2
-| 道路の横断方向に存在する15㎝以上の高さの差を取得する。 +
-車道、車道交差部、分離帯及び歩道の区分に加え、車道を車線に区分し、歩道上の植栽を区分する。
-
-| 3.3
-| 道路の横断方向に存在する2㎝以上の高さの差を取得する。 +
-車道、車道交差部、分離帯及び歩道の区分に加え、車道を車線に区分し、歩道上の植栽を区分する。
-
-| 3.4
-| 道路の横断方向に存在する2㎝以上の高さの差を取得する。 +
-車道、車道交差部、分離帯及び歩道の区分に加え、車道、分離帯、歩道を以下の区分に細分する。 +
-車道は、車線、すりつけ区間、踏切道、軌道敷、待避所、副道、自動車駐車場、非常駐車帯、中央帯、側帯、路肩、停車帯、乗合自動車停車所に区分する。 +
-分離帯は、交通島、分離帯、植樹帯、路面電車停車所に区分する。 +
-歩道は、歩道、自転車歩行者道、自転車道、植樹ますに区分する。
-
-|===
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | PublicSurveyDataQualityAttribute_srcScale.xml
+[gml_dictionary,iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml
-h| コード h| 説明
-| 1 | 地図情報レベル2500
-| 2 | 地図情報レベル1000
-| 3 | 地図情報レベル500
-
-|===
 
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
-h| コード h| 説明
-| 001 | 現地測量の測量成果
-| 002 | UAV写真測量の測量成果
-| 003 | 空中写真測量の測量成果
-| 004 | 既成図数値化の測量成果
-| 005 | 修正測量の測量成果
-| 006 | 写真地図作成の測量成果
-| 007 | 地図編集の測量成果
-| 008 | 地上レーザ測量の測量成果
-| 009 | UAV写真点群測量の測量成果
-| 010 | UAVレーザ測量の測量成果
-| 011 | 車載写真レーザ測量の測量成果
-| 012 | 航空レーザ測量の測量成果
-| 013 | 航空レーザ測深測量の測量成果
-| 014 | 路線測量の測量成果
-| 015 | 河川測量の測量成果
-| 016 | 用地測量の測量成果
-| 017 | その他の応用測量の測量成果
-| 018 | LidarSLAM計測の測量成果
-| 019 | 高密度航空レーザ測量の測量成果
-| 020 | 写真点群測量の測量成果
-| 021 | 三次元数値図化の測量成果
-| 022 | 基盤地図情報
-| 023 | 数値地形図データ
-
-|===
+[gml_dictionary,iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<gsi_ops>>

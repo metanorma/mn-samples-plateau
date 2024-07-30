@@ -6684,821 +6684,248 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== Common_urbanPlanType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | Common_urbanPlanType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Common_urbanPlanType.xml
-h| コード h| 説明
-| 21 | 都市計画区域
-| 26 | 準都市計画区域
-| 27 | 都市計画区域外
-
-|===
+[gml_dictionary,iur/codelists/3.1/Common_urbanPlanType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== Common_areaClassificationType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | Common_areaClassificationType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Common_areaClassificationType.xml
-h| コード h| 説明
-| 22 | 市街化区域
-| 23 | 市街化調整区域
-
-|===
+[gml_dictionary,iur/codelists/3.1/Common_areaClassificationType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== Common_districtAndZonesType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | Common_districtsAndZonesType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Common_districtsAndZonesType.xml
-h| コード h| 説明
-| 0 | 用途地域の指定をしない区域
-| 1 | 第1種低層住居専用地域
-| 2 | 第2種低層住居専用地域
-| 3 | 第1種中高層住居専用地域
-| 4 | 第2種中高層住居専用地域
-| 5 | 第1種住居地域
-| 6 | 第2種住居地域
-| 7 | 準住居地域
-| 8 | 田園住居地域
-| 9 | 近隣商業地域
-| 10 | 商業地域
-| 11 | 準工業地域
-| 12 | 工業地域
-| 13 | 工業専用地域
-| 14 | 特別用途地区
-| 15 | 特定用途制限地域
-| 16 | 特例容積率適用地区
-| 17 | 高層住居誘導地区
-| 18 | 高度地区
-| 19 | 高度利用地区
-| 20 | 特定街区
-| 21 | 都市再生特別地区
-| 22 | 居住調整地域
-| 23 | 特定用途誘導地区
-| 24 | 防火地域
-| 25 | 準防火地域
-| 26 | 特定防災街区整備地区
-| 27 | 景観地区
-| 28 | 風致地区
-| 29 | 駐車場整備地区
-| 30 | 臨港地区
-| 31 | 歴史的風土特別保存地区
-| 32 | 第1種歴史的風土保存地区
-| 33 | 第2種歴史的風土保存地区
-| 34 | 緑地保全地域
-| 35 | 特別緑地保全地区
-| 36 | 緑化地域
-| 37 | 流通業務地区
-| 38 | 生産緑地地区
-| 39 | 伝統的建造物群保存地区
-| 40 | 航空機騒音障害防止地区
-| 41 | 航空機騒音障害防止特別地区
-| 42 | 居住環境向上用途誘導地区
-
-|===
+[gml_dictionary,iur/codelists/3.1/Common_districtAndZonesType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== Common_validType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | Common_validType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Common_validType.xml
-h| コード h| 説明
-| 1 | 決定
-| 2 | 廃止
-| 3 | 変更
-| 9 | 不明
-
-|===
+[gml_dictionary,iur/codelists/3.1/Common_validType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== Common_availabilityType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | Common_availabilityType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Common_availabilityType.xml
-h| コード h| 説明
-| 1 | 有り
-| 2 | 無し
-| 3 | 不明
-
-|===
+[gml_dictionary,iur/codelists/3.1/Common_availabilityType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== SpecialUseDistrict_usage.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | SpecialUseDistrict_usage.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/SpecialUseDistrict_usage.xml
-h| コード h| 説明
-| 1 | 特別工業地区
-| 2 | 文教地区
-| 3 | 小売店舗地区
-| 4 | 事務所地区
-| 5 | 厚生地区
-| 6 | 娯楽レクリエーション地区
-| 7 | 観光地区
-| 8 | 特別業務地区
-| 9 | 中高層階住居専用地区
-| 10 | 商業専用地区
-| 11 | 研究開発地区
-| 12 | その他
-
-|===
+[gml_dictionary,iur/codelists/3.1/SpecialUseDistrict_usage.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== HeightConstrolDistrict_usage.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | HeightControlDistrict_usage.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/HeightControlDistrict_usage.xml
-h| コード h| 説明
-| 1 | 最高限高度地区
-| 2 | 最低限高度地区
-
-|===
+[gml_dictionary,iur/codelists/3.1/HeightConstrolDistrict_usage.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== FirePreventionDIstrict_usage.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | FirePreventionDistrict_usage.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/FirePreventionDistrict_usage.xml
-h| コード h| 説明
-| 1 | 防火地域（地域）
-| 2 | 防火地域（路線）
-| 3 | 準防火地域（地域）
-| 4 | 準防火地域（路線）
-
-|===
+[gml_dictionary,iur/codelists/3.1/FirePreventionDIstrict_usage.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== ScenicDIstrict_usage.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | ScenicDistrict_usage.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/ScenicDistrict_usage.xml
-h| コード h| 説明
-| 1 | 第一種風致地区
-| 2 | 第二種風致地区
-| 3 | 第三種風致地区
-| 4 | 第四種風致地区
-
-|===
+[gml_dictionary,iur/codelists/3.1/ScenicDIstrict_usage.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== PortZone_usage.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | PortZone_usage.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/PortZone_usage.xml
-h| コード h| 説明
-| 1 | 商港区
-| 2 | 特殊物資港区
-| 3 | 工業港区
-| 4 | 鉄道連絡港区
-| 5 | 漁港区
-| 6 | バンカー港区
-| 7 | 保安港区
-| 8 | マリーナ港区
-| 9 | 修景厚生港区
-
-|===
+[gml_dictionary,iur/codelists/3.1/PortZone_usage.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== SpecialGreenSpaceConservationDistrict_requirement.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | SpecialGreenSpaceConservationDistrict_requirement.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/SpecialGreenSpaceConservationDistrict_requirement.xml
-h| コード h| 説明
-| 1 | 無秩序な市街地化の防止、公害又は災害の防止等の為必要な遮断地帯、緩衝地帯又は非難地帯として適切な位置、規模及び形態を有するもの
-| 2 | 神社、寺院等の建造物、遺跡等と一体となって、又は伝承若しくは風俗慣習と結びついて当該地域において伝統的又は文化的意義を有するもの
-| 3 | 風致又は景観が優れていて、かつ当該地域の住民の健全な生活環境を確保するため必要なもの
-| 4 | 動植物の生息地又は生育地として適正に保全する必要があり、かつ当該地域の住民の健全な生活環境を確保するため必要なもの
-| 5 | 雨水の貯留浸透等のグリーンインフラとしての機能を有する緑地
-
-|===
+[gml_dictionary,iur/codelists/3.1/SpecialGreenSpaceConservationDistrict_requirement.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== ProjectPromotionArea_function.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | ProjectPromotionArea_function.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/ProjectPromotionArea_function.xml
-h| コード h| 説明
-| 1 | 市街地再開発促進区域
-| 2 | 土地区画整理促進区域
-| 3 | 住宅街区整備促進区域
-| 4 | 拠点業務市街地整備土地区画整理促進区域
-
-|===
+[gml_dictionary,iur/codelists/3.1/ProjectPromotionArea_function.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== UrbanRoadAttribute_routeTypeNumber.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | UrbanRoadAttribute_routeTypeNumber.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/UrbanRoadAttribute_routeTypeNumber.xml
-h| コード h| 説明
-| 1 | 自動車専用道路
-| 3 | 幹線街路
-| 7 | 区画街路
-| 8 | 特殊街路（歩行者、自転車道）
-| 9 | 特殊街路（都市モノレール）
-| 10 | 特殊街路（路面電車）
-
-|===
+[gml_dictionary,iur/codelists/3.1/UrbanRoadAttribute_routeTypeNumber.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== UrbanRoadAttribute_routeSizeNumber.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | UrbanRoadAttribute_routeSizeNumber.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/UrbanRoadAttribute_routeSizeNumber.xml
-h| コード h| 説明
-| 1 | 幅員40m以上
-| 2 | 幅員30m以上40m未満
-| 3 | 幅員22m以上30m未満
-| 4 | 幅員16m以上22m未満
-| 5 | 幅員12m以上16m未満
-| 6 | 幅員8m以上12m未満
-| 7 | 幅員8m未満
-
-|===
+[gml_dictionary,iur/codelists/3.1/UrbanRoadAttribute_routeSizeNumber.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== UrbanRoadAttribute_roadType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | UrbanRoadAttribute_roadType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/UrbanRoadAttribute_roadType.xml
-h| コード h| 説明
-| 1 | 自動車専用道路
-| 2 | 幹線街路
-| 3 | 区画街路
-| 4 | 特殊街路
-
-|===
+[gml_dictionary,iur/codelists/3.1/UrbanRoadAttribute_roadType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== TrafficFacility_trafficFacilityStructureType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | TrafficFacility_trafficFacilityStructureType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/ TrafficFacility_trafficFacilityStructureType.xml
-h| コード h| 説明
-| 1 | 嵩上式
-| 2 | 地下式
-| 3 | 掘割式
-| 4 | 地表式
-
-|===
+[gml_dictionary,iur/codelists/3.1/TrafficFacility_trafficFacilityStructureType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== TrafficFacility_trafficFacilityCrossingType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | TrafficFacility_trafficFacilityCrossingType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/ TrafficFacility_trafficFacilityCrossingType.xml
-h| コード h| 説明
-| 1 | 立体交差
-| 2 | 平面交差
-
-|===
+[gml_dictionary,iur/codelists/3.1/TrafficFacility_trafficFacilityCrossingType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== VehicleTerminalAttribute_terminalType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | VehicleTerminalAttribute_terminalType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/VehicleTerminalAttribute_terminalType.xml
-h| コード h| 説明
-| 1 | トラックターミナル
-| 2 | バスターミナル
-
-|===
+[gml_dictionary,iur/codelists/3.1/VehicleTerminalAttribute_terminalType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== ParkAttribute_parkTypeNumber.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | ParkAttribute_parkTypeNumber.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/ParkAttribute_parkTypeNumber.xml
-h| コード h| 説明
-| 2 | 街区公園
-| 3 | 近隣公園
-| 4 | 地区公園
-| 5 | 総合公園
-| 6 | 運動公園
-| 7 | 特殊公園（風致の享受に供する）
-| 8 | 特殊公園（動物、植物、歴史公園等）
-| 9 | 広域公園
-
-|===
+[gml_dictionary,iur/codelists/3.1/ParkAttribute_parkTypeNumber.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== ParkAttribute_parkSizeNumber.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | ParkAttribute_parkSizeNumber.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/ParkAttribute_parkSizeNumber.xml
-h| コード h| 説明
-| 2 | 面積1ha未満
-| 3 | 面積1ha以上4ha未満
-| 4 | 面積4ha以上10ha未満
-| 5 | 面積10ha以上50ha未満
-| 6 | 面積50ha以上300ha未満
-| 7 | 面積300ha以上
-
-|===
+[gml_dictionary,iur/codelists/3.1/ParkAttribute_parkSizeNumber.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== Waterway_structure.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | Waterway_structure.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Waterway_structure.xml
-h| コード h| 説明
-| 1 | 単断面式
-| 2 | 複断面式
-| 3 | 築堤式単断面
-| 4 | 堤防式単断面
-| 5 | 堤防式複断面
-| 6 | 堀込式単断面
-| 7 | 堀込式複断面
-| 8 | 地下トンネル式単断面
-| 9 | 地下式単断面
-| 10 | 堀込式
-| 11 | 暗渠式
-| 12 | ブロック単断面
-| 13 | ブロック堤防式
-
-|===
+[gml_dictionary,iur/codelists/3.1/Waterway_structure.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== SewerSystemAttribute_systemType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | SewerSystemAttribute_systemType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/SewerSystemAttribute_systemType.xml
-h| コード h| 説明
-| 1 | 公共下水道
-| 2 | 流域下水道
-| 3 | 都市下水路
-
-|===
+[gml_dictionary,iur/codelists/3.1/SewerSystemAttribute_systemType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== UrbanRedevelopmentProject_usage.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | UrbanRedevelopmentProject_usage.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/UrbanRedevelopmentProject_usage.xml
-h| コード h| 説明
-| 1 | 第一種
-| 2 | 第二種
-
-|===
+[gml_dictionary,iur/codelists/3.1/UrbanRedevelopmentProject_usage.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== UrbanDevelopmentProject_function.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | UrbanDevelopmentProject_function.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/UrbanDevelopmentProject_function.xml
-h| コード h| 説明
-| 1 | 土地区画整理事業
-| 2 | 新住宅市街地開発事業
-| 3 | 工業団地造成事業
-| 4 | 市街地再開発事業
-| 5 | 新都市基盤整備事業
-| 6 | 住宅街区整備事業
-
-|===
+[gml_dictionary,iur/codelists/3.1/UrbanDevelopmentProject_function.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== ScheduledAreaForUrbanDevelopment_function.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | ScheduledAreaForUrbanDevelopment_function.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/ScheduledAreaForUrbanDevelopment_function.xml
-h| コード h| 説明
-| 1 | 新住宅市街地開発事業の予定区域
-| 2 | 工業団地造成事業の予定区域
-| 3 | 新都市基盤整備事業の予定区域
-| 4 | 区域の面積が二十ヘクタール以上の一団地の住宅施設の予定区域
-| 5 | 一団地の官公庁施設の予定区域
-| 6 | 流通業務団地の予定区域
-
-|===
+[gml_dictionary,iur/codelists/3.1/ScheduledAreaForUrbanDevelopment_function.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== DistrictPlan_function.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | DistrictPlan_function.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DistrictPlan_function.xml
-h| コード h| 説明
-| 1 | 地区計画
-| 2 | 再開発等促進区を定める地区計画
-| 3 | 開発整備促進区を定める地区計画
-| 4 | 地区計画（誘導容積型）
-| 5 | 地区計画（容積適正配分型）
-| 6 | 地区計画（高度利用型）
-| 7 | 地区計画（用途別容積型）
-| 8 | 地区計画（街並み誘導型）
-| 9 | 地区計画（立体道路制度）
-| 10 | 防災街区整備地区計画
-| 11 | 歴史的風致維持向上地区計画
-| 12 | 沿道地区計画
-| 13 | 沿道再開発等促進区を定める沿道地区計画
-| 14 | 集落地区計画
-
-|===
+[gml_dictionary,iur/codelists/3.1/DistrictPlan_function.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== DistrictDevelopmentPlan_function.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | DistrictDevelopmentPlan_function.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DistrictDevelopmentPlan_function.xml
-h| コード h| 説明
-| 1 | 地区整備計画
-| 2 | 特定建築物地区整備計画
-| 3 | 防災街区整備地区整備計画
-| 4 | 沿道地区整備計画
-| 5 | 集落地区整備計画
-| 6 | 歴史的風致維持向上地区整備計画
-
-|===
+[gml_dictionary,iur/codelists/3.1/DistrictDevelopmentPlan_function.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== ZonalDisasterPreventionFacility_facilityType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | ZonalDisasterPreventionFacility_facilityType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/ZonalDisasterPreventionFacility_facilityType.xml
-h| コード h| 説明
-| 1 | 地区防災施設
-| 2 | 特定地区防災施設
-
-|===
+[gml_dictionary,iur/codelists/3.1/ZonalDisasterPreventionFacility_facilityType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== Common_districtFacilityType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | Common_districtFacilityType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Common_districtFacilityType.xml
-h| コード h| 説明
-| 1 | 地区施設
-| 2 | 沿道地区施設
-| 3 | 集落地区施設
-
-|===
+[gml_dictionary,iur/codelists/3.1/Common_districtFacilityType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== District_function.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | District_function.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/District_function.xml
-h| コード h| 説明
-| 1 | 地区
-| 2 | 沿道地区
-| 3 | 集落地区
-
-|===
+[gml_dictionary,iur/codelists/3.1/District_function.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== PromotionArea_function.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | PromotionArea_function.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/PromotionArea_function.xml
-h| コード h| 説明
-| 1 | 再開発促進区
-| 2 | 開発整備促進区
-| 3 | 沿道再開発等促進区
-
-|===
+[gml_dictionary,iur/codelists/3.1/PromotionArea_function.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== Boundary_function.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | Boundary_function.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Boundary_function.xml
-h| コード h| 説明
-| 11 | 行政界
-| 21 | 地番界
-| 22 | 現地杭界
-| 23 | 見通し界
-| 24 | 境界未確定
-| 31 | 道路区域（道路法により定められる）
-| 32 | 道路区域（現況）
-| 33 | 河川区域（河川法により定められる）
-| 34 | 河川区域（現況）
-| 35 | 水路界
-| 36 | 鉄道界
-| 37 | 護岸界、河川界、埋立界
-| 38 | 都市公園法に定める公園界
-| 41 | 道路中心線
-
-|===
+[gml_dictionary,iur/codelists/3.1/Boundary_function.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== UrbanPlan_areaType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | UrbanPlan_areaType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/ UrbanPlan_areaType.xml
-h| コード h| 説明
-| 1001 | 都市計画区域
-| 1002 | 準都市計画区域
-| 1100 | 区域区分
-| 2000 | 地域地区
-| 2100 | 用途地域
-| 2200 | 特別用途地区
-| 2201 | 特定用途制限地域
-| 2202 | 特例容積率適用地区
-| 2203 | 高層住居誘導地区
-| 2204 | 高度地区
-| 2205 | 高度利用地区
-| 2206 | 特定街区
-| 2207 | 都市再生特別地区
-| 2208 | 居住調整地域
-| 2209 | 特定用途誘導地区
-| 2210 | 防火地域又は準防火地域
-| 2211 | 特定防災街区整備地区
-| 2212 | 景観地区
-| 2213 | 風致地区
-| 2214 | 駐車場整備地区
-| 2215 | 臨港地区
-| 2216 | 歴史的風土特別保存地区
-| 2217 | 第1種・第2種歴史的風土保存地区
-| 2218 | 緑地保全地域
-| 2219 | 特別緑地保存地区
-| 2220 | 緑化地域
-| 2221 | 流通業務地区
-| 2222 | 生産緑地地区
-| 2223 | 伝統的建造物群保存地区
-| 2224 | 航空機騒音障害防止地区
-| 2225 | 航空機騒音障害防止特別地区
-| 2226 | 居住環境向上用途誘導地区
-| 2300 | 促進区域
-| 2301 | 市街地再開発促進区域
-| 2302 | 土地区画整理促進区域
-| 2303 | 住宅街区整備促進区域
-| 2304 | 拠点業務市街地整備土地区画整理促進区域
-| 2400 | 遊休土地転換利用促進地区
-| 2500 | 被災市街地復興推進地域
-| 3000 | 都市施設
-| 3010 | 交通施設
-| 3011 | 道路
-| 3012 | 都市高速鉄道
-| 3013 | 駐車場
-| 3014 | 自動車ターミナル
-| 3015 | 空港
-| 3016 | 港湾
-| 3017 | 軌道
-| 3020 | 公共空地
-| 3021 | 公園
-| 3022 | 緑地
-| 3023 | 広場
-| 3024 | 墓園
-| 3030 | 供給施設
-| 3031 | 水道
-| 3032 | 電気供給施設
-| 3033 | ガス供給施設
-| 3040 | 処理施設
-| 3041 | 下水道
-| 3042 | 汚物処理場
-| 3043 | ごみ焼却場
-| 3044 | ごみ処理場
-| 3050 | 水路
-| 3051 | 河川
-| 3052 | 運河
-| 3060 | 教育文化施設
-| 3061 | 学校
-| 3062 | 図書館
-| 3063 | 研究施設
-| 3070 | 医療施設
-| 3071 | 病院
-| 3080 | 社会福祉施設
-| 3081 | 保育所
-| 3090 | 市場、と畜場、火葬場
-| 3091 | 市場
-| 3092 | と畜場
-| 3093 | 火葬場
-| 3100 | 一団地の住宅施設
-| 3110 | 一団地の官公庁施設
-| 3120 | 一団地の都市安全確保拠点施設
-| 3130 | 流通業務団地
-| 3140 | 一団地の津波防災拠点市街地形成施設
-| 3150 | 一団地の復興再生拠点市街地形成施設
-| 3160 | 一団地の復興拠点市街地形成施設
-| 3170 | 政令で定める都市施設
-| 3180 | 電気通信施設
-| 3190 | 防風施設
-| 3200 | 防火施設
-| 3210 | 防水施設
-| 3220 | 防雪施設
-| 3230 | 防潮施設
-| 3240 | 防砂施設
-| 4000 | 市街地開発事業
-| 4001 | 土地区画整理事業
-| 4002 | 新住宅市街地開発事業
-| 4003 | 工業団地造成事業
-| 4004 | 市街地再開発事業
-| 4005 | 新都市基盤整備事業
-| 4006 | 住宅街区整備事業
-| 4100 | 市街地開発事業等予定地域
-| 4102 | 新住宅市街地開発事業の予定区域
-| 4103 | 工業団地造成事業の予定区域
-| 4105 | 新都市基盤整備事業の予定区域
-| 4107 | 一団地の住宅施設の予定区域
-| 4108 | 一団地の官公庁施設の予定区域
-| 4109 | 流通業務団地の予定区域
-| 5000 | 地区計画
-| 5010 | 防災街区整備地区計画
-| 5020 | 歴史的風致維持向上地区計画
-| 5030 | 沿道地区計画
-| 5040 | 集落地区計画
-| 5100 | 地区整備計画
-| 5110 | 特定建築物地区整備計画
-| 5111 | 防災街区整備地区整備計画
-| 5130 | 沿道地区整備計画
-| 5140 | 集落地区整備計画
-| 5120 | 歴史的風致維持向上地区整備計画
-| 5200 | 地区
-| 5210 | 地区施設
-| 5220 | 地区防災施設
-| 5221 | 特定地区防災施設
-| 6001 | 都市機能誘導区域
-| 6002 | 居住誘導区域
-
-|===
+[gml_dictionary,iur/codelists/3.1/UrbanPlan_areaType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== UrbanFacility_function.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | UrbanFacility_function.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/UrbanFacility_function.xml
-h| コード h| 説明
-| 3000 | 都市施設
-| 3010 | 交通施設
-| 3011 | 道路
-| 3012 | 都市高速鉄道
-| 3013 | 駐車場
-| 3014 | 自動車ターミナル
-| 3015 | 空港
-| 3016 | 港湾
-| 3017 | 軌道
-| 3020 | 公共空地
-| 3021 | 公園
-| 3022 | 緑地
-| 3023 | 広場
-| 3024 | 墓園
-| 3025 | 運動場
-| 3030 | 供給施設
-| 3031 | 水道
-| 3032 | 電気供給施設
-| 3033 | ガス供給施設
-| 3034 | 地域冷暖房施設
-| 3035 | 石油パイプライン
-| 3040 | 処理施設
-| 3041 | 下水道
-| 3042 | 汚物処理場
-| 3043 | ごみ焼却場
-| 3044 | ごみ処理場
-| 3050 | 水路
-| 3051 | 河川
-| 3052 | 運河
-| 3060 | 教育文化施設
-| 3061 | 学校
-| 3062 | 図書館
-| 3063 | 研究施設
-| 3064 | 博物館
-| 3065 | 美術館
-| 3070 | 医療施設
-| 3071 | 病院
-| 3072 | 診療所
-| 3073 | 保健所
-| 3074 | 助産所
-| 3080 | 社会福祉施設
-| 3081 | 保育所
-| 3082 | 乳児院
-| 3083 | 母子寮
-| 3084 | 養護老人ホーム
-| 3090 | 市場、と畜場、火葬場
-| 3091 | 市場
-| 3092 | と畜場
-| 3093 | 火葬場
-| 3100 | 一団地の住宅施設
-| 3110 | 一団地の官公庁施設
-| 3120 | 一団地の都市安全確保拠点施設
-| 3130 | 流通業務団地
-| 3140 | 一団地の津波防災拠点市街地形成施設
-| 3150 | 一団地の復興再生拠点市街地形成施設
-| 3160 | 一団地の復興拠点市街地形成施設
-| 3170 | 政令で定める都市施設
-| 3180 | 電気通信施設
-| 3190 | 防風施設
-| 3200 | 防火施設
-| 3201 | 防火水槽
-| 3210 | 防水施設
-| 3211 | 河岸堤防
-| 3220 | 防雪施設
-| 3230 | 防潮施設
-| 3231 | 防潮堤
-| 3240 | 防砂施設
-| 3241 | 地滑り防止施設
-
-|===
+[gml_dictionary,iur/codelists/3.1/UrbanFacility_function.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml
-h| コード h| 説明
-| 000 | 公共測量成果
-| 101 | （公共測量ではない）現地測量の測量成果
-| 102 | （公共測量ではない）UAV写真測量の測量成果
-| 103 | （公共測量ではない）空中写真測量の測量成果
-| 104 | （公共測量ではない）既成図数値化の測量成果
-| 105 | （公共測量ではない）修正測量の測量成果
-| 106 | （公共測量ではない）写真地図作成の測量成果
-| 107 | （公共測量ではない）地図編集の測量成果
-| 108 | （公共測量ではない）地上レーザ測量の測量成果
-| 109 | （公共測量ではない）UAV写真点群測量の測量成果
-| 110 | （公共測量ではない）UAVレーザ測量の測量成果
-| 111 | （公共測量ではない）車載写真レーザ測量の測量成果
-| 112 | （公共測量ではない）航空レーザ測量の測量成果
-| 113 | （公共測量ではない）航空レーザ測深測量の測量成果
-| 114 | （公共測量ではない）路線測量の測量成果
-| 115 | （公共測量ではない）河川測量の測量成果
-| 116 | （公共測量ではない）用地測量の測量成果
-| 117 | （公共測量ではない）その他の応用測量の測量成果
-| 118 | （公共測量ではない）LidarSLAM計測の測量成果
-| 119 | （公共測量ではない）高密度航空レーザ測量の測量成果
-| 120 | （公共測量ではない）写真点群測量の測量成果
-| 121 | （公共測量ではない）三次元数値図化の測量成果
-| 201 | 都市計画基礎調査
-| 202 | 都市計画図書
-| 300 | 台帳（分類しない）
-| 301 | 道路台帳
-| 400 | その他のGISデータ
-| 500 | BIMモデル、CADデータ、設計図、完成図、一般図（平面図、配置図、断面図等）
-| 700 | その他の資料
-| 801 | 現地調査
-| 803 | GISデータ演算
-| 901 | 推定
-| 999 | 未作成
-
-|===
+[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<gsi_ops>>
@@ -7512,31 +6939,10 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml
-h| コード h| 説明
-| 000 | 公共測量成果
-| 022 | 基盤地図情報
-| 023 | 数値地形図データ
-| 100 | 公共測量成果ではない測量成果
-| 201 | 都市計画基礎調査
-| 202 | 都市計画図書
-| 300 | 台帳（分類しない）
-| 301 | 道路台帳
-| 400 | その他のGISデータ
-| 500 | BIMモデル、CADデータ、設計図、完成図、一般図（平面図、配置図、断面図等）
-| 600 | 統計データ
-| 701 | 建築計画概要書
-| 700 | その他の資料
-| 801 | 現地調査
-| 802 | 写真判読
-| 803 | GISデータ演算
-| 999 | 未作成
-
-|===
+[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<gsi_ops>>
@@ -7550,18 +6956,8 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml
-h| コード h| 説明
-| 1 | 空中写真
-| 2 | 衛星写真
-| 3 | 車載写真レーザ測量システムにより撮影した写真
-| 4 | 手持ちカメラにより撮影した写真
-| 5 | 疑似テクスチャ
-| 99 | 未作成
-
-|===
+[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
