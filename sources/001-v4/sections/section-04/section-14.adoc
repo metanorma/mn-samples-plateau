@@ -666,125 +666,20 @@ h| (uro:publicSurveySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジ�
 
 ====== CityFurniture_class.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | CityFurniture_class.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/CityFurniture_class.xml
-h| コード h| 説明
-| 1000 | 交通施設
-| 1010 | 通信施設
-| 1020 | 保安施設
-| 1030 | その他
-
-|===
+[gml_dictionary,iur/codelists/3.1/CityFurniture_class.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<citygml_20,annex="C.4">>
 
 ====== CityFurniture_function.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | CityFurniture_function.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/CityFurniture_function.xml
-h| コード h| 説明
-| 1000 | 道路標示
-| 1010 | 区画線
-| 1020 | 車道中央線
-| 1030 | 車線境界線
-| 1040 | 車道外側線
-| 1100 | 指示標示
-| 1110 | 横断歩道
-| 1120 | 停止線
-| 1200 | 規制標示
-| 2000 | 柵・壁
-| 3000 | 道路標識
-| 3110 | 案内標識
-| 3120 | 警戒標識
-| 3130 | 規制標識
-| 3140 | 指示標識
-| 3150 | 補助標識
-| 4000 | 建造物
-| 4010 | 上屋
-| 4020 | 地下出入口
-| 4030 | アーケード
-| 4100 | 視線誘導標
-| 4120 | 道路反射鏡
-| 4200 | 照明施設
-| 4300 | 道路情報管理施設
-| 4400 | 災害検知器
-| 4500 | 気象観測装置
-| 4600 | 道路情報板
-| 4700 | 光ファイバー
-| 4800 | 柱
-| 4810 | 路側
-| 4820 | 片持
-| 4830 | 門型
-| 4840 | 電柱
-| 4900 | 交通信号機
-| 5000 | 階段
-| 5010 | 通路
-| 5020 | エレベータ
-| 5030 | エスカレータ
-| 5100 | 管理用地上施設
-| 5200 | 電線共同溝
-| 5300 | CAB
-| 5400 | 情報BOX
-| 5500 | 管路
-| 5600 | 管理用開口部
-| 5610 | マンホール
-| 5620 | ハンドホール
-| 5630 | 入孔
-| 6000 | 距離標
-| 6010 | 境界標識
-| 6020 | 道路元標・里程標
-| 6100 | 料金徴収施設
-| 6200 | 融雪施設
-| 7000 | 排水施設
-| 7100 | 集水桝
-| 7200 | 排水溝
-| 7300 | 側溝
-| 7400 | 排水管
-| 7500 | 排水ポンプ
-| 8010 | 停留所
-| 8020 | 消火栓
-| 8030 | 郵便ポスト
-| 8040 | 電話ボックス
-| 8050 | 輸送管
-| 8060 | 軌道
-| 8070 | 架空線
-| 8080 | 自動販売機
-| 4201 | 墓碑
-| 4202 | 記念碑
-| 4203 | 立像
-| 4204 | 路傍祠
-| 4205 | 灯ろう
-| 4207 | 鳥居
-| 4208 | 自然災害伝承碑
-| 4223 | 噴水
-| 4224 | 井戸
-| 4225 | 油井・ガス井
-| 4228 | 起重機
-| 4231 | タンク
-| 4234 | 煙突
-| 4235 | 高塔
-| 4236 | 電波塔
-| 4239 | 風車
-| 4241 | 灯台
-| 4243 | 灯標
-| 4245 | ヘリポート
-| 4251 | 水位観測所
-| 8140 | 掲示板
-| 8150 | 点字ブロック
-| 8160 | ベンチ
-| 8170 | テーブル
-| 9000 | その他
-| 9001 | 看板（自立式）
-| 9002 | 水飲み
-
-|===
+[gml_dictionary,iur/codelists/3.1/CityFurniture_function.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<nilim_kiban_dps>>
@@ -797,47 +692,10 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml
-h| コード h| 説明
-| 000 | 公共測量成果
-| 101 | （公共測量ではない）現地測量の測量成果
-| 102 | （公共測量ではない）UAV写真測量の測量成果
-| 103 | （公共測量ではない）空中写真測量の測量成果
-| 104 | （公共測量ではない）既成図数値化の測量成果
-| 105 | （公共測量ではない）修正測量の測量成果
-| 106 | （公共測量ではない）写真地図作成の測量成果
-| 107 | （公共測量ではない）地図編集の測量成果
-| 108 | （公共測量ではない）地上レーザ測量の測量成果
-| 109 | （公共測量ではない）UAV写真点群測量の測量成果
-| 110 | （公共測量ではない）UAVレーザ測量の測量成果
-| 111 | （公共測量ではない）車載写真レーザ測量の測量成果
-| 112 | （公共測量ではない）航空レーザ測量の測量成果
-| 113 | （公共測量ではない）航空レーザ測深測量の測量成果
-| 114 | （公共測量ではない）路線測量の測量成果
-| 115 | （公共測量ではない）河川測量の測量成果
-| 116 | （公共測量ではない）用地測量の測量成果
-| 117 | （公共測量ではない）その他の応用測量の測量成果
-| 118 | （公共測量ではない）LidarSLAM計測の測量成果
-| 119 | （公共測量ではない）高密度航空レーザ測量の測量成果
-| 120 | （公共測量ではない）写真点群測量の測量成果
-| 121 | （公共測量ではない）三次元数値図化の測量成果
-| 201 | 都市計画基礎調査
-| 202 | 都市計画図書
-| 300 | 台帳
-| 301 | 道路台帳
-| 400 | その他のGISデータ
-| 500 | BIMモデル、CADデータ、設計図、完成図、一般図（平面図、配置図、断面図等）
-| 700 | その他の資料
-| 801 | 現地調査
-| 803 | GISデータ演算
-| 901 | 推定
-| 999 | 未作成
-
-|===
+[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<gsi_ops>>
@@ -851,31 +709,10 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml
-h| コード h| 説明
-| 000 | 公共測量成果
-| 022 | 基盤地図情報
-| 023 | 数値地形図データ
-| 100 | 公共測量成果ではない測量成果
-| 201 | 都市計画基礎調査
-| 202 | 都市計画図書
-| 300 | 台帳
-| 301 | 道路台帳
-| 400 | その他のGISデータ
-| 500 | BIMモデル、CADデータ、設計図、完成図、一般図（平面図、配置図、断面図等）
-| 600 | 統計データ
-| 701 | 建築計画概要書
-| 700 | その他の資料
-| 801 | 現地調査
-| 802 | 写真判読
-| 803 | GISデータ演算
-| 999 | 未作成
-
-|===
+[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<gsi_ops>>
@@ -889,35 +726,18 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml
-h| コード h| 説明
-| 1 | 空中写真
-| 2 | 衛星写真
-| 3 | 車載写真レーザ測量システムにより撮影した写真
-| 4 | 手持ちカメラにより撮影した写真
-| 5 | 疑似テクスチャ
-| 99 | 未作成
-
-|===
+[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== DataQualityAttribute_lod1HeightType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | DataQualityAttribute_lod1HeightType.xml
+[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml
-h| コード h| 説明
-| 1 | 点群から取得_最高高さ
-| 2 | 点群から取得_中央値
-| 3 | 点群から取得_平均値
-| 4 | 点群から取得_最頻値
-| 5 | 点群から取得_最低値
-| 6 | 航空写真図化_最高高さ
 | （使用不可）7 | 建築確認申請書類等に記載された「建築物の高さ」
 | （使用不可）8 | 都市計画基礎調査（建物利用現況）の「高さ（m）」
 | （使用不可）9 | 階高3m×都市計画基礎調査（建物利用現況）の「階数・地上（階）」による推定値
@@ -931,51 +751,17 @@ h| コード h| 説明
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | PublicSurveyDataQualityAttribute_srcScale.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml
-h| コード h| 説明
-| 1 | 地図情報レベル2500
-| 2 | 地図情報レベル1000
-| 3 | 地図情報レベル500
-
-|===
+[gml_dictionary,iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
-h| コード h| 説明
-| 001 | 現地測量の測量成果
-| 002 | UAV写真測量の測量成果
-| 003 | 空中写真測量の測量成果
-| 004 | 既成図数値化の測量成果
-| 005 | 修正測量の測量成果
-| 006 | 写真地図作成の測量成果
-| 007 | 地図編集の測量成果
-| 008 | 地上レーザ測量の測量成果
-| 009 | UAV写真点群測量の測量成果
-| 010 | UAVレーザ測量の測量成果
-| 011 | 車載写真レーザ測量の測量成果
-| 012 | 航空レーザ測量の測量成果
-| 013 | 航空レーザ測深測量の測量成果
-| 014 | 路線測量の測量成果
-| 015 | 河川測量の測量成果
-| 016 | 用地測量の測量成果
-| 017 | その他の応用測量の測量成果
-| 018 | LidarSLAM計測の測量成果
-| 019 | 高密度航空レーザ測量の測量成果
-| 020 | 写真点群測量の測量成果
-| 021 | 三次元数値図化の測量成果
-| 022 | 基盤地図情報
-| 023 | 数値地形図データ
-
-|===
+[gml_dictionary,iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<gsi_ops>>
@@ -986,12 +772,11 @@ h| コード h| 説明
 
 ====== CityFurniture_lodType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | CityFurniture_lodType.xml
+[gml_dictionary,iur/codelists/3.1/CityFurniture_lodType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/CityFurniture_lodType.xml
-h| コード h| 説明
 | 3.0 | 都市設備の主要な部分同士の接続部を表現しない。
 | 3.1 | 都市設備の主要な部分同士の接続部を表現する。
 
@@ -999,22 +784,8 @@ h| コード h| 説明
 
 ====== CityFurnitureDetailAttribute_facilityType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | CityFurnitureDetailAttribute_facilityType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/CityFurnitureDetailAttribute_facilityType.xml
-h| コード h| 説明
-| 1 | 基幹管路
-| 2 | 支線
-| 3 | 高圧管
-| 4 | 中圧管
-| 5 | 中低圧管
-| 6 | 雨水
-| 7 | 汚水
-| 8 | 合流
-| 9 | 共同溝
-| 10 | 法による共同溝
-
-|===
+[gml_dictionary,iur/codelists/3.1/CityFurnitureDetailAttribute_facilityType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 

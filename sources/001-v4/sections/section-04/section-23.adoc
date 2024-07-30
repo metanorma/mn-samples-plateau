@@ -205,31 +205,20 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== CityObjectGroup_class.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | CityObjectGroup_class.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/CityObjectGroup_class.xml
-h| コード h| 説明
-| 2000 | assembly
-
-|===
+[gml_dictionary,iur/codelists/3.1/CityObjectGroup_class.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<citygml_20,annex="C.10">>
 
 ====== CityObjectGroup_function.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | CityObjectGroup_function.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/CityObjectGroup_usage.xml
-h| コード h| 説明
-| 1030 | lod4Storey
-| 1040 | zone
-
-|===
+[gml_dictionary,iur/codelists/3.1/CityObjectGroup_function.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<citygml_20,annex="C.10">>

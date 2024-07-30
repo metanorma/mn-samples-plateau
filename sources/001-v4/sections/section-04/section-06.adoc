@@ -1399,17 +1399,10 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== Square_function.xml
 
-[cols="a,a"]
-|===
-| ファイル名 | Square_function.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Square_function.xml
-h| コード h| 説明
-| 1 | 駅前広場
-| 2 | 自動車ターミナル
-| 3 | 交通広場
-
-|===
+[gml_dictionary,iur/codelists/3.1/Square_function.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<mlit_city_plan_investigation>>
@@ -1427,66 +1420,40 @@ h| コード h| 説明
 
 ====== Common_status.xml
 
-[cols="a,a"]
-|===
-| ファイル名 | Common_status.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Common_status.xml
-h| コード h| 説明
-| 1 | 計画
-| 2 | 事業中
-
-|===
+[gml_dictionary,iur/codelists/3.1/Common_status.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<mlit_foundation_reqs>>
 
 ====== StationSquareAttribute_railwayType.xml
 
-[cols="a,a"]
-|===
-| ファイル名 | StationSquareAttribute_railwayType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/StationSquareAttribute_railwayType.xml
-h| コード h| 説明
-| 1 | JR
-| 2 | 私鉄
-| 3 | 公営
-| 4 | 第三セクター
-
-|===
+[gml_dictionary,iur/codelists/3.1/StationSquareAttribute_railwayType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<mlit_city_plan_investigation>>
 
 ====== TerminalAttribute \_userType.xml
 
-[cols="a,a"]
-|===
-| ファイル名 | TerminalAttribute_userType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/TerminalAttribute_userType.xml
-h| コード h| 説明
-| 1 | 一般
-| 2 | 専用
-
-|===
+[gml_dictionary,iur/codelists/3.1/TerminalAttribute \_userType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<mlit_city_plan_investigation>>
 
 ====== TerminalAttribute_terminalType.xml
 
-[cols="a,a"]
-|===
-| ファイル名 | TerminalAttribute_terminalType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/TerminalAttribute_terminalType.xml
-h| コード h| 説明
-| 1 | トラックターミナル
-| 2 | バスターミナル
-
-|===
+[gml_dictionary,iur/codelists/3.1/TerminalAttribute_terminalType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
