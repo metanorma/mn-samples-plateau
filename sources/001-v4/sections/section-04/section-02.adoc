@@ -5107,169 +5107,25 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 <<citygml_20,annex="C.1">>
 
 [.source]
-<<iso_6707-1>>.
+<<iso_6707-1>>
 
 
 ====== Room_class.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| Room_class.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Room_class.xml
-h| コード 2+h| 説明
-| SL_20 | Administrative, commercial and protective service spaces | 管理事務、商業、保安の空間
-| SL_25 | Cultural, educational, scientific and information spaces | 文化教育の空間
-| SL_30 | Industrial spaces | 産業の空間
-| SL_32 | Water and land management spaces | 水土管理（農林水産）の空間
-| SL_35 | Medical, health, welfare and sanitary spaces | 医療、健康、福祉、衛生の空間
-| SL_40 | Recreational spaces | レクリエーションの空間
-| SL_42 | Sport and activity spaces | スポーツ活動の空間
-| SL_45 | Residential spaces | 居住空間
-| SL_50 | Waste disposal spaces and locations | 廃棄物処理の空間・場所
-| SL_55 | Piped supply spaces | 配管による資源供給の空間
-| SL_60 | Heating, cooling and refrigeration spaces | 暖房、冷房、冷凍（冷蔵）の空間
-| SL_70 | Electrical power generation and lighting spaces | 電力・配電用の空間
-| SL_75 | Communications, security, safety and protection spaces | 通信、セキュリティ、安全、保護の空間
-| SL_80 | Transport spaces | 輸送・交通の空間
-| SL_82 | Vehicle spaces | 車両スペース
-| SL_90 | General spaces | その他一般の空間
-
-|===
+[gml_dictionary,iur/codelists/3.1/Room_class.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<uniclass>>
 
 ====== Room_function.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| Room_function.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Road_function.xml
-h| コード 2+h| 説明
-| SL_20_10 | Legislative spaces | 議会スペース
-| SL_20_15 | Administrative spaces | 管理事務活動の空間
-| SL_20_45 | Motor vehicle maintenance and fueling spaces | 自動車整備および燃料補給空間
-| SL_20_50 | Commercial spaces | 商業活動の空間
-| SL_20_55 | Postal communications spaces | 郵便通信の空間
-| SL_20_60 | Military protective spaces | 軍事保安のための空間
-| SL_20_62 | Parade spaces | パレード（行進）の空間
-| SL_20_65 | Law enforcement spaces | 警察業務空間
-| SL_20_70 | Judicial spaces | 司法活動の空間
-| SL_20_75 | Detention spaces | 拘置・勾留の空間
-| SL_20_80 | Weapons training spaces | 射撃訓練の空間
-| SL_20_85 | Security spaces | セキュリティ活動の空間
-| SL_20_90 | Fire and incident support spaces | 事故災害支援のための空間
-| SL_20_95 | Protected zones | 保護されたゾーン
-| SL_25_05 | Commemoration spaces | 記念空間
-| SL_25_10 | Educational spaces | 教育活動の空間
-| SL_25_20 | Design spaces | デザインする空間
-| SL_25_30 | Scientific and laboratory spaces | 科学および実験の空間
-| SL_25_40 | Training spaces | トレーニングスペース
-| SL_25_50 | Exhibition spaces | 展示空間
-| SL_25_70 | Information spaces | 情報活動空間
-| SL_25_75 | Learning resources spaces | 学習リソーススペース
-| SL_25_80 | Preparation spaces | 準備スペース
-| SL_25_90 | Worship spaces | 礼拝空間
-| SL_30_10 | Mineral extraction spaces | 鉱物採掘の空間
-| SL_30_20 | Nuclear and chemical management spaces | 原子力・化学物質管理の空間
-| SL_30_30 | Mineral processing spaces | 鉱物処理の空間
-| SL_30_40 | Animal and plant products processing spaces | 農林水産植物加工空間
-| SL_30_50 | Manufacturing spaces | 製造のための空間
-| SL_30_60 | Cleaning and maintenance spaces | 清掃・メンテナンスの空間
-| SL_30_80 | Kinetic power generation spaces | 機械式発電の空間
-| SL_30_85 | Marine and water maintenance spaces | 港湾保全の空間
-| SL_30_90 | Warehousing and distribution spaces | 倉庫・流通（配送）のための空間
-| SL_32_10 | Agricultural and horticultural spaces | 農業・園芸空間
-| SL_32_35 | Ground spaces | ダムスペース
-| SL_32_40 | Land managed spaces | 農地・園庭空間
-| SL_32_50 | Marine ways and waterway spaces | 土地管理用空間
-| SL_32_65 | Natural spaces | 海路・水路空間
-| SL_32_80 | Semi-natural spaces | 自然空間
-| SL_32_85 | Water control and retaining spaces | 半自然空間
-| SL_32_95 | Waterways spaces | 水管理・治水スペース
-| SL_35_10 | Medical spaces | 医療空間
-| SL_35_50 | Welfare spaces | 福祉空間
-| SL_35_60 | Food management spaces | 食品管理空間
-| SL_35_70 | Funerary spaces | 葬斎空間
-| SL_35_80 | Sanitary spaces | 健康衛生活動のための空間
-| SL_35_85 | Animal spaces | 動物のための空間
-| SL_35_90 | Animal medical, health, welfare and funerary spaces | 動物の医療、健康、福祉、葬儀の空間
-| SL_40_05 | Amusement spaces | アミューズメント空間
-| SL_40_20 | Dining spaces | ダイニング（食事）空間
-| SL_40_35 | Historic spaces | 歴史的空間
-| SL_40_55 | Outdoor play and social areas | 屋外の遊び場と社交場
-| SL_40_60 | Performing arts spaces | 舞台芸術空間
-| SL_40_65 | Performing arts ancillary spaces | 舞台芸術の補助空間
-| SL_42_15 | Courts, pitches and field sports spaces | コート、ピッチ、フィールドでのスポーツの空間
-| SL_42_40 | Indoor activity spaces | 屋内アクティビティ用空間
-| SL_42_55 | Outdoor activity spaces | 屋外アクティビティ用空間
-| SL_42_80 | Sports and activity ancillary spaces | スポーツとアクティビティの支援空間
-| SL_42_85 | Swimming spaces | 水泳のための空間
-| SL_42_90 | Water activity spaces | ウォーターアクティビティ
-| SL_42_95 | Winter sports spaces | ウィンタースポーツのための空間
-| SL_45_10 | Living spaces | 生活空間
-| SL_50_10 | Gas waste collection spaces | ガス廃棄物収集のための空間
-| SL_50_20 | Non-aqueous waste collection spaces | 非水系廃棄物収集空間
-| SL_50_25 | Drainage collection locations | 排水収集場所
-| SL_50_30 | Drainage collection spaces | 排水収集のための空間
-| SL_50_35 | Wastewater collection spaces | 排水収集の場所
-| SL_50_40 | Dry waste collection spaces | 乾燥廃棄物収集のための空間
-| SL_50_50 | Gas waste treatment and disposal spaces | ガス廃棄物処理のための空間
-| SL_50_60 | Non-aqueous waste treatment and disposal spaces | 非水系廃棄物の処理および処分空間
-| SL_50_70 | Drainage treatment and disposal spaces | 排水処理のための空間（排水処理場）
-| SL_50_75 | Wastewater treatment and disposal spaces | 廃水処理・処分のための空間
-| SL_50_80 | Dry waste treatment and disposal spaces | 乾燥廃棄物処理・処分のための空間
-| SL_55_05 | Gas extraction and treatment spaces | ガス抽出処理のための空間
-| SL_55_10 | Liquid fuel extraction and treatment spaces | 液体燃料抽出・処理のための空間
-| SL_55_15 | Water extraction and treatment spaces | 水抽出処理のための空間
-| SL_55_20 | Gas supply spaces | ガス供給のための空間
-| SL_55_30 | Fire-extinguishing supply spaces | 消火供給のための空間
-| SL_55_40 | Steam supply spaces | 蒸気供給のための空間
-| SL_55_50 | Liquid fuel supply spaces | 液体燃料供給のための空間
-| SL_55_60 | Process liquid supply spaces | 処理液供給のための空間
-| SL_55_65 | Ventilation and air conditioning spaces | 換気および空調のための空間
-| SL_55_70 | Water supply spaces | 給水のための空間
-| SL_55_90 | Piped solids supply spaces | パイプ固形物供給のための空間
-| SL_60_30 | Rail and paving heating spaces | 線路および舗装の融雪のための空間
-| SL_60_40 | Space heating and cooling spaces | 室内冷暖房のための空間
-| SL_60_60 | Refrigeration spaces | 冷凍（冷蔵）のための空間
-| SL_60_80 | Drying spaces | 乾燥のための空間
-| SL_70_10 | Electrical power generation spaces | 発電のための空間
-| SL_70_30 | Electricity distribution and transmission spaces | 配電・送電用の空間
-| SL_75_10 | Communications spaces | 通信のための空間
-| SL_75_30 | Signalling spaces | シグナルのための空間
-| SL_75_40 | Electronic security spaces | 電子セキュリティの空間
-| SL_75_50 | Safety and protection spaces | 安全と保護のための空間
-| SL_75_60 | Environmental safety | 環境安全
-| SL_75_70 | Control and management spaces | 制御・管理用の空間
-| SL_75_80 | Protection spaces | 保護用の空間
-| SL_80_05 | Aerospace ground spaces | 航空宇宙基地空間
-| SL_80_10 | Loading and embarkation spaces | 荷物積込・乗船スペース
-| SL_80_15 | Aerospace maintenance spaces | 航空宇宙整備のための空間
-| SL_80_20 | Cableways | ケーブルウェイ（索道）
-| SL_80_30 | Cable transport storage and maintenance spaces | ケーブル輸送の保管・メンテナンスの空間
-| SL_80_35 | Road spaces | 道路空間
-| SL_80_40 | Pathway spaces | 歩道空間
-| SL_80_45 | Vehicle storage spaces | 車両保管のための空間
-| SL_80_50 | Railway spaces | 鉄道空間
-| SL_80_70 | Marine and waterways transport spaces | 海上・水上輸送のための空間
-| SL_80_90 | Transport hubs | 輸送ハブ
-| SL_80_92 | Grid systems | グリッド（輸送網）システム
-| SL_80_94 | Bridge and structure spaces | 橋梁構造物の空間
-| SL_80_96 | Tunnel and shaft spaces | トンネル・立て坑の空間
-| SL_80_98 | Transport kinematic envelopes | 交通施設の車両限界
-| SL_82_61 | Passenger spaces | 乗客スペース
-| SL_90_10 | Circulation spaces | 資源循環のための空間
-| SL_90_20 | Common spaces | 共用空間（コモンスペース）
-| SL_90_30 | Construction voids | 建設余地
-| SL_90_40 | General levels | 一般レベル
-| SL_90_50 | Storage spaces | 収納貯蔵のための空間
-| SL_90_60 | Unoccupied voids | 占有されていない開口
-| SL_90_90 | Plant and control spaces | 機械室及び制御室
-
-|===
+[gml_dictionary,iur/codelists/3.1/Room_function.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<uniclass>>
@@ -5286,146 +5142,30 @@ h| コード 2+h| 説明
 
 ====== IntBuildingInstallation_function.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| IntBuildingInstallation_function.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/IntBuildingInstallation_function.xml
-h| コード 2+h| 説明
-| EF_25 | Wall and barrier elements | 壁およびバリア（バリケード）エレメント
-| EF_30 | Roofs, floor and paving elements | 屋根、床、舗装エレメント
-| EF_35 | Stairs and ramps | 階段および傾斜路（スロープ）エレメント
-| EF_37 | Tunnel, vessel and tower elements | トンネル、船舶（ベッセル）、煙突タワーエレメント
-| EF_40 | Signage, fittings, furnishings and equipment | 標識、付属品、備品および設備（FF＆E）エレメント
-| EF_45 | Flora and fauna elements | 動植物エレメント
-| EF_50 | Waste disposal functions | 廃棄物処理機能 [発生材運搬処分機能]
-| EF_55 | Piped supply functions | 配管供給機能
-| EF_60 | Heating, cooling and refrigeration functions | 暖房、冷房、冷凍（冷蔵）機能
-| EF_65 | Ventilation and air conditioning functions | 空調換気機能
-| EF_70 | Electrical power and lighting functions | 電力および照明機能
-| EF_75 | Communications, security, safety and protection functions | 通信、セキュリティ、安全、保護機能
-| EF_80 | Transport functions | 輸送機能
-
-|===
+[gml_dictionary,iur/codelists/3.1/IntBuildingInstallation_function.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<uniclass>>
 
 ====== BuildingFurniture_class.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| BuildingFurniture_class.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/BuildingFurniture_class.xml
-h| コード 2+h| 説明
-| Pr_40_10 | Signature products | サイネージ製品
-| Pr_40_20 | Sanitari fittings and accessories | 衛生器具および付属品
-| Pr_40_30 | Fittings | 継手
-| Pr_40_50 | Furnishings | 家具
-| Pr_40_70 | Equipment | 装置
-
-|===
+[gml_dictionary,iur/codelists/3.1/BuildingFurniture_class.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<uniclass>>
 
 ====== BuildingFurniture_function.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| BuildingFurniture_function.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/BuildingFurniture_function.xml
-h| コード 2+h| 説明
-| Pr_40_10_57 | Notices, identification and labels | 通知、識別、ラベル
-| Pr_40_10_77 | Signs and markers | サインとマーカー
-| Pr_40_10_90 | Water and navigation aids | 水と航行援助標識
-| Pr_40_10_96 | Wind direction indicator products | 風向計製品
-| Pr_40_20_06 | Bathing fittings | 入浴金具
-| Pr_40_20_27 | Emergency shower products | 緊急用シャワー製品
-| Pr_40_20_60 | Packaged sanitary fittings | パッケージ化された衛生器具
-| Pr_40_20_76 | Sanitary accessories | サニタリーアクセサリー
-| Pr_40_20_87 | Taps and water supply outlet fittings | 水栓、自動水栓
-| Pr_40_20_93 | Urinal and WC fittings | 小便器とトイレの付属品
-| Pr_40_20_96 | Washbasins, sinks and troughs | 洗面台、シンク、トラフ
-| Pr_40_30_04 | Animal housing | 動物飼育
-| Pr_40_30_20 | Curtains and screens | カーテンとスクリーン
-| Pr_40_30_21 | Cycle stands and lockers | 自転車スタンドとロッカー
-| Pr_40_30_22 | Deterrents and traps | 抑止力と罠
-| Pr_40_30_25 | Display and presentation fittings | ディスプレイおよびプレゼンテーションフィッティング
-| Pr_40_30_26 | Drying lines | 物干しロープ
-| Pr_40_30_28 | External storage units | 外部ストレージユニット
-| Pr_40_30_29 | Fitted chairs, seats and benches | 取り付けられた椅子、座席およびベンチ
-| Pr_40_30_30 | Fitted desks, tables and worktops | 取り付けられた机、テーブルおよび調理台
-| Pr_40_30_31 | Flagpoles | 旗竿
-| Pr_40_30_50 | Mail fittings | メールフィッティング
-| Pr_40_30_55 | Musical instruments | 楽器
-| Pr_40_30_61 | Play equipment | 遊具
-| Pr_40_30_65 | Point of sale fittings | POSフィッティング
-| Pr_40_30_66 | Poster display units | ポスター表示ユニット
-| Pr_40_30_71 | Religious fittings | 宗教的な付属品
-| Pr_40_30_75 | Safes and security cabinets | 金庫とセキュリティキャビネット
-| Pr_40_30_78 | Shelves, hangers and racks | 棚、ハンガー、ラック
-| Pr_40_30_80 | Skateboard installations | スケートボードのインストール
-| Pr_40_30_83 | Sports fittings | スポーツフィッティング
-| Pr_40_30_84 | Sports goals | スポーツゴール
-| Pr_40_30_85 | Sports netting | スポーツネット
-| Pr_40_30_86 | Swimming pool fittings | スイミングプールの付属品
-| Pr_40_30_87 | Storage units and cupboards | ストレージユニットと食器棚
-| Pr_40_50_05 | Artworks | アートワーク
-| Pr_40_50_06 | Beds | ベッド
-| Pr_40_50_07 | Bins and buckets | ビンとバケツ
-| Pr_40_50_12 | Chairs, seats and benches | 椅子、座席、ベンチ
-| Pr_40_50_13 | Clocks | 時計
-| Pr_40_50_21 | Desks and tables | 机、テーブル
-| Pr_40_50_28 | Extinguishers and fire blankets | 消火器とファイヤーブランケット
-| Pr_40_50_31 | Furniture booths | 家具ブース
-| Pr_40_50_33 | Garden furnishings | 庭の家具
-| Pr_40_50_51 | Medical chairs and couches | 医療用椅子とソファ
-| Pr_40_50_52 | Medical desks, tables and worktops | 医療デスク、テーブル、調理台
-| Pr_40_50_53 | Medical trolleys | 医療用トロリー
-| Pr_40_50_81 | Soft furnishings | ソフト家具
-| Pr_40_50_83 | Sports furnishings | スポーツ家具
-| Pr_40_50_84 | Stands and holders | スタンド、ホルダー
-| Pr_40_50_86 | Swimming pool furnishings | スイミングプールの家具
-| Pr_40_50_90 | Trolleys | トロリー
-| Pr_40_50_96 | Wheels | ホイール
-| Pr_40_70 | Equipment | 装置
-| Pr_40_70_13 | Cleaning equipment | 洗浄装置
-| Pr_40_70_15 | Cold water supply sources | 冷水供給源
-| Pr_40_70_17 | Commercial cooking equipment | 業務用調理器具
-| Pr_40_70_21 | Dishwashers | 食器洗浄機
-| Pr_40_70_22 | Dispensers and acceptance units | ディスペンサーと受け入れユニット
-| Pr_40_70_23 | Commercial display and service catering products | 業務用ディスプレイおよびケータリングサービス製品
-| Pr_40_70_24 | Domestic cooking equipment | 家庭用調理器具
-| Pr_40_70_25 | Domestic laundry equipment | 家庭用洗濯設備
-| Pr_40_70_26 | Domestic refrigerators and freezers | 家庭用冷蔵・冷凍庫
-| Pr_40_70_27 | Environmental protection equipment | 環境保護装置
-| Pr_40_70_29 | Fire simulation equipment | 火災シミュレーション装置
-| Pr_40_70_31 | Commercial food refrigerators and freezers | 食品冷蔵・冷凍庫
-| Pr_40_70_35 | General workshop equipment | 一般的なワークショップ機器
-| Pr_40_70_46 | Laundry fittings and equipment | ランドリーの付属品および装置
-| Pr_40_70_47 | Laundry washers and dryers | 洗濯機と乾燥機
-| Pr_40_70_50 | Mail equipment | メール機器
-| Pr_40_70_51 | Medical and laboratory equipment | 医療および実験装置
-| Pr_40_70_53 | Medical, laboratory and pharmacy refrigerators and freezers | 医療、実験室、薬局の冷蔵庫と冷凍庫
-| Pr_40_70_55 | Mooring, docking and flotation equipment | 係留、ドッキング、浮揚装置
-| Pr_40_70_58 | Office equipment | オフィス設備
-| Pr_40_70_62 | Personal dryers | パーソナルドライヤー
-| Pr_40_70_63 | Photographic equipment | 写真機材
-| Pr_40_70_65 | Preparation catering equipment | 準備ケータリング機器
-| Pr_40_70_66 | Process equipment | プロセス機器
-| Pr_40_70_67 | Projectors | プロジェクター
-| Pr_40_70_71 | Recreation equipment | レクリエーション設備
-| Pr_40_70_73 | Rolling stock depot equipment | 鉄道車庫設備
-| Pr_40_70_75 | Safety equipment | 安全装置
-| Pr_40_70_84 | Sports equipment | スポーツ用品
-| Pr_40_70_86 | Swimming pool equipment | 舞台装置
-| Pr_40_70_96 | Water control equipment | スイミングプール設備
-| Pr_40_70_99 | Weighing equipment | 水制御装置
-
-|===
+[gml_dictionary,iur/codelists/3.1/BuildingFurniture_function.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<uniclass>>
@@ -5582,6 +5322,7 @@ h| コード 2+h| 説明
 [.source]
 <<ifc_2x3_cv>>
 
+
 ====== IfcElementCompositionEnum
 
 [cols="3a,22a"]
@@ -5604,27 +5345,6 @@ h| 値 h| 説明
 ----
 {% render 'gml_dict_template', root: root, filename: filename %}
 ----
-
-// | 01 | IfcRamp：STRAIGHT_RUN_RAMP（直線的なスロープ）
-// | 02 | IfcRamp：TWO_STRAIGHT_RUN_RAMP （1ヵ所の踊り場のある直線的なスロープ）
-// | 03 | IfcRamp：QUARTER_TURN_RAMP （1ヵ所の踊り場で90度転回するスロープ）
-// | 04 | IfcRamp：TWO_QUARTER_TURN_RAMP （2ヵ所の踊り場で各90度転回するスロープ）
-// | 05 | IfcRamp：HALF_TURN_RAMP （1ヵ所の踊り場で180度転回するスロープ）
-// | 06 | IfcRamp：SPIRAL_RAMP（円形又は楕円形のスロープ）
-// | 21 | IfcRoof：FLAT_ROOF（陸屋根）
-// | 22 | IfcRoof：SHED_ROOF（片流れ屋根）
-// | 23 | IfcRoof：GABLE_ROOF（切妻屋根）
-// | 24 | IfcRoof：HIP_ROOF（寄棟屋根）
-// | 25 | IfcRoof：HIPPED_GABLE_ROOF（半切妻屋根）
-// | 26 | IfcRoof：GAMBREL_ROOF（腰折屋根）
-// | 27 | IfcRoof：MANSARD_ROOF（マンサード屋根）
-// | 28 | IfcRoof：BARREL_ROOF（かまぼこ屋根）
-// | 29 | IfcRoof：RAINBOW_ROOF（虹型屋根）
-// | 30 | IfcRoof：BUTTEFLY_ROOF（バタフライ屋根）
-// | 31 | IfcRoof：PAVILION_ROOF（方形屋根）
-// | 32 | IfcRoof：DOOM_ROOF（ドーム屋根）
-// | 99 | USERDEFINED（利用者定義）
-// | 00 | NOTDEFINED（定義なし）
 
 [.source]
 <<ifc_2x3_cv>>
