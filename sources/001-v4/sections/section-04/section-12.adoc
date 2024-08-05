@@ -2022,61 +2022,30 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== Tunnel_class.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | Tunnel_class.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Tunnel_class.xml
-h| コード h| 説明
-| 1000 | 交通
-| 1010 | 供給
-| 1020 | 歴史
-| 1030 | その他
-
-|===
+[gml_dictionary,iur/codelists/3.1/Tunnel_class.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<citygml_20,annex="C.2">>
 
 ====== Tunnel_function.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | Tunnel_function.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/Tunnel_function.xml
-h| コード h| 説明
-| 1000 | 鉄道用トンネル
-| 1010 | 道路用トンネル
-| 1020 | 水路トンネル
-| 1030 | 歩行者用トンネル
-
-|===
+[gml_dictionary,iur/codelists/3.1/Tunnel_function.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<citygml_20,annex="C.2">>
 
 ====== TunnelInstallation_function.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | TunnelInstallation_function.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/TunnelInstallation_function.xml
-h| コード h| 説明
-| 01 | 受変電設備
-| 02 | 予備電源設備
-| 03 | 換気設備
-| 04 | 排水設備
-| 05 | 監視制御設備
-| 06 | 通報装置
-| 07 | 非常用警報装置
-| 08 | 消火設備
-| 09 | 避難誘導設備
-| 10 | 避難連絡坑
-| 90 | その他
-
-|===
+[gml_dictionary,iur/codelists/3.1/TunnelInstallation_function.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<トンネル施設台帳>>
@@ -2086,159 +2055,57 @@ h| コード h| 説明
 
 ====== TunnelFunctionalAttribute_userType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | TunnelFunctionalAttribute_userType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/TunnelFunctionalAttribute_userType.xml
-h| コード h| 説明
-| 01 | 車道
-| 02 | 歩行者専用
-| 03 | 自転車専用
-| 04 | 自転車歩行者専用
-| 05 | 車道＋自歩道併用
-| 06 | 横断水路
-| 07 | 車道＋横断水路併用
-| 08 | 車道・自歩道＋横断水路併用
-| 09 | 自歩道＋横断水路併用
-| 10 | 鉄道
-
-|===
+[gml_dictionary,iur/codelists/3.1/TunnelFunctionalAttribute_userType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<トンネル施設台帳>>
 
 ====== TunnelStructureAttribute_tunnelType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | TunnelStructureAttribute_tunnelType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/TunnelStructureAttribute_tunnelType.xml
-h| コード h| 説明
-| 01 | トンネル
-| 02 | シェッド
-| 03 | シェルター
-| 04 | カルバート
-| 05 | 地下横断歩道
-
-|===
+[gml_dictionary,iur/codelists/3.1/TunnelStructureAttribute_tunnelType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<nilim_kiban_dps>>
 
 ====== TunnelStructureAttribute_tunnelSubType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | TunnelStructureAttribute_tunnelSubType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/TunnelStructureAttribute_tunnelSubType.xml
-h| コード h| 説明
-| 01 | ボックスカルバート
-| 02 | 門型カルバート
-| 03 | アーチカルバート
-| 04 | コンクリートパイプカルバート
-| 05 | コルゲートメタルカルバート
-| 06 | 硬質塩化ビニルパイプカルバート
-| 07 | ロックシェッド
-| 08 | スノーシェッド
-
-|===
+[gml_dictionary,iur/codelists/3.1/TunnelStructureAttribute_tunnelSubType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<nilim_kiban_dps>>
 
 ====== TunnelStructureAttribute_mouthType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | TunnelStructureAttribute_mouthType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/TunnelStructureAttribute_mouthType.xml
-h| コード h| 説明
-| 01 | 面壁工
-| 02 | 突出工
-| 03 | 竹割工
-| 04 | 逆竹割工
-
-|===
+[gml_dictionary,iur/codelists/3.1/TunnelStructureAttribute_mouthType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<nilim_kiban_dps>>
 
 ====== ConstructionStructureAttribute_slopeType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | ConstructionStructureAttribute_slopeType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/ConstructionStructureAttribute_slopeType.xml
-h| コード h| 説明
-| 01 | 階段式
-| 02 | 押上式
-| 03 | スロープ式
-| 04 | 平面式
-| 05 | 各種併用
-| 90 | その他
-
-|===
+[gml_dictionary,iur/codelists/3.1/ConstructionStructureAttribute_slopeType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== ConstructionBaseAttribute_adminType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | ConstructionBaseAttribute_adminType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/ConstructionBaseAttribute_adminType.xml
-h| コード h| 説明
-| 1 | 港湾局
-| 2 | 都道府県（港湾管理者）
-| 3 | 都道府県（海岸管理者）
-| 4 | 都道府県（河川管理者）
-| 5 | 都道府県（漁港管理者）
-| 6 | 都道府県（道路管理者）
-| 7 | 都道府県（その他）
-| 8 | 市区町村（港湾管理者）
-| 9 | 市区町村（海岸管理者）
-| 10 | 市区町村（河川管理者）
-| 11 | 市区町村（漁港管理者）
-| 12 | 市区町村（道路管理者）
-| 13 | 市区町村（その他）
-| 14 | 民間
-| 15 | 防衛省
-| 16 | 埠頭公社
-| 17 | その他公的機関
-| 18 | 不明
-| 21 | 東北地方整備局
-| 22 | 関東地方整備局
-| 23 | 北陸地方整備局
-| 24 | 中部地方整備局
-| 25 | 近畿地方整備局
-| 26 | 四国地方整備局
-| 27 | 中国地方整備局
-| 28 | 九州地方整備局
-| 31 | 第一港湾建設局
-| 32 | 第二港湾建設局
-| 33 | 第三港湾建設局
-| 34 | 第四港湾建設局
-| 35 | 第五港湾建設局
-| 36 | 北海道開発庁
-| 37 | 沖縄総合事務局
-| 38 | 北海道開発局
-| 39 | 管理組合
-| 50 | 国土交通省気象庁
-| 51 | 土地改良区
-| 52 | 利水組合・用水組合
-| 53 | 農林水産省
-| 54 | 水資源開発公団
-| 55 | 電力会社・電源開発株式会社
-| 56 | その他公的企業体
-| 57 | 利水組合・用水組合
-| 58 | 個人
-| 59 | その他
-
-|===
+[gml_dictionary,iur/codelists/3.1/ConstructionBaseAttribute_adminType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<mlit_kiban_chizu>>
@@ -2251,114 +2118,40 @@ h| コード h| 説明
 
 ====== ConstructionBaseAttribute_installerType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | ConstructionBaseAttribute_installerType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/ConstructionBaseAttribute_installerType.xml
-h| コード h| 説明
-| 01 | 国土交通省（各地方整備局、北海道開発局含む）
-| 02 | 沖縄開発庁
-| 03 | 農林水産省（各地方農政局含む）
-| 04 | 国土交通省気象庁
-| 05 | 都道府県
-| 06 | 市区町村
-| 07 | 水資源開発公団
-| 08 | その他の公共企業体
-| 09 | 土地改良区
-| 10 | 利水組合・用水組合
-| 11 | 電力会社・電源開発株式会社
-| 12 | その他の企業
-| 13 | 個人
-| 99 | その他
-| 0 | 不明
-
-|===
+[gml_dictionary,iur/codelists/3.1/ConstructionBaseAttribute_installerType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<mlit_cyberport>>
 
 ====== ConstructionRiskAssessmentAttribute_riskType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | ConstructionRiskAssessmentAttribute_riskType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/ConstructionRiskAssessmentAttribute_riskType.xml
-h| コード h| 説明
-| 01 | 判定区分Ⅰ　（健全）
-| 02 | 判定区分Ⅱ　（予防保全段階）
-| 03 | 判定区分Ⅲ　（早期措置段階）
-| 04 | 判定区分Ⅳ　（緊急措置段階）
-| 91 | 未点検
-| 92 | 点検対象外
-
-|===
+[gml_dictionary,iur/codelists/3.1/ConstructionRiskAssessmentAttribute_riskType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<mlit_road_damage_map>>
 
 ====== ConstructionRiskAssessmentAttribute_status.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | ConstructionRiskAssessmentAttribute_status.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/ConstructionRiskAssessmentAttribute_status.xml
-h| コード h| 説明
-| 01 | 予防保全段階
-| 02 | 措置完了済み
-| 03 | 措置着手済み
-| 04 | 措置未着手
-
-|===
+[gml_dictionary,iur/codelists/3.1/ConstructionRiskAssessmentAttribute_status.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<mlit_road_damage_map>>
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | DataQualityAttribute_geometrySrcDesc.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml
-h| コード h| 説明
-| 000 | 公共測量成果
-| 101 | （公共測量ではない）現地測量の測量成果
-| 102 | （公共測量ではない）UAV写真測量の測量成果
-| 103 | （公共測量ではない）空中写真測量の測量成果
-| 104 | （公共測量ではない）既成図数値化の測量成果
-| 105 | （公共測量ではない）修正測量の測量成果
-| 106 | （公共測量ではない）写真地図作成の測量成果
-| 107 | （公共測量ではない）地図編集の測量成果
-| 108 | （公共測量ではない）地上レーザ測量の測量成果
-| 109 | （公共測量ではない）UAV写真点群測量の測量成果
-| 110 | （公共測量ではない）UAVレーザ測量の測量成果
-| 111 | （公共測量ではない）車載写真レーザ測量の測量成果
-| 112 | （公共測量ではない）航空レーザ測量の測量成果
-| 113 | （公共測量ではない）航空レーザ測深測量の測量成果
-| 114 | （公共測量ではない）路線測量の測量成果
-| 115 | （公共測量ではない）河川測量の測量成果
-| 116 | （公共測量ではない）用地測量の測量成果
-| 117 | （公共測量ではない）その他の応用測量の測量成果
-| 118 | （公共測量ではない）LidarSLAM計測の測量成果
-| 119 | （公共測量ではない）高密度航空レーザ測量の測量成果
-| 120 | （公共測量ではない）写真点群測量の測量成果
-| 121 | （公共測量ではない）三次元数値図化の測量成果
-| 201 | 都市計画基礎調査
-| 202 | 都市計画図書
-| 300 | 台帳
-| 301 | 道路台帳
-| 400 | その他のGISデータ
-| 500 | BIMモデル、CADデータ、設計図、完成図、一般図（平面図、配置図、断面図等）
-| 700 | その他の資料
-| 801 | 現地調査
-| 803 | GISデータ演算
-| 901 | 推定
-| 999 | 未作成
-
-|===
+[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<gsi_ops>>
@@ -2372,31 +2165,10 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | DataQualityAttribute_thematicSrcDesc.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml
-h| コード h| 説明
-| 000 | 公共測量成果
-| 022 | 基盤地図情報
-| 023 | 数値地形図データ
-| 100 | 公共測量成果ではない測量成果
-| 201 | 都市計画基礎調査
-| 202 | 都市計画図書
-| 300 | 台帳
-| 301 | 道路台帳
-| 400 | その他のGISデータ
-| 500 | BIMモデル、CADデータ、設計図、完成図、一般図（平面図、配置図、断面図等）
-| 600 | 統計データ
-| 701 | 建築計画概要書
-| 700 | その他の資料
-| 801 | 現地調査
-| 802 | 写真判読
-| 803 | GISデータ演算
-| 999 | 未作成
-
-|===
+[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<gsi_ops>>
@@ -2410,35 +2182,18 @@ h| コード h| 説明
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | DataQualityAttribute_appearanceSrcDesc.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml
-h| コード h| 説明
-| 1 | 空中写真
-| 2 | 衛星写真
-| 3 | 車載写真レーザ測量システムにより撮影した写真
-| 4 | 手持ちカメラにより撮影した写真
-| 5 | 疑似テクスチャ
-| 99 | 未作成
-
-|===
+[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== DataQualityAttribute_lod1HeightType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | DataQualityAttribute_lod1HeightType.xml
+[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml
-h| コード h| 説明
-| 1 | 点群から取得_最高高さ
-| 2 | 点群から取得_中央値
-| 3 | 点群から取得_平均値
-| 4 | 点群から取得_最頻値
-| 5 | 点群から取得_最低値
-| 6 | 航空写真図化_最高高さ
 | （使用不可）7 | 建築確認申請書類等に記載された「建築物の高さ」
 | （使用不可）8 | 都市計画基礎調査（建物利用現況）の「高さ（m）」
 | （使用不可）9 | 階高3m×都市計画基礎調査（建物利用現況）の「階数・地上（階）」による推定値
@@ -2452,51 +2207,17 @@ h| コード h| 説明
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | PublicSurveyDataQualityAttribute_srcScale.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml
-h| コード h| 説明
-| 1 | 地図情報レベル2500
-| 2 | 地図情報レベル1000
-| 3 | 地図情報レベル500
-
-|===
+[gml_dictionary,iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
-h| コード h| 説明
-| 001 | 現地測量の測量成果
-| 002 | UAV写真測量の測量成果
-| 003 | 空中写真測量の測量成果
-| 004 | 既成図数値化の測量成果
-| 005 | 修正測量の測量成果
-| 006 | 写真地図作成の測量成果
-| 007 | 地図編集の測量成果
-| 008 | 地上レーザ測量の測量成果
-| 009 | UAV写真点群測量の測量成果
-| 010 | UAVレーザ測量の測量成果
-| 011 | 車載写真レーザ測量の測量成果
-| 012 | 航空レーザ測量の測量成果
-| 013 | 航空レーザ測深測量の測量成果
-| 014 | 路線測量の測量成果
-| 015 | 河川測量の測量成果
-| 016 | 用地測量の測量成果
-| 017 | その他の応用測量の測量成果
-| 018 | LidarSLAM計測の測量成果
-| 019 | 高密度航空レーザ測量の測量成果
-| 020 | 写真点群測量の測量成果
-| 021 | 三次元数値図化の測量成果
-| 022 | 基盤地図情報
-| 023 | 数値地形図データ
-
-|===
+[gml_dictionary,iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<gsi_ops>>
@@ -2507,12 +2228,11 @@ h| コード h| 説明
 
 ====== Tunnel_lodType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | Tunnel_lodType.xml
+[gml_dictionary,iur/codelists/3.1/Tunnel_lodType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/ Tunnel_lodType.xml
-h| コード h| 説明
 | 4.0 | LOD3.0の外形に加え、トンネル内部（内空）を再現する。内空の境界面を床、内壁面又は天井面に区分する。また、内壁等に扉や窓がある場合に区分する。トンネル内部の付属物は取得しない。
 | 4.1 | LOD4.0に加え、「短辺の実長が3ｍ以上」又は「横断又は縦断面積が3m2以上かつ短辺の実長が1m以上」の固定された設備を取得する。
 | 4.2 | LOD4.1に加え、全ての固定された設備及び固定されていない設備を取得する。

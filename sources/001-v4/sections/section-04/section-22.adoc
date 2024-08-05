@@ -153,12 +153,11 @@ h| (gml:boundedBy) | gml:Envelope [0..1] | マテリアルの空間範囲。
 
 ====== Appearance_mimeType.xml
 
-[cols="3a,22a"]
-|===
-| ファイル名 | Appearance_mimeType.xml
+[gml_dictionary,iur/codelists/3.1/Appearance_mimeType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/Appearance_mimeType.xml
-h| コード h| 説明
 | image/jpeg | *.jpeg, \*.jpg images
 | image/png | *.png images
 

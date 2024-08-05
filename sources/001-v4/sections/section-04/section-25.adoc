@@ -1116,100 +1116,28 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== FacilityTypeAttribute_class.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| FacilityTypeAttribute_class.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.0/FacilityTypeAttribute_class.xml
-h| コード 2+h| 説明
-| 01 2+| 河川管理施設
-| 02 2+| 砂防施設
-| 03 2+| 道路施設
-| 04 2+| 鉄道施設
-| 05 2+| 港湾施設
-| 06 2+| 漁港施設
-| 07 2+| 公園施設
-| 90 2+| 地下埋設物
-
-|===
+[gml_dictionary,iur/codelists/3.1/FacilityTypeAttribute_class.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== FacilityTypeAttribute_function.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| FacilityTypeAttribute_function.xml
+[gml_dictionary,iur/codelists/3.1/FacilityTypeAttribute_function.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/FacilityTypeAttribute_function.xml
-h| コード 2+h| 説明
-| 0501 2+| 港湾水域施設
-| 0502 2+| 港湾外郭施設
-| 0503 2+| 港湾係留施設
-| 0504 2+| 港湾臨港交通施設
-| 0505 2+| 港湾航行補助施設
-| 0506 2+| 港湾荷さばき施設
-| 0507 2+| 港湾旅客施設
-| 0508 2+| 港湾保管施設
-| 0509 2+| 港湾船舶役務用施設
-| 0510 2+| 港湾公害防止施設
-| 0511 2+| 港湾マリーナ及びPBS
-| 0512 2+| 港湾廃棄物処理施設
-| 0513 2+| 港湾環境整備施設
-| 0514 2+| 港湾厚生施設
-| 0515 2+| 港湾管理施設
-| 0701 2+| 園路広場
-| 0702 2+| 修景施設
-| 0703 2+| 休養施設
-| 0704 2+| 遊戯施設
-| 0705 2+| 運動施設
-| 0706 2+| 教養施設
-| 0707 2+| 便益施設
-| 0708 2+| 管理施設
-| 0709 2+| その他施設
-| 0801 2+| 漁港水域施設
-| 0802 2+| 漁港外郭施設
-| 0803 2+| 漁港係留施設
-| 0804 2+| 漁港輸送施設
-| 0805 2+| 漁港航行補助施設
-| 0806 2+| 漁船漁具保全施設
-| 0807 2+| 漁港補給施設
-| 0808 2+| 増殖及び養殖用施設
-| 0809 2+| 漁獲物の処理、保蔵及び加工施設
-| 0810 2+| 漁業用通信施設属性
-| 0811 2+| 漁港浄化施設属性
-| 0812 2+| 漁港廃油処理施設
-| 0813 2+| 漁港環境整備施設
-| 0814 2+| 漁港厚生施設
-| 0815 2+| 漁港管理施設
-| 0816 2+| 漁港施設用地
-| 0101 2+| 揚水機場
-| 0102 2+| 排水機場
-| 9001 2+| 上水
-| 9002 2+| 下水
-| 9003 2+| ガス
-| 9004 2+| 電力
-| 9005 2+| 通信
-| 9006 2+| 熱供給
-
-|===
 
 [[toc4_25_04_02]]
 ===== 河川管理施設の拡張属性で使用するコードリスト
 
 ====== RiverFacilityIdAttribute_sideType.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| RiverFacilityIdAttribute_sideType.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/RiverFacilityIdAttribute_sideType.xml
-h| コード 2+h| 説明
-| 1 2+| 左岸
-| 2 2+| 右岸
-| 3 2+| 中洲
-| 99 2+| その他
-| 0 2+| 不明
-
-|===
+[gml_dictionary,iur/codelists/3.1/RiverFacilityIdAttribute_sideType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [.source]
 <<mlit_kiban_chizu>>
@@ -1219,1028 +1147,249 @@ h| コード 2+h| 説明
 
 ====== PortAttribute_facilityDetailType.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| PortAttribute_facilityDetailType.xml
+[gml_dictionary,iur/codelists/3.1/PortAttribute_facilityDetailType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortAttribute_facilityDetailType.xml
-h| コード 2+h| 説明
-| 1 2+| 上屋
-| 2 2+| 移動式
-| 3 2+| 待合所
-| 4 2+| 倉庫
-| 5 2+| 野積場
-| 6 2+| 貯油施設
-| 7 2+| 危険物置場
-| 8 2+| 貯木場
-| 9 2+| 給水
-| 10 2+| 給油
-| 11 2+| 修理
-| 12 2+| 保管
-| 13 2+| 離着岸補助
-| 14 2+| 廃棄物埋立護岸
-| 15 2+| 焼却
-| 16 2+| 廃油
-| 17 2+| 廃棄物処理船舶・車両
-| 18 2+| 海浜
-| 19 2+| 緑地
-| 20 2+| 休憩所
-| 21 2+| 資材倉庫
-| 22 2+| 事務所
-| 23 2+| 通船
-| 24 2+| 清掃船
-| 25 2+| 離岸堤
-| 26 2+| 車道
-| 27 2+| 歩行者専用道
-| 28 2+| 駐車場
-| 29 2+| 橋梁
-| 30 2+| 運河
-| 31 2+| 防波堤
-| 32 2+| 護岸
-| 33 2+| 防潮堤
-| 34 2+| 堤防
-| 35 2+| 突堤
-| 36 2+| 胸壁
-| 37 2+| 防砂堤
-| 38 2+| 岸壁
-| 39 2+| さん橋
-| 40 2+| 物揚場
-| 41 2+| 浮さん橋
-| 42 2+| 船揚場
-| 43 2+| 係船くい
-| 44 2+| 係船浮標
-| 45 2+| 照明施設
-| 46 2+| 信号施設
-| 47 2+| 港務通信施設
-| 48 2+| 航路標識
-| 49 2+| 固定式
-| 50 2+| 軌道走行式
-| 51 2+| その他施設
-
-|===
 
 ====== PortAttribute_portStatus.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| PortAttribute_portStatus.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortAttribute_portStatus.xml
-h| コード 2+h| 説明
-| 1 2+| 国際拠点
-| 2 2+| 重要
-| 3 2+| 地方
-| 4 2+| 56条
-| 5 2+| 国際戦略
-| 6 2+| 漁港
-| 7 2+| その他
-
-|===
+[gml_dictionary,iur/codelists/3.1/PortAttribute_portStatus.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== PortAttribute_grantType.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| PortAttribute_grantType.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortAttribute_grantType.xml
-h| コード 2+h| 説明
-| 1 2+| 国有施設
-| 2 2+| 補助施設
-| 3 2+| 単独施設
-
-|===
+[gml_dictionary,iur/codelists/3.1/PortAttribute_grantType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== PortAttribute_storageCapacityUnit.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| PortAttribute_storageCapacityUnit.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortAttribute_storageCapacityUnit.xml
-h| コード 2+h| 説明
-| 1 2+| m3
-| 2 2+| kl
-| 3 2+| 隻
-
-|===
+[gml_dictionary,iur/codelists/3.1/PortAttribute_storageCapacityUnit.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== ShipServiceFacility_supplyAbilityUnit.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| ShipServiceFacility_supplyAbilityUnit.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/ShipServiceFacility_supplyAbilityUnit.xml
-h| コード 2+h| 説明
-| 1 2+| kl/時間
-| 2 2+| ton/時間
-
-|===
+[gml_dictionary,iur/codelists/3.1/ShipServiceFacility_supplyAbilityUnit.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== PortManagementFacility_unitOfShipType.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| PortManagementFacility_unitOfShipType.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortManagementFacility_unitOfShipType.xml
-h| コード 2+h| 説明
-| 1 2+| G/T
-| 2 2+| ton
-
-|===
+[gml_dictionary,iur/codelists/3.1/PortManagementFacility_unitOfShipType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== PortAttribute_geologicalType.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| PortAttribute_geologicalType.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortAttribute_geologicalType.xml
-h| コード 2+h| 説明
-| 1 2+| 岩
-| 2 2+| 礫
-| 3 2+| 砂
-| 4 2+| 砂質土
-| 5 2+| シルト
-| 6 2+| 粘性土
-| 7 2+| 粘土
-| 8 2+| 有機質土
-| 9 2+| その他
-
-|===
+[gml_dictionary,iur/codelists/3.1/PortAttribute_geologicalType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== CyberportMarinaAndPBS_mainVessels.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| CyberportMarinaAndPBS_mainVessels.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/CyberportMarinaAndPBS_mainVessels.xml
-h| コード 2+h| 説明
-| 1 2+| 一般貨物船（荷役）
-| 2 2+| 旅 客 船（その他）
-| 3 2+| フェリー（荷役）
-| 4 2+| 一般貨物船（その他）
-
-|===
+[gml_dictionary,iur/codelists/3.1/CyberportMarinaAndPBS_mainVessels.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== MooringFacility_mainVessels.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| MooringFacility_mainVessels.xml
+[gml_dictionary,iur/codelists/3.1/MooringFacility_mainVessels.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/MooringFacility_mainVessels.xml
-h| コード 2+h| 説明
-| 1 2+| 一般貨物船（荷役）
-| 2 2+| 旅客船（その他）
-| 3 2+| フェリー（荷役）
-| 4 2+| 貨客船（荷役）
-| 5 2+| ＲＯＲＯ船（荷役）
-| 6 2+| コンテナ船（荷役）
-| 7 2+| 原油タンカー（荷役）
-| 8 2+| 自動車専用船（荷役）
-| 9 2+| 鉄鋼石専用船（荷役）
-| 10 2+| 石炭船（荷役）
-| 11 2+| ＬＮＧ船（荷役）
-| 12 2+| ＬＰＧ船（荷役）
-| 13 2+| 木材専用船（荷役）
-| 14 2+| 穀物専用船（荷役）
-| 15 2+| セメント専用船(荷役)
-| 16 2+| その他専用船（荷役）
-| 17 2+| 漁船（荷役）
-| 18 2+| プレジャーボート船(その他)
-| 19 2+| 自衛艦（その他）
-| 20 2+| 官公庁船（その他）
-| 21 2+| 水中翼船（その他）
-| 22 2+| エアークッション艇(その他)
-| 23 2+| 遊漁船（その他）
-| 24 2+| その他の船舶（荷役）
-| 31 2+| 一般貨物船（その他）
-| 33 2+| フェリー（その他）
-| 34 2+| 貨客船（その他）
-| 35 2+| ＲＯＲＯ船（その他）
-| 36 2+| コンテナ船（その他）
-| 37 2+| 原油タンカー（その他）
-| 38 2+| 自動車専用船（その他）
-| 39 2+| 鉄鋼石専用船（その他）
-| 40 2+| 石 炭 船（その他）
-| 41 2+| ＬＮＧ船（その他）
-| 42 2+| ＬＰＧ船（その他）
-| 43 2+| 木材専用船（その他）
-| 44 2+| 穀物専用船（その他）
-| 45 2+| セメント専用船(その他)
-| 46 2+| その他専用船（その他）
-| 47 2+| 漁船（その他）
-| 54 2+| その他の船舶（その他）
-| 99 2+| 不明
-
-|===
 
 ====== PortAttribute_form.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| PortAttribute_form.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortAttribute_form.xml
-h| コード 2+h| 説明
-| 1 2+| 島式
-| 2 2+| 突堤式
-| 3 2+| さん橋式
-
-|===
+[gml_dictionary,iur/codelists/3.1/PortAttribute_form.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== CargoHandlingFacility_packingName.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| CargoHandlingFacility_packingName.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/CargoHandlingFacility_packingName.xml
-h| コード 2+h| 説明
-| 1 2+| コンテナ
-| 2 2+| ばら荷
-| 3 2+| パレット
-| 4 2+| その他
-
-|===
+[gml_dictionary,iur/codelists/3.1/CargoHandlingFacility_packingName.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== HarborFacility_areaType.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| HarborFacility_areaType.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/HarborFacility_areaType.xml
-h| コード 2+h| 説明
-| 1 2+| 防波堤沖
-| 2 2+| 防波堤内
-| 3 2+| 防波堤内・沖
-
-|===
+[gml_dictionary,iur/codelists/3.1/HarborFacility_areaType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== PortTransportationFacility_pavementType.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| PortTransportationFacility_pavementType.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortTransportationFacility_pavementType.xml
-h| コード 2+h| 説明
-| 1 2+| 砂利敷
-| 2 2+| アスファルト舗装
-| 3 2+| コンクリート舗装
-| 4 2+| その他
-
-|===
+[gml_dictionary,iur/codelists/3.1/PortTransportationFacility_pavementType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== PortTransportationFacility_routeType.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| PortTransportationFacility_routeType.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortTransportationFacility_routeType.xml
-h| コード 2+h| 説明
-| 1 2+| 単線
-| 2 2+| 複線
-| 3 2+| 複々線
-| 4 2+| その他
-
-|===
+[gml_dictionary,iur/codelists/3.1/PortTransportationFacility_routeType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== PortAttribute_mainCargo.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| PortAttribute_mainCargo.xml
+[gml_dictionary,iur/codelists/3.1/PortAttribute_mainCargo.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortAttribute_mainCargo.xml
-h| コード 2+h| 説明
-| 1 2+| 麦
-| 2 2+| 米
-| 3 2+| とうもろこし
-| 4 2+| 豆類
-| 5 2+| その他雑穀
-| 6 2+| 野菜・果物
-| 7 2+| 綿花
-| 8 2+| その他農産品
-| 9 2+| 羊毛
-| 10 2+| その他畜産品
-| 11 2+| 水産品
-| 12 2+| 原木
-| 13 2+| 製材
-| 14 2+| 樹脂類
-| 15 2+| 木材チップ
-| 16 2+| その他林産品
-| 17 2+| 薪炭
-| 18 2+| 石炭
-| 19 2+| 鉄鉱石
-| 20 2+| 金属鉱
-| 21 2+| 砂利・砂
-| 22 2+| 石材
-| 23 2+| 原油
-| 24 2+| りん鉱石
-| 25 2+| 石灰石
-| 26 2+| 原塩
-| 27 2+| 非金属鉱物
-| 28 2+| 鉄鋼
-| 29 2+| 鋼材
-| 30 2+| 非鉄金属
-| 31 2+| 金属製品
-| 32 2+| 鉄道車両
-| 33 2+| 完成自動車
-| 34 2+| その他輪送用車両
-| 35 2+| 二輪自動車
-| 36 2+| 自動車部品
-| 37 2+| その他輸送機械
-| 38 2+| 産業機械
-| 39 2+| 電気機械
-| 40 2+| 測量・光学・医療用機械
-| 41 2+| 事務用機器
-| 42 2+| その他機械
-| 43 2+| 陶磁器
-| 44 2+| セメント
-| 45 2+| ガラス類
-| 46 2+| 窯業品
-| 47 2+| 重油
-| 48 2+| 揮発油
-| 49 2+| その他の石油
-| 50 2+| ＬＮＧ（液化天然ガス）
-| 51 2+| ＬＰＧ（液化石油ガス）
-| 52 2+| その他石油製品
-| 53 2+| コークス
-| 54 2+| 石炭製品
-| 55 2+| 化学薬品
-| 56 2+| 化学肥料
-| 57 2+| 染料・塗料・合成樹脂・その他化学工業品
-| 58 2+| 紙・パルプ
-| 59 2+| 糸及び紡績半製品
-| 60 2+| その他繊維工業品
-| 61 2+| 砂糖
-| 62 2+| 製造食品
-| 63 2+| 飲料
-| 64 2+| 水
-| 65 2+| たばこ
-| 66 2+| その他食料工業品
-| 67 2+| がん具
-| 68 2+| 衣服・身廻品・はきもの
-| 69 2+| 文房具・運動娯楽用品・楽器
-| 70 2+| 家具装備品
-| 71 2+| その他日用品
-| 72 2+| ゴム製品
-| 73 2+| 木製品
-| 74 2+| その他製造工業品
-| 75 2+| 金属くず
-| 76 2+| 再利用資材
-| 77 2+| 動植物性製造飼肥料
-| 78 2+| 廃棄物
-| 79 2+| 廃土砂
-| 80 2+| 輸送用容器
-| 81 2+| 取合せ品
-| 82 2+| 分類不能のもの
-| 83 2+| フェリー（自航）
-
-|===
 
 ====== ProtectiveFacility_structureType.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| ProtectiveFacility_structureType.xml
+[gml_dictionary,iur/codelists/3.1/ProtectiveFacility_structureType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/ProtectiveFacility_structureType.xml
-h| コード 2+h| 説明
-| 1 2+| 直立
-| 2 2+| 傾斜
-| 3 2+| 混成
-| 4 2+| その他
-| 5 2+| 単扉室
-| 6 2+| 複扉室
-| 7 2+| 複式
-| 8 2+| 階段式
-| 9 2+| 並列式
-| 10 2+| 重力式
-| 11 2+| 矢板式
-| 12 2+| たな式
-| 13 2+| セル式
-| 14 2+| くい式
-| 15 2+| ジャケット式
-| 16 2+| 井筒式
-| 17 2+| 橋脚式
-| 18 2+| 地表式
-| 19 2+| 嵩上式（高架式）
-| 20 2+| 地下式
-| 21 2+| 堀割式
-| 22 2+| 沈埋式
-| 23 2+| 隧道式
-| 24 2+| プレートガーダー
-| 25 2+| トラス型
-| 26 2+| アーチ型
-| 27 2+| つり橋
-
-|===
 
 ====== PortAttribute_structureType.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| PortAttribute_structureType.xml
+[gml_dictionary,iur/codelists/3.1/PortAttribute_structureType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortAttribute_structureType.xml
-h| コード 2+h| 説明
-| 1 2+| ケーソン（異形、消波ケーソンを含む）
-| 2 2+| ハイブリッドケーソン（異形、消波ケーソンを含む）
-| 3 2+| スリットケーソン（異形、消波ケーソンを含む）
-| 4 2+| コンクリートブロック（直立消波ブロックを含む）
-| 5 2+| セルラーブロック
-| 6 2+| コンクリート単塊
-| 7 2+| 石枠
-| 8 2+| 練石積
-| 9 2+| 空石積
-| 10 2+| コンクリート杭
-| 11 2+| 鋼矢板
-| 12 2+| その他
-| 13 2+| 捨石
-| 14 2+| 捨ブロック
-| 15 2+| 異形ブロック
-| 16 2+| 石張工
-| 17 2+| コンクリート張工
-| 18 2+| 石積工
-| 19 2+| スリットケーソン（異形ケーソンを含む）
-| 20 2+| 船舶駆体
-| 21 2+| 直立消波ブロック
-| 22 2+| くい
-| 23 2+| 浮き防波堤
-| 24 2+| 鋼
-| 25 2+| 鉄筋コンクリート
-| 26 2+| ケーソン
-| 27 2+| ハイブリッドケーソン
-| 28 2+| スリットケーソン
-| 29 2+| Ｌ型ブロック
-| 30 2+| 鋼管矢板
-| 31 2+| 鉄筋コンクリート矢板
-| 32 2+| プレストレストコンクリート矢板
-| 33 2+| 木矢板
-| 34 2+| 鋼ぐい
-| 35 2+| コンクリートぐい
-| 36 2+| 鋼板
-| 37 2+| 木
-| 38 2+| 木ぐい
-| 39 2+| プレキャストコンクリート
-| 40 2+| ハイブリッド
-| 41 2+| 場所打コンクリート
-| 42 2+| コンクリートブロック
-| 43 2+| 砂利敷
-| 44 2+| アスファルト舗装
-| 45 2+| コンクリート舗装
-| 46 2+| 鉄骨鉄筋コンクリート
-| 47 2+| ブロック
-| 48 2+| 木材
-
-|===
 
 ====== PortWasteTreatmentFacilityAttribute_wasteType.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| PortWasteTreatmentFacilityAttribute_wasteType.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/PortWasteTreatmentFacilityAttribute_wasteType.xml
-h| コード 2+h| 説明
-| 1 2+| 一般廃棄物
-| 2 2+| 産業廃棄物
-| 3 2+| 公共残土
-| 4 2+| 浚渫土
-
-|===
+[gml_dictionary,iur/codelists/3.1/PortWasteTreatmentFacilityAttribute_wasteType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [[toc4_25_04_04]]
 ===== 漁港施設の拡張属性で使用するコードリスト
 
 ====== FishingPortFacilityAttribute_facilityDetailsType.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| FishingPortFacilityAttribute_facilityDetailsType.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/FishingPortFacilityAttribute_facilityDetailsType.xml
-h| コード 2+h| 説明
-| 1 2+| 係船浮標
-| 2 2+| 護岸
-| 3 2+| 公害防止のための導水施設
-| 4 2+| 広場
-| 5 2+| 航路
-| 6 2+| 航路標識並びに漁船の入出港のための信号施設
-| 7 2+| 桟橋
-| 8 2+| 照明施設
-| 9 2+| 植栽
-| 10 2+| 水産種苗生産施設
-| 11 2+| 水産倉庫
-| 12 2+| 水門
-| 13 2+| 製氷施設
-| 14 2+| 船舶保管施設
-| 15 2+| 船揚場
-| 16 2+| 畜養施設
-| 17 2+| 駐車場
-| 18 2+| 堤防
-| 19 2+| 鉄道
-| 20 2+| 導流提
-| 21 2+| 道路
-| 22 2+| 突堤
-| 23 2+| 泊地
-| 24 2+| 浮桟橋
-| 25 2+| 物揚場
-| 26 2+| 防砂提
-| 27 2+| 防潮堤
-| 28 2+| 防波堤
-| 29 2+| 野積場
-| 30 2+| 養殖用餌料保管調製施設
-| 31 2+| 養殖用作業施設
-| 32 2+| 陸上無線電信
-| 33 2+| 陸上無線電話
-| 34 2+| 冷蔵施設
-| 35 2+| 冷凍施設
-| 36 2+| 閘門
-
-|===
+[gml_dictionary,iur/codelists/3.1/FishingPortFacilityAttribute_facilityDetailsType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== FishingPortFacilityAttribute_portType.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| FishingPortFacilityAttribute_portType.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/FishingPortFacilityAttribute_portType.xml
-h| コード 2+h| 説明
-| 1 2+| 第1種
-| 2 2+| 第2種
-| 3 2+| 第3種
-| 4 2+| 第4種
-
-|===
+[gml_dictionary,iur/codelists/3.1/FishingPortFacilityAttribute_portType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== FishingPortFacilityAttribute_structureType.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| FishingPortFacilityAttribute_structureType.xml
+[gml_dictionary,iur/codelists/3.1/FishingPortFacilityAttribute_structureType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/FishingPortFacilityAttribute_structureType.xml
-h| コード 2+h| 説明
-| 1 2+| 直立提
-| 2 2+| 傾斜堤
-| 3 2+| 混成提
-| 4 2+| 矢板・杭式
-| 5 2+| 浮体式浮防波堤
-| 6 2+| 緩傾斜型
-| 7 2+| 重力式
-| 8 2+| 杭式・鋼矢板式
-| 9 2+| 重力式係船岸
-| 10 2+| 矢板式係船岸
-| 11 2+| 階段式係船岸
-| 12 2+| 係船くい式
-| 13 2+| 係船浮標式
-| 14 2+| 桟橋式係船岸
-| 15 2+| 浮体式係船岸
-| 16 2+| 斜路式
-| 17 2+| 上架式
-| 18 2+| 単桁式
-| 19 2+| 連結桁式
-| 20 2+| 構桁式
-| 21 2+| アーチ式
-| 22 2+| 開放式
-| 23 2+| 閉鎖式
-
-|===
 
 ====== Common_mainMaterial.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| Common_mainMaterial.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_mainMaterial.xml
-h| コード 2+h| 説明
-| 1 2+| コンクリ－ト
-| 2 2+| 鉄筋コンクリ－ト
-| 3 2+| 鋼材・コンクリート
-| 4 2+| 鋼矢板
-| 5 2+| 石積
-| 6 2+| 粗石
-| 7 2+| アスファルト
-| 8 2+| 砕石
-| 9 2+| 鉄
-| 10 2+| 木
-| 11 2+| 石
-
-|===
+[gml_dictionary,iur/codelists/3.1/Common_mainMaterial.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [[toc4_25_04_05]]
 ===== 工事・点検記録の拡張属性で使用するコードリスト
 
 ====== MaintenanceHistoryAttribute_maintenanceType.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| MaintenanceHistoryAttribute_maintenanceType.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/MaintenanceHistoryAttribute_maintenanceType.xml
-h| コード 2+h| 説明
-| 1 2+| 初期工事
-| 2 2+| 改良工事
-| 3 2+| 補修工事
-| 4 2+| 防食工事
-| 5 2+| 更生工事
-| 6 2+| 再構築工事
-| 7 2+| 更新工事
-| 8 2+| 布設管渠工事
-| 9 2+| 既設管調査
-| 10 2+| 現場調査
-
-|===
+[gml_dictionary,iur/codelists/3.1/MaintenanceHistoryAttribute_maintenanceType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 [[toc4_25_04_06]]
 ===== 公園施設長寿命化計画の拡張属性で使用するコードリスト
 
 ====== Common_parkCode.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| Common_parkCode.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_parkCode.xml
-h| コード 2+h| 説明
-| 1 2+| N1
-| 2 2+| N2
-| 3 2+| N3
-| 4 2+| N4
-| 5 2+| N5
-| 6 2+| N6
-| 7 2+| N7
-| 8 2+| N8
-| 9 2+| N9
-| 10 2+| N10
-| 11 2+| N11
-| 12 2+| N12
-| 13 2+| N13
-| 14 2+| N14
-| 15 2+| N15
-| 16 2+| N16
-| 17 2+| N17
-
-|===
+[gml_dictionary,iur/codelists/3.1/Common_parkCode.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== Common_parkName.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| Common_parkName.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_parkName.xml
-h| コード 2+h| 説明
-| 1 2+| 国営武蔵丘陵森林公園
-| 2 2+| 国営飛鳥・平城宮跡歴史公園
-| 3 2+| 淀川河川公園
-| 4 2+| 海の中道海浜公園
-| 5 2+| 国営沖縄記念公園
-| 6 2+| 国営昭和記念公園
-| 7 2+| 滝野すずらん丘陵公園
-| 8 2+| 国営常陸海浜公園
-| 9 2+| 国営木曽三川公園
-| 10 2+| 国営みちのく杜の湖畔公園
-| 11 2+| 国営備北丘陵公園
-| 12 2+| 国営讃岐まんのう公園
-| 13 2+| 国営越後丘陵公園
-| 14 2+| 国営アルプスあづみの公園
-| 15 2+| 国営吉野ヶ里歴史公園
-| 16 2+| 国営明石海峡公園
-| 17 2+| 国営東京臨海広域防災公園
-
-|===
+[gml_dictionary,iur/codelists/3.1/Common_parkName.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== Common_parkType.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| Common_parkType.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_parkType.xml
-h| コード 2+h| 説明
-| 1 2+| 街区
-| 2 2+| 近隣
-| 3 2+| 地区
-| 4 2+| 総合
-| 5 2+| 運動
-| 6 2+| 広域
-| 7 2+| 国営
-| 8 2+| 風致
-| 9 2+| 動植物
-| 10 2+| 歴史
-| 11 2+| 緩緑
-| 12 2+| 都緑
-| 13 2+| 緑道
-| 14 2+| その他
-
-|===
+[gml_dictionary,iur/codelists/3.1/Common_parkType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== Common_parkFacilityName.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| Common_parkFacilityName.xml
+[gml_dictionary,iur/codelists/3.1/Common_parkFacilityName.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_parkFacilityName.xml
-h| コード 2+h| 説明
-| 1010 2+| 舗装
-| 1020 2+| 縁石
-| 1030 2+| 橋梁
-| 1040 2+| 階段
-| 1050 2+| カルバート
-| 1060 2+| デッキ
-| 1990 2+| その他
-| 2010 2+| 植栽
-| 2020 2+| 芝生
-| 2030 2+| 花壇
-| 2040 2+| いけがき
-| 2050 2+| 日陰たな
-| 2060 2+| 噴水
-| 2070 2+| 水流
-| 2080 2+| 池
-| 2090 2+| 滝
-| 2100 2+| つき山
-| 2110 2+| 彫像
-| 2120 2+| 灯籠
-| 2130 2+| 石組
-| 2140 2+| 飛石
-| 2990 2+| その他
-| 3010 2+| 休憩所
-| 3020 2+| 四阿
-| 3030 2+| パーゴラ
-| 3040 2+| シェルター
-| 3050 2+| ベンチ
-| 3060 2+| 野外卓
-| 3070 2+| ピクニック場
-| 3080 2+| キャンプ場
-| 3990 2+| その他
-| 4010 2+| 踏み板式ぶらんこ
-| 4020 2+| ゆりかご型ぶらんこ
-| 4030 2+| すべり台
-| 4040 2+| ジャングルジム
-| 4050 2+| 鉄棒
-| 4060 2+| 回転塔
-| 4070 2+| シーソー
-| 4080 2+| 複合遊具
-| 4090 2+| 健康器具系施設
-| 4100 2+| フィールドアスレチック遊具
-| 4110 2+| ラダー
-| 4120 2+| スプリング遊具
-| 4130 2+| つり輪
-| 4140 2+| 空気膜構造遊具
-| 4150 2+| 砂場
-| 4160 2+| 石の山・人工的な築山
-| 4170 2+| 象形遊具
-| 4180 2+| 徒渉池
-| 4190 2+| 舟遊場
-| 4200 2+| 魚釣場
-| 4210 2+| メリーゴーラウンド
-| 4220 2+| 遊戯用電車
-| 4230 2+| 野外ダンス場
-| 4990 2+| その他
-| 5010 2+| 野球場
-| 5020 2+| バックネット
-| 5030 2+| スコアボード
-| 5040 2+| バックスクリーン
-| 5050 2+| 陸上競技場
-| 5060 2+| サッカー場
-| 5070 2+| ラグビー場
-| 5080 2+| テニスコート
-| 5090 2+| バスケットボール場
-| 5100 2+| バスケットゴール
-| 5110 2+| バレーボール場
-| 5120 2+| ゴルフ場
-| 5130 2+| ゲートボール場
-| 5140 2+| 体育館
-| 5150 2+| 水泳プール
-| 5160 2+| 温水利用型健康運動施設
-| 5170 2+| ボート場
-| 5180 2+| スケート場
-| 5190 2+| スキー場
-| 5200 2+| 相撲場
-| 5210 2+| 弓場
-| 5220 2+| 乗馬場
-| 5230 2+| 鉄棒
-| 5240 2+| つり輪
-| 5250 2+| リハビリテーション用運動施設
-| 5260 2+| 附属する観覧席
-| 5270 2+| 附属する更衣所
-| 5280 2+| 附属する控室
-| 5290 2+| 附属する運動用具倉庫
-| 5300 2+| 附属するシャワー
-| 5990 2+| その他
-| 6010 2+| 植物園
-| 6020 2+| 温室
-| 6030 2+| 分区園
-| 6040 2+| 動物園
-| 6050 2+| 動物舎
-| 6060 2+| 水族館
-| 6070 2+| 自然生態園
-| 6080 2+| 野鳥観察所
-| 6090 2+| 動植物の保護繁殖施設
-| 6100 2+| 野外劇場
-| 6110 2+| ステージ
-| 6120 2+| デッキ
-| 6130 2+| 野外音楽堂
-| 6140 2+| 図書館
-| 6150 2+| 陳列館
-| 6160 2+| 天体又は気象観測施設
-| 6170 2+| 体験学習施設
-| 6180 2+| 記念碑
-| 6190 2+| 古墳
-| 6200 2+| 城跡
-| 6210 2+| 旧宅
-| 6990 2+| その他
-| 7010 2+| 売店
-| 7020 2+| 飲食店
-| 7030 2+| 宿泊施設
-| 7040 2+| 駐車場
-| 7050 2+| 自転車置き場
-| 7060 2+| 園内移動用施設
-| 7070 2+| 便所
-| 7080 2+| 荷物預り所
-| 7090 2+| 時計台
-| 7100 2+| 水飲場
-| 7110 2+| 手洗場
-| 7990 2+| その他
-| 8010 2+| 門
-| 8020 2+| 柵
-| 8030 2+| 時計
-| 8040 2+| 車止め
-| 8050 2+| 管理事務所
-| 8060 2+| 詰所
-| 8070 2+| 倉庫
-| 8080 2+| 車庫
-| 8090 2+| 材料置場
-| 8100 2+| 苗畑
-| 8110 2+| 掲示板
-| 8120 2+| 標識
-| 8130 2+| 掲揚台
-| 8140 2+| 掲揚ポール
-| 8150 2+| カーブミラー
-| 8160 2+| 照明施設
-| 8170 2+| 引込柱
-| 8180 2+| 電線
-| 8190 2+| ごみ処理場
-| 8200 2+| くず箱
-| 8210 2+| 水道
-| 8220 2+| 井戸
-| 8230 2+| 暗渠
-| 8240 2+| 側溝
-| 8250 2+| 排水ます
-| 8260 2+| マンホール
-| 8270 2+| ハンドホール
-| 8280 2+| 水門
-| 8290 2+| 雨水貯留施設
-| 8300 2+| 貯水施設
-| 8310 2+| 散水施設
-| 8320 2+| 水質浄化施設
-| 8330 2+| 護岸
-| 8340 2+| 擁壁
-| 8350 2+| 法面
-| 8360 2+| 発電施設
-| 8990 2+| その他
-| 9010 2+| 展望台
-| 9020 2+| 集会所
-| 9030 2+| 備蓄倉庫
-| 9040 2+| 耐震性貯水槽
-| 9050 2+| 放送施設
-| 9060 2+| 情報通信施設
-| 9070 2+| ヘリポート
-| 9080 2+| 係留施設
-| 9090 2+| 発電施設
-| 9100 2+| 延焼防止のための散水施設
-| 9110 2+| 各種設備
-| 9990 2+| その他
-
-|===
 
 ====== Common_unitOfNumberOfParkFacilities.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| Common_unitOfNumberOfParkFacilities.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_unitOfNumberOfParkFacilities.xml
-h| コード 2+h| 説明
-| 1 2+| ｍ
-| 2 2+| ㎡
-| 3 2+| ㎥
-| 4 2+| ｔ
-| 5 2+| 箇所
-| 6 2+| 枚
-| 7 2+| 基
-| 8 2+| 個
-| 9 2+| 面
-| 10 2+| 段
-| 11 2+| 組
-| 12 2+| 式
-| 13 2+| 橋
-| 14 2+| 棟
-
-|===
+[gml_dictionary,iur/codelists/3.1/Common_unitOfNumberOfParkFacilities.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== Common_parkRepair.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| Common_parkRepair.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_parkRepair.xml
-h| コード 2+h| 説明
-| 1 2+| 〇（施設の設置から今回の健全度調査までに補修を実施した）
-| 2 2+| ×（施設の設置から今回の健全度調査までに補修を実施していない）
-| 3 2+| -（施設の設置から今回の健全度調査までに補修を実施しているか不明）
-
-|===
+[gml_dictionary,iur/codelists/3.1/Common_parkRepair.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== Common_parkFacilityMainMaterial.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| Common_parkFacilityMainMaterial.xml
+[gml_dictionary,iur/codelists/3.1/Common_parkFacilityMainMaterial.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_parkFacilityMainMaterial.xml
-h| コード 2+h| 説明
-| 1 2+| アスファルト
-| 2 2+| コンクリート
-| 3 2+| レンガ
-| 4 2+| タイル
-| 5 2+| ブロック
-| 6 2+| 平板
-| 7 2+| 芝
-| 8 2+| 人工芝
-| 9 2+| 土
-| 10 2+| 植栽
-| 11 2+| ＲＣ
-| 12 2+| ＳＲＣ
-| 13 2+| ＰＣ
-| 14 2+| プレハブ
-| 15 2+| スチール
-| 16 2+| ステンレス
-| 17 2+| アルミ
-| 18 2+| 木材
-| 19 2+| 石材
-| 20 2+| 樹脂
-| 21 2+| 再生木材
-| 22 2+| ＦＲＰ
-| 23 2+| テント生地
-| 24 2+| ガラス
-| 25 2+| その他
-
-|===
 
 ====== Common_parkFacilityManagementType.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| Common_parkFacilityManagementType.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_parkFacilityManagementType.xml
-h| コード 2+h| 説明
-| 1 2+| 予防
-| 2 2+| 事後
-
-|===
+[gml_dictionary,iur/codelists/3.1/Common_parkFacilityManagementType.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== Common_parkHealthAssessmentCondition.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| Common_parkHealthAssessmentCondition.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_parkHealthAssessmentCondition.xml
-h| コード 2+h| 説明
-| 1 2+| A
-| 2 2+| B
-| 3 2+| C
-| 4 2+| D
-
-|===
+[gml_dictionary,iur/codelists/3.1/Common_parkHealthAssessmentCondition.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
 ====== Common_parkHealthAssessmentUrgency.xml
 
-[cols="3a,11a,11a"]
-|===
-| ファイル名 2+| Common_parkHealthAssessmentUrgency.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/Common_parkHealthAssessmentUrgency.xml
-h| コード 2+h| 説明
-| 1 2+| 低
-| 2 2+| 中
-| 3 2+| 高
-
-|===
+[gml_dictionary,iur/codelists/3.1/Common_parkHealthAssessmentUrgency.xml,root]
+----
+{% render 'gml_dict_template', root: root, filename: filename %}
+----
 
