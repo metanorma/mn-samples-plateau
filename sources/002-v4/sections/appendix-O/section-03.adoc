@@ -165,6 +165,7 @@ h| LOD1 | 以下のいずれかのデータを一つ以上使用する
 [%metadata]
 identifier:: /att/frn/1
 subject:: 3D都市モデル
+class:: 留意事項
 [statement]
 --
 道路台帳、道路施設台帳 （植栽）などの各種台帳の付属図面がGISデータとして整備されている場合は、都市設備の位置や形状が含まれるため、LOD1の立体を立ち上げる底面として利用できる。ただし、都市設備の多くは点や線でその形状が作成されており、立体として立ち上げるために必要な面になっていない場合がある。
@@ -232,6 +233,7 @@ image::images/420.webp.png[]
 [%metadata]
 identifier:: /att/frn/2
 subject:: 3D都市モデル
+class:: 留意事項
 [statement]
 --
 都市設備モデル（LOD2）は、航空写真や航空レーザ点群の利用を前提とした区分である。
@@ -246,6 +248,7 @@ subject:: 3D都市モデル
 [%metadata]
 identifier:: /att/frn/3
 subject:: 3D都市モデル
+class:: 留意事項
 [statement]
 --
 外周は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう取得すること。
@@ -307,6 +310,7 @@ h| LOD3 | 以下のいずれかのデータを一つ以上使用する
 [%metadata]
 identifier:: /att/frn/4
 subject:: 3D都市モデル
+class:: 留意事項
 [statement]
 --
 都市設備モデル（LOD3）は、側面の形状や上空から不可視となる部分の表現が必要となるため、MMS点群等、側方から取得されたデータの利用を前提としている。

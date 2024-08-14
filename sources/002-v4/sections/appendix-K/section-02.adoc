@@ -79,6 +79,7 @@ urf:Zoneは具象の地物型であり、これを使用して都市オブジェ
 [%metadata]
 identifier:: /att/urf/1
 subject:: 3D都市モデル
+class:: 留意事項
 [statement]
 --
 都市計画図書の多くは紙資料として管理されており、資料の収集やデータの入力に労力を要する。また、文章や図表として記載されており、GISデータとしてデータ化することが困難な情報も含まれる。そのため、主題属性の入力対象は、これにかかる作業量も考慮し、決定する必要がある。
@@ -125,6 +126,7 @@ image::images/296.webp.png[]
 [%metadata]
 identifier:: /att/urf/2
 subject:: 3D都市モデル
+class:: 留意事項
 [statement]
 --
 都市計画の効力を生じる日付（urf:validFrom）及びその都市計画の区分（urf:validFromType）は運用上必須とするが、都市計画が効力を失う日付（urf:validTo）及びその都市計画の区分（urf:validToType）は、任意の属性とする。都市計画の変遷を無効となった区域も含めて把握したい場合には、urf:validTo及びurf:validToTypeを整備することで、その変遷の把握が容易となる。
