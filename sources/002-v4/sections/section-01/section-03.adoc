@@ -15,6 +15,7 @@
 [%metadata]
 identifier:: /att/decision/2
 subject:: 3D都市モデル
+class:: 留意事項
 statement:: 標準製品仕様書に示された品質要求を変更したい場合は、標準製品仕様書の拡張に該当するため、1.5.1に従って品質要求を作成し、拡張製品仕様書にこれを含める。
 ====
 
@@ -33,6 +34,7 @@ statement:: 標準製品仕様書に示された品質要求を変更したい�
 [%metadata]
 identifier:: /att/decision/3
 subject:: 3D都市モデル
+class:: 留意事項
 [statement]
 --
 標準製品仕様書のコードリストは原則として変更しない。独自のコードリストを使用したい場合は、新たにコード型の属性を追加することを基本とする。コード型の属性の追加は標準製品仕様書の拡張に該当するため、1.4の手順に従い、拡張製品仕様書を作成する。
@@ -54,6 +56,7 @@ subject:: 3D都市モデル
 [%metadata]
 identifier:: /att/decision/4
 subject:: 3D都市モデル
+class:: 留意事項
 [statement]
 --
 標準製品仕様書の地物型等を使用しない場合は、以下の3点を行う。
@@ -79,6 +82,7 @@ subject:: 3D都市モデル
 [%metadata]
 identifier:: /att/decision/5
 subject:: 3D都市モデル
+class:: 留意事項
 [statement]
 --
 作成対象とする属性や関連役割のうち、必ず作成すべきものとそうではないものを明確にする。
@@ -100,6 +104,7 @@ CityGMLやi-URでは様々なユースケースで利用されることを想定
 [%metadata]
 identifier:: /att/decision/6
 subject:: 3D都市モデル
+class:: 留意事項
 [statement]
 --
 空間属性に適用すべきLOD（Level of Detail）を決定する。

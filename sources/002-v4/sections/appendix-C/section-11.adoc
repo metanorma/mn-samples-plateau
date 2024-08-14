@@ -138,6 +138,7 @@ h| 分類コード h| 名称 h| 対応するクラス
 [%metadata]
 identifier:: /att/bldg/1
 subject:: 3D都市モデル
+class:: 留意事項
 [statement]
 --
 建築物モデル（LOD0）で使用するgml:Polygonは、その外周及び内周の自己交差や重なりが許されない。そのため、DMデータの形状に<<fig-C-39>>の「誤」に区分されるエラーが含まれる場合は、図形を修正する必要がある。
@@ -154,6 +155,7 @@ image::images/176.webp.png[]
 [%metadata]
 identifier:: /att/bldg/2
 subject:: 3D都市モデル
+class:: 留意事項
 [statement]
 --
 より新しい原典資料を用いて建築物モデル（LOD2）を作成する場合、LOD2の外周の正射影と既存のLOD0の形状が一致するよう、LOD0の形状を修正することを基本とする。
@@ -188,6 +190,7 @@ h| LOD1 | 都市計画基本図等のDMデータ又は航空写真 | 航空レ�
 [%metadata]
 identifier:: /att/bldg/3
 subject:: 3D都市モデル
+class:: 留意事項
 [statement]
 --
 LOD1では、建築物を立体として作成する。立体を構成する各面は、外側が正となる向きになっていなければならない。建築物モデル（LOD0）において、lod0FootPrintを使用した場合、この面は上向きとなる。一方、この面を立体の底として利用する場合は、下向きの面にならなければならない。つまり、建築物モデル（LOD0）で使用するlod0FootPrintの面と、建築物モデル（LOD1）の底面として使用する面は、表裏の関係となる。面の向きを変えるには、座標列を反転させればよい。
@@ -200,6 +203,7 @@ LOD1では、建築物を立体として作成する。立体を構成する各�
 [%metadata]
 identifier:: /att/bldg/4
 subject:: 3D都市モデル
+class:: 留意事項
 [statement]
 --
 建築物モデル（LOD2）を作成した際に、建築物モデル（LOD1）の形状と著しく乖離することが明らかとなった場合は、建築物モデル（LOD1）を、建築物モデル（LOD2）に基づいて修正することを基本とする。
@@ -222,6 +226,7 @@ image::images/177.webp.png[]
 [%metadata]
 identifier:: /att/bldg/5
 subject:: 3D都市モデル
+class:: 留意事項
 [statement]
 --
 LOD1の押し出し高さは一律の高さである。一律の高さは、建築物モデル（LOD0）の範囲に含まれる航空写真から作成した点群又は航空レーザ点群の中央値を原則としている。
@@ -418,6 +423,7 @@ BIMモデルからの建築物モデル（LOD4）の作成については、以�
 [%metadata]
 identifier:: /att/bldg/6
 subject:: 3D都市モデル
+class:: 留意事項
 [statement]
 --
 建築物モデル（LOD4）では、建築確認申請における部屋を部屋（bldg:Room）として取得する。このときの部屋には、例えば防火区画のように、壁等により物理的に区切られていない、仮想的に区切られた空間を含む。このような空間を区切る場合には、閉鎖面（bldg:ClosureSurface）を使用する。
@@ -430,6 +436,7 @@ subject:: 3D都市モデル
 [%metadata]
 identifier:: /att/bldg/7
 subject:: 3D都市モデル
+class:: 留意事項
 [statement]
 --
 建築物モデル（LOD4）では、取得対象とする地物型に応じて、LOD4.0、LOD4.1及びLOD4.2の三段階にLODを細分している。LOD3では、対象とする地物の大きさにより各LODにおける付属物等の取得基準を定めているが、LOD4では対象とする地物の大きさではなく種類で取得基準を指定していることに注意する。
