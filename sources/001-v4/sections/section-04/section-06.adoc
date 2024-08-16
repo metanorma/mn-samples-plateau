@@ -1399,10 +1399,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== Square_function.xml
 
-[gml_dictionary,iur/codelists/3.1/Square_function.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Square_function.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_city_plan_investigation>>
@@ -1420,40 +1417,28 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== Common_status.xml
 
-[gml_dictionary,iur/codelists/3.1/Common_status.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Common_status.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_foundation_reqs>>
 
 ====== StationSquareAttribute_railwayType.xml
 
-[gml_dictionary,iur/codelists/3.1/StationSquareAttribute_railwayType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/StationSquareAttribute_railwayType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_city_plan_investigation>>
 
-====== TerminalAttribute \_userType.xml
+====== TerminalAttribute_userType.xml
 
-[gml_dictionary,iur/codelists/3.1/TerminalAttribute \_userType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/TerminalAttribute_userType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_city_plan_investigation>>
 
 ====== TerminalAttribute_terminalType.xml
 
-[gml_dictionary,iur/codelists/3.1/TerminalAttribute_terminalType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/TerminalAttribute_terminalType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 

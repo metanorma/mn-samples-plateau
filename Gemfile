@@ -12,3 +12,5 @@ gem "metanorma-plateau", git: "git@github.com:metanorma/metanorma-plateau.git"
 #gem "metanorma-plateau", path: "~/src/mn/metanorma-plateau"
 gem "sassc"
 gem "debug"
+
+gem "metanorma-standoc", git: "https://github.com/metanorma/metanorma-standoc", branch: "reg-ext-lutaml-gml-dictionary"

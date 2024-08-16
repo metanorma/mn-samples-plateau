@@ -6684,248 +6684,143 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== Common_urbanPlanType.xml
 
-[gml_dictionary,iur/codelists/3.1/Common_urbanPlanType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Common_urbanPlanType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== Common_areaClassificationType.xml
 
-[gml_dictionary,iur/codelists/3.1/Common_areaClassificationType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Common_areaClassificationType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== Common_districtAndZonesType.xml
 
-[gml_dictionary,iur/codelists/3.1/Common_districtAndZonesType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Common_districtAndZonesType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== Common_validType.xml
 
-[gml_dictionary,iur/codelists/3.1/Common_validType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Common_validType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== Common_availabilityType.xml
 
-[gml_dictionary,iur/codelists/3.1/Common_availabilityType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Common_availabilityType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== SpecialUseDistrict_usage.xml
 
-[gml_dictionary,iur/codelists/3.1/SpecialUseDistrict_usage.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/SpecialUseDistrict_usage.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== HeightConstrolDistrict_usage.xml
 
-[gml_dictionary,iur/codelists/3.1/HeightConstrolDistrict_usage.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/HeightConstrolDistrict_usage.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== FirePreventionDIstrict_usage.xml
 
-[gml_dictionary,iur/codelists/3.1/FirePreventionDIstrict_usage.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/FirePreventionDIstrict_usage.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== ScenicDIstrict_usage.xml
 
-[gml_dictionary,iur/codelists/3.1/ScenicDIstrict_usage.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/ScenicDIstrict_usage.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== PortZone_usage.xml
 
-[gml_dictionary,iur/codelists/3.1/PortZone_usage.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/PortZone_usage.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== SpecialGreenSpaceConservationDistrict_requirement.xml
 
-[gml_dictionary,iur/codelists/3.1/SpecialGreenSpaceConservationDistrict_requirement.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/SpecialGreenSpaceConservationDistrict_requirement.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== ProjectPromotionArea_function.xml
 
-[gml_dictionary,iur/codelists/3.1/ProjectPromotionArea_function.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/ProjectPromotionArea_function.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== UrbanRoadAttribute_routeTypeNumber.xml
 
-[gml_dictionary,iur/codelists/3.1/UrbanRoadAttribute_routeTypeNumber.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/UrbanRoadAttribute_routeTypeNumber.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== UrbanRoadAttribute_routeSizeNumber.xml
 
-[gml_dictionary,iur/codelists/3.1/UrbanRoadAttribute_routeSizeNumber.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/UrbanRoadAttribute_routeSizeNumber.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== UrbanRoadAttribute_roadType.xml
 
-[gml_dictionary,iur/codelists/3.1/UrbanRoadAttribute_roadType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/UrbanRoadAttribute_roadType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== TrafficFacility_trafficFacilityStructureType.xml
 
-[gml_dictionary,iur/codelists/3.1/TrafficFacility_trafficFacilityStructureType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/TrafficFacility_trafficFacilityStructureType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== TrafficFacility_trafficFacilityCrossingType.xml
 
-[gml_dictionary,iur/codelists/3.1/TrafficFacility_trafficFacilityCrossingType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/TrafficFacility_trafficFacilityCrossingType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== VehicleTerminalAttribute_terminalType.xml
 
-[gml_dictionary,iur/codelists/3.1/VehicleTerminalAttribute_terminalType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/VehicleTerminalAttribute_terminalType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== ParkAttribute_parkTypeNumber.xml
 
-[gml_dictionary,iur/codelists/3.1/ParkAttribute_parkTypeNumber.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/ParkAttribute_parkTypeNumber.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== ParkAttribute_parkSizeNumber.xml
 
-[gml_dictionary,iur/codelists/3.1/ParkAttribute_parkSizeNumber.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/ParkAttribute_parkSizeNumber.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== Waterway_structure.xml
 
-[gml_dictionary,iur/codelists/3.1/Waterway_structure.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Waterway_structure.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== SewerSystemAttribute_systemType.xml
 
-[gml_dictionary,iur/codelists/3.1/SewerSystemAttribute_systemType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/SewerSystemAttribute_systemType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== UrbanRedevelopmentProject_usage.xml
 
-[gml_dictionary,iur/codelists/3.1/UrbanRedevelopmentProject_usage.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/UrbanRedevelopmentProject_usage.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== UrbanDevelopmentProject_function.xml
 
-[gml_dictionary,iur/codelists/3.1/UrbanDevelopmentProject_function.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/UrbanDevelopmentProject_function.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== ScheduledAreaForUrbanDevelopment_function.xml
 
-[gml_dictionary,iur/codelists/3.1/ScheduledAreaForUrbanDevelopment_function.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/ScheduledAreaForUrbanDevelopment_function.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== DistrictPlan_function.xml
 
-[gml_dictionary,iur/codelists/3.1/DistrictPlan_function.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DistrictPlan_function.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== DistrictDevelopmentPlan_function.xml
 
-[gml_dictionary,iur/codelists/3.1/DistrictDevelopmentPlan_function.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DistrictDevelopmentPlan_function.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== ZonalDisasterPreventionFacility_facilityType.xml
 
-[gml_dictionary,iur/codelists/3.1/ZonalDisasterPreventionFacility_facilityType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/ZonalDisasterPreventionFacility_facilityType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== Common_districtFacilityType.xml
 
-[gml_dictionary,iur/codelists/3.1/Common_districtFacilityType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Common_districtFacilityType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== District_function.xml
 
-[gml_dictionary,iur/codelists/3.1/District_function.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/District_function.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== PromotionArea_function.xml
 
-[gml_dictionary,iur/codelists/3.1/PromotionArea_function.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/PromotionArea_function.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== Boundary_function.xml
 
-[gml_dictionary,iur/codelists/3.1/Boundary_function.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Boundary_function.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== UrbanPlan_areaType.xml
 
-[gml_dictionary,iur/codelists/3.1/UrbanPlan_areaType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/UrbanPlan_areaType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== UrbanFacility_function.xml
 
-[gml_dictionary,iur/codelists/3.1/UrbanFacility_function.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/UrbanFacility_function.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -6939,10 +6834,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -6956,8 +6848,5 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
