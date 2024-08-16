@@ -2511,40 +2511,28 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== Bridge_class.xml
 
-[gml_dictionary,iur/codelists/3.1/Bridge_class.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Bridge_class.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<nilim_kiban_dps>>
 
 ====== Bridge_function.xml
 
-[gml_dictionary,iur/codelists/3.1/Bridge_function.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Bridge_function.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<citygml_20,annex="C">>
 
 ====== BridgeConstructionElement_function.xml
 
-[gml_dictionary,iur/codelists/3.1/BridgeConstructionElement_function.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/BridgeConstructionElement_function.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<citygml_20,annex="C">>
 
 ====== BridgeInstallation_function.xml
 
-[gml_dictionary,iur/codelists/3.1/BridgeInstallation_function.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/BridgeInstallation_function.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<橋梁施設台帳>>
@@ -2554,38 +2542,23 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== BridgeStructureAttribute_material.xml
 
-[gml_dictionary,iur/codelists/3.1/BridgeStructureAttribute_material.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/BridgeStructureAttribute_material.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== BridgeStructureAttribute_bridgeType.xml
 
-[gml_dictionary,iur/codelists/3.1/BridgeStructureAttribute_bridgeType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/BridgeStructureAttribute_bridgeType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== BridgeFunctionalAttribute_userType.xml
 
-[gml_dictionary,iur/codelists/3.1/BridgeFunctionalAttribute_userType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/BridgeFunctionalAttribute_userType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== ConstructionStructureAttribute_slopeType.xml
 
-[gml_dictionary,iur/codelists/3.1/ConstructionStructureAttribute_slopeType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/ConstructionStructureAttribute_slopeType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== ConstructionBaseAttribute_adminType.xml
 
-[gml_dictionary,iur/codelists/3.1/ConstructionBaseAttribute_adminType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/ConstructionBaseAttribute_adminType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_kiban_chizu>>
@@ -2598,40 +2571,28 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== ConstructionBaseAttribute_installerType.xml
 
-[gml_dictionary,iur/codelists/3.1/ConstructionBaseAttribute_installerType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/ConstructionBaseAttribute_installerType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_cyberport>>
 
 ====== ConstructionRiskAssessmentAttribute_riskType.xml
 
-[gml_dictionary,iur/codelists/3.1/ConstructionRiskAssessmentAttribute_riskType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/ConstructionRiskAssessmentAttribute_riskType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_road_damage_map>>
 
 ====== ConstructionRiskAssessmentAttribute_status.xml
 
-[gml_dictionary,iur/codelists/3.1/ConstructionRiskAssessmentAttribute_status.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/ConstructionRiskAssessmentAttribute_status.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_road_damage_map>>
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 h| 　 | 　
 | 000 | 公共測量成果
@@ -2682,10 +2643,7 @@ h| 　 | 　
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -2699,17 +2657,11 @@ h| 　 | 　
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== DataQualityAttribute_lod1HeightType.xml
 
-[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml[template="gml_dict_template.liquid",context=dict]
 
 | （使用不可）7 | 建築確認申請書類等に記載された「建築物の高さ」
 | （使用不可）8 | 都市計画基礎調査（建物利用現況）の「高さ（m）」
@@ -2724,17 +2676,11 @@ h| 　 | 　
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
-[gml_dictionary,iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-[gml_dictionary,iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -2745,10 +2691,7 @@ h| 　 | 　
 
 ====== Bridge_lodType.xml
 
-[gml_dictionary,iur/codelists/3.1/Bridge_lodType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Bridge_lodType.xml[template="gml_dict_template.liquid",context=dict]
 
 | 2.0 | 道路橋、桟道橋及び鉄道橋は、床版の外周を、高さをもった面として表現する。横断歩道橋、ペデストリアンデッキ及び跨線橋は、本体（上部工、階段及び踊り場）の外周を取得し、高さをもった面として表現する。階段の個々の段は取得せず、下端と上端を結んだ平面として表現する。
 | 2.1

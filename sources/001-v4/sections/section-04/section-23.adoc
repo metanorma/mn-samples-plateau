@@ -205,20 +205,14 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== CityObjectGroup_class.xml
 
-[gml_dictionary,iur/codelists/3.1/CityObjectGroup_class.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/CityObjectGroup_class.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<citygml_20,annex="C.10">>
 
 ====== CityObjectGroup_function.xml
 
-[gml_dictionary,iur/codelists/3.1/CityObjectGroup_function.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/CityObjectGroup_function.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<citygml_20,annex="C.10">>

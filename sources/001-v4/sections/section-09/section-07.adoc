@@ -225,10 +225,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ===== ImplicitGeometry_mimeType.xml
 
-[gml_dictionary,iur/codelists/3.1/ImplicitGeometry_mimeType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/ImplicitGeometry_mimeType.xml[template="gml_dict_template.liquid",context=dict]
 
 
 ===== ImplicitGeometryにより地下埋設物の形状を表現する場合の関連役割

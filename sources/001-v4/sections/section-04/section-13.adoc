@@ -1323,47 +1323,32 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== OtherConstruction_class.xml
 
-[gml_dictionary,iur/codelists/3.1/OtherConstruction_class.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/OtherConstruction_class.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_kiban_chizu>>
 
 ====== OtherConstruction_function.xml
 
-[gml_dictionary,iur/codelists/3.1/OtherConstruction_function.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/OtherConstruction_function.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_kiban_chizu>>
 
 ====== ConstructionInstallation_function.xml
 
-[gml_dictionary,iur/codelists/3.1/ConstructionInstallation_function.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/ConstructionInstallation_function.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== ConstructionBaseAttribute_purpose.xml
 
-[gml_dictionary,iur/codelists/3.1/ConstructionBaseAttribute_purpose.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/ConstructionBaseAttribute_purpose.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<nlftp>>
 
 ====== ConstructionStructureAttribute_structureType.xml
 
-[gml_dictionary,iur/codelists/3.1/ConstructionStructureAttribute_structureType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/ConstructionStructureAttribute_structureType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<nlftp>>
@@ -1373,17 +1358,11 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== ConstructionStructureAttribute_slopeType.xml
 
-[gml_dictionary,iur/codelists/3.1/ConstructionStructureAttribute_slopeType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/ConstructionStructureAttribute_slopeType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== ConstructionBaseAttribute_adminType.xml
 
-[gml_dictionary,iur/codelists/3.1/ConstructionBaseAttribute_adminType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/ConstructionBaseAttribute_adminType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_kiban_chizu>>
@@ -1396,47 +1375,32 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== ConstructionBaseAttribute_installerType.xml
 
-[gml_dictionary,iur/codelists/3.1/ConstructionBaseAttribute_installerType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/ConstructionBaseAttribute_installerType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_cyberport>>
 
 ====== ConstructionRiskAssessmentAttribute_riskType.xml
 
-[gml_dictionary,iur/codelists/3.1/ConstructionRiskAssessmentAttribute_riskType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/ConstructionRiskAssessmentAttribute_riskType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_road_damage_map>>
 
 ====== ConstructionRiskAssessmentAttribute_status.xml
 
-[gml_dictionary,iur/codelists/3.1/ConstructionRiskAssessmentAttribute_status.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/ConstructionRiskAssessmentAttribute_status.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_road_damage_map>>
 
 ====== ConstructionFunctionalAttribute_directionType.xml
 
-[gml_dictionary,iur/codelists/3.1/ConstructionFunctionalAttribute_directionType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/ConstructionFunctionalAttribute_directionType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -1450,10 +1414,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -1467,17 +1428,11 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== DataQualityAttribute_lod1HeightType.xml
 
-[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml[template="gml_dict_template.liquid",context=dict]
 
 | （使用不可）7 | 建築確認申請書類等に記載された「建築物の高さ」
 | （使用不可）8 | 都市計画基礎調査（建物利用現況）の「高さ（m）」
@@ -1492,17 +1447,11 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
-[gml_dictionary,iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-[gml_dictionary,iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -1513,10 +1462,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== OtherConstruction_lodType.xml
 
-[gml_dictionary,iur/codelists/3.1/OtherConstruction_lodType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/OtherConstruction_lodType.xml[template="gml_dict_template.liquid",context=dict]
 
 | 3.0 | 構造物の形状を、主要な部分の外形を構成する特徴点から構成する面を境界面とする立体として表現する。
 | 3.1 | 構造物の形状を、主要な部分の外形を構成する特徴点から構成する面を境界面とする立体として表現し、構造上不可欠ではない付属物（手すり、柵、構造物と一体ではない階段）を表現する。
@@ -1525,10 +1471,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== Elevation_elevationReference.xml
 
-[gml_dictionary,iur/codelists/3.1/Elevation_elevationReference.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Elevation_elevationReference.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<inspire_registry>>

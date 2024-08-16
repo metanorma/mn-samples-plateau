@@ -238,10 +238,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== Common_dmCode.xml
 
-[gml_dictionary,iur/codelists/3.1/Common_dmCode.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Common_dmCode.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops,annex=7,付録７ 公共測量標準図式>>
@@ -249,10 +246,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== Common_shapeType.xml
 
-[gml_dictionary,iur/codelists/3.1/Common_shapeType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Common_shapeType.xml[template="gml_dict_template.liquid",context=dict]
 
 
 [.source]
@@ -261,17 +255,11 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== Common_MapLevel.xml
 
-[gml_dictionary,iur/codelists/3.1/Common_MapLevel.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Common_MapLevel.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== Common_geometryType.xml
 
-[gml_dictionary,iur/codelists/3.1/Common_geometryType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Common_geometryType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops,annex=7,付録７ 公共測量標準図式>>
@@ -279,10 +267,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== DmElement_dataType.xml
 
-[gml_dictionary,iur/codelists/3.1/DmElement_dataType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DmElement_dataType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops,annex=7,付録７ 公共測量標準図式>>
@@ -290,10 +275,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== DmElement_annotationType.xml
 
-[gml_dictionary,iur/codelists/3.1/DmElement_annotationType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DmElement_annotationType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops,annex=7,付録７ 公共測量標準図式>>
@@ -325,10 +307,7 @@ h| コード h| 説明（上位桁：数値化区分） h| 説明（下位桁：
 
 ====== DmElement_breakType.xml
 
-[gml_dictionary,iur/codelists/3.1/DmElement_breakType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DmElement_breakType.xml[template="gml_dict_template.liquid",context=dict]
 
 | 1～9 | 間断する（数値は優先順位）
 
@@ -340,10 +319,7 @@ h| コード h| 説明（上位桁：数値化区分） h| 説明（下位桁：
 
 ====== DmElement_dislocationType.xml
 
-[gml_dictionary,iur/codelists/3.1/DmElement_dislocationType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DmElement_dislocationType.xml[template="gml_dict_template.liquid",context=dict]
 
 | 1～9 | 座標列の方向に対して右側に転位する
 | -1～-9 | 座標列の方向に対して左側に転位する

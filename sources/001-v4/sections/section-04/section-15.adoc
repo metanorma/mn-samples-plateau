@@ -2692,38 +2692,23 @@ h| (uro:publicSurveyDataQualityAttribute) | uro:PublicSurveyDataQualityAttribute
 
 ====== UtilityNetworkElement_occupierType.xml
 
-[gml_dictionary,iur/codelists/3.1/UtilityNetworkElement_occupierType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/UtilityNetworkElement_occupierType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== UtilityNetworkElement_occupierName.xml
 
-[gml_dictionary,iur/codelists/3.1/UtilityNetworkElement_occupierName.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/UtilityNetworkElement_occupierName.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== UtilityNetworkElement_yearType.xml
 
-[gml_dictionary,iur/codelists/3.1/UtilityNetworkElement_yearType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/UtilityNetworkElement_yearType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== UtilityNetworkElement_administrator.xml
 
-[gml_dictionary,iur/codelists/3.1/UtilityNetworkElement_administrator.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/UtilityNetworkElement_administrator.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== UtilityNetworkElement_material.xml
 
-[gml_dictionary,iur/codelists/3.1/UtilityNetworkElement_material.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/UtilityNetworkElement_material.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<jswa_sewage_system>>
@@ -2731,52 +2716,31 @@ h| (uro:publicSurveyDataQualityAttribute) | uro:PublicSurveyDataQualityAttribute
 
 ====== Pipe_sleeveType.xml
 
-[gml_dictionary,iur/codelists/3.1/Pipe_sleeveType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Pipe_sleeveType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== Appurtenance_appurtenanceType.xml
 
-[gml_dictionary,iur/codelists/3.1/Appurtenance_appurtenanceType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Appurtenance_appurtenanceType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== UtilityNodeContainer_containerType.xml
 
-[gml_dictionary,iur/codelists/3.1/UtilityNodeContainer_containerType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/UtilityNodeContainer_containerType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== ThematicShape_heightType.xml
 
-[gml_dictionary,iur/codelists/3.1/ThematicShape_heightType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/ThematicShape_heightType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== LengthAttribute_measureType.xml
 
-[gml_dictionary,iur/codelists/3.1/LengthAttribute_measureType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/LengthAttribute_measureType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== LengthAttribute_phaseType.xml
 
-[gml_dictionary,iur/codelists/3.1/LengthAttribute_phaseType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/LengthAttribute_phaseType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -2790,10 +2754,7 @@ h| (uro:publicSurveyDataQualityAttribute) | uro:PublicSurveyDataQualityAttribute
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -2807,17 +2768,11 @@ h| (uro:publicSurveyDataQualityAttribute) | uro:PublicSurveyDataQualityAttribute
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== DataQualityAttribute_lod1HeightType.xml
 
-[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml[template="gml_dict_template.liquid",context=dict]
 
 | （使用不可）1 | 点群から取得_最高高さ
 | （使用不可）2 | 点群から取得_中央値

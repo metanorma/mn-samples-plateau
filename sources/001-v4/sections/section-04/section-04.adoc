@@ -1287,20 +1287,14 @@ tran:Roadのコードリスト参照
 
 ====== Railway_function.xml
 
-[gml_dictionary,iur/codelists/3.1/Railway_function.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Railway_function.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops,annex=7,付録７ 公共測量標準図式>>
 
 ====== TrafficArea_function.xml
 
-[gml_dictionary,iur/codelists/3.1/TrafficArea_function.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/TrafficArea_function.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<jis_e_1001>>
@@ -1310,59 +1304,38 @@ tran:Roadのコードリスト参照
 
 ====== RailwayRouteAttribute_operatorType.xml
 
-[gml_dictionary,iur/codelists/3.1/RailwayRouteAttribute_operatorType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/RailwayRouteAttribute_operatorType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<nlftp>>
 
 ====== RailwayRouteAttribute_railwayType.xml
 
-[gml_dictionary,iur/codelists/3.1/RailwayRouteAttribute_railwayType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/RailwayRouteAttribute_railwayType.xml[template="gml_dict_template.liquid",context=dict]
 Road_lodType.xml
 [.source]
 <<nlftp>>
 
 ====== RailwayTrackAttribute_directionType.xml
 
-[gml_dictionary,iur/codelists/3.1/RailwayTrackAttribute_directionType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/RailwayTrackAttribute_directionType.xml[template="gml_dict_template.liquid",context=dict]
 
 
 ====== RailwayTrackAttribute_trackType.xml
 
-[gml_dictionary,iur/codelists/3.1/RailwayTrackAttribute_trackType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/RailwayTrackAttribute_trackType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== RailwayTrackAttribute_alignmentType.xml
 
-[gml_dictionary,iur/codelists/3.1/RailwayTrackAttribute_alignmentType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/RailwayTrackAttribute_alignmentType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== ControlPoint_function.xml
 
-[gml_dictionary,iur/codelists/3.1/ControlPoint_function.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/ControlPoint_function.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -1376,10 +1349,7 @@ Road_lodType.xml
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -1393,31 +1363,19 @@ Road_lodType.xml
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== Railway_lodType.xml
 
-[gml_dictionary,iur/codelists/3.1/Railway_lodType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Railway_lodType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
-[gml_dictionary,iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-[gml_dictionary,iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>

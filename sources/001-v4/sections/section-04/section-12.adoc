@@ -2022,30 +2022,21 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== Tunnel_class.xml
 
-[gml_dictionary,iur/codelists/3.1/Tunnel_class.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Tunnel_class.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<citygml_20,annex="C.2">>
 
 ====== Tunnel_function.xml
 
-[gml_dictionary,iur/codelists/3.1/Tunnel_function.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Tunnel_function.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<citygml_20,annex="C.2">>
 
 ====== TunnelInstallation_function.xml
 
-[gml_dictionary,iur/codelists/3.1/TunnelInstallation_function.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/TunnelInstallation_function.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<トンネル施設台帳>>
@@ -2055,57 +2046,39 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== TunnelFunctionalAttribute_userType.xml
 
-[gml_dictionary,iur/codelists/3.1/TunnelFunctionalAttribute_userType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/TunnelFunctionalAttribute_userType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<トンネル施設台帳>>
 
 ====== TunnelStructureAttribute_tunnelType.xml
 
-[gml_dictionary,iur/codelists/3.1/TunnelStructureAttribute_tunnelType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/TunnelStructureAttribute_tunnelType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<nilim_kiban_dps>>
 
 ====== TunnelStructureAttribute_tunnelSubType.xml
 
-[gml_dictionary,iur/codelists/3.1/TunnelStructureAttribute_tunnelSubType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/TunnelStructureAttribute_tunnelSubType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<nilim_kiban_dps>>
 
 ====== TunnelStructureAttribute_mouthType.xml
 
-[gml_dictionary,iur/codelists/3.1/TunnelStructureAttribute_mouthType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/TunnelStructureAttribute_mouthType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<nilim_kiban_dps>>
 
 ====== ConstructionStructureAttribute_slopeType.xml
 
-[gml_dictionary,iur/codelists/3.1/ConstructionStructureAttribute_slopeType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/ConstructionStructureAttribute_slopeType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== ConstructionBaseAttribute_adminType.xml
 
-[gml_dictionary,iur/codelists/3.1/ConstructionBaseAttribute_adminType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/ConstructionBaseAttribute_adminType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_kiban_chizu>>
@@ -2118,40 +2091,28 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== ConstructionBaseAttribute_installerType.xml
 
-[gml_dictionary,iur/codelists/3.1/ConstructionBaseAttribute_installerType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/ConstructionBaseAttribute_installerType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_cyberport>>
 
 ====== ConstructionRiskAssessmentAttribute_riskType.xml
 
-[gml_dictionary,iur/codelists/3.1/ConstructionRiskAssessmentAttribute_riskType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/ConstructionRiskAssessmentAttribute_riskType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_road_damage_map>>
 
 ====== ConstructionRiskAssessmentAttribute_status.xml
 
-[gml_dictionary,iur/codelists/3.1/ConstructionRiskAssessmentAttribute_status.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/ConstructionRiskAssessmentAttribute_status.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_road_damage_map>>
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -2165,10 +2126,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -2182,17 +2140,11 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== DataQualityAttribute_lod1HeightType.xml
 
-[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml[template="gml_dict_template.liquid",context=dict]
 
 | （使用不可）7 | 建築確認申請書類等に記載された「建築物の高さ」
 | （使用不可）8 | 都市計画基礎調査（建物利用現況）の「高さ（m）」
@@ -2207,17 +2159,11 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
-[gml_dictionary,iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-[gml_dictionary,iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -2228,10 +2174,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== Tunnel_lodType.xml
 
-[gml_dictionary,iur/codelists/3.1/Tunnel_lodType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Tunnel_lodType.xml[template="gml_dict_template.liquid",context=dict]
 
 | 4.0 | LOD3.0の外形に加え、トンネル内部（内空）を再現する。内空の境界面を床、内壁面又は天井面に区分する。また、内壁等に扉や窓がある場合に区分する。トンネル内部の付属物は取得しない。
 | 4.1 | LOD4.0に加え、「短辺の実長が3ｍ以上」又は「横断又は縦断面積が3m2以上かつ短辺の実長が1m以上」の固定された設備を取得する。

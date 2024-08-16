@@ -153,10 +153,7 @@ h| (gml:boundedBy) | gml:Envelope [0..1] | マテリアルの空間範囲。
 
 ====== Appearance_mimeType.xml
 
-[gml_dictionary,iur/codelists/3.1/Appearance_mimeType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Appearance_mimeType.xml[template="gml_dict_template.liquid",context=dict]
 
 | image/jpeg | *.jpeg, \*.jpg images
 | image/png | *.png images

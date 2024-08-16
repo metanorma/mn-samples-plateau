@@ -279,27 +279,18 @@ h| (uro:publicSurveyDataQualityAttribute) | uro:PublicSurveyDataQualityAttribute
 
 ====== Common_landUseType.xml
 
-[gml_dictionary,iur/codelists/3.1/Common_landUseType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Common_landUseType.xml[template="gml_dict_template.liquid",context=dict]
 
 [[toc4_08_04_02]]
 ===== Urban Object（i-UR）
 
 ====== Common_ownerType.xml
 
-[gml_dictionary,iur/codelists/3.1/Common_ownerType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Common_ownerType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -313,10 +304,7 @@ h| (uro:publicSurveyDataQualityAttribute) | uro:PublicSurveyDataQualityAttribute
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -330,8 +318,5 @@ h| (uro:publicSurveyDataQualityAttribute) | uro:PublicSurveyDataQualityAttribute
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 

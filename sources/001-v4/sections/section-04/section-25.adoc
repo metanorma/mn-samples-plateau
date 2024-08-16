@@ -1116,17 +1116,11 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== FacilityTypeAttribute_class.xml
 
-[gml_dictionary,iur/codelists/3.1/FacilityTypeAttribute_class.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/FacilityTypeAttribute_class.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== FacilityTypeAttribute_function.xml
 
-[gml_dictionary,iur/codelists/3.1/FacilityTypeAttribute_function.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/FacilityTypeAttribute_function.xml[template="gml_dict_template.liquid",context=dict]
 
 
 [[toc4_25_04_02]]
@@ -1134,10 +1128,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== RiverFacilityIdAttribute_sideType.xml
 
-[gml_dictionary,iur/codelists/3.1/RiverFacilityIdAttribute_sideType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/RiverFacilityIdAttribute_sideType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_kiban_chizu>>
@@ -1147,249 +1138,150 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== PortAttribute_facilityDetailType.xml
 
-[gml_dictionary,iur/codelists/3.1/PortAttribute_facilityDetailType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/PortAttribute_facilityDetailType.xml[template="gml_dict_template.liquid",context=dict]
 
 
 ====== PortAttribute_portStatus.xml
 
-[gml_dictionary,iur/codelists/3.1/PortAttribute_portStatus.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/PortAttribute_portStatus.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== PortAttribute_grantType.xml
 
-[gml_dictionary,iur/codelists/3.1/PortAttribute_grantType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/PortAttribute_grantType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== PortAttribute_storageCapacityUnit.xml
 
-[gml_dictionary,iur/codelists/3.1/PortAttribute_storageCapacityUnit.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/PortAttribute_storageCapacityUnit.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== ShipServiceFacility_supplyAbilityUnit.xml
 
-[gml_dictionary,iur/codelists/3.1/ShipServiceFacility_supplyAbilityUnit.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/ShipServiceFacility_supplyAbilityUnit.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== PortManagementFacility_unitOfShipType.xml
 
-[gml_dictionary,iur/codelists/3.1/PortManagementFacility_unitOfShipType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/PortManagementFacility_unitOfShipType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== PortAttribute_geologicalType.xml
 
-[gml_dictionary,iur/codelists/3.1/PortAttribute_geologicalType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/PortAttribute_geologicalType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== CyberportMarinaAndPBS_mainVessels.xml
 
-[gml_dictionary,iur/codelists/3.1/CyberportMarinaAndPBS_mainVessels.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/CyberportMarinaAndPBS_mainVessels.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== MooringFacility_mainVessels.xml
 
-[gml_dictionary,iur/codelists/3.1/MooringFacility_mainVessels.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/MooringFacility_mainVessels.xml[template="gml_dict_template.liquid",context=dict]
 
 
 ====== PortAttribute_form.xml
 
-[gml_dictionary,iur/codelists/3.1/PortAttribute_form.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/PortAttribute_form.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== CargoHandlingFacility_packingName.xml
 
-[gml_dictionary,iur/codelists/3.1/CargoHandlingFacility_packingName.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/CargoHandlingFacility_packingName.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== HarborFacility_areaType.xml
 
-[gml_dictionary,iur/codelists/3.1/HarborFacility_areaType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/HarborFacility_areaType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== PortTransportationFacility_pavementType.xml
 
-[gml_dictionary,iur/codelists/3.1/PortTransportationFacility_pavementType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/PortTransportationFacility_pavementType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== PortTransportationFacility_routeType.xml
 
-[gml_dictionary,iur/codelists/3.1/PortTransportationFacility_routeType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/PortTransportationFacility_routeType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== PortAttribute_mainCargo.xml
 
-[gml_dictionary,iur/codelists/3.1/PortAttribute_mainCargo.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/PortAttribute_mainCargo.xml[template="gml_dict_template.liquid",context=dict]
 
 
 ====== ProtectiveFacility_structureType.xml
 
-[gml_dictionary,iur/codelists/3.1/ProtectiveFacility_structureType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/ProtectiveFacility_structureType.xml[template="gml_dict_template.liquid",context=dict]
 
 
 ====== PortAttribute_structureType.xml
 
-[gml_dictionary,iur/codelists/3.1/PortAttribute_structureType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/PortAttribute_structureType.xml[template="gml_dict_template.liquid",context=dict]
 
 
 ====== PortWasteTreatmentFacilityAttribute_wasteType.xml
 
-[gml_dictionary,iur/codelists/3.1/PortWasteTreatmentFacilityAttribute_wasteType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/PortWasteTreatmentFacilityAttribute_wasteType.xml[template="gml_dict_template.liquid",context=dict]
 
 [[toc4_25_04_04]]
 ===== 漁港施設の拡張属性で使用するコードリスト
 
 ====== FishingPortFacilityAttribute_facilityDetailsType.xml
 
-[gml_dictionary,iur/codelists/3.1/FishingPortFacilityAttribute_facilityDetailsType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/FishingPortFacilityAttribute_facilityDetailsType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== FishingPortFacilityAttribute_portType.xml
 
-[gml_dictionary,iur/codelists/3.1/FishingPortFacilityAttribute_portType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/FishingPortFacilityAttribute_portType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== FishingPortFacilityAttribute_structureType.xml
 
-[gml_dictionary,iur/codelists/3.1/FishingPortFacilityAttribute_structureType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/FishingPortFacilityAttribute_structureType.xml[template="gml_dict_template.liquid",context=dict]
 
 
 ====== Common_mainMaterial.xml
 
-[gml_dictionary,iur/codelists/3.1/Common_mainMaterial.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Common_mainMaterial.xml[template="gml_dict_template.liquid",context=dict]
 
 [[toc4_25_04_05]]
 ===== 工事・点検記録の拡張属性で使用するコードリスト
 
 ====== MaintenanceHistoryAttribute_maintenanceType.xml
 
-[gml_dictionary,iur/codelists/3.1/MaintenanceHistoryAttribute_maintenanceType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/MaintenanceHistoryAttribute_maintenanceType.xml[template="gml_dict_template.liquid",context=dict]
 
 [[toc4_25_04_06]]
 ===== 公園施設長寿命化計画の拡張属性で使用するコードリスト
 
 ====== Common_parkCode.xml
 
-[gml_dictionary,iur/codelists/3.1/Common_parkCode.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Common_parkCode.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== Common_parkName.xml
 
-[gml_dictionary,iur/codelists/3.1/Common_parkName.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Common_parkName.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== Common_parkType.xml
 
-[gml_dictionary,iur/codelists/3.1/Common_parkType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Common_parkType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== Common_parkFacilityName.xml
 
-[gml_dictionary,iur/codelists/3.1/Common_parkFacilityName.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Common_parkFacilityName.xml[template="gml_dict_template.liquid",context=dict]
 
 
 ====== Common_unitOfNumberOfParkFacilities.xml
 
-[gml_dictionary,iur/codelists/3.1/Common_unitOfNumberOfParkFacilities.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Common_unitOfNumberOfParkFacilities.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== Common_parkRepair.xml
 
-[gml_dictionary,iur/codelists/3.1/Common_parkRepair.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Common_parkRepair.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== Common_parkFacilityMainMaterial.xml
 
-[gml_dictionary,iur/codelists/3.1/Common_parkFacilityMainMaterial.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Common_parkFacilityMainMaterial.xml[template="gml_dict_template.liquid",context=dict]
 
 
 ====== Common_parkFacilityManagementType.xml
 
-[gml_dictionary,iur/codelists/3.1/Common_parkFacilityManagementType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Common_parkFacilityManagementType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== Common_parkHealthAssessmentCondition.xml
 
-[gml_dictionary,iur/codelists/3.1/Common_parkHealthAssessmentCondition.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Common_parkHealthAssessmentCondition.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== Common_parkHealthAssessmentUrgency.xml
 
-[gml_dictionary,iur/codelists/3.1/Common_parkHealthAssessmentUrgency.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Common_parkHealthAssessmentUrgency.xml[template="gml_dict_template.liquid",context=dict]
 
