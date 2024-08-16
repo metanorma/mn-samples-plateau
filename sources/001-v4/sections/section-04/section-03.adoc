@@ -1487,20 +1487,14 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== TransportationComplex_class.xml
 
-[gml_dictionary,iur/codelists/3.1/TransportationComplex_class.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/TransportationComplex_class.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<citygml_20,annex="C.8">>
 
 ====== Road_function.xml
 
-[gml_dictionary,iur/codelists/3.1/Road_function.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Road_function.xml[template="gml_dict_template.liquid",context=dict]
 
 
 [.source]
@@ -1511,10 +1505,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== Road_usage.xml
 
-[gml_dictionary,iur/codelists/3.1/Road_usage.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Road_usage.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_emergency_roads>>
@@ -1736,27 +1727,18 @@ https://www.geospatial.jp/iur/codelists/3.1/AuxiliaryTrafficArea_surfaceMaterial
 
 ====== RoadStructureAttribute_widthType.xml
 
-[gml_dictionary,iur/codelists/3.1/RoadStructureAttribute_widthType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/RoadStructureAttribute_widthType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_foundation_reqs>>
 
 ====== RoadStructureAttribute_sectionType.xml
 
-[gml_dictionary,iur/codelists/3.1/RoadStructureAttribute_sectionType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/RoadStructureAttribute_sectionType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -1770,10 +1752,7 @@ https://www.geospatial.jp/iur/codelists/3.1/AuxiliaryTrafficArea_surfaceMaterial
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -1787,33 +1766,21 @@ https://www.geospatial.jp/iur/codelists/3.1/AuxiliaryTrafficArea_surfaceMaterial
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-[gml_dictionary,iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== Road_lodType.xml
 
-[gml_dictionary,iur/codelists/3.1/Road_lodType.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/Road_lodType.xml[template="gml_dict_template.liquid",context=dict]
 
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
-[gml_dictionary,iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
 
 
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-[gml_dictionary,iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml,root]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
-----
+lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
