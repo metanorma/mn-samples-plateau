@@ -1,0 +1,145 @@
+[[tocS_02]]
+=== 地形の記述とLOD
+
+
+==== 地形モデル
+
+地形とは、地表の起伏の状態をいう。「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」
+
+地形の記述には、CityGMLのReliefモジュールに定義された、dem:ReliefFeatureを使用する。
+
+CityGMLでは、地形の表現として、不規則三角網（TINRelief）による表現や標高点の集まり（MassPointRelief）による表現、等高線等の高さをもつ線の集まり（BreaklineRelief）による表現など、複数の表現方法について、それぞれ必要な地物型を用意している。
+
+標準製品仕様書では、地形の表現に必要な地物型等をCityGML及びi-URより抽出し、LODごとに、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を定めた「地形モデル」を定義する。
+
+地形モデルのLODは、LOD0からLOD3までを対象とする。地形モデル（LOD0）は公共測量標準図式に従った地形の表現である。地形モデル（LOD1）から地形モデル（LOD3）までは、地形の作成に使用する原典資料の点密度又は標高点格子間隔により決定する。
+
+[[tab-S-1]]
+.地形モデルの概要
+image::images/503.webp.png[]
+
+
+==== 使用可能な地物型とLOD
+
+地形モデルは、LODごとに使用すべき地物型やその空間属性を定めている。
+
+
+[requirement]
+.地形記述のLOD対応条件
+====
+[%metadata]
+identifier:: /req/dem/1
+subject:: 3D都市モデル
+description:: 地形の記述には、指定されたLODに対応する地物型及び空間属性を使用する。
+====
+
+地形の記述には、CityGMLのReliefモジュールに定義されたdem:ReliefFeatureを使用する。
+
+地形はその表現方法に応じて地形要素（dem:_ReliefComponent）を選択する。標準製品仕様書では、地形要素として、dem:TinRelief、dem:MassPointRlief及びdem:BreaklineReliefを地形モデルに含めている。地形の表現では、これら三つの地形要素から一つを選択し、その集まりとして地形を表現する。
+
+地形の各LODにおいて使用可能な地物型とその空間属性を<<tab-S-2>>に示す。
+
+[[tab-S-2]]
+[cols="3a,3a,^a,^a,^a,^a,6a"]
+.地形モデルの記述に使用する地物型と空間属性
+|===
+| 地物型 |  空間属性 |  LOD0 |  LOD1 |  LOD2 |  LOD3 |  適用
+
+2+| dem:ReliefFeature
+|  ●
+|  ●
+|  ●
+|  ●
+| dem:ReliefFeatureを作成する場合は、dem:BreaklineRelief 、 dem:TINRelief又はdem:ReliefFeatureのいずれかを必須とする。
+
+.2+| dem:BreaklineRelief | |  ■ |  |  |  .2+|
+| dem:ridgeOrValleyLines |  ■ |  |  |
+.2+| dem:TINRelief | |  ■ |  ■ |  ■ |  ■ .4+| LOD1、LOD2及びLOD3では、dem:TINReliefを基本とする。
+| dem:tin |  ■ |  ■ |  ■ |  ■
+.2+| dem:MassPointRelief | |  ■ |  ■ |  ■ |  ■
+| dem:reliefPoints |  ■ |  ■ |  ■ |  ■
+
+|===
+
+[%key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
+
+３D都市モデルでは、地形モデルにdem:TINReliefを使用することを推奨している。この理由として、点群で扱う場合には、LAS形式など点群に特化したデータフォーマットが別途存在し、地形モデルには主題属性が付与されていないことから、CityGMLを使用して点群を記述する利点があまりないことが挙げられる。地形を連続した面として取り扱えるようにすることを重視し、dem:TINReliefの採用を推奨する。
+
+
+==== 地形の空間属性
+
+===== LOD0
+
+地形モデル（LOD0）では、地形の形状を点、線又は面により表現する。このとき、地形オブジェクトは、地形モデル（LOD0）の定義に従ったものでなければならない。
+
+
+[requirement]
+.地形のLOD0形状定義
+====
+[%metadata]
+identifier:: /req/dem/2
+subject:: 3D都市モデル
+description:: 地形のLOD0の形状は、地形モデル（LOD0）の定義に従う。
+====
+
+地形モデル（LOD0）は、公共測量標準図式に従った表現となる。
+
+===== LOD1
+
+地形モデル（LOD1）では、地形の形状を、高さをもつ三角形の集まり（dem:TINRelief）又は高さをもつ点の集まり（dem:MassPointRelief）として表現する。このとき、地形オブジェクトは、地形モデル（LOD1）の定義に従ったものでなければならない。
+
+
+[requirement]
+.地形のLOD1形状定義
+====
+[%metadata]
+identifier:: /req/dem/3
+subject:: 3D都市モデル
+description:: 地形のLOD1の形状は、地形モデル（LOD1）の定義に従う。
+====
+
+===== LOD2
+
+地形モデル（LOD2）では、地形の形状を、高さをもつ三角形の集まり（dem:TINRelief）又は高さをもつ点の集まり（dem:MassPointRelief）として表現する。このとき、地形オブジェクトは、地形モデル（LOD2）の定義に従ったものでなければならない。
+
+
+[requirement]
+.地形のLOD2形状定義
+====
+[%metadata]
+identifier:: /req/dem/4
+subject:: 3D都市モデル
+description:: 地形のLOD2の形状は、地形モデル（LOD2）の定義に従う。
+====
+
+===== LOD3
+
+地形モデル（LOD3）では、高さをもつ三角形の集まり（dem:TINRelief）又は高さをもつ点の集まり（dem:MassPointRelief）として表現する。このとき、地形オブジェクトは、地形モデル（LOD3）の定義に従ったものでなければならない。
+
+
+[requirement]
+.地形のLOD3形状定義
+====
+[%metadata]
+identifier:: /req/dem/5
+subject:: 3D都市モデル
+description:: 地形のLOD3の形状は、地形モデル（LOD3）の定義に従う。
+====
+
+==== 地形の主題属性
+
+地形の主題属性には、あらかじめCityGML又はGMLにおいて定義された属性（接頭辞dem、gml）がある。また、標準製品仕様書では、i-URにおいて拡張された作成したデータの品質に関する情報を格納するための属性（uro:demDataQualityAttribute）がある。しかし、標準製品仕様書では地形モデルにオープンデータや台帳等の他の原典資料から入手して付与する主題属性を定義していない。
+
+地形モデルに主題属性を付与したい場合は、拡張製品仕様書において汎用属性（gen:_genAttribute）の下位型又は拡張属性（uro:KeyValuePairAttribute）を用いて追加する。
+
+===== データ品質属性（uro:DataQualityAttribute）
+
+使用した原典資料やそれに基づくデータの品質、また、採用したLODは、データセットのメタデータに記録できる。ただし、データセット全体に対して一つのメタデータを作成することが基本となり、個々の都市オブジェクトの品質を記録することは困難である。
+
+そこで、標準製品仕様書では、個々のデータに対してデータ品質に関する情報を記述するための属性として、「データ品質属性」（uro:DataQualityAttribute）を定義している。データ品質属性は、属性としてデータ作成に使用した原典資料の地図情報レベル、その他原典資料の諸元及び精緻化したLODをもつ。
+
+3D都市モデルに含まれる全ての地形オブジェクトは、このデータ品質属性を必ず作成しなければならない。
+

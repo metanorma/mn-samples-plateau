@@ -1,0 +1,161 @@
+[[tocH_02]]
+=== 航路の記述とLOD
+
+
+==== 使用可能な地物型とLOD
+
+航路とは、船舶の通路として法令で定める海域である。標準製品仕様書では、原則として、以下に示す港則法や海上交通安全法によって規定される航路を対象とする。
+
+** 港則法施行規則第8条
+
+** 海上交通安全法第2条
+
+航路の記述には、i-URのUrban Objectモジュールに定義された、uro:Waterwayを使用する。uro:Waterwayは、CityGML3.0において、新たに交通（Transportaiton）モジュールに定義された地物型であるtran:Waterwayを、CityGML2.0においても使えるように、i-URにおいて拡張した地物型である。uro:Waterwayは、道路（tran:Road）や鉄道（tran:Railway）と同様に、交通複合体（tran:TransportationComplex）を継承し、詳細度（LOD）ごとに、使用すべき空間属性が異なる。
+
+標準製品仕様書では、交通（航路）モデルのLODは、LOD0からLOD2までを対象とする。
+
+
+[requirement]
+.航路記述のLOD対応条件
+====
+[%metadata]
+identifier:: /req/wwy/1
+subject:: 3D都市モデル
+description:: 航路の記述には、指定されたLODに対応する地物型及び空間属性を使用する。
+====
+
+航路（uro:Waterway）は、tran:TransportationComplex を継承していることから、tran:TrafficAreaとtran:AuxiliaryTrafficArea の集まりによって構成される。tran:TrafficAreaは船舶が通行可能な領域であり、tran:AuxiliaryTrafficAreaはtran:TrafficAreaの機能を補助する地物である。しかし、航路は航行可能な区域のみが指定されていることから、航路の区域にはtran:AuxiliaryTrafficAreaに該当する領域は存在しない。そこで、標準製品仕様書ではtran:AuxiliaryTrafficAreaを対象外とする。
+
+航路の各LODにおいて使用可能な地物型と空間属性を、<<tab-H-1>>に示す。
+
+[[tab-H-1]]
+[cols="3a,3a,^a,^a,^a,^a,6a"]
+.交通（航路）モデルに使用する地物型と空間属性
+|===
+| 地物型 |  空間属性 |  LOD0 |  LOD1 |  LOD2 |  LOD3 |  適用
+
+.5+| uro:Waterway | |  ● |  ● |  ● |  |
+| lod0Network |  ● |  |  |  |
+| lod1MultiSurface |  |  ● |  |  |
+| lod2MultiSurface |  |  |  ● |  |
+| lod3MultiSurface |  |  |  |  |
+.3+| tran:TrafficArea | 　 |  |  |  ● |  |
+| lod2MultiSurface |  |  |  ● |  |
+| lod3MultiSurface |  |  |  |  |
+.3+| tran:AuxiliaryTrafficArea | |  |  |  |  | 航路には存在しない。
+| lod2MultiSurface |  |  |  |  |
+| lod3MultiSurface |  |  |  |  |
+
+|===
+
+[%key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
+
+
+==== 交通（航路）モデルのLOD
+
+交通（航路）モデル（LOD0）では、航路の形状をネットワークとして表現し、交通（航路）モデル（LOD1）及び交通（航路）モデル（LOD2）では面として表現する。交通（航路）モデル（LOD1）では航路内を区分できず、交通（航路）モデル（LOD2）では航路内を区分できる。CityGMLでは、LODの枠組みとそこで使用可能な地物型及び空間属性をデータ構造として定義しているが、何を取得し記述すべきというデータの内容の定義は行っていない。これにより、同じLODであっても、ユースケースやデータ作成者によってその詳細度が大きく異なる可能性がある。
+
+そこで、標準製品仕様書では、その用途やデータ作成の難易度を考慮し、3D都市モデルにおける交通（航路）モデルのLODを<<tab-H-2>>のように整理している。
+
+[[tab-H-2]]
+.交通（航路）モデルの概要
+image::images/287.webp.png[]
+
+交通（航路）モデルは、高さを持たない。航路オブジェクトを3次元の地形データに貼り付けることで3次元的に表示して利用することを想定している。
+
+
+==== 航路の空間属性
+
+uro:Waterwayの空間属性は、いずれのLODにおいても、同一のLODにおける航路の連続性を担保する必要がある。
+
+
+[requirement]
+.uro:Waterwayの幾何座標一致条件
+====
+[%metadata]
+identifier:: /req/wwy/2
+subject:: 3D都市モデル
+description:: 連続するuro:Waterwayの幾何オブジェクトは、同一のLODにおいて、その境界の座標を一致させなければならない。
+====
+
+===== LOD0
+
+交通（航路）モデル（LOD0）では、航路（uro:Waterway）の形状を線として記述する。このとき、線はgml:GeometricComplexを用いて記述する。
+
+===== LOD1
+
+交通（航路）モデル（LOD1）では、航路（uro:Waterway）の形状を面として記述する。このとき、面の境界は法令により指定された航路の区域の境界となる。交通（航路）オブジェクトは、以下の場所で区切る。
+
+
+[requirement]
+.uro:Waterwayの幾何座標一致条件
+====
+[%metadata]
+identifier:: /req/wwy/3
+subject:: 3D都市モデル
+description:: uro:Waterwayのオブジェクトは、以下に示す場所で区切る。
+part:: 二つ以上の航路が交わる部分
+====
+
+===== LOD2
+
+交通（航路）モデル（LOD2）では、航路（uro:Waterway）の形状を面として記述する。LOD2では、uro:Waterwayはtran:TrafficAreaに区分できる。このとき、uro:Waterwayの空間属性は、これを構成するtran:TrafficAreaの空間属性の集まりとなる。
+
+
+[requirement]
+.LOD2 uro:Waterwayの空間属性一致条件
+====
+[%metadata]
+identifier:: /req/wwy/4
+subject:: 3D都市モデル
+description:: LOD2におけるuro:Waterwayの空間属性は、これを構成するtran:TrafficAreaの空間属性の集まりと一致しなければならない。
+====
+
+tran:TrafficAreaは、法令により指定された船舶の航行方向により区分する。航行方向の指定が無い場合、交通（航路）モデル（LOD2）においてtran:TrafficAreaの形状と、uro:Waterwayの形状は等しくなり、これは交通（航路）モデル（LOD1）と一致する。
+
+
+==== 航路の主題属性
+
+uro:Waterwayの主題属性には、uro:Waterwayに定義された属性と、これが継承するtran:TransportationComplexに定義された属性がある。
+
+なお、uro:Waterwayがtran:_TransportationObjectから継承するuro:tranDmAttributeは、数値地形図との互換性を保つための情報を格納するための属性であり、航路は数値地形図では表現されないことから、標準製品仕様書では使用しない。
+
+===== 航路詳細属性（uro:waterweyDetailAttribute）
+
+航路の詳細な属性として、航路の管理番号、進行方向、幅員、延長、航法、計画水深、速力制限、対象船型を定義する。
+
+幅員が幅をもって指定されている場合は、最小値（uro:minimumWidth）及び最大値（uro:maximumWidth）の両方を入力する。特定の値が指定されている場合は、最小値（uro:minimumWidth）のみを入力する。
+
+===== データ品質属性（uro:DataQualityAttribute）
+
+航路のデータ作成に使用した原典資料を記述するための属性である。
+
+3D都市モデルでは、データ集合全体としての品質はメタデータに記録する。しかしながら、メタデータでは、個々のデータに対して位置正確度や適用したLOD等の品質を記述することが困難である。
+
+そこで、標準製品仕様書では、個々のデータに対してデータ品質に関する情報を記述するための属性として、「データ品質属性」（uro:DataQualityAttribute）を定義している。データ品質属性は、属性としてデータ作成に使用した原典資料の地図情報レベル、その他原典資料の諸元及び精緻化したLODをもつ。
+
+3D都市モデルに含まれる全ての交通（航路）モデルは、このデータ品質属性を必ず作成しなければならない。ただし、航路（uro:Waterway）に対してデータ品質属性を付与することはできるが、これを構成する交通領域（tran:TrafficArea）や交通補助領域（tran:AuxiliaryTrafficArea）にデータ品質属性を付与することはできない。
+
+===== 施設管理のための属性
+
+施設管理のための属性は、港湾施設及び漁港施設、河川管理施設や公園管理施設等の施設管理に必要な情報を定義した属性である。施設管理のための属性は以下のデータ型を用いて記述する。
+
+====== 施設分類属性（uro:FacilityTypeAttribute）
+
+uro:FacilityTypeAttributeは、各分野で定める施設の区分を記述するためのデータ型である。CityGMLは、地物型を物体としての性質に着目して定義し、機能や用途は属性で区分している。これにより、都市に存在する様々な地物を、分野を問わず、網羅的に、かつ、矛盾が無く表現することを目指している。一方、各分野には独自の施設の区分がある。この区分は当該分野での施設管理に必要な情報であるが、CityGMLの地物型の区分とは一致しない。そこで、これらの地物型に分野独自の区分を付与するためにこのデータ型を用いる。uro:FacilityTypeAttributeは、二つの属性をもつ。uro:classは分野を特定するための属性である。またuro:functionは、uro:classにより特定した分野における施設の区分を示す。
+
+標準製品仕様書では、港湾施設管理、漁港施設管理及び公園施設管理のそれぞれの分野についてはuro:functionの区分を示している。その他の分野における区分が必要となる場合はuro:classへの分野の追加も含め、拡張製品仕様書において追加できる。
+
+====== 施設識別属性（uro:FacilityIdAttribute）
+
+uro:FacilityIdAttributeは、施設の位置を特定する情報及び施設を識別する情報を記述するためのデータ型である。uro:FacilityIdAttributeは、施設を識別するための情報として、識別子（uro:id）や正式な名称以外の呼称（uro:alternativeName）に加え、施設の位置を示すための、都道府県（uro:prefecture）、市区町村（uro:city）及び開始位置の経緯度（uro:startLat、uro:startLong）を属性としてもつ。
+
+====== 施設詳細属性（uro:FacilityAttribute）
+
+uro:FacilityAttributeは、各分野において施設管理に必要となる情報を記述するためのデータ型である。uro:FacilityAttributeは、抽象クラスであり、これを継承する具象となるデータ型に、施設の区分毎に必要となる情報を属性として定義している。
+
+標準製品仕様書では、港湾施設、漁港施設及び公園施設について、細分した施設の区分ごとにデータ型を定義している。また、施設に関する工事や点検の状況や内容を記述するためのデータ型（uro:MaintenanceHistoryAttribute）を定義している。
+

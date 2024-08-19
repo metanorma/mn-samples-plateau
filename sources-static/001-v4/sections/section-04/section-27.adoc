@@ -1,0 +1,272 @@
+[[toc4_27]]
+=== 空間スキーマプロファイル
+
+[[toc4_27_01]]
+==== クラス図
+
+[[toc4_27_01_01]]
+===== Spatial Schema（GML）
+
+空間スキーマプロファイルは、地物の空間属性（位置や形状）の記述に使用する型（幾何オブジェクト）を定義する。
+
+応用スキーマに定義された各都市オブジェクトは、lod0からlod4までの幾何形状を記述するときに、幾何オブジェクトを使用する。これは、応用スキーマクラス図では、都市オブジェクトから幾何オブジェクトへの参照として記述される。
+
+====== 幾何プリミティブ
+
+image::images/427.svg[]
+
+====== 幾何複体及び幾何集成
+
+幾何複体（Geometric Complex）とは、互いに素な幾何プリミティブの集合である。
+
+[.source]
+<<jis_x_7107>>
+
+また、幾何集成とは、内部構造をもたない幾何オブジェクトの集まりである。
+
+[.source]
+<<jis_x_7107>>
+
+幾何複体と幾何集成は、いずれも幾何形状の集まりとして表現される。ただし、幾何複体は、集められた幾何形状が互いに重なってはならない。一方、幾何集成は、集められた幾何形状が互いに重なっていてもよい。
+
+image::images/428.svg[]
+
+[[toc4_27_02]]
+==== スキーマ文書
+
+[[toc4_27_02_01]]
+===== Spatial Schema（GML）
+
+====== gml:Point
+
+[cols="1a,1a,2a"]
+|===
+| クラスの定義 2+| 点。
+
+h| 上位の型 2+| gml:_GeometricPrimitive
+h| ステレオタイプ 2+| << Type >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| position | gml:DirectPosition [1] | 座標値
+
+|===
+
+====== gml:LineString
+
+[cols="1a,1a,2a"]
+|===
+| クラスの定義 2+| 線。2点以上の点から構成され、それらの点の順序は始点から終点までの順列になっていなければならない。始点と終点以外の点の座標が、他の点の座標と一致していてはならず、また、一つの折れ線に自己交差や重なりがあってはならない。
+
+h| 上位の型 2+| gml:_GeometricPrimitive
+h| ステレオタイプ 2+| << Type >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| position | gml:DirectPosition [2..*] | 線を構成する座標値の列。
+
+|===
+
+====== gml:CompositeCurve
+
+[cols="1a,1a,2a"]
+|===
+| クラスの定義 2+| 線の集まり。ただし、集まりを構成する最初の線を除く各線が直前の線の終点から始まる（方向が揃った有向曲線となる）。始点と終点以外の点の座標が、ほかの点の座標と一致してはならず、また、自己交差や重なりがあってはならない。
+
+h| 上位の型 2+| gml:_Curve
+h| ステレオタイプ 2+| << Type >>
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+| curveMember | gml:_Curve [1..*] | 集まりを構成する線。
+
+|===
+
+====== gml:Polygon
+
+[cols="1a,1a,2a"]
+|===
+| クラスの定義
+2+|
+多角形。以下を満たさなければならない。
+
+. 内周が、外周に完全に含まれている。
+. 内周が他の内周と重なっておらず、他の内周に包含されてもいない。
+. 内周が外周に接していてもよいが、gml:Polygonの内部を分断しない。
+. 内周と外周が線分で重ならない。
+. 外周及び内周に自己交差がなく、始終点以外の点で一致する点がない。
+
+image::images/429.webp.png[]
+
+h| 上位の型 2+| gml:_GeometricPrimitive
+h| ステレオタイプ 2+| << Type >>
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+| exterior | gml:_Ring [1] | 多角形の外周。
+| interior | gml:Ring [0..*] | 多角形の内周。
+
+|===
+
+====== gml:LinearRing
+
+[cols="1a,1a,2a"]
+|===
+| クラスの定義 2+| 線形から構成する輪。多角形の境界として使用される。3点以上の順列から構成され、始点と終点が一致する。gml:LinearRingを構成する全ての点は、始点と終点を除き、一致しない。自己交差しない。
+
+h| 上位の型 2+| gml:_Ring
+h| ステレオタイプ 2+| << Type >>
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+| position | gml:DirectPosition [4..*] | 輪を構成する座標値の列。
+
+|===
+
+====== gml:ComopsiteSurface
+
+[cols="1a,1a,2a"]
+|===
+| クラスの定義
+2+|
+面の集まり。ただし、構成要素となる全ての面は連続していなければならない。 +
+立体の外殻や内殻として使用される。
+
+image::images/430.webp.png[]
+
+h| 上位の型 2+| gml:_Surface
+h| ステレオタイプ 2+| << Type >>
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+| surfaceMember | gml:_Surface [1..*] | 集まりを構成する面。
+
+|===
+
+====== gml:Solid
+
+[cols="1a,1a,2a"]
+|===
+| クラスの定義
+2+|
+立体。以下を満たさなければならない。
+
+. gml:Solidの境界を構成する曲面が、自己交差していない。
+. gml:Solidは閉じている（水密である）。
+. gml:Solidの内部が連続している。
+. gml:Solidの境界を構成する曲面が、適切な方向を向いている。
+. gml:Solidの境界を構成する曲面が、重なっていない。
+
+.妥当なgml:Solidの例
+image::images/431.webp.png[]
+
+h| 上位の型 2+| gml:_GeometricPrimitive
+h| ステレオタイプ 2+| << Type >>
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+| exterior | gml:_Surface[1] | 立体の外殻。gml:CompositeSurfaceを使用する。
+| interior | gml:_Surface [0..*] | 立体の内殻。gml:CompositeSurfaceを使用する。
+
+|===
+
+====== gml:Triangle
+
+[cols="1a,1a,2a"]
+|===
+| クラスの定義 2+| 三角形。
+
+h| 上位の型 2+| gml:_SurfacePatch
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+| exterior | gml:_Ring [1] | 三角形の外周となる輪。
+
+|===
+
+====== gml:TrianglulatedSurface
+
+[cols="1a,1a,2a"]
+|===
+| クラスの定義 2+| 三角形網。
+
+h| 上位の型 2+| gml:_Surface
+h| ステレオタイプ 2+| << Type >>
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+| trianglePatches | gml:Triangle [0..*] | 三角網を構成する三角形。
+
+|===
+
+====== gml:TIN
+
+[cols="1a,1a,2a"]
+|===
+| クラスの定義 2+| 不規則三角形網。
+
+h| 上位の型 2+| gml:TrianglulatedSurface
+h| ステレオタイプ 2+| << Type >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| stopLines | gml:LineStringSegment [0..*] | TINの生成を止める境界線。
+| breakLines | gml:LineStringSegment [0..*] | 地形の変化点をつなぐ線分。
+| maxLength | gml:LengthType [1] | TINを構成する三角形の最大辺長。
+| controlPoint | gml:posList [1] | TIN生成の制御点リスト。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+| trianglePatches | gml:Triangle [0..*] | 三角網を構成する三角形。
+
+|===
+
+====== gml:MultiPoint
+
+[cols="1a,1a,2a"]
+|===
+| クラスの定義 2+| 点の集まり。
+
+h| 上位の型 2+| gml:_AbstractGeometricAggregate
+h| ステレオタイプ 2+| << Type >>
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+| pointMember | gml:Point [0..*] | 構成要素となる点。
+
+|===
+
+====== gml:MultiCurve
+
+[cols="1a,1a,2a"]
+|===
+| クラスの定義 2+| 線の集まり。
+
+h| 上位の型 2+| gml:_AbstractGeometricAggregate
+h| ステレオタイプ 2+| << Type >>
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+| curveMember | gml:_Curve [0..*] | 構成要素となる線。
+
+|===
+
+====== gml:MultiSurface
+
+[cols="1a,1a,2a"]
+|===
+| クラスの定義 2+| 面の集まり。
+
+h| 上位の型 2+| gml:_AbstractGeometricAggregate
+h| ステレオタイプ 2+| << Type >>
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+| surfaceMember | gml:_Surface [0..*] | 構成要素となる面。
+
+|===
+
+====== gml:MultiSolid
+
+[cols="1a,1a,2a"]
+|===
+| クラスの定義
+2+| 立体の集まり。 +
+標準製品仕様書では複数の立体からなる幾何オブジェクトは使用しない。 +
+gml:MultiSolidを使用する場合、これに含まれる立体は、必ず1でなければならない。
+
+h| 上位の型 2+| gml:_AbstractGeometricAggregate
+h| ステレオタイプ 2+| << Type >>
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+| solidMember | gml:_Solid [0..*] | 構成要素となる立体。
+
+|===
+
