@@ -494,8 +494,6 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 ====== Waterway_function.xml
 
 lutaml_gml_dictionary::iur/codelists/3.1/Waterway_function.xml[template="gml_dict_template.liquid",context=dict]
-----
-{% render 'gml_dict_template', root: root, filename: filename %}
 
 ====== WaterwayDetailAttribute_routeDirection.xml
 
