@@ -718,15 +718,15 @@ lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.
 
 ====== DataQualityAttribute_lod1HeightType.xml
 
+TODO: This table cannot be recreated because some values are marked "（使用不可）".
+
 lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml[template="gml_dict_template.liquid",context=dict]
 
-| （使用不可）7 | 建築確認申請書類等に記載された「建築物の高さ」
-| （使用不可）8 | 都市計画基礎調査（建物利用現況）の「高さ（m）」
-| （使用不可）9 | 階高3m×都市計画基礎調査（建物利用現況）の「階数・地上（階）」による推定値
-| 10 | 図面から取得した高さ
-| 0 | 取得不可のため一律値（3m）
-
-|===
+// | （使用不可）7 | 建築確認申請書類等に記載された「建築物の高さ」
+// | （使用不可）8 | 都市計画基礎調査（建物利用現況）の「高さ（m）」
+// | （使用不可）9 | 階高3m×都市計画基礎調査（建物利用現況）の「階数・地上（階）」による推定値
+// | 10 | 図面から取得した高さ
+// | 0 | 取得不可のため一律値（3m）
 
 [.source]
 <<gsi_building_data_manual>>
@@ -748,7 +748,16 @@ lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_geomet
 
 ====== CityFurniture_lodType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/CityFurniture_lodType.xml[template="gml_dict_template.liquid",context=dict]
+TODO: This file is not present.
+
+// lutaml_gml_dictionary::iur/codelists/3.1/CityFurniture_lodType.xml[template="gml_dict_template.liquid",context=dict]
+
+[cols="3a,22a"]
+|===
+| ファイル名 | CityFurniture_lodType.xml
+
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/CityFurniture_lodType.xml
+h| コード h| 説明
 
 | 3.0 | 都市設備の主要な部分同士の接続部を表現しない。
 | 3.1 | 都市設備の主要な部分同士の接続部を表現する。
