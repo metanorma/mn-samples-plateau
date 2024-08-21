@@ -1,0 +1,207 @@
+[[toc4_21]]
+=== 汎用都市オブジェクトモデルの応用スキーマ
+
+汎用都市オブジェクトは、CityGMLに定義されていない地物を記述するための汎用的な地物型である。
+
+拡張製品仕様書において、必要に応じて使用する。
+
+[[toc4_21_01]]
+==== 汎用都市オブジェクトモデルのLOD
+
+標準製品仕様書が対象とする汎用都市オブジェクトモデル（gen:GenericCityObject）のLODは、LOD0からLOD４までである。
+
+[[toc4_21_02]]
+==== 汎用都市オブジェクトモデルの応用スキーマクラス図
+
+[[toc4_21_02_01]]
+===== Generic（i-UR）
+
+====== 汎用都市オブジェクト
+
+gen:GenericCityObjectは、CityGMLに定義されていない地物を作成したい場合に使用する汎用的な地物型である。
+
+image::images/409.svg[]
+
+====== 汎用属性
+
+gen:_genericAttributeは、CityGMLに定義されていない属性を追加したい場合に使用する汎用的なデータ型である。文字列や整数のように、追加したい属性型に応じて、gen:_genericAttributeを継承するデータ型が定義されている。
+
+image::images/410.svg[]
+
+core:_CityObjectは、0以上のgen:_genericAttributeをもつことができる構造となっている。CityGMLに定義されたbldg:Buildingやbldg:LandUseなどの全ての地物型はcore:_CityObjectを継承しているため、bldg:Buildingやbldg:LandUseなどの全ての地物型も、0以上のgen:_genericAttributeをもつことができる（全ての地物型に汎用属性を追加できる）。
+
+[[toc4_21_03]]
+==== 汎用都市オブジェクトモデルの応用スキーマ文書
+
+[[toc4_21_03_01]]
+===== Generic（CityGML）
+
+====== gen:stringAttribute
+
+[cols="1a,1a,2a"]
+|===
+| クラスの定義 2+| 文字列型の汎用属性。CityGML又はi-URに定義されていない文字列型の属性を追加したい場合に使用する。
+
+h| 上位の型 2+| gen:_genericAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| gen:name | xs:string [1] | 汎用属性の名称。
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| gen:value | xs:string [1] | 汎用属性の値。
+
+|===
+
+====== gen:intAttribute
+
+[cols="1a,1a,2a"]
+|===
+| クラスの定義 2+| 整数型の汎用属性。CityGML又はi-URに定義されていない整数型の属性を追加したい場合に使用する。
+
+h| 上位の型 2+| gen:_genericAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| gen:name | xs:string [1] | 汎用属性の名称。
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| gen:value | xs:integer [1] | 汎用属性の値。
+
+|===
+
+====== gen:doubleAttribute
+
+[cols="1a,1a,2a"]
+|===
+| クラスの定義 2+| 実数型の汎用属性。CityGML又はi-URに定義されていない実数型の属性を追加したい場合に使用する。
+
+h| 上位の型 2+| gen:_genericAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| gen:name | xs:string [1] | 汎用属性の名称。
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| gen:value | xs:double [1] | 汎用属性の値。
+
+|===
+
+====== gen:dateAttribute
+
+[cols="1a,1a,2a"]
+|===
+| クラスの定義 2+| 日付型の汎用属性。CityGML又はi-URに定義されていない日付型の属性を追加したい場合に使用する。
+
+h| 上位の型 2+| gen:_genericAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| gen:name | xs:string [1] | 汎用属性の名称。
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| gen:value | xs:date [1] | 汎用属性の値。
+
+|===
+
+====== gen:uriAttribute
+
+[cols="1a,1a,2a"]
+|===
+| クラスの定義 2+| URI型の汎用属性。CityGML又はi-URに定義されていないURI型の属性を追加したい場合に使用する。
+
+h| 上位の型 2+| gen:_genericAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| gen:name | xs:string [1] | 汎用属性の名称。
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| gen:value | xs:anyURI[1] | 汎用属性の値。
+
+|===
+
+====== gen:measureAttribute
+
+[cols="1a,1a,2a"]
+|===
+| クラスの定義 2+| 単位付き計測値型の汎用属性。CityGML又はi-URに定義されていない単位付き計測値型の属性を追加したい場合に使用する。
+
+h| 上位の型 2+| gen:_genericAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| gen:name | xs:string [1] | 汎用属性の名称。
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| gen:value | gml:MeasureType [1] | 汎用属性の値。必ず計測の単位（uom）を付ける。
+
+|===
+
+====== gen:genericAttributeSet
+
+[cols="1a,1a,2a"]
+|===
+| クラスの定義 2+| 汎用属性のグループ。CityGML又はi-URに定義されていない属性をグループ化して追加したい場合に使用する。
+
+h| 上位の型 2+| gen:_genericAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| gen:name | xs:string [1] | 汎用属性の名称。
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| gen:codeSpace | gml:CodeType [0..1] | 汎用属性のグループを維持管理する機関のURI。文字列とする。
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+| gen:_genericAttribute | gen:_genericAttribute [1..*] | グループに含みたい汎用属性。
+
+|===
+
+====== gen:GenericCityObject
+
+[cols="1a,1a,2a"]
+|===
+| クラスの定義 2+| CityGMLに定義されていない地物を定義するための汎用的な地物型。
+
+h| 上位の型 2+| core:_CityObject
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| gml:description | gml:StringOrRefType [0..1] | 汎用的な地物型の説明。
+| gml:name
+| gml:CodeType [0..1]
+| 汎用都市オブジェクトを識別する名称。コードリスト（GenericCityObject_name.xml）より選択する。 +
+汎用都市オブジェクトを使用する場合は、コードリストを作成すること。
+
+h| (gml:boundedBy) | gml:Envelope [0..1] | オブジェクトの範囲及び適用される空間参照系。
+| core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
+| core:terminationDate | xs:date [0..1] | データが削除された日。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| gen:class | gml:CodeType [0..1] | 汎用都市オブジェクトの区分。コードリストより選択する。この属性を使用する場合は、コードリストを作成すること。
+| gen:function | gml:CodeType [0..*] | 汎用都市オブジェクトの機能。コードリストより選択する。この属性を使用する場合は、コードリストを作成すること。
+| gen:usage | gml:CodeType [0..*] | 汎用都市オブジェクトの用途。コードリストより選択する。この属性を使用する場合は、コードリストを作成すること。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+| gen:stringAttribute | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+| gen:intAttribute | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+| gen:doubleAttribute | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+| gen:dateAttribute | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+| gen:uriAttribute | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+| gen:measureAttribute | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+| gen:genericAttributeSet | gen:GenericAttributeSet [0..*] | 汎用属性のセット（集合）。属性を追加したい場合に使用する。
+| lod0Geometry | gml:_Geometry [0..1] | LOD0の形状。点、線又は平面により記述する。
+| lod1Geometry | gml:_Geometry [0..1] | LOD1の形状。平面又は平面に一律の高さを与えた立体とする。
+| lod2Geometry | gml:_Geometry [0..1] | LOD2の形状。主要な構造を単純な立体図形（球、円柱、円柱、角柱等）の組み合わせにより記述する。
+| lod3Geometry | gml:_Geometry [0..1] | LOD3の形状。主構造及び詳細構造の外形により構成する。
+
+|===
+
+[[toc4_21_04]]
+==== 汎用都市オブジェクトモデルで使用するコードリストと列挙型
+
+拡張製品仕様書において、汎用都市オブジェクトの名称を示すコードリストを作成する。
+

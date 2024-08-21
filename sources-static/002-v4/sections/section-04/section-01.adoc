@@ -1,0 +1,63 @@
+[[toc4_01]]
+=== 概要
+
+本章では、収集した既存資料及び取得した新規データを原典資料として、3D都市モデルの作成を行う手順を示す。この手順には、それぞれの工程での品質評価を含む。これは成果品とりまとめにおける手戻りを防ぐことを目的としている。
+
+<<fig-4-1>>に3D都市モデル作成の手順を示す。3D都市モデル作成は、まずGIS、CAD等のツールを使用して都市オブジェクトの空間属性である幾何オブジェクト（立体等）を作成し、次に、幾何オブジェクトに属性を追加する。最後に、製品仕様に規定された符号化仕様（i-UR及びCityGML）に従い出力する、という手順で行うことを基本とする。ただし、使用するツールの特性に合わせ、幾何オブジェクトの作成と属性追加の順序を入れ替えてもよい。また、既存資料として幾何オブジェクトが存在している場合のように、これらの手順は省略される場合がある。
+
+[[fig-4-1]]
+.データ作成と品質評価の手順
+image::images/016.webp.png[]
+
+地物型ごとに取りうる幾何型や満たすべき要件が異なる。そこで、地物型ごとに幾何型や満たすべき要件を示す。また、要件を満たす標準的な作業手順及び作業上の留意事項を示す。3D都市モデル作成にあたっては、本書の本編に示す留意事項等に加え、<<fig-4-1>>に示す地物型に対応する付属書を参照すること。
+
+[cols="1a,2a,1a,2a,1a,2a",options="header"]
+.地物型と付属書
+|===
+| 付属書 | 地物型 | 付属書 | 地物型 | 付属書 | 地物型
+
+|  Annex C |  建築物 |  Annex J |  災害リスク |  Annex Q |  地下街
+|  Annex D |  交通（道路） |  Annex K |  都市計画決定情報 |  Annex R |  植生
+|  Annex E |  交通（鉄道） |  Annex L |  橋梁 |  Annex S |  地形
+|  Annex F |  交通（徒歩道） |  Annex M |  トンネル |  Annex T |  水部
+|  Annex G |  交通（広場） |  Annex N |  その他の構造物 |  Annex U |  区域
+|  Annex H |  交通（航路） |  Annex O |  都市設備 |  |
+|  Annex I |  土地利用 |  Annex P |  地下埋設物 |  |
+
+|===
+
+[requirements_class]
+.3D都市モデル作成手順と品質評価の留意事項
+====
+[%metadata]
+identifier:: /req/quality
+subject:: 3D都市モデル
+description:: 3D都市モデル作成手順と品質評価の留意事項
+requirement:: /att/quality/1
+requirement:: /att/quality/2
+requirement:: /att/quality/3
+requirement:: /att/quality/4
+requirement:: /att/quality/5
+requirement:: /att/quality/6
+requirement:: /att/quality/7
+requirement:: /att/quality/8
+requirement:: /att/quality/9
+requirement:: /att/quality/10
+requirement:: /att/quality/11
+requirement:: /att/quality/12
+requirement:: /att/quality/13
+requirement:: /att/quality/14
+requirement:: /att/quality/15
+requirement:: /att/quality/16
+requirement:: /att/quality/17
+requirement:: /att/quality/18
+requirement:: /att/quality/19
+requirement:: /att/quality/20
+requirement:: /att/quality/21
+requirement:: /att/quality/22
+requirement:: /att/quality/23
+requirement:: /att/quality/24
+requirement:: /att/quality/25
+requirement:: /att/quality/26
+requirement:: /att/quality/27
+====
