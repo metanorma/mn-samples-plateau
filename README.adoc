@@ -7,10 +7,25 @@ These documents belong to Project PLATEAU by MLIT.
 `sources/`::
 source of the documents
 
+`sources/001-v4/`::
+PLATEAU Handbook #01 source, v4.
+
+`sources/001-v4/iur/`::
+i-UR data. Downloaded from here:
+https://www.chisou.go.jp/tiiki/toshisaisei/itoshisaisei/iur/index.html
+(see https://github.com/metanorma/mn-samples-plateau/issues/128)
+
+`sources/002-v4/`::
+PLATEAU Handbook #02 source, v4.
+
+`reference-docs/`::
+Reference documents.
+
 `_site/`::
 (automatically generated, in the `gh-pages` branch) published document.
 
 
+////
 == Prerequisites
 
 === General
@@ -138,7 +153,7 @@ gem "metanorma-cli"
 
 
 Then run the `bundle` command to fetch the development code.
-
+////
 
 == Usage (general)
 
