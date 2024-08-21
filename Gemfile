@@ -4,6 +4,7 @@ gem "metanorma-cli"
 
 # WARNING: only for developers
 # gem "metanorma-plateau", git: "git@github.com:metanorma/metanorma-plateau.git"
+gem "isodoc", git: "git@github.com:metanorma/isodoc.git"
 # gem "sassc"
 # gem "debug"
 # gem "metanorma-plateau", path: "~/src/mn/metanorma-plateau"
