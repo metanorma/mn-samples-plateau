@@ -225,24 +225,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ===== ImplicitGeometry_mimeType.xml
 
-TODO: This file does not actually exist. Is the correct link the following? But
-it contains many additional codes:
-https://www.sig3d.org/codelists/citygml/2.0/core/2.0/ImplicitGeometry_mimeType.xml.
-
-// lutaml_gml_dictionary::iur/codelists/3.1/ImplicitGeometry_mimeType.xml[template="gml_dict_template.liquid",context=dict]
-
-[cols="a,a"]
-|===
-| ファイル名 | ImplicitGeometry_mimeType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.0/ImplicitGeometry_mimeType.xml
-h| コード h| 説明
-| `model/gltf+json` | `.gltf`
-| `model/x3d+xml` | `.x3db`, `.x3d`
-| `model/x3+vrml` | `.x3dv`, `.x3dvz`
-| `model/obj` | `.obj`
-
-|===
+lutaml_gml_dictionary::iur/codelists/3.1/ImplicitGeometry_mimeType.xml[template="gml_dict_template.liquid",context=dict]
 
 
 ===== ImplicitGeometryにより地下埋設物の形状を表現する場合の関連役割
