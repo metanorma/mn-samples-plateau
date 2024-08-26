@@ -36,6 +36,9 @@ jobs:
           github-pakages-token: ${{ secrets.METANORMA_CI_PAT_TOKEN }}
           use-bundler: true
 
+      - name: Print Metanorma version
+        run: metanorma --version   
+
       - name: Metanorma generate site
         uses: actions-mn/build-and-publish@v2
         with:
