@@ -1199,7 +1199,9 @@ h| LOD4.2
 一棟の建築物を、属性の異なる複数の部分に分ける場合に必須とする。
 
 2+| 屋根面 | bldg:RoofSurface | ● | ● | ●
-2+| 壁面 | bldg:WallSurface | ● | ● | ●
+
+// this row is_common to both doc01 and doc02 slide20
+2+| 外壁面 | bldg:WallSurface | ● | ● | ●
 2+| 底面 | bldg:GroundSurface | ● | ● | ●
 2+| 屋外天井面 | bldg:OuterGroundSurface | 〇 | 〇 | 〇
 2+| 屋外床面 | bldg:OuterFloorSurface | 〇 | 〇 | 〇
@@ -1267,21 +1269,28 @@ LOD4.0は建築物の外形（上図１）に加え、建築物の内部を表�
 
 また、LOD4.0では建築物の内部に存在する付属物や家具を表現しない。
 
+// this row is_common to both doc01 and doc02 slide19
+
 | LOD4.1
 |
 
-image::images/027.webp.png[]
+// image::images/027.webp.png[]
+image::images/147.webp.png[]
 
-LOD4.1ではLOD4.0に、屋内の付属物（bldg:IntBuildingInstallation）として、階段、スロープ、輸送設備（エスカレータ、エレベータ及び動く歩道）、柱及びデッキ・ステージが追加される。
+LOD4.1ではLOD4.0に、屋内付属物（bldg:IntBuildingInstallation）として、階段、スロープ、輸送設備（エスカレータ、エレベータ及び動く歩道）、柱及びデッキ・ステージが追加される。
+
 上図の例では、LOD4.0に加えて、階段、踊り場、エレベータ、柱が付属物として追加された。
+
+// this row is_common to both doc01 and doc02 slide19
 
 | LOD4.2
 |
 
-image::images/028.webp.png[]
+// image::images/028.webp.png[]
+image::images/148.webp.png[]
 
-LOD4.2ではLOD4.1に屋内の付属物（bldg:IntBuildingInstallation）として、手すり、パネル及び梁が付属物として追加される。
-また、机やいすなどの移動可能な家具（bldg:BuildingFurniture）が追加される。
+LOD4.2ではLOD4.1に屋内付属物（bldg:IntBuildingInstallation）として、手すり、パネル及び梁が付属物として追加される。また、机や椅子などの移動可能な家具（bldg:BuildingFurniture）が追加してもよい。
+
 上図の例では、LOD4.2に加えて屋内付属物として階段の手すりとパネル（間仕切り）、また、家具として机及び椅子が追加された。
 
 |===
