@@ -134,8 +134,9 @@ gml:idの付与ルールに従う。
 --
 ====
 
-// rwp 20240816 revise as per slide file 20240802 slide 02
-// | ため池ハザードマップ |  rfld
+// rwp 20240816 revise as per slide file 20240802 slide02 slide03
+// this table is_common to both doc01 and doc02 slide02 slide03
+
 
 (((都市計画決定情報)))
 [[tab-4-4]]
@@ -168,7 +169,7 @@ gml:idの付与ルールに従う。
 2+| 区域モデル |  area
 2+| 汎用都市オブジェクト |  gen
 2+| アピアランスモデル |  app
-2+| 拡張製品仕様書で拡張した地物 |  ext
+2+| 拡張製品仕様書で追加した地物（ただし、urf:Zoneを継承する地物を除く）|  ext
 
 |===
 
