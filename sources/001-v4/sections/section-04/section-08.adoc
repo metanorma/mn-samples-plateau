@@ -73,9 +73,11 @@ h| 説明
 |===
 | 地物型 | 空間属性 | LOD0 | LOD1 | LOD2 | LOD3 | 適用
 
-.2+| luse:LandUse | | |  ● | | .2+|
-| luse:lod1MultiSurface | |  ● | |
-
+.5+| luse:LandUse | | |  ● | | | LOD1のみを対象とする。
+| lod0MultiSurface | | | | |
+| lod1MultiSurface | |  ● | | |
+| lod2MultiSurface | | | | |
+| lod3MultiSurface | | | | |
 |===
 
 [%key]

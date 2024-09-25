@@ -72,7 +72,7 @@ description:: トンネルの記述には、指定されたLODに対応する地
 | tun:lod4Solid |  |  |  |  |  ■ |
 |  | tun:lod4MultiSurface |  |  |  |  |  ■ | Solidを原則とする。BIMから作成する場合はMultiSurfaceとする。
 
-.5+| tun:TunnelPart　
+.5+| tun:TunnelPart 
 |
 |
 |  ■
@@ -211,13 +211,8 @@ description:: tun:Tunnelのtun:lod1solidで示される立体（gml:solid）の�
 ^h| 2+^h| LOD1
 h| 取得例
 |
-
-.トンネル
 image::images/350.webp.png[]
-
 |
-
-.地下横断歩道
 image::images/351.webp.png[]
 
 h| 説明
@@ -383,7 +378,7 @@ image::images/356.webp.png[]
 |
 image::images/357.webp.png[]
 | LOD4.0に加え、「短辺の実長が3ｍ以上」又は「横断又は縦断面積が3m2以上かつ短辺の実長が1m以上」の固定された設備を取得する。 +
-左図の例の場合は、換気用のジェットファンが短辺の実長が3m以上に該当し、また、手すりが縦断面積が3m2以上かつ短辺の実長が1m以上に該当したため、取得された。
+左図の例の場合は、換気用のジェットファンの短辺の実長が3m以上に該当し、また、手すりが縦断面積が3m2以上かつ短辺の実長が1m以上に該当したため、取得された。
 
 ^h| LOD4.2
 |
