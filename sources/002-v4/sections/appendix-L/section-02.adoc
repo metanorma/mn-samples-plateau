@@ -75,10 +75,10 @@ description:: 橋梁の記述には、指定されたLODに対応する地物型
 | brid:lod1Solid |  |  ● |  |  |  |
 | brid:lod2MultiSurface |  |  |  ■ |  |  | LOD2.0の場合は必須とする。
 | brid:lod2Solid |  |  |  ■ |  |  | LOD2.1の場合は必須とする。
-| brid:lod3MultiSurface |  |  |  |  ■ |  | MultiSurfaceまたはSolidとする。
-| brid:lod3Solid |  |  |  |  ■ |  | MultiSurfaceまたはSolidとする。
-| brid:lod4MultiSurface |  |  |  |  |  ■ | MultiSurfaceまたはSolidとする。
-| brid:lod4Solid |  |  |  |  |  ■ | MultiSurfaceまたはSolidとする。
+| brid:lod3MultiSurface |  |  |  |  ■ |  | MultiSurface又はSolidとする。
+| brid:lod3Solid |  |  |  |  ■ |  | MultiSurface又はSolidとする。
+| brid:lod4MultiSurface |  |  |  |  |  ■ | MultiSurface又はSolidとする。
+| brid:lod4Solid |  |  |  |  |  ■ | MultiSurface又はSolidとする。
 .8+| brid:BridgePart
 |
 |
@@ -92,10 +92,10 @@ description:: 橋梁の記述には、指定されたLODに対応する地物型
 | brid:lod1Solid |  |  ■ |  |  |  | BridgePartを使用する場合は必須とする。
 | brid:lod2MultiSurface |  |  |  ■ |  |  | LOD2.0の場合は必須とする。
 | brid:lod2Solid |  |  |  ■ |  |  | LOD2.1の場合は必須とする。
-| brid:lod3MultiSurface |  |  |  |  ■ |  | MultiSurfaceまたはSolidとする。
-| brid:lod3Solid |  |  |  |  ■ |  | MultiSurfaceまたはSolidとする。
-| brid:lod4MultiSurface |  |  |  |  |  ■ | MultiSurfaceまたはSolidとする。
-| brid:lod4Solid |  |  |  |  |  ■ | MultiSurfaceまたはSolidとする。
+| brid:lod3MultiSurface |  |  |  |  ■ |  | MultiSurface又はSolidとする。
+| brid:lod3Solid |  |  |  |  ■ |  | MultiSurface又はSolidとする。
+| brid:lod4MultiSurface |  |  |  |  |  ■ | MultiSurface又はSolidとする。
+| brid:lod4Solid |  |  |  |  |  ■ | MultiSurface又はSolidとする。
 .5+| brid:BridgeConstructionElement　 | |  |  |  ○ |  ■ |  ● | LOD2.1で使用できる。 LOD3では、橋脚及び橋台は、横断歩道橋、ペデストリアンデッキ及び跨線橋の場合に必須とする。
 | brid:lod1Geometry |  |  |  |  |  | 対象外とする。
 | brid:lod2Geometry |  |  |  ■ |  |  | MultiSurfaceを基本とする。
@@ -121,7 +121,7 @@ description:: 橋梁の記述には、指定されたLODに対応する地物型
 | brid:lod2MultiSurface |  |  |  ■ |  |  |
 | brid:lod3MultiSurface |  |  |  |  ● |  |
 | brid:lod4MultiSurface |  |  |  |  |  ● |
-.4+| brid:OuterCeilingSurface　 | |  |  |  ■ |  ■ |  ■ | 壁面のうち、接地しない下向きの面に使用する。
+.4+| brid:OuterCeilingSurface　 | |  |  |  ■ |  ■ |  ■ | 外壁面のうち、接地しない下向きの面に使用する。
 | brid:lod2MultiSurface |  |  |  ■ |  |  | brid:OuterCeilingSurfaceを作る場合は必須とする。
 | brid:lod3MultiSurface |  |  |  |  ■ |  | brid:OuterCeilingSurfaceを作る場合は必須とする。
 | brid:lod4MultiSurface |  |  |  |  |  ■ | brid:OuterCeilingSurfaceを作る場合は必須とする。
@@ -244,12 +244,12 @@ image::images/306.webp.png[]
 |
 image::images/307.webp.png[]
 
-^h| 説明 | 道路橋及び鉄道橋は、橋梁の縁線をつないだ外周を、地上から一律の高さで下向きに押し出した立体とする。ひ開部は含めない。
-
-橋梁モデル（LOD0）に橋脚の外周が含まれている場合は、橋脚を含めた外周とする。
-| 桟道橋は、縁線又は斜面に接している側の道路縁及び橋脚の外周を含む桟道橋の外周を、地表面から一律の高さで下向き押し出した立体とする。
-| 横断歩道橋、跨線橋及びペデストリアンデッキは、構造物の上方からの正射影の外周を、地表面から一律の高さで上向きに押し出した立体とする。
-| 徒橋の縁線をつないだ外周を、地表面から一律の高さで下向きに押し出した立体とする。
+^h| 説明 
+| 道路橋及び鉄道橋は、橋梁の縁線をつないだ外周を、地上から一律の高さで下向きに押し出した立体とする。ひ開部は含めない。 +
+橋梁モデル（LOD0）に橋脚の外周が含まれている場合は、橋脚を含めた外周に一律の高さを与える。
+| 桟道橋は、縁線、斜面に接している側の道路縁及び橋脚の外周を含む桟道橋の外周を、地表面から一律の高さで下向き押し出した立体とする。
+| 横断歩道橋、跨線橋、ペデストリアンデッキは、構造物の上方からの正射影の外周に、地表面から一律の高さで上向きに押し出した立体とする。
+| 徒橋の縁線をつないだ外周を地表面から一律の高さで下向きに押し出した立体とする。
 
 |===
 
