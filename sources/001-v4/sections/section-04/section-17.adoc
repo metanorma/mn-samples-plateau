@@ -299,12 +299,12 @@ h| 説明
 |===
 ^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| 適用
 .5+| veg:SolitaryVegetationObject | |  ● |  ● |  ● |  ● |
-| uro:lod0Geometry |  ● | | | | 点とする。
+| uro:lod0Geometry |  ● | | | | Point又は MultiPointとする。
 | veg:lod1Geometry |  |  ● | | | Solidとする。
-| veg:lod2Geometry | |  |  ● | | Solid又はMultiSurfaceとする。
-| veg:lod3Geometry | | |  |  ● | Solid又はMultiSurfaceとする。
+| veg:lod2Geometry | |  |  ● | | MultiSurface又はSolidとする。
+| veg:lod3Geometry | | |  |  ● | MultiSurface又はSolidとする。
 .8+| veg:PlantCover | |  ● |  ● |  ● |  ● |
-| uro:lod0Geometry |  ● | | | | 点又は線とする。
+| uro:lod0Geometry |  ● | | | |  Point、 MultiPoint又はMultiCurveとする。
 | veg:lod1MultiSurface |  |  | | |
 | veg:lod1MultiSolid | |  ● | | |
 | veg:lod2MultiSurface | | |  ■ |  .2+| いずれかが必須となる。
