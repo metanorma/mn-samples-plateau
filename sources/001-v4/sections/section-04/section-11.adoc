@@ -163,11 +163,10 @@ image::images/238.webp.png[]
 image::images/239.webp.png[]
 
 h| 説明
-| 道路橋及び鉄道橋は、橋梁の縁線をつないだ外周を、地表面から一律の高さで下向きに押し出した立体とする。 +
-ひ開部は含めない。 +
+| 道路橋及び鉄道橋は、橋梁の縁線をつないだ外周を、地表面から一律の高さで下向きに押し出した立体とする。ひ開部は含めない。 +
 橋梁モデル（LOD0）に橋脚の外周が含まれている場合は、橋脚を含めた外周に一律の高さを与える。
 | 桟道橋は、縁線、斜面に接している側の道路縁及び橋脚の外周を含む桟道橋の外周を、地表面から一律の高さで下向きに押し出した立体とする。
-| 横断歩道橋、跨線橋、ペデストリアンデッキは、構造物の上方からの正射影の外周に、地表面から一律の高さを与えて押し出した立体とする。
+| 横断歩道橋、跨線橋、ペデストリアンデッキは、構造物の上方からの正射影の外周に、地表面から一律の高さで上向きに押し出した立体とする。
 | 徒橋の縁線をつないだ外周を地表面から一律の高さで下向きに押し出した立体とする。
 
 |===
@@ -1138,7 +1137,7 @@ IfcElementAssembly (ARCH, BEAM_GRID, GIRDER, REINFORCEMENT_UNIT, RIGID_FRAME, SL
 | brid:lod3Solid | | | |  ■ | | MultiSurface又はSolidとする。
 | brid:lod4MultiSurface | | | | |  ■ | MultiSurface又はSolidとする。
 | brid:lod4Solid | | | | |  ■ | MultiSurface又はSolidとする。
-.5+| brid:BridgeConstructionElement | | | |  ○ |  ■ |  ● | LOD2.1で使用できる。
+.5+| brid:BridgeConstructionElement | | | |  ○ |  ■ |  ● | LOD2.1で使用できる。 LOD3では、橋脚及び橋台は、横断歩道橋、ペデストリアンデッキ及び跨線橋の場合に必須とする。
 | brid:lod1Geometry | | | | | | 対象外とする。
 | brid:lod2Geometry | | |  ■ | | | MultiSurfaceを基本とする。
 | brid:lod3Geometry | | | |  ■ | | MultiSurfaceを基本とする。
@@ -1155,12 +1154,12 @@ IfcElementAssembly (ARCH, BEAM_GRID, GIRDER, REINFORCEMENT_UNIT, RIGID_FRAME, SL
 | brid:lod2MultiSurface | | |  ■ | | | brid:OuterFloorSurfaceを作る場合は必須とする。
 | brid:lod3MultiSurface | | | |  ■ | | brid:OuterFloorSurfaceを作る場合は必須とする。
 | brid:lod4MultiSurface | | | | |  ■ | brid:OuterFloorSurfaceを作る場合は必須とする。
-.4+| brid:WallSurface | | | |  ■ |  ● |  ● | 橋梁の形状を構成する面のうち、側方の面に使用する。
-| brid:lod2MultiSurface | | |  ■ | | | LOD2.1の場合は必須とする。
+.4+| brid:WallSurface | | | |  ■ |  ● |  ● | 橋梁の形状を構成する面のうち、側方の面に使用する。LOD2.1の場合は必須とする。
+| brid:lod2MultiSurface | | |  ■ | | | 
 | brid:lod3MultiSurface | | | |  ● | |
 | brid:lod4MultiSurface | | | | |  ● |
-.4+| brid:GroundSurface | | | |  ■ |  ● |  ● | 橋梁の形状を構成する面のうち、接地する下向きの面に使用する。
-| brid:lod2MultiSurface | | |  ■ | | | LOD2.1では必須とする。
+.4+| brid:GroundSurface | | | |  ■ |  ● |  ● | 橋梁の形状を構成する面のうち、接地する下向きの面に使用する。 LOD2.1では必須とする。
+| brid:lod2MultiSurface | | |  ■ | | |
 | brid:lod3MultiSurface | | | |  ● | |
 | brid:lod4MultiSurface | | | | |  ● |
 .4+| brid:OuterCeilingSurface | | | |  ■ |  ■ |  ■ | 外壁面のうち、接地しない下向きの面に使用する。

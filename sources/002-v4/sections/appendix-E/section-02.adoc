@@ -73,8 +73,8 @@ tran:Railwayの空間属性は、LOD0では線とし、LOD1以降では面とす
 | tran:lod2MultiSurface |  |  |  ● |  |
 | uro:lod2Network |  |  |  ● |  | CompositeCurveとする。
 | tran:lod3MultiSurface |  |  |  |  ● |
-| uro:lod3Network |  |  |  |  ● |
-.3+| tran:AuxiliaryTrafficArea　 | |  |  |  |  ● | CompositeCurveとする。
+| uro:lod3Network |  |  |  |  ● | CompositeCurveとする。
+.3+| tran:AuxiliaryTrafficArea　 | |  |  |  |  ● |
 | tran:lod2MultiSurface |  |  |  |  | 対象外。
 | tran:lod3MultiSurface |  |  |  |  ● |
 
@@ -204,16 +204,22 @@ h| ^h| 取得基準 ^h| LOD3.0 ^h| LOD3.1 ^h| LOD3.2
 | レールに囲まれた範囲 |  ● |  ● |  ●
 | レール |  |  ● |  ●
 | 軌きょう |  |  |  ○
-| 道床 |  ● |  ● |  ●
+| 道床 |  ● |  ● |  ● footnoteblock:[fn_rail_use_case]
 | 交通補助領域 |  |  ● |  ● footnoteblock:[fn_rail_use_case]
 .4+h| 高さの取得方法 | 軌道中心線上の勾配変化点に標高を与え、高さをもった線として表現する。 |  ● |  ● |  ●
 | 道床に軌道中心線の高さを与える。 |  ● |  ● |
 | 軌道の横断方向に存在する15㎝以上の高さの差を取得する。 |  |  ● |  ●
-| 軌道の横断方向に存在する15㎝未満の高さの差を取得する。 |  |  |  ● footnoteblock:[fn_rail_use_case]
+| 軌道の横断方向に存在する15㎝未満の高さの差を取得する。 |  |  |  ● footnoteblock:[fn_rail_use_case_2]
 
 |===
 
 [[fn_rail_use_case]]
+[NOTE]
+--
+ユースケースの必要に応じて細分できる。
+--
+
+[[fn_rail_use_case_2]]
 [NOTE]
 --
 ユースケースの必要に応じて取得基準を設定できる。
