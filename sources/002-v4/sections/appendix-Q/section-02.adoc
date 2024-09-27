@@ -127,11 +127,11 @@ LOD4において、内壁面等はないが、建築確認申請では部屋と�
 | lod4MultiSurface |  |  |  |  |  ● |
 .2+| bldg:FloorSurface | |  |  |  |  |  ● |
 | lod4MultiSurface |  |  |  |  |  ● |
-.3+| bldg:Door | |  |  |  |  ○ |  ● |
-| lod3MultiSurface |  |  |  |  ○ |  |
+.3+| bldg:Door | |  |  |  |  ● |  ● |
+| lod3MultiSurface |  |  |  |  ● |  |
 | lod4MultiSurface |  |  |  |  |  ● |
-.3+| bldg:Window | |  |  |  |  ○ |  ● |
-| lod3MultiSurface |  |  |  |  ○ |  |
+.3+| bldg:Window | |  |  |  |  ● |  ● |
+| lod3MultiSurface |  |  |  |  ● |  |
 | lod4MultiSurface |  |  |  |  |  ● |
 .3+| bldg:BuildingInstallation　 | |  |  |  |  |  | 対象外
 | lod3Geometry |  |  |  |  |  .2+|
@@ -259,9 +259,9 @@ description:: 地下街のLOD4の形状は、地下街モデル（LOD4）の定�
 [cols="3a,3a,^a,^a,^a"]
 .LOD4.0、LOD4.1及びLOD4.2の区分
 |===
-h| 地下街モデル（LOD4）に　含むべき地物 h| 対応する地物型 h| LOD4.0 h| LOD4.1 h| LOD4.2
+h| 地下街モデル（LOD4）に含むべき地物 h| 対応する地物型 h| LOD4.0 h| LOD4.1 h| LOD4.2
 | 地下街 | uro:UndergroundBuilding |  ● |  ● |  ●
-| 建築物部分 | bldg:BuildingPart |  ○ |  ○ |  ○
+| 建築物部分 | bldg:BuildingPart |  ■ |  ■ |  ■
 | 屋根面 | bldg:RoofSurface |  ● |  ● |  ●
 | 外壁面 | bldg:WallSurface |  ● |  ● |  ●
 | 底面 | bldg:GroundSurface |  ● |  ● |  ●
@@ -273,8 +273,8 @@ h| 地下街モデル（LOD4）に　含むべき地物 h| 対応する地物型
 | 内壁面 | bldg:InteriorWallSurface |  ● |  ● |  ●
 | 床面 | bldg:FloorSurface |  ● |  ● |  ●
 | 閉鎖面 | bldg:ClosureSurface |  ● |  ● |  ●
-| 窓 | bldg:Window |  ○ |  ○ |  ○
-| 扉 | bldg:Door |  ○ |  ○ |  ○
+| 窓 | bldg:Window |  ● |  ● |  ●
+| 扉 | bldg:Door |  ● |  ● |  ●
 | 階段 | bldg:IntBuildingInstallation |  |  ● |  ●
 | スロープ | bldg:IntBuildingInstallation |  |  ● |  ●
 | 輸送設備 | bldg:IntBuildingInstallation |  |  ● |  ●

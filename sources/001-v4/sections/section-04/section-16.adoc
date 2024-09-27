@@ -326,7 +326,7 @@ h| 説明
 | 地下街 | uro:UndergroundBuilding |  ● |  ● |  ●
 | 建築物部分 | bldg:BuildingPart |  ■ |  ■ |  ■
 | 屋根面 | bldg:RoofSurface |  ● |  ● |  ●
-| 壁面 | bldg:WallSurface |  ● |  ● |  ●
+| 外壁面 | bldg:WallSurface |  ● |  ● |  ●
 | 底面 | bldg:GroundSurface |  ● |  ● |  ●
 | 屋外天井面 | bldg:OuterGroundSurface | | |
 | 屋外床面 | bldg:OuterFloorSurface | | |
@@ -839,15 +839,15 @@ NOTE: CityObjectGroupは空間属性をもたないため、「―」として�
 | lod4MultiSurface | | |  |  |  ■
 2+| bldg:Room | |  |  |  |  ● |
 | |  lod4Solid | | | | |  ● |
-.4+| bldg:RoofSurface | |  |  |  |  |  ● |
+.4+| bldg:RoofSurface | |  |  |  ● |  ● |  ● |
 | lod2MultiSurface |  | | ● | | |
 | lod3MultiSurface |  | | | ● | |
 | lod4MultiSurface | |  | | |  ● |
-.4+| bldg:WallSurface | |  |  |  |  |  ● |
+.4+| bldg:WallSurface | |  |  |  ● |  ● |  ● |
 | lod2MultiSurface |  | |  ● | | |
 | lod3MultiSurface |  | | |  ● | |
 | lod4MultiSurface | |  | | |  ● |
-.4+| bldg:GroundSurface | |  |  |  |  |  ● |
+.4+| bldg:GroundSurface | |  |  |  ● |  ● |  ● |
 | lod2MultiSurface |  | |  ● | | |
 | lod3MultiSurface |  | | |  ● | |
 | lod4MultiSurface | |  | | |  ● |
