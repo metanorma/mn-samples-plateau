@@ -45,12 +45,7 @@ description:: 地形の記述には、指定されたLODに対応する地物型
 |===
 | 地物型 |  空間属性 |  LOD0 |  LOD1 |  LOD2 |  LOD3 |  適用
 
-2+| dem:ReliefFeature
-|  ●
-|  ●
-|  ●
-|  ●
-| dem:ReliefFeatureを作成する場合は、dem:BreaklineRelief 、 dem:TINRelief又はdem:ReliefFeatureのいずれかを必須とする。
+| dem:ReliefFeature | |  ● |  ● |  ● |  ● | dem:ReliefFeatureを作成する場合は、dem:BreaklineRelief 、dem:TINRelief又はdem:ReliefFeatureのいずれかを必須とする
 
 .2+| dem:BreaklineRelief | |  ■ |  |  |  .2+|
 | dem:ridgeOrValleyLines |  ■ |  |  |

@@ -274,9 +274,10 @@ h| 取得例
 image::images/396.webp.png[]
 
 h| 説明
-| 水涯線により囲まれた水面と、水底面に囲まれた立体を作成する。 +
-水面は水部モデル（LOD1）の面に一致する。また、水底面は、等深線や航空レーザ（ALB）又は、マルチビーム測深の点群データを用いて再現した、水底の起伏を表す面となる。 +
-境界面を水面、地表面に区分し、水部を管理区間や行政界など仮想的な面により区切りたい場合にはその境界面を閉鎖面に区分する。
+| 水涯線により囲まれた水面（WaterSurface）及び水底面（WaterGroundSurface）を境界面とする立体を作成する。 +
+水面は水部モデル（LOD1）の面に一致する。また、水底面は、等深線や航空レーザ（ALB）又はマルチビーム測深の点群データを用いて再現した、水底の起伏を表す面となる。
+
+境界面を水面、地表面に区分し、水部を管理区間や行政界など仮想的な面により区切りたい場合には、その境界面を閉鎖面（WaterClosureSurface）に区分する。
 
 |===
 
@@ -349,9 +350,9 @@ h| 取得例
 image::images/397.webp.png[]
 
 h| 説明
-| 水部モデル（LOD2）である、水涯線により囲まれた水面と、水底面に囲まれた立体から、橋梁下部の橋脚部分など水中にある構造物を除いた立体となる。
+| 水部モデル（LOD2）である、水涯線により囲まれた水面（WaterSurface）、水底面（WaterGroundSurface）及び閉鎖面（WaterClosureSurface）を境界面とする立体から、橋梁下部の橋脚部分など水中にある構造物を除いた立体となる。
 
-水中にある構造物と水部の境界面はWaterGroundSurfaceとする。
+水中にある構造物と水部の境界面は水底面とする。
 
 |===
 
@@ -419,27 +420,33 @@ h| 説明
 水部モデルの各LODにおいて使用可能な地物型と空間属性を<<tab-4-115>>に示す。
 
 [[tab-4-115]]
-[cols="2a,2a,^a,^a,^a,^a,6a"]
+[cols="3a,3a,^a,^a,^a,^a,6a"]
 .水部モデルの記述に使用する地物型と空間属性
 |===
-h| 地物型 h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 h| 適用
+| 地物型 |  空間属性 |  LOD0 |  LOD1 |  LOD2 |  LOD3 |  適用
+
 .6+| wtr:WaterBody | |  ● |  ● |  ● |  ● |
-| wtr:lod0MultiCurve |  ■ |  |  |  .5+| 河川中心線（wtr:lod0MultiCurve）を基本とする。縁線、界線又は点として取得する場合はuro:lod0Geometryを使用する。
-| uro:lod0Geometry |  ■ |  |  |
-| wtr:lod1MultiSurface |  |  ● |  |
-| wtr:lod2Solid |  |  |  ● |
-| wtr:lod3Solid |  |  |  |  ●
-.3+| wtr:WaterSurface | |  |  |  ● |  ● .3+|
-| wtr:lod2Surface |  |  |  ● |
-| wtr:lod3Surface |  |  |  |  ●
-.3+| wtr:WaterGroundSurface | |  |  |  ● |  ● .6+|
-| wtr:lod2Surface |  |  |  ● |
-| wtr:lod3Surface |  |  |  |  ●
-.3+| wtr:WaterClosureSurface | |  |  |  ■ |  ■
-| wtr:lod2Surface |  |  |  ■ |
-| wtr:lod3Surface |  |  |  |  ■
+| lod0MultiCurve |  ■ |  |  |  .2+| 河川中心線（wtr:lod0MultiCurve）を基本とする。縁線、界線又は点として取得する場合はuro:lod0Geometryを使用する。
+| lod0Geometry |  ■ |  |  |
+| lod1MultiSurface |  |  ● |  |  |
+| lod2Solid |  |  |  ● |  |
+| lod3Solid |  |  |  |  ● |
+.3+| wtr:WaterSurface　 | |  |  |  ● |  ● | 水部の形状を構成する面のうち、水面に使用する。
+| lod2Surface |  |  |  ● |  |
+| lod3Surface |  |  |  |  ● |
+.3+| wtr:WaterGroundSurface　 | |  |  |  ● |  ● | 水底の境界面に使用する。
+| lod2Surface |  |  |  ● |  |
+| lod3Surface |  |  |  |  ● |
+.3+| wtr:WaterClosureSurface | |  |  |  ■ |  ■ | 仮想的な面を作成したい場合に使用する。
+| lod2Surface |  |  |  ■ |  .2+| WaterClosureSurfaceを作る場合は必須とする。
+| lod3Surface |  |  |  |  ■
 
 |===
+
+[%key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_19_02]]
 ==== 水部モデルの応用スキーマクラス図
