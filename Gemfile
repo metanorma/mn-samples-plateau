@@ -10,7 +10,8 @@ gem "isodoc", git: "https://github.com/metanorma/isodoc"
 # gem "debug"
 # gem "metanorma-plateau", path: "~/src/mn/metanorma-plateau"
 
-gem "metanorma-plugin-lutaml", git: "https://github.com/metanorma/metanorma-plugin-lutaml"
+# gem "metanorma-plugin-lutaml", git: "https://github.com/metanorma/metanorma-plugin-lutaml"
+gem "metanorma-plugin-lutaml", git: "https://github.com/metanorma/metanorma-plugin-lutaml", branch: "lutaml-ea-xmi-template"
 gem "metanorma-standoc", git: "https://github.com/metanorma/metanorma-standoc"
 gem "lutaml", git: "https://github.com/lutaml/lutaml"
 
