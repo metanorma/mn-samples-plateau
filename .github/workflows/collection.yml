@@ -38,7 +38,7 @@ jobs:
         run: metanorma --version
 
       - name: Generation Metanorma collection
-        run: metanorma collection collection.yml
+        run: metanorma collection collection.yml --agree-to-terms
 
       - name: Upload production artifacts
         uses: actions/upload-artifact@v4
