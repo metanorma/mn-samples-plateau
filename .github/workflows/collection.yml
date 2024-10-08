@@ -35,11 +35,11 @@ jobs:
           use-bundler: true
 
       - name: Print Metanorma version
-        run: metanorma --version   
+        run: metanorma --version
 
       - name: Generation Metanorma collection
         run: metanorma collection collection.yml
-        
+
       - name: Upload production artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -47,4 +47,4 @@ jobs:
           path: |
             index.html
             document*.html
-            collection.xml
+            collection.presentation.xml
