@@ -24,6 +24,9 @@ Reference documents.
 `_site/`::
 (automatically generated, in the `gh-pages` branch) published document.
 
+`collection.yml`::
+The PLATEAU Handbook collection of 001 and 002. After compilation the output
+will be at `index.html`.
 
 ////
 == Prerequisites
@@ -175,6 +178,12 @@ git clone https://github.com/metanorma/mn-samples-plateau/
 metanorma site generate
 ----
 
+=== Building the collection
+
+[source,sh]
+----
+bundle exec metanorma collection collection.yml
+----
 
 == Converting documents from HTML
 
