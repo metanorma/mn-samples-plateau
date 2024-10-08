@@ -108,54 +108,54 @@ image::images/198.svg[]
 
 lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="LandUse",template="../../sources/liquid_templates/_klass_table.liquid"]
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義 2+| 都市計画基礎調査の土地利用現況。
+// [cols="1a,1a,2a"]
+// |===
+// | 型の定義 2+| 都市計画基礎調査の土地利用現況。
 
-h| 上位の型 2+| core:_CityObject
-h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| gml:description | gml:StringOrRefType [0..1] | 土地利用の概要。
-| gml:name | gml:CodeType [0..1] | 土地利用を識別する名称。文字列とする。
-h| (gml:boundedBy) | gml:Envelope [0..1] | オブジェクトの範囲と空間参照系。
-| core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
-| core:terminationDate | xs:date [0..1] | データが削除された日。
-h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+h| 自身に定義された属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| luse:class
-| gml:CodeType [0..1]
-| 土地利用用途の大まかな区分。 +
-土地利用用途の区分は、<<mlit_foundation_reqs,都市計画基礎調査実施要領（国土交通省都市局）>>による区分とする。コードリスト（Common_landUseType.xml）より選択する。
+// h| 上位の型 2+| core:_CityObject
+// h| ステレオタイプ 2+| << FeatureType >>
+// 3+h| 継承する属性
+// h| 属性名 h| 属性の型及び多重度 h| 定義
+// | gml:description | gml:StringOrRefType [0..1] | 土地利用の概要。
+// | gml:name | gml:CodeType [0..1] | 土地利用を識別する名称。文字列とする。
+// h| (gml:boundedBy) | gml:Envelope [0..1] | オブジェクトの範囲と空間参照系。
+// | core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
+// | core:terminationDate | xs:date [0..1] | データが削除された日。
+// h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+// h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+// 3+h| 自身に定義された属性
+// h| 属性名 h| 属性の型及び多重度 h| 定義
+// | luse:class
+// | gml:CodeType [0..1]
+// | 土地利用用途の大まかな区分。 +
+// 土地利用用途の区分は、<<mlit_foundation_reqs,都市計画基礎調査実施要領（国土交通省都市局）>>による区分とする。コードリスト（Common_landUseType.xml）より選択する。
 
-h| (luse:function) | gml:CodeType [0..*] | 土地利用の機能。
-h| (luse:usage) | gml:CodeType [0..*] | 土地利用の用途。
-3+h| 継承する関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-3+h| 自身に定義された関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-| luse:lod1MultiSurface | gml:MultiSurface[0..1] | 土地利用が変化する境界により囲われた同一の土地利用の範囲。
-| uro:landUseDetailAttribute | uro:LandUseDetailAttribute [0..1] | 土地利用現況調査により得られた土地の詳細情報。
-| uro:luseKeyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | 属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
-| uro:luseDataQualityAttribute
-| uro:DataQualityAttribute [1]
-| 作成したデータの品質に関する情報。 +
-必須とする。
+// h| (luse:function) | gml:CodeType [0..*] | 土地利用の機能。
+// h| (luse:usage) | gml:CodeType [0..*] | 土地利用の用途。
+// 3+h| 継承する関連役割
+// h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+// h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+// h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+// h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+// h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+// h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+// h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+// h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+// 3+h| 自身に定義された関連役割
+// h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+// | luse:lod1MultiSurface | gml:MultiSurface[0..1] | 土地利用が変化する境界により囲われた同一の土地利用の範囲。
+// | uro:landUseDetailAttribute | uro:LandUseDetailAttribute [0..1] | 土地利用現況調査により得られた土地の詳細情報。
+// | uro:luseKeyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | 属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
+// | uro:luseDataQualityAttribute
+// | uro:DataQualityAttribute [1]
+// | 作成したデータの品質に関する情報。 +
+// 必須とする。
 
-| uro:luseFacilityTypeAttribute | uro:FacilityTypeAttribute [0..*] | 特定分野における施設の分類情報。
-| uro:luseFacilityIdAttribute | uro:FacilityIdAttribute [0..1] | uro:luseFacilityTypeAttribute.classによって指定された分野における施設の識別情報。
-| uro:luseFacilityAttribute | uro:FacilityAttribute [0..*] | uro:luseFacilityTypeAttribute.classによって指定された分野における施設管理情報。
+// | uro:luseFacilityTypeAttribute | uro:FacilityTypeAttribute [0..*] | 特定分野における施設の分類情報。
+// | uro:luseFacilityIdAttribute | uro:FacilityIdAttribute [0..1] | uro:luseFacilityTypeAttribute.classによって指定された分野における施設の識別情報。
+// | uro:luseFacilityAttribute | uro:FacilityAttribute [0..*] | uro:luseFacilityTypeAttribute.classによって指定された分野における施設管理情報。
 
-|===
+// |===
 
 [[toc4_08_03_02]]
 ===== Urban Object （i-UR）
@@ -164,41 +164,41 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="LandUseDetailAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義 2+| 都市計画に関する基礎調査の一つとして、土地利用の現況と変化の動向を把握することを目的とし都市計画法第6条の規定に基づき実施される調査の結果。
+// [cols="1a,1a,2a"]
+// |===
+// | 型の定義 2+| 都市計画に関する基礎調査の一つとして、土地利用の現況と変化の動向を把握することを目的とし都市計画法第6条の規定に基づき実施される調査の結果。
 
-h| 上位の型 2+| ー
-h| ステレオタイプ 2+| << DataType >>
-3+h| 属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:id | xs:string [0..1] | 土地利用現況図における識別子。
-| uro:orgLandUse | gml:CodeType [0..1] | 都市独自の分類による土地利用用途。コードリスト（LandUseDetailAttribute \_orgLandUse.xml）より選択する。本属性を使用する場合は、コードリストを作成すること。
-| uro:nominalArea | gml:MeasureType [0..1] | 図上計測面積を調整した値。単位はm2（uom=”m2”）とする。
-| uro:ownerType | gml:CodeType [0..1] | 土地所有者の区分。コードリスト（Common_ownerType.xml）より選択する。
-| uro:owner | xs:string [0..1] | 土地所有者の名称。
-| uro:areaInSquareMeter | gml:MeasureType [0..1] | 図上計測面積。単位はm2（uom=”m2”）とする。
-| uro:areaInHa | gml:MeasureType [0..1] | 図上計測面積（ha換算数）。単位はha（uom=” ha”）とする。
-| uro:buildingCoverageRate | xs:integer [0..1] | 建蔽率（敷地面積に対する建築面積の割合）。全体を「100」とする割合（百分率）で記述する。単位は％。
-| uro:floorAreaRate | xs:integer [0..1] | 容積率（敷地面積に対する延床面積の割合）。全体を「100」とする割合（百分率）で記述する。単位は％。
-| uro:specifiedBuildingCoverageRate | xs:integer [0..1] | 指定建蔽率（用途地域別に定められている建蔽率）。全体を「100」とする割合（百分率）で記述する。単位は％。
-| uro:specifiedFloorAreaRate | xs:integer [0..1] | 指定容積率（都市計画で定められる容積率の最高限度）。全体を「100」とする割合（百分率）で記述する。単位は％。
-| uro:standardFloorAreaRate | xs:integer [0..1] | 基準容積率（前面道路の幅員が12ｍ未満の場合に、前面道路の幅員による限度により算出される容積率）。全体を「100」とする割合（百分率）で記述する。単位は％。
-| uro:urbanPlanType | gml:CodeType [0..1] | 土地が属する都市計画区域の区分。コードリスト（Common_urbanPlanType.xml）より選択する。
-| uro:areaClassificationType | gml:CodeType [0..1] | 土地が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
-| uro:districtsAndZonesType | gml:CodeType [0..*] | 土地が属する地域地区の区分。コードリスト（Common_districtsAndZonesType.xml）より選択する。土地利用が複数の地域地区に含まれる場合は、複数を列挙する。
-| uro:prefecture | gml:CodeType [0..1] | 土地が所在する都道府県の都道府県コード。JIS X0401に定義される2桁の半角数字。コードリスト（Common_localPublicAuthorities.xml）より選択する。
-| uro:city
-| gml:CodeType [0..1]
-| 土地が所在する市区町村の市区町村コード。 +
-JIS X0401に定義される2桁の半角数字とJIS X0402に定義される3桁の半角数字とを組み合わせた5桁の半角数字。政令市の場合は、区の市区町村コードとする。コードリスト（Common_localPublicAuthorities.xml）より選択する。 +
-運用上必須とする。
+// h| 上位の型 2+| ー
+// h| ステレオタイプ 2+| << DataType >>
+// 3+h| 属性
+// h| 属性名 h| 属性の型及び多重度 h| 定義
+// | uro:id | xs:string [0..1] | 土地利用現況図における識別子。
+// | uro:orgLandUse | gml:CodeType [0..1] | 都市独自の分類による土地利用用途。コードリスト（LandUseDetailAttribute \_orgLandUse.xml）より選択する。本属性を使用する場合は、コードリストを作成すること。
+// | uro:nominalArea | gml:MeasureType [0..1] | 図上計測面積を調整した値。単位はm2（uom=”m2”）とする。
+// | uro:ownerType | gml:CodeType [0..1] | 土地所有者の区分。コードリスト（Common_ownerType.xml）より選択する。
+// | uro:owner | xs:string [0..1] | 土地所有者の名称。
+// | uro:areaInSquareMeter | gml:MeasureType [0..1] | 図上計測面積。単位はm2（uom=”m2”）とする。
+// | uro:areaInHa | gml:MeasureType [0..1] | 図上計測面積（ha換算数）。単位はha（uom=” ha”）とする。
+// | uro:buildingCoverageRate | xs:integer [0..1] | 建蔽率（敷地面積に対する建築面積の割合）。全体を「100」とする割合（百分率）で記述する。単位は％。
+// | uro:floorAreaRate | xs:integer [0..1] | 容積率（敷地面積に対する延床面積の割合）。全体を「100」とする割合（百分率）で記述する。単位は％。
+// | uro:specifiedBuildingCoverageRate | xs:integer [0..1] | 指定建蔽率（用途地域別に定められている建蔽率）。全体を「100」とする割合（百分率）で記述する。単位は％。
+// | uro:specifiedFloorAreaRate | xs:integer [0..1] | 指定容積率（都市計画で定められる容積率の最高限度）。全体を「100」とする割合（百分率）で記述する。単位は％。
+// | uro:standardFloorAreaRate | xs:integer [0..1] | 基準容積率（前面道路の幅員が12ｍ未満の場合に、前面道路の幅員による限度により算出される容積率）。全体を「100」とする割合（百分率）で記述する。単位は％。
+// | uro:urbanPlanType | gml:CodeType [0..1] | 土地が属する都市計画区域の区分。コードリスト（Common_urbanPlanType.xml）より選択する。
+// | uro:areaClassificationType | gml:CodeType [0..1] | 土地が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
+// | uro:districtsAndZonesType | gml:CodeType [0..*] | 土地が属する地域地区の区分。コードリスト（Common_districtsAndZonesType.xml）より選択する。土地利用が複数の地域地区に含まれる場合は、複数を列挙する。
+// | uro:prefecture | gml:CodeType [0..1] | 土地が所在する都道府県の都道府県コード。JIS X0401に定義される2桁の半角数字。コードリスト（Common_localPublicAuthorities.xml）より選択する。
+// | uro:city
+// | gml:CodeType [0..1]
+// | 土地が所在する市区町村の市区町村コード。 +
+// JIS X0401に定義される2桁の半角数字とJIS X0402に定義される3桁の半角数字とを組み合わせた5桁の半角数字。政令市の場合は、区の市区町村コードとする。コードリスト（Common_localPublicAuthorities.xml）より選択する。 +
+// 運用上必須とする。
 
-| uro:reference | xs:string [0..1] | 土地の位置を示す図面上の番号。
-| uro:note | xs:string [0..1] | その他土地に関して特筆すべき事項。
-| uro:surveyYear | xs:gYear [0..1] | 土地利用現況調査の実施年（西暦）。
+// | uro:reference | xs:string [0..1] | 土地の位置を示す図面上の番号。
+// | uro:note | xs:string [0..1] | その他土地に関して特筆すべき事項。
+// | uro:surveyYear | xs:gYear [0..1] | 土地利用現況調査の実施年（西暦）。
 
-|===
+// |===
 
 ====== uro:KeyValuePairAttribute
 
