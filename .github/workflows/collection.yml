@@ -37,14 +37,15 @@ jobs:
       - name: Print Metanorma version
         run: metanorma --version
 
-      - name: Generation Metanorma collection
+      - name: Generate Metanorma collection
         run: metanorma collection collection.yml --agree-to-terms
 
-      - name: Upload production artifacts
+      - name: Upload collection artifacts
         uses: actions/upload-artifact@v4
         with:
           name: collection
           path: |
             index.html
+            *_index.html
             document*.html
             collection.presentation.xml
