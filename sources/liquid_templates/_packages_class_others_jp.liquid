@@ -1,0 +1,81 @@
+{% assign is_klass_spare = klass.name | slice: 0,5 %}
+{% if is_klass_spare == 'old: ' %}{% continue %}
+{% elsif is_klass_spare == 'Spare' %}{% continue %}
+{% endif %}
+{% assign klass_name = klass.name | downcase | replace: ':', '' | replace: ' ', '_' %}
+[[section-{{ klass.type }}-{{ klass.xmi_id }}]]
+.&#8220;{{ package.name }}::{{ klass.name }}&#8221;の要素 ({{ klass.stereotype }})
+[width="100%",cols="a,a,a,a,a,a,a,a"]
+|===
+
+h|型の名: 7+| {{ klass.name }}
+
+h|定義: 7+| {{ klass.definition | html2adoc }}
+
+h|ステレオタイプ: 7+| {{ klass.stereotype | default: 'interface' }}
+
+{% assign inherited = klass.associations | where: "member_end_type", "inheritance" %}
+{% if inherited.size > 0 %}
+h|継承関係: 7+| {{ inherited | map: 'member_end' | join: ", " }}
+{% endif %}
+
+{% assign generalizations = klass.associations | where: "member_end_type", "generalization" %}
+{% if generalizations.size > 0 %}
+h|汎化関係: 7+| {{ generalizations | map: 'member_end' | join: ", " }}
+{% endif %}
+
+h|抽象クラス: 7+| {% if klass.is_abstract %}True{% else %}False{% endif %}
+{% assign aggregations = klass.associations | where: "member_end_type", "aggregation" %}
+{% if aggregations.size > 0 %}
+.{{aggregations.size | plus: 1}}+h|集約関係:
+4+| _関連_
+| _義務_
+| _最大オカレンス_
+| _提供_
+
+{% for assoc in aggregations %}
+4+| {{assoc.member_end}}
+| {% if assoc.member_end_cardinality %}{{ assoc.member_end_cardinality.min }}{% endif %}
+| {% if assoc.member_end_cardinality %}{{ assoc.member_end_cardinality.max }}{% endif %}
+| {{ assoc.member_end_attribute_name }}
+
+{% endfor %}
+{% else %}
+h| 関連関係: 7+| (なし)
+{% endif %}
+
+{% if klass.attributes.size > 0 %}
+.{{klass.attributes.size | plus: 1}}+h|Public attributes:
+| _属性名_
+2+| _定義_
+| _由来_
+| _義務_
+| _最大のオカレンス_
+| _データタイプ_
+
+{% for attr in klass.attributes %}
+| {{attr.name}}
+2+| {{ attr.definition | html2adoc }}
+| {{ attr.is_derived }}
+| {{attr.cardinality.min}}
+| {{attr.cardinality.max}}
+| {{attr.type}}
+
+{% endfor %}
+{% else %}
+h| パブリック属性:
+7+| (なし)
+{% endif %}
+
+{% if klass.constraints.size > 0 %}
+.{{ klass.constraints.size }}+h| Constraints:
+{% for constraint in klass.constraints %}
+7+| `{{ constraint.body }}`: `{{ constraint.definition | replace: '|', '\|' }}`
+
+{% endfor %}
+{% else %}
+
+h|制約: 7+| (なし)
+{% endif %}
+
+|===
