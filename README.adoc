@@ -160,6 +160,18 @@ Then run the `bundle` command to fetch the development code.
 
 == Usage (general)
 
+=== Quick start
+
+The easy way if you install locally:
+
+[source,sh]
+----
+git clone https://github.com/metanorma/mn-samples-plateau/
+bundle
+bundle exec metanorma sources/001-v4/document.adoc
+# => sources/001-v4/document.{html,xml,pdf}
+----
+
 === Installing Metanorma
 
 See https://www.metanorma.org
@@ -171,21 +183,44 @@ See https://www.metanorma.org
 git clone https://github.com/metanorma/mn-samples-plateau/
 ----
 
-=== Building the document
+=== Building a single document
 
 [source,sh]
 ----
-metanorma site generate
+bundle exec metanorma sources/001-v4/document.adoc # or whichever document
 ----
 
+This command outputs the built document at:
+
+* `sources/001-v4/document.{html,pdf,xml}`
+
+=== Building the full site
+
+[source,sh]
+----
+bundle exec metanorma site generate
+----
+
+This command creates `_site/`. The HTML entry point is at `_site/index.html`.
+
+
 === Building the collection
+
+NOTE: This functionality is experimental, it builds a site with split sections
+in HTML.
 
 [source,sh]
 ----
 bundle exec metanorma collection collection.yml
 ----
 
-== Converting documents from HTML
+This command creates `_site/` with the HTML entry point at `_site/index.html`.
+
+
+== (DEPRECATED) Converting documents from HTML
+
+WARNING: There is NO NEED to convert the original HTML documents to Metanorma.
+This is only historic information, and the commands have already been changed.
 
 Steps:
 
