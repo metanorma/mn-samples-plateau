@@ -6,10 +6,10 @@
 {% assign root = klass.generalization %}
 
 {%- capture upper_klass_name -%}
-{{root.general.upper_klass }}:{{ root.general.name }}
+{{ root.general.upper_klass }}:{{ root.general.name }}
 {%- endcapture -%}
 {%- if upper_klass_name == ":" -%}
-  {%- assign upper_klass_name = " " -%}
+  {%- assign upper_klass_name = "-" -%}
 {%- endif -%}
 {%- capture stereotype -%}<< {{ root.stereotype }} >>{%- endcapture -%}
 {%- if stereotype == "<<  >>" -%}
