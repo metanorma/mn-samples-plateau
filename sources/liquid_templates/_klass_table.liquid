@@ -17,7 +17,7 @@
 2+| {{ root.definition | html2adoc }}
 
 h| 上位の型 2+| {{ upper_klass_name }}
-h| ステレオタイプ 2+| << {{ stereotype }} >>
+h| ステレオタイプ 2+| {{ stereotype }}
 
 {% if root.inherited_props.size > 0 %}
 3+h| 継承する属性
@@ -30,7 +30,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
       ({{ attr.gen_name }})
     {%- endcapture -%}
     | {{ name_col | newline_to_br }}
-    | {{ attr.type }} [{{ attr.cardinality }}] 
+    | {{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}] 
     | {{ attr.definition }}
   {%- endif -%}
 {% endfor %}
@@ -46,7 +46,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
       ({{ attr.gen_name }})
     {%- endcapture -%}
     | {{ name_col | newline_to_br }}
-    | {{ attr.type }} [{{ attr.cardinality }}] 
+    | {{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}] 
     | {{ attr.definition }}
   {%- endif -%}
 {% endfor %}
@@ -62,7 +62,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
       ({{ attr.gen_name }})
     {%- endcapture -%}
     | {{ name_col | newline_to_br }}
-    | {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality }}] 
+    | {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}] 
     | {{ attr.definition }}
   {%- endif -%}
 {% endfor %}
@@ -78,7 +78,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
       ({{ attr.gen_name }})
     {%- endcapture -%}
     | {{ name_col | newline_to_br }}
-    | {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality }}] 
+    | {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}] 
     | {{ attr.definition }}
   {%- endif -%}
 {% endfor %}
