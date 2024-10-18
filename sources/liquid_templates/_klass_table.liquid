@@ -1,11 +1,23 @@
 {% assign root = klass.generalization %}
+
+{%- capture upper_klass_name -%}
+{{ root.general.upper_klass }}:{{ root.general.name }}
+{%- endcapture -%}
+{%- if upper_klass_name == ":" -%}
+  {%- assign upper_klass_name = "-" -%}
+{%- endif -%}
+{%- capture stereotype -%}<< {{ root.stereotype }} >>{%- endcapture -%}
+{%- if stereotype == "<<  >>" -%}
+  {%- assign stereotype = " " -%}
+{%- endif -%}
+
 [cols="1a,1a,2a"]
 |===
 | AGT 型の定義
 2+| {{ root.definition | html2adoc }}
 
-h| 上位の型 2+| {{ root.general.upper_klass }}:{{ root.general.name }}
-h| ステレオタイプ 2+| << {{ root.stereotype }} >>
+h| 上位の型 2+| {{ upper_klass_name }}
+h| ステレオタイプ 2+| << {{ stereotype }} >>
 
 {% if root.inherited_props.size > 0 %}
 3+h| 継承する属性
