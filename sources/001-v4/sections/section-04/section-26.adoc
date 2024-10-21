@@ -45,11 +45,35 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 3+h| 自身に定義された関連役割
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-| core:cityObjectMember | core:_CityObject [0..*] | 都市モデルに含まれる都市オブジェクト。 core:CityModelがcore:cityObjectMemberにより直接含む都市オブジェクトは、各応用スキーマにおいて、全体となる都市オブジェクトのみである。
+| core:cityObjectMember
+| core:_CityObject [0..*]
+| 都市モデルに含まれる都市オブジェクト。
+
+core:CityModelがcore:cityObjectMemberにより直接含む都市オブジェクトは、各応用スキーマにおいて、全体となる都市オブジェクトのみである。
 
 それ以外の都市オブジェクトは、全体となる都市オブジェクトの部品として出現する。
 
-全体となる都市オブジェクトとは、以下である。 bldg:Building brid:Bridge frn:CityFurniture grp:CityObjectGroup luse:LandUse tran:Road tran:Railway tran:Track tran:Square tun:Tunnel veg:SolitaryVegetationObject veg:PlantCover wtr:WaterBody dem:ReliefFeature uro:OtherConstruction uro:UndergroundBuilding uro:UtilityNetworkElementを継承する都市オブジェクト uro:Waterway urf:Zone及びこれを継承する都市オブジェクト
+全体となる都市オブジェクトとは、以下である。
+
+bldg:Building +
+brid:Bridge +
+frn:CityFurniture +
+grp:CityObjectGroup +
+luse:LandUse +
+tran:Road +
+tran:Railway +
+tran:Track +
+tran:Square +
+tun:Tunnel +
+veg:SolitaryVegetationObject +
+veg:PlantCover +
+wtr:WaterBody +
+dem:ReliefFeature +
+uro:OtherConstruction +
+uro:UndergroundBuilding +
+uro:UtilityNetworkElementを継承する都市オブジェクト +
+uro:Waterway +
+urf:Zone及びこれを継承する都市オブジェクト
 
 |===
 
