@@ -307,8 +307,15 @@ h| コード h| 説明（上位桁：数値化区分） h| 説明（下位桁：
 
 ====== DmElement_breakType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DmElement_breakType.xml[template="gml_dict_template.liquid",context=dict]
+// lutaml_gml_dictionary::iur/codelists/3.1/DmElement_breakType.xml[template="gml_dict_template.liquid",context=dict]
 
+[cols="3a,11a"]
+|===
+| ファイル名 | DmElement_breakType.xml |
+
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DmElement_breakType.xml |
+h| コード h| 説明
+| 0 間断しない
 | 1～9 | 間断する（数値は優先順位）
 
 |===
@@ -319,8 +326,16 @@ lutaml_gml_dictionary::iur/codelists/3.1/DmElement_breakType.xml[template="gml_d
 
 ====== DmElement_dislocationType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DmElement_dislocationType.xml[template="gml_dict_template.liquid",context=dict]
+// lutaml_gml_dictionary::iur/codelists/3.1/DmElement_dislocationType.xml[template="gml_dict_template.liquid",context=dict]
 
+[cols="3a,11a"]
+|===
+| ファイル名 | DmElement_dislocationType.xml |
+
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DmElement_dislocationType.xml |
+h| コード h| 説明
+
+| 0 転位しない
 | 1～9 | 座標列の方向に対して右側に転位する
 | -1～-9 | 座標列の方向に対して左側に転位する
 
