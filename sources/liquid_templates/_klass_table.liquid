@@ -11,75 +11,105 @@
   {%- assign stereotype = " " -%}
 {%- endif -%}
 
-[cols="1a,1a,2a"]
+[cols="1a,1a,2a,1a"]
 |===
-| AGT 型の定義
-2+| {{ root.definition }}
-
-h| 上位の型 2+| {{ upper_klass_name }}
-h| ステレオタイプ 2+| {{ stereotype }}
+| AGT 型の定義 3+| {{ root.definition }}
+h| 上位の型 3+| {{ upper_klass_name }}
+h| ステレオタイプ 3+| {{ stereotype }}
 
 {% if root.inherited_props.size > 0 %}
-3+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
+4+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義 h| 補導
 {% endif %}
 {% for attr in root.inherited_props %}
   {%- if attr.has_association? == false -%}
-    {%- capture name_col -%}
-      {{ attr.name_ns }}:{{ attr.name }}
-      ({{ attr.gen_name }})
-    {%- endcapture -%}
+    {%- if attr.used? == false -%}
+      {%- capture name_col -%}
+        ({{ attr.name_ns }}:{{ attr.name }})
+        <{{ attr.gen_name }}>
+      {%- endcapture -%}
+    {%- else -%}
+      {%- capture name_col -%}
+        {{ attr.name_ns }}:{{ attr.name }}
+        <{{ attr.gen_name }}>
+      {%- endcapture -%}
+    {%- endif -%}
     | {{ name_col | newline_to_br }}
-    | {{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}] 
+    | {{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
     | {{ attr.definition }}
+    | {{ attr.guidance }}
   {%- endif -%}
 {% endfor %}
 
 {% if root.owned_props.size > 0 %}
-3+h| 自身に定義された属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
+4+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義 h| 補導
 {% endif %}
 {% for attr in root.owned_props %}
   {%- if attr.has_association? == false -%}
-    {%- capture name_col -%}
-      {{ attr.name_ns }}:{{ attr.name }}
-      ({{ attr.gen_name }})
-    {%- endcapture -%}
+    {%- if attr.used? == false -%}
+      {%- capture name_col -%}
+        ({{ attr.name_ns }}:{{ attr.name }})
+        <{{ attr.gen_name }}>
+      {%- endcapture -%}
+    {%- else -%}
+      {%- capture name_col -%}
+        {{ attr.name_ns }}:{{ attr.name }}
+        <{{ attr.gen_name }}>
+      {%- endcapture -%}
+    {%- endif -%}
     | {{ name_col | newline_to_br }}
-    | {{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}] 
+    | {{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
     | {{ attr.definition }}
+    | {{ attr.guidance }}
   {%- endif -%}
 {% endfor %}
 
 {% if root.inherited_assoc_props.size > 0 %}
-3+h| 継承する関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+4+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 h| 補導
 {% endif %}
 {% for attr in root.inherited_assoc_props %}
   {%- if attr.has_association? == true -%}
-    {%- capture name_col -%}
-      {{ attr.name_ns }}:{{ attr.name }}
-      ({{ attr.gen_name }})
-    {%- endcapture -%}
+    {%- if attr.used? == false -%}
+      {%- capture name_col -%}
+        ({{ attr.name_ns }}:{{ attr.name }})
+        <{{ attr.gen_name }}>
+      {%- endcapture -%}
+    {%- else -%}
+      {%- capture name_col -%}
+        {{ attr.name_ns }}:{{ attr.name }}
+        <{{ attr.gen_name }}>
+      {%- endcapture -%}
+    {%- endif -%}
     | {{ name_col | newline_to_br }}
-    | {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}] 
+    | {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
     | {{ attr.definition }}
+    | {{ attr.guidance }}
   {%- endif -%}
 {% endfor %}
 
 {% if root.assoc_props.size > 0 %}
-3+h| 自身に定義された関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+4+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 h| 補導
 {% endif %}
 {% for attr in root.assoc_props %}
   {%- if attr.has_association? == true -%}
-    {%- capture name_col -%}
-      {{ attr.name_ns }}:{{ attr.name }}
-      ({{ attr.gen_name }})
-    {%- endcapture -%}
+    {%- if attr.used? == false -%}
+      {%- capture name_col -%}
+        ({{ attr.name_ns }}:{{ attr.name }})
+        <{{ attr.gen_name }}>
+      {%- endcapture -%}
+    {%- else -%}
+      {%- capture name_col -%}
+        {{ attr.name_ns }}:{{ attr.name }}
+        <{{ attr.gen_name }}>
+      {%- endcapture -%}
+    {%- endif -%}
     | {{ name_col | newline_to_br }}
-    | {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}] 
+    | {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
     | {{ attr.definition }}
+    | {{ attr.guidance }}
   {%- endif -%}
 {% endfor %}
 |===

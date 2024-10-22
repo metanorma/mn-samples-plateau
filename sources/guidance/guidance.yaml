@@ -1,0 +1,86 @@
+---
+classes:
+  - name: Building
+    attributes:
+      - name: gml:boundedBy
+        used: false
+        guidance: |
+          この属性は使用されていません。
+      - name: core:relativeToTerrain
+        used: false
+        guidance: |
+          この属性は使用されていません。
+      - name: core:relativeToWater
+        used: false
+        guidance: |
+          この属性は使用されていません。
+      - name: bldg:function
+        used: false
+        guidance: |
+          この属性は使用されていません。
+      - name: bldg:storeyHeightsAboveGround
+        used: false
+        guidance: |
+          この属性は使用されていません。
+      - name: bldg:storeyHeightsBelowGround
+        used: false
+        guidance: |
+          この属性は使用されていません。
+      - name: bldg:lod2MultiSurface
+        used: false
+        guidance: |
+          この関連役割は使用されていません。
+      - name: bldg:lod3MultiSurface
+        used: false
+        guidance: |
+          この関連役割は使用されていません。
+  - name: LandUse
+    attributes:
+      - name: gml:boundedBy
+        used: false
+        guidance: |
+          この属性は使用されていません。
+      - name: core:relativeToTerrain
+        used: false
+        guidance: |
+          この属性は使用されていません。
+      - name: core:relativeToWater
+        used: false
+        guidance: |
+          この属性は使用されていません。
+      - name: luse:function
+        used: false
+        guidance: |
+          この属性は使用されていません。
+      - name: luse:usage
+        used: false
+        guidance: |
+          この属性は使用されていません。
+      - name: gen:stringAttribute
+        used: false
+        guidance: |
+          この関連役割は使用されていません。
+      - name: gen:intAttribute
+        used: false
+        guidance: |
+          この関連役割は使用されていません。
+      - name: gen:doubleAttribute
+        used: false
+        guidance: |
+          この関連役割は使用されていません。
+      - name: gen:dateAttribute
+        used: false
+        guidance: |
+          この関連役割は使用されていません。
+      - name: gen:uriAttribute
+        used: false
+        guidance: |
+          この関連役割は使用されていません。
+      - name: gen:measureAttribute
+        used: false
+        guidance: |
+          この関連役割は使用されていません。
+      - name: gen:genericAttributeSet
+        used: false
+        guidance: |
+          この関連役割は使用されていません。
