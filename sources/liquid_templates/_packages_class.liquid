@@ -31,17 +31,15 @@ h| 属性名 h| 属性の型及び多重度 h| 定義 h| 補導
 {% endif %}
 {% for attr in root.inherited_props %}
   {%- if attr.has_association? == false -%}
-    {%- if attr.used? == false -%}
-      {%- capture name_col -%}
+    {%- capture name_col -%}
+      {%- if attr.used? == false -%}
         ({{ attr.name_ns }}:{{ attr.name }})
-        <{{ attr.gen_name }}>
-      {%- endcapture -%}
-    {%- else -%}
-      {%- capture name_col -%}
+        [ {{ attr.gen_name }} ]
+      {%- else -%}
         {{ attr.name_ns }}:{{ attr.name }}
-        <{{ attr.gen_name }}>
-      {%- endcapture -%}
-    {%- endif -%}
+        [ {{ attr.gen_name }} ]
+      {%- endif -%}
+    {%- endcapture -%}
     | {{ name_col | newline_to_br }}
     | {{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
     | {{ attr.definition }}
@@ -55,17 +53,15 @@ h| 属性名 h| 属性の型及び多重度 h| 定義 h| 補導
 {% endif %}
 {% for attr in root.owned_props %}
   {%- if attr.has_association? == false -%}
-    {%- if attr.used? == false -%}
-      {%- capture name_col -%}
+    {%- capture name_col -%}
+      {%- if attr.used? == false -%}
         ({{ attr.name_ns }}:{{ attr.name }})
-        <{{ attr.gen_name }}>
-      {%- endcapture -%}
-    {%- else -%}
-      {%- capture name_col -%}
+        [ {{ attr.gen_name }} ]
+      {%- else -%}
         {{ attr.name_ns }}:{{ attr.name }}
-        <{{ attr.gen_name }}>
-      {%- endcapture -%}
-    {%- endif -%}
+        [ {{ attr.gen_name }} ]
+      {%- endif -%}
+    {%- endcapture -%}
     | {{ name_col | newline_to_br }}
     | {{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
     | {{ attr.definition }}
@@ -79,17 +75,15 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 h| 補導
 {% endif %}
 {% for attr in root.inherited_assoc_props %}
   {%- if attr.has_association? == true -%}
-    {%- if attr.used? == false -%}
-      {%- capture name_col -%}
+    {%- capture name_col -%}
+      {%- if attr.used? == false -%}
         ({{ attr.name_ns }}:{{ attr.name }})
-        <{{ attr.gen_name }}>
-      {%- endcapture -%}
-    {%- else -%}
-      {%- capture name_col -%}
+        [ {{ attr.gen_name }} ]
+      {%- else -%}
         {{ attr.name_ns }}:{{ attr.name }}
-        <{{ attr.gen_name }}>
-      {%- endcapture -%}
-    {%- endif -%}
+        [ {{ attr.gen_name }} ]
+      {%- endif -%}
+    {%- endcapture -%}
     | {{ name_col | newline_to_br }}
     | {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
     | {{ attr.definition }}
@@ -103,17 +97,15 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 h| 補導
 {% endif %}
 {% for attr in root.assoc_props %}
   {%- if attr.has_association? == true -%}
-    {%- if attr.used? == false -%}
-      {%- capture name_col -%}
+    {%- capture name_col -%}
+      {%- if attr.used? == false -%}
         ({{ attr.name_ns }}:{{ attr.name }})
-        <{{ attr.gen_name }}>
-      {%- endcapture -%}
-    {%- else -%}
-      {%- capture name_col -%}
+        [ {{ attr.gen_name }} ]
+      {%- else -%}
         {{ attr.name_ns }}:{{ attr.name }}
-        <{{ attr.gen_name }}>
-      {%- endcapture -%}
-    {%- endif -%}
+        [ {{ attr.gen_name }} ]
+      {%- endif -%}
+    {%- endcapture -%}
     | {{ name_col | newline_to_br }}
     | {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
     | {{ attr.definition }}
