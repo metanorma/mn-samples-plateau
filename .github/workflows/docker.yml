@@ -36,6 +36,9 @@ jobs:
           github-pakages-token: ${{ secrets.METANORMA_CI_PAT_TOKEN }}
           use-bundler: true
 
+      - name: Install latest gems
+        uses: metanorma/ci/docker-gem-install@main
+
       - name: Print Metanorma version
         run: metanorma --version
 
@@ -46,6 +49,7 @@ jobs:
           destination: artifact
 
   build-collection:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     container:
       image: metanorma/metanorma:latest
