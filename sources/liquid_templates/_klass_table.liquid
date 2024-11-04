@@ -19,7 +19,7 @@ h| ステレオタイプ 3+| {{ stereotype }}
 
 {% if root.inherited_props.size > 0 %}
 4+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義 h| 補導
+h| 属性名 h| 属性の型及び多重度 h| 定義 h| 補足
 {% endif %}
 {% for attr in root.inherited_props %}
   {%- if attr.has_association? == false -%}
@@ -41,7 +41,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義 h| 補導
 
 {% if root.owned_props.size > 0 %}
 4+h| 自身に定義された属性
-h| 属性名 h| 属性の型及び多重度 h| 定義 h| 補導
+h| 属性名 h| 属性の型及び多重度 h| 定義 h| 補足
 {% endif %}
 {% for attr in root.owned_props %}
   {%- if attr.has_association? == false -%}
@@ -63,7 +63,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義 h| 補導
 
 {% if root.inherited_assoc_props.size > 0 %}
 4+h| 継承する関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 h| 補導
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 h| 補足
 {% endif %}
 {% for attr in root.inherited_assoc_props %}
   {%- if attr.has_association? == true -%}
@@ -85,7 +85,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 h| 補導
 
 {% if root.assoc_props.size > 0 %}
 4+h| 自身に定義された関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 h| 補導
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 h| 補足
 {% endif %}
 {% for attr in root.assoc_props %}
   {%- if attr.has_association? == true -%}
