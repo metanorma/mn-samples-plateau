@@ -1202,6 +1202,7 @@ LOD3.1～LOD3.4では、停止線がある場合にはこれの延長とし、�
 
 ====== uro:KeyValuePairAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="KeyValuePairAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -1237,6 +1238,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:DataQualityAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="DataQualityAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -1322,6 +1324,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:PublicSurveyDataQualityAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="PublicSuveyDataQualityAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 使用した公共測量成果の地図情報レベルと種類を、LODごとに記述するためのデータ型。
@@ -1387,6 +1391,8 @@ h| (uro:publicSurveySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジ�
 
 ====== uro:RoadStructureAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="RoadStructureAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 
 [cols="1a,1a,2a"]
 |===
@@ -1411,6 +1417,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:TrafficVolumeAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="TrafficVolumeAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -1445,7 +1452,9 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 |===
 
-====== uro:TarfficAreaStructureAttribute
+====== uro:TrafficAreaStructureAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="TrafficAreaStructureAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 
 [cols="1a,1a,2a"]

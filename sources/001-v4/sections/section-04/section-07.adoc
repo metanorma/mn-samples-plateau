@@ -214,6 +214,8 @@ image::images/193.svg[]
 
 ====== uro:Waterway
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Waterway",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -295,6 +297,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== tran:TrafficArea
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="TrafficArea",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -348,6 +352,8 @@ h| (tran:lod3MultiSurface) | gml:MultiSurface [0..1] | 標準製品仕様書で�
 
 ====== uro:KeyValuePairAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="KeyValuePairAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -369,6 +375,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:DataQualityAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="DataQualityAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -431,6 +439,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 |===
 
 ====== uro:WaterwayDetailAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="WaterwayDetailAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===

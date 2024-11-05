@@ -698,6 +698,8 @@ image::images/127.svg[]
 
 ====== tran:Railway
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Railway",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a",options="noheader"]
 |===
 .4+| 型の定義
@@ -806,6 +808,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== tran:TrafficArea
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="TrafficArea",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a",options="noheader"]
 |===
 .4+| 型の定義
@@ -883,6 +887,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== tran:AuxiliaryTrafficArea
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="AuxiliaryTrafficArea",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a",options="noheader"]
 |===
 .2+| 型の定義
@@ -950,6 +956,8 @@ LOD3.2の場合は、15㎝未満の高さの差を取得する。
 
 ====== uro:KeyValuePairAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="KeyValuePairAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -969,6 +977,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:DataQualityAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="DataQualityAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -1045,6 +1055,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:PublicSurveyDataQualityAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="PublicSuveyDataQualityAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 使用した公共測量成果の地図情報レベルと種類を、LODごとに記述するためのデータ型。
@@ -1110,6 +1122,8 @@ h| (uro:publicSurveySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジ�
 
 ====== uro:RailwayRouteAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="RailwayRouteAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 鉄道路線の情報。路線ごとに作成する。
@@ -1128,6 +1142,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:RailwayTrackAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="RailwayTrackAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -1158,6 +1174,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 |===
 
 ====== uro:ControlPoint
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="ControlPoint",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -1194,6 +1212,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:ControlPointType
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="ControlPointType",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -1214,6 +1234,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:CircularCurveType
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="CircularCurveType",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 円曲線の線形パラメータ。
@@ -1231,6 +1253,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:TransitionCurveType
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="TransitionCurveType",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 緩和曲線の線形パラメータ。
@@ -1247,6 +1271,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:VerticalCurveType
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="VerticalCurveType",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 縦曲線の線形パラメータ。
@@ -1261,6 +1287,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:SlopeType
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="SlopeType",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===

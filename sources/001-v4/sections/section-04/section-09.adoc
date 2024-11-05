@@ -184,6 +184,8 @@ image::images/204.svg[]
 
 ====== wtr:WaterBody
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="WaterBody",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -244,6 +246,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:RiverFloodingRiskAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="RiverFloodingRiskAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -284,6 +288,8 @@ uro:rank又はuro:rankOrgのいずれか一つをもつ。
 
 ====== uro:TsunamiRiskAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="TsunamiRiskAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -307,6 +313,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:HighTideRiskAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="HighTideRiskAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -332,6 +340,8 @@ uro:rank又はuro:rankOrgのいずれか一つをもつ。
 
 ====== uro:InlandFloodingRiskAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="InlandFloodingRiskAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -355,6 +365,8 @@ uro:rank又はuro:rankOrgのいずれか一つをもつ。
 |===
 
 ====== uro:ReservoirFloodingRiskAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="ReservoirFloodingRiskAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -381,6 +393,8 @@ h| (uro:depth) | gml:LengthType [0..1] | 陸上の各地点で水面が最も高
 
 ====== uro:LandSlideRiskAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="LandSlideRiskAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -405,6 +419,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:KeyValuePairAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="KeyValuePairAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -424,6 +440,8 @@ uro:KeyValuePairAttributeを使用する場合は、必ずuro:codeValueを作成
 |===
 
 ====== uro:DataQualityAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="DataQualityAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -471,6 +489,8 @@ h| (uro:publicSurveyDataQualityAttribute) | uro:PublicSurveyDataQualityAttribute
 ===== Urban Function （i-UR）
 
 ====== urf:SedimentDisasterProneArea
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="SedimentDisasterProneArea",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
