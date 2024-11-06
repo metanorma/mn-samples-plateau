@@ -260,14 +260,11 @@ h| 取得例
 |
 image::images/114.webp.png[]
 
-h| 説明 | 軌道中心線、レールに囲まれた範囲 footnoteblock:[fn_rail_area] 、及び道床を取得する。高さは0とする。
-
-軌道中心線の形状はLOD0と同様であり、レールに囲まれた範囲の形状はLOD1と同様であるが、LOD2とは地物型が異なる。 LOD0が路線ごとに一つの地物であったことに対し、LOD2は、軌道ごとに一つの地物（tran:TrafficArea）となる。
-
-なお、軌道中心線及びレールに囲まれた範囲は、それぞれ一つの地物（tran:TrafficArea）とする。
-
-道床は外周により囲まれた範囲をtran:TrafficAreaとして取得する。道床はレールに囲まれた範囲を包含する。
-
+h| 説明 | 軌道中心線、レールに囲まれた範囲 footnoteblock:[fn_rail_area] 、及び道床を取得する。高さは0とする。 +
+軌道中心線の形状はLOD0と同様であり、レールに囲まれた範囲の形状はLOD1と同様であるが、LOD2とは地物型が異なる。 +
+ LOD0が路線ごとに一つの地物であったことに対し、LOD2は、軌道ごとに一つの地物（tran:TrafficArea）となる。 +
+なお、軌道中心線及びレールに囲まれた範囲は、それぞれ一つの地物（tran:TrafficArea）とする。 +
+道床は外周により囲まれた範囲をtran:TrafficAreaとして取得する。道床はレールに囲まれた範囲を包含する。 +
 いずれも高さは0とする。
 
 |===
@@ -275,7 +272,7 @@ h| 説明 | 軌道中心線、レールに囲まれた範囲 footnoteblock:[fn_r
 [[fn_rail_area]]
 [NOTE]
 --
-軌道中心線が直線である区間では、レールに囲まれた範囲の幅は軌間と一致する。
+軌道中心線が直線である区間では、レールに囲まれた範囲の幅は軌間と一致する。 +
 軌間とは、軌道中心線が直線である区間におけるレール面上から下方の所定距離以内における左右レール頭部間の最短距離である。 [<<jis_e_1001>>]
 --
 
@@ -661,7 +658,7 @@ image::images/125.webp.png[]
 | tran:lod3MultiSurface | | | |  ● |
 | uro:lod3Network | | | |  ● | CompositeCurveとする。
 .3+| tran:AuxiliaryTrafficArea | | | | |  ● |
-| tran:lod2MultiSurface | | | | | 対象外。
+| tran:lod2MultiSurface | | | | | 
 | tran:lod3MultiSurface | | | |  ● |
 
 |===
