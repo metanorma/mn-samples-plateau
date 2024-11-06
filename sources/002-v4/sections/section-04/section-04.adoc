@@ -169,7 +169,7 @@ gml:idの付与ルールに従う。
 2+| 区域モデル |  area
 2+| 汎用都市オブジェクト |  gen
 2+| アピアランスモデル |  app
-2+| 拡張製品仕様書で追加した地物（ただし、urf:Zoneを継承する地物を除く）|  ext
+2+| 拡張製品仕様書で拡張した地物|  ext
 
 |===
 
@@ -387,9 +387,9 @@ i-URの符号化仕様は相対パスによりschemaLocationを指定する。
 ** 地物型又はモジュールごとに分けられた3D都市モデルの成果品を格納するフォルダ（例：bldg, tran）の直下に格納した3D都市モデルファイルの場合、schemaLocationとして記述すべき符号化仕様への相対パスは以下となる。
 +
 --
-`urbanObject.xsd`への相対パス：`../../schemas/iur/uro/3.1/urbanObject.xsd`
+`urbanObject.xsdへの相対パス：`../../schemas/iur/uro/3.1/urbanObject.xsd`
 
-`urbanFunction.xsd`への相対パス：`../../schemas/iur/uro/3.1/urbanFunction.xsd`
+`urbanFunction.xsdへの相対パス：`../../schemas/iur/uro/3.1/urbanFunction.xsd`
 --
 ---
 ====
