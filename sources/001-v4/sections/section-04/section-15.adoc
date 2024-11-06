@@ -1350,6 +1350,8 @@ image::images/336.svg[]
 
 ====== uro:WaterPipe
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="WaterPipe",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 水道管。 LOD0、LOD1、LOD2では、単独で埋設されている管路又はまとまって埋設された複数の管路に対して一つのインスタンスを作成する。 LOD3及びLOD4では、管路ごとに一つのインスタンスを作成する。
@@ -1454,6 +1456,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 |===
 
 ====== uro:SewerPipe
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="SewerPipe",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -1573,6 +1577,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:ThermalPipe
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="ThermalPipe",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 熱供給管。 LOD0、LOD1、LOD2では、管路又はまとまって埋設された複数の管路に対して一つのインスタンスを作成する。 LOD3及びLOD4では、管路ごとに一つのインスタンスを作成する。
@@ -1677,6 +1683,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 |===
 
 ====== uro:OilGasChemicalsPipe
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="OilGasChemicalsPipe",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -1786,6 +1794,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 |===
 
 ====== uro:Pipe
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Pipe",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -1903,6 +1913,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:Duct
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Duct",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -2012,6 +2024,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:TelecommunicationsCable
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="TelecommunicationsCable",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 通信ケーブル。
@@ -2100,6 +2114,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 |===
 
 ====== uro:ElectricityCable
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="ElectricityCable",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -2190,6 +2206,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 |===
 
 ====== uro:Cable
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Cable",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -2285,6 +2303,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:Appurtenance
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Appurtenance",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="a,a,a"]
 |===
 | 型の定義
@@ -2371,6 +2391,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:Manhole
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Manhole",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="a,a,a"]
 |===
@@ -2464,6 +2486,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:Handhole
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Handhole",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| ハンドホール
@@ -2549,6 +2573,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:OffsetDepth
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="OffsetDepth",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 地下埋設物の道路縁等からの距離（オフセット）及び土被りの深さを表すデータ型。
@@ -2567,6 +2593,8 @@ h| 属性 h| 属性の型及び多重度 h| 定義
 
 ====== uro:ThematicShape
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="ThematicShape",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 地下埋設物の主題的な形状（高さをもった中心線又は中心点）を表すデータ型。
@@ -2582,6 +2610,8 @@ h| (uro:horizontalType) | gml:CodeType [0..1] | uro:shapeがもつ水平位置�
 |===
 
 ====== uro:LengthAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="LengthAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -2619,6 +2649,8 @@ h| 属性 h| 属性の型及び多重度 h| 定義
 
 ====== uro:KeyValuePairAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="KeyValuePairAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。
@@ -2635,6 +2667,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:DataQualityAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="DataQualityAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===

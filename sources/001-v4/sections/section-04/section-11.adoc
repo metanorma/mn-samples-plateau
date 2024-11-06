@@ -1233,6 +1233,8 @@ image::images/252.svg[]
 
 ====== brid:Bridge
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Bridge",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -1379,6 +1381,8 @@ brid:BridgePartが品質属性をもつ場合は、省略できる。
 
 ====== brid:BridgePart
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="BridgePart",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -1494,6 +1498,8 @@ h| (uro:bridDmAttribute) | uro:DmAttribute [0..*] | 公共測量標準図式に�
 
 ====== brid:BridgeConstructionElement
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="BridgeConstructionElement",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -1561,6 +1567,8 @@ gml:MultiSurfaceにより記述することを基本とする。 +
 
 ====== brid:BridgeRoom
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="BridgeRoom",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -1622,6 +1630,8 @@ brid:bridgeRoomInstallationによりこのbrid:BridgeRoomが参照する内部�
 
 ====== brid:RoofSurface
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="RoofSurface",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 主に橋梁の上部を覆う構造物。上部工と一体的に整備されたし、上部工、階段、踊り場の全体が屋根で覆われている場合を対象とする。
@@ -1669,6 +1679,8 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== brid:WallSurface
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="WallSurface",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 橋梁の外周を構成する壁面（外壁）。
@@ -1713,6 +1725,8 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 |===
 
 ====== brid:GroundSurface
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="GroundSurface",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -1764,6 +1778,8 @@ h| (brid:opening) | brid:_Opening [0..*] | 底面に設置される、窓や扉�
 
 ====== brid:OuterCeilingSurface
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="OuterCeilingSurface",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -1809,6 +1825,8 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== brid:OuterFloorSurface
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="OuterFloorSurface",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 橋梁の外側を覆う部分であり、通行可能な床面としての機能を有する部分。上部工の床版（道路や線路が敷設されている面）が該当する。
@@ -1845,6 +1863,8 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 |===
 
 ====== brid:ClosureSurface
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="ClosureSurface",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -1883,6 +1903,8 @@ h| (brid:opening) | brid:_Opening [0..*] | 境界面に設置される、窓や�
 
 ====== brid:InteriorWallSurface
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="InteriorWallSurface",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 橋梁の内部空間の区画を区切る壁や仕切り。
@@ -1913,6 +1935,8 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 |===
 
 ====== brid:CeilingSurface
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="CeilingSurface",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -1947,6 +1971,8 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== brid:FloorSurface
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="FloorSurface",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -1980,6 +2006,8 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== brid:Window
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Window",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 採光、通風、換気、眺望などの目的のため、橋梁の屋根、天井、壁、床などに設けられた開口部のうち、人や物の出入りを目的としないもの。
@@ -2011,6 +2039,8 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== brid:Door
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Door",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 採光、通風、換気、眺望、通行などの目的のため、橋梁の屋根、天井、壁、床などに設けられた開口部のうち、人や物の出入りを目的とするもの。
@@ -2041,6 +2071,8 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 |===
 
 ====== brid:BridgeInstallation
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="BridgeInstallation",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -2101,6 +2133,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== brid:IntBridgeInstallation
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IntBridgeInstallation",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -2148,6 +2182,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== brid:BridgeFurniture
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="BridgeFurniture",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -2190,6 +2226,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:BridgeStructureAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="BridgeStructureAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 橋梁の構造に関する情報を定義したデータ型。
@@ -2218,6 +2256,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:BridgeFunctionalAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="BridgeFunctionalAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 橋梁の機能に関する情報を定義したデータ型。
@@ -2232,6 +2272,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:KeyValuePairAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="KeyValuePairAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -2252,6 +2294,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:DataQualityAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="DataQualityAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="a,a,a"]
 |===
@@ -2342,6 +2386,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:PublicSurveyDataQualityAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="PublicSuveyDataQualityAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="a,a,a"]
 |===
 | 型の定義 2+| 使用した公共測量成果の地図情報レベルと種類を、LODごとに記述するためのデータ型。
@@ -2417,6 +2463,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:ConstructionBaseAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="ConstructionBaseAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="a,a,a"]
 |===
 | 型の定義
@@ -2446,6 +2494,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:ConstructionRiskAssessmentAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="ConstructionRiskAssessmentAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="a,a,a"]
 |===

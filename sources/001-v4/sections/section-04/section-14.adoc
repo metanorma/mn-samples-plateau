@@ -373,6 +373,8 @@ image::images/296.svg[]
 
 ====== frn:CityFurniture
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="CityFurniture",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -445,6 +447,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 ===== Urban Object（i-UR）
 
 ====== uro:CityFurnitureDetailAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="CityFurnitureDetailAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -521,6 +525,8 @@ h| 属性 h| 属性の型及び多重度 h| 定義
 
 ====== uro:KeyValuePairAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="KeyValuePairAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。
@@ -537,6 +543,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:DataQualityAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="DataQualityAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -585,6 +593,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 |===
 
 ====== uro:PublicSurveyDataQualityAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="PublicSuveyDataQualityAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===

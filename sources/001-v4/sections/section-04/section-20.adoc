@@ -88,6 +88,8 @@ image::images/408.svg[]
 
 ====== urf:Zone
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Zone",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -175,6 +177,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== urf:Boundary
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Boundary",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 区域の境界線。
@@ -200,6 +204,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== urf:UrbanParkAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="UrbanParkAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市公園法第２条第１項で定義する都市公園に関する情報を定義したデータ型。
@@ -222,6 +228,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== urf:BreakdownOfNominalArea
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="BreakdownOfNominalArea",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市公園の敷地面積の内訳に関する情報を定義したデータ型。
@@ -236,6 +244,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:DataQualityAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="DataQualityAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -276,6 +286,8 @@ h| (uro:publicSurveyDataQualityAttribute) | uro:PublicSurveyDataQualityAttribute
 |===
 
 ====== uro:KeyValuePairAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="KeyValuePairAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===

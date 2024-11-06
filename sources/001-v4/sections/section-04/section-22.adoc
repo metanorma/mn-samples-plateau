@@ -31,6 +31,8 @@ image::images/411.svg[]
 
 ====== app:Appearance
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Appearance",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | クラスの定義
@@ -58,6 +60,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 |===
 
 ====== app:ParameterizedTexture
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="ParameterizedTexture",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -101,6 +105,8 @@ app:TexCoordListを使用する。
 
 ====== app:TexCoordList
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="TexCoordList",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | クラスの定義 2+| テクスチャの座標とテクスチャを貼り付ける幾何オブジェクトへの参照の対。
@@ -115,6 +121,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== app:X3DMaterial
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="X3DMaterial",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===

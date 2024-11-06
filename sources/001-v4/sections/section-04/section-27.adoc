@@ -39,6 +39,8 @@ image::images/428.svg[]
 
 ====== gml:Point
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Point",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | クラスの定義 2+| 点。
@@ -52,6 +54,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== gml:LineString
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="LineString",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -67,6 +71,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== gml:CompositeCurve
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="CompositeCurve",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | クラスの定義 2+| 線の集まり。ただし、集まりを構成する最初の線を除く各線が直前の線の終点から始まる（方向が揃った有向曲線となる）。始点と終点以外の点の座標が、ほかの点の座標と一致してはならず、また、自己交差や重なりがあってはならない。
@@ -80,6 +86,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 |===
 
 ====== gml:Polygon
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Polygon",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -106,6 +114,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== gml:LinearRing
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="LinearRing",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | クラスの定義 2+| 線形から構成する輪。多角形の境界として使用される。3点以上の順列から構成され、始点と終点が一致する。gml:LinearRingを構成する全ての点は、始点と終点を除き、一致しない。自己交差しない。
@@ -118,7 +128,9 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 |===
 
-====== gml:ComopsiteSurface
+====== gml:CompositeSurface
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="CompositeSurface",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -138,6 +150,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 |===
 
 ====== gml:Solid
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Solid",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -165,6 +179,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== gml:Triangle
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Triangle",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | クラスの定義 2+| 三角形。
@@ -177,7 +193,9 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 |===
 
-====== gml:TrianglulatedSurface
+====== gml:TriangulatedSurface
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="TriangulatedSurface",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -192,6 +210,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 |===
 
 ====== gml:TIN
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Tin",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -213,6 +233,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== gml:MultiPoint
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="MultiPoint",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | クラスの定義 2+| 点の集まり。
@@ -226,6 +248,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 |===
 
 ====== gml:MultiCurve
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="MultiCurve",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -241,6 +265,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== gml:MultiSurface
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="MultiSurface",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | クラスの定義 2+| 面の集まり。
@@ -254,6 +280,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 |===
 
 ====== gml:MultiSolid
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="MultiSolid",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===

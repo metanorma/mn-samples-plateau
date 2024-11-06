@@ -31,6 +31,8 @@ image::images/416.svg[]
 
 ====== grp:CityObjectGroup
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="CityObjectGroup",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a",options="noheader"]
 |===
 .2+| 型の定義
@@ -105,6 +107,8 @@ uro:IndoorUserDefinedAttribute
 
 ====== uro:IfcBuildingStorey
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IfcBuildingStorey",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| IFCで記述された建築物の階数の属性。
@@ -135,6 +139,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IfcZone
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IfcZone",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| IFCで記述された施設管理者により任意に設定された空間の属性。
@@ -155,6 +161,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IndoorZoneAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IndoorZoneAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 任意の空間に追加するナビゲーション用の属性。
@@ -171,6 +179,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:IndoorStoreyAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IndoorStoreyAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===

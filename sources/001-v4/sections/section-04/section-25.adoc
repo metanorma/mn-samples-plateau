@@ -48,6 +48,8 @@ image::images/425.svg[]
 
 ====== uro:FacilityIdAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="FacilityIdAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -78,6 +80,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:FacilityTypeAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="FacilityTypeAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 管理施設の用途に関する情報を定義したデータ型。
@@ -95,6 +99,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 ===== 河川管理の拡張属性：Urban Object（i-UR）
 
 ====== uro:RiverFacilityIdAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="RiverFacilityIdAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -154,6 +160,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:HarborFacility
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="HarborFacility",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 港湾施設である水域施設の属性を記述するためのデータ型。
@@ -197,6 +205,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:PortProtectiveFacility
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="PortProtectiveFacility",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 港湾施設である外郭施設の属性を記述するためのデータ型。
@@ -229,6 +239,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:MooringFacility
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="MooringFacility",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -287,6 +299,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:PortTransportationFacility
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="PortTransportationFacility",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 港湾施設である臨港交通施設の属性を記述するためのデータ型。
@@ -334,6 +348,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:NavigationAssistanceFacility
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="NavigationAssistanceFacility",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 港湾施設である航行補助施設の属性を記述するためのデータ型。
@@ -364,6 +380,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:CargoHandlingFacility
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="CargoHandlingFacility",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -406,6 +424,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:PortPassengerFacility
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="PortPassengerFacility",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 港湾施設である旅客施設の属性を記述するためのデータ型。
@@ -440,6 +460,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:PortStorageFacility
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="PortStorageFacility",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -479,6 +501,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:ShipServiceFacility
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="ShipServiceFacility",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 港湾施設である船舶役務用施設の属性を記述するためのデータ型。
@@ -516,6 +540,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:PortWasteTreatmentFacility
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="PortWasteTreatmentFacility",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -562,6 +588,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:PortEnvironmentalImprovementFacility
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="PortEnvironmentalImprovementFacility",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 港湾施設である環境整備施設の属性を記述するためのデータ型。
@@ -596,6 +624,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:PortPollutionControlFacility
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="PortPollutionControlFacility",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -634,6 +664,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro: PortWelfareFacility
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="PortWelfareFacility",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="a,a,a"]
 |===
 | 型の定義 2+| 港湾施設である厚生施設の属性を記述するためのデータ型。
@@ -663,6 +695,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro: PortManagementFacility
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="PortManagementFacility",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -700,6 +734,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:CyberportMarinaAndPBS
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="CyberportMarinaAndPBS",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -772,6 +808,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:FishingPortFacilityAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="FishingPortFacilityAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 漁港施設の内容を表すデータ型。
@@ -814,6 +852,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:FishingPortCapacityAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="FishingPortCapacityAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -938,6 +978,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:MaintenanceHistoryAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="MaintenanceHistoryAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 施設の工事・点検情報を記録するためのデータ型。
@@ -962,6 +1004,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 ===== 公園施設長寿命化計画属性のための拡張属性
 
 ====== uro:ParkFacilityLongevityPlan
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="ParkFacilityLongevityPlan",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -1028,6 +1072,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:NumberOfFacilities
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="NumberOfFacilities",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 公園施設の数量に関する情報を定義したデータ型。
@@ -1043,6 +1089,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:RepairsBeforeParkHealthAssessment
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="RepairsBeforeParkHealthAssessment",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 健全度調査以前に実施した補修に関する情報を定義したデータ型。
@@ -1057,6 +1105,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:ParkHealthAssessment
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="ParkHealthAssessment",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -1079,6 +1129,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:LongevityMeasures
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="LongevityMeasures",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 長寿命化対策に関する情報を定義したデータ型。
@@ -1094,6 +1146,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:CountermeasuresCost
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="CountermeasuresCost",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
