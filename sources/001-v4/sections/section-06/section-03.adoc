@@ -172,19 +172,19 @@ LOD4の場合：uro:geometrySrcDescLod4
 |===
 | No | C08（公共測量品質属性の漏れ）
 
-h| 品質要求 h| 公共測量成果となる全ての幾何オブジェクトについて、作成に使用した公共測量成果の種類が入力されている。
+h| 品質要求 h| 公共測量成果又は基本測量成果となる全ての幾何オブジェクトについて、作成に使用した公共測量成果又は基本測量成果の種類が入力されている。
 h| 品質要素 | 完全性・漏れ
 h| 品質適用範囲 | 全ての都市オブジェクト。
-h| 品質評価尺度 | 幾何オブジェクトの作成に使用する公共測量成果の種類の漏れ。
+h| 品質評価尺度 | 幾何オブジェクトの作成に使用する公共測量成果又は基本測量成果の種類の漏れ。
 h| 適合品質水準 | エラーの数が0個の場合に合格。エラーの数が1以上の場合は不合格。
 h| 品質評価手法
 | 全数・自動検査を実施する。
 
 地物型毎、かつ、拡張製品仕様書　<<tab-4-1>>に示される、作成対象となるLODごとに実施する。
 
-. データセットに含まれる都市オブジェクトの品質属性（uro:DataQualityAttribute）について、各LODで「幾何オブジェクト作成するために使用した原典資料の種類についての属性」の値が「公共測量成果（コード「000」）」のみである属性の有無及びそのLODを特定する。
+. データセットに含まれる都市オブジェクトの品質属性（uro:DataQualityAttribute）について、各LODで「幾何オブジェクト作成するために使用した原典資料の種類についての属性」の値が「公共測量成果又は基本測量成果（コード「000」）」のみである属性の有無及びそのLODを特定する。
 
-. １．で「公共測量成果（コード「000」）」のみとなる属性がある場合は、uro:DataQualityAttributeの子要素としてuro:PublicSurveyDataQualityAttributeが出現し、かつ、そのLODにおける「公共測量成果の地図情報レベルについての属性」及び「公共測量成果の種類についての属性」が入力されていない場合に、エラーとする。
+. １．で「公共測量成果又は基本測量成果（コード「000」）」のみとなる属性がある場合は、uro:DataQualityAttributeの子要素としてuro:PublicSurveyDataQualityAttributeが出現し、かつ、そのLODにおける「公共測量成果又は基本測量成果の地図情報レベルについての属性」及び「公共測量成果又は基本測量成果の種類についての属性」が入力されていない場合に、エラーとする。
 
 . 全ての地物型及び作成対象とする全てのLODに対して1．及び2．を実施し、エラーの数を合計する。
 
@@ -195,14 +195,14 @@ LOD2の場合：uro:geometrySrcDescLod2 +
 LOD3の場合：uro:geometrySrcDescLod3 +
 LOD4の場合：uro:geometrySrcDescLod4 +
 
-「公共測量成果の地図情報レベルについての属性」とは、以下である。 +
+「公共測量成果又は基本測量成果の地図情報レベルについての属性」とは、以下である。 +
 LOD0の場合：uro:srcScaleLod0 +
 LOD1の場合：uro:srcScaleLod1 +
 LOD2の場合：uro:srcScaleLod2 +
 LOD3の場合：uro:srcScaleLod3 +
 LOD4の場合：uro:srcScaleLod4 +
 
-「公共測量成果の種類についての属性」とは、以下である。 +
+「公共測量成果又は基本測量成果の種類についての属性」とは、以下である。 +
 LOD0の場合：uro:publicSurveySrcDescLod0 +
 LOD1の場合：uro:publicSurveySrcDescLod1 +
 LOD2の場合：uro:publicSurveySrcDescLod2 +
@@ -690,7 +690,7 @@ h| 品質評価手法
 | No | L-bldg-08（bldg:BuildingのLOD4が境界面に区分されていること）
 
 h| 品質要素 h| 論理一貫性・概念一貫性
-h| 品質適用範囲 | bldg:Building, bldg:Building
+h| 品質適用範囲 | bldg:Building
 h| 品質評価尺度 | bldg:Buildingのbldg:lod4Solid又はbldg:lod4MultiSurfaceを構成するgml:Polygonが、bldg:Buildingに含まれるbldg:_BoundarySurfaceの下位型、bldg:_Openingの下位型、又はbldg:BuildingInstallationのgml:Polygonのいずれかでなければならない。
 h| 適合品質水準 | エラー数が0なら合格、1以上なら不合格。
 h| 品質評価手法
