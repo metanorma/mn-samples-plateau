@@ -157,6 +157,7 @@ image::images/468.webp.png[]
 2+| トンネルモデル |  tun
 2+| その他の構造物モデル |  cons
 2+| 都市設備モデル |  frn
+2+| 地下埋設物モデル |  unf
 2+| 地下街モデル |  ubld
 2+| 植生モデル |  veg
 2+| 地形モデル |  dem
@@ -284,7 +285,7 @@ EPSGコードは、空間参照系に与えられた固有の識別子である�
 2+| image::images/432.webp.png[]
 2+|
 | schemas
-| 3D都市モデルのGMLSchemaを格納するフォルダ。GMLSchemaは指定された版のi-URをG空間情報センターより入手する。以下に示す構造でサブフォルダを設け、GMLSchemaファイルを格納する。 /iur/uro/3.0/urbanObject.xsd /iur/urf/3.0/urbanFunction.xsd
+| 3D都市モデルのGMLSchemaを格納するフォルダ。GMLSchemaは指定された版のi-URをG空間情報センターより入手する。以下に示す構造でサブフォルダを設け、GMLSchemaファイルを格納する。 /iur/uro/3.1/urbanObject.xsd /iur/urf/3.1/urbanFunction.xsd
 
 2+|
 2+| image::images/432.webp.png[]
