@@ -231,8 +231,7 @@ ReliefFeatureは地物の集まりとして表現し、空間属性はもたな�
 
 ====== 地形モデル（LOD2）の概要
 
-地形モデル（LOD2）では、地形を、標高をもつ点の集まり又は標高をもつ点から構成する三角形の集合により表現する。
-
+地形モデル（LOD2）では、地形を、標高をもつ点の集まり又は標高をもつ点から構成する三角形の集合により表現する。 +
 地形モデル（LOD2）は、格子間隔2m以内（地図情報レベル2500）としている。
 
 ====== 地形モデル（LOD2）の定義
@@ -298,8 +297,7 @@ h| 数値標高モデル（DEM）の場合作成に使用したレーザ点群�
 
 ====== 地形モデル（LOD3）の概要
 
-地形モデル（LOD3）では、地形を、標高をもつ点の集まり又は標高をもつ点から構成する三角形の集合により表現する。
-
+地形モデル（LOD3）では、地形を、標高をもつ点の集まり又は標高をもつ点から構成する三角形の集合により表現する。 +
 地形モデル（LOD3）は、格子間隔1m以内（地図情報レベル1000）としている。
 
 ====== 地形モデル（LOD3）の定義
@@ -349,7 +347,7 @@ ReliefFeatureは地物の集まりとして表現し、空間属性はもたな�
 .地形モデルの記述に使用する地物型と空間属性
 |===
 h| 地物型 h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 h| 適用
-| dem:ReliefFeature | |  ● |  ● |  ● |  ● | dem:ReliefFeatureを作成する場合は、dem:BreaklineRelief 、dem:TINRelief又はdem:ReliefFeatureのいずれかを必須とする
+| dem:ReliefFeature | |  ● |  ● |  ● |  ● | dem:ReliefFeatureを作成する場合は、dem:BreaklineRelief、dem:TINRelief又はdem:ReliefFeatureのいずれかを必須とする
 .2+| dem:BreaklineRelief | |  ■ |  |  |  .2+|
 | dem:ridgeOrValleyLines |  ■ |  |  |
 .2+| dem:TINRelief | |  ■ |  ■ |  ■ |  ■ .4+| LOD1、LOD2及びLOD3では、dem:TINReliefを基本とする。
