@@ -96,14 +96,14 @@ h| 説明
 
 |
 * 土がけ、雨裂、急斜面、岩がけ
-|
+<|
 * 上端線及び下端線を取得する。このとき、上端線は低い方を右に見る形で、下端線は高い方を右に見る形で取得する。
 * 高さは0とする。
 |
 
 |
 * 露岩、散岩、さんご礁
-|
+<|
 * 高度の高い方を右に見る形で界線を取得する。
 * 高さは0とする。
 |
@@ -121,14 +121,14 @@ h| 説明
 
 |
 * 洞口
-|
+<|
 * 記号表示位置の点と向きを示す方向を取得する。
 * 高さは0とする。
 | 入口の正射影の方向に一致させて記号を表示する。
 
 |
 * 散岩
-|
+<|
 * 記号表示位置の点を取得する。
 * 高さは0とする。
 | 数値地形図の取得方法に従う。
@@ -352,11 +352,11 @@ ReliefFeatureは地物の集まりとして表現し、空間属性はもたな�
 h| 地物型 h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 h| 適用
 | dem:ReliefFeature | |  ● |  ● |  ● |  ● | dem:ReliefFeatureを作成する場合は、dem:BreaklineRelief、dem:TINRelief又はdem:ReliefFeatureのいずれかを必須とする
 .2+| dem:BreaklineRelief | |  ■ |  |  |  .2+|
-| dem:ridgeOrValleyLines |  ■ |  |  |
+| dem:ridgeOrValleyLines ^|  ■ |  |  |
 .2+| dem:TINRelief | |  ■ |  ■ |  ■ |  ■ .4+| LOD1、LOD2及びLOD3では、dem:TINReliefを基本とする。
-| dem:tin |  ■ |  ■ |  ■ |  ■
+| dem:tin ^|  ■ |  ■ |  ■ |  ■
 .2+| dem:MassPointRelief | |  ■ |  ■ |  ■ |  ■
-| dem:reliefPoints |  ■ |  ■ |  ■ |  ■
+| dem:reliefPoints ^|  ■ |  ■ |  ■ |  ■
 
 |===
 

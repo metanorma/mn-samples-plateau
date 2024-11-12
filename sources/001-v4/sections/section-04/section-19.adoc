@@ -114,7 +114,7 @@ footnoteblock:[fn_lake_lod0]
 footnoteblock:[fn_flowing_water_lod0]
 
 | MultiCurve
-|
+<|
 * かれ川
 |
 * 範囲を示す縁線を取得する。
@@ -131,7 +131,7 @@ footnoteblock:[fn_flowing_water_lod0]
 footnoteblock:[fn_irrigation_lod0]
 
 | Point
-|
+<|
 * 湖池 footnoteblock:[fn_lake_lod0]
 |
 * 記号表示位置を取得する。
@@ -412,7 +412,7 @@ h| 説明
 | 地物型 |  空間属性 |  LOD0 |  LOD1 |  LOD2 |  LOD3 |  適用
 
 .6+| wtr:WaterBody | |  ● |  ● |  ● |  ● |
-| lod0MultiCurve |  ■ |  |  |  .2+| 河川中心線（wtr:lod0MultiCurve）を基本とする。縁線、界線又は点として取得する場合はuro:lod0Geometryを使用する。
+| lod0MultiCurve |  ■ |  |  |  .2+<| 河川中心線（wtr:lod0MultiCurve）を基本とする。縁線、界線又は点として取得する場合はuro:lod0Geometryを使用する。
 | lod0Geometry |  ■ |  |  |
 | lod1MultiSurface |  |  ● |  |  |
 | lod2Solid |  |  |  ● |  |
@@ -424,7 +424,7 @@ h| 説明
 | lod2Surface |  |  |  ● |  |
 | lod3Surface |  |  |  |  ● |
 .3+| wtr:WaterClosureSurface  | |  |  |  ■ |  ■ | 仮想的な面を作成したい場合に使用する。
-| lod2Surface |  |  |  ■ |  .2+| WaterClosureSurfaceを作る場合は必須とする。
+| lod2Surface |  |  |  ■ |  .2+<| WaterClosureSurfaceを作る場合は必須とする。
 | lod3Surface |  |  |  |  ■
 
 |===
