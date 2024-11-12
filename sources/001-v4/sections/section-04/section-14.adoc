@@ -62,21 +62,21 @@ h| 説明 | 記号の表示位置を取得する。
 | footnoteblock:[fn_follow_topographic]
 
 | MultiCurve
-| 鳥居、送電線、かき、へい
+<| 鳥居、送電線、かき、へい
 |
 * 中心線を取得する。
 * 高さは0とする。
 | footnoteblock:[fn_follow_topographic]
 
 | MultiCurve
-| 石段、地下街・地下鉄出入口、屋門
+<| 石段、地下街・地下鉄出入口、屋門
 |
 * 外周を取得する。
 * 高さは0とする。
 | footnoteblock:[fn_follow_topographic]
 
 | MultiSurface
-| 門、タンク、煙突、高塔、灯台 footnoteblock:[fn_above_map] 、輸送管（地上）、輸送管（空間）
+<| 門、タンク、煙突、高塔、灯台 footnoteblock:[fn_above_map] 、輸送管（地上）、輸送管（空間）
 |
 * 外周を取得する。
 * 高さは0とする。
@@ -149,7 +149,7 @@ h| 説明 | 都市設備の上方からの正射影の外周を地表面から�
 | 外周の各頂点に与える高さとは、例えば、路面標示やマンホールの場合は、路面の高さとなる。
 
 | Solid
-|
+<|
 * 独立して存在する地物
 |
 * 都市設備の上方からの正射影の外を、地表面から一律の高さで押し出した立体を作成する。
@@ -210,7 +210,7 @@ h| 説明 | 都市設備の主要な部分について、上方から見た外�
 * 連続する面の集まりの場合は、CompositeSurfaceを使用できる。
 
 | Solid又はMultiSurface
-|
+<|
 * 独立して存在する地物
 |
 * 都市設備の外周の形状が変化する高さで、各外周を取得する。
@@ -276,7 +276,7 @@ h| 説明
 * 連続する面の集まりの場合は、CompositeSurfaceを使用できる。
 
 | Solid又はMultiSurface
-|
+<|
 * 独立して存在する地物
 |
 * 都市設備の主要な部分について、一定高さごとの横断面を作成する。
@@ -332,11 +332,11 @@ h| 説明
 | 地物型 | 空間属性 | LOD0 | LOD1 | LOD2 | LOD3 | 適用
 
 .5+| frn:CityFurniture | |  ● |  ● |  ● |  ● |
-| uro:lod0Geometry |  ● | | | | 数値地形図の取得方法に従う。 +
+| uro:lod0Geometry ^|  ● | | | <| 数値地形図の取得方法に従う。 +
 点、線又は面とする。
-| frn:lod1Geometry | |  ● | | | 面又は立体とする。
-| frn:lod2Geometry | | |  ● |  | 面又は立体とする。
-| frn:lod3Geometry | | |  |  ● | 面又は立体とする。
+| frn:lod1Geometry | |  ● | | <| 面又は立体とする。
+| frn:lod2Geometry | | |  ● |  <| 面又は立体とする。
+| frn:lod3Geometry | | |  |  ● <| 面又は立体とする。
 
 |===
 
