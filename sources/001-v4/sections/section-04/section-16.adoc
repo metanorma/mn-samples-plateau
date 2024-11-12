@@ -279,7 +279,7 @@ h| 説明
 * 地下街の外壁面と地表面との交線により囲まれた面を取得する。
 |
 * 地上に設置された地下街出入口の建屋は都市設備（CityFurniture）として取得する。
-| ■ | ClosureSurface | MultiSurface
+| ■ <| ClosureSurface | MultiSurface
 |
 * BuildingPartを作成する場合
 |
@@ -448,7 +448,7 @@ LOD4.2ではLOD4.1に屋内の付属物（bldg:IntBuildingInstallation）とし�
 * 地下街の外壁面と地表面との交線により囲まれた面を取得する。
 |
 * 地上に設置された地下街出入口の建屋は都市設備（CityFurniture）として取得する。
-| ■ | ClosureSurface | MultiSurface
+| ■ <| ClosureSurface | MultiSurface
 |
 * BuildingPartを作成する場合
 |
@@ -584,7 +584,7 @@ NOTE: CityObjectGroupは空間属性をもたないため、「―」として�
 * 地下街の外壁面と地表面との交線により囲まれた面を取得する。
 |
 * 地上に設置された地下街出入口の建屋は都市設備（CityFurniture）として取得する。
-| ■ | ClosureSurface | MultiSurface
+| ■ <| ClosureSurface | MultiSurface
 |
 * BuildingPartを作成する場合
 |
@@ -721,7 +721,7 @@ NOTE: CityObjectGroupは空間属性をもたないため、「―」として�
 * 地下街の外壁面と地表面との交線により囲まれた面を取得する。
 |
 * 地上に設置された地下街出入口の建屋は都市設備（CityFurniture）として取得する。
-| ■ | ClosureSurface | MultiSurface
+| ■ <| ClosureSurface | MultiSurface
 |
 * BuildingPartを作成する場合
 |
@@ -819,17 +819,17 @@ NOTE: CityObjectGroupは空間属性をもたないため、「―」として�
 
 .8+| uro:UndergroundBuilding | |  ● |  ● |  ● |  ● |  ● |
 | lod0FootPrint |  | | | | |
-| lod0RoofEdge |  ● | | | | |
+| lod0RoofEdge ^|  ● | | | | |
 | lod1Solid | |  ● | | | |
 | lod2Solid | | |  ● |  | |
 | lod3Solid | | |  |  ● | |
-| lod4Solid | |  |  | |  ■ .2+| Solid又はMultiSurfaceのいずれかとする。
+| lod4Solid | |  |  | |  ■ .2+<| Solid又はMultiSurfaceのいずれかとする。
 | lod4MultiSurface | |  |  | |  ■
 .6+| bldg:BuildingPart | |  |  |  ■ |  ■ |  ■ | 一棟の建築物を、属性の異なる複数の部分に分ける場合に必須とする。
 | lod1Solid |  |  | | | |
 | lod2Solid |  | |  ■ | | |
 | lod3Solid | |  | |  ■ | |
-| lod4Solid | | |  |  |  ■ .2+| Solid又はMultiSurfaceのいずれかとする。
+| lod4Solid | | |  |  |  ■ .2+<| Solid又はMultiSurfaceのいずれかとする。
 | lod4MultiSurface | | |  |  |  ■
 2+| bldg:Room | |  |  |  |  ● |
 | |  lod4Solid | | | | |  ● |
@@ -850,12 +850,12 @@ NOTE: CityObjectGroupは空間属性をもたないため、「―」として�
 | lod3MultiSurface |  | | |  | .2+|
 | lod4MultiSurface | |  | | |
 .4+| bldg:OuterFloorSurface | |  |  |  |  |  |
-| lod2MultiSurface |  | | | | | 対象外
+| lod2MultiSurface |  | | | | <| 対象外
 | lod3MultiSurface |  | | |  | .2+|
 | lod4MultiSurface | |  | | |
 .4+| bldg:ClosureSurface | |  |  |  ■ |  ■ |  ■ | BuildingPartを作成する場合は必須とする。 +
 LOD4において、内壁面等はないが、建築確認申請では部屋となっている空間を区切る場合は必須とする。
-| lod2MultiSurface |  | |  ■ | | .3+| bldg:ClosureSurfaceを作る場合は必須とする。
+| lod2MultiSurface |  | |  ■ | | .3+<| bldg:ClosureSurfaceを作る場合は必須とする。
 | lod3MultiSurface |  | | |  ■ |
 | lod4MultiSurface | |  | | |  ■
 .2+| bldg:InteriorWallSurface | |  |  |  |  |  ● |
@@ -875,9 +875,9 @@ LOD4において、内壁面等はないが、建築確認申請では部屋と�
 | lod3Geometry |  | | |  | |
 | lod4Geometry |  | | | |  |
 .2+| bldg:IntBuildingInstallation | |  |  |  |  |  ■ | LOD4.1及び 4.2では必須とする。
-| lod4Geometry |  | | | |  ■ | MultiSufaceを使用することを基本とする。
+| lod4Geometry |  | | | |  ■ <| MultiSufaceを使用することを基本とする。
 .2+| bldg:BuildingFurniture | |  |  |  |  |  ■ | LOD4.2では必須とする。
-| lod4Geometry |  | | | |  ■ | bldg:BuildingFurnitureを作成する場合は必須とする。 +
+| lod4Geometry |  | | | |  ■ <| bldg:BuildingFurnitureを作成する場合は必須とする。 +
 MultiSufaceを使用することを基本とする。
 
 |===

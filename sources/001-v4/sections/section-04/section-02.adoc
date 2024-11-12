@@ -1,10 +1,8 @@
 [[toc4_02]]
 === 建築物モデルの応用スキーマ
 
-建築物は、普通建物、堅ろう建物、普通無壁舎及び堅ろう無壁舎をいう。普通建物とは、3階未満の建物及び3階以上の +
-
+建築物は、普通建物、堅ろう建物、普通無壁舎及び堅ろう無壁舎をいう。普通建物とは、3階未満の建物及び3階以上の 
 木造等で建築された建物をいう。堅ろう建物とは、鉄筋コンクリート等で建築された建物で、地上3階以上又は
-
 3階相当以上の高さのものやスタンドを備えた競技場をいう。普通無壁舎とは、側壁のない建物、温室及び工場内の建物類似の構築物で、3階未満のものをいう。堅ろう無壁舎とは、鉄筋コンクリート等で建築された側壁のない建物及び建物類似の構築物で、地上3階以上又は3階相当以上の高さのものをいう。
 
 [.source]
@@ -680,7 +678,7 @@ image::images/023.webp.png[]
 | 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 
 | 幅3m以上の軒裏
-|
+<|
 * 屋根の上方からの正射影の外周と、地表面と外壁面との交線により囲まれた面を取得する。
 * 高さは、各頂点の高さとする。
 |
@@ -822,7 +820,7 @@ LOD3.0では3m未満の軒裏を表現せず、外壁面を屋根面の外周か
 * 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 
 | 幅1m以上の軒裏
-|
+<|
 * 屋根面の上方からの正射影の外周と、地表面と外壁面との交線により囲まれた面を取得する。
 * 高さは、各頂点の高さとする。
 |
@@ -962,7 +960,7 @@ LOD3.1では1m未満の軒裏を表現せず、外壁面を屋根面の外周か
 * 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 
 | 幅1m以上の軒裏
-|
+<|
 * 屋根の上方からの正射影の外周と、地表面と外壁面との交線により囲まれた面を取得する。
 * 高さは、各頂点の高さとする。
 |
@@ -1086,7 +1084,7 @@ LOD3.2では1m未満の軒裏を表現せず、外壁面を屋根面の外周か
 | 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
 
 | 軒裏
-|
+<|
 * 屋根の上方からの正射影の外周と、地表面と外壁面との交線により囲まれた面を取得する。
 * 高さは、各頂点の高さとする。
 |
@@ -1294,8 +1292,7 @@ BIMモデルからの変換により取得する場合は使用しない。
 * 屋根の上方からの正射影の外周を取得し、棟及び谷で区切る。
 * 区切った面の各頂点に屋根の高さを与える。
 |
-屋根の棟及び谷で区切ることにより、屋根の傾斜や向きを再現する。
-
+屋根の棟及び谷で区切ることにより、屋根の傾斜や向きを再現する。 +
 屋根の棟及び谷は、以下を指す。
 
 image::images/029.webp.png[]
@@ -1706,18 +1703,18 @@ NOTE: CityObjectGroupは空間属性をもたないため、空間属性の型�
 | 地物型 | 空間属性 | LOD0 | LOD1 | LOD2 | LOD3 | LOD4 | 適用
 
 .8+| bldg:Building | | ● | ● | ● | ● | ● |
-| lod0FootPrint | 〇 | | | | | 外周は、屋根の外周（RoofEdge）を原則とするが、地表面と外壁面との交線（FootPrint）で代替できる。
-| lod0RoofEdge | ■ | | | | | lod0FootPrintがある場合は不要とする。
+| lod0FootPrint | 〇 | | | | <| 外周は、屋根の外周（RoofEdge）を原則とするが、地表面と外壁面との交線（FootPrint）で代替できる。
+| lod0RoofEdge | ■ | | | | <| lod0FootPrintがある場合は不要とする。
 | lod1Solid | | ● | | | |
 | lod2Solid | | | ● | | |
 | lod3Solid | | | | ● | |
-| lod4Solid | | | | | ■ .2+| Solid又はMultiSurfaceのいずれかとする。
+| lod4Solid | | | | | ■ .2+<| Solid又はMultiSurfaceのいずれかとする。
 | lod4MultiSurface | | | | | ■
 .6+| bldg:BuildingPart | | | | ■ | ■ | ■ | 一棟の建築物を、属性の異なる複数の部分に分ける場合に必須とする。
 | lod1Solid | | | | | |
 | lod2Solid | | | ■ | | |
 | lod3Solid | | | | ■ | |
-| lod4Solid | | | | | ■ .2+| Solid又はMultiSurfaceのいずれかとする。
+| lod4Solid | | | | | ■ .2+<| Solid又はMultiSurfaceのいずれかとする。
 | lod4MultiSurface | | | | | ■
 .2+| bldg:Room | | | | | | ● |
 | lod4Solid | | | | | ● |
@@ -1734,16 +1731,16 @@ NOTE: CityObjectGroupは空間属性をもたないため、空間属性の型�
 | lod3MultiSurface | | | | ● | |
 | lod4MultiSurface | | | | | ● |
 .4+| bldg:OuterCeilingSurface | | | | | 〇 | 〇 | 外壁面のうち、天井の機能をもつ面を明示するために使用できる。
-| lod2MultiSurface | | | | | .3+| bldg:OuterCeilingSurfaceを作る場合は必須とする。
+| lod2MultiSurface | | | | | .3+<| bldg:OuterCeilingSurfaceを作る場合は必須とする。
 | lod3MultiSurface | | | | ■ |
 | lod4MultiSurface | | | | | ■
 .4+| bldg:OuterFloorSurface | | | | 〇 | 〇 | 〇 | 屋根面のうち、通行可能な面を明示するために使用できる。
-| lod2MultiSurface | | | ■ | | .3+| bldg:OuterFloorSurfaceを作る場合は必須とする。
+| lod2MultiSurface | | | ■ | | .3+<| bldg:OuterFloorSurfaceを作る場合は必須とする。
 | lod3MultiSurface | | | | ■ |
 | lod4MultiSurface | | | | | ■
 .4+| bldg:ClosureSurface | | | | ■ | ■ | ■ | BuildingPartを作成する場合は必須とする。 +
 LOD4において、内壁面等はないが、建築確認申請では部屋となっている空間を区切る場合は必須とする。
-| lod2MultiSurface | | | ■ | | .3+| bldg:ClosureSurfaceを作る場合は必須とする。
+| lod2MultiSurface | | | ■ | | .3+<| bldg:ClosureSurfaceを作る場合は必須とする。
 | lod3MultiSurface | | | | ■ |
 | lod4MultiSurface | | | | | ■
 .2+| bldg:InteriorWallSurface | | | | | | ● |
@@ -1759,11 +1756,11 @@ LOD4において、内壁面等はないが、建築確認申請では部屋と�
 | lod3MultiSurface | | | | ● | |
 | lod4MultiSurface | | | | | ● |
 .4+| bldg:BuildingInstallation | | | | ■ | ● | ● | LOD2.0では不要であるが、LOD2.1及びLOD2.2の場合は必須となる。
-| lod2Geometry | | | ■ | | .3+| MultiSurfaceを使用することを基本とする。
+| lod2Geometry | | | ■ | | .3+<| MultiSurfaceを使用することを基本とする。
 | lod3Geometry | | | | ● |
 | lod4Geometry | | | | | ●
 .2+| bldg:IntBuildingInstallation | | | | | | ■ | LOD4.1及び4.2では必須とする。
-| lod4Geometry | | | | | ■ | MultiSurfaceを使用することを基本とする。
+| lod4Geometry | | | | | ■ <| MultiSurfaceを使用することを基本とする。
 .2+| bldg:BuildingFurniture | | | | | | 〇 |
 | lod4Geometry
 |
@@ -1771,7 +1768,7 @@ LOD4において、内壁面等はないが、建築確認申請では部屋と�
 |
 |
 | ■
-| bldg:BuildingFurnitureを作成する場合は必須とする。 +
+<| bldg:BuildingFurnitureを作成する場合は必須とする。 +
 MultiSurfaceを使用することを基本とする。
 
 |===
