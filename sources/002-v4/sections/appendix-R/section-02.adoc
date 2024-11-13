@@ -4,10 +4,8 @@
 
 ==== 植生モデル
 
-植生とは、地表面の植物の種類及びその覆われている状態をいう。「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」
-
-標準製品仕様書では、植生の表現に必要な地物型等をCityGML 及びi-UR より抽出し、LODごとに、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を定めた「植生モデル」を定義する。
-
+植生とは、地表面の植物の種類及びその覆われている状態をいう。「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」 +
+標準製品仕様書では、植生の表現に必要な地物型等をCityGML 及びi-UR より抽出し、LODごとに、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を定めた「植生モデル」を定義する。 +
 植生モデルのLODは、LOD0からLOD3までを対象とする。
 
 [[tab-R-1]]
@@ -29,14 +27,10 @@ subject:: 3D都市モデル
 description:: 植生の記述には、指定されたLODに対応する地物型及び空間属性を使用する。
 ====
 
-植生の記述には、CityGMLのVegetationモジュールに定義されたveg:SolitalyVegetationObject 又はveg:PlantCoverを使用する。veg:SolitalyVegetationObjectは、街路樹のような単独木を記述するための型である。また、veg:PlantCoverは、歩道上の植栽など、個々の樹木を識別せず、まとめて記述する場合に使用する型である。
-
-植生モデル（LOD0）では、植生の形状を点又は線で記述する。CityGMLのVegetationモジュールでは、植生のLODとしてLOD1以上が定義されている。植生モデルで使用する植生のLOD0は、i-URにより拡張した植生の空間属性である。
-
-植生モデル（LOD1）では、veg:SolitalyVegetationObject 及びveg:PlantCover を立体として表現する。
-
-植生モデル（LOD2）では、veg:SolitalyVegetationObject 及びveg:PlantCoverを面の集まり又は立体として表現する。
-
+植生の記述には、CityGMLのVegetationモジュールに定義されたveg:SolitalyVegetationObject 又はveg:PlantCoverを使用する。veg:SolitalyVegetationObjectは、街路樹のような単独木を記述するための型である。また、veg:PlantCoverは、歩道上の植栽など、個々の樹木を識別せず、まとめて記述する場合に使用する型である。 +
+植生モデル（LOD0）では、植生の形状を点又は線で記述する。CityGMLのVegetationモジュールでは、植生のLODとしてLOD1以上が定義されている。植生モデルで使用する植生のLOD0は、i-URにより拡張した植生の空間属性である。 +
+植生モデル（LOD1）では、veg:SolitalyVegetationObject 及びveg:PlantCover を立体として表現する。 +
+植生モデル（LOD2）では、veg:SolitalyVegetationObject 及びveg:PlantCoverを面の集まり又は立体として表現する。 +
 植生モデル（LOD3）では、植生モデル（LOD2）と同様に、veg:SolitalyVegetationObject 及びveg:PlantCoverを面の集まり又は立体として表現するが、その形状はより詳細化される。
 
 [[tab-R-2]]
@@ -46,17 +40,17 @@ description:: 植生の記述には、指定されたLODに対応する地物型
 | 地物型 |  空間属性 |  LOD0 |  LOD1 |  LOD2 |  LOD3 |  適用
 
 .5+| veg:SolitaryVegetationObject | |  ● |  ● |  ● |  ● |
-| uro:lod0Geometry |  ● |  |  |  | Point又は MultiPointとする。
-| veg:lod1Geometry |  |  ● |  |  | Solidとする。
-| veg:lod2 Geometry |  |  |  ● |  | MultiSurface又はSolidとする。
-| veg:lod3 Geometry |  |  |  |  ● | MultiSurface又はSolidとする。
+| uro:lod0Geometry ^|  ● |  |  |  <| Point又は MultiPointとする。
+| veg:lod1Geometry |  |  ● |  |  <| Solidとする。
+| veg:lod2 Geometry |  |  |  ● |  <| MultiSurface又はSolidとする。
+| veg:lod3 Geometry |  |  |  |  ● <| MultiSurface又はSolidとする。
 .8+| veg:PlantCover | |  ● |  ● |  ● |  ● |
-| uro:lod0Geometry |  ● |  |  |  | Point、 MultiPoint又はMultiCurveとする。
+| uro:lod0Geometry ^|  ● |  |  |  <| Point、 MultiPoint又はMultiCurveとする。
 | veg:lod1MultiSurface |  |  |  |  |
 | veg:lod1MultiSolid |  |  ● |  |  |
-| veg:lod2MultiSurface |  |  |  ■ |  .2+| いずれかが必須となる。
+| veg:lod2MultiSurface |  |  |  ■ |  .2+<| いずれかが必須となる。
 | veg:lod2MultiSolid |  |  |  ■ |
-| veg:lod3MultiSurface |  |  |  |  ■ .2+| いずれかが必須となる。
+| veg:lod3MultiSurface |  |  |  |  ■ .2+<| いずれかが必須となる。
 | veg:lod3MultiSolid |  |  |  |  ■
 
 |===
@@ -82,8 +76,7 @@ description:: 植生オブジェクトのLOD0の形状は、植生モデル（LO
 
 ===== LOD1
 
-植生モデル（LOD1）では、植生の形状を立体として表現する。
-
+植生モデル（LOD1）では、植生の形状を立体として表現する。 +
 立体は、植生の上からの正射影の外周を取得し、地表面から一律の高さで上向きに押し出して作成する。一律の高さは、単独木の場合は樹木の最高高さ、植被の場合は中央値を原則とする。このとき、植生オブジェクトは、植生モデル（LOD1）の定義に従ったものでなければならない。
 
 
@@ -98,10 +91,8 @@ description:: 植生オブジェクトのLOD1の形状は、植生モデル（LO
 
 ===== LOD2
 
-植生モデル（LOD2）では、植生の形状を立体として表現することを基本とする。ただし、ユースケースで必要が無い場合には面の集まりとして表現してもよい。
-
-単独木は、樹冠と樹幹をそれぞれ簡略化した立体を組み合わせた立体として表現する。3m以上の植被は、植被の表層の高さを取得し、比高3m以上の形状を再現した立体として表現する。立体は、特徴点を結ぶ三角網から構成される面を境界面とする立体とする。3m未満の植被は、底面を最高高さまで立ち上げた立体とする。
-
+植生モデル（LOD2）では、植生の形状を立体として表現することを基本とする。ただし、ユースケースで必要が無い場合には面の集まりとして表現してもよい。 +
+単独木は、樹冠と樹幹をそれぞれ簡略化した立体を組み合わせた立体として表現する。3m以上の植被は、植被の表層の高さを取得し、比高3m以上の形状を再現した立体として表現する。立体は、特徴点を結ぶ三角網から構成される面を境界面とする立体とする。3m未満の植被は、底面を最高高さまで立ち上げた立体とする。 +
 このとき、植生オブジェクトは、植生モデル（LOD2）の定義に従ったものでなければならない。
 
 
@@ -116,8 +107,7 @@ description:: 植生オブジェクトのLOD2の形状は、植生モデル（LO
 
 ===== LOD3
 
-植生モデル（LOD3）では、植生の形状を立体として表現することを基本とする。ただし、ユースケースで必要が無い場合には面の集まりとして表現してもよい。
-
+植生モデル（LOD3）では、植生の形状を立体として表現することを基本とする。ただし、ユースケースで必要が無い場合には面の集まりとして表現してもよい。 +
 単独木は、樹冠及び樹幹の外形を構成する特徴点により作成した立体として表現する。一定高さごとに樹冠の横断面を作成し、この頂点を結び外形を構成する（樹冠内部の主枝等の表現は行わない）ことを基本とする。ただし、ユースケースの必要に応じて詳細化してよい。植被は、表層の高さを取得し、比高1m以上を再現する。外形は特徴点を結ぶ三角網から構成される面を立体として表現する。このとき、植生オブジェクトは、植生モデル（LOD3）の定義に従ったものでなければならない。
 
 
@@ -141,10 +131,8 @@ gml:nameは、樹木を識別する名称であり、道路台帳の一部とし
 
 ===== データ品質属性（uro:DataQualityAttribute）
 
-使用した原典資料やそれに基づくデータの品質、また、採用したLODは、データセットのメタデータに記録できる。ただし、データセット全体に対して一つのメタデータを作成することが基本となり、個々の都市オブジェクトの品質を記録することは困難である。
-
-そこで、標準製品仕様書では、個々のデータに対してデータ品質に関する情報を記述するための属性として、「データ品質属性」（uro:DataQualityAttribute）を定義している。データ品質属性は、属性としてデータ作成に使用した原典資料の地図情報レベル、その他原典資料の諸元及び精緻化したLODをもつ。
-
+使用した原典資料やそれに基づくデータの品質、また、採用したLODは、データセットのメタデータに記録できる。ただし、データセット全体に対して一つのメタデータを作成することが基本となり、個々の都市オブジェクトの品質を記録することは困難である。 +
+そこで、標準製品仕様書では、個々のデータに対してデータ品質に関する情報を記述するための属性として、「データ品質属性」（uro:DataQualityAttribute）を定義している。データ品質属性は、属性としてデータ作成に使用した原典資料の地図情報レベル、その他原典資料の諸元及び精緻化したLODをもつ。 +
 3D都市モデルに含まれる全ての植生オブジェクトは、このデータ品質属性を必ず作成しなければならない。
 
 ===== 形状から算出可能な主題属性
@@ -157,20 +145,17 @@ veg:SolitalyVegetationObjectの主題属性veg:class、veg:height、veg:trunkDia
 
 ====== 施設分類属性（uro:FacilityTypeAttribute）
 
-uro:FacilityTypeAttributeは、各分野で定める施設の区分を記述するためのデータ型である。CityGMLは、地物型を物体としての性質に着目して定義し、機能や用途は属性で区分している。例えば、「単独木（veg: SolitalyVegetationObject）」という地物型を定義し、veg:functionにより「常緑/針葉」や「落葉/広葉」などを区分している。これにより、都市に存在する様々な地物を、分野を問わず網羅的に、かつ、矛盾が無く表現することを目指している。一方、各分野には独自の施設の区分がある。この区分は当該分野での施設管理に必要な情報であるが、CityGMLの地物型の区分とは一致しない。そこで、これらの地物型に分野独自の区分を付与するためにこのデータ型を用いる。uro:FacilityTypeAttributeは、二つの属性をもつ。uro:classは分野を特定するための属性である。またuro:functionは、uro:classにより特定した分野における施設の区分を示す。
-
+uro:FacilityTypeAttributeは、各分野で定める施設の区分を記述するためのデータ型である。CityGMLは、地物型を物体としての性質に着目して定義し、機能や用途は属性で区分している。例えば、「単独木（veg: SolitalyVegetationObject）」という地物型を定義し、veg:functionにより「常緑/針葉」や「落葉/広葉」などを区分している。これにより、都市に存在する様々な地物を、分野を問わず網羅的に、かつ、矛盾が無く表現することを目指している。一方、各分野には独自の施設の区分がある。この区分は当該分野での施設管理に必要な情報であるが、CityGMLの地物型の区分とは一致しない。そこで、これらの地物型に分野独自の区分を付与するためにこのデータ型を用いる。uro:FacilityTypeAttributeは、二つの属性をもつ。uro:classは分野を特定するための属性である。またuro:functionは、uro:classにより特定した分野における施設の区分を示す。 +
 標準製品仕様書では、港湾施設、漁港施設及び公園施設については標準製品仕様書においてuro:functionの区分が示されている。その他の区分についてはuro:classへの分野の追加も含め、拡張製品仕様書において拡張できる。
 
 ====== 施設識別属性（uro:FacilityIdAttribute）
 
-uro:FacilityIdAttributeは、施設の位置を特定する情報及び施設を識別する情報を記述するためのデータ型である。uro:FacilityIdAttributeは、施設を識別するための情報として、識別子（uro:id）や正式な名称以外の呼称（uro:alternativeName）に加え、施設の位置を示すための、都道府県（uro:prefecture）、市区町村（uro:city）及び開始位置の経緯度（uro:startLat、uro:startLong）を属性としてもつ。また、鉄道上や道路上の施設については、路線や距離標での位置特定のための属性（uro:route、uro:startPost、uro:endPost）を使用できる。
-
+uro:FacilityIdAttributeは、施設の位置を特定する情報及び施設を識別する情報を記述するためのデータ型である。uro:FacilityIdAttributeは、施設を識別するための情報として、識別子（uro:id）や正式な名称以外の呼称（uro:alternativeName）に加え、施設の位置を示すための、都道府県（uro:prefecture）、市区町村（uro:city）及び開始位置の経緯度（uro:startLat、uro:startLong）を属性としてもつ。また、鉄道上や道路上の施設については、路線や距離標での位置特定のための属性（uro:route、uro:startPost、uro:endPost）を使用できる。 +
 なお、河川管理施設の場合は、uro:FacilityIdAttributeを継承するuro:RiverFacilityIdAttributeを使用する。これにより、左右岸上での位置の情報を記述できる。
 
 ====== 施設詳細属性（uro:FacilityAttribute）
 
-uro:FacilityAttributeは、各分野において施設管理に必要となる情報を記述するためのデータ型である。uro:FacilityAttributeは、抽象クラスであり、これを継承する具象となるデータ型に、施設の区分毎に必要となる情報を属性として定義している。
-
+uro:FacilityAttributeは、各分野において施設管理に必要となる情報を記述するためのデータ型である。uro:FacilityAttributeは、抽象クラスであり、これを継承する具象となるデータ型に、施設の区分毎に必要となる情報を属性として定義している。 +
 標準製品仕様書では、港湾施設、漁港施設及び公園施設について、細分した施設の区分ごとにデータ型を定義している。また、施設に関する工事や点検の状況や内容を記述するためのデータ型（uro:MaintenanceHistoryAttribute）を定義している。
 
 ===== 数値地形図属性（uro:vegDmAttribute）
