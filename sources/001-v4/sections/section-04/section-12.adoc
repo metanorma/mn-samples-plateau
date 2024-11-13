@@ -807,13 +807,13 @@ Solidを原則とする。BIMモデルから作成する場合はMultiSurfaceと
 .トンネルモデルの記述に使用する地物型と空間属性
 |===
 ^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| LOD4 ^h| 適用
-.6+| tun:Tunnel | ^|  ● ^|  ● ^|  ● ^|  ● ^|  ● |
+.7+| tun:Tunnel | ^|  ● ^|  ● ^|  ● ^|  ● ^|  ● |
 | uro:lod0Geometry ^|  ● | | | | | 数値地形図の取得方法に従う。
 | tun:lod1Solid | ^|  ● | | | |
 | tun:lod2Solid | | ^|  ● | | |
 | tun:lod3Solid | | | ^|  ● | |
 | tun:lod4Solid | | | | ^|  ■ |
-| | tun:lod4MultiSurface | | | | ^|  ■ | Solidを原則とする。BIMから作成する場合はMultiSurfaceとする。
+| tun:lod4MultiSurface | | | | ^|  ■ | Solidを原則とする。BIMから作成する場合はMultiSurfaceとする。
 .5+| tun:TunnelPart 
 |
 |
