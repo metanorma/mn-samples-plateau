@@ -30,8 +30,7 @@ subject:: 3D都市モデル
 description:: bldg:BuildingInstallationの空間属性は、bldg:Building又はbldg:BuildingPartと接していなければならない。
 ====
 
-また、建築物付属物をbldg:BuildingInstallationを用いて記述する場合には、一棟のbldg:Building又はbldg:Buildingの一部でなければならず、孤立して存在することは許されない。
-
+また、建築物付属物をbldg:BuildingInstallationを用いて記述する場合には、一棟のbldg:Building又はbldg:Buildingの一部でなければならず、孤立して存在することは許されない。 +
 bldg:BuildingInstallationも、その境界面をbldg:_BoundarySurfaceを用いて記述することができる。bldg:_BoundarySurfaceを用いて建築物付属物の外壁面等を記述する場合は、bldg:BuildingInstallationの空間属性は、この境界面となるbldg:_BoundarySurfaceの空間属性を外部参照しなければならない。
 
 
