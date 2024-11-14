@@ -14,29 +14,17 @@ description:: 地下埋設物の記述には、指定されたLODに対応する
 ====
 
 
-地下埋設物の記述には、i-URのUrban Objectモジュールに定義された、uro:UtilityNetworkElementを継承する地物型を使用する。
-
-uro:UtilityNetworkElementは複数のオフセット・デプス情報（uro:OffsetDepth）をもつことができる。uro:OffsetDepthは特定の位置（属性pos）での道路縁等からの離れ（属性offset）や土被りの深さ（属性depth）をもつ。土被りとは、地表面から、地下埋設物の上端までをいう。また、土被りの深さを範囲（最大値となるmaxDepth、最小値となるminDepth）でもつこともできる。
-
-標準製品仕様書では、uro:UtilityNetworkElementを継承する三つの地物型（及びこれらを継承する地物型）を用いて地下埋設物のネットワークを表現する。
-
-uro:UtilityLinkは、ネットワークのリンクであり、ケーブル（uro:Cable）、管路（uro:Pipe）及びトラフ（函渠）等の保護設備（uro:Duct）に区分される。また、ケーブルは通信ケーブル（uro:TelecommunicationsCable）、管路は水道管（WaterPipe）というように、ケーブルと管路には、さらに具体化された下位の地物型が定義されている。
-
-uro:UtilityNodeは、ネットワークのノードに該当する。バルブやガバナ、制水栓等の弁栓類というようなリンクとリンクのつながりを制御する設備（uro:Appurtenance）を表す地物型である。この制御設備には、変圧器、整圧器又は開閉器といった地上に設置された設備を含む。
-
-uro:UtilityNodeContainerは、uro:UtilityNodeを格納し、自らもノードとなることができる地物型である。uro:UtilityNodeContainerは、マンホール（uro:Manhole）及びハンドホール（uro:Handhole）の二つの地物型に区分される。
-
-
-地下埋設物モデル（LOD0）では、地下埋設物の形状を点、線又は面として表現する。
-
-地下埋設物モデル（LOD1）では、地下埋設物の形状を、地下埋設物の外周に地表からの一律の高さを下向きに与えた立体として表現する。
-
-地下埋設物モデル（LOD2）では、地下埋設物の形状を、地下埋設物の外周に地下埋設物が埋まった深さから一律の高さを下向きに与えた立体として表現する。
-
-地下埋設物モデル（LOD3）では、地下埋設物の詳細な形状を、面の集まりとして表現する。
-
-地下埋設物モデル（LOD4）では、LOD3の外形に加えて、内部の形状を表現する。
-
+地下埋設物の記述には、i-URのUrban Objectモジュールに定義された、uro:UtilityNetworkElementを継承する地物型を使用する。 +
+uro:UtilityNetworkElementは複数のオフセット・デプス情報（uro:OffsetDepth）をもつことができる。uro:OffsetDepthは特定の位置（属性pos）での道路縁等からの離れ（属性offset）や土被りの深さ（属性depth）をもつ。土被りとは、地表面から、地下埋設物の上端までをいう。また、土被りの深さを範囲（最大値となるmaxDepth、最小値となるminDepth）でもつこともできる。 +
+標準製品仕様書では、uro:UtilityNetworkElementを継承する三つの地物型（及びこれらを継承する地物型）を用いて地下埋設物のネットワークを表現する。 +
+uro:UtilityLinkは、ネットワークのリンクであり、ケーブル（uro:Cable）、管路（uro:Pipe）及びトラフ（函渠）等の保護設備（uro:Duct）に区分される。また、ケーブルは通信ケーブル（uro:TelecommunicationsCable）、管路は水道管（WaterPipe）というように、ケーブルと管路には、さらに具体化された下位の地物型が定義されている。 +
+uro:UtilityNodeは、ネットワークのノードに該当する。バルブやガバナ、制水栓等の弁栓類というようなリンクとリンクのつながりを制御する設備（uro:Appurtenance）を表す地物型である。この制御設備には、変圧器、整圧器又は開閉器といった地上に設置された設備を含む。 +
+uro:UtilityNodeContainerは、uro:UtilityNodeを格納し、自らもノードとなることができる地物型である。uro:UtilityNodeContainerは、マンホール（uro:Manhole）及びハンドホール（uro:Handhole）の二つの地物型に区分される。 +
+地下埋設物モデル（LOD0）では、地下埋設物の形状を点、線又は面として表現する。 +
+地下埋設物モデル（LOD1）では、地下埋設物の形状を、地下埋設物の外周に地表からの一律の高さを下向きに与えた立体として表現する。 +
+地下埋設物モデル（LOD2）では、地下埋設物の形状を、地下埋設物の外周に地下埋設物が埋まった深さから一律の高さを下向きに与えた立体として表現する。 +
+地下埋設物モデル（LOD3）では、地下埋設物の詳細な形状を、面の集まりとして表現する。 +
+地下埋設物モデル（LOD4）では、LOD3の外形に加えて、内部の形状を表現する。 +
 地下埋設物の各LODにおいて使用可能な地物型と空間属性を、<<tab-P-2>>に示す。
 
 [[tab-P-2]]
@@ -46,41 +34,41 @@ uro:UtilityNodeContainerは、uro:UtilityNodeを格納し、自らもノード�
 | 地物型 | 空間属性 | LOD0 | LOD1 | LOD2 | LOD3 | LOD4 | 適用
 
 .6+| uro:Pipe及びこれを継承する地物型 | |  ● |  ● |  ● |  ● |  ● |
-| uro:lod0Geometry |  ● |  |  |  |  | 原典資料の取得方法に従う。
-| frn:lod1Geometry |  |  ● |  |  |  | Solidとする。
-| frn:lod2Geometry |  |  |  ● |  |  | Solidとする。
-| frn:lod3Geometry |  |  |  |  ● |  | CompositeSurface又はMultiSurfaceとする。
-| frn:lod4Geometry |  |  |  |  |  ● | CompositeSurface又はMultiSurfaceとする。
+| uro:lod0Geometry ^|  ● |  |  |  |  <| 原典資料の取得方法に従う。
+| frn:lod1Geometry |  |  ● |  |  |  <| Solidとする。
+| frn:lod2Geometry |  |  |  ● |  |  <| Solidとする。
+| frn:lod3Geometry |  |  |  |  ● |  <| CompositeSurface又はMultiSurfaceとする。
+| frn:lod4Geometry |  |  |  |  |  ● <| CompositeSurface又はMultiSurfaceとする。
 .6+| uro:Cable及びこれを継承する地物型 | |  ● |  ● |  ● |  ● |  ○ footnoteblock:[fn_underground_model] |
-| uro:lod0Geometry |  ● |  |  |  |  | 原典資料の取得方法に従う。
-| frn:lod1Geometry |  |  ● |  |  |  | Solidとする。
-| frn:lod2Geometry |  |  |  ● |  |  | Solidとする。
-| frn:lod3Geometry |  |  |  |  ● |  | CompositeSurface又はMultiSurfaceとする。
-| frn:lod4Geometry |  |  |  |  |  ■ | LOD4を作成する場合は必須とする。
+| uro:lod0Geometry ^|  ● |  |  |  |  <| 原典資料の取得方法に従う。
+| frn:lod1Geometry |  |  ● |  |  |  <| Solidとする。
+| frn:lod2Geometry |  |  |  ● |  |  <| Solidとする。
+| frn:lod3Geometry |  |  |  |  ● |  <| CompositeSurface又はMultiSurfaceとする。
+| frn:lod4Geometry |  |  |  |  |  ■ <| LOD4を作成する場合は必須とする。
 .6+| uro:Duct | |  ● |  ● |  ● |  ● |  ● |
-| uro:lod0Geometry |  ● |  |  |  |  | 原典資料の取得方法に従う。
-| frn:lod1Geometry |  |  ● |  |  |  | Solidとする。
-| frn:lod2Geometry |  |  |  ● |  |  | Solidとする。
-| frn:lod3Geometry |  |  |  |  ● |  | CompositeSurface又はMultiSurfaceとする。
-| frn:lod4Geometry |  |  |  |  |  ● | CompositeSurface又はMultiSurfaceとする。
+| uro:lod0Geometry ^|  ● |  |  |  |  <| 原典資料の取得方法に従う。
+| frn:lod1Geometry |  |  ● |  |  |  <| Solidとする。
+| frn:lod2Geometry |  |  |  ● |  |  <| Solidとする。
+| frn:lod3Geometry |  |  |  |  ● |  <| CompositeSurface又はMultiSurfaceとする。
+| frn:lod4Geometry |  |  |  |  |  ● <| CompositeSurface又はMultiSurfaceとする。
 .6+| uro:Appurtenance | |  ● |  ● |  ● |  ● |  ○ footnoteblock:[fn_underground_model] |
-| uro:lod0Geometry |  ● |  |  |  |  | 原典資料の取得方法に従う。
-| frn:lod1Geometry |  |  ● |  |  |  | Solidとする。
-| frn:lod2Geometry |  |  |  ● |  |  | Solidとする。
-| frn:lod3Geometry |  |  |  |  ● |  | CompositeSurface又はMultiSurfaceとする。
-| frn:lod4Geometry |  |  |  |  |  ■ | LOD4を作成する場合は必須とする。
+| uro:lod0Geometry ^|  ● |  |  |  |  <| 原典資料の取得方法に従う。
+| frn:lod1Geometry |  |  ● |  |  |  <| Solidとする。
+| frn:lod2Geometry |  |  |  ● |  |  <| Solidとする。
+| frn:lod3Geometry |  |  |  |  ● |  <| CompositeSurface又はMultiSurfaceとする。
+| frn:lod4Geometry |  |  |  |  |  ■ <| LOD4を作成する場合は必須とする。
 .6+| uro:Manhole | |  ● |  ● |  ● |  ● |  ● |
-| uro:lod0Geometry |  ● |  |  |  |  | 原典資料の取得方法に従う。
-| frn:lod1Geometry |  |  ● |  |  |  | Solidとする。
-| frn:lod2Geometry |  |  |  ● |  |  | Solidとする。
-| frn:lod3Geometry |  |  |  |  ● |  | CompositeSurface又はMultiSurfaceとする。
-| frn:lod4Geometry |  |  |  |  |  ● | CompositeSurface又はMultiSurfaceとする。
+| uro:lod0Geometry ^|  ● |  |  |  |  <| 原典資料の取得方法に従う。
+| frn:lod1Geometry |  |  ● |  |  |  <| Solidとする。
+| frn:lod2Geometry |  |  |  ● |  |  <| Solidとする。
+| frn:lod3Geometry |  |  |  |  ● |  <| CompositeSurface又はMultiSurfaceとする。
+| frn:lod4Geometry |  |  |  |  |  ● <| CompositeSurface又はMultiSurfaceとする。
 .6+| uro:Handhole | |  ● |  ● |  ● |  ● |  ● |
-| uro:lod0Geometry |  ● |  |  |  |  | 原典資料の取得方法に従う。
-| frn:lod1Geometry |  |  ● |  |  |  | Solidとする。
-| frn:lod2Geometry |  |  |  ● |  |  | Solidとする。
-| frn:lod3Geometry |  |  |  |  ● |  | CompositeSurface又はMultiSurfaceとする。
-| frn:lod4Geometry |  |  |  |  |  ● | MultiSurface又はSolidとする。
+| uro:lod0Geometry ^|  ● |  |  |  |  <| 原典資料の取得方法に従う。
+| frn:lod1Geometry |  |  ● |  |  |  <| Solidとする。
+| frn:lod2Geometry |  |  |  ● |  |  <| Solidとする。
+| frn:lod3Geometry |  |  |  |  ● |  <| CompositeSurface又はMultiSurfaceとする。
+| frn:lod4Geometry |  |  |  |  |  ● <| MultiSurface又はSolidとする。
 
 |===
 
@@ -117,7 +105,8 @@ description:: 地下埋設物のLOD0の形状は、地下埋設物モデル（LO
 
 ===== LOD1
 
-地下埋設物モデル（LOD1）では、地下埋設物の形状を立体として表現する。立体は、地下埋設物の外周の正射影を取得し、地表から一律の高さで下向きに立ち上げて作成する。一律の高さは、地表から地下埋設物の下端までとする。また、複数の地下埋設物がまとまって埋設されている場合は、最外縁の正射影を取得し、地表から一律の高さで下向きに立ち上げる。このとき、地下埋設物オブジェクトは、地下埋設物モデル（LOD1）の定義に従ったものでなければならない。
+地下埋設物モデル（LOD1）では、地下埋設物の形状を立体として表現する。立体は、地下埋設物の外周の正射影を取得し、地表から一律の高さで下向きに立ち上げて作成する。一律の高さは、地表から地下埋設物の下端までとする。また、複数の地下埋設物がまとまって埋設されている場合は、最外縁の正射影を取得し、地表から一律の高さで下向きに立ち上げる。 +
+このとき、地下埋設物オブジェクトは、地下埋設物モデル（LOD1）の定義に従ったものでなければならない。
 
 
 [requirement]
@@ -129,8 +118,7 @@ subject:: 3D都市モデル
 description:: 地下埋設物のLOD1の形状は、地下埋設物モデル（LOD1）の定義に従う。
 ====
 
-地下埋設物モデル（LOD1）では、マンホール及びハンドホールは、外周の正射影として、蓋の上からの正射影を包含する矩形を取得する。また、管路は外径が不明な場合には内径及び管種から外径を推定し、この外径を使用して外周の正射影を推定する（P.6.2.6 参照）。
-
+地下埋設物モデル（LOD1）では、マンホール及びハンドホールは、外周の正射影として、蓋の上からの正射影を包含する矩形を取得する。また、管路は外径が不明な場合には内径及び管種から外径を推定し、この外径を使用して外周の正射影を推定する（P.6.2.6 参照）。 +
 地下埋設物モデル（LOD1）では、地下埋設物の形状を地表から一律の深さで立ち上げた立体として表現するため、地下埋設物の正確な深さは分からないが、埋設物が存在する可能性がある空間を表現できる。
 
 ===== LOD2
@@ -148,8 +136,7 @@ subject:: 3D都市モデル
 description:: 地下埋設物のLOD2の形状は、地下埋設物モデル（LOD2）の定義に従う。
 ====
 
-地下埋設物の外周の正射影は、地下埋設物の中心位置（LOD0）と地下埋設物の種類及び内径により定まる外径を用いて推定した外周で代替できる。
-
+地下埋設物の外周の正射影は、地下埋設物の中心位置（LOD0）と地下埋設物の種類及び内径により定まる外径を用いて推定した外周で代替できる。 +
 地下埋設物モデル（LOD2）では、地下埋設物が埋まった最も浅い位置から深い位置まで一律の高さで下向きに立ち上げた立体となるため、地下埋設物の位置をある程度正確に把握することが可能となる。
 
 ===== LOD3
@@ -180,8 +167,7 @@ subject:: 3D都市モデル
 description:: 地下埋設物のLOD4の形状は、地下埋設物モデル（LOD4）の定義に従う。
 ====
 
-地下埋設物モデル（LOD4）では、地下埋設物を面の集まりとして表現することを基本とするが、体積の演算が必要となる場合等、ユースケースで必要な場合には立体として表現できる。
-
+地下埋設物モデル（LOD4）では、地下埋設物を面の集まりとして表現することを基本とするが、体積の演算が必要となる場合等、ユースケースで必要な場合には立体として表現できる。 +
 また、地下埋設物モデル（LOD4）における、uro:Cable及びこれを継承する地物型とuro:Apputenanceの内部の形状は、ユースケースの必要に応じて取得の要否を決定してよい。
 
 
@@ -191,9 +177,7 @@ description:: 地下埋設物のLOD4の形状は、地下埋設物モデル（LO
 
 ===== データ品質属性（uro:DataQualityAttribute）
 
-使用した原典資料やそれに基づくデータの品質、また、採用したLODは、データセットのメタデータに記録できる。ただし、データセット全体に対して一つのメタデータを作成することが基本となり、個々の都市オブジェクトの品質を記録することは困難である。
-
-そこで、標準製品仕様書では、個々のデータに対してデータ品質に関する情報を記述するための属性として、「データ品質属性」（uro:DataQualityAttribute）を定義している。データ品質属性は、属性としてデータ作成に使用した原典資料の地図情報レベル、その他原典資料の諸元及び精緻化したLODをもつ。
-
+使用した原典資料やそれに基づくデータの品質、また、採用したLODは、データセットのメタデータに記録できる。ただし、データセット全体に対して一つのメタデータを作成することが基本となり、個々の都市オブジェクトの品質を記録することは困難である。 +
+そこで、標準製品仕様書では、個々のデータに対してデータ品質に関する情報を記述するための属性として、「データ品質属性」（uro:DataQualityAttribute）を定義している。データ品質属性は、属性としてデータ作成に使用した原典資料の地図情報レベル、その他原典資料の諸元及び精緻化したLODをもつ。 +
 3D都市モデルに含まれる全ての地下埋設物オブジェクトは、このデータ品質属性を必ず作成しなければならない。
 
