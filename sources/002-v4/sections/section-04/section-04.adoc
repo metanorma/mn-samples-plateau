@@ -48,8 +48,7 @@ CityGML及びi-URの符号化仕様は以下より取得できる。
 . コード型に対応するコードリストをXML形式に変換・出力する。XMLの形式は、GML 3.1.1 simple dictionary profileを使用する。
 +
 --
-GML 3.1.1 simple dictionary profileは、もともとは辞書として利用されることを想定したXML形式であり、名前（gml:name）とその説明（gml:description）の対の集まりから構成される。CityGMLでは、コードリストの符号化仕様としてこのGML 3.1.1 simple dictionary profileを使用していることから、標準製品仕様においてもコードリストの符号化仕様としてGML 3.1.1 simple dictionary profileを採用する。
-
+GML 3.1.1 simple dictionary profileは、もともとは辞書として利用されることを想定したXML形式であり、名前（gml:name）とその説明（gml:description）の対の集まりから構成される。CityGMLでは、コードリストの符号化仕様としてこのGML 3.1.1 simple dictionary profileを使用していることから、標準製品仕様においてもコードリストの符号化仕様としてGML 3.1.1 simple dictionary profileを採用する。 +
 GML 3.1.1 simple dictionary profileに従ったXML形式のコードリスト例を以下に示す。
 
 [source,xml]
@@ -141,7 +140,7 @@ gml:idの付与ルールに従う。
 [cols="2a,2a,1a"]
 .接頭辞
 |===
-2+|  応用スキーマ |  接頭辞
+2+^|  応用スキーマ ^|  接頭辞
 2+| 建築物モデル |  bldg
 2+| 交通（道路）モデル |  tran
 2+| 交通（鉄道）モデル |  rwy
