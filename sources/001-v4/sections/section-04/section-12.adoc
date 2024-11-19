@@ -923,6 +923,8 @@ image::images/268.svg[]
 
 ====== tun:Tunnel
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Tunnel",template="../../sources/liquid_templates/_klass_table.liquid"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| トンネルとは、上方を含め周辺が地山や他の構造物で覆われている、交通、輸送等に供する構造物である。[道路基盤地図情報（整備促進版） 製品仕様書 （案）] 標準製品仕様書では、その設置の形態から、ボックスカルバート、シェッド、シェルター及び地下横断歩道もトンネルに含める。
@@ -1031,6 +1033,8 @@ tun:TunnelPartが品質属性をもつ場合は、省略できる。
 |===
 
 ====== tun:TunnelPart
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="TunnelPart",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 [cols="1a,1a,2a"]
 |===
@@ -1141,6 +1145,8 @@ h| (uro:tunFacilityAttribute) | uro:FacilityAttribute [0..*] | uro:tunFacilityTy
 
 ====== tun:HollowSpace
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="HollowSpace",template="../../sources/liquid_templates/_klass_table.liquid"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -1198,6 +1204,8 @@ h| (tun:lod4MultiSurface) | gml:MultiSurface [0..1] | 区画の主要構造の�
 
 ====== tun:RoofSurface
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[path="tun::RoofSurface",template="../../sources/liquid_templates/_klass_table.liquid"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -1232,6 +1240,8 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 |===
 
 ====== tun:WallSurface
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[path="tun::WallSurface",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 [cols="1a,1a,2a"]
 |===
@@ -1268,6 +1278,8 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== tun:GroundSurface
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[path="tun::GroundSurface",template="../../sources/liquid_templates/_klass_table.liquid"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -1302,6 +1314,8 @@ h| (tun:opening) | tun:_Opening [0..*] | 底面に設置される、窓や扉へ
 |===
 
 ====== tun:OuterCeilingSurface
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[path="tun::OuterCeilingSurface",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 [cols="1a,1a,2a"]
 |===
@@ -1338,6 +1352,8 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== tun:OuterFloorSurface
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[path="tun::OuterFloorSurface",template="../../sources/liquid_templates/_klass_table.liquid"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -1372,6 +1388,8 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 |===
 
 ====== tun:ClosureSurface
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[path="tun::ClosureSurface",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 [cols="1a,1a,2a"]
 |===
@@ -1410,6 +1428,8 @@ h| (tun:opening) | tun:_Opening [0..*] | 境界面に設置される、窓や扉
 
 ====== tun:InteriorWallSurface
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[path="tun::InteriorWallSurface",template="../../sources/liquid_templates/_klass_table.liquid"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -1442,6 +1462,8 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 |===
 
 ====== tun:CeilingSurface
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[path="tun::CeilingSurface",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 [cols="1a,1a,2a"]
 |===
@@ -1477,6 +1499,8 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== tun:FloorSurface
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[path="tun::FloorSurface",template="../../sources/liquid_templates/_klass_table.liquid"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -1510,6 +1534,8 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== tun:Window
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[path="tun::Window",template="../../sources/liquid_templates/_klass_table.liquid"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 採光、通風、換気、眺望などの目的のため、トンネルの屋根、天井、壁、床などに設けられた開口部のうち、人や物の出入りを目的としないもの。
@@ -1541,6 +1567,8 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== tun:Door
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[path="tun::Door",template="../../sources/liquid_templates/_klass_table.liquid"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 採光、通風、換気、眺望、通行などの目的のため、トンネルの屋根、天井、壁、床などに設けられた開口部のうち、人や物の出入りを目的とするもの。
@@ -1571,6 +1599,8 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 |===
 
 ====== tun:TunnelInstallation
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="TunnelInstallation",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 [cols="1a,1a,2a"]
 |===
@@ -1628,6 +1658,8 @@ h| (tun:lod2Geometry) | gml:_Geometry [0..1] | 付属物のLOD2の形状。
 
 ====== tun:IntTunnelInstallation
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IntTunnelInstallation",template="../../sources/liquid_templates/_klass_table.liquid"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| トンネルの内部に設置された、恒久的に存在する固定的な設備（内部付属物）。
@@ -1676,6 +1708,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== tun:TunnelFurniture
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="TunnelFurniture",template="../../sources/liquid_templates/_klass_table.liquid"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -1721,6 +1755,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:TunnelFunctionalAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="TunnelFunctionalAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| トンネルの機能に関する情報を定義したデータ型。
@@ -1735,6 +1771,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:TunnelStructureAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="TunnelStructureAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 [cols="1a,1a,2a"]
 |===
@@ -1758,6 +1796,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:KeyValuePairAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="KeyValuePairAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -1777,6 +1817,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:DataQualityAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="DataQualityAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 [cols="1a,1a,2a"]
 |===
@@ -1860,6 +1902,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:PublicSurveyDataQualityAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="PublicSurveyDataQualityAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 使用した公共測量成果の地図情報レベルと種類を、LODごとに記述するためのデータ型。
@@ -1936,6 +1980,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:ConstructionBaseAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="ConstructionBaseAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -1965,6 +2011,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:ConstructionRiskAssessmentAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="ConstructionRiskAssessmentAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 [cols="1a,1a,2a"]
 |===
