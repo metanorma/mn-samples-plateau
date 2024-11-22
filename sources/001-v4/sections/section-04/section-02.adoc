@@ -2068,6 +2068,8 @@ uro:IndoorUserDefinedAttribute
 
 ====== bldg:BuildingPart
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="BuildingPart",template="../../sources/liquid_templates/_klass_table.liquid"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -2182,6 +2184,8 @@ h| (uro:bldgDmAttribute) | uro:DmAttribute [0..*] | 公共測量標準図式に�
 
 ====== bldg:Room
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Room",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -2287,6 +2291,8 @@ uro:IndoorUserDefinedAttribute
 
 ====== bldg:RoofSurface
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[path="bldg::RoofSurface",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -2329,6 +2335,8 @@ uro:IfcRoof +
 |===
 
 ====== bldg:WallSurface
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[package="bldg",name="WallSurface",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -2380,6 +2388,8 @@ uro:IfcCurtainWall +
 |===
 
 ====== bldg:GroundSurface
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[package="bldg",name="GroundSurface",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -2433,6 +2443,8 @@ uro:IfcBuildingElement +
 |===
 
 ====== bldg:OuterCeilingSurface
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[package="bldg",name="OuterCeilingSurface",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -2490,6 +2502,8 @@ BIMモデルからの変換により作成する場合は、bldg:OuterCeilingSur
 |===
 
 ====== bldg:OuterFloorSurface
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[package="bldg",name="OuterFloorSurface",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -2550,6 +2564,8 @@ uro:IfcBuildingElement +
 |===
 
 ====== bldg:ClosureSurface
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[package="bldg",name="ClosureSurface",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a",options="noheader"]
 |===
@@ -2613,6 +2629,8 @@ h| (uro:ifcBoundarySurfaceAttribute) | uro:IfcAttribute [0..*] | IDM・MVDで定
 
 ====== bldg:InteriorWallSurface
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[package="bldg",name="InteriorWallSurface",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -2672,6 +2690,8 @@ uro:IndoorUserDefinedAttribute
 
 ====== bldg:CeilingSurface
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[package="bldg",name="CeilingSurface",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -2725,6 +2745,8 @@ uro:IndoorUserDefinedAttribute
 
 ====== bldg:FloorSurface
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[package="bldg",name="FloorSurface",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -2777,6 +2799,8 @@ uro:IndoorUserDefinedAttribute
 |===
 
 ====== bldg:Window
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[package="bldg",name="Window",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -2839,6 +2863,8 @@ uro:IndoorUserDefinedAttribute
 
 ====== bldg:Door
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[package="bldg",name="Door",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -2894,6 +2920,8 @@ uro:IndoorUserDefinedAttribute
 |===
 
 ====== bldg:BuildingInstallation
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="BuildingInstallation",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -2986,6 +3014,8 @@ uro:IfcBuildingElement +
 
 ====== bldg:IntBuildingInstallation
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IntBuildingInstallation",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -3071,6 +3101,8 @@ uro:IndoorUserDefinedAttribute
 
 ====== bldg:BuildingFurniture
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="BuildingFurniture",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -3141,6 +3173,8 @@ CityGMLを拡張し、bldg:Buildingに詳細な属性を付与するのための
 
 ====== uro:BuildingIDAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="BuildingIDAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 建築物を識別するための情報。
@@ -3172,6 +3206,8 @@ i-URでは多重度が[0..1]となっているが、建築物の位置の把握�
 |===
 
 ====== uro:BuildingDetailAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="BuildingDetailAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -3308,6 +3344,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:LargeCustomerFacilityAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="LargeCustomerFacilityAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市計画法に基づき実施される都市計画基礎調査において収集された、大規模小売店舗や大規模集客施設に関する基礎的な情報。
@@ -3358,6 +3396,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:RiverFloodingRiskAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="RiverFloodingRiskAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -3416,6 +3456,8 @@ uro:rank又はuro:rankOrgのいずれか一つをもつ。
 
 ====== uro:TsunamiRiskAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="TsunamiRiskAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 津波洪水浸水想定の区域内に存在する建築物に、津波浸水想定の区域の属性を与えるための属性型。
@@ -3455,6 +3497,8 @@ uro:rank又はuro:rankOrgのいずれか一つをもつ。
 
 ====== uro:HighTideRiskAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="HighTideRiskAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 高潮浸水想定区域に存在する建築物に、高潮浸水想定区域の属性に与えるための属性型。
@@ -3485,6 +3529,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:InlandFloodingRiskAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="InlandFloodingRiskAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -3518,6 +3564,8 @@ uro:rank又はuro:rankOrgのいずれか一つをもつ。
 
 ====== uro:ReservoirFloodingRiskAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="ReservoirFloodingRiskAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -3549,6 +3597,8 @@ uro:rank又はuro:rankOrgのいずれか一つをもつ。
 |===
 
 ====== uro:LandSlideRiskAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="LandSlideRiskAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -3582,6 +3632,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:KeyValuePairAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="KeyValuePairAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。
@@ -3603,6 +3655,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:DataQualityAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="DataQualityAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -3688,6 +3742,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:PublicSurveyDataQualityAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="PublicSurveyDataQualityAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 使用した公共測量成果又は基本測量成果の地図情報レベルと種類を、LODごとに記述するためのデータ型。
@@ -3763,6 +3819,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:RealEstateIDAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="RealEstateIDAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -3846,6 +3904,8 @@ bldg:lod0RoofEdge、bldg:lod1Solid、bldg:lod2Solid.RoofSurface、bldg:lod3Solid
 
 ====== uro:IfcAxis2Placement3D
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IfcAxis2Placement3D",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| ローカル座標系の変換を定義する座標系情報を設定するためのデータ型。
@@ -3861,6 +3921,8 @@ h| 自身に定義された属性 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:IfcBuilding
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IfcBuilding",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -3901,6 +3963,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:IfcBuildingElement
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IfcBuildingElement",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -3971,6 +4035,8 @@ uro:elementTypeがTransportElementに区分される場合にこの属性を使�
 
 ====== uro:IfcClassification
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IfcClassification",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| IFCで記述された分類の諸元に関する属性。
@@ -3988,6 +4054,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IfcClassificationReference
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IfcClassificationReference",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| IFCで記述された分類に関する属性。
@@ -4004,6 +4072,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:IfcCoordinateReferenceSystem
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IfcCoordinateReferenceSystem",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -4032,6 +4102,8 @@ JGD2011とする。
 
 ====== uro:IfcCoordinateReferenceSystemSelect
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IfcCoordinateReferenceSystemSelect",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -4048,6 +4120,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:IfcCurtainWall
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IfcCurtainWall",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -4089,6 +4163,8 @@ h| (uro:capacityByNumber) | xs:integer [0..1] | 許容定員数。
 
 ====== uro:IfcDoor
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IfcDoor",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| IFCで記述された扉の属性。
@@ -4124,6 +4200,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IfcFurnishingElement
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IfcFurnishingElement",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| IFCで記述された家具の属性。
@@ -4141,6 +4219,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:IfcGeometricRepresentationContext
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IfcGeometricRepresentationContext",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -4167,6 +4247,8 @@ image::images/067.webp.png[]
 |===
 
 ====== uro:IfcMapConversion
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IfcMapConversion",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -4205,6 +4287,8 @@ NOTE: XAxisAbscissaとともに、マップ座標系の水平面内のローカ�
 
 ====== uro:IfcOpeningElement
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IfcOpeningElement",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| IFCで記述された、床や壁に設けられた開口部の属性。
@@ -4226,6 +4310,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:IfcProject
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IfcProject",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -4254,6 +4340,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:IfcProjectedCRS
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IfcProjectedCRS",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -4286,6 +4374,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:IfcPsetBuildingCommon
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IfcPsetBuildingCommon",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -4330,6 +4420,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:IfcPsetDoorCommon
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IfcPsetDoorCommon",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -4381,6 +4473,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IfcPsetOpeningElementCommon
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IfcPsetOpeningElementCommon",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 開口部に付与するデータ型。
@@ -4413,6 +4507,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IfcPsetSiteCommon
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IfcPsetSiteCommon",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| IFCで記述されたプロジェクトに共通となる属性の集まり。
@@ -4428,6 +4524,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:IfcPsetSpaceCommon
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IfcPsetSpaceCommon",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -4473,6 +4571,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IfcPsetWindowCommon
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IfcPsetWindowCommon",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| IFCで記述された窓に共通の属性。
@@ -4506,6 +4606,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:IfcRoof
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IfcRoof",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -4542,6 +4644,8 @@ h| (uro:capacityByNumber) | xs:integer [0..1] | 許容定員数。
 
 ====== uro:IfcSite
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IfcSite",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| IFCで記述されたプロジェクトの敷地に適用される属性の集まり。
@@ -4576,6 +4680,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IfcSpace
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IfcSpace",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| IFCで記述された部屋の属性。
@@ -4609,6 +4715,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IfcSpaceBaseQuantity
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IfcSpaceBaseQuantity",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| IFCで記述されたSpaceの数量に関する属性。
@@ -4639,6 +4747,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IfcUnit
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IfcUnit",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 単位を記述するデータ型
@@ -4655,6 +4765,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:IfcWall
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IfcWall",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -4753,6 +4865,8 @@ uro:elementTypeがWall又はWallStandardCaseに区分される場合にこの属
 
 ====== uro:IfcWallStandardCase
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IfcWallStandardCase",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| IFCで記述された壁の属性。厚さが均一な標準的な壁を表す。
@@ -4848,6 +4962,8 @@ uro:elementTypeがWall又はWallStandardCaseに区分される場合にこの属
 
 ====== uro:IfcWindow
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IfcWindow",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| IFCで記述された窓の属性。
@@ -4887,6 +5003,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IndoorFacilityAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IndoorFacilityAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 施設に追加するナビゲーション用の属性。
@@ -4907,6 +5025,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IndoorFurnishingAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IndoorFurnishingAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 設備に追加するナビゲーション用の属性。
@@ -4924,6 +5044,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IndoorPublicTagAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IndoorPublicTagAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| パブリックタグに追加するナビゲーション用の属性。
@@ -4940,6 +5062,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:IndoorSpaceAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IndoorSpaceAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -4972,6 +5096,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IndoorTactileTileAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IndoorTactileTileAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 視覚障碍者用誘導ブロックに追加するナビゲーション用の属性。
@@ -4993,6 +5119,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:IndoorZoneAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IndoorZoneAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 任意の空間に追加するナビゲーション用の属性。
@@ -5009,6 +5137,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:IndoorUserDefinedAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IndoorUserDefinedAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -5029,6 +5159,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro: UserDefinedValue
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="UserDefinedValue",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
