@@ -12,193 +12,98 @@
 {%- endif -%}
 
 {%- if klass.has_guidance? -%}
-
-[cols="1a,1a,2a,1a"]
-|===
-| AGT 型の定義 3+| {{ root.definition }}
-h| 上位の型 3+| {{ upper_klass_name }}
-h| ステレオタイプ 3+| {{ stereotype }}
-
-{% if root.inherited_props.size > 0 %}
-4+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義 h| 補足
-{% endif %}
-{% for attr in root.inherited_props %}
-  {%- if attr.has_association? == false -%}
-    {%- capture name_col -%}
-      {%- if attr.used? == false -%}
-        ({{ attr.name_ns }}:{{ attr.name }})
-        [ {{ attr.gen_name }} ]
-      {%- else -%}
-        {{ attr.name_ns }}:{{ attr.name }}
-        [ {{ attr.gen_name }} ]
-      {%- endif -%}
-    {%- endcapture -%}
-    | {{ name_col | newline_to_br }}
-    | {{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
-    | {{ attr.definition }}
-    | {{ attr.guidance }}
-  {%- endif -%}
-{% endfor %}
-
-{% if root.owned_props.size > 0 %}
-4+h| 自身に定義された属性
-h| 属性名 h| 属性の型及び多重度 h| 定義 h| 補足
-{% endif %}
-{% for attr in root.owned_props %}
-  {%- if attr.has_association? == false -%}
-    {%- capture name_col -%}
-      {%- if attr.used? == false -%}
-        ({{ attr.name_ns }}:{{ attr.name }})
-        [ {{ attr.gen_name }} ]
-      {%- else -%}
-        {{ attr.name_ns }}:{{ attr.name }}
-        [ {{ attr.gen_name }} ]
-      {%- endif -%}
-    {%- endcapture -%}
-    | {{ name_col | newline_to_br }}
-    | {{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
-    | {{ attr.definition }}
-    | {{ attr.guidance }}
-  {%- endif -%}
-{% endfor %}
-
-{% if root.sorted_inherited_assoc_props.size > 0 %}
-4+h| 継承する関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 h| 補足
-{% endif %}
-{% for attr in root.sorted_inherited_assoc_props %}
-  {%- if attr.has_association? == true -%}
-    {%- capture name_col -%}
-      {%- if attr.used? == false -%}
-        ({{ attr.name_ns }}:{{ attr.name }})
-        [ {{ attr.gen_name }} ]
-      {%- else -%}
-        {{ attr.name_ns }}:{{ attr.name }}
-        [ {{ attr.gen_name }} ]
-      {%- endif -%}
-    {%- endcapture -%}
-    | {{ name_col | newline_to_br }}
-    | {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
-    | {{ attr.definition }}
-    | {{ attr.guidance }}
-  {%- endif -%}
-{% endfor %}
-
-{% if root.sorted_assoc_props.size > 0 %}
-4+h| 自身に定義された関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 h| 補足
-{% endif %}
-{% for attr in root.sorted_assoc_props %}
-  {%- if attr.has_association? == true -%}
-    {%- capture name_col -%}
-      {%- if attr.used? == false -%}
-        ({{ attr.name_ns }}:{{ attr.name }})
-        [ {{ attr.gen_name }} ]
-      {%- else -%}
-        {{ attr.name_ns }}:{{ attr.name }}
-        [ {{ attr.gen_name }} ]
-      {%- endif -%}
-    {%- endcapture -%}
-    | {{ name_col | newline_to_br }}
-    | {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
-    | {{ attr.definition }}
-    | {{ attr.guidance }}
-  {%- endif -%}
-{% endfor %}
-|===
-
+  {%- assign cols_format = "1a,1a,2a,1a" -%}
+  {%- assign cols_number = 4 -%}
+  {%- assign cols_header = 3 -%}
 {%- else -%}
+  {%- assign cols_format = "1a,1a,2a" -%}
+  {%- assign cols_number = 3 -%}
+  {%- assign cols_header = 2 -%}
+{%- endif -%}
 
-[cols="1a,1a,2a"]
+[cols="{{ cols_format }}"]
 |===
-| AGT 型の定義 2+| {{ root.definition }}
-h| 上位の型 2+| {{ upper_klass_name }}
-h| ステレオタイプ 2+| {{ stereotype }}
+| AGT 型の定義 {{ cols_header }}+| {{ root.definition }}
+h| 上位の型 {{ cols_header }}+| {{ upper_klass_name }}
+h| ステレオタイプ {{ cols_header }}+| {{ stereotype }}
 
 {% if root.inherited_props.size > 0 %}
-3+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
+{{ cols_number }}+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義 {% if klass.has_guidance? %} h| 補足{%- endif %}
 {% endif %}
 {% for attr in root.inherited_props %}
-  {%- if attr.has_association? == false -%}
-    {%- capture name_col -%}
-      {%- if attr.used? == false -%}
-        ({{ attr.name_ns }}:{{ attr.name }})
-        [ {{ attr.gen_name }} ]
-      {%- else -%}
-        {{ attr.name_ns }}:{{ attr.name }}
-        [ {{ attr.gen_name }} ]
-      {%- endif -%}
-    {%- endcapture -%}
-    | {{ name_col | newline_to_br }}
-    | {{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
-    | {{ attr.definition }}
+{%- capture name_col -%}
+  {%- if attr.used? == false -%}
+    ({{ attr.name_ns }}:{{ attr.name }})
+    [ {{ attr.gen_name }} ]
+  {%- else -%}
+    {{ attr.name_ns }}:{{ attr.name }}
+    [ {{ attr.gen_name }} ]
   {%- endif -%}
+{%- endcapture -%}
+| {{ name_col | newline_to_br }}
+| {{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
+| {{ attr.definition }}
+{% if klass.has_guidance? -%} | {{ attr.guidance }}{%- endif %}
 {% endfor %}
 
 {% if root.owned_props.size > 0 %}
-3+h| 自身に定義された属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
+{{ cols_number }}+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義 {% if klass.has_guidance? %} h| 補足{%- endif %}
 {% endif %}
 {% for attr in root.owned_props %}
-  {%- if attr.has_association? == false -%}
-    {%- capture name_col -%}
-      {%- if attr.used? == false -%}
-        ({{ attr.name_ns }}:{{ attr.name }})
-        [ {{ attr.gen_name }} ]
-      {%- else -%}
-        {{ attr.name_ns }}:{{ attr.name }}
-        [ {{ attr.gen_name }} ]
-      {%- endif -%}
-    {%- endcapture -%}
-    | {{ name_col | newline_to_br }}
-    | {{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
-    | {{ attr.definition }}
+{%- capture name_col -%}
+  {%- if attr.used? == false -%}
+    ({{ attr.name_ns }}:{{ attr.name }})
+    [ {{ attr.gen_name }} ]
+  {%- else -%}
+    {{ attr.name_ns }}:{{ attr.name }}
+    [ {{ attr.gen_name }} ]
   {%- endif -%}
+{%- endcapture -%}
+| {{ name_col | newline_to_br }}
+| {{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
+| {{ attr.definition }}
+{% if klass.has_guidance? -%} | {{ attr.guidance }}{%- endif %}
 {% endfor %}
 
 {% if root.sorted_inherited_assoc_props.size > 0 %}
-3+h| 継承する関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+{{ cols_number }}+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.has_guidance? %} h| 補足{%- endif %}
 {% endif %}
 {% for attr in root.sorted_inherited_assoc_props %}
-  {%- if attr.has_association? == true -%}
-    {%- capture name_col -%}
-      {%- if attr.used? == false -%}
-        ({{ attr.name_ns }}:{{ attr.name }})
-        [ {{ attr.gen_name }} ]
-      {%- else -%}
-        {{ attr.name_ns }}:{{ attr.name }}
-        [ {{ attr.gen_name }} ]
-      {%- endif -%}
-    {%- endcapture -%}
-    | {{ name_col | newline_to_br }}
-    | {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
-    | {{ attr.definition }}
+{%- capture name_col -%}
+  {%- if attr.used? == false -%}
+    ({{ attr.name_ns }}:{{ attr.name }})
+    [ {{ attr.gen_name }} ]
+  {%- else -%}
+    {{ attr.name_ns }}:{{ attr.name }}
+    [ {{ attr.gen_name }} ]
   {%- endif -%}
+{%- endcapture -%}
+| {{ name_col | newline_to_br }}
+| {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
+| {{ attr.definition }}
+{% if klass.has_guidance? -%} | {{ attr.guidance }}{%- endif %}
 {% endfor %}
 
 {% if root.sorted_assoc_props.size > 0 %}
-3+h| 自身に定義された関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+{{ cols_number }}+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.has_guidance? %} h| 補足{%- endif %}
 {% endif %}
 {% for attr in root.sorted_assoc_props %}
-  {%- if attr.has_association? == true -%}
-    {%- capture name_col -%}
-      {%- if attr.used? == false -%}
-        ({{ attr.name_ns }}:{{ attr.name }})
-        [ {{ attr.gen_name }} ]
-      {%- else -%}
-        {{ attr.name_ns }}:{{ attr.name }}
-        [ {{ attr.gen_name }} ]
-      {%- endif -%}
-    {%- endcapture -%}
-    | {{ name_col | newline_to_br }}
-    | {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
-    | {{ attr.definition }}
+{%- capture name_col -%}
+  {%- if attr.used? == false -%}
+    ({{ attr.name_ns }}:{{ attr.name }})
+    [ {{ attr.gen_name }} ]
+  {%- else -%}
+    {{ attr.name_ns }}:{{ attr.name }}
+    [ {{ attr.gen_name }} ]
   {%- endif -%}
+{%- endcapture -%}
+| {{ name_col | newline_to_br }}
+| {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
+| {{ attr.definition }}
+{% if klass.has_guidance? -%} | {{ attr.guidance }}{%- endif %}
 {% endfor %}
 |===
-
-{%- endif -%}
