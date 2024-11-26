@@ -945,6 +945,8 @@ image::images/093.svg[]
 
 ====== tran:Road
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Road",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a",options="noheader"]
 |===
 .3+| 型の定義
@@ -1030,6 +1032,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 |===
 
 ====== tran:TrafficArea
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="TrafficArea",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a",options="noheader"]
 |===
@@ -1117,6 +1121,8 @@ LOD3.1～LOD3.4では、停止線がある場合にはこれの延長とし、�
 |===
 
 ====== tran:AuxiliaryTrafficArea
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="AuxiliaryTrafficArea",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a",options="noheader"]
 |===

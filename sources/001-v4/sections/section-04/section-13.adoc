@@ -609,6 +609,8 @@ image::images/283.svg[]
 
 ====== uro:OtherConstruction
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="OtherConstruction",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -707,6 +709,8 @@ LOD3.1の場合にのみ使用する。
 
 ====== uro:RoofSurface
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[package="uro",name="RoofSurface",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 構造物の上部となる面。
@@ -741,6 +745,8 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 |===
 
 ====== uro:WallSurface
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[package="uro",name="WallSurface",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -780,6 +786,8 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== uro:GroundSurface
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[package="uro",name="GroundSurface",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 構造物の立体形状の底面。
@@ -812,6 +820,8 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 |===
 
 ====== uro:OuterCeilingSurface
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[package="uro",name="OuterCeilingSurface",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -846,6 +856,8 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 
 ====== uro:OuterFloorSurface
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[package="uro",name="OuterFloorSurface",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 構造物の外側を覆う部分であり、通行可能な床面としての機能を有する部分。構造物の上部に設けられた管理用の通路が該当する。
@@ -876,6 +888,8 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 |===
 
 ====== uro:ClosureSurface
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[package="uro",name="ClosureSurface",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -909,6 +923,8 @@ h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性の�
 |===
 
 ====== uro:ConstructionInstallation
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="ConstructionInstallation",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -948,6 +964,8 @@ h| (uro:lod2Geometry) | gml:_Geometry [0..1] | LOD2において付属物の外�
 
 ====== uro:ConstructionBaseAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="ConstructionBaseAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 構造物の管理に必要となる基本的な情報及び、構造物の規模に関する基本的な情報を記述するためのデータ型。
@@ -979,6 +997,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:ConstructionStructureAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="ConstructionStructureAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 構造物の規模に関する基本的な情報を記述するためのデータ型。
@@ -1000,6 +1020,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:EmbankmentAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="EmbankmentAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -1023,6 +1045,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:DamAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="DamAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -1050,6 +1074,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:KeyValuePairAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="KeyValuePairAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義
@@ -1076,6 +1102,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:DataQualityAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="DataQualityAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -1152,6 +1180,8 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 ====== uro:PublicSurveyDataQualityAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="PublicSurveyDataQualityAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 使用した公共測量成果の地図情報レベルと種類を、LODごとに記述するためのデータ型。
@@ -1220,6 +1250,8 @@ h| (uro:publicSurveySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジ�
 
 ====== uro:ConstructionRiskAssessmentAttribute
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="ConstructionRiskAssessmentAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 構造物の損傷及び対応状況に関する情報を定義したデータ型。
@@ -1237,6 +1269,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 ====== uro:Elevation
 
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Elevation",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+
 [cols="1a,1a,2a"]
 |===
 | 型の定義 2+| 構造物の指定された位置における標高を表すデータ型。
@@ -1251,6 +1285,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:Height
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Height",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -1267,7 +1303,9 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 
 |===
 
-====== uro:ConstrucionEvent
+====== uro:constructionEvent
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="constructionEvent",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
@@ -1284,6 +1322,8 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 |===
 
 ====== uro:Occupancy
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Occupancy",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
 [cols="1a,1a,2a"]
 |===
