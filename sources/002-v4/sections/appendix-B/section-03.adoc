@@ -201,7 +201,7 @@ image::images/120.webp.png[]
 ==== gml:OrientableSurface
 
 gml:OrientableSurfaceは、向きをもつ曲面（有向曲面）である。属性orientationは曲面の向きを示し、gml:baseSurfaceは元とする曲面を参照する。 +
-orientationの値が“+”となる場合は、元の曲面と同じ向きであることを示し、値が “-”の場合は、これは元の向きと反対の向きであることを示す。つまり、元の曲面（orientation= “+”）と反対の向きの曲面（orientation= “-”）は、表裏の関係にある。 +
+orientationの値が“\+”となる場合は、元の曲面と同じ向きであることを示し、値が “-”の場合は、これは元の向きと反対の向きであることを示す。つまり、元の曲面（orientation= “+”）と反対の向きの曲面（orientation= “-”）は、表裏の関係にある。 +
 gml:OrientableSurfaceは、接する複数の立体（gml:Solid）の境界を記述する場合に使用する。
 
 [[fig-B-5]]

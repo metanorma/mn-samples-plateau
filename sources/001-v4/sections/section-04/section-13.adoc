@@ -95,7 +95,7 @@ h| 説明
 
 その他の構造物モデル（LOD0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^7a,7a,7a,16a,20a,16a"]
+[cols="1a,^1a,1a,1a,1a,3a,2a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -191,7 +191,7 @@ h| 説明 | 構造物の上からの上方からの正射影の外周に一律�
 
 その他の構造物モデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^7a,7a,7a,16a,20a,16a"]
+[cols="1a,^1a,1a,1a,1a,3a,2a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -200,7 +200,7 @@ h| 説明 | 構造物の上からの上方からの正射影の外周に一律�
 * 構造物の上方からの正射影の外周を取得する。
 * 外周を一律の高さで押し出した立体を作成する。
 |
-* d一律の高さは、水面（陸上に設置されている場合は地面）から構造物の最高高さまでとする。
+* 一律の高さは、水面（陸上に設置されている場合は地面）から構造物の最高高さまでとする。
 | Solid
 <| 床止め、水制
 |
@@ -272,7 +272,7 @@ h| 説明
 
 その他の構造物モデル（LOD2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^7a,7a,7a,16a,20a,16a"]
+[cols="1a,^1a,1a,1a,1a,3a,2a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -316,7 +316,7 @@ h| 説明
 その他の構造物モデル（LOD3）では、その他の構造物の形状を、主要な部分の外形を構成する特徴点から構成する面を境界面とする立体として表現する。 +
 LOD3は、構造上不可欠ではない付属物（手すり、柵、構造物と一体ではない階段）の表現有無によりLOD3.0及びLOD3.1に区分する。
 
-[cols="a,a,a,a"]
+[cols="5a,5a,3a,3a"]
 .LOD3.0、LO3.1及びLOD3.2の区分
 |===
 | その他の構造物モデル（LOD2）に含むべき地物 | 対応するCityGMLの地物型 | LOD3.1 | LOD3.2
@@ -369,7 +369,7 @@ h| 説明 | LOD3.1では、LOD3.0に加え、構造上不可欠ではない付�
 
 その他の構造物モデル（LOD3.0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^7a,7a,7a,16a,20a,16a"]
+[cols="1a,^1a,1a,1a,3a,3a,3a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -429,7 +429,7 @@ h| 説明 | LOD3.1では、LOD3.0に加え、構造上不可欠ではない付�
 
 その他の構造物モデル（LOD3.1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^7a,7a,7a,16a,20a,16a"]
+[cols="1a,^1a,1a,1a,3a,3a,3a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -515,41 +515,36 @@ h| 説明 | LOD3.1では、LOD3.0に加え、構造上不可欠ではない付�
 その他の構造物モデルの各LODにおいて使用可能な地物型と空間属性を<<tab-4-82>>に示す。
 
 [[tab-4-82]]
-[cols="5a,5a,3a,3a,3a,3a,3a"]
+[cols="5a,5a,^a,^a,^a,3a,3a"]
 .その他の構造物モデルの記述に使用する地物型と空間属性
 |===
-^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| 適用
-.5+| uro:OtherConstruction | |  ● |  ● |  ● |  ● |
-| uro:lod0Geometry |  ● | | | | 数値地形図（DM）の取得方法に従う。
-| uro:lod1Geometry | |  ● | | | 立体となる。
-| uro:lod2Geometry | | |  ● | | 立体となる。
-| uro:lod3Geometry | | | |  ● | 立体となる。
-.3+| uro:RoofSurface | | | |  ● |  ● | 構造物の外形を構成する面のうち、上向きの面に使用する。
-| uro:lod2MultiSurface | | |  ● | .2+|
-| uro:lod3MultiSurface | | | |  ●
-.3+| uro:WallSurface | | | |  ● |  ● | 構造物の外形を構成する面のうち、側方の面に使用する。
-| uro:lod2MultiSurface | | |  ● | .2+|
-| uro:lod3MultiSurface | | | |  ●
-.3+| uro:GroundSurface | | | |  ● |  ● | 構造物の外形を構成する面のうち、下向きの面に使用する。
-| uro:lod2MultiSurface | | |  ● | .2+|
-| uro:lod3MultiSurface | | | |  ●
-.3+| uro:ClosureSurface | | | |  ■ |  ■ | 行政界で区切る場合に必須とする。
-| uro:lod2MultiSurface | | |  ■ | .2+| ClosureSurfaceを作成する場合は必須とする。
-| uro:lod3MultiSurface | | | |  ■
-.3+| uro:OuterCeilingSurface | | | |  |  〇 |
+h| 地物型 h| 空間属性 h| LOD0 h| LOD1 h| LOD2 h| LOD3 h| 適用
+.5+| uro:OtherConstruction | | ● | ● | ● | ● |
+| uro:lod0Geometry ^| ● | | | | 数値地形図（DM）の取得方法に従う。
+| uro:lod1Geometry | | ● | | | 立体となる。
+| uro:lod2Geometry | | | ● | | 立体となる。
+| uro:lod3Geometry | | | | ● | 立体となる。
+.3+| uro:RoofSurface | | | | ● ^| ● | 構造物の外形を構成する面のうち、上向きの面に使用する。
+| uro:lod2MultiSurface | | | ● | .2+|
+| uro:lod3MultiSurface | | | | ●
+.3+| uro:WallSurface | | | | ● ^| ● | 構造物の外形を構成する面のうち、側方の面に使用する。
+| uro:lod2MultiSurface | | | ● | .2+|
+| uro:lod3MultiSurface | | | | ●
+.3+| uro:GroundSurface | | | | ● ^| ● | 構造物の外形を構成する面のうち、下向きの面に使用する。
+| uro:lod2MultiSurface | | | ● | .2+|
+| uro:lod3MultiSurface | | | | ●
+.3+| uro:ClosureSurface | | | | ■ ^| ■ | 行政界で区切る場合に必須とする。
+| uro:lod2MultiSurface | | | ■ | .2+| ClosureSurfaceを作成する場合は必須とする。
+| uro:lod3MultiSurface | | | | ■
+.3+| uro:OuterCeilingSurface | | | | ^| 〇 |
 | uro:lod2MultiSurface | | |  | .2+| OuterCeilingSurfaceを作成する場合は必須とする。
-| uro:lod3MultiSurface | | | |  ■
-.3+| uro:OuterFloorSurface | | | |  |  〇 |
+| uro:lod3MultiSurface | | | | ■
+.3+| uro:OuterFloorSurface | | | | ^| 〇 |
 | uro:lod2MultiSurface | | |  | .2+| OuterFloorSurfaceを作成する場合は必須とする。
-| uro:lod3MultiSurface | | | |  ■
-.3+| uro:ConstructionlInstallation | | | |  |  ■ | LOD3.1において必須とする。
-| uro:lod2Geometry | | |  | |
-| uro:lod3Geometry
-|
-|
-|
-|  ■
-| OtherConstructionInstallationを作成する場合は必須とする。 +
+| uro:lod3MultiSurface | | | | ■
+.3+| uro:ConstructionlInstallation | | | | ^| ■ | LOD3.1において必須とする。
+| uro:lod2Geometry | | | | |
+| uro:lod3Geometry | | | | ■ | OtherConstructionInstallationを作成する場合は必須とする。 +
 MultiSurfaceとする。
 
 |===

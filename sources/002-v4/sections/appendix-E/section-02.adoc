@@ -286,7 +286,7 @@ image::images/239.webp.png[]
 
 鉄道の主題属性には、あらかじめCityGML又はGMLにおいて定義された属性（接頭辞tran、gml）と、i-URにより拡張された属性（接頭辞uro）がある。CityGMLで定義された属性は、鉄道の名称や種類など、基本的な情報となる。i-URにより拡張された属性には、路線に関する情報を格納するための属性（uro:RailwayRouteAttribute）及び軌道中心線の線形情報を格納するための属性（uro:RailwayTrackAttribute）、数値地形図との互換性を保つための情報を格納するための属性（uro:DmAttribute）、さらに、作成したデータの品質に関する情報を格納するための属性（uro:DataQualityAttribute）がある。
 
-データ品質属性（uro:DataQualityAttribute）
+===== データ品質属性（uro:DataQualityAttribute）
 
 3D都市モデルでは、データ集合全体としての品質はメタデータに記録する。しかしながら、メタデータでは、個々のデータに対して位置正確度や適用したLOD等の品質を記述することが困難である。 +
 そこで、標準製品仕様書では、個々のデータに対してデータ品質に関する情報を記述するための属性として、「データ品質属性」（uro:DataQualityAttribute）を定義している。データ品質属性は、属性としてデータ作成に使用した原典資料の地図情報レベル、その他原典資料の諸元及び精緻化したLODをもつ。 +

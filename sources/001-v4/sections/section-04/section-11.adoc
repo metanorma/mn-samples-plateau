@@ -63,7 +63,7 @@ h| 説明 | 道路橋は、地図情報レベル2500では、縁線を取得す�
 
 橋梁モデル（LOD0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="11a,11a,11a,11a,11a,25a,20a"]
+[cols="1a,^1a,1a,1a,3a,3a,2a"]
 |===
 | | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -83,14 +83,14 @@ h| 説明 | 道路橋は、地図情報レベル2500では、縁線を取得す�
 * 道路橋は、地図情報レベル500及び1000では、MultiCurveと面MultiSurfaceとの組み合わせになる。
 
 | MultiCurve
-|
+<|
 * 地図情報レベル2500の鉄道橋。
 |
 * 縁線を取得する。
 * 高さは0とする。
 
 | MultiCurve
-|
+<|
 * 地図情報レベル500又は1000となる、道路橋又は鉄道橋。
 * 橋脚は真形を表示する。
 |
@@ -99,7 +99,7 @@ h| 説明 | 道路橋は、地図情報レベル2500では、縁線を取得す�
 * 高さは0とする。
 
 | MultiCurve
-|
+<|
 * 徒橋。
 * 地図情報レベル2500かつ幅員1m未満の道路橋。
 |
@@ -108,7 +108,7 @@ h| 説明 | 道路橋は、地図情報レベル2500では、縁線を取得す�
 * 高さは0とする。
 
 | MultiCurve
-|
+<|
 * 桟道橋。
 * 橋脚は真形を表示する。
 |
@@ -117,7 +117,7 @@ h| 説明 | 道路橋は、地図情報レベル2500では、縁線を取得す�
 * 高さは0とする。
 
 | MultiSurface
-|
+<|
 * 地図情報レベル500又は1000となる道路橋。
 * 高欄は真形を表示する。
 |
@@ -125,7 +125,7 @@ h| 説明 | 道路橋は、地図情報レベル2500では、縁線を取得す�
 * 親柱を取得する。
 
 | MultiSurface
-|
+<|
 * 横断歩道橋、跨線橋、ペデストリアンデッキ。
 * 正射影を表示する。
 |
@@ -174,7 +174,7 @@ h| 説明
 
 橋梁モデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="2a,^a,2a,6a,2a,6a,6a"]
+[cols="1a,^1a,1a,1a,1a,3a,2a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -249,7 +249,7 @@ h| 説明
 [cols="6a,4a,4a,4a"]
 .LOD2.0及びLOD2.1の区分
 |===
-h| その他の構造物モデル（LOD2）に含むべき地物 h| 対応するCityGMLの地物型 ^h| LOD2.0 ^h| LOD2.1
+h| その他の構造物モデル（LOD2）に含むべき地物 h| 対応するCityGMLの地物型 h| LOD2.0 h| LOD2.1
 | 橋梁 +
 道路橋、鉄道橋及び桟道橋の場合は、主桁と床版を含む。 +
 それ以外の橋梁の場合は、上部工（床版及び主桁）、階段、及び踊り場を含む。
@@ -321,7 +321,7 @@ image::images/240.webp.png[]
 橋梁モデル（LOD2）の取得イメージを<<tab-4-63>>に示す。
 
 [[tab-4-63]]
-[cols="4a,18a,9a,9a"]
+[cols="4a,^3a,^9a,^9a"]
 .橋梁モデル（LOD2）の取得イメージ
 |===
 h| 3+h| LOD2.0
@@ -332,8 +332,8 @@ image::images/241.webp.png[]
 image::images/242.webp.png[]
 
 h| 説明
-| 道路橋、桟道橋及び鉄道橋は、床版の外周を、高さをもった面として表現する。
-2+| 横断歩道橋、ペデストリアンデッキ及び跨線橋は、本体（上部工、階段及び踊り場）の外周を取得し、高さをもった面として表現する。 +
+<| 道路橋、桟道橋及び鉄道橋は、床版の外周を、高さをもった面として表現する。
+2+<| 横断歩道橋、ペデストリアンデッキ及び跨線橋は、本体（上部工、階段及び踊り場）の外周を取得し、高さをもった面として表現する。 +
 階段の個々の段は取得せず、下端と上端を結んだ平面として表現する。
 
 h| 3+h| LOD2.1
@@ -346,13 +346,13 @@ image::images/244.webp.png[]
 image::images/245.webp.png[]
 
 h| 説明
-| 道路橋、桟道橋及び鉄道橋は、床版及び主桁によって、厚みと高さをもった立体として表現する。 +
+<| 道路橋、桟道橋及び鉄道橋は、床版及び主桁によって、厚みと高さをもった立体として表現する。 +
 橋脚などの構造上不可欠な部材（BuildingConstructionElement）を表現してもよい。 +
 上図では、橋脚を表現している。
-| 横断歩道橋、ペデストリアンデッキ及び跨線橋は、本体（上部工、階段及び踊り場）を、それぞれを厚みと高さを持った立体として表現する。 +
+<| 横断歩道橋、ペデストリアンデッキ及び跨線橋は、本体（上部工、階段及び踊り場）を、それぞれを厚みと高さを持った立体として表現する。 +
 上部工、階段及び踊り場は分けて取得できる。 +
 階段の個々の段は取得せず、下端と上端を結んだ面として表現する。
-| 横断歩道橋等に本体と一体的な屋根があった場合は、境界面を分けて取得する。上図では、上部工が屋根と壁に囲まれていたため、屋根（RoofSurface）及び外壁面（WallSurface）及び下面（OuterCeilingSurface）に境界線を分けて取得している。 +
+<| 横断歩道橋等に本体と一体的な屋根があった場合は、境界面を分けて取得する。上図では、上部工が屋根と壁に囲まれていたため、屋根（RoofSurface）及び外壁面（WallSurface）及び下面（OuterCeilingSurface）に境界線を分けて取得している。 +
 橋脚などの構造上重要な部材（BuildingConstructionElement）を表現してもよい。上図では、橋脚を表現している。
 
 |===
@@ -361,7 +361,7 @@ h| 説明
 
 橋梁モデル（LOD2.0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^3a,7a,7a,16a,20a,16a"]
+[cols="1a,^1a,1a,1a,1a,3a,2a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -435,7 +435,7 @@ Element
 
 橋梁モデル（LOD2.1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^3a,7a,7a,16a,20a,16a"]
+[cols="1a,^1a,1a,1a,1a,3a,2a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -577,10 +577,10 @@ Element
 [cols="3a,3a,6a,8a"]
 .橋梁モデル（LOD3）に含むべき地物と対応するCityGMLの地物型
 |===
-2+| その他の構造物モデル（LOD3） +
+2+h| その他の構造物モデル（LOD3） +
 に含むべき地物
 h| 対応するCityGMLの地物型
-^h| LOD3
+h| LOD3
 
 2+| 橋梁 | Bridge |  ●
 2+| 橋梁部分
@@ -658,7 +658,7 @@ h| 説明
 
 橋梁モデル（LOD3）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^3a,7a,7a,16a,20a,16a"]
+[cols="1a,^1a,1a,1a,1a,3a,2a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -822,7 +822,7 @@ Element
 [cols="3a,3a,6a,8a"]
 .橋梁モデル（LOD4）に含むべき地物
 |===
-2+h| 橋梁モデル（LOD4）に含むべき地物 h| 対応するCityGMLの地物型 ^h| LOD4
+2+h| 橋梁モデル（LOD4）に含むべき地物 h| 対応するCityGMLの地物型 h| LOD4
 2+| 橋梁 | Bridge |  ●
 2+| 橋梁部分
 | BridgePart
@@ -892,7 +892,7 @@ IfcElementAssemblyのうち、以下に区分されるものを対象とする�
 
 * ARCH, BEAM_GRID, GIRDER, REINFORCEMENT_UNIT, RIGID_FRAME, SLAB_FIELD, TRUSS, ABUTMENT, PIAR, PYLON, CROSS_BRACING,
 
-| BridgeInstallation | IfcElementAssembly | IfcElementAssemblyのうち、ACCESSORY＿ASSEMBLYに区分されるものを対象とする。
+| BridgeInstallation | IfcElementAssembly | IfcElementAssemblyのうち、ACCESSORY_ASSEMBLYに区分されるものを対象とする。
 
 |===
 
@@ -913,7 +913,7 @@ image::images/250.webp.png[]
 
 橋梁モデル（LOD4）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^3a,7a,7a,16a,20a,16a"]
+[cols="1a,^1a,1a,1a,1a,3a,2a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -1107,15 +1107,15 @@ IfcElementAssembly (ARCH, BEAM_GRID, GIRDER, REINFORCEMENT_UNIT, RIGID_FRAME, SL
 |===
 | 地物型 |  空間属性 |  LOD0 |  LOD1 |  LOD2 |  LOD3 |  LOD4 | 適用
 
-.9+| brid:Bridge | |  ● |  ● |  ● |  ● |  ● |
-| uro:lod0Geometry |  ● | | | | <| 数値地形図の取得方法に従う。
-| brid:lod1Solid | |  ● | | | |
-| brid:lod2MultiSurface | | |  ■ | | <| LOD2.0の場合は必須とする。
-| brid:lod2Solid | | |  ■ | | <| LOD2.1の場合は必須とする。
-| brid:lod3MultiSurface | | | |  ■ | <| MultiSurface又はSolidとする。
-| brid:lod3Solid | | | |  ■ | <| MultiSurface又はSolidとする。
-| brid:lod4MultiSurface | | | | |  ■ <| MultiSurface又はSolidとする。
-| brid:lod4Solid | | | | |  ■ <| MultiSurface又はSolidとする。
+.9+| brid:Bridge | | ● | ● | ● | ● | ● |
+| uro:lod0Geometry ^| ● | | | | <| 数値地形図の取得方法に従う。
+| brid:lod1Solid | | ● | | | |
+| brid:lod2MultiSurface | | | ■ | | <| LOD2.0の場合は必須とする。
+| brid:lod2Solid | | | ■ | | <| LOD2.1の場合は必須とする。
+| brid:lod3MultiSurface | | | | ■ | <| MultiSurface又はSolidとする。
+| brid:lod3Solid | | | | ■ | <| MultiSurface又はSolidとする。
+| brid:lod4MultiSurface | | | | | ■ <| MultiSurface又はSolidとする。
+| brid:lod4Solid | | | | | ■ <| MultiSurface又はSolidとする。
 .8+| brid:BridgePart
 |
 |
