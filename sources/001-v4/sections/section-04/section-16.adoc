@@ -38,7 +38,7 @@ h| 説明
 
 地下街モデル（LOD0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^3a,7a,7a,16a,20a,16a"]
+[cols="1a,^1a,1a,1a,1a,3a,3a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -83,7 +83,7 @@ h| 説明 | 地下街の上からの正射影の外周を、地表面から地�
 
 地下街モデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1a,^1a,1a,1a,1a,3a,2a"]
+[cols="1a,^1a,1a,1a,1a,3a,3a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -130,7 +130,7 @@ h| 説明
 
 地下街モデル（LOD2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1a,^1a,3a,3a,3a,6a,3a"]
+[cols="1a,^1a,1a,1a,3a,3a,3a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -223,7 +223,7 @@ h| 説明
 
 地下街モデル（LOD3）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1a,^1a,3a,3a,3a,6a,3a"]
+[cols="1a,^1a,1a,1a,3a,3a,3a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -314,7 +314,7 @@ h| 説明
 地下街モデル（LOD4）は、含むべき地物により、LOD4.0、LOD4.1及びLOD4.2に区分する。これは、建築物モデル（LOD4）の区分と同一である。 +
 標準製品仕様書では原則としてLOD4.0を採用する。ただし、ユースケースの必要に応じてLOD4.1又はLOD4.2を採用できる。
 
-[cols="9a,9a,^4a,^4a,^4a"]
+[cols="9a,9a,4a,4a,4a"]
 .LOD4.0, LOD4.1及びLOD4.2の区分
 |===
 | 地下街モデル（LOD4）に含むべき地物 | 対応する地物型 | LOD4.0 | LOD4.1 | LOD4.2
@@ -356,7 +356,7 @@ h| 説明
 LOD4.0、LOD4.1及びLOD4.2それぞれの取得イメージを <<tab-4-100>>に示す。
 
 [[tab-4-100]]
-[cols="2a,5a"]
+[cols="1a,6a"]
 .地下街モデル（LOD4）の取得例
 |===
 h| LOD ^h| 取得イメージと説明
@@ -391,7 +391,7 @@ LOD4.2ではLOD4.1に屋内の付属物（bldg:IntBuildingInstallation）とし�
 
 地下街モデル（LOD4.0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^3a,7a,7a,16a,20a,16a"]
+[cols="1a,^1a,1a,1a,3a,3a,3a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -527,7 +527,7 @@ NOTE: CityObjectGroupは空間属性をもたないため、「―」として�
 
 地下街モデル（LOD4.1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^3a,7a,7a,16a,20a,16a"]
+[cols="1a,^1a,1a,1a,3a,3a,3a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -664,7 +664,7 @@ NOTE: CityObjectGroupは空間属性をもたないため、「―」として�
 
 地下街モデル（LOD4.2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^3a,7a,7a,16a,20a,16a"]
+[cols="1a,^1a,1a,1a,3a,3a,3a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -812,36 +812,36 @@ NOTE: CityObjectGroupは空間属性をもたないため、「―」として�
 地下街モデルの各LODにおいて使用可能な地物型と空間属性を<<tab-4-101>>に示す。
 
 [[tab-4-101]]
-[cols="3a,3a,^1a,^1a,^1a,^1a,^1a,3a"]
+[cols="5a,5a,^a,^a,^a,^a,a,6a"]
 .地下街モデルに使用する地物型と空間属性
 |===
 | 地物型 | 空間属性 | LOD0 | LOD1 | LOD2 | LOD3 | LOD4 | 適用
 
-.8+| uro:UndergroundBuilding | |  ● |  ● |  ● |  ● |  ● |
+.8+| uro:UndergroundBuilding | |  ● |  ● |  ● |  ● ^|  ● |
 | lod0FootPrint |  | | | | |
 | lod0RoofEdge ^|  ● | | | | |
 | lod1Solid | |  ● | | | |
 | lod2Solid | | |  ● |  | |
 | lod3Solid | | |  |  ● | |
-| lod4Solid | |  |  | |  ■ .2+<| Solid又はMultiSurfaceのいずれかとする。
+| lod4Solid | |  |  | |  ■ .2+| Solid又はMultiSurfaceのいずれかとする。
 | lod4MultiSurface | |  |  | |  ■
-.6+| bldg:BuildingPart | |  |  |  ■ |  ■ |  ■ | 一棟の建築物を、属性の異なる複数の部分に分ける場合に必須とする。
+.6+| bldg:BuildingPart | |  |  |  ■ |  ■ ^|  ■ | 一棟の建築物を、属性の異なる複数の部分に分ける場合に必須とする。
 | lod1Solid |  |  | | | |
 | lod2Solid |  | |  ■ | | |
 | lod3Solid | |  | |  ■ | |
-| lod4Solid | | |  |  |  ■ .2+<| Solid又はMultiSurfaceのいずれかとする。
+| lod4Solid | | |  |  |  ■ .2+| Solid又はMultiSurfaceのいずれかとする。
 | lod4MultiSurface | | |  |  |  ■
-2+| bldg:Room | |  |  |  |  ● |
-| |  lod4Solid | | | | |  ● |
-.4+| bldg:RoofSurface | |  |  |  ● |  ● |  ● |
+.2+| bldg:Room | | |  |  |  ^|  ● |
+| lod4Solid | | | | ^|  ● |
+.4+| bldg:RoofSurface | |  |  |  ● |  ● ^|  ● |
 | lod2MultiSurface |  | | ● | | |
 | lod3MultiSurface |  | | | ● | |
 | lod4MultiSurface | |  | | |  ● |
-.4+| bldg:WallSurface | |  |  |  ● |  ● |  ● |
+.4+| bldg:WallSurface | |  |  |  ● |  ● ^|  ● |
 | lod2MultiSurface |  | |  ● | | |
 | lod3MultiSurface |  | | |  ● | |
 | lod4MultiSurface | |  | | |  ● |
-.4+| bldg:GroundSurface | |  |  |  ● |  ● |  ● |
+.4+| bldg:GroundSurface | |  |  |  ● |  ● ^|  ● |
 | lod2MultiSurface |  | |  ● | | |
 | lod3MultiSurface |  | | |  ● | |
 | lod4MultiSurface | |  | | |  ● |
@@ -850,34 +850,34 @@ NOTE: CityObjectGroupは空間属性をもたないため、「―」として�
 | lod3MultiSurface |  | | |  | .2+|
 | lod4MultiSurface | |  | | |
 .4+| bldg:OuterFloorSurface | |  |  |  |  |  |
-| lod2MultiSurface |  | | | | <| 対象外
+| lod2MultiSurface |  | | | | | 対象外
 | lod3MultiSurface |  | | |  | .2+|
 | lod4MultiSurface | |  | | |
-.4+| bldg:ClosureSurface | |  |  |  ■ |  ■ |  ■ | BuildingPartを作成する場合は必須とする。 +
+.4+| bldg:ClosureSurface | |  |  |  ■ |  ■ ^|  ■ | BuildingPartを作成する場合は必須とする。 +
 LOD4において、内壁面等はないが、建築確認申請では部屋となっている空間を区切る場合は必須とする。
-| lod2MultiSurface |  | |  ■ | | .3+<| bldg:ClosureSurfaceを作る場合は必須とする。
+| lod2MultiSurface |  | |  ■ | | .3+| bldg:ClosureSurfaceを作る場合は必須とする。
 | lod3MultiSurface |  | | |  ■ |
 | lod4MultiSurface | |  | | |  ■
-.2+| bldg:InteriorWallSurface | |  |  |  |  |  ● |
+.2+| bldg:InteriorWallSurface | |  |  |  |  ^|  ● |
 | lod4MultiSurface |  | | | |  ● |
-.2+| bldg:CeilingSurface | |  |  |  |  |  ● |
+.2+| bldg:CeilingSurface | |  |  |  |  ^|  ● |
 | lod4MultiSurface |  | | | |  ● |
-.2+| bldg:FloorSurface | |  |  |  |  |  ● |
+.2+| bldg:FloorSurface | |  |  |  |  ^|  ● |
 | lod4MultiSurface |  | | | |  ● |
-.3+| bldg:Door | |  |  |  |  ● |  ● |
+.3+| bldg:Door | |  |  |  |  ● ^|  ● |
 | lod3MultiSurface |  | | |  ● |  |
 | lod4MultiSurface |  | | | |  ● |
-.3+| bldg:Window | |  |  |  |  ● |  ● |
+.3+| bldg:Window | |  |  |  |  ● ^|  ● |
 | lod3MultiSurface |  | | |  ● |  |
 | lod4MultiSurface |  | | | |  ● |
 .4+| bldg:BuildingInstallation | |  |  |  |  |  |
 | lod2Geometry |  | |  | | |
 | lod3Geometry |  | | |  | |
 | lod4Geometry |  | | | |  |
-.2+| bldg:IntBuildingInstallation | |  |  |  |  |  ■ | LOD4.1及び 4.2では必須とする。
-| lod4Geometry |  | | | |  ■ <| MultiSufaceを使用することを基本とする。
-.2+| bldg:BuildingFurniture | |  |  |  |  |  ■ | LOD4.2では必須とする。
-| lod4Geometry |  | | | |  ■ <| bldg:BuildingFurnitureを作成する場合は必須とする。 +
+.2+| bldg:IntBuildingInstallation | |  |  |  |  ^|  ■ | LOD4.1及び 4.2では必須とする。
+| lod4Geometry |  | | | |  ■ | MultiSufaceを使用することを基本とする。
+.2+| bldg:BuildingFurniture | |  |  |  |  ^|  ■ | LOD4.2では必須とする。
+| lod4Geometry |  | | | |  ■ | bldg:BuildingFurnitureを作成する場合は必須とする。 +
 MultiSufaceを使用することを基本とする。
 
 |===
