@@ -4,24 +4,18 @@
 
 ==== その他の構造物モデル
 
-その他の構造物とは、構造物のうち、建築物、橋梁及びトンネルを除く土木構造物をいう。「構造物」とは、「目的とする機能を持ち、作用に対して抵抗することを意図として人為的に構築されるもの」（土木・建築にかかる設計の基本、国土交通省）であり、ダム、堤防、床止め、堰（せき）、水門・閘門・陸閘、樋門・樋管、伏せ越し、水制、護岸、防波堤その他の土木構造物を指す。
-
-その他の構造物の記述には、i-URのUrban Objectモジュールに定義された、uro:OtherConstructionを使用する。uro:OtherConstructionは、CityGML 3.0において新たに追加されたモジュールである構造物（Construction）モジュールの地物型であるcon:OtherConstructionを、CityGML 2.0においても使えるように、i-URにおいて拡張した地物型である。
-
-標準製品仕様書では、その他の構造物の表現に必要な地物型等をi-URから抽出し、LODごとに、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を定めた「その他の構造物モデル」を定義する。
-
+その他の構造物とは、構造物のうち、建築物、橋梁及びトンネルを除く土木構造物をいう。「構造物」とは、「目的とする機能を持ち、作用に対して抵抗することを意図として人為的に構築されるもの」（土木・建築にかかる設計の基本、国土交通省）であり、ダム、堤防、床止め、堰（せき）、水門・閘門・陸閘、樋門・樋管、伏せ越し、水制、護岸、防波堤その他の土木構造物を指す。 +
+その他の構造物の記述には、i-URのUrban Objectモジュールに定義された、uro:OtherConstructionを使用する。uro:OtherConstructionは、CityGML 3.0において新たに追加されたモジュールである構造物（Construction）モジュールの地物型であるcon:OtherConstructionを、CityGML 2.0においても使えるように、i-URにおいて拡張した地物型である。 +
+標準製品仕様書では、その他の構造物の表現に必要な地物型等をi-URから抽出し、LODごとに、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を定めた「その他の構造物モデル」を定義する。 +
 その他の構造物モデルのLODは、LOD0からLOD3までを対象とする。
 
 [[tab-N-1]]
 .その他の構造物モデルの概要
 image::images/393.webp.png[]
 
-LOD0は、その他の構造物の形状を、「公共測量標準図式」に従い、点、線又は面により表現する。
-
-LOD1は、その他の構造物の上方からの正射影の外周に一律の高さを与えて上向きに押し出した立体（箱モデル）である。
-
-LOD2は、航空写真等上空から取得したデータの利用を前提とした区分であり、その他の構造物の上面を詳細化する。
-
+LOD0は、その他の構造物の形状を、「公共測量標準図式」に従い、点、線又は面により表現する。 +
+LOD1は、その他の構造物の上方からの正射影の外周に一律の高さを与えて上向きに押し出した立体（箱モデル）である。 +
+LOD2は、航空写真等上空から取得したデータの利用を前提とした区分であり、その他の構造物の上面を詳細化する。 +
 LOD3は、MMSによる点群や画像等、側面から取得したデータや図面の利用を前提とした区分であり、その他構造物の側面を詳細化する。また、その他の構造物の付属物を表現できる。
 
 
@@ -39,16 +33,11 @@ subject:: 3D都市モデル
 description:: その他の構造物の記述には、指定されたLODに対応する地物型及び空間属性を使用する。
 ====
 
-その他の構造物は、橋梁（brid:Bridge）やトンネル（tun:Tunnel）と同様に、本体（uro:OtherConstruction）とその付属物（uro:ConstructionInstallation）から構成される。また、本体の外形は、境界面（uro:_BoundarySurface）に区分される。境界面はその向きや機能により、屋根面（uro:RoofSurface）、外壁面（uro:WallSurface）、底面（uro:GroundSurface）、閉鎖面（uro:ClosureSurface）、屋外床面（uro:OuterFloorSurface）及び屋外天井面（uro:OuterRoofSurface）に区分する。
-
-その他の構造物モデル（LOD0）では、uro:OtherConstructionのみを使用し、その他の構造物の形状を点、線又は面として表現する。
-
-その他の構造物モデル（LOD1）では、uro:OtherConstructionのみを使用し、その他の構造物の形状を立体として表現する。
-
-その他の構造物モデル（LOD2）では、uro:OtherConstruction を使用し、その他の構造物の形状を立体として表現するとともに、その境界面を区分する。
-
-その他の構造物モデル（LOD3）では、uro:OtherConstructionを使用し、その他の構造物の形状を立体として表現するとともに、その境界面を区分し、また、その他の構造物の付属物をuro:ConstructionInstallationにより表現できる。
-
+その他の構造物は、橋梁（brid:Bridge）やトンネル（tun:Tunnel）と同様に、本体（uro:OtherConstruction）とその付属物（uro:ConstructionInstallation）から構成される。また、本体の外形は、境界面（uro:_BoundarySurface）に区分される。境界面はその向きや機能により、屋根面（uro:RoofSurface）、外壁面（uro:WallSurface）、底面（uro:GroundSurface）、閉鎖面（uro:ClosureSurface）、屋外床面（uro:OuterFloorSurface）及び屋外天井面（uro:OuterRoofSurface）に区分する。 +
+その他の構造物モデル（LOD0）では、uro:OtherConstructionのみを使用し、その他の構造物の形状を点、線又は面として表現する。 +
+その他の構造物モデル（LOD1）では、uro:OtherConstructionのみを使用し、その他の構造物の形状を立体として表現する。 +
+その他の構造物モデル（LOD2）では、uro:OtherConstruction を使用し、その他の構造物の形状を立体として表現するとともに、その境界面を区分する。 +
+その他の構造物モデル（LOD3）では、uro:OtherConstructionを使用し、その他の構造物の形状を立体として表現するとともに、その境界面を区分し、また、その他の構造物の付属物をuro:ConstructionInstallationにより表現できる。 +
 その他の構造物の各LODにおいて使用可能な地物型と空間属性を、<<tab-N-2>>に示す。
 
 [[tab-N-2]]
@@ -58,10 +47,10 @@ description:: その他の構造物の記述には、指定されたLODに対応
 | 地物型 |  空間属性 |  LOD0 |  LOD1 |  LOD2 |  LOD3 |  適用
 
 .5+| uro:OtherConstruction | |  ● |  ● |  ● |  ● |
-| uro:lod0Geometry |  ● |  |  |  | 数値地形図（DM）の取得方法に従う。
-| uro:lod1Geometry |  |  ● |  |  | 立体となる。
-| uro:lod2Geometry |  |  |  ● |  | 立体となる。
-| uro:lod3Geometry |  |  |  |  ● | 立体となる。
+| uro:lod0Geometry ^|  ● |  |  |  <| 数値地形図（DM）の取得方法に従う。
+| uro:lod1Geometry |  |  ● |  |  <| 立体となる。
+| uro:lod2Geometry |  |  |  ● |  <| 立体となる。
+| uro:lod3Geometry |  |  |  |  ● <| 立体となる。
 .3+| uro:RoofSurface　 | |  |  |  ● |  ● | 構造物の外形を構成する面のうち、上向きの面に使用する。
 | uro:lod2MultiSurface |  |  |  ● |  .2+|
 | uro:lod3MultiSurface |  |  |  |  ●
@@ -72,13 +61,13 @@ description:: その他の構造物の記述には、指定されたLODに対応
 | uro:lod2MultiSurface |  |  |  ● |  .2+|
 | uro:lod3MultiSurface |  |  |  |  ●
 .3+| uro:ClosureSurface　 | |  |  |  ■ |  ■ | 行政界で区切る場合に必須とする。
-| uro:lod2MultiSurface |  |  |  ■ |  .2+| ClosureSurfaceを作成する場合は必須とする。
+| uro:lod2MultiSurface |  |  |  ■ |  .2+<| ClosureSurfaceを作成する場合は必須とする。
 | uro:lod3MultiSurface |  |  |  |  ■
 .3+| uro:OuterCeilingSurface　 | |  |  |  |  ○ |
-| uro:lod2MultiSurface |  |  |  |  .2+| OuterCeilingSurfaceを作成する場合は必須とする。
+| uro:lod2MultiSurface |  |  |  |  .2+<| OuterCeilingSurfaceを作成する場合は必須とする。
 | uro:lod3MultiSurface |  |  |  |  ■
 .3+| uro:OuterFloorSurface　 | |  |  |  |  ○ |
-| uro:lod2MultiSurface |  |  |  |  .2+| OuterFloorSurfaceを作成する場合は必須とする。
+| uro:lod2MultiSurface |  |  |  |  .2+<| OuterFloorSurfaceを作成する場合は必須とする。
 | uro:lod3MultiSurface |  |  |  |  ■
 .3+| uro:ConstructionlInstallation　 | |  |  |  |  ■ | LOD3.1において必須とする。
 | uro:lod2Geometry |  |  |  |  |
@@ -87,7 +76,7 @@ description:: その他の構造物の記述には、指定されたLODに対応
 |
 |
 |  ■
-| OtherConstructionInstallationを作成する場合は必須とする。
+<| OtherConstructionInstallationを作成する場合は必須とする。
 
 MultiSurfaceとする。
 
@@ -170,12 +159,11 @@ description:: その他の構造物のLOD3の形状は、その他の構造物�
 
 ==== その他の構造物の主題属性
 
-その他の構造物の主題属性には、構造物の種類を区分する属性のほか、構造物の管理者や完成年などの基本的な属性（uro:consBaseAttribute）、構造物の構造に関する属性（uro:consStructureAttribute）、構造物の位置や識別に関する属性（uro:FacilityIdAttribute）、特定の分野における施設区分に関する属性（uro:FacilityTypeAttribute）、その分野における施設管理に必要な属性（uro:cFacilityAttribute）、公共測量標準図式に従った表現に必要となる属性（uro:consDmAttribute）及び作成したデータの品質に関する属性（uro:DataQualityAttribute）がある。
+その他の構造物の主題属性には、構造物の種類を区分する属性のほか、構造物の管理者や完成年などの基本的な属性（uro:consBaseAttribute）、構造物の構造に関する属性（uro:consStructureAttribute）、構造物の位置や識別に関する属性（uro:FacilityIdAttribute）、特定の分野における施設区分に関する属性（uro:FacilityTypeAttribute）、その分野における施設管理に必要な属性（uro:FacilityAttribute）、公共測量標準図式に従った表現に必要となる属性（uro:consDmAttribute）及び作成したデータの品質に関する属性（uro:DataQualityAttribute）がある。
 
 ===== 分類（uro:class）、機能（uro:function）
 
-その他の構造物には、ダム、堤防、床止め、堰、水門・閘門・陸閘、樋門・樋管、伏せ越し、水制、護岸、防波堤その他の土木構造物が含まれるが、これらの区分は属性classにより行う。また、属性functionにより、細分できる。
-
+その他の構造物には、ダム、堤防、床止め、堰、水門・閘門・陸閘、樋門・樋管、伏せ越し、水制、護岸、防波堤その他の土木構造物が含まれるが、これらの区分は属性classにより行う。また、属性functionにより、細分できる。 +
 標準製品仕様書では、主に河川、港湾、漁港に関する構造物の区分をコードリストに用意しているが、不足する場合には、拡張製品仕様書において拡張できる。
 
 ===== 構造物基本属性（uro:consBaseAttribute）
@@ -192,20 +180,17 @@ description:: その他の構造物のLOD3の形状は、その他の構造物�
 
 ====== 施設分類属性（uro:FacilityTypeAttribute）
 
-uro:FacilityTypeAttributeは、各分野で定める施設の区分を記述するためのデータ型である。CityGMLは、地物型を物体としての性質に着目して定義し、機能や用途は属性で区分している。例えば、「その他の構造物（uro:OtherConstruction）」という地物型を定義し、uro:classにより「ダム」や「堤防」などを区分している。これにより、都市に存在する様々な地物を、分野を問わず網羅的に、かつ、矛盾が無く表現することを目指している。一方、各分野には独自の施設の区分がある。この区分は当該分野での施設管理に必要な情報であるが、CityGMLの地物型の区分とは一致しない。そこで、これらの地物型に分野独自の区分を付与するためにこのデータ型を用いる。uro:FacilityTypeAttributeは、二つの属性をもつ。uro:classは分野を特定するための属性である。またuro:functionは、uro:classにより特定した分野における施設の区分を示す。
-
+uro:FacilityTypeAttributeは、各分野で定める施設の区分を記述するためのデータ型である。CityGMLは、地物型を物体としての性質に着目して定義し、機能や用途は属性で区分している。例えば、「その他の構造物（uro:OtherConstruction）」という地物型を定義し、uro:classにより「ダム」や「堤防」などを区分している。これにより、都市に存在する様々な地物を、分野を問わず網羅的に、かつ、矛盾が無く表現することを目指している。一方、各分野には独自の施設の区分がある。この区分は当該分野での施設管理に必要な情報であるが、CityGMLの地物型の区分とは一致しない。そこで、これらの地物型に分野独自の区分を付与するためにこのデータ型を用いる。uro:FacilityTypeAttributeは、二つの属性をもつ。uro:classは分野を特定するための属性である。またuro:functionは、uro:classにより特定した分野における施設の区分を示す。 +
 標準製品仕様書では、港湾施設、漁港施設及び公園施設については標準製品仕様書においてuro:functionの区分が示されている。その他の区分についてはuro:classへの分野の追加も含め、拡張製品仕様書において拡張できる。
 
 ====== 施設識別属性（uro:FacilityIdAttribute）
 
-uro:FacilityIdAttributeは、施設の位置を特定する情報及び施設を識別する情報を記述するためのデータ型である。uro:FacilityIdAttributeは、施設を識別するための情報として、識別子（uro:id）や正式な名称以外の呼称（uro:alternativeName）に加え、施設の位置を示すための、都道府県（uro:prefecture）、市区町村（uro:city）及び開始位置の経緯度（uro:startLat、uro:startLong）を属性としてもつ。また、鉄道上や道路上の施設については、路線や距離標での位置特定のための属性（uro:route、uro:startPost、uro:endPost）を使用できる。
-
+uro:FacilityIdAttributeは、施設の位置を特定する情報及び施設を識別する情報を記述するためのデータ型である。uro:FacilityIdAttributeは、施設を識別するための情報として、識別子（uro:id）や正式な名称以外の呼称（uro:alternativeName）に加え、施設の位置を示すための、都道府県（uro:prefecture）、市区町村（uro:city）及び開始位置の経緯度（uro:startLat、uro:startLong）を属性としてもつ。また、鉄道上や道路上の施設については、路線や距離標での位置特定のための属性（uro:route、uro:startPost、uro:endPost）を使用できる。 +
 なお、河川管理施設の場合は、uro:FacilityIdAttributeを継承するuro:RiverFacilityIdAttributeを使用する。これにより、左右岸上での位置の情報を記述できる。
 
 ====== 施設詳細属性（uro:FacilityAttribute）
 
-uro:FacilityAttributeは、各分野において施設管理に必要となる情報を記述するためのデータ型である。uro:FacilityAttributeは、抽象クラスであり、これを継承する具象となるデータ型に、施設の区分毎に必要となる情報を属性として定義している。
-
+uro:FacilityAttributeは、各分野において施設管理に必要となる情報を記述するためのデータ型である。uro:FacilityAttributeは、抽象クラスであり、これを継承する具象となるデータ型に、施設の区分毎に必要となる情報を属性として定義している。 +
 標準製品仕様書では、港湾施設、漁港施設及び公園施設について、細分した施設の区分ごとにデータ型を定義している。また、施設に関する工事や点検の状況や内容を記述するためのデータ型（uro:MaintenanceHistoryAttribute）を定義している。
 
 ===== 数値地形図属性（uro:consDmAttribute）
@@ -214,13 +199,9 @@ uro:FacilityAttributeは、各分野において施設管理に必要となる�
 
 ===== 品質属性（uro:DataQualityAttribute）
 
-その他の構造物オブジェクトの作成に使用した原典資料の記録や、適用した詳細なLODの区分を示すための属性である。
-
-使用した原典資料やそれに基づくデータの品質、また、採用したLODは、データセットのメタデータに記録できる。ただし、データセット全体に対して一つのメタデータを作成することが基本となり、個々の都市オブジェクトの品質を記録することは困難である。
-
-同じデータセットの中に、航空写真測量により作成したその他の構造物オブジェクトや完成図等から作成したその他の構造物オブジェクトというように、複数の品質をもつ都市オブジェクトが混在している場合には、都市オブジェクトごとにこの構造物品質属性を使用して、品質情報を記録することで、その品質を明確にできる。
-
-そこで、標準製品仕様書では、個々のデータに対してデータ品質に関する情報を記述するための属性として、「データ品質属性」（uro:DataQualityAttribute）を定義している。データ品質属性は、属性としてデータ作成に使用した原典資料の地図情報レベル、その他原典資料の諸元及び精緻化したLODをもつ。
-
+その他の構造物オブジェクトの作成に使用した原典資料の記録や、適用した詳細なLODの区分を示すための属性である。 +
+使用した原典資料やそれに基づくデータの品質、また、採用したLODは、データセットのメタデータに記録できる。ただし、データセット全体に対して一つのメタデータを作成することが基本となり、個々の都市オブジェクトの品質を記録することは困難である。 +
+同じデータセットの中に、航空写真測量により作成したその他の構造物オブジェクトや完成図等から作成したその他の構造物オブジェクトというように、複数の品質をもつ都市オブジェクトが混在している場合には、都市オブジェクトごとにこの構造物品質属性を使用して、品質情報を記録することで、その品質を明確にできる。 +
+そこで、標準製品仕様書では、個々のデータに対してデータ品質に関する情報を記述するための属性として、「データ品質属性」（uro:DataQualityAttribute）を定義している。データ品質属性は、属性としてデータ作成に使用した原典資料の地図情報レベル、その他原典資料の諸元及び精緻化したLODをもつ。 +
 3D都市モデルに含まれる全てのその他の構造物オブジェクトは、このデータ品質属性を必ず作成しなければならない。ただし、その他の構造物（uro:OtherConstruction）に対してデータ品質属性を付与することはできるが、これを構成する屋根面や外壁面（uro:_BoundarySurfaceの下位クラス）にデータ品質属性を付与することはできない。
 

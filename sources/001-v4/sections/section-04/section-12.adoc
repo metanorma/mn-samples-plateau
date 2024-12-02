@@ -1,16 +1,11 @@
 [[toc4_12]]
 === トンネルモデルの応用スキーマ
 
-トンネルとは、上方を含め周辺が地山や他の構造物で覆われている、交通、輸送等に供する構造物である。[道路基盤地図情報（整備促進版） 製品仕様書 （案）]
-
-標準製品仕様書では、その設置の形態から、ボックスカルバート、シェッド、シェルター及び地下横断歩道もトンネルに含める。
-
-ボックスカルバート：他の道路等の下方を横断するため、その盛土の中を横断する形で設置される箱状の構造物。[道路基盤地図情報（整備促進版） 製品仕様書 （案）]
-
-シェッド：落石及び雪崩等を道路外に直接落下させる、又は道路を越えて転進させるため、鋼材やコンクリート材等で道路上を覆う構造物。[道路基盤地図情報（整備促進版） 製品仕様書 （案）]
-
-シェルター：アーチ型又は門型で、道路を完全に覆ったトンネル状の構造物。[道路基盤地図情報（整備促進版） 製品仕様書 （案）]
-
+トンネルとは、上方を含め周辺が地山や他の構造物で覆われている、交通、輸送等に供する構造物である。[道路基盤地図情報（整備促進版） 製品仕様書 （案）] +
+標準製品仕様書では、その設置の形態から、ボックスカルバート、シェッド、シェルター及び地下横断歩道もトンネルに含める。 +
+ボックスカルバート：他の道路等の下方を横断するため、その盛土の中を横断する形で設置される箱状の構造物。[道路基盤地図情報（整備促進版） 製品仕様書 （案）] +
+シェッド：落石及び雪崩等を道路外に直接落下させる、又は道路を越えて転進させるため、鋼材やコンクリート材等で道路上を覆う構造物。[道路基盤地図情報（整備促進版） 製品仕様書 （案）] +
+シェルター：アーチ型又は門型で、道路を完全に覆ったトンネル状の構造物。[道路基盤地図情報（整備促進版） 製品仕様書 （案）] +
 地下横断歩道：人、自転車等が道路又は鉄道を横断するために構築された地下道。「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」
 
 [[toc4_12_01]]
@@ -23,8 +18,7 @@
 
 ====== トンネルモデル（LOD0）の概要
 
-トンネルモデル（LOD0）では、トンネルの形状を、点、線、又は面により表現する。
-
+トンネルモデル（LOD0）では、トンネルの形状を、点、線、又は面により表現する。 +
 トンネルモデル（LOD0）の取得イメージを<<tab-4-69>>に示す。
 
 [[tab-4-69]]
@@ -69,7 +63,7 @@ h| 説明 | 中央位置の点と方向を取得する。
 | 地下横断歩道は取得しない。
 
 .3+|
-| MultiCurve
+<| MultiCurve
 | トンネル footnoteblock:[fn_tunnel_2]
 |
 * 坑口部分の外周を取得する。
@@ -112,8 +106,7 @@ h| 説明 | 中央位置の点と方向を取得する。
 
 ====== トンネルモデル（LOD1）の概要
 
-トンネルモデル（LOD1）では、トンネルの形状を、立体により表現する。
-
+トンネルモデル（LOD1）では、トンネルの形状を、立体により表現する。 +
 トンネルモデル（LOD1）の取得イメージを<<tab-4-70>>に示す。
 
 [[tab-4-70]]
@@ -128,20 +121,14 @@ image::images/257.webp.png[]
 image::images/258.webp.png[]
 
 h| 説明 
-| トンネルの場合は、トンネルの坑口を含めた外周に一律の高さで上向きに押し出した立体として表現する。
-
-一律の高さは、トンネルの最も低い高さから最も高い高さまでとする。
-
-トンネル内部が傾斜している場合は、その標高差によりトンネルの形状が実際の形状と乖離する。
-
+| トンネルの場合は、トンネルの坑口を含めた外周に一律の高さで上向きに押し出した立体として表現する。 +
+一律の高さは、トンネルの最も低い高さから最も高い高さまでとする。 +
+トンネル内部が傾斜している場合は、その標高差によりトンネルの形状が実際の形状と乖離する。 +
 そのため、ユースケースの必要に応じて、トンネルをTunnelPartに区切り、区切った区間ごとに一律の高さを押し出すことで、より実際に近い形状で表現できる。
 |
-地下横断歩道の場合は、地下横断歩道の外周に、路面の高さから一律の高さ（設計図や竣工図に示された構造物の深さ）で下向きに押し出した立体として表現する。
-
-地下横断歩道内部が傾斜している場合は、その標高差により地下横断歩道の形状が実際の形状と乖離する。
-
-そのため、ユースケースの必要に応じて、地下横断歩道をTunnelPartに区切り、区切った区間ごとに一律の高さを押し出すことで、より実際に近い形状で表現できる。
-
+地下横断歩道の場合は、地下横断歩道の外周に、路面の高さから一律の高さ（設計図や竣工図に示された構造物の深さ）で下向きに押し出した立体として表現する。 +
+地下横断歩道内部が傾斜している場合は、その標高差により地下横断歩道の形状が実際の形状と乖離する。 +
+そのため、ユースケースの必要に応じて、地下横断歩道をTunnelPartに区切り、区切った区間ごとに一律の高さを押し出すことで、より実際に近い形状で表現できる。 +
 なお、地下横断歩道の出入口に、防風・雨・雪及び採光を目的として設けられた建屋は、都市設備（frn:CityFurniture）として取得する。
 
 |===
@@ -168,14 +155,14 @@ h| 説明
 * トンネルの入口となる坑口と、出口となる坑口に標高差がある場合は、トンネルの高さに、標高差が加わった高さで押し出すことになる。
 
 | 延長5m以上の道路の雪覆い等
-|
+<|
 * 上方からの正射影の外周を取得する。
 * 外周を地表面から一律の高さで上向きに押し出した立体を作成する。
 |
 * 一律の高さは、雪覆いの最も低い高さから最も高い高さまでの差分とする。
 
 | 地下横断歩道
-|
+<|
 * 上方からの正射影の外周を取得しする。
 * 外周を地表面から一律の高さで下向きに押し出した立体を作成する。
 |
@@ -206,8 +193,7 @@ h| 説明
 
 ====== トンネルモデル（LOD2）の概要
 
-トンネルモデル（LOD2）では、トンネルの形状を、立体により表現し、立体を構成する各境界面を地物として取得する。
-
+トンネルモデル（LOD2）では、トンネルの形状を、立体により表現し、立体を構成する各境界面を地物として取得する。 +
 トンネルモデル（LOD2）の取得イメージを<<tab-4-71>>に示す。
 
 [[tab-4-71]]
@@ -223,8 +209,7 @@ image::images/260.webp.png[]
 
 h| 説明 | トンネルの外形を立体として表現し、立体の各境界面を、屋根や外壁に区分する。トンネルの外形には坑口を含む。
 |
-地下横断歩道の外形を立体として取得し、立体の各境界面を、屋根や外壁に区分する。
-
+地下横断歩道の外形を立体として取得し、立体の各境界面を、屋根や外壁に区分する。 +
 地下横断歩道の出入口に設けられた建屋は、都市設備（CityFurniture）として取得する。
 
 |===
@@ -300,8 +285,7 @@ image::images/261.webp.png[]
 
 ====== トンネルモデル（LOD3）の概要
 
-トンネルモデル（LOD3）では、トンネルの形状を、立体により表現し、立体を構成する各境界面を地物として取得するとともに、トンネルの開口部やトンネルの外側に付いている付属物を地物として取得する。
-
+トンネルモデル（LOD3）では、トンネルの形状を、立体により表現し、立体を構成する各境界面を地物として取得するとともに、トンネルの開口部やトンネルの外側に付いている付属物を地物として取得する。 +
 トンネルモデル（LOD3）の取得イメージを<<tab-4-72>>に示す。
 
 [[tab-4-72]]
@@ -315,12 +299,10 @@ image::images/262.webp.png[]
 |
 image::images/263.webp.png[]
 
-h| 説明 | トンネルの外形を立体として表現し、立体の各境界面を、屋根、外壁及び開口部に区分する。
-
+h| 説明 | トンネルの外形を立体として表現し、立体の各境界面を、屋根、外壁及び開口部に区分する。 +
 さらにトンネルの外側に付いている付属物として、坑門や連絡坑を取得する。
 |
-地下横断歩道の外形を立体として取得し、立体の各境界面を、屋根や外壁に区分する。
-
+地下横断歩道の外形を立体として取得し、立体の各境界面を、屋根や外壁に区分する。 +
 地下横断歩道の出入口に設けられた建屋は、都市設備（CityFurniture）として取得する。
 
 |===
@@ -422,40 +404,40 @@ h| 説明 | トンネルの外形を立体として表現し、立体の各境�
 標準製品仕様書では原則としてLOD4.0を採用する。ただし、ユースケースの必要に応じてLOD4.1又はLOD4.2を採用できる。
 
 [[tab-4-73]]
-[cols="a,a,a,a,a"]
+[cols="3a,3a,2a,2a,2a"]
 .LOD4.0, LOD4.1, LOD4.2及びLOD4.3の区分
 |===
 | トンネルモデル（LOD4）に含むべき地物 | 対応するCityGMLの地物型 | LOD4.0 | LOD4.1 | LOD4.3
 
-| トンネル | Tunnel |  ● |  ● |  ●
-| 屋根面 | RoofSurface |  ■ |  ■ |  ■
-| 底面 | GroundSurface |  ■ |  ■ |  ■
-| 外壁面 | WallSurface |  ● |  ● |  ●
-| 閉鎖面 | ClosureSurface |  ● |  ● |  ●
-| トンネル部分 | TunnelPart |  ■ |  ■ |  ■
+| トンネル | Tunnel | ● | ● | ●
+| 屋根面 | RoofSurface | ■ | ■ | ■
+| 底面 | GroundSurface | ■ | ■ | ■
+| 外壁面 | WallSurface | ● | ● | ●
+| 閉鎖面 | ClosureSurface | ● | ● | ●
+| トンネル部分 | TunnelPart | ■ | ■ | ■
 | 屋外床面 | OuterFloorSurface | | |
 | 屋外天井面 | OuterCeilingSurface | | |
-| 扉 | Door |  ● |  ● |  ●
-| 窓 | Window |  ● |  ● |  ●
-| トンネル外部付属物 | TunnelInstallation |  ● |  ● |  ●
-| 内空 | HollowSpace |  ● |  ● |  ●
-| 天井面 | CeilingSurface |  ■ |  ■ |  ■
-| 内壁面 | InteriorWallSurface |  ● |  ● |  ●
-| 床面 | FloorSurface |  ■ |  ■ |  ■
+| 扉 | Door | ● | ● | ●
+| 窓 | Window | ● | ● | ●
+| トンネル外部付属物 | TunnelInstallation | ● | ● |  ●
+| 内空 | HollowSpace | ● | ● | ●
+| 天井面 | CeilingSurface | ■ | ■ | ■
+| 内壁面 | InteriorWallSurface | ● | ● | ●
+| 床面 | FloorSurface | ■ | ■ | ■
 | トンネル内部付属物
 | IntTunnelInstallation
 |
-|  ● +
+| ● +
 短辺の実長が3m以上又は +
 短辺の実長1m以上かつ面積3m2以上
-|  ● +
+| ● +
 全ての屋内付属物
 
 | 可動設備
 | TunnelFurniture
 |
 |
-|  〇 +
+| 〇 +
 全ての可動設備
 
 |===
@@ -476,10 +458,8 @@ LOD4.0、LOD4.1、LOD4.2及びLOD4.3それぞれの取得イメージを<<tab-4-
 h| LOD4.0
 |
 image::images/264.webp.png[]
-| LOD3.0の外形に加え、トンネル内部（内空）を再現する。
-
-内空の境界面を床（FloorSurface）、内壁面（InteriorWallSurface）又は天井面（CeilingSurface）に区分する。また、内壁等に扉や窓がある場合に区分する。
-
+| LOD3.0の外形に加え、トンネル内部（内空）を再現する。 +
+内空の境界面を床（FloorSurface）、内壁面（InteriorWallSurface）又は天井面（CeilingSurface）に区分する。また、内壁等に扉や窓がある場合に区分する。 +
 トンネル内部の付属物は取得しない。
 
 h| LOD4.1
@@ -601,7 +581,7 @@ Solidを原則とする。BIMモデルから作成する場合はMultiSurfaceと
 
 トンネルモデル（LOD4.1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="2a,a,2a,2a,4a,4a,6a"]
+[cols="1a,^1a,1a,1a,1a,3a,2a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -689,7 +669,8 @@ Solidを原則とする。BIMモデルから作成する場合はMultiSurfaceと
 | ●
 | IntTunnelInstallation
 | MultiSurface
-| 短辺が実長3m以上又は +
+| 短辺が実長3m以上 +
+又は +
 短辺が実長1m以上かつ横断又は縦断の面積が3m2以上
 |
 * 屋内付属物の外形（外側から見える形）を構成する面を取得する。
@@ -709,7 +690,7 @@ Solidを原則とする。BIMモデルから作成する場合はMultiSurfaceと
 
 トンネルモデル（LOD4.2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="2a,a,2a,2a,4a,4a,6a"]
+[cols="1a,^1a,1a,1a,1a,3a,2a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -789,7 +770,7 @@ Solidを原則とする。BIMモデルから作成する場合はMultiSurfaceと
 水路トンネルの場合は床面（FloorSurface）ではなく、内壁面（InteriorWallSurface）として取得する。
 | LOD4.2
 | ●
-| IntTunnelInstallation
+<| IntTunnelInstallation
 | MultiSurface
 | 全ての固定設備
 |
@@ -822,48 +803,41 @@ Solidを原則とする。BIMモデルから作成する場合はMultiSurfaceと
 トンネルモデルの各LODにおいて使用可能な地物型と空間属性を<<tab-4-75>>に示す。
 
 [[tab-4-75]]
-[cols="45a,45a,13a,13a,13a,13a,13a,45a"]
+[cols="5a,5a,^a,^a,^a,^a,a,6a"]
 .トンネルモデルの記述に使用する地物型と空間属性
 |===
-^h| 地物型 ^h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 ^h| LOD4 ^h| 適用
-.6+| tun:Tunnel | |  ● |  ● |  ● |  ● |  ● |
-| uro:lod0Geometry |  ● | | | | | 数値地形図の取得方法に従う。
-| tun:lod1Solid | |  ● | | | |
-| tun:lod2Solid | | |  ● | | |
-| tun:lod3Solid | | | |  ● | |
-| tun:lod4Solid | | | | |  ■ |
-| | tun:lod4MultiSurface | | | | |  ■ | Solidを原則とする。BIMから作成する場合はMultiSurfaceとする。
-.5+| tun:TunnelPart 
-|
-|
-|  ■
-|  ■
-|  ■
-|  ■
-|
+h| 地物型 h| 空間属性 h| LOD0 h| LOD1 h| LOD2 h| LOD3 h| LOD4 h| 適用
+.7+| tun:Tunnel | | ● | ● | ● | ● ^| ● |
+| uro:lod0Geometry ^| ● | | | | | 数値地形図の取得方法に従う。
+| tun:lod1Solid | | ● | | | |
+| tun:lod2Solid | | | ● | | |
+| tun:lod3Solid | | | | ● | |
+| tun:lod4Solid | | | | | ■ |
+| tun:lod4MultiSurface | | | | | ■ | Solidを原則とする。BIMから作成する場合はMultiSurfaceとする。
+.5+| tun:TunnelPart | | | ■ | ■ | ■ ^| ■|
 * LOD1において、より実際の形状に近い表現を行う場合に必須とする。
 * LOD2以上において、多連形のトンネルを一つのTunnelとして表現する場合に必須とする。
 * LOD2以上において、一つのトンネルを、属性の異なる複数の部分に分ける場合に必須とする。
-| tun:lod1Solid | |  ■ | | | |
-| tun:lod2Solid | | |  ■ | | .3+| tun:TunnelPartを使用する場合は必須とする。
-| tun:lod3Solid | | | |  ■ |
-| tun:lod4Solid | | | | |  ■
-.4+| tun:TunnelInstallation | | | | |  ● |  ● |
+| tun:lod1Solid | | ■ | | | |
+| tun:lod2Solid | | | ■ | | .3+| tun:TunnelPartを使用する場合は必須とする。
+| tun:lod3Solid | | | | ■ |
+| tun:lod4Solid | | | | | ■
+.4+| tun:TunnelInstallation | | | | | ● ^| ● |
 | tun:lod2Geometry | | | | | |
-| tun:lod3Geometry | | | |  ● | | MultiSurfaceとする。
-| tun:lod4Geometry | | | | |  ● | MultiSurfaceとする。
-.4+| tun:RoofSurface | | | |  ■ |  ■ |  ■ | トンネルの外形を構成する面のうち、上向きの面に使用する。
-| tun:lod2MultiSurface | | |  ■ | | .3+| tun:RoofSurfaceを作る場合は必須とする。
-| tun:lod3MultiSurface | | | |  ■ |
-| tun:lod4MultiSurface | | | | |  ■
-.4+| tun:WallSurface | | | |  ● |  ● |  ● | トンネルの外形を構成する面のうち、側方の面に使用する。
-| tun:lod2MultiSurface | | |  ● | | .3+|
-| tun:lod3MultiSurface | | | |  ● |
-| tun:lod4MultiSurface | | | | |  ●
-.4+| tun:GroundSurface | | | |  ■ |  ■ |  ■ | トンネルの外形を構成する面のうち、下向きの面に使用する。
-| tun:lod2MultiSurface | | |  ■ | | .3+| tun:GroundSurfaceを作る場合は必須とする。
-| tun:lod3MultiSurface | | | |  ■ |
-| tun:lod4MultiSurface | | | | |  ■
+| tun:lod3Geometry | | | | ● | | MultiSurfaceとする。
+| tun:lod4Geometry | | | | | ● | MultiSurfaceとする。
+.4+| tun:RoofSurface | | | | ■ | ■ ^| ■ | トンネルの外形を構成する面のうち、上向きの面に使用する。
+| tun:lod2MultiSurface | | | ■ | | .3+| tun:RoofSurfaceを作る場合は必須とする。
+| tun:lod3MultiSurface | | | | ■ |
+| tun:lod4MultiSurface | | | | | ■
+.4+| tun:WallSurface | | | | ● | ● ^| ● | トンネルの外形を構成する面のうち、側方の面に使用する。
+| tun:lod2MultiSurface | | | ● | | .3+|
+| tun:lod3MultiSurface | | | | ● |
+| tun:lod4MultiSurface | | | | | ●
+.4+| tun:GroundSurface | | | | ■ | ■ ^| ■ | トンネルの外形を構成する面のうち、下向きの面に使用する。
+| tun:lod2MultiSurface | | | ■ | | .3+| tun:GroundSurfaceを作る場合は必須とする。
+| tun:lod3MultiSurface | | | | ■ |
+| tun:lod4MultiSurface | | | | | ■
 .4+| tun:OuterFloorSurface | | | | | | | 標準製品仕様書では使用しない。
 | tun:lod2MultiSurface | | | | | .3+|
 | tun:lod3MultiSurface | | | | |
@@ -872,28 +846,28 @@ Solidを原則とする。BIMモデルから作成する場合はMultiSurfaceと
 | tun:lod2MultiSurface | | | | | .3+|
 | tun:lod3MultiSurface | | | | |
 | tun:lod4MultiSurface | | | | |
-.4+| tun:ClosureSurface | | | | |  ● |  ● | 出入口をtun:ClosureSurfaceとして表現する。
+.4+| tun:ClosureSurface | | | | | ● ^| ● | 出入口をtun:ClosureSurfaceとして表現する。
 | tun:lod2MultiSurface | | | | | .3+|
-| tun:lod3MultiSurface | | | |  ● |
-| tun:lod4MultiSurface | | | | |  ●
-.2+| tun:InteriorWallSurface | | | | | |  ● |
-| tun:lod4MultiSurface | | | | |  ● |
-.2+| tun:CeilingSurface | | | | | |  ■ |
-| tun:lod4MultiSurface | | | | |  ● |
-.2+| tun:FloorSurface | | | | | |  ■ |
-| tun:lod4MultiSurface | | | | |  ● |
-.3+| tun:Door | | | | |  ● |  ● |
-| tun:lod3MultiSurface | | | |  ● | |
-| tun:lod4MultiSurface | | | | |  ● |
-.3+| tun:Window | | | | |  ● |  ● |
-| tun:lod3MultiSurface | | | |  ● | |
-| tun:lod4MultiSurface | | | | |  ● |
-.2+| tun:HollowSpace | | | | | |  ● |
-| tun:lod4Solid | | | | |  ● |
-.2+| tun:IntTunnelnstallation | | | | | |  ■ | LOD4.1及びLOD4.2では必須とする。
-| tun:lod4Geometry | | | | |  ● | MultiSurfaceとする。
-.2+| tun:TunnelFurniture | | | | | |  ■ | LOD4.2では必須とする。
-| tun:lod4Geometry | | | | |  ● | MultiSurfaceとする。
+| tun:lod3MultiSurface | | | | ● |
+| tun:lod4MultiSurface | | | | | ●
+.2+| tun:InteriorWallSurface | | | | | ^| ● |
+| tun:lod4MultiSurface | | | | | ● |
+.2+| tun:CeilingSurface | | | | | ^| ■ |
+| tun:lod4MultiSurface | | | | | ● |
+.2+| tun:FloorSurface | | | | | ^| ■ |
+| tun:lod4MultiSurface | | | | | ● |
+.3+| tun:Door | | | | | ● ^| ● |
+| tun:lod3MultiSurface | | | | ● | |
+| tun:lod4MultiSurface | | | | | ● |
+.3+| tun:Window | | | | | ● ^| ● |
+| tun:lod3MultiSurface | | | | ● | |
+| tun:lod4MultiSurface | | | | | ● |
+.2+| tun:HollowSpace | | | | | ^| ● |
+| tun:lod4Solid | | | | | ● |
+.2+| tun:IntTunnelnstallation | | | | | ^| ■ | LOD4.1及びLOD4.2では必須とする。
+| tun:lod4Geometry | | | | | ● | MultiSurfaceとする。
+.2+| tun:TunnelFurniture | | | | | ^| ■ | LOD4.2では必須とする。
+| tun:lod4Geometry | | | | | ● | MultiSurfaceとする。
 
 |===
 
@@ -1752,7 +1726,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 | uro:area | gml:MeatureType [0..1] | トンネルの面積。単位はm2とする。
 | uro:innerHeight | gml:LengthType [0..1] | トンネルの内空高。単位はmとする。
 | uro:effectiveHeight | gml:LengthType [0..1] | トンネルの有効高。単位はmとする。
-| uro:slopeType | gml:CodeType [0..1] | トンネルが地下横断歩道場合の、昇降形式。コードリスト（ConstructionStructureAttribute_slopeType.xml）より選択する。
+| uro:slopeType | gml:CodeType [0..1] | トンネルが地下横断歩道である場合の、昇降形式。コードリスト（ConstructionStructureAttribute_slopeType.xml）より選択する。
 
 |===
 
