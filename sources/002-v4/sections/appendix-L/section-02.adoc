@@ -3,8 +3,7 @@
 
 ==== 橋梁モデル
 
-橋梁とは、道路、鉄道、水路等の輸送路において、輸送の障害となる河川、渓谷、湖沼、海峡あるいは他の道路、鉄道、水路等の上方にこれらを横断するために建設される構造物の総称である。市街地において効率的な土地利用の観点から、道路上あるいは河川上の空間に連続して建設される高架橋も橋梁の一形態である。[土木工学ハンドブック]
-
+橋梁とは、道路、鉄道、水路等の輸送路において、輸送の障害となる河川、渓谷、湖沼、海峡あるいは他の道路、鉄道、水路等の上方にこれらを横断するために建設される構造物の総称である。市街地において効率的な土地利用の観点から、道路上あるいは河川上の空間に連続して建設される高架橋も橋梁の一形態である。[土木工学ハンドブック] +
 標準製品仕様書では以下を対象とする。
 
 * 道路法（昭和27年法律第180号）第２条第１項に規定する「橋」。橋長２.０m以上を対象とし、高架橋及び桟道橋を含む [参考 中部地方整備局　道路施設台帳作成マニュアル]。
@@ -15,24 +14,18 @@
 
 * 道路法第30条第1項第10号に定める「横断歩道橋」。
 
-また、標準製品仕様書では、建築基準法第44条第1項第4号において示された公共用歩廊で、道路上に設けられた高架の歩行者専用道路（ペデストリアンデッキ、スカイウェイ、スカイウォークなどと呼ばれる）を含む。
-
-標準製品仕様書では、橋梁の表現に必要な地物型等をCityGML及びi-URから抽出し、LODごとに、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を定めた「橋梁モデル」を定義する。
-
+また、標準製品仕様書では、建築基準法第44条第1項第4号において示された公共用歩廊で、道路上に設けられた高架の歩行者専用道路（ペデストリアンデッキ、スカイウェイ、スカイウォークなどと呼ばれる）を含む。 +
+標準製品仕様書では、橋梁の表現に必要な地物型等をCityGML及びi-URから抽出し、LODごとに、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を定めた「橋梁モデル」を定義する。 +
 橋梁モデルのLODは、LOD0からLOD4までを対象とする。
 
 [[tab-L-1]]
 .橋梁モデルの概要
 image::images/303.webp.png[]
 
-橋梁モデル（LOD0）は、橋梁の形状を、「公共測量標準図式」に従い、線又は面により表現する。
-
-橋梁モデル（LOD1）は、LOD0の面に一律の高さを与えて押し出した立体（箱モデル）により表現する。
-
-橋梁モデル（LOD2）では、橋梁の形状を、主要な部分を簡略化した面の集まり又は立体として表現する。主要な部分とは、道路橋、鉄道橋及び桟道橋の場合は、主桁と床版とする。それ以外の橋梁の場合は、上部工（床版及び主桁）、階段、及び踊り場とする。この主要な部分を構成する立体の境界面又は面の集まりに含まれる各面は、屋根面や外壁面といった面に区分される。また、構造上重要な部材（例：トラス、パイロン）及び付属的な部材（例：高欄、手すり）を任意で表現できる。
-
-橋梁モデル（LOD3）では、橋梁モデル（LOD2）では任意であった構造上重要な部材や付属品を必須として表現するほか、橋梁と一体となった建屋が存在した場合に、その開口部を表現できる。
-
+橋梁モデル（LOD0）は、橋梁の形状を、「公共測量標準図式」に従い、線又は面により表現する。 +
+橋梁モデル（LOD1）は、LOD0の面に一律の高さを与えて押し出した立体（箱モデル）により表現する。 +
+橋梁モデル（LOD2）では、橋梁の形状を、主要な部分を簡略化した面の集まり又は立体として表現する。主要な部分とは、道路橋、鉄道橋及び桟道橋の場合は、主桁と床版とする。それ以外の橋梁の場合は、上部工（床版及び主桁）、階段、及び踊り場とする。この主要な部分を構成する立体の境界面又は面の集まりに含まれる各面は、屋根面や外壁面といった面に区分される。また、構造上重要な部材（例：トラス、パイロン）及び付属的な部材（例：高欄、手すり）を任意で表現できる。 +
+橋梁モデル（LOD3）では、橋梁モデル（LOD2）では任意であった構造上重要な部材や付属品を必須として表現するほか、橋梁と一体となった建屋が存在した場合に、その開口部を表現できる。 +
 橋梁モデル（LOD4）では、橋梁モデル（LOD3）をさらに詳細化した外形に加え、内部の空間を表現できる。
 
 
@@ -50,18 +43,12 @@ subject:: 3D都市モデル
 description:: 橋梁の記述には、指定されたLODに対応する地物型及び空間属性を使用する。
 ====
 
-橋梁は、CityGMLのBridgeモジュールに定義されたbrid:Bridgeを用いて記述する。
-
-橋梁モデル（LOD0）では、brid:Bridgeのみを使用し、橋梁の形状を線又は面として表現する。CityGMLには橋梁のLOD0の空間属性が定義されていないため、i-URにおいて拡張した属性uro:lod0Geoemtryを使用する。この空間属性は数値地形図との互換性を保つ情報を記述するためのデータ型uro:DmAttributeの一部である。
-
-橋梁モデル（LOD1）では、brid:Bridgeを使用し、橋梁の形状を立体として表現する。立体は、橋梁の外周の正射影に一律の高さを与えた箱モデルである。
-
-橋梁モデル（LOD2）において、橋梁の形状は、brid:Bridgeを使用し、主要な部分を簡略化した面の集まり又は立体として表現する。主要な部分とは、道路橋、鉄道橋及び桟道橋の場合は、主桁と床版を含む。それ以外の橋梁の場合は、上部工（床版及び主桁）、階段、及び踊り場を含む。橋梁モデル（LOD2）ではこの主要な部分を構成する立体の境界面又は面の集まりに含まれる各面を、屋根面や壁面といった面に区分する。また、トラスやパイロンといった構造上重要な部材をbrid:BridgeConstructionElement、高欄や手すりといった付属的な部材をbrid:BridgeInstallationで表現できる。
-
-橋梁モデル（LOD3）では、橋梁の形状をLOD2よりも詳細に表現する。橋梁モデル（LOD2）では任意だったbrid:BridgeConstructionElementやbrid:BridgeInstallationの表現が必須になるほか、橋梁に設けられた開口部（扉及び窓）が表現できる。
-
-橋梁モデル（LOD4）では、橋梁の詳細な外形に加え、橋梁の内部空間（brid:BridgeRoom）を表現できる。この内部空間は、橋梁と一体的に設けられた建屋があった場合に、その内部を指す。内部空間に存在する固定的な付属物（brid:IntBridgeInstallation）や可動の家具（brid:BridgeFurniture）も表現できる。
-
+橋梁は、CityGMLのBridgeモジュールに定義されたbrid:Bridgeを用いて記述する。 +
+橋梁モデル（LOD0）では、brid:Bridgeのみを使用し、橋梁の形状を線又は面として表現する。CityGMLには橋梁のLOD0の空間属性が定義されていないため、i-URにおいて拡張した属性uro:lod0Geoemtryを使用する。この空間属性は数値地形図との互換性を保つ情報を記述するためのデータ型uro:DmAttributeの一部である。 +
+橋梁モデル（LOD1）では、brid:Bridgeを使用し、橋梁の形状を立体として表現する。立体は、橋梁の外周の正射影に一律の高さを与えた箱モデルである。 +
+橋梁モデル（LOD2）において、橋梁の形状は、brid:Bridgeを使用し、主要な部分を簡略化した面の集まり又は立体として表現する。主要な部分とは、道路橋、鉄道橋及び桟道橋の場合は、主桁と床版を含む。それ以外の橋梁の場合は、上部工（床版及び主桁）、階段、及び踊り場を含む。橋梁モデル（LOD2）ではこの主要な部分を構成する立体の境界面又は面の集まりに含まれる各面を、屋根面や壁面といった面に区分する。また、トラスやパイロンといった構造上重要な部材をbrid:BridgeConstructionElement、高欄や手すりといった付属的な部材をbrid:BridgeInstallationで表現できる。 +
+橋梁モデル（LOD3）では、橋梁の形状をLOD2よりも詳細に表現する。橋梁モデル（LOD2）では任意だったbrid:BridgeConstructionElementやbrid:BridgeInstallationの表現が必須になるほか、橋梁に設けられた開口部（扉及び窓）が表現できる。 +
+橋梁モデル（LOD4）では、橋梁の詳細な外形に加え、橋梁の内部空間（brid:BridgeRoom）を表現できる。この内部空間は、橋梁と一体的に設けられた建屋があった場合に、その内部を指す。内部空間に存在する固定的な付属物（brid:IntBridgeInstallation）や可動の家具（brid:BridgeFurniture）も表現できる。 +
 橋梁の各LODにおいて使用可能な地物型と空間属性を、<<tab-L-2>>に示す。
 
 [[tab-L-2]]
@@ -71,14 +58,14 @@ description:: 橋梁の記述には、指定されたLODに対応する地物型
 | 地物型 |  空間属性 |  LOD0 |  LOD1 |  LOD2 |  LOD3 |  LOD4 | 適用
 
 .9+| brid:Bridge | |  ● |  ● |  ● |  ● |  ● |
-| uro:lod0Geometry |  ● |  |  |  |  | 数値地形図の取得方法に従う。
+| uro:lod0Geometry ^|  ● |  |  |  |  <| 数値地形図の取得方法に従う。
 | brid:lod1Solid |  |  ● |  |  |  |
-| brid:lod2MultiSurface |  |  |  ■ |  |  | LOD2.0の場合は必須とする。
-| brid:lod2Solid |  |  |  ■ |  |  | LOD2.1の場合は必須とする。
-| brid:lod3MultiSurface |  |  |  |  ■ |  | MultiSurface又はSolidとする。
-| brid:lod3Solid |  |  |  |  ■ |  | MultiSurface又はSolidとする。
-| brid:lod4MultiSurface |  |  |  |  |  ■ | MultiSurface又はSolidとする。
-| brid:lod4Solid |  |  |  |  |  ■ | MultiSurface又はSolidとする。
+| brid:lod2MultiSurface |  |  |  ■ |  |  <| LOD2.0の場合は必須とする。
+| brid:lod2Solid |  |  |  ■ |  |  <| LOD2.1の場合は必須とする。
+| brid:lod3MultiSurface |  |  |  |  ■ |  <| MultiSurface又はSolidとする。
+| brid:lod3Solid |  |  |  |  ■ |  <| MultiSurface又はSolidとする。
+| brid:lod4MultiSurface |  |  |  |  |  ■ <| MultiSurface又はSolidとする。
+| brid:lod4Solid |  |  |  |  |  ■ <| MultiSurface又はSolidとする。
 .8+| brid:BridgePart
 |
 |
@@ -89,30 +76,30 @@ description:: 橋梁の記述には、指定されたLODに対応する地物型
 | 一つの橋梁を複数に分け、それぞれに属性を与えたい場合に必須とする。 +
 横断歩道橋、ペデストリアンデッキ及び跨線橋の場合は階段、スロープ、踊り場を分ける。
 
-| brid:lod1Solid |  |  ■ |  |  |  | BridgePartを使用する場合は必須とする。
-| brid:lod2MultiSurface |  |  |  ■ |  |  | LOD2.0の場合は必須とする。
-| brid:lod2Solid |  |  |  ■ |  |  | LOD2.1の場合は必須とする。
-| brid:lod3MultiSurface |  |  |  |  ■ |  | MultiSurface又はSolidとする。
-| brid:lod3Solid |  |  |  |  ■ |  | MultiSurface又はSolidとする。
-| brid:lod4MultiSurface |  |  |  |  |  ■ | MultiSurface又はSolidとする。
-| brid:lod4Solid |  |  |  |  |  ■ | MultiSurface又はSolidとする。
+| brid:lod1Solid |  |  ■ |  |  |  <| BridgePartを使用する場合は必須とする。
+| brid:lod2MultiSurface |  |  |  ■ |  |  <| LOD2.0の場合は必須とする。
+| brid:lod2Solid |  |  |  ■ |  |  <| LOD2.1の場合は必須とする。
+| brid:lod3MultiSurface |  |  |  |  ■ |  <| MultiSurface又はSolidとする。
+| brid:lod3Solid |  |  |  |  ■ |  <| MultiSurface又はSolidとする。
+| brid:lod4MultiSurface |  |  |  |  |  ■ <| MultiSurface又はSolidとする。
+| brid:lod4Solid |  |  |  |  |  ■ <| MultiSurface又はSolidとする。
 .5+| brid:BridgeConstructionElement　 | |  |  |  ○ |  ■ |  ● | LOD2.1で使用できる。 LOD3では、橋脚及び橋台は、横断歩道橋、ペデストリアンデッキ及び跨線橋の場合に必須とする。
-| brid:lod1Geometry |  |  |  |  |  | 対象外とする。
-| brid:lod2Geometry |  |  |  ■ |  |  | MultiSurfaceを基本とする。
-| brid:lod3Geometry |  |  |  |  ■ |  | MultiSurfaceを基本とする。
-| brid:lod4Geometry |  |  |  |  |  ● | MultiSurfaceを基本とする。
+| brid:lod1Geometry |  |  |  |  |  <| 対象外とする。
+| brid:lod2Geometry |  |  |  ■ |  |  <| MultiSurfaceを基本とする。
+| brid:lod3Geometry |  |  |  |  ■ |  <| MultiSurfaceを基本とする。
+| brid:lod4Geometry |  |  |  |  |  ● <| MultiSurfaceを基本とする。
 .4+| brid:BridgeInstallation　 | |  |  |  ○ |  ● |  ● | LOD2.1で使用できる。
-| brid:lod2Geometry |  |  |  ■ |  |  | BridgeInstallationを作成する場合は必須とする。
-| brid:lod3Geometry |  |  |  |  ● |  | MultiSurfaceを基本とする。
-| brid:lod4Geometry |  |  |  |  |  ● | MultiSurfaceを基本とする。
+| brid:lod2Geometry |  |  |  ■ |  |  <| BridgeInstallationを作成する場合は必須とする。
+| brid:lod3Geometry |  |  |  |  ● |  <| MultiSurfaceを基本とする。
+| brid:lod4Geometry |  |  |  |  |  ● <| MultiSurfaceを基本とする。
 .4+| brid:RoofSurface　 | |  |  |  ■ |  ■ |  ■ | 屋根がある場合は必須とする。
-| brid:lod2MultiSurface |  |  |  ■ |  |  | brid:RoofSurfaceを作る場合は必須とする。
-| brid:lod3MultiSurface |  |  |  |  ■ |  | brid:RoofSurfaceを作る場合は必須とする。
-| brid:lod4MultiSurface |  |  |  |  |  ■ | brid:RoofSurfaceを作る場合は必須とする。
+| brid:lod2MultiSurface |  |  |  ■ |  |  <| brid:RoofSurfaceを作る場合は必須とする。
+| brid:lod3MultiSurface |  |  |  |  ■ |  <| brid:RoofSurfaceを作る場合は必須とする。
+| brid:lod4MultiSurface |  |  |  |  |  ■ <| brid:RoofSurfaceを作る場合は必須とする。
 .4+| brid:OuterFloorSurface　 | |  |  |  ■ |  ■ |  ■ | 屋根が無い場合は必須とする。
-| brid:lod2MultiSurface |  |  |  ■ |  |  | brid: OuterFloorSurfaceを作る場合は必須とする。
-| brid:lod3MultiSurface |  |  |  |  ■ |  | brid: OuterFloorSurfaceを作る場合は必須とする。
-| brid:lod4MultiSurface |  |  |  |  |  ■ | brid: OuterFloorSurfaceを作る場合は必須とする。
+| brid:lod2MultiSurface |  |  |  ■ |  |  <| brid: OuterFloorSurfaceを作る場合は必須とする。
+| brid:lod3MultiSurface |  |  |  |  ■ |  <| brid: OuterFloorSurfaceを作る場合は必須とする。
+| brid:lod4MultiSurface |  |  |  |  |  ■ <| brid: OuterFloorSurfaceを作る場合は必須とする。
 .4+| brid:WallSurface　 | |  |  |  ■ |  ● |  ● | 橋梁の形状を構成する面のうち、側方の面に使用する。 LOD2.1の場合は必須とする。
 | brid:lod2MultiSurface |  |  |  ■ |  |  |
 | brid:lod3MultiSurface |  |  |  |  ● |  |
@@ -122,28 +109,28 @@ description:: 橋梁の記述には、指定されたLODに対応する地物型
 | brid:lod3MultiSurface |  |  |  |  ● |  |
 | brid:lod4MultiSurface |  |  |  |  |  ● |
 .4+| brid:OuterCeilingSurface　 | |  |  |  ■ |  ■ |  ■ | 外壁面のうち、接地しない下向きの面に使用する。
-| brid:lod2MultiSurface |  |  |  ■ |  |  | brid:OuterCeilingSurfaceを作る場合は必須とする。
-| brid:lod3MultiSurface |  |  |  |  ■ |  | brid:OuterCeilingSurfaceを作る場合は必須とする。
-| brid:lod4MultiSurface |  |  |  |  |  ■ | brid:OuterCeilingSurfaceを作る場合は必須とする。
+| brid:lod2MultiSurface |  |  |  ■ |  |  <| brid:OuterCeilingSurfaceを作る場合は必須とする。
+| brid:lod3MultiSurface |  |  |  |  ■ |  <| brid:OuterCeilingSurfaceを作る場合は必須とする。
+| brid:lod4MultiSurface |  |  |  |  |  ■ <| brid:OuterCeilingSurfaceを作る場合は必須とする。
 .4+| brid:ClosureSurface　 | |  |  |  ■ |  ■ |  ■ | 一つの橋梁を主題属性の異なる複数の部分に分ける場合は必須とする。
-| brid:lod2MultiSurface |  |  |  ■ |  |  | ClosureSurfaceを作成する場合は必須とする。
-| brid:lod3MultiSurface |  |  |  |  ■ |  | ClosureSurfaceを作成する場合は必須とする。
-| brid:lod4MultiSurface |  |  |  |  |  ■ | ClosureSurfaceを作成する場合は必須とする。
+| brid:lod2MultiSurface |  |  |  ■ |  |  <| ClosureSurfaceを作成する場合は必須とする。
+| brid:lod3MultiSurface |  |  |  |  ■ |  <| ClosureSurfaceを作成する場合は必須とする。
+| brid:lod4MultiSurface |  |  |  |  |  ■ <| ClosureSurfaceを作成する場合は必須とする。
 .2+| brid:InteriorWallSurface　　 | |  |  |  |  |  ○ |
-| brid:lod4MultiSurface |  |  |  |  |  ■ | InteriorWallSurfaceを作成する場合は必須とする。
+| brid:lod4MultiSurface |  |  |  |  |  ■ <| InteriorWallSurfaceを作成する場合は必須とする。
 .2+| brid:CeilingSurface　　 | |  |  |  |  |  ○ |
-| brid:lod4MultiSurface |  |  |  |  |  ■ | CeilingSurfaceを作成する場合は必須とする。
+| brid:lod4MultiSurface |  |  |  |  |  ■ <| CeilingSurfaceを作成する場合は必須とする。
 .2+| brid:FloorSurface　　 | |  |  |  |  |  ○ |
-| brid:lod4MultiSurface |  |  |  |  |  ■ | FloorSurfaceを作成する場合は必須とする。
+| brid:lod4MultiSurface |  |  |  |  |  ■ <| FloorSurfaceを作成する場合は必須とする。
 .3+| brid:Door | |  |  |  |  ○ |  ○ |
-| brid:lod3MultiSurface |  |  |  |  ■ |  | Doorを作成する場合は必須とする。
-| brid:lod4MultiSurface |  |  |  |  |  ■ | Doorを作成する場合は必須とする。
+| brid:lod3MultiSurface |  |  |  |  ■ |  <| Doorを作成する場合は必須とする。
+| brid:lod4MultiSurface |  |  |  |  |  ■ <| Doorを作成する場合は必須とする。
 .3+| brid:Window | |  |  |  |  ○ |  ○ |
-| brid:lod3MultiSurface |  |  |  |  ■ |  | Windowを作成する場合は必須とする。
-| brid:lod4MultiSurface |  |  |  |  |  ■ | Windowを作成する場合は必須とする。
+| brid:lod3MultiSurface |  |  |  |  ■ |  <| Windowを作成する場合は必須とする。
+| brid:lod4MultiSurface |  |  |  |  |  ■ <| Windowを作成する場合は必須とする。
 .3+| brid:BridgeRoom　 | |  |  |  |  |  ○ |
-| brid:lod4Solid |  |  |  |  |  ■ | Solidを基本とする。
-| brid:lod4MultiSurface |  |  |  |  |  ■ | Solidを構成できない場合はMultiSurfaceとする。
+| brid:lod4Solid |  |  |  |  |  ■ <| Solidを基本とする。
+| brid:lod4MultiSurface |  |  |  |  |  ■ <| Solidを構成できない場合はMultiSurfaceとする。
 .2+| brid:IntBridgeInstallation　　 | |  |  |  |  |  ○ |
 | brid:lod4Geometry
 |
@@ -151,7 +138,7 @@ description:: 橋梁の記述には、指定されたLODに対応する地物型
 |
 |
 |  ■
-| IntBridgeInstallation を作成する場合は必須とする。 +
+<| IntBridgeInstallation を作成する場合は必須とする。 +
 MultiSufaceを基本とする。
 
 .2+| brid:BridgeFurniture　 | |  |  |  |  |  ○ |
@@ -161,7 +148,7 @@ MultiSufaceを基本とする。
 |
 |
 |  ■
-| IntBridgeInstallation を作成する場合は必須とする。 +
+<| IntBridgeInstallation を作成する場合は必須とする。 +
 MultiSufaceを基本とする。
 
 |===
@@ -171,10 +158,8 @@ MultiSufaceを基本とする。
 ■:: 条件付必須
 〇:: 任意（ユースケースに応じて要否を決定してよい）
 
-補足
-
-LOD0は、数値地形図との互換性を考慮した区分である。LOD1は、LOD0の編集を前提とした区分である。また、LOD2は航空写真等上空からの取得、LOD3はMMSによる点群や画像等、側面からの取得を前提とした区分である。さらに、LOD4は、地上レーザ点群等による取得及びBIM/CIM又は図面の利用を前提とした区分である。
-
+補足 +
+LOD0は、数値地形図との互換性を考慮した区分である。LOD1は、LOD0の編集を前提とした区分である。また、LOD2は航空写真等上空からの取得、LOD3はMMSによる点群や画像等、側面からの取得を前提とした区分である。さらに、LOD4は、地上レーザ点群等による取得及びBIM/CIM又は図面の利用を前提とした区分である。 +
 ただし橋梁の形状の一部は、橋台や橋脚のように、道路下部に存在し、上空からの取得が困難である。そこで、LOD2は、原典資料から取得できない部分の形状の推定有無によりLODを細分している。
 
 
@@ -210,10 +195,8 @@ subject:: 3D都市モデル
 description:: 橋梁のLOD1の形状は、橋梁モデル（LOD1）の定義に従う。
 ====
 
-道路橋及び鉄道橋は、橋梁の縁線をつないだ外周を、地表面から一律の高さで下向きに押し出した立体とする。ひ開部は含めない。橋梁モデル（LOD0）に橋脚の外周が含まれている場合は、橋脚を含めた外周に一律の高さを与える。
-
-桟道橋は、縁線、斜面に接している側の道路縁及び橋脚の外周を含む桟道橋の外周に、地表面から一律の高さで下向きに押し出した立体とする。
-
+道路橋及び鉄道橋は、橋梁の縁線をつないだ外周を、地表面から一律の高さで下向きに押し出した立体とする。ひ開部は含めない。橋梁モデル（LOD0）に橋脚の外周が含まれている場合は、橋脚を含めた外周に一律の高さを与える。 +
+桟道橋は、縁線、斜面に接している側の道路縁及び橋脚の外周を含む桟道橋の外周に、地表面から一律の高さで下向きに押し出した立体とする。 +
 横断歩道橋、跨線橋及びペデストリアンデッキは、構造物の上からの正射影の外周を、地表面から一律の高さで上向きに押し出した立体とする。幅員が1m以上の徒橋は、縁線をつないだ外周を地表面から一律の高さで下向きに押し出した立体とする。
 
 
@@ -349,8 +332,7 @@ image::images/316.webp.png[]
 
 ==== 橋梁の主題属性
 
-橋梁の主題属性には、あらかじめCityGML又はGMLにおいて定義された属性（接頭辞brid、gml）と、i-URにより拡張された属性（接頭辞uro）がある。CityGMLで定義された属性は、橋梁の機能など、基本的な情報となる。
-
+橋梁の主題属性には、あらかじめCityGML又はGMLにおいて定義された属性（接頭辞brid、gml）と、i-URにより拡張された属性（接頭辞uro）がある。CityGMLで定義された属性は、橋梁の機能など、基本的な情報となる。 +
 i-URにより拡張された属性には、大きく10種類の属性がある。橋梁の管理に関する基本的な情報（uro:bridBaseAttribute）、橋梁の構造に関する情報（uro:bridStructureAttribute）、橋梁の機能に関する情報（uro:bridFunctionalAttribute）、橋梁の損傷に関する情報（uro:bridRiskAssessmentAttribute）、橋梁の災害リスクに関する情報（uro:bridDisasterRiskAttribute）、作成した橋梁のデータ品質に関する情報（uro:DataQualityAttribute）、特定分野における施設の分類情報（uro:FacilityTypeAttribute）、その分野における施設の識別情報（uro:FacilityIdAttribute）、その分野における施設の詳細な属性（uro:FacilityAttribute）、公共測量標準図式による図形表現に必要な情報（uro:bridDmAttribute）である。
 
 ===== 構造物管理属性（uro:bridBaseAttribute）
@@ -379,20 +361,17 @@ i-URにより拡張された属性には、大きく10種類の属性がある�
 
 ====== 施設分類属性（uro:FacilityTypeAttribute）
 
-uro:FacilityTypeAttributeは、各分野で定める施設の区分を記述するためのデータ型である。CityGMLは、地物型を物体としての性質に着目して定義し、機能や用途は属性で区分している。例えば、「橋梁（brid:Bridge）」という地物型を定義し、属性functionにより「道路橋」や「鉄道橋」を区分している。これにより、都市に存在する様々な地物を、分野を問わず網羅的に、かつ、矛盾が無く表現することを目指している。一方、各分野には独自の施設の区分がある。この区分は当該分野での施設管理に必要な情報であるが、CityGMLの地物型の区分とは一致しない。そこで、これらの地物型に分野独自の区分を付与するためにこのデータ型を用いる。uro:FacilityTypeAttributeは、二つの属性をもつ。uro:classは分野を特定するための属性である。またuro:functionは、uro:classにより特定した分野における施設の区分を示す。
-
+uro:FacilityTypeAttributeは、各分野で定める施設の区分を記述するためのデータ型である。CityGMLは、地物型を物体としての性質に着目して定義し、機能や用途は属性で区分している。例えば、「橋梁（brid:Bridge）」という地物型を定義し、属性functionにより「道路橋」や「鉄道橋」を区分している。これにより、都市に存在する様々な地物を、分野を問わず網羅的に、かつ、矛盾が無く表現することを目指している。一方、各分野には独自の施設の区分がある。この区分は当該分野での施設管理に必要な情報であるが、CityGMLの地物型の区分とは一致しない。そこで、これらの地物型に分野独自の区分を付与するためにこのデータ型を用いる。uro:FacilityTypeAttributeは、二つの属性をもつ。uro:classは分野を特定するための属性である。またuro:functionは、uro:classにより特定した分野における施設の区分を示す。 +
 標準製品仕様書では、港湾施設、漁港施設及び公園施設については標準製品仕様書においてuro:functionの区分が示されている。その他の区分についてはuro:classへの分野の追加も含め、拡張製品仕様書において拡張できる。
 
 ====== 施設識別属性（uro:FacilityIdAttribute）
 
-uro:FacilityIdAttributeは、施設の位置を特定する情報及び施設を識別する情報を記述するためのデータ型である。uro:FacilityIdAttributeは、施設を識別するための情報として、識別子（uro:id）や正式な名称以外の呼称（uro:alternativeName）に加え、施設の位置を示すための、都道府県（uro:prefecture）、市区町村（uro:city）及び開始位置の経緯度（uro:startLat、uro:startLong）を属性としてもつ。また、鉄道上や道路上の施設については、路線や距離標での位置特定のための属性（uro:route、uro:startPost、uro:endPost）を使用できる。
-
+uro:FacilityIdAttributeは、施設の位置を特定する情報及び施設を識別する情報を記述するためのデータ型である。uro:FacilityIdAttributeは、施設を識別するための情報として、識別子（uro:id）や正式な名称以外の呼称（uro:alternativeName）に加え、施設の位置を示すための、都道府県（uro:prefecture）、市区町村（uro:city）及び開始位置の経緯度（uro:startLat、uro:startLong）を属性としてもつ。また、鉄道上や道路上の施設については、路線や距離標での位置特定のための属性（uro:route、uro:startPost、uro:endPost）を使用できる。 +
 なお、河川管理施設の場合は、uro:FacilityIdAttributeを継承するuro:RiverFacilityIdAttributeを使用する。これにより、左右岸上での位置の情報を記述できる。
 
 ====== 施設詳細属性（uro:FacilityAttribute）
 
-uro:FacilityAttributeは、各分野において施設管理に必要となる情報を記述するためのデータ型である。uro:FacilityAttributeは、抽象クラスであり、これを継承する具象となるデータ型に、施設の区分毎に必要となる情報を属性として定義している。
-
+uro:FacilityAttributeは、各分野において施設管理に必要となる情報を記述するためのデータ型である。uro:FacilityAttributeは、抽象クラスであり、これを継承する具象となるデータ型に、施設の区分毎に必要となる情報を属性として定義している。 +
 標準製品仕様書では、港湾施設、漁港施設及び公園施設について、細分した施設の区分ごとにデータ型を定義している。また、施設に関する工事や点検の状況や内容を記述するためのデータ型（uro:MaintenanceHistoryAttribute）を定義している。
 
 ===== 数値地形図属性（uro:bridDmAttribute）
@@ -401,11 +380,8 @@ uro:FacilityAttributeは、各分野において施設管理に必要となる�
 
 ===== 品質属性（uro:DataQualityAttribute）
 
-橋梁オブジェクトの作成に使用した原典資料の記録や、適用した詳細なLODの区分を示すための属性である。
-
-使用した原典資料やそれに基づくデータの品質、また、採用したLODは、データセットのメタデータに記録できる。ただし、データセット全体に対して一つのメタデータを作成することが基本となり、個々の都市オブジェクトの品質を記録することは困難である。
-
-そこで、標準製品仕様書では、個々のデータに対してデータ品質に関する情報を記述するための属性として、「データ品質属性」（uro:DataQualityAttribute）を定義している。データ品質属性は、属性としてデータ作成に使用した原典資料の地図情報レベル、その他原典資料の諸元及び精緻化したLODをもつ。
-
+橋梁オブジェクトの作成に使用した原典資料の記録や、適用した詳細なLODの区分を示すための属性である。 +
+使用した原典資料やそれに基づくデータの品質、また、採用したLODは、データセットのメタデータに記録できる。ただし、データセット全体に対して一つのメタデータを作成することが基本となり、個々の都市オブジェクトの品質を記録することは困難である。 +
+そこで、標準製品仕様書では、個々のデータに対してデータ品質に関する情報を記述するための属性として、「データ品質属性」（uro:DataQualityAttribute）を定義している。データ品質属性は、属性としてデータ作成に使用した原典資料の地図情報レベル、その他原典資料の諸元及び精緻化したLODをもつ。 +
 3D都市モデルに含まれる全ての橋梁オブジェクトは、このデータ品質属性を必ず作成しなければならない。ただし、橋梁（brid:Bridge）又は橋梁部分（brid:BridegPart）に対してデータ品質属性を付与することはできるが、これを構成する屋根面や外壁面（brid:_BoundarySurfaceの下位クラス）にデータ品質属性を付与することはできない。
 
