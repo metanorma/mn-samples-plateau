@@ -177,6 +177,13 @@
 
 ** 2024年度の標準製品仕様は、 i-UR第3.1版（i-UR3.1）を採用する。i-UR3.1は、2023年度のProject PLATEAUの検討成果が反映され、改定されたものである。
 
+| 2024.09.30 | 4.1
+|
+* コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）へのコードの追加 +
+* コードリスト（DataQualityAttribute_geometrySrcDesc.xml及びDataQualityAttribute_thematicSrcDesc.xml）のコードに対する表示名の修正 +
+* 部品となるクラスの場合、データが作成された日（core:creationDate）を運用上必須から任意に変更 +
+* 誤字・脱字の修正
+
 
 |===
 

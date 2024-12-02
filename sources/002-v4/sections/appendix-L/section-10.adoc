@@ -386,9 +386,7 @@ h| LOD2.1
 --
 各部材の厚みを航空写真や航空レーザ点群から取得できない場合はMMS点群等から取得する。
 
-MMS点群等を入手できない場合は、各部材の厚みを推定することを許容する。
-
-ただし、厚みを推定した区間はBridgePartとして区切る。このBridgePartには属性bridDataQualityAttributeにて、推定で高さを取得していることを明示する。
+MMS点群等を入手できない場合は、各部材の厚みを推定することを許容する。ただし、厚みを推定した区間はBridgePartとして区切る。このBridgePartには属性bridDataQualityAttributeにて、推定で高さを取得していることを明示する。
 --
 
 . ③ 橋梁に屋根がある場合は、屋根の形状を取得する。
@@ -683,12 +681,11 @@ IfcBridgePartのうち、以下に区分されるものを対象とする。
 
 * ARCH, BEAM_GRID, GIRDER, REINFORCEMEN_UNIT, RIGID_FRAME, SLAB_FIELD, TRUSS, ABUTMENT, PIAR, PYLON, CROSS_BRACING,
 
-| BridgeInstallation | IfcElementAssembly | IfcElementAssemblyのうち、ACCESSORY＿ASSEMBLYに区分されるものを対象とする。
+| BridgeInstallation | IfcElementAssembly | IfcElementAssemblyのうち、ACCESSORY_ASSEMBLYに区分されるものを対象とする。
 
 |===
 
-CityGMLの地物型は、IFCにおいて部材の集まりを示すIfcBridgePart及びIfcElementAssemblyと対応付ける。
-
+CityGMLの地物型は、IFCにおいて部材の集まりを示すIfcBridgePart及びIfcElementAssemblyと対応付ける。 +
 IFCでは、梁（IfcBeam）やスラブ（IfcSlab）、支承（IfcBearing）といった橋梁を構成する部材がクラスとして定義されているが、これらのクラスとCityGMLの地物型とを対応付けると、3D都市モデルとしては詳細すぎる表現となるため、部材クラスの集まりであるIfcBridgePart及びIfcElementAssemblyとCityGMLの地物型とを対応づけ、橋梁モデル（LOD4）を作成する。
 
 [[fig-L-18]]
