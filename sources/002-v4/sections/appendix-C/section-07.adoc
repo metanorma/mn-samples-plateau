@@ -3,18 +3,16 @@
 
 bldg:Roomは、部屋を記述するために使用する地物型である。bldg:Roomは、建築物の内部空間の表現に使用し、LOD4のみに出現する。建築物モデル（LOD4）において、bldg:Roomは、bldg:Buildingに含まれる地物として記述する。このとき、bldg:Roomは、複数の地物の集まりとして表現する。bldg:Roomに含まれる地物とは、以下である。
 
-** 部屋を区切る境界面（bldg:_BoundarySurfaceの下位型）
+* 部屋を区切る境界面（bldg:_BoundarySurfaceの下位型）
+* 部屋に付属する固定的な設備（bldg:InteriorBuildingInstallation）
+* 部屋の中に設置された移動可能な家具（bldg:BuildingFurniture）
 
-** 部屋に付属する固定的な設備（bldg:InteriorBuildingInstallation）
-
-** 部屋の中に設置された移動可能な家具（bldg:BuildingFurniture）
-
-
+[[tocC_07_01]]
 ==== 部屋の空間属性
 
 bldg:Roomは立体（bldg:lod4Solid）として表現する。このとき、立体の境界となる面は、天井面（bldg:CeilingSurface）、床面（bldg:FloorSurface）、内壁面（bldg:InteriorWallSurface）又は閉鎖面（bldg:ClosureSurface）のいずれかとなる。
 
-
+[[tocC_07_02]]
 ==== 部屋の主題属性
 
 bldg:Roomは、建築物の内部の部屋の総称となる。そのため、部屋の機能や用途は、主題属性bldg:class及びbldg:functionにより区分する。
