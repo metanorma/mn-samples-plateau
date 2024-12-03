@@ -4,6 +4,7 @@
 bldg:BuildingInstallationは、バルコニー、煙突又は屋外階段のような、建築物の外側に設置された付属的な設備であり、かつ永続的に設置されている設備である。
 
 
+[[tocC_08_01]]
 ==== 建築物付属物の空間属性
 
 bldg:BuildingInstallationの空間属性の型は、gml:_Geometryである。gml:_Geometryは、幾何オブジェクトの基底要素であり、実装においては、この下位型のうち、具象となる幾何オブジェクトを、地物の形状に合わせて選定する。
@@ -64,6 +65,7 @@ description:: bldg:BuildingInstallationの境界面が、bldg:Buildingの境界�
 このとき、bldg:Buildingの境界面とbldg:BuildingInstallationの境界面とは、表裏の関係になる。
 
 
+[[tocC_08_02]]
 ==== 建築物付属物の主題属性
 
 bldg:BuildingInstallationは、建築物に付属する恒久的に設置された設備の総称となる。そのため、それが何であるか（例：階段、バルコニー）は、主題属性により区分する。
