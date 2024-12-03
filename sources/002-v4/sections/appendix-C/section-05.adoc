@@ -39,6 +39,7 @@ CityGMLでは、建築物や建築物付属物の境界面としてbldg:_Boundar
 image::images/157.webp.png[]
 
 
+[[tocC_05_01]]
 ==== 境界面の空間属性
 
 要件bldg-11で示したように、屋根、外壁等の境界面となる地物型の空間属性（面）は、建築物の立体を構成する境界面に一致する。
@@ -53,13 +54,15 @@ subject:: 3D都市モデル
 description:: 境界面の空間属性を構成する幾何オブジェクトは、建築物の立体を構成する境界面として参照されなければならない。
 ====
 
-
+[[tocC_05_02]]
 ==== 境界面の下位型
 
+[[tocC_05_02_01]]
 ===== bldg:RoofSurface
 
 bldg:RoofSurfaceは、屋根を記述するために使用する地物型である。
 
+[[tocC_05_02_02]]
 ===== bldg:WallSurface
 
 bldg:WallSurfaceは、外壁面を記述するために使用する地物型である。
@@ -80,6 +83,7 @@ bldg:WallSurfaceの空間属性（bldg:lod2MultiSurface）の型はgml:MultiSurf
 .外壁面の実装例
 image::images/158.webp.png[]
 
+[[tocC_05_02_03]]
 ===== bldg:GroundSurface
 
 bldg:GroundSurfaceは、底面を記述するために使用する地物型である。LOD2で底面を記述する場合に、その高さは、<<fig-C-22>>に示す二つの方法のいずれかにより決定する。建築物に地階が存在し、その最も低い高さが得られる場合にはその高さを使用する。高さの情報が得られない場合には、bldg:GroundSurfaceの水平位置と地形モデルとの交線上で最も低い高さを取得し、この値を使用する。
@@ -88,6 +92,7 @@ bldg:GroundSurfaceは、底面を記述するために使用する地物型で�
 .LOD2における底面の実装例
 image::images/159.webp.png[]
 
+[[tocC_05_02_04]]
 ===== bldg:OuterFloorSurface
 
 bldg:OuterFloorSurfaceは、屋根以外の上向きの面を記述するために使用する地物型である。テラスや屋外に存在する階段（踊り場を含む）等がこれに該当する。 +
@@ -109,6 +114,7 @@ LOD2 で屋外の階段をbldg:OuterFloorSurfaceを用いて記述する場合�
 .屋外階段の例
 image::images/162.webp.png[]
 
+[[tocC_05_02_05]]
 ===== bldg:OuterCeillingSurface
 
 bldg:OuterCeillingSurfaceは、張り出した部分の裏側のように、屋外に存在する天井部分の面を記述するために使用する地物型である。
@@ -117,6 +123,7 @@ bldg:OuterCeillingSurfaceは、張り出した部分の裏側のように、屋�
 .屋外天井面の例
 image::images/163.webp.png[]
 
+[[tocC_05_02_06]]
 ===== bldg:ClosureSurface
 
 bldg:ClosureSurfaceは、仮想的に作成した境界面である。通常、建築物の出入り口等の穴があった場合に、その内部を記述せず、仮想的な面を作成することで立体の境界を閉じるために使用する（<<fig-C-27>>、<<fig-C-29>>）。また、用途が異なる等により一棟の建築物を部分（bldg:BuildingPart）に分ける場合にその境界となる面を建築物の立体の境界面として使用するために仮想的な面が必要となる場合にも、このbldg:ClosureSurfaceを使用する（<<fig-C-28>>）。 +
@@ -134,6 +141,7 @@ image::images/165.webp.png[]
 .閉鎖面の取得例（建物入口）
 image::images/166.webp.png[]
 
+[[tocC_05_02_07]]
 ===== bldg:CeilingSurface
 
 bldg:CeilingSurfaceは、部屋など構造物内部の上側（天井）の面である。立体として構成する部屋（bldg:Room）の境界面のうち、上側の面を指す。<<fig-C-30>>は、部屋を外から見た例である。部屋の立体を構成する境界面のうち、上側の面が天井面となる。 +
@@ -143,6 +151,7 @@ bldg:CeilingSurfaceの法線ベクトルは下向き（部屋の内側に向く�
 .天井面の例
 image::images/167.webp.png[]
 
+[[tocC_05_02_08]]
 ===== bldg:FloorSurface
 
 bldg:FloorSurfaceは、建物の内部空間の各階下面（床）に位置する面である。立体として構成する部屋（bldg:Room）の境界面のうち、下側の面（床面）を指す（<<fig-C-31>>）。 +
@@ -152,6 +161,7 @@ bldg:FloorSurfaceは、建物の内部空間の各階下面（床）に位置す
 .床面の例
 image::images/168.webp.png[]
 
+[[tocC_05_02_09]]
 ===== bldg:InteriorWallSurface
 
 bldg:InteriorWallSurfaceは、建築物の内側に向いた内壁又は仕切りの面である。部屋（bldg:Room）の立体を構成する垂直方向の境界面となる（<<fig-C-32>>）。
@@ -160,16 +170,17 @@ bldg:InteriorWallSurfaceは、建築物の内側に向いた内壁又は仕切�
 .内壁面の例
 image::images/169.webp.png[]
 
+[[tocC_05_02_10]]
 ===== 境界面の区分
 
-建築物のLOD2及びLOD3において、境界面として使用可能な地物型が異なることに注意すること（C.2.2参照）。 +
-LOD2及びLOD3では、建築物（bldg:Building）の境界面をbldg:RoofSurface（屋根面：C.5.2.1）、bldg:WallSurface（外壁面：C.5.2.2）、bldg:GroundSurface（底面：C.5.2.3）に区分することを基本とする。
+建築物のLOD2及びLOD3において、境界面として使用可能な地物型が異なることに注意すること（<<tocC_02_02>>参照）。 +
+LOD2及びLOD3では、建築物（bldg:Building）の境界面をbldg:RoofSurface（屋根面：<<tocC_05_02_01>>）、bldg:WallSurface（外壁面：<<tocC_05_02_02>>）、bldg:GroundSurface（底面：C.5.2.3）に区分することを基本とする。
 
 [[fig-C-33]]
 .LOD2における境界面の区分
 image::images/170.webp.png[]
 
-ただし、ユースケースで必要な場合には、境界面の区分にbldg:OuterFloorSurface（屋外床面：C.5.2.4）及びbldg:ClosureSurface（閉鎖面：C.5.2.6）を使用できる。また、LOD3ではbldg:OuterCeilingSurface（屋外天井面：C.5.2.5）を使用できる。 +
+ただし、ユースケースで必要な場合には、境界面の区分にbldg:OuterFloorSurface（屋外床面：<<tocC_05_02_04>>）及びbldg:ClosureSurface（閉鎖面：<<tocC_05_02_06>>）を使用できる。また、LOD3ではbldg:OuterCeilingSurface（屋外天井面：<<tocC_05_02_05>>）を使用できる。 +
 bldg:OuterFloorSurface（屋外床面）は、bldg:RoofSurfaceの代替として使用できる。建築物を構成する境界面のうち、上を向いている面は、bldg:RoofSurfaceとなるが、屋上のように、人が滞留可能な面と屋根面とを区別したい場合はbldg:OuterFloorSurfaceを使用し、これを区分する。<<fig-C-34>>に例を示す。
 
 [[fig-C-34]]
