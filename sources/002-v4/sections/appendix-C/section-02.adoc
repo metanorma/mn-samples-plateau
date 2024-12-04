@@ -88,7 +88,7 @@ LOD3では、LOD2で使用可能な地物型に加え、屋根面や外壁面に
 | lod3MultiSurface |  |  |  |  ● |  |
 | lod4MultiSurface |  |  |  |  |  ● |
 .4+| bldg:OuterCeilingSurface | |  |  |  |  ○ |  ○ | 外壁面のうち、天井の機能をもつ面を明示するために使用できる。
-| lod2MultiSurface |  |  |  |  |  .3+| bldg:OuterCeilingSurfaceを作る場合は必須とする。
+| lod2MultiSurface |  |  |  |  |  .3+<| bldg:OuterCeilingSurfaceを作る場合は必須とする。
 | lod3MultiSurface |  |  |  |  ■ |
 | lod4MultiSurface |  |  |  |  |  ■
 .4+| bldg:OuterFloorSurface | |  |  |  ○ |  ○ |  ○ | 屋根面のうち、通行可能な面を明示するために使用できる。

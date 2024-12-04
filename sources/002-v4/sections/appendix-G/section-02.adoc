@@ -154,13 +154,10 @@ description:: 広場のLOD2の形状は、交通（広場）モデル（LOD2）�
 
 交通（広場）モデル（LOD2）は、都市計画において定められた広場の区域（交通（広場）モデル（LOD1））を以下に区分する。
 
-** 車道部
-
-** 車道交差部
-
-** 歩道部
-
-** 島
+* 車道部
+* 車道交差部
+* 歩道部
+* 島
 
 ===== LOD3
 
@@ -178,7 +175,7 @@ description:: LOD3におけるtran:Squareの空間属性は、これを構成す
 
 このとき、交通（広場）オブジェクトは、交通（広場）モデル（LOD3）の定義に従ったものでなければならない。 +
 交通（広場）オブジェクトが「駅前広場」又は「交通広場」の場合、都市計画で指定された区域は、道路の区域と重複する。このとき、重複する区域に含まれる車道部や車道交差部等を示すtran:TrafficAreaとtran:AuxiliaryTrafficAreaは、tran:Roadからもtran:Squareからも参照される。 +
-また、tran:TrafficAreaとtran:AuxiliaryTrafficArea をtran:Roadとtran:Squareの両方から参照する場合は、tran:Squareはtran:TrafficAreaとtran:AuxiliaryTrafficAreaの参照とtran:Squareのジオメトリの参照の両方が必要である。
+また、tran:TrafficAreaとtran:AuxiliaryTrafficAreaをtran:Roadとtran:Squareの両方から参照する場合は、tran:Squareはtran:TrafficAreaとtran:AuxiliaryTrafficAreaの参照とtran:Squareのジオメトリの参照の両方が必要である。
 
 [[fig-G-1]]
 .道路（Road）を構成する歩道等が広場（Square）の一部参照する場合のイメージ
