@@ -38,7 +38,7 @@ subject:: 3D都市モデル
 description:: 地下街の記述には、指定されたLODに対応する地物型及び空間属性を使用する。
 ====
 
-地下街は、i-URのUrban Objectモジュールに定義されたuro:UndergroundBuildingを用いて記述する。uro:UndergroundBuilding はCityGMLのBuildingモジュールに定義されたbldg:_AbstractBuildingを継承し、定義されている。そのため、uro:UndergroundBuildingは、建築物（bldg:Building）と同様に、境界面や開口部に区分することができる。
+地下街は、i-URのUrban Objectモジュールに定義されたuro:UndergroundBuildingを用いて記述する。uro:UndergroundBuildingはCityGMLのBuildingモジュールに定義されたbldg:_AbstractBuildingを継承し、定義されている。そのため、uro:UndergroundBuildingは、建築物（bldg:Building）と同様に、境界面や開口部に区分することができる。
 
 地下街モデル（LOD0）では、uro:UndergroundBuildingを使用し、地下街の形状を面で記述する。
 
@@ -47,7 +47,7 @@ description:: 地下街の記述には、指定されたLODに対応する地物
 地下街モデル（LOD2）では、uro:UndergroundBuildingを使用し、地下街の形状を立体で記述するとともに、uro:UndergroundBuildingの境界面を屋根面や外壁面等の地物型を用いて記述する。屋根面や外壁面はbldg:_BoundarySurfaceとして定義されている。bldg:_BoundarySurfaceは抽象地物であり、実装にはこれを継承する地物型（例：屋根面はbldg:RoofSurface）を使用する。
 
 地下街モデル（LOD3）では、地下街モデル（LOD2）で使用可能な地物型に加え、境界面に存在する開口部を閉鎖面として区分する。さらに、屋根や壁に扉（bldg:Door）や窓（bldg:Window）を付けることができる。 +
-また、地下街モデル（LOD2）及び地下街モデル（LOD3）では、bldg:BuildingPart を使用できる。bldg:BuildingPartは、一つの地下街を二つ以上の部分に分けた地下街の一部である。例えば、一つの地下街について一部の階数や用途が異なる場合や、複合的な施設から構成され施設ごとに都市計画基礎調査の情報が作成されている場合に、一つの地下街を複数に区切り、区切った部品ごとに階数や用途、都市計画基礎調査の情報といった属性を与えるために使用する。
+また、地下街モデル（LOD2）及び地下街モデル（LOD3）では、bldg:BuildingPartを使用できる。bldg:BuildingPartは、一つの地下街を二つ以上の部分に分けた地下街の一部である。例えば、一つの地下街について一部の階数や用途が異なる場合や、複合的な施設から構成され施設ごとに都市計画基礎調査の情報が作成されている場合に、一つの地下街を複数に区切り、区切った部品ごとに階数や用途、都市計画基礎調査の情報といった属性を与えるために使用する。
 ただし、このとき、[underline]##uro:UndergroundBuildingを構成するbldg:BuildingPartとは、一体的な建築物（互いに接する）でなければならない。## +
 またLOD2及びLOD3では、地下街の外側に付属する階段やエレベーターといった設備を、bldg:BuildingInstallationを用いて記述できる。
 

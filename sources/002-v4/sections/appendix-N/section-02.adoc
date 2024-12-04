@@ -36,7 +36,7 @@ description:: その他の構造物の記述には、指定されたLODに対応
 その他の構造物は、橋梁（brid:Bridge）やトンネル（tun:Tunnel）と同様に、本体（uro:OtherConstruction）とその付属物（uro:ConstructionInstallation）から構成される。また、本体の外形は、境界面（uro:_BoundarySurface）に区分される。境界面はその向きや機能により、屋根面（uro:RoofSurface）、外壁面（uro:WallSurface）、底面（uro:GroundSurface）、閉鎖面（uro:ClosureSurface）、屋外床面（uro:OuterFloorSurface）及び屋外天井面（uro:OuterRoofSurface）に区分する。 +
 その他の構造物モデル（LOD0）では、uro:OtherConstructionのみを使用し、その他の構造物の形状を点、線又は面として表現する。 +
 その他の構造物モデル（LOD1）では、uro:OtherConstructionのみを使用し、その他の構造物の形状を立体として表現する。 +
-その他の構造物モデル（LOD2）では、uro:OtherConstruction を使用し、その他の構造物の形状を立体として表現するとともに、その境界面を区分する。 +
+その他の構造物モデル（LOD2）では、uro:OtherConstructionを使用し、その他の構造物の形状を立体として表現するとともに、その境界面を区分する。 +
 その他の構造物モデル（LOD3）では、uro:OtherConstructionを使用し、その他の構造物の形状を立体として表現するとともに、その境界面を区分し、また、その他の構造物の付属物をuro:ConstructionInstallationにより表現できる。 +
 その他の構造物の各LODにおいて使用可能な地物型と空間属性を、<<tab-N-2>>に示す。
 
@@ -124,7 +124,7 @@ description:: その他の構造物のLOD1の形状は、その他の構造物�
 
 ===== LOD2
 
-その他の構造物モデル（LOD2）では、その他の構造物の形状を、主要な部分を簡略化した立体として表現する。立体は、上空から見た形状を取得し、立体の各境界面を、 屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）又は閉鎖面（ClosureSurface）のいずれかに区分する。このとき、その他の構造物オブジェクトは、その他の構造物モデル（LOD2）の定義に従ったものでなければならない。
+その他の構造物モデル（LOD2）では、その他の構造物の形状を、主要な部分を簡略化した立体として表現する。立体は、上空から見た形状を取得し、立体の各境界面を、屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）又は閉鎖面（ClosureSurface）のいずれかに区分する。このとき、その他の構造物オブジェクトは、その他の構造物モデル（LOD2）の定義に従ったものでなければならない。
 
 
 [requirement]
@@ -140,8 +140,7 @@ description:: その他の構造物のLOD2の形状は、その他の構造物�
 
 ===== LOD3
 
-その他の構造物モデル（LOD3）では、その他の構造物の形状を立体として表現する。この立体は、主要な部分の外形を構成する特徴点から構成する面を境界面とする。また、立体の各境界面を、 屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）又は閉鎖面（ClosureSurface）のいずれかに区分する。さらに、構造上不可欠ではない付属物（手すり、柵、構造物と一体ではない階段）を表現することができる。このとき、その他の構造物オブジェクトは、その他の構造物モデル（LOD3）の定義に従ったものでなければならない。
-
+その他の構造物モデル（LOD3）では、その他の構造物の形状を立体として表現する。この立体は、主要な部分の外形を構成する特徴点から構成する面を境界面とする。また、立体の各境界面を、屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）又は閉鎖面（ClosureSurface）のいずれかに区分する。さらに、構造上不可欠ではない付属物（手すり、柵、構造物と一体ではない階段）を表現することができる。このとき、その他の構造物オブジェクトは、その他の構造物モデル（LOD3）の定義に従ったものでなければならない。 +
 その他の構造物モデル（LOD3）は、構造上不可欠ではない付属物（手すり、柵、構造物と一体ではない階段）の表現有無によりLOD3.0及びLOD3.1に区分する。
 
 
