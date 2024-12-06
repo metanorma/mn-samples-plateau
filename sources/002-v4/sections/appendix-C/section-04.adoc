@@ -18,7 +18,7 @@ identifier:: /req/bldg/18
 subject:: 3D都市モデル
 description:: 妥当なbldg:BuildingPartは、以下を満たさなければならない。
 part:: 唯一のbldg:Buildingからbldg:consistsOfBuildingPartにより参照される。（複数のbldg:Buildingから参照されていてはならない）
-part::  別のbldg:BuildingPartと接している。（一棟のbldg:Buildingは二つ以上のbldg:BuildingPartから構成され、それらは連続している）
+part:: 別のbldg:BuildingPartと接している。（一棟のbldg:Buildingは二つ以上のbldg:BuildingPartから構成され、それらは連続している）
 ====
 
 一棟の建築物を、建築物部分や建築物付属物に分けて表現する場合には、必ず、一体的な建築物として作成しなければならない。建築物部分をbldg:BuildingPartを用いて記述する場合は、一棟のbldg:Buildingを構成するbldg:BuildingPartが互いに接していなければならない。 +
@@ -59,9 +59,9 @@ description:: bldg:BuildingPartを使用する場合には、これを参照す�
 [%metadata]
 identifier:: /req/bldg/20
 subject:: 3D都市モデル
-description:: 一棟の建築物に付与されるべき属性は、全体となるbldg:Building にのみ付与する。
+description:: 一棟の建築物に付与されるべき属性は、全体となるbldg:Buildingにのみ付与する。
 ====
 
 高層階と低層階を組み合わせた建築物があったときに、この建築物を一棟として都市計画基礎調査が実施されている場合には、この都市計画基礎調査の結果は、bldg:Buildingにのみ地物属性として付与する。 +
-また、LOD0及びLOD1の空間属性も、全体となるbldg:Building に記述する。
+また、LOD0及びLOD1の空間属性も、全体となるbldg:Buildingに記述する。
 
