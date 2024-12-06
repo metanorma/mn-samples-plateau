@@ -20,7 +20,7 @@ image::images/505.webp.png[]
 
 ==== 使用可能な地物型とLOD
 
-水部の記述には、CityGMLのWaterBodyモジュールに定義されたwtr:WaterBodyを用いて記述する。 wtr:WaterBodyは、詳細度（LOD）ごとに、使用すべき地物型やその空間属性が異なる。
+水部の記述には、CityGMLのWaterBodyモジュールに定義されたwtr:WaterBodyを用いて記述する。wtr:WaterBodyは、詳細度（LOD）ごとに、使用すべき地物型やその空間属性が異なる。
 
 
 [requirement]
@@ -33,7 +33,7 @@ description:: 水部の記述には、指定されたLODに対応する地物型
 ====
 
 WaterBodyモジュールには、水部（wtr:WaterBody）と、水部の境界面（wtr:_BoundarySurface）が定義される。水部の境界面は、水面（wtr:WaterSurface）、水底面（wtr:WaterGroundSurface）及び閉鎖面（wtr:WaterClosureSurface）に区分される。 +
-LOD0では、Wtr:Waterbodyのみを使用し、水部の形状を線として表現する。LOD1では、wtr:WaterBodyのみを使用し、水部の形状を面として表現する。LOD2及びLOD3では、wtr:WaterBody を使用して水部の形状を立体として表現し、その立体の境界面をwtr:WaterSurface、wtr:WaterGroundSurface又はwtr:WaterClosureSurfaceに区分する。 +
+LOD0では、Wtr:Waterbodyのみを使用し、水部の形状を線として表現する。LOD1では、wtr:WaterBodyのみを使用し、水部の形状を面として表現する。LOD2及びLOD3では、wtr:WaterBodyを使用して水部の形状を立体として表現し、その立体の境界面をwtr:WaterSurface、wtr:WaterGroundSurface又はwtr:WaterClosureSurfaceに区分する。 +
 水部の各LODにおいて使用可能な地物型とその空間属性を<<tab-T-2>>に示す。
 
 [[tab-T-2]]

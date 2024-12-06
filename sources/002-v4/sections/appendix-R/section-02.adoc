@@ -5,7 +5,7 @@
 ==== 植生モデル
 
 植生とは、地表面の植物の種類及びその覆われている状態をいう。「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」 +
-標準製品仕様書では、植生の表現に必要な地物型等をCityGML 及びi-UR より抽出し、LODごとに、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を定めた「植生モデル」を定義する。 +
+標準製品仕様書では、植生の表現に必要な地物型等をCityGML及びi-URより抽出し、LODごとに、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を定めた「植生モデル」を定義する。 +
 植生モデルのLODは、LOD0からLOD3までを対象とする。
 
 [[tab-R-1]]
@@ -27,11 +27,11 @@ subject:: 3D都市モデル
 description:: 植生の記述には、指定されたLODに対応する地物型及び空間属性を使用する。
 ====
 
-植生の記述には、CityGMLのVegetationモジュールに定義されたveg:SolitalyVegetationObject 又はveg:PlantCoverを使用する。veg:SolitalyVegetationObjectは、街路樹のような単独木を記述するための型である。また、veg:PlantCoverは、歩道上の植栽など、個々の樹木を識別せず、まとめて記述する場合に使用する型である。 +
+植生の記述には、CityGMLのVegetationモジュールに定義されたveg:SolitalyVegetationObject又はveg:PlantCoverを使用する。veg:SolitalyVegetationObjectは、街路樹のような単独木を記述するための型である。また、veg:PlantCoverは、歩道上の植栽など、個々の樹木を識別せず、まとめて記述する場合に使用する型である。 +
 植生モデル（LOD0）では、植生の形状を点又は線で記述する。CityGMLのVegetationモジュールでは、植生のLODとしてLOD1以上が定義されている。植生モデルで使用する植生のLOD0は、i-URにより拡張した植生の空間属性である。 +
-植生モデル（LOD1）では、veg:SolitalyVegetationObject 及びveg:PlantCover を立体として表現する。 +
-植生モデル（LOD2）では、veg:SolitalyVegetationObject 及びveg:PlantCoverを面の集まり又は立体として表現する。 +
-植生モデル（LOD3）では、植生モデル（LOD2）と同様に、veg:SolitalyVegetationObject 及びveg:PlantCoverを面の集まり又は立体として表現するが、その形状はより詳細化される。
+植生モデル（LOD1）では、veg:SolitalyVegetationObject及びveg:PlantCoverを立体として表現する。 +
+植生モデル（LOD2）では、veg:SolitalyVegetationObject及びveg:PlantCoverを面の集まり又は立体として表現する。 +
+植生モデル（LOD3）では、植生モデル（LOD2）と同様に、veg:SolitalyVegetationObject及びveg:PlantCoverを面の集まり又は立体として表現するが、その形状はより詳細化される。
 
 [[tab-R-2]]
 [cols="3a,3a,^a,^a,^a,^a,6a"]
@@ -123,7 +123,7 @@ description:: 植生オブジェクトのLOD3の形状は、植生モデル（LO
 
 ==== 植生の主題属性
 
-植生の主題属性には、あらかじめ CityGML 又は GML において定義された属性（接頭辞veg、gml）がある。また、標準製品仕様では、作成したデータの品質に関する情報を格納するための属性（uro:DataQualityAttribute）を定義している。さらに、植生が施設として管理されている場合に、施設管理に利用可能な属性（uro:FacilityTypeAttribute、uro:FaclityIdAttribute、uro:FacilityAttribute）ももつことができる。また、数値地形図との互換性を保つための情報（uro:vegDmAttribute）ももつことができる。
+植生の主題属性には、あらかじめCityGML又はGMLにおいて定義された属性（接頭辞veg、gml）がある。また、標準製品仕様では、作成したデータの品質に関する情報を格納するための属性（uro:DataQualityAttribute）を定義している。さらに、植生が施設として管理されている場合に、施設管理に利用可能な属性（uro:FacilityTypeAttribute、uro:FaclityIdAttribute、uro:FacilityAttribute）ももつことができる。また、数値地形図との互換性を保つための情報（uro:vegDmAttribute）ももつことができる。
 
 ===== gml:name
 
@@ -145,7 +145,7 @@ veg:SolitalyVegetationObjectの主題属性veg:class、veg:height、veg:trunkDia
 
 ====== 施設分類属性（uro:FacilityTypeAttribute）
 
-uro:FacilityTypeAttributeは、各分野で定める施設の区分を記述するためのデータ型である。CityGMLは、地物型を物体としての性質に着目して定義し、機能や用途は属性で区分している。例えば、「単独木（veg: SolitalyVegetationObject）」という地物型を定義し、veg:functionにより「常緑/針葉」や「落葉/広葉」などを区分している。これにより、都市に存在する様々な地物を、分野を問わず網羅的に、かつ、矛盾が無く表現することを目指している。一方、各分野には独自の施設の区分がある。この区分は当該分野での施設管理に必要な情報であるが、CityGMLの地物型の区分とは一致しない。そこで、これらの地物型に分野独自の区分を付与するためにこのデータ型を用いる。uro:FacilityTypeAttributeは、二つの属性をもつ。uro:classは分野を特定するための属性である。またuro:functionは、uro:classにより特定した分野における施設の区分を示す。 +
+uro:FacilityTypeAttributeは、各分野で定める施設の区分を記述するためのデータ型である。CityGMLは、地物型を物体としての性質に着目して定義し、機能や用途は属性で区分している。例えば、「単独木（veg:SolitalyVegetationObject）」という地物型を定義し、veg:functionにより「常緑/針葉」や「落葉/広葉」などを区分している。これにより、都市に存在する様々な地物を、分野を問わず網羅的に、かつ、矛盾が無く表現することを目指している。一方、各分野には独自の施設の区分がある。この区分は当該分野での施設管理に必要な情報であるが、CityGMLの地物型の区分とは一致しない。そこで、これらの地物型に分野独自の区分を付与するためにこのデータ型を用いる。uro:FacilityTypeAttributeは、二つの属性をもつ。uro:classは分野を特定するための属性である。またuro:functionは、uro:classにより特定した分野における施設の区分を示す。 +
 標準製品仕様書では、港湾施設、漁港施設及び公園施設については標準製品仕様書においてuro:functionの区分が示されている。その他の区分についてはuro:classへの分野の追加も含め、拡張製品仕様書において拡張できる。
 
 ====== 施設識別属性（uro:FacilityIdAttribute）

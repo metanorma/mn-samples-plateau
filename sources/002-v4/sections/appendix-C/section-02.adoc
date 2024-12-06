@@ -46,7 +46,7 @@ LOD1では、bldg:Buildingを使用し、建築物の幾何形状を立体で記
 LOD2では、bldg:Buildingを使用し、建築物の幾何形状を立体で記述するとともに、立体の境界面を屋根面や外壁面等の地物型を用いて記述する。屋根面や外壁面はbldg:_BoundarySurfaceとして定義されている。bldg:_BoundarySurfaceは抽象地物であり、実装にはこれを継承する地物型（例：屋根はbldg:RoofSurface）を使用する。 +
 LOD3では、LOD2で使用可能な地物型に加え、屋根面や外壁面に扉（bldg:Door）や窓（bldg:Window）を付けることができる。
 
-また、LOD2及びLOD3では、bldg:BuildingPart を使用できる。bldg:BuildingPartは、一棟の建築物を二つ以上の部分に分けた建築物の一部であり、bldg:Buildingと同様の属性をもつことができる。例えば、一棟の建築物について一部の階数や用途が異なっていたり、複合的な施設から構成され施設ごとに都市計画基礎調査の情報が作成されていたりする場合に、その建築物を複数に区切り、区切った建築物の部分（bldg:BuildingPart）ごとに階数や用途、都市計画基礎調査の情報といった属性を与えるために使用する。ただし、このとき、[underline]##bldg:Buildingを構成するbldg:BuildingPartとは、一体的な建築物（bldg:BuildingPart同士が互いに接して一棟の建築物を構成する）でなければならない。## +
+また、LOD2及びLOD3では、bldg:BuildingPartを使用できる。bldg:BuildingPartは、一棟の建築物を二つ以上の部分に分けた建築物の一部であり、bldg:Buildingと同様の属性をもつことができる。例えば、一棟の建築物について一部の階数や用途が異なっていたり、複合的な施設から構成され施設ごとに都市計画基礎調査の情報が作成されていたりする場合に、その建築物を複数に区切り、区切った建築物の部分（bldg:BuildingPart）ごとに階数や用途、都市計画基礎調査の情報といった属性を与えるために使用する。ただし、このとき、[underline]##bldg:Buildingを構成するbldg:BuildingPartとは、一体的な建築物（bldg:BuildingPart同士が互いに接して一棟の建築物を構成する）でなければならない。## +
 またLOD2及びLOD3では、建築物に付属するバルコニーや屋外階段といった設備を、bldg:BuildingInstallationを用いて記述できる。
 
 なお、bldg:BuildingPartは建築物であるが、bldg:BuildingInstallationは建築物ではなく、建築物の付属物である。 +
@@ -124,7 +124,7 @@ LOD4において、内壁面等はないが、建築確認申請では部屋と�
 | lod2Geometry |  |  |  ■ |  |  .3+<| MultiSufaceを使用することを基本とする。
 | lod3Geometry |  |  |  |  ● |
 | lod4Geometry |  |  |  |  |  ●
-.2+| bldg:IntBuildingInstallation | |  |  |  |  |  ■ | LOD4.1及び 4.2では必須とする。
+.2+| bldg:IntBuildingInstallation | |  |  |  |  |  ■ | LOD4.1及び4.2では必須とする。
 | lod4Geometry |  |  |  |  |  ■ <| MultiSufaceを使用することを基本とする。
 .2+| bldg:BuildingFurniture | |  |  |  |  |  ○ |
 | lod4Geometry

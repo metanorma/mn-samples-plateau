@@ -5,7 +5,7 @@
 ==== 使用可能な地物型とLOD
 
 土地利用とは、都市計画基礎調査の土地利用現況をいう。 +
-土地利用の記述には、CityGMLのLand Useモジュールに定義された、luse:LandUseを使用する。luse:LandUseは、詳細度（LOD）ごとに、使用すべき地物型やその空間属性が異なる。 +
+土地利用の記述には、CityGMLのLandUseモジュールに定義された、luse:LandUseを使用する。luse:LandUseは、詳細度（LOD）ごとに、使用すべき地物型やその空間属性が異なる。 +
 標準製品仕様書では、土地利用モデルのLODは、LOD1のみを対象とする。
 
 
@@ -55,7 +55,7 @@ description:: 土地利用モデルの記述には、指定されたLODに対応
 
 ==== 土地利用の主題属性
 
-土地利用の主題属性は、都市計画基礎調査の土地利用現況により得られた情報である。原典資料として、GISデータ（土地利用現況）又は調書（土地利用現況）を使用できる。また、作成したデータの品質に関する情報を格納するための属性（uro: DataQualityAttribute ）がある。
+土地利用の主題属性は、都市計画基礎調査の土地利用現況により得られた情報である。原典資料として、GISデータ（土地利用現況）又は調書（土地利用現況）を使用できる。また、作成したデータの品質に関する情報を格納するための属性（uro:DataQualityAttribute）がある。
 
 ===== 土地利用分類（luse:class）
 
@@ -99,7 +99,7 @@ description:: 土地利用モデルの記述には、指定されたLODに対応
 ===== 土地利用詳細属性（uro:landUseDetailAttribute）
 
 都市計画基礎調査の土地利用現況として記録された情報を格納するための属性である。属性の型であるuro:LandUseDetailAttributeには都市独自の土地利用の区分（uro:orgLandUse）の他、面積（uro:nominalArea）や建ぺい率（uro:buildingCoverageRate）など、様々な属性の箱が用意されている。都市計画基礎調査でこれらの情報が収集されている場合には、定義済みの属性を使用する。また、該当する属性が無い場合には、汎用属性を使用して拡張できる。 +
-なお、都市独自の土地利用の区分（uro:orgLandUse）を作成する場合には、区分を示すコードリスト（LandUseDetailAttribute \_orgLandUse.xml）を作成しなければならない。
+なお、都市独自の土地利用の区分（uro:orgLandUse）を作成する場合には、区分を示すコードリスト（LandUseDetailAttribute_orgLandUse.xml）を作成しなければならない。
 
 ===== データ品質属性（uro:DataQualityAttribute）
 
