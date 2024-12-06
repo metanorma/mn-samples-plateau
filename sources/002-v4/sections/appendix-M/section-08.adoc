@@ -14,7 +14,7 @@ subject:: 3D都市モデル
 description:: tun:_BoundarySurfaceは、屋根面（tun:RoofSurface）、外壁面（tun:WallSurface）、底面（tun:GroundSurface）、外部床面（tun:OuterFloorSurface）、内壁面（tun:InteriorWallSurface）、天井面（tun:CeilingSurface）、床面（tun:FloorSurface）、閉鎖面（tun:ClosureSurface）のいずれかとなる。
 ====
 
-CityGMLでは、トンネルの境界面としてtun:_BoundarySurfaceの下位型となる地物型が用意されている。ただし外部天井面（tun:OuterCeillingSurface）、屋外床面（tun:OuterFloorSurface） は対象外とする（使用しない）。
+CityGMLでは、トンネルの境界面としてtun:_BoundarySurfaceの下位型となる地物型が用意されている。ただし外部天井面（tun:OuterCeillingSurface）、屋外床面（tun:OuterFloorSurface）は対象外とする（使用しない）。
 
 [[fig-M-4]]
 .tun:_BoundarySurface

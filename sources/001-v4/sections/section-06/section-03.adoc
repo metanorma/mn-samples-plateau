@@ -54,7 +54,7 @@ h| 品質評価尺度 | 参照データに存在しないのに地物インス�
 "誤率（％）" = "エラーサブメッシュの数" / 100 xx 100
 ++++
 
-h| 適合品質水準 | 全ての検査単位の誤率が10%以下なら合格、10％を超える検査単位が1つ以上あれば不合格。
+h| 適合品質水準 | 全ての検査単位の誤率が10%以下なら合格、10%を超える検査単位が1つ以上あれば不合格。
 h| 品質評価手法 | 抜取・目視検査を実施する。
 
 1．抜取検査手法に従い、検査単位を抽出する。 +
@@ -85,14 +85,14 @@ h| 品質評価手法 | 応用スキーマごとに全数・自動検査を実�
 [[fn_feature_types]]
 [NOTE]
 --
-全体となる地物型とは、以下をいう。
-bldg:Building, brid:Bridge, frn:CityFurniture, luse:LandUse, tran:Road, tran:Railway, tran:Track, tran:Square, tun:Tunnel, veg:SolitaryVegetationObject, veg:PlantCover, wtr:WaterBody, dem:ReliefFeature, uro:OtherConstruction, uro:UndergroundBuilding, uro:UtilityNetworkElementを継承する都市オブジェクト, uro:Waterway, urf:Zone及びこれを継承する地物型
+全体となる地物型とは、以下をいう。 +
+bldg:Building,brid:Bridge,frn:CityFurniture,luse:LandUse,tran:Road,tran:Railway,tran:Track,tran:Square,tun:Tunnel,veg:SolitaryVegetationObject,veg:PlantCover,wtr:WaterBody,dem:ReliefFeature,uro:OtherConstruction,uro:UndergroundBuilding,uro:UtilityNetworkElementを継承する都市オブジェクト,uro:Waterway,urf:Zone及びこれを継承する地物型
 --
 
 [[fn_lod_details]]
 [NOTE]
 --
-LOD又はLODの詳細な区分ごとに仕様可能な地物型は、標準製品仕様書の4.2～4.21に、応用スキーマごとに示す。
+LOD又はLODの詳細な区分ごとに仕様可能な地物型は、標準製品仕様書の<<toc4_02>>～<<toc4_21>>に、応用スキーマごとに示す。
 --
 
 
@@ -219,7 +219,7 @@ h| 品質評価手法 | 全数・自動検査を実施する。
 
 h| 品質要求 h| 参照データとインスタンス数が等しい。
 h| 品質要素 | 完全性・過剰/漏れ
-h| 品質適用範囲 | LOD4の幾何オブジェクトをもつbldg:Building, bldg:Room
+h| 品質適用範囲 | LOD4の幾何オブジェクトをもつbldg:Building,bldg:Room
 h| 品質評価尺度 | 参照データに含まれるIfcBuilding及びIfcSpaceのインスタンス数と、建築物モデル（LOD4）に含まれるbldg:Building及びbldg:Roomのインスタンス数が等しい。
 h| 適合品質水準 | エラーの数が0個の場合に合格。エラーの数が1以上の場合は不合格。
 h| 品質評価手法 | 全数・自動検査を実施する。
@@ -236,12 +236,12 @@ h| 品質評価手法 | 全数・自動検査を実施する。
 
 h| 品質要求 h| 参照データとの一致。
 h| 品質要素 | 完全性・過剰
-h| 品質適用範囲 | bldg:Door, bldg:Window
+h| 品質適用範囲 | bldg:Door,bldg:Window
 h| 品質評価尺度 | 建築物モデル（LOD4）に含まれるbldg:Window及びbldg:Doorのインスタンスと参照データに含まれるIfcWindow及びIfcDoorのインスタンス数が等しい。
 h| 適合品質水準 | エラーの数が0個の場合に合格。エラーの数が1以上の場合は不合格。
 h| 品質評価手法 | 抜取・目視検査を実施する。
 
-1．建築物モデル（LOD4）に含まれる、bldg:Door及び bldg:Windowの全インスタンスの2％となるまで抽出する。 +
+1．建築物モデル（LOD4）に含まれる、bldg:Door及びbldg:Windowの全インスタンスの2%となるまで抽出する。 +
 2．参照データを表示し、抽出したbldg:Door及びbldg:Windowに対応するIfcDoor及びIfcWindowのインスタンスが存在するか、目視で確認する。 +
 3．対応するインスタンスが存在しない場合にエラーとする。
 
@@ -258,7 +258,7 @@ h| 品質評価尺度 | 参照データに含まれるIfcBuildingElement及び�
 h| 適合品質水準 | エラーの数が0個の場合に合格。エラーの数が1以上の場合は不合格。
 h| 品質評価手法 | 抜取・目視検査を実施する。
 
-1．建築物モデル（LOD4）に含まれるbldg:IntBuildingInstallationの全インスタンスの2％の数となるまでbldg:IntBuildingInstallationを抽出する。 +
+1．建築物モデル（LOD4）に含まれるbldg:IntBuildingInstallationの全インスタンスの2%の数となるまでbldg:IntBuildingInstallationを抽出する。 +
 2．参照データを表示し、抽出したbldg:IntBuildingInstallationに対応するIfcBuildingElement及びその下位型のインスタンスが存在するか、また、その種類が一致するかを目視で確認する。 +
 3．対応するIfcBuildingElement及びの下位型のインスタンスが存在しない場合、又は、存在していても種類が不一致となる場合にエラーとする。
 
@@ -280,7 +280,7 @@ h| 品質評価手法 | 抜取・目視検査を実施する。
 
 h| 品質要素 h| 論理一貫性・書式一貫性
 h| 品質適用範囲 | データ製品に含まれる全ての都市モデル（core:CityModel）のインスタンス。
-h| 品質評価尺度 | 整形式（Well-Formed XML）になっていない箇所数。
+h| 品質評価尺度 | 整形式(Well-Formed XML)になっていない箇所数。
 h| 適合品質水準 | エラーの数が0個の場合に合格。エラーの数が1以上の場合は不合格。
 h| 品質評価手法 | 全数・自動検査を実施する。
 
@@ -635,12 +635,12 @@ h| 品質評価手法 | 全数・自動検査を実施する。
 | No | L-bldg-06
 
 h| 品質要素 h| 論理一貫性・概念一貫性
-h| 品質適用範囲 | bldg:Building, bldg:BuildingPart
-h| 品質評価尺度 | bldg:Building又はbldg:BuildingPartのbldg:lod2Solid及びbldg:lod3Solidにより記述される立体（gml:Solid）の境界面（gml:CompositeSurface）に含まれる多角形（gml:Polygon）は、bldg:boundedByにより参照する、bldg:RoofSurface, bldg:WallSurface, bldg:GroundSurface, bldg:OuterFloorSurface, bldg:OuterCeilingSurface,bldg:ClosureSurface及びこれらが参照する開口部（bldg:Door, bldg:Window）により記述される面（gml:MultiSurface）に含まれる多角形（gml:Polygon）のいずれかでなければならない。
+h| 品質適用範囲 | bldg:Building,bldg:BuildingPart
+h| 品質評価尺度 | bldg:Building又はbldg:BuildingPartのbldg:lod2Solid及びbldg:lod3Solidにより記述される立体（gml:Solid）の境界面（gml:CompositeSurface）に含まれる多角形（gml:Polygon）は、bldg:boundedByにより参照する、bldg:RoofSurface,bldg:WallSurface,bldg:GroundSurface,bldg:OuterFloorSurface,bldg:OuterCeilingSurface,bldg:ClosureSurface及びこれらが参照する開口部（bldg:Door,bldg:Window）により記述される面（gml:MultiSurface）に含まれる多角形（gml:Polygon）のいずれかでなければならない。
 h| 適合品質水準 | エラー数が0なら合格、1以上なら不合格。
 h| 品質評価手法 | 全数・自動検査を実施する。
 
-1．検査プログラムによって、bldg:lod2Solid又はbldg:lod3Solidにより記述される立体（gml:Solid）の境界面（gml:CompositeSurface）が参照する多角形（gml:Polygon）のgml:idが、bldg:boundedByにより参照するbldg:RoofSurface, bldg:WallSurface, bldg:GroundSurface, bldg:OuterFloorSurface, bldg:OuterCeilingSurface,bldg:ClosureSurface及びこれらが参照する開口部（bldg:Door, bldg:Window）の面（gml:MultiSurface）の構成要素となる多角形（gml:Polygon）のgml:idと一致していない場合にエラーとする。
+1．検査プログラムによって、bldg:lod2Solid又はbldg:lod3Solidにより記述される立体（gml:Solid）の境界面（gml:CompositeSurface）が参照する多角形（gml:Polygon）のgml:idが、bldg:boundedByにより参照するbldg:RoofSurface,bldg:WallSurface,bldg:GroundSurface,bldg:OuterFloorSurface,bldg:OuterCeilingSurface,bldg:ClosureSurface及びこれらが参照する開口部（bldg:Door,bldg:Window）の面（gml:MultiSurface）の構成要素となる多角形（gml:Polygon）のgml:idと一致していない場合にエラーとする。
 
 |===
 
@@ -655,7 +655,7 @@ h| 適合品質水準 | エラーとなるbldg:Window、bldg:Doorのインスタ
 h| 品質評価手法 | 全数・自動検査を実施する。
 
 1．開口部（bldg:Window、bldg:Door）の空間属性が保持するgml:MultiSurfaceを、これを集約する境界面（bldg:_BoundarySurfaceの下位クラス）の空間属性が保持するgml:MultiSurfaceを抽出する。 +
-2．bldg:Window及びbldg:Doorのgml:MultiSurfaceが境界面のgml:MultiSurface と境界線を共有していないbldg:Window及びbldg:Doorのインスタンス数を数える。
+2．bldg:Window及びbldg:Doorのgml:MultiSurfaceが境界面のgml:MultiSurfaceと境界線を共有していないbldg:Window及びbldg:Doorのインスタンス数を数える。
 
 |===
 
@@ -671,8 +671,8 @@ h| 品質評価手法 | 全数検査を実施する。
 
 1．検査プログラムによって、bldg:lod4Solidにより記述される立体（gml:Solid）の境界面（gml:CompositeSurface）が参照する多角形（gml:Polygon）又はbldg:lod4MultiSurfaceにより記述される面の集まり（gml:MultiSurface）に含まれる多角形（gml:Polygon）のgml:idが、以下のいずれかに一致していない場合にエラーとする。
 
-* bldg:boundedByにより参照するbldg:RoofSurface, bldg:WallSurface, bldg:GroundSurface, bldg:OuterFloorSurface, bldg:OuterCeilingSurface, bldg:ClosureSurface及びこれらが参照する開口部（bldg:Door, bldg:Window）の面（gml:MultiSurface）の構成要素となる多角形（gml:Polygon）のgml:id
-* bldg:outerBuildingInstallationにより参照するbldg:BuildingInstallationの境界面となるbldg:RoofSurface, bldg:WallSurface, bldg:GroundSurface, bldg:OuterFloorSurface, bldg:OuterCeilingSurface, bldg:ClosureSurface及びこれらが参照する開口部（bldg:Door, bldg:Window）の面（gml:MultiSurface）の構成要素となる多角形（gml:Polygon）のgml:id
+* bldg:boundedByにより参照するbldg:RoofSurface,bldg:WallSurface,bldg:GroundSurface,bldg:OuterFloorSurface,bldg:OuterCeilingSurface,bldg:ClosureSurface及びこれらが参照する開口部（bldg:Door,bldg:Window）の面（gml:MultiSurface）の構成要素となる多角形（gml:Polygon）のgml:id
+* bldg:outerBuildingInstallationにより参照するbldg:BuildingInstallationの境界面となるbldg:RoofSurface,bldg:WallSurface,bldg:GroundSurface,bldg:OuterFloorSurface,bldg:OuterCeilingSurface,bldg:ClosureSurface及びこれらが参照する開口部（bldg:Door,bldg:Window）の面（gml:MultiSurface）の構成要素となる多角形（gml:Polygon）のgml:id
 
 |===
 
@@ -688,7 +688,7 @@ h| 品質評価手法 | 全数検査を実施する。
 
 1．検査プログラムによって、bldg:lod4Solidにより記述される立体（gml:Solid）の境界面（gml:CompositeSurface）が参照する多角形（gml:Polygon）のgml:idが、以下のいずれかに一致していない場合にエラーとする。
 
-* bldg:boundedByにより参照するbldg:CeilingSurface, bldg:InteriorWallSurface, bldg:FloorSurface, bldg:ClosureSurface及びこれらが参照する開口部（bldg:Door, bldg:Window）の面（gml:MultiSurface）の構成要素となる多角形（gml:Polygon）のgml:id
+* bldg:boundedByにより参照するbldg:CeilingSurface,bldg:InteriorWallSurface,bldg:FloorSurface,bldg:ClosureSurface及びこれらが参照する開口部（bldg:Door,bldg:Window）の面（gml:MultiSurface）の構成要素となる多角形（gml:Polygon）のgml:id
 
 |===
 
@@ -723,10 +723,10 @@ h| 品質評価手法 | 全数・自動検査を実施する。
 
 1．検査プログラムによって、bldg:Roomのbldg:lod4Solidにより記述される立体（gml:Solid）の境界面（gml:CompositeSurface）の構成要素（gml:surfaceMember）又はbldg:lod4MultiSurfaceにより記述される面の集まり（gml:MultiSurface）の構成要素（gml:surfaceMember）が、以下のいずれかに一致していない場合にエラーとする。
 
-* gml:surfaceMember により参照される面がorientationの値が”-“となるgml:OrientableSurfaceではない。
+* gml:surfaceMemberにより参照される面がorientationの値が”-“となるgml:OrientableSurfaceではない。
 * gml:OrientableSurfaceが、gml:baseSurfaceにより参照するgml:idが、以下のいずれにも該当しない。
-** bldg:boundedByにより参照するbldg:InteriorWallSurface, bldg:FloorSurface, bldg: CeilingSurface, bldg:ClosureSurface及びこれらが参照する開口部（bldg:Door, bldg:Window）の面（gml:MultiSurface）の構成要素となる多角形（gml:Polygon）のgml:id
-** bldg:roomInstallationにより参照する、bldg:IntBuildingInstallationがbldg:boundedByにより参照する、bldg:InteriorWallSurface, bldg:CeilingSurface, bldg: FloorSurface, bldg:ClosureSurface及びこれらが参照する開口部（bldg:Door, bldg:Window）により記述される面（gml:MultiSurface）に含まれる多角形（gml:Polygon）のgml:id
+** bldg:boundedByにより参照するbldg:InteriorWallSurface,bldg:FloorSurface,bldg:CeilingSurface,bldg:ClosureSurface及びこれらが参照する開口部（bldg:Door,bldg:Window）の面（gml:MultiSurface）の構成要素となる多角形（gml:Polygon）のgml:id
+** bldg:roomInstallationにより参照する、bldg:IntBuildingInstallationがbldg:boundedByにより参照する、bldg:InteriorWallSurface,bldg:CeilingSurface,bldg:FloorSurface,bldg:ClosureSurface及びこれらが参照する開口部（bldg:Door,bldg:Window）により記述される面（gml:MultiSurface）に含まれる多角形（gml:Polygon）のgml:id
 
 |===
 
@@ -740,8 +740,8 @@ h| 品質評価尺度 | 全てのbldg:Room、bldg:IntBuildingInstallation、bldg
 h| 適合品質水準 | エラー数が0なら合格、1以上なら不合格。
 h| 品質評価手法 | 全数・自動検査を実施する。
 
-1．検査プログラムによって、全てのbldg:Room、bldg:IntBuildingInstallation、bldg:BuildingFurniture のLOD4の幾何オブジェクトに含まれるgml:Polygonが、bldg:Buildingの幾何オブジェクトと交差しているgml:Polygonの数をカウントする。 +
-2．検査プログラムによって、全てのbldg:Room、bldg:IntBuildingInstallation、bldg:BuildingFurniture のLOD4の幾何オブジェクトに含まれるgml:Polygonの外側（負となる向き）に、bldg:Buildingの幾何オブジェクトが存在していないgml:Polygonの数をカウントする。 +
+1．検査プログラムによって、全てのbldg:Room、bldg:IntBuildingInstallation、bldg:BuildingFurnitureのLOD4の幾何オブジェクトに含まれるgml:Polygonが、bldg:Buildingの幾何オブジェクトと交差しているgml:Polygonの数をカウントする。 +
+2．検査プログラムによって、全てのbldg:Room、bldg:IntBuildingInstallation、bldg:BuildingFurnitureのLOD4の幾何オブジェクトに含まれるgml:Polygonの外側（負となる向き）に、bldg:Buildingの幾何オブジェクトが存在していないgml:Polygonの数をカウントする。 +
 3．1．及び2．の合計をエラー数とする。
 
 |===
@@ -765,7 +765,7 @@ h| 品質評価手法 | 全数・自動検査を実施する。
 | No | L-frn-01
 
 h| 品質要素 h| 論理一貫性・概念一貫性
-h| 品質適用範囲 | 空間属性として、 lod1Geometry, lod2Geomatry又はlod3Geometryをもつ全ての地物型のインスタンス。
+h| 品質適用範囲 | 空間属性として、lod1Geometry,lod2Geomatry又はlod3Geometryをもつ全ての地物型のインスタンス。
 h| 品質評価尺度 | 空間属性により保持又は参照する幾何オブジェクトの型が、応用スキーマ文書で指定された幾何オブジェクト（gml:MultiSurface又はgml:Solid）ではないインスタンスの個数。
 h| 適合品質水準 | エラーの箇所が0個の場合に合格。エラーの箇所数が1以上の場合は不合格。
 h| 品質評価手法 | 全数・自動検査を実施する。
@@ -1149,7 +1149,7 @@ h| 品質評価手法 | 抜取検査を実施する。
 
 h| 品質要素 h| 主題正確度・分類の正しさ
 h| 品質適用範囲 | 地物関連（幾何オブジェクトへの参照を含む）のうち、gml:idの参照により実装されている全てのインスタンス。
-h| 品質評価尺度 | 地物関連により参照されるgml:id をもつインスタンスの型が、応用スキーマの中で指定された関連相手先の型と一致しない箇所の出現回数
+h| 品質評価尺度 | 地物関連により参照されるgml:idをもつインスタンスの型が、応用スキーマの中で指定された関連相手先の型と一致しない箇所の出現回数
 h| 適合品質水準 | エラーの箇所が0個の場合に合格。エラーの箇所数が1以上の場合は不合格。
 h| 品質評価手法 | 全数・自動検査を実施する。
 
@@ -1163,7 +1163,7 @@ h| 品質評価手法 | 全数・自動検査を実施する。
 | No | T-bldg-01
 
 h| 品質要素 h| 主題正確度・分類の正しさ
-h| 品質適用範囲 | 以下の地物型のインスタンス： bldg:RoofSurface, bldg:WallSurface, bldg:GroundSurface, bldg:OuterFloorSurface, bldg:OuterCeilingSurface, bldg:ClosureSurface
+h| 品質適用範囲 | 以下の地物型のインスタンス：bldg:RoofSurface,bldg:WallSurface,bldg:GroundSurface,bldg:OuterFloorSurface,bldg:OuterCeilingSurface,bldg:ClosureSurface
 h| 品質評価尺度 | 建築物及び建築物部分を構成する境界面が、正しく区分されていないインスタンスをエラーとする。エラーが1つ以上存在するサブメッシュをエラーサブメッシュとする。
 
 [stem]
