@@ -1,0 +1,905 @@
+[[toc4_19]]
+=== 水部モデルの応用スキーマ
+
+[[toc4_19_01]]
+==== 水部モデルのLOD
+
+水部とは、河川、細流、一条河川、かれ川、用水路、湖池、海岸線、水路地下部及び低位水涯線をいう。「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」 +
+河川は、平水時における河川の水涯線をいう。「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」 +
+細流は、地図情報レベル500又は1000において、河川の流水部の幅が、図上0.2㎜以上0.4㎜未満の河川をいう。「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」 +
+一条河川とは、地図情報レベル2500において、河川の流水部の幅が、図上0.2㎜以上0.4㎜未満の河川をいう。「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」 +
+かれ川とは、通常水の流れていない川をいう。「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」 +
+用水路は、地図情報レベル500又は1000において、流水部の幅が0.4㎜以上の用水路とする。「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」 +
+湖池は、湖、池、沼等（人工的に貯水したものを含む）の水涯線をいう。「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」 +
+海岸線は、満潮時における海岸の水涯線をいう。「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」 +
+水路地下部は、河川、用水路等の地下の部分で、経路の明確なものをいう。「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」
+
+[[toc4_19_01_01]]
+===== 水部モデル（LOD0）
+
+====== 水部モデル（LOD0）の概要
+
+水部モデル（LOD0）では、水部の形状を、線により表現する。水部の形状の線は、河川ネットワーク又は水涯線のいずれかとする。 +
+標準製品仕様書は、原則として水部モデル（LOD0）は河川ネットワークを採用する。ただし、数値地形図との互換性を保つために、水涯線を選択できる。 +
+水涯線を採用する場合、公共測量標準図式に従う。 +
+水部モデル（LOD0）の取得イメージを<<tab-4-111>>に示す。
+
+[[tab-4-111]]
+[cols="4a,9a,9a,9a,9a"]
+.水部モデル（LOD0）の取得イメージ
+|===
+h| 4+^h| LOD0（河川ネットワークにより表現する場合）
+h| 取得例
+2+|
+image::images/385.webp.png[]
+2+|
+image::images/386.webp.png[]
+
+h| 説明
+2+| 河川、細流、かれ川、用水路及び地下水路の場合は、中心線を取得する。
+2+| 湖池は水涯線を取得する。 +
+海岸線は、水涯線と河川区域の境界とを結ぶ線を取得する。
+
+h| 4+^h| LOD0（公共測量標準図式により表現する場合）
+h| 取得例
+|
+image::images/387.webp.png[]
+|
+image::images/388.webp.png[]
+|
+image::images/389.webp.png[]
+|
+image::images/390.webp.png[]
+
+h| 説明 | 地図情報レベル500及び1000における河川、また、地図情報レベル2500における水涯線（河川、湖池等、海岸線）は界線を取得する。
+|
+地図情報レベル500及び1000における細流、また、地図情報レベル2500における一条河川は中心線を取得する。
+|
+かれ川は、範囲を示す縁線を取得する。
+|
+用水路は、界線を取得する。
+h| 4+^h| LOD0（公共測量標準図式により表現する場合）
+h| 取得例
+|
+image::images/391.webp.png[]
+|
+image::images/392.webp.png[]
+|
+image::images/393.webp.png[]
+|
+image::images/394.webp.png[]
+
+h| 説明 | 注記されない湖沼は、界線に加えて記号挿入位置を取得する。
+|
+海岸線は、地図情報レベル500及び1000において、図上海部として識別が難しい場所においては、界線に加えて記号を表示する。
+|
+水路地下部は地下水路縁線を取得する。
+|
+低位水涯線（干潟線）は、界線を取得する。
+
+|===
+
+====== 水部モデル（LOD0）の定義
+
+水部モデル（LOD0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
+
+[cols="1a,^1a,1a,1a,3a,3a,1a"]
+|===
+| | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
+
+.8+| LOD0
+.8+| ●
+.8+| WaterBody
+| MultiCurve
+|
+* 地図情報レベル500又は1000における河川
+* 地図情報レベル2500かつ、流水部の幅が1m以上の河川 footnoteblock:[fn_river_lod0]
+* 地図情報レベル2500かつ面積おおむね12.5m2以上の湖池等（湖、池、沼等、人工的に貯水したものを含む） footnoteblock:[fn_lake_lod0]
+* 地図情報レベル2500における海岸線
+|
+* 界線を取得する。
+* 高さは0とする。
+|
+footnoteblock:[fn_river_lod0]
+
+footnoteblock:[fn_lake_lod0]
+
+| MultiCurve
+|
+* 平水時において流水部の幅が0.5m以上1.0m未満の河川 footnoteblock:[fn_flowing_water_lod0]
+|
+* 流水部の中心線を取得する。
+* 高さは0とする。
+|
+footnoteblock:[fn_flowing_water_lod0]
+
+| MultiCurve
+<|
+* かれ川
+|
+* 範囲を示す縁線を取得する。
+* 高さは0とする。
+|
+
+| MultiCurve
+|
+* 地図情報レベル500の場合は流水部の幅が2m以上、地図情報レベル1000の場合は流水部の幅が4m以上用水路 footnoteblock:[fn_irrigation_lod0]
+|
+* 界線を取得する。
+* 高さは0とする。
+|
+footnoteblock:[fn_irrigation_lod0]
+
+| Point
+<|
+* 湖池 footnoteblock:[fn_retrieval_lod0]
+|
+* 記号表示位置を取得する。
+* 高さは0とする。
+|
+footnoteblock:[fn_retrieval_lod0]
+
+| Point
+|
+* 地図情報レベル500及び1000における海岸線
+|
+* 記号表示位置を取得する。
+* 高さは0とする。
+| 標準図式の取得方法に従う。
+
+| MultiCurve
+|
+* 地図情報レベル500及び1000、かつ、河川、用水路等における地下の部分で、経路の明確なもの
+|
+* 地下水路縁線を取得する。
+* 高さは0とする。
+|
+
+| MultiCurve
+|
+* 地図情報レベル500及び1000における低位水涯線
+|
+* 界線を取得する。
+* 高さは0とする。
+|
+
+|===
+
+[[fn_river_lod0]]
+[NOTE]
+--
+標準図式では地図情報レベル2500において、平水時の流水部の幅が図上0.4㎜以上のものを表示することとなっており、これは実長1mに該当することから、ここでは1m以上の河川としている。
+--
+
+[[fn_lake_lod0]]
+[NOTE]
+--
+標準図式では地図情報レベル2500において図上おおむね2.0㎜平方以上のものを表示することとなっており、これは実面積約12.5m2に該当することから、ここでは12.5m2以上の湖池等としている。
+--
+
+[[fn_flowing_water_lod0]]
+[NOTE]
+--
+標準図式では地図情報レベル2500において平水時の流水部の幅が図上0.2㎜以上0.4㎜未満は中心線を取得することとなっておりこれは実長0.5m以上1m未満に該当することから、ここでは流水部の幅が0.5m以上1m未満の河川を中心線で取得することとしている。
+--
+
+[[fn_irrigation_lod0]]
+[NOTE]
+--
+標準図式では流水部の幅が図上0.4㎜以上の用水路を表示することとなっている。これは地図情報レベル500において実長2m、地図情報レベル1000においては実長4mに該当することから、ここでは流水部の幅が地図情報レベル500では2m、地図情報レベル1000では4mとしている。
+--
+
+[[fn_retrieval_lod0]]
+[NOTE]
+--
+標準図式の取得方法に従う。
+--
+
+[%key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
+
+[[toc4_19_01_02]]
+===== 水部モデル（LOD1）
+
+====== 水部モデル（LOD1）の概要
+
+水部モデル（LOD1）では、水部の形状を、高さをもった面により表現する。水部モデル（LOD1）の取得イメージを<<tab-4-112>>に示す。
+
+[[tab-4-112]]
+[cols="1a,9a"]
+.水部モデル（LOD1）の取得イメージ
+|===
+h| ^h| LOD1
+h| 取得例
+^|
+image::images/395.webp.png[]
+
+h| 説明 | 水涯線により囲まれた面を取得する。中洲がある場合は、中洲を除いた面となる。
+
+|===
+
+====== 水部モデル（LOD1）の定義
+
+水部モデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
+
+[cols="1a,^1a,1a,1a,3a,3a,2a"]
+|===
+| | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
+
+| LOD1
+| ●
+| WaterBody
+| MultiSurface
+|
+* 河川、湖池、海、用水路の水面
+|
+* 水涯線に囲まれた範囲を取得する。
+* 各頂点に水涯線と地表面との交線の高さを与える。
+| 中洲がある場合には中洲を除いた面となる。
+
+|===
+
+[%key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
+
+[[toc4_19_01_03]]
+===== 水部モデル（LOD2）
+
+====== 水部モデル（LOD2）の概要
+
+水部モデル（LOD2）では、水部の形状を、立体により表現する。水部モデル（LOD2）の取得イメージを<<tab-4-113>>に示す。
+
+[[tab-4-113]]
+[cols="1a,9a"]
+.水部モデル（LOD2）の取得イメージ
+|===
+h| ^h| LOD2
+h| 取得例
+^|
+image::images/396.webp.png[]
+
+h| 説明
+| 水涯線により囲まれた水面（WaterSurface）及び水底面（WaterGroundSurface）を境界面とする立体を作成する。 +
+水面は水部モデル（LOD1）の面に一致する。また、水底面は、等深線や航空レーザ（ALB）又はマルチビーム測深の点群データを用いて再現した、水底の起伏を表す面となる。 +
+境界面を水面、地表面に区分し、水部を管理区間や行政界など仮想的な面により区切りたい場合には、その境界面を閉鎖面（WaterClosureSurface）に区分する。
+
+|===
+
+====== 水部モデル（LOD2）の定義
+
+水部モデル（LOD2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
+
+[cols="1a,^1a,1a,1a,3a,3a,2a"]
+|===
+| | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
+
+| LOD2 | ● | WaterBody | Solid
+|
+* 河川、湖池、海、用水路
+|
+* 水面（WaterSurface）、水底面（WaterGroundSurface）、閉鎖面（WaterClosureSurface）を境界とする立体を作成する。
+|
+水中にある構造物は表現しない。
+| LOD2
+| ●
+| WaterSurface
+| Surface
+|
+* 水面
+|
+* 水涯線に囲まれた面から、中洲を除く面を取得する。
+* 各頂点に水涯線と地形との交線の高さを与える。
+| 水部モデル（LOD1）と同じ形状となる。
+
+| LOD2 | ● | WaterGroundSurface | Surface
+|
+* 水底
+|
+* 水底の高さを取得した各点より構成する三角網を取得する。
+|
+| LOD2
+| ■
+| WaterClosureSurface
+| Surface
+|
+* 水部を管理区間や行政界で区切る等、仮想的な面で区切りたい場合は必須とする。
+|
+* 水面（WaterSurface）と管理区間や行政界などの境界線との交線及び水底面（WaterGroundSurface）と境界線との交線により囲まれた面を取得する。
+* 各頂点には水面又は水底の高さを与える。
+|
+
+|===
+
+[%key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
+
+[[toc4_19_01_04]]
+===== 水部モデル（LOD3）
+
+====== 水部モデル（LOD3）の概要
+
+水部モデル（LOD3）では、水部の形状を、立体として表現する。 +
+水部モデル（LOD3）は、水中にある構造物を表現する。水部モデル（LOD3）の取得イメージを<<tab-4-114>>に示す。
+
+[[tab-4-114]]
+[cols="1a,9a"]
+.水部モデル（LOD3）の取得イメージ
+|===
+h| ^h| LOD3
+h| 取得例
+^|
+image::images/397.webp.png[]
+
+h| 説明
+| 水部モデル（LOD2）である、水涯線により囲まれた水面（WaterSurface）、水底面（WaterGroundSurface）及び閉鎖面（WaterClosureSurface）を境界面とする立体から、橋梁下部の橋脚部分など水中にある構造物を除いた立体となる。 +
+水中にある構造物と水部の境界面は水底面とする。
+
+|===
+
+====== 水部モデル（LOD3）の定義
+
+水部モデル（LOD3）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
+
+[cols="1a,^1a,1a,1a,3a,3a,2a"]
+|===
+| | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
+
+| LOD3 | ● | WaterBody | Solid |
+|
+* 水面（WaterSurface）、水底面（WaterGroundSurface）、閉鎖面（WaterClosureSurface）を境界とする立体を作成する。
+|
+| LOD3
+| ●
+| WaterSurface
+| Surface
+|
+* 水面
+|
+* 水涯線に囲まれた面から、水面から突出する構造物の水面での断面を除く面を取得する。
+* 各頂点に水涯線と地形との交線の高さを与える。
+| 構造物が存在しない場合は、水部モデル（LOD2）と同じ形状となる。
+
+| LOD3 | ● | WaterGroundSurface | Surface
+|
+* 水底
+|
+* 水底の高さを取得した各点より構成する三角網を取得する。
+|
+| LOD3
+| ●
+| WaterGroundSurface
+| Surface
+|
+* 水中の構造物の外形
+|
+* 水中に存在する構造物の外形（外側から見える形）を構成する面を取得する。
+* 面の各頂点に構造物の高さを与える。
+|
+
+| LOD3
+| ■
+| WaterClosureSurface
+| Surface
+|
+* 水部を管理区間や行政界で区切る等、仮想的な面で区切りたい場合は必須とする。
+|
+* 水面（WaterSurface）と管理区間や行政界などの境界線との交線及び水底面（WaterGroundSurface）と境界線との交線により囲まれた面を取得する。
+* 各頂点には水面又は水底の高さを与える。
+|
+
+|===
+
+[%key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
+
+[[toc4_19_01_05]]
+===== 各LODにおいて使用可能な地物型と空間属性
+
+水部モデルの各LODにおいて使用可能な地物型と空間属性を<<tab-4-115>>に示す。
+
+[[tab-4-115]]
+[cols="5a,6a,^a,^a,^a,a,6a"]
+.水部モデルの記述に使用する地物型と空間属性
+|===
+| 地物型 |  空間属性 |  LOD0 |  LOD1 |  LOD2 |  LOD3 |  適用
+
+.6+| wtr:WaterBody | |  ● |  ● |  ● ^|  ● |
+| lod0MultiCurve ^|  ■ |  |  |  .2+| 河川中心線（wtr:lod0MultiCurve）を基本とする。縁線、界線又は点として取得する場合はuro:lod0Geometryを使用する。
+| lod0Geometry |  ■ |  |  |
+| lod1MultiSurface |  |  ● |  |  |
+| lod2Solid |  |  |  ● |  |
+| lod3Solid |  |  |  |  ● |
+.3+| wtr:WaterSurface  | |  |  |  ● ^|  ● | 水部の形状を構成する面のうち、水面に使用する。
+| lod2Surface |  |  |  ● |  |
+| lod3Surface |  |  |  |  ● |
+.3+| wtr:WaterGroundSurface  | |  |  |  ● ^|  ● | 水底の境界面に使用する。
+| lod2Surface |  |  |  ● |  |
+| lod3Surface |  |  |  |  ● |
+.3+| wtr:WaterClosureSurface  | |  |  |  ■ ^|  ■ | 仮想的な面を作成したい場合に使用する。
+| lod2Surface |  |  |  ■ |  .2+| WaterClosureSurfaceを作る場合は必須とする。
+| lod3Surface |  |  |  |  ■
+
+|===
+
+[%key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
+
+[[toc4_19_02]]
+==== 水部モデルの応用スキーマクラス図
+
+[[toc4_19_02_01]]
+===== WaterBody（CityGML）
+
+image::images/398.svg[]
+
+[[toc4_19_02_02]]
+===== Urban Object（i-UR）
+
+image::images/399.svg[]
+
+[[toc4_19_03]]
+==== 水部モデルの応用スキーマ文書
+
+[[toc4_19_03_01]]
+===== WaterBody（CityGML）
+
+====== wtr:WaterBody
+
+[cols="1a,1a,2a",options="noheader"]
+|===
+.4+| 型の定義
+2+|
+河川、湖沼、等のように陸地内に存在する水の存在する部分及び海。水路や貯水槽、プールのような人工的に存在する水を含む。 LOD0は、ネットワーク又は、公共測量標準図式による表現のいずれかとし、ネットワークを原則とする。
+
+.wtr:WaterBodyの例（LOD0）
+image::images/400.webp.png[]
+
+2+|
+LOD1は、水涯線により囲まれた面として表現する。
+
+.wtr:WaterBodyの例（LOD1）
+image::images/401.webp.png[]
+
+2+|
+LOD2は、水面と水底面に囲まれた立体として表現する。
+
+.wtr:WaterBodyの例（LOD2）
+image::images/402.webp.png[]
+
+2+|
+LOD3は、水面と水底面に囲まれた立体から、水中の構造物を除いた立体として表現する。
+
+.wtr:WaterBodyの例（LOD3）
+image::images/403.webp.png[]
+
+水部のインスタンスは基準地域メッシュ（第3次地域区画）の境界で区切る。 LOD2又はLOD3でインスタンスを分割する場合は、基準地域メッシュの水部の立体の境界面分割するための仮想的な境界面を「wtr:WaterClosureSurface」とする。
+
+h| 上位の型 2+| wtr:_WaterObject
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 水部の説明。
+| gml:name | gml:CodeType [0..1] | 水部を識別する名称。文字列とする。
+h| (gml:boundedBy) | gml:Envelope [0..1] | オブジェクトの範囲と空間参照系。
+| core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
+| core:terminationDate | xs:date [0..1] | データが削除された日。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| wtr:class | gml:CodeType [0..1] | 水部の分類。コードリスト（WaterBody_class.xml）から選択する。
+h| (wtr:function) | gml:CodeType [0..*] | 水部の種類。
+h| (wtr:usage) | gml:CodeType [0..*] | 水部の利用方法。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット（集合）。属性を追加したい場合に使用する。
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+| wtr:lod0MultiCurve | gml:MultiCurve [0..1] | 河川中心線。現況河道の中心線で湖沼域を含む河川の経路を指す。頂点の順列により流下方向を示す。第一点目の頂点を流下始点とし、最終点を流下終点とする。
+| wtr:lod1MultiSurface | gml:MultiSurface [0..1] | 水面の範囲。水平面に投影した場合に隣り合う水部のインスタンスは、連続でなければならない。
+
+各頂点の高さは、水涯線の各頂点と同位置の地形の標高とする。
+| wtr:lod2Solid | gml:Solid [0..1] | 水面（wtr:WaterSurface）と、等深線や航空レーザ又はマルチビーム測深の点群データからから作成した不規則三角網（TIN）により表現する水底面（wtr:WaterGroundSurface）を境界面とする水部の外形を示す立体。
+
+ただし、水面又は水底面が複数の基準地域メッシュに跨る場合は、基準地域メッシュとの境界線を用いて作成した垂直面で立体を分割し、分割された水面、水底面及び垂直面を境界面とする立体とする。このとき、垂直面はwtr:WaterClosureSurfaceとなる。
+| wtr:boundedBy | wtr:_BoundarySurface [0..*] | 水部の外形を構成する水面（wtr:WaterSurface）や水底面（wtr:WaterGroundSurface）等の境界面。
+| wtr:lod3Solid | gml:Solid [0..1] | 水面（wtr:WaterSurface）と、航空レーザ又はマルチビーム測深の点群データから不規則三角網（TIN）を発生した水底面（wtr:WaterGroundSurface）を境界面とする水部の外形を示す立体。
+
+ただし、水面又は水底面が複数の基準地域メッシュに跨る場合は、基準地域メッシュとの境界線を用いて作成した垂直面で立体を分割し、分割された水面、水底面及び垂直面を境界面とする立体とする。このとき、垂直面はwtr:WaterClosureSurfaceとなる。
+| uro:waterBodyDetailAttribute | uro:WaterBodyDetailAttribute [0..1] | 水部の基礎的な情報。
+| uro:wtrKeyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
+| uro:wtrDataQualityAttribute | uro:DataQualityAttribute [0..1] | 作成されたデータの品質に関する情報。必須とする。
+
+公共測量成果となる場合はuro:PublicSurveyDataQualityAttributeを使用して記述する。
+
+公共測量成果とならない場合はuro:DataQualityAttributeを使用して記述する。
+| uro:wtrDmAttribute | uro:DmAttribute [0..*] | 公共測量標準図式による図形表現に必要な情報。
+| uro:wtrFacilityTypeAttribute | uro:FacilityTypeAttribute [0..*] | 特定分野における施設の分類情報。
+| uro:wtrFacilityIdAttribute | uro:FacilityIdAttribute [0..1] | uro:wtrFacilityTypeAttribute.classによって指定された分野における施設の識別情報。
+| uro:wtrFacilityAttribute | uro:FacilityAttribute [0..*] | uro:wtrFacilityTypeAttribute.classによって指定された分野における施設管理情報。
+
+|===
+
+====== wtr:WaterSurface
+
+[cols="1a,1a,2a"]
+|===
+| 型の定義
+2+|
+水面。大気と水部の境界面とする。
+
+.水部の断面イメージ
+image::images/404.webp.png[]
+
+h| 上位の型 2+| wtr:_BoundarySurface
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
+h| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
+h| (core:creationDate) | xs:date [0..1] | データが作成された日。運用上必須とする。
+h| (core:terminationDate) | xs:date [0..1] | データが削除された日。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (wtr:waterLevel) | gml:CodeType [0..1] | 水位の状況。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+| wtr:lod2Surface | gml:_Surface [0..1] | LOD2において水面の形状・起伏を再現した面。中洲がある場合は、中洲を除いた範囲となる。中洲が無い場合は、LOD1の水部の面と同じ形状となる。複数の基準地域メッシュに跨る場合は、基準地域メッシュとの境界線にて面を分割する。
+| wtr:lod3Surface | gml:_Surface [0..1] | LOD3において水面の形状・起伏を再現した面。LOD2の水面と同じ形状となる。複数の基準地域メッシュに跨る場合は、基準地域メッシュとの境界線にて面を分割する。
+
+|===
+
+====== wtr:WaterGroundSurface
+
+[cols="1a,1a,2a"]
+|===
+| 型の定義
+2+|
+水底面。地形と水部の境界面及び水中の構造物と水部との境界面をいう。
+
+.水部の断面イメージ
+image::images/405.webp.png[]
+
+h| 上位の型 2+| wtr:_BoundarySurface
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
+h| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
+h| (core:creationDate) | xs:date [0..1] | データが作成された日。運用上必須とする。
+h| (core:terminationDate) | xs:date [0..1] | データが削除された日。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+| wtr:lod2Surface | gml:_Surface [0..1] | LOD2において等深線から作成した不規則三角網（TIN）により水底の形状・起伏を再現した面。
+
+複数の基準地域メッシュに跨る場合は、基準地域メッシュとの境界線にて面を分割する。
+| wtr:lod3Surface | gml:_Surface [0..1] | LOD3において航空レーザ又はマルチビーム測深の点群データから不規則三角網（TIN）を発生することで水底の形状・起伏を再現した面。
+
+複数の基準地域メッシュに跨る場合は、基準地域メッシュとの境界線にて面を分割する。
+
+|===
+
+====== wtr:WaterClosureSurface
+
+[cols="1a,1a,2a"]
+|===
+| 型の定義
+2+|
+水部の立体を区切る仮想的な面。（閉鎖面） 複数の基準地域メッシュに跨って存在する河川、湖沼、海等を基準メッシュ単位に分割する場合や、河川、湖沼、海等の一部の範囲のみを作成する場合に、水部の立体を構成する境界面として使用する。
+
+.水部の断面イメージ
+image::images/406.webp.png[]
+
+h| 上位の型 2+| wtr:_BoundarySurface
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
+h| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
+h| (core:creationDate) | xs:date [0..1] | データが作成された日。運用上必須とする。
+h| (core:terminationDate) | xs:date [0..1] | データが削除された日。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+| wtr:lod2Surface | gml:_Surface [0..1] | 水部を区切りたい場所と水面及び水底面との交線により囲まれた面。
+| wtr:lod3Surface | gml:_Surface [0..1] | 水部を区切りたい場所と水面及び水底面との交線により囲まれた面。
+
+|===
+
+[[toc4_19_03_02]]
+===== Urban Object（i-UR）
+
+====== uro:WaterBodyDetailAttribute
+
+[cols="1a,1a,2a"]
+|===
+| 型の定義 2+| 水部の基盤的な情報。
+
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| uro:kana | xs:string[0..1] | 水部の名称のフリガナ。カタカナで記述する。
+| uro:waterSystemCode | gml:CodeType [0..1] | 水系域コード。河川コード仕様書（国土交通省河川局）にて示された2桁の地域番号と4桁の水系番号からなる6桁の番号。
+
+（水系域コード一覧： https://nlftp.mlit.go.jp/ksj/gml/codelist/WaterSystemCodeCd.html ） 地域番号は、1級水系の場合は地方整備局等の番号、1級水系以外は都道府県の番号となる。また、水系番号は、一水系につき一つ与えられた番号であり、地域番号と併せて使用することで、水系の特定が可能となる。
+
+コードリスト（WaterBodyDetailAttribute_SystemCode.xml）より選択する。
+| uro:riverCode | gml:CodeType [0..1] | 河川コード。河川コード仕様書（国土交通省河川局）にて示された、１級河川、２級河川、準用河川、普通河川に該当する個別の河川を一意に特定するために付与された2桁の地域番号、4桁の水系番号、4桁の河川番号からなる10桁の番号。
+
+（河川コード一覧： https://nlftp.mlit.go.jp/ksj/gml/codelist/RiverCodeCd.html ） 河川番号、同一水系内において河川を特定するための番号であり、一河川につき一つの番号が付与される。
+
+コードリスト（WaterBodyDetailAttribute_riverCode.xml）より選択する。
+| uro:adminType | gml:CodeType [0..1] | 河川管理者が管理する区間種別。コードリスト（WaterBodyDetailAttribute_adminType.xml）より選択する。
+| uro:flowDirection | xs: boolean [0..1] | 水部の流下方向の判明状況。
+| uro:maximumDepth | gml:LengthType[0..1] | 最大水深。単位はｍ（uom=”m”）とする。
+| uro:waterSurfaceElevation | gml:LengthType[0..1] | 水面標高。単位はｍ（uom=”m”）とする。
+| uro:area | gml:MeasureType[0..1] | 水部の範囲の実測により取得した面積。単位はm2（uom=”m2”）とする。
+| uro:measurementYearMonth | xs:gYearMonth[0..1] | 水部を測量した年月。
+| uro:prefecture | gml:CodeType[0..*] | 水部が所在する都道府県の都道府県コ－ド。JIS X0401に定義される2桁の半角数字。コードリスト（Common_localPublicAuthorities.xml）より選択する。複数の都道府県に跨って存在する場合は、複数の都道府県コードを記述する。
+| uro:city | gml:CodeType[0..*] | 水部が所在する市区町村の市区町村コ－ド。JIS X0401に定義される2桁の半角数字とJIS X0402に定義される3桁の半角数字とを組み合わせた5桁の半角数字。政令市の場合は、区の市区町村コードとする。コードリスト（Common_localPublicAuthorities.xml）より選択する。
+
+複数の市区町村に跨って存在する場合は、複数の市区町村コードを記述する。
+
+|===
+
+====== uro:KeyValuePairAttribute
+
+[cols="1a,1a,2a"]
+|===
+| 型の定義 2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。
+
+属性名称と属性の値の対で構成される。コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
+
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| uro:key | gml:CodeType [1] | 拡張する属性の名称。名称は、コ－ドリスト（KeyValuePairAttribute_key.xml）を作成し、選択する。
+| uro:codeValue | gml:CodeType [1] | 拡張された属性の値。値は名称は、コ－ドリスト（KeyValuePairAttribute_key[%key].xml）を作成し、選択する。 [%key]は、属性uro:keyの値に一致する。
+
+|===
+
+====== uro:DataQualityAttribute
+
+[cols="1a,1a,2a"]
+|===
+| 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
+
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| uro:geometrySrcDescLod0 | gml:CodeType [0..*] | LOD0の幾何オブジェクトの作成に使用した原典資料の種類。
+
+コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD0の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、水部モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
+| uro:geometrySrcDescLod1 | gml:CodeType [1..*] | LOD1の幾何オブジェクトの作成に使用した原典資料の種類。
+
+コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。具体的な都市オブジェクトがLOD1の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
+| uro:geometrySrcDescLod2 | gml:CodeType [0..*] | LOD2の幾何オブジェクトの作成に使用した原典資料の種類。
+
+コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD2の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、水部モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
+| uro:geometrySrcDescLod3 | gml:CodeType [0..*] | コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD3の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD3の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、水部モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
+h| (uro:geometrySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
+| uro:thematicSrcDesc | gml:CodeType [0..*] | 主題属性の作成に使用した原典資料の種類 コードリスト（DataQualityAttribute_thematicSrcDesc.xml）より選択する。
+
+主題属性が作成対象となっている場合は必須とする。
+| uro:appearanceSrcDescLod0 | gml:CodeType [0..*] | LOD0の幾何オブジェクトのアピアランスに使用した原典資料の種類。
+
+コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。
+
+拡張製品仕様書でLOD0の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
+| uro:appearanceSrcDescLod1 | gml:CodeType [0..*] | LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。
+
+コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。
+
+拡張製品仕様書LOD1の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD1の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
+| uro:appearanceSrcDescLod2 | gml:CodeType [0..*] | LOD2の幾何オブジェクトのアピアランスに使用した原典資料の種類。
+
+コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。
+
+拡張製品仕様書でLOD2の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
+| uro:appearanceSrcDescLod3 | gml:CodeType [0..*] | LOD3の幾何オブジェクトのアピアランスに使用した原典資料の種類。
+
+コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。
+
+拡張製品仕様書でLOD3の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD3の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
+h| (uro:appearanceSrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトのアピアランスに使用した原典資料の種類。
+h| (uro:lodType) | gml:CodeType[0..*] | 幾何オブジェクトに適用されたLODの詳細な区分。
+h| (uro:lod1HeightType) | gml:CodeType [0..1] | LOD1の立体図形を作成する際に使用した高さの算出方法。
+h| (uro:tranDataAcquisition) | xs:string [0..1] | 「<<nilim_kiban_dps,道路基盤地図情報（整備促進版）製品仕様書（案）>>」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+| uro:publicSurveyDataQualityAttribute | uro:PublicSurveyDataQualityAttribute [0..1] | 使用した公共測量成果の地図情報レベルと種類。
+
+各LODの幾何オブジェクトの作成に使用した原典資料の種類に関する属性（uro:geometrySrcDescLod0等）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）となっている場合は、必須とする。
+
+|===
+
+====== uro:PublicSurveyDataQualityAttribute
+
+[cols="1a,1a,2a"]
+|===
+| 型の定義 2+| 使用した公共測量成果の地図情報レベルと種類を、LODごとに記述するためのデータ型。
+
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| uro:srcScaleLod0 | gml:CodeType [0..1] | LOD0の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
+
+コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。
+
+「LOD0の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
+| uro:srcScaleLod1 | gml:CodeType [0..1] | LOD1の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
+
+コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。
+
+「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
+| uro:srcScaleLod2 | gml:CodeType [0..1] | LOD2の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
+
+コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。
+
+「LOD2の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod2）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
+
+複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば地図情報レベル2500の公共測量成果と地図情報レベル500の公共測量成果を使用した場合は、地図情報レベル2500となる。
+| uro:srcScaleLod3 | gml:CodeType [0..1] | LOD3の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
+
+コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。
+
+「LOD3の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod3）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
+
+複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば地図情報レベル2500の公共測量成果と地図情報レベル500の公共測量成果を使用した場合は、地図情報レベル2500となる。
+h| (uro:srcScaleLod4) | gml:CodeType [0..1] | LOD4の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
+| uro:publicSurveySrcDescLod0 | gml:CodeType [0..*] | LOD0の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。
+
+「LOD0の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
+
+複数の種類の原典資料を使用した場合は、それぞれを記述する。
+| uro:publicSurveySrcDescLod1 | gml:CodeType [0..*] | LOD1の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。
+
+「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
+
+複数の種類の原典資料を使用した場合は、それぞれを記述する。
+| uro:publicSurveySrcDescLod2 | gml:CodeType [0..*] | LOD2の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。
+
+「LOD2の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod2）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
+
+複数の種類の原典資料を使用した場合は、それぞれを記述する。
+| uro:publicSurveySrcDescLod3 | gml:CodeType [0..*] | LOD3の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。
+
+「LOD3の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod3）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
+
+複数の種類の原典資料を使用した場合は、それぞれを記述する。
+h| (uro:publicSurveySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
+
+|===
+
+====== uro:FacilityIdAttribute
+
+<<toc4_25_03,施設管理属性の応用スキーマ文書>>　参照。
+
+====== uro:FacilityTypeAttribute
+
+<<toc4_25_03,施設管理属性の応用スキーマ文書>>　参照。
+
+====== uro:FacilityAttribute
+
+<<toc4_25_03,施設管理属性の応用スキーマ文書>>　参照。
+
+====== uro:DmAttribute
+
+<<toc4_24_03,公共測量標準図式の応用スキーマ文書>>　参照。
+
+[[toc4_19_04]]
+==== 水部モデルで使用するコードリストと列挙型
+
+[[toc4_19_04_01]]
+===== WaterBody（CityGML）
+
+====== WaterBody_class.xml
+
+lutaml_gml_dictionary::iur/codelists/3.1/WaterBody_class.xml[template="gml_dict_template.liquid",context=dict]
+
+[[toc4_19_04_02]]
+===== Urban Object（i-UR）
+
+====== WaterBodyDetailAttribute_adminType.xml
+
+lutaml_gml_dictionary::iur/codelists/3.1/WaterBodyDetailAttribute_adminType.xml[template="gml_dict_template.liquid",context=dict]
+
+====== DataQualityAttribute_geometrySrcDesc.xml
+
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+
+[.source]
+<<gsi_ops>>
+
+[.source]
+<<plateau_002>>
+
+[.source]
+<<plateau_010>>
+
+
+====== DataQualityAttribute_thematicSrcDesc.xml
+
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+
+[.source]
+<<gsi_ops>>
+
+[.source]
+<<plateau_002>>
+
+[.source]
+<<plateau_010>>
+
+
+====== DataQualityAttribute_appearanceSrcDesc.xml
+
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+
+====== PublicSurveyDataQualityAttribute_srcScale.xml
+
+lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
+
+====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
+
+lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+
+[.source]
+<<gsi_ops>>
+
+[.source]
+<<plateau_002>>
+
+[.source]
+<<plateau_010>>
+
+
