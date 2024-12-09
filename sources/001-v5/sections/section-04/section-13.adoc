@@ -1,0 +1,1475 @@
+[[toc4_13]]
+=== その他の構造物モデルの応用スキーマ
+
+その他の構造物とは、構造物のうち、橋梁及びトンネルを除く土木構造物をいう。 +
+「構造物」とは、「目的とする機能を持ち、作用に対して抵抗することを意図として人為的に構築されるもの」（土木・建築にかかる設計の基本、国土交通省）であり、ダム、堤防、床止め、堰、水門・閘門・陸閘、樋門・樋管、伏せ越し、水制、護岸、防波堤その他の土木構造物を指す。
+
+[cols="3a,17a"]
+|===
+| その他の構造物 | 説明
+
+| ダム | 洪水の調整、発電、上水道、農工業等のための各種用水の貯水を目的として設けられた工作物をいい、砂防ダムを含む。「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」
+| 堤防 | 河川管理施設等構造令第17条に示される堤防及び霞堤。 +
+河川の流水の氾濫を防ぐ目的をもって、土砂・石礫等によって造られた河川構造物。
+| 床止め | 河川管理施設等構造令第33条に示される床止め。 +
+河床の洗掘を防いで河川河道の勾配等を安定させ、河川の縦断又は横断形状を維持するために、河川を横断して設ける施設。（河川構造物設計要領）
+| 堰 | 河川管理施設等構造令第36条に示される堰。 +
+河川の流水を制御するために、河川を横断して設けられるダム以外の施設であって、堤防の機能を有しないもの。
+| 水門・閘門・陸閘
+| 河川管理施設等構造令第46条に示される水門。 +
+水門：河川又は水路を横断して設けられる制水施設であって堤防の機能を有するもの +
+閘門：運河・放水路などで水量を調節するための水門 +
+陸閘：閉鎖することで海水の侵入を防止するとともに、開放することで堤防等の海側にある港湾、漁港、海浜等を利用するために人や車両等が堤防等を横断できるようにする施設。 +
+（ https://www.mlit.go.jp/common/001176448.pdf ）
+
+| 樋門・樋管
+| 河川管理施設等構造令第46条に示される樋門。 +
+海・河川への排水口に設けられている施設。 +
+（ https://www.mlit.go.jp/common/001176448.pdf ）
+
+| 伏せ越し
+| 河川管理施設等構造令第68条に示される伏せ越し。 +
+用水施設又は排水施設である開渠が、河川法の適用を受ける河川と交差する場合において、逆サイフォン構造で河底を横過する工作物で、施工方法が開削工法によるもの。
+
+| 水制
+| 河川管理施設等構造令第26条に示される護岸。 +
+海岸や河川の水の勢いを弱め海岸や川岸が削られるのを防いだり、流れの方向を整えたりするために水中に設ける工作物。
+
+| 護岸
+| 河川管理施設等構造令第25条に示される護岸。 +
+高水敷や他の構造物とともに流水による侵食作用から堤防（掘込河道にあっては堤内地）を保護するために設けるもの。
+
+| 防波堤 | 波浪を制御する堤防、埠頭、海岸浸食を防ぐ突堤等。
+「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」
+
+|===
+
+[[toc4_13_01]]
+==== その他の構造物モデルのLOD
+
+[[toc4_13_01_01]]
+===== その他の構造物モデル（LOD0）
+
+====== その他の構造物モデル（LOD0）の概要
+
+その他の構造物モデル（LOD0）では、構造物の形状を、点、線、又は面により表現する。 +
+その他の構造物モデル（LOD0）の取得イメージを<<tab-4-76>>に示す。
+
+[[tab-4-76]]
+[cols="1a,3a,3a,3a"]
+.その他の構造物モデル（LOD0）の取得イメージ
+|===
+h| 3+^h| LOD0
+h| 取得例
+|
+image::images/270.webp.png[]
+|
+image::images/271.webp.png[]
+|
+image::images/272.webp.png[]
+
+h| 説明
+| 水門は、真形を取得する。 +
+極小の場合は、表示位置の点と方向を取得する。
+| 敷石斜坂の場合は、外周を面として取得する。
+| 防波堤は、直ヒ（直壁）の場合は低い方を右に取得する。それ以外の場合は射影部の上端線を低い方を右に取得し、射影部の下端線を高い方を右に取得する。
+
+h| 3+^h| LOD0
+h| 取得例
+|
+image::images/273.webp.png[]
+|
+image::images/274.webp.png[]
+|
+image::images/275.webp.png[]
+
+h| 説明
+| 堤防の場合は、法線を取得する。
+| 船揚場の場合は、外周を面として取得し、説明注記を線状に入力する。
+| 堰の場合は、上流部の中心線と下流部の中心線を取得する。 +
+極小の場合は、中央位置の点情報と方向を取得する。
+
+|===
+
+====== その他の構造物モデル（LOD0）の定義
+
+その他の構造物モデル（LOD0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
+
+[cols="1a,^1a,1a,1a,3a,3a,2a"]
+|===
+| LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
+
+.6+| LOD0
+.6+| ●
+.6+| OtherConstruction
+| Point
+| 堰、水門 footnoteblock:[fn_follow_diagram]
+|
+* 中心位置と方向を取得する。
+* 高さは0とする。
+|
+
+| MultiCurve
+<| 水門、閘門・陸閘、樋門・樋管、伏せ越し
+|
+* 門の両側の構造物の、上方からの正射影を取得する。
+* 仕切り部の中心線を取得する。
+| 水門、閘門・陸閘、樋門・樋管、伏せ越し
+
+| MultiCurve
+<| ダム +
+堰 footnoteblock:[fn_follow_diagram]
+|
+* 上端線及び下端線を取得する。
+* 高さは0とする。
+|
+| MultiCurve
+<| 堤防
+|
+* 法線を取得する。
+* 高さは0とする。
+|
+
+| MultiCurve
+<| 防波堤 footnoteblock:[fn_follow_diagram] +
+護岸、不透過水制、被覆
+|
+* 構造物の上方からの正射影の外周を取得する。
+* 高さは0とする。
+|
+
+| MultiSurface
+<| 防波堤 footnoteblock:[fn_follow_diagram] +
+透過水制、敷石斜坂、船揚場
+|
+* 構造物の上方からの正射影の外周を取得する。
+* 高さは0とする。
+|
+
+|===
+
+[[fn_follow_diagram]]
+[NOTE]
+--
+数値地形図の取得基準に従う。
+--
+
+[%key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
+
+[[toc4_13_01_02]]
+===== その他の構造物モデル（LOD1）
+
+====== その他の構造物モデル（LOD1）の概要
+
+その他の構造物モデル（LOD1）では、構造物の形状を立体により表現する。 +
+その他の構造物モデル（LOD1）の取得イメージを<<tab-4-77>>に示す。
+
+[[tab-4-77]]
+[cols="2a,9a,9a"]
+.その他の構造物モデル（LOD1）の取得イメージ
+|===
+h| 2+^h| LOD1
+h| 取得例
+|
+image::images/276.webp.png[]
+|
+image::images/277.webp.png[]
+
+h| 説明 | 構造物の上からの上方からの正射影の外周に一律の高さを与えて押し出した立体とする。 +
+構造物の外周は水面（陸上に設置されている場合は地面）との交線とする。 +
+一律の高さは、水面（陸上に設置されている場合は地面）から構造物の最高高さまでとする。
+|
+水制や床止めのように、同じ形状の小規模な構造物が繰り返し配置され、一体となってその機能を果たす構造物の場合、全体を包含する矩形又は矩形の集まりを面として取得し、一律の高さを与えて押し出した立体とする。 +
+一律の高さは、水面（陸上に設置されている場合は地面）から構造物の最高高さまでとする。
+
+|===
+
+====== その他の構造物モデル（LOD1）の定義
+
+その他の構造物モデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
+
+[cols="1a,^1a,1a,1a,3a,3a,2a"]
+|===
+| LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
+
+.2+| LOD1 .2+| ● .2+| OtherConstruction | Solid | 護岸ダム、堤防、堰、水門・閘門・陸閘、樋門・樋管、伏せ越し
+|
+* 構造物の上方からの正射影の外周を取得する。
+* 外周を一律の高さで押し出した立体を作成する。
+|
+* 一律の高さは、水面（陸上に設置されている場合は地面）から構造物の最高高さまでとする。
+| Solid
+<| 床止め、水制
+|
+* 一団となって設置された構造物全体を包含する上方からの正射影の外周を取得する。
+* 外周を地表面からの一律の高さで押し出した立体を作成する。
+|
+* 一団となって設置された構造物全体を包含する外周は、矩形又は矩形の集まりとする。
+* 一律の高さは、水面（陸上に設置されている場合は地面）から構造物の最高高さまでとする。
+
+|===
+
+[%key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
+
+[[toc4_13_01_03]]
+===== その他の構造物モデル（LOD2）
+
+====== その他の構造物モデル（LOD2）の概要
+
+その他の構造物モデル（LOD2）では、その他の構造物の形状を、主要な部分を簡略化した立体として表現する。
+
+[cols="a,a,a"]
+.その他の構造物モデル（LOD2）に含むべき地物と対応する地物型
+|===
+| その他の構造物モデル（LOD2）に含むべき地物 | 対応するCityGMLの地物型 | LOD2
+
+| その他の構造物 | OtherConstruction |  ●
+| 屋根 | RoofSurface |  ●
+| 底面 | GroundSurface |  ●
+| 外壁面 | WallSurface |  ●
+| 閉鎖面 | ClosureSurface |  ■
+
+|===
+
+[%key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
+
+その他の構造物モデル（LOD2）の取得イメージを<<tab-4-80>>に示す。
+
+[[tab-4-80]]
+[cols="1a,9a"]
+.その他の構造物モデル（LOD2）の取得イメージ
+|===
+h| h| LOD2
+h| 取得例 | image::images/278.webp.png[]
+
+h| 説明
+| 水門や堰のように、単独で設置される構造物の場合、外周の上から見た正射影に水面（陸上の構造物の場合は地面）の高さを与えた面を底面とする。 +
+また、上から見た外形の正射影に構造物の高さを与えた面を屋根面とし、底面と屋根面を結んだ立体として表現する。 +
+側面が直立しており、上方からの正射影が取得できない場合は外壁面とする。 +
+側面は詳細化せず、上部に管理橋や管理所等が存在する水門や堰は、ゲートの形状は表現しない。 +
+なお、構造物を行政界等で区切り、一部のみを作成する場合、その仮想的な境界面には閉鎖面を使用する。 +
+堤防や護岸に設けられた階段は、最上段及び最下段を結ぶスロープ状に再現する。
+
+h| h| LOD2.0
+h| 取得例 | image::images/279.webp.png[]
+
+h| 説明
+| 水制や床止めのように、同じ形状の小規模な構造物が繰り返し配置され、一体となってその機能を果たす構造物の場合、一体となった外形を、簡略化した立体により表現する。 +
+この場合、上から見える面は全て屋根面とする。
+
+|===
+
+====== その他の構造物モデル（LOD2）の定義
+
+その他の構造物モデル（LOD2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
+
+[cols="1a,^1a,1a,1a,3a,3a,2a"]
+|===
+| LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
+
+| LOD2 | ● | OtherConstruction | Solid | ダム、堤防、床止め、堰、水門・閘門・陸閘、樋門・樋管、伏せ越し及び水制
+|
+* 屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）、及び閉鎖面（ClosureSurface）を境界面とする立体を作成する。
+|
+* 上空から見下ろした形状を取得する。
+| LOD2 | ● | RoofSurface | MultiSurface |
+|
+* 屋根の上方からの正射影の外周を取得し、棟及び谷で区切る。
+* 区切った面の各頂点に屋根の高さを与える。
+|
+| LOD2 | ● | GroundSurface | MultiSurface |
+|
+* 構造物の上方からの正射影の外周を取得する。
+* 各頂点に水面（陸上の構造物の場合は地面）の高さを与える。
+|
+| LOD2 | ● | WallSurface | MultiSurface |
+|
+* 底面と屋根面を垂直に結んだ面を側面とする。
+|
+| LOD2 | ■ | ClosureSurface | MultiSurface | 行政界で地物を区切る場合
+|
+* 屋根面（RoofSurface）、底面（GroundSurface）及び壁面（WallSurface）を、行政で区切る境界線により囲まれた範囲を取得する。
+|
+| LOD2 | | ConstructionInstallation | | | | 対象外
+
+|===
+
+[%key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
+
+[[toc4_13_01_04]]
+===== その他の構造物モデル（LOD3）
+
+====== その他の構造物モデル（LOD3）の概要
+
+その他の構造物モデル（LOD3）では、その他の構造物の形状を、主要な部分の外形を構成する特徴点から構成する面を境界面とする立体として表現する。 +
+LOD3は、構造上不可欠ではない付属物（手すり、柵、構造物と一体ではない階段）の表現有無によりLOD3.0及びLOD3.1に区分する。
+
+[cols="5a,5a,3a,3a"]
+.LOD3.0、LO3.1及びLOD3.2の区分
+|===
+| その他の構造物モデル（LOD2）に含むべき地物 | 対応するCityGMLの地物型 | LOD3.1 | LOD3.2
+
+| その他の構造物 | OtherConstruction |  ● |  ●
+| 屋根 | RoofSurface |  ● |  ●
+| 底面 | GroundSurface |  ● |  ●
+| 外壁面 | WallSurface |  ● |  ●
+| 閉鎖面
+| ClosureSurface
+|  ■ +
+行政界等で仮想的に構造物を区切る場合に必須とする。
+|  ■ +
+行政界等で仮想的に構造物を区切る場合に必須とする。
+
+| 屋外床面 | OuterFloorSurface | |  〇
+| 屋外天井面 | OuterCeilingSurface | |  〇
+| その他の構造物付属物 | ConstructionInstallation | |  ●
+
+|===
+
+[%key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
+
+[cols="1a,9a"]
+.その他の構造物（LOD3）の取得イメージ
+|===
+h| ^h| LOD3.0
+h| 取得例
+|
+image::images/280.webp.png[]
+
+h| 説明 | LOD3.0では、水門や堰のように、単独で設置される構造物の場合、LOD2の形状から、側面を詳細化した立体として表現する。 +
+構造上不可欠ではない付属物（手すり、柵、構造物と一体ではない階段）は表現しない。 +
+堤防や護岸に設けられた階段の段を表現する。 +
+水制の形状を個々に表現できるが、個々に形状を作成する必要はなく、同一のモデルを複製して配置してよい。
+h| ^h| LOD3.1
+h| 取得例
+|
+image::images/281.webp.png[]
+
+h| 説明 | LOD3.1では、LOD3.0に加え、構造上不可欠ではない付属物（手すり、柵、構造物と一体ではない階段）を表現する。 +
+また、構造物の外形を構成する上向きの面のうち通行可能な面を屋外床面に区分することができる。
+
+|===
+
+====== その他の構造物モデル（LOD3.0）の定義
+
+その他の構造物モデル（LOD3.0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
+
+[cols="1a,^1a,1a,1a,3a,3a,3a"]
+|===
+| LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
+
+.2+| LOD3.0 .2+| ● .2+| OtherConstruction | Solid | ダム、堤防、堰、水門・閘門・陸閘、樋門・樋管、伏せ越し、敷石斜坂、船揚場
+|
+* 屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）及び閉鎖面（ClosureSurface）を境界面とする立体を作成する。
+|
+| Solid <| 床止め、水制
+|
+* 屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）及び閉鎖面（ClosureSurface）を境界面とする立体を作成する。
+|
+* 一つ一つのブロックの形状を表現するが、一つのモデルをテンプレートとして作成し、これを複製することに替えてよい。（個々の構造物の形状を再現する必要はない）
+| LOD3.0
+| ●
+| RoofSurface
+| MultiSurface
+| ダム、堤防、堰、水門・閘門・陸閘、樋門・樋管、伏せ越し、敷石斜坂、船揚場
+|
+* 屋根の外周を取得し、棟及び谷で区切る。
+* 区切った面の各頂点に屋根の高さを与える。
+|
+* 屋根の棟及び谷で区切ることにより、屋根の傾斜や向きを再現する。
+* 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
+
+| LOD3.0 | ● | GroundSurface | MultiSurface | ダム、堤防、堰水門・閘門・陸閘、樋門・樋管、伏せ越し、敷石斜坂、船揚場
+|
+* 水面（陸上の構造物の場合は地面）地表と外壁面との交線を取得し、各頂点に水面（地面）の高さを与える。
+|
+* 水面（地表面）の高さは、上方からの正射影の外周に含まれる水部（地形）の頂点の標高のうち、最も低い標高とする。
+| LOD3.0
+| ●
+| WallSurface
+| MultiSurface
+| ダム、堤防、堰、水門・閘門・陸閘、樋門・樋管、伏せ越し、床止め、水制、敷石斜坂、船揚場
+|
+* 外壁の角を結ぶ外周を取得する
+* 角となる場所で区切る。
+|
+* 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
+
+| LOD3.0 | ■ | ClosureSurface | MultiSurface | 行政界で地物を区切る場合
+|
+* 屋根面（RoofSurface）、底面（GroundSurface）及び壁面（WallSurface）を、行政で区切る境界線により囲まれた範囲を取得する。
+|
+| LOD3.0 | | OuterCeilingSurface | | | | 対象外
+| LOD3.0 | | OuterFloorSurface | | | | 対象外
+| LOD3.0 | | ConstructionInstallation | | | | 対象外
+
+|===
+
+[%key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
+
+====== その他の構造物モデル（LOD3.1）の定義
+
+その他の構造物モデル（LOD3.1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
+
+[cols="1a,^1a,1a,1a,3a,3a,3a"]
+|===
+| LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
+
+| LOD3.1
+| ●
+| OtherConstruction
+| Solid
+| ダム、堤防、堰、水門・閘門・陸閘、樋門・樋管、伏せ越し
+|
+* 構造物の外形を、上面及び側面から詳細化した立体として表現する。
+* 上部に管理橋や管理所等が存在する水門や堰も、ゲートの形状を表現する。
+|
+
+| LOD3.1
+| ●
+| RoofSurface
+| MutiSurface
+| ダム、堤防、堰、水門・閘門・陸閘、樋門・樋管、伏せ越し、敷石斜坂、船揚場
+|
+* 屋根の外周を取得し、棟及び谷で区切る。
+* 区切った面の各頂点に屋根の高さを与える。
+|
+* 屋根の棟及び谷で区切ることにより、屋根の傾斜や向きを再現する。
+* 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
+
+| LOD3.1 | ● | GroundSurface | MutiSurface | ダム、堤防、堰、水門・閘門・陸閘、樋門・樋管、伏せ越し、敷石斜坂、船揚場
+|
+* 水面（陸上の構造物の場合は地面）地表と外壁面との交線を取得し、各頂点に水面（地面）の高さを与える。
+|
+* 水面（地表面）の高さは、上方からの正射影の外周に含まれる水部（地形）の頂点の標高のうち、最も低い標高とする。
+| LOD3.1
+| ●
+| WallSurface
+| MutiSurface
+| ダム、堤防、堰、水門・閘門・陸閘樋門・樋管、伏せ越し、敷石斜坂、船揚場
+|
+* 外壁の角を結ぶ外周を取得する
+* 角となる場所で区切る。
+|
+* 曲面の場合は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう平面に分割する。
+
+| LOD3.1 | ■ | ClosureSurface | MutiSurface | 行政界で地物を区切る場合に必須とする。
+|
+* 屋根面（RoofSurface）、底面（GroundSurface）及び壁面（WallSurface）を、行政で区切る境界線により囲まれた範囲を取得する。
+|
+| LOD3.1
+| ○
+| OuterCeilingSurface
+| MutiSurface
+| ユースケースで必要な場合
+|
+* 外壁のうち、上向きとなる面の外周を取得する。
+* 面の各頂点に、外壁の高さを与える。
+| 
+* RoofSurfaceの代替として使用できる。
+
+| LOD3.1
+| ○
+| OuterFloorSurface
+| MutiSurface
+| ユースケースで必要な場合
+|
+* 外壁のうち、下向きとなる面の外周を取得する。
+* 面の各頂点に、外壁の高さを与える。
+| 
+* WallSurfaceの代替として利用できる。
+
+| LOD3.1 | ● | ConstructionInstallation | MutiSurface | 防護柵、階段、梯子、管理用通路
+|
+* 付属物の外形（外側から見える形）を構成する面を取得する。
+|
+
+|===
+
+[%key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
+
+[[toc4_13_01_05]]
+===== 各LODにおいて使用可能な地物型と空間属性
+
+その他の構造物モデルの各LODにおいて使用可能な地物型と空間属性を<<tab-4-82>>に示す。
+
+[[tab-4-82]]
+[cols="5a,5a,^a,^a,^a,3a,3a"]
+.その他の構造物モデルの記述に使用する地物型と空間属性
+|===
+h| 地物型 h| 空間属性 h| LOD0 h| LOD1 h| LOD2 h| LOD3 h| 適用
+.5+| uro:OtherConstruction | | ● | ● | ● | ● |
+| uro:lod0Geometry ^| ● | | | | 数値地形図（DM）の取得方法に従う。
+| uro:lod1Geometry | | ● | | | 立体となる。
+| uro:lod2Geometry | | | ● | | 立体となる。
+| uro:lod3Geometry | | | | ● | 立体となる。
+.3+| uro:RoofSurface | | | | ● ^| ● | 構造物の外形を構成する面のうち、上向きの面に使用する。
+| uro:lod2MultiSurface | | | ● | .2+|
+| uro:lod3MultiSurface | | | | ●
+.3+| uro:WallSurface | | | | ● ^| ● | 構造物の外形を構成する面のうち、側方の面に使用する。
+| uro:lod2MultiSurface | | | ● | .2+|
+| uro:lod3MultiSurface | | | | ●
+.3+| uro:GroundSurface | | | | ● ^| ● | 構造物の外形を構成する面のうち、下向きの面に使用する。
+| uro:lod2MultiSurface | | | ● | .2+|
+| uro:lod3MultiSurface | | | | ●
+.3+| uro:ClosureSurface | | | | ■ ^| ■ | 行政界で区切る場合に必須とする。
+| uro:lod2MultiSurface | | | ■ | .2+| ClosureSurfaceを作成する場合は必須とする。
+| uro:lod3MultiSurface | | | | ■
+.3+| uro:OuterCeilingSurface | | | | ^| 〇 |
+| uro:lod2MultiSurface | | |  | .2+| OuterCeilingSurfaceを作成する場合は必須とする。
+| uro:lod3MultiSurface | | | | ■
+.3+| uro:OuterFloorSurface | | | | ^| 〇 |
+| uro:lod2MultiSurface | | |  | .2+| OuterFloorSurfaceを作成する場合は必須とする。
+| uro:lod3MultiSurface | | | | ■
+.3+| uro:ConstructionlInstallation | | | | ^| ■ | LOD3.1において必須とする。
+| uro:lod2Geometry | | | | |
+| uro:lod3Geometry | | | | ■ | OtherConstructionInstallationを作成する場合は必須とする。 +
+MultiSurfaceとする。
+
+|===
+
+[%key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
+
+[[toc4_13_02]]
+==== その他の構造物モデルの応用スキーマクラス図
+
+[[toc4_13_02_01]]
+===== Urban Object（i-UR）
+
+====== uro:OtherConstruction
+
+image::images/282.svg[]
+
+====== uro:OtherConstructionのための拡張属性
+
+image::images/283.svg[]
+
+[[toc4_13_03]]
+==== その他の構造物モデルの応用スキーマ文書
+
+[[toc4_13_03_01]]
+===== Urban Object（i-UR）
+
+====== uro:OtherConstruction
+
+[cols="1a,1a,2a"]
+|===
+| 型の定義
+2+|
+
+その他の構造物とは、構造物のうち、建築物、橋梁及びトンネルを除く構造物をいう。
+
+「構造物」とは、「目的とする機能を持ち、作用に対して抵抗することを意図として人為的に構築されるもの」（土木・建築にかかる設計の基本、国土交通省）であり、ダム、堤防、床止め、堰、水門・閘門・陸閘、樋門・樋管、伏せ越し、水制、護岸、防波堤その他の土木構造物を指す。
+
+* ダム：洪水の調整、発電、上水道、農工業等のための各種用水の貯水を目的として設けられた工作物をいい、砂防ダムを含む。「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」
+* 堤防：河川管理施設等構造令第17条に示される堤防及び霞堤。
+* 河川の流水の氾濫を防ぐ目的をもって、土砂・石礫等によって造られた河川構造物。
+* 床止め：河川管理施設等構造令第33条に示される床止め。
+* 河床の洗掘を防いで河川河道の勾配等を安定させ、河川の縦断又は横断形状を維持するために、河川を横断して設ける施設（河川構造物設計要領）
+* 堰：河川管理施設等構造令第36条に示される堰。河川の流水を制御するために、河川を横断して設けられるダム以外の施設であって、堤防の機能を有しないもの。
+* 水門・閘門・陸閘：河川管理施設等構造令第46条に示される水門。
+** 水門：河川又は水路を横断して設けられる制水施設であって堤防の機能を有するもの。
+** 閘門：運河・放水路などで水量を調節するための水門。
+** 陸閘：閉鎖することで海水の侵入を防止するとともに、開放することで堤防等の海側にある港湾、漁港、海浜等を利用するために人や車両等が堤防等を横断できるようにする施設。
+* 樋門・樋管：河川管理施設等構造令第46条に示される樋門。海・河川への排水口に設けられている施設。
+* 伏せ越し：河川管理施設等構造令第68条に示される伏せ越し。用水施設又は排水施設である開渠が、河川法の適用を受ける河川と交差する場合において、逆サイフォン構造で河底を横過する工作物で、施工方法が開削工法によるもの。
+* 水制：河川管理施設等構造令第26条に示される護岸。海岸や河川の水の勢いを弱め海岸や川岸が削られるのを防いだり、流れの方向を整えたりするために水中に設ける工作物。
+* 護岸：河川管理施設等構造令第25条に示される護岸。高水敷や他の構造物とともに流水による侵食作用から堤防（掘込河道にあっては堤内地）を保護するために設けるもの。
+* 防波堤：波浪を制御する堤防、埠頭、海岸浸食を防ぐ突堤等。「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」 建築物は、bldg:Building、橋梁はbrid:Bridge、トンネルはtun:Tunnelとする。
++
+排水機場及び揚水機場はbldg:Buildingとする。
++
+堤防のように延長が長く、構造上の切れ目なく続く場合は、管理区間及び市区町村界で区切ることができる。
+
+h| 上位の型 2+| core:_CityObject
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| gml:description | gml:StringOrRefType [0..1] | 構造物の概要。
+| gml:name | gml:CodeType [0..1] | 構造物を識別する名称。文字列とする。
+h| (gml:boundedBy) | gml:Envelope [0..1] | オブジェクトの範囲と空間参照系。
+| core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
+| core:terminationDate | xs:date [0..1] | データが削除された日。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+| uro:conditionOfConstruction | uro:ConditionOfConstructionValue [0..1] | 構造物の稼働状況。
+| uro:dateOfConstruction | xs:date [0..1] | 構造物の完成年月日。
+h| (uro:dateOfDemolition) | xs:date [0..1] | 構造物の解体年月日。
+h| (uro:constructionEvent) | uro:ConstructionEvent [0..*] | 構造物のライフサイクルにおける特定のイベントについての記述。
+| uro:elevation | uro:Elevation [0..*] | 構造物の指定された地点における標高。
+| uro:height | uro:Height [0..*] | 構造物の高さ。指定された2地点間の高さの差により記述する。
+h| (uro:occupancy) | uro:Occupancy [0..*] | 構造物に居住又は格納される人、動物、その他の移動可能な物体についての定量的な情報。
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| uro:class | gml:CodeType [0..1] | 構造物の分類。コードリスト（OtherConstruction_class.xml）より選択する。
+| uro:function | gml:CodeType [0..*] | 構造物の機能。コードリスト（OtherConstruction_function.xml）より選択する。
+h| (uro:usage) | gml:CodeType [0..*] | 構造物の利用方法。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット（集合）。属性を追加したい場合に使用する。
+| uro:lod0Geometry | gml:_Geometry [0..1] | 構造物の形状を2次元平面に投影した形状。点、線又は面により表現する。
+| uro:lod1Geometry | gml:_Geometry [0..1] | 構造物の形状を、立体として表現する。
+
+立体として表現する構造物のうち、護岸、樋門・樋管、水門・閘門、伏せ越し、堤防及びダムは構造物の上方からの正射影の外周を一律の高さで押し出した立体とする。また、水制及び床止めは一団となって設置された構造物の形状を包含する直方体とする。
+
+高さは、構造物の最高高さとする。
+| uro:lod2Geometry | gml:_Geometry [0..1] | 構造物の形状を、主要な部分を簡略化した立体を組み合わせた立体（境界面は平面に分割）として表現する。簡略化した立体とは、球体、円錐、角錐、角柱、円柱などの単純な立体図形とする。
+
+構造上不可欠ではない付属物（手すり、柵、構造物と一体ではない階段）は表現しない。
+| uro:lod3Geometry | gml:_Geometry [0..1] | その他の構造物モデル（LOD3）では、その他の構造物の形状を、主要な部分の外形を構成する特徴点から構成する面を境界面とする立体として表現する。 LOD3は、構造上不可欠ではない付属物（手すり、柵、構造物と一体ではない階段）の表現有無によりLOD3.0及びLOD3.1に区分する。
+| uro:boundedBy | uro:_BoundarySurface [0..*] | 構造物の立体を構成する境界面への参照。
+| uro:constructionInstallation
+| uro:ConstructionInstallation [0..*]
+| 構造物の付属物への参照。 +
+LOD3.1の場合にのみ使用する。
+
+| uro:consFacilityTypeAttribute | uro:FacilityTypeAttribute [0..*] | 構造物が管理・利用される分野（河川管理、港湾、漁港、農業等）における区分。
+| uro:consFacilityIdAttribute
+| uro:FacilityIdAttribute [0..1]
+| 構造物の位置を識別するための情報。 +
+河川管理施設の場合は、uro:RiverFacilityIdAttribute及びその下位型を用いて記述する。
+
+| uro:consBaseAttribute | uro:ConstructionBaseAttribute | 構造物の管理に関する情報。
+| uro:consStructureAttribute
+| uro:ConstructionStructureAttribute [0..1]
+| 構造物の構造に関する情報。 +
+河川管理施設の場合は、uro:ConstructionStructureAttribute及びその下位型を用いて記述する。
+
+| uro:consKeyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | 属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
+| uro:consDataQualityAttribute | uro:DataQualityAttribute [1] | 作成するデータの品質に関する情報。必須とする。
+| uro:consFacilityAttribute | uro:FacilityAttribute [0..*] | uro:consFacilityTypeAttribute.classによって指定された分野における施設管理情報。
+| uro:consDmAttribute | uro:DmAttribute [0..*] | 公共測量標準図式による図形表現に必要な情報。
+
+|===
+
+====== uro:RoofSurface
+
+[cols="1a,1a,2a"]
+|===
+| 型の定義 2+| 構造物の上部となる面。
+
+h| 上位の型 2+| uro:_BoundarySurface
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| gml:description | gml:StringOrRefType [0..1] | 境界面の概要。
+| gml:name
+| gml:CodeType [0..1]
+| 境界面を識別する名称。文字列とする。 +
+堤防の場合、「天端」とする。
+
+h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
+h| (core:creationDate) | xs:date [0..1] | データが作成された日。
+h| (core:terminationDate) | xs:date [0..1] | データが削除された日。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+| uro:lod2MultiSurface | gml:MultiSurface [0..1] | LOD2において屋根の形状・起伏を再現した面。
+| uro:lod3MultiSurface | gml:MultiSurface [0..1] | LOD3において屋根の形状・起伏を再現した面。
+
+|===
+
+====== uro:WallSurface
+
+[cols="1a,1a,2a"]
+|===
+| 型の定義
+2+| 構造物の外周を構成する壁面（外壁）。 +
+堤防の天端、表法面、表小段、裏法面及び裏小段はuro:RoofSurfaceで取得する。
+
+h| 上位の型 2+| uro:_BoundarySurface
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
+| (gml:name)
+| gml:CodeType [0..1]
+| 境界面を識別する名称。文字列とする。 +
+堤防の場合は、表法面、表小段、裏法面、裏小段等。 +
+複数の小段が設けられている場合は、上から第1小段、第2小段とする。
+
+h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
+h| (core:creationDate) | xs:date [0..1] | データが作成された日。
+h| (core:terminationDate) | xs:date [0..1] | データが削除された日。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+| uro:lod2MultiSurface | gml:MultiSurface [0..1] | LOD2において壁面の形状・起伏を再現した面。
+| uro:lod3MultiSurface | gml:MultiSurface [0..1] | LOD3において壁面の形状・起伏を再現した面。
+
+|===
+
+====== uro:GroundSurface
+
+[cols="1a,1a,2a"]
+|===
+| 型の定義 2+| 構造物の立体形状の底面。
+
+構造物の上方からの正射影の外周に、水面（陸上の構造物の場合は地面）の高さを与えた面。
+
+h| 上位の型 2+| uro:_BoundarySurface
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
+h| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
+h| (core:creationDate) | xs:date [0..1] | データが作成された日。
+h| (core:terminationDate) | xs:date [0..1] | データが削除された日。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+| uro:lod2MultiSurface | gml:MultiSurface [0..1] | LOD2において底面の形状・起伏を再現した面。
+| uro:lod3MultiSurface | gml:MultiSurface [0..1] | LOD3において底面の形状・起伏を再現した面。
+
+|===
+
+====== uro:OuterCeilingSurface
+
+[cols="1a,1a,2a"]
+|===
+| 型の定義
+2+| 構造物の外側を覆う部分であり、天井としての機能を有する部分。 +
+ユースケースで屋外の天井面と壁面との区分が不要な場合には、この型は使用せず、uro:WallSurfaceを使用する。
+
+h| 上位の型 2+| uro:_BoundarySurface
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
+h| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
+h| (core:creationDate) | xs:date [0..1] | データが作成された日。
+h| (core:terminationDate) | xs:date [0..1] | データが削除された日。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+| uro:lod2MultiSurface | gml:MultiSurface [0..1] | LOD2において屋外にある天井の形状・起伏を再現した面。
+| uro:lod3MultiSurface | gml:MultiSurface [0..1] | LOD3において屋外にある天井の形状・起伏を再現した面。
+
+|===
+
+====== uro:OuterFloorSurface
+
+[cols="1a,1a,2a"]
+|===
+| 型の定義 2+| 構造物の外側を覆う部分であり、通行可能な床面としての機能を有する部分。構造物の上部に設けられた管理用の通路が該当する。
+
+h| 上位の型 2+| uro:_BoundarySurface
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
+h| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
+h| (core:creationDate) | xs:date [0..1] | データが作成された日。
+h| (core:terminationDate) | xs:date [0..1] | データが削除された日。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+| uro:lod2MultiSurface | gml:MultiSurface [0..1] | LOD2において屋外にある床面の形状・起伏を再現した面。
+| uro:lod3MultiSurface | gml:MultiSurface [0..1] | LOD3において屋外にある床面の形状・起伏を再現した面。
+
+|===
+
+====== uro:ClosureSurface
+
+[cols="1a,1a,2a"]
+|===
+| 型の定義
+2+| 構造物の境界面に開口部が存在するが、開口部内の詳細なデータ作成が不要である場合に、開口部を閉じるために便宜上設けられた面。ダムの取水口等水が出入りする範囲がこれに該当する。 +
+ユースケースで外壁と開口部、あるいは屋根面と開口部との区分が不要な場合には、この型は使用せず、uro:WallSurface又uro:RoofSurfaceを使用する。
+
+h| 上位の型 2+| uro:_BoundarySurface
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
+h| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
+h| (core:creationDate) | xs:date [0..1] | データが作成された日。
+h| (core:terminationDate) | xs:date [0..1] | データが削除された日。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+| uro:lod2MultiSurface | gml:MultiSurface [0..1] | LOD2において閉鎖面の外周に囲まれた面。
+| uro:lod3MultiSurface | gml:MultiSurface [0..1] | LOD3において閉鎖面の外周に囲まれた面。
+
+|===
+
+====== uro:ConstructionInstallation
+
+[cols="1a,1a,2a"]
+|===
+| 型の定義
+2+| 構造物の付属物。構造物を構成する構造上不可欠ではない固定的な設備。 +
+手すりや階段などの構造物の管理用設備等を指す。
+
+h| 上位の型 2+| core:_CityObject
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 付属物の概要。
+| gml:name | gml:CodeType [0..1] | 付属物を識別する名称。文字列とする。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 付属物の範囲及び適用される空間参照系。
+h| (core:creationDate) | xs:date [0..1] | データが作成された日。
+h| (core:terminationDate) | xs:date [0..1] | データが削除された日。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (uro:class) | gml:CodeType [0..1] | 付属物の分類。
+| uro:function | gml:CodeType [0..*] | 付属物の機能。コードリスト（ConstructionInstallation_function.xml）から選択する。
+h| (uro:usage) | gml:CodeType [0..*] | 付属物の用途。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+h| (uro:lod2Geometry) | gml:_Geometry [0..1] | LOD2において付属物の外形（外側から見える形）を構成する面を取得する。
+| uro:lod3Geometry | gml:_Geometry [0..1] | LOD3において付属物の外形（外側から見える形）を構成する面を取得する。
+
+|===
+
+====== uro:ConstructionBaseAttribute
+
+[cols="1a,1a,2a"]
+|===
+| 型の定義 2+| 構造物の管理に必要となる基本的な情報及び、構造物の規模に関する基本的な情報を記述するためのデータ型。
+
+構造物が橋梁、トンネル、護岸、床止め、堰、水門・閘門・陸閘、樋門・樋管、伏せ越し及び水制の場合に本データ型を用いて記述する。
+
+構造物がダム及び堤防の場合は、これを継承するデータ型を用いて記述する。
+
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| uro:adminType | gml:CodeType [0..1] | 構造物の管理者の区分。コードリスト（ConstructionBaseAttribute_adminType.xml）から選択する。
+| uro:administorator | xs:string [0..1] | 構造物の管理者の名称。
+| uro:adminOffice | xs:string [0..1] | 構造物の管理事務所所在地。
+| uro:operatorType | gml:CodeType [0..1] | 構造物の運用者の区分。コードリストから選択する。この属性を使用する場合は、コードリスト（ConstructionBaseAttribute_operatorType.xml）を作成すること。
+| uro:installerType | gml:CodeType [0..1] | 構造物の設置者の区分。コードリスト（ConstructionBaseAttribute_installerType.xml）から選択する。
+| uro:installer | xs:string [0..1] | 構造物の設置者の名称。
+| uro:structureOrdinance | xs:string [0..1] | 構造物が適用された構造令の名称。
+| uro:specification | xs:string [0..1] | 構造物が適用された示方書の名称。
+| uro:kana | xs:string [0..1] | 構造物の名称のふりがな。
+| uro:constructionStartYear | xs:gYear [0..1] | 構造物の建設開始年度。
+| uro:completionYear | xs:gYear [0..1] | 構造物の完成年度。
+| uro:facilityAge | xs:integer [0..1] | 工事完成年度からの年数。
+| uro:update | xs:date [0..1] | 更新年月日。
+| uro:purpose | gml:CodeType [0..1] | 構造物の建設の目的。コードリスト（ConstructionBaseAttribute_purpose.xml）から選択する。コードリストに無い場合は文字列により記述する。
+
+|===
+
+====== uro:ConstructionStructureAttribute
+
+[cols="1a,1a,2a"]
+|===
+| 型の定義 2+| 構造物の規模に関する基本的な情報を記述するためのデータ型。
+
+構造物が護岸、床止め、堰、水門・閘門・陸閘、樋門・樋管、伏せ越し及び水制の場合に本データ型を用いて記述する。
+
+構造物がダム及び堤防の場合は、これを継承するデータ型を用いて記述する。
+
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| uro:structureType | gml:CodeType [0..1] | 構造物の構造種別。コードリスト（ConstructionStructureAttribute_structureType.xml）から選択する。コードリストに無い場合は文字列により記述する。
+| uro:length | gml:LengthType [0..1] | 構造物の総延長。単位はmとする。
+| uro:width | gml:LengthType [0..1] | 構造物の幅。単位はmとする。
+| uro:depth | gml:LengthType [0..1] | 構造物が設置された位置の水深。単位はmとする。
+| uro:volume | gml:MeasureType [0..1] | 構造物の体積。単位は千m3とする。
+
+|===
+
+====== uro:EmbankmentAttribute
+
+[cols="1a,1a,2a"]
+|===
+| 型の定義 2+| 堤防の規模に関する基本的な情報を記述するためのデータ型。
+
+h| 上位の型 2+| uro:ConstructionStructureAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| uro:structureType | gml:CodeType [0..1] | 構造物の構造種別。コードリスト（ConstructionStructureAttribute_structureType.xml）から選択する。
+| uro:length | gml:LengthType [0..1] | 構造物の総延長。単位はmとする。
+h| (uro:width) | gml:LengthType [0..1] | 構造物の幅。単位はmとする。
+h| (uro:depth) | gml:LengthType [0..1] | 構造物が設置された位置の水深。単位はmとする。
+h| (uro:volume) | gml:MeasureType [0..1] | 構造物の体積。単位は千m3とする。
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| uro:mainPartLength | gml:LengthType [0..1] | 堤防の機能保有延長。単位はmとする。
+| uro:ceilingHeight | gml:LengthType [0..1] | 天端高。単位はmとする。
+| uro:waveDissipatorLength | gml:LengthType [0..1] | 消波工の延長。単位はmとする。
+
+|===
+
+====== uro:DamAttribute
+
+[cols="1a,1a,2a"]
+|===
+| 型の定義 2+| ダムの規模に関する基本的な情報を記述するためのデータ型。
+
+h| 上位の型 2+| uro:ConstructionStructureAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| uro:structureType
+| gml:CodeType [0..1]
+| ダムの形式。 +
+コードリスト（ConstructionStructureAttribute_structureType.xml）から選択する。
+
+h| (uro:length) | gml:LengthType [0..1] | 構造物の延長。単位はmとする。
+| uro:width | gml:LengthType [0..1] | ダムの堤頂長（ダム堤頂部における右岸から左岸までの距離）。単位はmとする。
+h| (uro:depth) | gml:LengthType [0..1] | 構造物が設置された位置の水深。単位はmとする。
+| uro:volume | gml:MeasureType [0..1] | 堤体積（堤体の体積）。単位は千m3とする。
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| uro:damCode | gml:CodeType [0..1] | ダム年鑑の「全国ダム施設現況」の「水系別ダム一覧表」に示す番号。
+| uro:totalWaterStorage | gml:MeasureType [0..1] | 総貯水量。単位はmとする。
+
+|===
+
+====== uro:KeyValuePairAttribute
+
+[cols="1a,1a,2a"]
+|===
+| 型の定義
+2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。
+
+属性名称と属性の値の対で構成される。コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
+
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| uro:key | gml:CodeType [1] | 拡張する属性の名称。名称は、コ－ドリスト（KeyValuePairAttribute_key.xml）を作成し、選択する。
+| uro:codeValue | gml:CodeType [1] | 拡張された属性の値。値は名称は、コ－ドリスト（KeyValuePairAttribute_key[%key].xml）を作成し、選択する。 [%key]は、属性uro:keyの値に一致する。
+h| 型の定義 2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。
+
+属性名称と属性の値の対で構成される。コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| uro:key | gml:CodeType [1] | 拡張する属性の名称。名称は、コ－ドリスト（KeyValuePairAttribute_key.xml）を作成し、選択する。
+| uro:codeValue | gml:CodeType [1] | 拡張された属性の値。値は名称は、コ－ドリスト（KeyValuePairAttribute_key[%key].xml）を作成し、選択する。 [%key]は、属性uro:keyの値に一致する。
+
+|===
+
+====== uro:DataQualityAttribute
+
+[cols="1a,1a,2a"]
+|===
+| 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
+
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| uro:geometrySrcDescLod0
+| gml:CodeType [0..*]
+| LOD0の幾何オブジェクトの作成に使用した原典資料の種類。
+
+コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD0の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、その他の構造物モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
+
+| uro:geometrySrcDescLod1
+| gml:CodeType [1..*]
+| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。
+
+コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。具体的な都市オブジェクトがLOD1の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
+
+| uro:geometrySrcDescLod2
+| gml:CodeType [0..*]
+| LOD2の幾何オブジェクトの作成に使用した原典資料の種類。
+
+コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD2の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、その他の構造物モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
+
+| uro:geometrySrcDescLod3 | gml:CodeType [0..*] | コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD3の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD3の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、その他の構造物モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
+h| (uro:geometrySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
+| uro:thematicSrcDesc | gml:CodeType [0..*] | 主題属性の作成に使用した原典資料の種類 コードリスト（DataQualityAttribute_thematicSrcDesc.xml）より選択する。
+
+主題属性が作成対象となっている場合は必須とする。
+| uro:appearanceSrcDescLod0
+| gml:CodeType [0..*]
+| LOD0の幾何オブジェクトのアピアランスに使用した原典資料の種類。
+
+コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。
+
+拡張製品仕様書でLOD0の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
+
+| uro:appearanceSrcDescLod1 | gml:CodeType[0..*] | LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。
+
+コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。
+
+拡張製品仕様書LOD1の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD1の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
+| uro:appearanceSrcDescLod2 | gml:CodeType[0..*] | LOD2の幾何オブジェクトのアピアランスに使用した原典資料の種類。
+
+コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。
+
+拡張製品仕様書でLOD2の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
+| uro:appearanceSrcDescLod3 | gml:CodeType [0..*] | LOD3の幾何オブジェクトのアピアランスに使用した原典資料の種類。
+
+コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。
+
+拡張製品仕様書でLOD3の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD3の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
+h| (uro:appearanceSrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトのアピアランスに使用した原典資料の種類。
+| uro:lodType
+| gml:CodeType[0..*]
+| 幾何オブジェクトに適用されたLODの詳細な区分。
+
+コードリスト（OtherConstruction_lodType.xml）より選択する。
+
+LOD3の幾何オブジェクトを作成する場合は必須とする。
+
+h| (uro:lod1HeightType) | gml:CodeType [0..1] | LOD1の立体図形を作成する際に使用した高さの算出方法。
+h| (uro:tranDataAcquisition) | xs:string [0..1] | 「<<nilim_kiban_dps,道路基盤地図情報（整備促進版）製品仕様書（案）>>」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+| uro:publicSurveyDataQualityAttribute | uro:PublicSurveyDataQualityAttribute [0..1] | 使用した公共測量成果の地図情報レベルと種類。
+
+各LODの幾何オブジェクトの作成に使用した原典資料の種類に関する属性（uro:geometrySrcDescLod0等）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）となっている場合は、必須とする。
+
+|===
+
+====== uro:PublicSurveyDataQualityAttribute
+
+[cols="1a,1a,2a"]
+|===
+| 型の定義 2+| 使用した公共測量成果の地図情報レベルと種類を、LODごとに記述するためのデータ型。
+
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| uro:srcScaleLod0
+| gml:CodeType [0..1]
+| LOD0の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
+
+コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 +
+「LOD0の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
+
+| uro:srcScaleLod1
+| gml:CodeType [0..1]
+| LOD1の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
+
+コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 +
+「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
+
+| uro:srcScaleLod2
+| gml:CodeType [0..1]
+| LOD2の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
+コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 +
+「LOD2の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod2）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
+複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば地図情報レベル2500の公共測量成果と地図情報レベル500の公共測量成果を使用した場合は、地図情報レベル2500となる。
+
+| uro:srcScaleLod3
+| gml:CodeType [0..1]
+| LOD3の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
+
+コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 +
+「LOD3の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod3）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
+複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば地図情報レベル2500の公共測量成果と地図情報レベル500の公共測量成果を使用した場合は、地図情報レベル2500となる。
+
+| uro:srcScaleLod4 | gml:CodeType [0..1] | LOD4の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
+| uro:publicSurveySrcDescLod0
+| gml:CodeType [0..*]
+| LOD0の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
+「LOD0の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
+複数の種類の原典資料を使用した場合は、それぞれを記述する。
+
+| uro:publicSurveySrcDescLod1
+| gml:CodeType [0..*]
+| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
+「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
+複数の種類の原典資料を使用した場合は、それぞれを記述する。
+
+| uro:publicSurveySrcDescLod2
+| gml:CodeType [0..*]
+| LOD2の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
+「LOD2の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod2）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
+複数の種類の原典資料を使用した場合は、それぞれを記述する。
+
+| uro:publicSurveySrcDescLod3
+| gml:CodeType [0..*]
+| LOD3の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
+「LOD3の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod3）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
+複数の種類の原典資料を使用した場合は、それぞれを記述する。
+
+h| (uro:publicSurveySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
+
+|===
+
+====== uro:ConstructionRiskAssessmentAttribute
+
+[cols="1a,1a,2a"]
+|===
+| 型の定義 2+| 構造物の損傷及び対応状況に関する情報を定義したデータ型。
+
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| uro:surveyYear | xs:gYear [0..1] | 点検が実施された年度。
+| uro:riskType | gml:CodeType [1] | 判定区分。コードリスト（ConstructionRiskAssessmentAttribute_riskType.xml）より選択する。
+| uro:status | gml:CodeType [0..1] | 対応状況。コードリスト（ ConstructionRiskAssessmentAttribute_status.xml）より選択する。
+| uro:referenceDate | xs:date [1] | 判定区分や措置状況の情報が記載された<<mlit_road_damage_map,損傷マップ>>の更新時点。
+
+|===
+
+====== uro:Elevation
+
+[cols="1a,1a,2a"]
+|===
+| 型の定義 2+| 構造物の指定された位置における標高を表すデータ型。
+
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| uro:elevationReference | gml:CodeType [1] | 標高を計測する位置。コードリスト（Elevation_elevationReference.xml）より選択する。
+| uro:elevationValue | gml:DirectPosition[1] | 指定された位置での標高。東京湾平均海面からの高さとする。単位はmとする。
+
+|===
+
+====== uro:Height
+
+[cols="1a,1a,2a"]
+|===
+| 型の定義 2+| 構造物の指定された2点間における高さを表すデータ型。
+
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| uro:heighReference | gml:CodeType [1] | 高い方の位置。コードリスト（Elevation_elevationReference.xml）より選択する。
+| uro:lowReference | gml:CodeType [1] | 低い方の位置。コードリスト（Elevation_elevationReference.xml）より選択する。
+| uro:status | uro:HeightStatusValue [1] | 高さは計測した値か推定した値かの別。
+| uro:value | gml:LengthType [1] | 指定された2点間の高さ。単位はmとする。
+
+|===
+
+====== uro:ConstructionEvent
+
+[cols="1a,1a,2a"]
+|===
+| 型の定義 2+| 構造物の設計から施工、維持管理にいたるイベント。
+
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| uro:event | gml:CodeType [1] | イベントの種類。コードリストから選択する。この属性を使用する場合は、コードリスト（ConstructionEvent_event.xml）を作成すること。
+| uro:dateOfEvent | xs:date [1] | イベントが生じた日付。
+| uro:description | xs:string [0..1] | イベントの説明。
+
+|===
+
+====== uro:Occupancy
+
+[cols="1a,1a,2a"]
+|===
+| 型の定義 2+| 構造物に居住又は格納される人、動物、その他の移動可能な物体についての定量的な情報。
+
+h| 上位の型 2+| ―
+h| ステレオタイプ 2+| << DataType >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| uro:interval | gml:CodeType [1] | 占有する期間の種類。コードリストから選択する。この属性を使用する場合は、コードリスト（Occupancy_interval.xml）を作成すること。
+| uro:numberOfOccupants | xs:integer [1] | 占有物の数。
+| uro:occupantType | gml:CodeType [0..1] | 占有物の種類。コードリストから選択する。この属性を使用する場合は、コードリスト（Occupancy_occupantType.xml）を作成すること。
+
+|===
+
+====== uro:FacilityIdAttribute
+
+<<toc4_25_03,施設管理属性の応用スキーマ文書>>　参照。
+
+====== uro:FacilityTypeAttribute
+
+<<toc4_25_03,施設管理属性の応用スキーマ文書>>　参照。
+
+====== uro:FacilityAttribute
+
+<<toc4_25_03,施設管理属性の応用スキーマ文書>>　参照。
+
+====== uro:DmAttribute
+
+<<toc4_24_03,公共測量標準図式の応用スキーマ文書>>　参照。
+
+[[toc4_13_04]]
+==== その他の構造物モデルで使用するコードリストと列挙型
+
+[[toc4_13_04_01]]
+===== Urban Object（i-UR）
+
+====== OtherConstruction_class.xml
+
+lutaml_gml_dictionary::iur/codelists/3.1/OtherConstruction_class.xml[template="gml_dict_template.liquid",context=dict]
+
+[.source]
+<<mlit_kiban_chizu>>
+
+====== OtherConstruction_function.xml
+
+lutaml_gml_dictionary::iur/codelists/3.1/OtherConstruction_function.xml[template="gml_dict_template.liquid",context=dict]
+
+[.source]
+<<mlit_kiban_chizu>>
+
+====== ConstructionInstallation_function.xml
+
+lutaml_gml_dictionary::iur/codelists/3.1/ConstructionInstallation_function.xml[template="gml_dict_template.liquid",context=dict]
+
+====== ConstructionBaseAttribute_purpose.xml
+
+lutaml_gml_dictionary::iur/codelists/3.1/ConstructionBaseAttribute_purpose.xml[template="gml_dict_template.liquid",context=dict]
+
+[.source]
+<<nlftp>>
+
+====== ConstructionStructureAttribute_structureType.xml
+
+lutaml_gml_dictionary::iur/codelists/3.1/ConstructionStructureAttribute_structureType.xml[template="gml_dict_template.liquid",context=dict]
+
+[.source]
+<<nlftp>>
+
+[.source]
+<<mlit_kiban_chizu>>
+
+====== ConstructionStructureAttribute_slopeType.xml
+
+lutaml_gml_dictionary::iur/codelists/3.1/ConstructionStructureAttribute_slopeType.xml[template="gml_dict_template.liquid",context=dict]
+
+====== ConstructionBaseAttribute_adminType.xml
+
+lutaml_gml_dictionary::iur/codelists/3.1/ConstructionBaseAttribute_adminType.xml[template="gml_dict_template.liquid",context=dict]
+
+[.source]
+<<mlit_kiban_chizu>>
+
+[.source]
+<<nlftp>>
+
+[.source]
+<<mlit_cyberport>>
+
+====== ConstructionBaseAttribute_installerType.xml
+
+lutaml_gml_dictionary::iur/codelists/3.1/ConstructionBaseAttribute_installerType.xml[template="gml_dict_template.liquid",context=dict]
+
+[.source]
+<<mlit_cyberport>>
+
+====== ConstructionRiskAssessmentAttribute_riskType.xml
+
+lutaml_gml_dictionary::iur/codelists/3.1/ConstructionRiskAssessmentAttribute_riskType.xml[template="gml_dict_template.liquid",context=dict]
+
+[.source]
+<<mlit_road_damage_map>>
+
+====== ConstructionRiskAssessmentAttribute_status.xml
+
+lutaml_gml_dictionary::iur/codelists/3.1/ConstructionRiskAssessmentAttribute_status.xml[template="gml_dict_template.liquid",context=dict]
+
+[.source]
+<<mlit_road_damage_map>>
+
+====== ConstructionFunctionalAttribute_directionType.xml
+
+lutaml_gml_dictionary::iur/codelists/3.1/ConstructionFunctionalAttribute_directionType.xml[template="gml_dict_template.liquid",context=dict]
+
+====== DataQualityAttribute_geometrySrcDesc.xml
+
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+
+[.source]
+<<gsi_ops>>
+
+[.source]
+<<plateau_002>>
+
+[.source]
+<<plateau_010>>
+
+
+====== DataQualityAttribute_thematicSrcDesc.xml
+
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+
+[.source]
+<<gsi_ops>>
+
+[.source]
+<<plateau_002>>
+
+[.source]
+<<plateau_010>>
+
+
+====== DataQualityAttribute_appearanceSrcDesc.xml
+
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+
+====== DataQualityAttribute_lod1HeightType.xml
+
+TODO: This table cannot be recreated because some values are marked "（使用不可）".
+
+lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml[template="gml_dict_template.liquid",context=dict]
+
+// | （使用不可）7 | 建築確認申請書類等に記載された「建築物の高さ」
+// | （使用不可）8 | 都市計画基礎調査（建物利用現況）の「高さ（m）」
+// | （使用不可）9 | 階高3m×都市計画基礎調査（建物利用現況）の「階数・地上（階）」による推定値
+// | 10 | 図面から取得した高さ
+// | 0 | 取得不可のため一律値（3m）
+
+[.source]
+<<gsi_building_data_manual>>
+
+====== PublicSurveyDataQualityAttribute_srcScale.xml
+
+lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
+
+====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
+
+lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+
+[.source]
+<<gsi_ops>>
+
+[.source]
+<<plateau_010>>
+
+
+====== OtherConstruction_lodType.xml
+
+lutaml_gml_dictionary::iur/codelists/3.1/OtherConstruction_lodType.xml[template="gml_dict_template.liquid",context=dict]
+
+
+====== Elevation_elevationReference.xml
+
+lutaml_gml_dictionary::iur/codelists/3.1/Elevation_elevationReference.xml[template="gml_dict_template.liquid",context=dict]
+
+[.source]
+<<inspire_registry>>
+
+====== HightStatusValue
+
+[cols="3a,22a"]
+|===
+| 列挙型 | HightStatusValue
+
+h| 値 h| 説明
+| estimated | 推定値
+| measured | 計測値
+
+|===
+
+[.source]
+<<citygml_30>>
+
+====== ConditionOfConstructionValue
+
+[cols="3a,22a"]
+|===
+| 列挙型 | ConditionOfConstructionValue
+
+h| 値 h| 説明
+| declined | 構造物の主要な部分は残っているが、使用できない状態。
+| demolished | 構造物は取り壊された状態。
+| functional | 構造物が機能している状態。
+| projected | 構造物は設計されている状態（工事はまだ始まっていない）。
+| ruin | 構造物が部分的に解体された状態（残骸が残っている）。
+| underConstruction | 構造物は建設中である状態。
+
+|===
+
+[.source]
+<<citygml_30>>
+

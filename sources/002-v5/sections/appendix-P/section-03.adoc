@@ -1,0 +1,10 @@
+[[tocP_03]]
+=== リンクとなる地物型
+
+地下埋設物のネットワークのリンクとなる地物型には、ケーブル（uro:Cable）、管路（uro:Pipe）及びこれらを格納する保護設備（uro:Duct）がある。 +
+これらの地物型は、属性としてリンクの開始ノードであるstartNodeとリンクの終了ノードであるendNodeを属性としてもつ。管路やケーブルのノードとは、uro:UtilityNodeとこれを格納するuro:UtilityNodeContainerを継承する地物型である。属性startNodeと属性endNodeには、ノードとなる地物の識別子を入力する。この識別子は、都市設備の位置や識別に関するデータ型であるuro:frnFacilityIdAttributeの属性idの値とする。 +
+また、uro:frnFacilityIdAttributeの属性idは``[路線名]``又は``[路線]-[区間名]``、uro:frnFacilityIdAttributeの属性routeは``[路線名]``又は``[路線]``、uro:frnFacilityIdAttributeの属性alternativeNameは``[路線名]``又は``[路線]-[区間名の通称]``とする。 +
+リンクの形状はLOD0で線、LOD1以上は立体又は線の集まりとして表現される。 +
+また、長さや土被りの深さ、オフセット量などを、埋設された相対的な位置に関する情報を属性としてもつことができる。 +
+uro:OffsetDepthが地下埋設物の特定の箇所に対する情報であるのに対し、uro:ThematicShapeは地下埋設物全体の位置に関する情報として地下埋設物の中心線の情報をもつことができる。この中心線の高さは、地下埋設物の中心の高さ、地表の高さ、土被りの高さのいずれかとなり、中心線にもつ高さを属性heightTypeで指定する。
+
