@@ -84,10 +84,11 @@ class:: 留意事項
 ===== 都市計画の当初決定年月日及び告示番号と最終（最新）決定年月日及び告示番号
 
 都市計画は、社会経済情勢の変化を踏まえ、適時適切な見直しが行われる。このような変化を把握するための情報として、当初の告示番号を記録する属性urf:notificationNumberと、当初の決定年月日を記録する属性urf:validFromがある。また、見直し後の最終（最新）の告示番号を記録する属性urf:finalNotificationNumberとその日付を記録する属性urf:finalNotificationDateがある。 +
-当初の決定と最終（最新）の決定との間のより詳細な変遷を記録する場合には、属性urf:validFromとurf:validFromType、また、urf:validToとurf:validToTypeを使用する（K.2.4.3参照）。 +
+当初の決定と最終（最新）の決定との間のより詳細な変遷を記録する場合には、属性urf:validFromとurf:validFromType、また、urf:validToとurf:validToTypeを使用する（<<tocK_02_04_03>>参照）。 +
 なお、最終（最新）の都市計画において指定された都市計画の区域は、属性urf:notificationNumberと属性urf:finalNotificationNumberの値が一致する。 +
 また、当初の告示番号が不明な場合、属性urf:notificationNumberの値は「Null」を入力する。当初の決定年月日が不明な場合、属性urf:validFromの値は「0001-01-01」とする。
 
+[[tocK_02_04_03]]
 ===== 都市計画決定情報の変遷の表現
 
 都市計画には、新規に決定される場合、変更される場合、また、変更に伴い実質廃止される場合がある。このような時間の経過に伴う都市計画の変遷を、属性urf:validFromとurf:validFromType、また、urf:validToとurf:validToTypeにより記述できる。 +

@@ -188,7 +188,7 @@ bldg:OuterFloorSurface（屋外床面）は、bldg:RoofSurfaceの代替として
 image::images/171.webp.png[]
 
 bldg:OuterFloorSurfaceとして取得しない場合は、bldg:RoofSurfaceとして取得する。 +
-bldg:OuterCeilingSurface（屋外天井面）は、bldg:WallSurfaceの代替として使用できる。bldg:OuterCeilingSurface はbldg:WallSurfaceのうち下向きの面であり、天井の機能を有する面、これを区別したい場合に適用する。<<fig-C-35>>に例を示す。
+bldg:OuterCeilingSurface（屋外天井面）は、bldg:WallSurfaceの代替として使用できる。bldg:OuterCeilingSurfaceはbldg:WallSurfaceのうち下向きの面であり、天井の機能を有する面、これを区別したい場合に適用する。<<fig-C-35>>に例を示す。
 
 [[fig-C-35]]
 .屋外天井面の取得例

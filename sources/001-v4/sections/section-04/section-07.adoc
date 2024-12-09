@@ -38,7 +38,7 @@ h| 説明 | 航路の区域の中心線を取得する。
 
 交通（航路）モデル（LOD0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1a,^1a,1a,1a,1a,3a,2a"]
+[cols="1a,^1a,1a,1a,3a,3a,2a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -86,7 +86,7 @@ h| 説明
 
 交通（航路）モデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1a,^1a,1a,1a,1a,3a,2a"]
+[cols="1a,^1a,1a,1a,3a,3a,2a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -354,10 +354,10 @@ h| 上位の型 2+| ―
 h| ステレオタイプ 2+| << DataType >>
 3+h| 自身に定義された属性
 h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:key | gml:CodeType [1] | 拡張する属性の名称。名称は、コ－ドリスト（``KeyValuePairAttribute_key.xml``）を作成し、選択する。
+| uro:key | gml:CodeType [1] | 拡張する属性の名称。名称は、コ－ドリスト(KeyValuePairAttribute_key.xml)を作成し、選択する。
 | uro:codeValue
 | gml:CodeType [1]
-| 拡張された属性の値。値は名称は、コ－ドリスト（``KeyValuePairAttribute_key[%key].xml``）を作成し、選択する。
+| 拡張された属性の値。値は名称は、コ－ドリスト(KeyValuePairAttribute_key``[%key]``.xml)を作成し、選択する。
 
 ``[%key]``は、属性uro:keyの値に一致する。
 
@@ -485,7 +485,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 ==== 交通（航路）モデルで使用するコードリストと列挙型
 
 [[toc4_07_04_01]]
-===== Urban Object （i-UR）
+===== Urban Object（i-UR）
 
 ====== Waterway_function.xml
 
