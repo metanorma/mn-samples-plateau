@@ -25,7 +25,7 @@ JMP2.0では、データ製品を作成する際に使用した原典資料の�
 
 | feature
 | 地物名を記述する。 +
-各モジュールに複数の地物が定義されている場合は、集成する地物（例：Building）を記述することを基本とする。集成する地物に束ねられ、部品として使われる地物（例：WallSurface, Door）は記述しなくてもよいが、特に明記したい場合は、記述してもよい。 +
+各モジュールに複数の地物が定義されている場合は、集成する地物（例：Building）を記述することを基本とする。集成する地物に束ねられ、部品として使われる地物（例：WallSurface,Door）は記述しなくてもよいが、特に明記したい場合は、記述してもよい。 +
 なお、Appearance（地物に貼るテクスチャ）は、貼り付ける対象となる地物（例：Building）のプロパティとして本リストでは記述する。 +
 地物名には接頭辞を付する。
 
@@ -49,7 +49,7 @@ Buildingの場合は、bldg
 
 [example]
 ====
-bldg:function, bldg:lod1Solid, bldg:lod2Solid, uro:buildingDetailAttribute, uro:buildingDetailAttribute.uro:vacancy, app:appearance
+bldg:function,bldg:lod1Solid,bldg:lod2Solid,uro:buildingDetailAttribute,uro:buildingDetailAttribute.uro:vacancy,app:appearance
 ====
 
 | bldg:lod0RoofEdge
@@ -79,7 +79,7 @@ bldg:function, bldg:lod1Solid, bldg:lod2Solid, uro:buildingDetailAttribute, uro:
 
 | srs
 | 原典資料がGISデータ又は図面の場合に、適用されている座標参照系の識別子を、JIS X7115メタデータ附属書2に従い記述する。GISデータではない場合は空とする。
-| JGD2011 / 2(X, Y)
+| JGD2011/2（X,Y）
 
 | mapLevel
 | 原典資料がGISデータの場合又は図面の場合に、地図情報レベルを記述する。数値のみの記載とする。例：地図情報レベル2500の場合は”2500”とする。 +
@@ -104,7 +104,7 @@ bldg:function, bldg:lod1Solid, bldg:lod2Solid, uro:buildingDetailAttribute, uro:
 ==== 原典資料リストのファイル仕様
 
 出力データ構造には、CSVを使用する。拡張子は、「.csv」とする。 +
-(1)に示す記載項目の組を1レコードとし、以下に示す規則に従い出力する。
+<<toc8_05_01>>に示す記載項目の組を1レコードとし、以下に示す規則に従い出力する。
 
 [cols="3a,2a"]
 .原典資料リストのファイル仕様
