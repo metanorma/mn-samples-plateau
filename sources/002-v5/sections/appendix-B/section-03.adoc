@@ -1,0 +1,348 @@
+[[tocB_03]]
+=== 幾何オブジェクト
+
+[[tocB_03_01]]
+==== gml:pos, gml:posList
+
+gml:posは直接座標、gml:posListは直接座標のリストの記述に用いる。
+
+
+[requirement]
+.座標値の空間参照系適合
+====
+[%metadata]
+identifier:: /req/gm/3
+subject:: 3D都市モデル
+description:: gml:pos及びgml:posListに含まれる座標値は、この幾何オブジェクトを含むデータ製品に適用された空間参照系に適合しなければならない。
+====
+
+gml:Envelopeの属性srsName座標で指定した空間参照系に基づく座標値を記述する。「日本測地系2011における経緯度座標系と東京湾平均海面を基準とする標高の複合座標参照系」の定義に従い、座標値は緯度、経度、標高の順列とし、それぞれを半角スペースで区切る。 +
+「日本測地系2011における経緯度座標系と東京湾平均海面を基準とする標高の複合座標参照系」は、水平方向の「日本測地系2011における経緯度座標系」と高さ方向の「東京湾平均海面を基準とする標高」との複合座標参照系である。このとき、水平方向である「日本測地系2011における経緯度座標系」（EPSGコード：6668）では、その軸が、緯度、経度の順序で定義されている（参照： https://epsg.org/crs_6668/JGD2011.html?sessionkey=avd2dpqnm9[https://epsg.org/crs_6668/JGD2011.html?sessionkey=avd2dpqnm9] ）。そのため、座標値が緯度、経度、標高の順列となる。
+
+[example]
+====
+[source,xml]
+----
+<gml:pos> 35.6778 139.71689 4.2 </gml:pos>
+----
+====
+
+[example]
+====
+[source,xml]
+----
+<gml:posList> 33.80 130.54 10.4 33.81 130.53 10.6 </gml:posList>
+----
+====
+
+[[tocB_03_02]]
+==== gml:Point
+
+gml:Pointは、点を記述するための幾何オブジェクトである。gml:posによりその位置を示す座標値を記述する。gml:Pointは識別子をもち、これを構成要素とする曲線（gml:_Curve）が参照できる。
+
+[example]
+====
+[source,xml]
+----
+<gml:Point gml:id=”pos001”>
+	<gml:pos>33.80 130.54 0</gml:pos>
+</gml:Point>
+----
+====
+
+[[tocB_03_03]]
+==== gml:MultiPoint
+
+gml:MultiPointは、点（gml:Point）の集まりを記述するための幾何オブジェクトである。gml:pointMemberにより構成する点を記述又は参照する。gml:MultiPointには、一つ以上の点が含まれていなくてはならない。
+
+[example]
+====
+[source,xml]
+----
+<gml:MultiPoint>
+	<gml:pointMember>
+    <gml:Point>
+      <gml:pos>36.34163 138.375027 586.52</gml:pos>
+    </gml:Point>
+  </gml:pointMember>
+</gml:MultiPoint>
+----
+====
+
+[[tocB_03_04]]
+==== gml:_Curve, gml:LineString
+
+gml:_Curveは曲線を記述するために使用される幾何オブジェクトであり、gml:LineStringは、gml:_Curveを継承する幾何オブジェクトであり、折れ線を示す。
+
+
+[requirement]
+.曲線記述のためのgml:LineString使用
+====
+[%metadata]
+identifier:: /req/gm/4
+subject:: 3D都市モデル
+description:: データ製品に含まれる曲線の記述には、gml:_Curveの下位型であるgml:LineStringを使用する。
+====
+
+GMLには、gml:_Curveを継承する下位型として、様々な曲線を記述する型が用意されているが、3D都市モデルでは下位型のうち、gml:LineStringのみを実装の対象とする。
+
+
+[requirement]
+.妥当なgml:LineStringの条件
+====
+[%metadata]
+identifier:: /req/gm/5
+subject:: 3D都市モデル
+description:: 妥当なgml:LineStringは、以下を満たさなければならない。
+
+part:: gml:LineStringを構成する点を、以下のいずれかの方法により記述する。
++
+--
+* gml:pos又はgml:pointPropertyの順列で構成する。
+* gml:posListを用いて記述する。このとき、gml:posListには2点以上の座標値が含まれてなければならず、すべての座標値には同じ空間参照系が適用されなければならない。
+--
+
+part:: gml:LineStringを構成する点の座標値は、始点と終点が一致する場合を除き、一意とする。
+part:: gml:LineStringは交差したり、重なったりしてはならない。
+====
+
+gml:LineStringは、2点以上の点から構成され、それらの点の順序は始点から終点までの順列になっていなければならない。始点と終点以外の点の座標が、他の点の座標と一致していてはならず、また、一つの折れ線に自己交差や重なりがあってはならない。
+
+[[fig-B-1]]
+.エラーとなるgml:LineStringの例
+image::images/117.webp.png[]
+
+[[tocB_03_05]]
+==== gml:LinearRing
+
+gml:LinearRingは、輪を記述するための幾何オブジェクトである。
+
+[requirement]
+.gml:LinearRingの妥当性条件
+====
+[%metadata]
+identifier:: /req/gm/6
+subject:: 3D都市モデル
+description:: 妥当なgml:LinearRingは、以下を満たさなければならない。
+part:: 3点以上の順列から構成され、始点と終点が一致する。
+part:: gml:LinearRingを構成する全ての点は、始点と終点を除き、一致しない。
+part:: 自己交差しない。
+====
+
+gml:LinearRingは、平面を示すgml:Polygonの外周や内周として使用する。gml:LinearRingは、閉じた輪でなければならず、自己交差や始終点以外の一致を許さない。gml:LinearRingを構成する全ての点が同一平面上にある場合、そのgml:LinearRingは平面となる。
+
+[[fig-B-2]]
+.エラーとなるgml:LinearRingの例
+image::images/118.webp.png[]
+
+[[tocB_03_06]]
+==== gml:_Surface, gml:Polygon
+
+gml:_Surfaceは曲面を記述するために使用される幾何オブジェクトである。gml:Polygonは、gml:_Surfaceを継承する幾何オブジェクトであり、多角形を示す。
+
+
+[requirement]
+.曲面記述のためのgml:Polygon使用
+====
+[%metadata]
+identifier:: /req/gm/7
+subject:: 3D都市モデル
+description:: データ製品に含まれる曲面の記述には、gml:_Surfaceの下位型であるgml:Polygonを使用することを原則とする。
+====
+
+GMLには、gml:_Surfaceを継承する下位型として、様々な曲面を記述する型が用意されているが、3D都市モデルでは下位型のうち、gml:Polygonを使用する。ただし地形のように、面的な広がりを有する地物型には、gml:TriangulatedSurface及びこの下位型を使用してよい。
+
+
+[requirement]
+.gml:Polygonの外周と内周の関係
+====
+[%metadata]
+identifier:: /req/gm/8
+subject:: 3D都市モデル
+description:: gml:Polygonは一個の外周を必ずもち、また、0個以上複数個の内周をもってもよい。内周がある場合は、外周と内周とは同じ平面上に存在しなければなければならない。
+====
+
+gml:Polygonは、一個の外周をもち、また、0個以上の内周をもってもよい。外周及び内周はgml:LinearRingで記述される。gml:Polygonを構成する全ての点は同じ平面上に存在しなければならず、ゆがみやねじれがあってはならない。
+
+
+[requirement]
+.gml:Polygonの向きと頂点の順列
+====
+[%metadata]
+identifier:: /req/gm/9
+subject:: 3D都市モデル
+description:: 外周の頂点の順列がgml:Polygonの向き（法線）を決める。頂点の順列が左回りのgml:Polygonは正の向きとなる。
+====
+
+[[fig-B-3]]
+.gml:Polygonの向き
+image::images/119.webp.png[]
+
+
+[requirement]
+.gml:Polygonの妥当性条件
+====
+[%metadata]
+identifier:: /req/gm/10
+subject:: 3D都市モデル
+description:: 妥当なgml:Polygonは、以下を満たさなければならない。
+part:: 内周が、外周に完全に含まれている。
+part:: 内周が他の内周と重なっておらず、他の内周に包含されてもいない。
+part:: 内周が外周に接していてもよいが、gml:Polygonの内部を分断しない。
+part:: 内周と外周が線分で重ならない。
+part:: 外周及び内周に自己交差がなく、始終点以外の点で一致する点がない。
+====
+
+[[fig-B-4]]
+.gml:Polygonの例
+image::images/120.webp.png[]
+
+[[tocB_03_07]]
+==== gml:OrientableSurface
+
+gml:OrientableSurfaceは、向きをもつ曲面（有向曲面）である。属性orientationは曲面の向きを示し、gml:baseSurfaceは元とする曲面を参照する。 +
+orientationの値が“\+”となる場合は、元の曲面と同じ向きであることを示し、値が“-”の場合は、これは元の向きと反対の向きであることを示す。つまり、元の曲面（orientation=“+”）と反対の向きの曲面（orientation=“-”）は、表裏の関係にある。 +
+gml:OrientableSurfaceは、接する複数の立体（gml:Solid）の境界を記述する場合に使用する。
+
+[[fig-B-5]]
+.gml:OrientableSurfaceの例
+image::images/121.webp.png[]
+
+例えば、<<fig-B-5>>に示すような立体Solid1とSolid2があったとする。これら二つの立体は、曲面Poly1を境界として接している。ここで、立体の境界となる曲面の向きは、常に、立体の内部から離れる向き（外側）を向いていなければならない。このとき、Poly1の向きがSolid1に対して外側に向いているとすると、Solid2にとっては内側を向いていることになる。そのため、Solid2の境界となる曲面として、Poly1と同じ位置に、反対の向き（Solid2とって外側の向き）となる曲面が必要となる。gml:OrientableSurfaceはこのような場合に使用する。Solid2を構成する外側境界である有向曲面OrientableSurface2は、gml:baseSurfaceによりPoly1を参照し、向きが反対（orientation=“-”）となる。
+
+[[tocB_03_08]]
+==== gml:MultiSurface
+
+gml:MultiSurfaceは、曲面の集合体を記述するための幾何オブジェクトである。構成要素となる曲面は、重なっていたり、離れていたりしてもよい。また、構成要素となる曲面の向きに制約はない。
+
+[[tocB_03_09]]
+==== gml:CompositeSurface
+
+gml:CompositeSurfaceは、合成曲面を記述するための幾何オブジェクトである。gml:MultiSurfaceと同様に、一個以上の曲面の集まりであるが、gml:MultiSurfaceとは異なり、以下を満たさなければならない。
+
+
+[requirement]
+.gml:CompositeSurfaceの妥当性条件
+====
+[%metadata]
+identifier:: /req/gm/11
+subject:: 3D都市モデル
+description:: 妥当なgml:CompositeSurfaceは、以下を満たさなければならない。
+part:: 構成要素となる曲面が連続しており、全体として一個の曲面を構成する。
+====
+
+[[fig-B-6]]
+.gml:CompositeSurfaceの例
+image::images/122.webp.png[]
+
+gml:CompositeSurfaceの構成要素は、gml:_Surfaceを継承する幾何オブジェクトのみであり、gml:MultiSurfaceはその構成要素とはなりえないことに注意すること。これは、gml:MultiSurfaceがgml:_Surfaceを継承していないからである。
+
+[[tocB_03_10]]
+==== gml:Solid
+
+gml:Solidは、立体を記述するための幾何オブジェクトである。
+
+
+[requirement]
+.立体記述のためのgml:Solid使用
+====
+[%metadata]
+identifier:: /req/gm/12
+subject:: 3D都市モデル
+description:: データ製品に含まれる立体の記述には、gml:Solidを使用する。
+====
+
+CityGMLでは、立体を記述するための幾何オブジェクトとして、gml:Solidとこれの集まりであるgml:CompositeSolidが存在する。しかしながら、gml:CompositeSolidに対応するソフトウェアが現時点ではないことから、3D都市モデルでは、gml:Solidを使用する。
+
+
+[requirement]
+.gml:Solidの外側境界と内側境界
+====
+[%metadata]
+identifier:: /req/gm/13
+subject:: 3D都市モデル
+description:: gml:Solidは一個の外側境界を必ずもち、また、0個以上複数個の内側境界をもってもよい。
+====
+
+gml:Solidは、外側境界（殻）を必ずもたなければならない。また、その内部にも境界をもつこともできる。
+
+[requirement]
+.gml:Solidの妥当性条件
+====
+[%metadata]
+identifier:: /req/gm/14
+subject:: 3D都市モデル
+description:: 妥当なgml:Solidは、以下を満たさなければならない。
+part:: gml:Solidの境界を構成する曲面が、自己交差していない。
+part:: gml:Solidは閉じている（水密である）。
+part:: gml:Solidの内部が連続している。
+part:: gml:Solidの境界を構成する曲面が、適切な方向を向いている。
+part:: gml:Solidの境界を構成する曲面が、重なっていない。
+====
+
+[[fig-B-7]]
+.妥当なgml:Solidの例
+image::images/123.webp.png[]
+
+立体を構成する境界の記述には、合成曲面（gml:CompositeSurface）を使用する。合成曲面は連続していなければならず、重なったり、離れていたりしてはならない。また、立体の境界となる合成曲面は、閉じていなければならない。
+
+[[fig-B-8]]
+.エラーとなるgml:Solidの例
+image::images/124.webp.png[]
+
+立体を構成する境界となる曲面の向きは、立体の内部から離れる方向を向いていなければならない。
+
+[[tocB_03_11]]
+==== gml:Triangle
+
+gml:Triangleは、三角形を記述するための幾何オブジェクトである。この幾何オブジェクトは、gml:TriangulatedSurfaceを構成するために用いる。
+
+
+[requirement]
+.gml:Triangleの外周と内周の制約
+====
+[%metadata]
+identifier:: /req/gm/15
+subject:: 3D都市モデル
+description:: gml:Triangleは、4点（ただし、始点と終点は一致する）のみからなる外周を有する。内周をもってはならない。
+====
+
+[[tocB_03_12]]
+==== gml:TriangulatedSurface
+
+gml:TriangulatedSurfaceは、複数の三角形だけから構成した合成曲面（gml:CompositeSurface）を記述するための幾何オブジェクトである。
+
+
+[requirement]
+.gml:TriangulatedSurfaceの構成要素
+====
+[%metadata]
+identifier:: /req/gm/16
+subject:: 3D都市モデル
+description:: gml:TrianglatedSurfaceは、gml:Triangleのみをその構成要素とする。
+====
+
+gml:TriangulatedSurfaceは、閉じておらず、境界をもつことができる。どのように三角形分割するかの制約はもたない。ここでの「閉じていない」とは、立体の境界のような「殻」にはなっていないという意味である。
+
+[[tocB_03_13]]
+==== gml:Tin
+
+gml:Tinは、不規則三角網と呼ばれ、三点以上の制御点（gml:controlPoint）が隣接する複数の三角形を構成し、それぞれが小平面分を形成する幾何オブジェクトである。gml:TriangulatedSurfaceとは異なり、明示的な三角形は保持しない。 +
+gml:Tinは、ドローネアルゴリズム又はこれに抑止線、傾斜変換線及び三角形の最大辺長に対する考慮を補った同様のアルゴリズムを使用した三角網である。
+
+
+[requirement]
+.gml:Tinの制御点と三角形の条件
+====
+[%metadata]
+identifier:: /req/gm/17
+subject:: 3D都市モデル
+description:: gml:Tinの制御点は、必ず三点以上を含まなければならない。また、制御点から構成される三角形の頂点を通過する円は、他の三角形の頂点を含んではならない。
+====
+
+gml:Tinはアルゴリズムを使用し三角形が形成されるため、これを実装するアプリケーションソフトウェアによって異なる三角形が形成される可能性がある（<<fig-B-9>>）。これは、gml:TriangulatedSurfaceを使用し、明示的に三角形を保持することで回避できる。
+
+[[fig-B-9]]
+.gml:Tinの例
+image::images/125.webp.png[]
+

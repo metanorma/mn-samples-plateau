@@ -1,0 +1,25 @@
+[[tocL_06]]
+=== brid:IntBridgeInstallation
+
+brid:IntBridgeInstallationは、橋梁の内部に設置された、恒久的に存在する固定的な設備（内部付属物）を記述するために用いる。橋梁の付帯的な設備であり、主要な部分であってはならない。 +
+橋梁の内部付属物には以下を含む。 +
+階段、スロープ、エスカレータ、輸送設備（エレベータ、エスカレータ、動く歩道）、柱、デッキ、ステージ、手すり、パネル、梁 +
+ただし、ユースケースの要求に応じて、取得対象とする内部付属物を限定してもよく、また、内部付属物として取得せず橋梁の一部として取得してもよい。
+
+
+==== 橋梁内部付属物の空間属性
+
+brid:IntBridgeInstallationの空間属性の型は、gml:_Geometryである。gml:_Geometryは、幾何オブジェクトの基底要素であり、実装においては、この下位型のうち、具象となる幾何オブジェクトを地物の形状に合わせて選定する。
+
+
+[requirement]
+.brid:IntBridgeInstallationの空間属性タイプ
+====
+[%metadata]
+identifier:: /req/brid/9
+subject:: 3D都市モデル
+description:: brid:IntBridgeInstallationの空間属性の型には、gml:MultiSurfaceを使用することを原則とする。
+====
+
+CityGMLでは、曲面や立体だけではなく、点や曲線も使用可能である。しかしながら3D都市モデルでは、3次元での利用を想定し、付属物の形状に使用可能な幾何オブジェクトを曲面又は立体に限定する。原則として面の集まり（gml:MultiSurface）を使用するが、ユースケースの必要に応じてgml:Solidを使用できる。
+
