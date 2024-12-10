@@ -1,0 +1,10 @@
+[[tocP_04]]
+=== ノードとなる地物型
+
+
+地下埋設物のネットワークのノードとなる地物型には、uro:UtilityNodeとこれを格納するuro:UtilityNodeContainerがある。 +
+uro:UtilityNodeを継承するuro:Appurtenanceは弁栓類等の設備を表現する。属性previousLinkは、このノードにつながる0個以上複数個のリンク（管路又はケーブル）の識別子であり、属性nextLinkは、このノードの先にある0個以上複数個のリンクと後となるリンク（管路又はケーブル）の識別子である。このようなノードとリンクとの関係を属性としてもつことで、地下埋設物のネットワークを意味的にも表現できる。このとき使用する識別子は、都市設備の位置や識別に関するデータ型であるuro:frnFacilityIdAttributeの属性idの値とする。 +
+また、uro:Appurtenanceはuro:ThematicShapeは設備の中心点の情報をもつことができる。この中心点の高さは、設備の中心の高さ、地表の高さ、土被りの高さのいずれかとなり、中心点がもつ高さを属性heightTypeで指定する。 +
+uro:UtilityNodeContainerはこれらの設備を格納するマンホールやハンドホールである。属性appurtananceは、ハンドホール又はマンホールに格納されている設備の識別子を記述するための属性である。これによりマンホールやハンドホール単位で設備を管理することができる。 +
+また、uro:UtilityNodeContainerは、uro:Appurtenanceと同様に、高さを地表の高さとした中心点の情報をuro:ThematicShapeとしてもつことができる。
+

@@ -1,0 +1,192 @@
+[[toc4_22]]
+=== アピアランスモデルの応用スキーマ
+
+アピアランスとは、地物の表面の外観に関する情報である。 +
+[.source]
+<<citygml_30_encoding>>
+
+建築物の壁面等の都市オブジェクトの表面にテクスチャを重畳する場合には、Appearanceモジュールに定義されたParameraterizedTextureを使用する。標準製品仕様書で定義するテクスチャの応用スキーマは、CityGMLのAppearanceモジュールから、ParameterizedTextureを使用するために必要となる型のみを矛盾なく抽出したプロファイルである。
+
+[[toc4_22_01]]
+==== アピアランスモデルのLOD
+
+標準製品仕様書第3.0版では、アピアランスモデルのLODは設定していない。
+
+[[toc4_22_02]]
+==== アピアランスモデルの応用スキーマクラス図
+
+[[toc4_22_02_01]]
+===== Apperance（CityGML）
+
+Appearanceパッケージは、地物の表面の情報を地物型として定義する。app:X3DMaterialは地物の表面の色を定義する地物型であり、app:ParameterizedTextureは、地物の表面に貼りつける画像を指定する地物型である。
+
+image::images/411.svg[]
+
+[[toc4_22_03]]
+==== アピアランスモデルの応用スキーマ文書
+
+[[toc4_22_03_01]]
+===== Appearance（CityGML）
+
+====== app:Appearance
+
+[cols="1a,1a,2a"]
+|===
+| クラスの定義
+2+|
+地物の外観。 +
+地物の幾何オブジェクトとなる面に色又はテクスチャを指定する。
+
+.Apperanceを使用してbldg:Buildingの外観を設定した例（左：色の指定　右：テクスチャの指定）
+image::images/412.webp.png[]
+
+h| 上位の型 2+| core:_CityObject
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+h| (gml:description) | gml:StringOrRefType [0..1] | 外観の説明。
+h| (gml:name) | gml:CodeType [0..1] | 外観を識別する名前。
+h| (gml:boundedBy) | gml:Envelope [0..1] | 外観の空間範囲。
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| app:theme | xs:string [0..1] | 主題。固定値とし、「rgbTexture」とする。
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+| app:surfaceDataMember | app:_SurfaceData [0..*] | 使用するテクスチャ及びパラメータ又は色及びパラメータへの参照
+
+|===
+
+====== app:ParameterizedTexture
+
+[cols="1a,1a,2a"]
+|===
+| クラスの定義
+2+|
+地物インスタンスに貼り付ける画像と貼り付け方をパラメータにより指定するための型。
+
+.bldg:Buildingの外観としてテクスチャを指定した例
+image::images/413.webp.png[]
+
+h| 上位の型 2+| app:_Texture
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| gml:description | gml:StringOrRefType [0..1] | テクスチャの説明。
+| gml:name | gml:CodeType [0..1] | テクスチャを識別する名前。文字列とする。
+h| (gml:boundedBy) | gml:Envelope [0..1] | テクスチャの空間範囲。
+| app:isFront | xs:boolean [0..1] | テクスチャを貼る面の指定。
+3+h| 自身に定義された属性
+| app:imageURI | xs:anyURI [0..1] | テクスチャの画像への参照URI。相対パスにより記述する。
+| app:mimeType
+| gml:CodeType [0..1]
+| テクスチャの画像フォーマット。コードリスト（Appearance_mimeType.xml）より選択する。 +
+画像フォーマットは、PNG又はJPEGとする。
+
+| app:textureType | app:TextureTypeType [0..1] | テクスチャの種類。
+| app:wrapMode
+| app:WrapModeType [0..1]
+| テクスチャの貼り付け方。 +
+borderを選択した場合は、borderColorも指定すること。
+
+| app:borderColor | app:ColorPlusOpacity [0..1] | テクスチャの端の色表現の指定。RGBに加え、不透過率を0から1までの実数値で指定する。不透過率が0の時に透明となる。
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+| app:target
+| app:_TexureParameterization [0..*]
+| テクスチャの貼り付けに使用する幾何への参照。 +
+app:TexCoordListを使用する。
+
+|===
+
+====== app:TexCoordList
+
+[cols="1a,1a,2a"]
+|===
+| クラスの定義 2+| テクスチャの座標とテクスチャを貼り付ける幾何オブジェクトへの参照の対。
+
+h| 上位の型 2+| app:_TextureParametarization
+h| ステレオタイプ 2+| << Type >>
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| app:textureCoordinates | gml:doubleList [1..*] | テクスチャの座標。UV座標（画像の横方向をU軸、縦方向をV軸とし、座標値を0から1の小数値を用いて記述する座標）により記述する。
+| app:ring | xs:anyURI [1..*] | 幾何オブジェクトへの参照。相対パスにより記述する。参照する幾何オブジェクトは、gml:LinearRingとする。
+
+|===
+
+====== app:X3DMaterial
+
+[cols="1a,1a,2a"]
+|===
+| クラスの定義
+2+|
+地物インスタンスの表面色を指定するための型。
+
+.bldg:Buildingの外観として色を指定した例
+image::images/414.webp.png[]
+
+h| 上位の型 2+| app:_SurfaceData
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| gml:description | gml:StringOrRefType [0..1] | マテリアルの説明。
+| gml:name | gml:CodeType [0..1] | マテリアルを識別する名前。文字列とする。
+h| (gml:boundedBy) | gml:Envelope [0..1] | マテリアルの空間範囲。
+| app:isFront | xs:boolean [0..1] | マテリアルを設定する面の指定。
+3+h| 自身に定義された属性
+| app:ambientIntensity | xs:double [0..1] | 環境光（光源からの光の当たっていない部分の明るさ）に対する反射率を指定。これが 0 だと陰の部分が真っ暗になる。
+| app:diffuseColor | gml:doubleList [0..1] | 拡散反射率を指定（rgb、いずれも 0～1）。これが物体の色になる。
+| app:emissiveColor | gml:doubleList [0..1] | 発光（rgb、いずれも 0～1）を指定。 0 0 0 より大きくすると、この物体自体がその色で発光する。
+| app:specularColor | gml:doubleList [0..1] | 鏡面反射率を指定（rgb、いずれも 0～1）で指定。これは光源の光が物体表面でそのまま反射して見える部分（ハイライト）の色になる。
+| app:shininess | xs:double [0..1] | ハイライトの「強さ」を、 0～1 の間で指定。この値が大きくなるにつれてハイライトが鋭くなり、輝き感が増す。
+| app:transparency | xs:double [0..1] | 透明度を指定。 0 で不透明になり、1で透明になる。デフォルトは 0。
+| app:isSmooth | xs:double [0..1] | 陰影付のための補間方法を指定。trueの場合、グーロー法(による陰影付け)となる。
+| app:target | xs:anyURI [0..*] | 色を設定する幾何への参照。
+
+|===
+
+[[toc4_22_04]]
+==== アピアランスモデルで使用するコードリストと列挙型
+
+[[toc4_22_04_01]]
+===== Appearance（CityGML）
+
+====== Appearance_mimeType.xml
+
+lutaml_gml_dictionary::iur/codelists/3.1/Appearance_mimeType.xml[template="gml_dict_template.liquid",context=dict]
+
+[.source]
+<<citygml_20,annex="C.6">>
+
+====== TextureTypeType
+
+[cols="3a,22a"]
+|===
+| 列挙型 | TextureTypeType
+
+h| 値 h| 説明
+| specific | 特定のオブジェクトのための画像
+| typical | 典型的な画像
+| unknown | 不明
+
+|===
+
+[.source]
+<<citygml_20>>
+
+====== WrapModeType
+
+[cols="3a,22a"]
+|===
+| 列挙型 | WrapModeType
+
+h| 値 h| 説明
+| none | 画像は繰り返されない
+| wrap | 画像が繰り返される
+| mirror | 画像は鏡面対称で繰り返される
+| clamp | フレームが引き延ばされる
+| border | 指定された境界線色で塗りつぶされる
+
+|===
+
+[.source]
+<<citygml_20>>
