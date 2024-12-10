@@ -1,347 +1,218 @@
 [[toc4_24]]
-=== 公共測量標準図式の応用スキーマ
+=== 都市オブジェクトグループモデルの応用スキーマ
 
-公共測量標準図式に従った地図表現を行うための情報を格納するデータ型を定義する。
+都市オブジェクトグループは、都市オブジェクトの集まりである。標準製品仕様書では、建築物モデル（LOD4）において、複数の部屋をグループ化して「階」を表現するために使用する。
 
 [[toc4_24_01]]
-==== 公共測量標準図式のLOD
+==== 都市オブジェクトグループモデルのLOD
 
-公共測量標準図式に従った地図表現は、LOD0とする。
+都市オブジェクトグループは地物の集まりであり、それ自身の空間属性をもたないため、LODは定義しない。
 
 [[toc4_24_02]]
-==== 公共測量標準図式の応用スキーマクラス図
+==== 都市オブジェクトグループモデルの応用スキーマクラス図
 
 [[toc4_24_02_01]]
+===== CityObjectGroup（CityGML）
+
+CityObjectCroupパッケージは、都市オブジェクト（core:_CityObject）をグループ化するgrp:CityObjectGroupを定義する。
+
+image::images/415.svg[]
+
+[[toc4_24_02_02]]
 ===== Urban Object（i-UR）
 
-image::images/419.svg[]
+image::images/416.svg[]
 
 [[toc4_24_03]]
-==== 公共測量標準図式の応用スキーマ文書
+==== 都市オブジェクトグループモデルの応用スキーマ文書
 
 [[toc4_24_03_01]]
-===== Urban Object（i-UR）
+===== CityObjectGroup（CityGML）
 
-====== uro:DmGeometricAttribute
+====== grp:CityObjectGroup
+
+[cols="1a,1a,2a",options="noheader"]
+|===
+.2+| 型の定義
+2+|
+都市オブジェクトの集まり。 +
+建築物モデル（LOD4）では、多数の層からなる建築物における、それぞれの層（階）を部屋（bldg:Room）の集まりとして表現する場合及び施設管理者等により任意に設定された防火区画等の領域（任意設定空間）を部屋の集まりとして表現する場合に使用する。 +
++
+下図は、建築物の1階の部屋をgrp:CityObjectGroupとしてグループ化した例である。
+
+.grp:CityObjectGroupの使用例
+image::images/417.webp.png[]
+
+2+|
+CityGMLでは、建築物の階や任意設定空間に相当する地物は存在しない。そこで、グループ化の仕組みであるgrp:CityObjectGroupを建築物の階を表現するために使用する。 +
+属性gml:nameにより階又は任意設定空間を識別する名称を付与し、関連役割grp:groupMemberにより同じ階又は任意に設定空間に存在する部屋（bldg:Room）を参照することで、建築物の階を表現する。
+
+image::images/418.webp.png[]
+
+例えば、1階に六つの部屋が存在する場合、上図のように、1階を示すgrp:CityObjectGroupは、六つのbldg:Roomを関連役割grp:groupMemberにより参照する。
+
+h| 上位の型 2+| core:_CityObject
+h| ステレオタイプ 2+| << FeatureType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| gml:description | gml:StringOrRefType [0..1] | gml:name以外に階を識別する名称が必要な場合に記述する。
+| gml:name | gml:CodeType [0..1] | 階又は任意設定空間を特定する名称。階の場合は、“storeyNo_X”とする。Xは、下層階から上層階に昇順となる10進数の数値とする。文字列とする。
+h| (gml:boundedBy) | gml:Envelope [0..1] | グループの範囲及び適用される空間参照系。
+| core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
+| core:terminationDate | xs:date [0..1] | データが削除された日。
+h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
+h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
+3+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
+h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
+h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
+h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
+h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
+h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
+h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
+3+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| grp:class | gml:CodeType [0..1] | グループの区分。コードリスト（CityObjectGroup_class.xml）から選択する。
+| grp:function | gml:CodeType [0..*] | グループの機能。コードリスト（CityObjectGroup_function.xml）より選択する。
+h| (grp:usage) | gml:CodeType [0..*] | グループの主な使い道。
+3+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+| grp:groupMember
+| core:_CityObject [0..*]
+| グループに含まれる都市オブジェクト。 +
+同じ階に含まれる、bldg:Roomを参照する。
+
+| grp:parent | core:_CityObject [0..1] | この階を含む建築物（bldg:Building）への参照。
+| uro:ifcBuildingStoreyAttribute
+| uro:IfcAttribute [0..*]
+| IDM・MVDで定義されるIFCに含まれる情報。 +
+建築物の階を表現するgrp:CityObjectGroupに付与可能なデータ型は以下とする。 +
+uro:IfcBuildingStorey
+
+| uro:indoorStoreyAttribute
+| uro:IndoorAttribute [0..*]
+| 屋内ナビゲーションに必要な情報。 +
+建築物の階を表現するgrp:CityObjectGroupに付与可能なデータ型は以下とする。 +
+uro:IndoorStoreyAttribute +
+uro:IndoorZoneAttribute +
+uro:IndoorUserDefinedAttribute
+
+|===
+
+[[toc4_24_03_02]]
+===== 建築物モデル（LOD4）の拡張属性
+
+====== uro:IfcBuildingStorey
 
 [cols="1a,1a,2a"]
 |===
-| 型の定義
-2+| 都市計画基本図として、地物の形状を公共測量標準図式に従って表現するためのデータ型。 +
-uro:DmGeometrictAttributeは、地物の実体を表す図形だけではなく、地物を図式に従って表現する際に必要な情報（例：建物記号、建物の棟割線、記号の方向、指示点）を含む。 +
-+
-地物（ステレオタイプがFeatureTypeとなるクラス）は、関連役割uro:dmAttributeにより、このuro:DmGeometrictAttributeを保持できる。
+| 型の定義 2+| IFCで記述された建築物の階数の属性。
 
-h| 上位の型 2+| uro:DmAttribute
+h| 上位の型 2+| uro:IfcSpatialStructureElement
 h| ステレオタイプ 2+| << DataType >>
 3+h| 継承する属性
 h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:dmCode
-| gml:CodeType [1]
-| DMの図式分類コード。レイヤ番号（2桁）とデータ項目（2桁）からなる4桁の半角数字の列。 +
-コードリスト（Common_dmCode.xml）より選択する。
+| uro:globalId | xs:string [0..1] | そのオブジェクトが単一に識別できる唯一な識別子。22桁の文字列により表現する。
+| uro:name | xs:string [0..1] | オブジェクトの名称。uro:IfcBuildingStoreyの場合は、階名称とする。bldg:CityObjectGroup.nameと一致する。
+| uro:description | xs:string [0..1] | オブジェクトの文字情報による追加説明。
+| uro:objectType | xs:string [0..1] | オブジェクトの特定の型を示す。
+| uro:longName | xs:string[0..1] | 階名称の補足的な情報。
+| uro:compositionType
+| uro:IfcElementCompositionEnum [0..1]
+|
+建物階の空間構成の区分。
 
-| uro:meshCode | gml:CodeType [0..1] | 数値地形図データが含まれる国土基本図の図郭識別番号。
-3+h| 自身に定義された属性
+* ELEMENT：通常の独立している建物階。
+* COMPLEX：複合建物階を表現する場合。
+* PARTIAL：部分的な空間で表現される建物階。
+
+3+h| 属性
 h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:geometryType
-| gml:CodeType [1]
-| レコードタイプ。 +
-コードリスト（Common_geometryType.xml）より選択する。
-
-| uro:mapLevel
-| gml:CodeType [1]
-| 地図情報レベル。 +
-コードリスト（Common_MapLevel.xml）より選択する。都市計画基本図の場合は、2500となる。
-
-| uro:shapeType
-| gml:CodeType [1]
-| 図形区分。 +
-コードリスト（Common_shapeType.xml）より選択する。
-
-| uro:visibility
-| xs:boolean [0..1]
-| 可視性。上空から見た場合に、他の地物に遮蔽されておらず、上空から見えている（地図上に表現される）ことを示すフラグ。仮想的に設定された付属図形で描画対象としない場合にもこのフラグを0にする。 +
-1 ：他の地物に遮蔽されていない。（省略時値） +
-0：他の地物に遮蔽されている。
-
-| uro:is3d
-| xs:boolean [0..1]
-| この図形の座標値が３次元データであることを示すフラグ。 +
-1：この図形の座標値は3次元データである。 +
-0：この図形の座標値は2次元データである。（省略時値） +
-uro:is3d=0の場合、z値に示された”0”は意味を持たない。
-
-| uro:isInstallation
-| xs:boolean [0..1]
-| この図形が地物の付属図形であることを示すフラグ。 +
-付属図形とは、地物の本質的な実体ではないが、描画処理などで地物を図形表現する際に利用可能な図形である。 +
-1 ：この図形は付属図形である。 +
-0：この図形は付属図形ではない。（省略時値） +
-uro:isInstallationの値が1の場合、uro:dmShapeTypeの値は、0以外となる。
-
-| uro:isEdited
-| xs:boolean [0..1]
-| 個別の編集処理がおこなわれたことを示すフラグ。 +
-1：編集処理が行われた。 +
-0：編集処理が行われていない。（省略時値）
-
-| uro:isSupplementarySymbol
-| xs:boolean [0..1]
-| この図形が地物の補助記号であることを示すフラグ。 +
-補助記号とは、公共測量標準図式において自動発生が可能とされる図形を指す。自動発生が不可能な場合で図形を作成する必要がある場合にのみ使用する。 +
-1：この図形は補助記号である。 +
-0：この図形は補助記号ではない。（省略時値）
-
-| uro:angle
-| xs:double [0..1]
-| 図形の角度。真北を0とし、時計まわりを正とする。 +
-uro:dmGeometryTypeの値がE7（方向）の場合に多重度は任意となっているが、必須とする。
-
-| uro:elevation
-| gml:LengthType [0..1]
-| この図形の標高。単位はmとする。 +
-uro:dmCodeのレイヤ番号が73の場合は、必須とする。
-
-3+h| 継承する関連役割
-h| 関連役割名 h| 属性の型及び多重度 h| 定義
-| uro:dmElement
-| uro:DmElement [0..1]
-| 数値地形図データファイル仕様に基づく要素レコードの情報。 +
-数値地形図データファイルの要素レコード情報を保持したい場合に必須とする。
-
-3+h| 自身に定義された関連役割
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:lod0Geometry
-| gml:_Geometry [0..1]
-| 地物の形状を示す幾何オブジェクト。 +
-参照先の幾何オブジェクトの型は、uro:dmCodeの値に応じて、gml:MultiPoint、gml:MultiCurve又はgml:MultiSurfaceのいずれかとする。 +
-いずれの幾何オブジェクトの型となるかは、数値地形図の取得方法に従う。
+| uro:elevation | gml:LengthType [0..1] | 建物階の建物の基準高さからの相対的高さ。単位はm。
 
 |===
 
-====== uro:DmElement
-
-[cols="a,a,a"]
-|===
-| 型の定義 2+| 数値地形図データの要素レコードの情報を保持するためのデータ型
-
-h| 上位の型 2+| ―
-h| ステレオタイプ 2+| << DataType >>
-3+h| 自身に定義された属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:locationType
-| gml:CodeType [0..1]
-| 地域分類。文字列とする。 +
-必要に応じて利用者が任意に定義するコード。
-
-| uro:infoType
-| gml:CodeType [0..1]
-| 情報分類。文字列とする。 +
-必要に応じて利用者が任意に定義するコード。
-
-| uro:elementKey | xs:string [0..1] | 要素識別番号。
-| uro:hierarchyLevel | xs:string [0..1] | 階層レベル。
-| uro:dataType
-| gml:CodeType [0..1]
-| 実データ区分。 +
-コードリスト（DmElement_dataType.xml）から選択する。
-
-| uro:annotationType
-| gml:CodeType [0..1]
-| 注記区分。 +
-コードリスト（DmElement_annotationType.xml）から選択する。
-
-| uro:precisionType
-| gml:CodeType [0..1]
-| 精度区分。 +
-コードリスト（DmElement_precisionType.xml）から選択する。
-
-| uro:dislocationType
-| gml:CodeType [0..1]
-| 転位区分。 +
-コードリスト（DmElement_dislocationType.xml）から選択する。
-
-| uro:breakType
-| gml:CodeType [0..1]
-| 間断区分。 +
-コードリスト（DmElement_breakType.xml）から選択する。
-
-| uro:attributeValue | xs:string [0..1] | 属性数値。
-| uro:attributeType | gml:CodeType [0..1] | 属性区分。利用者が独自に設ける区分。文字列とする。
-| uro:attributeValueType | xs:string [0..1] | 属性データ書式。属性レコードを持つ場合の、そのレコードに記述されている内容の書式をFortran形式で記述する。
-| uro:creationDate | xs:gYearMonth [0..1] | 取得年月。
-| uro:terminationDate | xs:gYearMonth [0..1] | 更新年月。
-| uro:freeSpace | xs:string [0..1] | 空き領域。数値地形図データファイル形式で空き領域にデータが設定されている場合には，この属性を用いて保持する。
-
-|===
-
-====== uro:DmAnnotation
+====== uro:IfcZone
 
 [cols="1a,1a,2a"]
 |===
-| 型の定義
-| 都市計画基本図として、注記を表現するために必要な情報のデータ型。 +
-+
-地物（ステレオタイプがFeatureType）は、関連役割uro:dmAttributeにより、uro:DmAnnotationを保持できる。このとき、uro:DmAnnotationは地物に付属する情報となる。
-|
+| 型の定義 2+| IFCで記述された施設管理者により任意に設定された空間の属性。
 
-h| 上位の型 | uro:DmAttribute |
-h| ステレオタイプ | << DataType >> |
-2+h| 継承する属性 |
+h| 上位の型 2+| uro:IfcObject
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
 h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:dmCode
-| gml:CodeType [1]
-| 公共測量標準図式の図式分類コード。レイヤ番号（2桁）とデータ項目（2桁）からなる4桁の半角数字の列。 +
-コードリスト（Common_dmCode.xml）より選択する。
-
-| uro:meshCode | gml:CodeType [0..1] | 数値地形図データファイル仕様にもとづいて設定される図郭識別番号。
-2+h| 自身に定義された属性 |
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:geometryType
-| gml:CodeType [1]
-| レコードタイプ。 +
-コードリスト（Common_geometryType.xml）より選択する。 +
-注記の場合はE7となる。
-
-| uro:shapeType
-| gml:CodeType [1]
-| 図形区分。 +
-コードリスト（Common_shapeType.xml）より選択する。 +
-注記の場合は0となる。
-
-| uro:label | xs:string [1] | 注記の文字列。
-| uro:isVertical
-| xs:boolean [1]
-| 縦書きか否か。 +
-1：縦書き +
-0：横書き
-
-| uro:size | xs:integer [1] | 字の大きさ。単位は10分の1ミリメートル。
-| uro:orientation | xs:integer [1] | 注記の表示方向を示す角度。単位は度、範囲は縦書きの場合は-135°～-45°、横書きの場合は-45°～+45°とする。
-| uro:linewidth | xs:integer [1] | 注記の線の太さ。線号の号数を記述する。
-| uro:spacing | xs:integer [1] | 字の間隔。単位は10分の1ミリメートル。全角・半角が混在する場合には、全角を基準とする。
-2+h| 自身に定義された関連役割 |
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:lod0AnchorPoint
-| gml:_Geometry [0..1]
-| 注記を配置する位置。 +
-点（gml:Point）を使用して記述する。
+| uro:globalId | xs:string [0..1] | そのオブジェクトが単一に識別できる唯一な識別子。22桁の文字列により表現する。
+| uro:name | xs:string [0..1] | オブジェクトの名称。uro:IfcZoneの場合は、空間の名称とする。bldg:CityObjectGroup.nameと一致する。
+| uro:description | xs:string [0..1] | オブジェクトの文字情報による追加説明。
+| uro:objectType | xs:string [0..1] | オブジェクトの特定の型を示す。
 
 |===
+
+[[toc4_24_03_03]]
+===== 屋内ナビゲーションのための拡張属性
+
+====== uro:IndoorZoneAttribute
+
+[cols="1a,1a,2a"]
+|===
+| 型の定義 2+| 任意の空間に追加するナビゲーション用の属性。
+
+h| 上位の型 2+| uro:IndoorAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| uro:source | gml:CodeType [0..1] | 原典資料。コードリスト（Common_indoorSource.xml）から選択する。
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| uro:floorId | xs:string [0..1] | 任意の空間が紐づけられている階層の固有ID。
+
+|===
+
+====== uro:IndoorStoreyAttribute
+
+[cols="1a,1a,2a"]
+|===
+| 型の定義 2+| 階層に追加するナビゲーション用の属性。
+
+h| 上位の型 2+| uro:IndoorAttribute
+h| ステレオタイプ 2+| << DataType >>
+3+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| uro:source | gml:CodeType [0..1] | 原典資料。コードリスト（Common_indoorSource.xml）から選択する。
+3+h| 属性
+h| 属性名 h| 属性の型及び多重度 h| 定義
+| uro:category
+| xs:boolean [0..1]
+| 屋内外区分。 +
+1：屋内 +
+0：屋外
+
+| uro:ordinal | xs:double [0..1] | 階層数。
+
+|===
+
+====== uro:IndoorUserDefinedAttribute
+
+建築物モデルの応用スキーマ文書　を参照。
 
 [[toc4_24_04]]
-==== 公共測量標準図式で使用するコードリストと列挙型
+==== 都市オブジェクトグループモデルで使用するコードリストと列挙型
 
 [[toc4_24_04_01]]
-===== Urban Object（i-UR）
+===== CityObjectGroup（i-UR）
 
-====== Common_dmCode.xml
+====== CityObjectGroup_class.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/Common_dmCode.xml[template="gml_dict_template.liquid",context=dict]
-
-[.source]
-<<gsi_ops,annex=7,付録７ 公共測量標準図式>>
-
-
-====== Common_shapeType.xml
-
-lutaml_gml_dictionary::iur/codelists/3.1/Common_shapeType.xml[template="gml_dict_template.liquid",context=dict]
-
+lutaml_gml_dictionary::iur/codelists/3.1/CityObjectGroup_class.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
-<<gsi_ops,annex=7,付録７ 公共測量標準図式>>
+<<citygml_20,annex="C.10">>
 
+====== CityObjectGroup_function.xml
 
-====== Common_MapLevel.xml
-
-lutaml_gml_dictionary::iur/codelists/3.1/Common_MapLevel.xml[template="gml_dict_template.liquid",context=dict]
-
-====== Common_geometryType.xml
-
-lutaml_gml_dictionary::iur/codelists/3.1/Common_geometryType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.1/CityObjectGroup_function.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
-<<gsi_ops,annex=7,付録７ 公共測量標準図式>>
-
-
-====== DmElement_dataType.xml
-
-lutaml_gml_dictionary::iur/codelists/3.1/DmElement_dataType.xml[template="gml_dict_template.liquid",context=dict]
-
-[.source]
-<<gsi_ops,annex=7,付録７ 公共測量標準図式>>
-
-
-====== DmElement_annotationType.xml
-
-lutaml_gml_dictionary::iur/codelists/3.1/DmElement_annotationType.xml[template="gml_dict_template.liquid",context=dict]
-
-[.source]
-<<gsi_ops,annex=7,付録７ 公共測量標準図式>>
-
-
-====== DmElement_precisionType.xml
-
-[cols="3a,11a,11a"]
-|===
-|ファイル名 2+| DmElement_precisionType.xml
-
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/DmElement_precisionType.xml
-h| コード h| 説明（上位桁：数値化区分） h| 説明（下位桁：地図情報レベル）
-| 1 | 基準点測量成果を用いる方法 | 1～50
-| 2 | TS等を用いた数値実測 | ～100
-| 3 | 数値図化法・他の数値地形図データの利用 | ～250
-| 4 | 既成図数値化（無伸縮図面を使用）* | ～500
-| 5 | 既成図数値化（伸縮図面を使用）* | ～1000
-| 6 | 航空レーザ測量成果を用いる方法 | ～2500
-| 7 | | ～5000
-| 8 | | ～10000
-| 9 | その他 | その他
-
-|===
-
-[.source]
-<<gsi_ops,annex=7,付録７ 公共測量標準図式>>
-
-
-====== DmElement_breakType.xml
-
-// lutaml_gml_dictionary::iur/codelists/3.1/DmElement_breakType.xml[template="gml_dict_template.liquid",context=dict]
-
-[cols="3a,11a"]
-|===
-| ファイル名 | DmElement_breakType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DmElement_breakType.xml
-h| コード h| 説明
-| 0 間断しない
-| 1～9 | 間断する（数値は優先順位）
-
-|===
-
-[.source]
-<<gsi_ops,annex=7,付録７ 公共測量標準図式>>
-
-
-====== DmElement_dislocationType.xml
-
-// lutaml_gml_dictionary::iur/codelists/3.1/DmElement_dislocationType.xml[template="gml_dict_template.liquid",context=dict]
-
-[cols="3a,11a"]
-|===
-| ファイル名 | DmElement_dislocationType.xml
-
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DmElement_dislocationType.xml
-h| コード h| 説明
-
-| 0 転位しない
-| 1～9 | 座標列の方向に対して右側に転位する
-| -1～-9 | 座標列の方向に対して左側に転位する
-
-|===
-
-[.source]
-<<gsi_ops,annex=7,付録７ 公共測量標準図式>>
-
-
+<<citygml_20,annex="C.10">>

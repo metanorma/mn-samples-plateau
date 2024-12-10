@@ -1,0 +1,33 @@
+[[tocV_03]]
+=== ポイントクラウドマッピングのための拡張プロファイル
+
+説明文が入ります
+
+[[tocV_03_01]]
+==== ポイントクラウドモデル
+
+説明文が入ります
+
+[[tocV_03_02]]
+==== ポイントクラウドの記述
+
+説明文が入ります。source内のxmlを差し替えてください
+
+[source,xml]
+----
+<app:ParameterizedTexture>
+  <app:imageURI>[テクスチャ画像への相対パス]</app:imageURI>
+  <app:mimeType>[テクスチャ画像のファイルタイプ]</app:mimeType>
+  <app:target uri="[テクスチャ画像を貼る対象となる面への参照">
+	  <app:TexCoordList>
+      <app:textureCoordinates ring="[テクスチャ画像を貼る対象となる面の外周への参照">[面の外周に対応するテクスチャ画像の座標]</app:textureCoordinates>
+	  </app:TexCoordList>
+  </app:target>
+</app:ParameterizedTexture>
+----
+
+[[tocV_03_03]]
+==== ポイントクラウドモジュール利用上の留意事項
+
+説明文が入ります
+
