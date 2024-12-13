@@ -1784,6 +1784,9 @@ MultiSurfaceを使用することを基本とする。
 
 image::images/EAID_E7AABA98_2450_4986_9736_DCCAF0108C50.png[]
 
+// image::images/030.svg[]
+
+
 [[toc4_02_02_02]]
 ===== Urban Object（i-UR）
 
@@ -1793,6 +1796,9 @@ image::images/EAID_E7AABA98_2450_4986_9736_DCCAF0108C50.png[]
 
 image::images/EAID_846DD800_139C_4d47_A1DF_3FB1AC5D130F.png[]
 
+// image::images/031.svg[]
+
+
 ====== 施設管理のための拡張属性
 
 建築物モデルに付与する詳細な属性のうち、施設管理のための属性のデータ型を定義する。 +
@@ -1800,11 +1806,17 @@ uro::FacilityAttributeは抽象クラスであり、これを継承する具象�
 
 image::images/EAID_13E09C71_99E7_40b4_B72D_48AF6379BC2E.png[]
 
+// image::images/032.svg[]
+
+
 ====== 数値地形図のための拡張属性
 
 以下に示すクラスは、数値地形図データとの互換性を保つために、地図情報レベル2500数値地形図データ作成のための標準製品仕様書（案）に定義された属性を建築物の属性として付与することを可能にするためのデータ型である。
 
 image::images/EAID_87476527_7B9B_4b92_967E_3D38365470CA.png[]
+
+// image::images/033.svg[]
+
 
 ====== 建築物モデル（LOD4）の拡張属性
 
@@ -1815,36 +1827,43 @@ image::images/EAID_87476527_7B9B_4b92_967E_3D38365470CA.png[]
 +
 image::images/EAID_24E8A45C_C99F_49b7_860A_9CF65FF76C76.png[]
 
+// image::images/034.svg[]
 
 . bldg:Roomの下位型に付与する属性
 +
 image::images/EAID_5D6DB5A0_5047_4bac_9E60_69904A60B56D.png[]
 
+// image::images/035.svg[]
 
 . bldg:_BoundarySurfaceの下位型に付与する属性
 +
 image::images/EAID_E591C1CF_7F35_4160_8A72_DFA097AD5811.png[]
 
+// image::images/036.svg[]
 
 . bldg:_Openingの下位型に付与する属性
 +
 image::images/EAID_CBBD6CF4_0A1E_4406_9930_89DE43527910.png[]
 
+// image::images/037.svg[]
 
 . bldg:BuildingInstallation及びbldg:IntBuildingInstallationに付与する属性
 +
 image::images/EAID_84A9C65B_FD6D_4bb5_818F_E8C35FF5BCD1.png[]
 
+// image::images/038.svg[]
 
 . [[building_lod4_exp_6]] bldg:BuildingFurnitureに付与する属性
 +
 image::images/EAID_C37CFBD6_69BA_42fb_9AC7_2D329D931BCF.png[]
 
+// image::images/039.svg[]
 
 . [[building_lod4_exp_7]] 3次元屋内地理空間データに対応する属性
 +
 image::images/EAID_4EB75007_B31D_4f2c_8855_7E9D3A3B17F4.png[]
 
+// image::images/040.svg[]
 
 [[toc4_02_03]]
 ==== 建築物の応用スキーマ文書
