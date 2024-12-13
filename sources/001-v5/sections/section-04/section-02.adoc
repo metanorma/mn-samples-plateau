@@ -1782,9 +1782,7 @@ MultiSurfaceを使用することを基本とする。
 [[toc4_02_02_01]]
 ===== Buiding（CityGML）
 
-image::images/EAID_E7AABA98_2450_4986_9736_DCCAF0108C50.svg[]
-
-// image::images/EAID_E7AABA98_2450_4986_9736_DCCAF0108C50.png[]
+image::images/EAID_E7AABA98_2450_4986_9736_DCCAF0108C50.png[]
 
 [[toc4_02_02_02]]
 ===== Urban Object（i-UR）
@@ -1793,26 +1791,20 @@ image::images/EAID_E7AABA98_2450_4986_9736_DCCAF0108C50.svg[]
 
 建築物モデルに付与する詳細な属性のためのデータ型を定義する。
 
-image::images/EAID_846DD800_139C_4d47_A1DF_3FB1AC5D130F.svg[]
-
-// image::images/EAID_846DD800_139C_4d47_A1DF_3FB1AC5D130F.png[]
+image::images/EAID_846DD800_139C_4d47_A1DF_3FB1AC5D130F.png[]
 
 ====== 施設管理のための拡張属性
 
 建築物モデルに付与する詳細な属性のうち、施設管理のための属性のデータ型を定義する。 +
 uro::FacilityAttributeは抽象クラスであり、これを継承する具象クラスを、施設管理属性の応用スキーマに定義する。
 
-image::images/EAID_13E09C71_99E7_40b4_B72D_48AF6379BC2E.svg[]
-
-// image::images/EAID_13E09C71_99E7_40b4_B72D_48AF6379BC2E.png[]
+image::images/EAID_13E09C71_99E7_40b4_B72D_48AF6379BC2E.png[]
 
 ====== 数値地形図のための拡張属性
 
 以下に示すクラスは、数値地形図データとの互換性を保つために、地図情報レベル2500数値地形図データ作成のための標準製品仕様書（案）に定義された属性を建築物の属性として付与することを可能にするためのデータ型である。
 
-image::images/EAID_87476527_7B9B_4b92_967E_3D38365470CA.svg[]
-
-// image::images/EAID_87476527_7B9B_4b92_967E_3D38365470CA.png[]
+image::images/EAID_87476527_7B9B_4b92_967E_3D38365470CA.png[]
 
 ====== 建築物モデル（LOD4）の拡張属性
 
