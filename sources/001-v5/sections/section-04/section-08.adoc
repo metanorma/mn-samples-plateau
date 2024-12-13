@@ -91,12 +91,12 @@ h| 説明
 [[toc4_08_02_01]]
 ===== LandUse（CityGML）
 
-image::images/197.svg[]
+image::images/EAID_9AAD6C21_B1E7_4472_B64A_FB5E3569D970.png[]
 
 [[toc4_08_02_02]]
 ===== Urban Object（i-UR）
 
-image::images/198.svg[]
+image::images/EAID_C1EC985B_5CBD_4e91_8661_EB4EF23781D9.png[]
 
 [[toc4_08_03]]
 ==== 土地利用モデルの応用スキーマ文書
@@ -106,56 +106,10 @@ image::images/198.svg[]
 
 ====== luse:LandUse
 
-lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="LandUse",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="LandUse",template="../../sources/liquid_templates/_klass_table.liquid"]
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義 2+| 都市計画基礎調査の土地利用現況。
+// ,guidance="../../sources/guidance/guidance.yaml"
 
-h| 上位の型 2+| core:_CityObject
-h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| gml:description | gml:StringOrRefType [0..1] | 土地利用の概要。
-| gml:name | gml:CodeType [0..1] | 土地利用を識別する名称。文字列とする。
-h| (gml:boundedBy) | gml:Envelope [0..1] | オブジェクトの範囲と空間参照系。
-| core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
-| core:terminationDate | xs:date [0..1] | データが削除された日。
-h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+h| 自身に定義された属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| luse:class
-| gml:CodeType [0..1]
-| 土地利用用途の大まかな区分。 +
-土地利用用途の区分は、<<mlit_foundation_reqs,都市計画基礎調査実施要領（国土交通省都市局）>>による区分とする。コードリスト（Common_landUseType.xml）より選択する。
-
-h| (luse:function) | gml:CodeType [0..*] | 土地利用の機能。
-h| (luse:usage) | gml:CodeType [0..*] | 土地利用の用途。
-3+h| 継承する関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-3+h| 自身に定義された関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-| luse:lod1MultiSurface | gml:MultiSurface[0..1] | 土地利用が変化する境界により囲われた同一の土地利用の範囲。
-| uro:landUseDetailAttribute | uro:LandUseDetailAttribute [0..1] | 土地利用現況調査により得られた土地の詳細情報。
-| uro:luseKeyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | 属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
-| uro:luseDataQualityAttribute
-| uro:DataQualityAttribute [1]
-| 作成したデータの品質に関する情報。 +
-必須とする。
-
-| uro:luseFacilityTypeAttribute | uro:FacilityTypeAttribute [0..*] | 特定分野における施設の分類情報。
-| uro:luseFacilityIdAttribute | uro:FacilityIdAttribute [0..1] | uro:luseFacilityTypeAttribute.classによって指定された分野における施設の識別情報。
-| uro:luseFacilityAttribute | uro:FacilityAttribute [0..*] | uro:luseFacilityTypeAttribute.classによって指定された分野における施設管理情報。
-
-|===
 
 [[toc4_08_03_02]]
 ===== Urban Object （i-UR）
@@ -164,106 +118,13 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
 
 lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="LandUseDetailAttribute",template="../../sources/liquid_templates/_klass_table.liquid",guidance="../../sources/guidance/guidance.yaml"]
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義 2+| 都市計画に関する基礎調査の一つとして、土地利用の現況と変化の動向を把握することを目的とし都市計画法第6条の規定に基づき実施される調査の結果。
-
-h| 上位の型 2+| ー
-h| ステレオタイプ 2+| << DataType >>
-3+h| 属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:id | xs:string [0..1] | 土地利用現況図における識別子。
-| uro:orgLandUse | gml:CodeType [0..1] | 都市独自の分類による土地利用用途。コードリスト（LandUseDetailAttribute \_orgLandUse.xml）より選択する。本属性を使用する場合は、コードリストを作成すること。
-| uro:nominalArea | gml:MeasureType [0..1] | 図上計測面積を調整した値。単位はm2（uom=”m2”）とする。
-| uro:ownerType | gml:CodeType [0..1] | 土地所有者の区分。コードリスト（Common_ownerType.xml）より選択する。
-| uro:owner | xs:string [0..1] | 土地所有者の名称。
-| uro:areaInSquareMeter | gml:MeasureType [0..1] | 図上計測面積。単位はm2（uom=”m2”）とする。
-| uro:areaInHa | gml:MeasureType [0..1] | 図上計測面積（ha換算数）。単位はha（uom=” ha”）とする。
-| uro:buildingCoverageRate | xs:integer [0..1] | 建蔽率（敷地面積に対する建築面積の割合）。全体を「100」とする割合（百分率）で記述する。単位は％。
-| uro:floorAreaRate | xs:integer [0..1] | 容積率（敷地面積に対する延床面積の割合）。全体を「100」とする割合（百分率）で記述する。単位は％。
-| uro:specifiedBuildingCoverageRate | xs:integer [0..1] | 指定建蔽率（用途地域別に定められている建蔽率）。全体を「100」とする割合（百分率）で記述する。単位は％。
-| uro:specifiedFloorAreaRate | xs:integer [0..1] | 指定容積率（都市計画で定められる容積率の最高限度）。全体を「100」とする割合（百分率）で記述する。単位は％。
-| uro:standardFloorAreaRate | xs:integer [0..1] | 基準容積率（前面道路の幅員が12ｍ未満の場合に、前面道路の幅員による限度により算出される容積率）。全体を「100」とする割合（百分率）で記述する。単位は％。
-| uro:urbanPlanType | gml:CodeType [0..1] | 土地が属する都市計画区域の区分。コードリスト（Common_urbanPlanType.xml）より選択する。
-| uro:areaClassificationType | gml:CodeType [0..1] | 土地が属する区域区分。コードリスト（Common_areaClassificationType.xml）より選択する。
-| uro:districtsAndZonesType | gml:CodeType [0..*] | 土地が属する地域地区の区分。コードリスト（Common_districtsAndZonesType.xml）より選択する。土地利用が複数の地域地区に含まれる場合は、複数を列挙する。
-| uro:prefecture | gml:CodeType [0..1] | 土地が所在する都道府県の都道府県コード。JIS X0401に定義される2桁の半角数字。コードリスト（Common_localPublicAuthorities.xml）より選択する。
-| uro:city
-| gml:CodeType [0..1]
-| 土地が所在する市区町村の市区町村コード。 +
-JIS X0401に定義される2桁の半角数字とJIS X0402に定義される3桁の半角数字とを組み合わせた5桁の半角数字。政令市の場合は、区の市区町村コードとする。コードリスト（Common_localPublicAuthorities.xml）より選択する。 +
-運用上必須とする。
-
-| uro:reference | xs:string [0..1] | 土地の位置を示す図面上の番号。
-| uro:note | xs:string [0..1] | その他土地に関して特筆すべき事項。
-| uro:surveyYear | xs:gYear [0..1] | 土地利用現況調査の実施年（西暦）。
-
-|===
-
 ====== uro:KeyValuePairAttribute
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義
-2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外に情報を追加したい場合に使用する。 +
-属性名称と属性の値の対で構成される。拡張属性は、コ－ド値をとる属性にのみ適用する。 +
-コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
-
-h| 上位の型 2+| ―
-h| ステレオタイプ 2+| << DataType >>
-3+h| 自身に定義された属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:key | gml:CodeType [1] | 拡張する属性の名称。名称は、コ－ドリスト（KeyValuePairAttribute_key.xml）より選択する。コード値をとる属性を追加する場合は、コードリストを作成する。
-| uro:codeValue
-| gml:CodeType [0..1]
-| 拡張された属性の値。値はコ－ド型となる。 +
-uro:KeyValuePairAttributeを使用する場合は、必ずuro:codeValueを作成する。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="KeyValuePairAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== uro:DataQualityAttribute
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
-
-h| 上位の型 2+| ―
-h| ステレオタイプ 2+| << DataType >>
-3+h| 自身に定義された属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-h| (uro:geometrySrcDescLod0) | gml:CodeType [0..*] | LOD0の幾何オブジェクトの作成に使用した原典資料の種類。
-| uro:geometrySrcDescLod1
-| gml:CodeType [1..*]
-| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。 +
-コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。
-
-h| (uro:geometrySrcDescLod2) | gml:CodeType [0..*] | LOD2の幾何オブジェクトの作成に使用した原典資料の種類。
-h| (uro:geometrySrcDescLod3) | gml:CodeType [0..*] | LOD3の幾何オブジェクトの作成に使用した原典資料の種類。
-h| (uro:geometrySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
-| uro:thematicSrcDesc
-| gml:CodeType [0..*]
-| 主題属性の作成に使用した原典資料の種類。 +
-コードリスト（DataQualityAttribute_thematicSrcDesc.xml）より選択する。 +
-主題属性が作成対象となっている場合は必須とする。
-
-h| (uro:appearanceSrcDescLod0) | gml:CodeType [0..*] | LOD0の幾何オブジェクトのアピアランスに使用した原典資料の種類。
-| uro:appearanceSrcDescLod1
-| gml:CodeType [0..*]
-| LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
-コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 +
-拡張製品仕様書LOD1の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD1の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
-
-h| (uro:appearanceSrcDescLod2) | gml:CodeType [0..*] | LOD2の幾何オブジェクトのアピアランスに使用した原典資料の種類。
-h| (uro:appearanceSrcDescLod3) | gml:CodeType [0..*] | LOD3の幾何オブジェクトのアピアランスに使用した原典資料の種類。
-h| uro:appearanceSrcDescLod4 | gml:CodeType [0..*] | LOD4の幾何オブジェクトのアピアランスに使用した原典資料の種類。
-h| (uro:lodType) | gml:CodeType[0..*] | オブジェクトに適用されたLODの詳細な区分。
-h| (uro:lod1HeightType) | gml:CodeType [0..1] | LOD1の立体図形を作成する際に使用した高さの算出方法。
-h| (uro:tranDataAcquisition) | xs:string [0..1] | 「<<nilim_kiban_dps,道路基盤地図情報（整備促進版）製品仕様書（案）>>」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
-3+h| 自身に定義された関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-h| (uro:publicSurveyDataQualityAttribute) | uro:PublicSurveyDataQualityAttribute [0..1] | 使用した公共測量成果の地図情報レベルと種類。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="DataQualityAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== uro:FacilityIdAttribute
 
