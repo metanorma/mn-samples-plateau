@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18.65cm" height="15.03cm" viewBox="0 0 705 568">
+<title></title>
+<desc>Created with Enterprise Architect (Build: 1628) 2</desc>
+
+<g style="fill:#FFFFFF;fill-opacity:1.00;">
+	 <rect x="0" y="0" width="705" height="568" shape-rendering="auto"/>
+</g><g style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 6 6 L 6 562 L 699 562 L 699 6 L 6 6" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#FFFFFF;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <polygon points="6 28 91 28 104 14 104 6 6 6 6 28" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="11.00" y="20.00" textLength="78" style="font-family:メイリオ; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 11.00 20.00)">class CityModel</text>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFCC;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+ <rect x="325" y="230" width="330" height="122" rx="0.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="447.00" y="250.00" textLength="85" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 447.00 250.00)">«FeatureType»</text>
+	<text x="440.00" y="267.00" textLength="99" style="font-family:Yu Gothic UI; font-weight:700; font-style:italic; font-size:13px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 440.00 267.00)">core::_CityObject</text>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
+  <path d="M 325 275 L 654 275" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="330.00" y="293.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 330.00 293.00)">+ </text>
+	<text x="352.00" y="293.00" textLength="157" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 352.00 293.00)">creationDate: xs::date [0..1]</text>
+	<text x="330.00" y="310.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 330.00 310.00)">+ </text>
+	<text x="352.00" y="310.00" textLength="176" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 352.00 310.00)">terminationDate: xs::date [0..1]</text>
+	<text x="330.00" y="327.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 330.00 327.00)">+ </text>
+	<text x="352.00" y="327.00" textLength="298" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 352.00 327.00)">relativeToTerrain: core::RelativeToTerrainType [0..1]</text>
+	<text x="330.00" y="344.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 330.00 344.00)">+ </text>
+	<text x="352.00" y="344.00" textLength="286" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 352.00 344.00)">relativeToWater: core::RelativeToWaterType [0..1]</text>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFCC;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+ <rect x="85" y="340" width="130" height="80" rx="0.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="107.00" y="360.00" textLength="85" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 107.00 360.00)">«FeatureType»</text>
+	<text x="103.00" y="377.00" textLength="93" style="font-family:Yu Gothic UI; font-weight:700; font-style:normal; font-size:13px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 103.00 377.00)">core::CityModel</text>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#CCFFCC;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+ <rect x="195" y="40" width="260" height="105" rx="0.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="282.00" y="60.00" textLength="85" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 282.00 60.00)">«FeatureType»</text>
+	<text x="285.00" y="77.00" textLength="80" style="font-family:Yu Gothic UI; font-weight:700; font-style:italic; font-size:13px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 285.00 77.00)">gml::_Feature</text>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
+  <path d="M 195 85 L 454 85" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="200.00" y="103.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 200.00 103.00)">+ </text>
+	<text x="222.00" y="103.00" textLength="228" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 222.00 103.00)">description: gml::StringOrRefType [0..1]</text>
+	<text x="200.00" y="120.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 200.00 120.00)">+ </text>
+	<text x="222.00" y="120.00" textLength="158" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 222.00 120.00)">name: gml::CodeType [0..1]</text>
+	<text x="200.00" y="137.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 200.00 137.00)">+ </text>
+	<text x="222.00" y="137.00" textLength="186" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 222.00 137.00)">boundedBy: gml::Envelope [0..1]</text>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#CCFFCC;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+ <rect x="75" y="230" width="150" height="80" rx="0.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="107.00" y="250.00" textLength="85" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 107.00 250.00)">«FeatureType»</text>
+	<text x="80.00" y="267.00" textLength="139" style="font-family:Yu Gothic UI; font-weight:700; font-style:italic; font-size:13px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 80.00 267.00)">gml::_FeatureCollection</text>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFFF;fill-opacity:1.00; stroke:#658A99; stroke-opacity:1.00">
+  <polygon points="35 460 35 530 315 530 315 472 303 460" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#DCDCDC;fill-opacity:1.00; stroke:#658A99; stroke-opacity:1.00">
+  <polygon points="303 460 303 472 315 472" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="40.00" y="488.00" textLength="255" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 40.00 488.00)">gml::Envelopeを用いて都市計画データの空間範</text>
+	<text x="40.00" y="505.00" textLength="216" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 40.00 505.00)">囲、空間参照系及び次元数を指定する。</text>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#658A99; stroke-opacity:1.00" stroke-dasharray="4,4">
+  <path d="M 141 421 L 109 459 M 141 421" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+  <path d="M 150 229 L 150 195 L 325 195 L 325 146" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+  <polygon points="331 162 319 162 325 146" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+  <path d="M 147 339 L 147 311" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+  <polygon points="153 327 141 327 147 311" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+  <path d="M 353 353 L 353 388 L 216 388" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+  <polygon points="226 383 216 388 226 393 236 388" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+  <path d="M 347 368 L 353 353 L 359 368" shape-rendering="auto"/>
+  <path d="M 488 229 L 488 195 L 325 195 M 325 146" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="277.00" y="413.00" textLength="98" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 277.00 413.00)">+cityObjectMember</text>
+	<text x="320.00" y="370.00" textLength="18" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 320.00 370.00)">0..*</text>
+</g>
+</svg>

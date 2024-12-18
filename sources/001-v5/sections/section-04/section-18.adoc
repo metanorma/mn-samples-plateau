@@ -366,12 +366,17 @@ h| 地物型 h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 h| 適用
 [[toc4_18_02_01]]
 ===== Relief（CityGML）
 
-image::images/380.svg[]
+image::images/EAID_70C77F92_5614_4b22_8C8E_67859F59D8FD.png[]
+
+// image::images/380.svg[]
 
 [[toc4_18_02_02]]
 ===== Urban Object（i-UR）
 
-image::images/381.svg[]
+image::images/EAID_09AF6B8A_557C_43bc_BBB0_47C1E9401EF3.png[]
+
+// image::images/381.svg[]
+
 
 [[toc4_18_03]]
 ==== 地形モデルの応用スキーマ文書
@@ -381,324 +386,35 @@ image::images/381.svg[]
 
 ====== dem:ReliefFeature
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義
-2+| 地形の凹凸を表現した地物。 +
-基準地域メッシュ（第三次地域区画、一辺の長さ約1km）を地物の単位とする（基準地域メッシュの境界で区切る）。
-
-h| 上位の型 2+| core:_CityObject
-h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-h| (gml:description) | gml:StringOrRefType [0..1] | 地形の概要。
-| gml:name | gml:CodeType [0..1] | 当該エリアの標準地域メッシュコード（基準地域メッシュ）。文字列とする。
-h| (gml:boundedBy) | gml:Envelope [0..1] | オブジェクトの範囲と空間参照系。
-| core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
-| core:terminationDate | xs:date [0..1] | データが削除された日。
-h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+h| 自身に定義された属性
-| dem:lod
-| core:integerBetween0and4 [1]
-| この地形に適用されるLOD0～4までの半角数字のいずれかとする。LOD1の場合は1となる。 +
-dem:ReliefFeatureがもつdem:TINRelief、dem:MassPointRelief又はdem:BreaklineReliefのlodと一致させる。
-
-3+h| 継承する関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット（集合）。属性を追加したい場合に使用する。
-3+h| 自身に定義された関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-| dem:reliefComponent | dem:_ReliefComponent [1..*] | 同じ基準地域メッシュ（第3次地域区画）に限り、dem:TINRelief又はdem:MassPointReliefのいずれか1つを複数もつことができる。
-| uro:demDataQualityAttribute | uro:DataQualityAttribute [1] | 作成されたデータの品質に関する情報。必須とする。
-| uro:demKeyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="ReliefFeature",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== dem:TINRelief
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義
-2+|
-三角形の集まりにより地形の起伏を表現した地物。基準地域メッシュ（第三次地域区画、一辺の長さ約1km）を地物の単位とすることを基本とする。
-
-.dem:TINReliefの例
-image::images/382.webp.png[]
-
-h| 上位の型 2+| dem:_ReliefComponent
-h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| gml:description | gml:StringOrRefType [0..1] | 地形の概要。
-| gml:name | gml:CodeType [0..1] | 当該エリアの標準地域メッシュコード（基準地域メッシュ）。文字列とする。
-h| (gml:boundedBy) | gml:Envelope [0..1] | オブジェクトの範囲と空間参照系。
-| core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
-| core:terminationDate | xs:date [0..1] | データが削除された日。
-h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-| dem:lod | core:integerBetween0and4[1] | この地形に適用されるLOD0～4までの半角数字のいずれかとする。LOD1の場合は1となる。
-3+h| 継承する関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット（集合）。属性を追加したい場合に使用する。
-| dem:extent
-| gml:Polygon [0..1]
-| 空間範囲。extentのexteriorとして、地形の外形を多角形で記述し、 +
-extentのinteriorは地形の内空を記述する。
-
-| uro:demDmAttribute | uro:DmAttribute [0..*] | 公共測量標準図式による表現に必要な情報。
-3+h| 自身に定義された属性
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-| dem:tin
-| gml:TrianglatedSurface [1]
-| 起伏を表現する三角網。 +
-原典資料にて点群が欠落している範囲（水域等）はdem:tinを生成しない。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="TINRelief",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== dem:MassPointRelief
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義
-2+|
-点の集まりにより地形の起伏を表現した地物。基準地域メッシュ（第三次地域区画、一辺の長さ約1km）を地物の単位とする。
-
-.dem:MassPointReliefの例
-image::images/383.webp.png[]
-
-h| 上位の型 2+| dem:_ReliefComponent
-h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| gml:description | gml:StringOrRefType [0..1] | 原典資料に適用される座標参照系及び格子点間隔を記述する。
-
-原典資料が航空機レーザ測量等で取得したランダム点群の場合は、irregularとする。
-
-原典資料がDEM（デジタル標高モデル）から作成した点群の場合は、``grid\_epsg:[epsgcode]_[size]_[size]``とする。
-
-このとき、[epsgcode]には、原典資料に適用される座標参照系のepsgコードを記述する。 [size]には、座標系の軸に対する格子点の間隔と単位を記述する。また、軸の順序と単位は、座標参照系の定義に従う。
-
-例えば、基盤地図情報数値標高モデル5mメッシュを使用した場合は、grid_epsg:6697_0.2sec_0.2secとなり、平面直角座標系Ⅸ系のDEM（格子点間隔1m）の場合は、grid_epsg:6677_1m_1mとなる。
-| gml:name | gml:CodeType [0..1] | 当該エリアの標準地域メッシュコード（基準地域メッシュ）。文字列とする。
-h| (gml:boundedBy) | gml:Envelope [0..1] | オブジェクトの範囲と空間参照系。
-| core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
-| core:terminationDate | xs:date [0..1] | データが削除された日。
-h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-| dem:lod | core:integerBetween0and4 [1] | この地形に適用されるLOD0～4までの半角数字のいずれかとする。LOD1の場合は1となる。
-3+h| 継承する関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット（集合）。属性を追加したい場合に使用する。
-| dem:extent
-| gml:Polygon [0..1]
-| 空間範囲。extentのexteriorとして、地形の外形を多角形で記述し、 +
-extentのinteriorは地形の内空を記述する。ランダム点群の場合（gml:descriptionの値がirregularの場合）は、exteriorは運用上必須とする。
-
-| uro:demDmAttribute | uro:DmAttribute [0..*] | 公共測量標準図式による表現に必要な情報。
-3+h| 自身に定義された属性
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-| dem:reliefPoints | gml:MultiPoint [1] | 起伏を表現する点の集まり。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="MassPointRelief",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== dem:BreaklineRelief
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義
-2+|
-線の集まりにより地形の起伏を表現した地物。基準地域メッシュ（第三次地域区画、一辺の長さ約1km）を地物の単位とする。
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="BreaklineRelief",template="../../sources/liquid_templates/_klass_table.liquid"]
 
-.dem:BreaklineReliefの例
-image::images/384.webp.png[]
-
-h| 上位の型 2+| dem:_ReliefComponent
-h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| gml:description | gml:StringOrRefType [0..1] | 地形の概要。
-| gml:name | gml:CodeType [0..1] | 当該エリアの標準地域メッシュコード（基準地域メッシュ）。文字列とする。
-h| (gml:boundedBy) | gml:Envelope [0..1] | オブジェクトの範囲と空間参照系。
-| core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
-| core:terminationDate | xs:date [0..1] | データが削除された日。
-h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-| dem:lod | core:integerBetween0and4 [1] | この地形に適用されるLOD0～4までの半角数字のいずれかとする。LOD1の場合は1となる。
-3+h| 継承する関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット（集合）。属性を追加したい場合に使用する。
-| dem:extent | gml:Polygon [0..1] | 空間範囲。extentのexteriorとして、地形の外形を多角形で記述し、 extentのinteriorは地形の内空を記述する。
-| uro:demDmAttribute | uro:DmAttribute [0..*] | 公共測量標準図式による表現に必要な情報。
-3+h| 自身に定義された属性
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-| dem:ridgeOrValleyLines | gml:MultiMultiCurve [0..1] | 谷や尾根を表現する線の集まり。
-h| (dem:breaklines) | gml:MultiMultiCurve [0..1] | 抑止線を表現する線の集まり。
-
-|===
 
 [[toc4_18_03_02]]
 ===== Urban Object（i-UR）
 
 ====== uro:KeyValuePairAttribute
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義 2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。
-
-属性名称と属性の値の対で構成される。コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
-
-h| 上位の型 2+| ―
-h| ステレオタイプ 2+| << DataType >>
-3+h| 自身に定義された属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:key | gml:CodeType [1] | 拡張する属性の名称。名称は、コ－ドリスト（KeyValuePairAttribute_key.xml）を作成し、選択する。
-| uro:codeValue | gml:CodeType [1] | 拡張された属性の値。値は名称は、コ－ドリスト（KeyValuePairAttribute_key[%key].xml）を作成し、選択する。 [%key]は、属性uro:keyの値に一致する。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="KeyValuePairAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== uro:DataQualityAttribute
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
-
-h| 上位の型 2+| ―
-h| ステレオタイプ 2+| << DataType >>
-3+h| 自身に定義された属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:geometrySrcDescLod0
-| gml:CodeType [0..*]
-| LOD0の幾何オブジェクトの作成に使用した原典資料の種類。 +
-コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD0の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、地形モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。 +
-
-| uro:geometrySrcDescLod1
-| gml:CodeType [1..*]
-| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。 +
-コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。具体的な都市オブジェクトがLOD1の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
-
-| uro:geometrySrcDescLod2 | gml:CodeType [0..*] | LOD2の幾何オブジェクトの作成に使用した原典資料の種類。
-
-コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD2の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、地形モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
-| uro:geometrySrcDescLod3 | gml:CodeType [0..*] | コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD3の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD3の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、地形モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
-h| (uro:geometrySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
-| uro:thematicSrcDesc | gml:CodeType [0..*] | 主題属性の作成に使用した原典資料の種類 コードリスト（DataQualityAttribute_thematicSrcDesc.xml）より選択する。
-
-主題属性が作成対象となっている場合は必須とする。
-| uro:appearanceSrcDescLod0 | gml:CodeType [0..*] | LOD0の幾何オブジェクトのアピアランスに使用した原典資料の種類。
-
-コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。
-
-拡張製品仕様書でLOD0の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
-| uro:appearanceSrcDescLod1 | gml:CodeType [0..*] | LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。
-
-コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。
-
-拡張製品仕様書LOD1の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD1の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
-| uro:appearanceSrcDescLod2 | gml:CodeType [0..*] | LOD2の幾何オブジェクトのアピアランスに使用した原典資料の種類。
-
-コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。
-
-拡張製品仕様書でLOD2の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
-| uro:appearanceSrcDescLod3 | gml:CodeType [0..*] | LOD3の幾何オブジェクトのアピアランスに使用した原典資料の種類。
-
-コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。
-
-拡張製品仕様書でLOD3の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD3の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
-h| (uro:appearanceSrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトのアピアランスに使用した原典資料の種類。
-h| (uro:lodType) | gml:CodeType[0..*] | 幾何オブジェクトに適用されたLODの詳細な区分。
-h| (uro:lod1HeightType) | gml:CodeType [0..1] | LOD1の立体図形を作成する際に使用した高さの算出方法。
-h| (uro:tranDataAcquisition) | xs:string [0..1] | 「<<nilim_kiban_dps,道路基盤地図情報（整備促進版）製品仕様書（案）>>」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
-3+h| 自身に定義された関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-| uro:publicSurveyDataQualityAttribute | uro:PublicSurveyDataQualityAttribute [0..1] | 使用した公共測量成果の地図情報レベルと種類。
-
-各LODの幾何オブジェクトの作成に使用した原典資料の種類に関する属性（uro:geometrySrcDescLod0等）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）となっている場合は、必須とする。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="DataQualityAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== uro:PublicSurveyDataQualityAttribute
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義 2+| 使用した公共測量成果の地図情報レベルと種類を、LODごとに記述するためのデータ型。
-
-h| 上位の型 2+| ―
-h| ステレオタイプ 2+| << DataType >>
-3+h| 自身に定義された属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:srcScaleLod0 | gml:CodeType [0..1] | LOD0の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
-
-コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。
-
-「LOD0の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
-| uro:srcScaleLod1 | gml:CodeType [0..1] | LOD1の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
-
-コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。
-
-「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
-| uro:srcScaleLod2 | gml:CodeType [0..1] | LOD2の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
-
-コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。
-
-「LOD2の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod2）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
-
-複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば地図情報レベル2500の公共測量成果と地図情報レベル500の公共測量成果を使用した場合は、地図情報レベル2500となる。
-| uro:srcScaleLod3 | gml:CodeType [0..1] | LOD3の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
-
-コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。
-
-「LOD3の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod3）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
-
-複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば地図情報レベル2500の公共測量成果と地図情報レベル500の公共測量成果を使用した場合は、地図情報レベル2500となる。
-| uro:srcScaleLod4 | gml:CodeType [0..1] | LOD4の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
-| uro:publicSurveySrcDescLod0 | gml:CodeType [0..*] | LOD0の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。
-
-「LOD0の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
-
-複数の種類の原典資料を使用した場合は、それぞれを記述する。
-| uro:publicSurveySrcDescLod1 | gml:CodeType [0..*] | LOD1の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。
-
-「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
-
-複数の種類の原典資料を使用した場合は、それぞれを記述する。
-| uro:publicSurveySrcDescLod2 | gml:CodeType [0..*] | LOD2の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。
-
-「LOD2の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod2）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
-
-複数の種類の原典資料を使用した場合は、それぞれを記述する。
-| uro:publicSurveySrcDescLod3 | gml:CodeType [0..*] | LOD3の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。
-
-「LOD3の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod3）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
-
-複数の種類の原典資料を使用した場合は、それぞれを記述する。
-h| (uro:publicSurveySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="PublicSurveyDataQualityAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== uro:DmAttribute
 
