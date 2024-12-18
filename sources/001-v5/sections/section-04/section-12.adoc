@@ -882,12 +882,16 @@ h| 地物型 h| 空間属性 h| LOD0 h| LOD1 h| LOD2 h| LOD3 h| LOD4 h| 適用
 [[toc4_12_02_01]]
 ===== Tunnel（CityGML）
 
-image::images/267.svg[]
+image::images/EAID_00C5C772_5A03_434f_BF30_AC37542A1AAC.png[]
+
+// image::images/267.svg[]
 
 [[toc4_12_02_02]]
 ===== Urban Object（i-UR）
 
-image::images/268.svg[]
+image::images/EAID_47E4600F_CEC9_4245_9BF5_EE38007A9DDB.png[]
+
+// image::images/268.svg[]
 
 [[toc4_12_03]]
 ==== トンネルモデルの応用スキーマ文書
@@ -897,1063 +901,103 @@ image::images/268.svg[]
 
 ====== tun:Tunnel
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義 2+| トンネルとは、上方を含め周辺が地山や他の構造物で覆われている、交通、輸送等に供する構造物である。[道路基盤地図情報（整備促進版） 製品仕様書 （案）] 標準製品仕様書では、その設置の形態から、ボックスカルバート、シェッド、シェルター及び地下横断歩道もトンネルに含める。
-
-ボックスカルバート：他の道路等の下方を横断するため、その盛土の中を横断する形で設置される箱状の構造物。[道路基盤地図情報（整備促進版） 製品仕様書 （案）] シェッド：落石及び雪崩等を道路外に直接落下させる、又は道路を越えて転進させるため、鋼材やコンクリート材等で道路上を覆う構造物。[道路基盤地図情報（整備促進版） 製品仕様書 （案）] シェルター：アーチ型又は門型で、道路を完全に覆ったトンネル状の構造物。[道路基盤地図情報（整備促進版） 製品仕様書 （案）] 地下横断歩道：人、自転車等が道路又は鉄道を横断するために構築された地下道。「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」 　 高速道路等に存在する延長の長いトンネルは、管理区間及び覆工スパンの境界で区切ることができる。
-
-h| 上位の型 2+| tun:_AbstractTunnel
-h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-h| (gml:description) | gml:StringOrRefType [0..1] | トンネルの概要。
-| gml:name | gml:CodeType [0..1] | トンネルを識別する名称。文字列とする。
-h| (gml:boundedBy) | gml:Envelope [0..1] | トンネルの範囲及び適用される空間参照系。
-| core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
-| core:terminationDate | xs:date [0..1] | データが削除された日。
-h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | トンネルと地表面との相対的な位置関係。
-h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | トンネルと水面との相対的な位置関係。
-| tun:class
-| gml:CodeType [0..1]
-| トンネルの形態による区分。コードリスト（Tunnel_class.xml）より選択する。 +
-運用上必須とする。
-
-| tun:function
-| gml:CodeType [0..*]
-| トンネルの主たる機能による区分。コードリスト（Tunnel_function.xml）より選択する。 +
-運用上必須とする。
-
-h| (tun:usage) | gml:CodeType [0..*] | トンネルの用途。tun:functionで指定された機能と異なる場合に実際の用途を示すためにこの属性を用いる。
-| tun:yearOfConstruction
-| xs:gYear [0..1]
-| トンネルが建築された年度。完成年度とする。 +
-運用上必須とする。
-
-| tun:yearOfDemolition | xs:gYear [0..1] | トンネルが解体された年度。
-3+h| 継承する関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-h| (gen:measureAttribute) | gen:measureAttribute[0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-| tun:lod1Solid | gml:Solid [0..1] | 外周に一律の高さを与えた立体。
-
-一律の高さは、トンネルの最も低い高さから最も高い高さまでとする。
-
-トンネルをtun:TunnelPartの集まりとして記述する場合、この空間属性は空となる。
-h| (tun:lod1MultiSurface) | gml:MultiSurface [0..1] | 外周を構成する面の集まり。
-h| (tun:lod1TerrainIntersection) | gml:MutiCurve [0..1] | LOD1におけるトンネルと地形との交線。
-| tun:lod2Solid | gml:Solid [0..1] | トンネルの主要構造の外形を示す立体。この時の立体は外壁等の、境界面により構成される。トンネルをtun:TunnelPartの集まりとして記述する場合、この空間属性は空となる。
-h| (tun:lod2MultiSurface) | gml:MultiSurface [0..1] | トンネルの主要構造の外形を構成する面の集まり。
-h| (tun:lod2MultiCurve) | gml:MutiCurve [0..1] | トンネルの立体表現に加え、線状の表現を行う場合に使用する。
-h| (tun:lod2TerrainIntersection) | gml:MutiCurve [0..1] | LOD2におけるトンネルと地形との交線。
-| tun:outerTunnelInstallation | tun:TunnelInstallation [0..*] | トンネルの外観を特徴付ける部分のうち、坑口や管理用通路、非常用階段のような、トンネルの構造上不可欠ではない付属物（tun:TunnelInstallation）。
-| tun:InteriorTunnelInstallation
-| tun:IntTunnelInstallation [0..*]
-| トンネルの内部空間において、その外観を特徴付ける部分のうち、管理用通路・階段のような、トンネルの構造上不可欠ではない付属物（tun:IntTunnelInstallation）。 +
-内空（tun:HollowSpace）に含まれない付属物を対象とする。
-
-| tun:boundedBy | tun:_BoundarySurface [0..*] | トンネルを構成する屋根面（tun:RoofSurface）等の境界面。
-| tun:lod3Solid
-| gml:Solid [0..1]
-| トンネルの主要構造の外形を示す立体。 +
-この時の立体は、外壁等を区分する境界面及び開口部の面（境界面の内空として作成されている場合）により構成される。
-
-h| (tun:lod3MultiSurface) | gml:MultiSurface [0..1] | トンネルの主要構造の外形を構成する面の集まり。
-h| (tun:lod3MultiCurve) | gml:MutiCurve [0..1] | トンネルの立体表現に加え、線状の表現を行う場合に使用する。
-h| (tun:lod3TerrainIntersection) | gml:MutiCurve [0..1] | LOD3におけるトンネルと地形との交線。
-| tun:lod4Solid
-| gml:Solid [0..1]
-| トンネルの詳細構造の外形を示す立体。 +
-このときの立体は、外壁等を区分する境界面及び開口部の面（境界面の内空として作成されている場合）により構成される。 lod4Solid又はlod4MultiSurfaceのいずれかとする。
-
-| tun:lod4MultiSurface
-| gml:MultiSurface [0..1]
-| トンネルの外形を構成する面の集まり。 +
-このときの面は、外壁等を区分する境界面及び開口部の面（境界面の内空として作成されている場合）により構成される。 lod4Solid又はlod4MultiSurfaceのいずれかとする。
-
-h| (tun:lod4MultiCurve) | gml:MutiCurve [0..1] | トンネルの立体表現に加え、線状の表現を行う場合に使用する。
-h| (tun:lod4TerrainIntersection) | gml:MutiCurve [0..1] | LOD4におけるトンネルと地形との交線。
-| tun:interiorHollowSpace | tun:HollowSpace [0..*] | トンネルの内部空間（tun:HollowSpace）
-| tun:consistsOfTunnelPart | tun:TunnelPart [0..*] | トンネルの部分（tun:TunnelPart）。
-| uro:tunBaseAttribute | uro:ConstructionBaseAttribute [0..1] | トンネルの管理に関する基本的な情報。
-| uro:tunStructureAttribute | uro:TunnelStructureAttribute [0..1] | トンネルの構造に関する情報。
-| uro:tunFunctionalAttribute | uro:TunnelFunctionalAttribute [0..1] | トンネルの機能に関する情報。
-| uro:tunRiskAssessmentAttribute | uro:ConstructionRiskAssessmentAttribute [0..1] | トンネルの損傷に関する情報。
-| uro:tunDisasterRiskAttribute
-| uro:DisasterRiskAttribute [0..*]
-| トンネルの災害リスクに関する情報。 +
-uro:DisasterRiskAttributeの下位型を使用して記述する。
-
-| uro:tunDmAttribute | uro:DmAttribute [0..*] | LOD0の幾何形状。
-
-トンネルのLODの幾何形状は、gml:MultiPoint、gml:MultiCurve又はgml:MultiSurfaceにより記述する。
-| uro:tunKeyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | 属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
-| uro:tunDataQualityAttribute
-| uro:DataQualityAttribute [0..1]
-| 作成するデータの品質に関する情報。原則必須とする。 +
-tun:TunnelPartが品質属性をもつ場合は、省略できる。
-
-| uro:tunFacilityTypeAttribute | uro:FacilityTypeAttribute [0..*] | 特定分野における施設の分類情報。
-| uro:tunFacilityIdAttribute | uro:FacilityIdAttribute [0..1] | uro:tunFacilityTypeAttribute.classによって指定された分野における施設の識別情報。
-| uro:tunFacilityAttribute | uro:FacilityAttribute [0..*] | uro:tunFacilityTypeAttribute.classによって指定された分野における施設管理情報。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Tunnel",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== tun:TunnelPart
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義
-2+|
-トンネルの一部。
-
-一つのトンネルが、構造の異なる部分、あるいは用途が異なる部分から構成されており、それぞれを属性として保持する場合に、トンネルを複数の部分として分けて記述するために用いる。
-
-トンネルが上下線で分かれた二連で構成されている場合、それぞれtun:TunnelPartとし、これらを合わせて一つのtun:Tunnelとして記述できる。
-
-この地物型を使用する場合、一つのtun:Tunnelには、複数のtun:TunnelPartが存在しなければならない。
-
-また、LOD1においてトンネルの形状をより実際に近い形で表現するために、トンネルを分けて記述する場合に使用できる。
-
-image::images/269.webp.png[]
-
-h| 上位の型 2+| tun:_AbstractTunnel
-h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-h| (gml:description) | gml:StringOrRefType [0..1] | トンネルの概要。
-| gml:name | gml:CodeType [0..1] | トンネルを識別する名称。文字列とする。
-h| (gml:boundedBy) | gml:Envelope [0..1] | トンネルの範囲及び適用される空間参照系。
-| core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
-| core:terminationDate | xs:date [0..1] | データが削除された日。
-h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | トンネルと地表面との相対的な位置関係。
-h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | トンネルと水面との相対的な位置関係。
-| tun:class | gml:CodeType [0..1] | トンネルの形態による区分。コードリスト（Tunnel_class.xml）より選択する。
-| tun:function | gml:CodeType [0..*] | トンネルの主たる機能による区分。コードリスト（Tunnel_function.xml）より選択する。
-h| (tun:usage) | gml:CodeType [0..*] | トンネルの用途。tun:functionで指定された機能と異なる場合に実際の用途を示すためにこの属性を用いる。
-| tun:yearOfConstruction | xs:gYear [0..1] | トンネルが建築された年。
-| tun:yearOfDemolition | xs:gYear [0..1] | トンネルが解体された年。
-3+h| 継承する関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-h| (gen:measureAttribute) | gen:measureAttribute[0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-| tun:lod1Solid | gml:Solid [0..1] | 外周に一律の高さを与えた立体。
-
-高さは底面から標準断面におけるトンネル高さとする。
-h| (tun:lod1MultiSurface) | gml:MultiSurface [0..1] | 外周を構成する面の集まり。
-h| (tun:lod1TerrainIntersection) | gml:MutiCurve [0..1] | LOD1におけるトンネルと地形との交線。
-| tun:lod2Solid | gml:Solid [0..1] | トンネルの主要構造の外形を示す立体。この時の立体は外壁等の、境界面により構成される。
-h| (tun:lod2MultiSurface) | gml:MultiSurface [0..1] | トンネルの主要構造の外形を構成する面の集まり。
-h| (tun:lod2MultiCurve) | gml:MutiCurve [0..1] | トンネルの立体表現に加え、線状の表現を行う場合に使用する。
-h| (tun:lod2TerrainIntersection) | gml:MutiCurve [0..1] | LOD2におけるトンネルと地形との交線。
-| tun:outerTunnelInstallation | tun:TunnelInstallation [0..*] | トンネルの外観を特徴付ける部分のうち、坑口や管理用通路、非常用階段のような、トンネルの構造上不可欠ではない付属物（tun:TunnelInstallation）。
-| tun:InteriorTunnelInstallation
-| tun:IntTunnelInstallation [0..*]
-| トンネルの内部空間において、その外観を特徴付ける部分のうち、管理用通路・階段のような、トンネルの構造上不可欠ではない付属物（tun:IntTunnelInstallation）。 +
-内空（tun:HollowSpace）に含まれない付属物を対象とする。
-
-| tun:boundedBy | tun:_BoundarySurface [0..*] | トンネルを構成する屋根面（tun:RoofSurface）等の境界面。
-| tun:lod3Solid
-| gml:Solid [0..1]
-| トンネルの主要構造の外形を示す立体。 +
-この時の立体は、外壁等を区分する境界面及び開口部の面（境界面の内空として作成されている場合）により構成される。 +
-lod3Solid又はlod3MultiCurveのいずれかとする。
-
-| tun:lod3MultiSurface
-| gml:MultiSurface [0..1]
-| トンネルの主要構造の外形を構成する面の集まり。 +
-lod3Solid又はlod3MultiCurveのいずれかとする。
-
-h| (tun:lod3MultiCurve) | gml:MutiCurve [0..1] | トンネルの立体表現に加え、線状の表現を行う場合に使用する。
-h| (tun:lod3TerrainIntersection) | gml:MutiCurve [0..1] | LOD3におけるトンネルと地形との交線。
-| tun:lod4Solid
-| gml:Solid [0..1]
-| トンネルの詳細構造の外形を示す立体。 +
-この時の立体は、外壁等を区分する境界面及び開口部の面（境界面の内空として作成されている場合）により構成される。lod4Solid又はlod4MultiCurveのいずれかとする。
-
-| tun:lod4MultiSurface
-| gml:MultiSurface [0..1]
-| トンネルの外形を構成する面の集まり。 +
-lod4Solid又はlod4MultiCurveのいずれかとする。
-
-h| (tun:lod4MultiCurve) | gml:MutiCurve [0..1] | トンネルの立体表現に加え、線状の表現を行う場合に使用する。
-h| (tun:lod4TerrainIntersection) | gml:MutiCurve [0..1] | LOD4におけるトンネルと地形との交線。
-| tun:interiorHollowSpace | tun:HollowSpace [0..*] | トンネルの内部空間（tun:HollowSpace）
-h| (tun:consistsOfTunnelPart) | tun:TunnelPart [0..*] | トンネルの部分（tun:TunnelPart）。
-| uro:tunBaseAttribute | uro:ConstructionBaseAttribute [0..1] | トンネルの管理に関する基本的な情報。
-| uro:tunStructureAttribute | uro:TunnelStructureAttribute [0..1] | トンネルの構造に関する情報。
-| uro:tunFunctionalAttribute | uro:TunnelFunctionalAttribute [0..1] | トンネルの機能に関する情報。
-| uro:tunRiskAssessmentAttribute | uro:ConstructionRiskAssessmentAttribute [0..1] | トンネルの損傷に関する情報。
-h| uro:tunDisasterRiskAttribute
-| uro:DisasterRiskAttribute [0..*]
-| トンネルの災害リスクに関する情報。 +
-uro:DisasterRiskAttributeの下位型を使用して記述する。
-
-h| (uro:tunDmAttribute) | uro:DmAttribute [0..*] | LOD0の幾何形状。
-h| (uro:tunKeyValuePairAttribute) | uro:KeyValuePairAttribute [0..*] | tun:TunnelPartには作成しない。（tun:Tunnelにのみ作成する。）
-| uro:tunDataQualityAttribute
-| uro:DataQualityAttribute [0..1]
-| 作成するデータの品質に関する情報。 +
-tun:Tunnelが品質属性をもつ場合は、省略する。 +
-tun:Tunnelが品質属性をもたない場合は、必ず作成する。
-
-h| (uro:tunFacilityTypeAttribute) | uro:FacilityTypeAttribute [0..*] | 特定分野における施設の分類情報。
-h| (uro:tunFacilityIdAttribute) | uro:FacilityIdAttribute [0..1] | uro:tunFacilityTypeAttribute.classによって指定された分野における施設の識別情報。
-h| (uro:tunFacilityAttribute) | uro:FacilityAttribute [0..*] | uro:tunFacilityTypeAttribute.classによって指定された分野における施設管理情報。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="TunnelPart",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== tun:HollowSpace
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義
-2+a| トンネルの内空。
-
-tun:HollowSpaceはトンネルの内部空間を示す立体であり、輸送に使用する区画や管理点検に使用する区画等に分けることができる。各区画の立体の境界面（tun:_BoundarySurfaceの下位型）及びこの境界面の開口部（tun:_Openingの下位型）、tun:HollowSpaceに付属する固定的な設備（tun:IntTunnelInstallation）及び、tun:HollowSpaceに設置された可動設備（tun:TunnelFurniture）の集まりからなる。
-
-h| 上位の型 2+| tun:_CityObject
-h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| gml:description | gml:StringOrRefType [0..1] | 区画の概要。
-| gml:name | gml:CodeType [0..1] | 区画を識別する名称。文字列とする。
-h| (gml:boundedBy) | gml:Envelope [0..1] | 区画の範囲及び適用される空間参照系。
-| core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
-| core:terminationDate | xs:date [0..1] | データが削除された日。
-h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+h| 自身に定義された属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| tun:class | gml:CodeType [0..1] | 区画の形態による区分。コードリストから選択する。この属性を使用する場合は、コードリスト（HollowSpace_class.xml）を作成すること。
-| tun:function | gml:CodeType [0..*] | 区画の主たる働き。コードリストから選択する。この属性を使用する場合は、コードリスト（HollowSpace_function.xml）を作成すること。
-h| (tun:usage) | gml:CodeType [0..*] | 区画の主な使い道。
-3+h| 継承する関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-3+h| 自身に定義された関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-| tun:lod4Solid
-| gml:Solid [0..1]
-| 区画の主要構造の外形を示す立体。
-
-gml:Solidを構成する境界面のgml:Polygonは、以下のいずれかの地物のLOD4幾何オブジェクトに含まれなければならない。
-
-* tun:boundedByによりこのtun:HollowSpaceが参照する境界面（tun:_BoundarySurface）及びその開口部（tun:_Opening）
-* tun:hollowSpaceInstallationによりこのtun:HollowSpaceが参照する内部付属物（tun:IntTunnelInstallation）の境界面及びその開口部
-
-h| (tun:lod4MultiSurface) | gml:MultiSurface [0..1] | 区画の主要構造の外形を示す面の集まり。
-| tun:boundedBy
-| tun:\_ BoundarySurface [0..*]
-| 区画の主要構造の外形を示す境界面。 +
-境界面は、壁面（tun:InteriorWallSurface）、天井面（tun:CeilingSurface）、床面（tun:FloorSurface）又は閉鎖面（tun :ClosureSurface）のいずれかでなければならない。 +
-壁面と天井面との区分が構造上難しい場合は、壁面（tun:WallSurface）として取得することを基本とする。
-
-| tun:interiorFurniture | tun:TunnelFurniture [0..*] | 区画に設置された可動設備。
-| tun:hollowSpaceInstallation | tun:IntTunnelInstallation [0..*] | 区画に設置された固定設備。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="HollowSpace",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== tun:RoofSurface
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義
-2+| 主にトンネルの上部を覆う構造物。 +
-トンネルの外部の境界面を区分する場合、外壁面（tun:WallSurface）と屋根面（tun:RoofSurface）との区分が構造上難しい場合は、外壁面として取得することを基本とする。
-
-h| 上位の型 2+| tun:_BoundarySurface
-h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-h| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
-h| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
-h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
-h| (core:creationDate) | xs:date [0..1] | データが作成された日。
-h| (core:terminationDate) | xs:date [0..1] | データが削除された日。
-h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+h| 継承する関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-| tun:lod2MultiSurface | gml:MultiSurface [0..1] | LOD2において屋根の形状・起伏を再現した面。
-| tun:lod3MultiSurface | gml:MultiSurface [0..1] | LOD3において屋根の形状・起伏を再現した面。
-| tun:lod4MultiSurface | gml:MultiSurface [0..1] | LOD4において屋根の形状・起伏を再現した面。
-| tun:opening | tun:_Opening [0..*] | 屋根面に設置される、窓や扉への参照。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[package="tun",name="RoofSurface",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== tun:WallSurface
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義
-2+| トンネルの外周を構成する外壁の面。 +
-トンネルの外部の境界面を区分する場合、外壁面（tun:WallSurface）と屋根面（tun:RoofSurface）との区分が構造上難しい場合は、外壁面（tun:WallSurface）として取得することを基本とする。
-
-h| 上位の型 2+| tun:_BoundarySurface
-h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-h| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
-h| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
-h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
-h| (core:creationDate) | xs:date [0..1] | データが作成された日。
-h| (core:terminationDate) | xs:date [0..1] | データが削除された日。
-h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+h| 継承する関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-| tun:lod2MultiSurface | gml:MultiSurface [0..1] | LOD2において壁面の形状・起伏を再現した面、トンネルの坑口を表す面、行政界等で区切る場合の境界面及びtun:TunnelPartを使用する場合の隣接するtun:TunnelPartと接する境界面。
-| tun:lod3MultiSurface | gml:MultiSurface [0..1] | LOD3において壁面の形状・起伏を再現した面。
-| tun:lod4MultiSurface | gml:MultiSurface [0..1] | LOD4において壁面の形状・起伏を再現した面。
-| tun:opening | tun:_Opening [0..*] | 壁面に設置される、窓や扉への参照。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[package="tun",name="WallSurface",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== tun:GroundSurface
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義
-2+| トンネルの立体形状の底面。 +
-トンネルの外壁面と底面との区別が難しい場合は、外壁面（tun:WallSurface）として取得することを基本とする。
-
-h| 上位の型 2+| tun:_BoundarySurface
-h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-h| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
-h| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
-h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
-h| (core:creationDate) | xs:date [0..1] | データが作成された日。
-h| (core:terminationDate) | xs:date [0..1] | データが削除された日。
-h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+h| 継承する関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-| tun:lod2MultiSurface | gml:MultiSurface [0..1] | LOD2において底面の形状・起伏を再現した面。
-| tun:lod3MultiSurface | gml:MultiSurface [0..1] | LOD3において底面の形状・起伏を再現した面。
-| tun:lod4MultiSurface | gml:MultiSurface [0..1] | LOD4において底面の形状・起伏を再現した面。
-h| (tun:opening) | tun:_Opening [0..*] | 底面に設置される、窓や扉への参照。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[package="tun",name="GroundSurface",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== tun:OuterCeilingSurface
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義
-2+| トンネルの外側を覆う部分であり、天井としての機能を有する部分。 +
-標準製品仕様書では使用しない。
-
-h| 上位の型 2+| tun:_BoundarySurface
-h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-h| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
-h| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
-h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
-h| (core:creationDate) | xs:date [0..1] | データが作成された日。
-h| (core:terminationDate) | xs:date [0..1] | データが削除された日。
-h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+h| 継承する関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-| tun:lod2MultiSurface | gml:MultiSurface [0..1] | LOD2において屋外にある天井の形状・起伏を再現した面。
-| tun:lod3MultiSurface | gml:MultiSurface [0..1] | LOD3において屋外にある天井の形状・起伏を再現した面。
-| tun:lod4MultiSurface | gml:MultiSurface [0..1] | LOD4において屋外にある天井の形状・起伏を再現した面。
-| tun:opening | tun:_Opening [0..*] | 屋外にある天井に設置される、窓や扉への参照。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[package="tun",name="OuterCeilingSurface",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== tun:OuterFloorSurface
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義
-2+| トンネルの外側を覆う部分であり、通行可能な床面としての機能を有する部分。 +
-標準製品仕様書では使用しない。
-
-h| 上位の型 2+| tun:_BoundarySurface
-h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-h| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
-h| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
-h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
-h| (core:creationDate) | xs:date [0..1] | データが作成された日。
-h| (core:terminationDate) | xs:date [0..1] | データが削除された日。
-h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+h| 継承する関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-| tun:lod2MultiSurface | gml:MultiSurface [0..1] | LOD2において屋外にある床面の形状・起伏を再現した面。
-| tun:lod3MultiSurface | gml:MultiSurface [0..1] | LOD3において屋外にある床面の形状・起伏を再現した面。
-| tun:lod4MultiSurface | gml:MultiSurface [0..1] | LOD4において屋外にある床面の形状・起伏を再現した面。
-| tun:opening | tun:_Opening [0..*] | 屋外にある床面に設置される、窓や扉への参照。LOD3の空間属性をもつ場合のみ開口部への参照を作成できる。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[package="tun",name="OuterFloorSurface",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== tun:ClosureSurface
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義 2+| トンネルの開口部を立体として閉じるために、境界面として設けられた仮想的な面。
-
-トンネルをTunnelPartにより分けて記述する場合にTunnelPart同士の境界面としてClosureSurfaceを使用する。
-
-また、LOD2以上でトンネルの境界面に開口部が存在するが、開口部内の詳細なデータ作成が不要である場合に、開口部を閉じるために便宜上設けられた面。
-
-h| 上位の型 2+| tun:_BoundarySurface
-h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-h| (gml:description) | gml:StringOrRefType [0..1] | 境界面の概要。
-h| (gml:name) | gml:CodeType [0..1] | 境界面を識別する名称。
-h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
-h| (core:creationDate) | xs:date [0..1] | データが作成された日。
-h| (core:terminationDate) | xs:date [0..1] | データが削除された日。
-h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+h| 継承する関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-h| (tun:lod2MultiSurface) | gml:MultiSurface [0..1] | トンネルモデル（LOD2）で使用する閉鎖面の外周に囲まれた面。
-| tun:lod3MultiSurface | gml:MultiSurface [0..1] | トンネルモデル（LOD3）で使用する閉鎖面の外周に囲まれた面。
-| tun:lod4MultiSurface | gml:MultiSurface [0..1] | トンネルモデル（LOD4）で使用する閉鎖面の外周に囲まれた面。
-h| (tun:opening) | tun:_Opening [0..*] | 境界面に設置される、窓や扉への参照。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[package="tun",name="ClosureSurface",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== tun:InteriorWallSurface
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義
-2+| トンネルの内部空間の区画を区切る壁や仕切り（内壁）の面。 +
-トンネルの内部の境界面を区分する場合、内壁面（tun:InteriorWallSurface）と天井面（tun:CeilingSurface）との区分が構造上難しい場合は、内壁面（tun:InteriorWallSurface）として取得することを基本とする。
-
-h| 上位の型 2+| tun_BoundarySurface
-h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| gml:description | gml:StringOrRefType [0..1] | 境界面の概要。
-| gml:name | gml:CodeType [0..1] | 境界面を識別する名称。文字列とする。
-h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
-| core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
-| core:terminationDate | xs:date [0..1] | データが削除された日。
-h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+h| 継承する関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-| tun:lod4MultiSurface | gml:MultiSurface [0..1] | 内壁の形状・起伏を再現した面。
-| tun:opening | tun:_Opening [0..*] | 内壁に設置される、窓や扉への参照。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[package="tun",name="InteriorWallSurface",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== tun:CeilingSurface
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義
-2+| 区画など構造物内部の上側の面（天井）。 +
-tun:CeilingSurfaceの法線ベクトルは下向きとなる。 +
-トンネルの内部の境界面を区分する場合、壁面（tun:InteriorWallSurface）と天井面（tun:CeilingSurface）との区分が構造上難しい場合は、内壁面（tun:InteriorWallSurface）として取得することを基本とする。
-
-h| 上位の型 2+| tun:_BoundarySurface
-h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| gml:description | gml:StringOrRefType [0..1] | 境界面の概要。
-| gml:name | gml:CodeType [0..1] | 境界面を識別する名称。文字列とする。
-h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
-| core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
-| core:terminationDate | xs:date [0..1] | データが削除された日。
-h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+h| 継承する関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-| tun:lod4MultiSurface | gml:MultiSurface [0..1] | 天井面の形状・起伏を再現した面。
-| tun:opening | tun:_Opening [0..*] | 天井に設置される、窓や扉への参照。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[package="tun",name="CeilingSurface",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== tun:FloorSurface
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義
-2+| トンネルの内部空間の下面に位置する水平で平らな板状の構造物（床面）。 +
-tun:FloorSurfaceの法線ベクトルは上向きとなる。
-
-h| 上位の型 2+| tun:_BoundarySurface
-h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| gml:description | gml:StringOrRefType [0..1] | 境界面の概要。
-| gml:name | gml:CodeType [0..1] | 境界面を識別する名称。文字列とする。
-h| (gml:boundedBy) | gml:Envelope [0..1] | 境界面の範囲及び適用される空間参照系。
-| core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
-| core:terminationDate | xs:date [0..1] | データが削除された日。
-h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+h| 継承する関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-| tun:lod4MultiSurface | gml:MultiSurface [0..1] | 床面の形状・起伏を再現した面。
-| tun:opening | tun:_Opening [0..*] | 床面に設置される、窓や扉への参照。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[package="tun",name="FloorSurface",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== tun:Window
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義 2+| 採光、通風、換気、眺望などの目的のため、トンネルの屋根、天井、壁、床などに設けられた開口部のうち、人や物の出入りを目的としないもの。
-
-h| 上位の型 2+| tun:_Opening
-h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-h| (gml:description) | gml:StringOrRefType [0..1] | 開口部の概要。
-h| (gml:name) | gml:CodeType [0..1] | 開口部を識別する名称。
-h| (gml:boundedBy) | gml:Envelope [0..1] | 開口部の範囲及び適用される空間参照系。
-h| (core:creationDate) | xs:date [0..1] | データが作成された日。
-h| (core:terminationDate) | xs:date [0..1] | データが削除された日。
-h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+h| 継承する関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-| tun:lod3MultiSurface | gml:MultiSurface [0..1] | トンネルモデル（LOD3）における開口部の外周に囲まれた面。
-| tun:lod4MultiSurface | gml:MultiSurface [0..1] | トンネルモデル（LOD4）における開口部の外周に囲まれた面。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[package="tun",name="Window",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== tun:Door
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義 2+| 採光、通風、換気、眺望、通行などの目的のため、トンネルの屋根、天井、壁、床などに設けられた開口部のうち、人や物の出入りを目的とするもの。
-
-h| 上位の型 2+| tun:_Opening
-h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-h| (gml:description) | gml:StringOrRefType [0..1] | 開口部の概要。
-h| (gml:name) | gml:CodeType [0..1] | 開口部を識別する名称。名称で識別する必要がある場合にのみ作成する。
-h| (gml:boundedBy) | gml:Envelope [0..1] | 開口部の範囲及び適用される空間参照系。
-h| (core:creationDate) | xs:date [0..1] | データが作成された日。
-h| (core:terminationDate) | xs:date [0..1] | データが削除された日。
-h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+h| 継承する関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-| tun:lod3MultiSurface | gml:MultiSurface [0..1] | トンネルモデル（LOD3）における開口部の外周に囲まれた面。
-| tun:lod4MultiSurface | gml:MultiSurface [0..1] | トンネルモデル（LOD4）における開口部の外周に囲まれた面。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[package="tun",name="Door",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== tun:TunnelInstallation
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義
-2+| トンネルの外部付属物。トンネル本体の外側に設置され、トンネルの外観を特徴づける恒久的な設備。 +
-トンネルの付帯的な設備であり、主要な部分であってはならない。また、トンネル（tun:Tunnel又はtun:TunnelPart）と接していなければならない。 +
-トンネルの付属物には以下を含む。ただし、全て外部に設置され、トンネルと接するもののみを対象とする。 +
-避難連絡坑、受変電設備、予備電源設備、排水設備、換気設備、排水設備、監視制御設備、通報装置、非常用警報装置、消火設備、避難誘導設備、その他。 +
-ただし、ユースケースの要求に応じて、取得対象とする付属物を限定してもよく、また、付属物として取得せずトンネルの一部として取得してもよい。
-
-h| 上位の型 2+| tun:_CityObject
-h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-h| (gml:description) | gml:StringOrRefType [0..1] | 外部付属物の概要。
-h| (gml:name) | gml:CodeType [0..1] | 外部付属物を識別する名称。
-h| (gml:boundedBy) | gml:Envelope [0..1] | 外部付属物の範囲及び適用される空間参照系。
-h| (core:creationDate) | xs:date [0..1] | データが作成された日。
-h| (core:terminationDate) | xs:date [0..1] | データが削除された日。
-h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+h| 自身に定義された属性
-h| (tun:class) | gml:CodeType [0..1] | 付属物の形態による区分。
-| tun:function | gml:CodeType [0..*] | 付属物の主たる働き。コードリスト（TunnelInstallation_function.xml）より選択する。
-h| (tun:usage) | gml:CodeType [0..*] | 付属物の主な使い道。
-3+h| 継承する関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-3+h| 自身に定義された関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-h| (tun:lod2Geometry) | gml:_Geometry [0..1] | 付属物のLOD2の形状。
-| tun:lod3Geometry | gml:_Geometry [0..1] | 付属物のLOD3の形状。 gml:MultiSurfaceにより記述することを基本とする。
-
-外部付属物の外形（外側から見える形）を構成する面を取得し、面の各頂点に屋外付属物の高さを与える。
-
-容積の算出等ユースケースで必要な場合は、gml:Solidを使用する。
-| tun:lod4Geometry | gml:_Geometry [0..1] | 外部付属物のLOD4の形状。 gml:MultiSurfaceにより記述することを基本とする。
-
-屋外付属物の外形（外側から見える形）を構成する面を取得し、面の各頂点に屋外付属物の高さを与える。
-
-容積の算出等ユースケースで必要な場合は、gml:Solidを使用する。
-| tun:boundedBy | tun:_BoundarySurface [0..*] | 外部付属物を構成する外壁面、屋根面等の境界面への参照。
-
-付属物の境界面がトンネル（tun:Tunnel又はtun:TunnelPart）の境界面となる場合にのみ作成する。
-
-トンネルの空間に付属物を含まない場合は、付属物を構成する面を、境界面（tun:_BoundarySurface）に区別する必要はない。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="TunnelInstallation",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== tun:IntTunnelInstallation
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義 2+| トンネルの内部に設置された、恒久的に存在する固定的な設備（内部付属物）。
-
-内部付属物は、トンネルの付帯的な設備であり、主要な部分であってはならない。
-
-また、内部付属物は、トンネル（tun:Tunnel又はtun:TunnelPart）又は内空（tun:HollowSpace）と接していなければならない。
-
-避難連絡坑、受変電設備、予備電源設備、排水設備、換気設備、排水設備、監視制御設備、通報装置、非常用警報装置、消火設備、避難誘導設備、その他。
-
-ただし、ユースケースの要求に応じて、取得対象とする内部付属物を限定してもよく、また、内部付属物として取得せず建築物の一部として取得してもよい。
-
-h| 上位の型 2+| tun:_CityObject
-h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-h| (gml:description) | gml:StringOrRefType [0..1] | 内部付属物の概要。
-h| (gml:name) | gml:CodeType [0..1] | 内部付属物を識別する名称。
-h| (gml:boundedBy) | gml:Envelope [0..1] | 内部付属物の範囲及び適用される空間参照系。
-| core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
-| core:terminationDate | xs:date [0..1] | データが削除された日。
-h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+h| 自身に定義された属性
-h| (tun:class) | gml:CodeType [0..1] | 内部付属物の形態による区分。
-| tun:function | gml:CodeType [0..*] | 内部付属物の主たる働き。コードリスト（TunnelInstallation_function.xml）より選択する。
-h| (tun:usage) | gml:CodeType [0..*] | 内部付属物の主な使い道。
-3+h| 継承する関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-3+h| 自身に定義された関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-| tun:lod4Geometry | gml:_Geometry [0..1] | 内部付属物のLOD4の形状。gml:MultiSurfaceにより記述することを基本とする。容積の算出等ユースケースで必要な場合は、gml:Solidを使用する。
-| tun:boundedBy
-| tun:_BoundarySurface [0..*]
-| 内部付属物を構成する内壁、天井等の境界面への参照。付属物の境界面が内部空間（tun:HollowSpace）の境界面となる場合にのみ作成する。 +
-ただし、空間から内部付属物を除く必要が無い場合は、内部付属物の形状を構成する面を、境界面（tun:_BoundarySurface）にする必要はない。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="IntTunnelInstallation",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== tun:TunnelFurniture
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義
-2+a| トンネル内部の区画に配置された、可動設備。 +
-tun:IntTunnelInstallationが、トンネル内部に設置された恒久的かつ固定的な設備であることと対照的に、tun:TunnelFurnitureは椅子や机のような、動かすことができる（位置が固定されない）設備である。 +
-以下の設備のうち、固定されていない設備を対象とする。 +
-受変電設備、予備電源設備、排水設備、換気設備、排水設備、監視制御設備、通報装置、非常用警報装置、消火設備、避難誘導設備、その他。
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="TunnelFurniture",template="../../sources/liquid_templates/_klass_table.liquid"]
 
-ただし、ユースケースの要求に応じて、取得対象とする可動設備を限定してよい。
-
-h| 上位の型 2+| brid:_CityObject
-h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| (gml:description) | gml:StringOrRefType [0..1] | 可動設備の概要。
-| (gml:name) | gml:CodeType [0..1] | 可動設備を識別する名称。
-h| (gml:boundedBy) | gml:Envelope [0..1] | 可動設備の範囲及び適用される空間参照系。
-| core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
-| core:terminationDate | xs:date [0..1] | データが削除された日。
-h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+h| 自身に定義された属性
-h| (tun:class) | gml:CodeType [0..1] | 可動設備の形態による区分。
-| tun:function | gml:CodeType [0..*] | 可動設備の主たる働き。コードリスト（TunnelInstallation_function.xml）より選択する。
-h| (tun:usage) | gml:CodeType [0..*] | 可動設備の主な使い道。
-3+h| 継承する関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット。属性を追加したい場合に使用する。
-3+h| 自身に定義された関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-| tun:lod4Geometry | gml:_Geometry [0..1] | 可動設備のLOD4の形状。gml:MultiSurfaceにより記述することを基本とする。
-
-|===
 
 [[toc4_12_03_02]]
 ===== Urban Object（i-UR）
 
 ====== uro:TunnelFunctionalAttribute
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義 2+| トンネルの機能に関する情報を定義したデータ型。
-
-h| 上位の型 2+| ―
-h| ステレオタイプ 2+| << DataType >>
-3+h| 属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:directionType | gml:CodeType [0..1] | トンネルの進行方向の区分。コードリスト（ConstructionFunctionalAttribute_directionType.xml）より選択する。
-| uro:userType | gml:CodeType [0..1] | トンネルの利用者の種類。コードリスト（TunnelFunctionalAttribute_userType.xml）より選択する。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="TunnelFunctionalAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== uro:TunnelStructureAttribute
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義 2+| トンネルの構造に関する情報を定義したデータ型。
-
-h| 上位の型 2+| ―
-h| ステレオタイプ 2+| << DataType >>
-3+h| 属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:tunnelType | gml:CodeType [0..1] | トンネルの区分。コードリスト（TunnelStructureAttribute_tunnelType.xml）より選択する。
-| uro:tunnelSubtype | gml:CodeType [0..1] | トンネルの詳細な区分。コードリスト（TunnelStructureAttribute_tunnelSubType.xml）より選択する。
-| uro:mouthType | gml:CodeType [0..1] | 坑口の種類。コードリスト（TunnelStructureAttribute_mouthType.xml）より選択する。
-| uro:length | gml:LengthType [0..1] | トンネルの長さ。単位はmとする。
-| uro:width | gml:LengthType [0..1] | トンネルの幅員。単位はmとする。
-| uro:area | gml:MeatureType [0..1] | トンネルの面積。単位はm2とする。
-| uro:innerHeight | gml:LengthType [0..1] | トンネルの内空高。単位はmとする。
-| uro:effectiveHeight | gml:LengthType [0..1] | トンネルの有効高。単位はmとする。
-| uro:slopeType | gml:CodeType [0..1] | トンネルが地下横断歩道である場合の、昇降形式。コードリスト（ConstructionStructureAttribute_slopeType.xml）より選択する。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="TunnelStructureAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== uro:KeyValuePairAttribute
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義
-2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。 +
-属性名称と属性の値の対で構成される。コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
-
-h| 上位の型 2+| ―
-h| ステレオタイプ 2+| << DataType >>
-3+h| 自身に定義された属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:key | gml:CodeType [1] | 拡張する属性の名称。名称は、コ－ドリスト（KeyValuePairAttribute_key.xml）を作成し、選択する。
-| uro:codeValue
-| gml:CodeType [1]
-| 拡張された属性の値。値は名称は、コ－ドリスト（KeyValuePairAttribute_key[%key].xml）を作成し、選択する。 +
-[%key]は、属性uro:keyの値に一致する。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="KeyValuePairAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== uro:DataQualityAttribute
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
-
-h| 上位の型 2+| ―
-h| ステレオタイプ 2+| << DataType >>
-3+h| 自身に定義された属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:geometrySrcDescLod0
-| gml:CodeType [0..*]
-| LOD0の幾何オブジェクトの作成に使用した原典資料の種類。 +
-コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD0の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、トンネルモデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
-
-| uro:geometrySrcDescLod1
-| gml:CodeType [1..*]
-| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。 +
-コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。具体的な都市オブジェクトがLOD1の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
-
-| uro:geometrySrcDescLod2
-| gml:CodeType [0..*]
-| LOD2の幾何オブジェクトの作成に使用した原典資料の種類。 +
-コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD2の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、トンネルモデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
-
-| uro:geometrySrcDescLod3 | gml:CodeType [0..*] | LOD3の幾何オブジェクトの作成に使用した原典資料の種類。
-
-コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD3の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD3の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、トンネルモデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
-| uro:geometrySrcDescLod4
-| gml:CodeType [0..*]
-| LOD4の幾何オブジェクトの作成に使用した原典資料の種類。 +
-コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD4の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD4の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、トンネルモデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
-
-| uro:thematicSrcDesc
-| gml:CodeType [0..*]
-| 主題属性の作成に使用した原典資料の種類。 +
-コードリスト（DataQualityAttribute_thematicSrcDesc.xml）より選択する。 +
-主題属性が作成対象となっている場合は必須とする。
-
-| uro:appearanceSrcDescLod0
-| gml:CodeType [0..*]
-| LOD0の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
-コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 +
-拡張製品仕様書でLOD0の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
-
-| uro:appearanceSrcDescLod1
-| gml:CodeType [0..*]
-| LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
-コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 +
-拡張製品仕様書LOD1の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD1の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
-
-| uro:appearanceSrcDescLod2
-| gml:CodeType [0..*]
-| LOD2の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
-コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。拡張製品仕様書でLOD2の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
-
-| uro:appearanceSrcDescLod3
-| gml:CodeType [0..*]
-| LOD3の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
-コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。拡張製品仕様書でLOD3の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD3の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
-
-| uro:appearanceSrcDescLod4
-| gml:CodeType [0..*]
-| LOD4の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
-コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。拡張製品仕様書でLOD4の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD4の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
-
-| uro:lodType
-| gml:CodeType[0..*]
-| 幾何オブジェクトに適用されたLODの詳細な区分。 +
-コードリスト（Tunnel_lodType.xml）より選択する。LOD4の幾何オブジェクトを作成する場合は必須とする。
-
-| uro:lod1HeightType | gml:CodeType [0..1] | LOD1の立体図形を作成する際に使用した高さの算出方法。コードリスト（DataQualityAttribute_lod1HeightType.xml）より選択する。LOD1の幾何オブジェクトを作成する場合は必須とする。
-h| (uro:tranDataAcquisition) | xs:string [0..1] | 「<<nilim_kiban_dps,道路基盤地図情報（整備促進版）製品仕様書（案）>>」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
-3+h| 自身に定義された関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-| uro:publicSurveyDataQualityAttribute
-| uro:PublicSurveyDataQualityAttribute [0..1]
-| 使用した公共測量成果の地図情報レベルと種類。 +
-各LODの幾何オブジェクトの作成に使用した原典資料の種類に関する属性（uro:geometrySrcDescLod0等）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）となっている場合は、必須とする。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="DataQualityAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== uro:PublicSurveyDataQualityAttribute
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義 2+| 使用した公共測量成果の地図情報レベルと種類を、LODごとに記述するためのデータ型。
-
-h| 上位の型 2+| ―
-h| ステレオタイプ 2+| << DataType >>
-3+h| 自身に定義された属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:srcScaleLod0
-| gml:CodeType [0..1]
-| LOD0の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
-コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 +
-「LOD0の幾何オブジェクトの作成に使用した原典資料の種類に関する属性」（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
-
-| uro:srcScaleLod1
-| gml:CodeType [0..1]
-| LOD1の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
-コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 +
-「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
-
-| uro:srcScaleLod2
-| gml:CodeType [0..1]
-| LOD2の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
-コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 +
-「LOD2の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod2）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
-複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば、壁面は地図情報レベル1000、屋根面は地図情報レベル2500となる場合は、地図情報レベル2500とする。
-
-| uro:srcScaleLod3
-| gml:CodeType [0..1]
-| LOD3の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
-
-コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 +
-「LOD3の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod3）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
-複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば、壁面は地図情報レベル1000、屋根面は地図情報レベル2500となる場合は、地図情報レベル2500とする。
-
-| uro:srcScaleLod4
-| gml:CodeType [0..1]
-| LOD4の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
-コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 +
-「LOD4の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod4）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
-複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば、外側の形状は地図情報レベル1000、屋内の形状は地図情報レベル500となる場合は地図情報レベル1000とする。
-
-| uro:publicSurveySrcDescLod0
-| gml:CodeType [0..*]
-| LOD0の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
-「LOD0の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
-複数の種類の原典資料を使用した場合は、それぞれを記述する。
-
-| uro:publicSurveySrcDescLod1
-| gml:CodeType [0..*]
-| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
-「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
-複数の種類の原典資料を使用した場合は、それぞれを記述する。
-
-| uro:publicSurveySrcDescLod2
-| gml:CodeType [0..*]
-| LOD2の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
-「LOD2の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod2）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
-複数の種類の原典資料を使用した場合は、それぞれを記述する。
-
-| uro:publicSurveySrcDescLod3
-| gml:CodeType [0..*]
-| LOD3の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
-「LOD3の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod3）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
-複数の種類の原典資料を使用した場合は、それぞれを記述する。
-
-| uro:publicSurveySrcDescLod4
-| gml:CodeType [0..*]
-| LOD4の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
-「LOD4の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod4）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
-複数の種類の原典資料を使用した場合は、それぞれを記述する。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="PublicSurveyDataQualityAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== uro:ConstructionBaseAttribute
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義
-2+| 構造物の管理に必要となる基本的な情報及び、構造物の規模に関する基本的な情報を記述するためのデータ型。 +
-構造物が橋梁、トンネル、護岸、床止め、堰、水門・閘門・陸閘、樋門・樋管、伏せ越し及び水制の場合に本データ型を用いて記述する。 +
-構造物がダム及び堤防の場合は、これを継承するデータ型を用いて記述する。
-
-h| 上位の型 2+| ―
-h| ステレオタイプ 2+| << DataType >>
-3+h| 自身に定義された属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:adminType | gml:CodeType [0..1] | 構造物の管理者の区分。コードリスト（ConstructionBaseAttribute_adminType.xml）から選択する。
-| uro:administorator | xs:string [0..1] | 構造物の管理者の名称。
-| uro:adminOffice | xs:string [0..1] | 構造物の管理事務所所在地。
-| uro:operatorType | gml:CodeType [0..1] | 構造物の運用者の区分。コードリストから選択する。この属性を使用する場合は、コードリスト（ConstructionBaseAttribute_operatorType.xml）を作成すること。
-| uro:installerType | gml:CodeType [0..1] | 構造物の設置者の区分。コードリスト（ConstructionBaseAttribute_installerType.xml）から選択する。
-| uro:installer | xs:string [0..1] | 構造物の設置者の名称。
-| uro:structureOrdinance | xs:string [0..1] | 構造物が適用された構造令の名称。
-| uro:specification | xs:string [0..1] | 構造物が適用された示方書の名称。
-| uro:kana | xs:string [0..1] | 構造物の名称のふりがな。
-| uro:constructionStartYear | xs:gYear [0..1] | 構造物の建設開始年度。
-| uro:completionYear | xs:gYear [0..1] | 構造物の完成年度。
-| uro:facilityAge | xs:integer [0..1] | 工事完成年度からの年数。
-| uro:update | xs:date [0..1] | 更新年月日。
-| uro:purpose | gml:CodeType [0..1] | 構造物の建設の目的。コードリスト（ConstructionBaseAttribute_purpose.xml）から選択する。コードリストに無い場合は文字列により記述する。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="ConstructionBaseAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== uro:ConstructionRiskAssessmentAttribute
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義 2+| 構造物の損傷及び対応状況に関する情報を定義したデータ型。
-
-h| 上位の型 2+| ―
-h| ステレオタイプ 2+| << DataType >>
-3+h| 属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:surveyYear | xs:gYear [0..1] | 点検が実施された年度。
-| uro:riskType | gml:CodeType [1] | 判定区分。コードリスト（ConstructionRiskAssessmentAttribute_riskType.xml）より選択する。
-| uro:status | gml:CodeType [0..1] | 対応状況。コードリスト（ConstructionRiskAssessmentAttribute_status.xml）より選択する。
-| uro:referenceDate | xs:date [1] | 判定区分や措置状況の情報が記載された<<mlit_road_damage_map,損傷マップ>>の更新時点。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="ConstructionRiskAssessmentAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== uro:FacilityIdAttribute
 
