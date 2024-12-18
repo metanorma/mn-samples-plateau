@@ -313,18 +313,24 @@ h| 地物型 h| 空間属性 h| LOD0 h| LOD1 h| LOD2 h| LOD3 h| 適用
 
 |===
 
+
 [[toc4_17_02]]
 ==== 植生モデルの応用スキーマクラス図
 
 [[toc4_17_02_01]]
 ===== Vegetation（CityGML）
 
-image::images/356.svg[]
+image::images/EAID_34FF671B_CFDC_47ad_91DF_ECA6D8358180.png[]
+
+// image::images/356.svg[]
 
 [[toc4_17_02_02]]
 ===== Urban Object（i-UR）
 
-image::images/357.svg[]
+image::images/EAID_AD451676_A7C8_4c6a_A925_A9B9CA344142.png[]
+
+// image::images/357.svg[]
+
 
 [[toc4_17_03]]
 ==== 植生モデルの応用スキーマ文書
@@ -334,305 +340,27 @@ image::images/357.svg[]
 
 ====== veg:SolitaryVegetationObject
 
-[cols="13a,14a,13a"]
-|===
-| 型の定義
-2+|
-独立した樹木。
-
-.SolitaryVegetationObjectの例
-image::images/358.webp.png[]
-
-h| 上位の型 2+| veg:_VegetationObject
-h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-h| (gml:description) | gml:StringOrRefType [0..1] | 樹木の説明。
-| gml:name | gml:CodeType [0..1] | 樹木を識別する管理番号や名前。文字列とする。
-h| (gml:boundedBy) | gml:Envelope [0..1] | オブジェクトの範囲と空間参照系。
-| core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
-| core:terminationDate | xs:date [0..1] | データが削除された日。
-h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+h| 自身に定義された属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| veg:class | gml:CodeType [0..1] | 高木、中木、低木の別。コードリスト（SolitaryVegetationObject_class.xml）より選択する。
-| veg:function | gml:CodeType [0..*] | 常緑又は落葉の区分及び針葉又は広葉の区分。コードリスト（SolitaryVegetationObject_function.xml）より選択する。
-h| (veg:usage) | gml:CodeType [0..*] | 樹木の用途。
-h| (veg:species) | gml:CodeType [0..1] | 樹木の樹種。
-| veg:height
-| gml:LengthType [0..1]
-| 樹高。樹木の樹冠の頂端から根鉢の上端までの垂直高をいい、一部の突出した枝は含まない。 +
-単位はm（uom=”m”）とする。
-
-| veg:trunkDiameter
-| gml:LengthType [0..1]
-| 樹径。幹周を3.14で乗算した数値。 +
-なお、幹周とは樹木の幹の周長をいい、根鉢の上端より1.2m上りの位置を測定する。この部分に枝が分岐しているときは、その上部を測定する。幹が二本以上の樹木の場合においては、各々の周長の総和の70％をもって幹周とする。 +
-単位はm（uom=”m”）とする。
-
-| veg:crownDiameter | gml:LengthType [0..1] | 樹木の四方面に伸長した枝(葉)の幅をいう。測定方向により幅に長短がある場合は、最長と最短の平均値とする。なお一部の突出した枝は含まない。単位はm（uom=”m”）とする。
-3+h| 継承する関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット（集合）。属性を追加したい場合に使用する。
-| uro:vegKeyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | 属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
-| uro:vegDataQualityAttribute | uro:DataQualityAttribute [1] | 作成されたデータの品質に関する情報。必須とする。
-| uro:vegFacilityTypeAttribute | uro:FacilityTypeAttribute [0..*] | 特定分野における施設の分類情報。
-| uro:vegFacilityIdAttribute | uro:FacilityIdAttribute [0..1] | uro:vegFacilityTypeAttribute.classによって指定された分野における施設の識別情報。
-| uro:vegFacilityAttribute | uro:FacilityAttribute [0..*] | uro:vegFacilityTypeAttribute.classによって指定された分野における施設管理情報。
-| uro:vegDmAttribute | uro:DmAttribute [0..*] | 公共測量標準図式による図形表現に必要な情報。
-3+h| 自身に定義された関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-| veg:lod1Geometry
-| gml:_Geometry [0..1]
-|
-単独木の形状をそれが占有している範囲（面）に一律の高さを与えた立体として表現する。 +
-樹冠の情報からの正射影の外周を樹高の高さで上向きに押し出した立体となる。
-
-.LOD1のSolitaryVegetationObjectの例
-image::images/359.webp.png[]
-
-| veg:lod2Geometry
-| gml:_Geometry [0..1]
-|
-単独木の形状を立体とし、その主要な部分の外形を面の集まり又は立体として区分して表現する。 +
-樹冠と樹幹をそれぞれ簡略化した立体（楕円体、球体、円錐、角錐、角柱、円柱などの単純な立体図形）を組み合わせた立体として表現する。
-
-.LOD2のSolitaryVegetationObjectの例
-image::images/360.webp.png[]
-
-樹木量の算定等、容積が必要ではない場合には、gml:MultiSurfaceにより外形を構成する。
-
-| veg:lod3Geometry
-| gml:_Geometry [0..1]
-|
-単独木の形状を立体とし、その主要な部分の外形を面の集まり又は立体として詳細に区分して表現する。 +
-一定高さごとに樹冠の横断面を作成し、この頂点を結び外形を構成する（樹冠内部の主枝等の表現は行わない）。
-
-.LOD3のSolitaryVegetationObjectの例
-image::images/361.webp.png[]
-
-樹木量の算定等、容積が必要ではない場合には、gml:MultiSurfaceにより外形を構成する。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="SolitaryVegetationObject",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== veg:PlantCover
 
-[cols="a,a,a"]
-|===
-| 型の定義
-2+|
-植被。芝生や茂みのように、植生に覆われた範囲を指し、個々の樹木を識別しない。
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="PlantCover",template="../../sources/liquid_templates/_klass_table.liquid"]
 
-.veg:PlantCoverの例
-image::images/362.webp.png[]
-
-h| 上位の型 2+| veg:_VegetationObject
-h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-h| (gml:description) | gml:StringOrRefType [0..1] | 植被の説明。
-h| (gml:name) | gml:CodeType [0..1] | 植被を識別する管理番号や名前。
-h| (gml:boundedBy) | gml:Envelope [0..1] | オブジェクトの範囲と空間参照系。
-| core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
-| core:terminationDate | xs:date [0..1] | データが削除された日。
-h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-3+h| 自身に定義された属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| veg:class | gml:CodeType [0..1] | 植被を構成する主な樹種による分類。コードリスト（PlantCover_class.xml）より選択する。
-h| (veg:function) | gml:CodeType [0..*] | 植被の機能。
-h| (veg:usage) | gml:CodeType [0..*] | 植被の用途。
-| veg:averageHeight
-| gml:LengthType [0..1]
-| 平均高さ。 +
-単位はm（uom=”m”）とする。
-
-3+h| 継承する関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット（集合）。属性を追加したい場合に使用する。
-| uro:vegKeyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | コード属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
-| uro:vegDataQualityAttribute | uro:DataQualityAttribute [1] | 作成されたデータの品質に関する情報。必須とする。
-| uro:vegFacilityTypeAttribute | uro:FacilityTypeAttribute [0..*] | 特定分野における施設の分類情報。
-| uro:vegFacilityIdAttribute | uro:FacilityIdAttribute [0..1] | uro:vegFacilityTypeAttribute.classによって指定された分野における施設の識別情報。
-| uro:vegFacilityAttribute | uro:FacilityAttribute [0..*] | uro:vegFacilityTypeAttribute.classによって指定された分野における施設管理情報。
-| uro:vegDmAttribute | uro:DmAttribute [0..*] | 公共測量標準図式による図形表現に必要な情報。
-3+h| 自身に定義された関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-h| (veg:lod1MultiSurface) | gml:MultiSurface [0..1] | LOD1はSolidにより表現するため、使用しない。
-| veg:lod2MultiSurface
-| gml:MultiSurface [0..1]
-|
-植被の形状を立体とし、その主要な部分の外形を面の集まり又は立体として区分して表現する。 +
-植被の範囲内で比高3m以上の場合にこれを区分した面の集まりとなる。
-
-.LOD2のPlantCoverの例
-image::images/363.webp.png[]
-
-| veg:lod3MultiSurface
-| gml:MultiSurface [0..1]
-|
-植被の形状を立体とし、その主要な部分の外形を面の集まりとして詳細に区分して表現する。植被の範囲内で比高1m以上の場合にこれを区分した面の集まりとなる。
-
-.LOD3のPlantCoverの例
-image::images/364.webp.png[]
-
-| veg:lod1MultiSolid
-| gml:MultiSolid [0..1]
-|
-植被の形状をそれが占有している範囲（面）に一律の高さを与えた立体として表現する。植被の占有している範囲（面）に、その範囲内で中央値となる植被の高さで上向きに押し出した立体となる。
-
-.LOD1のPlantCoverの例
-image::images/365.webp.png[]
-
-| veg:lod2MultiSolid
-| gml:MultiSolid [0..1]
-|
-植被の形状を立体とし、その主要な部分の外形を立体として詳細に区分して表現する。植被の範囲内で比高3m以上の場合にこれを区分した面を境界とする立体となる。
-
-.LOD2のPlantCoverの例
-image::images/366.webp.png[]
-
-| veg:lod3MultiSolid
-| gml:MultiSolid [0..1]
-|
-植被の形状を立体とし、その主要な部分の外形を立体として詳細に区分して表現する。植被の範囲内で比高1m以上の場合にこれを区分した面を境界とする立体となる。
-
-.LOD3のPlantCoverの例
-image::images/367.webp.png[]
-
-|===
 
 [[toc4_17_03_02]]
 ===== Urban Object（i-UR）
 
 ====== uro:KeyValuePairAttribute
 
-[cols="a,a,a"]
-|===
-| 型の定義
-2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。 +
-属性名称と属性の値の対で構成される。コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
-
-h| 上位の型 2+| ―
-h| ステレオタイプ 2+| << DataType >>
-3+h| 自身に定義された属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:key | gml:CodeType [1] | 拡張する属性の名称。名称は、コ－ドリスト（KeyValuePairAttribute_key.xml）を作成し、選択する。
-| uro:codeValue | gml:CodeType [1] | 拡張された属性の値。値は名称は、コ－ドリスト（KeyValuePairAttribute_key[%key].xml）を作成し、選択する。 [%key]は、属性uro:keyの値に一致する。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="KeyValuePairAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== uro:DataQualityAttribute
 
-[cols="a,a,a"]
-|===
-| 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
-
-h| 上位の型 2+| ―
-h| ステレオタイプ 2+| << DataType >>
-3+h| 自身に定義された属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:geometrySrcDescLod0 | gml:CodeType [0..*] | LOD0の幾何オブジェクトの作成に使用した原典資料の種類。
-
-コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。
-
-拡張製品仕様書でLOD0の幾何オブジェクトが作成対象となっている場合は必須とする。
-
-この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択する こと（例えば、植生モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
-| uro:geometrySrcDescLod1 | gml:CodeType [1..*] | LOD1の幾何オブジェクトの作成に使用した原典資料の種類。
-
-コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。具体的な都市オブジェクトがLOD1の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
-| uro:geometrySrcDescLod2 | gml:CodeType [0..*] | LOD2の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD2の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、植生モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
-| uro:geometrySrcDescLod3 | gml:CodeType [0..*] | コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD3の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD3の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、植生モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
-h| (uro:geometrySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
-| uro:thematicSrcDesc
-| gml:CodeType [0..*]
-| 主題属性の作成に使用した原典資料の種類コードリスト（DataQualityAttribute_thematicSrcDesc.xml）より選択する。 +
-主題属性が作成対象となっている場合は必須とする。
-
-| uro:appearanceSrcDescLod0 | gml:CodeType [0..*] | LOD0の幾何オブジェクトのアピアランスに使用した原典資料の種類。
-
-コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。
-
-拡張製品仕様書でLOD0の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
-| uro:appearanceSrcDescLod1 | gml:CodeType [0..*] | LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。
-
-コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。
-
-拡張製品仕様書LOD1の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD1の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
-| uro:appearanceSrcDescLod2 | gml:CodeType [0..*] | LOD2の幾何オブジェクトのアピアランスに使用した原典資料の種類。
-
-コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。
-
-拡張製品仕様書でLOD2の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
-| uro:appearanceSrcDescLod3 | gml:CodeType [0..*] | LOD3の幾何オブジェクトのアピアランスに使用した原典資料の種類。
-
-コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。
-
-拡張製品仕様書でLOD3の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD3の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
-h| (uro:appearanceSrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトのアピアランスに使用した原典資料の種類。
-h| (uro:lodType) | gml:CodeType [0..*] | 幾何オブジェクトに適用されたLODの詳細な区分。
-| uro:lod1HeightType | gml:CodeType [0..1] | LOD1の立体図形を作成する際に使用した高さの算出方法。
-h| (uro:tranDataAcquisition) | xs:string [0..1] | 「<<nilim_kiban_dps,道路基盤地図情報（整備促進版）製品仕様書（案）>>」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
-3+h| 自身に定義された関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-| uro:publicSurveyDataQualityAttribute | uro:PublicSurveyDataQualityAttribute [0..1] | 使用した公共測量成果の地図情報レベルと種類。
-
-各LODの幾何オブジェクトの作成に使用した原典資料の種類に関する属性（uro:geometrySrcDescLod0等）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）となっている場合は、必須とする。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="DataQualityAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== uro:PublicSurveyDataQualityAttribute
 
-[cols="a,a,a"]
-|===
-| 型の定義 2+| 使用した公共測量成果の地図情報レベルと種類を、LODごとに記述するためのデータ型。
-
-h| 上位の型 2+| ―
-h| ステレオタイプ 2+| << DataType >>
-3+h| 自身に定義された属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:srcScaleLod0 | gml:CodeType [0..1] | LOD0の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
-
-コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。
-
-「LOD0の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
-| uro:srcScaleLod1 | gml:CodeType [0..1] | LOD1の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
-
-コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。
-
-「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
-h| (uro:srcScaleLod2) | gml:CodeType [0..1] | LOD2の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
-h| (uro:srcScaleLod3) | gml:CodeType [0..1] | LOD3の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
-h| (uro:srcScaleLod4) | gml:CodeType [0..1] | LOD4の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
-| uro:publicSurveySrcDescLod0 | gml:CodeType [0..*] | LOD0の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。
-
-「LOD0の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
-
-複数の種類の原典資料を使用した場合は、それぞれを記述する。
-| uro:publicSurveySrcDescLod1 | gml:CodeType [0..*] | LOD1の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。
-
-「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
-
-複数の種類の原典資料を使用した場合は、それぞれを記述する。
-h| (uro:publicSurveySrcDescLod2) | gml:CodeType [0..*] | LOD2の幾何オブジェクトの作成に使用した原典資料の種類。
-h| (uro:publicSurveySrcDescLod3) | gml:CodeType [0..*] | LOD3の幾何オブジェクトの作成に使用した原典資料の種類。
-h| (uro:publicSurveySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="PublicSurveyDataQualityAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== uro:FacilityIdAttribute
 
