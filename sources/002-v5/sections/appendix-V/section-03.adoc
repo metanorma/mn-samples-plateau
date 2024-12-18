@@ -15,9 +15,9 @@ image::images/523.webp.png[]
 
 建築物の壁面等の都市オブジェクトに三次元点群データを対応付けるには、PointCloudモジュールを使用する。図V- 3は、標準製品仕様書に示すPointCloudモジュールのUMLクラス図である。このUMLクラス図は、CityGML3.0のPointCloudモジュールを、CityGML2.0で使用できるようにするために必要となる型のみを矛盾なく抽出し、独自の主題属性を追加定義したi-URで拡張したプロファイルである。
 
-[[fig-V-4]]
-.ポイントクラウドのための拡張プロファイル
-image::images/ .svg[]
+//[[fig-V-4]]
+//.ポイントクラウドのための拡張プロファイル
+//image::images/ .svg[]
 
 [[tocV_03_02]]
 ==== ポイントクラウドの記述
@@ -39,7 +39,7 @@ image::images/ .svg[]
           <uro:srcHorizontalAccuracy uom="m">0.5</uro:srcHorizontalAccuracy>
           <uro:srcVerticalAccuracy uom="m">1.0</uro:srcVerticalAccuracy>
           <uro:srcRequiredPointDensity uom="点/m2">400</uro:srcRequiredPointDensity>
-         <uro:srcFilteringCriteria codeSpace="../../codelists/PointCloudSpecAttribute_srcFilteringCriteria.xml">1</uro:srcFilteringCriteria>
+          <uro:srcFilteringCriteria codeSpace="../../codelists/PointCloudSpecAttribute_srcFilteringCriteria.xml">1</uro:srcFilteringCriteria>
           <uro:srcGridInterval uom="m">1</uro:srcGridInterval>
           <uro:pointCloudAssociationMethod codeSpace="../../codelists/PointCloudSpecAttribute_pointCloudAssociationMethod.xml">1</uro:pointCloudAssociationMethod>
           <uro:pointSubsamplingInfo codeSpace="../../codelists/PointCloudSpecAttribute_pointSubsamplingInfo.xml">1</uro:pointSubsamplingInfo>
@@ -80,7 +80,7 @@ image::images/ .svg[]
 ----
 
 *	uro:pointFileには、外部参照する三次元点群データのファイルの所在を、3D都市モデルファイルからの相対パスにより記述する。
-**	三次元点群データのファイルの格納については5.4.5 フォルダ構成とフォルダ名称　 (7)三次元点群データのフォルダ構成を参照すること。
+**	三次元点群データのファイルの格納については <<toc5_04_05_07>>を参照すること。
 **	三次元点群データのパスにフォルダを複数階層、含んでもよいこととする。
 *	uro:mimeTypeには、外部ファイル参照先の三次元点群データのファイルタイプを指定する。application/vnd.las又は、application/vnd.laszipのいずれかとなる。
 *	uro:pointFileSrsNameには、三次元点群データの座標参照系を記述する。記述方法はEPSG:[EPSGコード]とする。
@@ -113,7 +113,7 @@ image::images/ .svg[]
 *	uro:customClassificationTypeには、三次元点群データを独自にクラス分類している場合に使用しているクラス分類コードをコードリスト（PointCloudSpecAttribute_customClassificationType.xml）として作成し選択する。
 **	三次元点群データを外部参照する場合に記述することができる。
 *	uro:pointCloudAssociationMethodには、三次元点群データと都市オブジェクトの対応づけの方法をコードリスト（PointCloudSpecAttribute_pointCloudAssociationMethod.xml）から選択する。
-**	対応づけの方法は、V.3.3の三次元点群データの抽出手法のメリットデメリットを確認し、ユースケースに適する手法を選択する。
+**	対応づけの方法は、<<tocV_03_03>>の三次元点群データの抽出手法のメリットデメリットを確認し、ユースケースに適する手法を選択する。
 *	uro:pointSubsamplingInfoには、三次元点群データの間引きの情報を記述する。
 **	コードリスト（PointCloudSpecAttribute_pointSubsamplingInfo.xml）から選択する。
 
@@ -121,7 +121,7 @@ image::images/ .svg[]
 ==== ポイントクラウドモジュール利用上の留意事項
 
 *	CityGML3.0では、PointCloudモジュールには、三次元点群を記述する方法として、インライン記述、外部ファイル参照の2種類の方法が定義されている。インライン記述では、CityGMLファイル内に直接座標値を記載するため、大規模な三次元点群の場合はファイルの肥大化が起こる。そのため、無制限に大きなCityGMLファイルが作成されないように、標準製品仕様書の7.2.1　(2)ファイルサイズとファイル分割にて、インライン記述の場合はファイル分割が禁止されている。ファイル容量は1GB以内での運用とする。また、インライン記述では、RGB（色情報）やNIR（近赤外線情報）等を持たせられないため、それらを含むデータを連携したい場合は外部ファイル参照を利用する必要がある。
-*	三次元点群データは都市オブジェクトと対応づける必要があるため、対応づける都市オブジェクトごとに三次元点群データを抽出する必要がある。抽出の手法として主に下記の手法がある。手法毎のメリットデメリット（表V- 1）を確認した上で適切な抽出手法を選択する。
+*	三次元点群データは都市オブジェクトと対応づける必要があるため、対応づける都市オブジェクトごとに三次元点群データを抽出する必要がある。抽出の手法として主に下記の手法がある。手法毎のメリットデメリット（<<tab-V-1>>）を確認した上で適切な抽出手法を選択する。
 **	都市オブジェクトの幾何形状の正射影による抽出
 ***	都市オブジェクトの幾何形状の正射影の範囲に含まれる点群のみを抽出する。
 
@@ -163,7 +163,7 @@ image::images/529.webp.png[]
 各手法のメリットデメリットについて、<<tab-V-1>>に示す。
 
 [[tab-V-1]]
-[cols="a,a,a"]
+[cols="a,a,a",options="header"]
 .点群抽出手法のメリットデメリット
 |===
 
