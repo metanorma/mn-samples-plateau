@@ -178,7 +178,7 @@ XML文書におけるタグの出現順序は、XMLSchemaにおいて定めら�
 4）bldg:*、tran:*等CityGMLの地物型で定義された属性・関連役割 +
 5）uro:*、urf:*等i-URで定義された属性・関連役割
 ** UMLクラス図で記述された属性や関連役割がXML文書のタグとして出現する。UMLクラス図で記述された属性と関連役割には順序の概念がない。一方、XMLSchemaでは順序をもつ。そのため、UMLクラス図の記述だけでは、XMLSchemaでの出現順序が分からない。データ出力時には、XMLSchemaにおいて出現順序を確認し、定められた順序となるよう注意すること。
-** ただし、植生モデルは、uro:を接頭辞とする属性及び関連役割が、CityGMLで定義された接頭辞veg:よりも前に出現してよい。接頭辞veg:よりも前に出現してよいタグは、veg:SolitaryVegetationObject及びveg:PlantCoverの上位の地物型である、veg:_VegetationObjectに拡張された属性及び関連役割（uro:vegDataQualityAttribute、uro:vegFacilityIdAttribute、uro:vegFacilityTypeAttribute、uro:vegFacilityAttribute、uro:vegKeyValuePairAttribute及びuro:vegDmAttribute）である。
+**	ただし、ポイントクラウドモデルはcore:_CityObjectに拡張を行っているため、ポイントクラウドと関連付けた都市オブジェクトのインスタンスに関してはcore:_CityObjectを継承する各都市オブジェクトに定義された属性（例：bldg:class）などよりも前にuro:pointCloudのタグが出現する。また、植生モデルは、uro:を接頭辞とする属性及び関連役割が、CityGMLで定義された接頭辞veg:よりも前に出現してよい。接頭辞veg:よりも前に出現してよいタグは、veg:SolitaryVegetationObject及びveg:PlantCoverの上位の地物型である、veg:_VegetationObjectに拡張された属性及び関連役割（uro:vegDataQualityAttribute、uro:vegFacilityIdAttribute、uro:vegFacilityTypeAttribute、uro:vegFacilityAttribute、uro:vegKeyValuePairAttribute及びuro:vegDmAttribute）である。
 
 --
 ====

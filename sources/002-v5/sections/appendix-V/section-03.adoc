@@ -1,33 +1,198 @@
 [[tocV_03]]
 === ポイントクラウドマッピングのための拡張プロファイル
 
-説明文が入ります
+建築物等の都市オブジェクトをよりリアルに表現するため に、航空レーザ測量等の三次元点群データを都市オブジェクトに対応づけることを本付属書ではポイントクラウドマッピングという 。
+
+[[fig-V-3]]
+.ポイントクラウドマッピングのイメージ図
+image::images/523.webp.png[]
+
+ポイントクラウドマッピングに必要な情報は、CityGML3.0のPointCloudのモジュールに定義されている。標準製品仕様書では、CityGML2.0を採用しているため、i-URにて拡張することでPointCloudモジュールを再現している。また、独自に必要な主題属性を追加で定義している。 +
+なお、このモジュールは測量データだけではなく、例えば太陽光発電ポテンシャルのシミュレーション結果を三次元点群データとして壁面や屋根面と重ね合わせて表示する用途にも利用できる。
 
 [[tocV_03_01]]
 ==== ポイントクラウドモデル
 
-説明文が入ります
+建築物の壁面等の都市オブジェクトに三次元点群データを対応付けるには、PointCloudモジュールを使用する。図V- 3は、標準製品仕様書に示すPointCloudモジュールのUMLクラス図である。このUMLクラス図は、CityGML3.0のPointCloudモジュールを、CityGML2.0で使用できるようにするために必要となる型のみを矛盾なく抽出し、独自の主題属性を追加定義したi-URで拡張したプロファイルである。
+
+[[fig-V-4]]
+.ポイントクラウドのための拡張プロファイル
+image::images/ .svg[]
 
 [[tocV_03_02]]
 ==== ポイントクラウドの記述
 
-説明文が入ります。source内のxmlを差し替えてください
+ポイントクラウドモデルにより記述されるポイントクラウドマッピングの情報は、3D都市モデルの一部としてCityGML形式で記述する。 +
+なお、三次元点群データの座標値の情報は、CityGMLファイル内に直接記述するインライン記述と、外部ファイル参照先を記述する外部ファイル参照の2種類がある。ポイントクラウドは対応する都市オブジェクトのインスタンス内に記述する。
 
 [source,xml]
 ----
-<app:ParameterizedTexture>
-  <app:imageURI>[テクスチャ画像への相対パス]</app:imageURI>
-  <app:mimeType>[テクスチャ画像のファイルタイプ]</app:mimeType>
-  <app:target uri="[テクスチャ画像を貼る対象となる面への参照">
-	  <app:TexCoordList>
-      <app:textureCoordinates ring="[テクスチャ画像を貼る対象となる面の外周への参照">[面の外周に対応するテクスチャ画像の座標]</app:textureCoordinates>
-	  </app:TexCoordList>
-  </app:target>
-</app:ParameterizedTexture>
+インライン記述
+  <uro:pointCloud>
+    <uro:PointCloud>
+      <uro:pointFileSrsName>[三次元点群データの座標参照系] </uro:pointFileSrsName>
+      <uro:pointCloudSpecAttribute> 
+        <uro:PointCloudSpecAttribute>
+          <uro:class codeSpace="../../codelists/PointCloudSpecAttribute_class.xml">1</uro:class>
+          <uro:function codeSpace="../../codelists/PointCloudSpecAttribute_function.xml">2</uro:function>
+          <uro:srcScale codeSpace="../../codelists/PointCloudSpecAttribute_srcScale.xml">2500</uro:srcScale>
+          <uro:srcHorizontalAccuracy uom="m">0.5</uro:srcHorizontalAccuracy>
+          <uro:srcVerticalAccuracy uom="m">1.0</uro:srcVerticalAccuracy>
+          <uro:srcRequiredPointDensity uom="点/m2">400</uro:srcRequiredPointDensity>
+         <uro:srcFilteringCriteria codeSpace="../../codelists/PointCloudSpecAttribute_srcFilteringCriteria.xml">1</uro:srcFilteringCriteria>
+          <uro:srcGridInterval uom="m">1</uro:srcGridInterval>
+          <uro:pointCloudAssociationMethod codeSpace="../../codelists/PointCloudSpecAttribute_pointCloudAssociationMethod.xml">1</uro:pointCloudAssociationMethod>
+          <uro:pointSubsamplingInfo codeSpace="../../codelists/PointCloudSpecAttribute_pointSubsamplingInfo.xml">1</uro:pointSubsamplingInfo>
+        </uro:PointCloudSpecAttribute>
+      </uro:pointCloudSpecAttribute>
+      <uro:points>[三次元点群データの座標値]</uro:points>
+    </uro:PointCloud>
+  </uro:pointCloud>
+
+外部ファイル参照
+  <uro:pointCloud>
+    <uro:PointCloud>
+      <uro:mimeType>[三次元点群データのファイルタイプ]</uro:mimeType>
+      <uro:pointFile>[三次元点群データへの相対パス]</uro:pointFile>
+      <uro:pointFileSrsName>[三次元点群データの座標参照系] </uro:pointFileSrsName>
+      <uro:pointCloudSpecAttribute>
+        <uro:PointCloudSpecAttribute>
+          <uro:class codeSpace="../../codelists/PointCloudSpecAttribute_class.xml">1</uro:class>
+          <uro:function codeSpace="../../codelists/PointCloudSpecAttribute_function.xml">2</uro:function>
+          <uro:srcScale codeSpace="../../codelists/PointCloudSpecAttribute_srcScale.xml">2500</uro:srcScale>
+          <uro:srcHorizontalAccuracy uom="m">0.5</uro:srcHorizontalAccuracy>
+          <uro:srcVerticalAccuracy uom="m">1.0</uro:srcVerticalAccuracy>
+          <uro:srcRequiredPointDensity uom="点/m2">400</uro:srcRequiredPointDensity>
+          <uro:srcFilteringCriteria codeSpace="../../codelists/PointCloudSpecAttribute_srcFilteringCriteria.xml">1</uro:srcFilteringCriteria>
+          <uro:srcGridInterval uom="m">1</uro:srcGridInterval>
+          <uro:isIntensity>1</uro:isIntensity>
+          <uro:isRgb>1</uro:isRgb>
+          <uro:isNir>0</uro:isNir>
+          <uro:isReturnInfo>0</uro:isReturnInfo>
+          <uro:isStandardClassification>0</uro:isStandardClassification>
+          <uro:customClassificationType>0</uro:customClassificationType>
+          <uro:pointCloudAssociationMethod codeSpace="../../codelists/PointCloudSpecAttribute_pointCloudAssociationMethod.xml">1</uro:pointCloudAssociationMethod>
+          <uro:pointSubsamplingInfo codeSpace="../../codelists/PointCloudSpecAttribute_pointSubsamplingInfo.xml">1</uro:pointSubsamplingInfo>
+        </uro:PointCloudSpecAttribute>
+      </uro:pointCloudSpecAttribute>
+    </uro:PointCloud>
+  </uro:pointCloud>
 ----
+
+*	uro:pointFileには、外部参照する三次元点群データのファイルの所在を、3D都市モデルファイルからの相対パスにより記述する。
+**	三次元点群データのファイルの格納については5.4.5 フォルダ構成とフォルダ名称　 (7)三次元点群データのフォルダ構成を参照すること。
+**	三次元点群データのパスにフォルダを複数階層、含んでもよいこととする。
+*	uro:mimeTypeには、外部ファイル参照先の三次元点群データのファイルタイプを指定する。application/vnd.las又は、application/vnd.laszipのいずれかとなる。
+*	uro:pointFileSrsNameには、三次元点群データの座標参照系を記述する。記述方法はEPSG:[EPSGコード]とする。
+**	[EPSGコード]は、EPSGにより指定された半角数字の組合せによる識別子であり、6697とする。
+*	uro:pointsには、インライン記述する三次元点群データの座標値を記述する。
+**	座標値は、日本測地系2011 における経緯度座標系と東京湾平均海面を基準とする標高の複合座標参照系（EPSG:6697）を用い、gml:MultiPointにて記述する。
+*	uro:classには、三次元点群データの種類を記述する。
+**	三次元点群データの種類は、生成データ、計測データの識別をするための属性であり、コードリスト（PointCloudSpecAttribute_class.xml）から選択する。
+*	uro:functionには、三次元点群データの計測方法を記述する。
+**	uro:classが計測データの場合に記述することができ、コードリスト（PointCloudSpecAttribute_function.xml）から選択する。
+*	uro:srcScaleには、原典の三次元点群データの地図情報レベルを記述する。
+*	uro:srcHorizontalAccuracyには、原典の三次元点群データの水平精度を記述する。単位はｍとする。
+*	uro:srcVerticalAccuracyには、原典の三次元点群データの垂直精度を記述する。単位はｍとする。
+*	uro:srcRequiredPointDensityには、原典の三次元点群データの要求点密度を記述する。単位は点/m2とする。
+**	要求点密度とは、作成時に満たすべき点密度を指し、原典の三次元点群データの作成時
+*	uro:srcFilteringCriteriaには、原典の三次元点群データのフィルタリングの状況を記述する。
+**	フィルタリングした項目をコードリスト（PointCloudSpecAttribute_srcFilteringCriteria.xml）から複数選択する。
+*	uro:srcGridIntervalには、原典の三次元点群データの格子間隔を記述する。単位はm又はdegとする。
+**	原典の三次元点群データがグリッドデータの場合にその格子間隔を記述する。
+*	uro:isIntensityには、三次元点群データにIntensity（反射強度）の情報が含まれているか否かを記述する。
+**	三次元点群データを外部参照する場合に記述することができる。
+*	uro:isRgbには、三次元点群データにRGB（色情報）の情報が含まれているか否かを記述する。
+**	三次元点群データを外部参照する場合に記述することができる。
+*	uro:isNirには、三次元点群データにNIR（近赤外線）の情報が含まれているか否かを記述する。
+**	三次元点群データを外部参照する場合に記述することができる。
+*	uro:isReturnInfoには、三次元点群データにReturnNumber及びNumber of Returns（反射番号、総反射回数）の情報が含まれているか否かを記述する。
+**	三次元点群データを外部参照する場合に記述することができる。
+*	uro:isStandardClassificationには、三次元点群データがASPRS（American Society for Photogrammetry and Remote Sensing）の定義したクラス分類に適合している否かを記述する。
+**	三次元点群データを外部参照する場合に記述することができる。
+*	uro:customClassificationTypeには、三次元点群データを独自にクラス分類している場合に使用しているクラス分類コードをコードリスト（PointCloudSpecAttribute_customClassificationType.xml）として作成し選択する。
+**	三次元点群データを外部参照する場合に記述することができる。
+*	uro:pointCloudAssociationMethodには、三次元点群データと都市オブジェクトの対応づけの方法をコードリスト（PointCloudSpecAttribute_pointCloudAssociationMethod.xml）から選択する。
+**	対応づけの方法は、V.3.3の三次元点群データの抽出手法のメリットデメリットを確認し、ユースケースに適する手法を選択する。
+*	uro:pointSubsamplingInfoには、三次元点群データの間引きの情報を記述する。
+**	コードリスト（PointCloudSpecAttribute_pointSubsamplingInfo.xml）から選択する。
 
 [[tocV_03_03]]
 ==== ポイントクラウドモジュール利用上の留意事項
 
-説明文が入ります
+*	CityGML3.0では、PointCloudモジュールには、三次元点群を記述する方法として、インライン記述、外部ファイル参照の2種類の方法が定義されている。インライン記述では、CityGMLファイル内に直接座標値を記載するため、大規模な三次元点群の場合はファイルの肥大化が起こる。そのため、無制限に大きなCityGMLファイルが作成されないように、標準製品仕様書の7.2.1　(2)ファイルサイズとファイル分割にて、インライン記述の場合はファイル分割が禁止されている。ファイル容量は1GB以内での運用とする。また、インライン記述では、RGB（色情報）やNIR（近赤外線情報）等を持たせられないため、それらを含むデータを連携したい場合は外部ファイル参照を利用する必要がある。
+*	三次元点群データは都市オブジェクトと対応づける必要があるため、対応づける都市オブジェクトごとに三次元点群データを抽出する必要がある。抽出の手法として主に下記の手法がある。手法毎のメリットデメリット（表V- 1）を確認した上で適切な抽出手法を選択する。
+**	都市オブジェクトの幾何形状の正射影による抽出
+***	都市オブジェクトの幾何形状の正射影の範囲に含まれる点群のみを抽出する。
 
+[[fig-V-5]]
+.都市オブジェクトの幾何形状の正射影による抽出
+image::images/525.webp.png[]
+
+**	都市オブジェクトの幾何形状の正射影をバッファした範囲による抽出
+***	都市オブジェクトの幾何形状の正射影をバッファした範囲に含まれる点群のみを抽出する。
+
+[[fig-V-6]]
+.都市オブジェクトの幾何形状の正射影をバッファした範囲による抽出
+image::images/526.webp.png[]
+
+**	都市オブジェクトの立体的な幾何形状による抽出
+***	都市オブジェクトの立体的な幾何形状の範囲に含まれる点群のみを抽出する。
+
+[[fig-V-7]]
+.都市オブジェクトの立体的な幾何形状による抽出
+image::images/527.webp.png[]
+
+**	都市オブジェクトの立体的な幾何形状による抽出
+***	都市オブジェクトの立体的な幾何形状の範囲に含まれる点群のみを抽出する。
+
+[[fig-V-8]]
+.都市オブジェクトの立体的な幾何形状による抽出
+image::images/528.webp.png[]
+
+**	点群分類かつ都市オブジェクトの幾何形状の正射影をバッファした範囲による抽出
+***	都市オブジェクトの幾何形状の正射影をバッファした範囲に含まれる都市オブジェクトと同一分類の点群のみを抽出する。
+
+[[fig-V-9]]
+.点群分類かつ都市オブジェクトの幾何形状の正射影をバッファした範囲による抽出
+image::images/529.webp.png[]
+
+**	手動による抽出
+***	都市オブジェクトと対応する点群を目視で特定し手動で抽出する。
+
+各手法のメリットデメリットについて、<<tab-V-1>>に示す。
+
+[[tab-V-1]]
+[cols="a,a,a"]
+.点群抽出手法のメリットデメリット
+|===
+
+| 手法 | メリット | デメリット
+|都市オブジェクトの幾何形状の正射影による抽出 
+| 水平方向の点群の過剰抽出が小 +
+整備コストが小
+ | 水平方向の点群の抽出漏れが大
+
+| 都市オブジェクトの幾何形状の正射影をバッファした範囲による抽出 
+| 水平方向の点群の抽出漏れが小 
+| 水平方向の点群の過剰抽出が大
+
+| 都市オブジェクトの立体的な幾何形状による抽出 
+| 水平・垂直方向の点群の過剰抽出が小 
+| 立体的な都市オブジェクトでしか使用できない +
+水平方向の点群の抽出漏れが大
+
+| 都市オブジェクトの立体的な幾何形状をバッファした立体による抽出 
+| 水平・垂直方向の点群の抽出漏れが小 
+| 立体的な都市オブジェクトでしか使用できない +
+使用する幾何形状のLODによって精度が異なる +
+水平方向の点群の過剰抽出が大
+
+| 都市オブジェクトと同一分類の点群かつ都市オブジェクトの立体的な幾何形状をバッファした立体による抽出 
+|  水平・垂直方向の点群の過剰抽出が小（同じ地物の都市オブジェクトが隣接している場合は過剰抽出の可能性あり） +
+水平・垂直方向の点群の抽出漏れが小
+| 点群分類作業が必要
+
+| 手動による抽出 | 点群の過剰抽出、抽出漏れが最小 | 整備コストが大
+
+|===
