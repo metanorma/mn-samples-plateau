@@ -45,35 +45,35 @@ jobs:
           agree-to-terms: true
           destination: artifact
 
-  # build-collection:
-  #   runs-on: ubuntu-latest
-  #   container:
-  #     image: metanorma/metanorma:latest
-  #   steps:
-  #     - name: Checkout
-  #       uses: actions/checkout@v4
-  #       with:
-  #         submodules: true
+  build-collection:
+    runs-on: ubuntu-latest
+    container:
+      image: metanorma/metanorma:latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
 
-  #     - name: Setup Flavor
-  #       uses: actions-mn/setup-flavors@v1
-  #       with:
-  #         extra-flavors: plateau
-  #         github-pakages-token: ${{ secrets.METANORMA_CI_PAT_TOKEN }}
-  #         use-bundler: true
+      - name: Setup Flavor
+        uses: actions-mn/setup-flavors@v1
+        with:
+          extra-flavors: plateau
+          github-pakages-token: ${{ secrets.METANORMA_CI_PAT_TOKEN }}
+          use-bundler: true
 
-  #     - name: Print Metanorma version
-  #       run: metanorma --version
+      - name: Print Metanorma version
+        run: metanorma --version
 
-  #     - name: Generate Metanorma collection
-  #       run: metanorma collection collection.yml --agree-to-terms
+      - name: Generate Metanorma collection
+        run: metanorma collection collection.yml --agree-to-terms
 
-  #     - name: Upload collection artifacts
-  #       uses: actions/upload-artifact@v4
-  #       with:
-  #         name: collection
-  #         path: |
-  #           index.html
-  #           *_index.html
-  #           document*.html
-  #           collection.presentation.xml
+      - name: Upload collection artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: collection
+          path: |
+            index.html
+            *_index.html
+            document*.html
+            collection.presentation.xml
