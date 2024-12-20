@@ -16,8 +16,9 @@ PointCloudモジュールは、地物と三次元点群データを対応させ�
 
 PointCloudパッケージは、都市オブジェクトと対応する三次元点群データの情報を地物型として定義する。uro:PointCloudは都市オブジェクトと対応する三次元点群データを指定する地物型であり、uro:PointCloudSpecAttributeは、対応付ける三次元点群データの詳細を記述するデータ型である。
 
-//[[fig-4-23-1]]
-//image::images/ .svg[]
+[[fig-4-23-1]]
+image::images/EAID_71F9216B_E7A7_4083_B08E_6C71B57F3A1F.png[]
+
 
 [[toc4_23_03]]
 ==== ポイントクラウドモデルの応用スキーマ文書
@@ -25,10 +26,21 @@ PointCloudパッケージは、都市オブジェクトと対応する三次元�
 ===== UrbanObject（i-UR）
 
 ====== uro:AbstractPointCloud
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="AbstractPointCloud",template="../../sources/liquid_templates/_klass_table.liquid"]
+
 ====== uro:PointCloud
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="PointCloud",template="../../sources/liquid_templates/_klass_table.liquid"]
+
 ====== uro:PointCloudSpecAttribute
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="PointCloudSpecAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
+
 
 [[toc4_23_04]]
 ==== ポイントクラウドモデルで使用するコードリストと列挙型
 
 ===== UrbanObject（i-UR）
+
+// lutaml_gml_dictionary::iur/codelists/3.1/000.xml[template="gml_dict_template.liquid",context=dict]
