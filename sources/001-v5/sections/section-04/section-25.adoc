@@ -8,13 +8,17 @@
 
 公共測量標準図式に従った地図表現は、LOD0とする。
 
+
 [[toc4_25_02]]
 ==== 公共測量標準図式の応用スキーマクラス図
 
 [[toc4_25_02_01]]
 ===== Urban Object（i-UR）
 
-image::images/419.svg[]
+image::images/EAID_E9CDAD85_ECF1_43de_819F_30A0D01785E6.png[]
+
+// image::images/419.svg[]
+
 
 [[toc4_25_03]]
 ==== 公共測量標準図式の応用スキーマ文書
@@ -24,211 +28,16 @@ image::images/419.svg[]
 
 ====== uro:DmGeometricAttribute
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義
-2+| 都市計画基本図として、地物の形状を公共測量標準図式に従って表現するためのデータ型。 +
-uro:DmGeometrictAttributeは、地物の実体を表す図形だけではなく、地物を図式に従って表現する際に必要な情報（例：建物記号、建物の棟割線、記号の方向、指示点）を含む。 +
-+
-地物（ステレオタイプがFeatureTypeとなるクラス）は、関連役割uro:dmAttributeにより、このuro:DmGeometrictAttributeを保持できる。
-
-h| 上位の型 2+| uro:DmAttribute
-h| ステレオタイプ 2+| << DataType >>
-3+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:dmCode
-| gml:CodeType [1]
-| DMの図式分類コード。レイヤ番号（2桁）とデータ項目（2桁）からなる4桁の半角数字の列。 +
-コードリスト（Common_dmCode.xml）より選択する。
-
-| uro:meshCode | gml:CodeType [0..1] | 数値地形図データが含まれる国土基本図の図郭識別番号。
-3+h| 自身に定義された属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:geometryType
-| gml:CodeType [1]
-| レコードタイプ。 +
-コードリスト（Common_geometryType.xml）より選択する。
-
-| uro:mapLevel
-| gml:CodeType [1]
-| 地図情報レベル。 +
-コードリスト（Common_MapLevel.xml）より選択する。都市計画基本図の場合は、2500となる。
-
-| uro:shapeType
-| gml:CodeType [1]
-| 図形区分。 +
-コードリスト（Common_shapeType.xml）より選択する。
-
-| uro:visibility
-| xs:boolean [0..1]
-| 可視性。上空から見た場合に、他の地物に遮蔽されておらず、上空から見えている（地図上に表現される）ことを示すフラグ。仮想的に設定された付属図形で描画対象としない場合にもこのフラグを0にする。 +
-1 ：他の地物に遮蔽されていない。（省略時値） +
-0：他の地物に遮蔽されている。
-
-| uro:is3d
-| xs:boolean [0..1]
-| この図形の座標値が３次元データであることを示すフラグ。 +
-1：この図形の座標値は3次元データである。 +
-0：この図形の座標値は2次元データである。（省略時値） +
-uro:is3d=0の場合、z値に示された”0”は意味を持たない。
-
-| uro:isInstallation
-| xs:boolean [0..1]
-| この図形が地物の付属図形であることを示すフラグ。 +
-付属図形とは、地物の本質的な実体ではないが、描画処理などで地物を図形表現する際に利用可能な図形である。 +
-1 ：この図形は付属図形である。 +
-0：この図形は付属図形ではない。（省略時値） +
-uro:isInstallationの値が1の場合、uro:dmShapeTypeの値は、0以外となる。
-
-| uro:isEdited
-| xs:boolean [0..1]
-| 個別の編集処理がおこなわれたことを示すフラグ。 +
-1：編集処理が行われた。 +
-0：編集処理が行われていない。（省略時値）
-
-| uro:isSupplementarySymbol
-| xs:boolean [0..1]
-| この図形が地物の補助記号であることを示すフラグ。 +
-補助記号とは、公共測量標準図式において自動発生が可能とされる図形を指す。自動発生が不可能な場合で図形を作成する必要がある場合にのみ使用する。 +
-1：この図形は補助記号である。 +
-0：この図形は補助記号ではない。（省略時値）
-
-| uro:angle
-| xs:double [0..1]
-| 図形の角度。真北を0とし、時計まわりを正とする。 +
-uro:dmGeometryTypeの値がE7（方向）の場合に多重度は任意となっているが、必須とする。
-
-| uro:elevation
-| gml:LengthType [0..1]
-| この図形の標高。単位はmとする。 +
-uro:dmCodeのレイヤ番号が73の場合は、必須とする。
-
-3+h| 継承する関連役割
-h| 関連役割名 h| 属性の型及び多重度 h| 定義
-| uro:dmElement
-| uro:DmElement [0..1]
-| 数値地形図データファイル仕様に基づく要素レコードの情報。 +
-数値地形図データファイルの要素レコード情報を保持したい場合に必須とする。
-
-3+h| 自身に定義された関連役割
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:lod0Geometry
-| gml:_Geometry [0..1]
-| 地物の形状を示す幾何オブジェクト。 +
-参照先の幾何オブジェクトの型は、uro:dmCodeの値に応じて、gml:MultiPoint、gml:MultiCurve又はgml:MultiSurfaceのいずれかとする。 +
-いずれの幾何オブジェクトの型となるかは、数値地形図の取得方法に従う。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="DmGeometricAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== uro:DmElement
 
-[cols="a,a,a"]
-|===
-| 型の定義 2+| 数値地形図データの要素レコードの情報を保持するためのデータ型
-
-h| 上位の型 2+| ―
-h| ステレオタイプ 2+| << DataType >>
-3+h| 自身に定義された属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:locationType
-| gml:CodeType [0..1]
-| 地域分類。文字列とする。 +
-必要に応じて利用者が任意に定義するコード。
-
-| uro:infoType
-| gml:CodeType [0..1]
-| 情報分類。文字列とする。 +
-必要に応じて利用者が任意に定義するコード。
-
-| uro:elementKey | xs:string [0..1] | 要素識別番号。
-| uro:hierarchyLevel | xs:string [0..1] | 階層レベル。
-| uro:dataType
-| gml:CodeType [0..1]
-| 実データ区分。 +
-コードリスト（DmElement_dataType.xml）から選択する。
-
-| uro:annotationType
-| gml:CodeType [0..1]
-| 注記区分。 +
-コードリスト（DmElement_annotationType.xml）から選択する。
-
-| uro:precisionType
-| gml:CodeType [0..1]
-| 精度区分。 +
-コードリスト（DmElement_precisionType.xml）から選択する。
-
-| uro:dislocationType
-| gml:CodeType [0..1]
-| 転位区分。 +
-コードリスト（DmElement_dislocationType.xml）から選択する。
-
-| uro:breakType
-| gml:CodeType [0..1]
-| 間断区分。 +
-コードリスト（DmElement_breakType.xml）から選択する。
-
-| uro:attributeValue | xs:string [0..1] | 属性数値。
-| uro:attributeType | gml:CodeType [0..1] | 属性区分。利用者が独自に設ける区分。文字列とする。
-| uro:attributeValueType | xs:string [0..1] | 属性データ書式。属性レコードを持つ場合の、そのレコードに記述されている内容の書式をFortran形式で記述する。
-| uro:creationDate | xs:gYearMonth [0..1] | 取得年月。
-| uro:terminationDate | xs:gYearMonth [0..1] | 更新年月。
-| uro:freeSpace | xs:string [0..1] | 空き領域。数値地形図データファイル形式で空き領域にデータが設定されている場合には，この属性を用いて保持する。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="DmElement",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== uro:DmAnnotation
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義
-| 都市計画基本図として、注記を表現するために必要な情報のデータ型。 +
-+
-地物（ステレオタイプがFeatureType）は、関連役割uro:dmAttributeにより、uro:DmAnnotationを保持できる。このとき、uro:DmAnnotationは地物に付属する情報となる。
-|
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="DmAnnotation",template="../../sources/liquid_templates/_klass_table.liquid"]
 
-h| 上位の型 | uro:DmAttribute |
-h| ステレオタイプ | << DataType >> |
-2+h| 継承する属性 |
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:dmCode
-| gml:CodeType [1]
-| 公共測量標準図式の図式分類コード。レイヤ番号（2桁）とデータ項目（2桁）からなる4桁の半角数字の列。 +
-コードリスト（Common_dmCode.xml）より選択する。
-
-| uro:meshCode | gml:CodeType [0..1] | 数値地形図データファイル仕様にもとづいて設定される図郭識別番号。
-2+h| 自身に定義された属性 |
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:geometryType
-| gml:CodeType [1]
-| レコードタイプ。 +
-コードリスト（Common_geometryType.xml）より選択する。 +
-注記の場合はE7となる。
-
-| uro:shapeType
-| gml:CodeType [1]
-| 図形区分。 +
-コードリスト（Common_shapeType.xml）より選択する。 +
-注記の場合は0となる。
-
-| uro:label | xs:string [1] | 注記の文字列。
-| uro:isVertical
-| xs:boolean [1]
-| 縦書きか否か。 +
-1：縦書き +
-0：横書き
-
-| uro:size | xs:integer [1] | 字の大きさ。単位は10分の1ミリメートル。
-| uro:orientation | xs:integer [1] | 注記の表示方向を示す角度。単位は度、範囲は縦書きの場合は-135°～-45°、横書きの場合は-45°～+45°とする。
-| uro:linewidth | xs:integer [1] | 注記の線の太さ。線号の号数を記述する。
-| uro:spacing | xs:integer [1] | 字の間隔。単位は10分の1ミリメートル。全角・半角が混在する場合には、全角を基準とする。
-2+h| 自身に定義された関連役割 |
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:lod0AnchorPoint
-| gml:_Geometry [0..1]
-| 注記を配置する位置。 +
-点（gml:Point）を使用して記述する。
-
-|===
 
 [[toc4_25_04]]
 ==== 公共測量標準図式で使用するコードリストと列挙型

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30.24cm" height="22.99cm" viewBox="0 0 1143 869">
+<title></title>
+<desc>Created with Enterprise Architect (Build: 1628) 2</desc>
+
+<g style="fill:#FFFFFF;fill-opacity:1.00;">
+	 <rect x="0" y="0" width="1143" height="869" shape-rendering="auto"/>
+</g><g style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 6 6 L 6 863 L 1137 863 L 1137 6 L 6 6" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#FFFFFF;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+  <polygon points="6 28 60 28 73 14 73 6 6 6 6 28" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="11.00" y="20.00" textLength="47" style="font-family:メイリオ; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 11.00 20.00)">class 区域</text>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFCCFF;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="349" y="700" width="378" height="110" rx="0.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="507.00" y="717.00" textLength="61" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 507.00 717.00)">«DataType»</text>
+	<text x="474.00" y="732.00" textLength="128" style="font-family:メイリオ; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 474.00 732.00)">urf::UrbanParkAttribute</text>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 349 741 L 726 741" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="354.00" y="756.00" textLength="11" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 354.00 756.00)">+ </text>
+	<text x="377.00" y="756.00" textLength="130" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 377.00 756.00)">parkCode: gml::CodeType</text>
+	<text x="354.00" y="771.00" textLength="11" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 354.00 771.00)">+ </text>
+	<text x="377.00" y="771.00" textLength="97" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 377.00 771.00)">startFrom: xs::date</text>
+	<text x="354.00" y="786.00" textLength="11" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 354.00 786.00)">+ </text>
+	<text x="377.00" y="786.00" textLength="295" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 377.00 786.00)">breakdownOfNominalArea: BreakdownOfNominalArea [0..*]</text>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFCCFF;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="835" y="706" width="258" height="97" rx="0.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="933.00" y="723.00" textLength="61" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 933.00 723.00)">«DataType»</text>
+	<text x="883.00" y="738.00" textLength="162" style="font-family:メイリオ; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 883.00 738.00)">urf::BreakdownOfNominalArea</text>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
+  <path d="M 835 747 L 1092 747" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="840.00" y="762.00" textLength="11" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 840.00 762.00)">+ </text>
+	<text x="863.00" y="762.00" textLength="108" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 863.00 762.00)">breakdown: xs::string</text>
+	<text x="840.00" y="777.00" textLength="11" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 840.00 777.00)">+ </text>
+	<text x="863.00" y="777.00" textLength="193" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 863.00 777.00)">areaInSquareMeter: gml::MeasureType</text>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFCCFF;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+ <rect x="376" y="52" width="343" height="445" rx="0.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="505.00" y="72.00" textLength="85" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 505.00 72.00)">«FeatureType»</text>
+	<text x="488.00" y="89.00" textLength="118" style="font-family:Yu Gothic UI; font-weight:700; font-style:italic; font-size:13px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 488.00 89.00)">urf::_UrbanFunction</text>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
+  <path d="M 376 97 L 718 97" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="381.00" y="115.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 381.00 115.00)">+ </text>
+	<text x="403.00" y="115.00" textLength="154" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 403.00 115.00)">class: gml::CodeType [0..1]</text>
+	<text x="381.00" y="132.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 381.00 132.00)">+ </text>
+	<text x="403.00" y="132.00" textLength="170" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 403.00 132.00)">function: gml::CodeType [0..*]</text>
+	<text x="381.00" y="149.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 381.00 149.00)">+ </text>
+	<text x="403.00" y="149.00" textLength="159" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 403.00 149.00)">usage: gml::CodeType [0..*]</text>
+	<text x="381.00" y="166.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 381.00 166.00)">+ </text>
+	<text x="403.00" y="166.00" textLength="140" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 403.00 166.00)">validFrom: xs::date [0..1]</text>
+	<text x="381.00" y="183.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 381.00 183.00)">+ </text>
+	<text x="403.00" y="183.00" textLength="211" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 403.00 183.00)">validFromType: gml::CodeType [0..1]</text>
+	<text x="381.00" y="200.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 381.00 200.00)">+ </text>
+	<text x="403.00" y="200.00" textLength="208" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 403.00 200.00)">enactmentFiscalYear: xs::gYear [0..1]</text>
+	<text x="381.00" y="217.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 381.00 217.00)">+ </text>
+	<text x="403.00" y="217.00" textLength="125" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 403.00 217.00)">validTo: xs::date [0..1]</text>
+	<text x="381.00" y="234.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 381.00 234.00)">+ </text>
+	<text x="403.00" y="234.00" textLength="196" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 403.00 234.00)">validToType: gml::CodeType [0..1]</text>
+	<text x="381.00" y="251.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 381.00 251.00)">+ </text>
+	<text x="403.00" y="251.00" textLength="206" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 403.00 251.00)">expirationFiscalYear: xs::gYear [0..1]</text>
+	<text x="381.00" y="268.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 381.00 268.00)">+ </text>
+	<text x="403.00" y="268.00" textLength="168" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 403.00 268.00)">legalGrounds: xs::string [0..1]</text>
+	<text x="381.00" y="285.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 381.00 285.00)">+ </text>
+	<text x="403.00" y="285.00" textLength="146" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 403.00 285.00)">custodian: xs::string [0..1]</text>
+	<text x="381.00" y="302.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 381.00 302.00)">+ </text>
+	<text x="403.00" y="302.00" textLength="202" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 403.00 302.00)">notificationNumber: xs::string [0..1]</text>
+	<text x="381.00" y="319.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 381.00 319.00)">+ </text>
+	<text x="403.00" y="319.00" textLength="229" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 403.00 319.00)">finalNotificationNumber: xs::string [0..1]</text>
+	<text x="381.00" y="336.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 381.00 336.00)">+ </text>
+	<text x="403.00" y="336.00" textLength="201" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 403.00 336.00)">finalNotificationDate: xs::date [0..1]</text>
+	<text x="381.00" y="353.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 381.00 353.00)">+ </text>
+	<text x="403.00" y="353.00" textLength="212" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 403.00 353.00)">urbanPlanType: gml::CodeType [0..1]</text>
+	<text x="381.00" y="370.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 381.00 370.00)">+ </text>
+	<text x="403.00" y="370.00" textLength="255" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 403.00 370.00)">areaClassificationType: gml::CodeType [0..1]</text>
+	<text x="381.00" y="387.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 381.00 387.00)">+ </text>
+	<text x="403.00" y="387.00" textLength="219" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 403.00 387.00)">nominalArea: gml::MeasureType [0..1]</text>
+	<text x="381.00" y="404.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 381.00 404.00)">+ </text>
+	<text x="403.00" y="404.00" textLength="186" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 403.00 404.00)">prefecture: gml::CodeType [0..1]</text>
+	<text x="381.00" y="421.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 381.00 421.00)">+ </text>
+	<text x="403.00" y="421.00" textLength="145" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 403.00 421.00)">city: gml::CodeType [0..1]</text>
+	<text x="381.00" y="438.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 381.00 438.00)">+ </text>
+	<text x="403.00" y="438.00" textLength="152" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 403.00 438.00)">reference: xs::anyURI [0..1]</text>
+	<text x="381.00" y="455.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 381.00 455.00)">+ </text>
+	<text x="403.00" y="455.00" textLength="200" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 403.00 455.00)">reason: gml:StringOrRefType [0..1]</text>
+	<text x="381.00" y="472.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 381.00 472.00)">+ </text>
+	<text x="403.00" y="472.00" textLength="186" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 403.00 472.00)">note: gml:StringOrRefType [0..1]</text>
+	<text x="381.00" y="489.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 381.00 489.00)">+ </text>
+	<text x="403.00" y="489.00" textLength="154" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 403.00 489.00)">surveyYear: xs::gYear [0..1]</text>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#CCFFCC;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+ <rect x="848" y="240" width="190" height="80" rx="0.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="922.00" y="260.00" textLength="42" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 922.00 260.00)">«Type»</text>
+	<text x="891.00" y="277.00" textLength="104" style="font-family:Yu Gothic UI; font-weight:700; font-style:normal; font-size:13px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 891.00 277.00)">gml::MultiSurface</text>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFCCFF;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+ <rect x="456" y="564" width="164" height="80" rx="0.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="498.00" y="582.00" textLength="80" style="font-family:Calibri; font-weight:400; font-style:normal; font-size:13px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 498.00 582.00)">«FeatureType»</text>
+	<text x="512.00" y="597.00" textLength="51" style="font-family:Calibri; font-weight:700; font-style:normal; font-size:13px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 512.00 597.00)">urf::Zone</text>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
+  <path d="M 456 605 L 619 605" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="461.00" y="621.00" textLength="9" style="font-family:Calibri; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 461.00 621.00)">+ </text>
+	<text x="482.00" y="621.00" textLength="133" style="font-family:Calibri; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 482.00 621.00)">location: xs::string [0..1]</text>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFCCFF;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+ <rect x="830" y="543" width="202" height="139" rx="0.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="900.00" y="560.00" textLength="61" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 900.00 560.00)">«DataType»</text>
+	<text x="893.00" y="575.00" textLength="75" style="font-family:メイリオ; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 893.00 575.00)">urf::Boundary</text>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
+  <path d="M 830 584 L 1031 584" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="835.00" y="599.00" textLength="11" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 835.00 599.00)">+ </text>
+	<text x="858.00" y="599.00" textLength="136" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 858.00 599.00)">class: gml::CodeType [0..1]</text>
+	<text x="835.00" y="614.00" textLength="11" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 835.00 614.00)">+ </text>
+	<text x="858.00" y="614.00" textLength="151" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 858.00 614.00)">function: gml::CodeType [0..*]</text>
+	<text x="835.00" y="629.00" textLength="11" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 835.00 629.00)">+ </text>
+	<text x="858.00" y="629.00" textLength="141" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 858.00 629.00)">usage: gml::CodeType [0..*]</text>
+	<text x="835.00" y="644.00" textLength="11" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 835.00 644.00)">+ </text>
+	<text x="858.00" y="644.00" textLength="148" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 858.00 644.00)">offset: gml::LengthType [0..1]</text>
+	<text x="835.00" y="659.00" textLength="11" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 835.00 659.00)">+ </text>
+	<text x="858.00" y="659.00" textLength="154" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 858.00 659.00)">offsetDirection: xs::string [0..1]</text>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#CCFFCC;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+ <rect x="853" y="373" width="182" height="80" rx="0.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="925.00" y="390.00" textLength="38" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 925.00 390.00)">«Type»</text>
+	<text x="901.00" y="405.00" textLength="85" style="font-family:メイリオ; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 901.00 405.00)">gml::MultiCurve</text>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFCCFF;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+ <rect x="32" y="436" width="300" height="292" rx="0.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="151.00" y="453.00" textLength="61" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 151.00 453.00)">«DataType»</text>
+	<text x="115.00" y="468.00" textLength="134" style="font-family:メイリオ; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 115.00 468.00)">uro::DataQualityAttribute</text>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
+  <path d="M 32 477 L 331 477" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="37.00" y="492.00" textLength="11" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 37.00 492.00)">+ </text>
+	<text x="60.00" y="492.00" textLength="222" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 60.00 492.00)">geometrySrcDescLod0: gml::CodeType [0..*]</text>
+	<text x="37.00" y="507.00" textLength="11" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 37.00 507.00)">+ </text>
+	<text x="60.00" y="507.00" textLength="222" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 60.00 507.00)">geometrySrcDescLod1: gml::CodeType [1..*]</text>
+	<text x="37.00" y="522.00" textLength="11" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 37.00 522.00)">+ </text>
+	<text x="60.00" y="522.00" textLength="222" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 60.00 522.00)">geometrySrcDescLod2: gml::CodeType [0..*]</text>
+	<text x="37.00" y="537.00" textLength="11" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 37.00 537.00)">+ </text>
+	<text x="60.00" y="537.00" textLength="222" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 60.00 537.00)">geometrySrcDescLod3: gml::CodeType [0..*]</text>
+	<text x="37.00" y="552.00" textLength="11" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 37.00 552.00)">+ </text>
+	<text x="60.00" y="552.00" textLength="222" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 60.00 552.00)">geometrySrcDescLod4: gml::CodeType [0..*]</text>
+	<text x="37.00" y="567.00" textLength="11" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 37.00 567.00)">+ </text>
+	<text x="60.00" y="567.00" textLength="194" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 60.00 567.00)">thematicSrcDesc: gml::CodeType [0..*]</text>
+	<text x="37.00" y="582.00" textLength="11" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 37.00 582.00)">+ </text>
+	<text x="60.00" y="582.00" textLength="231" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 60.00 582.00)">appearanceSrcDescLod0: gml::CodeType [0..*]</text>
+	<text x="37.00" y="597.00" textLength="11" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 37.00 597.00)">+ </text>
+	<text x="60.00" y="597.00" textLength="231" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 60.00 597.00)">appearanceSrcDescLod1: gml::CodeType [0..*]</text>
+	<text x="37.00" y="612.00" textLength="11" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 37.00 612.00)">+ </text>
+	<text x="60.00" y="612.00" textLength="231" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 60.00 612.00)">appearanceSrcDescLod2: gml::CodeType [0..*]</text>
+	<text x="37.00" y="627.00" textLength="11" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 37.00 627.00)">+ </text>
+	<text x="60.00" y="627.00" textLength="231" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 60.00 627.00)">appearanceSrcDescLod3: gml::CodeType [0..*]</text>
+	<text x="37.00" y="642.00" textLength="11" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 37.00 642.00)">+ </text>
+	<text x="60.00" y="642.00" textLength="231" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 60.00 642.00)">appearanceSrcDescLod4: gml::CodeType [0..*]</text>
+	<text x="37.00" y="657.00" textLength="11" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 37.00 657.00)">+ </text>
+	<text x="60.00" y="657.00" textLength="151" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 60.00 657.00)">lodType: gml::CodeType [0..*]</text>
+	<text x="37.00" y="672.00" textLength="11" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 37.00 672.00)">+ </text>
+	<text x="60.00" y="672.00" textLength="189" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 60.00 672.00)">lod1HeightType: gml::CodeType [0..1]</text>
+	<text x="37.00" y="687.00" textLength="11" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 37.00 687.00)">+ </text>
+	<text x="60.00" y="687.00" textLength="180" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 60.00 687.00)">tranDataAcquisition: xs::string [0..1]</text>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFCCFF;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
+ <rect x="69" y="40" width="278" height="101" rx="0.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="173.00" y="60.00" textLength="69" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 173.00 60.00)">«DataType»</text>
+	<text x="128.00" y="77.00" textLength="160" style="font-family:Yu Gothic UI; font-weight:700; font-style:normal; font-size:13px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 128.00 77.00)">uro::KeyValuePairAttribute</text>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
+  <path d="M 69 85 L 346 85" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="74.00" y="103.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 74.00 103.00)">+ </text>
+	<text x="96.00" y="103.00" textLength="113" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 96.00 103.00)">key: gml::CodeType</text>
+	<text x="74.00" y="120.00" textLength="13" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 74.00 120.00)">+ </text>
+	<text x="96.00" y="120.00" textLength="155" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:13px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 96.00 120.00)">codeValue: gml::CodeType</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#F0F0F0;fill-opacity:1.00; stroke:#D7D7D7; stroke-opacity:1.00">
+ <rect x="896" y="46" width="173" height="95" rx="3.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#A0FFC0;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="906" y="76" width="17" height="17" rx="0.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#003060;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="928.00" y="88.00" textLength="111" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#003060;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 928.00 88.00)">GMLで定義されたクラス</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFCC;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="906" y="95" width="17" height="17" rx="0.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#003060;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="928.00" y="107.00" textLength="131" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#003060;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 928.00 107.00)">CityGMLで定義されたクラス</text>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFCCFF;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
+ <rect x="906" y="114" width="17" height="17" rx="0.00" shape-rendering="auto"  />
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#003060;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="928.00" y="126.00" textLength="111" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#003060;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 928.00 126.00)">i-URで定義されたクラス</text>
+	<text x="971.00" y="64.00" textLength="22" style="font-family:メイリオ; font-weight:700; font-style:normal; font-size:16px; fill:#003060;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 971.00 64.00)">凡例</text>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+  <path d="M 941 542 L 941 454" shape-rendering="auto"/>
+  <path d="M 947 469 L 941 454 L 935 469" shape-rendering="auto"/>
+  <path d="M 829 598 L 621 598" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#69738C;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+  <polygon points="631 593 621 598 631 603 641 598" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+  <path d="M 814 592 L 829 598 L 814 604" shape-rendering="auto"/>
+  <path d="M 208 141 L 208 274 L 376 274" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#69738C;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+  <polygon points="366 279 376 274 366 269 356 274" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+  <path d="M 202 156 L 208 141 L 214 156" shape-rendering="auto"/>
+  <path d="M 209 435 L 209 274 L 375 274" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#69738C;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+  <polygon points="365 279 375 274 365 269 355 274" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+  <path d="M 215 420 L 209 435 L 203 420" shape-rendering="auto"/>
+  <path d="M 539 563 L 540 498" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+  <polygon points="546 514 534 514 540 498" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+  <path d="M 720 276 L 847 278" shape-rendering="auto"/>
+  <path d="M 832 284 L 847 278 L 832 272" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+  <path d="M 720 288 L 847 288" shape-rendering="auto"/>
+  <path d="M 832 294 L 847 288 L 832 282" shape-rendering="auto"/>
+  <path d="M 538 699 L 538 645" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#69738C;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
+  <polygon points="543 655 538 645 533 655 538 665" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+  <path d="M 544 684 L 538 699 L 532 684" shape-rendering="auto"/>
+</g>
+<g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
+	<text x="78.00" y="157.00" textLength="117" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 78.00 157.00)">+keyValuePairAttribute</text>
+	<text x="216.00" y="157.00" textLength="18" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 216.00 157.00)">0..1</text>
+	<text x="413.00" y="685.00" textLength="102" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 413.00 685.00)">+urbanParkAttribute</text>
+	<text x="549.00" y="685.00" textLength="18" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 549.00 685.00)">0..1</text>
+	<text x="750.00" y="231.00" textLength="89" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 750.00 231.00)">+lod1MultiSurface</text>
+	<text x="786.00" y="307.00" textLength="18" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 786.00 307.00)">0..1</text>
+	<text x="750.00" y="269.00" textLength="89" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 750.00 269.00)">+lod0MultiSurface</text>
+	<text x="822.00" y="294.00" textLength="18" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 822.00 294.00)">0..1</text>
+	<text x="74.00" y="426.00" textLength="110" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 74.00 426.00)">+dataQualityAttribute</text>
+	<text x="231.00" y="423.00" textLength="18" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 231.00 423.00)">0..1</text>
+	<text x="751.00" y="588.00" textLength="54" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 751.00 588.00)">+boundary</text>
+	<text x="804.00" y="614.00" textLength="18" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 804.00 614.00)">0..*</text>
+	<text x="881.00" y="470.00" textLength="47" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 881.00 470.00)">+location</text>
+	<text x="952.00" y="470.00" textLength="18" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 952.00 470.00)">0..1</text>
+</g>
+</svg>

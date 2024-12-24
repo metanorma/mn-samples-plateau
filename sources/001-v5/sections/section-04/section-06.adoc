@@ -908,7 +908,10 @@ tran:Roadの応用スキーマクラス図参照
 [[toc4_06_02_02]]
 ===== Urban Object（i-UR）
 
-image::images/185.svg[]
+image::images/EAID_22C24D4C_4894_480a_B113_0CB034CB59E9.png[]
+
+// image::images/185.svg[]
+
 
 [[toc4_06_03]]
 ==== 交通（広場）モデルの応用スキーマ文書
@@ -918,433 +921,36 @@ image::images/185.svg[]
 
 ====== tran:Square
 
-[cols="1a,1a,2a",options="noheader"]
-|===
-.5+| 型の定義
-2+|
-広場。広場は、都市計画法第11条第1項に示される交通施設のうち、「駅前広場」、「自動車ターミナル」及び「交通広場」について、都市計画で定められた施設（都市計画施設）を指す。
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Square",template="../../sources/liquid_templates/_klass_table.liquid"]
 
-広場は、都市計画決定された区域を地物の単位とすることを基本とするが、区域の中で位置正確度（地図情報レベル）や取得方法が異なる場合は、位置正確度や取得方法が異なる場所で区切る。
-
-tran:Squareは、LOD0ではネットワーク（中心線）又は道路縁及び車道の界線により取得する。 +
-LOD1以上では、面として取得する。 +
-LOD2以上では、tran:Squareの面を、tran:TrafficAreaとtran:AuxiliaryTrafficAreaに細分する。 +
-さらに、LOD3 では、各地物の面に高さを付与する。 +
-以下に、取得例を示す。
-
-2+|
-* LOD0における広場の取得例
-
-image::images/186.webp.png[]
-
-ネットワークで取得する場合は、広場の中心線とする。広場の中心線は、これに接する道路の中心線まで伸ばす。
-
-2+|
-* LOD1における広場の取得例
-
-image::images/187.webp.png[]
-
-広場のLOD1（面）は、都市計画図書の計画図に示された、都市計画の区域とする。
-
-2+|
-* LOD2における広場の取得例
-
-image::images/188.webp.png[]
-
-広場のLOD2は、LOD1（面）をtran:TrafficArea（車道部、車道交差部、歩道部）及びtran:AuxiliaryTrafficArea（島）に区分する。このとき、隣接するの面の境界線は、座標が一致していなければならない。 +
-また、広場の面が道路の面と重なる場合、重なる範囲に存在するtran:TrafficArea（車道、車道交差部、歩道）及びtran:AuxiliaryTrafficArea（島）は、道路の構成要素であり、かつ、広場の構成要素となる。
-
-2+|
-* LOD3における広場の取得例 +
-広場のLOD3は、LOD2と同様に、広場の面をtran:TrafficArea及びtran:AuxiliaryTrafficAreaに区分する。このとき、それぞれの面は高さをもつ。また、LOD2よりもさらに細かい種類にtran:TrafficArea及びtran:AuxiliaryTrafficAreaを分けることができる。「高さの表現」及び「広場内の表現」の組み合わせにより、LOD3.0、LOD3.1、LOD3.2、LOD3.3及び LOD3.4に分かれるが、標準製品仕様は、原則としてLOD3.0とする。 +
-LOD3.0では、広場の高さは車道の高さとし、段の表現は行わない。歩道及び島には、車道の高さを与えるが、歩道及び島の面を構成する境界線上の各点に、これと接する車道の高さを付与する。高さが異なる車道に囲まれた歩道や島の面は、傾きをもった面となる。 +
-
-image::images/189.webp.png[]
-
-LOD2と同様、隣接する道路の境界線と一致していなければならず、広場の区域と道路の区域とが重なる場合は、この範囲に存在するtran:TrafficArea（車道、車道交差部、歩道）及びtran:AuxiliaryTrafficArea（島）を広場と道路が共有しなければならない。
-
-h| 上位の型 2+| tran:TrafficComplex
-h| ステレオタイプ 2+| << FeatureType >>
-3+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| gml:description | gml:StringOrRefType [0..1] | 広場の概要。
-| gml:name | gml:CodeType [0..1] | 広場を識別する名称。文字列とする。
-h| (gml:boundedBy) | gml:Envelope [0..1] | オブジェクトの範囲と空間参照系。
-| core:creationDate | xs:date [0..1] | データが作成された日。運用上必須とする。
-| core:terminationDate | xs:date [0..1] | データが削除された日。
-h| (core:relativeToTerrain) | core:RelativeToTerrainType [0..1] | 地表面との相対的な位置関係。
-h| (core:relativeToWater) | core:RelativeToWaterType [0..1] | 水面との相対的な位置関係。
-| tran:class | gml:CodeType [0..1] | 交通の分類。コードリスト（TransportationComplex_class.xml）より選択する。
-| tran:function | gml:CodeType [0..*] | 広場の区分。コードリスト（Square_function.xml）より選択する。
-h| (tran:usage) | gml:CodeType [0..*] | 広場の利用方法。
-3+h| 継承する関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-h| (gen:stringAttribute) | gen:stringAttribute [0..*] | 文字列型属性。属性を追加したい場合に使用する。
-h| (gen:intAttribute) | gen:intAttribute [0..*] | 整数型属性。属性を追加したい場合に使用する。
-h| (gen:doubleAttribute) | gen:doubleAttribute [0..*] | 実数型属性。属性を追加したい場合に使用する。
-h| (gen:dateAttribute) | gen:dateAttribute [0..*] | 日付型属性。属性を追加したい場合に使用する。
-h| (gen:uriAttribute) | gen:uriAttribute [0..*] | URI型属性。属性を追加したい場合に使用する。
-h| (gen:measureAttribute) | gen:measureAttribute [0..*] | 単位付き数値型属性。属性を追加したい場合に使用する。
-h| (gen:genericAttributeSet) | gen:GenericAttributeSet [0..*] | 汎用属性のセット（集合）。属性を追加したい場合に使用する。
-| tran:trafficArea
-| tran:TrafficArea [0..*]
-| 広場を構成する要素のうち、車両や人が通行可能な領域への参照。 +
-LOD2以上で使用する。
-
-| tran:auxiliaryTrafficArea
-| tran:AuxiliaryTrafficArea [0..*]
-| 広場を構成する要素のうち、交通領域の機能を補助するために設けられた領域への参照。 +
-LOD2以上で使用する。
-
-| tran:lod0Network
-| gml:GeometricComplex [0..*]
-| 広場を表現する線。広場の中心線とする。 +
-広場の中心線は、広場の区域に含まれる道路縁又は庭園路等により示される2本の道路縁線の中心をつないだ線分とする。 +
-広場の中心線は、広場に接続する道路の中心線まで伸ばす。 +
-高さは0とする。
-
-| tran:lod1MultiSurface
-| gml:MultiSurface [0..1]
-| 広場の範囲。 +
-都市計画において指定された区域に一致する。 +
-高さは0とする。
-
-| tran:lod2MultiSurface
-| gml:MultiSurface [0..1]
-| 広場の範囲。tran:lod1MultiSurfaceの形状に一致する。 +
-tran:Squareが参照するtran:TrafficArea及びtran:AuxiliaryTrafficAreaのtran:lod2MultiSurfaceに含まれる、全てのgml:Polygonにより構成する。
-
-| tran:lod3MultiSurface | gml:MultiSurface [0..1] | 広場の範囲。水平投影した形状は、tran:lod1MultiSurface及びtran:lod2MultiSurfaceの形状に一致する。高さは、適用するLOD3の区分に従う。tran:Squareが参照するtran:TrafficArea及びtran:AuxiliaryTrafficAreaのtran:lod3MultiSurfaceに含まれる、全てのgml:Polygonにより構成する。
-| uro:tranKeyValuePairAttribute | uro:KeyValuePairAttribute [0..*] | 属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。
-| uro:tranDataQualityAttribute | uro:DataQualityAttribute [1] | 作成したデータの品質に関する情報。必須とする。
-| uro:tranFacilityTypeAttribute | uro:FacilityTypeAttribute [0..*] | 特定分野における施設の分類情報。
-| uro:tranFacilityIdAttribute | uro:FacilityIdAttribute [0..1] | uro:tranFacilityTypeAttribute.classによって指定された分野における施設の識別情報。
-| urotranFacilityAttribute | uro:FacilityAttribute [0..*] | uro:tranFacilityTypeAttribute.classによって指定された分野における施設管理情報。
-| uro:tranDmAttribute | uro:DmAttribute [0..*] | 公共測量標準図式による図形表現に必要な情報。
-3+h| 自身に定義された関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-| uro:squareUrbanPlanAttribute
-| uro:SquareUrbanPlanAttribute [0..1]
-| 都市計画施設の現況に関する情報。 +
-広場が交通広場の場合は、uro:SquareUrbanPlanAttribute、広場が駅前広場の場合はuro:StationSquareAttribute、広場が自動車ターミナルの場合は、uro:TerminalAttributeを使用して記述する。
-
-|===
 
 [[toc4_06_03_02]]
 ===== Urban Object（i-UR）
 
 ====== uro:KeyValuePairAttribute
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義
-2+| 都市オブジェクトに付与する追加情報。都市オブジェクトが継承する属性及び都市オブジェクトに定義された属性以外にコード型の属性を追加したい場合に使用する。 +
-属性名称と属性の値の対で構成される。コード値以外の属性を追加する場合は、gen:_GenericAttributeを使用すること。
-
-h| 上位の型 2+| ―
-h| ステレオタイプ 2+| << DataType >>
-3+h| 自身に定義された属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:key | gml:CodeType [1] | 拡張する属性の名称。名称は、コードリスト（KeyValuePairAttribute_key.xml）を作成し、選択する。
-| uro:codeValue
-| gml:CodeType [1]
-| 拡張された属性の値。値は名称は、コードリスト（KeyValuePairAttribute_key[%key].xml）を作成し、選択する。 +
-[%key]は、属性uro:keyの値に一致する。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="KeyValuePairAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== uro:DataQualityAttribute
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義 2+| 都市オブジェクトの品質を記述するためのデータ型。
-
-h| 上位の型 2+| ―
-h| ステレオタイプ 2+| << DataType >>
-3+h| 自身に定義された属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:geometrySrcDescLod0
-| gml:CodeType [0..*]
-| LOD0の幾何オブジェクトの作成に使用した原典資料の種類。 +
-コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD0の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、交通（広場）モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
-
-| uro:geometrySrcDescLod1
-| gml:CodeType [1..*]
-| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。 +
-コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。具体的な都市オブジェクトがLOD1の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
-
-| uro:geometrySrcDescLod2
-| gml:CodeType [0..*]
-| LOD2の幾何オブジェクトの作成に使用した原典資料の種類。 +
-コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD2の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、交通（広場）モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
-
-| uro:geometrySrcDescLod3
-| gml:CodeType [0..*]
-| LOD3の幾何オブジェクトの作成に使用した原典資料の種類。 +
-コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択する。拡張製品仕様書でLOD3の幾何オブジェクトが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD3の幾何オブジェクトを含んでいない場合でも、「未作成」を示すコード「999」を選択すること（例えば、交通（広場）モデルについて、一部の範囲のみLOD0の幾何オブジェクトが作成され、対象とする都市オブジェクトにはLOD1の幾何オブジェクトのみが含まれているような場合でも、その都市オブジェクトに関する本属性の値は「999」となる。）。
-
-h| (uro:geometrySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
-| uro:thematicSrcDesc
-| gml:CodeType [0..*]
-| 主題属性の作成に使用した原典資料の種類。 +
-コードリスト（DataQualityAttribute_thematicSrcDesc.xml）より選択する。 +
-主題属性が作成対象となっている場合は必須とする。
-
-| uro:appearanceSrcDescLod0
-| gml:CodeType [0..*]
-| LOD0の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
-コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 +
-拡張製品仕様書でLOD0の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD0の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
-
-| uro:appearanceSrcDescLod1
-| gml:CodeType [0..*]
-| LOD1の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
-コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 +
-拡張製品仕様書LOD1の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD1の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
-
-| uro:appearanceSrcDescLod2
-| gml:CodeType [0..*]
-| LOD2の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
-コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 +
-拡張製品仕様書でLOD2の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD2の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
-
-| uro:appearanceSrcDescLod3
-| gml:CodeType [0..*]
-| LOD3の幾何オブジェクトのアピアランスに使用した原典資料の種類。 +
-コードリスト（DataQualityAttribute_appearanceSrcDesc.xml）より選択する。 +
-拡張製品仕様書でLOD3の幾何オブジェクトのアピアランスが作成対象となっている場合は必須とする。この場合、具体的な都市オブジェクトがLOD3の幾何オブジェクトのアピアランスを含んでいない場合でも、「未作成」を示すコード「999」を選択すること。
-
-h| uro:appearanceSrcDescLod4 | gml:CodeType [0..*] | LOD4の幾何オブジェクトのアピアランスに使用した原典資料の種類。
-| uro:lodType
-| gml:CodeType[0..*]
-| 幾何オブジェクトに適用されたLODの詳細な区分。 +
-コードリスト（Road_lodType.xml）より選択する。 +
-LOD3の幾何オブジェクトを作成する場合は必須とする。
-
-h| (uro:lod1HeightType) | gml:CodeType [0..1] | LOD1の立体図形を作成する際に使用した高さの算出方法。
-h| (uro:tranDataAcquisition) | xs:string [0..1] | 「<<nilim_kiban_dps,道路基盤地図情報（整備促進版）製品仕様書（案）>>」（平成27年5月）に定める「取得レベル(level)」を記述するための属性。
-3+h| 自身に定義された関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-| uro:publicSurveyDataQualityAttribute
-| uro:PublicSurveyDataQualityAttribute [0..1]
-| 使用した公共測量成果の地図情報レベルと種類。 +
-各LODの幾何オブジェクトの作成に使用した原典資料の種類に関する属性（uro:geometrySrcDescLod0等）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）となっている場合は、必須とする。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="DataQualityAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== uro:PublicSurveyDataQualityAttribute
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義 2+| 使用した公共測量成果の地図情報レベルと種類を、LODごとに記述するためのデータ型。
-
-h| 上位の型 2+| ―
-h| ステレオタイプ 2+| << DataType >>
-3+h| 自身に定義された属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:srcScaleLod0
-| gml:CodeType [0..1]
-| LOD0の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
-コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 +
-LOD0の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
-
-コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 +
-「LOD0の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
-
-| uro:srcScaleLod1
-| gml:CodeType [0..1]
-| LOD1の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
-コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 +
-「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。
-
-| uro:srcScaleLod2
-| gml:CodeType [0..1]
-| LOD2の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
-コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 +
-「LOD2の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod2）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
-複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば地図情報レベル2500の公共測量成果と地図情報レベル500の公共測量成果を使用した場合は、地図情報レベル2500となる。
-
-| uro:srcScaleLod3
-| gml:CodeType [0..1]
-| LOD3の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。 +
-コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）より選択する。 +
-「LOD3の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod3）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
-複数の地図情報レベルが混在する場合は、最も低い地図情報レベルを記載する。例えば地図情報レベル2500の公共測量成果と地図情報レベル500の公共測量成果を使用した場合は、地図情報レベル2500となる。
-
-| uro:srcScaleLod4 | gml:CodeType [0..1] | LOD4の幾何オブジェクトの作成に使用した原典資料の地図情報レベル。
-| uro:publicSurveySrcDescLod0
-| gml:CodeType [0..*]
-| LOD0の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
-LOD0の幾何オブジェクトの作成に使用した原典資料の種類に関する属性（uro:geometrySrcDescLod0）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
-複数の種類の原典資料を使用した場合は、それぞれを記述する。
-
-| uro:publicSurveySrcDescLod1
-| gml:CodeType [0..*]
-| LOD1の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
-「LOD1の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod1）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
-複数の種類の原典資料を使用した場合は、それぞれを記述する。
-
-| uro:publicSurveySrcDescLod2
-| gml:CodeType [0..*]
-| LOD2の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
-「LOD2の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod2）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
-複数の種類の原典資料を使用した場合は、それぞれを記述する。
-
-| uro:publicSurveySrcDescLod3
-| gml:CodeType [0..*]
-| LOD3の幾何オブジェクトの作成に使用した原典資料の種類。コードリスト（PublicSurveyDataQualityAttribute_publicSurveySrcDesc.xml）より選択する。 +
-「LOD3の幾何オブジェクトの作成に使用した原典資料の種類についての属性」（uro:geometrySrcDescLod3）のコード値（コードリスト（DataQualityAttribute_geometrySrcDesc.xml）より選択される）が公共測量成果（コード「000」）のみの場合は、必須とする。 +
-複数の種類の原典資料を使用した場合は、それぞれを記述する。
-
-h| (uro:publicSurveySrcDescLod4) | gml:CodeType [0..*] | LOD4の幾何オブジェクトの作成に使用した原典資料の種類。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="PublicSurveyDataQualityAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== uro:SquareUrbanPlanAttribute
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義
-2+| 広場の都市計画に関する情報を定義したデータ型。 +
-交通広場の場合に使用する。
-
-h| 上位の型 2+| ―
-h| ステレオタイプ 2+| << DataType >>
-3+h| 属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:prefecture
-| gml:CodeType [0..1]
-| 広場が位置する都道府県。 +
-JIS X0401に定義される2桁の半角数字。コードリスト（Common_localPublicAuthorities.xml）より選択する。
-
-| uro:city
-| gml:CodeType [0..1]
-| 広場が位置する市区町村。 +
-JIS X0401に定義される2桁の半角数字とJIS X0402に定義される3桁の半角数字とを組み合わせた5桁の半角数字。政令市の場合は、区の市区町村コードとする。コードリスト（Common_localPublicAuthorities.xml）より選択する。
-
-| uro:urbanPlanningAreaName | xs:string [0..1] | 都市計画区域の名称。
-| uro:enforcer | xs:string [0..*] | 施行者名。
-| uro:dateOfDecision | xs:date [0..1] | 都市計画の決定日。
-| uro:dateOfRevision | xs:date [0..*] | 都市計画の変更年月日。
-| uro:areaPlanned
-| gml:MeasureType [0..1]
-| 計画面積。 +
-交通広場の場合は、単位はm2とする。
-
-| uro:areaInService
-| gml:MeasureType [0..1]
-| 供用面積。 +
-交通広場の場合は、単位はm2とする。
-
-| uro:remarks | xs:string [0..1] | 都市施設の摘要。
-| uro:status | gml:CodeType [0..1] | 事業の進捗状況。コードリスト（Common_status.xml）より選択する。
-| uro:areaImproved | gml:MeasureType [0..1] | 改良済（用地が計画のとおり確保されており、供用している）の面積又は延長。交通広場の場合は面積で記述する。単位はm2とする。
-| uro:areaCompleted | gml:MeasureType [0..1] | 概成済（改良済み以外の区間のうち、都市計画施設と同程度の機能をしている）の面積又は延長。交通広場の場合は面積で記述する。単位はm2とする。
-| uro:projectStartDate
-| xs:date [0..1]
-| 事業開始年月日。 +
-事業に着手していないもの、計画決定時に完成しているものは記入しない。
-
-| uro:projectEndDate | xs:date [0..1] | 事業完了年月日。事業が完了していないもの、事業に着手していないもの、計画決定時に完成しているものは記入しない。
-| uro:isCompleted | xs:boolean [0..1] | 計画決定時に完成している場合に1とする。
-| uro:isAuthorized | xs:boolean [0..1] | 認可を受けている場合に1とする。
-| uro:purpose | xs:string [0..1] | 都市計画の変更を行った場合に、その目的を記述する。
-| uro:note | xs:string [0..1] | その他特筆事項。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="SquareUrbanPlanAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== uro:StationSquareAttribute
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義 2+| 駅前広場に関する情報を定義したデータ型。
-
-h| 上位の型 2+| uro: SquareUrbanPlanAttribute
-h| ステレオタイプ 2+| << DataType >>
-3+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:prefecture
-| gml:CodeType [0..1]
-| 広場が位置する都道府県。 +
-JIS X0401に定義される2桁の半角数字。コードリスト（Common_localPublicAuthorities.xml）より選択する。
-
-| uro:city
-| gml:CodeType [0..1]
-| 広場が位置する市区町村。 +
-JIS X0401に定義される2桁の半角数字とJIS X0402に定義される3桁の半角数字とを組み合わせた5桁の半角数字。政令市の場合は、区の市区町村コードとする。コードリスト（Common_localPublicAuthorities.xml）より選択する。
-
-| uro:urbanPlanningAreaName | xs:string [0..1] | 都市計画区域の名称。
-| uro:enforcer | xs:string [0..*] | 施行者名。
-| uro:dateOfDecision | xs:date [0..1] | 都市計画の決定日
-| uro:dateOfRevision | xs:date [0..*] | 都市計画の変更年月日
-| uro:areaPlanned | gml:MeasureType [0..1] | 計画面積。単位はm2とする。
-| uro:areaInService | gml:MeasureType [0..1] | 供用面積。単位はm2とする。
-| uro:remarks | xs:string [0..1] | 都市施設の摘要。
-| uro:status | gml:CodeType [0..1] | 事業の進捗状況。コードリスト（Common_status.xml）より選択する。
-| uro:areaImproved | gml:MeasureType [0..1] | 改良済（用地が計画のとおり確保されており、供用している）の面積又は延長。駅前広場の場合は面積で記述する。単位はm2とする。
-| uro:areaCompleted | gml:MeasureType [0..1] | 概成済（改良済み以外の区間のうち、都市計画施設と同程度の機能をしている）の面積又は延長。駅前広場の場合は面積で記述する。単位はm2とする。
-| uro:projectStartDate
-| xs:date [0..1]
-| 事業開始年月日。 +
-事業に着手していないもの、計画決定時に完成しているものは記入しない。
-
-| uro:projectEndDate | xs:date [0..1] | 事業完了年月日。事業が完了していないもの、事業に着手していないもの、計画決定時に完成しているものは記入しない。
-| uro:isCompleted | xs:boolean [0..1] | 計画決定時に完成している場合に1とする。
-| uro:isAuthorized | xs:boolean [0..1] | 認可を受けている場合に1とする。
-| uro:purpose | xs:string [0..1] | 都市計画の変更を行った場合に、その目的を記述する。
-| uro:note | xs:string [0..1] | その他特筆事項。
-3+h| 自身に定義された属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:station | xs:string [0..*] | 駅前広場が位置する駅の名称。出口の名称を含む。
-| uro:route | xs:string [0..*] | 鉄道の路線名称。
-| uro:railwayType
-| gml:CodeType [0..*]
-| 鉄道の種別。コードリスト（StationSquareAttribute_railwayType.xml）から選択する。該当するコードが無い場合は、文字列で記述する。 +
-路線ごとに入力する。
-
-|===
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="StationSquareAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== uro:TerminalAttribute
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義 2+| 自動車ターミナルに関する情報を定義したデータ型。
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="TerminalAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
-h| 上位の型 2+| uro: SquareUrbanPlanAttribute
-h| ステレオタイプ 2+| << DataType >>
-3+h| 継承する属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:prefecture | gml:CodeType [0..1] | 広場が位置する都道府県。コードリスト（Common_localPublicAuthorities.xml）より選択する。
-| uro:city | gml:CodeType [0..1] | 広場が位置する市区町村。コードリスト（Common_localPublicAuthorities.xml）より選択する。
-| uro:urbanPlanningAreaName | xs:string [0..1] | 都市計画区域の名称。
-| uro:enforcer | xs:string [0..*] | 施行者名。
-| uro:dateOfDecision | xs:date [0..1] | 都市計画の決定日
-| uro:dateOfRevision | xs:date [0..*] | 都市計画の変更年月日
-| uro:areaPlanned | gml:MeasureType [0..1] | 計画面積。単位はhaとする。
-| uro:areaInService | gml:MeasureType [0..1] | 供用面積。単位はhaとする。
-| uro:remarks | xs:string [0..1] | 都市施設の摘要。
-| uro:status | gml:CodeType [0..1] | 事業の進捗状況。コードリスト(Common_status.xml)より選択する。
-| uro:areaImproved | gml:MeasureType [0..1] | 改良済（用地が計画のとおり確保されており、供用している）の面積又は延長。自動車ターミナルの場合は面積で記述する。単位はhaとする。
-| uro:areaCompleted | gml:MeasureType [0..1] | 概成済（改良済み以外の区間のうち、都市計画施設と同程度の機能をしている）の面積又は延長。自動車ターミナルの場合は面積で記述する。単位はhaとする。
-| uro:projectStartDate
-| xs:date [0..1]
-| 事業開始年月日。 +
-事業に着手していないもの、計画決定時に完成しているものは記入しない。
-
-| uro:projectEndDate | xs:date [0..1] | 事業完了年月日。事業が完了していないもの、事業に着手していないもの、計画決定時に完成しているものは記入しない。
-| uro:isCompleted | xs:boolean [0..1] | 計画決定時に完成している場合に1とする。
-| uro:isAuthorized | xs:boolean [0..1] | 認可を受けている場合に1とする。
-| uro:purpose | xs:string [0..1] | 都市計画の変更を行った場合に、その目的を記述する。
-| uro:note | xs:string [0..1] | その他特筆事項。
-3+h| 自身に定義された属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| uro:terminalType | gml:CodeType [0..1] | 自動車ターミナルの種類。コードリスト（TerminalAttribute_terminalType.xml）から選択する。
-| uro:structure | xs:string [0..1] | 自動車ターミナルの構造。
-| uro:numberOfBerthsPlanned | xs:integer [0..1] | 計画バース数。
-| uro:numberOfBerthsInService | xs:integer [0..1] | 供用バース数。
-| uro:userType | gml:CodeType [0..1] | 一般、専用の別。コードリスト（TerminalAttribute_userType.xml）から選択する。
-
-|===
 
 [[toc4_06_03_03]]
 ===== 施設管理のための拡張属性
@@ -1371,6 +977,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義
 ====== uro:DmElement
 
 <<toc4_25_03,公共測量標準図式の応用スキーマ文書>>　参照。
+
 
 [[toc4_06_04]]
 ==== 交通（広場）モデルで使用するコードリストと列挙型
