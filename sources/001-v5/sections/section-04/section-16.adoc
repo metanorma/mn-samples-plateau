@@ -279,7 +279,7 @@ h| 説明
 * 地下街の外壁面と地表面との交線により囲まれた面を取得する。
 |
 * 地上に設置された地下街出入口の建屋は都市設備（CityFurniture）として取得する。
-| ■ <| ClosureSurface | MultiSurface
+^| ■ <| ClosureSurface | MultiSurface
 |
 * BuildingPartを作成する場合
 |
@@ -448,7 +448,7 @@ LOD4.2ではLOD4.1に屋内の付属物（bldg:IntBuildingInstallation）とし�
 * 地下街の外壁面と地表面との交線により囲まれた面を取得する。
 |
 * 地上に設置された地下街出入口の建屋は都市設備（CityFurniture）として取得する。
-| ■ <| ClosureSurface | MultiSurface
+^| ■ <| ClosureSurface | MultiSurface
 |
 * BuildingPartを作成する場合
 |
@@ -515,13 +515,12 @@ LOD4.2ではLOD4.1に屋内の付属物（bldg:IntBuildingInstallation）とし�
 
 |===
 
-NOTE: CityObjectGroupは空間属性をもたないため、「―」としている。
-
 [%key]
 ●:: 必須
 ■:: 条件付必須
 〇:: 任意（ユースケースに応じて要否を決定してよい）
 
+NOTE: CityObjectGroupは空間属性をもたないため、「―」としている。
 
 ====== 地下街モデル（LOD4.1）の定義
 
@@ -584,7 +583,7 @@ NOTE: CityObjectGroupは空間属性をもたないため、「―」として�
 * 地下街の外壁面と地表面との交線により囲まれた面を取得する。
 |
 * 地上に設置された地下街出入口の建屋は都市設備（CityFurniture）として取得する。
-| ■ <| ClosureSurface | MultiSurface
+^| ■ <| ClosureSurface | MultiSurface
 |
 * BuildingPartを作成する場合
 |
@@ -652,12 +651,12 @@ NOTE: CityObjectGroupは空間属性をもたないため、「―」として�
 
 |===
 
-NOTE: CityObjectGroupは空間属性をもたないため、「―」としている。
-
 [%key]
 ●:: 必須
 ■:: 条件付必須
 〇:: 任意（ユースケースに応じて要否を決定してよい）
+
+NOTE: CityObjectGroupは空間属性をもたないため、「―」としている。
 
 
 ====== 地下街モデル（LOD4.2）の定義
@@ -721,7 +720,7 @@ NOTE: CityObjectGroupは空間属性をもたないため、「―」として�
 * 地下街の外壁面と地表面との交線により囲まれた面を取得する。
 |
 * 地上に設置された地下街出入口の建屋は都市設備（CityFurniture）として取得する。
-| ■ <| ClosureSurface | MultiSurface
+^| ■ <| ClosureSurface | MultiSurface
 |
 * BuildingPartを作成する場合
 |
@@ -798,12 +797,12 @@ NOTE: CityObjectGroupは空間属性をもたないため、「―」として�
 
 |===
 
-NOTE: CityObjectGroupは空間属性をもたないため、「―」としている。
-
 [%key]
 ●:: 必須
 ■:: 条件付必須
 〇:: 任意（ユースケースに応じて要否を決定してよい）
+
+NOTE: CityObjectGroupは空間属性をもたないため、「―」としている。
 
 
 [[toc4_16_01_06]]
