@@ -238,7 +238,7 @@ image::images/113.webp.png[]
 
 軌道：施工基面上の道床（スラブを含む）、軌きょう及び直接これらに付帯する施設をいう。[<<jis_e_1001>>] +
 道床：レール又はまくらぎを支持し、荷重を路盤に分布する軌道の部分。バラスト、コンクリートなどを用いたものがある。[<<jis_e_1001>>] +
-軌きょう：レールとまくらぎとを、はしご状に組み立てたもの。　[<<jis_e_1001>>] +
+軌きょう：レールとまくらぎとを、はしご状に組み立てたもの。[<<jis_e_1001>>] +
 レール：車輪を直接支持、誘導する部材 [<<jis_e_1001>>] +
 まくらぎ：レールを支え、荷重を道床などに分布させる部材。使用目的によって並まくらぎ、橋まくらぎ、分岐まくらぎ、短まくらぎ、縦まくらぎなど、また、材質によって木まくらぎ、PCまくらぎ、鉄まくらぎ、合成まくらぎなどがある。[<<jis_e_1001>>] +
 交通（鉄道）モデル（LOD2）の取得イメージを<<tab-4-27>>に示す。
@@ -751,13 +751,36 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Vert
 lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="SlopeType",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 
+[[toc4_04_03_03]]
+===== 施設管理のための拡張属性
+
+====== uro:FacilityIdAttribute
+
+<<toc4_26_03,施設管理属性の応用スキーマ文書>>　参照。
+
+====== uro:FacilityTypeAttribute
+
+<<toc4_26_03,施設管理属性の応用スキーマ文書>>　参照。
+
+====== uro:FacilityAttribute
+
+<<toc4_26_03,施設管理属性の応用スキーマ文書>>　参照。
+
+[[toc4_04_03_04]]
+===== 数値地形図のための拡張属性
+
+====== uro:DmAttribute
+
+<<toc4_25_03,公共測量標準図式の応用スキーマ文書>>　参照。
+
+
 [[toc4_04_04]]
 ==== 交通（鉄道）モデルで使用するコードリストと列挙型
 
 [[toc4_04_04_01]]
 ===== Transportaion（CityGML）
 
-====== TransportationComlex_class.xml
+====== TransportationComplex_class.xml
 
 <<toc4_03_04_01,tran:Roadのコードリスト>>　参照
 

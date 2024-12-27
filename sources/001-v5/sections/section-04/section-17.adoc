@@ -65,7 +65,7 @@ h| 説明 | 並木、植樹、独立樹（広葉樹）、独立樹（針葉樹�
 | uro:lod0Geometryを用いて記述する。
 
 .2+| MultiCurve
-|
+<|
 * 植生界
 |
 * 中心を取得する。
@@ -374,6 +374,9 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Data
 
 lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="PublicSurveyDataQualityAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
+[[toc4_17_03_03]]
+===== 施設管理のための拡張属性
+
 ====== uro:FacilityIdAttribute
 
 <<toc4_26_03,施設管理属性の応用スキーマ文書>>　参照。
@@ -386,9 +389,14 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Publ
 
 <<toc4_26_03,施設管理属性の応用スキーマ文書>>　参照。
 
+
+[[toc4_17_03_04]]
+===== 数値地形図のための拡張属性
+
 ====== uro:DmAttribute
 
 <<toc4_25_03,公共測量標準図式の応用スキーマ文書>>　参照。
+
 
 [[toc4_17_04]]
 ==== 植生モデルで使用するコードリストと列挙型
@@ -460,7 +468,7 @@ lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.
 
 ====== DataQualityAttribute_lod1HeightType.xml
 
-TODO: This table cannot be recreated because some values are marked "（使用不可）".
+// TODO: This table cannot be recreated because some values are marked "（使用不可）".
 
 lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml[template="gml_dict_template.liquid",context=dict]
 
