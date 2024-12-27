@@ -1397,21 +1397,6 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Them
 
 lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="LengthAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
-====== uro:FacilityIdAttribute
-
-<<toc4_26_03,施設管理属性の応用スキーマ文書>>　参照。
-
-====== uro:FacilityTypeAttribute
-
-<<toc4_26_03,施設管理属性の応用スキーマ文書>>　参照。
-
-====== uro:FacilityAttribute
-
-<<toc4_26_03,施設管理属性の応用スキーマ文書>>　参照。
-
-====== uro:DmAttribute
-
-<<toc4_25_03,公共測量標準図式の応用スキーマ文書>>　参照。
 
 ====== uro:CityFurnitureDetailAttribute
 
@@ -1424,6 +1409,30 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="KeyV
 ====== uro:DataQualityAttribute
 
 lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="DataQualityAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
+
+
+[[toc4_15_03_02]]
+===== 施設管理のための拡張属性
+
+====== uro:FacilityIdAttribute
+
+<<toc4_26_03,施設管理属性の応用スキーマ文書>>　参照。
+
+====== uro:FacilityTypeAttribute
+
+<<toc4_26_03,施設管理属性の応用スキーマ文書>>　参照。
+
+====== uro:FacilityAttribute
+
+<<toc4_26_03,施設管理属性の応用スキーマ文書>>　参照。
+
+
+[[toc4_15_03_03]]
+===== 数値地形図のための拡張属性
+
+====== uro:DmAttribute
+
+<<toc4_25_03,公共測量標準図式の応用スキーマ文書>>　参照。
 
 
 [[toc4_15_04]]
@@ -1514,7 +1523,7 @@ lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.
 
 ====== DataQualityAttribute_lod1HeightType.xml
 
-TODO: This table cannot be recreated because some values are marked "（使用不可）".
+// TODO: This table cannot be recreated because some values are marked "（使用不可）".
 
 lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml[template="gml_dict_template.liquid",context=dict]
 

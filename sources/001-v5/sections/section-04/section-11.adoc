@@ -321,7 +321,7 @@ image::images/240.webp.png[]
 橋梁モデル（LOD2）の取得イメージを<<tab-4-63>>に示す。
 
 [[tab-4-63]]
-[cols="4a,^3a,^9a,^9a"]
+[cols="4a,^8a,^6a,^6a"]
 .橋梁モデル（LOD2）の取得イメージ
 |===
 h| 3+h| LOD2.0
@@ -1335,6 +1335,33 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Cons
 
 lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="ConstructionRiskAssessmentAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
+====== uro:RiverFloodingRiskAttribute
+
+<<toc4_09_03,災害リスクモデルの応用スキーマ文書>>　参照。
+
+====== uro:TsunamiRiskAttribute
+
+<<toc4_09_03,災害リスクモデルの応用スキーマ文書>>　参照。
+
+====== uro:HighTideRiskAttribute
+
+<<toc4_09_03,災害リスクモデルの応用スキーマ文書>>　参照。
+
+====== uro:InlandFloodingRiskAttribute
+
+<<toc4_09_03,災害リスクモデルの応用スキーマ文書>>　参照。
+
+====== uro:ReservoirFloodingRiskAttribute
+
+<<toc4_09_03,災害リスクモデルの応用スキーマ文書>>　参照。
+
+====== uro:LandSlideRiskAttribute
+
+<<toc4_09_03,災害リスクモデルの応用スキーマ文書>>　参照。
+
+
+[[toc4_11_03_03]]
+===== 施設管理のための拡張属性
 
 ====== uro:FacilityIdAttribute
 
@@ -1348,33 +1375,14 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Cons
 
 <<toc4_26_03,施設管理属性の応用スキーマ文書>>　参照。
 
+
+[[toc4_11_03_04]]
+===== 数値地形図のための拡張属性
+
 ====== uro:DmAttribute
 
 <<toc4_25_03,公共測量標準図式の応用スキーマ文書>>　参照。
 
-====== uro:RiverFloodingRiskAttribute
-
-<<toc4_09_03,災害リスクモデルの応用スキーマ文書>> 参照。
-
-====== uro:TsunamiRiskAttribute
-
-<<toc4_09_03,災害リスクモデルの応用スキーマ文書>> 参照。
-
-====== uro:HighTideRiskAttribute
-
-<<toc4_09_03,災害リスクモデルの応用スキーマ文書>> 参照。
-
-====== uro:InlandFloodingRiskAttribute
-
-<<toc4_09_03,災害リスクモデルの応用スキーマ文書>> 参照。
-
-====== uro:ReservoirFloodingRiskAttribute
-
-<<toc4_09_03,災害リスクモデルの応用スキーマ文書>> 参照。
-
-====== uro:LandSlideRiskAttribute
-
-<<toc4_09_03,災害リスクモデルの応用スキーマ文書>> 参照。
 
 [[toc4_11_04]]
 ==== 橋梁モデルで使用するコードリストと列挙型
@@ -1497,7 +1505,7 @@ lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.
 
 ====== DataQualityAttribute_lod1HeightType.xml
 
-TODO: This table cannot be recreated because some values are marked "（使用不可）".
+// TODO: This table cannot be recreated because some values are marked "（使用不可）".
 
 lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml[template="gml_dict_template.liquid",context=dict]
 

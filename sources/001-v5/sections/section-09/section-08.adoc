@@ -158,39 +158,43 @@ image::images/465.webp.png[]
 
 ===== core:ImplicitGeometry
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義 2+| 繰り返しオブジェクト。 +
-地物毎に幾何オブジェクトを作成する代替として、一つのプロトタイプモデルを複数の地物が参照する仕組み。
-h| 上位の型 2+| ―
-h| ステレオタイプ 2+| << Type >>
-3+h| 自身に定義された属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| core::libraryObject | xs:anyURI[0..1] | 繰り返しオブジェクトで使用するプロトタイプモデルの所在を示すURI。 +
-この属性が記述されていない場合、core:relativeGMLGeometryを必須とする。
-| core:mimeType | gml:CodeType[0..1] | 繰り返しオブジェクトで使用するプロトタイプモデルのファイル種類。コードリスト（ImplicitGeometry_mimeType.xml）より選択する。
-| core:transformationMatrix | core:TransformationMatrix4x4[0..1] | 繰り返しオブジェクトで使用するプロトタイプモデルの変形パラメータ。
-3+h| 自身に定義された関連役割
-h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
-| core:relativeGMLGeometry | gml::_Geometry[0..1] | 繰り返しオブジェクトで使用するプロトタイプモデル。GML形式で記述する場合に必須とする。 +
-この関連役割が記述されていない場合、core:libraryObjectを必須とする。
-| core:referencePoint | gml:Point[1] | 繰り返しオブジェクトの原点（0,0,0）を配置する参照点。3D都市モデルに適用される測地座標で記述する。
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="ImplicitGeometry",template="../../sources/liquid_templates/_klass_table.liquid"]
 
-|===
+// [cols="1a,1a,2a"]
+// |===
+// | 型の定義 2+| 繰り返しオブジェクト。 +
+// 地物毎に幾何オブジェクトを作成する代替として、一つのプロトタイプモデルを複数の地物が参照する仕組み。
+// h| 上位の型 2+| ―
+// h| ステレオタイプ 2+| << Type >>
+// 3+h| 自身に定義された属性
+// h| 属性名 h| 属性の型及び多重度 h| 定義
+// | core::libraryObject | xs:anyURI[0..1] | 繰り返しオブジェクトで使用するプロトタイプモデルの所在を示すURI。 +
+// この属性が記述されていない場合、core:relativeGMLGeometryを必須とする。
+// | core:mimeType | gml:CodeType[0..1] | 繰り返しオブジェクトで使用するプロトタイプモデルのファイル種類。コードリスト（ImplicitGeometry_mimeType.xml）より選択する。
+// | core:transformationMatrix | core:TransformationMatrix4x4[0..1] | 繰り返しオブジェクトで使用するプロトタイプモデルの変形パラメータ。
+// 3+h| 自身に定義された関連役割
+// h| 関連役割名 h| 関連役割の型及び多重度 h| 定義
+// | core:relativeGMLGeometry | gml::_Geometry[0..1] | 繰り返しオブジェクトで使用するプロトタイプモデル。GML形式で記述する場合に必須とする。 +
+// この関連役割が記述されていない場合、core:libraryObjectを必須とする。
+// | core:referencePoint | gml:Point[1] | 繰り返しオブジェクトの原点（0,0,0）を配置する参照点。3D都市モデルに適用される測地座標で記述する。
+// 
+// |===
 
 ===== core:TransformationMatrix4x4
 
-[cols="1a,1a,2a"]
-|===
-| 型の定義 2+| 繰り返しオブジェクトで使用するプロトタイプモデルを変形（拡大縮小、回転、平行移動）するための、3次元座標のアフィン変換行列。4×4の行列を示す16桁の数値の列からなる。
-h| 上位の型 2+| ―
-h| ステレオタイプ 2+| << DataType >>
-3+h| 自身に定義された属性
-h| 属性名 h| 属性の型及び多重度 h| 定義
-| core:elements | xs:double [16] | 16桁の実数の列。順序をもつ。 +
-16桁は4×4の変換行列を示し、最初の4桁は1行目、次の4桁は2行目、次の4桁は3行目、最後の4桁は4行目となる。
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="TransformationMatrix4x4",template="../../sources/liquid_templates/_klass_table.liquid"]
 
-|===
+// [cols="1a,1a,2a"]
+// |===
+// | 型の定義 2+| 繰り返しオブジェクトで使用するプロトタイプモデルを変形（拡大縮小、回転、平行移動）するための、3次元座標のアフィン変換行列。4×4の行列を示す16桁の数値の列からなる。
+// h| 上位の型 2+| ―
+// h| ステレオタイプ 2+| << DataType >>
+// 3+h| 自身に定義された属性
+// h| 属性名 h| 属性の型及び多重度 h| 定義
+// | core:elements | xs:double [16] | 16桁の実数の列。順序をもつ。 +
+// 16桁は4×4の変換行列を示し、最初の4桁は1行目、次の4桁は2行目、次の4桁は3行目、最後の4桁は4行目となる。
+// 
+// |===
 
 ===== ImplicitGeometry_mimeType.xml
 
