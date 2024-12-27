@@ -148,16 +148,16 @@ h| 説明
 
 |===
 
+[%key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
+
 [[fn_follow_diagram]]
 [NOTE]
 --
 数値地形図の取得基準に従う。
 --
-
-[%key]
-●:: 必須
-■:: 条件付必須
-〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_13_01_02]]
 ===== その他の構造物モデル（LOD1）
@@ -659,6 +659,9 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Cons
 lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Occupancy",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 
+[[toc4_13_03_02]]
+===== 施設管理のための拡張属性
+
 ====== uro:FacilityIdAttribute
 
 <<toc4_26_03,施設管理属性の応用スキーマ文書>>　参照。
@@ -670,6 +673,9 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Occu
 ====== uro:FacilityAttribute
 
 <<toc4_26_03,施設管理属性の応用スキーマ文書>>　参照。
+
+[[toc4_13_03_03]]
+===== 数値地形図のための拡張属性
 
 ====== uro:DmAttribute
 
@@ -793,7 +799,7 @@ lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.
 
 ====== DataQualityAttribute_lod1HeightType.xml
 
-TODO: This table cannot be recreated because some values are marked "（使用不可）".
+// TODO: This table cannot be recreated because some values are marked "（使用不可）".
 
 lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml[template="gml_dict_template.liquid",context=dict]
 

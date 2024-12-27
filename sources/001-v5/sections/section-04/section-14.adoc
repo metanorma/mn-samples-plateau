@@ -87,6 +87,11 @@ footnoteblock:[fn_above_map]
 
 |===
 
+[%key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
+
 [[fn_follow_topographic]]
 [NOTE]
 --
@@ -99,10 +104,6 @@ footnoteblock:[fn_above_map]
 図上3.0mm以上
 --
 
-[%key]
-●:: 必須
-■:: 条件付必須
-〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_14_01_02]]
 ===== 都市設備モデル（LOD1）
@@ -432,6 +433,10 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Data
 
 lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="PublicSurveyDataQualityAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
+
+[[toc4_14_03_03]]
+===== 施設管理のための拡張属性
+
 ====== uro:FacilityIdAttribute
 
 <<toc4_26_03,施設管理属性の応用スキーマ文書>>　参照。
@@ -444,9 +449,14 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Publ
 
 <<toc4_26_03,施設管理属性の応用スキーマ文書>>　参照。
 
+
+[[toc4_14_03_04]]
+===== 数値地形図のための拡張属性
+
 ====== uro:DmAttribute
 
 <<toc4_25_03,公共測量標準図式の応用スキーマ文書>>　参照。
+
 
 [[toc4_14_04]]
 ==== 都市設備モデルで使用するコードリストと列挙型
@@ -508,7 +518,7 @@ lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.
 
 ====== DataQualityAttribute_lod1HeightType.xml
 
-TODO: This table cannot be recreated because some values are marked "（使用不可）".
+// TODO: This table cannot be recreated because some values are marked "（使用不可）".
 
 lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml[template="gml_dict_template.liquid",context=dict]
 
