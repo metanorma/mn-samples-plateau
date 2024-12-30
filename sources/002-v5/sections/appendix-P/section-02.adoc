@@ -6,7 +6,7 @@
 
 地下埋設物とは、ユーティリティネットワークなどのサービスの一部となる又は地表の構造物を支える、地表下に埋め込まれた構築物又は構造物をいう。<<ogc_19-081>> +
 地下埋設物の記述には、i-URのUrban Objectモジュールに定義された、uro:UtilityNetworkElementを継承する地物型を使用する。 +
-CityGMLには地下埋設物に該当する地物型は定義されていないため、i-URでは、欧州連合の空間データ基盤「Infrastructure for Spatial Information in Europe(INSPIRE)」において策定されたユーティリティネットワークの標準仕様「INSPIRE Data Specification on Utility and Government Services – Technical Guidelines」（https://inspire.ec.europa.eu/Themes/136/2892[https://inspire.ec.europa.eu/Themes/136/2892]）を参考に、地下埋設物を表現する地物型を定義している。 +
+CityGMLには地下埋設物に該当する地物型は定義されていないため、i-URでは、欧州連合の空間データ基盤「Infrastructure for Spatial Information in Europe(INSPIRE)」において策定されたユーティリティネットワークの標準仕様「INSPIRE Data Specification on Utility and Government Services – Technical Guidelines」（https://inspire.ec.europa.eu/Themes/136/2892 ）を参考に、地下埋設物を表現する地物型を定義している。 +
 uro:UtilityNetworkElementは、地下埋設物を表す最上位の地物型であり、CityGMLの都市設備（frn:CityFurniture）を継承し、定義されている。さらに、uro:UtilityNetworkElementを継承する3つの地物型が定義され、これらが地下埋設物のネットワークを形成する。 +
 uro:UtilityLinkは、ネットワークのリンクであり、これを継承するケーブル（uro:Cable）、管路（uro:Pipe）及びダクト（uro:Duct）に区分される。管路とは、電気、水道、ガス、電力、通信等を格納または輸送する管である。ダクトとは、ケーブルや管路を格納し、これらを保護する構造物である。 +
 uro:UtilityNodeは、ネットワークのノードであり、これを継承する制御設備（uro:Appurtenance）が定義されている。制御設備とは、リンクとリンクのつながりを制御する設備であり、バルブや制水栓等の弁栓類がこれに該当する。また、変圧器や開閉器等の地上に設置された設備を含む。 +

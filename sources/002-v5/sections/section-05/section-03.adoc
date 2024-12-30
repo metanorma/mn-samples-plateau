@@ -111,7 +111,7 @@ h| メタデータ項目 h| 記述する内容 h| 記述例
 | 010（固定値） +
 国土交通省都市局 +
 03-5253-8397 +
-www.mlit.go.jp/plateau/
+https://www.mlit.go.jp/plateau/[www.mlit.go.jp/plateau/]
 
 | メタデータ>日付 | メタデータの作成日付をYYYY-MM-DDにより記述する。
 | 2021-02-25
@@ -159,7 +159,7 @@ JGD2011,TP/（B,L）,H
 | 010（固定値） +
 国土交通省都市局 +
 03-5253-8397 +
-www.mlit.go.jp/plateau/
+https://www.mlit.go.jp/plateau/[www.mlit.go.jp/plateau/]
 
 | 作成者の問合せ情報を記述する。 +
 役割名は「060（創作者）」とする。
@@ -183,8 +183,8 @@ LOD1, 005 +
 景観シミュレーション, 005 +
 都市計画基本図, 005
 
-| 識別情報>利用制限 | 固定値とし、「Licensed under CC BY4.0」を記述する。
-| Licensed under CC BY4.0（固定値）
+| 識別情報>利用制限 | 固定値とし、「Licensed under CC BY 4.0」を記述する。
+| Licensed under CC BY 4.0（固定値）
 | 識別情報>空間表現型 | ベクトルを意味する固定値「001」を入力する。
 | 001　（固定値）
 | 識別情報>空間解像度
@@ -208,9 +208,10 @@ LOD1, 005 +
 | LOD1の作成範囲は●●市全域、LOD2の作成範囲は、△△駅を中心とする半径約300m内。
 
 | 配布情報>配布書式
-| 固定値「CityGML2.0」及び「i-UR3.1」をそれぞれ書式情報として入れる。
-| CityGML2.0 +
-i-UR3.1
+| 固定値「CityGML 2.0」及び「i-UR 3.1」を +
+それぞれ書式情報として入れる。
+| CityGML 2.0 +
+i-UR 3.1
 
 | 配布情報>オンライン | G空間情報センターのURLを記述する。
 | https://front.geospatial.jp/ （固定値）

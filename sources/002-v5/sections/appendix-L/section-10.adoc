@@ -607,7 +607,8 @@ h|
 . 橋梁モデル（LOD3）を作成する。
 . 橋梁の詳細な形状及び橋梁内部の空間を表現する。 +
 詳細形状や内部形状は、BIM/CIMモデルから作成することを基本する。ただし、測量による計測データが得られる場合は計測データから作成することも可能である。 +
-標準製品仕様書では、橋梁の詳細な部材の定義は、IFCにおける橋梁モデル(IFC Bridge)と整合を図っている。ただし、IFCにおける橋梁モデルはまだ国際標準となっていないことから、IFC Bridge Fast Track Project Report WP2: Conceptual Modelを参考に、IFC Bridgeを構成するクラスとCityGMLのBridgeモジュールとの対応付けを行っている。
+標準製品仕様書では、橋梁の詳細な部材の定義は、IFCにおける橋梁モデル(IFC Bridge)と整合を +
+図っている。ただし、IFCにおける橋梁モデルはまだ国際標準となっていないことから、IFC Bridge Fast Track Project Report WP2: Conceptual Modelを参考に、IFC Bridgeを構成するクラスとCityGMLのBridgeモジュールとの対応付けを行っている。
 
 [[tab-L-15]]
 [cols="a,a,a"]
