@@ -165,6 +165,11 @@ footnoteblock:[fn_retrieval_lod0]
 
 |===
 
+[%key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
+
 [[fn_river_lod0]]
 [NOTE]
 --
@@ -195,10 +200,6 @@ footnoteblock:[fn_retrieval_lod0]
 標準図式の取得方法に従う。
 --
 
-[%key]
-●:: 必須
-■:: 条件付必須
-〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 [[toc4_19_01_02]]
 ===== 水部モデル（LOD1）
@@ -494,6 +495,10 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Data
 
 lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="PublicSurveyDataQualityAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
+
+[[toc4_19_03_03]]
+===== 施設管理のための拡張属性
+
 ====== uro:FacilityIdAttribute
 
 <<toc4_26_03,施設管理属性の応用スキーマ文書>>　参照。
@@ -505,6 +510,10 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Publ
 ====== uro:FacilityAttribute
 
 <<toc4_26_03,施設管理属性の応用スキーマ文書>>　参照。
+
+
+[[toc4_19_03_04]]
+===== 数値地形図のための拡張属性
 
 ====== uro:DmAttribute
 
