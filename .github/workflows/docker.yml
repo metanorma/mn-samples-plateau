@@ -38,6 +38,45 @@ jobs:
           agree-to-terms: true
           destination: artifact
 
+  build-firelight:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Download Metanorma artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: artifact
+
+      - name: "Firelight: commit docs"
+        run: |
+          git init .
+          git add _site/documents/*.presentation.xml
+          git commit -m "Commit presentation XML"
+
+      - name: "Firelight: prepare config for 001"
+        run: |
+          cat <<'EOF' >> anafero-config.json
+          {
+            "version": "0.1",
+            "entryPoint": "file:_site/documents/001-v4/document.presentation.xml",
+            "storeAdapters": [
+              "git+https://github.com/metanorma/firelight#next/packages/metanorma-xml-store"
+            ],
+            "contentAdapters": [
+              "git+https://github.com/metanorma/firelight#next/packages/metanorma-site-content"
+            ],
+            "resourceLayouts": [
+              "git+https://github.com/metanorma/firelight#next/packages/plateau-layout"
+            ]
+          }
+          EOF
+          git add anafero-config.json
+          git commit -m "Add build config"
+
+      - name: "Firelight: generate HTML"
+        run: |
+          npx --node-options='--experimental-vm-modules' -y @riboseinc/anafero-cli@0.0.5 --target-dir dist --path-prefix /mn-samples-plateau --current-rev main
+
   # build-collection:
   #   runs-on: ubuntu-latest
   #   container:
