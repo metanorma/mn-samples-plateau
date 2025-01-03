@@ -29,13 +29,6 @@ jobs:
         with:
           submodules: true
 
-      - name: Setup Flavor
-        uses: actions-mn/setup-flavors@v1
-        with:
-          extra-flavors: plateau
-          github-pakages-token: ${{ secrets.METANORMA_CI_PAT_TOKEN }}
-          use-bundler: true
-
       - name: Print Metanorma version
         run: metanorma --version
 
@@ -54,13 +47,6 @@ jobs:
   #       uses: actions/checkout@v4
   #       with:
   #         submodules: true
-
-  #     - name: Setup Flavor
-  #       uses: actions-mn/setup-flavors@v1
-  #       with:
-  #         extra-flavors: plateau
-  #         github-pakages-token: ${{ secrets.METANORMA_CI_PAT_TOKEN }}
-  #         use-bundler: true
 
   #     - name: Print Metanorma version
   #       run: metanorma --version
