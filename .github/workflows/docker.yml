@@ -45,7 +45,7 @@ jobs:
       - name: Download Metanorma artifacts
         uses: actions/download-artifact@v3
         with:
-          name: artifact
+          name: github-pages
 
       - name: "Firelight: commit docs"
         run: |
