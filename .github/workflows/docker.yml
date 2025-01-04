@@ -47,6 +47,9 @@ jobs:
         with:
           name: github-pages
 
+      - name: Display structure of downloaded files
+        run: ls -R
+
       - name: "Firelight: commit docs"
         run: |
           git init .
