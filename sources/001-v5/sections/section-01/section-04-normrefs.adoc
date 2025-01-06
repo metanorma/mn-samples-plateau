@@ -4,10 +4,15 @@
 
 [.boilerplate]
 --
-標準製品仕様書は、以下の規格、規程及び仕様書を引用する。
+本書が引用する規格・仕様・マニュアルを以下に示す。3D都市モデルの整備に際しては、これらの文献を理解することが前提となる。 +
+引用文献のうちで、版の記載があるものは、その版を適用し、その後の改正版（追補を含む）は適用しない。版の記載がないものは、その最新版（追補を含む）を適用する。
 --
 
+// 標準製品仕様書は、以下の規格、規程及び仕様書を引用する。
 // .標準製品仕様書が引用する規格等
+// また、標準製品仕様書は、以下の仕様書を参照し、整合を図っている。
+// .標準製品仕様書が参照する仕様書等
+// 引用規格等のうち、版の記載があるものは、その版を適用し、その後の改正版（追補を含む。）は適用しない。版の記載がないものは、その最新版（追補を含む。）を適用する
 
 * [[[iurban_des,i-UR 3.0]]],
 span:title[Data Encoding Specification of i-Urban Revitalization -Urban Planning ADE- ver.3.0].
@@ -52,12 +57,6 @@ span:uri.citation[https://www.gsi.go.jp/GIS/jpgis-downloads.html]
 span:title[品質の要求，評価及び報告のための規則].
 span:organization[国土交通省 国土地理院].
 span:uri.citation[https://www.gsi.go.jp/GIS/jpgis-downloads.html]
-
-
-また、標準製品仕様書は、以下の仕様書を参照し、整合を図っている。
-
-// .標準製品仕様書が参照する仕様書等
-
 
 * [[[city_data_ps_sample,1]]],
 span:title[都市計画データ標準製品仕様書].
@@ -132,4 +131,4 @@ span:date[2017-06-30].
 span:uri.citation[https://www.mlit.go.jp/river/shishin_guideline/kaigan/takashioshinsui_manual.pdf]
 
 
-引用規格等のうち、版の記載があるものは、その版を適用し、その後の改正版（追補を含む。）は適用しない。版の記載がないものは、その最新版（追補を含む。）を適用する
+
