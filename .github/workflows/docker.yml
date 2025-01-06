@@ -37,6 +37,7 @@ jobs:
         with:
           agree-to-terms: true
           destination: artifact
+          artifact-name: mn
 
   build-firelight:
     runs-on: ubuntu-latest
@@ -51,7 +52,7 @@ jobs:
       - name: Download Metanorma artifacts
         uses: actions/download-artifact@v4
         with:
-          name: github-pages
+          name: mn
 
       - name: Display structure of downloaded files
         run: ls -R
