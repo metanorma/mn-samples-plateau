@@ -82,6 +82,11 @@ jobs:
       - name: "Firelight: generate HTML"
         run: |
           npx --node-options='--experimental-vm-modules' -y @riboseinc/anafero-cli@0.0.5 --target-dir dist --path-prefix /mn-samples-plateau --current-rev main
+      - uses: actions/upload-artifact@v4
+        with:
+          name: firelight-html
+          path: dist
+          if-no-files-found: error
 
   deploy-firelight-html:
     runs-on: ubuntu-latest
@@ -90,6 +95,10 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Download Firelight artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: firelight-html
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
