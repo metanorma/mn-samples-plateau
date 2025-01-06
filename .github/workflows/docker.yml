@@ -40,23 +40,14 @@ jobs:
           destination: artifact
           artifact-name: mn
 
-  build-firelight:
+  fl-build-001:
     runs-on: ubuntu-latest
     needs: build
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
       - name: Download Metanorma artifacts
         uses: actions/download-artifact@v4
         with:
           name: mn
-
-      - name: Prepare dist dir
-        run: mkdir dist
 
       - name: "Firelight: commit docs"
         run: |
@@ -64,7 +55,7 @@ jobs:
           git config --global user.name "Metanorma CI"
           git config --global init.defaultBranch main
           git init .
-          git add documents/**/*.presentation.xml
+          git add documents/001*/*.presentation.xml
           git commit -m "Commit presentation XML"
 
       - name: "Firelight: prepare config for doc 001"
@@ -89,7 +80,31 @@ jobs:
 
       - name: "Firelight: generate HTML for doc 001"
         run: |
-          npx --node-options='--experimental-vm-modules' -y @riboseinc/anafero-cli@0.0.5 --target-dir dist/001 --path-prefix /mn-samples-plateau/001 --current-rev main
+          npx --node-options='--experimental-vm-modules' -y @riboseinc/anafero-cli@0.0.5 --target-dir dist --path-prefix /mn-samples-plateau/001 --current-rev main
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fl-001
+          path: dist
+          if-no-files-found: error
+
+  fl-build-002:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Download Metanorma artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: mn
+
+      - name: "Firelight: commit docs"
+        run: |
+          git config --global user.email "57123902+metanorma-ci@users.noreply.github.com"
+          git config --global user.name "Metanorma CI"
+          git config --global init.defaultBranch main
+          git init .
+          git add documents/002*/*.presentation.xml
+          git commit -m "Commit presentation XML"
 
       - name: "Firelight: prepare config for doc 002"
         run: |
@@ -111,9 +126,40 @@ jobs:
           git add anafero-config.json
           git commit -m "Add build config for 002"
 
-      - name: "Firelight: generate HTML for doc 001"
+      - name: "Firelight: generate HTML for doc 002"
         run: |
-          npx --node-options='--experimental-vm-modules' -y @riboseinc/anafero-cli@0.0.5 --target-dir dist/002 --path-prefix /mn-samples-plateau/002 --current-rev main
+          npx --node-options='--experimental-vm-modules' -y @riboseinc/anafero-cli@0.0.5 --target-dir dist --path-prefix /mn-samples-plateau/002 --current-rev main
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fl-002
+          path: dist
+          if-no-files-found: error
+
+  deploy-pages:
+    runs-on: ubuntu-latest
+    needs: [fl-build-001, fl-build-002]
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Make dist dir
+        run: mkdir dist
+
+      - name: Download FL001 HTML artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: fl-001
+          path: dist/001
+
+      - name: Download FL002 HTML artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: fl-002
+          path: dist/002
 
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v3
@@ -123,6 +169,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
 
   # build-collection:
   #   runs-on: ubuntu-latest
