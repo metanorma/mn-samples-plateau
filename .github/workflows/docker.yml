@@ -52,6 +52,9 @@ jobs:
 
       - name: "Firelight: commit docs"
         run: |
+          git config --global user.email "57123902+metanorma-ci@users.noreply.github.com"
+          git config --global user.name "Metanorma CI"
+          git config --global init.defaultBranch main
           git init .
           git add documents/**/*.presentation.xml
           git commit -m "Commit presentation XML"
@@ -61,7 +64,7 @@ jobs:
           cat <<'EOF' >> anafero-config.json
           {
             "version": "0.1",
-            "entryPoint": "file:_site/documents/001-v4/document.presentation.xml",
+            "entryPoint": "file:documents/001-v4/document.presentation.xml",
             "storeAdapters": [
               "git+https://github.com/metanorma/firelight#next/packages/metanorma-xml-store"
             ],
@@ -79,8 +82,6 @@ jobs:
       - name: "Firelight: generate HTML"
         run: |
           npx --node-options='--experimental-vm-modules' -y @riboseinc/anafero-cli@0.0.5 --target-dir dist --path-prefix /mn-samples-plateau --current-rev main
-
-      - name: "Firelight: publish GHP"
 
   deploy-firelight-html:
     runs-on: ubuntu-latest
