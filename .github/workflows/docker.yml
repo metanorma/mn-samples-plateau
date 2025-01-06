@@ -54,8 +54,8 @@ jobs:
         with:
           name: mn
 
-      - name: Display structure of downloaded files
-        run: ls -R
+      - name: Prepare dist dir
+        run: mkdir dist
 
       - name: "Firelight: commit docs"
         run: |
@@ -66,7 +66,7 @@ jobs:
           git add documents/**/*.presentation.xml
           git commit -m "Commit presentation XML"
 
-      - name: "Firelight: prepare config for 001"
+      - name: "Firelight: prepare config for doc 001"
         run: |
           cat <<'EOF' >> anafero-config.json
           {
@@ -84,11 +84,35 @@ jobs:
           }
           EOF
           git add anafero-config.json
-          git commit -m "Add build config"
+          git commit -m "Add build config for 001"
 
-      - name: "Firelight: generate HTML"
+      - name: "Firelight: generate HTML for doc 001"
         run: |
-          npx --node-options='--experimental-vm-modules' -y @riboseinc/anafero-cli@0.0.5 --target-dir dist --path-prefix /mn-samples-plateau --current-rev main
+          npx --node-options='--experimental-vm-modules' -y @riboseinc/anafero-cli@0.0.5 --target-dir dist/001 --path-prefix /mn-samples-plateau/001 --current-rev main
+
+      - name: "Firelight: prepare config for doc 002"
+        run: |
+          cat <<'EOF' >> anafero-config.json
+          {
+            "version": "0.1",
+            "entryPoint": "file:documents/002-v5/document.presentation.xml",
+            "storeAdapters": [
+              "git+https://github.com/metanorma/firelight#next/packages/metanorma-xml-store"
+            ],
+            "contentAdapters": [
+              "git+https://github.com/metanorma/firelight#next/packages/metanorma-site-content"
+            ],
+            "resourceLayouts": [
+              "git+https://github.com/metanorma/firelight#next/packages/plateau-layout"
+            ]
+          }
+          EOF
+          git add anafero-config.json
+          git commit -m "Add build config for 002"
+
+      - name: "Firelight: generate HTML for doc 001"
+        run: |
+          npx --node-options='--experimental-vm-modules' -y @riboseinc/anafero-cli@0.0.5 --target-dir dist/002 --path-prefix /mn-samples-plateau/002 --current-rev main
 
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v3
