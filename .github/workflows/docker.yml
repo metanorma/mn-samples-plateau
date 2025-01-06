@@ -64,7 +64,7 @@ jobs:
           cat <<'EOF' >> anafero-config.json
           {
             "version": "0.1",
-            "entryPoint": "file:documents/001-v4/document.presentation.xml",
+            "entryPoint": "file:documents/001-v5/document.presentation.xml",
             "storeAdapters": [
               "git+https://github.com/metanorma/firelight#next/packages/metanorma-xml-store"
             ],
