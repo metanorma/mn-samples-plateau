@@ -80,6 +80,25 @@ jobs:
         run: |
           npx --node-options='--experimental-vm-modules' -y @riboseinc/anafero-cli@0.0.5 --target-dir dist --path-prefix /mn-samples-plateau --current-rev main
 
+      - name: "Firelight: publish GHP"
+
+  deploy-firelight-html:
+    runs-on: ubuntu-latest
+    needs: build-firelight
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
   # build-collection:
   #   runs-on: ubuntu-latest
   #   container:
