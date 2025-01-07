@@ -5,7 +5,7 @@ name: docker
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, gha-cache ]
   pull_request:
   workflow_dispatch:
 
