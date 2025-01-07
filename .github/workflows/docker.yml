@@ -80,7 +80,7 @@ jobs:
 
       - name: "Firelight: generate HTML for doc 001"
         run: |
-          npx --node-options='--experimental-vm-modules' -y @riboseinc/anafero-cli@0.0.5 --target-dir dist --path-prefix /mn-samples-plateau/001 --current-rev main
+          npx --node-options='--experimental-vm-modules' -y @riboseinc/anafero-cli@0.0.6 --target-dir dist --path-prefix /mn-samples-plateau/001 --current-rev main
 
       - uses: actions/upload-artifact@v4
         with:
@@ -128,7 +128,7 @@ jobs:
 
       - name: "Firelight: generate HTML for doc 002"
         run: |
-          npx --node-options='--experimental-vm-modules' -y @riboseinc/anafero-cli@0.0.5 --target-dir dist --path-prefix /mn-samples-plateau/002 --current-rev main
+          npx --node-options='--experimental-vm-modules' -y @riboseinc/anafero-cli@0.0.6 --target-dir dist --path-prefix /mn-samples-plateau/002 --current-rev main
 
       - uses: actions/upload-artifact@v4
         with:
