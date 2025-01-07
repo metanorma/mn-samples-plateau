@@ -33,12 +33,41 @@ jobs:
       - name: Print Metanorma version
         run: metanorma --version
 
-      - name: Metanorma generate site
+      # In case of cache miss, the generate MN XML step will run
+      # and the cache will be filled after job finishes.
+      # Next time it’ll be a cache hit, unless sources changed
+      - name: Cache Metanorma XML
+        id: cache-mn-xml
+        uses: actions/cache@v4
+        env:
+          cache-name: _site
+        with:
+          path: _site
+          key: ${{ runner.os }}-mn-${{ env.cache-name }}-${{ hashFiles('sources/00*-v5/**', 'sources/xmi/**', 'sources/liquid_templates/**', 'sources/guidance/**') }}
+          # We can fuzzy-match latest available cache,
+          # instead of precise hash, but this can cause issues where
+          # XML is not updated after source changes.
+          # restore-keys: |
+          #   ${{ runner.os }}-mn-${{ env.cache-name }}-
+          #   ${{ runner.os }}-mn-
+          #   ${{ runner.os }}-
+
+      - name: Generate Metanorma XML
         uses: actions-mn/build-and-publish@v2
+        if: steps.cache-mn-xml.outputs.cache-hit != 'true'
         with:
           agree-to-terms: true
           destination: artifact
           artifact-name: mn
+
+      # In case of cache hit, we must explicitly upload the _site dir as artifact
+      - name: Upload cached Metanorma XML
+        uses: actions/upload-artifact@v4
+        if: steps.cache-mn-xml.outputs.cache-hit == 'true'
+        with:
+          name: mn
+          path: _site
+          if-no-files-found: error
 
   fl-build-001:
     runs-on: ubuntu-latest
