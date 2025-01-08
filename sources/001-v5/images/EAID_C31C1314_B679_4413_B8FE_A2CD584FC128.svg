@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.74cm" height="19.74cm" viewBox="0 0 935 746">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26.56cm" height="19.76cm" viewBox="0 0 1004 747">
 <title></title>
 <desc>Created with Enterprise Architect (Build: 1628) 2</desc>
 
 <g style="fill:#FFFFFF;fill-opacity:1.00;">
-	 <rect x="0" y="0" width="935" height="746" shape-rendering="auto"/>
+	 <rect x="0" y="0" width="1004" height="747" shape-rendering="auto"/>
 </g><g style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00">
-  <path d="M 6 6 L 6 740 L 929 740 L 929 6 L 6 6" shape-rendering="auto"/>
+  <path d="M 6 6 L 6 741 L 998 741 L 998 6 L 6 6" shape-rendering="auto"/>
 </g>
 <g style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#FFFFFF;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00">
   <polygon points="6 28 102 28 115 14 115 6 6 6 6 28" shape-rendering="auto"   style="fill-rule:evenodd;"/>
@@ -17,252 +17,255 @@
 	<text x="11.00" y="20.00" textLength="89" style="font-family:メイリオ; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 11.00 20.00)">class Appearance</text>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFCC;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
- <rect x="445" y="40" width="218" height="75" rx="0.00" shape-rendering="auto"  />
+ <rect x="446" y="44" width="218" height="75" rx="0.00" shape-rendering="auto"  />
 </g>
 <g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
-	<text x="624.00" y="53.00" textLength="36" style="font-family:Yu Gothic UI; font-weight:400; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 624.00 53.00)">_Feature</text>
-	<text x="522.00" y="71.00" textLength="63" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 522.00 71.00)">«FeatureType»</text>
-	<text x="516.00" y="83.00" textLength="75" style="font-family:Yu Gothic UI; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 516.00 83.00)">app::Appearance</text>
+	<text x="625.00" y="57.00" textLength="36" style="font-family:Yu Gothic UI; font-weight:400; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 625.00 57.00)">_Feature</text>
+	<text x="523.00" y="75.00" textLength="63" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 523.00 75.00)">«FeatureType»</text>
+	<text x="517.00" y="87.00" textLength="75" style="font-family:Yu Gothic UI; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 517.00 87.00)">app::Appearance</text>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
-  <path d="M 445 90 L 662 90" shape-rendering="auto"/>
+  <path d="M 446 94 L 663 94" shape-rendering="auto"/>
 </g>
 <g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
-	<text x="450.00" y="104.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 450.00 104.00)">+ </text>
-	<text x="467.00" y="104.00" textLength="156" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 467.00 104.00)">theme: xs::string [0..1] =  rgbTexture</text>
+	<text x="451.00" y="108.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 451.00 108.00)">+ </text>
+	<text x="468.00" y="108.00" textLength="156" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 468.00 108.00)">theme: xs::string [0..1] =  rgbTexture</text>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFCC;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
- <rect x="145" y="140" width="199" height="70" rx="0.00" shape-rendering="auto"  />
+ <rect x="145" y="141" width="199" height="70" rx="0.00" shape-rendering="auto"  />
 </g>
 <g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
-	<text x="213.00" y="156.00" textLength="63" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 213.00 156.00)">«FeatureType»</text>
-	<text x="205.00" y="168.00" textLength="79" style="font-family:Yu Gothic UI; font-weight:700; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 205.00 168.00)">app::_SurfaceData</text>
+	<text x="213.00" y="157.00" textLength="63" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 213.00 157.00)">«FeatureType»</text>
+	<text x="205.00" y="169.00" textLength="79" style="font-family:Yu Gothic UI; font-weight:700; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 205.00 169.00)">app::_SurfaceData</text>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
-  <path d="M 145 175 L 343 175" shape-rendering="auto"/>
+  <path d="M 145 176 L 343 176" shape-rendering="auto"/>
 </g>
 <g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
-	<text x="150.00" y="189.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 150.00 189.00)">+ </text>
-	<text x="167.00" y="189.00" textLength="136" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 167.00 189.00)">isFront: xs::boolean [0..1] = true</text>
+	<text x="150.00" y="190.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 150.00 190.00)">+ </text>
+	<text x="167.00" y="190.00" textLength="136" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 167.00 190.00)">isFront: xs::boolean [0..1] = true</text>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFCC;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
- <rect x="245" y="300" width="220" height="111" rx="0.00" shape-rendering="auto"  />
+ <rect x="245" y="301" width="220" height="111" rx="0.00" shape-rendering="auto"  />
 </g>
 <g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
-	<text x="323.00" y="316.00" textLength="63" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 323.00 316.00)">«FeatureType»</text>
-	<text x="325.00" y="328.00" textLength="60" style="font-family:Yu Gothic UI; font-weight:700; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 325.00 328.00)">app::_Texture</text>
+	<text x="323.00" y="317.00" textLength="63" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 323.00 317.00)">«FeatureType»</text>
+	<text x="325.00" y="329.00" textLength="60" style="font-family:Yu Gothic UI; font-weight:700; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 325.00 329.00)">app::_Texture</text>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
-  <path d="M 245 335 L 464 335" shape-rendering="auto"/>
+  <path d="M 245 336 L 464 336" shape-rendering="auto"/>
 </g>
 <g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
-	<text x="250.00" y="349.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 250.00 349.00)">+ </text>
-	<text x="267.00" y="349.00" textLength="93" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 267.00 349.00)">imageURI: xs::anyURI</text>
-	<text x="250.00" y="361.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 250.00 361.00)">+ </text>
-	<text x="267.00" y="361.00" textLength="139" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 267.00 361.00)">mimeType: gml::CodeType [0..1]</text>
-	<text x="250.00" y="373.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 250.00 373.00)">+ </text>
-	<text x="267.00" y="373.00" textLength="153" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 267.00 373.00)">textureType: TextureTypeType [0..1]</text>
-	<text x="250.00" y="385.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 250.00 385.00)">+ </text>
-	<text x="267.00" y="385.00" textLength="145" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 267.00 385.00)">wrapMode: WrapModeType [0..1]</text>
-	<text x="250.00" y="397.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 250.00 397.00)">+ </text>
-	<text x="267.00" y="397.00" textLength="155" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 267.00 397.00)">borderColor: ColorPlusOpacity [0..1]</text>
+	<text x="250.00" y="350.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 250.00 350.00)">+ </text>
+	<text x="267.00" y="350.00" textLength="93" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 267.00 350.00)">imageURI: xs::anyURI</text>
+	<text x="250.00" y="362.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 250.00 362.00)">+ </text>
+	<text x="267.00" y="362.00" textLength="139" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 267.00 362.00)">mimeType: gml::CodeType [0..1]</text>
+	<text x="250.00" y="374.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 250.00 374.00)">+ </text>
+	<text x="267.00" y="374.00" textLength="153" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 267.00 374.00)">textureType: TextureTypeType [0..1]</text>
+	<text x="250.00" y="386.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 250.00 386.00)">+ </text>
+	<text x="267.00" y="386.00" textLength="145" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 267.00 386.00)">wrapMode: WrapModeType [0..1]</text>
+	<text x="250.00" y="398.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 250.00 398.00)">+ </text>
+	<text x="267.00" y="398.00" textLength="155" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 267.00 398.00)">borderColor: ColorPlusOpacity [0..1]</text>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFCC;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
- <rect x="265" y="440" width="180" height="40" rx="0.00" shape-rendering="auto"  />
+ <rect x="265" y="441" width="180" height="40" rx="0.00" shape-rendering="auto"  />
 </g>
 <g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
-	<text x="323.00" y="456.00" textLength="63" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 323.00 456.00)">«FeatureType»</text>
-	<text x="294.00" y="468.00" textLength="122" style="font-family:Yu Gothic UI; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 294.00 468.00)">app::ParameterizedTexture</text>
+	<text x="323.00" y="457.00" textLength="63" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 323.00 457.00)">«FeatureType»</text>
+	<text x="294.00" y="469.00" textLength="122" style="font-family:Yu Gothic UI; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 294.00 469.00)">app::ParameterizedTexture</text>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFCC;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
- <rect x="265" y="530" width="190" height="51" rx="0.00" shape-rendering="auto"  />
+ <rect x="265" y="531" width="190" height="51" rx="0.00" shape-rendering="auto"  />
 </g>
 <g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
-	<text x="344.00" y="546.00" textLength="31" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 344.00 546.00)">«Type»</text>
-	<text x="290.00" y="558.00" textLength="139" style="font-family:Yu Gothic UI; font-weight:700; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 290.00 558.00)">app::_TextureParameterization</text>
+	<text x="344.00" y="547.00" textLength="31" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 344.00 547.00)">«Type»</text>
+	<text x="290.00" y="559.00" textLength="139" style="font-family:Yu Gothic UI; font-weight:700; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 290.00 559.00)">app::_TextureParameterization</text>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFCC;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
- <rect x="215" y="620" width="293" height="70" rx="0.00" shape-rendering="auto"  />
+ <rect x="215" y="621" width="293" height="70" rx="0.00" shape-rendering="auto"  />
 </g>
 <g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
-	<text x="346.00" y="636.00" textLength="31" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 346.00 636.00)">«Type»</text>
-	<text x="321.00" y="648.00" textLength="81" style="font-family:Yu Gothic UI; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 321.00 648.00)">app::TexCoordList</text>
+	<text x="346.00" y="637.00" textLength="31" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 346.00 637.00)">«Type»</text>
+	<text x="321.00" y="649.00" textLength="81" style="font-family:Yu Gothic UI; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 321.00 649.00)">app::TexCoordList</text>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
-  <path d="M 215 655 L 507 655" shape-rendering="auto"/>
+  <path d="M 215 656 L 507 656" shape-rendering="auto"/>
 </g>
 <g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
-	<text x="220.00" y="669.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 220.00 669.00)">+ </text>
-	<text x="237.00" y="669.00" textLength="175" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 237.00 669.00)">textureCoordinates: gml::doubleList [1..*]</text>
-	<text x="220.00" y="681.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 220.00 681.00)">+ </text>
-	<text x="237.00" y="681.00" textLength="89" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 237.00 681.00)">ring: xs::anyURI [1..*]</text>
+	<text x="220.00" y="670.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 220.00 670.00)">+ </text>
+	<text x="237.00" y="670.00" textLength="175" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 237.00 670.00)">textureCoordinates: gml::doubleList [1..*]</text>
+	<text x="220.00" y="682.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 220.00 682.00)">+ </text>
+	<text x="237.00" y="682.00" textLength="89" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 237.00 682.00)">ring: xs::anyURI [1..*]</text>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFCC;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
- <rect x="485" y="460" width="140" height="80" rx="0.00" shape-rendering="auto"  />
+ <rect x="485" y="461" width="140" height="80" rx="0.00" shape-rendering="auto"  />
 </g>
 <g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
-	<text x="540.00" y="476.00" textLength="29" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 540.00 476.00)">«type»</text>
-	<text x="500.00" y="488.00" textLength="109" style="font-family:Yu Gothic UI; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 500.00 488.00)">app::TextureAssociation</text>
+	<text x="540.00" y="477.00" textLength="29" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 540.00 477.00)">«type»</text>
+	<text x="500.00" y="489.00" textLength="109" style="font-family:Yu Gothic UI; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 500.00 489.00)">app::TextureAssociation</text>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
-  <path d="M 485 495 L 624 495" shape-rendering="auto"/>
+  <path d="M 485 496 L 624 496" shape-rendering="auto"/>
 </g>
 <g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
-	<text x="490.00" y="509.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 490.00 509.00)">+ </text>
-	<text x="507.00" y="509.00" textLength="61" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 507.00 509.00)">uri: xs::anyURI</text>
+	<text x="490.00" y="510.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 490.00 510.00)">+ </text>
+	<text x="507.00" y="510.00" textLength="61" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 507.00 510.00)">uri: xs::anyURI</text>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFCC;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
- <rect x="785" y="40" width="100" height="80" rx="0.00" shape-rendering="auto"  />
+ <rect x="854" y="42" width="100" height="80" rx="0.00" shape-rendering="auto"  />
 </g>
 <g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
-	<text x="803.00" y="53.00" textLength="79" style="font-family:Yu Gothic UI; font-weight:400; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 803.00 53.00)">_FeatureCollection</text>
-	<text x="803.00" y="71.00" textLength="63" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 803.00 71.00)">«FeatureType»</text>
-	<text x="799.00" y="83.00" textLength="71" style="font-family:Yu Gothic UI; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 799.00 83.00)">core::CityModel</text>
+	<text x="872.00" y="55.00" textLength="79" style="font-family:Yu Gothic UI; font-weight:400; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 872.00 55.00)">_FeatureCollection</text>
+	<text x="872.00" y="73.00" textLength="63" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 872.00 73.00)">«FeatureType»</text>
+	<text x="868.00" y="85.00" textLength="71" style="font-family:Yu Gothic UI; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 868.00 85.00)">core::CityModel</text>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFCC;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
- <rect x="655" y="490" width="150" height="51" rx="0.00" shape-rendering="auto"  />
+ <rect x="655" y="491" width="150" height="51" rx="0.00" shape-rendering="auto"  />
 </g>
 <g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
-	<text x="703.00" y="506.00" textLength="53" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 703.00 506.00)">«BasicType»</text>
-	<text x="679.00" y="518.00" textLength="101" style="font-family:Yu Gothic UI; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 679.00 518.00)">app::ColorPlusOpacity</text>
+	<text x="703.00" y="507.00" textLength="53" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 703.00 507.00)">«BasicType»</text>
+	<text x="679.00" y="519.00" textLength="101" style="font-family:Yu Gothic UI; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 679.00 519.00)">app::ColorPlusOpacity</text>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFCC;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
- <rect x="655" y="400" width="152" height="49" rx="0.00" shape-rendering="auto"  />
+ <rect x="655" y="401" width="152" height="49" rx="0.00" shape-rendering="auto"  />
 </g>
 <g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
-	<text x="704.00" y="416.00" textLength="53" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 704.00 416.00)">«BasicType»</text>
-	<text x="670.00" y="428.00" textLength="122" style="font-family:Yu Gothic UI; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 670.00 428.00)">core::doubleBetween0and1</text>
+	<text x="704.00" y="417.00" textLength="53" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 704.00 417.00)">«BasicType»</text>
+	<text x="670.00" y="429.00" textLength="122" style="font-family:Yu Gothic UI; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 670.00 429.00)">core::doubleBetween0and1</text>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFCC;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
- <rect x="645" y="150" width="160" height="99" rx="0.00" shape-rendering="auto"  />
+ <rect x="645" y="151" width="160" height="99" rx="0.00" shape-rendering="auto"  />
 </g>
 <g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
-	<text x="692.00" y="166.00" textLength="66" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 692.00 166.00)">«Enumeration»</text>
-	<text x="675.00" y="178.00" textLength="100" style="font-family:Yu Gothic UI; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 675.00 178.00)">app::TextureTypeType</text>
+	<text x="692.00" y="167.00" textLength="66" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 692.00 167.00)">«Enumeration»</text>
+	<text x="675.00" y="179.00" textLength="100" style="font-family:Yu Gothic UI; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 675.00 179.00)">app::TextureTypeType</text>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
-  <path d="M 645 185 L 804 185" shape-rendering="auto"/>
+  <path d="M 645 186 L 804 186" shape-rendering="auto"/>
 </g>
 <g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
-	<text x="712.00" y="199.00" textLength="26" style="font-family:Yu Gothic UI; font-weight:400; font-style:italic; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 712.00 199.00)">literals</text>
-	<text x="650.00" y="211.00" textLength="3" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 650.00 211.00)"> </text>
-	<text x="667.00" y="211.00" textLength="32" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 667.00 211.00)">specific</text>
-	<text x="650.00" y="223.00" textLength="3" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 650.00 223.00)"> </text>
-	<text x="667.00" y="223.00" textLength="28" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 667.00 223.00)">typical</text>
-	<text x="650.00" y="235.00" textLength="3" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 650.00 235.00)"> </text>
-	<text x="667.00" y="235.00" textLength="42" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 667.00 235.00)">unknown</text>
+	<text x="712.00" y="200.00" textLength="26" style="font-family:Yu Gothic UI; font-weight:400; font-style:italic; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 712.00 200.00)">literals</text>
+	<text x="650.00" y="212.00" textLength="3" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 650.00 212.00)"> </text>
+	<text x="667.00" y="212.00" textLength="32" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 667.00 212.00)">specific</text>
+	<text x="650.00" y="224.00" textLength="3" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 650.00 224.00)"> </text>
+	<text x="667.00" y="224.00" textLength="28" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 667.00 224.00)">typical</text>
+	<text x="650.00" y="236.00" textLength="3" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 650.00 236.00)"> </text>
+	<text x="667.00" y="236.00" textLength="42" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 667.00 236.00)">unknown</text>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFCC;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
- <rect x="645" y="260" width="160" height="124" rx="0.00" shape-rendering="auto"  />
+ <rect x="645" y="261" width="160" height="124" rx="0.00" shape-rendering="auto"  />
 </g>
 <g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
-	<text x="692.00" y="276.00" textLength="66" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 692.00 276.00)">«Enumeration»</text>
-	<text x="678.00" y="288.00" textLength="94" style="font-family:Yu Gothic UI; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 678.00 288.00)">app::WrapModeType</text>
+	<text x="692.00" y="277.00" textLength="66" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 692.00 277.00)">«Enumeration»</text>
+	<text x="678.00" y="289.00" textLength="94" style="font-family:Yu Gothic UI; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 678.00 289.00)">app::WrapModeType</text>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
-  <path d="M 645 295 L 804 295" shape-rendering="auto"/>
+  <path d="M 645 296 L 804 296" shape-rendering="auto"/>
 </g>
 <g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
-	<text x="712.00" y="309.00" textLength="26" style="font-family:Yu Gothic UI; font-weight:400; font-style:italic; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 712.00 309.00)">literals</text>
-	<text x="650.00" y="321.00" textLength="3" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 650.00 321.00)"> </text>
-	<text x="667.00" y="321.00" textLength="23" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 667.00 321.00)">none</text>
-	<text x="650.00" y="333.00" textLength="3" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 650.00 333.00)"> </text>
-	<text x="667.00" y="333.00" textLength="21" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 667.00 333.00)">wrap</text>
-	<text x="650.00" y="345.00" textLength="3" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 650.00 345.00)"> </text>
-	<text x="667.00" y="345.00" textLength="26" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 667.00 345.00)">mirror</text>
-	<text x="650.00" y="357.00" textLength="3" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 650.00 357.00)"> </text>
-	<text x="667.00" y="357.00" textLength="27" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 667.00 357.00)">clamp</text>
-	<text x="650.00" y="369.00" textLength="3" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 650.00 369.00)"> </text>
-	<text x="667.00" y="369.00" textLength="29" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 667.00 369.00)">border</text>
+	<text x="712.00" y="310.00" textLength="26" style="font-family:Yu Gothic UI; font-weight:400; font-style:italic; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 712.00 310.00)">literals</text>
+	<text x="650.00" y="322.00" textLength="3" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 650.00 322.00)"> </text>
+	<text x="667.00" y="322.00" textLength="23" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 667.00 322.00)">none</text>
+	<text x="650.00" y="334.00" textLength="3" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 650.00 334.00)"> </text>
+	<text x="667.00" y="334.00" textLength="21" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 667.00 334.00)">wrap</text>
+	<text x="650.00" y="346.00" textLength="3" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 650.00 346.00)"> </text>
+	<text x="667.00" y="346.00" textLength="26" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 667.00 346.00)">mirror</text>
+	<text x="650.00" y="358.00" textLength="3" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 650.00 358.00)"> </text>
+	<text x="667.00" y="358.00" textLength="27" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 667.00 358.00)">clamp</text>
+	<text x="650.00" y="370.00" textLength="3" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 650.00 370.00)"> </text>
+	<text x="667.00" y="370.00" textLength="29" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 667.00 370.00)">border</text>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFCC;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
- <rect x="35" y="300" width="180" height="150" rx="0.00" shape-rendering="auto"  />
+ <rect x="35" y="301" width="180" height="150" rx="0.00" shape-rendering="auto"  />
 </g>
 <g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
-	<text x="93.00" y="316.00" textLength="63" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 93.00 316.00)">«FeatureType»</text>
-	<text x="86.00" y="328.00" textLength="78" style="font-family:Yu Gothic UI; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 86.00 328.00)">app::X3DMaterial</text>
+	<text x="93.00" y="317.00" textLength="63" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 93.00 317.00)">«FeatureType»</text>
+	<text x="86.00" y="329.00" textLength="78" style="font-family:Yu Gothic UI; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 86.00 329.00)">app::X3DMaterial</text>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00">
-  <path d="M 35 335 L 214 335" shape-rendering="auto"/>
+  <path d="M 35 336 L 214 336" shape-rendering="auto"/>
 </g>
 <g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
-	<text x="40.00" y="349.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 40.00 349.00)">+ </text>
-	<text x="57.00" y="349.00" textLength="145" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 57.00 349.00)">ambientIntensity: xs::double [0..1]</text>
-	<text x="40.00" y="361.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 40.00 361.00)">+ </text>
-	<text x="57.00" y="361.00" textLength="146" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 57.00 361.00)">diffuseColor: gml::doubleList [0..1]</text>
-	<text x="40.00" y="373.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 40.00 373.00)">+ </text>
-	<text x="57.00" y="373.00" textLength="153" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 57.00 373.00)">emissiveColor: gml::doubleList [0..1]</text>
-	<text x="40.00" y="385.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 40.00 385.00)">+ </text>
-	<text x="57.00" y="385.00" textLength="153" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 57.00 385.00)">specularColor: gml::doubleList [0..1]</text>
-	<text x="40.00" y="397.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 40.00 397.00)">+ </text>
-	<text x="57.00" y="397.00" textLength="111" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 57.00 397.00)">shininess: xs::double [0..1]</text>
-	<text x="40.00" y="409.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 40.00 409.00)">+ </text>
-	<text x="57.00" y="409.00" textLength="128" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 57.00 409.00)">transparency: xs::double [0..1]</text>
-	<text x="40.00" y="421.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 40.00 421.00)">+ </text>
-	<text x="57.00" y="421.00" textLength="118" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 57.00 421.00)">isSmooth: xs::boolean [0..1]</text>
-	<text x="40.00" y="433.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 40.00 433.00)">+ </text>
-	<text x="57.00" y="433.00" textLength="97" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 57.00 433.00)">target: xs::anyURI [0..*]</text>
+	<text x="40.00" y="350.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 40.00 350.00)">+ </text>
+	<text x="57.00" y="350.00" textLength="145" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 57.00 350.00)">ambientIntensity: xs::double [0..1]</text>
+	<text x="40.00" y="362.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 40.00 362.00)">+ </text>
+	<text x="57.00" y="362.00" textLength="146" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 57.00 362.00)">diffuseColor: gml::doubleList [0..1]</text>
+	<text x="40.00" y="374.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 40.00 374.00)">+ </text>
+	<text x="57.00" y="374.00" textLength="153" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 57.00 374.00)">emissiveColor: gml::doubleList [0..1]</text>
+	<text x="40.00" y="386.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 40.00 386.00)">+ </text>
+	<text x="57.00" y="386.00" textLength="153" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 57.00 386.00)">specularColor: gml::doubleList [0..1]</text>
+	<text x="40.00" y="398.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 40.00 398.00)">+ </text>
+	<text x="57.00" y="398.00" textLength="111" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 57.00 398.00)">shininess: xs::double [0..1]</text>
+	<text x="40.00" y="410.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 40.00 410.00)">+ </text>
+	<text x="57.00" y="410.00" textLength="128" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 57.00 410.00)">transparency: xs::double [0..1]</text>
+	<text x="40.00" y="422.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 40.00 422.00)">+ </text>
+	<text x="57.00" y="422.00" textLength="118" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 57.00 422.00)">isSmooth: xs::boolean [0..1]</text>
+	<text x="40.00" y="434.00" textLength="10" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 40.00 434.00)">+ </text>
+	<text x="57.00" y="434.00" textLength="97" style="font-family:Yu Gothic UI; font-weight:400; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 57.00 434.00)">target: xs::anyURI [0..*]</text>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
-  <path d="M 123 299 L 123 260 L 244 260 L 244 211" shape-rendering="auto"/>
+  <path d="M 123 300 L 123 261 L 244 261 L 244 212" shape-rendering="auto"/>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
-  <polygon points="250 227 238 227 244 211" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+  <polygon points="250 228 238 228 244 212" shape-rendering="auto"   style="fill-rule:evenodd;"/>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
-  <path d="M 730 489 L 730 450" shape-rendering="auto"/>
+  <path d="M 730 490 L 730 451" shape-rendering="auto"/>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
-  <polygon points="736 466 724 466 730 450" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+  <polygon points="736 467 724 467 730 451" shape-rendering="auto"   style="fill-rule:evenodd;"/>
 </g>
 <g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
-  <path d="M 364 504 L 364 506" shape-rendering="auto"/>
+  <path d="M 364 505 L 364 504" shape-rendering="auto"/>
 </g>
 <g style="stroke-width:1;stroke-linecap:square;stroke-linejoin:round; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00" stroke-dasharray="6,3">
-  <path d="M 364 505 L 485 502" shape-rendering="auto"/>
+  <path d="M 364 504 L 485 502" shape-rendering="auto"/>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
-  <path d="M 355 299 L 355 260 L 244 260 M 244 211" shape-rendering="auto"/>
-  <path d="M 364 481 L 364 529" shape-rendering="auto"/>
+  <path d="M 355 300 L 355 261 L 244 261 M 244 212" shape-rendering="auto"/>
+  <path d="M 365 440 L 365 413" shape-rendering="auto"/>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
-  <polygon points="369 491 364 481 359 491 364 501" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+  <polygon points="371 429 359 429 365 413" shape-rendering="auto"   style="fill-rule:evenodd;"/>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
-  <path d="M 358 514 L 364 529 L 370 514" shape-rendering="auto"/>
-  <path d="M 365 439 L 365 412" shape-rendering="auto"/>
+  <path d="M 364 530 L 364 482" shape-rendering="auto"/>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
-  <polygon points="371 428 359 428 365 412" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+  <polygon points="369 492 364 482 359 492 364 502" shape-rendering="auto"   style="fill-rule:evenodd;"/>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
-  <path d="M 366 619 L 366 582" shape-rendering="auto"/>
+  <path d="M 370 515 L 364 530 L 358 515" shape-rendering="auto"/>
+  <path d="M 366 620 L 366 583" shape-rendering="auto"/>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
-  <polygon points="372 598 360 598 366 582" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+  <polygon points="372 599 360 599 366 583" shape-rendering="auto"   style="fill-rule:evenodd;"/>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
-  <path d="M 664 71 L 784 71" shape-rendering="auto"/>
+  <path d="M 665 74 L 853 73" shape-rendering="auto"/>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
-  <polygon points="774 76 784 71 774 66 764 71" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+  <polygon points="843 78 853 73 843 68 833 73" shape-rendering="auto"   style="fill-rule:evenodd;"/>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
-  <path d="M 679 77 L 664 71 L 679 65" shape-rendering="auto"/>
-  <path d="M 554 115 L 554 175 L 344 175" shape-rendering="auto"/>
+  <path d="M 680 80 L 665 74 L 680 68" shape-rendering="auto"/>
+  <path d="M 344 178 L 550 178 L 550 119" shape-rendering="auto"/>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
-  <polygon points="559 125 554 115 549 125 554 135" shape-rendering="auto"   style="fill-rule:evenodd;"/>
+  <polygon points="555 129 550 119 545 129 550 139" shape-rendering="auto"   style="fill-rule:evenodd;"/>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
-  <path d="M 359 169 L 344 175 L 359 181" shape-rendering="auto"/>
+  <path d="M 359 184 L 344 178 L 359 172" shape-rendering="auto"/>
 </g>
 <g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
-	<text x="667.00" y="62.00" textLength="105" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 667.00 62.00)">+appearanceMember</text>
-	<text x="696.00" y="90.00" textLength="18" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 696.00 90.00)">0..*</text>
-	<text x="299.00" y="517.00" textLength="38" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 299.00 517.00)">+target</text>
-	<text x="392.00" y="519.00" textLength="18" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 392.00 519.00)">0..*</text>
-	<text x="399.00" y="190.00" textLength="106" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 399.00 190.00)">+surfaceDataMember</text>
-	<text x="362.00" y="190.00" textLength="18" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 362.00 190.00)">0..*</text>
+	<text x="683.00" y="46.00" textLength="105" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 683.00 46.00)">+appearanceMember</text>
+	<text x="708.00" y="61.00" textLength="56" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 708.00 61.00)">«property»</text>
+	<text x="697.00" y="93.00" textLength="18" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 697.00 93.00)">0..*</text>
+	<text x="295.00" y="507.00" textLength="38" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 295.00 507.00)">+target</text>
+	<text x="295.00" y="522.00" textLength="56" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 295.00 522.00)">«property»</text>
+	<text x="367.00" y="522.00" textLength="18" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 367.00 522.00)">0..*</text>
+	<text x="368.00" y="150.00" textLength="106" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 368.00 150.00)">+surfaceDataMember</text>
+	<text x="368.00" y="165.00" textLength="56" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 368.00 165.00)">«property»</text>
+	<text x="347.00" y="194.00" textLength="18" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 347.00 194.00)">0..*</text>
 </g>
 </svg>
