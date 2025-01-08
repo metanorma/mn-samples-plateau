@@ -132,7 +132,7 @@
 <g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
 	<text x="652.00" y="707.00" textLength="76" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 652.00 707.00)">«FeatureType»</text>
 	<text x="677.00" y="722.00" textLength="26" style="font-family:メイリオ; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 677.00 722.00)">wtr::</text>
-	<text x="636.00" y="737.00" textLength="107" style="font-family:メイリオ; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 636.00 737.00)">WaterClosureSurace</text>
+	<text x="634.00" y="737.00" textLength="111" style="font-family:メイリオ; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 634.00 737.00)">WaterClosureSurface</text>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFCC;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00">
  <rect x="705" y="590" width="200" height="80" rx="0.00" shape-rendering="auto"  />
@@ -161,8 +161,10 @@
   <polygon points="811 507 799 507 805 491" shape-rendering="auto"   style="fill-rule:evenodd;"/>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
-  <path d="M 876 467 L 984 467" shape-rendering="auto"/>
-  <path d="M 969 473 L 984 467 L 969 461" shape-rendering="auto"/>
+  <path d="M 984 424 L 876 424" shape-rendering="auto"/>
+  <path d="M 969 418 L 984 424 L 969 430" shape-rendering="auto"/>
+  <path d="M 984 450 L 876 450" shape-rendering="auto"/>
+  <path d="M 969 444 L 984 450 L 969 456" shape-rendering="auto"/>
   <path d="M 734 440 L 535 440" shape-rendering="auto"/>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
@@ -170,8 +172,6 @@
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
   <path d="M 719 434 L 734 440 L 719 446" shape-rendering="auto"/>
-  <path d="M 876 429 L 984 429" shape-rendering="auto"/>
-  <path d="M 969 435 L 984 429 L 969 423" shape-rendering="auto"/>
   <path d="M 805 409 L 805 362 L 582 362 L 582 313" shape-rendering="auto"/>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
@@ -184,20 +184,20 @@
   <polygon points="811 507 799 507 805 491" shape-rendering="auto"   style="fill-rule:evenodd;"/>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
+  <path d="M 208 395 L 307 395 L 307 519 L 335 519" shape-rendering="auto"/>
+  <path d="M 223 401 L 208 395 L 223 389" shape-rendering="auto"/>
+  <path d="M 141 716 L 276 716 L 276 558 M 335 558" shape-rendering="auto"/>
+  <path d="M 156 722 L 141 716 L 156 710" shape-rendering="auto"/>
+  <path d="M 141 678 L 226 678 L 226 558 L 335 558" shape-rendering="auto"/>
+  <path d="M 156 684 L 141 678 L 156 672" shape-rendering="auto"/>
   <path d="M 575 189 L 575 146" shape-rendering="auto"/>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
   <polygon points="581 162 569 162 575 146" shape-rendering="auto"   style="fill-rule:evenodd;"/>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00">
-  <path d="M 334 565 L 213 565 L 213 723 L 142 723" shape-rendering="auto"/>
-  <path d="M 157 717 L 142 723 L 157 729" shape-rendering="auto"/>
-  <path d="M 334 496 L 265 496 L 265 389 L 209 389" shape-rendering="auto"/>
-  <path d="M 224 383 L 209 389 L 224 395" shape-rendering="auto"/>
-  <path d="M 334 565 L 191 565 L 191 700 L 142 700" shape-rendering="auto"/>
-  <path d="M 157 694 L 142 700 L 157 706" shape-rendering="auto"/>
-  <path d="M 334 526 L 216 526" shape-rendering="auto"/>
-  <path d="M 231 520 L 216 526 L 231 532" shape-rendering="auto"/>
+  <path d="M 216 519 L 334 532" shape-rendering="auto"/>
+  <path d="M 230 527 L 216 519 L 232 515" shape-rendering="auto"/>
   <path d="M 457 489 L 457 461" shape-rendering="auto"/>
 </g>
 <g style="stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00">
@@ -207,19 +207,26 @@
   <path d="M 454 399 L 454 362 L 582 362 M 582 313" shape-rendering="auto"/>
 </g>
 <g style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00">
-	<text x="176.00" y="740.00" textLength="53" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 176.00 740.00)">+lod3Solid</text>
-	<text x="233.00" y="739.00" textLength="18" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 233.00 739.00)">0..1</text>
-	<text x="910.00" y="413.00" textLength="65" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 910.00 413.00)">+lod2Surface</text>
-	<text x="950.00" y="392.00" textLength="18" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 950.00 392.00)">0..1</text>
-	<text x="911.00" y="458.00" textLength="65" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 911.00 458.00)">+lod3Surface</text>
-	<text x="959.00" y="483.00" textLength="18" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 959.00 483.00)">0..1</text>
-	<text x="128.00" y="635.00" textLength="53" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 128.00 635.00)">+lod2Solid</text>
-	<text x="237.00" y="692.00" textLength="18" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 237.00 692.00)">0..1</text>
-	<text x="219.00" y="543.00" textLength="89" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 219.00 543.00)">+lod1MultiSurface</text>
-	<text x="219.00" y="518.00" textLength="18" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 219.00 518.00)">0..1</text>
-	<text x="230.00" y="380.00" textLength="82" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 230.00 380.00)">+lod0MultiCurve</text>
-	<text x="212.00" y="405.00" textLength="18" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 212.00 405.00)">0..1</text>
-	<text x="641.00" y="428.00" textLength="63" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 641.00 428.00)">+boundedBy</text>
+	<text x="585.00" y="412.00" textLength="63" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 585.00 412.00)">+boundedBy</text>
+	<text x="589.00" y="427.00" textLength="56" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 589.00 427.00)">«property»</text>
 	<text x="682.00" y="455.00" textLength="18" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 682.00 455.00)">0..*</text>
+	<text x="855.00" y="415.00" textLength="65" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 855.00 415.00)">+lod3Surface</text>
+	<text x="855.00" y="430.00" textLength="56" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 855.00 430.00)">«property»</text>
+	<text x="959.00" y="440.00" textLength="18" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 959.00 440.00)">0..1</text>
+	<text x="215.00" y="364.00" textLength="82" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 215.00 364.00)">+lod0MultiCurve</text>
+	<text x="215.00" y="379.00" textLength="56" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 215.00 379.00)">«property»</text>
+	<text x="211.00" y="411.00" textLength="18" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 211.00 411.00)">0..1</text>
+	<text x="144.00" y="669.00" textLength="53" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 144.00 669.00)">+lod2Solid</text>
+	<text x="144.00" y="684.00" textLength="56" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 144.00 684.00)">«property»</text>
+	<text x="144.00" y="694.00" textLength="18" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 144.00 694.00)">0..1</text>
+	<text x="855.00" y="441.00" textLength="65" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 855.00 441.00)">+lod2Surface</text>
+	<text x="855.00" y="456.00" textLength="56" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 855.00 456.00)">«property»</text>
+	<text x="959.00" y="466.00" textLength="18" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 959.00 466.00)">0..1</text>
+	<text x="144.00" y="707.00" textLength="53" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 144.00 707.00)">+lod3Solid</text>
+	<text x="144.00" y="722.00" textLength="56" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 144.00 722.00)">«property»</text>
+	<text x="144.00" y="732.00" textLength="18" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 144.00 732.00)">0..1</text>
+	<text x="211.00" y="491.00" textLength="89" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 211.00 491.00)">+lod1MultiSurface</text>
+	<text x="211.00" y="506.00" textLength="56" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 211.00 506.00)">«property»</text>
+	<text x="219.00" y="535.00" textLength="18" style="font-family:メイリオ; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(-0.00 219.00 535.00)">0..1</text>
 </g>
 </svg>
