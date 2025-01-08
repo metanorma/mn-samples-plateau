@@ -40,30 +40,37 @@ jobs:
           destination: artifact
           artifact-name: mn
 
-  fl-build-001:
+  fl-build:
     runs-on: ubuntu-latest
     needs: build
+    strategy:
+      matrix:
+        document_dir: [001, 002]
+
     steps:
       - name: Download Metanorma artifacts
         uses: actions/download-artifact@v4
         with:
           name: mn
 
-      - name: "Firelight: commit docs"
+      - name: "Firelight: create temporary Git repo"
         run: |
           git config --global user.email "57123902+metanorma-ci@users.noreply.github.com"
           git config --global user.name "Metanorma CI"
           git config --global init.defaultBranch main
           git init .
-          git add documents/001*/*.presentation.xml
+
+      - name: "Firelight: commit document ${{ matrix.document_dir }}"
+        run: |
+          git add documents/${{ matrix.document_dir }}-v5/document.presentation.xml
           git commit -m "Commit presentation XML"
 
-      - name: "Firelight: prepare config for doc 001"
+      - name: "Firelight: prepare config for document ${{ matrix.document_dir }}"
         run: |
           cat <<'EOF' >> anafero-config.json
           {
             "version": "0.1",
-            "entryPoint": "file:documents/001-v5/document.presentation.xml",
+            "entryPoint": "file:documents/${{ matrix.document_dir }}-v5/document.presentation.xml",
             "storeAdapters": [
               "git+https://github.com/metanorma/firelight#main/packages/metanorma-xml-store"
             ],
@@ -76,69 +83,29 @@ jobs:
           }
           EOF
           git add anafero-config.json
-          git commit -m "Add build config for 001"
+          git commit -m "Add build config for ${{ matrix.document_dir }}"
 
-      - name: "Firelight: generate HTML for doc 001"
+      - name: "Firelight: generate HTML for doc ${{ matrix.document_dir }}"
         run: |
-          npx --node-options='--experimental-vm-modules' -y @riboseinc/anafero-cli@0.0.6 --target-dir dist --path-prefix /mn-samples-plateau/001 --current-rev main
+          npx --node-options='--experimental-vm-modules' \
+            -y @riboseinc/anafero-cli@0.0.6 \
+            --target-dir dist/${{ matrix.document_dir }} \
+            --path-prefix /mn-samples-plateau/${{ matrix.document_dir }} \
+            --current-rev main
 
       - uses: actions/upload-artifact@v4
         with:
-          name: fl-001
-          path: dist
-          if-no-files-found: error
-
-  fl-build-002:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Download Metanorma artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: mn
-
-      - name: "Firelight: commit docs"
-        run: |
-          git config --global user.email "57123902+metanorma-ci@users.noreply.github.com"
-          git config --global user.name "Metanorma CI"
-          git config --global init.defaultBranch main
-          git init .
-          git add documents/002*/*.presentation.xml
-          git commit -m "Commit presentation XML"
-
-      - name: "Firelight: prepare config for doc 002"
-        run: |
-          cat <<'EOF' >> anafero-config.json
-          {
-            "version": "0.1",
-            "entryPoint": "file:documents/002-v5/document.presentation.xml",
-            "storeAdapters": [
-              "git+https://github.com/metanorma/firelight#main/packages/metanorma-xml-store"
-            ],
-            "contentAdapters": [
-              "git+https://github.com/metanorma/firelight#main/packages/metanorma-site-content"
-            ],
-            "resourceLayouts": [
-              "git+https://github.com/metanorma/firelight#main/packages/plateau-layout"
-            ]
-          }
-          EOF
-          git add anafero-config.json
-          git commit -m "Add build config for 002"
-
-      - name: "Firelight: generate HTML for doc 002"
-        run: |
-          npx --node-options='--experimental-vm-modules' -y @riboseinc/anafero-cli@0.0.6 --target-dir dist --path-prefix /mn-samples-plateau/002 --current-rev main
-
-      - uses: actions/upload-artifact@v4
-        with:
-          name: fl-002
-          path: dist
+          name: fl-${{ matrix.document_dir }}
+          path: dist/${{ matrix.document_dir }}
           if-no-files-found: error
 
   deploy-pages:
+    # if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    needs: [fl-build-001, fl-build-002]
+    needs: fl-build
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -149,17 +116,15 @@ jobs:
       - name: Make dist dir
         run: mkdir dist
 
-      - name: Download FL001 HTML artifact
+      - name: Download HTML artifacts
         uses: actions/download-artifact@v4
         with:
-          name: fl-001
-          path: dist/001
+          pattern: fl-*
+          path: dist
+          merge-multiple: true
 
-      - name: Download FL002 HTML artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: fl-002
-          path: dist/002
+      - name: List files in dist
+        run: ls -l dist
 
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v3
