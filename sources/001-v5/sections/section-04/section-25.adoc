@@ -92,23 +92,25 @@ lutaml_gml_dictionary::iur/codelists/3.1/DmElement_annotationType.xml[template="
 
 ====== DmElement_precisionType.xml
 
-[cols="3a,11a,11a"]
-|===
-|ファイル名 2+| DmElement_precisionType.xml
+// [cols="3a,11a,11a"]
+// |===
+// |ファイル名 2+| DmElement_precisionType.xml
+// 
+// h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/DmElement_precisionType.xml
+// h| コード h| 説明（上位桁：数値化区分） h| 説明（下位桁：地図情報レベル）
+// | 1 | 基準点測量成果を用いる方法 | 1～50
+// | 2 | TS等を用いた数値実測 | ～100
+// | 3 | 数値図化法・他の数値地形図データの利用 | ～250
+// | 4 | 既成図数値化（無伸縮図面を使用）* | ～500
+// | 5 | 既成図数値化（伸縮図面を使用）* | ～1000
+// | 6 | 航空レーザ測量成果を用いる方法 | ～2500
+// | 7 | | ～5000
+// | 8 | | ～10000
+// | 9 | その他 | その他
+// 
+// |===
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/DmElement_precisionType.xml
-h| コード h| 説明（上位桁：数値化区分） h| 説明（下位桁：地図情報レベル）
-| 1 | 基準点測量成果を用いる方法 | 1～50
-| 2 | TS等を用いた数値実測 | ～100
-| 3 | 数値図化法・他の数値地形図データの利用 | ～250
-| 4 | 既成図数値化（無伸縮図面を使用）* | ～500
-| 5 | 既成図数値化（伸縮図面を使用）* | ～1000
-| 6 | 航空レーザ測量成果を用いる方法 | ～2500
-| 7 | | ～5000
-| 8 | | ～10000
-| 9 | その他 | その他
-
-|===
+lutaml_gml_dictionary::iur/codelists/3.1/DmElement_precisionType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops,annex=7,付録７ 公共測量標準図式>>
