@@ -72,6 +72,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義 {% if klass.has_guidance? 
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.has_guidance? %} h| 補足{%- endif %}
 {% endif %}
 {% for attr in root.sorted_inherited_assoc_props %}
+{% if citygml_ns contains attr.name_ns %}
 {%- capture name_col -%}
   {%- if attr.used? == false -%}
     ({{ attr.name_ns }}:{{ attr.name }})
@@ -85,6 +86,24 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
 | {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
 | {{ attr.definition }}
 {% if klass.has_guidance? -%} | {{ attr.guidance }}{%- endif %}
+{% endif %}
+{% endfor %}
+{% for attr in root.sorted_inherited_assoc_props %}
+{% unless citygml_ns contains attr.name_ns %}
+{%- capture name_col -%}
+  {%- if attr.used? == false -%}
+    ({{ attr.name_ns }}:{{ attr.name }})
+    [ {{ attr.gen_name }} ]
+  {%- else -%}
+    {{ attr.name_ns }}:{{ attr.name }}
+    [ {{ attr.gen_name }} ]
+  {%- endif -%}
+{%- endcapture -%}
+| {{ name_col | newline_to_br }}
+| {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
+| {{ attr.definition }}
+{% if klass.has_guidance? -%} | {{ attr.guidance }}{%- endif %}
+{% endunless %}
 {% endfor %}
 
 {% if root.sorted_assoc_props.size > 0 %}
