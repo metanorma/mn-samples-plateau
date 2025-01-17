@@ -5,6 +5,6 @@
 h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/{{ dict.file_name }}
 h| コード h| 説明
 {% for entry in dict.dictionary_entry %}
-| {{ entry.name }} | {{ entry.description }}
+| {{ entry.name }} | {{ entry.description | replace: ".", "&#46;" }}
 {% endfor %}
 |===
