@@ -43,7 +43,9 @@ span:organization[国土交通省 国土地理院].
 span:uri.citation[https://www.gsi.go.jp/GIS/jpgis-rh.html]
 
 // TODO: This entry did not exist but we need it as a term reference
-* [[[gsi_ops,1]]],
+//* [[[gsi_ops,1]]],
+//span:title[作業規程の準則].
+* [[[gsi_ops,作業規程の準則について]]],
 span:title[作業規程の準則].
 span:organization[国土交通省 国土地理院].
 span:uri.citation[https://www.gsi.go.jp/gijyutukanri/gijyutukanri41018.html]
@@ -59,26 +61,33 @@ span:title[品質の要求，評価及び報告のための規則].
 span:organization[国土交通省 国土地理院].
 span:uri.citation[https://www.gsi.go.jp/GIS/jpgis-downloads.html]
 
-* [[[city_data_ps_sample,1]]],
+// * [[[city_data_ps_sample,1]]],
+* [[[city_data_ps_sample,都市計画データ標準製品仕様書]]],
 span:title[都市計画データ標準製品仕様書].
 span:organization[国土交通省 都市局].
 span:uri.citation[https://www.mlit.go.jp/toshi/tosiko/toshi_tosiko_tk_000187.html]
 
-* [[[nilim_kiban_dps,1]]]
-span:title[道路基盤地図情報（整備促進版）製品仕様書（案）].
+// * [[[nilim_kiban_dps,1]]]
+// span:title[道路基盤地図情報（整備促進版）製品仕様書（案）].
+* [[[nilim_kiban_dps,道路基盤地図情報（整備促進版）製品仕様書（案）]]],
+span:title[道路基盤地図情報].
 span:organization[国土交通省 国土技術政策総合研究所].
 span:date[2014-05].
 span:uri.citation[https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0848pdf/ks084811.pdf]
 
-* [[[gsi_map_level_dps,1]]],
-span:title[地図情報レベル 2500 数値地形図データ作成のための標準製品仕様書（案）].
+// * [[[gsi_map_level_dps,1]]],
+// span:title[地図情報レベル 2500 数値地形図データ作成のための標準製品仕様書（案）].
+* [[[gsi_map_level_dps,地図情報レベル 2500 数値地形図データ作成のための標準製品仕様書（案）]]],
+span:title[地図情報レベル 2500 数値地形図データ標準製品仕様書].
 span:organization[国土交通省 国土地理院].
 span:uri.citation[https://www.gsi.go.jp/common/000259076.pdf]
 // https://psgsv2.gsi.go.jp/koukyou/public/seihinsiyou/seihinsiyou_index.html
 // https://psgsv2.gsi.go.jp/koukyou/public/seihinsiyou/data/%E5%9C%B0%E5%9B%B3%E6%83%85%E5%A0%B1%E3%83%AC% E3%83%99%E3%83%AB2500%E6%95%B0%E5%80%A4%E5%9C%B0%E5%BD%A2%E5%9B%B3%E3%83%87%E3%83%BC %E3%82%BF%E4%BD%9C%E6%88%90%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E6%A8%99%E6%BA%96%E8 %A3%BD%E5%93%81%E4%BB%95%E6%A7%98%E6%9B%B8.pdf
 
-* [[[iconstruction,1]]],
-span:title[i-Construction推進のための3次元数値地形図データ作成マニュアル].
+// * [[[iconstruction,1]]],
+// span:title[i-Construction推進のための3次元数値地形図データ作成マニュアル].
+* [[[iconstruction,i-Construction推進のための3次元数値地形図データ作成マニュアル]]],
+span:title[i-Construction推進].
 span:organization[国土交通省 国土地理院].
 span:uri.citation[https://www.gsi.go.jp/gijyutukanri/gijyutukanri41029.html]
 // https://psgsv2.gsi.go.jp/koukyou/public/3dmapping/index.html
@@ -104,29 +113,37 @@ span:title[IFC 2x3 Coordination View 2.0].
 span:organization[buildingSMART International].
 span:uri.citation[https://standards.buildingsmart.org/IFC/RELEASE/IFC2x3/FINAL/HTML/]
 
-* [[[gsi_dps,1]]],
-span:title[3次元屋内地理空間情報データ仕様書（案）].
+// * [[[gsi_dps,1]]],
+// span:title[3次元屋内地理空間情報データ仕様書（案）].
+* [[[gsi_dps,3次元屋内地理空間情報データ仕様書（案）]]],
+span:title[3次元屋内地理空間情報データ仕様書].
 span:organization[国土交通省 国土地理院].
 span:uri.citation[https://www.gsi.go.jp/common/000212582.pdf]
 
 * [[[iso_19106_2004,ISO 19106:2004]]]
 
-* [[[mlit_kiban_chizu,1]]]
-span:title[河川基盤地図ガイドライン（案）].
+// * [[[mlit_kiban_chizu,1]]]
+// span:title[河川基盤地図ガイドライン（案）].
+* [[[mlit_kiban_chizu,河川基盤地図ガイドライン（案）]]]
+span:title[河川基盤地図].
 span:organization[国土交通省 都市局].
 span:edition[第2.1版].
 span:date[2001-12].
 span:uri.citation[https://www.mlit.go.jp/river/shishin_guideline/kasen/gis/pdf_docs/chizu/kiban_chizu.pdf]
 
-* [[[gsi_foundation_map_dps,1]]]
-span:title[電子国土基本図地図情報ファイル仕様書].
+// * [[[gsi_foundation_map_dps,1]]]
+// span:title[電子国土基本図地図情報ファイル仕様書].
+* [[[gsi_foundation_map_dps,電子国土基本図地図情報ファイル仕様書]]]
+span:title[電子国土基本図地図].
 span:edition[第1.1版]
 span:organization[国土交通省 国土地理院].
 span:date[2017-06-30].
 span:uri.citation[https://www.gsi.go.jp/common/000189294.pdf]
 
-* [[[mlit_tide_flood_map,1]]]
-span:title[高潮浸水想定区域図作成の手引き].
+// * [[[mlit_tide_flood_map,1]]]
+// span:title[高潮浸水想定区域図作成の手引き].
+* [[[mlit_tide_flood_map,高潮浸水想定区域図作成の手引き]]]
+span:title[高潮浸水想定区域].
 span:edition[第2.11版]
 span:organization[国土交通省 国土地理院].
 span:date[2017-06-30].
