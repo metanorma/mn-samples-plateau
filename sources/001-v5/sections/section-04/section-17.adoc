@@ -1,7 +1,7 @@
 [[toc4_17]]
 === 植生モデルの応用スキーマ
 
-植生とは、地表面の植物の種類及びその覆われている状態をいう。「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」
+植生とは、地表面の植物の種類及びその覆われている状態をいう。「<<gsi_ops,付録７ 公共測量標準図式>>」
 
 [[toc4_17_01]]
 ==== 植生モデルのLOD
@@ -20,11 +20,11 @@
 h| 3+^h| LOD0
 h| 取得例
 |
-image::images/347.webp.png[]
+image::images/347.webp.png[width="150"]
 |
-image::images/348.webp.png[]
+image::images/348.webp.png[width="150"]
 |
-image::images/349.webp.png[]
+image::images/349.webp.png[width="150"]
 
 h| 説明 | 並木、植樹、独立樹（広葉樹）、独立樹（針葉樹）は、記号の表示位置の点情報を取得する。
 |
@@ -100,7 +100,7 @@ h| 説明 | 並木、植樹、独立樹（広葉樹）、独立樹（針葉樹�
 h| 2+^h| LOD1
 h| 取得例
 ^.^|
-image::images/350.webp.png[]
+image::images/350.webp.png[width="200"]
 ^.^|
 image::images/351.webp.png[]
 
@@ -156,7 +156,7 @@ h| 説明 | 樹冠の上方からの正射影の外周を、地表面から一�
 h| 2+^h| LOD2
 h| 取得例
 ^.^|
-image::images/352.webp.png[]
+image::images/352.webp.png[width="200"]
 ^.^|
 image::images/353.webp.png[]
 
@@ -232,7 +232,7 @@ h| 説明
 h| 2+^h| LOD3
 h| 取得例
 ^.^|
-image::images/354.webp.png[]
+image::images/354.webp.png[width="200"]
 ^.^|
 image::images/355.webp.png[]
 
@@ -406,7 +406,7 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Publ
 
 ====== SolitaryVegetationObject_class.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/SolitaryVegetationObject_class.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/SolitaryVegetationObject_class.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_green_roads>>
@@ -416,14 +416,14 @@ lutaml_gml_dictionary::iur/codelists/3.1/SolitaryVegetationObject_class.xml[temp
 
 ====== SolitaryVegetationObject_function.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/SolitaryVegetationObject_function.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/SolitaryVegetationObject_function.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<nilim_street_trees>>
 
 ====== PlantCover_class.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/PlantCover_class.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/PlantCover_class.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_green_roads>>
@@ -436,7 +436,7 @@ lutaml_gml_dictionary::iur/codelists/3.1/PlantCover_class.xml[template="gml_dict
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -450,7 +450,7 @@ lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xm
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -464,13 +464,13 @@ lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xm
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== DataQualityAttribute_lod1HeightType.xml
 
 // TODO: This table cannot be recreated because some values are marked "（使用不可）".
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_lod1HeightType.xml[template="gml_dict_template.liquid",context=dict]
 
 // | （使用不可）7 | 建築確認申請書類等に記載された「建築物の高さ」
 // | （使用不可）8 | 都市計画基礎調査（建物利用現況）の「高さ（m）」
@@ -483,11 +483,11 @@ lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>

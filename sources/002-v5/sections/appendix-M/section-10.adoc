@@ -359,7 +359,7 @@ image::images/363.webp.png[]
 +
 [[fig-M-8]]
 .道路中心線と坑口の中心線の交点の取得イメージ
-image::images/364.webp.png[]
+image::images/364.webp.png[width="300"]
 
 . 構造物の最低標高値を算出する。 +
 トンネルの最低標高値は、トンネル標準断面図に記載されたトンネルの深さとc）の路面標高値から算出する。TunnelPartを用いてトンネルを延長方向に区切る場合は、区切った区間ごとに最低標高値を算出する。 +
@@ -367,7 +367,7 @@ image::images/364.webp.png[]
 +
 [[fig-M-9]]
 .カルバート、シェッド及びシェルターの最低標高値の取得イメージ
-image::images/365.webp.png[]
+image::images/365.webp.png[width="400"]
 
 . 構造物の最高標高値を算出する。 +
 トンネルの最高標高値は、坑門工一般図又はトンネル標準断面図から坑門を含むトンネルの高さを取得し、b）の路面標高を用いて算出する。TunnelPartを用いてトンネルを延長方向に区切る場合は、区切った区間ごとに最高標高値を算出する。 +
@@ -386,19 +386,19 @@ image::images/366.webp.png[]
 +
 [[fig-M-11]]
 .TunnelPartを用いない場合の側面イメージ（左）とTunnelPartを用いた場合の側面イメージ（右）
-image::images/367.webp.png[]
+image::images/367.webp.png[width="400"]
 
 . f）で構造物の最低標高値を持ったポリゴンをe）で算出した構造物の最高標高値まで上向きに押し出し、立体とする。 +
 +
 [[fig-M-12]]
 .TunnelPartを用いない場合の側面イメージ（左）とTunnelPartを用いた場合の側面イメージ（右）
-image::images/368.webp.png[]
+image::images/368.webp.png[width="400"]
 
 トンネルモデル（LOD1）の作成例を<<fig-M-13>>に示す。
 
 [[fig-M-13]]
 .トンネルモデル（LOD1）の作成例
-image::images/369.webp.png[]
+image::images/369.webp.png[width="400"]
 
 ====== 作業手順（地下横断歩道）
 
@@ -408,7 +408,7 @@ image::images/369.webp.png[]
 +
 [[fig-M-14]]
 .地下横断歩道の中心線と出入口の交点の取得イメージ
-image::images/370.webp.png[]
+image::images/370.webp.png[width="400"]
 
 . 地下横断歩道の最低標高値を算出する。 +
 最低標高値は、一般図に記載された地下横断歩道の深さとc）の路面標高値から算出する。
@@ -494,7 +494,7 @@ image::images/372.webp.png[]
 +
 [[fig-M-17]]
 .トンネル底面高さを反映後の側面イメージ
-image::images/373.webp.png[]
+image::images/373.webp.png[width="400"]
 
 . 地質平面・縦断図から各測点間の設計パターン（断面形状）を特定する。 +
 設計パターンには適用するトンネル標準断面図が記載されている。カルバート、シェッド及びシェルターの場合は、この工程は不要である。
@@ -513,17 +513,17 @@ image::images/374.webp.png[]
 +
 [[fig-M-19]]
 .断面形状を再現した後の側面イメージ
-image::images/375.webp.png[]
+image::images/375.webp.png[width="400"]
 
 トンネルモデル（LOD2）の作成例を<<fig-M-20>>及び<<fig-M-21>>に示す。
 
 [[fig-M-20]]
 .トンネルモデル（LOD2）（トンネル）の作成例
-image::images/376.webp.png[]
+image::images/376.webp.png[width="400"]
 
 [[fig-M-21]]
 .トンネルモデル（LOD2）坑口の作成例（突出型・面壁型の正面）
-image::images/377.webp.png[]
+image::images/377.webp.png[width="400"]
 
 LOD2で再現する坑門の形状は上面のみであり、トンネルと一体として作成する。また、トンネルの開口部は境界面を分けない。
 
@@ -537,7 +537,7 @@ LOD2で再現する坑門の形状は上面のみであり、トンネルと一�
 
 [[fig-M-22]]
 .トンネルモデル（LOD2）（地下横断歩道）の作成イメージ
-image::images/378.webp.png[]
+image::images/378.webp.png[width="300"]
 
 ===== LOD3
 
@@ -600,7 +600,7 @@ h| LOD3
 +
 [[fig-M-23]]
 .シェッド及びシェルターの側面の作成イメージ
-image::images/379.webp.png[]
+image::images/379.webp.png[width="400"]
 
 . b）のモデルに対し、境界面の再区分を行う。 +
 トンネル、カルバートの場合は、b）のモデルに対し坑口の開口部で境界面を分けて、その面をClosureSurfaceとする（<<fig-M-24>>）。 +
@@ -609,22 +609,22 @@ image::images/379.webp.png[]
 --
 [[fig-M-24]]
 .LOD3の境界面の区分イメージ（トンネル）
-image::images/380.webp.png[]
+image::images/380.webp.png[width="400"]
 
 [[fig-M-25]]
 .LOD3の境界面の区分イメージ（シェッド及びシェルター）
-image::images/381.webp.png[]
+image::images/381.webp.png[width="400"]
 --
 
 トンネルモデル（LOD3）の作成例を<<fig-M-26>>及び<<fig-M-27>>に示す。
 
 [[fig-M-26]]
 .トンネルモデルLOD3の作成例
-image::images/382.webp.png[]
+image::images/382.webp.png[width="400"]
 
 [[fig-M-27]]
 .トンネルモデル（LOD3）　坑口の作成例（正面）
-image::images/383.webp.png[]
+image::images/383.webp.png[width="400"]
 
 LOD3では坑門の側面形状も表現する。ClosureSurfaceは坑門の開口部ではなく、トンネル本体の開口部に作成する。
 
@@ -636,7 +636,7 @@ LOD3では坑門の側面形状も表現する。ClosureSurfaceは坑門の開�
 
 [[fig-M-28]]
 .トンネルモデル（LOD3）の作成イメージ（地下横断歩道）
-image::images/384.webp.png[]
+image::images/384.webp.png[width="300"]
 
 ===== LOD4.0
 
@@ -706,17 +706,17 @@ h| LOD4.0
 +
 [[fig-M-29]]
 .LOD4の境界面の区分イメージ（シェッド及びシェルター）
-image::images/385.webp.png[]
+image::images/385.webp.png[width="500"]
 
 トンネルモデル（LOD4.0）の作成例を<<fig-M-30>>及び<<fig-M-31>>に示す。
 
 [[fig-M-30]]
 .トンネルモデル（LOD4.0）作成例
-image::images/386.webp.png[]
+image::images/386.webp.png[width="400"]
 
 [[fig-M-31]]
 .LOD4.0内部の作成例
-image::images/387.webp.png[]
+image::images/387.webp.png[width="400"]
 
 ====== 作業手順（地下横断歩道）
 
@@ -796,13 +796,13 @@ BIM/CIMモデル又は以下のいずれかのデータを一つ以上使用す�
 +
 [[fig-M-32]]
 .MMS点群データを重畳表示した例
-image::images/388.webp.png[]
+image::images/388.webp.png[width="400"]
 
 トンネルモデル（LOD4.1）の作成例を<<fig-M-33>>に示す。
 
 [[fig-M-33]]
 .トンネルモデル（LOD4.1）の作成例
-image::images/389.webp.png[]
+image::images/389.webp.png[width="500"]
 
 ====== 作業手順（地下横断歩道）
 
@@ -897,7 +897,7 @@ image::images/391.webp.png[]
 
 [[fig-M-36]]
 .トンネルモデル（LOD4.2）の作成例
-image::images/392.webp.png[]
+image::images/392.webp.png[width="500"]
 
 ====== 作業手順（地下横断歩道）
 

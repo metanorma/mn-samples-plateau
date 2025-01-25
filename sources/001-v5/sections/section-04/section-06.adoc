@@ -27,11 +27,11 @@ h| 2+^h| LOD0
 h| 取得例
 |
 .駅前広場
-image::images/165.webp.png[]
+image::images/165.webp.png[width="250"]
 
 |
 .駅前広場
-image::images/166.webp.png[]
+image::images/166.webp.png[width="250"]
 
 h| 説明
 | 広場内において、車道の両側（歩道、安全地帯及び分離帯）から等距離の点をつなぐ線分を、広場の中心線とする。 +
@@ -43,11 +43,11 @@ h| 2+^h| LOD0
 h| 取得例
 |
 .自動車ターミナル
-image::images/167.webp.png[]
+image::images/167.webp.png[width="250"]
 
 |
 .自動車ターミナル
-image::images/168.webp.png[]
+image::images/168.webp.png[width="250"]
 
 h| 説明
 | 広場内において、車道の両側（庭園路、歩道、安全地帯及び分離帯）から等距離の点をつなぐ線分を、広場の中心線とする。 +
@@ -59,11 +59,11 @@ h| 2+^h| LOD0
 h| 取得例
 |
 .交通広場
-image::images/169.webp.png[]
+image::images/169.webp.png[width="250"]
 
 |
 .交通広場
-image::images/170.webp.png[]
+image::images/170.webp.png[width="250"]
 
 h| 説明
 | 車道の両側（歩道、安全地帯及び分離帯）から等距離の点をつなぐ線分を、広場の中心線とする。 +
@@ -126,7 +126,7 @@ h| 説明
 h| LOD ^h| LOD1
 h| 取得例
 |
-image::images/171.webp.png[]
+image::images/171.webp.png[width="300"]
 
 h| 説明
 | 交通（広場）モデル（LOD1）の形状を示す面は、都市計画で定められた区域とする。 +
@@ -176,7 +176,7 @@ h| 説明
 
 h| 取得例
 |
-image::images/172.webp.png[]
+image::images/172.webp.png[width="300"]
 
 h| 説明
 |
@@ -342,13 +342,13 @@ h| 説明
 歩道部のうち、植栽を区分する。
 | LOD3.2の区分を細分する。細分はユースケースに応じて決定する。
 
-|
+^.^|
 image::images/173.webp.png[]
-|
+^.^|
 image::images/174.webp.png[]
-|
+^.^|
 image::images/175.webp.png[]
-|
+^.^|
 image::images/176.webp.png[]
 
 |===
@@ -983,7 +983,7 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Term
 
 ====== Square_function.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/Square_function.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/Square_function.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_city_plan_investigation>>
@@ -1001,28 +1001,28 @@ lutaml_gml_dictionary::iur/codelists/3.1/Square_function.xml[template="gml_dict_
 
 ====== Common_status.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/Common_status.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/Common_status.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_foundation_reqs>>
 
 ====== StationSquareAttribute_railwayType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/StationSquareAttribute_railwayType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/StationSquareAttribute_railwayType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_city_plan_investigation>>
 
 ====== TerminalAttribute_userType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/TerminalAttribute_userType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/TerminalAttribute_userType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_city_plan_investigation>>
 
 ====== TerminalAttribute_terminalType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/TerminalAttribute_terminalType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/TerminalAttribute_terminalType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
