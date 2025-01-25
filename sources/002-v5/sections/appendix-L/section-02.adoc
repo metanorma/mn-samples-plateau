@@ -178,7 +178,7 @@ subject:: 3D都市モデル
 description:: 橋梁のLOD0の形状は、橋梁モデル（LOD0）の定義に従う。
 ====
 
-橋梁モデル（LOD0）の取得方法は、「<<gsi_ops,annex=7,作業規程の準則 付録７ 公共測量標準図式>>」（以下、「公共測量標準図式」という）に従う。
+橋梁モデル（LOD0）の取得方法は、「<<gsi_ops,作業規程の準則 付録７ 公共測量標準図式>>」（以下、「公共測量標準図式」という）に従う。
 
 ===== LOD1
 
@@ -308,18 +308,18 @@ description:: 橋梁のLOD3の形状は、橋梁モデル（LOD3）の定義に�
 h| 2+^h| LOD3
 ^h| 取得例
 |
-image::images/313.webp.png[]
+image::images/313.webp.png[width="250"]
 |
-image::images/314.webp.png[]
+image::images/314.webp.png[width="250"]
 
 ^h| 説明 | 道路橋及び鉄道橋の場合は、床版及び主桁以外の構造上不可欠な部材をBridgeConstructionElementとして取得する。上図の例では橋脚が該当する。それ以外の橋梁の外観を構成する部材をBridgeInstallationとして取得する。上図の例では高欄が該当する。
 | 跨線橋の場合は、道路橋及び鉄道橋と同様に、床版及び主桁以外の構造上不可欠な部材をBridgeConstructionElementとして取得する。上図の例では橋脚が該当する。それ以外の橋梁の外観を構成する部材をBridgeInstallationとして取得する。上図の例では高欄が該当する。
 h| 2+^h| LOD3
 ^h| 取得例
 |
-image::images/315.webp.png[]
+image::images/315.webp.png[width="250"]
 |
-image::images/316.webp.png[]
+image::images/316.webp.png[width="250"]
 
 ^h| 説明
 | ケーブル橋の場合、パイロン、ケーブル及び吊材を構造上不可欠な部材（BridgeConstructionElement）として取得する。 +

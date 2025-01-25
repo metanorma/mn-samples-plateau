@@ -14,7 +14,7 @@
 交通（道路）モデル（LOD0）では、道路の形状を線により表現する。 +
 道路の形状の線は、ネットワーク（道路中心線）又は道路縁のいずれかとする。 +
 標準製品仕様書は、原則としてネットワーク（道路中心線）を採用する。ただし、数値地形図との互換性を保つために、道路縁を選択できる。 +
-道路縁を採用する場合、「<<gsi_ops,annex=7,作業規程の準則 付録７ 公共測量標準図式>>」（以下、「公共測量標準図式」という）に従う。 +
+道路縁を採用する場合、「<<gsi_ops,作業規程の準則 付録７ 公共測量標準図式>>」（以下、「公共測量標準図式」という）に従う。 +
 道路縁とは、「道路法第2条第1項に規定された道路にあっては道路構造令に定める歩道、自転車道、車道、中央帯、路肩、又は植樹帯等で構成される道路の部分で最も外側の線（植樹帯が最も外側にある場合には、当該植樹帯を除いた道路の最も外側の線をいう。）、道路法第2条第1項に規定する以外の道路にあってはこれに準ずる線」をいう。「<<gsi_ops,公共測量標準図式>>」 +
 交通（道路）モデル（LOD0）の取得イメージを<<tab-4-16>>に示す。
 
@@ -330,13 +330,13 @@ image::images/073.webp.png[]
 歩道部のうち、植栽を区分する。
 | LOD3.3の区分を細分する。細分はユースケースに応じて決定する。
 
-|
+^.^|
 image::images/074.webp.png[]
-|
+^.^|
 image::images/075.webp.png[]
-|
+^.^|
 image::images/076.webp.png[]
-|
+^.^|
 image::images/077.webp.png[]
 
 |===
@@ -1007,11 +1007,7 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Traf
 [[toc4_03_03_04]]
 ===== 数値地形図のための拡張属性
 
-====== uro:DmGeometricAttribute
-
-<<toc4_25_03,公共測量標準図式の応用スキーマ文書>>　参照。
-
-====== uro:DmElement
+====== uro:DmAttribute
 
 <<toc4_25_03,公共測量標準図式の応用スキーマ文書>>　参照。
 
@@ -1024,14 +1020,14 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Traf
 
 ====== TransportationComplex_class.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/TransportationComplex_class.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/TransportationComplex_class.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<citygml_20,annex="C.8">>
 
 ====== Road_function.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/Road_function.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/Road_function.xml[template="gml_dict_template.liquid",context=dict]
 
 
 [.source]
@@ -1042,7 +1038,7 @@ lutaml_gml_dictionary::iur/codelists/3.1/Road_function.xml[template="gml_dict_te
 
 ====== Road_usage.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/Road_usage.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/Road_usage.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_emergency_roads>>
@@ -1062,7 +1058,7 @@ lutaml_gml_dictionary::iur/codelists/3.1/Road_usage.xml[template="gml_dict_templ
 |===
 | ファイル名 4+| TrafficArea_function.xml
 
-h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.1/TrafficArea_function.xml
+h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.2/TrafficArea_function.xml
 2+^h| 大分類 2+^h| 小分類 .2+^h| 定義
 ^h| コード ^h| 説明 ^h| コード ^h| 説明
 .2+| 1000 .2+| 車道部 2+| | 主として自動車が利用する道路の部分。
@@ -1083,7 +1079,7 @@ h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.1/TrafficArea_f
 |===
 | ファイル名 4+| TrafficArea_function.xml
 
-h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.1/TrafficArea_function.xml
+h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.2/TrafficArea_function.xml
 2+^h| 大分類 2+^h| 小分類 .2+^h| 定義
 ^h| コード ^h| 説明 ^h| コード ^h| 説明
 .3+| 1000 .3+| 車道部 2+| | 主として自動車が利用する道路の部分のうち、自動車の通行の用に供される部分。
@@ -1105,7 +1101,7 @@ h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.1/TrafficArea_f
 |===
 | ファイル名 4+| TrafficArea_function.xml
 
-h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.1/TrafficArea_function.xml
+h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.2/TrafficArea_function.xml
 2+^h| 大分類 2+^h| 小分類 .2+^h| 定義
 ^h| コード ^h| 説明 ^h| コード ^h| 説明
 .3+| 1000 .3+| 車道部 2+| | 主として自動車が利用する道路の部分のうち、自動車の通行の用に供される部分。
@@ -1127,7 +1123,7 @@ h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.1/TrafficArea_f
 |===
 | ファイル名 4+| TrafficArea_function.xml
 
-h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.1/TrafficArea_function.xml
+h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.2/TrafficArea_function.xml
 2+^h| 大分類 2+^h| 小分類 .2+^h| 定義
 ^h| コード ^h| 説明 ^h| コード ^h| 説明
 .8+| 1000
@@ -1167,7 +1163,7 @@ h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.1/TrafficArea_f
 |===
 | ファイル名 2+| AuxiliaryTrafficArea_function.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/AuxiliaryTrafficArea_function.xml
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.2/AuxiliaryTrafficArea_function.xml
 2+^h| 大分類 .2+^h| 定義
 ^h| コード ^h| 説明
 | 3000 | 島 | 車両の走行を制御し、安全な交通を確保するために設置される分離帯及び交通島。路面電車停車所が設けられた島を含む。
@@ -1185,7 +1181,7 @@ h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/AuxiliaryTraf
 |===
 | ファイル名 2+| AuxiliaryTrafficArea_function.xml
 
-h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/AuxiliaryTrafficArea_function.xml
+h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.2/AuxiliaryTrafficArea_function.xml
 2+^h| 大分類 .2+^h| 定義
 ^h| コード ^h| 説明
 | 3000 | 島 | 車両の走行を制御し、安全な交通を確保するために設置される分離帯及び交通島。路面電車停車所が設けられた島を含む。
@@ -1204,7 +1200,7 @@ h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/AuxiliaryTraf
 |===
 | ファイル名 4+| AuxiliaryTrafficArea_function.xml
 
-h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.1/AuxiliaryTrafficArea_function.xml
+h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.2/AuxiliaryTrafficArea_function.xml
 2+^h| 大分類 2+^h| 小分類 .2+^h| 定義
 ^h| コード ^h| 説明 ^h| コード ^h| 説明
 .7+| 1000
@@ -1243,8 +1239,8 @@ h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.1/AuxiliaryTraf
 | ファイル名 3+| TrafficArea_surfaceMaterial.xml、AuxiliaryTrafficArea_surfaceMaterial.xml
 
 h| ファイルURL
-3+| https://www.geospatial.jp/iur/codelists/3.1/TrafficArea_surfaceMaterial.xml +
-https://www.geospatial.jp/iur/codelists/3.1/AuxiliaryTrafficArea_surfaceMaterial.xml
+3+| https://www.geospatial.jp/iur/codelists/3.2/TrafficArea_surfaceMaterial.xml +
+https://www.geospatial.jp/iur/codelists/3.2/AuxiliaryTrafficArea_surfaceMaterial.xml
 
 2+^h| 大分類 2+^h| 小分類
 ^h| コード ^h| 説明 ^h| コード ^h| 説明
@@ -1269,18 +1265,18 @@ https://www.geospatial.jp/iur/codelists/3.1/AuxiliaryTrafficArea_surfaceMaterial
 
 ====== RoadStructureAttribute_widthType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/RoadStructureAttribute_widthType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/RoadStructureAttribute_widthType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_foundation_reqs>>
 
 ====== RoadStructureAttribute_sectionType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/RoadStructureAttribute_sectionType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/RoadStructureAttribute_sectionType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -1294,7 +1290,7 @@ lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xm
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -1308,21 +1304,21 @@ lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xm
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== Road_lodType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/Road_lodType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/Road_lodType.xml[template="gml_dict_template.liquid",context=dict]
 
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
 
 
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>

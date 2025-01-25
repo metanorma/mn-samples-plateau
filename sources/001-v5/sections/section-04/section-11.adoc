@@ -6,13 +6,13 @@
 
 * 道路法（昭和27年法律第180号）第2条第1項に規定する「橋」。橋長2.0m以上を対象とし高架橋及び桟道橋を含む[参考 <<cbr_road_build_manual>>]。
 
-** 桟道橋：斜面を通過する道路で、橋桁の一側が斜面に接し、反対側が橋脚になっている部分「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」。
+** 桟道橋：斜面を通過する道路で、橋桁の一側が斜面に接し、反対側が橋脚になっている部分「<<gsi_ops,付録７ 公共測量標準図式>>」。
 
 * 鉄道事業者法施行規則別表第一に定める鉄道施設の「橋りょう」。
 
 * 鉄道事業者法施行規則別表第一に定める鉄道施設の「こ線橋」。
 
-** こ（跨）線橋：駅構内の鉄道を横断するために構築された橋「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」。
+** こ（跨）線橋：駅構内の鉄道を横断するために構築された橋「<<gsi_ops,付録７ 公共測量標準図式>>」。
 
 * 道路法第30条第1項第10号に定める「横断歩道橋」。
 
@@ -316,7 +316,7 @@ WallSurfaceとの区分が必要な場合は必須とする。
 〇:: 任意
 
 .橋梁の部材の名称
-image::images/240.webp.png[]
+image::images/240.webp.png[width="500"]
 
 橋梁モデル（LOD2）の取得イメージを<<tab-4-63>>に示す。
 
@@ -633,9 +633,9 @@ WallSurfaceとの区分が必要な場合に必須とする。
 h| 2+^h| LOD3
 h| 取得例
 |
-image::images/246.webp.png[]
+image::images/246.webp.png[width="250"]
 |
-image::images/247.webp.png[]
+image::images/247.webp.png[width="250"]
 
 h| 説明 | 道路橋及び鉄道橋の場合は、床版及び主桁以外の構造上不可欠な部材をBridgeConstructionElementとして取得する。上図の例では橋脚が該当する。それ以外の橋梁の外観を構成する部材をBridgeInstallationとして取得する。上図の例では高欄が該当する。
 |
@@ -643,9 +643,9 @@ h| 説明 | 道路橋及び鉄道橋の場合は、床版及び主桁以外の�
 h| 2+^h| LOD3
 h| 取得例
 |
-image::images/248.webp.png[]
+image::images/248.webp.png[width="250"]
 |
-image::images/249.webp.png[]
+image::images/249.webp.png[width="250"]
 
 h| 説明
 | ケーブル橋の場合、パイロン、ケーブル及び吊材を構造上不可欠な部材（BuildingConstructionElement）として取得する。 +
@@ -1392,28 +1392,28 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Cons
 
 ====== Bridge_class.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/Bridge_class.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/Bridge_class.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<nilim_kiban_dps>>
 
 ====== Bridge_function.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/Bridge_function.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/Bridge_function.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<citygml_20,annex="C">>
 
 ====== BridgeConstructionElement_function.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/BridgeConstructionElement_function.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/BridgeConstructionElement_function.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<citygml_20,annex="C">>
 
 ====== BridgeInstallation_function.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/BridgeInstallation_function.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/BridgeInstallation_function.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<橋梁施設台帳>>
@@ -1423,23 +1423,23 @@ lutaml_gml_dictionary::iur/codelists/3.1/BridgeInstallation_function.xml[templat
 
 ====== BridgeStructureAttribute_material.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/BridgeStructureAttribute_material.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/BridgeStructureAttribute_material.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== BridgeStructureAttribute_bridgeType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/BridgeStructureAttribute_bridgeType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/BridgeStructureAttribute_bridgeType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== BridgeFunctionalAttribute_userType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/BridgeFunctionalAttribute_userType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/BridgeFunctionalAttribute_userType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== ConstructionStructureAttribute_slopeType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/ConstructionStructureAttribute_slopeType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/ConstructionStructureAttribute_slopeType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== ConstructionBaseAttribute_adminType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/ConstructionBaseAttribute_adminType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/ConstructionBaseAttribute_adminType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_kiban_chizu>>
@@ -1452,28 +1452,28 @@ lutaml_gml_dictionary::iur/codelists/3.1/ConstructionBaseAttribute_adminType.xml
 
 ====== ConstructionBaseAttribute_installerType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/ConstructionBaseAttribute_installerType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/ConstructionBaseAttribute_installerType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_cyberport>>
 
 ====== ConstructionRiskAssessmentAttribute_riskType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/ConstructionRiskAssessmentAttribute_riskType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/ConstructionRiskAssessmentAttribute_riskType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_road_damage_map>>
 
 ====== ConstructionRiskAssessmentAttribute_status.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/ConstructionRiskAssessmentAttribute_status.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/ConstructionRiskAssessmentAttribute_status.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_road_damage_map>>
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -1487,7 +1487,7 @@ lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xm
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -1501,13 +1501,13 @@ lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xm
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== DataQualityAttribute_lod1HeightType.xml
 
 // TODO: This table cannot be recreated because some values are marked "（使用不可）".
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_lod1HeightType.xml[template="gml_dict_template.liquid",context=dict]
 
 // | （使用不可）7 | 建築確認申請書類等に記載された「建築物の高さ」
 // | （使用不可）8 | 都市計画基礎調査（建物利用現況）の「高さ（m）」
@@ -1520,11 +1520,11 @@ lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -1535,4 +1535,4 @@ lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_geomet
 
 ====== Bridge_lodType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/Bridge_lodType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/Bridge_lodType.xml[template="gml_dict_template.liquid",context=dict]

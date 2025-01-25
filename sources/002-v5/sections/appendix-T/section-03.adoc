@@ -94,7 +94,7 @@ h| LOD0 | 以下のいずれかのデータを一つ以上使用する
 +
 [[fig-T-1]]
 .湖沼、海岸線の作成イメージ
-image::images/509.webp.png[]
+image::images/509.webp.png[width="300"]
 
 ===== LOD1
 
@@ -130,13 +130,13 @@ h| LOD1 | 以下のいずれかのデータを一つ以上使用する
 +
 [[fig-T-2]]
 .水面に高さを付与するイメージ
-image::images/510.webp.png[]
+image::images/510.webp.png[width="400"]
 
 . b）で作成した水涯線を外周とするポリゴン（水面）を作成する。また、中州がある場合は、中洲を除いた面となる。
 +
 [[fig-T-3]]
 .中州を除いた水面のイメージ
-image::images/511.webp.png[]
+image::images/511.webp.png[width="300"]
 
 . c）のポリゴンを基準地域メッシュ（第3次地域区画）の境界で区切る。 +
 水部のインスタンスの単位は基準地域メッシュであるため、基準地域メッシュで区切る。
@@ -145,7 +145,7 @@ image::images/511.webp.png[]
 
 [[fig-T-4]]
 .水部モデル（LOD1）の作成例
-image::images/512.webp.png[]
+image::images/512.webp.png[width="400"]
 
 ===== LOD2
 
@@ -186,17 +186,17 @@ DEMの格子間隔はユースケースに応じて変更してよいが、5m以
 +
 [[fig-T-5]]
 .境界面の区分イメージ
-image::images/513.webp.png[]
+image::images/513.webp.png[width="500"]
 
 水部モデル（LOD2）の作成例を<<fig-T-6>>及び<<fig-T-7>>に示す。
 
 [[fig-T-6]]
 .水部モデル（LOD2）における水面の例
-image::images/514.webp.png[]
+image::images/514.webp.png[width="400"]
 
 [[fig-T-7]]
 .水部モデル（LOD2）における水底の作成例
-image::images/515.webp.png[]
+image::images/515.webp.png[width="400"]
 
 
 ===== LOD3
@@ -238,13 +238,13 @@ h| LOD3 | 以下のいずれかのデータを一つ以上使用する
 +
 [[fig-T-8]]
 .水中構造物をくりぬくイメージ
-image::images/516.webp.png[]
+image::images/516.webp.png[width="500"]
 
 水部モデル（LOD3）の作成例を<<fig-T-9>>に示す。
 
 [[fig-T-9]]
 .水部モデル（LOD3）作成例
-image::images/517.webp.png[]
+image::images/517.webp.png[width="400"]
 
 
 ==== 作業上の留意事項
@@ -255,5 +255,5 @@ wtr:WaterBodyを構成するwtr:WaterSurface、wtr:WaterGroundSurface、wtr:Wate
 
 [[fig-T-10]]
 .境界面の作成単位のイメージ
-image::images/518.webp.png[]
+image::images/518.webp.png[width="500"]
 

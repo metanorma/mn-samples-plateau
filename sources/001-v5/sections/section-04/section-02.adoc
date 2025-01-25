@@ -4,7 +4,7 @@
 建築物は、普通建物、堅ろう建物、普通無壁舎及び堅ろう無壁舎をいう。普通建物とは、3階未満の建物及び3階以上の木造等で建築された建物をいう。堅ろう建物とは、鉄筋コンクリート等で建築された建物で、地上3階以上又は3階相当以上の高さのものやスタンドを備えた競技場をいう。普通無壁舎とは、側壁のない建物、温室及び工場内の建物類似の構築物で、3階未満のものをいう。堅ろう無壁舎とは、鉄筋コンクリート等で建築された側壁のない建物及び建物類似の構築物で、地上3階以上又は3階相当以上の高さのものをいう。
 
 [.source]
-<<gsi_ops,annex=7,作業規程の準則 付録７ 公共測量標準図式>>
+<<gsi_ops,作業規程の準則 付録７ 公共測量標準図式>>
 
 [[toc4_02_01]]
 ==== 建築物モデルのLOD
@@ -37,7 +37,7 @@
 
 建築物モデル（LOD0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1a,^1a,1a,1a,3a,3a,2a"]
+[cols="1a,^1a,1a,1a,3a,3a,3a"]
 |===
 | | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -68,7 +68,7 @@
 正射影とは、ある図形上の各点から、直線又は平面上に下ろした垂線の足の集まり。LOD0の場合は、上方からの正射影をいう。
 
 [.source]
-<<gsi_ops,annex=7,付録７ 公共測量標準図式>>
+<<gsi_ops,付録７ 公共測量標準図式>>
 --
 
 [[toc4_02_01_02]]
@@ -94,7 +94,7 @@ image::images/011.webp.png[]
 
 建築物モデル（LOD1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1a,^1a,1a,1a,3a,3a,2a"]
+[cols="1a,^1a,1a,1a,3a,3a,3a"]
 |===
 | | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -203,11 +203,11 @@ LOD2.0、LOD2.1及びLOD2.2それぞれの取得イメージを<<tab-4-10>>に�
 | LOD | LOD2.0 | LOD2.1 | LOD2.2
 
 h| 取得例
-|
+^.^|
 image::images/013.webp.png[]
-|
+^.^|
 image::images/014.webp.png[]
-|
+^.^|
 image::images/015.webp.png[]
 
 h| 説明 | 屋根の主要な外形が再現される。LOD2.0では付属物は取得しないため、バルコニーも屋根として取得する。 +
@@ -221,13 +221,13 @@ h| 説明 | 屋根の主要な外形が再現される。LOD2.0では付属物�
 
 |===
 
-image::images/016.webp.png[]
+image::images/016.webp.png[width="500"]
 
 ====== 建築物モデル（LOD2.0）の定義
 
 建築物モデル（LOD2.0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1a,^1a,1a,1a,3a,3a,2a"]
+[cols="1a,^1a,1a,1a,3a,3a,3a"]
 |===
 | | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -298,7 +298,7 @@ image::images/017.webp.png[]
 
 建築物モデル（LOD2.1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="7a,^3a,7a,7a,16a,20a,16a"]
+[cols="1a,^1a,1a,1a,3a,3a,3a"]
 |===
 | | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -378,7 +378,7 @@ ClosureSurfaceの境界線は、屋根面（RoofSurface）、外壁面（WallSur
 
 建築物モデル（LOD2.2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1a,^1a,1a,1a,3a,3a,2a"]
+[cols="1a,^1a,1a,1a,3a,3a,3a"]
 |===
 | | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -619,7 +619,7 @@ image::images/022.webp.png[]
 
 建築物モデル（LOD3.0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1a,^1a,1a,1a,3a,3a,2a"]
+[cols="1a,^1a,1a,1a,3a,3a,3a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -766,7 +766,7 @@ LOD3.0では3m未満の軒裏を表現せず、外壁面を屋根面の外周か
 
 建築物モデル（LOD3.1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1a,^1a,1a,1a,3a,3a,2a"]
+[cols="1a,^1a,1a,1a,3a,3a,3a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -905,7 +905,7 @@ LOD3.1では1m未満の軒裏を表現せず、外壁面を屋根面の外周か
 
 建築物モデル（LOD3.2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1a,^1a,1a,1a,3a,3a,2a"]
+[cols="1a,^1a,1a,1a,3a,3a,3a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -1044,7 +1044,7 @@ LOD3.2では1m未満の軒裏を表現せず、外壁面を屋根面の外周か
 
 建築物モデル（LOD3.3）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1a,^1a,1a,1a,3a,3a,2a"]
+[cols="1a,^1a,1a,1a,3a,3a,3a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -1241,7 +1241,7 @@ LOD4.0は建築物の外形（上図1）に加え、建築物の内部を表現�
 | LOD4.1
 |
 
-image::images/027.webp.png[]
+image::images/027.webp.png[width="450"]
 // image::images/147.webp.png[]
 
 LOD4.1ではLOD4.0に、屋内付属物（bldg:IntBuildingInstallation）として、階段、スロープ、輸送設備（エスカレータ、エレベータ及び動く歩道）、柱及びデッキ・ステージが追加される。 +
@@ -1252,7 +1252,7 @@ LOD4.1ではLOD4.0に、屋内付属物（bldg:IntBuildingInstallation）とし�
 | LOD4.2
 |
 
-image::images/028.webp.png[]
+image::images/028.webp.png[width="450"]
 // image::images/148.webp.png[]
 
 LOD4.2ではLOD4.1に屋内の付属物（bldg:IntBuildingInstallation）として、手すり、パネル及び梁が付属物として追加される。 +
@@ -1265,7 +1265,7 @@ LOD4.2ではLOD4.1に屋内の付属物（bldg:IntBuildingInstallation）とし�
 
 建築物モデル（LOD4.0）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1a,^1a,1a,1a,3a,3a,2a"]
+[cols="1a,^1a,1a,1a,3a,3a,3a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -1412,7 +1412,7 @@ NOTE: CityObjectGroupは空間属性をもたないため、「―」として�
 
 建築物モデル（LOD4.1）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1a,^1a,1a,1a,3a,3a,2a"]
+[cols="1a,^1a,1a,1a,3a,3a,3a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -1548,7 +1548,7 @@ NOTE: CityObjectGroupは空間属性をもたないため、空間属性の型�
 
 建築物モデル（LOD4.2）の定義として、含むべき地物型、各地物型の空間属性の型、取得基準、取得方法及び補足を示す。
 
-[cols="1a,^1a,1a,1a,3a,3a,2a"]
+[cols="1a,^1a,1a,1a,3a,3a,3a"]
 |===
 | LOD | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
@@ -1825,43 +1825,37 @@ image::images/EAID_87476527_7B9B_4b92_967E_3D38365470CA.png[]
 . [[building_lod4_exp_1]] bldg:_AbstractBuildingの下位型に付与する属性
 +
 image::images/EAID_24E8A45C_C99F_49b7_860A_9CF65FF76C76.png[]
-
-// image::images/034.svg[]
-
++
 . bldg:Roomの下位型に付与する属性
 +
 image::images/EAID_5D6DB5A0_5047_4bac_9E60_69904A60B56D.png[]
-
-// image::images/035.svg[]
-
++
 . bldg:_BoundarySurfaceの下位型に付与する属性
 +
 image::images/EAID_E591C1CF_7F35_4160_8A72_DFA097AD5811.png[]
-
-// image::images/036.svg[]
-
++
 . bldg:_Openingの下位型に付与する属性
 +
 image::images/EAID_CBBD6CF4_0A1E_4406_9930_89DE43527910.png[]
-
-// image::images/037.svg[]
-
++
 . bldg:BuildingInstallation及びbldg:IntBuildingInstallationに付与する属性
 +
 image::images/EAID_84A9C65B_FD6D_4bb5_818F_E8C35FF5BCD1.png[]
-
-// image::images/038.svg[]
-
++
 . [[building_lod4_exp_6]] bldg:BuildingFurnitureに付与する属性
 +
 image::images/EAID_C37CFBD6_69BA_42fb_9AC7_2D329D931BCF.png[]
-
-// image::images/039.svg[]
-
++
 . [[building_lod4_exp_7]] 3次元屋内地理空間データに対応する属性
 +
 image::images/EAID_4EB75007_B31D_4f2c_8855_7E9D3A3B17F4.png[]
 
+// image::images/034.svg[]
+// image::images/035.svg[]
+// image::images/036.svg[]
+// image::images/037.svg[]
+// image::images/038.svg[]
+// image::images/039.svg[]
 // image::images/040.svg[]
 
 [[toc4_02_03]]
@@ -2185,21 +2179,21 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="User
 
 ====== Building_class.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/Building_class.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/Building_class.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_map_level_dps>>
 
 ====== Building_usage.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/Building_usage.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/Building_usage.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_foundation_reqs>>
 
 ====== Building_roofType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/Building_roofType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/Building_roofType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<citygml_20,annex="C.1">>
@@ -2210,14 +2204,14 @@ lutaml_gml_dictionary::iur/codelists/3.1/Building_roofType.xml[template="gml_dic
 
 ====== BuildingInstallation_class.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/BuildingInstallation_class.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/BuildingInstallation_class.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<citygml_20,annex="C.1">>
 
 ====== BuildingInstallation_function.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/BuildingInstallation_function.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/BuildingInstallation_function.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<citygml_20,annex="C.1">>
@@ -2228,42 +2222,42 @@ lutaml_gml_dictionary::iur/codelists/3.1/BuildingInstallation_function.xml[templ
 
 ====== Room_class.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/Room_class.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/Room_class.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<uniclass>>
 
 ====== Room_function.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/Room_function.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/Room_function.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<uniclass>>
 
 ====== IntBuildingInstallation_class.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/IntBuildingInstallation_class.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/IntBuildingInstallation_class.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<ifc_2x3_cv>>
 
 ====== IntBuildingInstallation_function.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/IntBuildingInstallation_function.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/IntBuildingInstallation_function.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<uniclass>>
 
 ====== BuildingFurniture_class.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/BuildingFurniture_class.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/BuildingFurniture_class.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<uniclass>>
 
 ====== BuildingFurniture_function.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/BuildingFurniture_function.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/BuildingFurniture_function.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<uniclass>>
@@ -2273,40 +2267,40 @@ lutaml_gml_dictionary::iur/codelists/3.1/BuildingFurniture_function.xml[template
 
 ====== BuildingDetailAttribute_detailedUsage.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/BuildingDetailAttribute_detailedUsage.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/BuildingDetailAttribute_detailedUsage.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_foundation_reqs>>
 
 ====== BuildingDetailAttribute_buildingStructureType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/BuildingDetailAttribute_buildingStructureType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/BuildingDetailAttribute_buildingStructureType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_foundation_reqs>>
 
 ====== BuildingDetailAttribute_fireproofStructureType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/BuildingDetailAttribute_fireproofStructureType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/BuildingDetailAttribute_fireproofStructureType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_foundation_reqs>>
 
 ====== BuildingDetailAttribute_vacancy.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/BuildingDetailAttribute_vacancy.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/BuildingDetailAttribute_vacancy.xml[template="gml_dict_template.liquid",context=dict]
 
 
 ====== LargeCustomerFacilityAttribute_class.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/LargeCustomerFacilityAttribute_class.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/LargeCustomerFacilityAttribute_class.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_foundation_reqs>>
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -2319,7 +2313,7 @@ lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xm
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -2333,29 +2327,29 @@ lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xm
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 
 ====== DataQualityAttribute_lod1HeightType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_lod1HeightType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_building_data_manual>>
 
 ====== Building_lodType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/Building_lodType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/Building_lodType.xml[template="gml_dict_template.liquid",context=dict]
 
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
 
 
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -2366,14 +2360,14 @@ lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_geomet
 
 ====== IfcBuildingElement_elementType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/IfcBuildingElement_elementType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/IfcBuildingElement_elementType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<ifc_2x3_cv>>
 
 ====== IfcBuildingElement_predefinedType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/IfcBuildingElement_predefinedType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/IfcBuildingElement_predefinedType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<ifc_2x3_cv>>
@@ -2397,7 +2391,7 @@ h| 値 h| 説明
 
 ====== IfcBuildingElement_shapeType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/IfcBuildingElement_shapeType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/IfcBuildingElement_shapeType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<ifc_2x3_cv>>
@@ -2609,28 +2603,28 @@ h| 値 h| 説明
 
 ====== Common_indoorSource.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/Common_indoorSource.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/Common_indoorSource.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_dps>>
 
 ====== IndoorTactileTileAttribute_category.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/IndoorTactileTileAttribute_category.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/IndoorTactileTileAttribute_category.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_dps>>
 
 ====== IndoorTactileTileAttribute_roof.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/IndoorTactileTileAttribute_roof.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/IndoorTactileTileAttribute_roof.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_dps>>
 
 ====== IndoorSpaceAttribute_tollType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/IndoorSpaceAttribute_tollType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/IndoorSpaceAttribute_tollType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_dps>>

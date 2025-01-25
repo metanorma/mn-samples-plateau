@@ -6,7 +6,7 @@
 ボックスカルバート：他の道路等の下方を横断するため、その盛土の中を横断する形で設置される箱状の構造物。[道路基盤地図情報（整備促進版）製品仕様書（案）] +
 シェッド：落石及び雪崩等を道路外に直接落下させる、又は道路を越えて転進させるため、鋼材やコンクリート材等で道路上を覆う構造物。[道路基盤地図情報（整備促進版）製品仕様書（案）] +
 シェルター：アーチ型又は門型で、道路を完全に覆ったトンネル状の構造物。[道路基盤地図情報（整備促進版）製品仕様書（案）] +
-地下横断歩道：人、自転車等が道路又は鉄道を横断するために構築された地下道。「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」
+地下横断歩道：人、自転車等が道路又は鉄道を横断するために構築された地下道。「<<gsi_ops,付録７ 公共測量標準図式>>」
 
 [[toc4_12_01]]
 ==== トンネルモデルのLOD
@@ -28,11 +28,11 @@
 h| 3+^h| LOD0
 h| 取得例
 |
-image::images/254.webp.png[]
+image::images/254.webp.png[width="150"]
 |
-image::images/255.webp.png[]
+image::images/255.webp.png[width="150"]
 |
-image::images/256.webp.png[]
+image::images/256.webp.png[width="150"]
 
 h| 説明 | 中央位置の点と方向を取得する。
 |
@@ -117,9 +117,9 @@ h| 説明 | 中央位置の点と方向を取得する。
 h| 2+^h| LOD1
 h| 取得例
 |
-image::images/257.webp.png[]
+image::images/257.webp.png[width="250"]
 |
-image::images/258.webp.png[]
+image::images/258.webp.png[width="250"]
 
 h| 説明 
 | トンネルの場合は、トンネルの坑口を含めた外周に一律の高さで上向きに押し出した立体として表現する。 +
@@ -204,9 +204,9 @@ h| 説明
 h| 2+^h| LOD2
 h| 取得例
 |
-image::images/259.webp.png[]
+image::images/259.webp.png[width="250"]
 |
-image::images/260.webp.png[]
+image::images/260.webp.png[width="250"]
 
 h| 説明 | トンネルの外形を立体として表現し、立体の各境界面を、屋根や外壁に区分する。トンネルの外形には坑口を含む。
 |
@@ -279,7 +279,7 @@ h| 説明 | トンネルの外形を立体として表現し、立体の各境�
 ■:: 条件付必須
 〇:: 任意（ユースケースに応じて要否を決定してよい）
 
-image::images/261.webp.png[]
+image::images/261.webp.png[width="500"]
 
 [[toc4_12_01_04]]
 ===== トンネルモデル（LOD3）
@@ -296,9 +296,9 @@ image::images/261.webp.png[]
 h| 2+^h| LOD3
 h| 取得例
 |
-image::images/262.webp.png[]
+image::images/262.webp.png[width="250"]
 |
-image::images/263.webp.png[]
+image::images/263.webp.png[width="250"]
 
 h| 説明 | トンネルの外形を立体として表現し、立体の各境界面を、屋根、外壁及び開口部に区分する。 +
 さらにトンネルの外側に付いている付属物として、坑門や連絡坑を取得する。
@@ -1057,21 +1057,21 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Cons
 
 ====== Tunnel_class.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/Tunnel_class.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/Tunnel_class.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<citygml_20,annex="C.2">>
 
 ====== Tunnel_function.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/Tunnel_function.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/Tunnel_function.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<citygml_20,annex="C.2">>
 
 ====== TunnelInstallation_function.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/TunnelInstallation_function.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/TunnelInstallation_function.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<トンネル施設台帳>>
@@ -1081,39 +1081,39 @@ lutaml_gml_dictionary::iur/codelists/3.1/TunnelInstallation_function.xml[templat
 
 ====== TunnelFunctionalAttribute_userType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/TunnelFunctionalAttribute_userType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/TunnelFunctionalAttribute_userType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<トンネル施設台帳>>
 
 ====== TunnelStructureAttribute_tunnelType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/TunnelStructureAttribute_tunnelType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/TunnelStructureAttribute_tunnelType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<nilim_kiban_dps>>
 
 ====== TunnelStructureAttribute_tunnelSubType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/TunnelStructureAttribute_tunnelSubType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/TunnelStructureAttribute_tunnelSubType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<nilim_kiban_dps>>
 
 ====== TunnelStructureAttribute_mouthType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/TunnelStructureAttribute_mouthType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/TunnelStructureAttribute_mouthType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<nilim_kiban_dps>>
 
 ====== ConstructionStructureAttribute_slopeType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/ConstructionStructureAttribute_slopeType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/ConstructionStructureAttribute_slopeType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== ConstructionBaseAttribute_adminType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/ConstructionBaseAttribute_adminType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/ConstructionBaseAttribute_adminType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_kiban_chizu>>
@@ -1126,28 +1126,28 @@ lutaml_gml_dictionary::iur/codelists/3.1/ConstructionBaseAttribute_adminType.xml
 
 ====== ConstructionBaseAttribute_installerType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/ConstructionBaseAttribute_installerType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/ConstructionBaseAttribute_installerType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_cyberport>>
 
 ====== ConstructionRiskAssessmentAttribute_riskType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/ConstructionRiskAssessmentAttribute_riskType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/ConstructionRiskAssessmentAttribute_riskType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_road_damage_map>>
 
 ====== ConstructionRiskAssessmentAttribute_status.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/ConstructionRiskAssessmentAttribute_status.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/ConstructionRiskAssessmentAttribute_status.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_road_damage_map>>
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -1161,7 +1161,7 @@ lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xm
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -1175,13 +1175,13 @@ lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xm
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== DataQualityAttribute_lod1HeightType.xml
 
 // TODO: This table cannot be recreated because some values are marked "（使用不可）".
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_lod1HeightType.xml[template="gml_dict_template.liquid",context=dict]
 
 // | （使用不可）7 | 建築確認申請書類等に記載された「建築物の高さ」
 // | （使用不可）8 | 都市計画基礎調査（建物利用現況）の「高さ（m）」
@@ -1194,11 +1194,11 @@ lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -1209,4 +1209,4 @@ lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_geomet
 
 ====== Tunnel_lodType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/Tunnel_lodType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/Tunnel_lodType.xml[template="gml_dict_template.liquid",context=dict]

@@ -85,11 +85,11 @@ image::images/209.webp.png[]
 道路構造の変化点での道路の区切りは、トンネル、橋梁の図式を基に区切る。 +
 区切り例：橋梁、高架橋、トンネル
 
-image::images/210.webp.png[]
+image::images/210.webp.png[width="500"]
 
 区切り例：複雑な道路構造の場合の道路の区切り
 
-image::images/211.webp.png[]
+image::images/211.webp.png[width="500"]
 
 ===== LOD2
 
@@ -150,7 +150,7 @@ uro:widthTypeは、道路の幅員を一定の長さで区分した属性であ�
 [[tab-D-6]]
 .幅員の区分
 
-lutaml_gml_dictionary::iur/codelists/3.1/RoadStructureAttribute_widthType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/RoadStructureAttribute_widthType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_foundation_reqs>>
@@ -183,7 +183,7 @@ uro:widthは、道路の幅員値（実数値）である。都市計画基礎�
 
 ===== 車線数
 
-uro:numberOfLanesは、上下線の合計（一方通行区間の場合を除く）の車線数である。道路構造令第2条第7号の登坂車線、同第2条第6号にいう付加追越車線、同第2条8号の屈折車線、同第2条第9号の変速車線及び同第2条第14号の停車帯、及びゆずり車線は車線数には含めない。また、「1　車線道路」は道路構造令第5条1項ただし書きによって、車線により構成されない車道を持つ道路であるが、ここでは車線数＝1とする。「1車線道路」は車道幅員が5.5m未満の場合とする。 +
+uro:numberOfLanesは、上下線の合計（一方通行区間の場合を除く）の車線数である。道路構造令第2条第7号の登坂車線、同第2条第6号にいう付加追越車線、同第2条8号の屈折車線、同第2条第9号の変速車線及び同第2条第14号の停車帯、及びゆずり車線は車線数には含めない。また、「1車線道路」は道路構造令第5条1項ただし書きによって、車線により構成されない車道を持つ道路であるが、ここでは車線数＝1とする。「1車線道路」は車道幅員が5.5m未満の場合とする。 +
 想定される取得方法を以下に示す。
 
 . 都市計画基礎調査で収集されている場合は、これを使用する。

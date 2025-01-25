@@ -53,7 +53,7 @@
 						</packagedElement>
 						<packagedElement xmi:type="uml:Class" xmi:id="EAID_DD2DE7C9_00AF_426a_9CF2_AAE1FC22F25A" name="ProxyConnector"/>
 					</packagedElement>
-					<packagedElement xmi:type="uml:Package" xmi:id="EAPK_B6309FC8_E3DE_44b0_ACE4_BB0E76E797FF" name="ポイントクラウドのための応用スキーマ"/>
+					<packagedElement xmi:type="uml:Package" xmi:id="EAPK_B6309FC8_E3DE_44b0_ACE4_BB0E76E797FF" name="ポイントクラウドモデル"/>
 					<packagedElement xmi:type="uml:Package" xmi:id="EAPK_B90F4F53_A59D_43aa_A1A4_566E3542DEEF" name="都市オブジェクトグループ"/>
 					<packagedElement xmi:type="uml:Package" xmi:id="EAPK_D074EF21_8FC4_4781_93FC_02E953C29568" name="データ集合"/>
 					<packagedElement xmi:type="uml:Package" xmi:id="EAPK_615EE383_1809_4a8a_97DA_B1FC7B412937" name="公共測量標準図式"/>
@@ -38710,10 +38710,10 @@
 					<Association xmi:id="EAID_89086124_6AB6_4001_AC5C_018943F1B05F" start="EAID_53ED6341_10CF_4e13_A4F9_CC4271FD2997" end="EAID_DD2DE7C9_00AF_426a_9CF2_AAE1FC22F25A"/>
 				</links>
 			</element>
-			<element xmi:idref="EAPK_B6309FC8_E3DE_44b0_ACE4_BB0E76E797FF" xmi:type="uml:Package" name="ポイントクラウドのための応用スキーマ" scope="public">
+			<element xmi:idref="EAPK_B6309FC8_E3DE_44b0_ACE4_BB0E76E797FF" xmi:type="uml:Package" name="ポイントクラウドモデル" scope="public">
 				<model package2="EAID_B6309FC8_E3DE_44b0_ACE4_BB0E76E797FF" package="EAPK_D0BD0C75_6B1B_4575_9419_A7D39C74DB71" tpos="23" ea_localid="7778" ea_eleType="package"/>
 				<properties isSpecification="false" sType="Package" nType="0" scope="public"/>
-				<project author="501635" version="1.0" phase="1.0" created="2024/10/01 16:51:30" modified="2024/10/01 16:51:30" complexity="1" status="設計中"/>
+				<project author="501635" version="1.0" phase="1.0" created="2024/10/01 16:51:30" modified="2025/01/24 17:09:54" complexity="1" status="設計中"/>
 				<code gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags/>
@@ -38721,7 +38721,7 @@
 				<extendedProperties tagged="0" package_name="3D都市モデル"/>
 				<packageproperties version="1.0" tpos="23"/>
 				<paths/>
-				<times created="2024/10/01 16:51:30" modified="2024/10/01 16:51:30" lastloaddate="2024/11/06 16:09:15" lastsavedate="2024/11/06 16:09:15"/>
+				<times created="2024/10/01 16:51:30" modified="2025/01/24 17:09:54" lastloaddate="2024/11/06 16:09:15" lastsavedate="2024/11/06 16:09:15"/>
 				<flags iscontrolled="FALSE" isprotected="FALSE" batchsave="0" batchload="0" usedtd="FALSE" logxml="FALSE"/>
 			</element>
 			<element xmi:idref="EAPK_B90F4F53_A59D_43aa_A1A4_566E3542DEEF" xmi:type="uml:Package" name="都市オブジェクトグループ" scope="public">
@@ -39248,8 +39248,8 @@
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
 					<tag xmi:id="EAID_48460EC2_0C6F_f40c_AF63_9285A4810B73" name="gmlProfileSchema" value="#NOTES#Description: URL of the XSD location of a GML profile&#xA;" modelElement="EAID_703CD7E4_9939_4370_8AEB_B5B48ACC572F"/>
-					<tag xmi:id="EAID_393CD814_F041_3bf0_BDA2_0170A6B08008" name="targetNamespace" value="https://www.geospatial.jp/iur/urf/3.0#NOTES#Description: Target namespace URI of the Application Schema&#xA;" modelElement="EAID_703CD7E4_9939_4370_8AEB_B5B48ACC572F"/>
-					<tag xmi:id="EAID_6F40CEE6_0A33_550a_B347_943B0BB9ACFA" name="version" value="3.1.1#NOTES#Description: Version of the Application Schema&#xA;" modelElement="EAID_703CD7E4_9939_4370_8AEB_B5B48ACC572F"/>
+					<tag xmi:id="EAID_393CD814_F041_3bf0_BDA2_0170A6B08008" name="targetNamespace" value="https://www.geospatial.jp/iur/urf/3.2#NOTES#Description: Target namespace URI of the Application Schema&#xA;" modelElement="EAID_703CD7E4_9939_4370_8AEB_B5B48ACC572F"/>
+					<tag xmi:id="EAID_6F40CEE6_0A33_550a_B347_943B0BB9ACFA" name="version" value="3.2.1#NOTES#Description: Version of the Application Schema&#xA;" modelElement="EAID_703CD7E4_9939_4370_8AEB_B5B48ACC572F"/>
 					<tag xmi:id="EAID_08B91BD2_1FDF_fc1f_9E01_0AF57A162F61" name="xmlns" value="urf#NOTES#Description: Namespace prefix (or) the abbreviated short form  of the target namespace&#xA;" modelElement="EAID_703CD7E4_9939_4370_8AEB_B5B48ACC572F"/>
 					<tag xmi:id="EAID_6E79370E_B4BB_69b4_BD45_F4C32AC317D8" name="xsdDocument" value="urbanFunction.xsd#NOTES#Description: Valid file name or relative file name of the XSD file to create for representing the contents of the package&#xA;" modelElement="EAID_703CD7E4_9939_4370_8AEB_B5B48ACC572F"/>
 				</tags>
@@ -43838,8 +43838,8 @@
 			</element>
 			<element xmi:idref="EAID_DB64EEA5_D96E_4516_B15F_CDC7750BF6DE" xmi:type="uml:Class" name="UrbanPlanningArea" scope="public">
 				<model package="EAPK_703CD7E4_9939_4370_8AEB_B5B48ACC572F" tpos="5" ea_localid="62232" ea_eleType="element"/>
-				<properties documentation="都市計画区域。都市の実態や将来の計画を勘案して、一体の都市地域となるべき区域として指定された区域。（都市計画法第5条第1項）&#xA;&#xA;.都市計画区域の例&#xA;image::images/228.webp.png[]&#xA;&#xA;複数の市区町村にまたがる都市計画の区域の場合は、市区町村の境界で区切る。&#xA;&#xA;&#xA;* 属性urf:functionは、コードリスト（&amp;lt;&amp;lt;Common_urbanPlanType.xml&amp;gt;&amp;gt;）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性urf:urbanPlanType、urf:areaClassificationType及びurf:locationは、使用しない。&#xA;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2024/11/01 09:20:00" complexity="1" status="Proposed"/>
+				<properties documentation="都市計画区域。都市の実態や将来の計画を勘案して、一体の都市地域となるべき区域として指定された区域。（都市計画法第5条第1項）&#xA;&#xA;.都市計画区域の例&#xA;image::images/228.webp.png[width=&quot;300&quot;]&#xA;&#xA;複数の市区町村にまたがる都市計画の区域の場合は、市区町村の境界で区切る。&#xA;&#xA;&#xA;* 属性urf:functionは、コードリスト（&amp;lt;&amp;lt;Common_urbanPlanType.xml&amp;gt;&amp;gt;）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性urf:urbanPlanType、urf:areaClassificationType及びurf:locationは、使用しない。&#xA;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2025/01/24 10:16:59" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=16764159;BorderColor=-1;BorderWidth=2;FontColor=0;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;" styleex="font=Yu Gothic UI;fontsz=100;bold=0;italic=0;ul=0;charset=0;pitch=50;"/>
 				<tags>
@@ -44046,8 +44046,8 @@
 			</element>
 			<element xmi:idref="EAID_B6AEED4A_CB36_47b4_8384_4F0831340F89" xmi:type="uml:Class" name="AreaClassification" scope="public">
 				<model package="EAPK_703CD7E4_9939_4370_8AEB_B5B48ACC572F" tpos="7" ea_localid="62238" ea_eleType="element"/>
-				<properties documentation="都市計画法第7条に基づき、無秩序な市街地の拡大による環境悪化の防止、計画的な公共施設整備などによる良好な市街地の形成などを行うため、都市計画区域について区分された、計画的な市街化を図るべき区域「市街化区域」と、市街化を抑制すべき「市街化調整区域」。（都市計画法第7条）&#xA;&#xA;.区域区分（市街化調整地域）の例&#xA;image::images/229.webp.png[]&#xA;&#xA;複数の市区町村にまたがる市街化区域又は市街化調整区域の場合は、市区町村の境界で区切る。&#xA;&#xA;* 属性urf:functionは、コードリスト（&amp;lt;&amp;lt;Common_areaClassificationType.xml&amp;gt;&amp;gt;）より選択する。&#xA;* 属性urf:areaClassificationType及びurf:locationは、使用しない。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2024/11/01 09:48:37" complexity="1" status="Proposed"/>
+				<properties documentation="都市計画法第7条に基づき、無秩序な市街地の拡大による環境悪化の防止、計画的な公共施設整備などによる良好な市街地の形成などを行うため、都市計画区域について区分された、計画的な市街化を図るべき区域「市街化区域」と、市街化を抑制すべき「市街化調整区域」。（都市計画法第7条）&#xA;&#xA;.区域区分（市街化調整地域）の例&#xA;image::images/229.webp.png[width=&quot;300&quot;]&#xA;&#xA;複数の市区町村にまたがる市街化区域又は市街化調整区域の場合は、市区町村の境界で区切る。&#xA;&#xA;* 属性urf:functionは、コードリスト（&amp;lt;&amp;lt;Common_areaClassificationType.xml&amp;gt;&amp;gt;）より選択する。&#xA;* 属性urf:areaClassificationType及びurf:locationは、使用しない。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2025/01/24 10:17:26" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -44080,8 +44080,8 @@
 			</element>
 			<element xmi:idref="EAID_A786AF83_0D97_4e7e_8A38_2C28A475C68B" xmi:type="uml:Class" name="DistrictsAndZones" scope="public">
 				<model package="EAPK_703CD7E4_9939_4370_8AEB_B5B48ACC572F" tpos="8" ea_localid="62200" ea_eleType="element"/>
-				<properties documentation="地域地区。都市計画法第8条に基づき、都市計画区域内の土地をその利用目的によって区分し、建築物などに対するルールを決め、土地の合理的な利用を図るために指定された区域。&#xA;下位の地物型として定義されていない地域地区を記述したい場合にのみ、この地物型を使用し、属性「urf:function」でその内容を識別する。下位の地物型として定義されている場合は、必ず下位の地物型を使用すること。&#xA;&#xA;.urf:DistrictsAndZones及び下位型の例&#xA;image::images/230.webp.png[]&#xA;&#xA;（3D地形の上でLOD1のbldg:Buildingと重畳表示している）&#xA;&#xA;&#xA;* 属性urf:functionは、都市計画法第8条第3項第1号に定める地域地区（及び用途地域）の区分とする。コードリスト（&amp;lt;&amp;lt;Common_districtsAndZonesType.xml&amp;gt;&amp;gt;）より選択する。ただし、コードリストに定義されていない地域地区を記述する場合のみ、文字列で記述する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性urf:locationは、都市計画法第8条第3項第1号に定める当該地区又は地域が設定された位置。町丁目又は字まで記載する。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="501525" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2024/12/27 10:51:39" complexity="1" status="Proposed"/>
+				<properties documentation="地域地区。都市計画法第8条に基づき、都市計画区域内の土地をその利用目的によって区分し、建築物などに対するルールを決め、土地の合理的な利用を図るために指定された区域。&#xA;下位の地物型として定義されていない地域地区を記述したい場合にのみ、この地物型を使用し、属性「urf:function」でその内容を識別する。下位の地物型として定義されている場合は、必ず下位の地物型を使用すること。&#xA;&#xA;.urf:DistrictsAndZones及び下位型の例&#xA;image::images/230.webp.png[width=&quot;450&quot;]&#xA;&#xA;（3D地形の上でLOD1のbldg:Buildingと重畳表示している）&#xA;&#xA;&#xA;* 属性urf:functionは、都市計画法第8条第3項第1号に定める地域地区（及び用途地域）の区分とする。コードリスト（&amp;lt;&amp;lt;Common_districtsAndZonesType.xml&amp;gt;&amp;gt;）より選択する。ただし、コードリストに定義されていない地域地区を記述する場合のみ、文字列で記述する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性urf:locationは、都市計画法第8条第3項第1号に定める当該地区又は地域が設定された位置。町丁目又は字まで記載する。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="501525" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2025/01/24 13:54:21" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -49709,8 +49709,8 @@
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
 					<tag xmi:id="EAID_48460EC2_0C6F_f40c_990D_EA6DD4121442" name="gmlProfileSchema" value="#NOTES#Description: URL of the XSD location of a GML profile&#xA;" modelElement="EAID_BCC79C61_EB22_4305_B574_693E41527057"/>
-					<tag xmi:id="EAID_393CD814_F041_3bf0_BAF8_751EC32651FC" name="targetNamespace" value="https://www.geospatial.jp/iur/uro/3.0#NOTES#Description: Target namespace URI of the Application Schema&#xA;" modelElement="EAID_BCC79C61_EB22_4305_B574_693E41527057"/>
-					<tag xmi:id="EAID_6F40CEE6_0A33_550a_848D_0D31ECF2F336" name="version" value="3.1.2#NOTES#Description: Version of the Application Schema&#xA;" modelElement="EAID_BCC79C61_EB22_4305_B574_693E41527057"/>
+					<tag xmi:id="EAID_393CD814_F041_3bf0_BAF8_751EC32651FC" name="targetNamespace" value="https://www.geospatial.jp/iur/uro/3.2#NOTES#Description: Target namespace URI of the Application Schema&#xA;" modelElement="EAID_BCC79C61_EB22_4305_B574_693E41527057"/>
+					<tag xmi:id="EAID_6F40CEE6_0A33_550a_848D_0D31ECF2F336" name="version" value="3.2.1#NOTES#Description: Version of the Application Schema&#xA;" modelElement="EAID_BCC79C61_EB22_4305_B574_693E41527057"/>
 					<tag xmi:id="EAID_08B91BD2_1FDF_fc1f_A315_C3FBDE5D912C" name="xmlns" value="uro#NOTES#Description: Namespace prefix (or) the abbreviated short form  of the target namespace&#xA;" modelElement="EAID_BCC79C61_EB22_4305_B574_693E41527057"/>
 					<tag xmi:id="EAID_6E79370E_B4BB_69b4_A89F_045DAD6A2B4E" name="xsdDocument" value="urbanObject.xsd#NOTES#Description: Valid file name or relative file name of the XSD file to create for representing the contents of the package&#xA;" modelElement="EAID_BCC79C61_EB22_4305_B574_693E41527057"/>
 				</tags>
@@ -63621,8 +63621,8 @@
 			</element>
 			<element xmi:idref="EAID_88BEB495_757C_4d39_B6B1_46BD08CF43D1" xmi:type="uml:Class" name="UndergroundBuilding" scope="public">
 				<model package="EAPK_BCC79C61_EB22_4305_B574_693E41527057" tpos="0" ea_localid="63846" ea_eleType="element"/>
-				<properties documentation="地下街とは、地下街その他地下に設けられた不特定かつ多数の者が利用する施設（地下に建設が予定されている施設又は地下に建設中の施設であつて、不特定かつ多数の者が利用すると見込まれるものを含む。）&#xA;をいう。 [水防法 第15 条第1 項第4 号イ]&#xA;&#xA;参考： +&#xA;消防法第8 条の2 第1 項では、地下街を「地下の工作物内に設けられた店舗、事務所その他これらに類する施設で、連続して地下道に面して設けられたものと当該地下道とを合わせたもの」また同施行令別表第一では準地下街として「建築物の地階で連続して地下道に面して設けられたものと当該地下道とを合わせ&#xA;たもの」と定義している。 +&#xA;また、「地下街に関する基本方針」（昭和49 年6 月28 日付建設省都計発第58 号）では地下街を「公共の用に供される地下歩道（地下駅の改札口外の通路、コンコース等を含む。）と当該地下歩道に面して設けられる店舗、事務所その他これらに類する施設とが一体となった地下施設（地下駐車場が併設されてい&#xA;る場合には、当該地下駐車場を含む。）であって、公共の用に供されている道路又は駅前広場（土地区画整理事業、市街地再開発事業等により建設中の道路又は駅前広場を含む。）の区域に係るもの」と定義している。&#xA;&#xA;.uro:UndergroundBuildingの例&#xA;image::images/345.webp.png[]&#xA;&#xA;建築物の地階は、建築物（bldg:Building）として表現する。 +&#xA;地下街から地上に出入りするために設けられた開口部（bldg:ClosureSurface）を覆うように設けられた建屋は、frn:CityFurniture として取得する。&#xA;&#xA;.地下街の出入り口に設けられた建屋&#xA;image::images/346.webp.png[]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2023/03/11 00:32:12" modified="2024/11/05 18:38:16" complexity="1" status="Proposed"/>
+				<properties documentation="地下街とは、地下街その他地下に設けられた不特定かつ多数の者が利用する施設（地下に建設が予定されている施設又は地下に建設中の施設であつて、不特定かつ多数の者が利用すると見込まれるものを含む。）&#xA;をいう。 [水防法 第15 条第1 項第4 号イ]&#xA;&#xA;参考： +&#xA;消防法第8 条の2 第1 項では、地下街を「地下の工作物内に設けられた店舗、事務所その他これらに類する施設で、連続して地下道に面して設けられたものと当該地下道とを合わせたもの」また同施行令別表第一では準地下街として「建築物の地階で連続して地下道に面して設けられたものと当該地下道とを合わせ&#xA;たもの」と定義している。 +&#xA;また、「地下街に関する基本方針」（昭和49 年6 月28 日付建設省都計発第58 号）では地下街を「公共の用に供される地下歩道（地下駅の改札口外の通路、コンコース等を含む。）と当該地下歩道に面して設けられる店舗、事務所その他これらに類する施設とが一体となった地下施設（地下駐車場が併設されてい&#xA;る場合には、当該地下駐車場を含む。）であって、公共の用に供されている道路又は駅前広場（土地区画整理事業、市街地再開発事業等により建設中の道路又は駅前広場を含む。）の区域に係るもの」と定義している。&#xA;&#xA;.uro:UndergroundBuildingの例&#xA;image::images/345.webp.png[]&#xA;&#xA;建築物の地階は、建築物（bldg:Building）として表現する。 +&#xA;地下街から地上に出入りするために設けられた開口部（bldg:ClosureSurface）を覆うように設けられた建屋は、frn:CityFurniture として取得する。&#xA;&#xA;.地下街の出入り口に設けられた建屋&#xA;image::images/346.webp.png[width=&quot;400&quot;]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2023/03/11 00:32:12" modified="2025/01/24 10:31:26" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -72992,8 +72992,8 @@
 			</element>
 			<element xmi:idref="EAID_6C5DA642_083B_4b6d_B81A_172F0CB66CF1" xmi:type="uml:Class" name="CityObjectGroup" scope="public">
 				<model package="EAPK_0C03619C_1A3F_4a18_AD9F_146C33A13847" tpos="0" ea_localid="62858" ea_eleType="element"/>
-				<properties documentation="都市オブジェクトの集まり。 +&#xA;建築物モデル（LOD4）では、多数の層からなる建築物における、それぞれの層（階）を部屋（bldg:Room）の集まりとして表現する場合及び施設管理者等により任意に設定された防火区画等の領域（任意設定空間）を部屋の集まりとして表現する場合に使用する。&#xA;&#xA;下図は、建築物の1 階の部屋をgrp:CityObjectGroup としてグループ化した例である。&#xA;&#xA;.grp:CityObjectGroupの使用例&#xA;image::images/417.webp.png[]&#xA;&#xA;CityGML では、建築物の階や任意設定空間に相当する地物は存在しない。そこで、グループ化の仕組みであるgrp:CityObjectGroup を建築物の階を表現するために使用する。 +&#xA;属性gml:name により階又は任意設定空間を識別する名称を付与し、関連役割grp:groupMember により同じ階又は任意に設定空間に存在する部屋（bldg:Room）を参照することで、建築物の階を表現する。&#xA;&#xA;image::images/418.webp.png[]&#xA;&#xA;例えば、1 階に六つの部屋が存在する場合、上図のように、1 階を示すgrp:CityObjectGroup は、六つのbldg:Room を関連役割grp:groupMember により参照する。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2022/01/30 23:34:09" modified="2024/11/05 19:43:42" complexity="1" status="Proposed"/>
+				<properties documentation="都市オブジェクトの集まり。 +&#xA;建築物モデル（LOD4）では、多数の層からなる建築物における、それぞれの層（階）を部屋（bldg:Room）の集まりとして表現する場合及び施設管理者等により任意に設定された防火区画等の領域（任意設定空間）を部屋の集まりとして表現する場合に使用する。&#xA;&#xA;下図は、建築物の1 階の部屋をgrp:CityObjectGroup としてグループ化した例である。&#xA;&#xA;.grp:CityObjectGroupの使用例&#xA;image::images/417.webp.png[width=&quot;300&quot;]&#xA;&#xA;CityGML では、建築物の階や任意設定空間に相当する地物は存在しない。そこで、グループ化の仕組みであるgrp:CityObjectGroup を建築物の階を表現するために使用する。 +&#xA;属性gml:name により階又は任意設定空間を識別する名称を付与し、関連役割grp:groupMember により同じ階又は任意に設定空間に存在する部屋（bldg:Room）を参照することで、建築物の階を表現する。&#xA;&#xA;image::images/418.webp.png[width=&quot;400&quot;]&#xA;&#xA;例えば、1 階に六つの部屋が存在する場合、上図のように、1 階を示すgrp:CityObjectGroup は、六つのbldg:Room を関連役割grp:groupMember により参照する。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2022/01/30 23:34:09" modified="2025/01/24 14:03:33" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -73193,8 +73193,8 @@
 			</element>
 			<element xmi:idref="EAID_5D83B120_4F49_4ed1_BB29_B2998475DA9C" xmi:type="uml:Class" name="PlantCover" scope="public">
 				<model package="EAPK_888CC93A_C3E5_4d7f_86B4_42EAA804728D" tpos="0" ea_localid="61876" ea_eleType="element"/>
-				<properties documentation="植被。芝生や茂みのように、植生に覆われた範囲を指し、個々の樹木を識別しない。&#xA;&#xA;.veg:PlantCoverの例&#xA;image::images/362.webp.png[]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="lvandenbrink" version="1.0" phase="1.0" created="2021/05/17 18:23:34" modified="2024/11/05 18:54:54" complexity="1" status="Proposed"/>
+				<properties documentation="植被。芝生や茂みのように、植生に覆われた範囲を指し、個々の樹木を識別しない。&#xA;&#xA;.veg:PlantCoverの例&#xA;image::images/362.webp.png[width=&quot;400&quot;]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="lvandenbrink" version="1.0" phase="1.0" created="2021/05/17 18:23:34" modified="2025/01/24 10:33:42" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -73300,8 +73300,8 @@
 			</element>
 			<element xmi:idref="EAID_32ECE50F_17C7_4864_98BD_6C8A30193EF0" xmi:type="uml:Class" name="SolitaryVegetationObject" scope="public">
 				<model package="EAPK_888CC93A_C3E5_4d7f_86B4_42EAA804728D" tpos="0" ea_localid="61875" ea_eleType="element"/>
-				<properties documentation="独立した樹木。&#xA;&#xA;.SolitaryVegetationObjectの例&#xA;image::images/358.webp.png[]" isSpecification="false" sType="Class" nType="0" alias="VegetatieObject" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="lvandenbrink" version="1.0" phase="1.0" created="2021/05/17 18:23:34" modified="2024/11/05 18:47:38" complexity="1" status="Proposed"/>
+				<properties documentation="独立した樹木。&#xA;&#xA;.SolitaryVegetationObjectの例&#xA;image::images/358.webp.png[width=&quot;150&quot;]" isSpecification="false" sType="Class" nType="0" alias="VegetatieObject" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="lvandenbrink" version="1.0" phase="1.0" created="2021/05/17 18:23:34" modified="2025/01/24 10:32:08" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -73533,8 +73533,8 @@
 			</element>
 			<element xmi:idref="EAID_162F1789_29D3_4392_9AC5_C3633040FE44" xmi:type="uml:Class" name="WaterBody" scope="public">
 				<model package="EAPK_354816A2_DEFC_4506_BBF6_BC0CD3EFF57D" tpos="0" ea_localid="61821" ea_eleType="element"/>
-				<properties documentation="河川、湖沼、等のように陸地内に存在する水の存在する部分及び海。水路や貯水槽、プールのような人工的に存在する水を含む。また、浸水面を含む。&#xA;&#xA;* 河川、湖沼、海及び水路、貯水槽、プールのような人工的に存在する水の場合 +&#xA;LOD0 は、ネットワーク又は、公共測量標準図式による表現のいずれかとし、ネットワークを原則とする。&#xA;+&#xA;.wtr:WaterBodyの例（LOD0）&#xA;image::images/400.webp.png[]&#xA;+&#xA;LOD1 は、水涯線により囲まれた面として表現する。&#xA;+&#xA;.wtr:WaterBodyの例（LOD1）&#xA;image::images/401.webp.png[]&#xA;+&#xA;LOD2 は、水面と水底面に囲まれた立体として表現する。&#xA;+&#xA;.wtr:WaterBodyの例（LOD2）&#xA;image::images/402.webp.png[]&#xA;+&#xA;LOD3 は、水面と水底面に囲まれた立体から、水中の構造物を除いた立体として表現する。&#xA;+&#xA;.wtr:WaterBodyの例（LOD3）&#xA;image::images/403.webp.png[]&#xA;+&#xA;水部のインスタンスは基準地域メッシュ（第3 次地域区画）の境界で区切る。 +&#xA;LOD2 又はLOD3 でインスタンスを分割する場合は、基準地域メッシュの水部の立体の境界面分割するための仮想的な境界面を「wtr:WaterClosureSurface」とする。&#xA;&#xA;* 浸水面の場合 +&#xA;洪水浸水想定区域、津波浸水想定、高潮浸水想定区域、内水浸水想定区域及びため池ハザードマップ（以下、浸水想定区域等と呼ぶ）の浸水面を記述する。浸水面は、LOD1のみを対象とする。浸水面を構成する図形の頂点の高さは、標高に水位を加えた高さとする。 +&#xA;浸水面は以下の場所で区切る。&#xA;** ランクが変化する場所&#xA;** ファイル単位となるメッシュの境界&#xA;&#xA;浸水想定区域等の場合、gml:nameには、浸水想定区域等の図面に示される、図面の名称を記述する。この場合、gml:nameは必須とする。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2020/10/07 17:25:54" modified="2024/11/05 19:10:04" complexity="1" status="Proposed"/>
+				<properties documentation="河川、湖沼、等のように陸地内に存在する水の存在する部分及び海。水路や貯水槽、プールのような人工的に存在する水を含む。また、浸水面を含む。&#xA;&#xA;* 河川、湖沼、海及び水路、貯水槽、プールのような人工的に存在する水の場合 +&#xA;LOD0 は、ネットワーク又は、公共測量標準図式による表現のいずれかとし、ネットワークを原則とする。&#xA;+&#xA;.wtr:WaterBodyの例（LOD0）&#xA;image::images/400.webp.png[width=&quot;250&quot;]&#xA;+&#xA;LOD1 は、水涯線により囲まれた面として表現する。&#xA;+&#xA;.wtr:WaterBodyの例（LOD1）&#xA;image::images/401.webp.png[width=&quot;250&quot;]&#xA;+&#xA;LOD2 は、水面と水底面に囲まれた立体として表現する。&#xA;+&#xA;.wtr:WaterBodyの例（LOD2）&#xA;image::images/402.webp.png[width=&quot;400&quot;]&#xA;+&#xA;LOD3 は、水面と水底面に囲まれた立体から、水中の構造物を除いた立体として表現する。&#xA;+&#xA;.wtr:WaterBodyの例（LOD3）&#xA;image::images/403.webp.png[width=&quot;400&quot;]&#xA;+&#xA;水部のインスタンスは基準地域メッシュ（第3 次地域区画）の境界で区切る。 +&#xA;LOD2 又はLOD3 でインスタンスを分割する場合は、基準地域メッシュの水部の立体の境界面分割するための仮想的な境界面を「wtr:WaterClosureSurface」とする。&#xA;&#xA;* 浸水面の場合 +&#xA;洪水浸水想定区域、津波浸水想定、高潮浸水想定区域、内水浸水想定区域及びため池ハザードマップ（以下、浸水想定区域等と呼ぶ）の浸水面を記述する。浸水面は、LOD1のみを対象とする。浸水面を構成する図形の頂点の高さは、標高に水位を加えた高さとする。 +&#xA;浸水面は以下の場所で区切る。&#xA;** ランクが変化する場所&#xA;** ファイル単位となるメッシュの境界&#xA;&#xA;浸水想定区域等の場合、gml:nameには、浸水想定区域等の図面に示される、図面の名称を記述する。この場合、gml:nameは必須とする。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2020/10/07 17:25:54" modified="2025/01/24 14:03:49" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -73609,8 +73609,8 @@
 			</element>
 			<element xmi:idref="EAID_CA231749_0D7A_465e_A665_5C12B1C10B49" xmi:type="uml:Class" name="WaterClosureSurface" scope="public">
 				<model package="EAPK_354816A2_DEFC_4506_BBF6_BC0CD3EFF57D" tpos="0" ea_localid="61823" ea_eleType="element"/>
-				<properties documentation="水部の立体を区切る仮想的な面。（閉鎖面）&#xA;&#xA;複数の基準地域メッシュに跨って存在する河川、湖沼、海等を基準メッシュ単位に分割する場合や、河川、湖沼、海等の一部の範囲のみを作成する場合に、水部の立体を構成する境界面として使用する。&#xA;&#xA;.水部の断面イメージ&#xA;image::images/406.webp.png[]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2020/10/07 17:26:13" modified="2024/12/11 14:44:13" complexity="1" status="Proposed"/>
+				<properties documentation="水部の立体を区切る仮想的な面。（閉鎖面）&#xA;&#xA;複数の基準地域メッシュに跨って存在する河川、湖沼、海等を基準メッシュ単位に分割する場合や、河川、湖沼、海等の一部の範囲のみを作成する場合に、水部の立体を構成する境界面として使用する。&#xA;&#xA;.水部の断面イメージ&#xA;image::images/406.webp.png[width=&quot;400&quot;]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2020/10/07 17:26:13" modified="2025/01/24 14:04:00" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -73626,8 +73626,8 @@
 			</element>
 			<element xmi:idref="EAID_199C6D36_3FB5_4b55_8303_7A8AD537D0DF" xmi:type="uml:Class" name="WaterGroundSurface" scope="public">
 				<model package="EAPK_354816A2_DEFC_4506_BBF6_BC0CD3EFF57D" tpos="0" ea_localid="61824" ea_eleType="element"/>
-				<properties documentation="水底面。地形と水部の境界面及び水中の構造物と水部との境界面をいう。&#xA;&#xA;.水部の断面イメージ&#xA;image::images/405.webp.png[]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2020/10/07 17:26:20" modified="2024/11/05 19:16:18" complexity="1" status="Proposed"/>
+				<properties documentation="水底面。地形と水部の境界面及び水中の構造物と水部との境界面をいう。&#xA;&#xA;.水部の断面イメージ&#xA;image::images/405.webp.png[width=&quot;400&quot;]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2020/10/07 17:26:20" modified="2025/01/24 14:03:52" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -73643,8 +73643,8 @@
 			</element>
 			<element xmi:idref="EAID_86BB6780_24A2_45f8_80BF_44EC1DA9856D" xmi:type="uml:Class" name="WaterSurface" scope="public">
 				<model package="EAPK_354816A2_DEFC_4506_BBF6_BC0CD3EFF57D" tpos="0" ea_localid="61825" ea_eleType="element"/>
-				<properties documentation="水面。大気と水部の境界面とする。&#xA;&#xA;.水部の断面イメージ&#xA;image::images/404.webp.png[]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2020/10/07 17:26:29" modified="2024/11/05 19:15:21" complexity="1" status="Proposed"/>
+				<properties documentation="水面。大気と水部の境界面とする。&#xA;&#xA;.水部の断面イメージ&#xA;image::images/404.webp.png[width=&quot;400&quot;]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2020/10/07 17:26:29" modified="2025/01/24 14:03:56" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -73909,8 +73909,8 @@
 			</element>
 			<element xmi:idref="EAID_4FE254C3_3809_4a04_9A5B_6BE9A8B2F47E" xmi:type="uml:Class" name="BridgeConstructionElement" scope="public">
 				<model package="EAPK_D13F9655_87C9_40da_88DB_662F687AA460" tpos="0" ea_localid="63752" ea_eleType="element"/>
-				<properties documentation="橋梁の構造上重要な部材。 +&#xA;橋脚、橋台、トラス、アーチ、吊材、パイロン、ケーブルをさす。&#xA;&#xA;.brid:BridgeConstructionElementの例&#xA;image::images/253.webp.png[]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="kurokawa" version="1.0" phase="1.0" created="2023/03/10 13:53:30" modified="2024/11/05 10:22:19" complexity="1" status="Proposed"/>
+				<properties documentation="橋梁の構造上重要な部材。 +&#xA;橋脚、橋台、トラス、アーチ、吊材、パイロン、ケーブルをさす。&#xA;&#xA;.brid:BridgeConstructionElementの例&#xA;image::images/253.webp.png[width=&quot;450&quot;]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="kurokawa" version="1.0" phase="1.0" created="2023/03/10 13:53:30" modified="2025/01/24 13:57:01" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -75450,8 +75450,8 @@
 			</element>
 			<element xmi:idref="EAID_1EF565C9_876A_4207_B0BE_41ADCC080507" xmi:type="uml:Class" name="Appearance" scope="public">
 				<model package="EAPK_75552BE6_545C_4373_BB2F_B5D82EFE2E36" tpos="0" ea_localid="61885" ea_eleType="element"/>
-				<properties documentation="地物の外観。&#xA;地物の幾何オブジェクトとなる面に色又はテクスチャを指定する。&#xA;&#xA;.Apperanceを使用してbldg:Buildingの外観を設定した例　　　　（左：色の指定　右：テクスチャの指定）&#xA;image::images/412.webp.png[]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="lvandenbrink" version="1.0" phase="1.0" created="2021/06/08 15:33:14" modified="2024/11/05 19:36:39" complexity="1" status="Proposed"/>
+				<properties documentation="地物の外観。&#xA;地物の幾何オブジェクトとなる面に色又はテクスチャを指定する。&#xA;&#xA;.Apperanceを使用してbldg:Buildingの外観を設定した例　　　　（左：色の指定　右：テクスチャの指定）&#xA;image::images/412.webp.png[width=&quot;300&quot;]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="lvandenbrink" version="1.0" phase="1.0" created="2021/06/08 15:33:14" modified="2025/01/24 14:01:47" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -75609,8 +75609,8 @@
 			</element>
 			<element xmi:idref="EAID_A022F3FF_AB92_4e43_AE05_7173A288971C" xmi:type="uml:Class" name="ParameterizedTexture" scope="public">
 				<model package="EAPK_75552BE6_545C_4373_BB2F_B5D82EFE2E36" tpos="0" ea_localid="61884" ea_eleType="element"/>
-				<properties documentation="地物インスタンスに貼り付ける画像と貼り付け方をパラメータにより指定するための型。&#xA;&#xA;.bldg:Buildingの外観としてテクスチャを指定した例&#xA;image::images/413.webp.png[]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="lvandenbrink" version="1.0" phase="1.0" created="2021/06/08 15:33:14" modified="2024/11/05 19:37:48" complexity="1" status="Proposed"/>
+				<properties documentation="地物インスタンスに貼り付ける画像と貼り付け方をパラメータにより指定するための型。&#xA;&#xA;.bldg:Buildingの外観としてテクスチャを指定した例&#xA;image::images/413.webp.png[width=&quot;250&quot;]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="lvandenbrink" version="1.0" phase="1.0" created="2021/06/08 15:33:14" modified="2025/01/24 14:02:18" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -75890,8 +75890,8 @@
 			</element>
 			<element xmi:idref="EAID_F2E44435_685C_4cc1_ADB1_2A2F08AD14A3" xmi:type="uml:Class" name="X3DMaterial" scope="public">
 				<model package="EAPK_75552BE6_545C_4373_BB2F_B5D82EFE2E36" tpos="0" ea_localid="61893" ea_eleType="element"/>
-				<properties documentation="地物インスタンスの表面色を指定するための型。&#xA;&#xA;.bldg:Buildingの外観として色を指定した例&#xA;image::images/414.webp.png[]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="lvandenbrink" version="1.0" phase="1.0" created="2021/06/08 15:33:14" modified="2024/11/05 19:41:04" complexity="1" status="Proposed"/>
+				<properties documentation="地物インスタンスの表面色を指定するための型。&#xA;&#xA;.bldg:Buildingの外観として色を指定した例&#xA;image::images/414.webp.png[width=&quot;250&quot;]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="lvandenbrink" version="1.0" phase="1.0" created="2021/06/08 15:33:14" modified="2025/01/24 14:02:24" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -76519,8 +76519,8 @@
 			</element>
 			<element xmi:idref="EAID_445424B4_89D6_44b1_AD5D_CDE5110FA344" xmi:type="uml:Class" name="BuildingFurniture" scope="public">
 				<model package="EAPK_1D38D48C_F798_4ab9_AFDB_A6140AB461D4" tpos="0" ea_localid="63805" ea_eleType="element"/>
-				<properties documentation="室内の移動できる備品（家具）。&#xA;&#xA;bldg:IntBuildingInstallationが、建築物内部に設置された恒久的かつ固定的な設備であることと対照的に、bldg:BuildingFurnitureは椅子やテーブルのような、動かすことができる備品である。&#xA;&#xA;.bldg:BuildingFurnitureの例（机、椅子）&#xA;image::images/065.webp.png[]&#xA;&#xA;LOD4.2の場合にのみ取得する。&#xA;&#xA;ただし、ユースケースの要求に応じて、取得対象とする家具を限定してよい。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2023/03/10 19:50:32" modified="2024/10/28 15:02:28" complexity="1" status="Proposed"/>
+				<properties documentation="室内の移動できる備品（家具）。&#xA;&#xA;bldg:IntBuildingInstallationが、建築物内部に設置された恒久的かつ固定的な設備であることと対照的に、bldg:BuildingFurnitureは椅子やテーブルのような、動かすことができる備品である。&#xA;&#xA;.bldg:BuildingFurnitureの例（机、椅子）&#xA;image::images/065.webp.png[width=&quot;300&quot;]&#xA;&#xA;LOD4.2の場合にのみ取得する。&#xA;&#xA;ただし、ユースケースの要求に応じて、取得対象とする家具を限定してよい。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2023/03/10 19:50:32" modified="2025/01/24 13:49:23" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -76675,8 +76675,8 @@
 			</element>
 			<element xmi:idref="EAID_05413E4E_1FF0_4a2d_83C1_81C3EA830C96" xmi:type="uml:Class" name="CeilingSurface" scope="public">
 				<model package="EAPK_1D38D48C_F798_4ab9_AFDB_A6140AB461D4" tpos="0" ea_localid="63806" ea_eleType="element"/>
-				<properties documentation="部屋など構造物内部の上側の面（天井）。部屋（bldg:Room）の境界面となる。&#xA;&#xA;.bldg:CeilingSurfaceの例&#xA;image::images/056.webp.png[]&#xA;&#xA;bldg:CeilingSurfaceの法線ベクトルは下向き（部屋の内側に向く方向が正）となる。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2023/03/10 19:50:32" modified="2024/10/28 13:55:47" complexity="1" status="Proposed"/>
+				<properties documentation="部屋など構造物内部の上側の面（天井）。部屋（bldg:Room）の境界面となる。&#xA;&#xA;.bldg:CeilingSurfaceの例&#xA;image::images/056.webp.png[width=&quot;300&quot;]&#xA;&#xA;bldg:CeilingSurfaceの法線ベクトルは下向き（部屋の内側に向く方向が正）となる。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2023/03/10 19:50:32" modified="2025/01/24 10:01:19" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -76692,8 +76692,8 @@
 			</element>
 			<element xmi:idref="EAID_7E1D8D4E_B64B_477c_9ED4_4F5353B80CD4" xmi:type="uml:Class" name="ClosureSurface" scope="public">
 				<model package="EAPK_1D38D48C_F798_4ab9_AFDB_A6140AB461D4" tpos="0" ea_localid="63809" ea_eleType="element"/>
-				<properties documentation="建築物の立体又は部屋の立体を構成するために仮想的に設ける閉鎖面。 +&#xA;一棟の建築物を、主題属性の異なる複数の部分に分ける場合に、その境界面として使用する。&#xA;&#xA;.LOD2又はLOD3でのbldg:ClosureSurfaceの例&#xA;image::images/052.webp.png[]&#xA;&#xA;屋内においては、境界面となる内壁面や天井面、床面はないが、建築確認申請では部屋となっている空間を区切る場合に、部屋の境界面として便宜上設けられた仮想的な面をさす。&#xA;&#xA;.LOD4でのbldg:ClosureSurfaceの例&#xA;image::images/053.webp.png[]&#xA;&#xA;.LOD4でのbldg:ClosureSurfaceを非表示にした例&#xA;image::images/054.webp.png[]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2023/03/10 19:50:32" modified="2024/11/18 16:10:10" complexity="1" status="Proposed"/>
+				<properties documentation="建築物の立体又は部屋の立体を構成するために仮想的に設ける閉鎖面。 +&#xA;一棟の建築物を、主題属性の異なる複数の部分に分ける場合に、その境界面として使用する。&#xA;&#xA;.LOD2又はLOD3でのbldg:ClosureSurfaceの例&#xA;image::images/052.webp.png[width=&quot;450&quot;]&#xA;&#xA;屋内においては、境界面となる内壁面や天井面、床面はないが、建築確認申請では部屋となっている空間を区切る場合に、部屋の境界面として便宜上設けられた仮想的な面をさす。&#xA;&#xA;.LOD4でのbldg:ClosureSurfaceの例&#xA;image::images/053.webp.png[]&#xA;&#xA;.LOD4でのbldg:ClosureSurfaceを非表示にした例&#xA;image::images/054.webp.png[]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2023/03/10 19:50:32" modified="2025/01/24 13:39:52" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -76709,8 +76709,8 @@
 			</element>
 			<element xmi:idref="EAID_D408FF69_49B9_4b19_AA2B_57E0492767B9" xmi:type="uml:Class" name="Door" scope="public">
 				<model package="EAPK_1D38D48C_F798_4ab9_AFDB_A6140AB461D4" tpos="0" ea_localid="63795" ea_eleType="element"/>
-				<properties documentation="採光、通風、換気、眺望、通行などの目的のため、建築物の屋根、天井、壁、床などに設けられた開口部のうち、人や物の出入りを目的とするもの。&#xA;&#xA;.bldg:Doorの例&#xA;image::images/059.webp.png[]&#xA;&#xA;CityGMLでは、扉を面として表現し、一つの扉を外側と内側の二つのbldg:Doorのオブジェクトとして表現する。例えば、屋内と屋外をつなぐ窓があった場合、 +&#xA;外側となるbldg:Doorは、建築物の外壁面（bldg:WallSurface）等の境界面に含まれる。 +&#xA;内側となるbldg:Doorは、部屋の内壁面（bldg:InteriorWallSurface）等の境界面に含まれる。 +&#xA;このとき、屋外の境界面（bldg:WallSurface、bldg:GroundSurface、bldg:OuterFloorSurface、bldg:OuterCeilingSurface）に設けられた開口部は、常にその法線ベクトルが建築物の外側を向く。部屋の境界面（bldg:InteriorWallSurface、bldg:FloorSurface、bldg:CeilingSurface）に設けられた開口部は、常にその法線ベクトルが部屋の内側を向く。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2023/03/10 19:50:32" modified="2024/11/18 16:11:33" complexity="1" status="Proposed"/>
+				<properties documentation="採光、通風、換気、眺望、通行などの目的のため、建築物の屋根、天井、壁、床などに設けられた開口部のうち、人や物の出入りを目的とするもの。&#xA;&#xA;.bldg:Doorの例&#xA;image::images/059.webp.png[width=&quot;300&quot;]&#xA;&#xA;CityGMLでは、扉を面として表現し、一つの扉を外側と内側の二つのbldg:Doorのオブジェクトとして表現する。例えば、屋内と屋外をつなぐ窓があった場合、 +&#xA;外側となるbldg:Doorは、建築物の外壁面（bldg:WallSurface）等の境界面に含まれる。 +&#xA;内側となるbldg:Doorは、部屋の内壁面（bldg:InteriorWallSurface）等の境界面に含まれる。 +&#xA;このとき、屋外の境界面（bldg:WallSurface、bldg:GroundSurface、bldg:OuterFloorSurface、bldg:OuterCeilingSurface）に設けられた開口部は、常にその法線ベクトルが建築物の外側を向く。部屋の境界面（bldg:InteriorWallSurface、bldg:FloorSurface、bldg:CeilingSurface）に設けられた開口部は、常にその法線ベクトルが部屋の内側を向く。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2023/03/10 19:50:32" modified="2025/01/24 10:01:49" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -76727,8 +76727,8 @@
 			</element>
 			<element xmi:idref="EAID_3123EFB1_B5FE_4803_AD97_648ABE18B519" xmi:type="uml:Class" name="FloorSurface" scope="public">
 				<model package="EAPK_1D38D48C_F798_4ab9_AFDB_A6140AB461D4" tpos="0" ea_localid="63811" ea_eleType="element"/>
-				<properties documentation="建物の内部空間の各階下面に位置する水平で平らな板状の構造物（床面）。部屋（bldg:Room）の境界面となる。&#xA;&#xA;.bldg:FloorSurfaceの例&#xA;image::images/057.webp.png[]&#xA;&#xA;bldg:FloorSurfaceの法線ベクトルは上向き（部屋の内側に向く方向が正）となる。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2023/03/10 19:50:32" modified="2024/10/28 14:04:51" complexity="1" status="Proposed"/>
+				<properties documentation="建物の内部空間の各階下面に位置する水平で平らな板状の構造物（床面）。部屋（bldg:Room）の境界面となる。&#xA;&#xA;.bldg:FloorSurfaceの例&#xA;image::images/057.webp.png[width=&quot;300&quot;]&#xA;&#xA;bldg:FloorSurfaceの法線ベクトルは上向き（部屋の内側に向く方向が正）となる。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2023/03/10 19:50:32" modified="2025/01/24 10:01:28" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -76744,8 +76744,8 @@
 			</element>
 			<element xmi:idref="EAID_06D35662_D7A0_46fe_AB5A_05970BD380BE" xmi:type="uml:Class" name="GroundSurface" scope="public">
 				<model package="EAPK_1D38D48C_F798_4ab9_AFDB_A6140AB461D4" tpos="0" ea_localid="63807" ea_eleType="element"/>
-				<properties documentation="建築物の立体形状の底面。 +&#xA;建築物の底面又は建築物の外壁面と地表面との交線を境界とする面を取得する。&#xA;&#xA;.bldg:GroundSurface&#xA;image::images/049.webp.png[]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2023/03/10 19:50:32" modified="2024/11/18 16:10:55" complexity="1" status="Proposed"/>
+				<properties documentation="建築物の立体形状の底面。 +&#xA;建築物の底面又は建築物の外壁面と地表面との交線を境界とする面を取得する。&#xA;&#xA;.bldg:GroundSurface&#xA;image::images/049.webp.png[width=&quot;400&quot;]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2023/03/10 19:50:32" modified="2025/01/24 09:57:34" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -76832,7 +76832,7 @@
 			<element xmi:idref="EAID_DE7082EF_2CC7_416b_AA59_B398B8305C40" xmi:type="uml:Class" name="InteriorWallSurface" scope="public">
 				<model package="EAPK_1D38D48C_F798_4ab9_AFDB_A6140AB461D4" tpos="0" ea_localid="63796" ea_eleType="element"/>
 				<properties documentation="建築物の内側に向いた壁や仕切り。部屋（bldg:Room）の立体を構成する垂直方向の境界面となる。&#xA;&#xA;.bldg:InteriorWallSurfaceの例&#xA;image::images/055.webp.png[]&#xA;&#xA;CityGMLでは、壁は面として表現し、1つの壁は、内側の面と外側の面の2つの面として表現する。 +&#xA;例えば、屋外と屋内を仕切る壁があった場合、屋外に面する壁の面は、bldg:WallSurace（外壁面）として表現し、屋内に面する壁の面は、bldg:InteriorWallSurface（内壁面）として表現する。このとき、bldg:WallSurfaceと、bldg:InteriorSurfaceとの間（壁の厚みに相当する空間）には何も存在しない。 +&#xA;bldg:InteriorWallSurfaceの法線ベクトルは、部屋の内側を向く。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2023/03/10 19:50:32" modified="2024/11/18 16:10:24" complexity="1" status="Proposed"/>
+				<project author="048827" version="1.0" phase="1.0" created="2023/03/10 19:50:32" modified="2025/01/24 10:01:10" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -76848,8 +76848,8 @@
 			</element>
 			<element xmi:idref="EAID_27886C81_3B89_42bc_BC63_B3CC5EEFC837" xmi:type="uml:Class" name="OuterCeilingSurface" scope="public">
 				<model package="EAPK_1D38D48C_F798_4ab9_AFDB_A6140AB461D4" tpos="0" ea_localid="63803" ea_eleType="element"/>
-				<properties documentation="建築物の外側を覆う部分であり、天井としての機能を有する部分。&#xA;&#xA;.bldg:OuterCeilingSurfaceの例&#xA;image::images/050.webp.png[]&#xA;&#xA;ユースケースで屋外の天井と外壁面との区分が必要な場合に、bldg:OuterCeilingSurfaceを使用する。 +&#xA;ユースケースで屋外の天井と外壁面との区分が不要な場合には、この型は使用せず、bldg:WallSurfaceを使用する。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2023/03/10 19:50:32" modified="2024/11/18 16:10:34" complexity="1" status="Proposed"/>
+				<properties documentation="建築物の外側を覆う部分であり、天井としての機能を有する部分。&#xA;&#xA;.bldg:OuterCeilingSurfaceの例&#xA;image::images/050.webp.png[width=&quot;300&quot;]&#xA;&#xA;ユースケースで屋外の天井と外壁面との区分が必要な場合に、bldg:OuterCeilingSurfaceを使用する。 +&#xA;ユースケースで屋外の天井と外壁面との区分が不要な場合には、この型は使用せず、bldg:WallSurfaceを使用する。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2023/03/10 19:50:32" modified="2025/01/24 09:58:18" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -76865,8 +76865,8 @@
 			</element>
 			<element xmi:idref="EAID_D29F73C4_E7A6_4bca_9458_0F9978832121" xmi:type="uml:Class" name="OuterFloorSurface" scope="public">
 				<model package="EAPK_1D38D48C_F798_4ab9_AFDB_A6140AB461D4" tpos="0" ea_localid="63799" ea_eleType="element"/>
-				<properties documentation="建築物の外側を覆う部分であり、通行可能な床面としての機能を有する部分。例えば、屋上や通路として利用されている面が該当する。&#xA;&#xA;.OuterFloorSurfaceの例&#xA;image::images/051.webp.png[]&#xA;&#xA;ユースケースで通行可能な床面と屋根面の区分が必要な場合に、bldg:OuterFloorSurfaceを使用する。 +&#xA;ユースケースで通行可能な床面と屋根面との区分が不要な場合には、この型は使用せず、bldg:RoofSurfaceを使用する。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2023/03/10 19:50:32" modified="2024/11/18 16:10:47" complexity="1" status="Proposed"/>
+				<properties documentation="建築物の外側を覆う部分であり、通行可能な床面としての機能を有する部分。例えば、屋上や通路として利用されている面が該当する。&#xA;&#xA;.OuterFloorSurfaceの例&#xA;image::images/051.webp.png[width=&quot;300&quot;]&#xA;&#xA;ユースケースで通行可能な床面と屋根面の区分が必要な場合に、bldg:OuterFloorSurfaceを使用する。 +&#xA;ユースケースで通行可能な床面と屋根面との区分が不要な場合には、この型は使用せず、bldg:RoofSurfaceを使用する。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2023/03/10 19:50:32" modified="2025/01/24 09:58:58" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -76882,8 +76882,8 @@
 			</element>
 			<element xmi:idref="EAID_82E6087E_9BFD_4ea0_BCDB_6307B345A60F" xmi:type="uml:Class" name="RoofSurface" scope="public">
 				<model package="EAPK_1D38D48C_F798_4ab9_AFDB_A6140AB461D4" tpos="0" ea_localid="63808" ea_eleType="element"/>
-				<properties documentation="主に建築物の上部を覆う構造物。&#xA;&#xA;.bldg:RoofSurfaceの例&#xA;image::images/047.webp.png[]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2023/03/10 19:50:32" modified="2024/10/28 13:08:08" complexity="1" status="Proposed"/>
+				<properties documentation="主に建築物の上部を覆う構造物。&#xA;&#xA;.bldg:RoofSurfaceの例&#xA;image::images/047.webp.png[width=&quot;250&quot;]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2023/03/10 19:50:32" modified="2025/01/24 09:56:44" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -76899,8 +76899,8 @@
 			</element>
 			<element xmi:idref="EAID_18991865_423D_43a4_9358_F12391245E1C" xmi:type="uml:Class" name="Room" scope="public">
 				<model package="EAPK_1D38D48C_F798_4ab9_AFDB_A6140AB461D4" tpos="0" ea_localid="63813" ea_eleType="element"/>
-				<properties documentation="壁、間仕切り、床、天井などで仕切られ、生活の場などに用いられる、建物内部の隔てられた空間の区画（部屋）。&#xA;&#xA;.bldg:Roomの例&#xA;image::images/046.webp.png[]&#xA;&#xA;bldg:Roomは、bldg:Buildingに含まれる地物として記述する。 +&#xA;このとき、bldg:Roomは、複数の地物の集まりとして表現する。bldg:Roomに含まれる地物とは、以下である。&#xA;&#xA;部屋を区切る境界面（bldg:_BoundarySurfaceの下位型） +&#xA;部屋に付属する固定的な設備（bldg:InteriorBuildingInstallation） +&#xA;部屋の中に設置された移動可能な家具（bldg:BuildingFurniture）&#xA;&#xA;さらに、部屋を区切る境界面及び部屋に付属する固定的な設備は、開口部（bldg:_Opening）の下位型を含むことができる。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2023/03/10 19:50:33" modified="2024/11/18 15:24:53" complexity="1" status="Proposed"/>
+				<properties documentation="壁、間仕切り、床、天井などで仕切られ、生活の場などに用いられる、建物内部の隔てられた空間の区画（部屋）。&#xA;&#xA;.bldg:Roomの例&#xA;image::images/046.webp.png[width=&quot;250&quot;]&#xA;&#xA;bldg:Roomは、bldg:Buildingに含まれる地物として記述する。 +&#xA;このとき、bldg:Roomは、複数の地物の集まりとして表現する。bldg:Roomに含まれる地物とは、以下である。&#xA;&#xA;部屋を区切る境界面（bldg:_BoundarySurfaceの下位型） +&#xA;部屋に付属する固定的な設備（bldg:InteriorBuildingInstallation） +&#xA;部屋の中に設置された移動可能な家具（bldg:BuildingFurniture）&#xA;&#xA;さらに、部屋を区切る境界面及び部屋に付属する固定的な設備は、開口部（bldg:_Opening）の下位型を含むことができる。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2023/03/10 19:50:33" modified="2025/01/24 09:56:03" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -76971,8 +76971,8 @@
 			</element>
 			<element xmi:idref="EAID_9F5E6331_9E68_4aed_9B61_BC0653122B73" xmi:type="uml:Class" name="WallSurface" scope="public">
 				<model package="EAPK_1D38D48C_F798_4ab9_AFDB_A6140AB461D4" tpos="0" ea_localid="63797" ea_eleType="element"/>
-				<properties documentation="建築物の外周を構成する壁面（外壁面）。&#xA;&#xA;.bldg:WallSurfaceの例&#xA;image::images/048.webp.png[]&#xA;&#xA;カーテンウォールはbldg:WallSurfaceにより表現する。 +&#xA;カーテンウォールとは、建築物の外側に配置され、建築物を囲む非耐荷重の壁である。&#xA;&#xA;[.source]&#xA;&amp;lt;&amp;lt;iso_6707-1&amp;gt;&amp;gt;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2023/03/10 19:50:32" modified="2024/11/18 16:09:44" complexity="1" status="Proposed"/>
+				<properties documentation="建築物の外周を構成する壁面（外壁面）。&#xA;&#xA;.bldg:WallSurfaceの例&#xA;image::images/048.webp.png[width=&quot;250&quot;]&#xA;&#xA;カーテンウォールはbldg:WallSurfaceにより表現する。 +&#xA;カーテンウォールとは、建築物の外側に配置され、建築物を囲む非耐荷重の壁である。&#xA;&#xA;[.source]&#xA;&amp;lt;&amp;lt;iso_6707-1&amp;gt;&amp;gt;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2023/03/10 19:50:32" modified="2025/01/24 09:56:47" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -76988,8 +76988,8 @@
 			</element>
 			<element xmi:idref="EAID_A593DC46_8B05_4cad_BA5F_D605807A7F86" xmi:type="uml:Class" name="Window" scope="public">
 				<model package="EAPK_1D38D48C_F798_4ab9_AFDB_A6140AB461D4" tpos="0" ea_localid="63812" ea_eleType="element"/>
-				<properties documentation="採光、通風、換気、眺望などの目的のため、建築物の屋根又は壁、部屋の天井、壁、床に設けられた開口部のうち、人や物の出入りを目的としないもの。&#xA;&#xA;.bldg:Windowの例&#xA;image::images/058.webp.png[]&#xA;&#xA;CityGMLでは、窓を面として表現し、一つの窓を外側と内側の二つのbldg:Windowのオブジェクトとして表現する。例えば、屋内と屋外をつなぐ窓があった場合、 +&#xA;外側となるbldg:Windowは、建築物の外壁面（bldg:WallSurface）等の境界面に含まれる。 +&#xA;内側となるbldg:Windowは、部屋の内壁面（bldg:InteriorWallSurface）等の境界面に含まれる。 +&#xA;このとき、屋外の境界面（bldg:WallSurface、bldg:GroundSurface、bldg:OuterFloorSurface、bldg:OuterCeilingSurface）に設けられた開口部は、常にその法線ベクトルが建築物の外側を向く。部屋の境界面（bldg:InteriorWallSurface、bldg:FloorSurface、bldg:CeilingSurface）に設けられた開口部は、常にその法線ベクトルが部屋の内側を向く。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2023/03/10 19:50:33" modified="2024/11/18 16:11:52" complexity="1" status="Proposed"/>
+				<properties documentation="採光、通風、換気、眺望などの目的のため、建築物の屋根又は壁、部屋の天井、壁、床に設けられた開口部のうち、人や物の出入りを目的としないもの。&#xA;&#xA;.bldg:Windowの例&#xA;image::images/058.webp.png[width=&quot;300&quot;]&#xA;&#xA;CityGMLでは、窓を面として表現し、一つの窓を外側と内側の二つのbldg:Windowのオブジェクトとして表現する。例えば、屋内と屋外をつなぐ窓があった場合、 +&#xA;外側となるbldg:Windowは、建築物の外壁面（bldg:WallSurface）等の境界面に含まれる。 +&#xA;内側となるbldg:Windowは、部屋の内壁面（bldg:InteriorWallSurface）等の境界面に含まれる。 +&#xA;このとき、屋外の境界面（bldg:WallSurface、bldg:GroundSurface、bldg:OuterFloorSurface、bldg:OuterCeilingSurface）に設けられた開口部は、常にその法線ベクトルが建築物の外側を向く。部屋の境界面（bldg:InteriorWallSurface、bldg:FloorSurface、bldg:CeilingSurface）に設けられた開口部は、常にその法線ベクトルが部屋の内側を向く。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2023/03/10 19:50:33" modified="2025/01/24 10:01:37" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -77078,8 +77078,8 @@
 			</element>
 			<element xmi:idref="EAID_F079ED07_9E74_4345_8044_408A197B01F1" xmi:type="uml:Class" name="MassPointRelief" scope="public">
 				<model package="EAPK_F63E8324_97AB_4723_B55D_799EC71EC8AA" tpos="0" ea_localid="61961" ea_eleType="element"/>
-				<properties documentation="点の集まりにより地形の起伏を表現した地物。基準地域メッシュ（第三次地域区画、一辺の長さ約1km）を地物の単位とする。&#xA;&#xA;.dem:MassPointReliefの例&#xA;image::images/383.webp.png[]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2022/01/24 01:35:04" modified="2024/11/05 19:05:05" complexity="1" status="Proposed"/>
+				<properties documentation="点の集まりにより地形の起伏を表現した地物。基準地域メッシュ（第三次地域区画、一辺の長さ約1km）を地物の単位とする。&#xA;&#xA;.dem:MassPointReliefの例&#xA;image::images/383.webp.png[width=&quot;400&quot;]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2022/01/24 01:35:04" modified="2025/01/24 14:00:34" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -77133,8 +77133,8 @@
 			</element>
 			<element xmi:idref="EAID_A221B0DF_886C_4f34_BD21_B91E93319D60" xmi:type="uml:Class" name="TINRelief" scope="public">
 				<model package="EAPK_F63E8324_97AB_4723_B55D_799EC71EC8AA" tpos="0" ea_localid="61800" ea_eleType="element"/>
-				<properties documentation="三角形の集まりにより地形の起伏を表現した地物。基準地域メッシュ（第三次地域区画、一辺の長さ約1km）を地物の単位とすることを基本とする。&#xA;&#xA;.dem:TINReliefの例&#xA;image::images/382.webp.png[]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2020/09/22 23:36:38" modified="2024/11/05 19:03:19" complexity="1" status="Proposed"/>
+				<properties documentation="三角形の集まりにより地形の起伏を表現した地物。基準地域メッシュ（第三次地域区画、一辺の長さ約1km）を地物の単位とすることを基本とする。&#xA;&#xA;.dem:TINReliefの例&#xA;image::images/382.webp.png[width=&quot;400&quot;]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2020/09/22 23:36:38" modified="2025/01/24 14:00:29" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -77699,8 +77699,8 @@
 			</element>
 			<element xmi:idref="EAID_114C16DF_ABB7_4a6b_8711_54DE91C81BD3" xmi:type="uml:Class" name="Road" scope="public">
 				<model package="EAPK_7564468B_FDA4_4f40_9929_5AB8C485FA11" tpos="0" ea_localid="61804" ea_eleType="element"/>
-				<properties documentation="一般交通の用に供する場所。道路法第3 条に示された道路の種類及び建築基準法第42 条の定義を含む。&#xA;道路の延長方向は、以下の場所で区切る。&#xA;&#xA;* 交差部（四差路、多差路及び三差路）&#xA;* 道路構造の変化点（トンネル、橋梁）&#xA;* 位置正確度（地図情報レベル）や取得方法&#xA;&#xA;tran:Road に含まれるtran:TrafficArea 及びtran:AuxiliaryTrafficArea は、同一路線に含まれなければなら&#xA;ない。&#xA;同一のLOD において、連続する道路の境界は一致しなければならない。&#xA;&#xA;.LOD1における道路の取得例&#xA;image::images/094.webp.png[]&#xA;&#xA;.LOD2における道路の取得例&#xA;image::images/095.webp.png[]&#xA;&#xA;.LOD3における道路の取得例&#xA;image::images/096.webp.png[]&#xA;&#xA;* 属性tran:functionは、コードリスト（&amp;lt;&amp;lt;Road_function.xml&amp;gt;&amp;gt;）より選択する。&#xA;* 属性tran:usageは、コードリスト（&amp;lt;&amp;lt;Road_usage.xml&amp;gt;&amp;gt;）より選択する。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="kurokawa" version="1.0" phase="1.0" created="2020/09/22 23:40:34" modified="2024/10/30 14:05:09" complexity="1" status="Proposed"/>
+				<properties documentation="一般交通の用に供する場所。道路法第3 条に示された道路の種類及び建築基準法第42 条の定義を含む。&#xA;道路の延長方向は、以下の場所で区切る。&#xA;&#xA;* 交差部（四差路、多差路及び三差路）&#xA;* 道路構造の変化点（トンネル、橋梁）&#xA;* 位置正確度（地図情報レベル）や取得方法&#xA;&#xA;tran:Road に含まれるtran:TrafficArea 及びtran:AuxiliaryTrafficArea は、同一路線に含まれなければなら&#xA;ない。&#xA;同一のLOD において、連続する道路の境界は一致しなければならない。&#xA;&#xA;.LOD1における道路の取得例&#xA;image::images/094.webp.png[width=&quot;300&quot;]&#xA;&#xA;.LOD2における道路の取得例&#xA;image::images/095.webp.png[width=&quot;400&quot;]&#xA;&#xA;.LOD3における道路の取得例&#xA;image::images/096.webp.png[width=&quot;400&quot;]&#xA;&#xA;* 属性tran:functionは、コードリスト（&amp;lt;&amp;lt;Road_function.xml&amp;gt;&amp;gt;）より選択する。&#xA;* 属性tran:usageは、コードリスト（&amp;lt;&amp;lt;Road_usage.xml&amp;gt;&amp;gt;）より選択する。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="kurokawa" version="1.0" phase="1.0" created="2020/09/22 23:40:34" modified="2025/01/24 13:49:48" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -77719,8 +77719,8 @@
 			</element>
 			<element xmi:idref="EAID_C5E361E2_46DA_428e_8297_83765FEC3C78" xmi:type="uml:Class" name="Square" scope="public">
 				<model package="EAPK_7564468B_FDA4_4f40_9929_5AB8C485FA11" tpos="0" ea_localid="63554" ea_eleType="element"/>
-				<properties documentation="広場。広場は、都市計画法第11 条第1 項に示される交通施設のうち、「駅前広場」、「自動車ターミナル」及び「交通広場」について、都市計画で定められた施設（都市計画施設）を指す。 +&#xA;広場は、都市計画決定された区域を地物の単位とすることを基本とするが、区域の中で位置正確度（地図情報レベル）や取得方法が異なる場合は、位置正確度や取得方法が異なる場所で区切る。&#xA;&#xA;tran:Square は、LOD0 ではネットワーク（中心線）又は道路縁及び車道の界線により取得する。 +&#xA;LOD1 以上では、面として取得する。 +&#xA;LOD2 以上では、tran:Square の面を、tran:TrafficArea とtran:AuxiliaryTrafficArea に細分する。 +&#xA;さらに、LOD3 では、各地物の面に高さを付与する。 +&#xA;以下に、取得例を示す。&#xA;&#xA;* LOD0における広場の取得例&#xA;+&#xA;.広場モデル（LOD0）の取得例&#xA;image::images/186.webp.png[]&#xA;+&#xA;ネットワークで取得する場合は、広場の中心線とする。広場の中心線は、これに接する道路の中心線まで伸ばす。&#xA;* LOD1における広場の取得例&#xA;+&#xA;.広場モデル（LOD1）の取得例&#xA;image::images/187.webp.png[]&#xA;+&#xA;広場のLOD1（面）は、都市計画図書の計画図に示された、都市計画の区域とする。&#xA;* LOD2における広場の取得例&#xA;+&#xA;.広場モデル（LOD2）の取得例&#xA;image::images/188.webp.png[]&#xA;+&#xA;広場のLOD2 は、LOD1（面）をtran:TrafficArea（車道部、車道交差部、歩道部）及びtran:AuxiliaryTrafficArea（島）に区分する。このとき、隣接するの面の境界線は、座標が一致していなければならない。 +&#xA;また、広場の面が道路の面と重なる場合、重なる範囲に存在するtran:TrafficArea（車道、車道交差部、歩道）及びtran:AuxiliaryTrafficArea（島）は、道路の構成要素であり、かつ、広場の構成要素となる。&#xA;* LOD3における広場の取得例 +&#xA;広場のLOD3は、LOD2と同様に、広場の面をtran:TrafficArea及びtran:AuxiliaryTrafficAreaに区分する。このとき、それぞれの面は高さをもつ。また、LOD2よりもさらに細かい種類にtran:TrafficArea及びtran:AuxiliaryTrafficAreaを分けることができる。「高さの表現」及び「広場内の表現」の組み合わせにより、LOD3.0、LOD3.1、LOD3.2、LOD3.3及び LOD3.4に分かれるが、標準製品仕様は、原則としてLOD3.0とする。 +&#xA;LOD3.0では、広場の高さは車道の高さとし、段の表現は行わない。歩道及び島には、車道の高さを与えるが、歩道及び島の面を構成する境界線上の各点に、これと接する車道の高さを付与する。高さが異なる車道に囲まれた歩道や島の面は、傾きをもった面となる。&#xA;+&#xA;.広場モデル（LOD3）の取得例&#xA;image::images/189.webp.png[]&#xA;+&#xA;LOD2と同様、隣接する道路の境界線と一致していなければならず、広場の区域と道路の区域とが重なる場合は、この範囲に存在するtran:TrafficArea（車道、車道交差部、歩道）及びtran:AuxiliaryTrafficArea（島）を広場と道路が共有しなければならない。&#xA;&#xA;* 属性tran:functionは、コードリスト（&amp;lt;&amp;lt;Square_function.xml&amp;gt;&amp;gt;）より選択する。&#xA;* 属性tran:usageは、標準製品仕様書では使用しない。&#xA;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2023/02/01 13:16:54" modified="2024/10/31 13:45:52" complexity="1" status="Proposed"/>
+				<properties documentation="広場。広場は、都市計画法第11 条第1 項に示される交通施設のうち、「駅前広場」、「自動車ターミナル」及び「交通広場」について、都市計画で定められた施設（都市計画施設）を指す。 +&#xA;広場は、都市計画決定された区域を地物の単位とすることを基本とするが、区域の中で位置正確度（地図情報レベル）や取得方法が異なる場合は、位置正確度や取得方法が異なる場所で区切る。&#xA;&#xA;tran:Square は、LOD0 ではネットワーク（中心線）又は道路縁及び車道の界線により取得する。 +&#xA;LOD1 以上では、面として取得する。 +&#xA;LOD2 以上では、tran:Square の面を、tran:TrafficArea とtran:AuxiliaryTrafficArea に細分する。 +&#xA;さらに、LOD3 では、各地物の面に高さを付与する。 +&#xA;以下に、取得例を示す。&#xA;&#xA;* LOD0における広場の取得例&#xA;+&#xA;.広場モデル（LOD0）の取得例&#xA;image::images/186.webp.png[width=&quot;300&quot;]&#xA;+&#xA;ネットワークで取得する場合は、広場の中心線とする。広場の中心線は、これに接する道路の中心線まで伸ばす。&#xA;* LOD1における広場の取得例&#xA;+&#xA;.広場モデル（LOD1）の取得例&#xA;image::images/187.webp.png[width=&quot;400&quot;]&#xA;+&#xA;広場のLOD1（面）は、都市計画図書の計画図に示された、都市計画の区域とする。&#xA;* LOD2における広場の取得例&#xA;+&#xA;.広場モデル（LOD2）の取得例&#xA;image::images/188.webp.png[width=&quot;400&quot;]&#xA;+&#xA;広場のLOD2 は、LOD1（面）をtran:TrafficArea（車道部、車道交差部、歩道部）及びtran:AuxiliaryTrafficArea（島）に区分する。このとき、隣接するの面の境界線は、座標が一致していなければならない。 +&#xA;また、広場の面が道路の面と重なる場合、重なる範囲に存在するtran:TrafficArea（車道、車道交差部、歩道）及びtran:AuxiliaryTrafficArea（島）は、道路の構成要素であり、かつ、広場の構成要素となる。&#xA;* LOD3における広場の取得例 +&#xA;広場のLOD3は、LOD2と同様に、広場の面をtran:TrafficArea及びtran:AuxiliaryTrafficAreaに区分する。このとき、それぞれの面は高さをもつ。また、LOD2よりもさらに細かい種類にtran:TrafficArea及びtran:AuxiliaryTrafficAreaを分けることができる。「高さの表現」及び「広場内の表現」の組み合わせにより、LOD3.0、LOD3.1、LOD3.2、LOD3.3及び LOD3.4に分かれるが、標準製品仕様は、原則としてLOD3.0とする。 +&#xA;LOD3.0では、広場の高さは車道の高さとし、段の表現は行わない。歩道及び島には、車道の高さを与えるが、歩道及び島の面を構成する境界線上の各点に、これと接する車道の高さを付与する。高さが異なる車道に囲まれた歩道や島の面は、傾きをもった面となる。&#xA;+&#xA;.広場モデル（LOD3）の取得例&#xA;image::images/189.webp.png[width=&quot;400&quot;]&#xA;+&#xA;LOD2と同様、隣接する道路の境界線と一致していなければならず、広場の区域と道路の区域とが重なる場合は、この範囲に存在するtran:TrafficArea（車道、車道交差部、歩道）及びtran:AuxiliaryTrafficArea（島）を広場と道路が共有しなければならない。&#xA;&#xA;* 属性tran:functionは、コードリスト（&amp;lt;&amp;lt;Square_function.xml&amp;gt;&amp;gt;）より選択する。&#xA;* 属性tran:usageは、標準製品仕様書では使用しない。&#xA;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2023/02/01 13:16:54" modified="2025/01/24 13:52:21" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -77737,8 +77737,8 @@
 			</element>
 			<element xmi:idref="EAID_53953F3B_18A7_467c_8FB2_9DE351FCE922" xmi:type="uml:Class" name="Track" scope="public">
 				<model package="EAPK_7564468B_FDA4_4f40_9929_5AB8C485FA11" tpos="0" ea_localid="63009" ea_eleType="element"/>
-				<properties documentation="徒歩道。徒歩道とは、人や車両等の通行の用に供される道路のうち、道路法第3 条に示された道路の種類及び建築基準法第42 条による「道路」を除く道路を指す。徒歩道には、作業規程の準則付録７公共測量標準図式における徒歩道及び庭園路（ただし、庭園路のうち、自動車ターミナル内の道路は、広場として取得するため、徒歩道には含まない）を含む。 +&#xA;ここで、作業規程の準則付録７公共測量標準図式における徒歩道とは、「道路縁及び軽車道に接続するもの、登山、観光等に利用されるもの、神社等主要な地点へ到達するもの、耕地の区画等の景観を表現するために必要なもの」であり、庭園路とは、「公園、住宅地等で自動車の通行を規制している道路及び工場等特定の敷地内の道路」である。 +&#xA;徒歩道の延長方向は、以下の場所で区切る。&#xA;&#xA;* 交差部（四差路、多差路及び三差路）&#xA;* 道路構造の変化点（トンネル、橋梁）&#xA;* 位置正確度（地図情報レベル）や取得方法&#xA;&#xA;同一のLOD において、連続する徒歩道の境界は一致しなければならない。&#xA;&#xA;tran:Track は、LOD0 ではネットワーク（中心線）又は徒歩道縁により取得する。 +&#xA;LOD1 以上では、面として取得する。 +&#xA;LOD2 以上では、tran:Track の面を、tran:TrafficArea とtran:AuxiliaryTrafficArea に細分する。 +&#xA;さらに、LOD3 では、各地物の面に高さを付与する。 +&#xA;以下に、取得例を示す。&#xA;&#xA;* LOD0 における徒歩道の取得例&#xA;+&#xA;.徒歩道モデル（LOD0）の取得例&#xA;image::images/160.webp.png[]&#xA;+&#xA;ネットワークで取得する場合は、徒歩道の中心線とする。徒歩道が道路と接する場合、道路中心線まで伸ばす。&#xA;* LOD1 における徒歩道の取得例&#xA;+&#xA;.徒歩道モデル（LOD1）の取得例&#xA;image::images/161.webp.png[]&#xA;+&#xA;徒歩道のLOD1（面）は、徒歩道の境界に囲まれた範囲とする。徒歩道が道路と接する場合、その境界線は道路（tran:Road）の境界線と一致しなければならない。&#xA;* LOD2 における徒歩道の取得例&#xA;+&#xA;.徒歩道モデル（LOD2）の取得例&#xA;image::images/162.webp.png[]&#xA;+&#xA;徒歩道のLOD2 は、LOD1（面）をtran:TrafficArea（車道、車道交差部、歩道）及びtran:AuxiliaryTrafficArea（島）に区分する。このとき、隣接するtran:TrafficArea 及びtran:AuxiliaryTrafficArea の面の境界線は座標が一致していなければならない。また、徒歩道が道路と接続する場合、接続する境界線は一致しなければならない。 +&#xA;なお、歩道及び車道の区分が島又は路面標示により示されていない場合は、歩道として取得する。&#xA;* LOD3 における広場の取得例 +&#xA;徒歩道のLOD3 は、LOD2 と同様に徒歩道の面をtran:TrafficArea 及びtran:AuxiliaryTrafficArea に区分する。このとき、それぞれの面は高さをもつ。また、LOD2 よりもさらに細かい種類にtran:TrafficArea及びtran:AuxiliaryTrafficArea を分けることができる。「高さの表現」及び「広場内の表現」の組み合わせにより、LOD3.0、LOD3.1、LOD3.2、LOD3.3 及び LOD3.4 に分かれるが、標準製品仕様は、原則としてLOD3.0 とする。LOD3.0 では、徒歩道の横断方向に一律の高さ（車道の高さ）を付し、高さの差は表現しない。&#xA;+&#xA;.徒歩道モデル（LOD3.0）の取得例（横断面）&#xA;image::images/163.webp.png[]&#xA;+&#xA;徒歩道に車道が無い場合は歩道の高さとする。段の表現を行わないため、徒歩道に階段が存在する場合、階段の段は表現されず、最下段と最上段を結ぶ一定の斜度をもった面として表現される。&#xA;+&#xA;.徒歩道モデル（LOD3.0）の取得例（階段がある場合）&#xA;image::images/164.webp.png[]&#xA;+&#xA;LOD2と同様、道路と接続する場合は、境界線が一致していなければならない。&#xA;&#xA;* 属性tran:functionは、コードリスト（&amp;lt;&amp;lt;Track_function.xml&amp;gt;&amp;gt;）より選択する。&#xA;* 属性tran:usageは、標準製品仕様書では使用しない。&#xA;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2022/06/13 05:12:59" modified="2024/10/31 13:04:44" complexity="1" status="Proposed"/>
+				<properties documentation="徒歩道。徒歩道とは、人や車両等の通行の用に供される道路のうち、道路法第3 条に示された道路の種類及び建築基準法第42 条による「道路」を除く道路を指す。徒歩道には、作業規程の準則付録７公共測量標準図式における徒歩道及び庭園路（ただし、庭園路のうち、自動車ターミナル内の道路は、広場として取得するため、徒歩道には含まない）を含む。 +&#xA;ここで、作業規程の準則付録７公共測量標準図式における徒歩道とは、「道路縁及び軽車道に接続するもの、登山、観光等に利用されるもの、神社等主要な地点へ到達するもの、耕地の区画等の景観を表現するために必要なもの」であり、庭園路とは、「公園、住宅地等で自動車の通行を規制している道路及び工場等特定の敷地内の道路」である。 +&#xA;徒歩道の延長方向は、以下の場所で区切る。&#xA;&#xA;* 交差部（四差路、多差路及び三差路）&#xA;* 道路構造の変化点（トンネル、橋梁）&#xA;* 位置正確度（地図情報レベル）や取得方法&#xA;&#xA;同一のLOD において、連続する徒歩道の境界は一致しなければならない。&#xA;&#xA;tran:Track は、LOD0 ではネットワーク（中心線）又は徒歩道縁により取得する。 +&#xA;LOD1 以上では、面として取得する。 +&#xA;LOD2 以上では、tran:Track の面を、tran:TrafficArea とtran:AuxiliaryTrafficArea に細分する。 +&#xA;さらに、LOD3 では、各地物の面に高さを付与する。 +&#xA;以下に、取得例を示す。&#xA;&#xA;* LOD0 における徒歩道の取得例&#xA;+&#xA;.徒歩道モデル（LOD0）の取得例&#xA;image::images/160.webp.png[width=&quot;200&quot;]&#xA;+&#xA;ネットワークで取得する場合は、徒歩道の中心線とする。徒歩道が道路と接する場合、道路中心線まで伸ばす。&#xA;* LOD1 における徒歩道の取得例&#xA;+&#xA;.徒歩道モデル（LOD1）の取得例&#xA;image::images/161.webp.png[width=&quot;200&quot;]&#xA;+&#xA;徒歩道のLOD1（面）は、徒歩道の境界に囲まれた範囲とする。徒歩道が道路と接する場合、その境界線は道路（tran:Road）の境界線と一致しなければならない。&#xA;* LOD2 における徒歩道の取得例&#xA;+&#xA;.徒歩道モデル（LOD2）の取得例&#xA;image::images/162.webp.png[width=&quot;200&quot;]&#xA;+&#xA;徒歩道のLOD2 は、LOD1（面）をtran:TrafficArea（車道、車道交差部、歩道）及びtran:AuxiliaryTrafficArea（島）に区分する。このとき、隣接するtran:TrafficArea 及びtran:AuxiliaryTrafficArea の面の境界線は座標が一致していなければならない。また、徒歩道が道路と接続する場合、接続する境界線は一致しなければならない。 +&#xA;なお、歩道及び車道の区分が島又は路面標示により示されていない場合は、歩道として取得する。&#xA;* LOD3 における広場の取得例 +&#xA;徒歩道のLOD3 は、LOD2 と同様に徒歩道の面をtran:TrafficArea 及びtran:AuxiliaryTrafficArea に区分する。このとき、それぞれの面は高さをもつ。また、LOD2 よりもさらに細かい種類にtran:TrafficArea及びtran:AuxiliaryTrafficArea を分けることができる。「高さの表現」及び「広場内の表現」の組み合わせにより、LOD3.0、LOD3.1、LOD3.2、LOD3.3 及び LOD3.4 に分かれるが、標準製品仕様は、原則としてLOD3.0 とする。LOD3.0 では、徒歩道の横断方向に一律の高さ（車道の高さ）を付し、高さの差は表現しない。&#xA;+&#xA;.徒歩道モデル（LOD3.0）の取得例（横断面）&#xA;image::images/163.webp.png[]&#xA;+&#xA;徒歩道に車道が無い場合は歩道の高さとする。段の表現を行わないため、徒歩道に階段が存在する場合、階段の段は表現されず、最下段と最上段を結ぶ一定の斜度をもった面として表現される。&#xA;+&#xA;.徒歩道モデル（LOD3.0）の取得例（階段がある場合）&#xA;image::images/164.webp.png[]&#xA;+&#xA;LOD2と同様、道路と接続する場合は、境界線が一致していなければならない。&#xA;&#xA;* 属性tran:functionは、コードリスト（&amp;lt;&amp;lt;Track_function.xml&amp;gt;&amp;gt;）より選択する。&#xA;* 属性tran:usageは、標準製品仕様書では使用しない。&#xA;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2022/06/13 05:12:59" modified="2025/01/24 10:10:27" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -78289,8 +78289,8 @@
 			</element>
 			<element xmi:idref="EAID_1BF21CA9_7EFE_4db5_8D95_4E5C29E54389" xmi:type="uml:Class" name="CompositeSurface" scope="public">
 				<model package="EAPK_939925FF_6235_4286_82FF_7392B33F305C" tpos="0" ea_localid="61533" ea_eleType="element"/>
-				<properties documentation="面の集まり。ただし、構成要素となる全ての面は連続していなければならない。 +&#xA;立体の外殻や内殻として使用される。&#xA;&#xA;image::images/430.webp.png[]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="Type" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2020/07/13 20:44:23" modified="2024/11/05 20:15:18" complexity="1" status="Proposed"/>
+				<properties documentation="面の集まり。ただし、構成要素となる全ての面は連続していなければならない。 +&#xA;立体の外殻や内殻として使用される。&#xA;&#xA;image::images/430.webp.png[width=&quot;400&quot;]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="Type" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2020/07/13 20:44:23" modified="2025/01/24 14:06:04" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -78845,8 +78845,8 @@
 			</element>
 			<element xmi:idref="EAID_C9CBBBD8_47EB_447f_930C_22803660E549" xmi:type="uml:Class" name="Polygon" scope="public">
 				<model package="EAPK_939925FF_6235_4286_82FF_7392B33F305C" tpos="0" ea_localid="61534" ea_eleType="element"/>
-				<properties documentation="多角形。以下を満たさなければならない。&#xA;&#xA;. 内周が、外周に完全に含まれている。&#xA;. 内周が他の内周と重なっておらず、他の内周に包含されてもいない。&#xA;. 内周が外周に接していてもよいが、gml:Polygonの内部を分断しない。&#xA;. 内周と外周が線分で重ならない。&#xA;. 外周及び内周に自己交差がなく、始終点以外の点で一致する点がない。&#xA;&#xA;image::images/429.webp.png[]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="Type" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2020/07/13 20:44:59" modified="2024/11/05 20:07:47" complexity="1" status="Proposed"/>
+				<properties documentation="多角形。以下を満たさなければならない。&#xA;&#xA;. 内周が、外周に完全に含まれている。&#xA;. 内周が他の内周と重なっておらず、他の内周に包含されてもいない。&#xA;. 内周が外周に接していてもよいが、gml:Polygonの内部を分断しない。&#xA;. 内周と外周が線分で重ならない。&#xA;. 外周及び内周に自己交差がなく、始終点以外の点で一致する点がない。&#xA;&#xA;image::images/429.webp.png[width=&quot;400&quot;]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="Type" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2020/07/13 20:44:59" modified="2025/01/24 14:05:47" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -78893,8 +78893,8 @@
 			</element>
 			<element xmi:idref="EAID_1A109613_4F82_4f16_9338_EB0F87289E43" xmi:type="uml:Class" name="Solid" scope="public">
 				<model package="EAPK_939925FF_6235_4286_82FF_7392B33F305C" tpos="0" ea_localid="61532" ea_eleType="element"/>
-				<properties documentation="立体。以下を満たさなければならない。&#xA;&#xA;. gml:Solidの境界を構成する曲面が、自己交差していない。&#xA;. gml:Solidは閉じている（水密である）。&#xA;. gml:Solidの内部が連続している。&#xA;. gml:Solidの境界を構成する曲面が、適切な方向を向いている。&#xA;. gml:Solidの境界を構成する曲面が、重なっていない。&#xA;&#xA;.妥当なgml:Solidの例&#xA;image::images/431.webp.png[]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="Type" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2020/07/13 20:40:37" modified="2024/11/05 20:11:10" complexity="1" status="Proposed"/>
+				<properties documentation="立体。以下を満たさなければならない。&#xA;&#xA;. gml:Solidの境界を構成する曲面が、自己交差していない。&#xA;. gml:Solidは閉じている（水密である）。&#xA;. gml:Solidの内部が連続している。&#xA;. gml:Solidの境界を構成する曲面が、適切な方向を向いている。&#xA;. gml:Solidの境界を構成する曲面が、重なっていない。&#xA;&#xA;.妥当なgml:Solidの例&#xA;image::images/431.webp.png[width=&quot;400&quot;]" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="Type" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2020/07/13 20:40:37" modified="2025/01/24 14:06:53" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -101297,7 +101297,7 @@
 				<properties ea_type="Association" direction="Destination -&gt; Source"/>
 				<modifiers isRoot="false" isLeaf="false"/>
 				<parameterSubstitutions/>
-				<documentation value="単独木の形状を立体とし、その主要な部分の外形を面の集まり又は立体として詳細に区分して表現する。 +&#xA;一定高さごとに樹冠の横断面を作成し、この頂点を結び外形を構成する（樹冠内部の主枝等の表現は行わない）。&#xA;&#xA;.LOD3のSolitaryVegetationObjectの例&#xA;image::images/361.webp.png[]&#xA;&#xA;樹木量の算定等、容積が必要ではない場合には、gml:MultiSurfaceにより外形を構成する。"/>
+				<documentation value="単独木の形状を立体とし、その主要な部分の外形を面の集まり又は立体として詳細に区分して表現する。 +&#xA;一定高さごとに樹冠の横断面を作成し、この頂点を結び外形を構成する（樹冠内部の主枝等の表現は行わない）。&#xA;&#xA;.LOD3のSolitaryVegetationObjectの例&#xA;image::images/361.webp.png[width=&quot;100&quot;]&#xA;&#xA;樹木量の算定等、容積が必要ではない場合には、gml:MultiSurfaceにより外形を構成する。"/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
 				<labels lb="0..1" lt="+lod3Geometry&#xA;«property»"/>
 				<extendedProperties/>
@@ -101336,7 +101336,7 @@
 				<properties ea_type="Association" direction="Destination -&gt; Source"/>
 				<modifiers isRoot="false" isLeaf="false"/>
 				<parameterSubstitutions/>
-				<documentation value="単独木の形状を立体とし、その主要な部分の外形を面の集まり又は立体として区分して表現する。 +&#xA;樹冠と樹幹をそれぞれ簡略化した立体（楕円体、球体、円錐、角錐、角柱、円柱などの単純な立体図形）を組み合わせた立体として表現する。&#xA;&#xA;.LOD2のSolitaryVegetationObjectの例&#xA;image::images/360.webp.png[]&#xA;&#xA;樹木量の算定等、容積が必要ではない場合には、gml:MultiSurfaceにより外形を構成する。"/>
+				<documentation value="単独木の形状を立体とし、その主要な部分の外形を面の集まり又は立体として区分して表現する。 +&#xA;樹冠と樹幹をそれぞれ簡略化した立体（楕円体、球体、円錐、角錐、角柱、円柱などの単純な立体図形）を組み合わせた立体として表現する。&#xA;&#xA;.LOD2のSolitaryVegetationObjectの例&#xA;image::images/360.webp.png[width=&quot;100&quot;]&#xA;&#xA;樹木量の算定等、容積が必要ではない場合には、gml:MultiSurfaceにより外形を構成する。"/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
 				<labels lb="0..1" lt="+lod2Geometry&#xA;«property»" rb="0..1"/>
 				<extendedProperties/>
@@ -101375,7 +101375,7 @@
 				<properties ea_type="Association" direction="Destination -&gt; Source"/>
 				<modifiers isRoot="false" isLeaf="false"/>
 				<parameterSubstitutions/>
-				<documentation value="単独木の形状をそれが占有している範囲（面）に一律の高さを与えた立体として表現する。 +&#xA;樹冠の情報からの正射影の外周を樹高の高さで上向きに押し出した立体となる。&#xA;&#xA;.LOD1のSolitaryVegetationObjectの例&#xA;image::images/359.webp.png[]"/>
+				<documentation value="単独木の形状をそれが占有している範囲（面）に一律の高さを与えた立体として表現する。 +&#xA;樹冠の情報からの正射影の外周を樹高の高さで上向きに押し出した立体となる。&#xA;&#xA;.LOD1のSolitaryVegetationObjectの例&#xA;image::images/359.webp.png[width=&quot;100&quot;]"/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
 				<labels lb="0..1" lt="+lod1Geometry&#xA;«property»"/>
 				<extendedProperties/>
@@ -106528,7 +106528,7 @@
 					<role name="lod2Solid" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..1" aggregation="none" containment="Unspecified"/>
 					<constraints/>
-					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
 					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
 					<documentation/>
 					<xrefs/>
@@ -106539,7 +106539,7 @@
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
-					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
 					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
 					<documentation/>
 					<xrefs/>
@@ -106549,7 +106549,7 @@
 				<properties ea_type="Association" direction="Destination -&gt; Source"/>
 				<modifiers isRoot="false" isLeaf="false"/>
 				<parameterSubstitutions/>
-				<documentation value="建築物の主要構造の外形を示す立体であり、屋根面（RoofSurface）、外壁面（WallSurface）及び底面（GroundSurface）を境界面とする。&#xA;&#xA;.LOD2立体イメージ&#xA;image::images/043.webp.png[]&#xA;&#xA;建築物をbldg:BuildingPart の集まりとして記述する場合、bldg:Buildingのlod2Solidは使用しない。"/>
+				<documentation value="建築物の主要構造の外形を示す立体であり、屋根面（RoofSurface）、外壁面（WallSurface）及び底面（GroundSurface）を境界面とする。&#xA;&#xA;.LOD2立体イメージ&#xA;image::images/043.webp.png[width=&quot;200&quot;]&#xA;&#xA;建築物をbldg:BuildingPart の集まりとして記述する場合、bldg:Buildingのlod2Solidは使用しない。"/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
 				<labels lb="0..1" lt="+lod2Solid"/>
 				<extendedProperties/>
@@ -106598,7 +106598,7 @@
 					<role name="lod1Solid" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..1" aggregation="none" containment="Unspecified"/>
 					<constraints/>
-					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
 					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
 					<documentation/>
 					<xrefs/>
@@ -106609,7 +106609,7 @@
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
-					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
 					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
 					<documentation/>
 					<xrefs/>
@@ -106619,7 +106619,7 @@
 				<properties ea_type="Association" direction="Destination -&gt; Source"/>
 				<modifiers isRoot="false" isLeaf="false"/>
 				<parameterSubstitutions/>
-				<documentation value="建築物の外周の上方からの正射影を取得し、地上から一律の高さを与えて上向きに押し出した立体。&#xA;&#xA;.LOD1 立体イメージ&#xA;image::images/042.webp.png[]&#xA;&#xA;一律の高さは中央値を原則とする。"/>
+				<documentation value="建築物の外周の上方からの正射影を取得し、地上から一律の高さを与えて上向きに押し出した立体。&#xA;&#xA;.LOD1 立体イメージ&#xA;image::images/042.webp.png[width=&quot;200&quot;]&#xA;&#xA;一律の高さは中央値を原則とする。"/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
 				<labels lb="0..1" lt="+lod1Solid"/>
 				<extendedProperties/>
@@ -106692,7 +106692,7 @@
 				<properties ea_type="Association" direction="Destination -&gt; Source"/>
 				<modifiers isRoot="false" isLeaf="false"/>
 				<parameterSubstitutions/>
-				<documentation value="建築物の詳細な形状を示す立体であり、屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）及び開口部の面（境界面の内空として作成されている場合）を境界面とする。&#xA;&#xA;.LOD3立体イメージ&#xA;image::images/044.webp.png[]&#xA;&#xA;建築物をbldg:BuildingPart の集まりとして記述する場合、bldg:Buildingのlod3Solidは使用しない。"/>
+				<documentation value="建築物の詳細な形状を示す立体であり、屋根面（RoofSurface）、外壁面（WallSurface）、底面（GroundSurface）及び開口部の面（境界面の内空として作成されている場合）を境界面とする。&#xA;&#xA;.LOD3立体イメージ&#xA;image::images/044.webp.png[width=&quot;200&quot;]&#xA;&#xA;建築物をbldg:BuildingPart の集まりとして記述する場合、bldg:Buildingのlod3Solidは使用しない。"/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
 				<labels lb="0..1" lt="+lod3Solid"/>
 				<extendedProperties/>
@@ -106988,7 +106988,7 @@
 				<model ea_localid="99420"/>
 				<properties ea_type="Aggregation" subtype="Weak" direction="Destination -&gt; Source"/>
 				<modifiers isRoot="false" isLeaf="false"/>
-				<documentation value="屋内付属物を構成する内壁、天井等の境界面への参照。屋内付属物の境界面が部屋（bldg:Room）の境界面となる場合にのみ作成する。 +&#xA;例えば、下図（平面図）のように部屋内に屋内付属物があった場合、この屋内付属物を除く空間（gml:Solid）をRoomとしたい場合は、屋内付属物の境界面を内壁面（bldg:InteriorWallSurface）とする。&#xA;&#xA;.bldg:IntBuildingInstallationの境界面の取得例&#xA;image::images/064.webp.png[]&#xA;&#xA;ただし、部屋の空間から屋内付属物を除く必要が無い場合は、屋内付属物の形状を構成する面を、境界面（bldg:_BoundarySurface）にする必要はない。 +&#xA;また、ユースケースによりエレベータの出入口を、エレベータの扉を使って表現する必要がある場合は、bldg:boundedBy関連役割により、エレベータの扉が存在する境界面を内壁面（bldg:InteriorWallSurface）として区分し、この内壁面に扉（bldg:Door）を作成することでエレベータの扉を表現可能となる。"/>
+				<documentation value="屋内付属物を構成する内壁、天井等の境界面への参照。屋内付属物の境界面が部屋（bldg:Room）の境界面となる場合にのみ作成する。 +&#xA;例えば、下図（平面図）のように部屋内に屋内付属物があった場合、この屋内付属物を除く空間（gml:Solid）をRoomとしたい場合は、屋内付属物の境界面を内壁面（bldg:InteriorWallSurface）とする。&#xA;&#xA;.bldg:IntBuildingInstallationの境界面の取得例&#xA;image::images/064.webp.png[width=&quot;200&quot;]&#xA;&#xA;ただし、部屋の空間から屋内付属物を除く必要が無い場合は、屋内付属物の形状を構成する面を、境界面（bldg:_BoundarySurface）にする必要はない。 +&#xA;また、ユースケースによりエレベータの出入口を、エレベータの扉を使って表現する必要がある場合は、bldg:boundedBy関連役割により、エレベータの扉が存在する境界面を内壁面（bldg:InteriorWallSurface）として区分し、この内壁面に扉（bldg:Door）を作成することでエレベータの扉を表現可能となる。"/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
 				<labels lb="0..*" lt="+boundedBy&#xA;«property»"/>
 				<extendedProperties/>
@@ -107064,7 +107064,7 @@
 				<model ea_localid="99485"/>
 				<properties ea_type="Aggregation" subtype="Weak" direction="Destination -&gt; Source"/>
 				<modifiers isRoot="false" isLeaf="false"/>
-				<documentation value="建築物の屋外付属物を構成する外壁、屋根等の境界面への参照。建築物の屋外付属物の境界面が建築物（bldg:Building）の境界面となる場合にのみ作成する。  +&#xA;例えば、下図（平面図）のように建築物に建築物の屋外付属物があった場合、この建築物の屋外付属物を含む空間（gml:Solid）をBuildingとしたい場合は、建築物の屋外付属物の境界面を外壁面（bldg:WallSurface）とする。 &#xA;&#xA;.bldg:BuildingInstallationの境界面の例&#xA;image::images/062.webp.png[]&#xA;&#xA;建築物の空間に建築物の屋外付属物を含まない場合は、建築物の屋外付属物を構成する面を、境界面（bldg:_BoundarySurface）に区別する必要はない。"/>
+				<documentation value="建築物の屋外付属物を構成する外壁、屋根等の境界面への参照。建築物の屋外付属物の境界面が建築物（bldg:Building）の境界面となる場合にのみ作成する。  +&#xA;例えば、下図（平面図）のように建築物に建築物の屋外付属物があった場合、この建築物の屋外付属物を含む空間（gml:Solid）をBuildingとしたい場合は、建築物の屋外付属物の境界面を外壁面（bldg:WallSurface）とする。 &#xA;&#xA;.bldg:BuildingInstallationの境界面の例&#xA;image::images/062.webp.png[width=&quot;200&quot;]&#xA;&#xA;建築物の空間に建築物の屋外付属物を含まない場合は、建築物の屋外付属物を構成する面を、境界面（bldg:_BoundarySurface）に区別する必要はない。"/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
 				<labels lb="0..*" lt="+boundedBy&#xA;«property»"/>
 				<extendedProperties virtualInheritance="0"/>
@@ -107826,7 +107826,7 @@
 				<properties ea_type="Association" direction="Destination -&gt; Source"/>
 				<modifiers isRoot="false" isLeaf="false"/>
 				<parameterSubstitutions/>
-				<documentation value="建築物の屋外付属物のLOD2の形状。&#xA;屋外付属物の外形（外側から見える形）を構成する面を取得し、面の各頂点に屋外付属物の高さを与える。各面は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう取得する。&#xA;&#xA;gml:MultiSurfaceを使用することを基本とする。&#xA;&#xA;容積の算出等、ユースケースで必要な場合はgml:Solidを使用する。&#xA;&#xA;.bldg:BuildingInstallationの取得例（屋外階段）&#xA;image::images/061.webp.png[]"/>
+				<documentation value="建築物の屋外付属物のLOD2の形状。&#xA;屋外付属物の外形（外側から見える形）を構成する面を取得し、面の各頂点に屋外付属物の高さを与える。各面は、データセットが採用する地図情報レベルの水平及び高さの誤差の標準偏差に収まるよう取得する。&#xA;&#xA;gml:MultiSurfaceを使用することを基本とする。&#xA;&#xA;容積の算出等、ユースケースで必要な場合はgml:Solidを使用する。&#xA;&#xA;.bldg:BuildingInstallationの取得例（屋外階段）&#xA;image::images/061.webp.png[width=&quot;200&quot;]"/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
 				<labels lb="0..1" lt="+lod2Geometry&#xA;«property»"/>
 				<extendedProperties/>
@@ -111750,7 +111750,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=1360;Top=1058;Right=1660;Bottom=1350;imgL=1385;imgT=1088;imgR=1685;imgB=1380;" subject="EAID_8E4996A7_C42C_4613_A0A4_9A6D855F0CF7" seqno="1" style="DUID=C57BA000;NSL=0;LCol=-1;bold=0;black=0;italic=0;ul=0;charset=0;HideIcon=0;BCol=16764159;LWth=2;fontsz=100;font=Yu Gothic UI;pitch=50;BFol=0;"/>
@@ -111818,7 +111818,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=164;Top=56;Right=350;Bottom=151;imgL=189;imgT=86;imgR=375;imgB=181;" subject="EAID_CEA68306_BC83_4809_A89A_9B9E7D45776D" seqno="1" style="LWth=0;font=Yu Gothic UI;fontsz=100;bold=0;black=0;italic=0;ul=0;charset=0;pitch=50;BFol=0;DUID=680BB7BB;NSL=0;"/>
@@ -111914,7 +111914,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=990;Top=1091;Right=1268;Bottom=1196;imgL=1015;imgT=1121;imgR=1293;imgB=1226;" subject="EAID_020635B6_FC84_49f8_BFA3_8C38FEFCD747" seqno="1" style="NSL=0;LCol=-1;bold=0;black=0;italic=0;ul=0;charset=0;HideIcon=0;BCol=16764159;LWth=2;DUID=D1C1F964;font=Yu Gothic UI;fontsz=100;pitch=50;BFol=0;"/>
@@ -111964,7 +111964,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=271;Top=12;Right=457;Bottom=107;imgL=296;imgT=42;imgR=482;imgB=137;" subject="EAID_CEA68306_BC83_4809_A89A_9B9E7D45776D" seqno="1" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=72D2E7F8;"/>
@@ -112003,7 +112003,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=890;Top=670;Right=1222;Bottom=894;imgL=915;imgT=700;imgR=1247;imgB=924;" subject="EAID_E6799DFA_20BB_4a72_B07D_D840B3E2F11B" seqno="1" style="NSL=0;LCol=-1;bold=0;black=0;italic=0;ul=0;charset=0;HideIcon=0;BCol=16764159;LWth=2;DUID=F5CE2122;font=Yu Gothic UI;fontsz=100;pitch=50;BFol=0;"/>
@@ -112145,7 +112145,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=16777215;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=1;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=16777215;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=1;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=16777215;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=1;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=16777215;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=1;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=1122;Top=1180;Right=1390;Bottom=1353;imgL=1147;imgT=1210;imgR=1415;imgB=1383;" subject="EAID_3D702EC6_BB60_4673_97CC_8AFEBD5EB209" seqno="1" style="DUID=B0B24055;NSL=0;LCol=-1;bold=0;black=0;italic=0;ul=0;charset=0;HideIcon=0;LWth=2;BCol=16764159;font=Yu Gothic UI;fontsz=100;pitch=50;BFol=0;"/>
@@ -112227,7 +112227,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=135;Top=10;Right=321;Bottom=105;imgL=160;imgT=40;imgR=346;imgB=135;" subject="EAID_CEA68306_BC83_4809_A89A_9B9E7D45776D" seqno="1" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=9CA93457;LWth=0;"/>
@@ -112293,7 +112293,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=12370374;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=12370374;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=12370374;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=198;Top=455;Right=498;Bottom=747;imgL=223;imgT=485;imgR=523;imgB=777;" subject="EAID_8E4996A7_C42C_4613_A0A4_9A6D855F0CF7" seqno="1" style="NSL=0;LCol=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;BCol=16764159;LWth=2;DUID=15175015;BFol=0;"/>
@@ -112351,7 +112351,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=800;Top=0;Right=980;Bottom=80;imgL=825;imgT=30;imgR=1005;imgB=110;" subject="EAID_3C7D3A3B_105B_4839_B35E_043BFB5C63E4" seqno="1" style="NSL=0;LCol=-1;bold=0;black=0;italic=0;ul=0;charset=0;BCol=13434879;LWth=2;fontsz=100;BFol=0;font=Yu Gothic UI;pitch=50;DUID=BE03A377;"/>
@@ -112392,7 +112392,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=151;Top=234;Right=451;Bottom=526;imgL=176;imgT=264;imgR=476;imgB=556;" subject="EAID_8E4996A7_C42C_4613_A0A4_9A6D855F0CF7" seqno="1" style="NSL=0;LCol=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;BCol=16764159;LWth=2;DUID=47D65995;BFol=0;"/>
@@ -112428,7 +112428,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=160;Top=244;Right=460;Bottom=536;imgL=185;imgT=274;imgR=485;imgB=566;" subject="EAID_8E4996A7_C42C_4613_A0A4_9A6D855F0CF7" seqno="1" style="NSL=0;LCol=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;BCol=16764159;LWth=2;DUID=753CCFD5;BFol=0;"/>
@@ -112468,7 +112468,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=1018;Top=68;Right=1191;Bottom=187;imgL=1043;imgT=98;imgR=1216;imgB=217;" subject="EAID_CEA68306_BC83_4809_A89A_9B9E7D45776D" seqno="1" style="DUID=1B261C36;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
@@ -112520,7 +112520,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=1185;Top=428;Right=1485;Bottom=720;imgL=1210;imgT=458;imgR=1510;imgB=750;" subject="EAID_8E4996A7_C42C_4613_A0A4_9A6D855F0CF7" seqno="1" style="NSL=0;LCol=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;BCol=16764159;LWth=2;DUID=E853F13C;BFol=0;"/>
@@ -112548,7 +112548,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=881;Top=851;Right=1054;Bottom=946;imgL=906;imgT=881;imgR=1079;imgB=976;" subject="EAID_CEA68306_BC83_4809_A89A_9B9E7D45776D" seqno="1" style="DUID=93C044AE;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
@@ -112595,7 +112595,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=193;Top=467;Right=379;Bottom=562;imgL=218;imgT=497;imgR=404;imgB=592;" subject="EAID_CEA68306_BC83_4809_A89A_9B9E7D45776D" seqno="1" style="DUID=29324527;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
@@ -112627,7 +112627,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=823;Top=122;Right=996;Bottom=217;imgL=848;imgT=152;imgR=1021;imgB=247;" subject="EAID_CEA68306_BC83_4809_A89A_9B9E7D45776D" seqno="1" style="DUID=35056BBF;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
@@ -112896,7 +112896,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=40;Top=21;Right=226;Bottom=116;imgL=65;imgT=51;imgR=251;imgB=146;" subject="EAID_CEA68306_BC83_4809_A89A_9B9E7D45776D" seqno="1" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=6CE9CE5F;"/>
@@ -113082,7 +113082,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=361;Top=107;Right=547;Bottom=202;imgL=386;imgT=137;imgR=572;imgB=232;" subject="EAID_CEA68306_BC83_4809_A89A_9B9E7D45776D" seqno="1" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=A517BA2F;LWth=0;"/>
@@ -113142,7 +113142,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=106;Top=140;Right=292;Bottom=235;imgL=131;imgT=170;imgR=317;imgB=265;" subject="EAID_CEA68306_BC83_4809_A89A_9B9E7D45776D" seqno="1" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=AC075B4C;LWth=0;"/>
@@ -113203,7 +113203,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=28;Top=17;Right=214;Bottom=112;imgL=53;imgT=47;imgR=239;imgB=142;" subject="EAID_CEA68306_BC83_4809_A89A_9B9E7D45776D" seqno="1" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=67DC8DE1;"/>
@@ -113274,7 +113274,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=4;Top=47;Right=190;Bottom=142;imgL=29;imgT=77;imgR=215;imgB=172;" subject="EAID_CEA68306_BC83_4809_A89A_9B9E7D45776D" seqno="1" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=78EEC059;LWth=0;"/>
@@ -113296,7 +113296,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=107;Top=281;Right=293;Bottom=376;imgL=132;imgT=311;imgR=318;imgB=406;" subject="EAID_CEA68306_BC83_4809_A89A_9B9E7D45776D" seqno="1" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=503AB772;"/>
@@ -113331,7 +113331,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=1315;Top=312;Right=1615;Bottom=604;imgL=1340;imgT=342;imgR=1640;imgB=634;" subject="EAID_8E4996A7_C42C_4613_A0A4_9A6D855F0CF7" seqno="1" style="NSL=0;LCol=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;BCol=16764159;LWth=2;DUID=B68C7BE9;BFol=0;"/>
@@ -113385,7 +113385,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=831;Top=300;Right=941;Bottom=370;imgL=856;imgT=330;imgR=966;imgB=400;" subject="EAID_E92132F9_2CB7_4ff7_8A78_20B03B928DAF" seqno="1" style="DUID=D5892B8A;NSL=0;BCol=13434879;LWth=2;font=Yu Gothic UI;fontsz=100;bold=0;black=0;italic=0;ul=0;charset=0;pitch=50;BFol=0;LCol=-1;"/>
@@ -113494,7 +113494,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=65;Top=180;Right=251;Bottom=275;imgL=90;imgT=210;imgR=276;imgB=305;" subject="EAID_CEA68306_BC83_4809_A89A_9B9E7D45776D" seqno="1" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=19DEF0D4;"/>
@@ -113548,7 +113548,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=87;Top=39;Right=273;Bottom=134;imgL=112;imgT=69;imgR=298;imgB=164;" subject="EAID_CEA68306_BC83_4809_A89A_9B9E7D45776D" seqno="1" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=311D00A5;LWth=0;"/>
@@ -113648,7 +113648,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=230;Top=321;Right=416;Bottom=416;imgL=255;imgT=351;imgR=441;imgB=446;" subject="EAID_CEA68306_BC83_4809_A89A_9B9E7D45776D" seqno="1" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=F71B6823;LWth=0;"/>
@@ -113772,7 +113772,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=54;Top=190;Right=240;Bottom=285;imgL=79;imgT=220;imgR=265;imgB=315;" subject="EAID_CEA68306_BC83_4809_A89A_9B9E7D45776D" seqno="1" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=A595EDF8;"/>
@@ -113804,7 +113804,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=1111;Top=81;Right=1297;Bottom=176;imgL=1136;imgT=111;imgR=1322;imgB=206;" subject="EAID_CEA68306_BC83_4809_A89A_9B9E7D45776D" seqno="1" style="NSL=0;LWth=0;DUID=D55A729B;"/>
@@ -113878,7 +113878,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=46;Top=120;Right=232;Bottom=215;imgL=71;imgT=150;imgR=257;imgB=245;" subject="EAID_CEA68306_BC83_4809_A89A_9B9E7D45776D" seqno="1" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=552CF3A7;"/>
@@ -113896,7 +113896,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=50;Top=10;Right=236;Bottom=105;imgL=75;imgT=40;imgR=261;imgB=135;" subject="EAID_CEA68306_BC83_4809_A89A_9B9E7D45776D" seqno="1" style="NSL=0;LWth=0;DUID=29298A6C;"/>
@@ -113935,7 +113935,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=80;Top=49;Right=266;Bottom=144;imgL=105;imgT=79;imgR=291;imgB=174;" subject="EAID_CEA68306_BC83_4809_A89A_9B9E7D45776D" seqno="1" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=FC675BFB;LWth=0;"/>
@@ -114009,7 +114009,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=118;Top=97;Right=304;Bottom=192;imgL=143;imgT=127;imgR=329;imgB=222;" subject="EAID_CEA68306_BC83_4809_A89A_9B9E7D45776D" seqno="1" style="DUID=B3B9ACAD;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;bold=0;black=0;italic=0;ul=0;charset=0;font=Yu Gothic UI;fontsz=100;pitch=50;"/>
@@ -114035,7 +114035,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=284;Top=65;Right=470;Bottom=160;imgL=309;imgT=95;imgR=495;imgB=190;" subject="EAID_CEA68306_BC83_4809_A89A_9B9E7D45776D" seqno="1" style="DUID=09522120;NSL=0;BCol=-1;BFol=-1;LCol=-1;bold=0;black=0;italic=0;ul=0;charset=0;LWth=0;font=Yu Gothic UI;fontsz=100;pitch=50;"/>
@@ -114077,7 +114077,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=1055;Top=393;Right=1355;Bottom=685;imgL=1080;imgT=423;imgR=1380;imgB=715;" subject="EAID_8E4996A7_C42C_4613_A0A4_9A6D855F0CF7" seqno="1" style="NSL=0;LCol=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;BCol=16764159;LWth=2;DUID=C0CD7589;BFol=0;"/>
@@ -114111,7 +114111,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=866;Top=184;Right=1052;Bottom=279;imgL=891;imgT=214;imgR=1077;imgB=309;" subject="EAID_CEA68306_BC83_4809_A89A_9B9E7D45776D" seqno="1" style="DUID=9B04C841;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;bold=0;black=0;italic=0;ul=0;charset=0;fontsz=100;font=Yu Gothic UI;pitch=50;"/>
@@ -114189,7 +114189,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=15852766;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=67;Top=182;Right=240;Bottom=277;imgL=92;imgT=212;imgR=265;imgB=307;" subject="EAID_CEA68306_BC83_4809_A89A_9B9E7D45776D" seqno="1" style="DUID=4501CA4F;NSL=0;BCol=-1;BFol=-1;LCol=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;LWth=0;"/>
@@ -114247,10 +114247,10 @@
 			</diagram>
 			<diagram xmi:id="EAID_71F9216B_E7A7_4083_B08E_6C71B57F3A1F">
 				<model package="EAPK_B6309FC8_E3DE_44b0_ACE4_BB0E76E797FF" localID="28428" owner="EAPK_B6309FC8_E3DE_44b0_ACE4_BB0E76E797FF" tpos="0"/>
-				<properties name="ポイントクラウドのための応用スキーマ" type="Logical"/>
-				<project author="501635" version="1.0" created="2024/10/01 16:51:34" modified="2025/01/19 23:23:38"/>
+				<properties name="PointCloud" type="Logical"/>
+				<project author="501635" version="1.0" created="2024/10/01 16:51:34" modified="2025/01/24 17:10:20"/>
 				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=0;PPgs.cy=0;DocSize.cx=827;DocSize.cy=1169;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AllDockable=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
-				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;SaveTag=7140DBD6;"/>
+				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;SaveTag=A9926EE0;"/>
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
@@ -114263,10 +114263,10 @@
 					<element geometry="Left=249;Top=159;Right=551;Bottom=287;imgL=274;imgT=189;imgR=576;imgB=317;" subject="EAID_60CE61DE_7E88_4e8b_BFED_13500E7DCDEC" seqno="4" style="NSL=0;LCol=-1;bold=0;black=0;italic=0;ul=0;charset=0;pitch=50;BFol=0;font=Yu Gothic UI;LWth=2;fontsz=90;BCol=13434879;DUID=DF422BEB;"/>
 					<element geometry="Left=294;Top=503;Right=518;Bottom=611;imgL=319;imgT=533;imgR=543;imgB=641;" subject="EAID_049D3AE5_0C57_4755_864A_64B82A85ECB3" seqno="5" style="NSL=0;LCol=-1;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;BCol=16764159;BFol=0;LWth=2;font=Yu Gothic UI;fontsz=100;DUID=B11810C1;"/>
 					<element geometry="Left=309;Top=367;Right=491;Bottom=437;imgL=334;imgT=397;imgR=516;imgB=467;" subject="EAID_65E11618_153D_4399_B684_12CA5BB27451" seqno="6" style="NSL=0;LCol=-1;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;BCol=16764159;BFol=0;LWth=2;font=Yu Gothic UI;fontsz=100;DUID=268CC3C8;"/>
-					<element geometry="EX=0;EY=0;EDGE=4;$LLB=CX=21:CY=18:OX=-15:OY=7:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=CX=152:CY=35:OX=31:OY=-18:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_2FA83116_79CA_4cb7_AE58_F58B4A12604A" style="Mode=3;EOID=B11810C1;SOID=436A5FB3;Color=-1;LWidth=2;TREE=OS;Hidden=0;"/>
-					<element geometry="EX=0;EY=0;EDGE=1;SCME=0;SCTR=0;SX=0;SY=0;$LLB=CX=21:CY=18:OX=4:OY=-11:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=CX=66:CY=35:OX=34:OY=-22:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_AAA1F897_EDBA_4d29_A403_3128A16BAB3F" style="Mode=3;EOID=B11810C1;SOID=E0848101;Color=-1;LWidth=2;TREE=OS;Hidden=0;"/>
+					<element geometry="EX=0;EY=0;EDGE=4;$LLB=CX=19:CY=16:OX=-15:OY=7:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=CX=129:CY=31:OX=31:OY=-18:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_2FA83116_79CA_4cb7_AE58_F58B4A12604A" style="Mode=3;EOID=B11810C1;SOID=436A5FB3;Color=-1;LWidth=2;TREE=OS;Hidden=0;"/>
+					<element geometry="EX=0;EY=0;EDGE=1;SCME=0;SCTR=0;SX=0;SY=0;$LLB=CX=19:CY=16:OX=4:OY=-11:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=CX=57:CY=31:OX=34:OY=-22:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_AAA1F897_EDBA_4d29_A403_3128A16BAB3F" style="Mode=3;EOID=B11810C1;SOID=E0848101;Color=-1;LWidth=2;TREE=OS;Hidden=0;"/>
 					<element geometry="SX=0;SY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_FFDFF09E_F289_4f2c_8612_6167D59FE1D1" style="Mode=3;EOID=268CC3C8;SOID=B11810C1;Color=-1;LWidth=2;TREE=OS;Hidden=0;"/>
-					<element geometry="EX=0;EY=0;EDGE=1;SX=0;SY=0;SCME=0;SCTR=0;$LLB=CX=21:CY=18:OX=6:OY=-13:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=CX=74:CY=35:OX=50:OY=-15:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_095C7998_12DD_435c_B883_970C3E57B61F" style="Mode=3;EOID=DF422BEB;SOID=268CC3C8;Color=-1;LWidth=2;TREE=OS;Hidden=0;"/>
+					<element geometry="EX=0;EY=0;EDGE=1;SX=0;SY=0;SCME=0;SCTR=0;$LLB=CX=19:CY=16:OX=6:OY=-13:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=CX=62:CY=31:OX=50:OY=-15:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_095C7998_12DD_435c_B883_970C3E57B61F" style="Mode=3;EOID=DF422BEB;SOID=268CC3C8;Color=-1;LWidth=2;TREE=OS;Hidden=0;"/>
 				</elements>
 			</diagram>
 			<diagram xmi:id="EAID_B3AFECCB_17DD_44d6_8A44_2C38D9A64C0B">
@@ -114298,7 +114298,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=444;Top=120;Right=630;Bottom=215;imgL=469;imgT=150;imgR=655;imgB=245;" subject="EAID_CEA68306_BC83_4809_A89A_9B9E7D45776D" seqno="1" style="DUID=4247CD40;NSL=0;BCol=-1;BFol=-1;LCol=-1;bold=0;black=0;italic=0;ul=0;charset=0;LWth=0;font=Yu Gothic UI;fontsz=100;pitch=50;"/>
@@ -114366,7 +114366,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=16777215;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=16777215;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=16777215;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=16777215;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=300;Top=500;Right=510;Bottom=690;imgL=325;imgT=530;imgR=535;imgB=720;" subject="EAID_FA65EA18_9554_4ab4_B1EB_8C34EFD57926" seqno="1" style="DUID=26710CFD;NSL=0;LCol=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;BCol=16764159;LWth=2;BFol=0;"/>
@@ -114497,7 +114497,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=221;Top=225;Right=474;Bottom=381;imgL=246;imgT=255;imgR=499;imgB=411;" subject="EAID_9509AFD5_D08B_4aa1_ADE5_1CEDC2C2F804" seqno="1" style="DUID=D6DB8D18;NSL=0;bold=0;black=0;italic=0;ul=0;charset=0;HideIcon=0;LWth=2;fontsz=100;BCol=16764159;BFol=0;font=Yu Gothic UI;pitch=50;LCol=-1;"/>
@@ -114515,7 +114515,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=200;Top=345;Right=691;Bottom=722;imgL=225;imgT=375;imgR=716;imgB=752;" subject="EAID_59FDB048_64DA_4230_BB04_A426F10028A0" seqno="1" style="NSL=0;LCol=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;Tag=1;BCol=16764159;LWth=2;DUID=B7BED43D;BFol=0;"/>
@@ -114537,7 +114537,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=16777215;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=16777215;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=16777215;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=16777215;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=460;Top=120;Right=560;Bottom=200;imgL=485;imgT=150;imgR=585;imgB=230;" subject="EAID_1FFA9854_10E5_47a7_BE3E_4447F57FE997" seqno="1" style="DUID=82384CF4;NSL=0;LCol=-1;bold=0;black=0;italic=0;ul=0;charset=0;HideIcon=0;LWth=2;BCol=13434828;font=Yu Gothic UI;fontsz=100;pitch=50;BFol=0;"/>
@@ -114582,7 +114582,7 @@
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=16777215;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=1;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=16777215;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=1;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=16777215;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=1;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=16777215;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=1;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
 					<element geometry="Left=210;Top=36;Right=383;Bottom=131;imgL=235;imgT=66;imgR=408;imgB=161;" subject="EAID_CEA68306_BC83_4809_A89A_9B9E7D45776D" seqno="1" style="DUID=F09ADC38;NSL=0;BCol=-1;BFol=-1;LCol=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;LWth=0;"/>
@@ -117974,7 +117974,7 @@
 	<GML:FeatureType base_Class="EAID_B131706A_E936_4eec_9A71_95E55ADCC7EC" noPropertyType="false" isCollection="false" byValuePropertyType="false"/>
 	<GML:FeatureType base_Class="EAID_7C7E6105_DE30_4aa0_9D99_F3CEB345F6CB" noPropertyType="false" isCollection="false" byValuePropertyType="false"/>
 	<GML:FeatureType base_Class="EAID_5EC5FF35_5F2E_43cd_9BAF_C19E6ACC964E" noPropertyType="false" isCollection="false" byValuePropertyType="false"/>
-	<GML:ApplicationSchema base_Package="EAPK_703CD7E4_9939_4370_8AEB_B5B48ACC572F" version="3.1.1" xsdDocument="urbanFunction.xsd" xmlns="urf" targetNamespace="https://www.geospatial.jp/iur/urf/3.0"/>
+	<GML:ApplicationSchema base_Package="EAPK_703CD7E4_9939_4370_8AEB_B5B48ACC572F" version="3.2.1" xsdDocument="urbanFunction.xsd" xmlns="urf" targetNamespace="https://www.geospatial.jp/iur/urf/3.2"/>
 	<GML:FeatureType base_Class="EAID_28A336C5_806D_4b20_80D6_D4EB0BB33335" noPropertyType="false" isCollection="false" byValuePropertyType="false"/>
 	<GML:property base_Property="EAID_src594D5D_5D5D_4aa2_8DC2_A969D57C83EB"/>
 	<GML:property base_Property="EAID_srcD2026A_4173_4baa_B405_D99B58CCAB22"/>
@@ -118190,7 +118190,7 @@
 	<GML:Enumeration base_Enumeration="EAID_9E6A54C8_7EB4_4ef5_B40C_740EC21AEEDA"/>
 	<GML:Enumeration base_Enumeration="EAID_E0983245_920B_4adc_875A_54D290A7DB80"/>
 	<GML:Enumeration base_Enumeration="EAID_303D57BF_9B22_44ac_B19D_DD03E964A1F7"/>
-	<GML:ApplicationSchema base_Package="EAPK_BCC79C61_EB22_4305_B574_693E41527057" version="3.1.2" xsdDocument="urbanObject.xsd" xmlns="uro" targetNamespace="https://www.geospatial.jp/iur/uro/3.0"/>
+	<GML:ApplicationSchema base_Package="EAPK_BCC79C61_EB22_4305_B574_693E41527057" version="3.2.1" xsdDocument="urbanObject.xsd" xmlns="uro" targetNamespace="https://www.geospatial.jp/iur/uro/3.2"/>
 	<GML:FeatureType base_Class="EAID_6AC712AC_0EAB_45b9_9760_DC4947826FAF" noPropertyType="false" isCollection="false" byValuePropertyType="false"/>
 	<GML:DataType base_Class="EAID_8B76B03B_8674_44f2_98B0_F98AB376F6CC" noPropertyType="false" isCollection="false"/>
 	<GML:FeatureType base_Class="EAID_53AF8800_FC64_42bc_955F_239EE7AC0C10" noPropertyType="false" isCollection="false" byValuePropertyType="false"/>

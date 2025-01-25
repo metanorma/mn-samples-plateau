@@ -4,17 +4,17 @@
 鉄道とは、人と物を迅速かつ大量に輸送するため、レールを敷いた専用の通路を用い、その上を車両が円滑に行き来できるように整備された一切の設備とシステムの集合体である。[一般社団法人日本民営鉄道協会] +
 標準製品仕様書では、鉄道事業法及び軌道法に基づいて敷設された線路を指し、以下を含む。
 
-* 普通鉄道：鉄道事業法又は軌道法に基づいて運行されている鉄道で、特殊軌道及び索道を除いたもの「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」
+* 普通鉄道：鉄道事業法又は軌道法に基づいて運行されている鉄道で、特殊軌道及び索道を除いたもの「<<gsi_ops,付録７ 公共測量標準図式>>」
 
-* 地下鉄：地方公共団体及び東京地下鉄（株）等が管理する地下高速鉄道「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」
+* 地下鉄：地方公共団体及び東京地下鉄（株）等が管理する地下高速鉄道「<<gsi_ops,付録７ 公共測量標準図式>>」
 
-* 路面電車：道路上に線路を敷設した鉄道で、主として路面上から直接乗り降りできる車両が運行される鉄道「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」
+* 路面電車：道路上に線路を敷設した鉄道で、主として路面上から直接乗り降りできる車両が運行される鉄道「<<gsi_ops,付録７ 公共測量標準図式>>」
 
 * モノレール：車両が一本の軌道桁に跨座し、又は懸垂して走行するもの
 
-* 特殊鉄道：鋼索鉄道、普通鉄道と接続しない工場等特定の地区内の軌道及び採鉱（石）地と工場等を結ぶ専用軌道「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」
+* 特殊鉄道：鋼索鉄道、普通鉄道と接続しない工場等特定の地区内の軌道及び採鉱（石）地と工場等を結ぶ専用軌道「<<gsi_ops,付録７ 公共測量標準図式>>」
 
-* 索道：空中ケーブル、スキーリフト、ベルトコンベヤー及びこれらに類するもの「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」
+* 索道：空中ケーブル、スキーリフト、ベルトコンベヤー及びこれらに類するもの「<<gsi_ops,付録７ 公共測量標準図式>>」
 
 なお、線路とは、列車又は車両を走らせるための通路であって、軌道及びこれを支持するために必要な路盤、構造物を包含する地帯をいう。[<<jis_e_1001>>]
 
@@ -234,7 +234,7 @@ h| 説明 | 索道の場合は、起点及び終点が同一となる索道の�
 〇:: 任意（ユースケースに応じて要否を決定してよい）
 
 .線路の構造
-image::images/113.webp.png[]
+image::images/113.webp.png[width="400"]
 
 軌道：施工基面上の道床（スラブを含む）、軌きょう及び直接これらに付帯する施設をいう。[<<jis_e_1001>>] +
 道床：レール又はまくらぎを支持し、荷重を路盤に分布する軌道の部分。バラスト、コンクリートなどを用いたものがある。[<<jis_e_1001>>] +
@@ -416,11 +416,11 @@ h| 説明
 h| ^h| LOD3.0 ^h| LOD3.1 ^h| LOD3.2
 h| 取得例
 |
-image::images/118.webp.png[]
+image::images/118.webp.png[width="150"]
 |
-image::images/119.webp.png[]
+image::images/119.webp.png[width="150"]
 |
-image::images/120.webp.png[]
+image::images/120.webp.png[width="150"]
 
 h| 説明
 | 軌道中心線の各点に標高を与える。 +
@@ -786,14 +786,14 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Slop
 
 ====== Railway_function.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/Railway_function.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/Railway_function.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
-<<gsi_ops,annex=7,付録７ 公共測量標準図式>>
+<<gsi_ops,付録７ 公共測量標準図式>>
 
 ====== TrafficArea_function.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/TrafficArea_function.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/TrafficArea_function.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<jis_e_1001>>
@@ -803,38 +803,38 @@ lutaml_gml_dictionary::iur/codelists/3.1/TrafficArea_function.xml[template="gml_
 
 ====== RailwayRouteAttribute_operatorType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/RailwayRouteAttribute_operatorType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/RailwayRouteAttribute_operatorType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<nlftp>>
 
 ====== RailwayRouteAttribute_railwayType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/RailwayRouteAttribute_railwayType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/RailwayRouteAttribute_railwayType.xml[template="gml_dict_template.liquid",context=dict]
 Road_lodType.xml
 [.source]
 <<nlftp>>
 
 ====== RailwayTrackAttribute_directionType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/RailwayTrackAttribute_directionType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/RailwayTrackAttribute_directionType.xml[template="gml_dict_template.liquid",context=dict]
 
 
 ====== RailwayTrackAttribute_trackType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/RailwayTrackAttribute_trackType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/RailwayTrackAttribute_trackType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== RailwayTrackAttribute_alignmentType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/RailwayTrackAttribute_alignmentType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/RailwayTrackAttribute_alignmentType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== ControlPoint_function.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/ControlPoint_function.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/ControlPoint_function.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -848,7 +848,7 @@ lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xm
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -862,19 +862,19 @@ lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xm
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== Railway_lodType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/Railway_lodType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/Railway_lodType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
