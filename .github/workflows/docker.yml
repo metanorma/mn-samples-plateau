@@ -78,7 +78,7 @@ jobs:
               "git+https://github.com/metanorma/firelight#main/packages/metanorma-xml-store"
             ],
             "contentAdapters": [
-              "git+https://github.com/metanorma/firelight#0.0.6.1/packages/metanorma-site-content"
+              "git+https://github.com/metanorma/firelight#main/packages/metanorma-site-content"
             ],
             "resourceLayouts": [
               "git+https://github.com/metanorma/firelight#main/packages/plateau-layout"
@@ -91,7 +91,7 @@ jobs:
       - name: "Firelight: generate HTML for doc ${{ matrix.document_dir }}"
         run: |
           npx --node-options='--experimental-vm-modules' \
-            -y @riboseinc/anafero-cli@0.0.6 \
+            -y @riboseinc/anafero-cli@0.0.7 \
             --target-dir dist/${{ matrix.document_dir }} \
             --path-prefix /mn-samples-plateau/${{ matrix.document_dir }} \
             --current-rev main
