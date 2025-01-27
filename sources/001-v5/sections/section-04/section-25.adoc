@@ -47,47 +47,47 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="DmAn
 
 ====== Common_dmCode.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/Common_dmCode.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/Common_dmCode.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
-<<gsi_ops,annex=7,付録７ 公共測量標準図式>>
+<<gsi_ops,付録７ 公共測量標準図式>>
 
 
 ====== Common_shapeType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/Common_shapeType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/Common_shapeType.xml[template="gml_dict_template.liquid",context=dict]
 
 
 [.source]
-<<gsi_ops,annex=7,付録７ 公共測量標準図式>>
+<<gsi_ops,付録７ 公共測量標準図式>>
 
 
 ====== Common_MapLevel.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/Common_MapLevel.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/Common_MapLevel.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== Common_geometryType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/Common_geometryType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/Common_geometryType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
-<<gsi_ops,annex=7,付録７ 公共測量標準図式>>
+<<gsi_ops,付録７ 公共測量標準図式>>
 
 
 ====== DmElement_dataType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DmElement_dataType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DmElement_dataType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
-<<gsi_ops,annex=7,付録７ 公共測量標準図式>>
+<<gsi_ops,付録７ 公共測量標準図式>>
 
 
 ====== DmElement_annotationType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DmElement_annotationType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DmElement_annotationType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
-<<gsi_ops,annex=7,付録７ 公共測量標準図式>>
+<<gsi_ops,付録７ 公共測量標準図式>>
 
 
 ====== DmElement_precisionType.xml
@@ -96,7 +96,7 @@ lutaml_gml_dictionary::iur/codelists/3.1/DmElement_annotationType.xml[template="
 // |===
 // |ファイル名 2+| DmElement_precisionType.xml
 // 
-// h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.1/DmElement_precisionType.xml
+// h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.2/DmElement_precisionType.xml
 // h| コード h| 説明（上位桁：数値化区分） h| 説明（下位桁：地図情報レベル）
 // | 1 | 基準点測量成果を用いる方法 | 1～50
 // | 2 | TS等を用いた数値実測 | ～100
@@ -110,21 +110,21 @@ lutaml_gml_dictionary::iur/codelists/3.1/DmElement_annotationType.xml[template="
 // 
 // |===
 
-lutaml_gml_dictionary::iur/codelists/3.1/DmElement_precisionType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DmElement_precisionType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
-<<gsi_ops,annex=7,付録７ 公共測量標準図式>>
+<<gsi_ops,付録７ 公共測量標準図式>>
 
 
 ====== DmElement_breakType.xml
 
-// lutaml_gml_dictionary::iur/codelists/3.1/DmElement_breakType.xml[template="gml_dict_template.liquid",context=dict]
+// lutaml_gml_dictionary::iur/codelists/3.2/DmElement_breakType.xml[template="gml_dict_template.liquid",context=dict]
 
 [cols="3a,11a"]
 |===
 | ファイル名 | DmElement_breakType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DmElement_breakType.xml
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.2/DmElement_breakType.xml
 h| コード h| 説明
 | 0 間断しない
 | 1～9 | 間断する（数値は優先順位）
@@ -132,18 +132,18 @@ h| コード h| 説明
 |===
 
 [.source]
-<<gsi_ops,annex=7,付録７ 公共測量標準図式>>
+<<gsi_ops,付録７ 公共測量標準図式>>
 
 
 ====== DmElement_dislocationType.xml
 
-// lutaml_gml_dictionary::iur/codelists/3.1/DmElement_dislocationType.xml[template="gml_dict_template.liquid",context=dict]
+// lutaml_gml_dictionary::iur/codelists/3.2/DmElement_dislocationType.xml[template="gml_dict_template.liquid",context=dict]
 
 [cols="3a,11a"]
 |===
 | ファイル名 | DmElement_dislocationType.xml
 
-h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.1/DmElement_dislocationType.xml
+h| ファイルURL | https://www.geospatial.jp/iur/codelists/3.2/DmElement_dislocationType.xml
 h| コード h| 説明
 
 | 0 転位しない
@@ -153,6 +153,6 @@ h| コード h| 説明
 |===
 
 [.source]
-<<gsi_ops,annex=7,付録７ 公共測量標準図式>>
+<<gsi_ops,付録７ 公共測量標準図式>>
 
 

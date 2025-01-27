@@ -8,7 +8,7 @@
 |===
 | その他の構造物 | 説明
 
-| ダム | 洪水の調整、発電、上水道、農工業等のための各種用水の貯水を目的として設けられた工作物をいい、砂防ダムを含む。「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」
+| ダム | 洪水の調整、発電、上水道、農工業等のための各種用水の貯水を目的として設けられた工作物をいい、砂防ダムを含む。「<<gsi_ops,付録７ 公共測量標準図式>>」
 | 堤防 | 河川管理施設等構造令第17条に示される堤防及び霞堤。 +
 河川の流水の氾濫を防ぐ目的をもって、土砂・石礫等によって造られた河川構造物。
 | 床止め | 河川管理施設等構造令第33条に示される床止め。 +
@@ -40,7 +40,7 @@
 高水敷や他の構造物とともに流水による侵食作用から堤防（掘込河道にあっては堤内地）を保護するために設けるもの。
 
 | 防波堤 | 波浪を制御する堤防、埠頭、海岸浸食を防ぐ突堤等。
-「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」
+「<<gsi_ops,付録７ 公共測量標準図式>>」
 
 |===
 
@@ -62,11 +62,11 @@
 h| 3+^h| LOD0
 h| 取得例
 |
-image::images/270.webp.png[]
+image::images/270.webp.png[width="150"]
 |
-image::images/271.webp.png[]
+image::images/271.webp.png[width="150"]
 |
-image::images/272.webp.png[]
+image::images/272.webp.png[width="150"]
 
 h| 説明
 | 水門は、真形を取得する。 +
@@ -77,11 +77,11 @@ h| 説明
 h| 3+^h| LOD0
 h| 取得例
 |
-image::images/273.webp.png[]
+image::images/273.webp.png[width="150"]
 |
-image::images/274.webp.png[]
+image::images/274.webp.png[width="150"]
 |
-image::images/275.webp.png[]
+image::images/275.webp.png[width="150"]
 
 h| 説明
 | 堤防の場合は、法線を取得する。
@@ -249,7 +249,7 @@ h| 説明 | 構造物の上からの上方からの正射影の外周に一律�
 .その他の構造物モデル（LOD2）の取得イメージ
 |===
 h| h| LOD2
-h| 取得例 | image::images/278.webp.png[]
+h| 取得例 | image::images/278.webp.png[width="300"]
 
 h| 説明
 | 水門や堰のように、単独で設置される構造物の場合、外周の上から見た正射影に水面（陸上の構造物の場合は地面）の高さを与えた面を底面とする。 +
@@ -260,7 +260,7 @@ h| 説明
 堤防や護岸に設けられた階段は、最上段及び最下段を結ぶスロープ状に再現する。
 
 h| h| LOD2.0
-h| 取得例 | image::images/279.webp.png[]
+h| 取得例 | image::images/279.webp.png[width="300"]
 
 h| 説明
 | 水制や床止めのように、同じ形状の小規模な構造物が繰り返し配置され、一体となってその機能を果たす構造物の場合、一体となった外形を、簡略化した立体により表現する。 +
@@ -349,7 +349,7 @@ LOD3は、構造上不可欠ではない付属物（手すり、柵、構造物�
 h| ^h| LOD3.0
 h| 取得例
 |
-image::images/280.webp.png[]
+image::images/280.webp.png[width="400"]
 
 h| 説明 | LOD3.0では、水門や堰のように、単独で設置される構造物の場合、LOD2の形状から、側面を詳細化した立体として表現する。 +
 構造上不可欠ではない付属物（手すり、柵、構造物と一体ではない階段）は表現しない。 +
@@ -358,7 +358,7 @@ h| 説明 | LOD3.0では、水門や堰のように、単独で設置される�
 h| ^h| LOD3.1
 h| 取得例
 |
-image::images/281.webp.png[]
+image::images/281.webp.png[width="400"]
 
 h| 説明 | LOD3.1では、LOD3.0に加え、構造上不可欠ではない付属物（手すり、柵、構造物と一体ではない階段）を表現する。 +
 また、構造物の外形を構成する上向きの面のうち通行可能な面を屋外床面に区分することができる。
@@ -690,32 +690,32 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Occu
 
 ====== OtherConstruction_class.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/OtherConstruction_class.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/OtherConstruction_class.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_kiban_chizu>>
 
 ====== OtherConstruction_function.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/OtherConstruction_function.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/OtherConstruction_function.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_kiban_chizu>>
 
 ====== ConstructionInstallation_function.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/ConstructionInstallation_function.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/ConstructionInstallation_function.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== ConstructionBaseAttribute_purpose.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/ConstructionBaseAttribute_purpose.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/ConstructionBaseAttribute_purpose.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<nlftp>>
 
 ====== ConstructionStructureAttribute_structureType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/ConstructionStructureAttribute_structureType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/ConstructionStructureAttribute_structureType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<nlftp>>
@@ -725,11 +725,11 @@ lutaml_gml_dictionary::iur/codelists/3.1/ConstructionStructureAttribute_structur
 
 ====== ConstructionStructureAttribute_slopeType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/ConstructionStructureAttribute_slopeType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/ConstructionStructureAttribute_slopeType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== ConstructionBaseAttribute_adminType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/ConstructionBaseAttribute_adminType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/ConstructionBaseAttribute_adminType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_kiban_chizu>>
@@ -742,32 +742,32 @@ lutaml_gml_dictionary::iur/codelists/3.1/ConstructionBaseAttribute_adminType.xml
 
 ====== ConstructionBaseAttribute_installerType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/ConstructionBaseAttribute_installerType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/ConstructionBaseAttribute_installerType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_cyberport>>
 
 ====== ConstructionRiskAssessmentAttribute_riskType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/ConstructionRiskAssessmentAttribute_riskType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/ConstructionRiskAssessmentAttribute_riskType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_road_damage_map>>
 
 ====== ConstructionRiskAssessmentAttribute_status.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/ConstructionRiskAssessmentAttribute_status.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/ConstructionRiskAssessmentAttribute_status.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_road_damage_map>>
 
 ====== ConstructionFunctionalAttribute_directionType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/ConstructionFunctionalAttribute_directionType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/ConstructionFunctionalAttribute_directionType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -781,7 +781,7 @@ lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xm
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -795,13 +795,13 @@ lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xm
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== DataQualityAttribute_lod1HeightType.xml
 
 // TODO: This table cannot be recreated because some values are marked "（使用不可）".
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_lod1HeightType.xml[template="gml_dict_template.liquid",context=dict]
 
 // | （使用不可）7 | 建築確認申請書類等に記載された「建築物の高さ」
 // | （使用不可）8 | 都市計画基礎調査（建物利用現況）の「高さ（m）」
@@ -814,11 +814,11 @@ lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -829,12 +829,12 @@ lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_geomet
 
 ====== OtherConstruction_lodType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/OtherConstruction_lodType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/OtherConstruction_lodType.xml[template="gml_dict_template.liquid",context=dict]
 
 
 ====== Elevation_elevationReference.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/Elevation_elevationReference.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/Elevation_elevationReference.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<inspire_registry>>

@@ -207,7 +207,7 @@ h| LOD1
 --
 [[fig-L-1]]
 .橋脚を含めた外周から作成したポリゴン
-image::images/317.webp.png[]
+image::images/317.webp.png[width="400"]
 
 桟道橋は、橋梁モデル（LOD0）で取得した斜面に接していない縁線と、道路縁から取得した斜面に接している縁線を結び、ポリゴンを作成する。 +
 横断歩道橋、跨線橋、ペデストリアンデッキは橋梁モデル（LOD0）がMultiSurfaceで作成されている場合は、そのままポリゴンとして使用できる。 +
@@ -224,14 +224,14 @@ image::images/317.webp.png[]
 --
 [[fig-L-2]]
 .最高高さで作成した横断歩道橋と航空写真から作成した点群を重畳させた図
-image::images/318.webp.png[]
+image::images/318.webp.png[width="400"]
 --
 
 橋梁モデル（LOD1）の作成イメージを以下に示す。
 
 [[fig-L-3]]
 .道路橋のLOD1の作成イメージ
-image::images/319.webp.png[]
+image::images/319.webp.png[width="400"]
 
 
 ===== LOD2.0
@@ -281,7 +281,7 @@ class:: 留意事項
 
 [[fig-L-4]]
 .橋梁の部材の名称
-image::images/320.webp.png[]
+image::images/320.webp.png[width="400"]
 --
 ====
 
@@ -292,13 +292,13 @@ image::images/320.webp.png[]
 --
 [[fig-L-5]]
 .橋梁の高さを推定で付与する例
-image::images/321.webp.png[]
+image::images/321.webp.png[width="350"]
 
 横断歩道橋、ペデストリアンデッキ、徒橋、跨線橋の橋梁モデル（LOD2.0）では、階段の段差を表現しない。階段は、階段の上端と下端のみに高さを付与した斜面として取得する。
 
 [[fig-L-6]]
 .階段をスロープで表現したイメージ図
-image::images/322.webp.png[]
+image::images/322.webp.png[width="400"]
 --
 
 . b）で分割した高さ付きのポリゴンを、全てOuterFloorSurfaceとする。 +
@@ -308,15 +308,15 @@ b）で分割した高さ付きのポリゴンは、橋梁の境界面となる�
 
 [[fig-L-7]]
 .ペデストリアンデッキのLOD2.0の作成イメージ
-image::images/323.webp.png[]
+image::images/323.webp.png[width="400"]
 
 [[fig-L-8]]
 .横断歩道橋のLOD2.0の作成イメージ
-image::images/324.webp.png[]
+image::images/324.webp.png[width="400"]
 
 [[fig-L-9]]
 .道路橋のLOD2.0の作成イメージ
-image::images/325.webp.png[]
+image::images/325.webp.png[width="400"]
 
 ===== LOD2.1
 
@@ -386,15 +386,15 @@ image::images/326.webp.png[]
 
 [[fig-L-11]]
 .横断歩道橋の橋梁モデル（LOD2.1）の作成イメージ
-image::images/327.webp.png[]
+image::images/327.webp.png[width="400"]
 
 [[fig-L-12]]
 .ペデストリアンデッキの橋梁モデル（LOD2.1）の作成イメージ
-image::images/328.webp.png[]
+image::images/328.webp.png[width="400"]
 
 [[fig-L-13]]
 .道路橋の橋梁モデル（LOD2.1）の作成イメージ
-image::images/329.webp.png[]
+image::images/329.webp.png[width="400"]
 
 ===== LOD3
 
@@ -460,31 +460,31 @@ BridgeConstructionElementの取得にはMMS点群など側面から計測した�
 
 | トラス
 |
-image::images/330.webp.png[]
+image::images/330.webp.png[width="200"]
 
 | アーチ
 |
-image::images/331.webp.png[]
+image::images/331.webp.png[width="200"]
 
 | パイロン
 |
-image::images/332.webp.png[]
+image::images/332.webp.png[width="200"]
 
 | 吊材
 |
-image::images/333.webp.png[]
+image::images/333.webp.png[width="200"]
 
 | ケーブル
 |
-image::images/334.webp.png[]
+image::images/334.webp.png[width="200"]
 
 | 橋脚
 |
-image::images/335.webp.png[]
+image::images/335.webp.png[width="200"]
 
 | 橋台
 |
-image::images/336.webp.png[]
+image::images/336.webp.png[width="200"]
 
 |===
 
@@ -500,31 +500,31 @@ BridgeInstallationの取得にはMMS点群など側面から計測したデー�
 
 | 高欄
 |
-image::images/337.webp.png[]
+image::images/337.webp.png[width="150"]
 
 | 地覆
 |
-image::images/338.webp.png[]
+image::images/338.webp.png[width="150"]
 
 | 親柱
 |
-image::images/339.webp.png[]
+image::images/339.webp.png[width="150"]
 
 | 庇の柱
 |
-image::images/340.webp.png[]
+image::images/340.webp.png[width="150"]
 
 | エレベータ
 |
-image::images/341.webp.png[]
+image::images/341.webp.png[width="150"]
 
 | エスカレータ
 |
-image::images/342.webp.png[]
+image::images/342.webp.png[width="150"]
 
 | 手すり
 |
-image::images/343.webp.png[]
+image::images/343.webp.png[width="100"]
 
 |===
 +
@@ -532,21 +532,21 @@ image::images/343.webp.png[]
 +
 [[fig-L-14]]
 .エスカレータおよび階段の作成イメージ
-image::images/344.webp.png[]
+image::images/344.webp.png[width="400"]
 
 橋梁モデル（LOD3）の作成イメージを以下に示す。
 
 [[fig-L-15]]
 .歩道橋の橋梁モデル（LOD3）の作成イメージ
-image::images/345.webp.png[]
+image::images/345.webp.png[width="400"]
 
 [[fig-L-16]]
 .ペデストリアンデッキの橋梁モデル（LOD3）の作成イメージ
-image::images/346.webp.png[]
+image::images/346.webp.png[width="400"]
 
 [[fig-L-17]]
 .道路橋の橋梁モデル（LOD3）の作成イメージ
-image::images/347.webp.png[]
+image::images/347.webp.png[width="400"]
 
 ===== LOD4
 

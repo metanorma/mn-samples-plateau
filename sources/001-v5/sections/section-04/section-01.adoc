@@ -43,13 +43,17 @@ CityGMLには、LOD0からLOD4までの五つのLODの段階が用意されて�
 
 3D都市モデル応用スキーマは、CityGML及びi-URを引用する。さらに、CityGMLはGMLを引用し、i-URはCityGML及びGMLを引用している。
 
-image::images/002.svg[]
+image::images/002.png[width="300"]
+
+// image::images/002.svg[]
 
 ===== 3D都市モデル応用スキーマ
 
 3D都市モデル応用スキーマは、これに含まれる地物型に応じて分けられた、20個のパッケージから構成する。
 
-image::images/003.svg[]
+image::images/003.png[width="600"]
+
+// image::images/003.svg[]
 
 各パッケージは、CityGML及びi-URに定義されたパッケージを引用する（<<tab-4-2>>）。
 

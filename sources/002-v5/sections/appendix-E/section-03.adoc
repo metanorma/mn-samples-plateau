@@ -79,7 +79,7 @@ image::images/240.webp.png[]
 --
 [[fig-E-3]]
 .分岐路の取得のイメージ
-image::images/241.webp.png[]
+image::images/241.webp.png[width="400"]
 --
 
 . 鉄道の構造が変化する点（トンネル、橋梁）、市区町村界及び位置正確度（地図情報レベル）や取得方法が変わる場所でポリゴンを分割する。
@@ -114,7 +114,7 @@ h| LOD2 | 航空写真又は平面図 | ― | 航空写真又は平面図
 --
 [[fig-E-5]]
 .線路の構造
-image::images/243.webp.png[]
+image::images/243.webp.png[width="400"]
 --
 
 . 道床、レールに囲まれた範囲及び軌道中心線を、それぞれTrafficAreaに区分する。
@@ -123,7 +123,7 @@ image::images/243.webp.png[]
 
 [[fig-E-6]]
 .交通（鉄道）モデル（LOD2）の作成イメージ
-image::images/244.webp.png[]
+image::images/244.webp.png[width="500"]
 
 ===== LOD3.0
 
@@ -156,11 +156,11 @@ h| LOD3.0
 
 [[fig-E-7]]
 .取得する高さ（勾配変化点）のイメージ
-image::images/245.webp.png[]
+image::images/245.webp.png[width="400"]
 
 [[fig-E-8]]
 .高さを与えた道床のイメージ
-image::images/246.webp.png[]
+image::images/246.webp.png[width="400"]
 
 交通（鉄道）モデル（LOD3.0）の作成例を<<fig-E-9>>に示す。
 
@@ -188,14 +188,14 @@ h| LOD3.1 | 航空写真、MMS点群又は平面図 | MMS点群又は縦断面�
 . 航空写真又は平面図からレールを取得し、レールの幅をもったポリゴンとして作成する。
 . 交通（鉄道）モデル（LOD3.0）で区分されたポリゴン、b）で作成したポリゴン及びc）で作成したポリゴンに高さを与え、横断方向に存在する15cm以上の高さ変化がある横断勾配を表現する。高さはMMS点群より取得する。
 +
-image::images/248.webp.png[]
+image::images/248.webp.png[width="600"]
 
 . b）及びC）で作成したそれぞれのポリゴンのうち、レールをTrafficArea、道床以外の鉄道用地をAuxiliaryTrafficAreaに区分する。
 +
 --
 [[fig-E-10]]
 .LOD3.1の高さ表現のイメージ・LOD3.1の区分のイメージ
-image::images/249.webp.png[]
+image::images/249.webp.png[width="500"]
 --
 
 交通（鉄道）モデル（LOD3.1）の作成例を<<fig-E-11>>に示す。
@@ -227,7 +227,7 @@ h| LOD3.2 | 航空写真、MMS点群又は平面図 | MMS点群又は縦断面�
 
 [[fig-E-12]]
 .交通（鉄道）モデル（LOD3.2）の作成イメージ
-image::images/251.webp.png[]
+image::images/251.webp.png[width="400"]
 
 
 ==== 作業上の留意事項
@@ -238,4 +238,4 @@ image::images/251.webp.png[]
 
 [[fig-E-13]]
 .複数の路線間にある道床の区切り例
-image::images/252.webp.png[]
+image::images/252.webp.png[width="500"]

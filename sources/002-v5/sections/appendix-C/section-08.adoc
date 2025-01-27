@@ -89,7 +89,7 @@ bldg:functionが取りうる値は、コードリストにより定義されて�
 [[tab-C-11]]
 .BuildingInstallationの区分
 
-lutaml_gml_dictionary::iur/codelists/3.1/BuildingInstallation_function.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/BuildingInstallation_function.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<citygml_20,annex="C.1">>
@@ -136,7 +136,8 @@ h| コード h| 説明
 
 なお、bldg:BuildingInstallationは、建築物の外側に設置された、建築物の付属的な設備を指す。 +
 そのため、<<tab-C-11>>に該当する設備であっても、建築物に付属していない設備は、bldg:BuildingInstallationとしては取得しない。 +
-例えば、商店街に設置された、独立して存在する規模の大きなアーケード（<<fig-C-38>>）は、bldg:BuildingInstallationではなく、frn:CityFurnitureとして取得する。
+例えば、商店街に設置された、独立して存在する規模の大きなアーケード（<<fig-C-38>>）は、 +
+bldg:BuildingInstallationではなく、frn:CityFurnitureとして取得する。
 
 [[fig-C-38]]
 .frn:CityFurnitureで取得すべきアーケード

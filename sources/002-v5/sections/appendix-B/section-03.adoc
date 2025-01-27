@@ -112,7 +112,7 @@ gml:LineStringは、2点以上の点から構成され、それらの点の順�
 
 [[fig-B-1]]
 .エラーとなるgml:LineStringの例
-image::images/117.webp.png[]
+image::images/117.webp.png[width="350"]
 
 [[tocB_03_05]]
 ==== gml:LinearRing
@@ -135,7 +135,7 @@ gml:LinearRingは、平面を示すgml:Polygonの外周や内周として使用�
 
 [[fig-B-2]]
 .エラーとなるgml:LinearRingの例
-image::images/118.webp.png[]
+image::images/118.webp.png[width="600"]
 
 [[tocB_03_06]]
 ==== gml:_Surface, gml:Polygon
@@ -178,7 +178,7 @@ description:: 外周の頂点の順列がgml:Polygonの向き（法線）を決�
 
 [[fig-B-3]]
 .gml:Polygonの向き
-image::images/119.webp.png[]
+image::images/119.webp.png[width="300"]
 
 
 [requirement]
@@ -197,7 +197,7 @@ part:: 外周及び内周に自己交差がなく、始終点以外の点で一�
 
 [[fig-B-4]]
 .gml:Polygonの例
-image::images/120.webp.png[]
+image::images/120.webp.png[width="600"]
 
 [[tocB_03_07]]
 ==== gml:OrientableSurface
@@ -235,9 +235,11 @@ part:: 構成要素となる曲面が連続しており、全体として一個�
 
 [[fig-B-6]]
 .gml:CompositeSurfaceの例
-image::images/122.webp.png[]
+image::images/122.webp.png[width="600"]
 
-gml:CompositeSurfaceの構成要素は、gml:_Surfaceを継承する幾何オブジェクトのみであり、gml:MultiSurfaceはその構成要素とはなりえないことに注意すること。これは、gml:MultiSurfaceがgml:_Surfaceを継承していないからである。
+gml:CompositeSurfaceの構成要素は、gml:_Surfaceを継承する幾何オブジェクトのみであり、 +
+gml:MultiSurfaceはその構成要素とはなりえないことに注意すること。 +
+これは、gml:MultiSurfaceがgml:_Surfaceを継承していないからである。
 
 [[tocB_03_10]]
 ==== gml:Solid
