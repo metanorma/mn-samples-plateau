@@ -36,11 +36,12 @@ subject:: 3D都市モデル
 description:: 建築物のLOD1の形状は、建築物モデル（LOD1）の定義に従う。
 ====
 
-建築物モデル（LOD1）は、LOD0で作成されたbldg:lod0RoofEdge又はbldg:lod0FootPrintにより作成された建築物の外周を示す平面に、一定の高さで上向きに押し出した角柱として表現したものである（<<fig-C-1>>）。平面に一律の高さを与えるため、上下の面は水平となり、側面は垂直となる。
+建築物モデル（LOD1）は、LOD0で作成されたbldg:lod0RoofEdge又はbldg:lod0FootPrintにより作成された建築物の外周を示す平面に、一定の高さで上向きに押し出した角柱として表現したものである（<<fig-C-1>>）。 +
+平面に一律の高さを与えるため、上下の面は水平となり、側面は垂直となる。
 
 [[fig-C-1]]
 .建築物モデル（LOD1）
-image::images/127.webp.png[]
+image::images/127.webp.png[width="400"]
 
 
 [requirement]
@@ -55,12 +56,13 @@ description:: LOD1で建築物を記述する場合には、bldg:lod1Solidで示
 CityGMLでは、LOD0の建築物の空間属性として、屋根の外形線を表すbldg:lod0RoofEdgeと、建築物の外壁面と地表面との境界線によるbldg:lod0FootPrintが用意されている。両者のいずれを使ってもよい。ただし、この幾何形状を使用してLOD1の立体を作成することから、元となるLOD0の幾何形状を同時に保持しておく。 +
 LOD0の建築物の空間属性には、2次元のGISデータを使用できる。ただし、2次元のGISデータの構造が +
 妥当な幾何オブジェクトの要件（<<tocB>>）に適合しない場合は、GISデータを修正する必要がある。 +
-例えば、<<fig-C-2>>は、内周と外周が一筆書きによりつながっているGISデータをLOD0の建築物の空間属性として使用し、 +
-LOD1に押し出した立体である。内周と外周が一筆書きによりつながっている面は、gml:Polygonの要件に適合しないため、このような外形データを押し出したLOD1の立体もCityGMLの要件に適合しない。
+例えば、<<fig-C-2>>は、内周と外周が一筆書きによりつながっているGISデータをLOD0の建築物の空間属性として使用し、
+LOD1に押し出した立体である。 +
+内周と外周が一筆書きによりつながっている面は、gml:Polygonの要件に適合しないため、このような外形データを押し出したLOD1の立体もCityGMLの要件に適合しない。
 
 [[fig-C-2]]
 .エラーとなる図形の例
-image::images/128.webp.png[]
+image::images/128.webp.png[width="300"]
 
 
 [requirement]
@@ -89,7 +91,7 @@ LOD1で建築物を記述する場合、下面の高さは、<<fig-C-3>>に示�
 
 [[fig-C-3]]
 .LOD1における下面の高さ
-image::images/129.webp.png[]
+image::images/129.webp.png[width="600"]
 
 地形モデルとLOD0の平面形状との重ね合わせにより最も低い点の高さを取得する方法を選択した場合に、建築物のLOD0の平面形状の範囲で地形モデルが欠落している場合は、以下の手順により建築物の下面の高さを取得する。
 
@@ -169,7 +171,7 @@ description:: 建築物のLOD2の形状は、建築物モデル（LOD2）の定�
 
 [[fig-C-5]]
 .LOD2により記述される建築物
-image::images/131.webp.png[]
+image::images/131.webp.png[width="400"]
 
 建築物モデル（LOD2）は、含むべき地物によりLOD2.0、LOD2.1及びLOD2.2に細分される。LOD2.0、LOD2.1及びLOD2.2は、航空写真等上空から取得したデータの利用を前提とした区分であり、屋根形状を含む建築物の上面を詳細化する。 +
 標準製品仕様書は、原則としてLOD2.0を採用する。ただし、ユースケースの必要に応じてLOD2.1又はLOD2.2を採用できる。
@@ -180,7 +182,7 @@ image::images/131.webp.png[]
 |===
 ^h| LOD ^h| LOD2.0 ^h| LOD2.1 ^h| LOD2.2
 ^h| 取得例
-|
+^.^|
 image::images/132.webp.png[]
 |
 image::images/133.webp.png[]
@@ -197,7 +199,7 @@ image::images/134.webp.png[]
 
 |===
 
-image::images/135.webp.png[]
+image::images/135.webp.png[width="500"]
 
 [[tab-C-5]]
 [cols="a,a,a,a,a"]
@@ -299,7 +301,7 @@ description:: 建築物のLOD3の形状は、建築物モデル（LOD3）の定�
 
 [[fig-C-8]]
 .建築物モデル（LOD3）
-image::images/138.webp.png[]
+image::images/138.webp.png[width="400"]
 
 建築物モデル（LOD3）は、含むべき地物により、LOD3.0、LOD3.1、LOD3.2及びLOD3.3に分かれる。これらは、MMS（Mobile Mapping System）による点群や画像等、側面から取得したデータの利用を前提とした区分であり、外壁面や開口部を含む建築物の側面を詳細化する。標準製品仕様書では原則としてLOD3.0を採用する。ただし、ユースケースの必要に応じてLOD3.1、LOD3.2又はLOD3.3を採用できる。
 
@@ -490,13 +492,13 @@ image::images/143.webp.png[]
 
 [[fig-C-10]]
 .LOD3における建築物の軒の表現
-image::images/144.webp.png[]
+image::images/144.webp.png[width="500"]
 
 建築物モデル（LOD0）から建築物モデル（LOD3）の作成手法を<<fig-C-11>>に示す。LOD2は、航空写真等上空から取得したデータの利用を前提とした区分であり、屋根形状を含む建築物の上面を詳細化する。LOD3は、MMSによる点群や画像等、側面から取得したデータの利用を前提とした区分であり、外壁面や開口部を含む建築物の側面を詳細化する。なお、最も細かいLOD3.3では地上レーザ点群又はBIMデータの活用も想定される。
 
 [[fig-C-11]]
 .各LODで想定する作成手法
-image::images/145.webp.png[]
+image::images/145.webp.png[width="600"]
 
 [[tocC_03_01_05]]
 ===== LOD4
@@ -539,7 +541,7 @@ LOD4.0は建築物の外形（上図1）に加え、建築物の内部を表現�
 | LOD4.1
 |
 
-image::images/147.webp.png[]
+image::images/147.webp.png[width="450"]
 
 LOD4.1ではLOD4.0に、屋内付属物（bldg:IntBuildingInstallation）として、階段、スロープ、輸送設備（エスカレータ、エレベータ及び動く歩道）、柱及びデッキ・ステージが追加される。 +
 上図の例では、LOD4.0に加えて、階段、踊り場、エレベータ、柱が付属物として追加された。
@@ -549,7 +551,7 @@ LOD4.1ではLOD4.0に、屋内付属物（bldg:IntBuildingInstallation）とし�
 | LOD4.2
 |
 
-image::images/148.webp.png[]
+image::images/148.webp.png[width="450"]
 
 LOD4.2ではLOD4.1に屋内付属物（bldg:IntBuildingInstallation）として、手すり、パネル及び梁が付属物として追加される。また、机や椅子などの移動可能な家具（bldg:BuildingFurniture）が追加してもよい。 +
 上図の例では、LOD4.2に加えて屋内付属物として階段の手すりとパネル（間仕切り）、また、家具として机及び椅子が追加された。
@@ -658,7 +660,7 @@ uro:majorUsage、uro:orgUsage等の属性（<<tocC_03_02_07>>）を用いる。
 
 [[fig-C-14]]
 .点群に含まれるノイズ
-image::images/151.webp.png[]
+image::images/151.webp.png[width="500"]
 
 ノイズを除去する場合、最高値から一定の割合（例：5%）を除去する、又は標準偏差の2σに含まれない点群を除去するというように閾値を設定しなければならない。しかしながら原典資料の状態や対象地域の地形により点群に含まれるノイズは一律でないことから、これらの条件を踏まえ、データ作成者が設定してよい。 +
 例えば、2020年度に実施されたProject PLATEAUでは、テストエリアにおいて +
@@ -833,7 +835,7 @@ uro:DisasterRiskAttributeは、災害リスク情報と建築物の位置関係�
 
 [[fig-C-16]]
 .境界上に存在する建築物の例
-image::images/153.webp.png[]
+image::images/153.webp.png[width="500"]
 --
 
 * 土砂災害警戒区域の場合

@@ -4,15 +4,15 @@
 [[toc4_19_01]]
 ==== 水部モデルのLOD
 
-水部とは、河川、細流、一条河川、かれ川、用水路、湖池、海岸線、水路地下部及び低位水涯線をいう。「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」 +
-河川は、平水時における河川の水涯線をいう。「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」 +
-細流は、地図情報レベル500又は1000において、河川の流水部の幅が、図上0.2㎜以上0.4㎜未満の河川をいう。「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」 +
-一条河川とは、地図情報レベル2500において、河川の流水部の幅が、図上0.2㎜以上0.4㎜未満の河川をいう。「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」 +
-かれ川とは、通常水の流れていない川をいう。「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」 +
-用水路は、地図情報レベル500又は1000において、流水部の幅が0.4㎜以上の用水路とする。「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」 +
-湖池は、湖、池、沼等（人工的に貯水したものを含む）の水涯線をいう。「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」 +
-海岸線は、満潮時における海岸の水涯線をいう。「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」 +
-水路地下部は、河川、用水路等の地下の部分で、経路の明確なものをいう。「<<gsi_ops,annex=7,付録７ 公共測量標準図式>>」
+水部とは、河川、細流、一条河川、かれ川、用水路、湖池、海岸線、水路地下部及び低位水涯線をいう。「<<gsi_ops,付録７ 公共測量標準図式>>」 +
+河川は、平水時における河川の水涯線をいう。「<<gsi_ops,付録７ 公共測量標準図式>>」 +
+細流は、地図情報レベル500又は1000において、河川の流水部の幅が、図上0.2㎜以上0.4㎜未満の河川をいう。「<<gsi_ops,付録７ 公共測量標準図式>>」 +
+一条河川とは、地図情報レベル2500において、河川の流水部の幅が、図上0.2㎜以上0.4㎜未満の河川をいう。「<<gsi_ops,付録７ 公共測量標準図式>>」 +
+かれ川とは、通常水の流れていない川をいう。「<<gsi_ops,付録７ 公共測量標準図式>>」 +
+用水路は、地図情報レベル500又は1000において、流水部の幅が0.4㎜以上の用水路とする。「<<gsi_ops,付録７ 公共測量標準図式>>」 +
+湖池は、湖、池、沼等（人工的に貯水したものを含む）の水涯線をいう。「<<gsi_ops,付録７ 公共測量標準図式>>」 +
+海岸線は、満潮時における海岸の水涯線をいう。「<<gsi_ops,付録７ 公共測量標準図式>>」 +
+水路地下部は、河川、用水路等の地下の部分で、経路の明確なものをいう。「<<gsi_ops,付録７ 公共測量標準図式>>」
 
 [[toc4_19_01_01]]
 ===== 水部モデル（LOD0）
@@ -31,7 +31,7 @@
 h| 4+^h| LOD0（河川ネットワークにより表現する場合）
 h| 取得例
 2+|
-image::images/385.webp.png[]
+image::images/385.webp.png[width="150"]
 2+|
 image::images/386.webp.png[]
 
@@ -43,13 +43,13 @@ h| 説明
 h| 4+^h| LOD0（公共測量標準図式により表現する場合）
 h| 取得例
 |
-image::images/387.webp.png[]
+image::images/387.webp.png[width="100"]
 |
-image::images/388.webp.png[]
+image::images/388.webp.png[width="100"]
 |
-image::images/389.webp.png[]
+image::images/389.webp.png[width="100"]
 |
-image::images/390.webp.png[]
+image::images/390.webp.png[width="100"]
 
 h| 説明 | 地図情報レベル500及び1000における河川、また、地図情報レベル2500における水涯線（河川、湖池等、海岸線）は界線を取得する。
 |
@@ -61,13 +61,13 @@ h| 説明 | 地図情報レベル500及び1000における河川、また、地�
 h| 4+^h| LOD0（公共測量標準図式により表現する場合）
 h| 取得例
 |
-image::images/391.webp.png[]
+image::images/391.webp.png[width="100"]
 |
-image::images/392.webp.png[]
+image::images/392.webp.png[width="100"]
 |
-image::images/393.webp.png[]
+image::images/393.webp.png[width="100"]
 |
-image::images/394.webp.png[]
+image::images/394.webp.png[width="50"]
 
 h| 説明 | 注記されない湖沼は、界線に加えて記号挿入位置を取得する。
 |
@@ -215,7 +215,7 @@ footnoteblock:[fn_retrieval_lod0]
 h| ^h| LOD1
 h| 取得例
 ^|
-image::images/395.webp.png[]
+image::images/395.webp.png[width="500"]
 
 h| 説明 | 水涯線により囲まれた面を取得する。中洲がある場合は、中洲を除いた面となる。
 
@@ -528,18 +528,18 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Publ
 
 ====== WaterBody_class.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/WaterBody_class.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/WaterBody_class.xml[template="gml_dict_template.liquid",context=dict]
 
 [[toc4_19_04_02]]
 ===== Urban Object（i-UR）
 
 ====== WaterBodyDetailAttribute_adminType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/WaterBodyDetailAttribute_adminType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/WaterBodyDetailAttribute_adminType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -553,7 +553,7 @@ lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xm
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -567,15 +567,15 @@ lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xm
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>

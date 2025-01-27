@@ -20,20 +20,20 @@ CityGML及びi-URの符号化仕様は以下より取得できる。
 * CityGML：
 ** http://schemas.opengis.net/citygml/[]
 * i-UR：
-** https://www.geospatial.jp/iur/schemas/uro/3.1/urbanObject.xsd[]
-** https://www.geospatial.jp/iur/schemas/urf/3.1/urbanFunction.xsd[]
+** https://www.geospatial.jp/iur/schemas/uro/3.2/urbanObject.xsd[]
+** https://www.geospatial.jp/iur/schemas/urf/3.2/urbanFunction.xsd[]
 ** なお、符号化仕様は最新のものであることをversion属性により確認すること。version属性は、符号化仕様内のxs:schemaタグに記載されている（以下のフラグメントの太字部分）。
 +
 [source,xml]
 ----
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema
-  xmlns:urf="https://www.geospatial.jp/iur/urf/3.1"
+  xmlns:urf="https://www.geospatial.jp/iur/urf/3.2"
   xmlns:core="http://www.opengis.net/citygml/2.0"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:gml="http://www.opengis.net/gml"
-  xmlns:uro="https://www.geospatial.jp/iur/uro/3.1"
-  targetNamespace="https://www.geospatial.jp/iur/urf/3.1"
+  xmlns:uro="https://www.geospatial.jp/iur/uro/3.2"
+  targetNamespace="https://www.geospatial.jp/iur/urf/3.2"
   elementFormDefault="qualified"
   attributeFormDefault="unqualified"
   version="3.1.0">
@@ -365,9 +365,9 @@ i-URの符号化仕様は相対パスによりschemaLocationを指定する。
 ** 地物型又はモジュールごとに分けられた3D都市モデルの成果品を格納するフォルダ（例：bldg,tran）の直下に格納した3D都市モデルファイルの場合、schemaLocationとして記述すべき符号化仕様への相対パスは以下となる。
 +
 --
-`urbanObject.xsdへの相対パス：`../../schemas/iur/uro/3.1/urbanObject.xsd
+`urbanObject.xsdへの相対パス：`../../schemas/iur/uro/3.2/urbanObject.xsd
 
-`urbanFunction.xsdへの相対パス：`../../schemas/iur/uro/3.1/urbanFunction.xsd
+`urbanFunction.xsdへの相対パス：`../../schemas/iur/uro/3.2/urbanFunction.xsd
 --
 ---
 ====

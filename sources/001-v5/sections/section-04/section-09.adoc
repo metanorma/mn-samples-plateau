@@ -41,7 +41,7 @@
 h| ^h| LOD1
 h| 取得例
 |
-image::images/199.webp.png[]
+image::images/199.webp.png[width="400"]
 
 h| 説明
 | 洪水浸水想定区域、津波浸水想定、高潮浸水想定区域、内水浸水想定区域及びため池ハザードマップの浸水面を取得する。 +
@@ -88,7 +88,7 @@ h| 説明
 h| ^h| LOD1
 h| 取得例
 |
-image::images/200.webp.png[]
+image::images/200.webp.png[width="250"]
 
 h| 説明
 | 土砂災害警戒区域及び土砂災害特別警戒区域に指定された範囲を取得する。 +
@@ -245,60 +245,60 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Sedi
 
 ====== WaterBody_class.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/WaterBody_class.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/WaterBody_class.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== WaterBody_function.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/WaterBody_function.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/WaterBody_function.xml[template="gml_dict_template.liquid",context=dict]
 
 [[toc4_09_04_02]]
 ===== Urban Object（i-UR）
 
 ====== RiverFloodingRiskAttribute_adminType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/RiverFloodingRiskAttribute_adminType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/RiverFloodingRiskAttribute_adminType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_deluge_guidelines>>
 
 ====== RiverFloodingRiskAttribute_scale.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/RiverFloodingRiskAttribute_scale.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/RiverFloodingRiskAttribute_scale.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_deluge_guidelines>>
 
 ====== RiverFloodingRiskAttribute_rank.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/RiverFloodingRiskAttribute_rank.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/RiverFloodingRiskAttribute_rank.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_deluge_guidelines>>
 
 ====== TsunamiRiskAttribute_rank.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/TsunamiRiskAttribute_rank.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/TsunamiRiskAttribute_rank.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_tsunami_guidelines>>
 
 ====== HighTideRiskAttribute_rank.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/HighTideRiskAttribute_rank.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/HighTideRiskAttribute_rank.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_tide_guidelines>>
 
 ====== InlandFloodingRiskAttribute_rank.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/InlandFloodingRiskAttribute_rank.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/InlandFloodingRiskAttribute_rank.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_int_flood_guidelines>>
 
 ====== ReservoirFloodingRiskAttribute_rank.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/ReservoirFloodingRiskAttribute_rank.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/ReservoirFloodingRiskAttribute_rank.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<maff_reservoir_hazard_maps>>
@@ -308,25 +308,25 @@ lutaml_gml_dictionary::iur/codelists/3.1/ReservoirFloodingRiskAttribute_rank.xml
 
 ====== LandSlideRiskAttribute_description.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/LandSlideRiskAttribute_description.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/LandSlideRiskAttribute_description.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_ks_ps_a33>>
 
 ====== LandSlideRiskAttribute_areaType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/LandSlideRiskAttribute_areaType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/LandSlideRiskAttribute_areaType.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<mlit_ks_ps_a33>>
 
 ====== LandSlideRiskAttribute_status.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/LandSlideRiskAttribute_status.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/LandSlideRiskAttribute_status.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -340,7 +340,7 @@ lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xm
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -354,5 +354,5 @@ lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xm
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 

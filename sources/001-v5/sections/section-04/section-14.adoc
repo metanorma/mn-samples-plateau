@@ -24,14 +24,14 @@
 |===
 h| 4+^h| LOD0
 h| 取得例
-|
-image::images/284.webp.png[]
-|
-image::images/285.webp.png[]
-|
-image::images/286.webp.png[]
-|
-image::images/287.webp.png[]
+^.^|
+image::images/284.webp.png[width="20"]
+^.^|
+image::images/285.webp.png[width="50"]
+^.^|
+image::images/286.webp.png[width="50"]
+^.^|
+image::images/287.webp.png[width="50"]
 
 h| 説明 | 記号の表示位置を取得する。
 |
@@ -119,9 +119,9 @@ footnoteblock:[fn_above_map]
 h| 2+^h| LOD1
 h| 取得例
 |
-image::images/288.webp.png[]
-|
-image::images/289.webp.png[]
+image::images/288.webp.png[width="200"]
+^.^|
+image::images/289.webp.png[width="250"]
 
 h| 説明 | 都市設備の上方からの正射影の外周を地表面からの一律の高さで押し出した立体を作成する。 +
 一律の高さは、都市設備の最高高さとする。
@@ -179,9 +179,9 @@ h| 説明 | 都市設備の上方からの正射影の外周を地表面から�
 h| 2+^h| LOD2
 h| 取得例
 |
-image::images/290.webp.png[]
+image::images/290.webp.png[width="200"]
 |
-image::images/291.webp.png[]
+image::images/291.webp.png[width="200"]
 
 h| 説明 | 都市設備の主要な部分について、上方から見た外周の形状が変化する高さでの各外周を取得し、それぞれの外周の頂点をつないだ立体を作成する。
 |
@@ -234,12 +234,12 @@ h| 説明 | 都市設備の主要な部分について、上方から見た外�
 |===
 h| 2+^h| LOD3.0 ^h| LOD3.1
 h| 取得例
+^.^|
+image::images/292.webp.png[width="150"]
 |
-image::images/292.webp.png[]
+image::images/293.webp.png[width="150"]
 |
-image::images/293.webp.png[]
-|
-image::images/294.webp.png[]
+image::images/294.webp.png[width="150"]
 
 h| 説明
 | 都市設備の外周を取得する。 +
@@ -381,7 +381,7 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="City
 
 lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="CityFurnitureDetailAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
-===== 別表：uro:facilityTypeの定義域
+別表：uro:facilityTypeの定義域
 
 [cols="1a,4a"]
 |===
@@ -418,7 +418,7 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="City
 <<nilim_kiban_dps>>
 
 [.source]
-<<gsi_ops,annex=7,付録７ 公共測量標準図式>>
+<<gsi_ops,付録７ 公共測量標準図式>>
 
 
 ====== uro:KeyValuePairAttribute
@@ -466,27 +466,27 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Publ
 
 ====== CityFurniture_class.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/CityFurniture_class.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/CityFurniture_class.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<citygml_20,annex="C.4">>
 
 ====== CityFurniture_function.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/CityFurniture_function.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/CityFurniture_function.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<nilim_kiban_dps>>
 
 [.source]
-<<gsi_ops,annex=7,付録７ 公共測量標準図式>>
+<<gsi_ops,付録７ 公共測量標準図式>>
 
 [[toc4_14_04_02]]
 ===== Urban Object（i-UR）
 
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -500,7 +500,7 @@ lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_geometrySrcDesc.xm
 
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -514,13 +514,13 @@ lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_thematicSrcDesc.xm
 
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== DataQualityAttribute_lod1HeightType.xml
 
 // TODO: This table cannot be recreated because some values are marked "（使用不可）".
 
-lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_lod1HeightType.xml[template="gml_dict_template.liquid",context=dict]
 
 // | （使用不可）7 | 建築確認申請書類等に記載された「建築物の高さ」
 // | （使用不可）8 | 都市計画基礎調査（建物利用現況）の「高さ（m）」
@@ -533,11 +533,11 @@ lutaml_gml_dictionary::iur/codelists/3.1/DataQualityAttribute_lod1HeightType.xml
 
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 [.source]
 <<gsi_ops>>
@@ -548,9 +548,9 @@ lutaml_gml_dictionary::iur/codelists/3.1/PublicSurveyDataQualityAttribute_geomet
 
 ====== CityFurniture_lodType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/CityFurniture_lodType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/CityFurniture_lodType.xml[template="gml_dict_template.liquid",context=dict]
 
 ====== CityFurnitureDetailAttribute_facilityType.xml
 
-lutaml_gml_dictionary::iur/codelists/3.1/CityFurnitureDetailAttribute_facilityType.xml[template="gml_dict_template.liquid",context=dict]
+lutaml_gml_dictionary::iur/codelists/3.2/CityFurnitureDetailAttribute_facilityType.xml[template="gml_dict_template.liquid",context=dict]
 

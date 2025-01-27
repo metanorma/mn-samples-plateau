@@ -26,7 +26,7 @@ image::images/109.webp.png[]
 
 [[tab-A-2]]
 .コードリスト定義
-image::images/110.webp.png[]
+image::images/110.webp.png[width="200"]
 
 [[tocA_03_03]]
 ==== 建築物の拡張属性リスト
@@ -62,8 +62,8 @@ image::images/113.webp.png[]
 
 i-UR又はCityGMLに定義されていない地物属性や地物関連を、汎用属性（gen:_GenericAttribute）を用いて追加するために使用する様式を<<tab-A-6>>に示す。 +
 汎用属性セット（gen:GenericAttributeSet）を使用する場合には、 +
-<<tab-A-6>>に属性の型をgen:GenericAttributeSetとし、 +
-追加したい汎用属性セットの名称を示したうえで、<<tab-A-7>>を用いて汎用属性セットに含むべき汎用属性の組を示すこと。
+<<tab-A-6>>に属性の型をgen:GenericAttributeSetとし、追加したい汎用属性セットの名称を示したうえで、 +
+<<tab-A-7>>を用いて汎用属性セットに含むべき汎用属性の組を示すこと。
 
 [[tab-A-6]]
 .GenericAttributeによる地物属性/地物関連の追加
