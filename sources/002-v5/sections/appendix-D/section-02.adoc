@@ -12,7 +12,7 @@ CityGMLには、道路を記述するための地物型が用意されている�
 ====
 [%metadata]
 identifier:: /req/tran/1
-subject:: 3D都市モデル
+subject:: 妥当な交通（道路）オブジェクト
 description:: 道路の記述には、指定されたLODに対応する地物型及び空間属性を使用する。
 ====
 
@@ -193,7 +193,7 @@ LOD3において最も粗い「道路内の区分」では、道路を車道部�
 ====
 [%metadata]
 identifier:: /req/tran/2
-subject:: 3D都市モデル
+subject:: 妥当な交通（道路）オブジェクト
 description:: 道路の3D都市モデルには、LOD1又はLOD2の幾何オブジェクトを必ず含む。
 ====
 

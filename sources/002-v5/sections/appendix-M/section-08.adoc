@@ -10,7 +10,7 @@ tun:_BoundarySurfaceは、トンネル（tun:Tunnel）やトンネルの部分�
 ====
 [%metadata]
 identifier:: /req/tun/15
-subject:: 3D都市モデル
+subject:: 妥当なトンネルオブジェクト
 description:: tun:_BoundarySurfaceは、屋根面（tun:RoofSurface）、外壁面（tun:WallSurface）、底面（tun:GroundSurface）、外部床面（tun:OuterFloorSurface）、内壁面（tun:InteriorWallSurface）、天井面（tun:CeilingSurface）、床面（tun:FloorSurface）、閉鎖面（tun:ClosureSurface）のいずれかとなる。
 ====
 
@@ -31,7 +31,7 @@ image::images/360.webp.png[width="500"]
 ====
 [%metadata]
 identifier:: /req/tun/16
-subject:: 3D都市モデル
+subject:: 妥当なトンネルオブジェクト
 description:: 境界面の空間属性を構成する幾何オブジェクトは、トンネルの立体を構成する境界面として参照されなければならない。
 ====
 
@@ -48,7 +48,7 @@ tun:RoofSurfaceは、屋根面を記述するために使用する地物型で�
 ====
 [%metadata]
 identifier:: /req/tun/17
-subject:: 3D都市モデル
+subject:: 妥当なトンネルオブジェクト
 description:: 外壁面（tun:WallSurface）と屋根面（tun:RoofSurface）との区分が構造上難しい場合は、外壁面（tun:WallSurface）として取得することを基本とする。
 ====
 
@@ -86,7 +86,7 @@ tun:CeilingSurfaceは、トンネルの内部の天井面を記述するため�
 ====
 [%metadata]
 identifier:: /req/tun/18
-subject:: 3D都市モデル
+subject:: 妥当なトンネルオブジェクト
 description:: 内壁面（tun:InteriorWallSurface）と天井面（tun:CeilingSurface）との区分が構造上難しい場合は、内壁面（tun:InteriorWallSurface）として取得することを基本とする。
 ====
 

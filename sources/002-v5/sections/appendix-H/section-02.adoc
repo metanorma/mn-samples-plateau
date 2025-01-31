@@ -19,7 +19,7 @@ uro:Waterwayは、CityGML3.0において、新たに交通（Transportaiton）�
 ====
 [%metadata]
 identifier:: /req/wwy/1
-subject:: 3D都市モデル
+subject:: 妥当な交通（航路）オブジェクト
 description:: 航路の記述には、指定されたLODに対応する地物型及び空間属性を使用する。
 ====
 
@@ -73,7 +73,7 @@ uro:Waterwayの空間属性は、いずれのLODにおいても、同一のLOD�
 ====
 [%metadata]
 identifier:: /req/wwy/2
-subject:: 3D都市モデル
+subject:: 妥当な交通（航路）オブジェクト
 description:: 連続するuro:Waterwayの幾何オブジェクトは、同一のLODにおいて、その境界の座標を一致させなければならない。
 ====
 
@@ -91,7 +91,7 @@ description:: 連続するuro:Waterwayの幾何オブジェクトは、同一の
 ====
 [%metadata]
 identifier:: /req/wwy/3
-subject:: 3D都市モデル
+subject:: 妥当な交通（航路）オブジェクト
 description:: uro:Waterwayのオブジェクトは、以下に示す場所で区切る。
 part:: 二つ以上の航路が交わる部分
 ====
@@ -106,7 +106,7 @@ part:: 二つ以上の航路が交わる部分
 ====
 [%metadata]
 identifier:: /req/wwy/4
-subject:: 3D都市モデル
+subject:: 妥当な交通（航路）オブジェクト
 description:: LOD2におけるuro:Waterwayの空間属性は、これを構成するtran:TrafficAreaの空間属性の集まりと一致しなければならない。
 ====
 

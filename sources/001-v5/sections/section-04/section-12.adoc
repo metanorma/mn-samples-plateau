@@ -64,20 +64,20 @@ h| 説明 | 中央位置の点と方向を取得する。
 
 .3+|
 <| MultiCurve
-| トンネル footnoteblock:[fn_tunnel_2]
+<| トンネル footnoteblock:[fn_tunnel_2]
 |
 * 坑口部分の外周を取得する。
 * 高さは0とする。
 
 .3+|
-| MultiSurface
-| トンネル footnoteblock:[fn_tunnel_2]
+<| MultiSurface
+<| トンネル footnoteblock:[fn_tunnel_2]
 |
 * 坑口部分の外周を取得する（始終点座標一致）。
 * 高さは0とする。
 
-| MultiSurface
-| 延長5m以上の道路の雪覆い等
+<| MultiSurface
+<| 延長5m以上の道路の雪覆い等
 |
 * 外周を取得する（始終点座標一致）。
 * 高さは0とする。

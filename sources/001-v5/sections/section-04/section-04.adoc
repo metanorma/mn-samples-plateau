@@ -76,46 +76,46 @@ h| 説明 | 普通鉄道、地下鉄地上部、路面鉄道は、地図情報�
 .6+| LOD0
 .6+| ●
 .6+| Railway
-| GeometricComplex
-|
+<| GeometricComplex
+<|
 * 普通鉄道、地下鉄地上部、路面鉄道、モノレール、特殊鉄道、索道
 |
 * 中心線を取得する。
 * 高さは0とする。
 | ネットワークによる表現は、tran:lod0Networkを使用して記述する。トンネル内を含む。
 
-| MultiCurve
-|
+<| MultiCurve
+<|
 * 普通鉄道、路面鉄道、特殊鉄道地図情報レベル2500
 |
 * 中心線を取得する。
 * 高さは0とする。
 .5+| 公共測量標準図式による表現は、uro:DmGeometricAttributeのuro:lod0Geometryを使用する。
 
-| MultiCurve
-|
+<| MultiCurve
+<|
 * 普通鉄道、地下鉄地上部、路面鉄道、特殊鉄道、トンネル内の鉄道（普通鉄道、路面鉄道、特殊鉄道）
 * 地図情報レベル500及び1000
 |
 * レールを取得する。
 * 高さは0とする。
 
-| MultiCurve
-|
+<| MultiCurve
+<|
 * モノレール、索道
 |
 * 中心線を取得する。
 * 高さは0とする。
 
-| MultiCurve
-|
+<| MultiCurve
+<|
 * 建設中の鉄道
 |
 * 外周を取得する。
 * 高さは0とする。
 
-| MultiCurve
-|
+<| MultiCurve
+<|
 * トンネル内のモノレール
 * 地図情報レベル500及び1000
 |
@@ -189,15 +189,15 @@ h| 説明 | 索道の場合は、起点及び終点が同一となる索道の�
 * 高さは0とする。
 .3+|
 
-| MultiSurface
-|
+<| MultiSurface
+<|
 * モノレール
 |
 * 軌道桁の外周を取得する。
 * 高さは0とする。
 
-| MultiSurface
-|
+<| MultiSurface
+<|
 * 索道
 |
 * 起点及び終点が同一となる索道のケーブルに囲まれた範囲を面として取得する。
@@ -339,7 +339,7 @@ MultiSurfaceの集まりとして表現する。
 含むべき地物 h| 対応するCityGMLの地物型 h| LOD3.0 h| LOD3.1 h| LOD3.2
 
 2+| 鉄道 | Railway |  ● |  ● |  ●
-.5+| 交通領域 | 軌道中心線 | TrafficArea |  ● |  ● |  ●
+.5+| 交通領域 | 軌道中心線 <| TrafficArea |  ● |  ● |  ●
 | レール | TrafficArea | |  ● |  ●
 | レールに囲まれた範囲 | TrafficArea |  ● |  ● |  ●
 | 軌きょう | TrafficArea | | |  〇

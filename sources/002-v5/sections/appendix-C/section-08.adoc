@@ -15,7 +15,7 @@ bldg:BuildingInstallationの空間属性の型は、gml:_Geometryである。gml
 ====
 [%metadata]
 identifier:: /req/bldg/25
-subject:: 3D都市モデル
+subject:: 妥当な建築物オブジェクト
 description:: bldg:BuildingInstallationの空間属性の型には、gml:MultiSurfaceを使用することを原則とする。
 ====
 
@@ -27,7 +27,7 @@ description:: bldg:BuildingInstallationの空間属性の型には、gml:MultiSu
 ====
 [%metadata]
 identifier:: /req/bldg/26
-subject:: 3D都市モデル
+subject:: 妥当な建築物オブジェクト
 description:: bldg:BuildingInstallationの空間属性は、bldg:Building又はbldg:BuildingPartと接していなければならない。
 ====
 
@@ -40,7 +40,7 @@ bldg:BuildingInstallationも、その境界面をbldg:_BoundarySurfaceを用い�
 ====
 [%metadata]
 identifier:: /req/bldg/27
-subject:: 3D都市モデル
+subject:: 妥当な建築物オブジェクト
 description:: bldg:BuildingInstallationの境界面をbldg:_BoundarySurfaceを用いて記述する場合、bldg:BuildingInstallation の空間属性bldg:lod2Geomerty又はbldg:lod3Geomertyは、bldg:_BoundarySurfaceの空間属性を外部参照しなければならない。
 ====
 
@@ -58,7 +58,7 @@ image::images/174.webp.png[]
 ====
 [%metadata]
 identifier:: /req/bldg/28
-subject:: 3D都市モデル
+subject:: 妥当な建築物オブジェクト
 description:: bldg:BuildingInstallationの境界面が、bldg:Buildingの境界面を兼ねる場合、bldg:BuildingInstallationの境界面は、bldg:_BoundarySurfaceの下位型を用いて記述する。
 ====
 
@@ -76,7 +76,7 @@ bldg:BuildingInstallationは、建築物に付属する恒久的に設置され�
 ====
 [%metadata]
 identifier:: /req/bldg/29
-subject:: 3D都市モデル
+subject:: 妥当な建築物オブジェクト
 description:: bldg:BuildingInstallationは、bldg:functionによりその設備を区分する。
 ====
 
