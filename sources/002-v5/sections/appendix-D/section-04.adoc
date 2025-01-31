@@ -9,7 +9,7 @@ tran:TrafficAreaは、車道や歩道のように通行可能な領域（交通�
 ====
 [%metadata]
 identifier:: /req/tran/8
-subject:: 3D都市モデル
+subject:: 妥当な交通（道路）オブジェクト
 description:: LODに応じた交通領域の区分には、属性tran:functionを用いる。
 ====
 
@@ -221,7 +221,7 @@ h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.2/TrafficArea_f
 ====
 [%metadata]
 identifier:: /req/tran/9
-subject:: 3D都市モデル
+subject:: 妥当な交通（道路）オブジェクト
 description:: 同一のtran:Roadに含まれるtran:TrafficAreaの空間属性は、他のtran:TrafficAreaやtran:AuxiliaryTrafficAreaの空間属性と重なってはならない。 +
 また、同一のtran:Roadに含まれるtran:TrafficAreaの空間属性は、隣接するtran:TrafficAreaやtran:AuxiliaryTrafficAreaの空間属性と、境界線の座標が一致しなければならない。
 ====

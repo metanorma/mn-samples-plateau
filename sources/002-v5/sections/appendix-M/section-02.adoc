@@ -30,7 +30,7 @@ image::images/349.webp.png[]
 ====
 [%metadata]
 identifier:: /req/tun/1
-subject:: 3D都市モデル
+subject:: 妥当なトンネルオブジェクト
 description:: トンネルの記述には、指定されたLODに対応する地物型及び空間属性を使用する。
 ====
 
@@ -156,7 +156,7 @@ description:: トンネルの記述には、指定されたLODに対応する地
 ====
 [%metadata]
 identifier:: /req/tun/2
-subject:: 3D都市モデル
+subject:: 妥当なトンネルオブジェクト
 description:: トンネルのLOD0の形状は、トンネルモデル（LOD0）の定義に従う。
 ====
 
@@ -172,7 +172,7 @@ description:: トンネルのLOD0の形状は、トンネルモデル（LOD0）�
 ====
 [%metadata]
 identifier:: /req/tun/3
-subject:: 3D都市モデル
+subject:: 妥当なトンネルオブジェクト
 description:: トンネルのLOD1の形状は、トンネルモデル（LOD1）の定義に従う。
 ====
 
@@ -185,7 +185,7 @@ description:: トンネルのLOD1の形状は、トンネルモデル（LOD1）�
 ====
 [%metadata]
 identifier:: /req/tun/4
-subject:: 3D都市モデル
+subject:: 妥当なトンネルオブジェクト
 description:: tun:Tunnelのtun:lod1solidで示される立体（gml:solid）の上面及び下面は水平でなければならず、側面は垂直でなければならない。
 ====
 
@@ -222,7 +222,7 @@ h| 説明
 ====
 [%metadata]
 identifier:: /req/tun/5
-subject:: 3D都市モデル
+subject:: 妥当なトンネルオブジェクト
 description:: トンネルモデル（LOD1）の上面の高さは、以下のいずれかを原則とする。
 part:: 上面が航空測量によりから取得の場合、坑口（坑門）の最高高さ
 part:: 上面が可視の場合、上方からの外周の正射影に含まれる点群データの最高高さ
@@ -240,7 +240,7 @@ part:: 地下横断歩道の場合、出入口部の路面標高の最高高さ
 ====
 [%metadata]
 identifier:: /req/tun/6
-subject:: 3D都市モデル
+subject:: 妥当なトンネルオブジェクト
 description:: トンネルモデル（LOD1）の底面の高さは、以下のいずれかを原則とする。
 part:: トンネルの場合、トンネルの最低高さ
 part:: 地下横断歩道の場合、地下横断歩道の最低高さ
@@ -265,7 +265,7 @@ image::images/352.webp.png[]
 ====
 [%metadata]
 identifier:: /req/tun/7
-subject:: 3D都市モデル
+subject:: 妥当なトンネルオブジェクト
 description:: トンネルのLOD2の形状は、トンネルモデル（LOD2）の定義に従う。
 ====
 
@@ -300,7 +300,7 @@ image::images/353.webp.png[width="500"]
 ====
 [%metadata]
 identifier:: /req/tun/8
-subject:: 3D都市モデル
+subject:: 妥当なトンネルオブジェクト
 description:: トンネルモデル（LOD2）におけるトンネルの立体を構成する各境界面の区分が難しい場合は、tun:WallSurfaceに区分する。
 ====
 
@@ -316,7 +316,7 @@ description:: トンネルモデル（LOD2）におけるトンネルの立体�
 ====
 [%metadata]
 identifier:: /req/tun/9
-subject:: 3D都市モデル
+subject:: 妥当なトンネルオブジェクト
 description:: トンネルのLOD3の形状は、トンネルモデル（LOD3）の定義に従う。
 ====
 
@@ -352,7 +352,7 @@ image::images/355.webp.png[width="250"]
 ====
 [%metadata]
 identifier:: /req/tun/10
-subject:: 3D都市モデル
+subject:: 妥当なトンネルオブジェクト
 description:: トンネルのLOD4の形状は、トンネルモデル（LOD4.0）、トンネルモデル（LOD4.1）又はトンネルモデル（LOD4.2）の定義に従う。
 ====
 
