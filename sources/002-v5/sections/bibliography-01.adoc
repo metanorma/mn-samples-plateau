@@ -2,6 +2,34 @@
 [bibliography]
 == 参考文献
 
+// 20250201 rwp sync missing bib records from doc01
+
+* [[[nlftp,1]]]
+span:title[国土数値情報].
+span:organization[国土交通省 政策統括官付 地理空間情報課].
+span:date[2024].
+span:uri.citation[https://nlftp.mlit.go.jp].
+
+* [[[mlit_int_flood_guidelines,13]]]
+span:title[内水浸水想定区域図作成マニュアル（案）].
+span:organization[国土交通省 水管理・国土保全局 下水道部].
+span:date[2021-07].
+span:uri.citation[https://www.mlit.go.jp/river/shishin_guideline/pdf/naisui_manual.pdf]
+
+* [[[maff_reservoir_hazard_maps,18]]]
+span:title[ため池ハザードマップ作成の手引き].
+span:organization[農林水産省 農村振興局 防災課].
+span:date[2013-05].
+span:uri.citation[https://www.maff.go.jp/j/nousin/bousai/bousai_saigai/b_tameike/pdf/tameike_manual_1rev.pdf]
+
+* [[[real_estate_id_guidelines,1]]]
+span:title[不動産 ID ルールガイドライン].
+span:organization[国土交通省 不動産・建設経済局].
+span:date[2022-03-31]
+span:uri.citation[https://www.mlit.go.jp/tochi_fudousan_kensetsugyo/content/001594268.pdf]
+
+// above references were used in doc2 but missing in doc2 bib
+
 * [[[gsi_geospatial_dps_manual,1]]]
 span:title[地理空間データ製品仕様書作成マニュアル JPGIS 2014版].
 span:organization[国土交通省 国土地理院].
