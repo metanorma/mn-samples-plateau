@@ -105,7 +105,7 @@ footnoteblock:[fn_river_lod0]
 footnoteblock:[fn_lake_lod0]
 
 | MultiCurve
-|
+<|
 * 平水時において流水部の幅が0.5m以上1.0m未満の河川 footnoteblock:[fn_flowing_water_lod0]
 |
 * 流水部の中心線を取得する。
@@ -122,7 +122,7 @@ footnoteblock:[fn_flowing_water_lod0]
 |
 
 | MultiCurve
-|
+<|
 * 地図情報レベル500の場合は流水部の幅が2m以上、地図情報レベル1000の場合は流水部の幅が4m以上用水路 footnoteblock:[fn_irrigation_lod0]
 |
 * 界線を取得する。
@@ -140,7 +140,7 @@ footnoteblock:[fn_irrigation_lod0]
 footnoteblock:[fn_retrieval_lod0]
 
 | Point
-|
+<|
 * 地図情報レベル500及び1000における海岸線
 |
 * 記号表示位置を取得する。
@@ -148,7 +148,7 @@ footnoteblock:[fn_retrieval_lod0]
 | 標準図式の取得方法に従う。
 
 | MultiCurve
-|
+<|
 * 地図情報レベル500及び1000、かつ、河川、用水路等における地下の部分で、経路の明確なもの
 |
 * 地下水路縁線を取得する。
@@ -156,7 +156,7 @@ footnoteblock:[fn_retrieval_lod0]
 |
 
 | MultiCurve
-|
+<|
 * 地図情報レベル500及び1000における低位水涯線
 |
 * 界線を取得する。
