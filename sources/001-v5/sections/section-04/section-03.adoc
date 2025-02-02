@@ -60,7 +60,7 @@ h| 説明 | 左右両側の道路縁から等距離となる点をつないだ�
 * 道路ネットワークによる表現は、tran:lod0Networkを使用して記述する。
 * GeometricComplexの下位型であるCompositeCurveを使用する。
 
-| MultiCurve
+<| MultiCurve
 |
 * 地図情報レベル2500では幅員1m以上
 * 地図情報レベルでは幅員0.5m以上
@@ -285,7 +285,7 @@ image::images/073.webp.png[]
 .3+| 歩道部 | <| TrafficArea |  ● |  ● |  ● |  ● |  ●
 | 歩道部上の植栽 | AuxiliaryTrafficArea | | |  ● |  ● |  ●
 | 歩道、自転車歩行者道、自転車道 | TrafficArea | | | | |  〇
-.2+| 島 | | AuxiliaryTrafficArea |  ● |  ● |  ● |  ● |  ●
+.2+| 島 | <| AuxiliaryTrafficArea |  ● |  ● |  ● |  ● |  ●
 | 交通島、分離帯、植樹帯、路面電車停車所 | AuxiliaryTrafficArea | | | | |  〇
 
 |===

@@ -13,7 +13,7 @@ brid:BridgeRoomは、橋梁の内部空間の記述に使用する地物型で�
 ====
 [%metadata]
 identifier:: /req/brid/7
-subject:: 3D都市モデル
+subject:: 妥当な橋梁オブジェクト
 description:: brid:BridgeRoomのgml:Solidを構成する境界面のgml:Polygonは、以下のいずれかの地物型のLOD4幾何オブジェクトに含まれなければならない。
 part:: brid:boundedByによりこのbrid:BridgeRoomが参照する境界面（brid:_BoundarySurface）の下位型
 part:: 境界面に含まれる開口部（brid:_Opening）

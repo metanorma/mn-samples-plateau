@@ -33,7 +33,7 @@ image::images/418.webp.png[]
 ====
 [%metadata]
 identifier:: /req/frn/1
-subject:: 3D都市モデル
+subject:: 妥当な都市設備オブジェクト
 description:: 都市設備の記述には、指定されたLODに対応する地物型及び空間属性を使用する。
 ====
 
@@ -83,7 +83,7 @@ uro:lod0Geometry、frn:lod1Geometry、frn:lod2Geometry及びfrn:lod3Geometryは�
 ====
 [%metadata]
 identifier:: /req/frn/2
-subject:: 3D都市モデル
+subject:: 妥当な都市設備オブジェクト
 description:: 都市設備のLOD0の形状は、都市設備モデル（LOD0）の定義に従う。
 ====
 
@@ -99,7 +99,7 @@ description:: 都市設備のLOD0の形状は、都市設備モデル（LOD0）�
 ====
 [%metadata]
 identifier:: /req/frn/3
-subject:: 3D都市モデル
+subject:: 妥当な都市設備オブジェクト
 description:: 都市設備のLOD1の形状は、都市設備モデル（LOD1）の定義に従う。
 ====
 
@@ -115,7 +115,7 @@ description:: 都市設備のLOD1の形状は、都市設備モデル（LOD1）�
 ====
 [%metadata]
 identifier:: /req/frn/4
-subject:: 3D都市モデル
+subject:: 妥当な都市設備オブジェクト
 description:: 都市設備のLOD2の形状は、都市設備モデル（LOD2）の定義に従う。
 ====
 
@@ -136,7 +136,7 @@ image::images/419.webp.png[width="150"]
 ====
 [%metadata]
 identifier:: /req/frn/5
-subject:: 3D都市モデル
+subject:: 妥当な都市設備オブジェクト
 description:: 都市設備のLOD3の形状は、都市設備モデル（LOD3.0）又は都市設備モデル（LOD3.1）の定義に従う。
 ====
 
@@ -158,7 +158,7 @@ frn:functionは、都市設備の種類を区分する属性である。標準�
 ====
 [%metadata]
 identifier:: /req/frn/6
-subject:: 3D都市モデル
+subject:: 妥当な都市設備オブジェクト
 description:: 標準製品仕様書の定義域には含まれていない都市設備は、属性frn:functionの値を「その他（9000）」とし、属性uro:facilityTypeにより都市設備の種類を特定する名称を記述する。
 ====
 

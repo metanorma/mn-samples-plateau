@@ -10,7 +10,7 @@ brid:_BoundarySurfaceは、橋梁（brid:Bridge）や橋梁部分（brid:BridgeP
 ====
 [%metadata]
 identifier:: /req/brid/11
-subject:: 3D都市モデル
+subject:: 妥当な橋梁オブジェクト
 description:: brid:_BoundarySurfaceは、屋根面（brid:RoofSurface）、外壁面（brid:WallSurface）、底面（brid:GroundSurface）、外部床面（brid:OuterFloorSurface）外部天井面（brid:OuterCeillingSurface）、内壁面（brid:InteriorWallSurface）、天井面（brid:CeilingSurface）、床面（brid:FloorSurface）、閉鎖面（brid:ClosureSurface）のいずれかとなる。
 ====
 
@@ -22,7 +22,7 @@ CityGMLでは、橋梁の境界面としてbrid:_BoundarySurfaceの下位型と�
 ====
 [%metadata]
 identifier:: /req/brid/12
-subject:: 3D都市モデル
+subject:: 妥当な橋梁オブジェクト
 description:: 橋梁及び橋梁部分の立体又は面を構成する境界面は、境界面の空間属性を構成する幾何オブジェクトを参照しなければならない。
 ====
 
