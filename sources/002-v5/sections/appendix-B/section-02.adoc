@@ -9,7 +9,7 @@
 ====
 [%metadata]
 identifier:: /req/gm/1
-subject:: 妥当な幾何オブジェクト
+subject:: 妥当な幾何オブジェクトの要件
 description:: データ製品に含まれる幾何オブジェクトの3次元座標の空間参照系は、「日本測地系2011における経緯度座標系と東京湾平均海面を基準とする標高の複合座標参照系」とする。
 ====
 
@@ -22,7 +22,7 @@ description:: データ製品に含まれる幾何オブジェクトの3次元�
 ====
 [%metadata]
 identifier:: /req/gm/2
-subject:: 妥当な幾何オブジェクト
+subject:: 妥当な幾何オブジェクトの要件
 description:: データ製品に適用する空間参照系は、データ集合（core:CityModel）の範囲（gml:boundedBy）を示すgml:EnvelopeのsrsName属性に記述する。
 ====
 

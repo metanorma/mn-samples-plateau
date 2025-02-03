@@ -16,7 +16,7 @@ image::images/428.webp.png[width="300"]
 ====
 [%metadata]
 identifier:: /req/unf/7
-subject:: 妥当な地下埋設物オブジェクト
+subject:: 妥当な地下埋設物データセットの要件
 description:: 繰り返しオブジェクトは空間参照系が平面直角座標系の場合のみ使用できる。
 ====
 
@@ -31,7 +31,7 @@ description:: 繰り返しオブジェクトは空間参照系が平面直角座
 ====
 [%metadata]
 identifier:: /req/unf/8
-subject:: 妥当な地下埋設物オブジェクト
+subject:: 妥当な地下埋設物データセットの要件
 description:: プロトタイプモデルの座標及び変換行列の単位はメートル（m）とする。
 ====
 
@@ -47,7 +47,7 @@ description:: プロトタイプモデルの座標及び変換行列の単位は
 ====
 [%metadata]
 identifier:: /req/unf/9
-subject:: 妥当な地下埋設物オブジェクト
+subject:: 妥当な地下埋設物データセットの要件
 description:: 外部形式ファイルで記述されたプロトタイプモデルを参照する場合は、地下埋設物モデルを格納するunfフォルダにサブフォルダ（サブフォルダ名称：prototype）を格納し、相対パスにより参照する。
 ====
 
@@ -60,7 +60,7 @@ GML形式ファイルで記述された幾何オブジェクトをプロトタ�
 ====
 [%metadata]
 identifier:: /req/unf/10
-subject:: 妥当な地下埋設物オブジェクト
+subject:: 妥当な地下埋設物データセットの要件
 description:: GML形式でプロトタイプモデルを記述する場合は、3D都市モデルに含まれる都市オブジェクトの幾何オブジェクトを作成し、これをプロトタイプモデルとして使用する。
 ====
 

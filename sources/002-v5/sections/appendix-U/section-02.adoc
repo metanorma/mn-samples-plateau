@@ -12,7 +12,7 @@ i-URには、区域を記述するための地物型が用意されている。�
 ====
 [%metadata]
 identifier:: /req/area/1
-subject:: 妥当な区域オブジェクト
+subject:: 妥当な区域データセットの要件
 description:: 区域の記述には、指定されたLODに対応する地物型及び空間属性を使用する。
 ====
 
@@ -76,7 +76,7 @@ h| h| h| 地物型 h| 空間属性の型 h| 取得基準 h| 取得方法 h| 補�
 ====
 [%metadata]
 identifier:: /req/area/2
-subject:: 妥当な区域オブジェクト
+subject:: 妥当な区域データセットの要件
 description:: urf:lod1MultiSurfaceで示される面は、区域の境界により囲まれた、高さをもたない面とする。
 ====
 
@@ -93,7 +93,7 @@ urf:Zoneは、法令により定められた区域を定義する汎用的な地
 ====
 [%metadata]
 identifier:: /req/area/3
-subject:: 妥当な区域オブジェクト
+subject:: 妥当な区域データセットの要件
 description:: urf:Zoneの種類は、属性urf:functionにより識別できなければならない。
 ====
 
@@ -106,7 +106,7 @@ description:: urf:Zoneの種類は、属性urf:functionにより識別できな�
 ====
 [%metadata]
 identifier:: /req/area/4
-subject:: 妥当な区域オブジェクト
+subject:: 妥当な区域データセットの要件
 description:: urf:Zoneを継承する地物型が存在する場合には、urf:Zoneを継承した地物型を使用して記述しなければならない。
 ====
 
