@@ -18,3 +18,5 @@ gem "metanorma-cli"
 # gem "metanorma-plugin-lutaml", path: "~/src/metanorma/metanorma-plugin-lutaml"
 # gem "metanorma-standoc", path: "~/src/metanorma/metanorma-standoc"
 # gem "lutaml", path: "~/src/lutaml/lutaml"
+
+gem "xmi", git: "https://github.com/lutaml/xmi", ref: "v0.3.11"
