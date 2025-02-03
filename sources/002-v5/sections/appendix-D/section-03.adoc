@@ -14,7 +14,7 @@ tran:Roadの空間属性は、いずれのLODにおいても、同一のLODに�
 ====
 [%metadata]
 identifier:: /req/tran/3
-subject:: 妥当な交通（道路）オブジェクト
+subject:: 妥当な交通（道路）データセットの要件
 description:: 連続するtran:Roadの幾何オブジェクトは、同一のLODにおいて、その境界の座標を一致させなければならない。
 ====
 
@@ -30,7 +30,7 @@ LOD0において、道路の形状の線をネットワーク（道路中心線�
 ====
 [%metadata]
 identifier:: /req/tran/4
-subject:: 妥当な交通（道路）オブジェクト
+subject:: 妥当な交通（道路）データセットの要件
 description:: LOD0におけるtran:Roadの空間属性に含まれるgml:LineStringは互いに交差してはならない。
 ====
 
@@ -45,7 +45,7 @@ description:: LOD0におけるtran:Roadの空間属性に含まれるgml:LineStr
 ====
 [%metadata]
 identifier:: /req/tran/5
-subject:: 妥当な交通（道路）オブジェクト
+subject:: 妥当な交通（道路）データセットの要件
 description:: tran:Roadのオブジェクトは、以下に示す場所で区切る。
 part:: 交差部（四差路、多差路及び三差路）
 part:: 道路構造の変化点（uro:RoadStructureAttribute）
@@ -101,7 +101,7 @@ image::images/211.webp.png[width="500"]
 ====
 [%metadata]
 identifier:: /req/tran/6
-subject:: 妥当な交通（道路）オブジェクト
+subject:: 妥当な交通（道路）データセットの要件
 description:: LOD2におけるtran:Roadの空間属性は、これを構成するtran:TrafficArea及びtran:AuxiliaryTrafficAreaの空間属性の集まりと一致しなければならない。
 ====
 
@@ -115,7 +115,7 @@ description:: LOD2におけるtran:Roadの空間属性は、これを構成す�
 ====
 [%metadata]
 identifier:: /req/tran/7
-subject:: 妥当な交通（道路）オブジェクト
+subject:: 妥当な交通（道路）データセットの要件
 description:: LOD3におけるtran:Roadの空間属性は、これを構成するtran:TrafficArea及びtran:AuxiliaryTrafficAreaの空間属性の集まりと一致しなければならない。
 ====
 

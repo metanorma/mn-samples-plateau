@@ -37,7 +37,7 @@ image::images/230.webp.png[]
 ====
 [%metadata]
 identifier:: /req/rwy/1
-subject:: 妥当な交通（鉄道）オブジェクト
+subject:: 妥当な交通（鉄道）データセットの要件
 description:: 鉄道の記述には、指定されたLODに対応する地物型及び空間属性を使用する。
 ====
 
@@ -86,7 +86,7 @@ LOD0からLOD2までは、軌道中心線は都市計画基本図からの加工
 ====
 [%metadata]
 identifier:: /req/rwy/2
-subject:: 妥当な交通（鉄道）オブジェクト
+subject:: 妥当な交通（鉄道）データセットの要件
 description:: 交通（鉄道）オブジェクトは、以下に示す場所で区切る。
 part:: 軌道が分岐又は合流する地点
 part:: 鉄道構造の変化点（トンネル、橋梁）
@@ -105,7 +105,7 @@ part:: 位置正確度や取得方法が変わる場所
 ====
 [%metadata]
 identifier:: /req/rwy/3
-subject:: 妥当な交通（鉄道）オブジェクト
+subject:: 妥当な交通（鉄道）データセットの要件
 description:: 鉄道のLOD0の形状は、交通（鉄道）モデル（LOD0）の定義に従う。
 ====
 
@@ -122,7 +122,7 @@ LOD0は鉄道を線として表現するが、このときの線は、ネット�
 ====
 [%metadata]
 identifier:: /req/rwy/4
-subject:: 妥当な交通（鉄道）オブジェクト
+subject:: 妥当な交通（鉄道）データセットの要件
 description:: 鉄道のLOD1の形状は、交通（鉄道）モデル（LOD1）の定義に従う。
 ====
 
@@ -136,7 +136,7 @@ description:: 鉄道のLOD1の形状は、交通（鉄道）モデル（LOD1）�
 ====
 [%metadata]
 identifier:: /req/rwy/5
-subject:: 妥当な交通（鉄道）オブジェクト
+subject:: 妥当な交通（鉄道）データセットの要件
 description:: LOD2におけるtran:Railwayの空間属性は、これを構成するtran:TrafficAreaの空間属性の集まりと一致しなければならない。
 ====
 
@@ -148,7 +148,7 @@ description:: LOD2におけるtran:Railwayの空間属性は、これを構成�
 ====
 [%metadata]
 identifier:: /req/rwy/6
-subject:: 妥当な交通（鉄道）オブジェクト
+subject:: 妥当な交通（鉄道）データセットの要件
 description:: 鉄道のLOD2の形状は、交通（鉄道）モデル（LOD2）の定義に従う。
 ====
 
@@ -162,7 +162,7 @@ description:: 鉄道のLOD2の形状は、交通（鉄道）モデル（LOD2）�
 ====
 [%metadata]
 identifier:: /req/rwy/7
-subject:: 妥当な交通（鉄道）オブジェクト
+subject:: 妥当な交通（鉄道）データセットの要件
 description:: LOD3におけるtran:Railwayの空間属性は、これを構成するtran:TrafficArea及びtran:AuxiliaryTrafficAreaの空間属性の集まりと一致しなければならない。
 ====
 
@@ -174,7 +174,7 @@ description:: LOD3におけるtran:Railwayの空間属性は、これを構成�
 ====
 [%metadata]
 identifier:: /req/rwy/8
-subject:: 妥当な交通（鉄道）オブジェクト
+subject:: 妥当な交通（鉄道）データセットの要件
 description:: 鉄道のLOD3の形状は、交通（鉄道）モデル（LOD3）の定義に従う。
 ====
 
