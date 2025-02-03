@@ -17,7 +17,7 @@ bldg:Buildingは、建築物の記述に使用する地物型である。
 ====
 [%metadata]
 identifier:: /req/bldg/3
-subject:: 妥当な建築物オブジェクト
+subject:: 妥当な建築物データセットの要件
 description:: 建築物のLOD0の形状は、建築物モデル（LOD0）の定義に従う。
 ====
 
@@ -32,7 +32,7 @@ description:: 建築物のLOD0の形状は、建築物モデル（LOD0）の定�
 ====
 [%metadata]
 identifier:: /req/bldg/4
-subject:: 妥当な建築物オブジェクト
+subject:: 妥当な建築物データセットの要件
 description:: 建築物のLOD1の形状は、建築物モデル（LOD1）の定義に従う。
 ====
 
@@ -49,7 +49,7 @@ image::images/127.webp.png[width="400"]
 ====
 [%metadata]
 identifier:: /req/bldg/5
-subject:: 妥当な建築物オブジェクト
+subject:: 妥当な建築物データセットの要件
 description:: LOD1で建築物を記述する場合には、bldg:lod1Solidで示される幾何形状に加え、LOD0の幾何形状（bldg:lod0RoofEdge又はbldg:lod0FootPrint）も、空間属性としてもたなければならない。
 ====
 
@@ -70,7 +70,7 @@ image::images/128.webp.png[width="300"]
 ====
 [%metadata]
 identifier:: /req/bldg/6
-subject:: 妥当な建築物オブジェクト
+subject:: 妥当な建築物データセットの要件
 description:: LOD1で建築物を記述する場合には、これに使用するLOD0の幾何形状（bldg:lod0RoofEdge又はbldg:lod0FootPrint）が、妥当な幾何オブジェクトでなければならない。
 ====
 
@@ -81,7 +81,7 @@ LOD1の下面の高さは以下の要件を満たさなければならない。
 ====
 [%metadata]
 identifier:: /req/bldg/7
-subject:: 妥当な建築物オブジェクト
+subject:: 妥当な建築物データセットの要件
 description:: LOD1で作成する建築物の下面の高さは、以下のいずれかとする。
 part:: 建築物の下面の絶対標高
 part:: LOD0で作成する水平図形と地形モデルとの交線の最下部点の高さ（最も低い標高）
@@ -109,7 +109,7 @@ LOD1では建築物の上面及び下面は水平となる。つまり、建築�
 ====
 [%metadata]
 identifier:: /req/bldg/8
-subject:: 妥当な建築物オブジェクト
+subject:: 妥当な建築物データセットの要件
 description:: LOD1で作成する建築物の上面の高さには、「LOD0の平面の内側に含まれる点群データの中央値」を使用することを原則とする。
 ====
 
@@ -144,7 +144,7 @@ description:: LOD1で作成する建築物の上面の高さには、「LOD0の�
 ====
 [%metadata]
 identifier:: /req/bldg/9
-subject:: 妥当な建築物オブジェクト
+subject:: 妥当な建築物データセットの要件
 description:: LOD1で作成する建築物の下面の高さを取得する原典資料と上面の高さを取得する原典資料が異なる場合には、必要に応じて累積誤差を軽減する策をとる。
 ====
 
@@ -165,7 +165,7 @@ image::images/130.webp.png[]
 ====
 [%metadata]
 identifier:: /req/bldg/10
-subject:: 妥当な建築物オブジェクト
+subject:: 妥当な建築物データセットの要件
 description:: 建築物のLOD2の形状は、建築物モデル（LOD2）の定義に従う。
 ====
 
@@ -272,7 +272,7 @@ image::images/136.webp.png[]
 ====
 [%metadata]
 identifier:: /req/bldg/11
-subject:: 妥当な建築物オブジェクト
+subject:: 妥当な建築物データセットの要件
 description:: bldg:lod2Solidで示される立体は、その境界面として、建築物の境界となる地物型（bldg:_BoundarySurface）の空間属性を外部参照しなければならない。
 ====
 
@@ -295,7 +295,7 @@ image::images/137.webp.png[]
 ====
 [%metadata]
 identifier:: /req/bldg/12
-subject:: 妥当な建築物オブジェクト
+subject:: 妥当な建築物データセットの要件
 description:: 建築物のLOD3の形状は、建築物モデル（LOD3）の定義に従う。
 ====
 
@@ -480,7 +480,7 @@ LOD3の建築物も、LOD2と同様に、建築物は、屋根、外壁等を境
 ====
 [%metadata]
 identifier:: /req/bldg/13
-subject:: 妥当な建築物オブジェクト
+subject:: 妥当な建築物データセットの要件
 description:: bldg:lod3Solidで示される立体は、その境界面として、建築物の境界となる地物型（bldg:_BoundarySurface）の空間属性を外部参照しなければならない。
 ====
 
@@ -511,7 +511,7 @@ image::images/145.webp.png[width="600"]
 ====
 [%metadata]
 identifier:: /req/bldg/14
-subject:: 妥当な建築物オブジェクト
+subject:: 妥当な建築物データセットの要件
 description:: 建築物のLOD4の形状は、建築物モデル（LOD4）の定義に従う。
 ====
 
@@ -736,7 +736,7 @@ uro:BuildingIDAttributeには五つの属性がある。このうち、uro:build
 ====
 [%metadata]
 identifier:: /req/bldg/15
-subject:: 妥当な建築物オブジェクト
+subject:: 妥当な建築物データセットの要件
 description:: 全ての建築物オブジェクトは、uro:buildingID及びuro:cityをもたなければならない。
 ====
 
@@ -897,7 +897,7 @@ LOD1において、建築物に一律の高さを与える場合、与えられ�
 ====
 [%metadata]
 identifier:: /req/bldg/16
-subject:: 妥当な建築物オブジェクト
+subject:: 妥当な建築物データセットの要件
 description:: 建築物の主題属性として、LOD1で作成する建築物の上面の高さの根拠を付与する。
 ====
 
@@ -911,7 +911,7 @@ description:: 建築物の主題属性として、LOD1で作成する建築物�
 ====
 [%metadata]
 identifier:: /req/bldg/17
-subject:: 妥当な建築物オブジェクト
+subject:: 妥当な建築物データセットの要件
 description:: 建築物に高さを属性として追加する場合には、gen:measureAttributeを使用する。
 ====
 

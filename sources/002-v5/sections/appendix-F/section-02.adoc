@@ -27,7 +27,7 @@ LOD0は徒歩道を線として表現するが、このときの線は、ネッ�
 ====
 [%metadata]
 identifier:: /req/trk/1
-subject:: 妥当な交通（徒歩道）オブジェクト
+subject:: 妥当な交通（徒歩道）データセットの要件
 description:: 徒歩道の記述には、指定されたLODに対応する地物型及び空間属性を使用する。
 ====
 
@@ -71,7 +71,7 @@ tran:Trackの空間属性は道路と同様の定義となっている。いず�
 ====
 [%metadata]
 identifier:: /req/trk/2
-subject:: 妥当な交通（徒歩道）オブジェクト
+subject:: 妥当な交通（徒歩道）データセットの要件
 description::
 連続するtran:Trackの幾何オブジェクトは、同一のLODにおいて、その境界の座標を一致させなければならない。
 +
@@ -89,7 +89,7 @@ LOD0においてネットワーク（徒歩道中心線）として表現する�
 ====
 [%metadata]
 identifier:: /req/trk/3
-subject:: 妥当な交通（徒歩道）オブジェクト
+subject:: 妥当な交通（徒歩道）データセットの要件
 description:: LOD0におけるtran:Trackの空間属性に含まれるgml:LineStringは互いに交差してはならない。
 ====
 
@@ -105,7 +105,7 @@ description:: LOD0におけるtran:Trackの空間属性に含まれるgml:LineSt
 ====
 [%metadata]
 identifier:: /req/trk/4
-subject:: 妥当な交通（徒歩道）オブジェクト
+subject:: 妥当な交通（徒歩道）データセットの要件
 description:: 徒歩道のLOD1の形状は、交通（徒歩道）モデル（LOD1）の定義に従う。
 ====
 
@@ -117,7 +117,7 @@ tran:Trackの境界は、徒歩道の横断方向は徒歩道縁となる。徒�
 ====
 [%metadata]
 identifier:: /req/trk/5
-subject:: 妥当な交通（徒歩道）オブジェクト
+subject:: 妥当な交通（徒歩道）データセットの要件
 description:: tran:Trackのオブジェクトは、以下に示す場所で区切る。
 part:: 交差部（四差路、多差路及び三差路）
 part:: 道路構造の変化点
@@ -136,7 +136,7 @@ part:: 位置正確度や取得方法が変わる場所
 ====
 [%metadata]
 identifier:: /req/trk/6
-subject:: 妥当な交通（徒歩道）オブジェクト
+subject:: 妥当な交通（徒歩道）データセットの要件
 description:: LOD2におけるtran:Trackの空間属性は、これを構成するtran:TrafficArea及びtran:AuxiliaryTrafficAreaの空間属性の集まりと一致しなければならない。
 ====
 
@@ -148,7 +148,7 @@ description:: LOD2におけるtran:Trackの空間属性は、これを構成す�
 ====
 [%metadata]
 identifier:: /req/trk/7
-subject:: 妥当な交通（徒歩道）オブジェクト
+subject:: 妥当な交通（徒歩道）データセットの要件
 description:: 徒歩道のLOD2の形状は、交通（徒歩道）モデル（LOD2）の定義に従う。
 ====
 
@@ -162,7 +162,7 @@ description:: 徒歩道のLOD2の形状は、交通（徒歩道）モデル（LO
 ====
 [%metadata]
 identifier:: /req/trk/8
-subject:: 妥当な交通（徒歩道）オブジェクト
+subject:: 妥当な交通（徒歩道）データセットの要件
 description:: LOD3におけるtran:Trackの空間属性は、これを構成するtran:TrafficArea及びtran:AuxiliaryTrafficAreaの空間属性の集まりと一致しなければならない。
 ====
 
@@ -174,7 +174,7 @@ description:: LOD3におけるtran:Trackの空間属性は、これを構成す�
 ====
 [%metadata]
 identifier:: /req/trk/9
-subject:: 妥当な交通（徒歩道）オブジェクト
+subject:: 妥当な交通（徒歩道）データセットの要件
 description:: 徒歩道のLOD3の形状は、交通（徒歩道）モデル（LOD3）の定義に従う。
 ====
 

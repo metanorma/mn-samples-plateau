@@ -14,7 +14,7 @@
 ====
 [%metadata]
 identifier:: /req/urf/1
-subject:: 妥当な都市計画決定情報オブジェクト
+subject:: 妥当な都市計画決定情報データセットの要件
 description:: 都市計画決定情報に適用されるLODは、LOD1とする。
 ====
 
@@ -45,7 +45,7 @@ description:: 都市計画決定情報に適用されるLODは、LOD1とする�
 ====
 [%metadata]
 identifier:: /req/urf/2
-subject:: 妥当な都市計画決定情報オブジェクト
+subject:: 妥当な都市計画決定情報データセットの要件
 description:: 都市計画の区域は、urf:Zoneを継承する地物型を用いて記述する。
 ====
 
@@ -73,7 +73,7 @@ urf:Zoneは具象の地物型であり、これを使用して都市オブジェ
 ====
 [%metadata]
 identifier:: /att/urf/1
-subject:: 妥当な都市計画決定情報オブジェクト
+subject:: 妥当な都市計画決定情報データセットの要件
 class:: 留意事項
 [statement]
 --
@@ -100,7 +100,7 @@ class:: 留意事項
 ====
 [%metadata]
 identifier:: /req/urf/3
-subject:: 妥当な都市計画決定情報オブジェクト
+subject:: 妥当な都市計画決定情報データセットの要件
 description:: この都市計画の効力が生じる日付を属性urf:validFromに記述し、そのときの都市計画の種類（新規又は変更）を属性urf:validFromTypeに記述する。
 ====
 
@@ -117,7 +117,7 @@ image::images/296.webp.png[width="500"]
 ====
 [%metadata]
 identifier:: /att/urf/2
-subject:: 妥当な都市計画決定情報オブジェクト
+subject:: 妥当な都市計画決定情報データセットの要件
 class:: 留意事項
 [statement]
 --
@@ -136,7 +136,7 @@ class:: 留意事項
 ====
 [%metadata]
 identifier:: /req/urf/4
-subject:: 妥当な都市計画決定情報オブジェクト
+subject:: 妥当な都市計画決定情報データセットの要件
 description:: 都市施設ごとに構造化されたデータ型は、都市施設の属性urf:functionと一致していなければならない。
 ====
 
@@ -170,7 +170,7 @@ description:: 都市施設ごとに構造化されたデータ型は、都市施
 ====
 [%metadata]
 identifier:: /req/urf/5
-subject:: 妥当な都市計画決定情報オブジェクト
+subject:: 妥当な都市計画決定情報データセットの要件
 description:: 階層構造をもつ地物の組み合わせでは、部品となる地物が全体となる地物の子要素として符号化しなければならない。
 ====
 

@@ -9,7 +9,7 @@ tran:AuxiliaryTrafficAreaは、植樹帯や分離帯のように交通領域の�
 ====
 [%metadata]
 identifier:: /req/tran/10
-subject:: 妥当な交通（道路）オブジェクト
+subject:: 妥当な交通（道路）データセットの要件
 description:: LODに応じた交通補助領域の区分には、属性tran:functionを用いる。
 ====
 
@@ -76,7 +76,7 @@ tran:AuxiliaryTrafficAreaも、道路面を構成する要素であるため、t
 ====
 [%metadata]
 identifier:: /req/tran/11
-subject:: 妥当な交通（道路）オブジェクト
+subject:: 妥当な交通（道路）データセットの要件
 description:: 同一のtran:Roadに含まれるtran:AuxiliaryTrafficAreaの空間属性は、他のtran:TrafficAreaやtran:AuxiliaryTrafficAreaの空間属性と重なってはならない。 +
 また、同一のtran:Roadに含まれるtran:AuxiliaryTrafficAreaの空間属性は、隣接するtran:TrafficAreaやtran:AuxiliaryTrafficAreaの空間属性と、境界線を共有しなければならない。
 ====
