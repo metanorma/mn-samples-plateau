@@ -10,7 +10,7 @@ bldg:_BoundarySurfaceは、建築物（bldg:Building）や建築物の部分（b
 ====
 [%metadata]
 identifier:: /req/bldg/21
-subject:: 妥当な建築物オブジェクト
+subject:: 妥当な建築物データセットの要件
 description:: bldg:_BoundarySurfaceは、屋根面（bldg:RoofSurface）、外壁面（bldg:WallSurface）、底面（bldg:GroundSurface）、外部天井面（bldg:OuterCeilingSurface）、外部床面（bldg:OuterFloorSurface）、閉鎖面（bldg:ClosureSurface）、天井面（bldg:CeilingSurface）、床面（bldg:FloorSurface）及び内壁面（bldg:InteriorSurface）のいずれかとなる。
 ====
 
@@ -50,7 +50,7 @@ image::images/157.webp.png[]
 ====
 [%metadata]
 identifier:: /req/bldg/22
-subject:: 妥当な建築物オブジェクト
+subject:: 妥当な建築物データセットの要件
 description:: 境界面の空間属性を構成する幾何オブジェクトは、建築物の立体を構成する境界面として参照されなければならない。
 ====
 
@@ -73,7 +73,7 @@ bldg:WallSurfaceは、外壁面を記述するために使用する地物型で�
 ====
 [%metadata]
 identifier:: /req/bldg/23
-subject:: 妥当な建築物オブジェクト
+subject:: 妥当な建築物データセットの要件
 description:: 方位が異なっていたり、構造上分割されたりする外壁面は、それぞれをbldg:WallSurfaceとして分けて記述する。
 ====
 

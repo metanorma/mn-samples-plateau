@@ -28,7 +28,7 @@ LOD0は広場を線として表現するが、このときの線は、ネット�
 ====
 [%metadata]
 identifier:: /req/squr/1
-subject:: 妥当な交通（広場）オブジェクト
+subject:: 妥当な交通（広場）データセットの要件
 description:: 広場の記述には、指定されたLODに対応する地物型及び空間属性を使用する。
 ====
 
@@ -73,7 +73,7 @@ tran:Squareの空間属性は、いずれのLODにおいても、同一のLODに
 ====
 [%metadata]
 identifier:: /req/squr/2
-subject:: 妥当な交通（広場）オブジェクト
+subject:: 妥当な交通（広場）データセットの要件
 description:: 連続するtran:Squareの幾何オブジェクトは、同一のLODにおいて、その境界の座標を一致させなければならない。
 ====
 
@@ -84,7 +84,7 @@ description:: 連続するtran:Squareの幾何オブジェクトは、同一のL
 ====
 [%metadata]
 identifier:: /req/squr/3
-subject:: 妥当な交通（広場）オブジェクト
+subject:: 妥当な交通（広場）データセットの要件
 description:: tran:Squareのオブジェクトは、以下に示す場所で区切る。
 part:: 交差部（四差路、多差路及び三差路）
 part:: 道路構造の変化点
@@ -103,7 +103,7 @@ part:: 位置正確度や取得方法が変わる場所
 ====
 [%metadata]
 identifier:: /req/squr/4
-subject:: 妥当な交通（広場）オブジェクト
+subject:: 妥当な交通（広場）データセットの要件
 description:: 広場のLOD0の形状は、交通（広場）モデル（LOD0）の定義に従う。
 ====
 
@@ -120,7 +120,7 @@ description:: 広場のLOD0の形状は、交通（広場）モデル（LOD0）�
 ====
 [%metadata]
 identifier:: /req/squr/5
-subject:: 妥当な交通（広場）オブジェクト
+subject:: 妥当な交通（広場）データセットの要件
 description:: 広場のLOD1の形状は、交通（広場）モデル（LOD1）の定義に従う。
 ====
 
@@ -136,7 +136,7 @@ description:: 広場のLOD1の形状は、交通（広場）モデル（LOD1）�
 ====
 [%metadata]
 identifier:: /req/squr/6
-subject:: 妥当な交通（広場）オブジェクト
+subject:: 妥当な交通（広場）データセットの要件
 description:: LOD2におけるtran:Squareの空間属性は、これを構成するtran:TrafficArea及びtran:AuxiliaryTrafficAreaの空間属性の集まりと一致しなければならない。
 ====
 
@@ -148,7 +148,7 @@ description:: LOD2におけるtran:Squareの空間属性は、これを構成す
 ====
 [%metadata]
 identifier:: /req/squr/7
-subject:: 妥当な交通（広場）オブジェクト
+subject:: 妥当な交通（広場）データセットの要件
 description:: 広場のLOD2の形状は、交通（広場）モデル（LOD2）の定義に従う。
 ====
 
@@ -169,7 +169,7 @@ description:: 広場のLOD2の形状は、交通（広場）モデル（LOD2）�
 ====
 [%metadata]
 identifier:: /req/squr/8
-subject:: 妥当な交通（広場）オブジェクト
+subject:: 妥当な交通（広場）データセットの要件
 description:: LOD3におけるtran:Squareの空間属性は、これを構成するtran:TrafficArea及びtran:AuxiliaryTrafficAreaの空間属性の集まりと一致しなければならない。
 ====
 
@@ -191,7 +191,7 @@ image::images/272.webp.png[]
 ====
 [%metadata]
 identifier:: /req/squr/9
-subject:: 妥当な交通（広場）オブジェクト
+subject:: 妥当な交通（広場）データセットの要件
 description:: 広場のLOD3の形状は、交通（広場）モデル（LOD3）の定義に従う。
 ====
 

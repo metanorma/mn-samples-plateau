@@ -15,7 +15,7 @@ bldg:BuildingPartを使用して建築物を記述する場合、bldg:Building�
 ====
 [%metadata]
 identifier:: /req/bldg/18
-subject:: 妥当な建築物オブジェクト
+subject:: 妥当な建築物データセットの要件
 description:: 妥当なbldg:BuildingPartは、以下を満たさなければならない。
 part:: 唯一のbldg:Buildingからbldg:consistsOfBuildingPartにより参照される。（複数のbldg:Buildingから参照されていてはならない）
 part:: 別のbldg:BuildingPartと接している。（一棟のbldg:Buildingは二つ以上のbldg:BuildingPartから構成され、それらは連続している）
@@ -46,7 +46,7 @@ bldg:BuildingPartは空間属性ももつため、bldg:BuildingPartを記述す�
 ====
 [%metadata]
 identifier:: /req/bldg/19
-subject:: 妥当な建築物オブジェクト
+subject:: 妥当な建築物データセットの要件
 description:: bldg:BuildingPartを使用する場合には、これを参照するbldg:Buildingの空間属性は空とする。
 ====
 
@@ -58,7 +58,7 @@ description:: bldg:BuildingPartを使用する場合には、これを参照す�
 ====
 [%metadata]
 identifier:: /req/bldg/20
-subject:: 妥当な建築物オブジェクト
+subject:: 妥当な建築物データセットの要件
 description:: 一棟の建築物に付与されるべき属性は、全体となるbldg:Buildingにのみ付与する。
 ====
 
