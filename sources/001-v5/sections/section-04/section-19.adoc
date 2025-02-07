@@ -87,11 +87,38 @@ h| 説明 | 注記されない湖沼は、界線に加えて記号挿入位置�
 |===
 | | | 地物型 | 空間属性の型 | 取得基準 | 取得方法 | 補足
 
-.8+| LOD0
-.8+| ●
-.8+| WaterBody
+.9+| LOD0
+.9+| ●
+.9+| WaterBody
 | MultiCurve
+<|
+* 地図情報レベル500又は1000における河川
+* 地図情報レベル2500かつ、流水部の幅が1m以上の河川 footnoteblock:[fn_river_lod0]
+* 地図情報レベル2500かつ面積おおむね12.5m2以上の湖池等（湖、池、沼等、人工的に貯水したものを含む） footnoteblock:[fn_lake_lod0]
+* 地図情報レベル2500における海岸線
+* 河川ネットワークにより水部モデル（LOD0）を表現する場合に必須とする。
 |
+河川の場合
+
+* 河心線（現況河道の中心となる線）を取得する。 footnoteblock:[fn_river_centerline_lod0]
+* 高さは0とする。
+
+湖池等の場合
+
+* 水涯線を取得する。
+* 高さは0とする。
+ 
+海岸線の場合
+
+* 水涯線と河川区域の境界とを結ぶ線を取得する。
+* 高さは0とする。
+|
+footnoteblock:[fn_river_lod0]
+
+footnoteblock:[fn_lake_lod0]
+
+| MultiCurve
+<|
 * 地図情報レベル500又は1000における河川
 * 地図情報レベル2500かつ、流水部の幅が1m以上の河川 footnoteblock:[fn_river_lod0]
 * 地図情報レベル2500かつ面積おおむね12.5m2以上の湖池等（湖、池、沼等、人工的に貯水したものを含む） footnoteblock:[fn_lake_lod0]
@@ -145,7 +172,8 @@ footnoteblock:[fn_retrieval_lod0]
 |
 * 記号表示位置を取得する。
 * 高さは0とする。
-| 標準図式の取得方法に従う。
+|
+footnoteblock:[fn_retrieval_lod0]
 
 | MultiCurve
 <|
@@ -200,6 +228,11 @@ footnoteblock:[fn_retrieval_lod0]
 標準図式の取得方法に従う。
 --
 
+[[fn_river_centerline_lod0]]
+[NOTE]
+--
+<<mlit_kiban_chizu,河川基盤地図ガイドライン（案）>>の取得方法に従う。
+--
 
 [[toc4_19_01_02]]
 ===== 水部モデル（LOD1）
@@ -283,6 +316,7 @@ h| 説明
 * 河川、湖池、海、用水路
 |
 * 水面（WaterSurface）、水底面（WaterGroundSurface）、閉鎖面（WaterClosureSurface）を境界とする立体を作成する。
+* 水面又は水底面が複数の基準地域メッシュに跨る場合は、基準地域メッシュとの境界線を用いて作成した垂直面で立体を分割し、分割された水面、水底面及び垂直面を境界面とする立体とする。このとき、垂直面はwtr:WaterClosureSurfaceとなる。
 |
 水中にある構造物は表現しない。
 | LOD2
@@ -354,6 +388,7 @@ h| 説明
 | LOD3 | ● | WaterBody | Solid |
 |
 * 水面（WaterSurface）、水底面（WaterGroundSurface）、閉鎖面（WaterClosureSurface）を境界とする立体を作成する。
+* 水面又は水底面が複数の基準地域メッシュに跨る場合は、基準地域メッシュとの境界線を用いて作成した垂直面で立体を分割し、分割された水面、水底面及び垂直面を境界面とする立体とする。このとき、垂直面はwtr:WaterClosureSurfaceとなる。
 |
 | LOD3
 | ●
