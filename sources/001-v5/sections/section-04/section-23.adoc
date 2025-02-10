@@ -37,6 +37,40 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Poin
 
 lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="PointCloudSpecAttribute",template="../../sources/liquid_templates/_klass_table.liquid"]
 
+別表：ASPRSが定義したクラス分類
+
+[cols="1a,4a"]
+|===
+| クラス値 | 定義
+
+| 0 | Created, Never Classified (未分類、作成時のまま)
+| 1 | Unclassified (未分類)
+| 2 | Ground (地面)
+| 3 | Low Vegetation (低植生)
+| 4 | Medium Vegetation (中植生)
+| 5 | High Vegetation (高植生)
+| 6 | Building (建物)
+| 7 | Low Point (Noise) (ノイズ)
+| 8 | Model Key-Point (Mass Point) [Format 0-5採用]
+| 9 | Water (水域)
+| 10 | Rail (レール)
+| 11 | Road Surface (道路表面)
+| 12 | Overlap Points (オーバーラップ点) [Format 0-5採用]
+| 13 | Wire – Guard (Shield) (ガード線)
+| 14 | Wire – Conductor (Phase) (送電線)
+| 15 | Transmission Tower (送電塔)
+| 16 | Wire-Structure Connector (電線-構造物接続部)
+| 17 | Bridge Deck (橋梁デッキ)
+| 18 | High Noise (高ノイズ)
+| 19 | Overhead Structure (頭上構造物)
+| 20 | Ignored Ground (無視された地面)
+| 21 | Snow (雪)
+| 22 | Temporal Exclusion (時間的除外)
+| 23-63 | Reserved for ASPRS Definition
+| 64-255 | User Definable (ユーザー定義可能)
+
+|===
+
 
 [[toc4_23_04]]
 ==== ポイントクラウドモデルで使用するコードリストと列挙型
