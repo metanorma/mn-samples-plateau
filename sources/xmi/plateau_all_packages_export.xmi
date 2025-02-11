@@ -9824,7 +9824,7 @@
 							<ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="EAID_52BC2675_3283_4209_B7AE_583834D78D9E" name="projected"/>
 							<ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="EAID_94CB8C16_D02F_4a07_BD7D_8AC4D6B9E7E2" name="underConstruction"/>
 						</packagedElement>
-						<packagedElement xmi:type="uml:Enumeration" xmi:id="EAID_E0983245_920B_4adc_875A_54D290A7DB80" name="HeightStatusValue">
+						<packagedElement xmi:type="uml:Enumeration" xmi:id="EAID_E0983245_920B_4adc_875A_54D290A7DB80" name="HightStatusValue">
 							<ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="EAID_8153E7DB_AC71_4ecf_9154_E158FE7B9BD0" name="estimated"/>
 							<ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="EAID_7A1035F4_ACE9_4c04_98AD_7AF54F48EB9F" name="measured"/>
 						</packagedElement>
@@ -24141,7 +24141,7 @@
 			<ownedElement xmi:type="umldi:UMLClassifierShape" xmi:id="EAID_6797FEFA_5801_48e4_875A_54D290A7DB80" modelElement="EAID_E0983245_920B_4adc_875A_54D290A7DB80">
 				<ownedElement xmi:type="umldi:UMLKeywordLabel" xmi:id="EAID_KL000000_5801_48e4_875A_54D290A7DB80" text="enumeration"/>
 				<ownedElement xmi:type="umldi:UMLKeywordLabel" xmi:id="EAID_KL000001_5801_48e4_875A_54D290A7DB80" text="Enumeration"/>
-				<ownedElement xmi:type="umldi:UMLNameLabel" xmi:id="EAID_NL000000_5801_48e4_875A_54D290A7DB80" text="HeightStatusValue"/>
+				<ownedElement xmi:type="umldi:UMLNameLabel" xmi:id="EAID_NL000000_5801_48e4_875A_54D290A7DB80" text="HightStatusValue"/>
 				<bounds xmi:type="dc:bounds" xmi:id="EAID_DB000000_5801_48e4_875A_54D290A7DB80" x="1140" y="851" width="180" height="105"/>
 			</ownedElement>
 			<ownedElement xmi:type="umldi:UMLClassifierShape" xmi:id="EAID_6797FEFA_5801_48e4_967E_6AE42F592EDA" modelElement="EAID_023E6A67_7288_4e21_967E_6AE42F592EDA">
@@ -36767,7 +36767,7 @@
 			<ownedElement xmi:type="umldi:UMLClassifierShape" xmi:id="EAID_A759374D_589A_488c_875A_54D290A7DB80" modelElement="EAID_E0983245_920B_4adc_875A_54D290A7DB80">
 				<ownedElement xmi:type="umldi:UMLKeywordLabel" xmi:id="EAID_KL000000_589A_488c_875A_54D290A7DB80" text="enumeration"/>
 				<ownedElement xmi:type="umldi:UMLKeywordLabel" xmi:id="EAID_KL000001_589A_488c_875A_54D290A7DB80" text="Enumeration"/>
-				<ownedElement xmi:type="umldi:UMLNameLabel" xmi:id="EAID_NL000000_589A_488c_875A_54D290A7DB80" text="HeightStatusValue"/>
+				<ownedElement xmi:type="umldi:UMLNameLabel" xmi:id="EAID_NL000000_589A_488c_875A_54D290A7DB80" text="HightStatusValue"/>
 				<bounds xmi:type="dc:bounds" xmi:id="EAID_DB000000_589A_488c_875A_54D290A7DB80" x="932" y="836" width="180" height="60"/>
 			</ownedElement>
 			<ownedElement xmi:type="umldi:UMLClassifierShape" xmi:id="EAID_A759374D_589A_488c_967E_6AE42F592EDA" modelElement="EAID_023E6A67_7288_4e21_967E_6AE42F592EDA">
@@ -43271,7 +43271,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_AFFFA0C3_CA61_4bec_8675_060896B65972" name="usage" scope="Public">
 						<initial/>
-						<documentation value="用途。"/>
+						<documentation value="区域の用途。これを実装する下位の地物型に応じて使用するコードリストを選択する。"/>
 						<model ea_localid="90927" ea_guid="{AFFFA0C3-CA61-4bec-8675-060896B65972}"/>
 						<properties type="gml::CodeType" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0" scale="0"/>
@@ -43451,7 +43451,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_B70DB1C5_4A1D_42ec_A21D_60C69A132B73" name="urbanPlanType" scope="Public">
 						<initial/>
-						<documentation value="指定された区域が属する都市計画区域の区分。コードリスト（&amp;lt;&amp;lt;Common_urbanPlanType.xml&amp;gt;&amp;gt;）より選択する。"/>
+						<documentation value="指定された区域が属する都市計画区域の区分。コードリスト（&amp;lt;&amp;lt;Common_urbanPlanType.xml&amp;gt;&amp;gt;）より選択する。都市計画区域及び準都市計画区域の場合は使用しない。"/>
 						<model ea_localid="90937" ea_guid="{B70DB1C5-4A1D-42ec-A21D-60C69A132B73}"/>
 						<properties type="gml::CodeType" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0" scale="0"/>
@@ -43466,7 +43466,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_6EB62FE3_FA30_4d70_9206_BEDE0DEE9048" name="areaClassificationType" scope="Public">
 						<initial/>
-						<documentation value="指定された区域 が属する区域区分。コードリスト（&amp;lt;&amp;lt;Common_areaClassificationType.xml&amp;gt;&amp;gt;）より選択する。"/>
+						<documentation value="指定された区域 が属する区域区分。コードリスト（&amp;lt;&amp;lt;Common_areaClassificationType.xml&amp;gt;&amp;gt;）より選択する。都市計画区域、準都市計画区域及び区域区分の場合は使用しない。"/>
 						<model ea_localid="90938" ea_guid="{6EB62FE3-FA30-4d70-9206-BEDE0DEE9048}"/>
 						<properties type="gml::CodeType" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0" scale="0"/>
@@ -43541,7 +43541,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_92747624_809A_4a5e_898C_13D220578C8A" name="reason" scope="Public">
 						<initial/>
-						<documentation value="都市計画決定情報の場合は、当該区域が指定された理由。"/>
+						<documentation value="区域が指定された理由。"/>
 						<model ea_localid="90943" ea_guid="{92747624-809A-4a5e-898C-13D220578C8A}"/>
 						<properties type="gml:StringOrRefType" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0" scale="0"/>
@@ -45689,7 +45689,7 @@
 				<attributes>
 					<attribute xmi:idref="EAID_A564093F_2528_41c6_9ADC_250C78184ADE" name="developmentPolicy" scope="Public">
 						<initial/>
-						<documentation value="促進区域の開発の方針。"/>
+						<documentation value="促進区域の開発の方針。市街地再開発促進区域の場合は使用しない。"/>
 						<model ea_localid="90736" ea_guid="{A564093F-2528-41c6-9ADC-250C78184ADE}"/>
 						<properties type="gml:StringOrRefType" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0" scale="0"/>
@@ -45704,7 +45704,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_6145429D_23A7_4d2a_BE81_6FF1CA98B47E" name="publicFacilitiesPlans" scope="Public">
 						<initial/>
-						<documentation value="当該区域の開発に必要な公共施設に関する都市計画。"/>
+						<documentation value="当該区域の開発に必要な公共施設に関する都市計画。市街地再開発促進区域の場合は使用しない。"/>
 						<model ea_localid="92680" ea_guid="{6145429D-23A7-4d2a-BE81-6FF1CA98B47E}"/>
 						<properties type="gml:StringOrRefType" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0" scale="0"/>
@@ -49794,7 +49794,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_FA439E8E_1BA1_4fae_A681_EB78C1519FA5" name="dateOfDemolition" scope="Public">
 						<initial/>
-						<documentation value="構造物の解体年月日。"/>
+						<documentation value="構造物の解体年月日。標準製品仕様書では使用しない。"/>
 						<model ea_localid="95254" ea_guid="{FA439E8E-1BA1-4fae-A681-EB78C1519FA5}"/>
 						<properties type="xs::date" collection="false" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0"/>
@@ -49809,7 +49809,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_EC2DC4A6_1099_45ac_B5DB_40EA8BB6CFBB" name="constructionEvent" scope="Public">
 						<initial/>
-						<documentation value="構造物のライフサイクルにおける特定のイベントについての記述。"/>
+						<documentation value="構造物のライフサイクルにおける特定のイベントについての記述。標準製品仕様書では使用しない。"/>
 						<model ea_localid="95255" ea_guid="{EC2DC4A6-1099-45ac-B5DB-40EA8BB6CFBB}"/>
 						<properties type="ConstructionEvent" collection="false" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0"/>
@@ -49854,7 +49854,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_4C045C93_7080_46aa_AEE8_B9A155D48178" name="occupancy" scope="Public">
 						<initial/>
-						<documentation value="構造物に居住又は格納される人、動物、その他の移動可能な物体についての定量的な情報。"/>
+						<documentation value="構造物に居住又は格納される人、動物、その他の移動可能な物体についての定量的な情報。標準製品仕様書では使用しない。"/>
 						<model ea_localid="95258" ea_guid="{4C045C93-7080-46aa-AEE8-B9A155D48178}"/>
 						<properties type="Occupancy" collection="false" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0"/>
@@ -51833,7 +51833,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_E682A24B_629E_4114_A9C8_FF87B0881F56" name="length" scope="Public">
 						<initial/>
-						<documentation value="構造物の総延長。単位はmとする。"/>
+						<documentation value="構造物の総延長。単位はmとする。ダムの場合は使用しない。"/>
 						<model ea_localid="95244" ea_guid="{E682A24B-629E-4114-A9C8-FF87B0881F56}"/>
 						<properties type="gml::LengthType" collection="false" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0"/>
@@ -51848,7 +51848,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_45EB7162_BC3D_48c2_B500_5321EF11B48C" name="width" scope="Public">
 						<initial/>
-						<documentation value="構造物の幅。単位はmとする。"/>
+						<documentation value="構造物の幅。単位はmとする。堤防の場合は使用しない。"/>
 						<model ea_localid="95246" ea_guid="{45EB7162-BC3D-48c2-B500-5321EF11B48C}"/>
 						<properties type="gml::LengthType" collection="false" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0"/>
@@ -51863,7 +51863,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_AFDE6F5B_0560_4028_BBFD_B60193FD8D08" name="depth" scope="Public">
 						<initial/>
-						<documentation value="構造物が設置された位置の水深。単位はmとする。"/>
+						<documentation value="構造物が設置された位置の水深。単位はmとする。堤防の場合は使用しない。"/>
 						<model ea_localid="95247" ea_guid="{AFDE6F5B-0560-4028-BBFD-B60193FD8D08}"/>
 						<properties type="gml::LengthType" collection="false" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0"/>
@@ -51878,7 +51878,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_3AE6AF50_67BD_4961_BFD4_2151C99AD13A" name="volume" scope="Public">
 						<initial/>
-						<documentation value="構造物の体積。単位は千m3とする。"/>
+						<documentation value="構造物の体積。単位は千m3とする。堤防の場合は使用しない。"/>
 						<model ea_localid="95248" ea_guid="{3AE6AF50-67BD-4961-BFD4-2151C99AD13A}"/>
 						<properties type="gml::MeasureType" collection="false" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0"/>
@@ -52974,7 +52974,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_D3E62732_7C55_4a9d_B6DE_4E8771AD24FC" name="tranDataAcquisition" scope="Public">
 						<initial/>
-						<documentation value="[.source]&#xA;&amp;lt;&amp;lt;nilim_kiban_dps,道路基盤地図情報（整備促進版）製品仕様書（案）（平成27年5月）&amp;gt;&amp;gt;&#xA;&#xA;に定める「取得レベル(level)」を記述するための属性。"/>
+						<documentation value="[.source]&#xA;&amp;lt;&amp;lt;nilim_kiban_dps,道路基盤地図情報（整備促進版）製品仕様書（案）（平成27年5月）&amp;gt;&amp;gt;&#xA;&#xA;に定める「取得レベル(level)」を記述するための属性。&#xA;&#xA;道路の場合にのみ使用する。"/>
 						<model ea_localid="100259" ea_guid="{D3E62732-7C55-4a9d-B6DE-4E8771AD24FC}"/>
 						<properties type="xs::string" collection="false" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0"/>
@@ -53900,7 +53900,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_B4A53906_B61B_4a92_B88F_72978FC337E3" name="partId" scope="Public">
 						<initial/>
-						<documentation value="構造物を部分（Part）に分けて記述する場合の各部分を識別するための番号。&#xA;"/>
+						<documentation value="構造物を部分（Part）に分けて記述する場合の各部分を識別するための番号。河川管理施設の場合は使用しない。&#xA;"/>
 						<model ea_localid="95166" ea_guid="{B4A53906-B61B-4a92-B88F-72978FC337E3}"/>
 						<properties type="xs::string" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0" scale="0"/>
@@ -53960,7 +53960,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_0C35B6D0_68FB_4c52_A93A_F9F5870D921E" name="route" scope="Public">
 						<initial/>
-						<documentation value="構造物が存在する路線名。"/>
+						<documentation value="構造物が存在する路線名。河川管理施設の場合は使用しない。"/>
 						<model ea_localid="95169" ea_guid="{0C35B6D0-68FB-4c52-A93A-F9F5870D921E}"/>
 						<properties type="xs::string" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0" scale="0"/>
@@ -53975,7 +53975,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_7417876A_E21B_4c7b_8841_DCE215BB2160" name="startPost" scope="Public">
 						<initial/>
-						<documentation value="構造物の開始位置の距離標。"/>
+						<documentation value="構造物の開始位置の距離標。河川管理施設の場合は使用しない。"/>
 						<model ea_localid="95170" ea_guid="{7417876A-E21B-4c7b-8841-DCE215BB2160}"/>
 						<properties type="xs::string" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0" scale="0"/>
@@ -53990,7 +53990,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_0AEB033E_513C_46d8_8DFF_C03ADC2750AF" name="endPost" scope="Public">
 						<initial/>
-						<documentation value="構造物の終了位置の距離標。&#xA;"/>
+						<documentation value="構造物の終了位置の距離標。河川管理施設の場合は使用しない。&#xA;"/>
 						<model ea_localid="95171" ea_guid="{0AEB033E-513C-46d8-8DFF-C03ADC2750AF}"/>
 						<properties type="xs::string" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0" scale="0"/>
@@ -54005,7 +54005,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_EAF90208_1AB7_458a_A29D_93A50F4EDEFC" name="startLat" scope="Public">
 						<initial/>
-						<documentation value="構造物の開始位置の緯度（北緯）。10進数により記述する。"/>
+						<documentation value="構造物の開始位置の緯度（北緯）。10進数により記述する。河川管理施設の場合は使用しない。"/>
 						<model ea_localid="95172" ea_guid="{EAF90208-1AB7-458a-A29D-93A50F4EDEFC}"/>
 						<properties type="xs::double" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0" scale="0"/>
@@ -54020,7 +54020,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_352BAFD9_6A7E_4bdc_9866_8D86B79F34C7" name="startLong" scope="Public">
 						<initial/>
-						<documentation value="構造物の開始位置の経度（東経）。10進数により記述する。"/>
+						<documentation value="構造物の開始位置の経度（東経）。10進数により記述する。河川管理施設の場合は使用しない。"/>
 						<model ea_localid="95173" ea_guid="{352BAFD9-6A7E-4bdc-9866-8D86B79F34C7}"/>
 						<properties type="xs::double" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0" scale="0"/>
@@ -55225,7 +55225,7 @@
 						<initial/>
 						<documentation value="高さは計測した値か推定した値かの別。"/>
 						<model ea_localid="95266" ea_guid="{6168540B-E4FB-4e41-92A3-B99CC45250A0}"/>
-						<properties type="HeightStatusValue" collection="false" static="0" duplicates="0" changeability="changeable"/>
+						<properties type="HightStatusValue" collection="false" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0"/>
 						<containment containment="Not Specified" position="2"/>
 						<stereotype/>
@@ -66891,10 +66891,10 @@
 					</attribute>
 				</attributes>
 			</element>
-			<element xmi:idref="EAID_E0983245_920B_4adc_875A_54D290A7DB80" xmi:type="uml:Enumeration" name="HeightStatusValue" scope="public">
+			<element xmi:idref="EAID_E0983245_920B_4adc_875A_54D290A7DB80" xmi:type="uml:Enumeration" name="HightStatusValue" scope="public">
 				<model package="EAPK_BCC79C61_EB22_4305_B574_693E41527057" tpos="0" ea_localid="63601" ea_eleType="element"/>
 				<properties isSpecification="false" sType="Enumeration" nType="0" scope="public" stereotype="Enumeration" isRoot="false" isLeaf="false" isAbstract="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2023/02/05 11:45:38" modified="2023/02/05 11:45:38" complexity="1" status="Proposed"/>
+				<project author="048827" version="1.0" phase="1.0" created="2023/02/05 11:45:38" modified="2025/02/11 10:46:56" complexity="1" status="Proposed"/>
 				<code gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags/>
@@ -75024,8 +75024,8 @@
 			</element>
 			<element xmi:idref="EAID_21F918A2_DC93_44cc_8831_174F59E61F90" xmi:type="uml:Class" name="Tunnel" scope="public">
 				<model package="EAPK_966B9243_BF5C_4f9a_9D67_886607B041BE" tpos="0" ea_localid="63838" ea_eleType="element"/>
-				<properties documentation="トンネルとは、上方を含め周辺が地山や他の構造物で覆われている、交通、輸送等に供する構造物である。[道路基盤地図情報（整備促進版） 製品仕様書 （案] +&#xA;標準製品仕様書では、その設置の形態から、ボックスカルバート、シェッド、シェルター及び地下横断歩道もトンネルに含める。 +&#xA;ボックスカルバート：他の道路等の下方を横断するため、その盛土の中を横断する形で設置される箱状の構造物。[道路基盤地図情報（整備促進版） 製品仕様書 （案] +&#xA;シェッド：落石及び雪崩等を道路外に直接落下 させる、又は道路を越えて転進させるため、鋼材やコンクリート材等で道路上を覆う構造物。[道路基盤地図情報（整備促進版） 製品仕様書 （案] +&#xA;シェルター：アーチ型又は門型で、道路を完全に覆ったトンネル状の構造物。[道路基盤地図情報（整備促進版） 製品仕様書 （案] +&#xA;地下横断歩道：人、自転車等が道路又は鉄道を横断するために構築された地下道。 [&amp;lt;&amp;lt;gsi_ops,作業規程の準則　付録7　公共測量標準図式&amp;gt;&amp;gt;] +&#xA;高速道路等に存在する延長の長いトンネルは、管理区間及び覆工スパンの境界で区切ることができる。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2023/03/11 00:17:05" modified="2025/01/15 13:52:51" complexity="1" status="Proposed"/>
+				<properties documentation="トンネルとは、上方を含め周辺が地山や他の構造物で覆われている、交通、輸送等に供する構造物である。[&amp;lt;&amp;lt;nilim_kiban_dps,道路基盤地図情報（整備促進版） 製品仕様書 （案）&amp;gt;&amp;gt;] +&#xA;標準製品仕様書では、その設置の形態から、ボックスカルバート、シェッド、シェルター及び地下横断歩道もトンネルに含める。 +&#xA;ボックスカルバート：他の道路等の下方を横断するため、その盛土の中を横断する形で設置される箱状の構造物。[&amp;lt;&amp;lt;nilim_kiban_dps,道路基盤地図情報（整備促進版） 製品仕様書 （案）&amp;gt;&amp;gt;] +&#xA;シェッド：落石及び雪崩等を道路外に直接落下 させる、又は道路を越えて転進させるため、鋼材やコンクリート材等で道路上を覆う構造物。[&amp;lt;&amp;lt;nilim_kiban_dps,道路基盤地図情報（整備促進版） 製品仕様書 （案）&amp;gt;&amp;gt;] +&#xA;シェルター：アーチ型又は門型で、道路を完全に覆ったトンネル状の構造物。[&amp;lt;&amp;lt;nilim_kiban_dps,道路基盤地図情報（整備促進版） 製品仕様書 （案）&amp;gt;&amp;gt;] +&#xA;地下横断歩道：人、自転車等が道路又は鉄道を横断するために構築された地下道。 [&amp;lt;&amp;lt;gsi_ops,作業規程の準則　付録7　公共測量標準図式&amp;gt;&amp;gt;] +&#xA;高速道路等に存在する延長の長いトンネルは、管理区間及び覆工スパンの境界で区切ることができる。&#xA;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2023/03/11 00:17:05" modified="2025/02/11 14:36:36" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -76236,7 +76236,7 @@
 				<attributes>
 					<attribute xmi:idref="EAID_FDC435D4_544B_4122_BEA1_7C0B55136938" name="class" scope="Public">
 						<initial/>
-						<documentation value="形態による区分。コードリスト（&amp;lt;&amp;lt;Building_class.xml&amp;gt;&amp;gt;）より選択する。"/>
+						<documentation value="形態による区分。コードリスト（&amp;lt;&amp;lt;Building_class.xml&amp;gt;&amp;gt;）より選択する。地下街の場合は使用しない。"/>
 						<model ea_localid="95787" ea_guid="{FDC435D4-544B-4122-BEA1-7C0B55136938}"/>
 						<properties type="gml::CodeType" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0" scale="0"/>
@@ -76311,7 +76311,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_BED84910_5D61_4d81_85F9_903773140277" name="roofType" scope="Public">
 						<initial/>
-						<documentation value="屋根形状の種類。&#xA;コ－ドリスト(&amp;lt;&amp;lt;Building_roofType.xml&amp;gt;&amp;gt;）より選択する。"/>
+						<documentation value="屋根形状の種類。&#xA;コ－ドリスト(&amp;lt;&amp;lt;Building_roofType.xml&amp;gt;&amp;gt;）より選択する。地下街の場合は使用しない。"/>
 						<model ea_localid="95792" ea_guid="{BED84910-5D61-4d81-85F9-903773140277}"/>
 						<properties type="gml::CodeType" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0" scale="0"/>
@@ -76326,7 +76326,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_A18B07F6_3427_4380_AE63_09D28291CF5C" name="measuredHeight" scope="Public">
 						<initial/>
-						<documentation value="計測により取得した建築物の地上の最低点から最高点までの高さ。単位はm (uom=&quot;m&quot;）とする。"/>
+						<documentation value="計測により取得した建築物の地上の最低点から最高点までの高さ。単位はm (uom=&quot;m&quot;）とする。地下街の場合は使用しない。"/>
 						<model ea_localid="95793" ea_guid="{A18B07F6-3427-4380-AE63-09D28291CF5C}"/>
 						<properties type="gml::LengthType" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0" scale="0"/>
@@ -76341,7 +76341,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_EE69E7A2_F593_4f4a_B0CF_9D5F69DCDC29" name="storeysAboveGround" scope="Public">
 						<initial/>
-						<documentation value="地上階の階数。"/>
+						<documentation value="地上階の階数。地下街の場合は使用しない。"/>
 						<model ea_localid="95794" ea_guid="{EE69E7A2-F593-4f4a-B0CF-9D5F69DCDC29}"/>
 						<properties type="xs::nonNegativeInteger" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0" scale="0"/>
@@ -76371,7 +76371,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_68177532_4554_4460_9024_C9BFB7569F9F" name="storeyHeightsAboveGround" scope="Public">
 						<initial/>
-						<documentation value="地上の各階の高さを、地表面に最も近い階から列挙する。標準製品仕様書では使用しない。"/>
+						<documentation value="地上の各階の高さを、地表面に最も近い階から列挙する。"/>
 						<model ea_localid="95796" ea_guid="{68177532-4554-4460-9024-C9BFB7569F9F}"/>
 						<properties type="gml::MeasureOrNullListType" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0" scale="0"/>
@@ -77609,7 +77609,7 @@
 				<attributes>
 					<attribute xmi:idref="EAID_AB2994EC_81DA_4049_918F_4868546C3379" name="class" scope="Public">
 						<initial/>
-						<documentation value="交通の分類。標準製品仕様書では対象外とする。"/>
+						<documentation value="交通の分類。標準製品仕様書では使用しない。"/>
 						<model ea_localid="90059" ea_guid="{AB2994EC-81DA-4049-918F-4868546C3379}"/>
 						<properties type="gml::CodeType" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0" scale="0"/>
@@ -77624,7 +77624,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_872FA301_793D_4327_8036_FC6B63ADB713" name="function" scope="Public">
 						<initial/>
-						<documentation value="区画線や路面標示、道路標識等により示された交通補助領域の機能。コードリスト（AuxiliaryTrafficArea_function.xml）より選択する。"/>
+						<documentation value="区画線や路面標示、道路標識等により示された交通補助領域の機能。コードリスト（AuxiliaryTrafficArea_function.xml）より選択する。鉄道及び航路の場合は使用しない。"/>
 						<model ea_localid="90060" ea_guid="{872FA301-793D-4327-8036-FC6B63ADB713}"/>
 						<properties type="gml::CodeType" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0" scale="0"/>
@@ -77639,7 +77639,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_90230001_541F_4b05_8B61_5478D19F7B6B" name="usage" scope="Public">
 						<initial/>
-						<documentation value="交通補助領域の利用方法。標準製品仕様書では対象外とする。"/>
+						<documentation value="交通補助領域の利用方法。標準製品仕様書では使用しない。"/>
 						<model ea_localid="90061" ea_guid="{90230001-541F-4b05-8B61-5478D19F7B6B}"/>
 						<properties type="gml::CodeType" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0" scale="0"/>
@@ -77654,7 +77654,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_3FB4E4F8_E432_4898_B0D7_7B2B971E0FB0" name="surfaceMaterial" scope="Public">
 						<initial/>
-						<documentation value="表層舗装の有無及び材質。複数の表層舗装が混在している場合は、最も面積を占める舗装とする。コードリスト（AuxiliaryTrafficArea_surfaceMaterial.xml）より選択する。"/>
+						<documentation value="表層舗装の有無及び材質。複数の表層舗装が混在している場合は、最も面積を占める舗装とする。コードリスト（AuxiliaryTrafficArea_surfaceMaterial.xml）より選択する。航路の場合は使用しない。"/>
 						<model ea_localid="90062" ea_guid="{3FB4E4F8-E432-4898-B0D7-7B2B971E0FB0}"/>
 						<properties type="gml::CodeType" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0" scale="0"/>
@@ -77677,8 +77677,8 @@
 			</element>
 			<element xmi:idref="EAID_7D541568_1A7D_4624_8392_5C149B4653C6" xmi:type="uml:Class" name="Railway" scope="public">
 				<model package="EAPK_7564468B_FDA4_4f40_9929_5AB8C485FA11" tpos="0" ea_localid="61803" ea_eleType="element"/>
-				<properties documentation="鉄道とは、人と物を迅速かつ大量に輸送するため、レールを敷いた専用の通路を用い、その上を車両が円滑に行き来できるように整備された一切の設備とシステムの集合体である。[一般社団法人日本民営鉄道協会]&#xA;標準製品仕様書では、鉄道事業法及び軌道法に基づいて敷設された線路を指し、以下を含む。&#xA;&#xA;* 普通鉄道：鉄道事業法又は軌道法に基づいて運行されている鉄道で、特殊軌道及び索道を除いたもの 「&amp;lt;&amp;lt;gsi_ops,作業規程の準則　付録7　公共測量標準図式&amp;gt;&amp;gt;」&#xA;* 地下鉄：地方公共団体及び東京地下鉄（株）等が管理する地下高速鉄道 「&amp;lt;&amp;lt;gsi_ops,作業規程の準則　付録7　公共測量標準図式&amp;gt;&amp;gt;」&#xA;* 路面電車：道路上に線路を敷設した鉄道で、主として路面上から直接乗り降りできる車両が運行される鉄道 「&amp;lt;&amp;lt;gsi_ops,作業規程の準則　付録7　公共測量標準図式&amp;gt;&amp;gt;」&#xA;* モノレール：車両が一本の軌道桁に跨座し、又は懸垂して走行するもの&#xA;* 特殊鉄道：鋼索鉄道、普通鉄道と接続しない工場等特定の地区内の軌道及び採鉱（石）地と工場等を結ぶ専用軌道 「&amp;lt;&amp;lt;gsi_ops,作業規程の準則　付録7　公共測量標準図式&amp;gt;&amp;gt;」&#xA;* 索道：空中ケーブル、スキーリフト、ベルトコンベヤー及びこれらに類するもの 「&amp;lt;&amp;lt;gsi_ops,作業規程の準則　付録7　公共測量標準図式&amp;gt;&amp;gt;」 &#xA;&#xA;なお、線路とは、列車又は車両を走らせるための通路であって，軌道及びこれを支持するために必要な路盤，構造物を包含する地帯をいう。[&amp;lt;&amp;lt;jis_e_1001&amp;gt;&amp;gt;]&#xA;&#xA;鉄道は路線単位で作成し、鉄道の延長方向は、以下の場所で区切る。&#xA;&#xA;* 路線&#xA;* 軌道が分岐又は合流する地点&#xA;* 構造の変化点（トンネル、橋梁）&#xA;* 市区町村界&#xA;* 位置正確度（地図情報レベル）や取得方法が変わる場所&#xA;&#xA;tran:Railway に含まれるtran:TrafficArea 及びtran:AuxiliaryTrafficArea は、同一路線に含まれなければならない。また、同一のLOD において、連続する鉄道の境界は一致しなければならない。&#xA;&#xA;.LOD0における鉄道の取得例&#xA;image::images/128.webp.png[]&#xA;&#xA;.LOD1における鉄道の取得例&#xA;image::images/129.webp.png[]&#xA;&#xA;.LOD2における鉄道の取得例&#xA;image::images/130.webp.png[]&#xA;&#xA;.LOD3における鉄道の取得例&#xA;image::images/131.webp.png[]&#xA;&#xA;* 属性tran:functionは、コードリスト（&amp;lt;&amp;lt;Railway_function.xml&amp;gt;&amp;gt;）より選択する。&#xA;* 属性tran:usageは、標準製品仕様書では使用しない。&#xA;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="kurokawa" version="1.0" phase="1.0" created="2020/09/22 23:40:34" modified="2025/01/14 13:26:06" complexity="1" status="Proposed"/>
+				<properties documentation="鉄道とは、人と物を迅速かつ大量に輸送するため、レールを敷いた専用の通路を用い、その上を車両が円滑に行き来できるように整備された一切の設備とシステムの集合体である。[一般社団法人日本民営鉄道協会]&#xA;標準製品仕様書では、鉄道事業法及び軌道法に基づいて敷設された線路を指し、以下を含む。&#xA;&#xA;* 普通鉄道：鉄道事業法又は軌道法に基づいて運行されている鉄道で、特殊軌道及び索道を除いたもの [&amp;lt;&amp;lt;gsi_ops,作業規程の準則　付録7　公共測量標準図式&amp;gt;&amp;gt;]&#xA;* 地下鉄：地方公共団体及び東京地下鉄（株）等が管理する地下高速鉄道 [&amp;lt;&amp;lt;gsi_ops,作業規程の準則　付録7　公共測量標準図式&amp;gt;&amp;gt;]&#xA;* 路面電車：道路上に線路を敷設した鉄道で、主として路面上から直接乗り降りできる車両が運行される鉄道 [&amp;lt;&amp;lt;gsi_ops,作業規程の準則　付録7　公共測量標準図式&amp;gt;&amp;gt;]&#xA;* モノレール：車両が一本の軌道桁に跨座し、又は懸垂して走行するもの&#xA;* 特殊鉄道：鋼索鉄道、普通鉄道と接続しない工場等特定の地区内の軌道及び採鉱（石）地と工場等を結ぶ専用軌道 [&amp;lt;&amp;lt;gsi_ops,作業規程の準則　付録7　公共測量標準図式&amp;gt;&amp;gt;]&#xA;* 索道：空中ケーブル、スキーリフト、ベルトコンベヤー及びこれらに類するもの [&amp;lt;&amp;lt;gsi_ops,作業規程の準則　付録7　公共測量標準図式&amp;gt;&amp;gt;]&#xA;&#xA;なお、線路とは、列車又は車両を走らせるための通路であって，軌道及びこれを支持するために必要な路盤，構造物を包含する地帯をいう。[&amp;lt;&amp;lt;jis_e_1001&amp;gt;&amp;gt;]&#xA;&#xA;鉄道は路線単位で作成し、鉄道の延長方向は、以下の場所で区切る。&#xA;&#xA;* 路線&#xA;* 軌道が分岐又は合流する地点&#xA;* 構造の変化点（トンネル、橋梁）&#xA;* 市区町村界&#xA;* 位置正確度（地図情報レベル）や取得方法が変わる場所&#xA;&#xA;tran:Railway に含まれるtran:TrafficArea 及びtran:AuxiliaryTrafficArea は、同一路線に含まれなければならない。また、同一のLOD において、連続する鉄道の境界は一致しなければならない。&#xA;&#xA;.LOD0における鉄道の取得例&#xA;image::images/128.webp.png[]&#xA;&#xA;.LOD1における鉄道の取得例&#xA;image::images/129.webp.png[]&#xA;&#xA;.LOD2における鉄道の取得例&#xA;image::images/130.webp.png[]&#xA;&#xA;.LOD3における鉄道の取得例&#xA;image::images/131.webp.png[]&#xA;&#xA;* 属性tran:functionは、コードリスト（&amp;lt;&amp;lt;Railway_function.xml&amp;gt;&amp;gt;）より選択する。&#xA;* 属性tran:usageは、標準製品仕様書では使用しない。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="kurokawa" version="1.0" phase="1.0" created="2020/09/22 23:40:34" modified="2025/02/11 14:36:04" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -77765,7 +77765,7 @@
 				<attributes>
 					<attribute xmi:idref="EAID_6A081C50_CE79_4a61_9F75_D635F9656C49" name="class" scope="Public">
 						<initial/>
-						<documentation value="交通の分類。標準製品仕様書では対象外とする。"/>
+						<documentation value="交通の分類。標準製品仕様書では使用しない。"/>
 						<model ea_localid="90052" ea_guid="{6A081C50-CE79-4a61-9F75-D635F9656C49}"/>
 						<properties type="gml::CodeType" collection="false" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0"/>
@@ -77780,7 +77780,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_F5221577_6713_41e6_9BF7_834FF3578B45" name="function" scope="Public">
 						<initial/>
-						<documentation value="交通領域の機能。コードリスト（&amp;lt;&amp;lt;TrafficArea_function.xml&amp;gt;&amp;gt;）より選択する。"/>
+						<documentation value="交通領域の機能。コードリスト（&amp;lt;&amp;lt;TrafficArea_function.xml&amp;gt;&amp;gt;）より選択する。航路の場合は使用しない。"/>
 						<model ea_localid="90053" ea_guid="{F5221577-6713-41e6-9BF7-834FF3578B45}"/>
 						<properties type="gml::CodeType" collection="false" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0"/>
@@ -77795,7 +77795,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_8BE3668E_37EC_4f8c_B71F_68E402CF6249" name="usage" scope="Public">
 						<initial/>
-						<documentation value="交通領域の利用方法。標準製品仕様書では対象外とする。"/>
+						<documentation value="交通領域の利用方法。標準製品仕様書では使用しない。"/>
 						<model ea_localid="90054" ea_guid="{8BE3668E-37EC-4f8c-B71F-68E402CF6249}"/>
 						<properties type="gml::CodeType" collection="false" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0"/>
@@ -77810,7 +77810,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_B329294F_2D3A_48fd_A975_FF6E895156A8" name="surfaceMaterial" scope="Public">
 						<initial/>
-						<documentation value="表層舗装の有無及び材質。複数の表層舗装が混在している場合は、最も面積を占める舗装とする。&#xA;&#xA;道路、徒歩道及び広場の場合は、コードリスト（&amp;lt;&amp;lt;TrafficArea_surfaceMaterial.xml、AuxiliaryTrafficArea_surfaceMaterial.xml&amp;gt;&amp;gt;）より選択する。&#xA;&#xA;鉄道及び航路の場合は、標準製品仕様書では対象外とする。"/>
+						<documentation value="表層舗装の有無及び材質。複数の表層舗装が混在している場合は、最も面積を占める舗装とする。&#xA;&#xA;道路、徒歩道及び広場の場合は、コードリスト（&amp;lt;&amp;lt;TrafficArea_surfaceMaterial.xml、AuxiliaryTrafficArea_surfaceMaterial.xml&amp;gt;&amp;gt;）より選択する。&#xA;&#xA;鉄道及び航路の場合は、標準製品仕様書では使用しない。"/>
 						<model ea_localid="90055" ea_guid="{B329294F-2D3A-48fd-A975-FF6E895156A8}"/>
 						<properties type="gml::CodeType" collection="false" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0"/>
@@ -77849,7 +77849,7 @@
 				<attributes>
 					<attribute xmi:idref="EAID_17945A6F_0280_4101_B26B_0594B52662D5" name="class" scope="Public">
 						<initial/>
-						<documentation value="交通の分類。コードリスト（&amp;lt;&amp;lt;TransportationComplex_class.xml&amp;gt;&amp;gt;）より選択する。"/>
+						<documentation value="交通の分類。コードリスト（&amp;lt;&amp;lt;TransportationComplex_class.xml&amp;gt;&amp;gt;）より選択する。航路の場合は使用しない。"/>
 						<model ea_localid="90026" ea_guid="{17945A6F-0280-4101-B26B-0594B52662D5}"/>
 						<properties type="gml::CodeType" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0" scale="0"/>
@@ -87764,7 +87764,7 @@
 				<model ea_localid="99397"/>
 				<properties ea_type="Aggregation" subtype="Strong" direction="Destination -&gt; Source"/>
 				<modifiers isRoot="false" isLeaf="false"/>
-				<documentation value="建築物を使用するユースケースのための属性。標準製品仕様書では対象外とする。"/>
+				<documentation value="建築物を使用するユースケースのための属性。標準製品仕様書では使用しない。"/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
 				<labels lb="0..1" lt="+bldgUsecaseAttribute"/>
 				<extendedProperties/>
@@ -88096,7 +88096,7 @@
 					<role name="lod2Geometry" stereotype="property" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..1" aggregation="none" containment="Unspecified"/>
 					<constraints/>
-					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
 					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
 					<documentation/>
 					<xrefs value="$XREFPROP=$XID={01C9D43B-1103-4ff7-A22A-391C413C0F3E}$XID;$NAM=Stereotypes$NAM;$TYP=connectorSrcEnd property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=property;FQName=GML::property;@ENDSTEREO;$DES;$CLT={0458A522-4A62-4af6-B0A9-D68647A1869B}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -88111,7 +88111,7 @@
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
-					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
 					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
 					<documentation/>
 					<xrefs/>
@@ -88121,7 +88121,7 @@
 				<properties ea_type="Association" direction="Destination -&gt; Source"/>
 				<modifiers isRoot="false" isLeaf="false"/>
 				<parameterSubstitutions/>
-				<documentation value="LOD2において付属物の外形（外側から見える形）を構成する面を取得する。"/>
+				<documentation value="LOD2において付属物の外形（外側から見える形）を構成する面を取得する。標準製品仕様書では使用しない。"/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
 				<labels lb="0..1" lt="+lod2Geometry&#xA;«property»"/>
 				<extendedProperties/>
@@ -89165,7 +89165,7 @@
 				<model ea_localid="98152"/>
 				<properties ea_type="Aggregation" subtype="Strong" direction="Destination -&gt; Source"/>
 				<modifiers isRoot="false" isLeaf="false"/>
-				<documentation value="公共測量標準図式による図形表現に必要な情報。bldg:BuildingPartには使用しない。"/>
+				<documentation value="公共測量標準図式による図形表現に必要な情報。建築物の一部（bldg:BuildingPart）には使用しない。"/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
 				<labels lb="0..*" lt="+bldgDmAttribute&#xA;«property»"/>
 				<extendedProperties/>
@@ -89427,7 +89427,7 @@
 				<model ea_localid="96932"/>
 				<properties ea_type="Aggregation" subtype="Strong" direction="Destination -&gt; Source"/>
 				<modifiers isRoot="false" isLeaf="false"/>
-				<documentation value="公共測量標準図式による図形及び注記表現に必要な情報。"/>
+				<documentation value="公共測量標準図式による図形及び注記表現に必要な情報。航路の場合は使用しない。"/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
 				<labels lb="0..*" lt="+tranDmAttribute&#xA;«property»"/>
 				<extendedProperties/>
@@ -89724,7 +89724,7 @@
 				<model ea_localid="98137"/>
 				<properties ea_type="Aggregation" subtype="Strong" direction="Destination -&gt; Source"/>
 				<modifiers isRoot="false" isLeaf="false"/>
-				<documentation value="uro:tunFacilityTypeAttribute.classによって指定された分野における施設管理情報。"/>
+				<documentation value="uro:tunFacilityTypeAttribute.classによって指定された分野における施設管理情報。トンネルの一部（tun:TunnelPart）の場合は使用しない。"/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
 				<labels lb="0..*" lt="+tunFacilityAttribute&#xA;«property»"/>
 				<extendedProperties/>
@@ -90202,7 +90202,7 @@
 				<model ea_localid="98136"/>
 				<properties ea_type="Aggregation" subtype="Strong" direction="Destination -&gt; Source"/>
 				<modifiers isRoot="false" isLeaf="false"/>
-				<documentation value="uro:tunFacilityTypeAttribute.classによって指定された分野における施設の識別情報。"/>
+				<documentation value="uro:tunFacilityTypeAttribute.classによって指定された分野における施設の識別情報。トンネルの一部（tun:TunnelPart）の場合は使用しない。"/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
 				<labels lb="0..*" lt="+tunFacilityIdAttribute&#xA;«property»"/>
 				<extendedProperties/>
@@ -90616,7 +90616,7 @@
 				<model ea_localid="98135"/>
 				<properties ea_type="Aggregation" subtype="Strong" direction="Destination -&gt; Source"/>
 				<modifiers isRoot="false" isLeaf="false"/>
-				<documentation value="特定分野における施設の分類情報。"/>
+				<documentation value="特定分野における施設の分類情報。トンネルの一部（tun:TunnelPart）の場合は使用しない。"/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
 				<labels lb="0..1" lt="+tunFacilityTypeAttribute&#xA;«property»"/>
 				<extendedProperties/>
@@ -92066,7 +92066,7 @@
 				<model ea_localid="97790"/>
 				<properties ea_type="Aggregation" subtype="Strong" direction="Destination -&gt; Source"/>
 				<modifiers isRoot="false" isLeaf="false"/>
-				<documentation value="属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。 +&#xA;brid:BridgePartには作成しない。（brid:Bridge二のみ作成する。）&#xA;"/>
+				<documentation value="属性を拡張するための仕組み。コ－ド値以外の属性を拡張する場合は、gen:_GenericAttributeの下位型を使用する。 +&#xA;brid:BridgePartには作成しない。（brid:Bridgeにのみ作成する。）&#xA;"/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
 				<labels lb="0..*" lt="+bridKeyValuePairAttribute&#xA;«property»"/>
 				<extendedProperties/>
@@ -98176,7 +98176,7 @@
 				<properties ea_type="Association" direction="Source -&gt; Destination"/>
 				<modifiers isRoot="false" isLeaf="false"/>
 				<parameterSubstitutions/>
-				<documentation value="外部への参照。"/>
+				<documentation value="外部への参照。標準製品仕様書では使用しない。"/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
 				<labels rb="0..*" rt="+externalReference"/>
 				<extendedProperties/>
@@ -102083,7 +102083,7 @@
 				<model ea_localid="97819"/>
 				<properties ea_type="Aggregation" subtype="Weak" direction="Destination -&gt; Source"/>
 				<modifiers isRoot="false" isLeaf="false"/>
-				<documentation value="橋梁の部分（brid:BridgePart）。"/>
+				<documentation value="橋梁の部分（brid:BridgePart）。橋梁の一部（brid:BridgePart）の場合は使用しない。"/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
 				<labels lb="0..*" lt="+consistsOfBridgePart&#xA;«property»"/>
 				<extendedProperties/>
@@ -102825,7 +102825,7 @@
 					<role name="lod2MultiSurface" stereotype="property" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..1" aggregation="none" containment="Unspecified"/>
 					<constraints/>
-					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
 					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
 					<documentation/>
 					<xrefs value="$XREFPROP=$XID={69ECD28D-4570-4e28-B0C0-51EB9BF16AC0}$XID;$NAM=Stereotypes$NAM;$TYP=connectorSrcEnd property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=property;FQName=GML::property;@ENDSTEREO;$DES;$CLT={10B1E400-FDCF-4c31-83BE-27166CC35A35}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -102840,7 +102840,7 @@
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
-					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
 					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
 					<documentation/>
 					<xrefs/>
@@ -102850,7 +102850,7 @@
 				<properties ea_type="Association" direction="Destination -&gt; Source"/>
 				<modifiers isRoot="false" isLeaf="false"/>
 				<parameterSubstitutions/>
-				<documentation value="LOD2において屋根の形状・起伏を再現した面。 +&#xA;屋根の上方からの正射影の外周を取得し、外周の各頂点に屋根の高さを与える。"/>
+				<documentation value="LOD2において境界面の形状・起伏を再現した面。 +&#xA;詳細な取得基準は、各地物型のLOD定義に従うこと。 +&#xA;屋根の上方からの正射影の外周を取得し、外周の各頂点に屋根の高さを与える。"/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
 				<labels lb="0..1" lt="+lod2MultiSurface&#xA;«property»"/>
 				<extendedProperties/>
@@ -103097,7 +103097,7 @@
 				<model ea_localid="97807"/>
 				<properties ea_type="Aggregation" subtype="Weak" direction="Destination -&gt; Source"/>
 				<modifiers isRoot="false" isLeaf="false"/>
-				<documentation value="屋根面に設置される、窓や扉への参照。"/>
+				<documentation value="境界面に設置される開口部（窓及び扉）への参照。"/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
 				<labels lb="0..*" lt="+opening&#xA;«property»"/>
 				<extendedProperties/>
@@ -103457,7 +103457,7 @@
 				<properties ea_type="Association" direction="Destination -&gt; Source"/>
 				<modifiers isRoot="false" isLeaf="false"/>
 				<parameterSubstitutions/>
-				<documentation value="部材のLOD1 の形状。標準製品仕様書では対象外とする。"/>
+				<documentation value="部材のLOD1 の形状。標準製品仕様書では使用しない。"/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
 				<labels lb="0..1" lt="+lod1Geometry&#xA;«property»"/>
 				<extendedProperties/>
@@ -103962,7 +103962,7 @@
 				<properties ea_type="Association" direction="Destination -&gt; Source"/>
 				<modifiers isRoot="false" isLeaf="false"/>
 				<parameterSubstitutions/>
-				<documentation value="トンネルの主要構造の外形を構成する面の集まり。"/>
+				<documentation value="トンネルの主要構造の外形を構成する面の集まり。標準製品仕様書では使用しない。"/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
 				<labels lb="0..1" lt="+lod2MultiSurface&#xA;«property»"/>
 				<extendedProperties/>
@@ -104118,7 +104118,7 @@
 				<properties ea_type="Association" direction="Destination -&gt; Source"/>
 				<modifiers isRoot="false" isLeaf="false"/>
 				<parameterSubstitutions/>
-				<documentation value="トンネルの立体表現に加え、線状の表現を行う場合に使用する。"/>
+				<documentation value="トンネルの立体表現に加え、線状の表現を行う場合に使用する。標準製品仕様書では使用しない。"/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
 				<labels lb="0..1" lt="+lod4MultiCurve&#xA;«property»"/>
 				<extendedProperties/>
@@ -104689,7 +104689,7 @@
 				<model ea_localid="98032"/>
 				<properties ea_type="Aggregation" subtype="Weak" direction="Destination -&gt; Source"/>
 				<modifiers isRoot="false" isLeaf="false"/>
-				<documentation value="トンネルの部分（tun:TunnelPart）。"/>
+				<documentation value="トンネルの部分（tun:TunnelPart）。トンネルの一部（tun:TunnelPart）の場合は使用しない。"/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
 				<labels lb="0..*" lt="+consistsOfTunnelPart&#xA;«property»"/>
 				<extendedProperties/>
@@ -104924,7 +104924,7 @@
 					<role name="lod2MultiSurface" stereotype="property" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..1" aggregation="none" containment="Unspecified"/>
 					<constraints/>
-					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
 					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
 					<documentation/>
 					<xrefs value="$XREFPROP=$XID={22E50682-AEDA-4abc-80A2-F3B35A4F4AA4}$XID;$NAM=Stereotypes$NAM;$TYP=connectorSrcEnd property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=property;FQName=GML::property;@ENDSTEREO;$DES;$CLT={002DD44D-BBCF-49b2-B482-95342FCA31E3}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -104939,7 +104939,7 @@
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
-					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
 					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
 					<documentation/>
 					<xrefs/>
@@ -104949,7 +104949,7 @@
 				<properties ea_type="Association" direction="Destination -&gt; Source"/>
 				<modifiers isRoot="false" isLeaf="false"/>
 				<parameterSubstitutions/>
-				<documentation value="LOD2において屋根の形状・起伏を再現した面。"/>
+				<documentation value="LOD2において屋根の形状・起伏を再現した面。詳細な取得基準は、各地物型のLOD定義に従うこと。"/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
 				<labels lb="0..1" lt="+lod2MultiSurface&#xA;«property»"/>
 				<extendedProperties/>
