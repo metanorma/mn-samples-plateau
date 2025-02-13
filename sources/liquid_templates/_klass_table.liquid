@@ -23,7 +23,7 @@
 
 [cols="{{ cols_format }}"]
 |===
-| 型の定義 {{ cols_header }}+| {{ root.definition }}
+| 型の定義 {{ cols_header }}+| {{ root.definition | replace: "&#xA;", "&#xD;" }}
 h| 上位の型 {{ cols_header }}+| {{ upper_klass_name }}
 h| ステレオタイプ {{ cols_header }}+| {{ stereotype }}
 
