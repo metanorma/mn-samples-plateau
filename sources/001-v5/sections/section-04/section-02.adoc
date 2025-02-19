@@ -1775,7 +1775,7 @@ MultiSurfaceを使用することを基本とする。
 ■:: 条件付必須
 〇:: 任意（ユースケースに応じて要否を決定してよい）
 
-[%always]
+// [%always]
 <<<
 [[toc4_02_02]]
 ==== 建築物の応用スキーマクラス図
@@ -1787,7 +1787,7 @@ image::images/EAID_E7AABA98_2450_4986_9736_DCCAF0108C50.png[]
 
 // image::images/030.svg[]
 
-[%always]
+// [%always]
 <<<
 [[toc4_02_02_02]]
 ===== Urban Object（i-UR）
@@ -1800,7 +1800,7 @@ image::images/EAID_846DD800_139C_4d47_A1DF_3FB1AC5D130F.png[]
 
 // image::images/031.svg[]
 
-[%always]
+// [%always]
 <<<
 ====== 施設管理のための拡張属性
 
@@ -1811,7 +1811,7 @@ image::images/EAID_13E09C71_99E7_40b4_B72D_48AF6379BC2E.png[]
 
 // image::images/032.svg[]
 
-[%always]
+// [%always]
 <<<
 ====== 数値地形図のための拡張属性
 
@@ -1821,39 +1821,49 @@ image::images/EAID_87476527_7B9B_4b92_967E_3D38365470CA.png[]
 
 // image::images/033.svg[]
 
-[%always]
+// [%always]
+// [keep-with-next=true]
 <<<
 ====== 建築物モデル（LOD4）の拡張属性
 
-以下に示すクラスは、建築物モデル（LOD4）を構成するbldg:Buildingなどの地物に、BIMモデルから変換した詳細な情報を属性として付与するためのデータ型である。
-<<building_lod4_exp_1>> から <<building_lod4_exp_6>> に示すデータ型は、「<<plateau_003_annex>>」（以下、「IDM・MVD」という）に定義されたクラスの属性及びプロパティセットに対応する。また、 <<building_lod4_exp_7>> に示すデータ型は「3次元屋内地理空間データ製品仕様書（案）」に定義されたクラスの属性及びプロパティセットに対応する。
+以下に示すクラスは、建築物モデル（LOD4）を構成するbldg:Buildingなどの地物に、BIMモデルから変換した詳細な情報を属性として付与するためのデータ型である。 +
+<<building_lod4_exp_1,a）>>から <<building_lod4_exp_6,f）>> に示すデータ型は、「<<plateau_003_annex>>」（以下、「IDM・MVD」という）に定義されたクラスの属性及びプロパティセットに対応する。また、 <<building_lod4_exp_7,g）>> に示すデータ型は「3次元屋内地理空間データ製品仕様書（案）」に定義されたクラスの属性及びプロパティセットに対応する。
 
-. [[building_lod4_exp_1]] bldg:_AbstractBuildingの下位型に付与する属性
-+
+[[building_lod4_exp_1]] 
+a）bldg:_AbstractBuildingの下位型に付与する属性
+
 image::images/EAID_24E8A45C_C99F_49b7_860A_9CF65FF76C76.png[]
-+
-. bldg:Roomの下位型に付与する属性
-+
+
+<<<
+b）bldg:Roomの下位型に付与する属性
+
 image::images/EAID_5D6DB5A0_5047_4bac_9E60_69904A60B56D.png[]
-+
-. bldg:_BoundarySurfaceの下位型に付与する属性
-+
+
+<<<
+c）bldg:_BoundarySurfaceの下位型に付与する属性
+
 image::images/EAID_E591C1CF_7F35_4160_8A72_DFA097AD5811.png[]
-+
-. bldg:_Openingの下位型に付与する属性
-+
+
+<<<
+d）bldg:_Openingの下位型に付与する属性
+
 image::images/EAID_CBBD6CF4_0A1E_4406_9930_89DE43527910.png[]
-+
-. bldg:BuildingInstallation及びbldg:IntBuildingInstallationに付与する属性
-+
+
+<<<
+e）bldg:BuildingInstallation及びbldg:IntBuildingInstallationに付与する属性
+
 image::images/EAID_84A9C65B_FD6D_4bb5_818F_E8C35FF5BCD1.png[]
-+
-. [[building_lod4_exp_6]] bldg:BuildingFurnitureに付与する属性
-+
+
+<<<
+[[building_lod4_exp_6]]
+f）bldg:BuildingFurnitureに付与する属性
+
 image::images/EAID_C37CFBD6_69BA_42fb_9AC7_2D329D931BCF.png[]
-+
-. [[building_lod4_exp_7]] 3次元屋内地理空間データに対応する属性
-+
+
+<<<
+[[building_lod4_exp_7]]
+g）3次元屋内地理空間データに対応する属性
+
 image::images/EAID_4EB75007_B31D_4f2c_8855_7E9D3A3B17F4.png[]
 
 // image::images/034.svg[]
@@ -1864,7 +1874,7 @@ image::images/EAID_4EB75007_B31D_4f2c_8855_7E9D3A3B17F4.png[]
 // image::images/039.svg[]
 // image::images/040.svg[]
 
-[%always]
+// [%always]
 <<<
 [[toc4_02_03]]
 ==== 建築物の応用スキーマ文書
