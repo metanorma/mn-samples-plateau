@@ -75,6 +75,38 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Poin
 [[toc4_23_04]]
 ==== ポイントクラウドモデルで使用するコードリストと列挙型
 
+[[toc4_23_04_01]]
 ===== UrbanObject（i-UR）
 
-// lutaml_gml_dictionary::iur/codelists/3.2/000.xml[template="gml_dict_template.liquid",context=dict]
+====== PointCloud_mimeType.xml
+
+lutaml_gml_dictionary::iur/codelists/3.2/PointCloud_mimeType.xml[template="gml_dict_template.liquid",context=dict]
+
+====== PointCloudSpecAttribute_class.xml
+
+lutaml_gml_dictionary::iur/codelists/3.2/PointCloudSpecAttribute_class.xml[template="gml_dict_template.liquid",context=dict]
+
+====== PointCloudSpecAttribute_function.xml
+
+lutaml_gml_dictionary::iur/codelists/3.2/PointCloudSpecAttribute_function.xml[template="gml_dict_template.liquid",context=dict]
+
+====== PointCloudSpecAttribute_pointCloudAssociationMethod.xml
+
+lutaml_gml_dictionary::iur/codelists/3.2/PointCloudSpecAttribute_pointCloudAssociationMethod.xml[template="gml_dict_template.liquid",context=dict]
+
+====== PointCloudSpecAttribute_pointSubsamplingInfo.xml
+
+lutaml_gml_dictionary::iur/codelists/3.2/PointCloudSpecAttribute_pointSubsamplingInfo.xml[template="gml_dict_template.liquid",context=dict]
+
+====== PointCloudSpecAttribute_spectralBandSet.xml
+
+lutaml_gml_dictionary::iur/codelists/3.2/PointCloudSpecAttribute_spectralBandSet.xml[template="gml_dict_template.liquid",context=dict]
+
+====== PointCloudSpecAttribute_srcFilteringCriteria.xml
+
+lutaml_gml_dictionary::iur/codelists/3.2/PointCloudSpecAttribute_srcFilteringCriteria.xml[template="gml_dict_template.liquid",context=dict]
+
+====== PointCloudSpecAttribute_srcScale.xml
+
+lutaml_gml_dictionary::iur/codelists/3.2/PointCloudSpecAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
+
