@@ -290,6 +290,10 @@ h| コード h| 説明
 属性名又は関連役割名が括弧で囲まれているものは、本データ製品仕様書の対象外とする属性又は関連役割である。
 
 [[tab-1-8]]
+.汎用都市オブジェクトの応用スキーマ文書の作成例
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="GenericCityObject",template="../../sources/liquid_templates/_klass_table.liquid"]
+
+////
 [cols="1a,1a,2a"]
 .汎用都市オブジェクトの応用スキーマ文書の作成例
 |===
@@ -358,6 +362,7 @@ gml:MultiSurfaceを使用する。
 |===
 
 NOTE: 赤字は記載例
+////
 
 3）前項において、コード型の属性を選択する場合には、拡張コードリスト（<<tab-1-9>>）を作成する。
 
