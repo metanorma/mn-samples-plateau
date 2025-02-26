@@ -27,9 +27,9 @@ image::images/EAID_C31C1314_B679_4413_B8FE_A2CD584FC128.png[]
   <app:imageURI>[テクスチャ画像への相対パス]</app:imageURI>
   <app:mimeType>[テクスチャ画像のファイルタイプ]</app:mimeType>
   <app:target uri="[テクスチャ画像を貼る対象となる面への参照">
-	  <app:TexCoordList>
+    <app:TexCoordList>
       <app:textureCoordinates ring="[テクスチャ画像を貼る対象となる面の外周への参照">[面の外周に対応するテクスチャ画像の座標]</app:textureCoordinates>
-	  </app:TexCoordList>
+    </app:TexCoordList>
   </app:target>
 </app:ParameterizedTexture>
 ----

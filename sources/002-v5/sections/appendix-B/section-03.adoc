@@ -47,7 +47,7 @@ gml:Pointは、点を記述するための幾何オブジェクトである。gm
 [source,xml]
 ----
 <gml:Point gml:id=”pos001”>
-	<gml:pos>33.80 130.54 0</gml:pos>
+  <gml:pos>33.80 130.54 0</gml:pos>
 </gml:Point>
 ----
 ====
@@ -62,7 +62,7 @@ gml:MultiPointは、点（gml:Point）の集まりを記述するための幾何
 [source,xml]
 ----
 <gml:MultiPoint>
-	<gml:pointMember>
+  <gml:pointMember>
     <gml:Point>
       <gml:pos>36.34163 138.375027 586.52</gml:pos>
     </gml:Point>
