@@ -357,19 +357,18 @@ identifier:: /att/quality/21
 subject:: 標準作業手順
 class:: 留意事項
 [statement]
----
+--
 (((i-UR)))(((CityGML)))(((3D都市モデル)))
 i-URの符号化仕様は相対パスによりschemaLocationを指定する。
 
 * CityGML形式に出力したファイルのschemaLocationの指定は、3D都市モデルの成果品に含めるi-URの符号化仕様のファイルへの相対パスとする。
 ** 地物型又はモジュールごとに分けられた3D都市モデルの成果品を格納するフォルダ（例：bldg,tran）の直下に格納した3D都市モデルファイルの場合、schemaLocationとして記述すべき符号化仕様への相対パスは以下となる。
 +
---
 `urbanObject.xsdへの相対パス：`../../schemas/iur/uro/3.2/urbanObject.xsd
-
++
 `urbanFunction.xsdへの相対パス：`../../schemas/iur/uro/3.2/urbanFunction.xsd
+
 --
----
 ====
 
 // (((3D都市モデル)))
