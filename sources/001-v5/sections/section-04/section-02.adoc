@@ -2394,11 +2394,11 @@ lutaml_gml_dictionary::iur/codelists/3.2/IfcBuildingElement_predefinedType.xml[t
 <<ifc_2x3_cv>>
 
 
-====== IfcElementCompositionEnum
+====== IfcElementCompositionEnumType
 
 [cols="3a,22a"]
 |===
-| 列挙型 | IfcElementCompositionEnum
+| 列挙型 | IfcElementCompositionEnumType
 
 h| 値 h| 説明
 | COMPLEX | 通常の単一の建物であればELEMENTを設定
@@ -2417,11 +2417,11 @@ lutaml_gml_dictionary::iur/codelists/3.2/IfcBuildingElement_shapeType.xml[templa
 [.source]
 <<ifc_2x3_cv>>
 
-====== IfcInternalOrExternalEnum
+====== IfcInternalOrExternalEnumType
 
 [cols="3a,22a"]
 |===
-| 列挙型 | IfcInternalOrExternalEnum
+| 列挙型 | IfcInternalOrExternalEnumType
 
 h| 値 h| 説明
 | INTERNAL | 内部空間
@@ -2433,29 +2433,29 @@ h| 値 h| 説明
 [.source]
 <<ifc_2x3_cv>>
 
-====== IfcSIPrefix
+====== IfcSIPrefixType
 
 [cols="3a,22a"]
 |===
-| 列挙型 | IfcSIPrefix
+| 列挙型 | IfcSIPrefixType
 
 h| 値 h| 説明
-| EXA | 10^18^
-| PETA | 10^15^
-| TERA | 10^12^
-| GIGA | 10^9^
-| MEGA | 10^6^
-| KILO | 10^3^
-| HECTO | 10^2^
+| EXA | 10の18乗
+| PETA | 10の15乗
+| TERA | 10の12乗
+| GIGA | 10の9乗
+| MEGA | 10の6乗
+| KILO | 10の3乗
+| HECTO | 10の2乗
 | DECA | 10
-| DECI | 10^-1^
-| CENTI | 10^-2^
-| MILLI | 10^-3^
-| MICRO | 10^-6^
-| NANO | 10^-9^
-| PICO | 10^-12^
-| FEMTO | 10^-15^
-| ATTO | 10^-18^
+| DECI | 10の-1乗
+| CENTI | 10の-2乗
+| MILLI | 10の-3乗
+| MICRO | 10の-6乗
+| NANO | 10の-9乗
+| PICO | 10の-12乗
+| FEMTO | 10の-15乗
+| ATTO | 10の-18乗
 
 |===
 
@@ -2553,14 +2553,14 @@ h| 値 h| 説明
 [.source]
 <<ifc_2x3_cv>>
 
-====== IfcStateEnum
+====== IfcStateEnumType
 
 // 20240805 rwp table had overlaps between columns; using auto layout 
 // [cols="3a,22a"]
 
 [cols="a,a"]
 |===
-| 列挙型 | IfcStateEnum
+| 列挙型 | IfcStateEnumType
 
 h| 値 h| 説明
 | READWRITE | 読み取り/書き込み状態。アプリケーションにより変更される場合がある。
@@ -2574,14 +2574,14 @@ h| 値 h| 説明
 [.source]
 <<ifc_2x3_cv>>
 
-====== IfcUnitEnum
+====== IfcUnitEnumType
 
 // 20240805 rwp table had overlaps between columns; using auto layout 
 // [cols="3a,22a"]
 
 [cols="a,a"]
 |===
-| 列挙型 | IfcUnitEnum
+| 列挙型 | IfcUnitEnumType
 
 h| 値 h| 説明
 | ABSORBEDDOSEUNIT | 吸収線量
@@ -2620,14 +2620,14 @@ h| 値 h| 説明
 [.source]
 <<ifc_2x3_cv>>
 
-====== IfcTransportElementTypeEnum
+====== IfcTransportElementTypeEnumType
 
 // 20240805 rwp table had overlaps between columns; using auto layout 
 // [cols="3a,22a"]
 
 [cols="a,a"]
 |===
-| 列挙型 | IfcTransportElementTypeEnum
+| 列挙型 | IfcTransportElementTypeEnumType
 
 h| 値 h| 説明
 | ELEVATOR | エレベータ

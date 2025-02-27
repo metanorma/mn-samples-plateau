@@ -66,8 +66,7 @@ image::images/523.webp.png[]
           <uro:srcFilteringCriteria codeSpace="../../codelists/PointCloudSpecAttribute_srcFilteringCriteria.xml">1</uro:srcFilteringCriteria>
           <uro:srcGridInterval uom="m">1</uro:srcGridInterval>
           <uro:isIntensity>1</uro:isIntensity>
-          <uro:isRgb>1</uro:isRgb>
-          <uro:isNir>0</uro:isNir>
+          <uro:spectralBandSet>1</uro:spectralBandSet>
           <uro:isReturnInfo>0</uro:isReturnInfo>
           <uro:isStandardClassification>0</uro:isStandardClassification>
           <uro:customClassificationType>0</uro:customClassificationType>
@@ -102,9 +101,7 @@ image::images/523.webp.png[]
 ** 原典の三次元点群データがグリッドデータの場合にその格子間隔を記述する。
 *	uro:isIntensityには、三次元点群データにIntensity（反射強度）の情報が含まれているか否かを記述する。
 ** 三次元点群データを外部参照する場合に記述することができる。
-*	uro:isRgbには、三次元点群データにRGB（色情報）の情報が含まれているか否かを記述する。
-** 三次元点群データを外部参照する場合に記述することができる。
-*	uro:isNirには、三次元点群データにNIR（近赤外線）の情報が含まれているか否かを記述する。
+*	uro:spectralBandSetには、三次元点群データに含まれる波長スペクトル情報（RGBやNIR等）を示すコードを記述する。
 ** 三次元点群データを外部参照する場合に記述することができる。
 *	uro:isReturnInfoには、三次元点群データにReturnNumber及びNumber of Returns（反射番号、総反射回数）の情報が含まれているか否かを記述する。
 ** 三次元点群データを外部参照する場合に記述することができる。

@@ -543,5 +543,17 @@ LOD2又はLOD3を作成する際に、歩道部であるが車両が通行でき
 
 [[fig-D-18]]
 .歩道部かつ車道交差部でもある交通領域の例
-image::images/229.webp.png[]
+image::images/229.webp.png[width="500"]
+
+===== TrafficArea、AuxiliaryTrafficAreaを構成するMultiSurfaceの作成単位
+
+TrafficArea、AuxiliaryTrafficAreaを構成するMultiSurfaceは同一機能（車道部、歩道部など）となるSurfaceの集まりを1つのMultiSurfaceとして作成する。
+
+ただし、機能が車線となる場合、隣接する別の車線とも同一機能が連続するが、車線ごとに区別する必要があるため、別々のTrafficAreaとして作成する。
+
+また、同一機能を有するSurfaceが連続していない場合は、別々のTrafficArea、AuxiliaryTrafficAreaとしてよい。
+
+[[fig-D-19]]
+.TrafficArea、AuxiliaryTrafficAreaの作成単位の例
+image::images/530.webp.png[width="300"]
 
