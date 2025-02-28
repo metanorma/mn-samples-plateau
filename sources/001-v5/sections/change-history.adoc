@@ -179,11 +179,29 @@
 
 | 2024.09.30 | 4.1
 |
-* コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）へのコードの追加 +
-* コードリスト（DataQualityAttribute_geometrySrcDesc.xml及びDataQualityAttribute_thematicSrcDesc.xml）のコードに対する表示名の修正 +
-* 部品となるクラスの場合、データが作成された日（core:creationDate）を運用上必須から任意に変更 +
-* 誤字・脱字の修正
+2024年度は、以下の観点により2023年度の製品仕様を拡張し、標準製品仕様を改定した。
+. 仕様の見直し
+** コードリスト（PublicSurveyDataQualityAttribute_srcScale.xml）へのコードの追加
+** コードリスト（DataQualityAttribute_geometrySrcDesc.xml及びDataQualityAttribute_thematicSrcDesc.xml）のコードに対する表示名の修正
+** 部品となるクラスの場合、データが作成された日（core:creationDate）を運用上必須から任意に変更
 
+. 誤字・脱字の修正
+
+| 2025.03.21 | 5.0
+|
+2024年度は、以下の観点により2023年度の製品仕様を拡張し、標準製品仕様を改定した。
+. 地物の拡充
+** 点群データの利活用のため、「ポイントクラウド」を追加した
+
+. 仕様の見直し
+** より適切な品質評価ができるように、品質評価の検査対象メッシュの抽出方法を変更
+** BIMモデルから変換された建築物モデルについて、実用的観点から品質要求の適用範囲、品質評価手順を見直し
+** i-URで定義された地物型のうち、拡張可能な地物型を幾何型がgml:MultiSurfaceである地物型のみに限定
+
+. 体裁の見直し
+** モデル駆動型アーキテクチャの導入に伴い全体的に体裁を見直し
+
+. 誤字・脱字の修正
 
 |===
 
