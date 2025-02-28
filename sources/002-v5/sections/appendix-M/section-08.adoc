@@ -1,7 +1,8 @@
 [[tocM_08]]
 === tun:_BoundarySurface
 
-tun:_BoundarySurfaceは、トンネル（tun:Tunnel）やトンネルの部分（tun:TunnelPart）の屋根面及び壁面、底面等の境界面を構成する地物型である。トンネルモデル（LOD2）、トンネルモデル（LOD3）及びトンネルモデル（LOD4）を作成する際に使用される。 +
+tun:_BoundarySurfaceは、トンネル（tun:Tunnel）やトンネルの部分（tun:TunnelPart）の屋根面及び壁面、底面等の境界面を構成する地物型である。トンネルモデル（LOD2）、トンネルモデル（LOD3）及びトンネルモデル（LOD4）を作成する際に使用される。
+
 この地物型は抽象地物であり、実装においては、この下位型の具象となる地物型を使用する。
 
 
