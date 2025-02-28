@@ -16,7 +16,8 @@
 
 ====== 建築物モデル（LOD0）の概要
 
-建築物モデル（LOD0）では、建築物の形状を面により表現する。 +
+建築物モデル（LOD0）では、建築物の形状を面により表現する。
+
 建築物モデル（LOD0）の取得イメージを<<tab-4-7>>に示す。
 
 [[tab-4-7]]
@@ -76,7 +77,8 @@
 
 ====== 建築物モデル（LOD1）の概要
 
-建築物モデル（LOD1）では、建築物の形状を、面を一律の高さで上向きに押し出した立体により表現する。 +
+建築物モデル（LOD1）では、建築物の形状を、面を一律の高さで上向きに押し出した立体により表現する。
+
 建築物モデル（LOD1）の取得イメージを<<tab-4-8>>に示す。
 
 [[tab-4-8]]
@@ -116,9 +118,10 @@ image::images/011.webp.png[]
 
 ====== 建築物モデル（LOD2）の概要
 
-建築物モデル（LOD2）では、建築物の形状を、屋根形状を含む立体として表現し、立体の境界面を、屋根面、外壁面及び底面に区分するとともに、建築物の外側の付属物を区分する。 +
-建築物モデル（LOD2）は、含むべき地物により、LOD2.0、LOD2.1及びLOD2.2に区分する（<<tab-4-9>>）。 +
-LOD2.0、LOD2.1及びLOD2.2は、航空写真等上空から取得したデータの利用を前提とした区分であり、屋根形状を含む建築物の上面を詳細化する。 +
+建築物モデル（LOD2）では、建築物の形状を、屋根形状を含む立体として表現し、立体の境界面を、屋根面、外壁面及び底面に区分するとともに、建築物の外側の付属物を区分する。
+
+建築物モデル（LOD2）は、含むべき地物により、LOD2.0、LOD2.1及びLOD2.2に区分する（<<tab-4-9>>）。LOD2.0、LOD2.1及びLOD2.2は、航空写真等上空から取得したデータの利用を前提とした区分であり、屋根形状を含む建築物の上面を詳細化する。
+
 標準製品仕様書は、原則としてLOD2.0を採用する。ただし、ユースケースの必要に応じてLOD2.1又はLOD2.2を採用できる。
 
 [[tab-4-9]]
@@ -451,8 +454,10 @@ RoofSurfaceの代替として使用できる。
 
 ====== 建築物モデル（LOD3）の概要
 
-建築物モデル（LOD3）は、含むべき地物により、LOD3.0、LOD3.1、LOD3.2及びLOD3.3に分かれる（<<tab-4-11>>）。 +
-LOD3.0、LOD3.1、LOD3.2及びLOD3.3は、MMSによる点群や画像等、側面から取得したデータの利用を前提とした区分であり、外壁面や開口部を含む建築物の側面を詳細化する。 +
+建築物モデル（LOD3）は、含むべき地物により、LOD3.0、LOD3.1、LOD3.2及びLOD3.3に分かれる（<<tab-4-11>>）。
+
+LOD3.0、LOD3.1、LOD3.2及びLOD3.3は、MMSによる点群や画像等、側面から取得したデータの利用を前提とした区分であり、外壁面や開口部を含む建築物の側面を詳細化する。
+
 標準製品仕様書では原則としてLOD3.0を採用する。ただし、ユースケースの必要に応じてLOD3.1、LOD3.2又はLOD3.3を採用できる。
 
 [[tab-4-11]]
@@ -583,8 +588,7 @@ image::images/019.webp.png[]
 付属物のうち、短辺3m以上の規模の大きな付属物が再現される。 +
 LOD3では外壁面が詳細化されるため、LOD2では表現されない付属物の下部の形状も表現される。 +
 また、外壁面に設けられた短辺1m以上の開口部（窓、扉）が再現される。 +
-なお、上図の場合、軒裏は3m以内であったため、表現されなかった。
-
+なお、上図の場合、軒裏は3m以内であったため、表現されなかった。 +
 下図に3m以上の軒を表現した例を示す。LOD3.0において軒を表現する建築物として、寺社や城といった特殊な建築物あるいは倉庫等の規模が大きな建築物が該当する。
 
 h| LOD3.1
@@ -1144,9 +1148,12 @@ LOD3.2では1m未満の軒裏を表現せず、外壁面を屋根面の外周か
 
 ====== 建築物モデル（LOD4）の概要
 
-建築物モデル（LOD4）は、建築物モデル（LOD3）により表現される建築物の外側の形状に加え、建築物の内側の形状（屋内空間）を表現する。 +
-建築物モデル（LOD4）は、BIMモデルからの変換又は屋内測量によって取得する。BIMモデルからの変換フローは、「<<plateau_003>>」を参照のこと。 +
-建築物モデル（LOD4）は、含むべき地物により、LOD4.0、LOD4.1及びLOD4.2に区分する（<<tab-4-13>>）。 +
+建築物モデル（LOD4）は、建築物モデル（LOD3）により表現される建築物の外側の形状に加え、建築物の内側の形状（屋内空間）を表現する。
+
+建築物モデル（LOD4）は、BIMモデルからの変換又は屋内測量によって取得する。BIMモデルからの変換フローは、「<<plateau_003>>」を参照のこと。
+
+建築物モデル（LOD4）は、含むべき地物により、LOD4.0、LOD4.1及びLOD4.2に区分する（<<tab-4-13>>）。
+
 標準製品仕様書では原則としてLOD4.0を採用する。ただし、ユースケースの必要に応じてLOD4.1又はLOD4.2を採用できる。
 
 [[tab-4-13]]
@@ -2394,11 +2401,11 @@ lutaml_gml_dictionary::iur/codelists/3.2/IfcBuildingElement_predefinedType.xml[t
 <<ifc_2x3_cv>>
 
 
-====== IfcElementCompositionEnum
+====== IfcElementCompositionEnumType
 
 [cols="3a,22a"]
 |===
-| 列挙型 | IfcElementCompositionEnum
+| 列挙型 | IfcElementCompositionEnumType
 
 h| 値 h| 説明
 | COMPLEX | 通常の単一の建物であればELEMENTを設定
@@ -2417,11 +2424,11 @@ lutaml_gml_dictionary::iur/codelists/3.2/IfcBuildingElement_shapeType.xml[templa
 [.source]
 <<ifc_2x3_cv>>
 
-====== IfcInternalOrExternalEnum
+====== IfcInternalOrExternalEnumType
 
 [cols="3a,22a"]
 |===
-| 列挙型 | IfcInternalOrExternalEnum
+| 列挙型 | IfcInternalOrExternalEnumType
 
 h| 値 h| 説明
 | INTERNAL | 内部空間
@@ -2433,29 +2440,29 @@ h| 値 h| 説明
 [.source]
 <<ifc_2x3_cv>>
 
-====== IfcSIPrefix
+====== IfcSIPrefixType
 
 [cols="3a,22a"]
 |===
-| 列挙型 | IfcSIPrefix
+| 列挙型 | IfcSIPrefixType
 
 h| 値 h| 説明
-| EXA | 10^18^
-| PETA | 10^15^
-| TERA | 10^12^
-| GIGA | 10^9^
-| MEGA | 10^6^
-| KILO | 10^3^
-| HECTO | 10^2^
+| EXA | 10の18乗
+| PETA | 10の15乗
+| TERA | 10の12乗
+| GIGA | 10の9乗
+| MEGA | 10の6乗
+| KILO | 10の3乗
+| HECTO | 10の2乗
 | DECA | 10
-| DECI | 10^-1^
-| CENTI | 10^-2^
-| MILLI | 10^-3^
-| MICRO | 10^-6^
-| NANO | 10^-9^
-| PICO | 10^-12^
-| FEMTO | 10^-15^
-| ATTO | 10^-18^
+| DECI | 10の-1乗
+| CENTI | 10の-2乗
+| MILLI | 10の-3乗
+| MICRO | 10の-6乗
+| NANO | 10の-9乗
+| PICO | 10の-12乗
+| FEMTO | 10の-15乗
+| ATTO | 10の-18乗
 
 |===
 
@@ -2553,14 +2560,14 @@ h| 値 h| 説明
 [.source]
 <<ifc_2x3_cv>>
 
-====== IfcStateEnum
+====== IfcStateEnumType
 
 // 20240805 rwp table had overlaps between columns; using auto layout 
 // [cols="3a,22a"]
 
 [cols="a,a"]
 |===
-| 列挙型 | IfcStateEnum
+| 列挙型 | IfcStateEnumType
 
 h| 値 h| 説明
 | READWRITE | 読み取り/書き込み状態。アプリケーションにより変更される場合がある。
@@ -2574,14 +2581,14 @@ h| 値 h| 説明
 [.source]
 <<ifc_2x3_cv>>
 
-====== IfcUnitEnum
+====== IfcUnitEnumType
 
 // 20240805 rwp table had overlaps between columns; using auto layout 
 // [cols="3a,22a"]
 
 [cols="a,a"]
 |===
-| 列挙型 | IfcUnitEnum
+| 列挙型 | IfcUnitEnumType
 
 h| 値 h| 説明
 | ABSORBEDDOSEUNIT | 吸収線量
@@ -2620,14 +2627,14 @@ h| 値 h| 説明
 [.source]
 <<ifc_2x3_cv>>
 
-====== IfcTransportElementTypeEnum
+====== IfcTransportElementTypeEnumType
 
 // 20240805 rwp table had overlaps between columns; using auto layout 
 // [cols="3a,22a"]
 
 [cols="a,a"]
 |===
-| 列挙型 | IfcTransportElementTypeEnum
+| 列挙型 | IfcTransportElementTypeEnumType
 
 h| 値 h| 説明
 | ELEVATOR | エレベータ
