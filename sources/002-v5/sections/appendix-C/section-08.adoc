@@ -80,8 +80,7 @@ subject:: 妥当な建築物データセットの要件
 description:: bldg:BuildingInstallationは、bldg:functionによりその設備を区分する。
 ====
 
-bldg:functionが取りうる値は、コードリストにより定義されている。 +
-標準製品仕様書では、<<tab-C-11>>に示す区分が用意されている。例えば、階段の場合には「1060」となる。この区分に該当しない付属物が存在する場合には、本付属書で示すコードリストの拡張手順に従い、コードを追加する。
+bldg:functionが取りうる値は、コードリストにより定義されている。標準製品仕様書では、<<tab-C-11>>に示す区分が用意されている。例えば、階段の場合には「1060」となる。この区分に該当しない付属物が存在する場合には、本付属書で示すコードリストの拡張手順に従い、コードを追加する。
 
 // RWP slide 21 use luta_gml_dictionary_table
 // EDITOR: Autogen table below requires a check
@@ -135,7 +134,8 @@ h| コード h| 説明
 ////
 
 なお、bldg:BuildingInstallationは、建築物の外側に設置された、建築物の付属的な設備を指す。 +
-そのため、<<tab-C-11>>に該当する設備であっても、建築物に付属していない設備は、bldg:BuildingInstallationとしては取得しない。 +
+そのため、<<tab-C-11>>に該当する設備であっても、建築物に付属していない設備は、bldg:BuildingInstallationとしては取得しない。
+
 例えば、商店街に設置された、独立して存在する規模の大きなアーケード（<<fig-C-38>>）は、 +
 bldg:BuildingInstallationではなく、frn:CityFurnitureとして取得する。
 

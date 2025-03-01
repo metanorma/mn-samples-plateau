@@ -96,8 +96,7 @@ image::images/159.webp.png[width="400"]
 [[tocC_05_02_04]]
 ===== bldg:OuterFloorSurface
 
-bldg:OuterFloorSurfaceは、屋根以外の上向きの面を記述するために使用する地物型である。テラスや屋外に存在する階段（踊り場を含む）等がこれに該当する。 +
-屋外における歩行者のナビゲーションのように、人が通行可能な範囲を必要とするユースケースにおいて適用できる。
+bldg:OuterFloorSurfaceは、屋根以外の上向きの面を記述するために使用する地物型である。テラスや屋外に存在する階段（踊り場を含む）等がこれに該当する。屋外における歩行者のナビゲーションのように、人が通行可能な範囲を必要とするユースケースにおいて適用できる。
 
 [[fig-C-23]]
 .屋外床面の例
@@ -146,7 +145,8 @@ image::images/166.webp.png[width="400"]
 [[tocC_05_02_07]]
 ===== bldg:CeilingSurface
 
-bldg:CeilingSurfaceは、部屋など構造物内部の上側（天井）の面である。立体として構成する部屋（bldg:Room）の境界面のうち、上側の面を指す。 +
+bldg:CeilingSurfaceは、部屋など構造物内部の上側（天井）の面である。立体として構成する部屋（bldg:Room）の境界面のうち、上側の面を指す。
+
 <<fig-C-30>>は、部屋を外から見た例である。部屋の立体を構成する境界面のうち、上側の面が天井面となる。 +
 bldg:CeilingSurfaceの法線ベクトルは下向き（部屋の内側に向く方向が正）となる。
 
@@ -183,27 +183,31 @@ LOD2及びLOD3では、建築物（bldg:Building）の境界面をbldg:RoofSurfa
 .LOD2における境界面の区分
 image::images/170.webp.png[width="200"]
 
-ただし、ユースケースで必要な場合には、境界面の区分にbldg:OuterFloorSurface（屋外床面：<<tocC_05_02_04>>）及びbldg:ClosureSurface（閉鎖面：<<tocC_05_02_06>>）を使用できる。また、LOD3ではbldg:OuterCeilingSurface（屋外天井面：<<tocC_05_02_05>>）を使用できる。 +
+ただし、ユースケースで必要な場合には、境界面の区分にbldg:OuterFloorSurface（屋外床面：<<tocC_05_02_04>>）及びbldg:ClosureSurface（閉鎖面：<<tocC_05_02_06>>）を使用できる。また、LOD3ではbldg:OuterCeilingSurface（屋外天井面：<<tocC_05_02_05>>）を使用できる。
+
 bldg:OuterFloorSurface（屋外床面）は、bldg:RoofSurfaceの代替として使用できる。建築物を構成する境界面のうち、上を向いている面は、bldg:RoofSurfaceとなるが、屋上のように、人が滞留可能な面と屋根面とを区別したい場合はbldg:OuterFloorSurfaceを使用し、これを区分する。<<fig-C-34>>に例を示す。
 
 [[fig-C-34]]
 .屋外床面の取得例
 image::images/171.webp.png[width="300"]
 
-bldg:OuterFloorSurfaceとして取得しない場合は、bldg:RoofSurfaceとして取得する。 +
+bldg:OuterFloorSurfaceとして取得しない場合は、bldg:RoofSurfaceとして取得する。
+
 bldg:OuterCeilingSurface（屋外天井面）は、bldg:WallSurfaceの代替として使用できる。bldg:OuterCeilingSurfaceはbldg:WallSurfaceのうち下向きの面であり、天井の機能を有する面、これを区別したい場合に適用する。<<fig-C-35>>に例を示す。
 
 [[fig-C-35]]
 .屋外天井面の取得例
 image::images/172.webp.png[width="400"]
 
-bldg:OuterCeilingSurfaceとして取得しない場合は、bldg:WallSurfaceとして取得する。また、bldg:OuterCeilingSurfaceは下向きの面に適用することから、建築物の上向きの面（屋根）を詳細化の対象とするLOD2では出現せず、LOD3でのみ出現する。 +
+bldg:OuterCeilingSurfaceとして取得しない場合は、bldg:WallSurfaceとして取得する。また、bldg:OuterCeilingSurfaceは下向きの面に適用することから、建築物の上向きの面（屋根）を詳細化の対象とするLOD2では出現せず、LOD3でのみ出現する。 
+
 さらに、LOD2及びLOD3においてbldg:BuildingPartを用いて一棟の建築物を複数の部分に分割して記述する場合は、各bldg:BuildingPartが接する仮想的な境界面が必要となるため、これをbldg:ClosureSurface（閉鎖面）として取得する。
 
 [[fig-C-36]]
 .閉鎖面の取得例
 image::images/173.webp.png[width="500"]
 
-建築物付属物（bldg:BuildingInstallation）を立体として記述する場合、原則として境界面を屋根面や外壁面に分ける必要はない。ただし、建築物付属物の境界面が、建築物の境界面を兼ねている場合には、いずれかの境界面に区分する。これは、区分した境界面が、建築物の境界面にもなるからでなる。 +
+建築物付属物（bldg:BuildingInstallation）を立体として記述する場合、原則として境界面を屋根面や外壁面に分ける必要はない。ただし、建築物付属物の境界面が、建築物の境界面を兼ねている場合には、いずれかの境界面に区分する。これは、区分した境界面が、建築物の境界面にもなるからでなる。
+
 地物を詳細な地物に区分し記述することにより、より高度な活用が可能となる。その一方で、データ作成が複雑となり、これに要する費用や時間が増大する。そのため、標準製品仕様書では、LODの定義を精緻化している。建築物についてはLOD2.0及びLOD3.0を採用することを基本としている。
 

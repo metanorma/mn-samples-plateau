@@ -1,7 +1,8 @@
 [[tocL_08]]
 === brid:_BoundarySurface
 
-brid:_BoundarySurfaceは、橋梁（brid:Bridge）や橋梁部分（brid:BridgePart）の屋根面、壁面及び底面等の境界面を表す地物型である。橋梁モデル（LOD2）、橋梁モデル（LOD3）及び橋梁モデル（LOD4）を作成する際に使用される。 +
+brid:_BoundarySurfaceは、橋梁（brid:Bridge）や橋梁部分（brid:BridgePart）の屋根面、壁面及び底面等の境界面を表す地物型である。橋梁モデル（LOD2）、橋梁モデル（LOD3）及び橋梁モデル（LOD4）を作成する際に使用される。
+
 この地物型は抽象地物であり、実装においてはこの下位型の具象となる地物型を使用する。
 
 
