@@ -1,9 +1,10 @@
 [[tocC_12]]
 === bldg:BuildingサンプルXML
 
-bldg:Buildingのサンプルデータを以下に示す。 +
-ルートタグは、core:CityModelとなる。 +
-gml:Envelopeを使用して空間参照系の指定、次元数の指定及び3D都市モデルの空間範囲（このファイルに含まれる都市オブジェクトを包含する最小の矩形）を指定する。空間参照系は、gml:EnvelopeのsrsName属性を使用して記述する（srsName=”http://www.opengis.net/def/crs/EPSG/0/6697”）。また、次元数は、srsDimension属性を使用して記述する（srsDimension=”3”）。空間範囲は、gml:lowerCorner及びgml:upperCornerにより指定する。 +
+bldg:Buildingのサンプルデータを以下に示す。ルートタグは、core:CityModelとなる。
+
+gml:Envelopeを使用して空間参照系の指定、次元数の指定及び3D都市モデルの空間範囲（このファイルに含まれる都市オブジェクトを包含する最小の矩形）を指定する。空間参照系は、gml:EnvelopeのsrsName属性を使用して記述する（srsName=”http://www.opengis.net/def/crs/EPSG/0/6697 ”）。また、次元数は、srsDimension属性を使用して記述する（srsDimension=”3”）。空間範囲は、gml:lowerCorner及びgml:upperCornerにより指定する。 
+
 bldg:Buildingは、core:CityModelの子要素として出現する。このとき、必ずcore:cityObjectMemberタグにより囲まれる。 +
 bldg:Buildingタグの直下には、bldg:Buildingに定義された属性及び関連役割が出現する。このとき、出現順序は上位の型から継承したものから順に出現する。まず、gml:_Featureから継承した属性（例：gml:name）が出現する。次に、core:_CityObjectから継承するタグが出現する。さらに、bldg:_AbstractBuildingから継承するタグ（例：bldg:usage）が出現する。最後にi-URで定義されたタグ（例：uro:buildingIDAttribute、uro:buildingDisasterRiskAttribute）が出現する。
 

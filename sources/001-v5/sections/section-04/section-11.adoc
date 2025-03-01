@@ -1,7 +1,8 @@
 [[toc4_11]]
 === 橋梁モデルの応用スキーマ
 
-橋梁とは、道路、鉄道、水路等の輸送路において、輸送の障害となる河川、渓谷、湖沼、海峡あるいは他の道路、鉄道、水路等の上方にこれらを横断するために建設される構造物の総称である。市街地において効率的な土地利用の観点から、道路上あるいは河川上の空間に連続して建設される高架橋も橋梁の一形態である。[土木工学ハンドブック] +
+橋梁とは、道路、鉄道、水路等の輸送路において、輸送の障害となる河川、渓谷、湖沼、海峡あるいは他の道路、鉄道、水路等の上方にこれらを横断するために建設される構造物の総称である。市街地において効率的な土地利用の観点から、道路上あるいは河川上の空間に連続して建設される高架橋も橋梁の一形態である。[土木工学ハンドブック]
+
 標準製品仕様書では以下を対象とする。
 
 * 道路法（昭和27年法律第180号）第2条第1項に規定する「橋」。橋長2.0m以上を対象とし高架橋及び桟道橋を含む[参考 <<cbr_road_build_manual>>]。
@@ -28,7 +29,9 @@
 
 ====== 橋梁モデル（LOD0）の概要
 
-橋梁モデル（LOD0）では、橋梁の形状を、線又は面により表現する。橋梁モデル（LOD0）の取得イメージを<<tab-4-60>>に示す。
+橋梁モデル（LOD0）では、橋梁の形状を、線又は面により表現する。
+
+橋梁モデル（LOD0）の取得イメージを<<tab-4-60>>に示す。
 
 [[tab-4-60]]
 [cols="5a,9a,9a,9a,9a,9a"]
@@ -144,7 +147,9 @@ h| 説明 | 道路橋は、地図情報レベル2500では、縁線を取得す�
 
 ====== 橋梁モデル（LOD1）の概要
 
-橋梁モデル（LOD1）では、橋梁の形状を、立体により表現する。橋梁モデル（LOD1）の取得イメージを<<tab-4-61>>に示す。
+橋梁モデル（LOD1）では、橋梁の形状を、立体により表現する。
+
+橋梁モデル（LOD1）の取得イメージを<<tab-4-61>>に示す。
 
 [[tab-4-61]]
 [cols="4a,9a,9a,9a,9a"]
@@ -242,8 +247,8 @@ h| 説明
 
 ====== 橋梁モデル（LOD2）の概要
 
-橋梁モデル（LOD2）では、橋梁の形状を、主要な部分を簡略化した立体又は面の集まりとして表現する。 +
-橋梁モデル（LOD2）は、橋梁を面の集まりとして表現するか立体として表現するかにより、LOD2.0及びLOD2.1に区分する。LOD2.0では橋梁を面として取得し、LOD2.1では橋梁を立体として表現する。 +
+橋梁モデル（LOD2）では、橋梁の形状を、主要な部分を簡略化した立体又は面の集まりとして表現する。橋梁モデル（LOD2）は、橋梁を面の集まりとして表現するか立体として表現するかにより、LOD2.0及びLOD2.1に区分する。LOD2.0では橋梁を面として取得し、LOD2.1では橋梁を立体として表現する。
+
 標準製品仕様書は、原則としてLOD2.0を採用する。ただし、ユースケースの必要に応じてLOD2.1を採用できる。
 
 [cols="6a,4a,4a,4a"]
@@ -571,7 +576,9 @@ Element
 
 ====== 橋梁モデル（LOD3）の概要
 
-橋梁モデル（LOD3）では、橋梁の形状を、主要な部分の外形を構成する特徴点から構成する面を境界面とする立体、又は面の集まりとして表現する。橋梁モデル（LOD3）に含むべき地物を<<tab-4-64>>に示す。
+橋梁モデル（LOD3）では、橋梁の形状を、主要な部分の外形を構成する特徴点から構成する面を境界面とする立体、又は面の集まりとして表現する。
+
+橋梁モデル（LOD3）に含むべき地物を<<tab-4-64>>に示す。
 
 [[tab-4-64]]
 [cols="3a,3a,6a,8a"]
@@ -815,7 +822,8 @@ Element
 
 ====== 橋梁モデル（LOD4）の概要
 
-橋梁モデル（LOD4）は、橋梁の詳細な形状及び橋梁内部の空間を表現する。 +
+橋梁モデル（LOD4）は、橋梁の詳細な形状及び橋梁内部の空間を表現する。
+
 橋梁モデル（LOD4）に含むべき地物を<<tab-4-66>>に示す。
 
 [[tab-4-66]]
@@ -862,8 +870,10 @@ Element
 ■:: 条件付必須
 〇:: 任意
 
-橋梁の詳細な形状は、IFCにおける橋梁モデル(IFC Bridge)と整合を図る。 +
-ただし、IFCにおける橋梁モデルはまだ国際標準となっていないことから、<<ifc_bridge_wp2,IFC Bridge Fast Track Project Report WP2: Conceptual Model>>を参考に、IFC Bridgeを構成するクラスとCityGMLのBridgeモジュールとの対応付けを示す（<<tab-4-67>>）。 +
+橋梁の詳細な形状は、IFCにおける橋梁モデル(IFC Bridge)と整合を図る。
+
+ただし、IFCにおける橋梁モデルはまだ国際標準となっていないことから、<<ifc_bridge_wp2,IFC Bridge Fast Track Project Report WP2: Conceptual Model>>を参考に、IFC Bridgeを構成するクラスとCityGMLのBridgeモジュールとの対応付けを示す（<<tab-4-67>>）。
+
 なお、橋梁内部の空間は、建築物モデル（LOD4）と整合を図る。このときの橋梁内部の空間とは、橋梁にこれと一体的な建屋が設けられていた場合の、建屋の内部の空間を指す。
 
 [[tab-4-67]]
@@ -896,10 +906,11 @@ IfcElementAssemblyのうち、以下に区分されるものを対象とする�
 
 |===
 
-CityGMLの地物型は、IFCにおいて部材の集まりを示すIfcBridgePart及びIfcElementAssemblyと対応付ける。 +
-IFCでは、梁（IfcBeam）やスラブ（IfcSlab）、支承（IfcBearing）といった橋梁を構成する部材がクラスとして定義されているが、これらのクラスとCityGMLの地物型とを対応付けると、3D都市モデルとしては詳細すぎる表現となる。 +
-そこで、これらの部材クラスの集まりであるIfcBridgePart及びIfcElementAssemblyとCityGMLの地物型とを対応付けた。
-このとき、IfcBridgePart及びIfcElementAssemblyの属性PredefinedTypeによりCityGMLの地物型であるbrid:Bridge、brid:BridgeConstructionElement又はbrid:BridgeInstallationへの振り分けを行っている。
+CityGMLの地物型は、IFCにおいて部材の集まりを示すIfcBridgePart及びIfcElementAssemblyと対応付ける。
+
+IFCでは、梁（IfcBeam）やスラブ（IfcSlab）、支承（IfcBearing）といった橋梁を構成する部材がクラスとして定義されているが、これらのクラスとCityGMLの地物型とを対応付けると、3D都市モデルとしては詳細すぎる表現となる。
+
+そこで、これらの部材クラスの集まりであるIfcBridgePart及びIfcElementAssemblyとCityGMLの地物型とを対応付けた。このとき、IfcBridgePart及びIfcElementAssemblyの属性PredefinedTypeによりCityGMLの地物型であるbrid:Bridge、brid:BridgeConstructionElement又はbrid:BridgeInstallationへの振り分けを行っている。
 
 .IfcBridgeにおけるクラス間の階層構造
 image::images/250.webp.png[]
@@ -1413,8 +1424,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/BridgeConstructionElement_function.xml[
 
 lutaml_gml_dictionary::iur/codelists/3.2/BridgeInstallation_function.xml[template="gml_dict_template.liquid",context=dict]
 
-[.source]
-<<橋梁施設台帳>>
+NOTE: 橋梁施設台帳を出典とする。
 
 [[toc4_11_04_02]]
 ===== Urban Object（i-UR）
