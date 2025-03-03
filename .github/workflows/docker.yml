@@ -93,7 +93,7 @@ jobs:
         run: |
           npx --node-options='--experimental-vm-modules' \
             -y @riboseinc/anafero-cli@0.0.25 \
-            --target-dir dist/${{ matrix.document.dir }} \
+            --target-dir dist/${{ matrix.document.url }} \
             --path-prefix ${{ matrix.env.prefix }}${{ matrix.document.url }} \
             --current-rev main
 
