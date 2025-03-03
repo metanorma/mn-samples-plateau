@@ -47,7 +47,8 @@ jobs:
     needs: build
     strategy:
       matrix:
-        document_dir: ["001", "002"]
+        env: [{ name: 'ghp', prefix: '/mn-samples-plateau/' }, { name: 'mlit', prefix: '/' }]
+        document: [{ dir: "001", url: "plateaudocument" }, { dir: "002", url: "plateaudocument02" }]
     name: Firelight build - Document ${{ matrix.document_dir }}
 
     steps:
@@ -63,17 +64,17 @@ jobs:
           git config --global init.defaultBranch main
           git init .
 
-      - name: "Firelight: commit document ${{ matrix.document_dir }}"
+      - name: "Firelight: commit document ${{ matrix.document.dir }}"
         run: |
-          git add documents/${{ matrix.document_dir }}-v5/document.presentation.xml
+          git add documents/${{ matrix.document.dir }}-v5/document.presentation.xml
           git commit -m "Commit presentation XML"
 
-      - name: "Firelight: prepare config for document ${{ matrix.document_dir }}"
+      - name: "Firelight: prepare config for document ${{ matrix.document.dir }}"
         run: |
           cat <<'EOF' >> anafero-config.json
           {
             "version": "0.1",
-            "entryPoint": "file:documents/${{ matrix.document_dir }}-v5/document.presentation.xml",
+            "entryPoint": "file:documents/${{ matrix.document.dir }}-v5/document.presentation.xml",
             "storeAdapters": [
               "git+https://github.com/metanorma/firelight#main/packages/metanorma-xml-store"
             ],
@@ -86,19 +87,19 @@ jobs:
           }
           EOF
           git add anafero-config.json
-          git commit -m "Add build config for ${{ matrix.document_dir }}"
+          git commit -m "Add build config for ${{ matrix.document.dir }}"
 
-      - name: "Firelight: generate HTML for doc ${{ matrix.document_dir }}"
+      - name: "Firelight: generate HTML for doc ${{ matrix.document.dir }}"
         run: |
           npx --node-options='--experimental-vm-modules' \
             -y @riboseinc/anafero-cli@0.0.24 \
-            --target-dir dist/${{ matrix.document_dir }} \
-            --path-prefix /mn-samples-plateau/${{ matrix.document_dir }} \
+            --target-dir dist/${{ matrix.document.dir }} \
+            --path-prefix ${{ matrix.env.prefix }}${{ matrix.document.url }} \
             --current-rev main
 
       - uses: actions/upload-artifact@v4
         with:
-          name: fl-${{ matrix.document_dir }}
+          name: fl-${{ matrix.env.name }}-${{ matrix.document.dir }}
           path: dist
           if-no-files-found: error
 
@@ -122,7 +123,7 @@ jobs:
       - name: Download HTML artifacts
         uses: actions/download-artifact@v4
         with:
-          pattern: fl-*
+          pattern: fl-ghp-*
           path: dist
           merge-multiple: true
 
