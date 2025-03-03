@@ -49,7 +49,7 @@ jobs:
       matrix:
         env: [{ name: 'ghp', prefix: '/mn-samples-plateau/' }, { name: 'mlit', prefix: '/' }]
         document: [{ dir: "001", url: "plateaudocument" }, { dir: "002", url: "plateaudocument02" }]
-    name: Firelight build - Document ${{ matrix.document_dir }}
+    name: Firelight build - Document ${{ matrix.document.dir }} on ${{ matrix.env.name }}
 
     steps:
       - name: Download Metanorma artifacts
