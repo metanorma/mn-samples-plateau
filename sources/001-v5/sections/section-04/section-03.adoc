@@ -321,8 +321,11 @@ image::images/073.webp.png[]
 // RWP aligned text 20240917
 
 [[tab-4-21]]
-[cols="1a,1a,1a,1a"]
 .交通（道路）モデル（LOD3）の取得イメージ（道路内の区分）
+include::../../../common/sections/com_4_03_D_02_001.adoc[]
+
+////
+[cols="1a,1a,1a,1a"]
 |===
 | LOD3.0 | LOD3.1 | LOD3.2及びLOD3.3 | LOD3.4
 
@@ -345,10 +348,14 @@ image::images/077.webp.png[]
 |===
 
 NOTE: 青色着色している道路内の区分は、当該LODにおいて新たに区別ができるようになる区分である。
+////
 
 [[tab-4-22]]
-[cols="1a,1a,1a"]
 .交通（道路）モデル（LOD3）の取得イメージ（高さの取得方法）
+include::../../../common/sections/com_4_03_D_02_002.adoc[]
+
+////
+[cols="1a,1a,1a"]
 |===
 | LOD3.0及びLOD3.1 | LOD3.2 | LOD3.3及びLOD3.4
 
@@ -396,6 +403,7 @@ image::images/084.webp.png[]
 image::images/085.webp.png[]
 
 |===
+////
 
 ====== 交通（道路）モデル（LOD3.0）の定義
 
@@ -883,6 +891,9 @@ image::images/089.webp.png[]
 交通（道路）モデルの各LODにおいて使用可能な地物型と空間属性を<<tab-4-23>>に示す。
 
 [[tab-4-23]]
+include::../../../common/sections/com_4_03_D_02_003.adoc[]
+
+////
 [cols="3a,3a,^1a,^1a,^1a,^1a,4a"]
 .交通（道路）モデルに使用する地物型と空間属性
 |===
@@ -907,6 +918,7 @@ image::images/089.webp.png[]
 ●:: 必須
 ■:: 条件付必須
 〇:: 任意（ユースケースに応じて要否を決定してよい）
+////
 
 [[toc4_03_02]]
 ==== 交通（道路）モデルの応用スキーマクラス図
@@ -1059,6 +1071,9 @@ lutaml_gml_dictionary::iur/codelists/3.2/Road_usage.xml[template="gml_dict_templ
 +
 --
 // this table is_common to both doc01 and doc02 slide27
+include::../../../common/sections/com_4_03_D_04_001.adoc[]
+
+////
 [cols="3a,3a,3a,3a,13a"]
 |===
 | ファイル名 4+| TrafficArea_function.xml
@@ -1071,6 +1086,7 @@ h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.2/TrafficArea_f
 | 2000 | 歩道部 2+| | 自転車や歩行者のために供される道路の部分。歩道上の植栽を含む。
 
 |===
+////
 
 [.source]
 <<nilim_kiban_dps>>
@@ -1080,6 +1096,9 @@ h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.2/TrafficArea_f
 +
 --
 // this table is_common to both doc01 and doc02 slide28
+include::../../../common/sections/com_4_03_D_04_002.adoc[]
+
+////
 [cols="3a,3a,3a,3a,13a"]
 |===
 | ファイル名 4+| TrafficArea_function.xml
@@ -1093,6 +1112,7 @@ h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.2/TrafficArea_f
 | 2000 | 歩道部 2+| | 自転車や歩行者のために供される道路の部分。歩道上の植栽を含む。
 
 |===
+////
 
 [.source]
 <<nilim_kiban_dps>>
@@ -1102,6 +1122,9 @@ h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.2/TrafficArea_f
 +
 --
 // this table is_common to both doc01 and doc02 slide29
+include::../../../common/sections/com_4_03_D_04_003.adoc[]
+
+////
 [cols="3a,3a,3a,3a,13a"]
 |===
 | ファイル名 4+| TrafficArea_function.xml
@@ -1115,6 +1138,7 @@ h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.2/TrafficArea_f
 | 2000 | 歩道部 2+| | 自転車や歩行者のために供される道路の部分。植栽を含まない。
 
 |===
+////
 
 [.source]
 <<nilim_kiban_dps>>
@@ -1124,6 +1148,9 @@ h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.2/TrafficArea_f
 +
 --
 // this table is_common to both doc01 and doc02 slide30
+include::../../../common/sections/com_4_03_D_04_004.adoc[]
+
+////
 [cols="3a,3a,3a,3a,13a"]
 |===
 | ファイル名 4+| TrafficArea_function.xml
@@ -1152,6 +1179,7 @@ h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.2/TrafficArea_f
 | 7000 | 自動車駐車場 2+| | 自動車駐車場のうち、走路部分。
 
 |===
+////
 
 [.source]
 <<nilim_kiban_dps>>
@@ -1164,6 +1192,9 @@ h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.2/TrafficArea_f
 * LOD2、LOD3.0及びLOD3.1で使用する場合
 +
 --
+include::../../../common/sections/com_4_03_D_05_001.adoc[]
+
+////
 [cols="3a,3a,19a"]
 |===
 | ファイル名 2+| AuxiliaryTrafficArea_function.xml
@@ -1174,6 +1205,7 @@ h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.2/AuxiliaryTraf
 | 3000 | 島 | 車両の走行を制御し、安全な交通を確保するために設置される分離帯及び交通島。路面電車停車所が設けられた島を含む。
 
 |===
+////
 
 [.source]
 <<nilim_kiban_dps>>
@@ -1182,6 +1214,9 @@ h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.2/AuxiliaryTraf
 * LOD3.2及びLOD3.3で使用する場合
 +
 --
+include::../../../common/sections/com_4_03_D_05_002.adoc[]
+
+////
 [cols="3a,3a,19a"]
 |===
 | ファイル名 2+| AuxiliaryTrafficArea_function.xml
@@ -1193,6 +1228,7 @@ h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.2/AuxiliaryTraf
 | 5000 | 植栽 | 植樹帯及び植樹ます。
 
 |===
+////
 
 [.source]
 <<nilim_kiban_dps>>
@@ -1201,6 +1237,9 @@ h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.2/AuxiliaryTraf
 * LOD3.4で使用する場合
 +
 --
+include::../../../common/sections/com_4_03_D_05_003.adoc[]
+
+////
 [cols="3a,3a,3a,3a,13a"]
 |===
 | ファイル名 4+| AuxiliaryTrafficArea_function.xml
@@ -1231,6 +1270,7 @@ h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.2/AuxiliaryTraf
 | 7000 | 自動車駐車場 2+| | 自動車駐車場のうち、駐車区画の部分。
 
 |===
+////
 
 [.source]
 <<nilim_kiban_dps>>

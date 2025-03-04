@@ -1,0 +1,19 @@
+[cols="2a,2a,^a,^a,^a,^a,6a"]
+.地形モデルの記述に使用する地物型と空間属性
+|===
+h| 地物型 h| 空間属性 ^h| LOD0 ^h| LOD1 ^h| LOD2 ^h| LOD3 h| 適用
+| dem:ReliefFeature | |  ● |  ● |  ● |  ● | dem:ReliefFeatureを作成する場合は、dem:BreaklineRelief、dem:TINRelief又はdem:ReliefFeatureのいずれかを必須とする
+.2+| dem:BreaklineRelief | |  ■ |  |  |  .2+|
+| dem:ridgeOrValleyLines ^|  ■ |  |  |
+.2+| dem:TINRelief | |  ■ |  ■ |  ■ |  ■ .4+| LOD1、LOD2及びLOD3では、dem:TINReliefを基本とする。
+| dem:tin ^|  ■ |  ■ |  ■ |  ■
+.2+| dem:MassPointRelief | |  ■ |  ■ |  ■ |  ■
+| dem:reliefPoints ^|  ■ |  ■ |  ■ |  ■
+
+|===
+
+[%key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
+

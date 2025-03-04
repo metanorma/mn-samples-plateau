@@ -91,6 +91,9 @@ uro:UtilityNodeContainerは、uro:UtilityNodeを格納し、自らもノード�
 地下埋設物の各LODにおいて使用可能な地物型と空間属性を、<<tab-P-2>>に示す。
 
 [[tab-P-2]]
+include::../../../common/sections/com_4_15_P_02_001.adoc[]
+
+////
 [cols="3a,3a,^a,^a,^a,^a,^a,6a"]
 .地下埋設物モデルの各LODで使用可能な地物型と空間属性
 |===
@@ -146,6 +149,8 @@ uro:UtilityNodeContainerは、uro:UtilityNodeを格納し、自らもノード�
 --
 地下埋設物モデル（LOD4）において、uro:Cable及びuro:Appurtenanceの形状表現は外部の形状のみとしてよい。このときの外部の形状は、地下埋設物モデル（LOD3）と一致する。内部の形状表現は、ユースケースに応じて要否を決定してよい。
 --
+
+////
 
 ==== 地下埋設物の空間属性
 

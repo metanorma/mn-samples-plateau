@@ -1,0 +1,38 @@
+[cols="1a,9a"]
+|===
+| LOD | 取得イメージと説明
+
+| LOD4.0
+|
+
+image::../common/images/com_04_02_009.png[]
+
+LOD4.0は建築物の外形（上図1）に加え、建築物の内部を表現する。このとき、建築物の内部を部屋（bldg:Room）に区切り、各部屋の形状を立体として表現する（上図2）。また、部屋の立体の境界面を、天井面（bldg:CeilingSurface）、内壁面（bldg:InteriorWallSurface）、床面（bldg:FloorSurface）又は閉鎖面（bldg:ClosureSurface）のいずれかに区分する（上図3）。さらに、各部屋の天井面、内壁面又は床面に存在する扉（bldg:Door）及び窓（bldg:Window）を区分する（上図4）。 +
+閉鎖面は、内壁面や天井面、床面はないが、建築確認申請では部屋となっている空間を区切る場合に仮想的な境界面として使用する。 +
+建築物の階を表現する場合は、CityObjectGroupを使用する。上図1のように、建築物が複数の階から構成される場合、上図4に示す同じ階の部屋を、CityObjectGroupを使用してグループ化する。このとき、CityObjectGroupの名称（gml:name）は階を識別する名称となる。 +
+なお、CityGMLでは、壁面や天井面などは全て面として表現する。一方、現実世界の壁には厚みがある。1つの壁が建築物の外形を示す外壁と部屋の外形を示す内壁との機能を備えていた場合（上図5）、建築物の外形となる面（bldg:WallSurface）と部屋の外形となる面（bldg:InteriorWallSurface）の2枚の面として表現され、それらの面の間には隙間（壁の厚み）ができる（何もない）。 +
+また、LOD4.0では建築物の内部に存在する付属物や家具を表現しない。
+
+// this row is_common to both doc01 and doc02 slide19
+
+| LOD4.1
+|
+
+image::../common/images/com_04_02_010.png[width="450"]
+
+LOD4.1ではLOD4.0に、屋内付属物（bldg:IntBuildingInstallation）として、階段、スロープ、輸送設備（エスカレータ、エレベータ及び動く歩道）、柱及びデッキ・ステージが追加される。 +
+上図の例では、LOD4.0に加えて、階段、踊り場、エレベータ、柱が付属物として追加された。
+
+// this row is_common to both doc01 and doc02 slide19
+
+| LOD4.2
+|
+
+image::../common/images/com_04_02_011.png[width="450"]
+
+LOD4.2ではLOD4.1に屋内の付属物（bldg:IntBuildingInstallation）として、手すり、パネル及び梁が付属物として追加される。 +
+また、机やいすなどの移動可能な家具（bldg:BuildingFurniture）が追加される。 +
+上図の例では、LOD4.2に加えて屋内付属物として階段の手すりとパネル（間仕切り）、また、家具として机及び椅子が追加された。
+
+|===
+

@@ -1,0 +1,39 @@
+[cols="9a,9a,4a,4a,4a"]
+.LOD4.0, LOD4.1及びLOD4.2の区分
+|===
+| 地下街モデル（LOD4）に含むべき地物 | 対応する地物型 | LOD4.0 | LOD4.1 | LOD4.2
+
+| 地下街 | uro:UndergroundBuilding |  ● |  ● |  ●
+| 建築物部分 | bldg:BuildingPart |  ■ |  ■ |  ■
+| 屋根面 | bldg:RoofSurface |  ● |  ● |  ●
+| 外壁面 | bldg:WallSurface |  ● |  ● |  ●
+| 底面 | bldg:GroundSurface |  ● |  ● |  ●
+| 屋外天井面 | bldg:OuterCeilingSurface | | |
+| 屋外床面 | bldg:OuterFloorSurface | | |
+| 屋外付属物 | bldg:BuildingInstallation | | |
+| 部屋 | bldg:Room |  ● |  ● |  ●
+| 天井面 | bldg:CeilingSurface |  ● |  ● |  ●
+| 内壁面 | bldg:InteriorWallSurface |  ● |  ● |  ●
+| 床面 | bldg:FloorSurface |  ● |  ● |  ●
+| 閉鎖面 | bldg:ClosureSurface |  ● |  ● |  ●
+| 窓 | bldg:Window |  ● |  ● |  ●
+| 扉 | bldg:Door |  ● |  ● |  ●
+| 階段 | bldg:IntBuildingInstallation | |  ● |  ●
+| スロープ | bldg:IntBuildingInstallation | |  ● |  ●
+| 輸送設備 | bldg:IntBuildingInstallation | |  ● |  ●
+| 柱 | bldg:IntBuildingInstallation | |  ● |  ●
+| デッキ・ステージ | bldg:IntBuildingInstallation | |  ● |  ●
+| 梁 | bldg:IntBuildingInstallation | | |  〇
+| パネル | bldg:IntBuildingInstallation | | |  〇
+| 手すり | bldg:IntBuildingInstallation | | |  〇
+| 家具 | bldg:BuildingFurniture | | |  〇
+| 階 | grp:CityObjectGroup |  ● |  ● |  ●
+| 任意設定空間（例：防火区画） | grp:CityObjectGroup | | |  〇
+
+|===
+
+[%key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
+

@@ -1,0 +1,61 @@
+[cols="13a,13a,26a,13a,13a,13a"]
+.LOD4.0, LOD4.1及びLOD4.2の区分
+|===
+2+| 建築物モデル（LOD4）に含むべき地物
+h| 対応するCityGMLの地物型
+h| LOD4.0
+h| LOD4.1
+h| LOD4.2
+
+2+| 建築物 | bldg:Building | ● | ● | ●
+2+| 建築物部分
+| bldg:BuildingPart
+| ■ +
+一棟の建築物を、属性の異なる複数の部分に分ける場合に必須とする。
+| ■ +
+一棟の建築物を、属性の異なる複数の部分に分ける場合に必須とする。
+| ■ +
+一棟の建築物を、属性の異なる複数の部分に分ける場合に必須とする。
+
+2+| 屋根面 | bldg:RoofSurface | ● | ● | ●
+
+// this row is_common to both doc01 and doc02 slide20
+2+| 壁面 | bldg:WallSurface | ● | ● | ●
+2+| 底面 | bldg:GroundSurface | ● | ● | ●
+2+| 屋外天井面 | bldg:OuterGroundSurface | 〇 | 〇 | 〇
+2+| 屋外床面 | bldg:OuterFloorSurface | 〇 | 〇 | 〇
+2+| 屋外付属物 | bldg:BuildingInstallation | ● | ● | ●
+2+| 部屋 | bldg:Room | ● | ● | ●
+2+| 天井面 | bldg:CeilingSurface | ● | ● | ●
+2+| 内壁面 | bldg:InteriorWallSurface | ● | ● | ●
+2+| 床面 | bldg:FloorSurface | ● | ● | ●
+2+| 閉鎖面
+| bldg:ClosureSurface
+| ■ +
+BuildingPartを使用する場合、及び、内壁面、天井面、床面が無いが建築確認申請上部屋として区分されている空間を区切る場合に必須とする。
+| ■ +
+BuildingPartを使用する場合、及び、内壁面、天井面、床面が無いが建築確認申請上部屋として区分されている空間を区切る場合に必須とする。
+| ■ +
+BuildingPartを使用する場合、及び、内壁面、天井面、床面が無いが建築確認申請上部屋として区分されている空間を区切る場合に必須とする。
+
+2+| 窓 | bldg:Window | ● | ● | ●
+2+| 扉 | bldg:Door | ● | ● | ●
+.8+| 屋内付属物 | 階段 | bldg:IntBuildingInstallation | | ● | ●
+| スロープ | bldg:IntBuildingInstallation | | ● | ●
+| 輸送設備 | bldg:IntBuildingInstallation | | ● | ●
+| 柱 | bldg:IntBuildingInstallation | | ● | ●
+| デッキ・ステージ | bldg:IntBuildingInstallation | | ● | ●
+| 梁 | bldg:IntBuildingInstallation | | | 〇
+| パネル | bldg:IntBuildingInstallation | | | 〇
+| 手すり | bldg:IntBuildingInstallation | | | 〇
+2+| 家具 | bldg:BuildingFurniture | | | 〇
+2+| 階 | grp:CityObjectGroup | ● | ● | ●
+2+| 任意設定空間（例：防火区画） | grp:CityObjectGroup | | | 〇
+
+|===
+
+[%key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
+

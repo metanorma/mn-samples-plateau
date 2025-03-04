@@ -1,0 +1,29 @@
+[cols="a,a,a"]
+.（参考）CityGMLのクラスとIFCのクラスとの対応
+|===
+| CityGMLの地物型 | 対応付けるIFCのクラス | 説明
+
+| Bridge
+| IfcBridgePart, +
+IfcElementAssembly
+|
+IfcBridgePartのうち、以下に区分されるものを対象とする。
+
+* DECK, DECK_SEGMENT
+
+IfcElementAssemblyのうち、以下に区分されるものを対象とする。
+
+* DECK
+
+| BridgeConstructionElement
+| IfcBridgePart, IfcElementAssembly
+| IfcBridgePartのうち、以下に区分されるものを対象とする。
+
+* ABUTMENT,FOUNDATION,PIER,PIER_SEGMENT,PYLON,SUBSTRUCTURE,SUPERSTRUCTURE,SURFACESTRUCTURE,IfcElementAssemblyのうち、以下に区分されるものを対象とする。
+
+* ARCH,BEAM_GRID,GIRDER,REINFORCEMENT_UNIT,RIGID_FRAME,SLAB_FIELD,TRUSS,ABUTMENT,PIAR,PYLON,CROSS_BRACING,
+
+| BridgeInstallation | IfcElementAssembly | IfcElementAssemblyのうち、ACCESSORY_ASSEMBLYに区分されるものを対象とする。
+
+|===
+

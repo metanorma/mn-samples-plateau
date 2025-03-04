@@ -1,0 +1,17 @@
+[cols="a,a,^a,^a,^a,^a,2a"]
+.災害リスクモデルの記述に使用する地物型と空間属性
+|===
+| 地物型 | 空間属性 | LOD0 | LOD1 | LOD2 | LOD3 | 適用
+
+.2+| wtr:WaterBody | | |  ● | | .2+| 災害リスク（浸水）モデルに使用する。
+| wtr:lod1MultiSurface | |  ● | |
+.2+| urf:SedimentDisasterProneArea | | |  ● | | .2+| 災害リスク（土砂災害）モデルに使用する。
+| urf:lod1MultiSurface | |  ● | |
+
+|===
+
+[%key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
+
