@@ -34,8 +34,8 @@
 橋梁モデル（LOD0）の取得イメージを<<tab-4-60>>に示す。
 
 [[tab-4-60]]
-[cols="5a,9a,9a,9a,9a,9a"]
 .橋梁モデル（LOD0）の取得イメージ
+[cols="5a,9a,9a,9a,9a,9a"]
 |===
 h| 5+^h| LOD0
 h| 取得例
@@ -152,8 +152,11 @@ h| 説明 | 道路橋は、地図情報レベル2500では、縁線を取得す�
 橋梁モデル（LOD1）の取得イメージを<<tab-4-61>>に示す。
 
 [[tab-4-61]]
-[cols="4a,9a,9a,9a,9a"]
 .橋梁モデル（LOD1）の取得イメージ
+include::../../../common/sections/com_4_11_L_02_001.adoc[]
+
+////
+[cols="4a,9a,9a,9a,9a"]
 |===
 h| 4+^h| LOD1
 h| 取得例
@@ -174,6 +177,7 @@ h| 説明
 | 徒橋の縁線をつないだ外周を地表面から一律の高さで下向きに押し出した立体とする。
 
 |===
+////
 
 ====== 橋梁モデル（LOD1）の定義
 
@@ -326,8 +330,11 @@ image::images/240.webp.png[width="500"]
 橋梁モデル（LOD2）の取得イメージを<<tab-4-63>>に示す。
 
 [[tab-4-63]]
-[cols="4a,^8a,^6a,^6a"]
 .橋梁モデル（LOD2）の取得イメージ
+include::../../../common/sections/com_4_11_L_02_002.adoc[]
+
+////
+[cols="4a,^8a,^6a,^6a"]
 |===
 h| 3+h| LOD2.0
 h| 取得例
@@ -361,6 +368,7 @@ h| 説明
 橋脚などの構造上重要な部材（BuildingConstructionElement）を表現してもよい。上図では、橋脚を表現している。
 
 |===
+////
 
 ====== 橋梁モデル（LOD2.0）の定義
 
@@ -634,8 +642,11 @@ WallSurfaceとの区分が必要な場合に必須とする。
 ■:: 条件付必須
 〇:: 任意（ユースケースに応じて要否を決定してよい）
 
-[cols="2a,9a,9a"]
 .橋梁モデル（LOD3）の取得イメージ
+include::../../../common/sections/com_4_11_L_02_003.adoc[]
+
+////
+[cols="2a,9a,9a"]/
 |===
 h| 2+^h| LOD3
 h| 取得例
@@ -660,6 +671,7 @@ h| 説明
 | 横断歩道橋、ペデストリアンデッキ及び跨線橋の場合は、本体（上部工、階段及び踊り場）以外の構造上不可欠な部材をBridgeConstructionElementとして取得する。上図の例では橋脚が該当する。それ以外の橋梁の外観を構成する部材をBridgeInstallationとして取得する。上図の例では高欄が該当する。横断歩道橋、ペデストリアンデッキ及び跨線橋の本体（上部工、階段及び踊り場）に屋根がある場合、庇はBridgeInstallationとして取得する。
 
 |===
+////
 
 ====== 橋梁モデル（LOD3）の定義
 
@@ -877,6 +889,9 @@ Element
 なお、橋梁内部の空間は、建築物モデル（LOD4）と整合を図る。このときの橋梁内部の空間とは、橋梁にこれと一体的な建屋が設けられていた場合の、建屋の内部の空間を指す。
 
 [[tab-4-67]]
+include::../../../common/sections/com_4_11_L_10_001.adoc[]
+
+////
 [cols="a,a,a"]
 .（参考）CityGMLのクラスとIFCのクラスとの対応
 |===
@@ -905,6 +920,7 @@ IfcElementAssemblyのうち、以下に区分されるものを対象とする�
 | BridgeInstallation | IfcElementAssembly | IfcElementAssemblyのうち、ACCESSORY_ASSEMBLYに区分されるものを対象とする。
 
 |===
+////
 
 CityGMLの地物型は、IFCにおいて部材の集まりを示すIfcBridgePart及びIfcElementAssemblyと対応付ける。
 
@@ -1111,6 +1127,9 @@ IfcElementAssembly (ARCH, BEAM_GRID, GIRDER, REINFORCEMENT_UNIT, RIGID_FRAME, SL
 橋梁モデルの各LODにおいて使用可能な地物型と空間属性を<<tab-4-68>>に示す。
 
 [[tab-4-68]]
+include::../../../common/sections/com_4_11_L_02_004.adoc[]
+
+////
 [cols="3a,3a,^a,^a,^a,^a,^a,6a"]
 .橋梁モデルの記述に使用する地物型と空間属性
 |===
@@ -1216,6 +1235,7 @@ MultiSufaceを基本とする。
 ●:: 必須
 ■:: 条件付必須
 〇:: 任意（ユースケースに応じて要否を決定してよい）
+////
 
 [[toc4_11_02]]
 ==== 橋梁モデルの応用スキーマクラス図

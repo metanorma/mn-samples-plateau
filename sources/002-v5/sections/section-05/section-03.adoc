@@ -93,8 +93,11 @@ class:: 留意事項
 // slide10, slide11, slide12, slide13
 
 [[table-5-1]]
-[cols="11a,28a,11a"]
 .作成すべきメタデータ項目
+include::../../../common/sections/com_8_02_5_03_001.adoc[]
+
+////
+[cols="11a,28a,11a"]
 |===
 h| メタデータ項目 h| 記述する内容 h| 記述例
 | メタデータ>ファイル識別子
@@ -231,6 +234,7 @@ i-UR 3.1
 一部の橋梁モデルは、厚みを推定で作成しているため、公共測量成果ではありません。
 
 |===
+////
 
 手順3．メタデータエディタを用いてJMP2.0形式にて出力する。
 
@@ -261,6 +265,9 @@ i-UR 3.1
 ** READMEに含むべき項目は<<tab-5-2>>のとおりとする。
 
 [[tab-5-2]]
+include::../../../common/sections/com_8_06_5_03_001.adoc[]
+
+////
 [cols="1a,5a,4a"]
 .READMEに含める項目
 |===
@@ -390,6 +397,7 @@ LOD2:: 新大阪駅周辺、1か所、0.4ha
 原典資料の位置の正しさの違いや、作成された時期の違いにより、現状を正確に反映していない場合があることにご注意ください。
 
 |===
+////
 
 ===== 作成手順
 
@@ -423,6 +431,9 @@ JMP2.0は、データ製品を作成する際に使用した原典資料の諸�
 
 // this table is_common to both doc01 and doc02 slide16
 
+include::../../../common/sections/com_8_05_5_03_001.adoc[]
+
+////
 [cols="a,a,a"]
 |===
 | 原典資料リスト項目 | 記述する内容 | 記述例
@@ -515,6 +526,7 @@ bldg:function,bldg:lod1Solid,bldg:lod2Solid,uro:buildingDetailAttribute,uro:buil
 | https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-A27-v3_0.html
 
 |===
+////
 
 ===== 作成手順
 
@@ -531,6 +543,9 @@ https://www.mlit.go.jp/plateau/file/libraries/doc/template.zip[]
 * 記載項目の組を1レコードとし、以下に示す規則に従い出力する。
 * CSVファイル仕様
 
+include::../../../common/sections/com_8_05_5_03_002.adoc[]
+
+////
 [cols="a,a"]
 |===
 | 文字コード | UTF-8 （BOM付）
@@ -546,6 +561,7 @@ h| 1項目内で、複数の値を列挙する場合に使用する区切り文�
 h| 禁則文字 | 指定しない
 
 |===
+////
 
 // (((建築物)))
 

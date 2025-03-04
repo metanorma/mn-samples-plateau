@@ -1,0 +1,72 @@
+[cols="5a,5a,^a,^a,^a,^a,a,6a"]
+.トンネルモデルの記述に使用する地物型と空間属性
+|===
+h| 地物型 h| 空間属性 h| LOD0 h| LOD1 h| LOD2 h| LOD3 h| LOD4 h| 適用
+.7+| tun:Tunnel | | ● | ● | ● | ● ^| ● |
+| uro:lod0Geometry ^| ● | | | | | 数値地形図の取得方法に従う。
+| tun:lod1Solid | | ● | | | |
+| tun:lod2Solid | | | ● | | |
+| tun:lod3Solid | | | | ● | |
+| tun:lod4Solid | | | | | ■ |
+| tun:lod4MultiSurface | | | | | ■ | Solidを原則とする。BIMから作成する場合はMultiSurfaceとする。
+.5+| tun:TunnelPart | | | ■ | ■ | ■ ^| ■|
+* LOD1において、より実際の形状に近い表現を行う場合に必須とする。
+* LOD2以上において、多連形のトンネルを一つのTunnelとして表現する場合に必須とする。
+* LOD2以上において、一つのトンネルを、属性の異なる複数の部分に分ける場合に必須とする。
+| tun:lod1Solid | | ■ | | | |
+| tun:lod2Solid | | | ■ | | .3+| tun:TunnelPartを使用する場合は必須とする。
+| tun:lod3Solid | | | | ■ |
+| tun:lod4Solid | | | | | ■
+.4+| tun:TunnelInstallation | | | | | ● ^| ● |
+| tun:lod2Geometry | | | | | |
+| tun:lod3Geometry | | | | ● | | MultiSurfaceとする。
+| tun:lod4Geometry | | | | | ● | MultiSurfaceとする。
+.4+| tun:RoofSurface | | | | ■ | ■ ^| ■ | トンネルの外形を構成する面のうち、上向きの面に使用する。
+| tun:lod2MultiSurface | | | ■ | | .3+| tun:RoofSurfaceを作る場合は必須とする。
+| tun:lod3MultiSurface | | | | ■ |
+| tun:lod4MultiSurface | | | | | ■
+.4+| tun:WallSurface | | | | ● | ● ^| ● | トンネルの外形を構成する面のうち、側方の面に使用する。
+| tun:lod2MultiSurface | | | ● | | .3+|
+| tun:lod3MultiSurface | | | | ● |
+| tun:lod4MultiSurface | | | | | ●
+.4+| tun:GroundSurface | | | | ■ | ■ ^| ■ | トンネルの外形を構成する面のうち、下向きの面に使用する。
+| tun:lod2MultiSurface | | | ■ | | .3+| tun:GroundSurfaceを作る場合は必須とする。
+| tun:lod3MultiSurface | | | | ■ |
+| tun:lod4MultiSurface | | | | | ■
+.4+| tun:OuterFloorSurface | | | | | | | 標準製品仕様書では使用しない。
+| tun:lod2MultiSurface | | | | | .3+|
+| tun:lod3MultiSurface | | | | |
+| tun:lod4MultiSurface | | | | |
+.4+| tun:OuterCeilingSurface | | | | | | | 標準製品仕様書では使用しない。
+| tun:lod2MultiSurface | | | | | .3+|
+| tun:lod3MultiSurface | | | | |
+| tun:lod4MultiSurface | | | | |
+.4+| tun:ClosureSurface | | | | | ● ^| ● | 出入口をtun:ClosureSurfaceとして表現する。
+| tun:lod2MultiSurface | | | | | .3+|
+| tun:lod3MultiSurface | | | | ● |
+| tun:lod4MultiSurface | | | | | ●
+.2+| tun:InteriorWallSurface | | | | | ^| ● |
+| tun:lod4MultiSurface | | | | | ● |
+.2+| tun:CeilingSurface | | | | | ^| ■ |
+| tun:lod4MultiSurface | | | | | ● |
+.2+| tun:FloorSurface | | | | | ^| ■ |
+| tun:lod4MultiSurface | | | | | ● |
+.3+| tun:Door | | | | | ● ^| ● |
+| tun:lod3MultiSurface | | | | ● | |
+| tun:lod4MultiSurface | | | | | ● |
+.3+| tun:Window | | | | | ● ^| ● |
+| tun:lod3MultiSurface | | | | ● | |
+| tun:lod4MultiSurface | | | | | ● |
+.2+| tun:HollowSpace | | | | | ^| ● |
+| tun:lod4Solid | | | | | ● |
+.2+| tun:IntTunnelnstallation | | | | | ^| ■ | LOD4.1及びLOD4.2では必須とする。
+| tun:lod4Geometry | | | | | ● | MultiSurfaceとする。
+.2+| tun:TunnelFurniture | | | | | ^| ■ | LOD4.2では必須とする。
+| tun:lod4Geometry | | | | | ● | MultiSurfaceとする。
+
+|===
+
+[%key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
