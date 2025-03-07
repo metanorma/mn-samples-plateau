@@ -1,0 +1,25 @@
+[cols="3a,3a,^1a,^1a,^1a,^1a,4a"]
+.交通（道路）モデルの記述に使用する地物型と空間属性
+|===
+| 地物型 | 空間属性 | LOD0 | LOD1 | LOD2 | LOD3 | 適用
+
+.6+| tran:Road | |  ● |  ● |  ● |  ● |
+| tran:lod0Network ^|  ■ | | | .2+<| LOD0はネットワークを原則とするが、数値地形図との互換性を保つために、道路縁を選択できる。
+| uro:lod0Geometry ^|  ■ | | |
+| tran:lod1MultiSurface | |  ● | | |
+| tran:lod2MultiSurface |  | |  ● | |
+| tran:lod3MultiSurface |  | | |  ● |
+.3+| tran:TrafficArea | | | |  ● |  ● |
+| tran:lod2MultiSurface |  | |  ● | |
+| tran:lod3MultiSurface |  | | |  ● |
+.3+| tran:AuxiliaryTrafficArea | | | |  ● |  ● |
+| tran:lod2MultiSurface |  | |  ● | |
+| tran:lod3MultiSurface |  | | |  ● |
+
+|===
+
+[%key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
+

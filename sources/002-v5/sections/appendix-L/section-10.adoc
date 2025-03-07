@@ -611,6 +611,9 @@ h|
 図っている。ただし、IFCにおける橋梁モデルはまだ国際標準となっていないことから、IFC Bridge Fast Track Project Report WP2: Conceptual Modelを参考に、IFC Bridgeを構成するクラスとCityGMLのBridgeモジュールとの対応付けを行っている。
 
 [[tab-L-15]]
+include::../../../common/sections/com_4_11_L_10_001.adoc[]
+
+////
 [cols="a,a,a"]
 .（参考）CityGMLのクラスとIFCのクラスとの対応
 |===
@@ -640,6 +643,7 @@ IfcBridgePartのうち、以下に区分されるものを対象とする。
 | BridgeInstallation | IfcElementAssembly | IfcElementAssemblyのうち、ACCESSORY_ASSEMBLYに区分されるものを対象とする。
 
 |===
+////
 
 CityGMLの地物型は、IFCにおいて部材の集まりを示すIfcBridgePart及びIfcElementAssemblyと対応付ける。 +
 IFCでは、梁（IfcBeam）やスラブ（IfcSlab）、支承（IfcBearing）といった橋梁を構成する部材がクラスとして定義されているが、これらのクラスとCityGMLの地物型とを対応付けると、3D都市モデルとしては詳細すぎる表現となるため、部材クラスの集まりであるIfcBridgePart及びIfcElementAssemblyとCityGMLの地物型とを対応づけ、橋梁モデル（LOD4）を作成する。

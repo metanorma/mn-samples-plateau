@@ -1,0 +1,28 @@
+[cols="5a,6a,^a,^a,^a,a,6a"]
+.水部モデルの記述に使用する地物型と空間属性
+|===
+| 地物型 |  空間属性 |  LOD0 |  LOD1 |  LOD2 |  LOD3 |  適用
+
+.6+| wtr:WaterBody | |  ● |  ● |  ● ^|  ● |
+| lod0MultiCurve ^|  ■ |  |  |  .2+| 河川中心線（wtr:lod0MultiCurve）を基本とする。縁線、界線又は点として取得する場合はuro:lod0Geometryを使用する。
+| lod0Geometry ^|  ■ |  |  |
+| lod1MultiSurface |  |  ● |  |  |
+| lod2Solid |  |  |  ● |  |
+| lod3Solid |  |  |  |  ● |
+.3+| wtr:WaterSurface  | |  |  |  ● ^|  ● | 水部の形状を構成する面のうち、水面に使用する。
+| lod2Surface |  |  |  ● |  |
+| lod3Surface |  |  |  |  ● |
+.3+| wtr:WaterGroundSurface  | |  |  |  ● ^|  ● | 水底の境界面に使用する。
+| lod2Surface |  |  |  ● |  |
+| lod3Surface |  |  |  |  ● |
+.3+| wtr:WaterClosureSurface  | |  |  |  ■ ^|  ■ | 仮想的な面を作成したい場合に使用する。
+| lod2Surface |  |  |  ■ |  .2+| WaterClosureSurfaceを作る場合は必須とする。
+| lod3Surface |  |  |  |  ■
+
+|===
+
+[%key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
+
