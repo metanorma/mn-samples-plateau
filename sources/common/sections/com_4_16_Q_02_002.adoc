@@ -1,0 +1,75 @@
+[cols="5a,5a,^a,^a,^a,^a,a,6a"]
+.地下街モデルの記述に使用する地物型と空間属性
+|===
+| 地物型 | 空間属性 | LOD0 | LOD1 | LOD2 | LOD3 | LOD4 | 適用
+
+.8+| uro:UndergroundBuilding | |  ● |  ● |  ● |  ● ^|  ● |
+| lod0FootPrint |  | | | | |
+| lod0RoofEdge ^|  ● | | | | |
+| lod1Solid | |  ● | | | |
+| lod2Solid | | |  ● |  | |
+| lod3Solid | | |  |  ● | |
+| lod4Solid | |  |  | |  ■ .2+| Solid又はMultiSurfaceのいずれかとする。
+| lod4MultiSurface | |  |  | |  ■
+.6+| bldg:BuildingPart | |  |  |  ■ |  ■ ^|  ■ | 一棟の建築物を、属性の異なる複数の部分に分ける場合に必須とする。
+| lod1Solid |  |  | | | |
+| lod2Solid |  | |  ■ | | |
+| lod3Solid | |  | |  ■ | |
+| lod4Solid | | |  |  |  ■ .2+| Solid又はMultiSurfaceのいずれかとする。
+| lod4MultiSurface | | |  |  |  ■
+.2+| bldg:Room | | |  |  |  ^|  ● |
+| lod4Solid | | | | ^|  ● |
+.4+| bldg:RoofSurface | |  |  |  ● |  ● ^|  ● |
+| lod2MultiSurface |  | | ● | | |
+| lod3MultiSurface |  | | | ● | |
+| lod4MultiSurface | |  | | |  ● |
+.4+| bldg:WallSurface | |  |  |  ● |  ● ^|  ● |
+| lod2MultiSurface |  | |  ● | | |
+| lod3MultiSurface |  | | |  ● | |
+| lod4MultiSurface | |  | | |  ● |
+.4+| bldg:GroundSurface | |  |  |  ● |  ● ^|  ● |
+| lod2MultiSurface |  | |  ● | | |
+| lod3MultiSurface |  | | |  ● | |
+| lod4MultiSurface | |  | | |  ● |
+.4+| bldg:OuterCeilingSurface | |  |  |  |  |  | 対象外
+| lod2MultiSurface |  | | | | |
+| lod3MultiSurface |  | | |  | .2+|
+| lod4MultiSurface | |  | | |
+.4+| bldg:OuterFloorSurface | |  |  |  |  |  |
+| lod2MultiSurface |  | | | | | 対象外
+| lod3MultiSurface |  | | |  | .2+|
+| lod4MultiSurface | |  | | |
+.4+| bldg:ClosureSurface | |  |  |  ■ |  ■ ^|  ■ | BuildingPartを作成する場合は必須とする。 +
+LOD4において、内壁面等はないが、建築確認申請では部屋となっている空間を区切る場合は必須とする。
+| lod2MultiSurface |  | |  ■ | | .3+| bldg:ClosureSurfaceを作る場合は必須とする。
+| lod3MultiSurface |  | | |  ■ |
+| lod4MultiSurface | |  | | |  ■
+.2+| bldg:InteriorWallSurface | |  |  |  |  ^|  ● |
+| lod4MultiSurface |  | | | |  ● |
+.2+| bldg:CeilingSurface | |  |  |  |  ^|  ● |
+| lod4MultiSurface |  | | | |  ● |
+.2+| bldg:FloorSurface | |  |  |  |  ^|  ● |
+| lod4MultiSurface |  | | | |  ● |
+.3+| bldg:Door | |  |  |  |  ● ^|  ● |
+| lod3MultiSurface |  | | |  ● |  |
+| lod4MultiSurface |  | | | |  ● |
+.3+| bldg:Window | |  |  |  |  ● ^|  ● |
+| lod3MultiSurface |  | | |  ● |  |
+| lod4MultiSurface |  | | | |  ● |
+.4+| bldg:BuildingInstallation | |  |  |  |  |  |
+| lod2Geometry |  | |  | | |
+| lod3Geometry |  | | |  | |
+| lod4Geometry |  | | | |  |
+.2+| bldg:IntBuildingInstallation | |  |  |  |  ^|  ■ | LOD4.1及び 4.2では必須とする。
+| lod4Geometry |  | | | |  ■ | MultiSufaceを使用することを基本とする。
+.2+| bldg:BuildingFurniture | |  |  |  |  ^|  ■ | LOD4.2では必須とする。
+| lod4Geometry |  | | | |  ■ | bldg:BuildingFurnitureを作成する場合は必須とする。 +
+MultiSufaceを使用することを基本とする。
+
+|===
+
+[%key]
+●:: 必須
+■:: 条件付必須
+〇:: 任意（ユースケースに応じて要否を決定してよい）
+

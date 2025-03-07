@@ -1,0 +1,26 @@
+[cols="2a,9a,9a"]
+|===
+h| 2+^h| LOD3
+h| 取得例
+|
+image::../common/images/com_04_11_010.png[width="250"]
+|
+image::../common/images/com_04_11_011.png[width="250"]
+
+h| 説明 | 道路橋及び鉄道橋の場合は、床版及び主桁以外の構造上不可欠な部材をBridgeConstructionElementとして取得する。上図の例では橋脚が該当する。それ以外の橋梁の外観を構成する部材をBridgeInstallationとして取得する。上図の例では高欄が該当する。
+|
+跨線橋の場合は、道路橋及び鉄道橋と同様に、床版及び主桁以外の構造上不可欠な部材をBridgeConstructionElementとして取得する。上図の例では橋脚が該当する。それ以外の橋梁の外観を構成する部材をBridgeInstallationとして取得する。上図の例では高欄が該当する。
+h| 2+^h| LOD3
+h| 取得例
+|
+image::../common/images/com_04_11_012.png[width="250"]
+|
+image::../common/images/com_04_11_013.png[width="250"]
+
+h| 説明
+| ケーブル橋の場合、パイロン、ケーブル及び吊材を構造上不可欠な部材（BuildingConstructionElement）として取得する。 +
+この時、吊材は一本ずつ取得せず、吊材が存在する範囲をまとめて一つの面として取得してもよい。
+| 横断歩道橋、ペデストリアンデッキ及び跨線橋の場合は、本体（上部工、階段及び踊り場）以外の構造上不可欠な部材をBridgeConstructionElementとして取得する。上図の例では橋脚が該当する。それ以外の橋梁の外観を構成する部材をBridgeInstallationとして取得する。上図の例では高欄が該当する。横断歩道橋、ペデストリアンデッキ及び跨線橋の本体（上部工、階段及び踊り場）に屋根がある場合、庇はBridgeInstallationとして取得する。
+
+|===
+
