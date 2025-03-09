@@ -2429,11 +2429,11 @@ lutaml_gml_dictionary::iur/codelists/3.2/IfcBuildingElement_predefinedType.xml[t
 <<ifc_2x3_cv>>
 
 
-====== IfcElementCompositionEnumType
+====== IfcElementCompositionEnum
 
 [cols="3a,22a"]
 |===
-| 列挙型 | IfcElementCompositionEnumType
+| 列挙型 | IfcElementCompositionEnum
 
 h| 値 h| 説明
 | COMPLEX | 通常の単一の建物であればELEMENTを設定
@@ -2452,11 +2452,11 @@ lutaml_gml_dictionary::iur/codelists/3.2/IfcBuildingElement_shapeType.xml[templa
 [.source]
 <<ifc_2x3_cv>>
 
-====== IfcInternalOrExternalEnumType
+====== IfcInternalOrExternalEnum
 
 [cols="3a,22a"]
 |===
-| 列挙型 | IfcInternalOrExternalEnumType
+| 列挙型 | IfcInternalOrExternalEnum
 
 h| 値 h| 説明
 | INTERNAL | 内部空間
@@ -2468,11 +2468,11 @@ h| 値 h| 説明
 [.source]
 <<ifc_2x3_cv>>
 
-====== IfcSIPrefixType
+====== IfcSIPrefix
 
 [cols="3a,22a"]
 |===
-| 列挙型 | IfcSIPrefixType
+| 列挙型 | IfcSIPrefix
 
 h| 値 h| 説明
 | EXA | 10の18乗
@@ -2588,14 +2588,14 @@ h| 値 h| 説明
 [.source]
 <<ifc_2x3_cv>>
 
-====== IfcStateEnumType
+====== IfcStateEnum
 
 // 20240805 rwp table had overlaps between columns; using auto layout 
 // [cols="3a,22a"]
 
 [cols="a,a"]
 |===
-| 列挙型 | IfcStateEnumType
+| 列挙型 | IfcStateEnum
 
 h| 値 h| 説明
 | READWRITE | 読み取り/書き込み状態。アプリケーションにより変更される場合がある。
@@ -2609,14 +2609,14 @@ h| 値 h| 説明
 [.source]
 <<ifc_2x3_cv>>
 
-====== IfcUnitEnumType
+====== IfcUnitEnum
 
 // 20240805 rwp table had overlaps between columns; using auto layout 
 // [cols="3a,22a"]
 
 [cols="a,a"]
 |===
-| 列挙型 | IfcUnitEnumType
+| 列挙型 | IfcUnitEnum
 
 h| 値 h| 説明
 | ABSORBEDDOSEUNIT | 吸収線量
@@ -2655,14 +2655,14 @@ h| 値 h| 説明
 [.source]
 <<ifc_2x3_cv>>
 
-====== IfcTransportElementTypeEnumType
+====== IfcTransportElementTypeEnum
 
 // 20240805 rwp table had overlaps between columns; using auto layout 
 // [cols="3a,22a"]
 
 [cols="a,a"]
 |===
-| 列挙型 | IfcTransportElementTypeEnumType
+| 列挙型 | IfcTransportElementTypeEnum
 
 h| 値 h| 説明
 | ELEVATOR | エレベータ
