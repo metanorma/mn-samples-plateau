@@ -2,7 +2,7 @@ name: docker
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, firelight-test-march-2025 ]
   pull_request:
   workflow_dispatch:
 
