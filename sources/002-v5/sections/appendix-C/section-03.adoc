@@ -805,7 +805,7 @@ XXXXX-YYY-ZZZZZZZZZZZZ
 
 [[fig-C-15]]
 .一つとみなされる建築物の例
-image::images/152.webp.png[]
+image::images/152.webp.png[width="600"]
 
 uro:cityは、3d都市モデル内の建築物オブジェクトの空間的な範囲を特定するために使用する識別子である。一つのデータ集合には、数多くの建築物オブジェクトが含まれる。これを効率的に検索・表示するためにuro:cityを使用する目的でこの属性を必須とする。
 
@@ -829,7 +829,7 @@ uro:BuildingDetailAttributeは建物利用現況として調査・収集され�
 
 uro:majorUsage、uro:orgUsage及びuro:detailedUsageは都市ごとの独自の区分に従った建築物の用途を格納するための属性である。これらの属性には、都市ごとに体系化された階層性をもつ用途のコードを記述できる。
 
-[cols="3a,17a"]
+[cols="3a,15a"]
 |===
 | 使用可能な属性 | 説明
 
