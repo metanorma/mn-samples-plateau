@@ -7,22 +7,21 @@
 前項までで作成した((3D都市モデル))を、製品仕様に示された符号化仕様に従うデータに変換する。
 
 (((i-UR)))(((CityGML)))(((3D都市モデル)))(((標準製品仕様書)))
-手順：
 
-手順1．指定されたファイル単位に分割する。 +
+* 【手順】
+* 手順1．指定されたファイル単位に分割する。 +
 標準製品仕様書で地物型ごとに指定されたファイル単位（<<toc5_04_02>>）に従い、分割する。分割は、メッシュコードに紐づく空間範囲ごとに実施する。ただし、空間範囲の境界線上に存在する地物は区切らず、それぞれのメッシュに平面投影した形状が含まれる面積の割合を算出し、この割合が最も大きいメッシュに対応するファイルに含む。m2で面積を計算し、小数点2桁（3桁目で四捨五入）で比較する。面積が同じ場合はメッシュ番号の小さい方とする。
-
-手順2．分割したファイル単位にデータを変換・出力する。 +
+* 手順2．分割したファイル単位にデータを変換・出力する。 +
 符号化仕様に定義されたタグ及びタグの構造（階層、出現順序、データ型、出現回数等）に従い、プログラム等により分割したデータをCityGML及びi-URによるGML形式に変換する。i-UR及びCityGMLに定義された地物型等には、それぞれi-UR及びCityGMLで推奨された接頭辞を使用する。 +
 出力においては、成果品となる3D都市モデルの構造（5.4に示すファイル名やフォルダ構成）を考慮すること。 +
 CityGML及びi-URの符号化仕様は以下より取得できる。
 
-* CityGML：
-** http://schemas.opengis.net/citygml/[]
-* i-UR：
-** https://www.geospatial.jp/iur/schemas/uro/3.2/urbanObject.xsd[]
-** https://www.geospatial.jp/iur/schemas/urf/3.2/urbanFunction.xsd[]
-** なお、符号化仕様は最新のものであることをversion属性により確認すること。version属性は、符号化仕様内のxs:schemaタグに記載されている（以下のフラグメントの太字部分）。
+** CityGML：
+*** http://schemas.opengis.net/citygml/[]
+** i-UR：
+*** https://www.geospatial.jp/iur/schemas/uro/3.2/urbanObject.xsd[]
+*** https://www.geospatial.jp/iur/schemas/urf/3.2/urbanFunction.xsd[]
+*** なお、符号化仕様は最新のものであることをversion属性により確認すること。version属性は、符号化仕様内のxs:schemaタグに記載されている（以下のフラグメントの太字部分）。
 +
 [source,xml]
 ----
@@ -38,12 +37,11 @@ CityGML及びi-URの符号化仕様は以下より取得できる。
   attributeFormDefault="unqualified"
   version="3.1.0">
 ----
---
 
-手順3．コード型に対応するコードリストをXML形式に変換・出力する。XMLの形式は、GML 3.1.1 simple dictionary profileを使用する。 +
+* 手順3．コード型に対応するコードリストをXML形式に変換・出力する。XMLの形式は、GML 3.1.1 simple dictionary profileを使用する。 +
 GML 3.1.1 simple dictionary profileは、もともとは辞書として利用されることを想定したXML形式であり、名前（gml:name）とその説明（gml:description）の対の集まりから構成される。CityGMLでは、コードリストの符号化仕様としてこのGML 3.1.1 simple dictionary profileを使用していることから、標準製品仕様においてもコードリストの符号化仕様としてGML 3.1.1 simple dictionary profileを採用する。 +
 GML 3.1.1 simple dictionary profileに従ったXML形式のコードリスト例を以下に示す。
-
++
 [source,xml]
 ----
 <?xml version="1.0" encoding="UTF-8"?>
@@ -68,18 +66,16 @@ GML 3.1.1 simple dictionary profileに従ったXML形式のコードリスト例
   </gml:dictionaryEntry>
 </gml:Dictionary>
 ----
---
 
-* gml:Dictionaryのgml:idは、``[接頭辞]_[UUID]``とする。
-** ``[接頭辞]``は、clとする。``[UUID]``は、Universally Unique Identifierとする。
-* gml:nameには、当該3D都市モデルにおけるコードリストを識別する名称として、地物型名と属性名との組み合わせとする。地物型名と属性名とは_（アンダースコア）でつなぐ。
-* コードとその説明を、gml:Definitionにより対として記述する。gml:Definitionの子要素となるgml:descriptionには説明を、gml:nameにはコードを示す。
-* 標準製品仕様書に定義されたコードリストのXMLは以下より取得できる。 +
+** gml:Dictionaryのgml:idは、``[接頭辞]_[UUID]``とする。
+*** ``[接頭辞]``は、clとする。``[UUID]``は、Universally Unique Identifierとする。
+** gml:nameには、当該3D都市モデルにおけるコードリストを識別する名称として、地物型名と属性名との組み合わせとする。地物型名と属性名とは_（アンダースコア）でつなぐ。
+** コードとその説明を、gml:Definitionにより対として記述する。gml:Definitionの子要素となるgml:descriptionには説明を、gml:nameにはコードを示す。
+** 標準製品仕様書に定義されたコードリストのXMLは以下より取得できる。 +
 https://www.geospatial.jp/iur/codelists[]
 
-手順4．品質評価を実施する。
-
-* 論理一貫性（L03）の品質評価は、拡張製品仕様書において作成対象とした地物及び属性に対して行うこと。
+* 手順4．品質評価を実施する。
+** 論理一貫性（L03）の品質評価は、拡張製品仕様書において作成対象とした地物及び属性に対して行うこと。
 
 [[toc4_04_02]]
 ==== 作業上の留意事項
@@ -268,7 +264,7 @@ class:: 留意事項
 
 * コードリストは3D都市モデルのファイルからの相対パスによる記述とする。
 
-** 相対パスは、成果品のフォルダ構成に従う（<<toc5>>参照）。
+** 相対パスは、成果品のフォルダ構成に従う（<<toc5,第6章>>参照）。
 
 [example]
 .記述例：相対パスによるcodeSpaceの指定の例
