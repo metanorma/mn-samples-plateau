@@ -89,10 +89,10 @@ h| 地物型 h| 空間属性 h| LOD0 h| LOD1 h| LOD2 h| LOD3 h| 適用
 |===
 4+|  都市計画の区域 |  対応するクラス |  クラス図
 
-4+| 都市計画区域 | urf:UrbanPlanningArea .2+| (3)
+4+| 都市計画区域 | urf:UrbanPlanningArea .2+| <<toc4_10_02_03>>
 4+| 準都市計画区域 | urf:QuasiUrbanPlanningArea
-4+| 区域区分 | urf:AreaClassification | (4)
-4+| 地域地区 | urf:DistrictsAndZones .28+| (5)
+4+| 区域区分 | urf:AreaClassification | <<toc4_10_02_04>>
+4+| 地域地区 | urf:DistrictsAndZones .28+| <<toc4_10_02_05>>
 .27+| 3+| 用途地域 | urf:UseDistrict
 3+| 特別用途地区 | urf:SpecialUseDistrict
 3+| 特定用途制限地域 | urf:SpecialUseRestrictionDistrict
@@ -127,22 +127,22 @@ h| 地物型 h| 空間属性 h| LOD0 h| LOD1 h| LOD2 h| LOD3 h| 適用
 | urf:AircraftNoiseControlZone +
 urf:AircraftNoiseControlZone
 
-4+| 促進区域 | urf:ProjectPromotionArea .5+| (6)
+4+| 促進区域 | urf:ProjectPromotionArea .5+| <<toc4_10_02_06>>
 .4+| 3+| 市街地再開発促進区域 | urf:UrbanRedevelopmentPromotionArea
 3+| 土地区画整理促進区域 | urf:LandReadjustmentPromotionArea
 3+| 住宅街区整備促進区域 | urf:ResidentialBlockConstructionPromotionArea
 3+| 拠点業務市街地整備土地区画整理促進区域 | urf:LandReadjustmentPromotionAreasForCoreBusinessUrbanDevelopment
-4+| 遊休土地転換利用促進地区 | urf:UnusedLandUsePromotionArea | (7)
-4+| 被災市街地復興推進地域 | urf:UrbanDisasterRecoveryPromotionArea | (8)
-4+| 都市施設 | urf:UrbanFacility | (9)
-.22+| 3+| 交通施設 | urf:TrafficFacility | (10)
-3+| 公共空地 | urf:OpenSpaceForPublicUse | (11)
-3+| 供給施設及び処理施設 | urf:SupplyFacility, urf:TreatmentFacility | (12)
-3+| 水路 | urf:Waterway | (13)
-3+| 教育文化施設 | urf:EducationalAndCulturalFacility | (14)
-3+| 医療施設及び社会福祉施設 | urf:MedicalFacility, urf:SocialWelfareFacility | (15)
-3+| 市場、と畜場、火葬場 | urf:MarketsSlaughterhousesCrematoria | (16)
-3+| 一団地の住宅施設 | urf:CollectiveHousingFacilities .15+| (9)
+4+| 遊休土地転換利用促進地区 | urf:UnusedLandUsePromotionArea | <<toc4_10_02_07>>
+4+| 被災市街地復興推進地域 | urf:UrbanDisasterRecoveryPromotionArea | <<toc4_10_02_08>>
+4+| 都市施設 | urf:UrbanFacility | <<toc4_10_02_09>>
+.22+| 3+| 交通施設 | urf:TrafficFacility | <<toc4_10_02_10>>
+3+| 公共空地 | urf:OpenSpaceForPublicUse | <<toc4_10_02_11>>
+3+| 供給施設及び処理施設 | urf:SupplyFacility, urf:TreatmentFacility | <<toc4_10_02_12>>
+3+| 水路 | urf:Waterway | <<toc4_10_02_13>>
+3+| 教育文化施設 | urf:EducationalAndCulturalFacility | <<toc4_10_02_14>>
+3+| 医療施設及び社会福祉施設 | urf:MedicalFacility, urf:SocialWelfareFacility | <<toc4_10_02_15>>
+3+| 市場、と畜場、火葬場 | urf:MarketsSlaughterhousesCrematoria | <<toc4_10_02_16>>
+3+| 一団地の住宅施設 | urf:CollectiveHousingFacilities .15+| <<toc4_10_02_09>>
 3+| 一団地の官公庁施設 | urf:CollectiveGovernmentAndPublicOfficeFacilities
 3+| 流通業務団地 | urf:DistributionBusinessPark
 3+| 一団地の津波防災拠点市街地形成施設 | urf:CollectiveFacilitiesForTsunamiDisasterPrevention
@@ -157,7 +157,7 @@ urf:AircraftNoiseControlZone
 3+| 防水施設 | urf:FloodPreventionFacility
 3+| 防雪施設 | urf:SnowProtectionFacility
 3+| 防砂施設 | urf:SandControlFacility
-4+| 市街地開発事業 | urf:UrbanDevelopmentProject .9+| (17)
+4+| 市街地開発事業 | urf:UrbanDevelopmentProject .9+| <<toc4_10_02_17>>
 .8+| 3+| 土地区画整理事業 | urf:LandReadjustmentProject
 3+| 新住宅市街地開発事業 | urf:NewHousingAndUrbanDevelopmentProject
 3+| 工業団地造成事業 | urf:IndustrialParkDevelopmentProject
@@ -166,14 +166,14 @@ urf:AircraftNoiseControlZone
 3+| 住宅街区整備事業 | urf:ResidentialBlockConstructionProject
 3+| 防災街区整備事業 | urf:DisasterPreventionBlockImprovementProject
 3+| 市街地改造事業 | urf:UrbanRenewalProject
-4+| 市街地開発事業等の予定区域 | urf:ScheduledAreaForUrbanDevelopmentProject .7+| (18)
+4+| 市街地開発事業等の予定区域 | urf:ScheduledAreaForUrbanDevelopmentProject .7+| <<toc4_10_02_18>>
 .6+| 3+| 新住宅市街地開発事業の予定区域 | urf:ScheduledAreaForNewHousingAndUrbanDevelopmentProjects
 3+| 工業団地造成事業の予定区域 | urf:ScheduledAreaForIndustrialParkDevelopmentProjects
 3+| 新都市基盤整備事業の予定区域 | urf:ScheduledAreaForNewUrbanInfrastructureProjects
 3+| 一団地の住宅施設の予定区域 | urf:ScheduledAreaForCollectiveHousingFacilities
 3+| 一団地の官公庁施設の予定区域 | urf:ScheduledAreaForCollectiveGovernmentAndPublicOfficeFacilities
 3+| 流通業務団地の予定区域 | urf:ScheduledAreaForDistributionBusinessPark
-4+| 地区計画等 | .17+| (19)
+4+| 地区計画等 | .17+| <<toc4_10_02_19>>
 .19+| 3+| 地区計画 | urf:DistrictPlan
 .2+| 2+| 地区整備計画 | urf:DistrictDevelopmentPlan
 | | 地区施設 | urf:DistrictFacilityurf:DistrictFacility
@@ -190,7 +190,7 @@ urf:AircraftNoiseControlZone
 | | 特定地区防災施設 | urf:ZonalDisasterPreventionFacility
 2+| 防災街区整備地区整備計画 | urf:DistrictImprovementPlanForDisasterPreventionBlockImprovementZonePlan
 | | 地区防災施設 | urf:ZonalDisasterPreventionFacility
-3+| 立地適正化計画 | .3+| (21)
+3+| 立地適正化計画 | .3+| <<toc4_10_02_21>>
 .2+| 2+| 都市機能誘導区域 | urf:UrbanFunctionAttractionArea
 2+| 居住誘導区域 | urf:ResidenceAttractionArea
 
