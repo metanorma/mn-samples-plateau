@@ -255,7 +255,7 @@ h| 品質評価手法 | 抜取・目視検査を実施する。
 h| 品質要求 h| 参照データとの一致。
 h| 品質要素 | 完全性・過剰
 h| 品質適用範囲 | bldg:IntBuildingInstallation
-h| 品質評価尺度 | 参照データに含まれる内部付属物 footnoteblock:[int_inst_types]と建築物モデル（LOD4）に含まれるbldg:IntBuildingInstallationのインスタンス数が等しい。
+h| 品質評価尺度 | 参照データに含まれる内部付属物と建築物モデル（LOD4）に含まれるbldg:IntBuildingInstallationのインスタンス数が等しい。
 h| 適合品質水準 | エラーの数が0個の場合に合格。エラーの数が1以上の場合は不合格。
 h| 品質評価手法 | 抜取・目視検査を実施する。
 
@@ -265,11 +265,17 @@ h| 品質評価手法 | 抜取・目視検査を実施する。
 
 |===
 
+NOTE: 内部付属物について +
+IntBuildingInstallationとすべき内部付属物は、「（別冊）3D都市モデルとの連携のための情報伝達マニュアル（IDM）・モデルビュー定義（MVD）第3.0版　IFCクラスとPLATEAU標準建築物モデル（LOD4）の対応表」により、確認できる。
+
+// footnoteblock:[int_inst_types]
+////
 [[int_inst_types]]
 [NOTE]
 --
 IntBuildingInstallationとすべき内部付属物は、「（別冊）3D都市モデルとの連携のための情報伝達マニュアル（IDM）・モデルビュー定義（MVD）第3.0版　IFCクラスとPLATEAU標準建築物モデル（LOD4）の対応表」により、確認できる。
 --
+////
 
 [[toc6_03_02]]
 ==== 論理一貫性
