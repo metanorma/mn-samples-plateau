@@ -349,8 +349,8 @@ MultiSurfaceの集まりとして表現する。
 | レール | TrafficArea | |  ● |  ●
 | レールに囲まれた範囲 | TrafficArea |  ● |  ● |  ●
 | 軌きょう | TrafficArea | | |  〇
-| 道床 | TrafficArea |  ● |  ● |  　●^注^ 
-2+| 交通補助領域 | AuxiliaryTrafficArea | |  ● |  　●^注^
+| 道床 | TrafficArea |  ● |  ● |  ● footnoteblock:[fn_use_case]
+2+| 交通補助領域 | AuxiliaryTrafficArea | |  ● |  ● footnoteblock:[fn_use_case]
 
 |===
 
@@ -358,16 +358,15 @@ MultiSurfaceの集まりとして表現する。
 ●:: 必須
 ■:: 条件付必須
 〇:: 任意
-●^注^:: ユースケースの必要に応じて細分できる。
+//●^注^:: ユースケースの必要に応じて細分できる。
 
 // footnoteblock:[fn_use_case]
-////
 [[fn_use_case]]
 [NOTE]
 --
 ユースケースの必要に応じて細分できる。
 --
-////
+
 
 [[tab-4-29]]
 [cols="8a,23a,^a,^a,^a"]
