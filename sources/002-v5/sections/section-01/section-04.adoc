@@ -167,8 +167,7 @@ gen:genericAttributeSetは、gen:stringAttributeやgen:intAttributeなどの汎�
 [cols="a,a,a,a,a,a,a,a"]
 .汎用属性の追加例
 |===
-| 地物型 2+| gen::GenericCityObject | 注釈 4+| gml:name=20の場合に適用
-
+h| 地物型 2+| gen::GenericCityObject h| 注釈 4+| gml:name=20の場合に適用
 .5+h| 汎用属性 h| 属性の型 h| 名称 h| 定義 h| 多重度 h| 定義域 h| 単位 h| 注釈
 | gen::stringAttribute | 通学区域名称 | 通学区域に指定された就学校の名前 | 1 | 全角20文字以内 | － |
 |  |  |  |  |  |  | 
