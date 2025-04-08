@@ -92,7 +92,7 @@ jobs:
       - name: "Firelight: generate HTML for doc ${{ matrix.document.dir }}"
         run: |
           npx --node-options='--experimental-vm-modules' \
-            -y @riboseinc/anafero-cli@0.0.41 \
+            -y @riboseinc/anafero-cli@0.0.42 \
             --target-dir dist/${{ matrix.document.url }} \
             --path-prefix ${{ matrix.env.prefix }}${{ matrix.document.url }} \
             --current-rev main
