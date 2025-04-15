@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <gml:Dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml" xsi:schemaLocation="http://www.opengis.net/gml http://schemas.opengis.net/gml/3.1.1/profiles/SimpleDictionary/1.0.0/gmlSimpleDictionaryProfile.xsd" gml:id="cl_947190fc-bbf8-4be4-8017-688eed054552">
 <gml:name>DataQualityAttribute_thematicSrcDesc</gml:name>
 <gml:dictionaryEntry>
 <gml:Definition gml:id="DataQualityAttribute_thematicSrcDesc_1">
-<gml:description>公共測量成果</gml:description>
+<gml:description>公共測量成果又は基本測量成果</gml:description>
 <gml:name>000</gml:name>
 </gml:Definition>
 </gml:dictionaryEntry>
@@ -21,7 +21,7 @@
 </gml:dictionaryEntry>
 <gml:dictionaryEntry>
 <gml:Definition gml:id="DataQualityAttribute_thematicSrcDesc_4">
-<gml:description>公共測量成果ではない測量成果</gml:description>
+<gml:description>公共測量成果又は基本測量成果ではない測量成果</gml:description>
 <gml:name>100</gml:name>
 </gml:Definition>
 </gml:dictionaryEntry>
@@ -101,12 +101,6 @@
 <gml:Definition gml:id="DataQualityAttribute_thematicSrcDesc_17">
 <gml:description>未作成</gml:description>
 <gml:name>999</gml:name>
-</gml:Definition>
-</gml:dictionaryEntry>
-<gml:dictionaryEntry>
-<gml:Definition gml:id="DataQualityAttribute_thematicSrcDesc_18">
-<gml:description>不明</gml:description>
-<gml:name>9020</gml:name>
 </gml:Definition>
 </gml:dictionaryEntry>
 </gml:Dictionary>
