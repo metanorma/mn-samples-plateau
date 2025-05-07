@@ -76,13 +76,13 @@ jobs:
             "version": "0.1",
             "entryPoint": "file:documents/${{ matrix.document.dir }}-v5/document.presentation.xml",
             "storeAdapters": [
-              "git+https://github.com/metanorma/firelight#main/packages/metanorma-xml-store"
+              "git+https://github.com/metanorma/firelight#jsdom-url-import/packages/metanorma-xml-store"
             ],
             "contentAdapters": [
-              "git+https://github.com/metanorma/firelight#main/packages/metanorma-site-content"
+              "git+https://github.com/metanorma/firelight#jsdom-url-import/packages/metanorma-site-content"
             ],
             "resourceLayouts": [
-              "git+https://github.com/metanorma/firelight#main/packages/plateau-layout"
+              "git+https://github.com/metanorma/firelight#jsdom-url-import/packages/plateau-layout"
             ]
           }
           EOF
