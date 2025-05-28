@@ -1006,6 +1006,7 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Trac
 [[toc4_05_04_01]]
 ===== Transportation（CityGML）
 
+[[Track_function.xml]]
 ====== Track_function.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Track_function.xml[template="gml_dict_template.liquid",context=dict]
@@ -1013,14 +1014,17 @@ lutaml_gml_dictionary::iur/codelists/3.2/Track_function.xml[template="gml_dict_t
 [.source]
 <<gsi_ops,付録７ 公共測量標準図式>>
 
+[[TrafficArea_function.xml]]
 ====== TrafficArea_function.xml
 
 交通（道路）のコードリストを参照。
 
+[[AuxiliaryTrafficArea_function.xml]]
 ====== AuxiliaryTrafficArea_function.xml
 
 交通（道路）のコードリストを参照。
 
+[[TrafficArea_surfaceMaterial.xml及びAuxiliaryTrafficArea_surfaceMaterial.xml]]
 ====== TrafficArea_surfaceMaterial.xml及びAuxiliaryTrafficArea_surfaceMaterial.xml
 
 交通（道路）のコードリストを参照。
@@ -1028,6 +1032,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/Track_function.xml[template="gml_dict_t
 [[toc4_05_04_02]]
 ===== Urban Object（i-UR）
 
+[[TrackAttribute_adminType.xml]]
 ====== TrackAttribute_adminType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/TrackAttribute_adminType.xml[template="gml_dict_template.liquid",context=dict]
@@ -1035,6 +1040,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/TrackAttribute_adminType.xml[template="
 [.source]
 <<gsi_foundation_map_dps>>
 
+[[TrackAttribute_structureType.xml]]
 ====== TrackAttribute_structureType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/TrackAttribute_structureType.xml[template="gml_dict_template.liquid",context=dict]
@@ -1042,6 +1048,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/TrackAttribute_structureType.xml[templa
 [.source]
 <<gsi_foundation_map_dps>>
 
+[[TrackAttribute_widthType.xml]]
 ====== TrackAttribute_widthType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/TrackAttribute_widthType.xml[template="gml_dict_template.liquid",context=dict]
@@ -1049,6 +1056,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/TrackAttribute_widthType.xml[template="
 [.source]
 <<gsi_foundation_map_dps>>
 
+[[DataQualityAttribute_geometrySrcDesc.xml]]
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
@@ -1063,6 +1071,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_geometrySrcDesc.xm
 <<plateau_010>>
 
 
+[[DataQualityAttribute_thematicSrcDesc.xml]]
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
@@ -1077,14 +1086,17 @@ lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_thematicSrcDesc.xm
 <<plateau_010>>
 
 
+[[DataQualityAttribute_appearanceSrcDesc.xml]]
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
+[[PublicSurveyDataQualityAttribute_srcScale.xml]]
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
 
+[[PublicSurveyDataQualityAttribute_geometrySrcDesc.xml]]
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]

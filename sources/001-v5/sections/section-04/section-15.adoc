@@ -1453,22 +1453,27 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Data
 [[toc4_15_04_01]]
 ===== Urban Object（i-UR）
 
+[[UtilityNetworkElement_occupierType.xml]]
 ====== UtilityNetworkElement_occupierType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/UtilityNetworkElement_occupierType.xml[template="gml_dict_template.liquid",context=dict]
 
+[[UtilityNetworkElement_occupierName.xml]]
 ====== UtilityNetworkElement_occupierName.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/UtilityNetworkElement_occupierName.xml[template="gml_dict_template.liquid",context=dict]
 
+[[UtilityNetworkElement_yearType.xml]]
 ====== UtilityNetworkElement_yearType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/UtilityNetworkElement_yearType.xml[template="gml_dict_template.liquid",context=dict]
 
+[[UtilityNetworkElement_administrator.xml]]
 ====== UtilityNetworkElement_administrator.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/UtilityNetworkElement_administrator.xml[template="gml_dict_template.liquid",context=dict]
 
+[[UtilityNetworkElement_material.xml]]
 ====== UtilityNetworkElement_material.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/UtilityNetworkElement_material.xml[template="gml_dict_template.liquid",context=dict]
@@ -1477,30 +1482,37 @@ lutaml_gml_dictionary::iur/codelists/3.2/UtilityNetworkElement_material.xml[temp
 <<jswa_sewage_system>>
 
 
+[[Pipe_sleeveType.xml]]
 ====== Pipe_sleeveType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Pipe_sleeveType.xml[template="gml_dict_template.liquid",context=dict]
 
+[[Appurtenance_appurtenanceType.xml]]
 ====== Appurtenance_appurtenanceType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Appurtenance_appurtenanceType.xml[template="gml_dict_template.liquid",context=dict]
 
+[[UtilityNodeContainer_containerType.xml]]
 ====== UtilityNodeContainer_containerType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/UtilityNodeContainer_containerType.xml[template="gml_dict_template.liquid",context=dict]
 
+[[ThematicShape_heightType.xml]]
 ====== ThematicShape_heightType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/ThematicShape_heightType.xml[template="gml_dict_template.liquid",context=dict]
 
+[[LengthAttribute_measureType.xml]]
 ====== LengthAttribute_measureType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/LengthAttribute_measureType.xml[template="gml_dict_template.liquid",context=dict]
 
+[[LengthAttribute_phaseType.xml]]
 ====== LengthAttribute_phaseType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/LengthAttribute_phaseType.xml[template="gml_dict_template.liquid",context=dict]
 
+[[DataQualityAttribute_geometrySrcDesc.xml]]
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
@@ -1515,6 +1527,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_geometrySrcDesc.xm
 <<plateau_010>>
 
 
+[[DataQualityAttribute_thematicSrcDesc.xml]]
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
@@ -1529,10 +1542,12 @@ lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_thematicSrcDesc.xm
 <<plateau_010>>
 
 
+[[DataQualityAttribute_appearanceSrcDesc.xml]]
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
+[[DataQualityAttribute_lod1HeightType.xml]]
 ====== DataQualityAttribute_lod1HeightType.xml
 
 // TODO: This table cannot be recreated because some values are marked "（使用不可）".

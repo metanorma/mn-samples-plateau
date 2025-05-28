@@ -1419,6 +1419,7 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Cons
 [[toc4_11_04_01]]
 ===== Bridge（CityGML）
 
+[[Bridge_class.xml]]
 ====== Bridge_class.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Bridge_class.xml[template="gml_dict_template.liquid",context=dict]
@@ -1426,6 +1427,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/Bridge_class.xml[template="gml_dict_tem
 [.source]
 <<nilim_kiban_dps>>
 
+[[Bridge_function.xml]]
 ====== Bridge_function.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Bridge_function.xml[template="gml_dict_template.liquid",context=dict]
@@ -1433,6 +1435,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/Bridge_function.xml[template="gml_dict_
 [.source]
 <<citygml_20,annex="C">>
 
+[[BridgeConstructionElement_function.xml]]
 ====== BridgeConstructionElement_function.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/BridgeConstructionElement_function.xml[template="gml_dict_template.liquid",context=dict]
@@ -1440,6 +1443,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/BridgeConstructionElement_function.xml[
 [.source]
 <<citygml_20,annex="C">>
 
+[[BridgeInstallation_function.xml]]
 ====== BridgeInstallation_function.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/BridgeInstallation_function.xml[template="gml_dict_template.liquid",context=dict]
@@ -1449,22 +1453,27 @@ NOTE: 橋梁施設台帳を出典とする。
 [[toc4_11_04_02]]
 ===== Urban Object（i-UR）
 
+[[BridgeStructureAttribute_material.xml]]
 ====== BridgeStructureAttribute_material.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/BridgeStructureAttribute_material.xml[template="gml_dict_template.liquid",context=dict]
 
+[[BridgeStructureAttribute_bridgeType.xml]]
 ====== BridgeStructureAttribute_bridgeType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/BridgeStructureAttribute_bridgeType.xml[template="gml_dict_template.liquid",context=dict]
 
+[[BridgeFunctionalAttribute_userType.xml]]
 ====== BridgeFunctionalAttribute_userType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/BridgeFunctionalAttribute_userType.xml[template="gml_dict_template.liquid",context=dict]
 
+[[ConstructionStructureAttribute_slopeType.xml]]
 ====== ConstructionStructureAttribute_slopeType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/ConstructionStructureAttribute_slopeType.xml[template="gml_dict_template.liquid",context=dict]
 
+[[ConstructionBaseAttribute_adminType.xml]]
 ====== ConstructionBaseAttribute_adminType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/ConstructionBaseAttribute_adminType.xml[template="gml_dict_template.liquid",context=dict]
@@ -1478,6 +1487,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/ConstructionBaseAttribute_adminType.xml
 [.source]
 <<mlit_cyberport>>
 
+[[ConstructionBaseAttribute_installerType.xml]]
 ====== ConstructionBaseAttribute_installerType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/ConstructionBaseAttribute_installerType.xml[template="gml_dict_template.liquid",context=dict]
@@ -1485,6 +1495,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/ConstructionBaseAttribute_installerType
 [.source]
 <<mlit_cyberport>>
 
+[[ConstructionRiskAssessmentAttribute_riskType.xml]]
 ====== ConstructionRiskAssessmentAttribute_riskType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/ConstructionRiskAssessmentAttribute_riskType.xml[template="gml_dict_template.liquid",context=dict]
@@ -1492,6 +1503,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/ConstructionRiskAssessmentAttribute_ris
 [.source]
 <<mlit_road_damage_map>>
 
+[[ConstructionRiskAssessmentAttribute_status.xml]]
 ====== ConstructionRiskAssessmentAttribute_status.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/ConstructionRiskAssessmentAttribute_status.xml[template="gml_dict_template.liquid",context=dict]
@@ -1499,6 +1511,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/ConstructionRiskAssessmentAttribute_sta
 [.source]
 <<mlit_road_damage_map>>
 
+[[DataQualityAttribute_geometrySrcDesc.xml]]
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
@@ -1513,6 +1526,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_geometrySrcDesc.xm
 <<plateau_010>>
 
 
+[[DataQualityAttribute_thematicSrcDesc.xml]]
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
@@ -1527,10 +1541,12 @@ lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_thematicSrcDesc.xm
 <<plateau_010>>
 
 
+[[DataQualityAttribute_appearanceSrcDesc.xml]]
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
+[[DataQualityAttribute_lod1HeightType.xml]]
 ====== DataQualityAttribute_lod1HeightType.xml
 
 // TODO: This table cannot be recreated because some values are marked "（使用不可）".
@@ -1546,10 +1562,12 @@ lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_lod1HeightType.xml
 [.source]
 <<gsi_building_data_manual>>
 
+[[PublicSurveyDataQualityAttribute_srcScale.xml]]
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
 
+[[PublicSurveyDataQualityAttribute_geometrySrcDesc.xml]]
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
@@ -1561,6 +1579,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_geomet
 <<plateau_010>>
 
 
+[[Bridge_lodType.xml]]
 ====== Bridge_lodType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Bridge_lodType.xml[template="gml_dict_template.liquid",context=dict]
