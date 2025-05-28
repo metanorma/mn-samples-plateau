@@ -487,7 +487,7 @@ h| 説明 | LOD3.1では、LOD3.0に加え、構造上不可欠ではない付�
 |
 * 外壁のうち、上向きとなる面の外周を取得する。
 * 面の各頂点に、外壁の高さを与える。
-| 
+|
 * RoofSurfaceの代替として使用できる。
 
 | LOD3.1
@@ -498,7 +498,7 @@ h| 説明 | LOD3.1では、LOD3.0に加え、構造上不可欠ではない付�
 |
 * 外壁のうち、下向きとなる面の外周を取得する。
 * 面の各頂点に、外壁の高さを与える。
-| 
+|
 * WallSurfaceの代替として利用できる。
 
 | LOD3.1 | ● | ConstructionInstallation | MutiSurface | 防護柵、階段、梯子、管理用通路
@@ -696,6 +696,7 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Occu
 [[toc4_13_04_01]]
 ===== Urban Object（i-UR）
 
+[[OtherConstruction_class.xml]]
 ====== OtherConstruction_class.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/OtherConstruction_class.xml[template="gml_dict_template.liquid",context=dict]
@@ -703,6 +704,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/OtherConstruction_class.xml[template="g
 [.source]
 <<mlit_kiban_chizu>>
 
+[[OtherConstruction_function.xml]]
 ====== OtherConstruction_function.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/OtherConstruction_function.xml[template="gml_dict_template.liquid",context=dict]
@@ -710,10 +712,12 @@ lutaml_gml_dictionary::iur/codelists/3.2/OtherConstruction_function.xml[template
 [.source]
 <<mlit_kiban_chizu>>
 
+[[ConstructionInstallation_function.xml]]
 ====== ConstructionInstallation_function.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/ConstructionInstallation_function.xml[template="gml_dict_template.liquid",context=dict]
 
+[[ConstructionBaseAttribute_purpose.xml]]
 ====== ConstructionBaseAttribute_purpose.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/ConstructionBaseAttribute_purpose.xml[template="gml_dict_template.liquid",context=dict]
@@ -721,6 +725,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/ConstructionBaseAttribute_purpose.xml[t
 [.source]
 <<nlftp>>
 
+[[ConstructionStructureAttribute_structureType.xml]]
 ====== ConstructionStructureAttribute_structureType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/ConstructionStructureAttribute_structureType.xml[template="gml_dict_template.liquid",context=dict]
@@ -731,10 +736,12 @@ lutaml_gml_dictionary::iur/codelists/3.2/ConstructionStructureAttribute_structur
 [.source]
 <<mlit_kiban_chizu>>
 
+[[ConstructionStructureAttribute_slopeType.xml]]
 ====== ConstructionStructureAttribute_slopeType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/ConstructionStructureAttribute_slopeType.xml[template="gml_dict_template.liquid",context=dict]
 
+[[ConstructionBaseAttribute_adminType.xml]]
 ====== ConstructionBaseAttribute_adminType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/ConstructionBaseAttribute_adminType.xml[template="gml_dict_template.liquid",context=dict]
@@ -748,6 +755,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/ConstructionBaseAttribute_adminType.xml
 [.source]
 <<mlit_cyberport>>
 
+[[ConstructionBaseAttribute_installerType.xml]]
 ====== ConstructionBaseAttribute_installerType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/ConstructionBaseAttribute_installerType.xml[template="gml_dict_template.liquid",context=dict]
@@ -755,6 +763,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/ConstructionBaseAttribute_installerType
 [.source]
 <<mlit_cyberport>>
 
+[[ConstructionRiskAssessmentAttribute_riskType.xml]]
 ====== ConstructionRiskAssessmentAttribute_riskType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/ConstructionRiskAssessmentAttribute_riskType.xml[template="gml_dict_template.liquid",context=dict]
@@ -762,6 +771,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/ConstructionRiskAssessmentAttribute_ris
 [.source]
 <<mlit_road_damage_map>>
 
+[[ConstructionRiskAssessmentAttribute_status.xml]]
 ====== ConstructionRiskAssessmentAttribute_status.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/ConstructionRiskAssessmentAttribute_status.xml[template="gml_dict_template.liquid",context=dict]
@@ -769,10 +779,12 @@ lutaml_gml_dictionary::iur/codelists/3.2/ConstructionRiskAssessmentAttribute_sta
 [.source]
 <<mlit_road_damage_map>>
 
+[[ConstructionFunctionalAttribute_directionType.xml]]
 ====== ConstructionFunctionalAttribute_directionType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/ConstructionFunctionalAttribute_directionType.xml[template="gml_dict_template.liquid",context=dict]
 
+[[DataQualityAttribute_geometrySrcDesc.xml]]
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
@@ -787,6 +799,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_geometrySrcDesc.xm
 <<plateau_010>>
 
 
+[[DataQualityAttribute_thematicSrcDesc.xml]]
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
@@ -801,10 +814,12 @@ lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_thematicSrcDesc.xm
 <<plateau_010>>
 
 
+[[DataQualityAttribute_appearanceSrcDesc.xml]]
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
+[[DataQualityAttribute_lod1HeightType.xml]]
 ====== DataQualityAttribute_lod1HeightType.xml
 
 // TODO: This table cannot be recreated because some values are marked "（使用不可）".
@@ -820,10 +835,12 @@ lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_lod1HeightType.xml
 [.source]
 <<gsi_building_data_manual>>
 
+[[PublicSurveyDataQualityAttribute_srcScale.xml]]
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
 
+[[PublicSurveyDataQualityAttribute_geometrySrcDesc.xml]]
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
@@ -835,11 +852,13 @@ lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_geomet
 <<plateau_010>>
 
 
+[[OtherConstruction_lodType.xml]]
 ====== OtherConstruction_lodType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/OtherConstruction_lodType.xml[template="gml_dict_template.liquid",context=dict]
 
 
+[[Elevation_elevationReference.xml]]
 ====== Elevation_elevationReference.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Elevation_elevationReference.xml[template="gml_dict_template.liquid",context=dict]

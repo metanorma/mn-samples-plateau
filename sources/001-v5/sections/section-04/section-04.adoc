@@ -245,7 +245,7 @@ image::images/113.webp.png[width="400"]
 * 道床：レール又はまくらぎを支持し、荷重を路盤に分布する軌道の部分。バラスト、コンクリートなどを用いたものがある。[<<jis_e_1001>>]
 * 軌きょう：レールとまくらぎとを、はしご状に組み立てたもの。[<<jis_e_1001>>]
 * レール：車輪を直接支持、誘導する部材 [<<jis_e_1001>>]
-* まくらぎ：レールを支え、荷重を道床などに分布させる部材。使用目的によって並まくらぎ、橋まくらぎ、分岐まくらぎ、短まくらぎ、縦まくらぎなど、また、材質によって木まくらぎ、PCまくらぎ、鉄まくらぎ、合成まくらぎなどがある。[<<jis_e_1001>>] 
+* まくらぎ：レールを支え、荷重を道床などに分布させる部材。使用目的によって並まくらぎ、橋まくらぎ、分岐まくらぎ、短まくらぎ、縦まくらぎなど、また、材質によって木まくらぎ、PCまくらぎ、鉄まくらぎ、合成まくらぎなどがある。[<<jis_e_1001>>]
 
 交通（鉄道）モデル（LOD2）の取得イメージを<<tab-4-27>>に示す。
 
@@ -798,10 +798,12 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Slop
 [[toc4_04_04_01]]
 ===== Transportation（CityGML）
 
+[[TransportationComplex_class.xml]]
 ====== TransportationComplex_class.xml
 
 <<toc4_03_04_01,tran:Roadのコードリスト>>　参照
 
+[[Railway_function.xml]]
 ====== Railway_function.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Railway_function.xml[template="gml_dict_template.liquid",context=dict]
@@ -809,6 +811,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/Railway_function.xml[template="gml_dict
 [.source]
 <<gsi_ops,付録７ 公共測量標準図式>>
 
+[[TrafficArea_function.xml]]
 ====== TrafficArea_function.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/TrafficArea_function.xml[template="gml_dict_template.liquid",context=dict]
@@ -819,6 +822,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/TrafficArea_function.xml[template="gml_
 [[toc4_04_04_02]]
 ===== Urban Object（i-UR）
 
+[[RailwayRouteAttribute_operatorType.xml]]
 ====== RailwayRouteAttribute_operatorType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/RailwayRouteAttribute_operatorType.xml[template="gml_dict_template.liquid",context=dict]
@@ -826,6 +830,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/RailwayRouteAttribute_operatorType.xml[
 [.source]
 <<nlftp>>
 
+[[RailwayRouteAttribute_railwayType.xml]]
 ====== RailwayRouteAttribute_railwayType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/RailwayRouteAttribute_railwayType.xml[template="gml_dict_template.liquid",context=dict]
@@ -833,23 +838,28 @@ lutaml_gml_dictionary::iur/codelists/3.2/RailwayRouteAttribute_railwayType.xml[t
 [.source]
 <<nlftp>>
 
+[[RailwayTrackAttribute_directionType.xml]]
 ====== RailwayTrackAttribute_directionType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/RailwayTrackAttribute_directionType.xml[template="gml_dict_template.liquid",context=dict]
 
 
+[[RailwayTrackAttribute_trackType.xml]]
 ====== RailwayTrackAttribute_trackType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/RailwayTrackAttribute_trackType.xml[template="gml_dict_template.liquid",context=dict]
 
+[[RailwayTrackAttribute_alignmentType.xml]]
 ====== RailwayTrackAttribute_alignmentType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/RailwayTrackAttribute_alignmentType.xml[template="gml_dict_template.liquid",context=dict]
 
+[[ControlPoint_function.xml]]
 ====== ControlPoint_function.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/ControlPoint_function.xml[template="gml_dict_template.liquid",context=dict]
 
+[[DataQualityAttribute_geometrySrcDesc.xml]]
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
@@ -864,6 +874,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_geometrySrcDesc.xm
 <<plateau_010>>
 
 
+[[DataQualityAttribute_thematicSrcDesc.xml]]
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
@@ -878,18 +889,22 @@ lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_thematicSrcDesc.xm
 <<plateau_010>>
 
 
+[[DataQualityAttribute_appearanceSrcDesc.xml]]
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
+[[Railway_lodType.xml]]
 ====== Railway_lodType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Railway_lodType.xml[template="gml_dict_template.liquid",context=dict]
 
+[[PublicSurveyDataQualityAttribute_srcScale.xml]]
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
 
+[[PublicSurveyDataQualityAttribute_geometrySrcDesc.xml]]
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
