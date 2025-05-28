@@ -472,6 +472,7 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Publ
 [[toc4_14_04_01]]
 ===== CityFurniture（CityGML）
 
+[[CityFurniture_class.xml]]
 ====== CityFurniture_class.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/CityFurniture_class.xml[template="gml_dict_template.liquid",context=dict]
@@ -479,6 +480,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/CityFurniture_class.xml[template="gml_d
 [.source]
 <<citygml_20,annex="C.4">>
 
+[[CityFurniture_function.xml]]
 ====== CityFurniture_function.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/CityFurniture_function.xml[template="gml_dict_template.liquid",context=dict]
@@ -492,6 +494,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/CityFurniture_function.xml[template="gm
 [[toc4_14_04_02]]
 ===== Urban Object（i-UR）
 
+[[DataQualityAttribute_geometrySrcDesc.xml]]
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
@@ -506,6 +509,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_geometrySrcDesc.xm
 <<plateau_010>>
 
 
+[[DataQualityAttribute_thematicSrcDesc.xml]]
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
@@ -520,10 +524,12 @@ lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_thematicSrcDesc.xm
 <<plateau_010>>
 
 
+[[DataQualityAttribute_appearanceSrcDesc.xml]]
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
+[[DataQualityAttribute_lod1HeightType.xml]]
 ====== DataQualityAttribute_lod1HeightType.xml
 
 // TODO: This table cannot be recreated because some values are marked "（使用不可）".
@@ -539,10 +545,12 @@ lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_lod1HeightType.xml
 [.source]
 <<gsi_building_data_manual>>
 
+[[PublicSurveyDataQualityAttribute_srcScale.xml]]
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
 
+[[PublicSurveyDataQualityAttribute_geometrySrcDesc.xml]]
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
@@ -554,10 +562,12 @@ lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_geomet
 <<plateau_010>>
 
 
+[[CityFurniture_lodType.xml]]
 ====== CityFurniture_lodType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/CityFurniture_lodType.xml[template="gml_dict_template.liquid",context=dict]
 
+[[CityFurnitureDetailAttribute_facilityType.xml]]
 ====== CityFurnitureDetailAttribute_facilityType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/CityFurnitureDetailAttribute_facilityType.xml[template="gml_dict_template.liquid",context=dict]

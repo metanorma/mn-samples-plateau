@@ -191,10 +191,12 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Coun
 [[toc4_26_04_01]]
 ===== 施設管理の拡張属性で使用するコードリスト
 
+[[FacilityTypeAttribute_class.xml]]
 ====== FacilityTypeAttribute_class.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/FacilityTypeAttribute_class.xml[template="gml_dict_template.liquid",context=dict]
 
+[[FacilityTypeAttribute_function.xml]]
 ====== FacilityTypeAttribute_function.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/FacilityTypeAttribute_function.xml[template="gml_dict_template.liquid",context=dict]
@@ -203,6 +205,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/FacilityTypeAttribute_function.xml[temp
 [[toc4_26_04_02]]
 ===== 河川管理施設の拡張属性で使用するコードリスト
 
+[[RiverFacilityIdAttribute_sideType.xml]]
 ====== RiverFacilityIdAttribute_sideType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/RiverFacilityIdAttribute_sideType.xml[template="gml_dict_template.liquid",context=dict]
@@ -213,83 +216,102 @@ lutaml_gml_dictionary::iur/codelists/3.2/RiverFacilityIdAttribute_sideType.xml[t
 [[toc4_26_04_03]]
 ===== 港湾施設の拡張属性で使用するコードリスト
 
+[[PortAttribute_facilityDetailType.xml]]
 ====== PortAttribute_facilityDetailType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/PortAttribute_facilityDetailType.xml[template="gml_dict_template.liquid",context=dict]
 
 
+[[PortAttribute_portStatus.xml]]
 ====== PortAttribute_portStatus.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/PortAttribute_portStatus.xml[template="gml_dict_template.liquid",context=dict]
 
+[[PortAttribute_grantType.xml]]
 ====== PortAttribute_grantType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/PortAttribute_grantType.xml[template="gml_dict_template.liquid",context=dict]
 
+[[PortAttribute_storageCapacityUnit.xml]]
 ====== PortAttribute_storageCapacityUnit.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/PortAttribute_storageCapacityUnit.xml[template="gml_dict_template.liquid",context=dict]
 
+[[ShipServiceFacility_supplyAbilityUnit.xml]]
 ====== ShipServiceFacility_supplyAbilityUnit.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/ShipServiceFacility_supplyAbilityUnit.xml[template="gml_dict_template.liquid",context=dict]
 
+[[PortManagementFacility_unitOfShipType.xml]]
 ====== PortManagementFacility_unitOfShipType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/PortManagementFacility_unitOfShipType.xml[template="gml_dict_template.liquid",context=dict]
 
+[[PortAttribute_geologicalType.xml]]
 ====== PortAttribute_geologicalType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/PortAttribute_geologicalType.xml[template="gml_dict_template.liquid",context=dict]
 
+[[CyberportMarinaAndPBS_areaType.xml]]
 ====== CyberportMarinaAndPBS_areaType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/CyberportMarinaAndPBS_areaType.xml[template="gml_dict_template.liquid",context=dict]
 
+[[CyberportMarinaAndPBS_mainVessels.xml]]
 ====== CyberportMarinaAndPBS_mainVessels.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/CyberportMarinaAndPBS_mainVessels.xml[template="gml_dict_template.liquid",context=dict]
 
+[[MooringFacility_mainVessels.xml]]
 ====== MooringFacility_mainVessels.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/MooringFacility_mainVessels.xml[template="gml_dict_template.liquid",context=dict]
 
 
+[[PortAttribute_form.xml]]
 ====== PortAttribute_form.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/PortAttribute_form.xml[template="gml_dict_template.liquid",context=dict]
 
+[[CargoHandlingFacility_packingName.xml]]
 ====== CargoHandlingFacility_packingName.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/CargoHandlingFacility_packingName.xml[template="gml_dict_template.liquid",context=dict]
 
+[[HarborFacility_areaType.xml]]
 ====== HarborFacility_areaType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/HarborFacility_areaType.xml[template="gml_dict_template.liquid",context=dict]
 
+[[PortTransportationFacility_pavementType.xml]]
 ====== PortTransportationFacility_pavementType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/PortTransportationFacility_pavementType.xml[template="gml_dict_template.liquid",context=dict]
 
+[[PortTransportationFacility_routeType.xml]]
 ====== PortTransportationFacility_routeType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/PortTransportationFacility_routeType.xml[template="gml_dict_template.liquid",context=dict]
 
+[[PortAttribute_mainCargo.xml]]
 ====== PortAttribute_mainCargo.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/PortAttribute_mainCargo.xml[template="gml_dict_template.liquid",context=dict]
 
 
+[[ProtectiveFacility_structureType.xml]]
 ====== ProtectiveFacility_structureType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/ProtectiveFacility_structureType.xml[template="gml_dict_template.liquid",context=dict]
 
 
+[[PortAttribute_structureType.xml]]
 ====== PortAttribute_structureType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/PortAttribute_structureType.xml[template="gml_dict_template.liquid",context=dict]
 
 
+[[PortWasteTreatmentFacilityAttribute_wasteType.xml]]
 ====== PortWasteTreatmentFacilityAttribute_wasteType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/PortWasteTreatmentFacilityAttribute_wasteType.xml[template="gml_dict_template.liquid",context=dict]
@@ -297,19 +319,23 @@ lutaml_gml_dictionary::iur/codelists/3.2/PortWasteTreatmentFacilityAttribute_was
 [[toc4_26_04_04]]
 ===== 漁港施設の拡張属性で使用するコードリスト
 
+[[FishingPortFacilityAttribute_facilityDetailsType.xml]]
 ====== FishingPortFacilityAttribute_facilityDetailsType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/FishingPortFacilityAttribute_facilityDetailsType.xml[template="gml_dict_template.liquid",context=dict]
 
+[[FishingPortFacilityAttribute_portType.xml]]
 ====== FishingPortFacilityAttribute_portType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/FishingPortFacilityAttribute_portType.xml[template="gml_dict_template.liquid",context=dict]
 
+[[FishingPortFacilityAttribute_structureType.xml]]
 ====== FishingPortFacilityAttribute_structureType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/FishingPortFacilityAttribute_structureType.xml[template="gml_dict_template.liquid",context=dict]
 
 
+[[Common_mainMaterial.xml]]
 ====== Common_mainMaterial.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Common_mainMaterial.xml[template="gml_dict_template.liquid",context=dict]
@@ -317,6 +343,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/Common_mainMaterial.xml[template="gml_d
 [[toc4_26_04_05]]
 ===== 工事・点検記録の拡張属性で使用するコードリスト
 
+[[MaintenanceHistoryAttribute_maintenanceType.xml]]
 ====== MaintenanceHistoryAttribute_maintenanceType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/MaintenanceHistoryAttribute_maintenanceType.xml[template="gml_dict_template.liquid",context=dict]
@@ -324,44 +351,54 @@ lutaml_gml_dictionary::iur/codelists/3.2/MaintenanceHistoryAttribute_maintenance
 [[toc4_26_04_06]]
 ===== 公園施設長寿命化計画の拡張属性で使用するコードリスト
 
+[[Common_parkCode.xml]]
 ====== Common_parkCode.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Common_parkCode.xml[template="gml_dict_template.liquid",context=dict]
 
+[[Common_parkName.xml]]
 ====== Common_parkName.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Common_parkName.xml[template="gml_dict_template.liquid",context=dict]
 
+[[Common_parkType.xml]]
 ====== Common_parkType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Common_parkType.xml[template="gml_dict_template.liquid",context=dict]
 
+[[Common_parkFacilityName.xml]]
 ====== Common_parkFacilityName.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Common_parkFacilityName.xml[template="gml_dict_template.liquid",context=dict]
 
 
+[[Common_unitOfNumberOfParkFacilities.xml]]
 ====== Common_unitOfNumberOfParkFacilities.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Common_unitOfNumberOfParkFacilities.xml[template="gml_dict_template.liquid",context=dict]
 
+[[Common_parkRepair.xml]]
 ====== Common_parkRepair.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Common_parkRepair.xml[template="gml_dict_template.liquid",context=dict]
 
+[[Common_parkFacilityMainMaterial.xml]]
 ====== Common_parkFacilityMainMaterial.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Common_parkFacilityMainMaterial.xml[template="gml_dict_template.liquid",context=dict]
 
 
+[[Common_parkFacilityManagementType.xml]]
 ====== Common_parkFacilityManagementType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Common_parkFacilityManagementType.xml[template="gml_dict_template.liquid",context=dict]
 
+[[Common_parkHealthAssessmentCondition.xml]]
 ====== Common_parkHealthAssessmentCondition.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Common_parkHealthAssessmentCondition.xml[template="gml_dict_template.liquid",context=dict]
 
+[[Common_parkHealthAssessmentUrgency.xml]]
 ====== Common_parkHealthAssessmentUrgency.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Common_parkHealthAssessmentUrgency.xml[template="gml_dict_template.liquid",context=dict]
