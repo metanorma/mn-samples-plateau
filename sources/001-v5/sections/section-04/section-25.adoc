@@ -45,6 +45,7 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="DmAn
 [[toc4_25_04_01]]
 ===== Urban Object（i-UR）
 
+[[Common_dmCode.xml]]
 ====== Common_dmCode.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Common_dmCode.xml[template="gml_dict_template.liquid",context=dict]
@@ -53,6 +54,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/Common_dmCode.xml[template="gml_dict_te
 <<gsi_ops,付録７ 公共測量標準図式>>
 
 
+[[Common_shapeType.xml]]
 ====== Common_shapeType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Common_shapeType.xml[template="gml_dict_template.liquid",context=dict]
@@ -62,10 +64,12 @@ lutaml_gml_dictionary::iur/codelists/3.2/Common_shapeType.xml[template="gml_dict
 <<gsi_ops,付録７ 公共測量標準図式>>
 
 
+[[Common_MapLevel.xml]]
 ====== Common_MapLevel.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Common_MapLevel.xml[template="gml_dict_template.liquid",context=dict]
 
+[[Common_geometryType.xml]]
 ====== Common_geometryType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Common_geometryType.xml[template="gml_dict_template.liquid",context=dict]
@@ -74,6 +78,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/Common_geometryType.xml[template="gml_d
 <<gsi_ops,付録７ 公共測量標準図式>>
 
 
+[[DmElement_dataType.xml]]
 ====== DmElement_dataType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DmElement_dataType.xml[template="gml_dict_template.liquid",context=dict]
@@ -82,6 +87,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/DmElement_dataType.xml[template="gml_di
 <<gsi_ops,付録７ 公共測量標準図式>>
 
 
+[[DmElement_annotationType.xml]]
 ====== DmElement_annotationType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DmElement_annotationType.xml[template="gml_dict_template.liquid",context=dict]
@@ -90,12 +96,13 @@ lutaml_gml_dictionary::iur/codelists/3.2/DmElement_annotationType.xml[template="
 <<gsi_ops,付録７ 公共測量標準図式>>
 
 
+[[DmElement_precisionType.xml]]
 ====== DmElement_precisionType.xml
 
 // [cols="3a,11a,11a"]
 // |===
 // |ファイル名 2+| DmElement_precisionType.xml
-// 
+//
 // h| ファイルURL 2+| https://www.geospatial.jp/iur/codelists/3.2/DmElement_precisionType.xml
 // h| コード h| 説明（上位桁：数値化区分） h| 説明（下位桁：地図情報レベル）
 // | 1 | 基準点測量成果を用いる方法 | 1～50
@@ -107,7 +114,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/DmElement_annotationType.xml[template="
 // | 7 | | ～5000
 // | 8 | | ～10000
 // | 9 | その他 | その他
-// 
+//
 // |===
 
 lutaml_gml_dictionary::iur/codelists/3.2/DmElement_precisionType.xml[template="gml_dict_template.liquid",context=dict]
@@ -116,6 +123,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/DmElement_precisionType.xml[template="g
 <<gsi_ops,付録７ 公共測量標準図式>>
 
 
+[[DmElement_breakType.xml]]
 ====== DmElement_breakType.xml
 
 // lutaml_gml_dictionary::iur/codelists/3.2/DmElement_breakType.xml[template="gml_dict_template.liquid",context=dict]
@@ -135,6 +143,7 @@ h| コード h| 説明
 <<gsi_ops,付録７ 公共測量標準図式>>
 
 
+[[DmElement_dislocationType.xml]]
 ====== DmElement_dislocationType.xml
 
 // lutaml_gml_dictionary::iur/codelists/3.2/DmElement_dislocationType.xml[template="gml_dict_template.liquid",context=dict]
