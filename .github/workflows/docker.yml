@@ -91,9 +91,9 @@ jobs:
 
       - name: "Firelight: generate HTML for doc ${{ matrix.document.dir }}"
         env:
-          NODE_OPTIONS: "--max_old_space_size=8192"
+          NODE_OPTIONS: "--max_old_space_size=10240"
         run: |
-          npx --node-options='--experimental-vm-modules' \
+          npx \
             -y @riboseinc/anafero-cli@0.0.54 build-site \
             --target-dir dist/${{ matrix.document.url }} \
             --path-prefix ${{ matrix.env.prefix }}${{ matrix.document.url }} \
