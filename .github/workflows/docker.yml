@@ -90,6 +90,8 @@ jobs:
           git commit -m "Add build config for ${{ matrix.document.dir }}"
 
       - name: "Firelight: generate HTML for doc ${{ matrix.document.dir }}"
+        env:
+          NODE_OPTIONS: "--max_old_space_size=4096"
         run: |
           npx --node-options='--experimental-vm-modules' \
             -y @riboseinc/anafero-cli@0.0.61 build-site \
