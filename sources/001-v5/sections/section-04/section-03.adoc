@@ -1035,6 +1035,7 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Traf
 [[toc4_03_04_01]]
 ===== Transportation（CityGML）
 
+[[TransportationComplex_class.xml]]
 ====== TransportationComplex_class.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/TransportationComplex_class.xml[template="gml_dict_template.liquid",context=dict]
@@ -1042,6 +1043,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/TransportationComplex_class.xml[templat
 [.source]
 <<citygml_20,annex="C.8">>
 
+[[Road_function.xml]]
 ====== Road_function.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Road_function.xml[template="gml_dict_template.liquid",context=dict]
@@ -1053,6 +1055,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/Road_function.xml[template="gml_dict_te
 [.source]
 <<jp_building_law>>
 
+[[Road_usage.xml]]
 ====== Road_usage.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Road_usage.xml[template="gml_dict_template.liquid",context=dict]
@@ -1063,6 +1066,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/Road_usage.xml[template="gml_dict_templ
 [.source]
 <<mlit_local_disaster>>
 
+[[TrafficArea_function.xml]]
 ====== TrafficArea_function.xml
 
 コードリストTrafficArea_function.xmlは、適用するLODにより使用可能なコードが異なるため、LOD別に示す。
@@ -1185,6 +1189,7 @@ h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.2/TrafficArea_f
 <<nilim_kiban_dps>>
 --
 
+[[AuxiliaryTrafficArea_function.xml]]
 ====== AuxiliaryTrafficArea_function.xml
 
 コードリストTrafficArea_function.xml及びAuxiliaryTrafficArea_function.xmlは、適用するLODにより使用可能なコードが異なるため、LOD別に示す。
@@ -1277,6 +1282,7 @@ h| ファイルURL 4+| https://www.geospatial.jp/iur/codelists/3.2/AuxiliaryTraf
 --
 
 [[toc4_03_04_01_06]]
+[[TrafficArea_surfaceMaterial.xml、AuxiliaryTrafficArea_surfaceMaterial.xml]]
 ====== TrafficArea_surfaceMaterial.xml、AuxiliaryTrafficArea_surfaceMaterial.xml
 
 [cols="6a,19a,6a,19a"]
@@ -1308,6 +1314,7 @@ https://www.geospatial.jp/iur/codelists/3.2/AuxiliaryTrafficArea_surfaceMaterial
 [[toc4_03_04_02]]
 ===== Urban Object（i-UR）
 
+[[RoadStructureAttribute_widthType.xml]]
 ====== RoadStructureAttribute_widthType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/RoadStructureAttribute_widthType.xml[template="gml_dict_template.liquid",context=dict]
@@ -1315,10 +1322,12 @@ lutaml_gml_dictionary::iur/codelists/3.2/RoadStructureAttribute_widthType.xml[te
 [.source]
 <<mlit_foundation_reqs>>
 
+[[RoadStructureAttribute_sectionType.xml]]
 ====== RoadStructureAttribute_sectionType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/RoadStructureAttribute_sectionType.xml[template="gml_dict_template.liquid",context=dict]
 
+[[DataQualityAttribute_geometrySrcDesc.xml]]
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
@@ -1333,6 +1342,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_geometrySrcDesc.xm
 <<plateau_010>>
 
 
+[[DataQualityAttribute_thematicSrcDesc.xml]]
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
@@ -1347,20 +1357,24 @@ lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_thematicSrcDesc.xm
 <<plateau_010>>
 
 
+[[DataQualityAttribute_appearanceSrcDesc.xml]]
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
+[[Road_lodType.xml]]
 ====== Road_lodType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Road_lodType.xml[template="gml_dict_template.liquid",context=dict]
 
 
+[[PublicSurveyDataQualityAttribute_srcScale.xml]]
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
 
 
+[[PublicSurveyDataQualityAttribute_geometrySrcDesc.xml]]
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]

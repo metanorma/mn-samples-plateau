@@ -415,6 +415,7 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Publ
 [[toc4_17_04_01]]
 ===== Vegetation（CityGML）
 
+[[SolitaryVegetationObject_class.xml]]
 ====== SolitaryVegetationObject_class.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/SolitaryVegetationObject_class.xml[template="gml_dict_template.liquid",context=dict]
@@ -425,6 +426,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/SolitaryVegetationObject_class.xml[temp
 [.source]
 <<nilim_street_trees>>
 
+[[SolitaryVegetationObject_function.xml]]
 ====== SolitaryVegetationObject_function.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/SolitaryVegetationObject_function.xml[template="gml_dict_template.liquid",context=dict]
@@ -432,6 +434,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/SolitaryVegetationObject_function.xml[t
 [.source]
 <<nilim_street_trees>>
 
+[[PlantCover_class.xml]]
 ====== PlantCover_class.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/PlantCover_class.xml[template="gml_dict_template.liquid",context=dict]
@@ -445,6 +448,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/PlantCover_class.xml[template="gml_dict
 [[toc4_17_04_02]]
 ===== Urban Object（i-UR）
 
+[[DataQualityAttribute_geometrySrcDesc.xml]]
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
@@ -459,6 +463,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_geometrySrcDesc.xm
 <<plateau_010>>
 
 
+[[DataQualityAttribute_thematicSrcDesc.xml]]
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
@@ -473,10 +478,12 @@ lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_thematicSrcDesc.xm
 <<plateau_010>>
 
 
+[[DataQualityAttribute_appearanceSrcDesc.xml]]
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
+[[DataQualityAttribute_lod1HeightType.xml]]
 ====== DataQualityAttribute_lod1HeightType.xml
 
 // TODO: This table cannot be recreated because some values are marked "（使用不可）".
@@ -492,10 +499,12 @@ lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_lod1HeightType.xml
 [.source]
 <<gsi_building_data_manual>>
 
+[[PublicSurveyDataQualityAttribute_srcScale.xml]]
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
 
+[[PublicSurveyDataQualityAttribute_geometrySrcDesc.xml]]
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]

@@ -890,7 +890,7 @@ LOD3.0では3m未満の軒裏を表現せず、外壁面を屋根面の外周か
 | 短辺1m以上
 |
 【屋根の上方からの正射影の外周と、地表面と外壁面の交線の正射影の距離が1m未満】
-         
+
 * 扉（Door）の正射影の外周を取得する。
 
 【屋根の上方からの正射影の外周と、地表面と外壁面の交線の正射影の距離が1m以上】
@@ -1864,7 +1864,7 @@ image::images/EAID_87476527_7B9B_4b92_967E_3D38365470CA.png[]
 以下に示すクラスは、建築物モデル（LOD4）を構成するbldg:Buildingなどの地物に、BIMモデルから変換した詳細な情報を属性として付与するためのデータ型である。 +
 <<building_lod4_exp_1,a）>>から <<building_lod4_exp_6,f）>> に示すデータ型は、「<<plateau_003_annex>>」（以下、「IDM・MVD」という）に定義されたクラスの属性及びプロパティセットに対応する。また、 <<building_lod4_exp_7,g）>> に示すデータ型は「3次元屋内地理空間データ製品仕様書（案）」に定義されたクラスの属性及びプロパティセットに対応する。
 
-[[building_lod4_exp_1]] 
+[[building_lod4_exp_1]]
 a）bldg:_AbstractBuildingの下位型に付与する属性
 
 image::images/EAID_24E8A45C_C99F_49b7_860A_9CF65FF76C76.png[]
@@ -2233,6 +2233,7 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="User
 [[toc4_02_04_01]]
 ===== Building（CityGML）
 
+[[Building_class.xml]]
 ====== Building_class.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Building_class.xml[template="gml_dict_template.liquid",context=dict]
@@ -2240,6 +2241,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/Building_class.xml[template="gml_dict_t
 [.source]
 <<gsi_map_level_dps>>
 
+[[Building_usage.xml]]
 ====== Building_usage.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Building_usage.xml[template="gml_dict_template.liquid",context=dict]
@@ -2247,6 +2249,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/Building_usage.xml[template="gml_dict_t
 [.source]
 <<mlit_foundation_reqs>>
 
+[[Building_roofType.xml]]
 ====== Building_roofType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Building_roofType.xml[template="gml_dict_template.liquid",context=dict]
@@ -2258,6 +2261,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/Building_roofType.xml[template="gml_dic
 <<iso_6707-1>>.
 
 
+[[BuildingInstallation_class.xml]]
 ====== BuildingInstallation_class.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/BuildingInstallation_class.xml[template="gml_dict_template.liquid",context=dict]
@@ -2265,6 +2269,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/BuildingInstallation_class.xml[template
 [.source]
 <<citygml_20,annex="C.1">>
 
+[[BuildingInstallation_function.xml]]
 ====== BuildingInstallation_function.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/BuildingInstallation_function.xml[template="gml_dict_template.liquid",context=dict]
@@ -2276,6 +2281,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/BuildingInstallation_function.xml[templ
 <<iso_6707-1>>
 
 
+[[Room_class.xml]]
 ====== Room_class.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Room_class.xml[template="gml_dict_template.liquid",context=dict]
@@ -2283,6 +2289,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/Room_class.xml[template="gml_dict_templ
 [.source]
 <<uniclass>>
 
+[[Room_function.xml]]
 ====== Room_function.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Room_function.xml[template="gml_dict_template.liquid",context=dict]
@@ -2290,6 +2297,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/Room_function.xml[template="gml_dict_te
 [.source]
 <<uniclass>>
 
+[[IntBuildingInstallation_class.xml]]
 ====== IntBuildingInstallation_class.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/IntBuildingInstallation_class.xml[template="gml_dict_template.liquid",context=dict]
@@ -2297,6 +2305,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/IntBuildingInstallation_class.xml[templ
 [.source]
 <<ifc_2x3_cv>>
 
+[[IntBuildingInstallation_function.xml]]
 ====== IntBuildingInstallation_function.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/IntBuildingInstallation_function.xml[template="gml_dict_template.liquid",context=dict]
@@ -2304,6 +2313,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/IntBuildingInstallation_function.xml[te
 [.source]
 <<uniclass>>
 
+[[BuildingFurniture_class.xml]]
 ====== BuildingFurniture_class.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/BuildingFurniture_class.xml[template="gml_dict_template.liquid",context=dict]
@@ -2311,6 +2321,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/BuildingFurniture_class.xml[template="g
 [.source]
 <<uniclass>>
 
+[[BuildingFurniture_function.xml]]
 ====== BuildingFurniture_function.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/BuildingFurniture_function.xml[template="gml_dict_template.liquid",context=dict]
@@ -2321,6 +2332,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/BuildingFurniture_function.xml[template
 [[toc4_02_04_02]]
 ===== Urban Object（i-UR）
 
+[[BuildingDetailAttribute_detailedUsage.xml]]
 ====== BuildingDetailAttribute_detailedUsage.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/BuildingDetailAttribute_detailedUsage.xml[template="gml_dict_template.liquid",context=dict]
@@ -2328,6 +2340,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/BuildingDetailAttribute_detailedUsage.x
 [.source]
 <<mlit_foundation_reqs>>
 
+[[BuildingDetailAttribute_buildingStructureType.xml]]
 ====== BuildingDetailAttribute_buildingStructureType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/BuildingDetailAttribute_buildingStructureType.xml[template="gml_dict_template.liquid",context=dict]
@@ -2335,6 +2348,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/BuildingDetailAttribute_buildingStructu
 [.source]
 <<mlit_foundation_reqs>>
 
+[[BuildingDetailAttribute_fireproofStructureType.xml]]
 ====== BuildingDetailAttribute_fireproofStructureType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/BuildingDetailAttribute_fireproofStructureType.xml[template="gml_dict_template.liquid",context=dict]
@@ -2342,11 +2356,13 @@ lutaml_gml_dictionary::iur/codelists/3.2/BuildingDetailAttribute_fireproofStruct
 [.source]
 <<mlit_foundation_reqs>>
 
+[[BuildingDetailAttribute_vacancy.xml]]
 ====== BuildingDetailAttribute_vacancy.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/BuildingDetailAttribute_vacancy.xml[template="gml_dict_template.liquid",context=dict]
 
 
+[[LargeCustomerFacilityAttribute_class.xml]]
 ====== LargeCustomerFacilityAttribute_class.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/LargeCustomerFacilityAttribute_class.xml[template="gml_dict_template.liquid",context=dict]
@@ -2354,6 +2370,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/LargeCustomerFacilityAttribute_class.xm
 [.source]
 <<mlit_foundation_reqs>>
 
+[[DataQualityAttribute_geometrySrcDesc.xml]]
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
@@ -2367,6 +2384,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_geometrySrcDesc.xm
 [.source]
 <<plateau_010>>
 
+[[DataQualityAttribute_thematicSrcDesc.xml]]
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
@@ -2381,11 +2399,13 @@ lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_thematicSrcDesc.xm
 <<plateau_010>>
 
 
+[[DataQualityAttribute_appearanceSrcDesc.xml]]
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
 
 
+[[DataQualityAttribute_lod1HeightType.xml]]
 ====== DataQualityAttribute_lod1HeightType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_lod1HeightType.xml[template="gml_dict_template.liquid",context=dict]
@@ -2393,16 +2413,19 @@ lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_lod1HeightType.xml
 [.source]
 <<gsi_building_data_manual>>
 
+[[Building_lodType.xml]]
 ====== Building_lodType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Building_lodType.xml[template="gml_dict_template.liquid",context=dict]
 
 
+[[PublicSurveyDataQualityAttribute_srcScale.xml]]
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
 
 
+[[PublicSurveyDataQualityAttribute_geometrySrcDesc.xml]]
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
@@ -2414,6 +2437,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_geomet
 <<plateau_010>>
 
 
+[[IfcBuildingElement_elementType.xml]]
 ====== IfcBuildingElement_elementType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/IfcBuildingElement_elementType.xml[template="gml_dict_template.liquid",context=dict]
@@ -2421,6 +2445,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/IfcBuildingElement_elementType.xml[temp
 [.source]
 <<ifc_2x3_cv>>
 
+[[IfcBuildingElement_predefinedType.xml]]
 ====== IfcBuildingElement_predefinedType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/IfcBuildingElement_predefinedType.xml[template="gml_dict_template.liquid",context=dict]
@@ -2445,6 +2470,7 @@ h| 値 h| 説明
 [.source]
 <<ifc_2x3_cv>>
 
+[[IfcBuildingElement_shapeType.xml]]
 ====== IfcBuildingElement_shapeType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/IfcBuildingElement_shapeType.xml[template="gml_dict_template.liquid",context=dict]
@@ -2533,7 +2559,7 @@ h| 値 h| 説明
 
 ====== IfcStairTypeEnum
 
-// 20240805 rwp table had overlaps between columns; using auto layout 
+// 20240805 rwp table had overlaps between columns; using auto layout
 // [cols="3a,22a"]
 
 [cols="a,a"]
@@ -2566,7 +2592,7 @@ h| 値 h| 説明
 
 ====== IfcStairFlightTypeEnum
 
-// 20240805 rwp table had overlaps between columns; using auto layout 
+// 20240805 rwp table had overlaps between columns; using auto layout
 // [cols="3a,22a"]
 
 [cols="a,a"]
@@ -2590,7 +2616,7 @@ h| 値 h| 説明
 
 ====== IfcStateEnum
 
-// 20240805 rwp table had overlaps between columns; using auto layout 
+// 20240805 rwp table had overlaps between columns; using auto layout
 // [cols="3a,22a"]
 
 [cols="a,a"]
@@ -2611,7 +2637,7 @@ h| 値 h| 説明
 
 ====== IfcUnitEnum
 
-// 20240805 rwp table had overlaps between columns; using auto layout 
+// 20240805 rwp table had overlaps between columns; using auto layout
 // [cols="3a,22a"]
 
 [cols="a,a"]
@@ -2657,7 +2683,7 @@ h| 値 h| 説明
 
 ====== IfcTransportElementTypeEnum
 
-// 20240805 rwp table had overlaps between columns; using auto layout 
+// 20240805 rwp table had overlaps between columns; using auto layout
 // [cols="3a,22a"]
 
 [cols="a,a"]
@@ -2676,6 +2702,7 @@ h| 値 h| 説明
 [.source]
 <<ifc_2x3_cv>>
 
+[[Common_indoorSource.xml]]
 ====== Common_indoorSource.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/Common_indoorSource.xml[template="gml_dict_template.liquid",context=dict]
@@ -2683,6 +2710,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/Common_indoorSource.xml[template="gml_d
 [.source]
 <<gsi_dps>>
 
+[[IndoorTactileTileAttribute_category.xml]]
 ====== IndoorTactileTileAttribute_category.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/IndoorTactileTileAttribute_category.xml[template="gml_dict_template.liquid",context=dict]
@@ -2690,6 +2718,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/IndoorTactileTileAttribute_category.xml
 [.source]
 <<gsi_dps>>
 
+[[IndoorTactileTileAttribute_roof.xml]]
 ====== IndoorTactileTileAttribute_roof.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/IndoorTactileTileAttribute_roof.xml[template="gml_dict_template.liquid",context=dict]
@@ -2697,6 +2726,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/IndoorTactileTileAttribute_roof.xml[tem
 [.source]
 <<gsi_dps>>
 
+[[IndoorSpaceAttribute_tollType.xml]]
 ====== IndoorSpaceAttribute_tollType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/IndoorSpaceAttribute_tollType.xml[template="gml_dict_template.liquid",context=dict]
