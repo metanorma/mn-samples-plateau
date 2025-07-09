@@ -93,7 +93,7 @@ jobs:
         env:
           NODE_OPTIONS: "--max_old_space_size=8192"
         run: |
-          npx --node-options='--experimental-vm-modules' \
+          npx --node-options='--experimental-vm-modules --max_old_space_size=8192' \
             -y @riboseinc/anafero-cli@0.0.61 build-site \
             --target-dir dist/${{ matrix.document.url }} \
             --path-prefix ${{ matrix.env.prefix }}${{ matrix.document.url }} \
