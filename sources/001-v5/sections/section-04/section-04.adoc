@@ -798,7 +798,6 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Slop
 [[toc4_04_04_01]]
 ===== Transportation（CityGML）
 
-[[TransportationComplex_class.xml]]
 ====== TransportationComplex_class.xml
 
 <<toc4_03_04_01,tran:Roadのコードリスト>>　参照
@@ -811,7 +810,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/Railway_function.xml[template="gml_dict
 [.source]
 <<gsi_ops,付録７ 公共測量標準図式>>
 
-[[TrafficArea_function.xml]]
+[[TrafficArea_function.xml_rwy]]
 ====== TrafficArea_function.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/TrafficArea_function.xml[template="gml_dict_template.liquid",context=dict]
@@ -859,7 +858,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/RailwayTrackAttribute_alignmentType.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/ControlPoint_function.xml[template="gml_dict_template.liquid",context=dict]
 
-[[DataQualityAttribute_geometrySrcDesc.xml]]
+[[DataQualityAttribute_geometrySrcDesc.xml_rwy]]
 ====== DataQualityAttribute_geometrySrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
@@ -874,7 +873,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_geometrySrcDesc.xm
 <<plateau_010>>
 
 
-[[DataQualityAttribute_thematicSrcDesc.xml]]
+[[DataQualityAttribute_thematicSrcDesc.xml_rwy]]
 ====== DataQualityAttribute_thematicSrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_thematicSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
@@ -889,7 +888,7 @@ lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_thematicSrcDesc.xm
 <<plateau_010>>
 
 
-[[DataQualityAttribute_appearanceSrcDesc.xml]]
+[[DataQualityAttribute_appearanceSrcDesc.xml_rwy]]
 ====== DataQualityAttribute_appearanceSrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_appearanceSrcDesc.xml[template="gml_dict_template.liquid",context=dict]
@@ -899,12 +898,12 @@ lutaml_gml_dictionary::iur/codelists/3.2/DataQualityAttribute_appearanceSrcDesc.
 
 lutaml_gml_dictionary::iur/codelists/3.2/Railway_lodType.xml[template="gml_dict_template.liquid",context=dict]
 
-[[PublicSurveyDataQualityAttribute_srcScale.xml]]
+[[PublicSurveyDataQualityAttribute_srcScale.xml_rwy]]
 ====== PublicSurveyDataQualityAttribute_srcScale.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_srcScale.xml[template="gml_dict_template.liquid",context=dict]
 
-[[PublicSurveyDataQualityAttribute_geometrySrcDesc.xml]]
+[[PublicSurveyDataQualityAttribute_geometrySrcDesc.xml_rwy]]
 ====== PublicSurveyDataQualityAttribute_geometrySrcDesc.xml
 
 lutaml_gml_dictionary::iur/codelists/3.2/PublicSurveyDataQualityAttribute_geometrySrcDesc.xml[template="gml_dict_template.liquid",context=dict]
