@@ -29,7 +29,8 @@ subject:: 妥当な植生データセットの要件
 description:: 植生の記述には、指定されたLODに対応する地物型及び空間属性を使用する。
 ====
 
-植生の記述には、CityGMLのVegetationモジュールに定義されたveg:SolitalyVegetationObject又はveg:PlantCoverを使用する。veg:SolitalyVegetationObjectは、街路樹のような単独木を記述するための型である。また、veg:PlantCoverは、歩道上の植栽など、個々の樹木を識別せず、まとめて記述する場合に使用する型である。
+植生の記述には、CityGMLのVegetationモジュールに定義されたveg:SolitalyVegetationObject又はveg:PlantCoverを使用する。veg:SolitalyVegetationObjectは、街路樹のような単独木を記述するための型である。 +
+また、veg:PlantCoverは、歩道上の植栽など、個々の樹木を識別せず、まとめて記述する場合に使用する型である。
 
 * 植生モデル（LOD0）では、植生の形状を点又は線で記述する。CityGMLのVegetationモジュールでは、植生のLODとしてLOD1以上が定義されている。植生モデルで使用する植生のLOD0は、i-URにより拡張した植生の空間属性である。
 * 植生モデル（LOD1）では、veg:SolitalyVegetationObject及びveg:PlantCoverを立体として表現する。
@@ -152,7 +153,8 @@ gml:nameは、樹木を識別する名称であり、道路台帳の一部とし
 
 ===== 形状から算出可能な主題属性
 
-veg:SolitalyVegetationObjectの主題属性veg:class、veg:height、veg:trunkDiamiter、veg:crownDiamiter、及びveg:PlantCoverの主題属性veg:averageHeightは、植栽台帳や街路樹台帳から取得することを基本とする。ただし、これらの原典資料が得られない場合には、veg:SolitalyVegetationObjectの主題属性veg:class、veg:height、veg:trunkDiamiter、veg:crownDiamiter、及びveg:PlantCoverの主題属性veg:averageHeightを、作成した幾何オブジェクトから算出した値を取得する。
+veg:SolitalyVegetationObjectの主題属性veg:class、veg:height、veg:trunkDiamiter、veg:crownDiamiter、及びveg:PlantCoverの主題属性veg:averageHeightは、植栽台帳や街路樹台帳から取得することを基本とする。 +
+ただし、これらの原典資料が得られない場合には、veg:SolitalyVegetationObjectの主題属性veg:class、veg:height、veg:trunkDiamiter、veg:crownDiamiter、及びveg:PlantCoverの主題属性veg:averageHeightを、作成した幾何オブジェクトから算出した値を取得する。
 
 ===== 施設管理のための属性
 
