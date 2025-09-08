@@ -34,10 +34,10 @@ h| 属性名 h| 属性の型及び多重度 h| 定義 {% if klass.has_guidance? 
 {% for attr in root.inherited_props %}
 {%- capture name_col -%}
   {%- if attr.used? == false -%}
-    ({{ attr.name_ns }}:{{ attr.name }})
+    ({{ attr.name_ns }}:{{ attr.name }}) +
     [{{ attr.gen_name }}]
   {%- else -%}
-    {{ attr.name_ns }}:{{ attr.name }}
+    {{ attr.name_ns }}:{{ attr.name }} +
     [{{ attr.gen_name }}]
   {%- endif -%}
 {%- endcapture -%}
@@ -54,10 +54,10 @@ h| 属性名 h| 属性の型及び多重度 h| 定義 {% if klass.has_guidance? 
 {% for attr in root.owned_props %}
 {%- capture name_col -%}
   {%- if attr.used? == false -%}
-    ({{ attr.name_ns }}:{{ attr.name }})
+    ({{ attr.name_ns }}:{{ attr.name }}) +
     [{{ attr.gen_name }}]
   {%- else -%}
-    {{ attr.name_ns }}:{{ attr.name }}
+    {{ attr.name_ns }}:{{ attr.name }} +
     [{{ attr.gen_name }}]
   {%- endif -%}
 {%- endcapture -%}
@@ -85,10 +85,10 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
         {% if citygml_ns contains attr.name_ns %}
         {%- capture name_col -%}
           {%- if attr.used? == false -%}
-            ({{ attr.name_ns }}:{{ attr.name }})
+            ({{ attr.name_ns }}:{{ attr.name }}) +
             [{{ attr.gen_name }}]
           {%- else -%}
-            {{ attr.name_ns }}:{{ attr.name }}
+            {{ attr.name_ns }}:{{ attr.name }} +
             [{{ attr.gen_name }}]
           {%- endif -%}
         {%- endcapture -%}
@@ -102,10 +102,10 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
         {% unless citygml_ns contains attr.name_ns %}
         {%- capture name_col -%}
           {%- if attr.used? == false -%}
-            ({{ attr.name_ns }}:{{ attr.name }})
+            ({{ attr.name_ns }}:{{ attr.name }}) +
             [{{ attr.gen_name }}]
           {%- else -%}
-            {{ attr.name_ns }}:{{ attr.name }}
+            {{ attr.name_ns }}:{{ attr.name }} +
             [{{ attr.gen_name }}]
           {%- endif -%}
         {%- endcapture -%}
@@ -138,10 +138,10 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
         {% if citygml_ns contains attr.name_ns %}
         {%- capture name_col -%}
           {%- if attr.used? == false -%}
-            ({{ attr.name_ns }}:{{ attr.name }})
+            ({{ attr.name_ns }}:{{ attr.name }}) +
             [{{ attr.gen_name }}]
           {%- else -%}
-            {{ attr.name_ns }}:{{ attr.name }}
+            {{ attr.name_ns }}:{{ attr.name }} +
             [{{ attr.gen_name }}]
           {%- endif -%}
         {%- endcapture -%}
@@ -155,10 +155,10 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
         {% unless citygml_ns contains attr.name_ns %}
         {%- capture name_col -%}
           {%- if attr.used? == false -%}
-            ({{ attr.name_ns }}:{{ attr.name }})
+            ({{ attr.name_ns }}:{{ attr.name }}) +
             [{{ attr.gen_name }}]
           {%- else -%}
-            {{ attr.name_ns }}:{{ attr.name }}
+            {{ attr.name_ns }}:{{ attr.name }} +
             [{{ attr.gen_name }}]
           {%- endif -%}
         {%- endcapture -%}
