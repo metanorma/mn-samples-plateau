@@ -34,7 +34,8 @@ subject:: 妥当な交通（徒歩道）データセットの要件
 description:: 徒歩道の記述には、指定されたLODに対応する地物型及び空間属性を使用する。
 ====
 
-徒歩道の記述に使用するtran:Trackは、道路と同様に、tran:TrafficAreaとtran:AuxiliaryTrafficAreaの集まりとして構成される。tran:TrafficAreaは、歩道や車線のように、通行の用に供される領域である。一方、tran:AuxiliaryTrafficAreaは、縁石や植栽のように補助的な役割を果たす領域である。
+徒歩道の記述に使用するtran:Trackは、道路と同様に、tran:TrafficAreaとtran:AuxiliaryTrafficAreaの集まりとして構成される。tran:TrafficAreaは、歩道や車線のように、通行の用に供される領域である。 +
+一方、tran:AuxiliaryTrafficAreaは、縁石や植栽のように補助的な役割を果たす領域である。
 
 tran:Trackの空間属性は、LOD0では、線として表現する。LOD1以降では面として表現する。tran:TrafficArea及びtran:AuxiliaryTrafficAreaは、いずれも面として表現する。ただし、これら二つの地物型はLOD2以降でのみ使用可能となる。すなわち、LOD1では徒歩道は歩車道の区別がない面として表現され、LOD2以降では道路の歩道や車道あるいは車線など、徒歩道内を区分できるようになる。また、LOD0で表現する線は、ネットワーク（中心線）又は徒歩道縁線のいずれかを選択できる。
 
