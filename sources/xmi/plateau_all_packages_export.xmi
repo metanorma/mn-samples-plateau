@@ -45653,7 +45653,7 @@
 				<attributes>
 					<attribute xmi:idref="EAID_E017B18C_83CD_4488_B53E_E4861038AC2D" name="parkTypeNumber" scope="Public">
 						<initial/>
-						<documentation value="都市局長通達(昭和44年建設省都計発第102号)Ⅳ(4)②にて定められる一連番号。"/>
+						<documentation value="都市局長通達(昭和44年建設省都計発第102号)Ⅳ(4)②にて定められる区分。コードリスト（&amp;lt;&amp;lt;ParkAttribute_parkTypeNumber.xml,ParkAttribute_parkTypeNumber.xml&amp;gt;&amp;gt;）より選択する。&#xA;"/>
 						<model ea_localid="677" ea_guid="{E017B18C-83CD-4488-B53E-E4861038AC2D}"/>
 						<properties type="gml::CodeType" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0" scale="0"/>
@@ -45668,7 +45668,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_0E8F7FFB_0490_4acf_BDA2_8E7C6ADC941B" name="parkSizeNumber" scope="Public">
 						<initial/>
-						<documentation value="都市局長通達(昭和44年建設省都計発第102号)Ⅳ(4)②にて定められる&#xA;規模。コードリスト（&amp;lt;&amp;lt;ParkAttribute_parkSizeNumber.xml,ParkAttribute_parkSizeNumber.xml&amp;gt;&amp;gt;）より選択する。"/>
+						<documentation value="都市局長通達(昭和44年建設省都計発第102号)Ⅳ(4)②にて定められる規模。コードリスト（&amp;lt;&amp;lt;ParkAttribute_parkSizeNumber.xml,ParkAttribute_parkSizeNumber.xml&amp;gt;&amp;gt;）より選択する。"/>
 						<model ea_localid="678" ea_guid="{0E8F7FFB-0490-4acf-BDA2-8E7C6ADC941B}"/>
 						<properties type="gml::CodeType" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0" scale="0"/>
@@ -45683,7 +45683,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_65003DBA_55E9_48f8_B646_74B4CC088B3C" name="parkSerialNumber" scope="Public">
 						<initial/>
-						<documentation value="都市局長通達(昭和44年建設省都計発第102号)Ⅳ(4)②にて定められる区分。コードリスト（&amp;lt;&amp;lt;ParkAttribute_parkTypeNumber.xml,ParkAttribute_parkTypeNumber.xml&amp;gt;&amp;gt;）より選択する。"/>
+						<documentation value="都市局長通達(昭和44年建設省都計発第102号)Ⅳ(4)②にて定められる一連番号。"/>
 						<model ea_localid="982" ea_guid="{65003DBA-55E9-48f8-B646-74B4CC088B3C}"/>
 						<properties type="xs::string" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0" scale="0"/>
