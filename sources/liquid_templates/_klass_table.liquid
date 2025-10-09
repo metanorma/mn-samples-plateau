@@ -34,11 +34,11 @@ h| 属性名 h| 属性の型及び多重度 h| 定義 {% if klass.has_guidance? 
 {% for attr in root.inherited_props %}
 {%- capture name_col -%}
   {%- if attr.used? == false -%}
-    ({{ attr.name_ns }}:{{ attr.name }}) +
-    [{{ attr.name_ns }}::{{ attr.gen_name }}]
+    ({{ attr.upper_klass }}:{{ attr.name }}) +
+    [{{ attr.upper_klass }}::{{ attr.gen_name }}]
   {%- else -%}
-    {{ attr.name_ns }}:{{ attr.name }} +
-    [{{ attr.name_ns }}::{{ attr.gen_name }}]
+    {{ attr.upper_klass }}:{{ attr.name }} +
+    [{{ attr.upper_klass }}::{{ attr.gen_name }}]
   {%- endif -%}
 {%- endcapture -%}
 | {{ name_col }}
@@ -54,11 +54,11 @@ h| 属性名 h| 属性の型及び多重度 h| 定義 {% if klass.has_guidance? 
 {% for attr in root.owned_props %}
 {%- capture name_col -%}
   {%- if attr.used? == false -%}
-    ({{ attr.name_ns }}:{{ attr.name }}) +
-    [{{ attr.name_ns }}::{{ attr.gen_name }}]
+    ({{ attr.upper_klass }}:{{ attr.name }}) +
+    [{{ attr.upper_klass }}::{{ attr.gen_name }}]
   {%- else -%}
-    {{ attr.name_ns }}:{{ attr.name }} +
-    [{{ attr.name_ns }}::{{ attr.gen_name }}]
+    {{ attr.upper_klass }}:{{ attr.name }} +
+    [{{ attr.upper_klass }}::{{ attr.gen_name }}]
   {%- endif -%}
 {%- endcapture -%}
 | {{ name_col }}
@@ -82,14 +82,14 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
     {% assign props_with_same_gen = root.sorted_inherited_assoc_props | where: 'gen_name', cur_gen %}
     {% unless performed %}
       {% for attr in props_with_same_gen %}
-        {% if citygml_ns contains attr.name_ns %}
+        {% if citygml_ns contains attr.upper_klass %}
         {%- capture name_col -%}
           {%- if attr.used? == false -%}
-            ({{ attr.name_ns }}:{{ attr.name }}) +
-            [{{ attr.name_ns }}::{{ attr.gen_name }}]
+            ({{ attr.upper_klass }}:{{ attr.name }}) +
+            [{{ attr.upper_klass }}::{{ attr.gen_name }}]
           {%- else -%}
-            {{ attr.name_ns }}:{{ attr.name }} +
-            [{{ attr.name_ns }}::{{ attr.gen_name }}]
+            {{ attr.upper_klass }}:{{ attr.name }} +
+            [{{ attr.upper_klass }}::{{ attr.gen_name }}]
           {%- endif -%}
         {%- endcapture -%}
         | {{ name_col }}
@@ -99,14 +99,14 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
         {% endif %}
       {% endfor %}
       {% for attr in props_with_same_gen %}
-        {% unless citygml_ns contains attr.name_ns %}
+        {% unless citygml_ns contains attr.upper_klass %}
         {%- capture name_col -%}
           {%- if attr.used? == false -%}
-            ({{ attr.name_ns }}:{{ attr.name }}) +
-            [{{ attr.name_ns }}::{{ attr.gen_name }}]
+            ({{ attr.upper_klass }}:{{ attr.name }}) +
+            [{{ attr.upper_klass }}::{{ attr.gen_name }}]
           {%- else -%}
-            {{ attr.name_ns }}:{{ attr.name }} +
-            [{{ attr.name_ns }}::{{ attr.gen_name }}]
+            {{ attr.upper_klass }}:{{ attr.name }} +
+            [{{ attr.upper_klass }}::{{ attr.gen_name }}]
           {%- endif -%}
         {%- endcapture -%}
         | {{ name_col }}
@@ -135,14 +135,14 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
     {% assign props_with_same_gen = root.sorted_assoc_props | where: 'gen_name', cur_gen %}
     {% unless performed %}
       {% for attr in props_with_same_gen %}
-        {% if citygml_ns contains attr.name_ns %}
+        {% if citygml_ns contains attr.upper_klass %}
         {%- capture name_col -%}
           {%- if attr.used? == false -%}
-            ({{ attr.name_ns }}:{{ attr.name }}) +
-            [{{ attr.name_ns }}::{{ attr.gen_name }}]
+            ({{ attr.upper_klass }}:{{ attr.name }}) +
+            [{{ attr.upper_klass }}::{{ attr.gen_name }}]
           {%- else -%}
-            {{ attr.name_ns }}:{{ attr.name }} +
-            [{{ attr.name_ns }}::{{ attr.gen_name }}]
+            {{ attr.upper_klass }}:{{ attr.name }} +
+            [{{ attr.upper_klass }}::{{ attr.gen_name }}]
           {%- endif -%}
         {%- endcapture -%}
         | {{ name_col }}
@@ -152,14 +152,14 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
         {% endif %}
       {% endfor %}
       {% for attr in props_with_same_gen %}
-        {% unless citygml_ns contains attr.name_ns %}
+        {% unless citygml_ns contains attr.upper_klass %}
         {%- capture name_col -%}
           {%- if attr.used? == false -%}
-            ({{ attr.name_ns }}:{{ attr.name }}) +
-            [{{ attr.name_ns }}::{{ attr.gen_name }}]
+            ({{ attr.upper_klass }}:{{ attr.name }}) +
+            [{{ attr.upper_klass }}::{{ attr.gen_name }}]
           {%- else -%}
-            {{ attr.name_ns }}:{{ attr.name }} +
-            [{{ attr.name_ns }}::{{ attr.gen_name }}]
+            {{ attr.upper_klass }}:{{ attr.name }} +
+            [{{ attr.upper_klass }}::{{ attr.gen_name }}]
           {%- endif -%}
         {%- endcapture -%}
         | {{ name_col }}
