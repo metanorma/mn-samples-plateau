@@ -35,10 +35,10 @@ h| 属性名 h| 属性の型及び多重度 h| 定義 {% if klass.has_guidance? 
 {%- capture name_col -%}
   {%- if attr.used? == false -%}
     ({{ attr.name_ns }}:{{ attr.name }}) +
-    [{{ attr.gen_name }}]
+    [{{ attr.name_ns }}::{{ attr.gen_name }}]
   {%- else -%}
     {{ attr.name_ns }}:{{ attr.name }} +
-    [{{ attr.gen_name }}]
+    [{{ attr.name_ns }}::{{ attr.gen_name }}]
   {%- endif -%}
 {%- endcapture -%}
 | {{ name_col }}
@@ -55,10 +55,10 @@ h| 属性名 h| 属性の型及び多重度 h| 定義 {% if klass.has_guidance? 
 {%- capture name_col -%}
   {%- if attr.used? == false -%}
     ({{ attr.name_ns }}:{{ attr.name }}) +
-    [{{ attr.gen_name }}]
+    [{{ attr.name_ns }}::{{ attr.gen_name }}]
   {%- else -%}
     {{ attr.name_ns }}:{{ attr.name }} +
-    [{{ attr.gen_name }}]
+    [{{ attr.name_ns }}::{{ attr.gen_name }}]
   {%- endif -%}
 {%- endcapture -%}
 | {{ name_col }}
@@ -86,10 +86,10 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
         {%- capture name_col -%}
           {%- if attr.used? == false -%}
             ({{ attr.name_ns }}:{{ attr.name }}) +
-            [{{ attr.gen_name }}]
+            [{{ attr.name_ns }}::{{ attr.gen_name }}]
           {%- else -%}
             {{ attr.name_ns }}:{{ attr.name }} +
-            [{{ attr.gen_name }}]
+            [{{ attr.name_ns }}::{{ attr.gen_name }}]
           {%- endif -%}
         {%- endcapture -%}
         | {{ name_col }}
@@ -103,10 +103,10 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
         {%- capture name_col -%}
           {%- if attr.used? == false -%}
             ({{ attr.name_ns }}:{{ attr.name }}) +
-            [{{ attr.gen_name }}]
+            [{{ attr.name_ns }}::{{ attr.gen_name }}]
           {%- else -%}
             {{ attr.name_ns }}:{{ attr.name }} +
-            [{{ attr.gen_name }}]
+            [{{ attr.name_ns }}::{{ attr.gen_name }}]
           {%- endif -%}
         {%- endcapture -%}
         | {{ name_col }}
@@ -139,10 +139,10 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
         {%- capture name_col -%}
           {%- if attr.used? == false -%}
             ({{ attr.name_ns }}:{{ attr.name }}) +
-            [{{ attr.gen_name }}]
+            [{{ attr.name_ns }}::{{ attr.gen_name }}]
           {%- else -%}
             {{ attr.name_ns }}:{{ attr.name }} +
-            [{{ attr.gen_name }}]
+            [{{ attr.name_ns }}::{{ attr.gen_name }}]
           {%- endif -%}
         {%- endcapture -%}
         | {{ name_col }}
@@ -156,10 +156,10 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
         {%- capture name_col -%}
           {%- if attr.used? == false -%}
             ({{ attr.name_ns }}:{{ attr.name }}) +
-            [{{ attr.gen_name }}]
+            [{{ attr.name_ns }}::{{ attr.gen_name }}]
           {%- else -%}
             {{ attr.name_ns }}:{{ attr.name }} +
-            [{{ attr.gen_name }}]
+            [{{ attr.name_ns }}::{{ attr.gen_name }}]
           {%- endif -%}
         {%- endcapture -%}
         | {{ name_col }}
