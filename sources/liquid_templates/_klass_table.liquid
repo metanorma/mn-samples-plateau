@@ -1,7 +1,7 @@
 {% assign root = klass.generalization %}
 {% assign citygml_ns = "app,bldg,brid,core,dem,frn,gen,grp,luse,tran,tun,veg,wtr" | split: "," %}
 {%- capture upper_klass_name -%}
-{{ root.general.upper_klass }}:{{ root.general.name }}
+{{ root.general.upper_klass.name }}:{{ root.general.name }}
 {%- endcapture -%}
 {%- if upper_klass_name == ":" -%}
   {%- assign upper_klass_name = "&#x2014;" -%}
@@ -32,13 +32,14 @@ h| ステレオタイプ {{ cols_header }}+| {{ stereotype }}
 h| 属性名 h| 属性の型及び多重度 h| 定義 {% if klass.has_guidance? %} h| 補足{%- endif %}
 {% endif %}
 {% for attr in root.inherited_props %}
+{% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
 {%- capture name_col -%}
   {%- if attr.used? == false -%}
-    ({{ attr.upper_klass }}:{{ attr.name }}) +
-    [{{ attr.upper_klass }}::{{ attr.gen_name }}]
+    ({{ attr_upper_klass_name }}:{{ attr.name }}) +
+    [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
   {%- else -%}
-    {{ attr.upper_klass }}:{{ attr.name }} +
-    [{{ attr.upper_klass }}::{{ attr.gen_name }}]
+    {{ attr_upper_klass_name }}:{{ attr.name }} +
+    [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
   {%- endif -%}
 {%- endcapture -%}
 | {{ name_col }}
@@ -52,13 +53,14 @@ h| 属性名 h| 属性の型及び多重度 h| 定義 {% if klass.has_guidance? 
 h| 属性名 h| 属性の型及び多重度 h| 定義 {% if klass.has_guidance? %} h| 補足{%- endif %}
 {% endif %}
 {% for attr in root.owned_props %}
+{% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
 {%- capture name_col -%}
   {%- if attr.used? == false -%}
-    ({{ attr.upper_klass }}:{{ attr.name }}) +
-    [{{ attr.upper_klass }}::{{ attr.gen_name }}]
+    ({{ attr_upper_klass_name }}:{{ attr.name }}) +
+    [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
   {%- else -%}
-    {{ attr.upper_klass }}:{{ attr.name }} +
-    [{{ attr.upper_klass }}::{{ attr.gen_name }}]
+    {{ attr_upper_klass_name }}:{{ attr.name }} +
+    [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
   {%- endif -%}
 {%- endcapture -%}
 | {{ name_col }}
@@ -82,14 +84,15 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
     {% assign props_with_same_gen = root.sorted_inherited_assoc_props | where: 'gen_name', cur_gen %}
     {% unless performed %}
       {% for attr in props_with_same_gen %}
-        {% if citygml_ns contains attr.upper_klass %}
+        {% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
+        {% if citygml_ns contains attr_upper_klass_name %}
         {%- capture name_col -%}
           {%- if attr.used? == false -%}
-            ({{ attr.upper_klass }}:{{ attr.name }}) +
-            [{{ attr.upper_klass }}::{{ attr.gen_name }}]
+            ({{ attr_upper_klass_name }}:{{ attr.name }}) +
+            [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
           {%- else -%}
-            {{ attr.upper_klass }}:{{ attr.name }} +
-            [{{ attr.upper_klass }}::{{ attr.gen_name }}]
+            {{ attr_upper_klass_name }}:{{ attr.name }} +
+            [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
           {%- endif -%}
         {%- endcapture -%}
         | {{ name_col }}
@@ -99,14 +102,15 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
         {% endif %}
       {% endfor %}
       {% for attr in props_with_same_gen %}
-        {% unless citygml_ns contains attr.upper_klass %}
+        {% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
+        {% unless citygml_ns contains attr_upper_klass_name %}
         {%- capture name_col -%}
           {%- if attr.used? == false -%}
-            ({{ attr.upper_klass }}:{{ attr.name }}) +
-            [{{ attr.upper_klass }}::{{ attr.gen_name }}]
+            ({{ attr_upper_klass_name }}:{{ attr.name }}) +
+            [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
           {%- else -%}
-            {{ attr.upper_klass }}:{{ attr.name }} +
-            [{{ attr.upper_klass }}::{{ attr.gen_name }}]
+            {{ attr_upper_klass_name }}:{{ attr.name }} +
+            [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
           {%- endif -%}
         {%- endcapture -%}
         | {{ name_col }}
@@ -135,14 +139,15 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
     {% assign props_with_same_gen = root.sorted_assoc_props | where: 'gen_name', cur_gen %}
     {% unless performed %}
       {% for attr in props_with_same_gen %}
-        {% if citygml_ns contains attr.upper_klass %}
+        {% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
+        {% if citygml_ns contains attr_upper_klass_name %}
         {%- capture name_col -%}
           {%- if attr.used? == false -%}
-            ({{ attr.upper_klass }}:{{ attr.name }}) +
-            [{{ attr.upper_klass }}::{{ attr.gen_name }}]
+            ({{ attr_upper_klass_name }}:{{ attr.name }}) +
+            [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
           {%- else -%}
-            {{ attr.upper_klass }}:{{ attr.name }} +
-            [{{ attr.upper_klass }}::{{ attr.gen_name }}]
+            {{ attr_upper_klass_name }}:{{ attr.name }} +
+            [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
           {%- endif -%}
         {%- endcapture -%}
         | {{ name_col }}
@@ -152,14 +157,15 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
         {% endif %}
       {% endfor %}
       {% for attr in props_with_same_gen %}
-        {% unless citygml_ns contains attr.upper_klass %}
+        {% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
+        {% unless citygml_ns contains attr_upper_klass_name %}
         {%- capture name_col -%}
           {%- if attr.used? == false -%}
-            ({{ attr.upper_klass }}:{{ attr.name }}) +
-            [{{ attr.upper_klass }}::{{ attr.gen_name }}]
+            ({{ attr_upper_klass_name }}:{{ attr.name }}) +
+            [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
           {%- else -%}
-            {{ attr.upper_klass }}:{{ attr.name }} +
-            [{{ attr.upper_klass }}::{{ attr.gen_name }}]
+            {{ attr_upper_klass_name }}:{{ attr.name }} +
+            [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
           {%- endif -%}
         {%- endcapture -%}
         | {{ name_col }}
