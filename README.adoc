@@ -291,18 +291,19 @@ If you don't want to deal with local dependencies, use the docker:
 docker run -v "$(pwd)":/metanorma -w /metanorma -it metanorma/metanorma metanorma site generate
 ----
 
-=== Building Firelight using containers
+=== Building a Firelight deliverable using containers
 
 This example assumes:
 
 - You are building document PLATEAU 01.
-- You want to build *without* the `/plateaudocument01` path prefix as used in Plateau production deployment environment.
+- You want to build *without* the `/plateaudocument/` path prefix as used in Plateau production deployment environment.
 - You use Bash shell and are in the same directory as repository root.
 - You executed the command `metanorma sources/001-v5/document.adoc` beforehand.
 - You want Firelight output to be in an existing subdirectory `firelight-build-001`.
 
 First, create a config file with this command.
-(Do not add this file in Git, you will only use it for local build.)
+(Do not add this file in Git, it will only be used for local build
+and can be deleted any time later.)
 
 [source,sh]
 ----
