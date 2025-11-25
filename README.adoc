@@ -290,3 +290,60 @@ If you don't want to deal with local dependencies, use the docker:
 ----
 docker run -v "$(pwd)":/metanorma -w /metanorma -it metanorma/metanorma metanorma site generate
 ----
+
+=== Building a Firelight deliverable using containers
+
+This example assumes:
+
+- You are building document PLATEAU 01.
+- You want to build *without* the `/plateaudocument/` path prefix as used in Plateau production deployment environment.
+- You use Bash shell and are in the same directory as repository root.
+- You executed the command `metanorma sources/001-v5/document.adoc` beforehand.
+- You want Firelight output to be in an existing subdirectory `firelight-build-001`.
+
+First, create a config file with this command.
+(Do not add this file in Git, it will only be used for local build
+and can be deleted any time later.)
+
+[source,sh]
+----
+cat <<'EOF' > anafero-config.json
+{
+  "version": "0.1",
+  "entryPoint": "file:documents/001-v5/document.presentation.xml",
+  "storeAdapters": [
+    "git+https://github.com/metanorma/firelight#main/packages/metanorma-xml-store"
+  ],
+  "contentAdapters": [
+    "git+https://github.com/metanorma/firelight#main/packages/metanorma-site-content"
+  ],
+  "resourceLayouts": [
+    "git+https://github.com/metanorma/firelight#main/packages/plateau-layout"
+  ]
+}
+EOF
+----
+
+Then, instruct Docker to run a Firelight build NPX command in a Node container
+as follows.
+
+[source,sh]
+----
+docker --log-level=debug run --interactive --tty \
+-v .:/data:ro -v ./firelight-build-001:/out:rw \
+--workdir=/data \
+docker.io/library/node:22-alpine \
+  npx --node-options='--experimental-vm-modules' -y @riboseinc/anafero-cli \
+    build-site --target-dir /out --current-rev master
+----
+
+Now, you can navigate to build output directory and run a local webserver.
+
+[source,sh]
+----
+cd firelight-build-001
+python3 -m http.server 8888
+----
+
+Now you should be able to open `localhost:8888` in your browser
+and see the document.
