@@ -47324,8 +47324,8 @@
 			</element>
 			<element xmi:idref="EAID_183BBB66_E3C8_4b29_AD66_F580527EA6BE" xmi:type="uml:Class" name="UrbanRedevelopmentProject" scope="public">
 				<model package="EAPK_703CD7E4_9939_4370_8AEB_B5B48ACC572F" tpos="103" ea_localid="245" ea_eleType="element"/>
-				<properties documentation="都市計画法第12条第1項第4号に定める事業。都市再開発法による市街地再開発事業。&#xA;&#xA;* 属性urf:functionは、都市計画法第12条第2項に定める市街地開発事業の種類とする。コードリスト（&amp;lt;&amp;lt;UrbanDevelopmentProject_function.xml,UrbanDevelopmentProject_function.xml&amp;gt;&amp;gt;）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性urf:usageは、市街地再開発事業の種類とする。コードリスト（UrbanDevelopmentProject_usage.xml）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性urf:scheduledExecutorは、使用しない。&#xA;* 属性core:creationDateは運用上必須とする。&#xA;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="501525" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2025/10/07 12:13:12" complexity="1" status="設計中"/>
+				<properties documentation="都市計画法第12条第1項第4号に定める事業。都市再開発法による市街地再開発事業。&#xA;&#xA;* 属性urf:functionは、都市計画法第12条第2項に定める市街地開発事業の種類とする。コードリスト（&amp;lt;&amp;lt;UrbanDevelopmentProject_function.xml,UrbanDevelopmentProject_function.xml&amp;gt;&amp;gt;）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性urf:usageは、市街地再開発事業の種類とする。コードリスト（&amp;lt;&amp;lt;UrbanRedevelopmentProject_usage.xml,UrbanRedevelopmentProject_usage.xml&amp;gt;&amp;gt;）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性urf:scheduledExecutorは、使用しない。&#xA;* 属性core:creationDateは運用上必須とする。&#xA;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="501525" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2025/11/25 16:34:05" complexity="1" status="設計中"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
