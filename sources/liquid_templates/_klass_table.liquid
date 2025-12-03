@@ -87,16 +87,225 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
         {% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
         {% if attr.type_ns == "gen" %}
           {% assign attr_upper_klass_name = "gen" %}
-        {% elsif attr.type_ns == "uro" and attr.type == "AbstractPointCloud" %}
-          {% assign attr_upper_klass_name = "uro" %}
         {% endif %}
         {% if attr_upper_klass_name == "uro" or citygml_ns contains attr_upper_klass_name %}
+
+        {%- capture name_col_role_and_name -%}
+          {{ attr_upper_klass_name }}:{{ attr.name }}
+        {%- endcapture -%}
+
+        {%- capture type_col_role_and_name -%}
+          {{ attr.type_ns }}:{{ attr.type }}
+        {%- endcapture -%}
+
+        {% if type_col_role_and_name == "uro:DataQualityAttribute" %}
+          {% assign name_col_role_and_name = "uro:bldgDataQualityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DisasterRiskAttribute" %}
+          {% assign name_col_role_and_name = "uro:bldgDisasterRiskAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DmAttribute" %}
+          {% assign name_col_role_and_name = "uro:bldgDmAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityAttribute" %}
+          {% assign name_col_role_and_name = "uro:bldgFacilityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityIdAttribute" %}
+          {% assign name_col_role_and_name = "uro:bldgFacilityIdAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityTypeAttribute" %}
+          {% assign name_col_role_and_name = "uro:bldgFacilityTypeAttribute" %}
+        {% elsif type_col_role_and_name == "uro:KeyValuePairAttribute" %}
+          {% assign name_col_role_and_name = "uro:bldgKeyValuePairAttribute" %}
+        {% elsif type_col_role_and_name == "uro:RealEstateIDAttribute" %}
+          {% assign name_col_role_and_name = "uro:bldgRealEstateIDAttribute" %}
+        {% elsif type_col_role_and_name == "uro:BuildingUsecaseAttribute" %}
+          {% assign name_col_role_and_name = "uro:bldgUsecaseAttribute" %}
+        {% elsif type_col_role_and_name == "uro:ConstructionBaseAttribute" %}
+          {% assign name_col_role_and_name = "uro:bridBaseAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DataQualityAttribute" %}
+          {% assign name_col_role_and_name = "uro:bridDataQualityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DisasterRiskAttribute" %}
+          {% assign name_col_role_and_name = "uro:bridDisasterRiskAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DmAttribute" %}
+          {% assign name_col_role_and_name = "uro:bridDmAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityAttribute" %}
+          {% assign name_col_role_and_name = "uro:bridFacilityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityIdAttribute" %}
+          {% assign name_col_role_and_name = "uro:bridFacilityIdAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityTypeAttribute" %}
+          {% assign name_col_role_and_name = "uro:bridFacilityTypeAttribute" %}
+        {% elsif type_col_role_and_name == "uro:BridgeFunctionalAttribute" %}
+          {% assign name_col_role_and_name = "uro:bridFunctionalAttribute" %}
+        {% elsif type_col_role_and_name == "uro:KeyValuePairAttribute" %}
+          {% assign name_col_role_and_name = "uro:bridKeyValuePairAttribute" %}
+        {% elsif type_col_role_and_name == "uro:ConstructionRiskAssessmentAttribute" %}
+          {% assign name_col_role_and_name = "uro:bridRiskAssessmentAttribute" %}
+        {% elsif type_col_role_and_name == "uro:BridgeStructureAttribute" %}
+          {% assign name_col_role_and_name = "uro:bridStructureAttribute" %}
+        {% elsif type_col_role_and_name == "uro:BuildingDetailAttribute" %}
+          {% assign name_col_role_and_name = "uro:buildingDetailAttribute" %}
+        {% elsif type_col_role_and_name == "uro:BuildingIDAttribute" %}
+          {% assign name_col_role_and_name = "uro:buildingIDAttribute" %}
+        {% elsif type_col_role_and_name == "uro:CityFurnitureDetailAttribute" %}
+          {% assign name_col_role_and_name = "uro:cityFurnitureDetailAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DataQualityAttribute" %}
+          {% assign name_col_role_and_name = "uro:demDataQualityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DmAttribute" %}
+          {% assign name_col_role_and_name = "uro:demDmAttribute" %}
+        {% elsif type_col_role_and_name == "uro:KeyValuePairAttribute" %}
+          {% assign name_col_role_and_name = "uro:demKeyValuePairAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FloodingRiskAttribute" %}
+          {% assign name_col_role_and_name = "uro:floodingRiskAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DataQualityAttribute" %}
+          {% assign name_col_role_and_name = "uro:frnDataQualityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DmAttribute" %}
+          {% assign name_col_role_and_name = "uro:frnDmAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityAttribute" %}
+          {% assign name_col_role_and_name = "uro:frnFacilityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityIdAttribute" %}
+          {% assign name_col_role_and_name = "uro:frnFacilityIdAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityTypeAttribute" %}
+          {% assign name_col_role_and_name = "uro:frnFacilityTypeAttribute" %}
+        {% elsif type_col_role_and_name == "uro:KeyValuePairAttribute" %}
+          {% assign name_col_role_and_name = "uro:frnKeyValuePairAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IfcAttribute" %}
+          {% assign name_col_role_and_name = "uro:ifcBoundarySurfaceAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IfcAttribute" %}
+          {% assign name_col_role_and_name = "uro:ifcBuildingAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IfcAttribute" %}
+          {% assign name_col_role_and_name = "uro:ifcBuildingFurnitureAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IfcAttribute" %}
+          {% assign name_col_role_and_name = "uro:ifcBuildingInstallationAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IfcAttribute" %}
+          {% assign name_col_role_and_name = "uro:ifcBuildingStoreyAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IfcAttribute" %}
+          {% assign name_col_role_and_name = "uro:ifcIntBuildingInstallationAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IfcAttribute" %}
+          {% assign name_col_role_and_name = "uro:ifcLandUseAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IfcAttribute" %}
+          {% assign name_col_role_and_name = "uro:ifcOpeningAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IfcAttribute" %}
+          {% assign name_col_role_and_name = "uro:ifcRoomAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IndoorAttribute" %}
+          {% assign name_col_role_and_name = "uro:indoorBoundarySurfaceAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IndoorAttribute" %}
+          {% assign name_col_role_and_name = "uro:indoorBuildingAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IndoorAttribute" %}
+          {% assign name_col_role_and_name = "uro:indoorFurnitureAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IndoorAttribute" %}
+          {% assign name_col_role_and_name = "uro:indoorIntInstallationAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IndoorAttribute" %}
+          {% assign name_col_role_and_name = "uro:indoorOpeningAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IndoorAttribute" %}
+          {% assign name_col_role_and_name = "uro:indoorRoomAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IndoorAttribute" %}
+          {% assign name_col_role_and_name = "uro:indoorStoreyAttribute" %}
+        {% elsif type_col_role_and_name == "uro:LandUseDetailAttribute" %}
+          {% assign name_col_role_and_name = "uro:landUseDetailAttribute" %}
+        {% elsif type_col_role_and_name == "uro:LargeCustomerFacilityAttribute" %}
+          {% assign name_col_role_and_name = "uro:largeCustomerFacilityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DataQualityAttribute" %}
+          {% assign name_col_role_and_name = "uro:luseDataQualityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DmAttribute" %}
+          {% assign name_col_role_and_name = "uro:luseDmAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityAttribute" %}
+          {% assign name_col_role_and_name = "uro:luseFacilityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityIdAttribute" %}
+          {% assign name_col_role_and_name = "uro:luseFacilityIdAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityTypeAttribute" %}
+          {% assign name_col_role_and_name = "uro:luseFacilityTypeAttribute" %}
+        {% elsif type_col_role_and_name == "uro:KeyValuePairAttribute" %}
+          {% assign name_col_role_and_name = "uro:luseKeyValuePairAttribute" %}
+        {% elsif type_col_role_and_name == "uro:AbstractPointCloud" %}
+          {% assign name_col_role_and_name = "uro:pointCloud" %}
+        {% elsif type_col_role_and_name == "uro:RailwayRouteAttribute" %}
+          {% assign name_col_role_and_name = "uro:railwayRouteAttribute" %}
+        {% elsif type_col_role_and_name == "uro:RailwayTrackAttribute" %}
+          {% assign name_col_role_and_name = "uro:railwayTrackAttribute" %}
+        {% elsif type_col_role_and_name == "uro:RoadType" %}
+          {% assign name_col_role_and_name = "uro:roadStatus" %}
+        {% elsif type_col_role_and_name == "uro:RoadStructureAttribute" %}
+          {% assign name_col_role_and_name = "uro:roadStructureAttribute" %}
+        {% elsif type_col_role_and_name == "uro:SquareUrbanPlanAttribute" %}
+          {% assign name_col_role_and_name = "uro:squareUrbanPlanAttribute" %}
+        {% elsif type_col_role_and_name == "uro:TrackAttribute" %}
+          {% assign name_col_role_and_name = "uro:trackAttribute" %}
+        {% elsif type_col_role_and_name == "uro:TrafficAreaStructureAttribute" %}
+          {% assign name_col_role_and_name = "uro:trafficAreaStructureAttribute" %}
+        {% elsif type_col_role_and_name == "uro:TrafficVolumeAttribute" %}
+          {% assign name_col_role_and_name = "uro:trafficVolumeAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DataQualityAttribute" %}
+          {% assign name_col_role_and_name = "uro:tranDataQualityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DmAttribute" %}
+          {% assign name_col_role_and_name = "uro:tranDmAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityAttribute" %}
+          {% assign name_col_role_and_name = "uro:tranFacilityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityIdAttribute" %}
+          {% assign name_col_role_and_name = "uro:tranFacilityIdAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityTypeAttribute" %}
+          {% assign name_col_role_and_name = "uro:tranFacilityTypeAttribute" %}
+        {% elsif type_col_role_and_name == "uro:KeyValuePairAttribute" %}
+          {% assign name_col_role_and_name = "uro:tranKeyValuePairAttribute" %}
+        {% elsif type_col_role_and_name == "uro:TrafficObjectUsecaseAttribute" %}
+          {% assign name_col_role_and_name = "uro:tranUsecaseAttribute" %}
+        {% elsif type_col_role_and_name == "uro:ConstructionBaseAttribute" %}
+          {% assign name_col_role_and_name = "uro:tunBaseAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DataQualityAttribute" %}
+          {% assign name_col_role_and_name = "uro:tunDataQualityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DisasterRiskAttribute" %}
+          {% assign name_col_role_and_name = "uro:tunDisasterRiskAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DmAttribute" %}
+          {% assign name_col_role_and_name = "uro:tunDmAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityAttribute" %}
+          {% assign name_col_role_and_name = "uro:tunFacilityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityIdAttribute" %}
+          {% assign name_col_role_and_name = "uro:tunFacilityIdAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityTypeAttribute" %}
+          {% assign name_col_role_and_name = "uro:tunFacilityTypeAttribute" %}
+        {% elsif type_col_role_and_name == "uro:TunnelFunctionalAttribute" %}
+          {% assign name_col_role_and_name = "uro:tunFunctionalAttribute" %}
+        {% elsif type_col_role_and_name == "uro:KeyValuePairAttribute" %}
+          {% assign name_col_role_and_name = "uro:tunKeyValuePairAttribute" %}
+        {% elsif type_col_role_and_name == "uro:ConstructionRiskAssessmentAttribute" %}
+          {% assign name_col_role_and_name = "uro:tunRiskAssessmentAttribute" %}
+        {% elsif type_col_role_and_name == "uro:TunnelStructureAttribute" %}
+          {% assign name_col_role_and_name = "uro:tunStructureAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DataQualityAttribute" %}
+          {% assign name_col_role_and_name = "uro:vegDataQualityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DmAttribute" %}
+          {% assign name_col_role_and_name = "uro:vegDmAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityAttribute" %}
+          {% assign name_col_role_and_name = "uro:vegFacilityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityIdAttribute" %}
+          {% assign name_col_role_and_name = "uro:vegFacilityIdAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityTypeAttribute" %}
+          {% assign name_col_role_and_name = "uro:vegFacilityTypeAttribute" %}
+        {% elsif type_col_role_and_name == "uro:KeyValuePairAttribute" %}
+          {% assign name_col_role_and_name = "uro:vegKeyValuePairAttribute" %}
+        {% elsif type_col_role_and_name == "uro:WaterBodyDetailAttribute" %}
+          {% assign name_col_role_and_name = "uro:waterBodyDetailAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DataQualityAttribute" %}
+          {% assign name_col_role_and_name = "uro:wtrDataQualityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DmAttribute" %}
+          {% assign name_col_role_and_name = "uro:wtrDmAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityAttribute" %}
+          {% assign name_col_role_and_name = "uro:wtrFacilityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityIdAttribute" %}
+          {% assign name_col_role_and_name = "uro:wtrFacilityIdAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityTypeAttribute" %}
+          {% assign name_col_role_and_name = "uro:wtrFacilityTypeAttribute" %}
+        {% elsif type_col_role_and_name == "uro:KeyValuePairAttribute" %}
+          {% assign name_col_role_and_name = "uro:wtrKeyValuePairAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DataQualityAttribute" %}
+          {% assign name_col_role_and_name = "urf:dataQualityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:KeyValuePairAttribute" %}
+          {% assign name_col_role_and_name = "urf:keyValuePairAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DmAttribute" %}
+          {% assign name_col_role_and_name = "urf:urfDmAttribute" %}
+        {% endif %}
+
         {%- capture name_col -%}
           {%- if attr.used? == false -%}
-            ({{ attr_upper_klass_name }}:{{ attr.name }}) +
+            ({{  name_col_role_and_name }}) +
             [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
           {%- else -%}
-            {{ attr_upper_klass_name }}:{{ attr.name }} +
+            {{  name_col_role_and_name }} +
             [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
           {%- endif -%}
         {%- endcapture -%}
@@ -147,16 +356,225 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
         {% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
         {% if attr.type_ns == "gen" %}
           {% assign attr_upper_klass_name = "gen" %}
-        {% elsif attr.type_ns == "uro" and attr.type == "AbstractPointCloud" %}
-          {% assign attr_upper_klass_name = "uro" %}
         {% endif %}
         {% if attr_upper_klass_name == "uro" or citygml_ns contains attr_upper_klass_name %}
+
+        {%- capture name_col_role_and_name -%}
+          {{ attr_upper_klass_name }}:{{ attr.name }}
+        {%- endcapture -%}
+
+        {%- capture type_col_role_and_name -%}
+          {{ attr.type_ns }}:{{ attr.type }}
+        {%- endcapture -%}
+
+        {% if type_col_role_and_name == "uro:DataQualityAttribute" %}
+          {% assign name_col_role_and_name = "uro:bldgDataQualityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DisasterRiskAttribute" %}
+          {% assign name_col_role_and_name = "uro:bldgDisasterRiskAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DmAttribute" %}
+          {% assign name_col_role_and_name = "uro:bldgDmAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityAttribute" %}
+          {% assign name_col_role_and_name = "uro:bldgFacilityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityIdAttribute" %}
+          {% assign name_col_role_and_name = "uro:bldgFacilityIdAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityTypeAttribute" %}
+          {% assign name_col_role_and_name = "uro:bldgFacilityTypeAttribute" %}
+        {% elsif type_col_role_and_name == "uro:KeyValuePairAttribute" %}
+          {% assign name_col_role_and_name = "uro:bldgKeyValuePairAttribute" %}
+        {% elsif type_col_role_and_name == "uro:RealEstateIDAttribute" %}
+          {% assign name_col_role_and_name = "uro:bldgRealEstateIDAttribute" %}
+        {% elsif type_col_role_and_name == "uro:BuildingUsecaseAttribute" %}
+          {% assign name_col_role_and_name = "uro:bldgUsecaseAttribute" %}
+        {% elsif type_col_role_and_name == "uro:ConstructionBaseAttribute" %}
+          {% assign name_col_role_and_name = "uro:bridBaseAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DataQualityAttribute" %}
+          {% assign name_col_role_and_name = "uro:bridDataQualityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DisasterRiskAttribute" %}
+          {% assign name_col_role_and_name = "uro:bridDisasterRiskAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DmAttribute" %}
+          {% assign name_col_role_and_name = "uro:bridDmAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityAttribute" %}
+          {% assign name_col_role_and_name = "uro:bridFacilityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityIdAttribute" %}
+          {% assign name_col_role_and_name = "uro:bridFacilityIdAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityTypeAttribute" %}
+          {% assign name_col_role_and_name = "uro:bridFacilityTypeAttribute" %}
+        {% elsif type_col_role_and_name == "uro:BridgeFunctionalAttribute" %}
+          {% assign name_col_role_and_name = "uro:bridFunctionalAttribute" %}
+        {% elsif type_col_role_and_name == "uro:KeyValuePairAttribute" %}
+          {% assign name_col_role_and_name = "uro:bridKeyValuePairAttribute" %}
+        {% elsif type_col_role_and_name == "uro:ConstructionRiskAssessmentAttribute" %}
+          {% assign name_col_role_and_name = "uro:bridRiskAssessmentAttribute" %}
+        {% elsif type_col_role_and_name == "uro:BridgeStructureAttribute" %}
+          {% assign name_col_role_and_name = "uro:bridStructureAttribute" %}
+        {% elsif type_col_role_and_name == "uro:BuildingDetailAttribute" %}
+          {% assign name_col_role_and_name = "uro:buildingDetailAttribute" %}
+        {% elsif type_col_role_and_name == "uro:BuildingIDAttribute" %}
+          {% assign name_col_role_and_name = "uro:buildingIDAttribute" %}
+        {% elsif type_col_role_and_name == "uro:CityFurnitureDetailAttribute" %}
+          {% assign name_col_role_and_name = "uro:cityFurnitureDetailAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DataQualityAttribute" %}
+          {% assign name_col_role_and_name = "uro:demDataQualityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DmAttribute" %}
+          {% assign name_col_role_and_name = "uro:demDmAttribute" %}
+        {% elsif type_col_role_and_name == "uro:KeyValuePairAttribute" %}
+          {% assign name_col_role_and_name = "uro:demKeyValuePairAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FloodingRiskAttribute" %}
+          {% assign name_col_role_and_name = "uro:floodingRiskAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DataQualityAttribute" %}
+          {% assign name_col_role_and_name = "uro:frnDataQualityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DmAttribute" %}
+          {% assign name_col_role_and_name = "uro:frnDmAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityAttribute" %}
+          {% assign name_col_role_and_name = "uro:frnFacilityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityIdAttribute" %}
+          {% assign name_col_role_and_name = "uro:frnFacilityIdAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityTypeAttribute" %}
+          {% assign name_col_role_and_name = "uro:frnFacilityTypeAttribute" %}
+        {% elsif type_col_role_and_name == "uro:KeyValuePairAttribute" %}
+          {% assign name_col_role_and_name = "uro:frnKeyValuePairAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IfcAttribute" %}
+          {% assign name_col_role_and_name = "uro:ifcBoundarySurfaceAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IfcAttribute" %}
+          {% assign name_col_role_and_name = "uro:ifcBuildingAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IfcAttribute" %}
+          {% assign name_col_role_and_name = "uro:ifcBuildingFurnitureAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IfcAttribute" %}
+          {% assign name_col_role_and_name = "uro:ifcBuildingInstallationAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IfcAttribute" %}
+          {% assign name_col_role_and_name = "uro:ifcBuildingStoreyAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IfcAttribute" %}
+          {% assign name_col_role_and_name = "uro:ifcIntBuildingInstallationAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IfcAttribute" %}
+          {% assign name_col_role_and_name = "uro:ifcLandUseAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IfcAttribute" %}
+          {% assign name_col_role_and_name = "uro:ifcOpeningAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IfcAttribute" %}
+          {% assign name_col_role_and_name = "uro:ifcRoomAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IndoorAttribute" %}
+          {% assign name_col_role_and_name = "uro:indoorBoundarySurfaceAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IndoorAttribute" %}
+          {% assign name_col_role_and_name = "uro:indoorBuildingAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IndoorAttribute" %}
+          {% assign name_col_role_and_name = "uro:indoorFurnitureAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IndoorAttribute" %}
+          {% assign name_col_role_and_name = "uro:indoorIntInstallationAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IndoorAttribute" %}
+          {% assign name_col_role_and_name = "uro:indoorOpeningAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IndoorAttribute" %}
+          {% assign name_col_role_and_name = "uro:indoorRoomAttribute" %}
+        {% elsif type_col_role_and_name == "uro:IndoorAttribute" %}
+          {% assign name_col_role_and_name = "uro:indoorStoreyAttribute" %}
+        {% elsif type_col_role_and_name == "uro:LandUseDetailAttribute" %}
+          {% assign name_col_role_and_name = "uro:landUseDetailAttribute" %}
+        {% elsif type_col_role_and_name == "uro:LargeCustomerFacilityAttribute" %}
+          {% assign name_col_role_and_name = "uro:largeCustomerFacilityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DataQualityAttribute" %}
+          {% assign name_col_role_and_name = "uro:luseDataQualityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DmAttribute" %}
+          {% assign name_col_role_and_name = "uro:luseDmAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityAttribute" %}
+          {% assign name_col_role_and_name = "uro:luseFacilityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityIdAttribute" %}
+          {% assign name_col_role_and_name = "uro:luseFacilityIdAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityTypeAttribute" %}
+          {% assign name_col_role_and_name = "uro:luseFacilityTypeAttribute" %}
+        {% elsif type_col_role_and_name == "uro:KeyValuePairAttribute" %}
+          {% assign name_col_role_and_name = "uro:luseKeyValuePairAttribute" %}
+        {% elsif type_col_role_and_name == "uro:AbstractPointCloud" %}
+          {% assign name_col_role_and_name = "uro:pointCloud" %}
+        {% elsif type_col_role_and_name == "uro:RailwayRouteAttribute" %}
+          {% assign name_col_role_and_name = "uro:railwayRouteAttribute" %}
+        {% elsif type_col_role_and_name == "uro:RailwayTrackAttribute" %}
+          {% assign name_col_role_and_name = "uro:railwayTrackAttribute" %}
+        {% elsif type_col_role_and_name == "uro:RoadType" %}
+          {% assign name_col_role_and_name = "uro:roadStatus" %}
+        {% elsif type_col_role_and_name == "uro:RoadStructureAttribute" %}
+          {% assign name_col_role_and_name = "uro:roadStructureAttribute" %}
+        {% elsif type_col_role_and_name == "uro:SquareUrbanPlanAttribute" %}
+          {% assign name_col_role_and_name = "uro:squareUrbanPlanAttribute" %}
+        {% elsif type_col_role_and_name == "uro:TrackAttribute" %}
+          {% assign name_col_role_and_name = "uro:trackAttribute" %}
+        {% elsif type_col_role_and_name == "uro:TrafficAreaStructureAttribute" %}
+          {% assign name_col_role_and_name = "uro:trafficAreaStructureAttribute" %}
+        {% elsif type_col_role_and_name == "uro:TrafficVolumeAttribute" %}
+          {% assign name_col_role_and_name = "uro:trafficVolumeAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DataQualityAttribute" %}
+          {% assign name_col_role_and_name = "uro:tranDataQualityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DmAttribute" %}
+          {% assign name_col_role_and_name = "uro:tranDmAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityAttribute" %}
+          {% assign name_col_role_and_name = "uro:tranFacilityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityIdAttribute" %}
+          {% assign name_col_role_and_name = "uro:tranFacilityIdAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityTypeAttribute" %}
+          {% assign name_col_role_and_name = "uro:tranFacilityTypeAttribute" %}
+        {% elsif type_col_role_and_name == "uro:KeyValuePairAttribute" %}
+          {% assign name_col_role_and_name = "uro:tranKeyValuePairAttribute" %}
+        {% elsif type_col_role_and_name == "uro:TrafficObjectUsecaseAttribute" %}
+          {% assign name_col_role_and_name = "uro:tranUsecaseAttribute" %}
+        {% elsif type_col_role_and_name == "uro:ConstructionBaseAttribute" %}
+          {% assign name_col_role_and_name = "uro:tunBaseAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DataQualityAttribute" %}
+          {% assign name_col_role_and_name = "uro:tunDataQualityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DisasterRiskAttribute" %}
+          {% assign name_col_role_and_name = "uro:tunDisasterRiskAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DmAttribute" %}
+          {% assign name_col_role_and_name = "uro:tunDmAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityAttribute" %}
+          {% assign name_col_role_and_name = "uro:tunFacilityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityIdAttribute" %}
+          {% assign name_col_role_and_name = "uro:tunFacilityIdAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityTypeAttribute" %}
+          {% assign name_col_role_and_name = "uro:tunFacilityTypeAttribute" %}
+        {% elsif type_col_role_and_name == "uro:TunnelFunctionalAttribute" %}
+          {% assign name_col_role_and_name = "uro:tunFunctionalAttribute" %}
+        {% elsif type_col_role_and_name == "uro:KeyValuePairAttribute" %}
+          {% assign name_col_role_and_name = "uro:tunKeyValuePairAttribute" %}
+        {% elsif type_col_role_and_name == "uro:ConstructionRiskAssessmentAttribute" %}
+          {% assign name_col_role_and_name = "uro:tunRiskAssessmentAttribute" %}
+        {% elsif type_col_role_and_name == "uro:TunnelStructureAttribute" %}
+          {% assign name_col_role_and_name = "uro:tunStructureAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DataQualityAttribute" %}
+          {% assign name_col_role_and_name = "uro:vegDataQualityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DmAttribute" %}
+          {% assign name_col_role_and_name = "uro:vegDmAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityAttribute" %}
+          {% assign name_col_role_and_name = "uro:vegFacilityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityIdAttribute" %}
+          {% assign name_col_role_and_name = "uro:vegFacilityIdAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityTypeAttribute" %}
+          {% assign name_col_role_and_name = "uro:vegFacilityTypeAttribute" %}
+        {% elsif type_col_role_and_name == "uro:KeyValuePairAttribute" %}
+          {% assign name_col_role_and_name = "uro:vegKeyValuePairAttribute" %}
+        {% elsif type_col_role_and_name == "uro:WaterBodyDetailAttribute" %}
+          {% assign name_col_role_and_name = "uro:waterBodyDetailAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DataQualityAttribute" %}
+          {% assign name_col_role_and_name = "uro:wtrDataQualityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DmAttribute" %}
+          {% assign name_col_role_and_name = "uro:wtrDmAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityAttribute" %}
+          {% assign name_col_role_and_name = "uro:wtrFacilityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityIdAttribute" %}
+          {% assign name_col_role_and_name = "uro:wtrFacilityIdAttribute" %}
+        {% elsif type_col_role_and_name == "uro:FacilityTypeAttribute" %}
+          {% assign name_col_role_and_name = "uro:wtrFacilityTypeAttribute" %}
+        {% elsif type_col_role_and_name == "uro:KeyValuePairAttribute" %}
+          {% assign name_col_role_and_name = "uro:wtrKeyValuePairAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DataQualityAttribute" %}
+          {% assign name_col_role_and_name = "urf:dataQualityAttribute" %}
+        {% elsif type_col_role_and_name == "uro:KeyValuePairAttribute" %}
+          {% assign name_col_role_and_name = "urf:keyValuePairAttribute" %}
+        {% elsif type_col_role_and_name == "uro:DmAttribute" %}
+          {% assign name_col_role_and_name = "urf:urfDmAttribute" %}
+        {% endif %}
+
         {%- capture name_col -%}
           {%- if attr.used? == false -%}
-            ({{ attr_upper_klass_name }}:{{ attr.name }}) +
+            ({{ name_col_role_and_name }}) +
             [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
           {%- else -%}
-            {{ attr_upper_klass_name }}:{{ attr.name }} +
+            {{ name_col_role_and_name }} +
             [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
           {%- endif -%}
         {%- endcapture -%}
