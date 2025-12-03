@@ -85,8 +85,12 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
     {% unless performed %}
       {% for attr in props_with_same_gen %}
         {% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
-        {% if attr.type_ns == "gen" %}{% assign attr_upper_klass_name = "gen" %}{% endif %}
-        {% if citygml_ns contains attr_upper_klass_name %}
+        {% if attr.type_ns == "gen" %}
+          {% assign attr_upper_klass_name = "gen" %}
+        {% elsif attr.type_ns == "uro" and attr.type == "AbstractPointCloud" %}
+          {% assign attr_upper_klass_name = "uro" %}
+        {% endif %}
+        {% if attr_upper_klass_name == "uro" or citygml_ns contains attr_upper_klass_name %}
         {%- capture name_col -%}
           {%- if attr.used? == false -%}
             ({{ attr_upper_klass_name }}:{{ attr.name }}) +
@@ -141,8 +145,12 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
     {% unless performed %}
       {% for attr in props_with_same_gen %}
         {% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
-      {% if attr.type_ns == "gen" %}{% assign attr_upper_klass_name = "gen" %}{% endif %}
-        {% if citygml_ns contains attr_upper_klass_name %}
+        {% if attr.type_ns == "gen" %}
+          {% assign attr_upper_klass_name = "gen" %}
+        {% elsif attr.type_ns == "uro" and attr.type == "AbstractPointCloud" %}
+          {% assign attr_upper_klass_name = "uro" %}
+        {% endif %}
+        {% if attr_upper_klass_name == "uro" or citygml_ns contains attr_upper_klass_name %}
         {%- capture name_col -%}
           {%- if attr.used? == false -%}
             ({{ attr_upper_klass_name }}:{{ attr.name }}) +
