@@ -13,10 +13,107 @@
 
 {%- comment -%}
 Build element mapping lookup table from YAML structure
-Key format: "package|class|attribute" -> "target_type"
+Key format: "package|class|attribute=>target_type"
 {%- endcomment -%}
-{% assign element_mappings = "" | split: "" %}
-{% assign mapping_keys = "bldg|AbstractBuilding|bldgDataQualityAttribute:uro:DataQualityAttribute,bldg|AbstractBuilding|bldgDisasterRiskAttribute:uro:DisasterRiskAttribute,bldg|AbstractBuilding|bldgDmAttribute:uro:DmAttribute,bldg|AbstractBuilding|bldgFacilityAttribute:uro:FacilityAttribute,bldg|AbstractBuilding|bldgFacilityIdAttribute:uro:FacilityIdAttribute,bldg|AbstractBuilding|bldgFacilityTypeAttribute:uro:FacilityTypeAttribute,bldg|AbstractBuilding|bldgKeyValuePairAttribute:uro:KeyValuePairAttribute,bldg|AbstractBuilding|bldgRealEstateIDAttribute:uro:RealEstateIDAttribute,bldg|AbstractBuilding|bldgUsecaseAttribute:uro:BuildingUsecaseAttribute,brid|AbstractBridge|bridBaseAttribute:uro:ConstructionBaseAttribute,brid|AbstractBridge|bridDataQualityAttribute:uro:DataQualityAttribute,brid|AbstractBridge|bridDisasterRiskAttribute:uro:DisasterRiskAttribute,brid|AbstractBridge|bridDmAttribute:uro:DmAttribute,brid|AbstractBridge|bridFacilityAttribute:uro:FacilityAttribute,brid|AbstractBridge|bridFacilityIdAttribute:uro:FacilityIdAttribute,brid|AbstractBridge|bridFacilityTypeAttribute:uro:FacilityTypeAttribute,brid|AbstractBridge|bridFunctionalAttribute:uro:BridgeFunctionalAttribute,brid|AbstractBridge|bridKeyValuePairAttribute:uro:KeyValuePairAttribute,brid|AbstractBridge|bridRiskAssessmentAttribute:uro:ConstructionRiskAssessmentAttribute,brid|AbstractBridge|bridStructureAttribute:uro:BridgeStructureAttribute,bldg|AbstractBuilding|buildingDetailAttribute:uro:BuildingDetailAttribute,bldg|AbstractBuilding|buildingIDAttribute:uro:BuildingIDAttribute,frn|CityFurniture|cityFurnitureDetailAttribute:uro:CityFurnitureDetailAttribute,dem|ReliefFeature|demDataQualityAttribute:uro:DataQualityAttribute,dem|ReliefComponent|demDmAttribute:uro:DmAttribute,dem|ReliefFeature|demKeyValuePairAttribute:uro:KeyValuePairAttribute,wtr|WaterBody|floodingRiskAttribute:uro:FloodingRiskAttribute,frn|CityFurniture|frnDataQualityAttribute:uro:DataQualityAttribute,frn|CityFurniture|frnDmAttribute:uro:DmAttribute,frn|CityFurniture|frnFacilityAttribute:uro:FacilityAttribute,frn|CityFurniture|frnFacilityIdAttribute:uro:FacilityIdAttribute,frn|CityFurniture|frnFacilityTypeAttribute:uro:FacilityTypeAttribute,frn|CityFurniture|frnKeyValuePairAttribute:uro:KeyValuePairAttribute,bldg|BoundarySurface|ifcBoundarySurfaceAttribute:uro:IfcAttribute,bldg|AbstractBuilding|ifcBuildingAttribute:uro:IfcAttribute,bldg|BuildingFurniture|ifcBuildingFurnitureAttribute:uro:IfcAttribute,bldg|BuildingInstallation|ifcBuildingInstallationAttribute:uro:IfcAttribute,grp|CityObjectGroup|ifcBuildingStoreyAttribute:uro:IfcAttribute,bldg|IntBuildingInstallation|ifcIntBuildingInstallationAttribute:uro:IfcAttribute,luse|LandUse|ifcLandUseAttribute:uro:IfcAttribute,bldg|Opening|ifcOpeningAttribute:uro:IfcAttribute,bldg|Room|ifcRoomAttribute:uro:IfcAttribute,bldg|BoundarySurface|indoorBoundarySurfaceAttribute:uro:IndoorAttribute,bldg|AbstractBuilding|indoorBuildingAttribute:uro:IndoorAttribute,bldg|BuildingFurniture|indoorFurnitureAttribute:uro:IndoorAttribute,bldg|IntBuildingInstallation|indoorIntInstallationAttribute:uro:IndoorAttribute,bldg|Opening|indoorOpeningAttribute:uro:IndoorAttribute,bldg|Room|indoorRoomAttribute:uro:IndoorAttribute,grp|CityObjectGroup|indoorStoreyAttribute:uro:IndoorAttribute,luse|LandUse|landUseDetailAttribute:uro:LandUseDetailAttribute,bldg|AbstractBuilding|largeCustomerFacilityAttribute:uro:LargeCustomerFacilityAttribute,luse|LandUse|luseDataQualityAttribute:uro:DataQualityAttribute,luse|LandUse|luseDmAttribute:uro:DmAttribute,luse|LandUse|luseFacilityAttribute:uro:FacilityAttribute,luse|LandUse|luseFacilityIdAttribute:uro:FacilityIdAttribute,luse|LandUse|luseFacilityTypeAttribute:uro:FacilityTypeAttribute,luse|LandUse|luseKeyValuePairAttribute:uro:KeyValuePairAttribute,core|CityObject|pointCloud:uro:AbstractPointCloud,tran|Railway|railwayRouteAttribute:uro:RailwayRouteAttribute,tran|TrafficArea|railwayTrackAttribute:uro:RailwayTrackAttribute,tran|Road|roadStatus:uro:RoadType,tran|Road|roadStructureAttribute:uro:RoadStructureAttribute,tran|Square|squareUrbanPlanAttribute:uro:SquareUrbanPlanAttribute,tran|Track|trackAttribute:uro:TrackAttribute,tran|TrafficArea|trafficAreaStructureAttribute:uro:TrafficAreaStructureAttribute,tran|Road|trafficVolumeAttribute:uro:TrafficVolumeAttribute,tran|TransportationComplex|tranDataQualityAttribute:uro:DataQualityAttribute,tran|TransportationComplex|tranDmAttribute:uro:DmAttribute,tran|TransportationComplex|tranFacilityAttribute:uro:FacilityAttribute,tran|TransportationComplex|tranFacilityIdAttribute:uro:FacilityIdAttribute,tran|TransportationComplex|tranFacilityTypeAttribute:uro:FacilityTypeAttribute,tran|TransportationComplex|tranKeyValuePairAttribute:uro:KeyValuePairAttribute,tran|TransportationComplex|tranUsecaseAttribute:uro:TrafficObjectUsecaseAttribute,tun|AbstractTunnel|tunBaseAttribute:uro:ConstructionBaseAttribute,tun|AbstractTunnel|tunDataQualityAttribute:uro:DataQualityAttribute,tun|AbstractTunnel|tunDisasterRiskAttribute:uro:DisasterRiskAttribute,tun|AbstractTunnel|tunDmAttribute:uro:DmAttribute,tun|AbstractTunnel|tunFacilityAttribute:uro:FacilityAttribute,tun|AbstractTunnel|tunFacilityIdAttribute:uro:FacilityIdAttribute,tun|AbstractTunnel|tunFacilityTypeAttribute:uro:FacilityTypeAttribute,tun|AbstractTunnel|tunFunctionalAttribute:uro:TunnelFunctionalAttribute,tun|AbstractTunnel|tunKeyValuePairAttribute:uro:KeyValuePairAttribute,tun|AbstractTunnel|tunRiskAssessmentAttribute:uro:ConstructionRiskAssessmentAttribute,tun|AbstractTunnel|tunStructureAttribute:uro:TunnelStructureAttribute,veg|VegetationObject|vegDataQualityAttribute:uro:DataQualityAttribute,veg|VegetationObject|vegDmAttribute:uro:DmAttribute,veg|VegetationObject|vegFacilityAttribute:uro:FacilityAttribute,veg|VegetationObject|vegFacilityIdAttribute:uro:FacilityIdAttribute,veg|VegetationObject|vegFacilityTypeAttribute:uro:FacilityTypeAttribute,veg|VegetationObject|vegKeyValuePairAttribute:uro:KeyValuePairAttribute,wtr|WaterBody|waterBodyDetailAttribute:uro:WaterBodyDetailAttribute,wtr|WaterBody|wtrDataQualityAttribute:uro:DataQualityAttribute,wtr|WaterBody|wtrDmAttribute:uro:DmAttribute,wtr|WaterBody|wtrFacilityAttribute:uro:FacilityAttribute,wtr|WaterBody|wtrFacilityIdAttribute:uro:FacilityIdAttribute,wtr|WaterBody|wtrFacilityTypeAttribute:uro:FacilityTypeAttribute,wtr|WaterBody|wtrKeyValuePairAttribute:uro:KeyValuePairAttribute" | split: "," %}
+{% assign mapping_keys = "
+bldg|AbstractBuilding|bldgDataQualityAttribute=>uro:DataQualityAttribute,
+bldg|AbstractBuilding|bldgDisasterRiskAttribute=>uro:DisasterRiskAttribute,
+bldg|AbstractBuilding|bldgDmAttribute=>uro:DmAttribute,
+bldg|AbstractBuilding|bldgFacilityAttribute=>uro:FacilityAttribute,
+bldg|AbstractBuilding|bldgFacilityIdAttribute=>uro:FacilityIdAttribute,
+bldg|AbstractBuilding|bldgFacilityTypeAttribute=>uro:FacilityTypeAttribute,
+bldg|AbstractBuilding|bldgKeyValuePairAttribute=>uro:KeyValuePairAttribute,
+bldg|AbstractBuilding|bldgRealEstateIDAttribute=>uro:RealEstateIDAttribute,
+bldg|AbstractBuilding|bldgUsecaseAttribute=>uro:BuildingUsecaseAttribute,
+brid|AbstractBridge|bridBaseAttribute=>uro:ConstructionBaseAttribute,
+brid|AbstractBridge|bridDataQualityAttribute=>uro:DataQualityAttribute,
+brid|AbstractBridge|bridDisasterRiskAttribute=>uro:DisasterRiskAttribute,
+brid|AbstractBridge|bridDmAttribute=>uro:DmAttribute,
+brid|AbstractBridge|bridFacilityAttribute=>uro:FacilityAttribute,
+brid|AbstractBridge|bridFacilityIdAttribute=>uro:FacilityIdAttribute,
+brid|AbstractBridge|bridFacilityTypeAttribute=>uro:FacilityTypeAttribute,
+brid|AbstractBridge|bridFunctionalAttribute=>uro:BridgeFunctionalAttribute,
+brid|AbstractBridge|bridKeyValuePairAttribute=>uro:KeyValuePairAttribute,
+brid|AbstractBridge|bridRiskAssessmentAttribute=>uro:ConstructionRiskAssessmentAttribute,
+brid|AbstractBridge|bridStructureAttribute=>uro:BridgeStructureAttribute,
+bldg|AbstractBuilding|buildingDetailAttribute=>uro:BuildingDetailAttribute,
+bldg|AbstractBuilding|buildingIDAttribute=>uro:BuildingIDAttribute,
+frn|CityFurniture|cityFurnitureDetailAttribute=>uro:CityFurnitureDetailAttribute,
+dem|ReliefFeature|demDataQualityAttribute=>uro:DataQualityAttribute,
+dem|ReliefComponent|demDmAttribute=>uro:DmAttribute,
+dem|ReliefFeature|demKeyValuePairAttribute=>uro:KeyValuePairAttribute,
+wtr|WaterBody|floodingRiskAttribute=>uro:FloodingRiskAttribute,
+frn|CityFurniture|frnDataQualityAttribute=>uro:DataQualityAttribute,
+frn|CityFurniture|frnDmAttribute=>uro:DmAttribute,
+frn|CityFurniture|frnFacilityAttribute=>uro:FacilityAttribute,
+frn|CityFurniture|frnFacilityIdAttribute=>uro:FacilityIdAttribute,
+frn|CityFurniture|frnFacilityTypeAttribute=>uro:FacilityTypeAttribute,
+frn|CityFurniture|frnKeyValuePairAttribute=>uro:KeyValuePairAttribute,
+bldg|BoundarySurface|ifcBoundarySurfaceAttribute=>uro:IfcAttribute,
+bldg|AbstractBuilding|ifcBuildingAttribute=>uro:IfcAttribute,
+bldg|BuildingFurniture|ifcBuildingFurnitureAttribute=>uro:IfcAttribute,
+bldg|BuildingInstallation|ifcBuildingInstallationAttribute=>uro:IfcAttribute,
+grp|CityObjectGroup|ifcBuildingStoreyAttribute=>uro:IfcAttribute,
+bldg|IntBuildingInstallation|ifcIntBuildingInstallationAttribute=>uro:IfcAttribute,
+luse|LandUse|ifcLandUseAttribute=>uro:IfcAttribute,
+bldg|Opening|ifcOpeningAttribute=>uro:IfcAttribute,
+bldg|Room|ifcRoomAttribute=>uro:IfcAttribute,
+bldg|BoundarySurface|indoorBoundarySurfaceAttribute=>uro:IndoorAttribute,
+bldg|AbstractBuilding|indoorBuildingAttribute=>uro:IndoorAttribute,
+bldg|BuildingFurniture|indoorFurnitureAttribute=>uro:IndoorAttribute,
+bldg|IntBuildingInstallation|indoorIntInstallationAttribute=>uro:IndoorAttribute,
+bldg|Opening|indoorOpeningAttribute=>uro:IndoorAttribute,
+bldg|Room|indoorRoomAttribute=>uro:IndoorAttribute,
+grp|CityObjectGroup|indoorStoreyAttribute=>uro:IndoorAttribute,
+luse|LandUse|landUseDetailAttribute=>uro:LandUseDetailAttribute,
+bldg|AbstractBuilding|largeCustomerFacilityAttribute=>uro:LargeCustomerFacilityAttribute,
+luse|LandUse|luseDataQualityAttribute=>uro:DataQualityAttribute,
+luse|LandUse|luseDmAttribute=>uro:DmAttribute,
+luse|LandUse|luseFacilityAttribute=>uro:FacilityAttribute,
+luse|LandUse|luseFacilityIdAttribute=>uro:FacilityIdAttribute,
+luse|LandUse|luseFacilityTypeAttribute=>uro:FacilityTypeAttribute,
+luse|LandUse|luseKeyValuePairAttribute=>uro:KeyValuePairAttribute,
+core|CityObject|pointCloud=>uro:AbstractPointCloud,
+tran|Railway|railwayRouteAttribute=>uro:RailwayRouteAttribute,
+tran|TrafficArea|railwayTrackAttribute=>uro:RailwayTrackAttribute,
+tran|Road|roadStatus=>uro:RoadType,
+tran|Road|roadStructureAttribute=>uro:RoadStructureAttribute,
+tran|Square|squareUrbanPlanAttribute=>uro:SquareUrbanPlanAttribute,
+tran|Track|trackAttribute=>uro:TrackAttribute,
+tran|TrafficArea|trafficAreaStructureAttribute=>uro:TrafficAreaStructureAttribute,
+tran|Road|trafficVolumeAttribute=>uro:TrafficVolumeAttribute,
+tran|TransportationComplex|tranDataQualityAttribute=>uro:DataQualityAttribute,
+tran|TransportationComplex|tranDmAttribute=>uro:DmAttribute,
+tran|TransportationComplex|tranFacilityAttribute=>uro:FacilityAttribute,
+tran|TransportationComplex|tranFacilityIdAttribute=>uro:FacilityIdAttribute,
+tran|TransportationComplex|tranFacilityTypeAttribute=>uro:FacilityTypeAttribute,
+tran|TransportationComplex|tranKeyValuePairAttribute=>uro:KeyValuePairAttribute,
+tran|TransportationComplex|tranUsecaseAttribute=>uro:TrafficObjectUsecaseAttribute,
+tun|AbstractTunnel|tunBaseAttribute=>uro:ConstructionBaseAttribute,
+tun|AbstractTunnel|tunDataQualityAttribute=>uro:DataQualityAttribute,
+tun|AbstractTunnel|tunDisasterRiskAttribute=>uro:DisasterRiskAttribute,
+tun|AbstractTunnel|tunDmAttribute=>uro:DmAttribute,
+tun|AbstractTunnel|tunFacilityAttribute=>uro:FacilityAttribute,
+tun|AbstractTunnel|tunFacilityIdAttribute=>uro:FacilityIdAttribute,
+tun|AbstractTunnel|tunFacilityTypeAttribute=>uro:FacilityTypeAttribute,
+tun|AbstractTunnel|tunFunctionalAttribute=>uro:TunnelFunctionalAttribute,
+tun|AbstractTunnel|tunKeyValuePairAttribute=>uro:KeyValuePairAttribute,
+tun|AbstractTunnel|tunRiskAssessmentAttribute=>uro:ConstructionRiskAssessmentAttribute,
+tun|AbstractTunnel|tunStructureAttribute=>uro:TunnelStructureAttribute,
+veg|VegetationObject|vegDataQualityAttribute=>uro:DataQualityAttribute,
+veg|VegetationObject|vegDmAttribute=>uro:DmAttribute,
+veg|VegetationObject|vegFacilityAttribute=>uro:FacilityAttribute,
+veg|VegetationObject|vegFacilityIdAttribute=>uro:FacilityIdAttribute,
+veg|VegetationObject|vegFacilityTypeAttribute=>uro:FacilityTypeAttribute,
+veg|VegetationObject|vegKeyValuePairAttribute=>uro:KeyValuePairAttribute,
+wtr|WaterBody|waterBodyDetailAttribute=>uro:WaterBodyDetailAttribute,
+wtr|WaterBody|wtrDataQualityAttribute=>uro:DataQualityAttribute,
+wtr|WaterBody|wtrDmAttribute=>uro:DmAttribute,
+wtr|WaterBody|wtrFacilityAttribute=>uro:FacilityAttribute,
+wtr|WaterBody|wtrFacilityIdAttribute=>uro:FacilityIdAttribute,
+wtr|WaterBody|wtrFacilityTypeAttribute=>uro:FacilityTypeAttribute,
+wtr|WaterBody|wtrKeyValuePairAttribute=>uro:KeyValuePairAttribute
+" | strip_newlines | split: "," %}
 
 {%- if klass.has_guidance? -%}
   {%- assign cols_format = "1a,1a,2a,1a" -%}
@@ -82,7 +179,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
 {% assign all_gen_names = '' %}
 {% for attr in root.sorted_inherited_assoc_props %}
   {% assign all_gen_names = all_gen_names | append: ',' | append: attr.gen_name %}
-{% endfor %}  
+{% endfor %}
 {% assign all_gens = all_gen_names | split: ',' | uniq %}
 {% endif %}
 {% for cur_gen in all_gens %}
@@ -109,16 +206,16 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
         {% assign name_col_role_and_name = default_name_col_role_and_name %}
         {% assign klass_name = klass.name %}
         {% for mapping_entry in mapping_keys %}
-          {% assign entry_parts = mapping_entry | split: ":" %}
+          {% assign entry_parts = mapping_entry | split: "=>" %}
           {% assign lookup_key = entry_parts[0] %}
-          {% assign target_value = entry_parts[1] | prepend: ":" | prepend: entry_parts[1] | split: "|" | last | split: ":" | first | prepend: ":" | prepend: entry_parts[1] | split: ":" | slice: 0, 2 | join: ":" %}
+          {% assign target_value = entry_parts[1] %}
           {% assign key_parts = lookup_key | split: "|" %}
           {% if key_parts.size == 3 %}
             {% assign map_package = key_parts[0] %}
             {% assign map_class = key_parts[1] %}
             {% assign map_attr = key_parts[2] %}
             {% if attr_upper_klass_name == map_package and klass_name == map_class and attr.name == map_attr %}
-              {% assign name_col_role_and_name = entry_parts[1] %}
+              {% assign name_col_role_and_name = target_value %}
               {% break %}
             {% endif %}
           {% endif %}
@@ -168,7 +265,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
 {% assign all_gen_names = '' %}
 {% for attr in root.sorted_assoc_props %}
   {% assign all_gen_names = all_gen_names | append: ',' | append: attr.gen_name %}
-{% endfor %}  
+{% endfor %}
 {% assign all_gens = all_gen_names | split: ',' | uniq %}
 {% endif %}
 {% for cur_gen in all_gens %}
@@ -195,16 +292,16 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
         {% assign name_col_role_and_name = default_name_col_role_and_name %}
         {% assign klass_name = klass.name %}
         {% for mapping_entry in mapping_keys %}
-          {% assign entry_parts = mapping_entry | split: ":" %}
+          {% assign entry_parts = mapping_entry | split: "=>" %}
           {% assign lookup_key = entry_parts[0] %}
-          {% assign target_value = entry_parts[1] | prepend: ":" | prepend: entry_parts[1] | split: "|" | last | split: ":" | first | prepend: ":" | prepend: entry_parts[1] | split: ":" | slice: 0, 2 | join: ":" %}
+          {% assign target_value = entry_parts[1] %}
           {% assign key_parts = lookup_key | split: "|" %}
           {% if key_parts.size == 3 %}
             {% assign map_package = key_parts[0] %}
             {% assign map_class = key_parts[1] %}
             {% assign map_attr = key_parts[2] %}
             {% if attr_upper_klass_name == map_package and klass_name == map_class and attr.name == map_attr %}
-              {% assign name_col_role_and_name = entry_parts[1] %}
+              {% assign name_col_role_and_name = target_value %}
               {% break %}
             {% endif %}
           {% endif %}
