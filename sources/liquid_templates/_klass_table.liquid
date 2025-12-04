@@ -1,11 +1,20 @@
+{%- comment -%}
+==============================================
+Initialize global variables and mappings
+==============================================
+{%- endcomment -%}
 {% assign root = klass.generalization %}
 {% assign citygml_ns = "app,bldg,brid,core,dem,frn,gen,grp,luse,tran,tun,veg,wtr" | split: "," %}
+
+{%- comment -%}Format upper class name{%- endcomment -%}
 {%- capture upper_klass_name -%}
 {{ root.general.upper_klass.name }}:{{ root.general.name }}
 {%- endcapture -%}
 {%- if upper_klass_name == ":" -%}
   {%- assign upper_klass_name = "&#x2014;" -%}
 {%- endif -%}
+
+{%- comment -%}Format stereotype{%- endcomment -%}
 {%- capture stereotype -%}«{{ root.stereotype }}»{%- endcapture -%}
 {%- if stereotype == "«»" -%}
   {%- assign stereotype = " " -%}
@@ -115,6 +124,7 @@ wtr|WaterBody|wtrFacilityTypeAttribute=>uro:FacilityTypeAttribute,
 wtr|WaterBody|wtrKeyValuePairAttribute=>uro:KeyValuePairAttribute
 " | strip_newlines | split: "," %}
 
+{%- comment -%}Configure table columns{%- endcomment -%}
 {%- if klass.has_guidance? -%}
   {%- assign cols_format = "1a,1a,2a,1a" -%}
   {%- assign cols_number = 4 -%}
@@ -134,54 +144,53 @@ h| ステレオタイプ {{ cols_header }}+| {{ stereotype }}
 {% if root.inherited_props.size > 0 %}
 {{ cols_number }}+h| 継承する属性
 h| 属性名 h| 属性の型及び多重度 h| 定義 {% if klass.has_guidance? %} h| 補足{%- endif %}
-{% endif %}
 {% for attr in root.inherited_props %}
-{% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
-{%- capture name_col -%}
-  {%- if attr.used? == false -%}
-    ({{ attr_upper_klass_name }}:{{ attr.name }}) +
-    [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
-  {%- else -%}
-    {{ attr_upper_klass_name }}:{{ attr.name }} +
-    [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
-  {%- endif -%}
-{%- endcapture -%}
-| {{ name_col }}
-| {{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
-| {{ attr.definition }}
-{% if klass.has_guidance? -%} | {{ attr.guidance }}{%- endif %}{% if attr.used? == false %}tr-style:[background-color: grey]{% endif %}
+  {% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
+  {%- capture name_col -%}
+    {%- if attr.used? == false -%}
+      ({{ attr_upper_klass_name }}:{{ attr.name }}) +
+      [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
+    {%- else -%}
+      {{ attr_upper_klass_name }}:{{ attr.name }} +
+      [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
+    {%- endif -%}
+  {%- endcapture -%}
+  | {{ name_col }}
+  | {{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
+  | {{ attr.definition }}
+  {% if klass.has_guidance? -%} | {{ attr.guidance }}{%- endif %}{% if attr.used? == false %}tr-style:[background-color: grey]{% endif %}
 {% endfor %}
+{% endif %}
 
 {% if root.owned_props.size > 0 %}
 {{ cols_number }}+h| 自身に定義された属性
 h| 属性名 h| 属性の型及び多重度 h| 定義 {% if klass.has_guidance? %} h| 補足{%- endif %}
-{% endif %}
 {% for attr in root.owned_props %}
-{% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
-{%- capture name_col -%}
-  {%- if attr.used? == false -%}
-    ({{ attr_upper_klass_name }}:{{ attr.name }}) +
-    [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
-  {%- else -%}
-    {{ attr_upper_klass_name }}:{{ attr.name }} +
-    [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
-  {%- endif -%}
-{%- endcapture -%}
-| {{ name_col }}
-| {{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
-| {{ attr.definition }}
-{% if klass.has_guidance? -%} | {{ attr.guidance }}{%- endif %}{% if attr.used? == false %}tr-style:[background-color: grey]{% endif %}
+  {% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
+  {%- capture name_col -%}
+    {%- if attr.used? == false -%}
+      ({{ attr_upper_klass_name }}:{{ attr.name }}) +
+      [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
+    {%- else -%}
+      {{ attr_upper_klass_name }}:{{ attr.name }} +
+      [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
+    {%- endif -%}
+  {%- endcapture -%}
+  | {{ name_col }}
+  | {{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
+  | {{ attr.definition }}
+  {% if klass.has_guidance? -%} | {{ attr.guidance }}{%- endif %}{% if attr.used? == false %}tr-style:[background-color: grey]{% endif %}
 {% endfor %}
+{% endif %}
 
 {% if root.sorted_inherited_assoc_props.size > 0 %}
 {{ cols_number }}+h| 継承する関連役割
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.has_guidance? %} h| 補足{%- endif %}
-{% assign all_gen_names = '' %}
-{% for attr in root.sorted_inherited_assoc_props %}
-  {% assign all_gen_names = all_gen_names | append: ',' | append: attr.gen_name %}
-{% endfor %}
-{% assign all_gens = all_gen_names | split: ',' | uniq %}
-{% endif %}
+  {% assign all_gen_names = '' %}
+  {% for attr in root.sorted_inherited_assoc_props %}
+    {% assign all_gen_names = all_gen_names | append: ',' | append: attr.gen_name %}
+  {% endfor %}
+  {% assign all_gens = all_gen_names | split: ',' | uniq %}
 {% for cur_gen in all_gens %}
   {% assign performed = false %}
   {% for attr in root.sorted_inherited_assoc_props %}
@@ -194,30 +203,13 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
         {% endif %}
         {% if attr_upper_klass_name == "uro" or citygml_ns contains attr_upper_klass_name %}
 
-        {%- capture default_name_col_role_and_name -%}
-          {{ attr_upper_klass_name }}:{{ attr.name }}
-        {%- endcapture -%}
-
-        {%- capture type_col_role_and_name -%}
-          {{ attr.type_ns }}:{{ attr.type }}
-        {%- endcapture -%}
-
-        {%- comment -%}Dynamic mapping lookup based on package, class, and attribute{%- endcomment -%}
-        {% assign name_col_role_and_name = default_name_col_role_and_name %}
-        {% assign klass_name = klass.name %}
+        {% assign name_col_role_and_name = attr_upper_klass_name | append: ":" | append: attr.name %}
         {% for mapping_entry in mapping_keys %}
-          {% assign entry_parts = mapping_entry | split: "=>" %}
-          {% assign lookup_key = entry_parts[0] %}
-          {% assign target_value = entry_parts[1] %}
-          {% assign key_parts = lookup_key | split: "|" %}
-          {% if key_parts.size == 3 %}
-            {% assign map_package = key_parts[0] %}
-            {% assign map_class = key_parts[1] %}
-            {% assign map_attr = key_parts[2] %}
-            {% if attr_upper_klass_name == map_package and klass_name == map_class and attr.name == map_attr %}
-              {% assign name_col_role_and_name = target_value %}
-              {% break %}
-            {% endif %}
+          {% assign parts = mapping_entry | split: "=>" %}
+          {% assign key = parts[0] | split: "|" %}
+          {% if key[0] == attr_upper_klass_name and key[1] == klass.name and key[2] == attr.name %}
+            {% assign name_col_role_and_name = parts[1] %}
+            {% break %}
           {% endif %}
         {% endfor %}
 
@@ -258,6 +250,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
     {% endunless %}
   {% endfor %}
 {% endfor %}
+{% endif %}
 
 {% if root.sorted_assoc_props.size > 0 %}
 {{ cols_number }}+h| 自身に定義された関連役割
@@ -280,30 +273,13 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
         {% endif %}
         {% if attr_upper_klass_name == "uro" or citygml_ns contains attr_upper_klass_name %}
 
-        {%- capture default_name_col_role_and_name -%}
-          {{ attr_upper_klass_name }}:{{ attr.name }}
-        {%- endcapture -%}
-
-        {%- capture type_col_role_and_name -%}
-          {{ attr.type_ns }}:{{ attr.type }}
-        {%- endcapture -%}
-
-        {%- comment -%}Dynamic mapping lookup based on package, class, and attribute{%- endcomment -%}
-        {% assign name_col_role_and_name = default_name_col_role_and_name %}
-        {% assign klass_name = klass.name %}
+        {% assign name_col_role_and_name = attr_upper_klass_name | append: ":" | append: attr.name %}
         {% for mapping_entry in mapping_keys %}
-          {% assign entry_parts = mapping_entry | split: "=>" %}
-          {% assign lookup_key = entry_parts[0] %}
-          {% assign target_value = entry_parts[1] %}
-          {% assign key_parts = lookup_key | split: "|" %}
-          {% if key_parts.size == 3 %}
-            {% assign map_package = key_parts[0] %}
-            {% assign map_class = key_parts[1] %}
-            {% assign map_attr = key_parts[2] %}
-            {% if attr_upper_klass_name == map_package and klass_name == map_class and attr.name == map_attr %}
-              {% assign name_col_role_and_name = target_value %}
-              {% break %}
-            {% endif %}
+          {% assign parts = mapping_entry | split: "=>" %}
+          {% assign key = parts[0] | split: "|" %}
+          {% if key[0] == attr_upper_klass_name and key[1] == klass.name and key[2] == attr.name %}
+            {% assign name_col_role_and_name = parts[1] %}
+            {% break %}
           {% endif %}
         {% endfor %}
 
