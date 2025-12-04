@@ -6,8 +6,8 @@
 {%- if upper_klass_name == ":" -%}
   {%- assign upper_klass_name = "&#x2014;" -%}
 {%- endif -%}
-{%- capture stereotype -%}<< {{ root.stereotype }} >>{%- endcapture -%}
-{%- if stereotype == "<<  >>" -%}
+{%- capture stereotype -%}«{{ root.stereotype }}»{%- endcapture -%}
+{%- if stereotype == "«»" -%}
   {%- assign stereotype = " " -%}
 {%- endif -%}
 

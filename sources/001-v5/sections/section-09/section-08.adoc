@@ -185,7 +185,7 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Impl
 // | 型の定義 2+| 繰り返しオブジェクト。 +
 // 地物毎に幾何オブジェクトを作成する代替として、一つのプロトタイプモデルを複数の地物が参照する仕組み。
 // h| 上位の型 2+| ―
-// h| ステレオタイプ 2+| << Type >>
+// h| ステレオタイプ 2+| «Type»
 // 3+h| 自身に定義された属性
 // h| 属性名 h| 属性の型及び多重度 h| 定義
 // | core::libraryObject | xs:anyURI[0..1] | 繰り返しオブジェクトで使用するプロトタイプモデルの所在を示すURI。 +
@@ -208,7 +208,7 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Tran
 // |===
 // | 型の定義 2+| 繰り返しオブジェクトで使用するプロトタイプモデルを変形（拡大縮小、回転、平行移動）するための、3次元座標のアフィン変換行列。4×4の行列を示す16桁の数値の列からなる。
 // h| 上位の型 2+| ―
-// h| ステレオタイプ 2+| << DataType >>
+// h| ステレオタイプ 2+| «DataType»
 // 3+h| 自身に定義された属性
 // h| 属性名 h| 属性の型及び多重度 h| 定義
 // | core:elements | xs:double [16] | 16桁の実数の列。順序をもつ。 +
