@@ -233,7 +233,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
             {% comment %}Match on package|class|attribute{% endcomment %}
             {% if key[0] == attr_upper_klass_name and key[2] == attr.name and target[1] == type_col_role_and_name %}
               {% assign name_col_role_and_name = target[0] | append: ":" | append: attr.name %}
-              {% assign attr_upper_klass_name = target[0] %}
+              {% comment %} {% assign attr_upper_klass_name = target[0] %} {% endcomment %}
               {% break %}
             {% endif %}
           {% elsif key.size == 1 %}
@@ -322,7 +322,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
             {% comment %}Match on attribute name only{% endcomment %}
             {% if parts[0] == attr.name and target[1] == type_col_role_and_name %}
               {% assign name_col_role_and_name = target[0] | append: ":" | append: attr.name %}
-              {% assign attr_upper_klass_name = target[0] %}
+              {% comment %} {% assign attr_upper_klass_name = target[0] %} {% endcomment %}
               {% break %}
             {% endif %}
           {% endif %}
