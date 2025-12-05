@@ -223,20 +223,22 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
         {% if attr_upper_klass_name == "uro" or citygml_ns contains attr_upper_klass_name %}
 
         {% assign name_col_role_and_name = attr_upper_klass_name | append: ":" | append: attr.name %}
+        {% assign type_col_role_and_name = attr.type_ns | append: ":" | append: attr.type %}
+
         {% for mapping_entry in mapping_keys %}
           {% assign parts = mapping_entry | split: "=>" %}
           {% assign key = parts[0] | split: "|" %}
+          {% assign target = parts[1] | split: "|" %}
           {% if key.size == 3 %}
             {% comment %}Match on package|class|attribute{% endcomment %}
-            {% if key[0] == attr_upper_klass_name and key[1] == klass.name and key[2] == attr.name %}
-              {% assign target = parts[1] | split: "|" %}
+            {% if key[0] == attr_upper_klass_name and key[2] == attr.name and target[1] == type_col_role_and_name %}
               {% assign name_col_role_and_name = target[0] | append: ":" | append: attr.name %}
+              {% assign attr_upper_klass_name = target[0] %}
               {% break %}
             {% endif %}
           {% elsif key.size == 1 %}
             {% comment %}Match on attribute name only{% endcomment %}
-            {% if parts[0] == attr.name %}
-              {% assign target = parts[1] | split: "|" %}
+            {% if parts[0] == attr.name and target[1] == type_col_role_and_name %}
               {% assign name_col_role_and_name = target[0] | append: ":" | append: attr.name %}
               {% break %}
             {% endif %}
@@ -304,21 +306,23 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
         {% if attr_upper_klass_name == "uro" or citygml_ns contains attr_upper_klass_name %}
 
         {% assign name_col_role_and_name = attr_upper_klass_name | append: ":" | append: attr.name %}
+        {% assign type_col_role_and_name = attr.type_ns | append: ":" | append: attr.type %}
+
         {% for mapping_entry in mapping_keys %}
           {% assign parts = mapping_entry | split: "=>" %}
           {% assign key = parts[0] | split: "|" %}
+          {% assign target = parts[1] | split: "|" %}
           {% if key.size == 3 %}
             {% comment %}Match on package|class|attribute{% endcomment %}
-            {% if key[0] == attr_upper_klass_name and key[1] == klass.name and key[2] == attr.name %}
-              {% assign target = parts[1] | split: "|" %}
+            {% if key[0] == attr_upper_klass_name and key[2] == attr.name and target[1] == type_col_role_and_name %}
               {% assign name_col_role_and_name = target[0] | append: ":" | append: attr.name %}
               {% break %}
             {% endif %}
           {% elsif key.size == 1 %}
             {% comment %}Match on attribute name only{% endcomment %}
-            {% if parts[0] == attr.name %}
-              {% assign target = parts[1] | split: "|" %}
+            {% if parts[0] == attr.name and target[1] == type_col_role_and_name %}
               {% assign name_col_role_and_name = target[0] | append: ":" | append: attr.name %}
+              {% assign attr_upper_klass_name = target[0] %}
               {% break %}
             {% endif %}
           {% endif %}
