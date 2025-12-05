@@ -1,16 +1,130 @@
+{%- comment -%}
+==============================================
+Initialize global variables and mappings
+==============================================
+{%- endcomment -%}
 {% assign root = klass.generalization %}
 {% assign citygml_ns = "app,bldg,brid,core,dem,frn,gen,grp,luse,tran,tun,veg,wtr" | split: "," %}
+
+{%- comment -%}Format upper class name{%- endcomment -%}
 {%- capture upper_klass_name -%}
 {{ root.general.upper_klass.name }}:{{ root.general.name }}
 {%- endcapture -%}
 {%- if upper_klass_name == ":" -%}
   {%- assign upper_klass_name = "&#x2014;" -%}
 {%- endif -%}
-{%- capture stereotype -%}<< {{ root.stereotype }} >>{%- endcapture -%}
-{%- if stereotype == "<<  >>" -%}
+
+{%- comment -%}Format stereotype{%- endcomment -%}
+{%- capture stereotype -%}«{{ root.stereotype }}»{%- endcapture -%}
+{%- if stereotype == "«»" -%}
   {%- assign stereotype = " " -%}
 {%- endif -%}
 
+{%- comment -%}
+Build element mapping lookup table from YAML structure
+Key format: "package|class|attribute=>target_type"
+{%- endcomment -%}
+{% assign mapping_keys = "
+bldg|AbstractBuilding|bldgDataQualityAttribute=>uro:DataQualityAttribute,
+bldg|AbstractBuilding|bldgDisasterRiskAttribute=>uro:DisasterRiskAttribute,
+bldg|AbstractBuilding|bldgDmAttribute=>uro:DmAttribute,
+bldg|AbstractBuilding|bldgFacilityAttribute=>uro:FacilityAttribute,
+bldg|AbstractBuilding|bldgFacilityIdAttribute=>uro:FacilityIdAttribute,
+bldg|AbstractBuilding|bldgFacilityTypeAttribute=>uro:FacilityTypeAttribute,
+bldg|AbstractBuilding|bldgKeyValuePairAttribute=>uro:KeyValuePairAttribute,
+bldg|AbstractBuilding|bldgRealEstateIDAttribute=>uro:RealEstateIDAttribute,
+bldg|AbstractBuilding|bldgUsecaseAttribute=>uro:BuildingUsecaseAttribute,
+brid|AbstractBridge|bridBaseAttribute=>uro:ConstructionBaseAttribute,
+brid|AbstractBridge|bridDataQualityAttribute=>uro:DataQualityAttribute,
+brid|AbstractBridge|bridDisasterRiskAttribute=>uro:DisasterRiskAttribute,
+brid|AbstractBridge|bridDmAttribute=>uro:DmAttribute,
+brid|AbstractBridge|bridFacilityAttribute=>uro:FacilityAttribute,
+brid|AbstractBridge|bridFacilityIdAttribute=>uro:FacilityIdAttribute,
+brid|AbstractBridge|bridFacilityTypeAttribute=>uro:FacilityTypeAttribute,
+brid|AbstractBridge|bridFunctionalAttribute=>uro:BridgeFunctionalAttribute,
+brid|AbstractBridge|bridKeyValuePairAttribute=>uro:KeyValuePairAttribute,
+brid|AbstractBridge|bridRiskAssessmentAttribute=>uro:ConstructionRiskAssessmentAttribute,
+brid|AbstractBridge|bridStructureAttribute=>uro:BridgeStructureAttribute,
+bldg|AbstractBuilding|buildingDetailAttribute=>uro:BuildingDetailAttribute,
+bldg|AbstractBuilding|buildingIDAttribute=>uro:BuildingIDAttribute,
+frn|CityFurniture|cityFurnitureDetailAttribute=>uro:CityFurnitureDetailAttribute,
+dem|ReliefFeature|demDataQualityAttribute=>uro:DataQualityAttribute,
+dem|ReliefComponent|demDmAttribute=>uro:DmAttribute,
+dem|ReliefFeature|demKeyValuePairAttribute=>uro:KeyValuePairAttribute,
+wtr|WaterBody|floodingRiskAttribute=>uro:FloodingRiskAttribute,
+frn|CityFurniture|frnDataQualityAttribute=>uro:DataQualityAttribute,
+frn|CityFurniture|frnDmAttribute=>uro:DmAttribute,
+frn|CityFurniture|frnFacilityAttribute=>uro:FacilityAttribute,
+frn|CityFurniture|frnFacilityIdAttribute=>uro:FacilityIdAttribute,
+frn|CityFurniture|frnFacilityTypeAttribute=>uro:FacilityTypeAttribute,
+frn|CityFurniture|frnKeyValuePairAttribute=>uro:KeyValuePairAttribute,
+bldg|BoundarySurface|ifcBoundarySurfaceAttribute=>uro:IfcAttribute,
+bldg|AbstractBuilding|ifcBuildingAttribute=>uro:IfcAttribute,
+bldg|BuildingFurniture|ifcBuildingFurnitureAttribute=>uro:IfcAttribute,
+bldg|BuildingInstallation|ifcBuildingInstallationAttribute=>uro:IfcAttribute,
+grp|CityObjectGroup|ifcBuildingStoreyAttribute=>uro:IfcAttribute,
+bldg|IntBuildingInstallation|ifcIntBuildingInstallationAttribute=>uro:IfcAttribute,
+luse|LandUse|ifcLandUseAttribute=>uro:IfcAttribute,
+bldg|Opening|ifcOpeningAttribute=>uro:IfcAttribute,
+bldg|Room|ifcRoomAttribute=>uro:IfcAttribute,
+bldg|BoundarySurface|indoorBoundarySurfaceAttribute=>uro:IndoorAttribute,
+bldg|AbstractBuilding|indoorBuildingAttribute=>uro:IndoorAttribute,
+bldg|BuildingFurniture|indoorFurnitureAttribute=>uro:IndoorAttribute,
+bldg|IntBuildingInstallation|indoorIntInstallationAttribute=>uro:IndoorAttribute,
+bldg|Opening|indoorOpeningAttribute=>uro:IndoorAttribute,
+bldg|Room|indoorRoomAttribute=>uro:IndoorAttribute,
+grp|CityObjectGroup|indoorStoreyAttribute=>uro:IndoorAttribute,
+luse|LandUse|landUseDetailAttribute=>uro:LandUseDetailAttribute,
+bldg|AbstractBuilding|largeCustomerFacilityAttribute=>uro:LargeCustomerFacilityAttribute,
+luse|LandUse|luseDataQualityAttribute=>uro:DataQualityAttribute,
+luse|LandUse|luseDmAttribute=>uro:DmAttribute,
+luse|LandUse|luseFacilityAttribute=>uro:FacilityAttribute,
+luse|LandUse|luseFacilityIdAttribute=>uro:FacilityIdAttribute,
+luse|LandUse|luseFacilityTypeAttribute=>uro:FacilityTypeAttribute,
+luse|LandUse|luseKeyValuePairAttribute=>uro:KeyValuePairAttribute,
+core|CityObject|pointCloud=>uro:AbstractPointCloud,
+tran|Railway|railwayRouteAttribute=>uro:RailwayRouteAttribute,
+tran|TrafficArea|railwayTrackAttribute=>uro:RailwayTrackAttribute,
+tran|Road|roadStatus=>uro:RoadType,
+tran|Road|roadStructureAttribute=>uro:RoadStructureAttribute,
+tran|Square|squareUrbanPlanAttribute=>uro:SquareUrbanPlanAttribute,
+tran|Track|trackAttribute=>uro:TrackAttribute,
+tran|TrafficArea|trafficAreaStructureAttribute=>uro:TrafficAreaStructureAttribute,
+tran|Road|trafficVolumeAttribute=>uro:TrafficVolumeAttribute,
+tran|TransportationComplex|tranDataQualityAttribute=>uro:DataQualityAttribute,
+tran|TransportationComplex|tranDmAttribute=>uro:DmAttribute,
+tran|TransportationComplex|tranFacilityAttribute=>uro:FacilityAttribute,
+tran|TransportationComplex|tranFacilityIdAttribute=>uro:FacilityIdAttribute,
+tran|TransportationComplex|tranFacilityTypeAttribute=>uro:FacilityTypeAttribute,
+tran|TransportationComplex|tranKeyValuePairAttribute=>uro:KeyValuePairAttribute,
+tran|TransportationComplex|tranUsecaseAttribute=>uro:TrafficObjectUsecaseAttribute,
+tun|AbstractTunnel|tunBaseAttribute=>uro:ConstructionBaseAttribute,
+tun|AbstractTunnel|tunDataQualityAttribute=>uro:DataQualityAttribute,
+tun|AbstractTunnel|tunDisasterRiskAttribute=>uro:DisasterRiskAttribute,
+tun|AbstractTunnel|tunDmAttribute=>uro:DmAttribute,
+tun|AbstractTunnel|tunFacilityAttribute=>uro:FacilityAttribute,
+tun|AbstractTunnel|tunFacilityIdAttribute=>uro:FacilityIdAttribute,
+tun|AbstractTunnel|tunFacilityTypeAttribute=>uro:FacilityTypeAttribute,
+tun|AbstractTunnel|tunFunctionalAttribute=>uro:TunnelFunctionalAttribute,
+tun|AbstractTunnel|tunKeyValuePairAttribute=>uro:KeyValuePairAttribute,
+tun|AbstractTunnel|tunRiskAssessmentAttribute=>uro:ConstructionRiskAssessmentAttribute,
+tun|AbstractTunnel|tunStructureAttribute=>uro:TunnelStructureAttribute,
+veg|VegetationObject|vegDataQualityAttribute=>uro:DataQualityAttribute,
+veg|VegetationObject|vegDmAttribute=>uro:DmAttribute,
+veg|VegetationObject|vegFacilityAttribute=>uro:FacilityAttribute,
+veg|VegetationObject|vegFacilityIdAttribute=>uro:FacilityIdAttribute,
+veg|VegetationObject|vegFacilityTypeAttribute=>uro:FacilityTypeAttribute,
+veg|VegetationObject|vegKeyValuePairAttribute=>uro:KeyValuePairAttribute,
+wtr|WaterBody|waterBodyDetailAttribute=>uro:WaterBodyDetailAttribute,
+wtr|WaterBody|wtrDataQualityAttribute=>uro:DataQualityAttribute,
+wtr|WaterBody|wtrDmAttribute=>uro:DmAttribute,
+wtr|WaterBody|wtrFacilityAttribute=>uro:FacilityAttribute,
+wtr|WaterBody|wtrFacilityIdAttribute=>uro:FacilityIdAttribute,
+wtr|WaterBody|wtrFacilityTypeAttribute=>uro:FacilityTypeAttribute,
+wtr|WaterBody|wtrKeyValuePairAttribute=>uro:KeyValuePairAttribute
+" | strip_newlines | split: "," %}
+
+{%- comment -%}Configure table columns{%- endcomment -%}
 {%- if klass.has_guidance? -%}
   {%- assign cols_format = "1a,1a,2a,1a" -%}
   {%- assign cols_number = 4 -%}
@@ -30,54 +144,53 @@ h| ステレオタイプ {{ cols_header }}+| {{ stereotype }}
 {% if root.inherited_props.size > 0 %}
 {{ cols_number }}+h| 継承する属性
 h| 属性名 h| 属性の型及び多重度 h| 定義 {% if klass.has_guidance? %} h| 補足{%- endif %}
-{% endif %}
 {% for attr in root.inherited_props %}
-{% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
-{%- capture name_col -%}
-  {%- if attr.used? == false -%}
-    ({{ attr_upper_klass_name }}:{{ attr.name }}) +
-    [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
-  {%- else -%}
-    {{ attr_upper_klass_name }}:{{ attr.name }} +
-    [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
-  {%- endif -%}
-{%- endcapture -%}
-| {{ name_col }}
-| {{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
-| {{ attr.definition }}
-{% if klass.has_guidance? -%} | {{ attr.guidance }}{%- endif %}{% if attr.used? == false %}tr-style:[background-color: grey]{% endif %}
+  {% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
+  {%- capture name_col -%}
+    {%- if attr.used? == false -%}
+      ({{ attr_upper_klass_name }}:{{ attr.name }}) +
+      [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
+    {%- else -%}
+      {{ attr_upper_klass_name }}:{{ attr.name }} +
+      [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
+    {%- endif -%}
+  {%- endcapture -%}
+  | {{ name_col }}
+  | {{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
+  | {{ attr.definition }}
+  {% if klass.has_guidance? -%} | {{ attr.guidance }}{%- endif %}{% if attr.used? == false %}tr-style:[background-color: grey]{% endif %}
 {% endfor %}
+{% endif %}
 
 {% if root.owned_props.size > 0 %}
 {{ cols_number }}+h| 自身に定義された属性
 h| 属性名 h| 属性の型及び多重度 h| 定義 {% if klass.has_guidance? %} h| 補足{%- endif %}
-{% endif %}
 {% for attr in root.owned_props %}
-{% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
-{%- capture name_col -%}
-  {%- if attr.used? == false -%}
-    ({{ attr_upper_klass_name }}:{{ attr.name }}) +
-    [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
-  {%- else -%}
-    {{ attr_upper_klass_name }}:{{ attr.name }} +
-    [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
-  {%- endif -%}
-{%- endcapture -%}
-| {{ name_col }}
-| {{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
-| {{ attr.definition }}
-{% if klass.has_guidance? -%} | {{ attr.guidance }}{%- endif %}{% if attr.used? == false %}tr-style:[background-color: grey]{% endif %}
+  {% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
+  {%- capture name_col -%}
+    {%- if attr.used? == false -%}
+      ({{ attr_upper_klass_name }}:{{ attr.name }}) +
+      [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
+    {%- else -%}
+      {{ attr_upper_klass_name }}:{{ attr.name }} +
+      [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
+    {%- endif -%}
+  {%- endcapture -%}
+  | {{ name_col }}
+  | {{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
+  | {{ attr.definition }}
+  {% if klass.has_guidance? -%} | {{ attr.guidance }}{%- endif %}{% if attr.used? == false %}tr-style:[background-color: grey]{% endif %}
 {% endfor %}
+{% endif %}
 
 {% if root.sorted_inherited_assoc_props.size > 0 %}
 {{ cols_number }}+h| 継承する関連役割
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.has_guidance? %} h| 補足{%- endif %}
-{% assign all_gen_names = '' %}
-{% for attr in root.sorted_inherited_assoc_props %}
-  {% assign all_gen_names = all_gen_names | append: ',' | append: attr.gen_name %}
-{% endfor %}  
-{% assign all_gens = all_gen_names | split: ',' | uniq %}
-{% endif %}
+  {% assign all_gen_names = '' %}
+  {% for attr in root.sorted_inherited_assoc_props %}
+    {% assign all_gen_names = all_gen_names | append: ',' | append: attr.gen_name %}
+  {% endfor %}
+  {% assign all_gens = all_gen_names | split: ',' | uniq %}
 {% for cur_gen in all_gens %}
   {% assign performed = false %}
   {% for attr in root.sorted_inherited_assoc_props %}
@@ -85,13 +198,27 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
     {% unless performed %}
       {% for attr in props_with_same_gen %}
         {% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
-        {% if citygml_ns contains attr_upper_klass_name %}
+        {% if attr.type_ns == "gen" %}
+          {% assign attr_upper_klass_name = "gen" %}
+        {% endif %}
+        {% if attr_upper_klass_name == "uro" or citygml_ns contains attr_upper_klass_name %}
+
+        {% assign name_col_role_and_name = attr_upper_klass_name | append: ":" | append: attr.name %}
+        {% for mapping_entry in mapping_keys %}
+          {% assign parts = mapping_entry | split: "=>" %}
+          {% assign key = parts[0] | split: "|" %}
+          {% if key[0] == attr_upper_klass_name and key[1] == klass.name and key[2] == attr.name %}
+            {% assign name_col_role_and_name = parts[1] %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+
         {%- capture name_col -%}
           {%- if attr.used? == false -%}
-            ({{ attr_upper_klass_name }}:{{ attr.name }}) +
+            ({{  name_col_role_and_name }}) +
             [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
           {%- else -%}
-            {{ attr_upper_klass_name }}:{{ attr.name }} +
+            {{  name_col_role_and_name }} +
             [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
           {%- endif -%}
         {%- endcapture -%}
@@ -123,6 +250,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
     {% endunless %}
   {% endfor %}
 {% endfor %}
+{% endif %}
 
 {% if root.sorted_assoc_props.size > 0 %}
 {{ cols_number }}+h| 自身に定義された関連役割
@@ -130,7 +258,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
 {% assign all_gen_names = '' %}
 {% for attr in root.sorted_assoc_props %}
   {% assign all_gen_names = all_gen_names | append: ',' | append: attr.gen_name %}
-{% endfor %}  
+{% endfor %}
 {% assign all_gens = all_gen_names | split: ',' | uniq %}
 {% endif %}
 {% for cur_gen in all_gens %}
@@ -140,13 +268,27 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
     {% unless performed %}
       {% for attr in props_with_same_gen %}
         {% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
-        {% if citygml_ns contains attr_upper_klass_name %}
+        {% if attr.type_ns == "gen" %}
+          {% assign attr_upper_klass_name = "gen" %}
+        {% endif %}
+        {% if attr_upper_klass_name == "uro" or citygml_ns contains attr_upper_klass_name %}
+
+        {% assign name_col_role_and_name = attr_upper_klass_name | append: ":" | append: attr.name %}
+        {% for mapping_entry in mapping_keys %}
+          {% assign parts = mapping_entry | split: "=>" %}
+          {% assign key = parts[0] | split: "|" %}
+          {% if key[0] == attr_upper_klass_name and key[1] == klass.name and key[2] == attr.name %}
+            {% assign name_col_role_and_name = parts[1] %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+
         {%- capture name_col -%}
           {%- if attr.used? == false -%}
-            ({{ attr_upper_klass_name }}:{{ attr.name }}) +
+            ({{ name_col_role_and_name }}) +
             [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
           {%- else -%}
-            {{ attr_upper_klass_name }}:{{ attr.name }} +
+            {{ name_col_role_and_name }} +
             [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
           {%- endif -%}
         {%- endcapture -%}
