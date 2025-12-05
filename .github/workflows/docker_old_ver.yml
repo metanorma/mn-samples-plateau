@@ -20,7 +20,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: metanorma/metanorma:1.13.0
+      image: metanorma/metanorma:1.12.3
     steps:
       - name: Checkout
         uses: actions/checkout@v4
