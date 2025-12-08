@@ -19,20 +19,39 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container:
-      image: metanorma/metanorma:latest
+    # TODO: We need to use local Gemfile due to #465
+    # container:
+    #   image: metanorma/metanorma:latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           submodules: true
 
-      - name: Print Metanorma version
-        run: metanorma --version
+      - name: Cache Metanorma assets
+        uses: actions-mn/cache@v1
 
-      - name: Cache or generate Metanorma XML
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.4'
+          bundler-cache: true
+
+      # Uses https://github.com/metanorma/ci/blob/main/inkscape-setup-action/action.yml
+      - name: Install Inkscape
+        uses: metanorma/ci/inkscape-setup-action@main
+
+      - name: Update Fontist
+        run: bundle exec fontist update
+
+      - name: Print Metanorma version
+        run: bundle exec metanorma --version
+
+      - name: Metanorma generate site
         uses: actions-mn/build-and-publish@v2
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          use-bundler: true
           agree-to-terms: true
           destination: artifact
           artifact-name: mn
@@ -53,7 +72,7 @@ jobs:
 
     steps:
       - name: Download Metanorma artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v6
         with:
           name: mn
 
@@ -99,7 +118,7 @@ jobs:
             --path-prefix ${{ matrix.env.prefix }}${{ matrix.document.url }} \
             --current-rev main
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v5
         with:
           name: fl-${{ matrix.env.name }}-${{ matrix.document.dir }}
           path: dist
@@ -123,7 +142,7 @@ jobs:
         run: mkdir dist
 
       - name: Download HTML artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v6
         with:
           pattern: fl-ghp-*
           path: dist
@@ -133,7 +152,7 @@ jobs:
         run: ls -l dist
 
       - name: Upload pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: dist
 
