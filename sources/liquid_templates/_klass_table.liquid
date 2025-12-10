@@ -4,7 +4,7 @@ Initialize global variables and mappings
 ==============================================
 {%- endcomment -%}
 {% assign root = klass.generalization %}
-{% assign citygml_ns = "app,bldg,brid,core,dem,frn,gen,grp,luse,tran,tun,veg,wtr" | split: "," %}
+{% assign citygml_ns = "app,bldg,brid,core,dem,frn,gen,grp,luse,tran,tun,veg,wtr,uro" | split: "," %}
 
 {%- comment -%}Format upper class name{%- endcomment -%}
 {%- capture upper_klass_name -%}
@@ -220,7 +220,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
         {% if attr.type_ns == "gen" %}
           {% assign attr_upper_klass_name = "gen" %}
         {% endif %}
-        {% if attr_upper_klass_name == "uro" or citygml_ns contains attr_upper_klass_name %}
+        {% if citygml_ns contains attr_upper_klass_name %}
 
         {% assign name_col_role_and_name = attr_upper_klass_name | append: ":" | append: attr.name %}
         {% assign type_col_role_and_name = attr.type_ns | append: ":" | append: attr.type %}
@@ -303,7 +303,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
         {% if attr.type_ns == "gen" %}
           {% assign attr_upper_klass_name = "gen" %}
         {% endif %}
-        {% if attr_upper_klass_name == "uro" or citygml_ns contains attr_upper_klass_name %}
+        {% if citygml_ns contains attr_upper_klass_name %}
 
         {% assign name_col_role_and_name = attr_upper_klass_name | append: ":" | append: attr.name %}
         {% assign type_col_role_and_name = attr.type_ns | append: ":" | append: attr.type %}
