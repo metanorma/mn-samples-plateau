@@ -143,6 +143,59 @@ keyValuePairAttribute=>urf|uro:KeyValuePairAttribute,
 urfDmAttribute=>urf|uro:DmAttribute
 " | strip_newlines | split: "," %}
 
+{% assign mapping_types = "
+Address=>core:Address,
+BreakdownOfNominalArea=>urf:BreakdownOfNominalArea,
+CircularCurveType=>uro:CircularCurveType,
+Color=>core:Color,
+ColorPlusOpacity=>core:ColorPlusOpacity,
+ConditionOfConstructionValue=>uro:ConditionOfConstructionValue,
+ConstructionEvent=>uro:ConstructionEvent,
+ControlPointType=>uro:ControlPointType,
+CountermeasuresCost=>uro:CountermeasuresCost,
+Description=>gml:description,
+doubleBetween0and1=>core:doubleBetween0and1,
+EconomicActivitySumType=>urf:EconomicActivitySumType,
+Elevation=>uro:Elevation,
+Height=>uro:Height,
+HightStatusValue=>uro:HightStatusValue,
+IfcAxis2Placement3D=>uro:IfcAxis2Placement3D,
+IfcClassification=>uro:IfcClassification,
+IfcCoordinateReferenceSystem=>uro:IfcCoordinateReferenceSystem,
+IfcCoordinateReferenceSystemSelect=>uro:IfcCoordinateReferenceSystemSelect,
+IfcElementCompositionEnum=>uro:IfcElementCompositionEnum,
+IfcGeometricRepresentationContext=>uro:IfcGeometricRepresentationContext,
+ifcInternalOrExternalEnum=>uro:ifcInternalOrExternalEnum,
+IfcTransportElementTypeEnum=>uro:IfcTransportElementTypeEnum,
+IfcUnit=>uro:IfcUnit,
+IfcUnitEnum=>uro:IfcUnitEnum,
+integerBetween0and4=>core:integerBetween0and4,
+LandPricePerLandUseType=>urf:LandPricePerLandUseType,
+LongevityMeasures=>uro:LongevityMeasures,
+NumberOfFacilities=>uro:NumberOfFacilities,
+NumberOfHouseholdsType=>urf:NumberOfHouseholdsType,
+Occupancy=>uro:Occupancy,
+ParkHealthAssessment=>uro:ParkHealthAssessment,
+Point=>gml:Point,
+PopulationByAgeAndSexType=>urf:PopulationByAgeAndSexType,
+RelativeToTerrainType=>core:RelativeToTerrainType,
+RelativeToWaterType=>core:RelativeToWaterType,
+RepairsBeforeParkHealthAssessment=>uro:RepairsBeforeParkHealthAssessment,
+SlopeType=>uro:SlopeType,
+StructureDetails=>urf:StructureDetails,
+Surface=>gml:Surface,
+TextureTypeType=>core:TextureTypeType,
+TransformationMatrix2x2=>core:TransformationMatrix2x2,
+TransformationMatrix3x4=>core:TransformationMatrix3x4,
+TransformationMatrix4x4=>core:TransformationMatrix4x4,
+TransitionCurveType=>uro:TransitionCurveType,
+UserDefinedValue=>uro:UserDefinedValue,
+ValueByCodes=>urf:ValueByCodes,
+VerticalCurveType=>uro:VerticalCurveType,
+WeatherObservationType=>urf:WeatherObservationType,
+WrapModeType=>core:WrapModeType
+" | strip_newlines | split: "," %}
+
 {%- comment -%}Configure table columns{%- endcomment -%}
 {%- if klass.has_guidance? -%}
   {%- assign cols_format = "1a,1a,2a,1a" -%}
@@ -174,8 +227,16 @@ h| 属性名 h| 属性の型及び多重度 h| 定義 {% if klass.has_guidance? 
       [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
     {%- endif -%}
   {%- endcapture -%}
+  {% assign type_col = attr.type %}
+  {% for mapping_type in mapping_types %}
+    {% assign parts = mapping_type | split: "=>" %}
+    {% if parts[0] == attr.type %}
+      {% assign type_col = parts[1] %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
   | {{ name_col }}
-  | {{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
+  | {{ type_col }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
   | {{ attr.definition }}
   {% if klass.has_guidance? -%} | {{ attr.guidance }}{%- endif %}{% if attr.used? == false %}tr-style:[background-color: grey]{% endif %}
 {% endfor %}
@@ -195,8 +256,16 @@ h| 属性名 h| 属性の型及び多重度 h| 定義 {% if klass.has_guidance? 
       [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
     {%- endif -%}
   {%- endcapture -%}
+  {% assign type_col = attr.type %}
+  {% for mapping_type in mapping_types %}
+    {% assign parts = mapping_type | split: "=>" %}
+    {% if parts[0] == attr.type %}
+      {% assign type_col = parts[1] %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
   | {{ name_col }}
-  | {{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
+  | {{ type_col }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
   | {{ attr.definition }}
   {% if klass.has_guidance? -%} | {{ attr.guidance }}{%- endif %}{% if attr.used? == false %}tr-style:[background-color: grey]{% endif %}
 {% endfor %}
@@ -233,7 +302,6 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
             {% comment %}Match on package|class|attribute{% endcomment %}
             {% if key[0] == attr_upper_klass_name and key[2] == attr.name and target[1] == type_col_role_and_name %}
               {% assign name_col_role_and_name = target[0] | append: ":" | append: attr.name %}
-              {% comment %} {% assign attr_upper_klass_name = target[0] %} {% endcomment %}
               {% break %}
             {% endif %}
           {% elsif key.size == 1 %}
@@ -322,7 +390,6 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
             {% comment %}Match on attribute name only{% endcomment %}
             {% if parts[0] == attr.name and target[1] == type_col_role_and_name %}
               {% assign name_col_role_and_name = target[0] | append: ":" | append: attr.name %}
-              {% comment %} {% assign attr_upper_klass_name = target[0] %} {% endcomment %}
               {% break %}
             {% endif %}
           {% endif %}
