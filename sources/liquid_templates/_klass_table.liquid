@@ -286,9 +286,6 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
     {% unless performed %}
       {% for attr in props_with_same_gen %}
         {% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
-        {% if attr.type_ns == "gen" %}
-          {% assign attr_upper_klass_name = "gen" %}
-        {% endif %}
         {% if citygml_ns contains attr_upper_klass_name %}
 
         {% assign name_col_role_and_name = attr_upper_klass_name | append: ":" | append: attr.name %}
