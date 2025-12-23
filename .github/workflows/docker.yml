@@ -117,7 +117,7 @@ jobs:
 
       - name: "Firelight: append HTML overrides for doc ${{ matrix.document.dir }}"
         run: |
-          sed -i '/<\/body>/r firelight-overrides/${{ matrix.document.url }}.html' dist/${{ matrix.document.url }}/index.html
+          sed -i '/<\/body>/e cat firelight-overrides/${{ matrix.document.url }}.html' dist/${{ matrix.document.url }}/index.html
 
       - uses: actions/upload-artifact@v4
         with:
