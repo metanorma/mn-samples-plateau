@@ -115,6 +115,10 @@ jobs:
             --path-prefix ${{ matrix.env.prefix }}${{ matrix.document.url }} \
             --current-rev main
 
+      - name: "Firelight: append HTML overrides for doc ${{ matrix.document.dir }}"
+        run: |
+          sed -i '.bak' '/<\/body>/r firelight-overrides/${{ matrix.document.url }}.html' dist/${{ matrix.document.url }}/index.html
+
       - uses: actions/upload-artifact@v4
         with:
           name: fl-${{ matrix.env.name }}-${{ matrix.document.dir }}
