@@ -12,6 +12,7 @@ gem "metanorma-iso", git: "https://github.com/metanorma/metanorma-iso", branch: 
 gem "metanorma-jis", git: "https://github.com/metanorma/metanorma-jis", branch: "main"
 gem "metanorma-plateau", git: "https://github.com/metanorma/metanorma-plateau", branch: "main"
 gem "metanorma-utils", git: "https://github.com/metanorma/metanorma-utils", branch: "main"
+gem "mn-requirements", git: "https://github.com/metanorma/mn-requirements", branch: "main"
 gem "relaton-render", git: "https://github.com/relaton/relaton-render", branch: "main"
 gem "debug"
 gem "sassc-embedded"
