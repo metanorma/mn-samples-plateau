@@ -64,7 +64,7 @@ jobs:
     strategy:
       matrix:
         env: [{ name: 'ghp', prefix: '/mn-samples-plateau/' }, { name: 'mlit', prefix: '/' }]
-        document: [{ dir: "001", url: "plateaudocument" }, { dir: "002", url: "plateaudocument02" }]
+        document: [{ dir: "001", url: "plateaudocument", workspaceTitle: "3D都市モデル標準製品仕様書" }, { dir: "002", url: "plateaudocument02", workspaceTitle: "3D都市モデル標準作業手順書" }]
     name: Firelight build - Document ${{ matrix.document.dir }} on ${{ matrix.env.name }}
 
     steps:
@@ -91,6 +91,7 @@ jobs:
           {
             "version": "0.1",
             "entryPoint": "file:documents/${{ matrix.document.dir }}-v5/document.presentation.xml",
+            "workspaceTitle": "${{ matrix.document.workspaceTitle }}"
             "storeAdapters": [
               "git+https://github.com/metanorma/firelight#main/packages/metanorma-xml-store"
             ],
