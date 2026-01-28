@@ -592,7 +592,7 @@ Element
 [cols="3a,3a,6a,8a"]
 .橋梁モデル（LOD3）に含むべき地物と対応するCityGMLの地物型
 |===
-2+h| その他の構造物モデル（LOD3） +
+2+h| 橋梁モデル（LOD3） +
 に含むべき地物
 h| 対応するCityGMLの地物型
 h| LOD3
@@ -629,7 +629,8 @@ WallSurfaceとの区分が必要な場合に必須とする。
 
 .3+| 構造上不可欠な要素 | トラス、アーチ、パイロン | BridgeConstructionElement |  ●
 | 吊材、ケーブル | BridgeConstructionElement |  ●
-| 橋脚、橋台 | BridgeConstructionElement |  ■
+| 橋脚、橋台 | BridgeConstructionElement |  ■ +
+横断歩道橋、ペデストリアンデッキ及び跨線橋の場合に必須とする。
 .2+| 屋外付属物 | 高欄、地覆、親柱、庇、庇の柱、エレベータ、エスカレータ、手すり | BridgeInstallation |  ●
 | 階段、踊り場、スロープ | BridgeInstallation |  ●
 2+| 扉 | Door |  〇

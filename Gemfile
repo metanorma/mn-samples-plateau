@@ -14,5 +14,6 @@ gem "metanorma-plateau", git: "https://github.com/metanorma/metanorma-plateau", 
 gem "metanorma-utils", git: "https://github.com/metanorma/metanorma-utils", branch: "main"
 gem "mn-requirements", git: "https://github.com/metanorma/mn-requirements", branch: "main"
 gem "relaton-render", git: "https://github.com/relaton/relaton-render", branch: "main"
+gem "mn-requirements", git: "https://github.com/metanorma/mn-requirements", branch: "main"
 gem "debug"
 gem "sassc-embedded"
