@@ -207,9 +207,27 @@
 
 | 2026.03.19 | 5.1
 |
+2025年度は、以下の観点により2024年度の製品仕様を拡張し、標準製品仕様を改定した。
 
-. 改定内容の記述
+. 仕様の追加
+** データ更新についての規定を追加 
 
+. 誤記の修正
+** 参照するコードリスト名の修正
+*** uro:PublicSurveyDataQualityAttributeの属性 +
+uro:publicSurveySrcDescLod0、uro:publicSurveySrcDescLod1 、uro:publicSurveySrcDescLod2、uro:publicSurveySrcDescLod3及びuro:publicSurveySrcDescLod4
+*** urf:UrbanRedevelopmentProjectの属性urf:usage
+*** urf:HistoricSceneryMaintenanceAndImprovementDistrictPlanの属性urf:function
+*** urf:DisasterPreventionBlockImprovementZonePlanの属性urf:function
+** 本文中の不整合の修正
+*** 橋梁モデル（LOD3）における橋脚、橋台が必須となる条件（<<tab-4-64>>）
+*** 地形モデルの各地物型のgml:nameの定義文
+*** 部品となる地物型の属性core:creationDateの条件
+*** bldg:BuildingPartがuro:DataQualityAttributeを持つ場合のの属性uro:lod1HeightTypeの条件
+*** urf:ParkAttributeの属性urf:parkTypeNumber及びurf:parkSerialNumberの定義文
+*** メタデータのファイル名称の説明（<<tab-8-1>>）
+
+. 誤字脱字の修正
 
 |===
 
