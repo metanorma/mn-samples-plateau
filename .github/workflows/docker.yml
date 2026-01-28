@@ -91,7 +91,7 @@ jobs:
           {
             "version": "0.1",
             "entryPoint": "file:documents/${{ matrix.document.dir }}-v5/document.presentation.xml",
-            "workspaceTitle": "${{ matrix.document.workspaceTitle }}"
+            "workspaceTitle": "${{ matrix.document.workspaceTitle }}",
             "storeAdapters": [
               "git+https://github.com/metanorma/firelight#main/packages/metanorma-xml-store"
             ],
