@@ -115,7 +115,6 @@ h| 地物型 h| 空間属性 h| LOD0 h| LOD1 h| LOD2 h| LOD3 h| 適用
 3+| 第一種歴史的風土保存地区 +
 又は第二種歴史的風土保存地区
 | urf:ZoneForPreservationOfHistoricalLandscape
-
 3+| 緑地保全地域 | urf:GreenSpaceConservationDistrict
 3+| 特別緑地保全地域 | urf:SpecialGreenSpaceConservationDistrict
 3+| 緑化地域 | urf:TreePlantingDistrict
@@ -124,9 +123,7 @@ h| 地物型 h| 空間属性 h| LOD0 h| LOD1 h| LOD2 h| LOD3 h| 適用
 3+| 伝統的建造物群保存地区 | urf:ConservationZoneForClustersOfTraditionalStructures
 3+| 航空機騒音障害防止地区 +
 又は航空機騒音障害防止特別地区
-| urf:AircraftNoiseControlZone +
-urf:AircraftNoiseControlZone
-
+| urf:AircraftNoiseControlZone
 4+| 促進区域 | urf:ProjectPromotionArea .5+| <<toc4_10_02_06>>
 .4+| 3+| 市街地再開発促進区域 | urf:UrbanRedevelopmentPromotionArea
 3+| 土地区画整理促進区域 | urf:LandReadjustmentPromotionArea
@@ -176,7 +173,7 @@ urf:AircraftNoiseControlZone
 4+| 地区計画等 | .17+| <<toc4_10_02_19>>
 .19+| 3+| 地区計画 | urf:DistrictPlan
 .2+| 2+| 地区整備計画 | urf:DistrictDevelopmentPlan
-| | 地区施設 | urf:DistrictFacilityurf:DistrictFacility
+| | 地区施設 | urf:DistrictFacility
 3+| 沿道地区計画 | urf:RoadsideDistrictPlan
 .2+| 2+| 沿道地区整備計画 | urf:RoadsideDistrictImprovementPlan
 | | 沿道地区施設 | urf:RoadsideDistrictFacility
