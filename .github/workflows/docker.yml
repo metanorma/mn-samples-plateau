@@ -41,6 +41,13 @@ jobs:
       - name: Update Fontist
         run: bundle exec fontist update
 
+      - name: Re-install Fontist to global and install font using global fontist
+        run: |
+          gem install fontist
+          fontist --version
+          fontist update
+          fontist install "STIX Two Math"
+
       - name: Print Metanorma version
         run: bundle exec metanorma --version
 
