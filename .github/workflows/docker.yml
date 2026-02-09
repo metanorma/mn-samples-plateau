@@ -45,7 +45,7 @@ jobs:
         run: bundle exec metanorma --version
 
       - name: Cache or generate Metanorma XML
-        uses: actions-mn/build-and-publish@v2
+        uses: actions-mn/build-and-publish@feat/es2024-actions-migration
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           agree-to-terms: true
