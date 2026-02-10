@@ -48,6 +48,9 @@ jobs:
           fontist update
           fontist install "STIX Two Math"
 
+      - name: Bundler install
+        uses: metanorma/ci/docker-gem-install@main
+
       - name: Print Metanorma version
         run: bundle exec metanorma --version
 
