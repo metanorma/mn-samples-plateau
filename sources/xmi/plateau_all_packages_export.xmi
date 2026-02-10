@@ -37442,16 +37442,6 @@
 				<times created="2020/07/14 13:48:31" modified="2023/03/11 11:07:41"/>
 				<flags iscontrolled="0" isprotected="0" batchsave="0" batchload="0" usedtd="0" logxml="0"/>
 			</element>
-			<element xmi:idref="EAID_CEA68306_BC83_4809_A89A_9B9E7D45776D" xmi:type="uml:Text" scope="public">
-				<model package="EAPK_D0BD0C75_6B1B_4575_9419_A7D39C74DB71" tpos="151" ea_localid="515" ea_eleType="element"/>
-				<properties isSpecification="false" sType="Text" nType="76" scope="public"/>
-				<project author="048827" version="1.0" phase="1.0" created="2023/02/07 00:54:02" modified="2025/01/15 10:10:50" complexity="1" status="Proposed"/>
-				<code gentype="&lt;none&gt;"/>
-				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;" styleex="LegendOpts=31;LegendTypeObj=Filter=:;LegendTypeConn=Filter=:;LegendTypeObjV2=Filter&amp;_eq_^&amp;_sc_^;LegendTypeConnV2=Filter&amp;_eq_^&amp;_sc_^;"/>
-				<tags/>
-				<xrefs value="$XREFPROP=$XID={9320F87F-0FB6-4c4c-9F0C-90715458038D}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=GMLで定義されたクラス@ENDNAME;@TYPE=LEGEND_OBJECTSTYLE@ENDTYPE;@VALU=#Back_Ground_Color#=12648352;#Pen_Color#=0;#Pen_Size#=1;#Legend_Type#=LEGEND_OBJECTSTYLE;@ENDVALU;@PRMT=0@ENDPRMT;@ENDPROP;@PROP=@NAME=CityGMLで定義されたクラス@ENDNAME;@TYPE=LEGEND_OBJECTSTYLE@ENDTYPE;@VALU=#Back_Ground_Color#=13434879;#Pen_Color#=0;#Pen_Size#=1;#Legend_Type#=LEGEND_OBJECTSTYLE;@ENDVALU;@PRMT=1@ENDPRMT;@ENDPROP;@PROP=@NAME=i-URで定義されたクラス@ENDNAME;@TYPE=LEGEND_OBJECTSTYLE@ENDTYPE;@VALU=#Back_Ground_Color#=16764159;#Pen_Color#=0;#Pen_Size#=1;#Legend_Type#=LEGEND_OBJECTSTYLE;@ENDVALU;@PRMT=2@ENDPRMT;@ENDPROP;@PROP=@NAME=凡例@ENDNAME;@TYPE=LEGEND_STYLE_SETTINGS@ENDTYPE;@VALU=#TITLE#=凡例;#HEADINGSIZE#=16;#FONTCOLOR#=6303744;#BACKGROUNDCOLOR#=11646651;#BORDERCOLOR#=10659756;#BACKGROUNDISDEFAULT#=0;@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={CEA68306-BC83-4809-A89A-9B9E7D45776D}$CLT;$ENDXREF;"/>
-				<extendedProperties tagged="0" package_name="3D都市モデル"/>
-			</element>
 			<element xmi:idref="EAID_DC2D61B5_9BB5_435e_8645_0BA087605109" xmi:type="uml:Note" scope="public">
 				<model package="EAPK_D0BD0C75_6B1B_4575_9419_A7D39C74DB71" tpos="0" ea_localid="176" ea_eleType="element"/>
 				<properties documentation="gml:Surfaceの使用は推奨しない（gml:Polygon、gml:TriangulatedSurface, gml:OrientableSurfaceまたはgml:CompositeSurfaceの使用を推奨する）" isSpecification="false" sType="Note" nType="0" scope="public"/>
@@ -37477,6 +37467,16 @@
 				<links>
 					<NoteLink xmi:id="EAID_DB1CE506_0106_4248_B40D_876241F614CD" start="EAID_9FC32F79_D3EF_4cd4_B040_C06A1748CB14" end="EAID_99FF5F88_EBC5_4847_BC49_0DD7001FEDFB"/>
 				</links>
+			</element>
+			<element xmi:idref="EAID_CEA68306_BC83_4809_A89A_9B9E7D45776D" xmi:type="uml:Text" scope="public">
+				<model package="EAPK_D0BD0C75_6B1B_4575_9419_A7D39C74DB71" tpos="151" ea_localid="515" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Text" nType="76" scope="public"/>
+				<project author="048827" version="1.0" phase="1.0" created="2023/02/07 00:54:02" modified="2025/01/15 10:10:50" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;" styleex="LegendOpts=31;LegendTypeObj=Filter=:;LegendTypeConn=Filter=:;LegendTypeObjV2=Filter&amp;_eq_^&amp;_sc_^;LegendTypeConnV2=Filter&amp;_eq_^&amp;_sc_^;"/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={9320F87F-0FB6-4c4c-9F0C-90715458038D}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=GMLで定義されたクラス@ENDNAME;@TYPE=LEGEND_OBJECTSTYLE@ENDTYPE;@VALU=#Back_Ground_Color#=12648352;#Pen_Color#=0;#Pen_Size#=1;#Legend_Type#=LEGEND_OBJECTSTYLE;@ENDVALU;@PRMT=0@ENDPRMT;@ENDPROP;@PROP=@NAME=CityGMLで定義されたクラス@ENDNAME;@TYPE=LEGEND_OBJECTSTYLE@ENDTYPE;@VALU=#Back_Ground_Color#=13434879;#Pen_Color#=0;#Pen_Size#=1;#Legend_Type#=LEGEND_OBJECTSTYLE;@ENDVALU;@PRMT=1@ENDPRMT;@ENDPROP;@PROP=@NAME=i-URで定義されたクラス@ENDNAME;@TYPE=LEGEND_OBJECTSTYLE@ENDTYPE;@VALU=#Back_Ground_Color#=16764159;#Pen_Color#=0;#Pen_Size#=1;#Legend_Type#=LEGEND_OBJECTSTYLE;@ENDVALU;@PRMT=2@ENDPRMT;@ENDPROP;@PROP=@NAME=凡例@ENDNAME;@TYPE=LEGEND_STYLE_SETTINGS@ENDTYPE;@VALU=#TITLE#=凡例;#HEADINGSIZE#=16;#FONTCOLOR#=6303744;#BACKGROUNDCOLOR#=11646651;#BORDERCOLOR#=10659756;#BACKGROUNDISDEFAULT#=0;@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={CEA68306-BC83-4809-A89A-9B9E7D45776D}$CLT;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="3D都市モデル"/>
 			</element>
 			<element xmi:idref="EAPK_41E2FCE7_9854_45cf_B128_0B6A118D14A8" xmi:type="uml:Package" name="パッケージ図" scope="public">
 				<model package2="EAID_41E2FCE7_9854_45cf_B128_0B6A118D14A8" package="EAPK_D0BD0C75_6B1B_4575_9419_A7D39C74DB71" tpos="1" ea_localid="45" ea_eleType="package"/>
@@ -42880,8 +42880,8 @@
 			</element>
 			<element xmi:idref="EAID_1BD79A3D_C3F1_4809_B6E2_CF5A907027DA" xmi:type="uml:Class" name="ThreeDimensionalExtent" scope="public">
 				<model package="EAPK_703CD7E4_9939_4370_8AEB_B5B48ACC572F" tpos="4" ea_localid="309" ea_eleType="element"/>
-				<properties documentation="都市計画法第11条第3項に定められる「都市施設」について、適正かつ合理的な土地利用を図るため必要があるときに当該都市施設の区域の地下又は空間設けられる当該都市施設を整備する立体的な範囲。&#xA;&#xA;* urf:_UrbanFunctionから継承する主題属性のうち、urf:usage及びurf:referenceのみを対象とする。&#xA;* 属性urf:usageは、対象となる都市施設の種類とする。コードリスト（&amp;lt;&amp;lt;UrbanFacility_function.xml,UrbanFacility_function.xml&amp;gt;&amp;gt;）より選択する。&#xA;* 属性core:creationDateは運用上必須とする。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="10411407" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2025/10/07 12:07:42" complexity="1" status="設計中"/>
+				<properties documentation="都市計画法第11条第3項に定められる「都市施設」について、適正かつ合理的な土地利用を図るため必要があるときに当該都市施設の区域の地下又は空間設けられる当該都市施設を整備する立体的な範囲。&#xA;&#xA;* urf:_UrbanFunctionから継承する主題属性のうち、urf:usage及びurf:referenceのみを対象とする。&#xA;* 属性urf:usageは、対象となる都市施設の種類とする。コードリスト（&amp;lt;&amp;lt;UrbanFacility_function.xml,UrbanFacility_function.xml&amp;gt;&amp;gt;）より選択する。&#xA;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="10411407" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2026/01/28 15:17:41" complexity="1" status="設計中"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -43103,7 +43103,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_E4B288E1_2E06_4f85_9EF7_CDFC445A6C0E" name="cityArea" scope="Public">
 						<initial/>
-						<documentation value="準都市計画区域が複数市区町村に跨っている場合の、当該市区町村内の面積。単位はha（uom=&quot;ha&quot;）とする"/>
+						<documentation value="準都市計画区域が複数市区町村に跨っている場合の、当該市区町村内の面積。単位はha（uom=&quot;ha&quot;）とする。"/>
 						<model ea_localid="525" ea_guid="{E4B288E1-2E06-4f85-9EF7-CDFC445A6C0E}"/>
 						<properties type="gml:MeasureType" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0" scale="0"/>
@@ -47948,7 +47948,7 @@
 			<element xmi:idref="EAID_798561B9_1667_4627_90E7_6FDA0F8010EA" xmi:type="uml:Class" name="DistrictPlan" scope="public">
 				<model package="EAPK_703CD7E4_9939_4370_8AEB_B5B48ACC572F" tpos="117" ea_localid="235" ea_eleType="element"/>
 				<properties documentation="地区計画。地区計画とは、建築物の建築形態、公共施設その他の施設の配置等からみて、一体としてそれぞれの区域の特性にふさわしい態様を備えた良好な環境の各街区を整備し、開発し、及び保全するための計画。（都市計画法第12条の4第1項第1号） +&#xA;促進区を定める場合、「再開発促進区を定める地区計画」又は「開発整備促進区を定める地区計画」となる。&#xA;&#xA;* 属性gml:nameは、都市計画法第12条の4第2項で定める名称（地区計画を識別する名前）とする。多重度は任意となっているが、運用上必須とする。文字列とする。&#xA;* 属性urf:functionは、都市計画法第12条の4第2項に定める地区計画の種類とする。促進区を定める場合、当該地区計画は、再開発等促進区又は開発整備促進区を定める地区計画となる。コードリスト（&amp;lt;&amp;lt;DistrictPlan_function.xml,DistrictPlan_function.xml&amp;gt;&amp;gt;）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性urf:usageは使用しない。&#xA;* 属性urf:locationは、都市計画法第12条の4第2項に定める位置とする。町丁目又は字まで記載する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性urf:objectivesは、都市計画法第12条の5第2項第2号に定める当該地区計画の目標とする。&#xA;* 属性urf:policyは、都市計画法第12条の5第2項第3号に定める当該区域の整備、開発及び保全に関する方針とする。&#xA;* 属性core:creationDateは運用上必須とする。&#xA;* 関連役割urf:districtDevelopmentPlanは、都市計画法第12条の5第2項第1号に定める当該地区計画等に定められた地区整備計画とする。&#xA;* 関連役割urf:promotionDistrictは、当該地区計画等に再開発等促進区や開発整備促進区を定める場合の促進区とする。促進区を定める場合のみ作成する。促進区を定める場合、「再開発促進区を定める地区計画」又は「開発整備促進区を定める地区計画」となる。&#xA;&#xA;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="501525" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2025/10/07 12:15:33" complexity="1" status="設計中"/>
+				<project author="501525" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2026/01/28 14:53:48" complexity="1" status="設計中"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -48047,7 +48047,7 @@
 			<element xmi:idref="EAID_307C96F1_DDCB_43d3_939F_E15FE553914B" xmi:type="uml:Class" name="HistoricSceneryMaintenanceAndImprovementDistrictPlan" scope="public">
 				<model package="EAPK_703CD7E4_9939_4370_8AEB_B5B48ACC572F" tpos="119" ea_localid="292" ea_eleType="element"/>
 				<properties documentation="地域における歴史的風致の維持及び向上に関する法律（平成二十年法律第四十号）第31条第1項の規定による歴史的風致維持向上地区計画。&#xA;&#xA;* 属性gml:nameは、都市計画法第12条の4第2項で定める名称（地区計画を識別する名前）とする。多重度は任意となっているが、運用上必須とする。文字列とする。&#xA;* 属性urf:functionは、都市計画法第12条の4第2項に定める地区計画の種類とする。コードリスト（&amp;lt;&amp;lt;DistrictPlan_function.xml,DistrictPlan_function.xml&amp;gt;&amp;gt;）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性urf:usageは使用しない。&#xA;* 属性urf:locationは、都市計画法第12条の4第2項に定める位置とする。町丁目又は字まで記載する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性urf:objectivesは、地域における歴史的風致の維持及び向上に関する法律第31条第2項第2号に定める当該地区計画の目標とする。&#xA;* 属性urf:policyは、地域における歴史的風致の維持及び向上に関する法律第31条第2項第4号に定める当該地区計画の方針とする。&#xA;* 属性core:creationDateは運用上必須とする。&#xA;* 関連役割urf:districtDevelopmentPlanは、地域における歴史的風致の維持及び向上に関する法律第31条第2項第1号に示される歴史的風致維持向上地区整備計画とする。&#xA;* 関連役割urf:promotionDistrictは、使用しない。&#xA;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="10411407" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2025/10/07 12:15:49" complexity="1" status="設計中"/>
+				<project author="10411407" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2026/01/28 14:57:21" complexity="1" status="設計中"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -48164,8 +48164,8 @@
 			</element>
 			<element xmi:idref="EAID_331E7FB3_1C91_4c86_8ADD_49AA4ECD32A0" xmi:type="uml:Class" name="DistrictDevelopmentPlan" scope="public">
 				<model package="EAPK_703CD7E4_9939_4370_8AEB_B5B48ACC572F" tpos="123" ea_localid="278" ea_eleType="element"/>
-				<properties documentation="主として街区内の居住者等の利用に供される道路、公園その他の政令で定める施設（地区施設）及び建築物等の整備並びに土地の利用に関する計画。 +&#xA;urf:_UrbanFunctionから継承する主題属性のうち、urf:function、urf:reference、urf:reason及びurf:noteのみを対象とする。&#xA;&#xA;* 属性urf:functionは、都市計画法第12条の4第2項に定める地区整備計画の種類とする。コードリスト（&amp;lt;&amp;lt;DistrictDevelopmentPlan_function.xml,DistrictDevelopmentPlan_function.xml&amp;gt;&amp;gt;）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性core:creationDateは運用上必須とする。&#xA;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="501525" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2025/10/07 12:16:17" complexity="1" status="設計中"/>
+				<properties documentation="主として街区内の居住者等の利用に供される道路、公園その他の政令で定める施設（地区施設）及び建築物等の整備並びに土地の利用に関する計画。 +&#xA;urf:_UrbanFunctionから継承する主題属性のうち、urf:function、urf:reference、urf:reason及びurf:noteのみを対象とする。&#xA;&#xA;* 属性urf:functionは、都市計画法第12条の4第2項に定める地区整備計画の種類とする。コードリスト（&amp;lt;&amp;lt;DistrictDevelopmentPlan_function.xml,DistrictDevelopmentPlan_function.xml&amp;gt;&amp;gt;）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;&#xA;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="501525" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2026/01/28 14:54:07" complexity="1" status="設計中"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -48266,8 +48266,8 @@
 			</element>
 			<element xmi:idref="EAID_614F0EFF_F166_4998_8750_0C611AA2D6B3" xmi:type="uml:Class" name="SpecifiedBuildingZoneImprovementPlan" scope="public">
 				<model package="EAPK_703CD7E4_9939_4370_8AEB_B5B48ACC572F" tpos="124" ea_localid="260" ea_eleType="element"/>
-				<properties documentation="当該区域における特定防災機能を確保するための防災公共施設（都市計画施設を除く。以下「地区防災施設」という。）の区域（地区防災施設のうち建築物等と一体となって当該特定防災機能を確保するために整備されるべきもの（特定地区防災施設）にあっては、当該特定地区防災施設の区域及び当該建築物等の整備に関する計画。 +&#xA;urf:_UrbanFunctionから継承する主題属性のうち、urf:function、urf:reference、urf:reason及びurf:noteのみを対象とする。&#xA;&#xA;* 属性urf:functionは、都市計画法第12条の4第2項に定める地区整備計画の種類とする。コードリスト（&amp;lt;&amp;lt;DistrictDevelopmentPlan_function.xml,DistrictDevelopmentPlan_function.xml&amp;gt;&amp;gt;）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性urf:buildingRestrictionsは、密集市街地整備法第32条第4項第2号に定める建築物等の制限とする。&#xA;* 属性urf:districtFacilitiesAllocation、urf:urbanGreenSpaceConservation、urf:activityRestrictionInFarmland及びurf:landuseRestrictionsは使用しない。&#xA;* 属性core:creationDateは運用上必須とする。&#xA;* 関連役割urf:districtFacilityは、使用しない。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2025/10/07 12:16:49" complexity="1" status="Proposed"/>
+				<properties documentation="当該区域における特定防災機能を確保するための防災公共施設（都市計画施設を除く。以下「地区防災施設」という。）の区域（地区防災施設のうち建築物等と一体となって当該特定防災機能を確保するために整備されるべきもの（特定地区防災施設）にあっては、当該特定地区防災施設の区域及び当該建築物等の整備に関する計画。 +&#xA;urf:_UrbanFunctionから継承する主題属性のうち、urf:function、urf:reference、urf:reason及びurf:noteのみを対象とする。&#xA;&#xA;* 属性urf:functionは、都市計画法第12条の4第2項に定める地区整備計画の種類とする。コードリスト（&amp;lt;&amp;lt;DistrictDevelopmentPlan_function.xml,DistrictDevelopmentPlan_function.xml&amp;gt;&amp;gt;）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性urf:buildingRestrictionsは、密集市街地整備法第32条第4項第2号に定める建築物等の制限とする。&#xA;* 属性urf:districtFacilitiesAllocation、urf:urbanGreenSpaceConservation、urf:activityRestrictionInFarmland及びurf:landuseRestrictionsは使用しない。&#xA;* 関連役割urf:districtFacilityは、使用しない。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2026/01/28 15:01:40" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -48283,8 +48283,8 @@
 			</element>
 			<element xmi:idref="EAID_B18DB737_9CCE_4588_8AB5_227E4C200A67" xmi:type="uml:Class" name="DistrictImprovementPlanForDisasterPreventionBlockImprovementZonePlan" scope="public">
 				<model package="EAPK_703CD7E4_9939_4370_8AEB_B5B48ACC572F" tpos="125" ea_localid="265" ea_eleType="element"/>
-				<properties documentation="主として街区内の居住者等の利用に供される道路、公園その他の政令で定める施設（地区施設）及び建築物等（特定建築物地区整備計画の区域内の建築物等を除く。）の整備並びに土地の利用に関して、地区防災施設の区域以外の防災街区整備地区計画の区域について定める計画。 +&#xA;urf:_UrbanFunctionから継承する主題属性のうち、urf:function、urf:reference、urf:reason及びurf:noteのみを対象とする。&#xA;&#xA;* 属性urf:functionは、都市計画法第12条の4第2項に定める地区整備計画の種類とする。コードリスト（&amp;lt;&amp;lt;DistrictDevelopmentPlan_function.xml,DistrictDevelopmentPlan_function.xml&amp;gt;&amp;gt;）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性urf:districtFacilitiesAllocationは、密集市街地整備法第32条第4項第1号に定める地区施設の配置及び規模とする。&#xA;* 属性urf:buildingRestrictionsは、密集市街地整備法第32条第4項第2号に定める建築物等の制限とする。&#xA;* 属性urf:urbanGreenSpaceConservationは、密集市街地整備法第32条第4項第3号に定める現に存する樹林地、草地等で良好な居住環境を確保するため必要なものの保全に関する事項とする。&#xA;* 属性urf:activityRestrictionInFarmlandは、都市計画法第12条の5第7項第4号に定める現に存する農地（耕作の目的に供される土地）で農業の利便の増進と調和した良好な居住環境を確保するため必要なものにおける土地の形質の変更その他の行為の制限に関する事項とする。&#xA;* 属性urf:landuseRestrictionsは、密集市街地整備法第32条第4項第4号に定める土地の利用に関する事項とする。&#xA;* 属性core:creationDateは運用上必須とする。&#xA;* 関連役割urf:districtFacilityは、使用しない。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="10411407" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2025/10/07 12:16:42" complexity="1" status="設計中"/>
+				<properties documentation="主として街区内の居住者等の利用に供される道路、公園その他の政令で定める施設（地区施設）及び建築物等（特定建築物地区整備計画の区域内の建築物等を除く。）の整備並びに土地の利用に関して、地区防災施設の区域以外の防災街区整備地区計画の区域について定める計画。 +&#xA;urf:_UrbanFunctionから継承する主題属性のうち、urf:function、urf:reference、urf:reason及びurf:noteのみを対象とする。&#xA;&#xA;* 属性urf:functionは、都市計画法第12条の4第2項に定める地区整備計画の種類とする。コードリスト（&amp;lt;&amp;lt;DistrictDevelopmentPlan_function.xml,DistrictDevelopmentPlan_function.xml&amp;gt;&amp;gt;）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性urf:districtFacilitiesAllocationは、密集市街地整備法第32条第4項第1号に定める地区施設の配置及び規模とする。&#xA;* 属性urf:buildingRestrictionsは、密集市街地整備法第32条第4項第2号に定める建築物等の制限とする。&#xA;* 属性urf:urbanGreenSpaceConservationは、密集市街地整備法第32条第4項第3号に定める現に存する樹林地、草地等で良好な居住環境を確保するため必要なものの保全に関する事項とする。&#xA;* 属性urf:activityRestrictionInFarmlandは、都市計画法第12条の5第7項第4号に定める現に存する農地（耕作の目的に供される土地）で農業の利便の増進と調和した良好な居住環境を確保するため必要なものにおける土地の形質の変更その他の行為の制限に関する事項とする。&#xA;* 属性urf:landuseRestrictionsは、密集市街地整備法第32条第4項第4号に定める土地の利用に関する事項とする。&#xA;* 関連役割urf:districtFacilityは、使用しない。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="10411407" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2026/01/28 15:02:35" complexity="1" status="設計中"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -48300,8 +48300,8 @@
 			</element>
 			<element xmi:idref="EAID_3BA7632B_BA55_48a8_9ACA_568E87DBE6D8" xmi:type="uml:Class" name="DistrictImprovementPlanForHistoricSceneryMaintenanceAndImprovementDistrict" scope="public">
 				<model package="EAPK_703CD7E4_9939_4370_8AEB_B5B48ACC572F" tpos="126" ea_localid="327" ea_eleType="element"/>
-				<properties documentation="歴史的風致維持向上地区整備計画。主として街区内の居住者、滞在者その他の者の利用に供される道路、公園その他の政令で定める施設（都市計画施設を除く。地区施設）及び建築物等の整備並びに土地の利用に関する計画。 +&#xA;urf:_UrbanFunctionから継承する属性のうち、urf:function、urf:reference、urf:reason及びurf:noteのみを対象とする。&#xA;&#xA;* 属性urf:functionは、都市計画法第12条の4第2項に定める地区整備計画の種類とする。コードリスト（&amp;lt;&amp;lt;DistrictDevelopmentPlan_function.xml,DistrictDevelopmentPlan_function.xml&amp;gt;&amp;gt;）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性urf:districtFacilitiesAllocationは、地域における歴史的風致の維持及び向上に関する法律第31条第4項第1号に定める地区施設の配置及び規模とする。&#xA;* 属性urf:buildingRestrictionsは、地域における歴史的風致の維持及び向上に関する法律第31条第4項第2号に定める建築物等の制限とする。&#xA;* 属性urf:urbanGreenSpaceConservationは、地域における歴史的風致の維持及び向上に関する法律第31条第4項第3号に定める現に存する樹林地、草地等で良好な居住環境を確保するため必要なものの保全に関する事項とする。&#xA;* 属性urf:activityRestrictionInFarmlandは、使用しない。&#xA;* 属性urf:landuseRestrictionsは、地域における歴史的風致の維持及び向上に関する法律第31条第4項第4号に定める土地の利用に関する事項とする。&#xA;* 属性core:creationDateは運用上必須とする。&#xA;* 関連役割urf:districtFacilityは、使用しない。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2025/10/07 12:16:56" complexity="1" status="Proposed"/>
+				<properties documentation="歴史的風致維持向上地区整備計画。主として街区内の居住者、滞在者その他の者の利用に供される道路、公園その他の政令で定める施設（都市計画施設を除く。地区施設）及び建築物等の整備並びに土地の利用に関する計画。 +&#xA;urf:_UrbanFunctionから継承する属性のうち、urf:function、urf:reference、urf:reason及びurf:noteのみを対象とする。&#xA;&#xA;* 属性urf:functionは、都市計画法第12条の4第2項に定める地区整備計画の種類とする。コードリスト（&amp;lt;&amp;lt;DistrictDevelopmentPlan_function.xml,DistrictDevelopmentPlan_function.xml&amp;gt;&amp;gt;）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性urf:districtFacilitiesAllocationは、地域における歴史的風致の維持及び向上に関する法律第31条第4項第1号に定める地区施設の配置及び規模とする。&#xA;* 属性urf:buildingRestrictionsは、地域における歴史的風致の維持及び向上に関する法律第31条第4項第2号に定める建築物等の制限とする。&#xA;* 属性urf:urbanGreenSpaceConservationは、地域における歴史的風致の維持及び向上に関する法律第31条第4項第3号に定める現に存する樹林地、草地等で良好な居住環境を確保するため必要なものの保全に関する事項とする。&#xA;* 属性urf:activityRestrictionInFarmlandは、使用しない。&#xA;* 属性urf:landuseRestrictionsは、地域における歴史的風致の維持及び向上に関する法律第31条第4項第4号に定める土地の利用に関する事項とする。&#xA;* 関連役割urf:districtFacilityは、使用しない。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2026/01/28 14:56:49" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -48317,8 +48317,8 @@
 			</element>
 			<element xmi:idref="EAID_84ABD713_12B1_49a5_B711_9B80B225FCEB" xmi:type="uml:Class" name="RoadsideDistrictImprovementPlan" scope="public">
 				<model package="EAPK_703CD7E4_9939_4370_8AEB_B5B48ACC572F" tpos="127" ea_localid="284" ea_eleType="element"/>
-				<properties documentation="沿道地区整備計画。緑地その他の緩衝空地及び主として当該区域内の居住者等の利用に供される道路その他政令で定める施設（都市計画施設を除く。「沿道地区施設」）並びに建築物その他の工作物の整備並びに土地の利用その他の沿道の整備に関する計画。 +&#xA;urf:_UrbanFunctionから継承する主題属性のうち、urf:function、urf:reference、urf:reason及びurf:noteのみを対象とする。&#xA;&#xA;* 属性urf:functionは、都市計画法第12条の4第2項に定める地区整備計画の種類とする。コードリスト（&amp;lt;&amp;lt;DistrictDevelopmentPlan_function.xml,DistrictDevelopmentPlan_function.xml&amp;gt;&amp;gt;）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性urf:districtFacilitiesAllocationは、使用しない。&#xA;* 属性urf:buildingRestrictionsは、幹線道路の沿道の整備に関する法律第9条第6号第2号に定める建築物等の制限とする。&#xA;* 属性urf:urbanGreenSpaceConservationは、幹線道路の沿道の整備に関する法律第9条第6号第3号に定める現に存する樹林地、草地等で良好な居住環境を確保するため必要なものの保全に関する事項とする。&#xA;* 属性urf:activityRestrictionInFarmlandは、使用しない。&#xA;* 属性urf:landuseRestrictionsは、幹線道路の沿道の整備に関する法律第9条第6号第4号に定める土地の利用に関する事項その他沿道の整備に関する事項とする。&#xA;* 属性core:creationDateは運用上必須とする。&#xA;* 関連役割urf:districtFacilityは、幹線道路の沿道の整備に関する法律第9条第6号第1号に定められた当該地区整備計画に定められた沿道地区施設とする。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="10411407" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2025/10/07 12:16:26" complexity="1" status="設計中"/>
+				<properties documentation="沿道地区整備計画。緑地その他の緩衝空地及び主として当該区域内の居住者等の利用に供される道路その他政令で定める施設（都市計画施設を除く。「沿道地区施設」）並びに建築物その他の工作物の整備並びに土地の利用その他の沿道の整備に関する計画。 +&#xA;urf:_UrbanFunctionから継承する主題属性のうち、urf:function、urf:reference、urf:reason及びurf:noteのみを対象とする。&#xA;&#xA;* 属性urf:functionは、都市計画法第12条の4第2項に定める地区整備計画の種類とする。コードリスト（&amp;lt;&amp;lt;DistrictDevelopmentPlan_function.xml,DistrictDevelopmentPlan_function.xml&amp;gt;&amp;gt;）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性urf:districtFacilitiesAllocationは、使用しない。&#xA;* 属性urf:buildingRestrictionsは、幹線道路の沿道の整備に関する法律第9条第6号第2号に定める建築物等の制限とする。&#xA;* 属性urf:urbanGreenSpaceConservationは、幹線道路の沿道の整備に関する法律第9条第6号第3号に定める現に存する樹林地、草地等で良好な居住環境を確保するため必要なものの保全に関する事項とする。&#xA;* 属性urf:activityRestrictionInFarmlandは、使用しない。&#xA;* 属性urf:landuseRestrictionsは、幹線道路の沿道の整備に関する法律第9条第6号第4号に定める土地の利用に関する事項その他沿道の整備に関する事項とする。&#xA;* 関連役割urf:districtFacilityは、幹線道路の沿道の整備に関する法律第9条第6号第1号に定められた当該地区整備計画に定められた沿道地区施設とする。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="10411407" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2026/01/28 14:54:49" complexity="1" status="設計中"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -48351,8 +48351,8 @@
 			</element>
 			<element xmi:idref="EAID_0AFB4C1F_D59A_4328_BC95_D1DFC943BA68" xmi:type="uml:Class" name="RuralDistrictImprovementPlan" scope="public">
 				<model package="EAPK_703CD7E4_9939_4370_8AEB_B5B48ACC572F" tpos="128" ea_localid="250" ea_eleType="element"/>
-				<properties documentation="集落地区整備計画。主として当該区域内の居住者等の利用に供される道路、公園その他の政令で定める施設（集落地区施設）及び建築物その他の工作物（建築物等）の整備並びに土地の利用に関する計画。 +&#xA;urf:_UrbanFunctionから継承する属性のうち、urf:function、urf:reference、urf:reason及びurf:noteのみを対象とする。&#xA;&#xA;* 属性urf:functionは、都市計画法第12条の4第2項に定める地区整備計画の種類とする。コードリスト（&amp;lt;&amp;lt;DistrictDevelopmentPlan_function.xml,DistrictDevelopmentPlan_function.xml&amp;gt;&amp;gt;）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性urf:districtFacilitiesAllocationは、集落地域整備法第5条第5項第2号に定める建築物等の制限とする。&#xA;* 属性urf:buildingRestrictionsは、集落地域整備法第5条第5項第3号に定める現に存する樹林地、草地等で良好な居住環境を確保するため必要なものの保全に関する事項とする。&#xA;* 属性urf:urbanGreenSpaceConservationは、使用しない。&#xA;* 属性urf:activityRestrictionInFarmlandは、集落地域整備法第5条第5項第4号に定める土地の利用に関する事項とする。&#xA;* 属性urf:landuseRestrictionsは、集落地域整備法第5条第5項第1号に定める集落地区施設の配置及び規模とする。&#xA;* 属性core:creationDateは運用上必須とする。&#xA;* 関連役割urf:districtFacilityは、集落地域整備法第5条第5項第1号に定められた当該地区整備計画に定められた集落地区施設とする。&#xA;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="10411407" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2025/10/07 12:16:34" complexity="1" status="設計中"/>
+				<properties documentation="集落地区整備計画。主として当該区域内の居住者等の利用に供される道路、公園その他の政令で定める施設（集落地区施設）及び建築物その他の工作物（建築物等）の整備並びに土地の利用に関する計画。 +&#xA;urf:_UrbanFunctionから継承する属性のうち、urf:function、urf:reference、urf:reason及びurf:noteのみを対象とする。&#xA;&#xA;* 属性urf:functionは、都市計画法第12条の4第2項に定める地区整備計画の種類とする。コードリスト（&amp;lt;&amp;lt;DistrictDevelopmentPlan_function.xml,DistrictDevelopmentPlan_function.xml&amp;gt;&amp;gt;）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性urf:districtFacilitiesAllocationは、集落地域整備法第5条第5項第2号に定める建築物等の制限とする。&#xA;* 属性urf:buildingRestrictionsは、集落地域整備法第5条第5項第3号に定める現に存する樹林地、草地等で良好な居住環境を確保するため必要なものの保全に関する事項とする。&#xA;* 属性urf:urbanGreenSpaceConservationは、使用しない。&#xA;* 属性urf:activityRestrictionInFarmlandは、集落地域整備法第5条第5項第4号に定める土地の利用に関する事項とする。&#xA;* 属性urf:landuseRestrictionsは、集落地域整備法第5条第5項第1号に定める集落地区施設の配置及び規模とする。&#xA;* 関連役割urf:districtFacilityは、集落地域整備法第5条第5項第1号に定められた当該地区整備計画に定められた集落地区施設とする。&#xA;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="10411407" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2026/01/28 14:55:24" complexity="1" status="設計中"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -48706,7 +48706,7 @@
 			<element xmi:idref="EAID_891CB4B3_606F_4e0b_AB85_C84D4CEC3E88" xmi:type="uml:Class" name="DistrictFacility" scope="public">
 				<model package="EAPK_703CD7E4_9939_4370_8AEB_B5B48ACC572F" tpos="132" ea_localid="305" ea_eleType="element"/>
 				<properties documentation="地区計画において定められる、主として街区内の居住者等の利用に供される道路、公園その他政令で定める施設。 +&#xA;道路、公園、避難路、避難施設、雨水貯留浸透施設、緑地及び広場その他公共空地。 +&#xA;urf:_UrbanFunctionから継承する主題属性のうち、urf:function、urf:usage、urf:reference及びurf:noteのみを対象とする。&#xA;&#xA;* 属性urf:functionは、地区施設の種類とする。コードリスト（&amp;lt;&amp;lt;Common_districtFacilityType.xml,Common_districtFacilityType.xml&amp;gt;&amp;gt;）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性urf:usageは、地区施設の用途とする。コードリスト（&amp;lt;&amp;lt;UrbanFacility_function.xml,UrbanFacility_function.xml&amp;gt;&amp;gt;）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性core:creationDateは運用上必須とする。&#xA;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2025/10/07 12:17:14" complexity="1" status="Proposed"/>
+				<project author="048827" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2026/01/28 14:54:31" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -48726,8 +48726,8 @@
 			</element>
 			<element xmi:idref="EAID_B131706A_E936_4eec_9A71_95E55ADCC7EC" xmi:type="uml:Class" name="RoadsideDistrictFacility" scope="public">
 				<model package="EAPK_703CD7E4_9939_4370_8AEB_B5B48ACC572F" tpos="134" ea_localid="324" ea_eleType="element"/>
-				<properties documentation="沿道地区計画において定められる、緑地その他の緩衝空地及び主として当該区域内の居住者等の利用に供される道路その他政令で定める施設。（都市計画施設は除く） +&#xA;urf:_UrbanFunctionから継承する主題属性のうち、urf:function、urf:usage、urf:reference及びurf:noteのみを対象とする。&#xA;&#xA;* 属性urf:functionは、地区施設の種類とする。コードリスト（&amp;lt;&amp;lt;Common_districtFacilityType.xml,Common_districtFacilityType.xml&amp;gt;&amp;gt;）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性urf:usageは、地区施設の用途とする。コードリスト（&amp;lt;&amp;lt;UrbanFacility_function.xml,UrbanFacility_function.xml&amp;gt;&amp;gt;）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性core:creationDateは運用上必須とする。&#xA;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2025/10/07 12:17:18" complexity="1" status="Proposed"/>
+				<properties documentation="沿道地区計画において定められる、緑地その他の緩衝空地及び主として当該区域内の居住者等の利用に供される道路その他政令で定める施設。（都市計画施設は除く） +&#xA;urf:_UrbanFunctionから継承する主題属性のうち、urf:function、urf:usage、urf:reference及びurf:noteのみを対象とする。&#xA;&#xA;* 属性urf:functionは、地区施設の種類とする。コードリスト（&amp;lt;&amp;lt;Common_districtFacilityType.xml,Common_districtFacilityType.xml&amp;gt;&amp;gt;）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性urf:usageは、地区施設の用途とする。コードリスト（&amp;lt;&amp;lt;UrbanFacility_function.xml,UrbanFacility_function.xml&amp;gt;&amp;gt;）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;&#xA;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2026/01/28 14:55:05" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -48743,8 +48743,8 @@
 			</element>
 			<element xmi:idref="EAID_7C7E6105_DE30_4aa0_9D99_F3CEB345F6CB" xmi:type="uml:Class" name="RuralDistrictFacility" scope="public">
 				<model package="EAPK_703CD7E4_9939_4370_8AEB_B5B48ACC572F" tpos="135" ea_localid="277" ea_eleType="element"/>
-				<properties documentation="集落地区計画において定められる、主として当該区域内の居住者等の利用に供される道路、公園その他の政令で定める施設。 +&#xA;urf:_UrbanFunctionから継承する主題属性のうち、urf:function、urf:usage、urf:reference及びurf:noteのみを対象とする。&#xA;&#xA;* 属性urf:functionは、地区施設の種類とする。コードリスト（&amp;lt;&amp;lt;Common_districtFacilityType.xml,Common_districtFacilityType.xml&amp;gt;&amp;gt;）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性urf:usageは、地区施設の用途とする。コードリスト（&amp;lt;&amp;lt;UrbanFacility_function.xml,UrbanFacility_function.xml&amp;gt;&amp;gt;）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性core:creationDateは運用上必須とする。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2025/10/07 12:17:28" complexity="1" status="Proposed"/>
+				<properties documentation="集落地区計画において定められる、主として当該区域内の居住者等の利用に供される道路、公園その他の政令で定める施設。 +&#xA;urf:_UrbanFunctionから継承する主題属性のうち、urf:function、urf:usage、urf:reference及びurf:noteのみを対象とする。&#xA;&#xA;* 属性urf:functionは、地区施設の種類とする。コードリスト（&amp;lt;&amp;lt;Common_districtFacilityType.xml,Common_districtFacilityType.xml&amp;gt;&amp;gt;）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性urf:usageは、地区施設の用途とする。コードリスト（&amp;lt;&amp;lt;UrbanFacility_function.xml,UrbanFacility_function.xml&amp;gt;&amp;gt;）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2026/01/28 14:55:40" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -48760,8 +48760,8 @@
 			</element>
 			<element xmi:idref="EAID_5EC5FF35_5F2E_43cd_9BAF_C19E6ACC964E" xmi:type="uml:Class" name="ZonalDisasterPreventionFacility" scope="public">
 				<model package="EAPK_703CD7E4_9939_4370_8AEB_B5B48ACC572F" tpos="136" ea_localid="253" ea_eleType="element"/>
-				<properties documentation="防災街区整備地区計画において定められる、当該区域における特定防災機能を確保するための防災公共施設。（都市計画施設は除く） +&#xA;urf:_UrbanFunctionから継承する主題属性のうち、urf:usage、urf:reference及びurf:noteのみを対象とする。&#xA;&#xA;* 属性urf:usageは、地区防災施設の用途。コードリスト（&amp;lt;&amp;lt;UrbanFacility_function.xml,UrbanFacility_function.xml&amp;gt;&amp;gt;）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;* 属性core:creationDateは運用上必須とする。&#xA;&#xA;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2025/10/07 12:17:03" complexity="1" status="Proposed"/>
+				<properties documentation="防災街区整備地区計画において定められる、当該区域における特定防災機能を確保するための防災公共施設。（都市計画施設は除く） +&#xA;urf:_UrbanFunctionから継承する主題属性のうち、urf:usage、urf:reference及びurf:noteのみを対象とする。&#xA;&#xA;* 属性urf:usageは、地区防災施設の用途。コードリスト（&amp;lt;&amp;lt;UrbanFacility_function.xml,UrbanFacility_function.xml&amp;gt;&amp;gt;）より選択する。多重度は任意となっているが、運用上必須とする。&#xA;&#xA;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2022/01/29 14:39:03" modified="2026/01/28 15:02:03" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -55163,7 +55163,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_059AEE20_CDC2_4a14_BEA1_27B6494F14D3" name="handicapAccessible" scope="Public">
 						<initial/>
-						<documentation value="この部屋（トイレなどの場合）が障害者用に供するような部屋として設計されているか。&#xA;&#xA;1：されている&#xA;&#xA;0：されていない"/>
+						<documentation value="この部屋（トイレなどの場合）が障碍者用に供するような部屋として設計されているか。&#xA;&#xA;1：されている&#xA;&#xA;0：されていない"/>
 						<model ea_localid="1566" ea_guid="{059AEE20-CDC2-4a14-BEA1-27B6494F14D3}"/>
 						<properties type="xs:boolean" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0" scale="0"/>
@@ -75880,8 +75880,8 @@
 			</element>
 			<element xmi:idref="EAID_B582D311_5FED_43d3_84E7_3CE107C2A88E" xmi:type="uml:Class" name="BuildingPart" scope="public">
 				<model package="EAPK_1D38D48C_F798_4ab9_AFDB_A6140AB461D4" tpos="0" ea_localid="122" ea_eleType="element"/>
-				<properties documentation="建築物の一部。 +&#xA;一棟の建築物が、複数の屋根の形状や階数が異なる部分、あるいは用途が異なる部分から構成されており、それぞれを属性として保持したい場合に、建築物を複数の部分として分けて記述するために用いる。 +&#xA;この地物型を使用する場合、一つの建築物には、複数の建築物部分が存在しなければならない。 +&#xA;また、一棟の建築物を構成する建築物部分は同じ建築物を構成する他の建築物部分と接していなければならない。&#xA;&#xA;image::images/045.webp.png[]&#xA;&#xA;この地物型は、LOD2、LOD3及びLOD４の建築物を記述する際に使用可能であるが、ユースケースにより、建築物と建築物部分を区分する必要がない場合には、建築物部分として分けず、一体的な建築物としてよい。&#xA;&#xA;* bldg:BuildingPartがuro:DataQualityAttributeを持つ場合、属性uro:lod1HeightTypeはbuildingが持つlod1solidに対しての品質属性として記述する。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2023/03/10 19:50:31" modified="2026/01/26 12:06:13" complexity="1" status="Proposed"/>
+				<properties documentation="建築物の一部。 +&#xA;一棟の建築物が、複数の屋根の形状や階数が異なる部分、あるいは用途が異なる部分から構成されており、それぞれを属性として保持したい場合に、建築物を複数の部分として分けて記述するために用いる。 +&#xA;この地物型を使用する場合、一つの建築物には、複数の建築物部分が存在しなければならない。 +&#xA;また、一棟の建築物を構成する建築物部分は同じ建築物を構成する他の建築物部分と接していなければならない。&#xA;&#xA;image::images/045.webp.png[]&#xA;&#xA;この地物型は、LOD2、LOD3及びLOD４の建築物を記述する際に使用可能であるが、ユースケースにより、建築物と建築物部分を区分する必要がない場合には、建築物部分として分けず、一体的な建築物としてよい。&#xA;&#xA;* bldg:BuildingPart が uro:DataQualityAttribute を持つ場合、属性 uro:lod1HeightType は、この bldg:BuildingPart を部品とする bldg:Building が持つLOD1の立体図形を作成する際に使用した高さの算出方法を記述する。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2023/03/10 19:50:31" modified="2026/01/28 14:52:42" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -87880,7 +87880,7 @@
 				<model ea_localid="235"/>
 				<properties ea_type="Aggregation" subtype="Strong" direction="Destination -&gt; Source"/>
 				<modifiers isRoot="false" isLeaf="false"/>
-				<documentation value="作成したデータの品質に関する情報。原則必須とする。&#xA;&#xA;* bldg:Buildingがbldg:BuildingPartをもたない場合、bldg:Buildingの品質属性は必須とする。&#xA;* bldg:Buildingがbldg:BuildingPartをもち、bldg:BuildingPartが品質属性をもつ場合は、bldg:Buildingの品質属性は省略する。&#xA;* bldg:Buildingがbldg:BuildingPartをもち、bldg:BuildingPartが品質属性をもつ場合は、bldg:Buildingの品質属性は省略する。&#xA;"/>
+				<documentation value="作成したデータの品質に関する情報。原則必須とする。&#xA;&#xA;* bldg:Buildingがbldg:BuildingPartをもたない場合、bldg:Buildingの品質属性は必須とする。&#xA;* bldg:Buildingがbldg:BuildingPartをもち、bldg:BuildingPartが品質属性をもつ場合は、bldg:Buildingの品質属性は省略する。&#xA;"/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
 				<labels lb="0..1" lt="+bldgDataQualityAttribute&#xA;«property»"/>
 				<extendedProperties/>
