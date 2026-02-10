@@ -30,6 +30,11 @@ bldg:BuildingPartもbldg:Buildingと同様に、空間属性や主題属性を�
 このとき、それぞれのbldg:BuildingPartが幾何オブジェクト（gml:Solid）をもち、bldg:Buildingは、幾何オブジェクトをもたない。また、bldg:Buildingにはbldg:BuildingPartに共通となる属性を格納する。 +
 ただし、bldg:usageのように複数の値を列挙できる属性に関して、一つでも異なる値がある場合には、当該属性の全ての値をbldg:BuildingPartに記述する。
 
+同様にして、bldg:BuildingPartはデータ品質属性（uro:DataQualityAttribute）をもつことができる。この場合、これを部品とするbldg:Buildingはデータ品質属性をもたない。また、データ品質属性の各属性には、bldg:BuildingPartのデータ作成に使用した原典資料の地図情報レベル、その他原典資料の諸元を記述することが基本となる。ただし、uro:geometrySrcDescLod0、uro:lod1HeightType等のLOD0及びLOD1の幾何オブジェクトについての属性は、このbldg:BuildingPartを部品として持つbldg:BuildingのLOD0及びLOD1の幾何オブジェクトに対応する値を記述する。
+
+なお、bldg:Building の部品となる全てのbldg:BuildingPartについて、データ品質属性の値が全て等しくなる場合は、bldg:Buildingにデータ品質属性を記述することができる。このとき、部品となる各bldg:BuildingPartはデータ品質属性をもたない。
+
+
 [[fig-C-18]]
 .建築物部分（bldg:BuildingPart）を使用する例
 image::images/155.webp.png[]
