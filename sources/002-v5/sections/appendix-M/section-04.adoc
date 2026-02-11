@@ -8,6 +8,11 @@ tun:HollowSpaceは、トンネルの内部空間の記述に使用する地物�
 
 トンネルモデル（LOD4）において、トンネルの内部空間の形状は、立体により表現する。立体は、境界面に区分し、それぞれの境界面は、tun:CeilingSurface、tun:FloorSurface、tun:InteriorWallSurface又はtun:ClosureSurfaceのいずれかにならなければならない。
 
+tun:TunnelPartはデータ品質属性（uro:DataQualityAttribute）をもつことができる。この場合、これを部品とするtun:Tunnelはデータ品質属性をもたない。
+
+また、データ品質属性の各属性には、 tun:TunnelPartのデータ作成に使用した原典資料の地図情報レベル、その他原典資料の諸元を記述することが基本となる。ただし、uro:geometrySrcDescLod0等のLOD0の幾何オブジェクトについての属性は、このtun:TunnelPartを部品としてもつtun:TunnelのLOD0の幾何オブジェクトに対応する値を記述する。
+
+なお、tun:Tunnelの部品となる全てのtun:TunnelPartについて、データ品質属性の値が全て等しくなる場合は、tun:Tunnelにデータ品質属性を記述することができる。このとき、部品となる各tun:TunnelPartはデータ品質属性をもたない。
 
 [requirement]
 .境界面のポリゴンの条件
