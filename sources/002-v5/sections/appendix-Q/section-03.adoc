@@ -580,3 +580,14 @@ BIMモデルからの地下街モデル（LOD4）の作成については、以�
 .地上部に続くエスカレーターの取得例
 image::images/494.webp.png[width="450"]
 
+
+===== 地下街モデルがbldg:BuildingPartをもつときの品質属性
+
+地下街モデル（LOD2）及び地下街モデル（LOD3）はbldg:BuildingPartを使用できる。bldg:BuildingPartはデータ品質属性（uro:DataQualityAttribute）をもつことができる。この場合、これを部品とするuro:UndergroundBuildingはデータ品質属性をもたない。また、データ品質属性の各属性には、bldg:BuildingPartのデータ作成に使用した原典資料の地図情報レベル、その他原典資料の諸元を記述する
+ことが基本となる。ただし、uro:geometrySrcDescLod0、uro:lod1HeightType等のLOD0及びLOD1の幾何オブジェクトについての属性は、このbldg:BuildingPartを部品としてもつuro:UndergroundBuildingのLOD0及びLOD1の幾何オブジェクトに対応する値を記述する。
+
+なお、uro:UndergroundBuildingの部品となる全てのbldg:BuildingPartについて、データ品質属性の値が全て等しくなる場合は、uro:UndergroundBuildingにデータ品質属性を記述することができる。このとき、部品となる各bldg:BuildingPartはデータ品質属性をもたない。
+
+bldg:BuildingPartの詳細な作成方法については、附属書Cを参照すること（<<tocC_04>>）。
+
+
