@@ -74298,8 +74298,8 @@
 			</element>
 			<element xmi:idref="EAID_162F1789_29D3_4392_9AC5_C3633040FE44" xmi:type="uml:Class" name="WaterBody" scope="public">
 				<model package="EAPK_354816A2_DEFC_4506_BBF6_BC0CD3EFF57D" tpos="0" ea_localid="164" ea_eleType="element"/>
-				<properties documentation="河川、湖沼、等のように陸地内に存在する水の存在する部分及び海。水路や貯水槽、プールのような人工的に存在する水を含む。また、浸水面を含む。&#xA;&#xA;* [.underline]##河川、湖沼、海及び水路、貯水槽、プールのような人工的に存在する水の場合## +&#xA;LOD0 は、ネットワーク又は、公共測量標準図式による表現のいずれかとし、ネットワークを原則とする。&#xA;+&#xA;.wtr:WaterBodyの例（LOD0）&#xA;image::images/400.webp.png[width=&quot;250&quot;]&#xA;+&#xA;LOD1 は、水涯線により囲まれた面として表現する。&#xA;+&#xA;.wtr:WaterBodyの例（LOD1）&#xA;image::images/401.webp.png[width=&quot;250&quot;]&#xA;+&#xA;LOD2 は、水面と水底面に囲まれた立体として表現する。&#xA;+&#xA;.wtr:WaterBodyの例（LOD2）&#xA;image::images/402.webp.png[width=&quot;430&quot;]&#xA;+&#xA;LOD3 は、水面と水底面に囲まれた立体から、水中の構造物を除いた立体として表現する。&#xA;+&#xA;.wtr:WaterBodyの例（LOD3）&#xA;image::images/403.webp.png[width=&quot;430&quot;]&#xA;+&#xA;水部のインスタンスは基準地域メッシュ（第3 次地域区画）の境界で区切る。 +&#xA;LOD2 又はLOD3 でインスタンスを分割する場合は、基準地域メッシュの水部の立体の境界面分割するための仮想的な境界面を「wtr:WaterClosureSurface」とする。&#xA;&#xA;* [.underline]##浸水面の場合## +&#xA;洪水浸水想定区域、津波浸水想定、高潮浸水想定区域、内水浸水想定区域及びため池ハザードマップ（以下、浸水想定区域等と呼ぶ）の浸水面を記述する。浸水面は、LOD1のみを対象とする。浸水面を構成する図形の頂点の高さは、標高に水位を加えた高さとする。 +&#xA;浸水面は以下の場所で区切る。&#xA;** ランクが変化する場所&#xA;** ファイル単位となるメッシュの境界&#xA;&#xA;浸水想定区域等の場合、gml:nameには、浸水想定区域等の図面に示される、図面の名称を記述する。この場合、gml:nameは必須とする。&#xA;&#xA;* 属性core:creationDateは運用上必須とする。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="048827" version="1.0" phase="1.0" created="2020/10/07 17:25:54" modified="2025/10/07 11:57:26" complexity="1" status="Proposed"/>
+				<properties documentation="河川、湖沼、等のように陸地内に存在する水の存在する部分及び海。水路や貯水槽、プールのような人工的に存在する水を含む。また、浸水面を含む。&#xA;&#xA;* [.underline]##河川、湖沼、海及び水路、貯水槽、プールのような人工的に存在する水の場合## +&#xA;LOD0 は、ネットワーク又は、公共測量標準図式による表現のいずれかとし、ネットワークを原則とする。&#xA;+&#xA;.wtr:WaterBodyの例（LOD0）&#xA;image::images/400.webp.png[width=&quot;250&quot;]&#xA;+&#xA;LOD1 は、水涯線により囲まれた面として表現する。&#xA;+&#xA;.wtr:WaterBodyの例（LOD1）&#xA;image::images/401.webp.png[width=&quot;250&quot;]&#xA;+&#xA;LOD2 は、水面と水底面に囲まれた立体として表現する。&#xA;+&#xA;.wtr:WaterBodyの例（LOD2）&#xA;image::images/402.webp.png[width=&quot;430&quot;]&#xA;+&#xA;LOD3 は、水面と水底面に囲まれた立体から、水中の構造物を除いた立体として表現する。&#xA;+&#xA;.wtr:WaterBodyの例（LOD3）&#xA;image::images/403.webp.png[width=&quot;430&quot;]&#xA;+&#xA;水部のインスタンスは基準地域メッシュ（第3 次地域区画）の境界で区切る。 +&#xA;LOD2 又はLOD3 でインスタンスを分割する場合は、基準地域メッシュの水部の立体の境界面分割するための仮想的な境界面を「wtr:WaterClosureSurface」とする。&#xA;&#xA;* [.underline]##浸水面の場合## +&#xA;洪水浸水想定区域、津波浸水想定、高潮浸水想定区域、内水浸水想定区域及びため池ハザードマップ（以下、浸水想定区域等と呼ぶ）の浸水面を記述する。浸水面は、LOD1のみを対象とする。浸水面を構成する図形の頂点の高さは、標高に水位を加えた高さとする。 +&#xA;浸水面は以下の場所で区切る。&#xA;** ランクが変化する場所&#xA;** ファイル単位となるメッシュの境界&#xA;&#xA;　&#xA;&#xA;* 属性 gml:nameは浸水想定区域等の場合、図⾯に示される図⾯の名称を記述する。この場合、運用上必須とする。&#xA;* 属性core:creationDateは運用上必須とする。" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="048827" version="1.0" phase="1.0" created="2020/10/07 17:25:54" modified="2026/02/06 15:15:43" complexity="1" status="Proposed"/>
 				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -87918,7 +87918,7 @@
 				<model ea_localid="424"/>
 				<properties ea_type="Aggregation" subtype="Strong" direction="Destination -&gt; Source"/>
 				<modifiers isRoot="false" isLeaf="false"/>
-				<documentation value="作成するデータの品質に関する情報。brid:Bridgeの場合は、原則必須とする。ただし、brid:BridgePartが品質属性をもつ場合は、省略できる。"/>
+				<documentation value="作成するデータの品質に関する情報。brid:Bridgeの場合は、原則必須とする。ただし、brid:BridgePartが品質属性をもつ場合は、省略する。"/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
 				<labels lb="0..1" lt="+bridDataQualityAttribute&#xA;«property»"/>
 				<extendedProperties/>
@@ -88108,7 +88108,7 @@
 				<model ea_localid="785"/>
 				<properties ea_type="Aggregation" subtype="Strong" direction="Destination -&gt; Source"/>
 				<modifiers isRoot="false" isLeaf="false"/>
-				<documentation value="作成するデータの品質に関する情報。原則必須とする。tun:TunnelPartが品質属性をもつ場合は、省略できる。&#xA;&#xA;* 関連役割uro:publicSurveyDataQualityAttributeは、属性uro:srcScaleLod0、uro:publicSurveySrcDescLod0以外は使用しない。"/>
+				<documentation value="作成するデータの品質に関する情報。原則必須とする。tun:TunnelPartが品質属性をもつ場合は、省略する。&#xA;&#xA;* 関連役割uro:publicSurveyDataQualityAttributeは、属性uro:srcScaleLod0、uro:publicSurveySrcDescLod0以外は使用しない。"/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
 				<labels lb="0..1" lt="+tunDataQualityAttribute&#xA;«property»"/>
 				<extendedProperties/>
