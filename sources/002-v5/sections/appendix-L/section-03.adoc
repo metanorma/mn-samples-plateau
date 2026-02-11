@@ -20,3 +20,9 @@ brid:BridgePartの空間属性は、brid:Bridgeの空間属性の取得方法と
 
 brid:BridgePartは、brid:Bridgeと同様の主題属性をもつことができる。必要に応じてbrid:BridgePartごとに個別の属性をもつ。
 
+brid:BridgePartはデータ品質属性（uro:DataQualityAttribute）をもつことができる。この場合、これを部品とするbrid:Bridgeはデータ品質属性をもたない。
+
+また、データ品質属性の各属性には、 brid:BridgePartのデータ作成に使用した原典資料の地図情報レベル、その他原典資料の諸元を記述することが基本となる。ただし、uro:geometrySrcDescLod0等のLOD0の幾何オブジェクトについての属性は、このbrid:BridgePartを部品としてもつbrid:BridgeのLOD0の幾何オブジェクトに対応する値を記述する。
+
+なお、brid:Bridgeの部品となる全てのbrid:BridgePartについて、データ品質属性の値が全て等しくなる場合は、brid:Bridgeにデータ品質属性を記述することができる。このとき、部品となる各brid:BridgePartはデータ品質属性をもたない。
+
