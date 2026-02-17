@@ -220,10 +220,6 @@ image::images/EAID_24446BFC_9FEB_4935_8970_65A4C562A93F.png[]
 [[toc4_07_03_01]]
 ===== Transportation（CityGML）
 
-====== uro:Waterway
-
-lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[package="uro",name="Waterway",template="../../sources/liquid_templates/_klass_table.liquid"]
-
 ====== tran:TrafficArea
 
 lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="TrafficArea",template="../../sources/liquid_templates/_klass_table.liquid"]
@@ -231,6 +227,10 @@ lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[name="Traf
 
 [[toc4_07_03_02]]
 ===== Urban Object（i-UR）
+
+====== uro:Waterway
+
+lutaml_klass_table::../../sources/xmi/plateau_all_packages_export.xmi[package="uro",name="Waterway",template="../../sources/liquid_templates/_klass_table.liquid"]
 
 ====== uro:KeyValuePairAttribute
 
