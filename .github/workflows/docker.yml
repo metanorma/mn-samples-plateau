@@ -19,8 +19,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container:
-      image: metanorma/metanorma:latest
+    # container:
+    #   image: metanorma/metanorma:latest
     steps:
       - name: Checkout
         uses: actions/checkout@v6
