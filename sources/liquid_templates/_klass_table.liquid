@@ -235,6 +235,15 @@ h| 属性名 h| 属性の型及び多重度 h| 定義 {% if klass.has_guidance? 
       {% break %}
     {% endif %}
   {% endfor %}
+  {% if type_col == 'core:TextureTypeType' %}
+  	{% assign type_col = 'app:TextureTypeType' %}
+  {% endif %}
+  {% if type_col == 'core:WrapModeType' %}
+  	{% assign type_col = 'app:WrapModeType' %}
+  {% endif %}
+  {% if type_col == 'core:ColorPlusOpacity' %}
+  	{% assign type_col = 'app:ColorPlusOpacity' %}
+  {% endif %}
   | {{ name_col }}
   | {{ type_col }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
   | {{ attr.definition }}
@@ -264,6 +273,9 @@ h| 属性名 h| 属性の型及び多重度 h| 定義 {% if klass.has_guidance? 
       {% break %}
     {% endif %}
   {% endfor %}
+  {% if type_col == 'core:Color' %}
+  	{% assign type_col = 'app:Color' %}
+  {% endif %}
   | {{ name_col }}
   | {{ type_col }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
   | {{ attr.definition }}
