@@ -72,6 +72,10 @@ jobs:
     name: Firelight build - Document ${{ matrix.document.dir }} on ${{ matrix.env.name }}
 
     steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+  
       - name: Download Metanorma artifacts
         uses: actions/download-artifact@v7
         with:
