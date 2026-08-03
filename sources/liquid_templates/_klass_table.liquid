@@ -8,7 +8,7 @@ Initialize global variables and mappings
 
 {%- comment -%}Format upper class name{%- endcomment -%}
 {%- capture upper_klass_name -%}
-{{ root.general.upper_klass.name }}:{{ root.general.name }}
+{{ root.general.upper_klass }}:{{ root.general.name }}
 {%- endcapture -%}
 {%- if upper_klass_name == ":" -%}
   {%- assign upper_klass_name = "&#x2014;" -%}
@@ -217,7 +217,7 @@ h| ステレオタイプ {{ cols_header }}+| {{ stereotype }}
 {{ cols_number }}+h| 継承する属性
 h| 属性名 h| 属性の型及び多重度 h| 定義 {% if klass.has_guidance? %} h| 補足{%- endif %}
 {% for attr in root.inherited_props %}
-  {% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
+  {% assign attr_upper_klass_name = attr.upper_klass %}
   {%- capture name_col -%}
     {%- if attr.used? == false -%}
       ({{ attr_upper_klass_name }}:{{ attr.name }}) +
@@ -255,7 +255,7 @@ h| 属性名 h| 属性の型及び多重度 h| 定義 {% if klass.has_guidance? 
 {{ cols_number }}+h| 自身に定義された属性
 h| 属性名 h| 属性の型及び多重度 h| 定義 {% if klass.has_guidance? %} h| 補足{%- endif %}
 {% for attr in root.owned_props %}
-  {% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
+  {% assign attr_upper_klass_name = attr.name_ns %}
   {%- capture name_col -%}
     {%- if attr.used? == false -%}
       ({{ attr_upper_klass_name }}:{{ attr.name }}) +
@@ -297,7 +297,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
     {% assign props_with_same_gen = root.sorted_inherited_assoc_props | where: 'gen_name', cur_gen %}
     {% unless performed %}
       {% for attr in props_with_same_gen %}
-        {% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
+        {% assign attr_upper_klass_name = attr.upper_klass %}
         {% if citygml_ns contains attr_upper_klass_name %}
 
         {% assign name_col_role_and_name = attr_upper_klass_name | append: ":" | append: attr.name %}
@@ -338,7 +338,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
         {% endif %}
       {% endfor %}
       {% for attr in props_with_same_gen %}
-        {% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
+        {% assign attr_upper_klass_name = attr.upper_klass %}
         {% unless citygml_ns contains attr_upper_klass_name %}
         {%- capture name_col -%}
           {%- if attr.used? == false -%}
@@ -371,7 +371,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
 
   {% comment %}Draw table (Prefix other than i-UR, urf, uro){% endcomment %}
   {% for attr in sorted_assoc_props %}
-    {% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
+    {% assign attr_upper_klass_name = attr.name_ns %}
     {% if attr.type_ns == "gen" %}
       {% assign attr_upper_klass_name = "gen" %}
     {% endif %}
@@ -422,7 +422,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
 
   {% comment %}Draw table (Prefix equals i-UR){% endcomment %}
   {% for attr in sorted_assoc_props %}
-    {% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
+    {% assign attr_upper_klass_name = attr.upper_klass %}
     {% if attr.type_ns == "gen" %}
       {% assign attr_upper_klass_name = "gen" %}
     {% endif %}
@@ -473,7 +473,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
 
   {% comment %}Draw table (Prefix equals urf){% endcomment %}
   {% for attr in sorted_assoc_props %}
-    {% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
+    {% assign attr_upper_klass_name = attr.upper_klass %}
     {% if attr.type_ns == "gen" %}
       {% assign attr_upper_klass_name = "gen" %}
     {% endif %}
@@ -524,7 +524,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
 
   {% comment %}Draw table (Prefix equals uro){% endcomment %}
   {% for attr in sorted_assoc_props %}
-    {% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
+    {% assign attr_upper_klass_name = attr.upper_klass %}
     {% if attr.type_ns == "gen" %}
       {% assign attr_upper_klass_name = "gen" %}
     {% endif %}
