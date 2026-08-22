@@ -1,0 +1,575 @@
+{%- comment -%}
+==============================================
+Initialize global variables and mappings
+==============================================
+{%- endcomment -%}
+
+{%- comment -%}rwp two lines below{%- endcomment -%}
+{% assign show_guidance_column = false %}
+{% assign row_shade_color = "lightcyan" %}
+{% assign root = klass.generalization %}
+{% assign citygml_ns = "app,bldg,brid,core,dem,frn,gen,grp,luse,tran,tun,veg,wtr,uro" | split: "," %}
+
+{%- comment -%}Format upper class name{%- endcomment -%}
+{%- capture upper_klass_name -%}
+{{ root.general.upper_klass.name }}:{{ root.general.name }}
+{%- endcapture -%}
+{%- if upper_klass_name == ":" -%}
+  {%- assign upper_klass_name = "&#x2014;" -%}
+{%- endif -%}
+
+{%- comment -%}Format stereotype{%- endcomment -%}
+{%- capture stereotype -%}«{{ root.stereotype }}»{%- endcapture -%}
+{%- if stereotype == "«»" -%}
+  {%- assign stereotype = " " -%}
+{%- endif -%}
+
+{%- comment -%}
+Build element mapping lookup table from YAML structure
+Two formats supported:
+  1. With package/class: "package|class|attribute=>target_package|xsd_element"
+  2. Attribute only: "attribute=>target_package|xsd_element"
+{%- endcomment -%}
+{% assign mapping_keys = "
+dateAttribute=>gen|gen:dateAttribute,
+doubleAttribute=>gen|gen:doubleAttribute,
+genericAttributeSet=>gen|gen:genericAttributeSet,
+intAttribute=>gen|gen:intAttribute,
+measureAttribute=>gen|gen:measureAttribute,
+stringAttribute=>gen|gen:stringAttribute,
+uriAttribute=>gen|gen:uriAttribute,
+bldg|AbstractBuilding|bldgDataQualityAttribute=>uro|uro:DataQualityAttribute,
+bldg|AbstractBuilding|bldgDisasterRiskAttribute=>uro|uro:DisasterRiskAttribute,
+bldg|AbstractBuilding|bldgDmAttribute=>uro|uro:DmAttribute,
+bldg|AbstractBuilding|bldgFacilityAttribute=>uro|uro:FacilityAttribute,
+bldg|AbstractBuilding|bldgFacilityIdAttribute=>uro|uro:FacilityIdAttribute,
+bldg|AbstractBuilding|bldgFacilityTypeAttribute=>uro|uro:FacilityTypeAttribute,
+bldg|AbstractBuilding|bldgKeyValuePairAttribute=>uro|uro:KeyValuePairAttribute,
+bldg|AbstractBuilding|bldgRealEstateIDAttribute=>uro|uro:RealEstateIDAttribute,
+bldg|AbstractBuilding|bldgUsecaseAttribute=>uro|uro:BuildingUsecaseAttribute,
+brid|AbstractBridge|bridBaseAttribute=>uro|uro:ConstructionBaseAttribute,
+brid|AbstractBridge|bridDataQualityAttribute=>uro|uro:DataQualityAttribute,
+brid|AbstractBridge|bridDisasterRiskAttribute=>uro|uro:DisasterRiskAttribute,
+brid|AbstractBridge|bridDmAttribute=>uro|uro:DmAttribute,
+brid|AbstractBridge|bridFacilityAttribute=>uro|uro:FacilityAttribute,
+brid|AbstractBridge|bridFacilityIdAttribute=>uro|uro:FacilityIdAttribute,
+brid|AbstractBridge|bridFacilityTypeAttribute=>uro|uro:FacilityTypeAttribute,
+brid|AbstractBridge|bridFunctionalAttribute=>uro|uro:BridgeFunctionalAttribute,
+brid|AbstractBridge|bridKeyValuePairAttribute=>uro|uro:KeyValuePairAttribute,
+brid|AbstractBridge|bridRiskAssessmentAttribute=>uro|uro:ConstructionRiskAssessmentAttribute,
+brid|AbstractBridge|bridStructureAttribute=>uro|uro:BridgeStructureAttribute,
+bldg|AbstractBuilding|buildingDetailAttribute=>uro|uro:BuildingDetailAttribute,
+bldg|AbstractBuilding|buildingIDAttribute=>uro|uro:BuildingIDAttribute,
+frn|CityFurniture|cityFurnitureDetailAttribute=>uro|uro:CityFurnitureDetailAttribute,
+dem|ReliefFeature|demDataQualityAttribute=>uro|uro:DataQualityAttribute,
+dem|ReliefComponent|demDmAttribute=>uro|uro:DmAttribute,
+dem|ReliefFeature|demKeyValuePairAttribute=>uro|uro:KeyValuePairAttribute,
+wtr|WaterBody|floodingRiskAttribute=>uro|uro:FloodingRiskAttribute,
+frn|CityFurniture|frnDataQualityAttribute=>uro|uro:DataQualityAttribute,
+frn|CityFurniture|frnDmAttribute=>uro|uro:DmAttribute,
+frn|CityFurniture|frnFacilityAttribute=>uro|uro:FacilityAttribute,
+frn|CityFurniture|frnFacilityIdAttribute=>uro|uro:FacilityIdAttribute,
+frn|CityFurniture|frnFacilityTypeAttribute=>uro|uro:FacilityTypeAttribute,
+frn|CityFurniture|frnKeyValuePairAttribute=>uro|uro:KeyValuePairAttribute,
+bldg|BoundarySurface|ifcBoundarySurfaceAttribute=>uro|uro:IfcAttribute,
+bldg|AbstractBuilding|ifcBuildingAttribute=>uro|uro:IfcAttribute,
+bldg|BuildingFurniture|ifcBuildingFurnitureAttribute=>uro|uro:IfcAttribute,
+bldg|BuildingInstallation|ifcBuildingInstallationAttribute=>uro|uro:IfcAttribute,
+grp|CityObjectGroup|ifcBuildingStoreyAttribute=>uro|uro:IfcAttribute,
+bldg|IntBuildingInstallation|ifcIntBuildingInstallationAttribute=>uro|uro:IfcAttribute,
+luse|LandUse|ifcLandUseAttribute=>uro|uro:IfcAttribute,
+bldg|Opening|ifcOpeningAttribute=>uro|uro:IfcAttribute,
+bldg|Room|ifcRoomAttribute=>uro|uro:IfcAttribute,
+bldg|BoundarySurface|indoorBoundarySurfaceAttribute=>uro|uro:IndoorAttribute,
+bldg|AbstractBuilding|indoorBuildingAttribute=>uro|uro:IndoorAttribute,
+bldg|BuildingFurniture|indoorFurnitureAttribute=>uro|uro:IndoorAttribute,
+bldg|IntBuildingInstallation|indoorIntInstallationAttribute=>uro|uro:IndoorAttribute,
+bldg|Opening|indoorOpeningAttribute=>uro|uro:IndoorAttribute,
+bldg|Room|indoorRoomAttribute=>uro|uro:IndoorAttribute,
+grp|CityObjectGroup|indoorStoreyAttribute=>uro|uro:IndoorAttribute,
+luse|LandUse|landUseDetailAttribute=>uro|uro:LandUseDetailAttribute,
+bldg|AbstractBuilding|largeCustomerFacilityAttribute=>uro|uro:LargeCustomerFacilityAttribute,
+luse|LandUse|luseDataQualityAttribute=>uro|uro:DataQualityAttribute,
+luse|LandUse|luseDmAttribute=>uro|uro:DmAttribute,
+luse|LandUse|luseFacilityAttribute=>uro|uro:FacilityAttribute,
+luse|LandUse|luseFacilityIdAttribute=>uro|uro:FacilityIdAttribute,
+luse|LandUse|luseFacilityTypeAttribute=>uro|uro:FacilityTypeAttribute,
+luse|LandUse|luseKeyValuePairAttribute=>uro|uro:KeyValuePairAttribute,
+core|CityObject|pointCloud=>uro|uro:AbstractPointCloud,
+core|CityObject|dateAttribute=>gen|gen:dateAttribute,
+core|CityObject|doubleAttribute=>gen|gen:doubleAttribute,
+core|CityObject|genericAttributeSet=>gen|gen:genericAttributeSet,
+core|CityObject|intAttribute=>gen|gen:intAttribute,
+core|CityObject|measureAttribute=>gen|gen:measureAttribute,
+core|CityObject|stringAttribute=>gen|gen:stringAttribute,
+core|CityObject|uriAttribute=>gen|gen:uriAttribute,
+tran|Railway|railwayRouteAttribute=>uro|uro:RailwayRouteAttribute,
+tran|TrafficArea|railwayTrackAttribute=>uro|uro:RailwayTrackAttribute,
+tran|Road|roadStatus=>uro|uro:RoadType,
+tran|Road|roadStructureAttribute=>uro|uro:RoadStructureAttribute,
+tran|Square|squareUrbanPlanAttribute=>uro|uro:SquareUrbanPlanAttribute,
+tran|Track|trackAttribute=>uro|uro:TrackAttribute,
+tran|TrafficArea|trafficAreaStructureAttribute=>uro|uro:TrafficAreaStructureAttribute,
+tran|Road|trafficVolumeAttribute=>uro|uro:TrafficVolumeAttribute,
+tran|TransportationComplex|tranDataQualityAttribute=>uro|uro:DataQualityAttribute,
+tran|TransportationComplex|tranDmAttribute=>uro|uro:DmAttribute,
+tran|TransportationComplex|tranFacilityAttribute=>uro|uro:FacilityAttribute,
+tran|TransportationComplex|tranFacilityIdAttribute=>uro|uro:FacilityIdAttribute,
+tran|TransportationComplex|tranFacilityTypeAttribute=>uro|uro:FacilityTypeAttribute,
+tran|TransportationComplex|tranKeyValuePairAttribute=>uro|uro:KeyValuePairAttribute,
+tran|TransportationComplex|tranUsecaseAttribute=>uro|uro:TrafficObjectUsecaseAttribute,
+tun|AbstractTunnel|tunBaseAttribute=>uro|uro:ConstructionBaseAttribute,
+tun|AbstractTunnel|tunDataQualityAttribute=>uro|uro:DataQualityAttribute,
+tun|AbstractTunnel|tunDisasterRiskAttribute=>uro|uro:DisasterRiskAttribute,
+tun|AbstractTunnel|tunDmAttribute=>uro|uro:DmAttribute,
+tun|AbstractTunnel|tunFacilityAttribute=>uro|uro:FacilityAttribute,
+tun|AbstractTunnel|tunFacilityIdAttribute=>uro|uro:FacilityIdAttribute,
+tun|AbstractTunnel|tunFacilityTypeAttribute=>uro|uro:FacilityTypeAttribute,
+tun|AbstractTunnel|tunFunctionalAttribute=>uro|uro:TunnelFunctionalAttribute,
+tun|AbstractTunnel|tunKeyValuePairAttribute=>uro|uro:KeyValuePairAttribute,
+tun|AbstractTunnel|tunRiskAssessmentAttribute=>uro|uro:ConstructionRiskAssessmentAttribute,
+tun|AbstractTunnel|tunStructureAttribute=>uro|uro:TunnelStructureAttribute,
+veg|VegetationObject|vegDataQualityAttribute=>uro|uro:DataQualityAttribute,
+veg|VegetationObject|vegDmAttribute=>uro|uro:DmAttribute,
+veg|VegetationObject|vegFacilityAttribute=>uro|uro:FacilityAttribute,
+veg|VegetationObject|vegFacilityIdAttribute=>uro|uro:FacilityIdAttribute,
+veg|VegetationObject|vegFacilityTypeAttribute=>uro|uro:FacilityTypeAttribute,
+veg|VegetationObject|vegKeyValuePairAttribute=>uro|uro:KeyValuePairAttribute,
+wtr|WaterBody|waterBodyDetailAttribute=>uro|uro:WaterBodyDetailAttribute,
+wtr|WaterBody|wtrDataQualityAttribute=>uro|uro:DataQualityAttribute,
+wtr|WaterBody|wtrDmAttribute=>uro|uro:DmAttribute,
+wtr|WaterBody|wtrFacilityAttribute=>uro|uro:FacilityAttribute,
+wtr|WaterBody|wtrFacilityIdAttribute=>uro|uro:FacilityIdAttribute,
+wtr|WaterBody|wtrFacilityTypeAttribute=>uro|uro:FacilityTypeAttribute,
+wtr|WaterBody|wtrKeyValuePairAttribute=>uro|uro:KeyValuePairAttribute,
+dataQualityAttribute=>urf|uro:DataQualityAttribute,
+keyValuePairAttribute=>urf|uro:KeyValuePairAttribute,
+urfDmAttribute=>urf|uro:DmAttribute
+" | strip_newlines | split: "," %}
+
+{% assign mapping_types = "
+Address=>core:Address,
+BreakdownOfNominalArea=>urf:BreakdownOfNominalArea,
+CircularCurveType=>uro:CircularCurveType,
+Color=>core:Color,
+ColorPlusOpacity=>core:ColorPlusOpacity,
+ConditionOfConstructionValue=>uro:ConditionOfConstructionValue,
+ConstructionEvent=>uro:ConstructionEvent,
+ControlPointType=>uro:ControlPointType,
+CountermeasuresCost=>uro:CountermeasuresCost,
+Description=>gml:description,
+doubleBetween0and1=>core:doubleBetween0and1,
+EconomicActivitySumType=>urf:EconomicActivitySumType,
+Elevation=>uro:Elevation,
+Height=>uro:Height,
+HightStatusValue=>uro:HightStatusValue,
+IfcAxis2Placement3D=>uro:IfcAxis2Placement3D,
+IfcClassification=>uro:IfcClassification,
+IfcCoordinateReferenceSystem=>uro:IfcCoordinateReferenceSystem,
+IfcCoordinateReferenceSystemSelect=>uro:IfcCoordinateReferenceSystemSelect,
+IfcElementCompositionEnum=>uro:IfcElementCompositionEnum,
+IfcGeometricRepresentationContext=>uro:IfcGeometricRepresentationContext,
+ifcInternalOrExternalEnum=>uro:ifcInternalOrExternalEnum,
+IfcTransportElementTypeEnum=>uro:IfcTransportElementTypeEnum,
+IfcUnit=>uro:IfcUnit,
+IfcUnitEnum=>uro:IfcUnitEnum,
+integerBetween0and4=>core:integerBetween0and4,
+LandPricePerLandUseType=>urf:LandPricePerLandUseType,
+LongevityMeasures=>uro:LongevityMeasures,
+NumberOfFacilities=>uro:NumberOfFacilities,
+NumberOfHouseholdsType=>urf:NumberOfHouseholdsType,
+Occupancy=>uro:Occupancy,
+ParkHealthAssessment=>uro:ParkHealthAssessment,
+Point=>gml:Point,
+PopulationByAgeAndSexType=>urf:PopulationByAgeAndSexType,
+RelativeToTerrainType=>core:RelativeToTerrainType,
+RelativeToWaterType=>core:RelativeToWaterType,
+RepairsBeforeParkHealthAssessment=>uro:RepairsBeforeParkHealthAssessment,
+SlopeType=>uro:SlopeType,
+StructureDetails=>urf:StructureDetails,
+Surface=>gml:Surface,
+TextureTypeType=>core:TextureTypeType,
+TransformationMatrix2x2=>core:TransformationMatrix2x2,
+TransformationMatrix3x4=>core:TransformationMatrix3x4,
+TransformationMatrix4x4=>core:TransformationMatrix4x4,
+TransitionCurveType=>uro:TransitionCurveType,
+UserDefinedValue=>uro:UserDefinedValue,
+ValueByCodes=>urf:ValueByCodes,
+VerticalCurveType=>uro:VerticalCurveType,
+WeatherObservationType=>urf:WeatherObservationType,
+WrapModeType=>core:WrapModeType
+" | strip_newlines | split: "," %}
+
+{%- comment -%}rwp 10 lines below{%- endcomment -%}
+{%- comment -%}Configure table columns{%- endcomment -%}
+{% if show_guidance_column %}
+  {% assign cols_format = "1a,1a,2a,1a" %}
+  {% assign cols_number = 4 %}
+  {% assign cols_header = 3 %}
+{% else %}
+  {% assign cols_format = "1a,1a,2a" %}
+  {% assign cols_number = 3 %}
+  {% assign cols_header = 2 %}
+{% endif %}
+
+
+[cols="{{ cols_format }}"]
+|===
+h| 型の定義 {{ cols_header }}+| {{ root.definition }}
+h| 上位の型 {{ cols_header }}+| {{ upper_klass_name }}
+h| ステレオタイプ {{ cols_header }}+| {{ stereotype }}
+
+{% if root.inherited_props.size > 0 %}
+{{ cols_number }}+h| 継承する属性
+h| 属性名 h| 属性の型及び多重度 h| 定義 {% if show_guidance_column %} h| 補足{% endif %}
+{% for attr in root.inherited_props %}
+  {% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
+  {%- capture name_col -%}
+    {%- if attr.used? == false -%}
+      ({{ attr_upper_klass_name }}:{{ attr.name }}) +
+      [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
+    {%- else -%}
+      {{ attr_upper_klass_name }}:{{ attr.name }} +
+      [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
+    {%- endif -%}
+  {%- endcapture -%}
+  {% assign type_col = attr.type %}
+  {% for mapping_type in mapping_types %}
+    {% assign parts = mapping_type | split: "=>" %}
+    {% if parts[0] == attr.type %}
+      {% assign type_col = parts[1] %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+  {% if type_col == 'core:TextureTypeType' %}
+  	{% assign type_col = 'app:TextureTypeType' %}
+  {% endif %}
+  {% if type_col == 'core:WrapModeType' %}
+  	{% assign type_col = 'app:WrapModeType' %}
+  {% endif %}
+  {% if type_col == 'core:ColorPlusOpacity' %}
+  	{% assign type_col = 'app:ColorPlusOpacity' %}
+  {% endif %}
+  | {{ name_col }}
+  | {{ type_col }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
+  | {{ attr.definition }}{% if show_guidance_column %} | {{ attr.guidance }}{% endif %}{% if attr.used? == false %}tr-style:[background-color: {{ row_shade_color }} ]{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if root.owned_props.size > 0 %}
+{{ cols_number }}+h| 自身に定義された属性
+h| 属性名 h| 属性の型及び多重度 h| 定義 {% if show_guidance_column %} h| 補足{% endif %}
+{% for attr in root.owned_props %}
+  {% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
+  {%- capture name_col -%}
+    {%- if attr.used? == false -%}
+      ({{ attr_upper_klass_name }}:{{ attr.name }}) +
+      [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
+    {%- else -%}
+      {{ attr_upper_klass_name }}:{{ attr.name }} +
+      [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
+    {%- endif -%}
+  {%- endcapture -%}
+  {% assign type_col = attr.type %}
+  {% for mapping_type in mapping_types %}
+    {% assign parts = mapping_type | split: "=>" %}
+    {% if parts[0] == attr.type %}
+      {% assign type_col = parts[1] %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+  {% if type_col == 'core:Color' %}
+  	{% assign type_col = 'app:Color' %}
+  {% endif %}
+  | {{ name_col }}
+  | {{ type_col }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
+  | {{ attr.definition }}{% if show_guidance_column %} | {{ attr.guidance }}{% endif %}{% if attr.used? == false %}tr-style:[background-color: {{ row_shade_color }} ]{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if root.sorted_inherited_assoc_props.size > 0 %}
+{{ cols_number }}+h| 継承する関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if show_guidance_column %} h| 補足{% endif %}
+  {% assign all_gen_names = '' %}
+  {% for attr in root.sorted_inherited_assoc_props %}
+    {% assign all_gen_names = all_gen_names | append: ',' | append: attr.gen_name %}
+  {% endfor %}
+  {% assign all_gens = all_gen_names | split: ',' | uniq %}
+{% for cur_gen in all_gens %}
+  {% assign performed = false %}
+  {% for attr in root.sorted_inherited_assoc_props %}
+    {% assign props_with_same_gen = root.sorted_inherited_assoc_props | where: 'gen_name', cur_gen %}
+    {% unless performed %}
+      {% for attr in props_with_same_gen %}
+        {% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
+        {% if citygml_ns contains attr_upper_klass_name %}
+
+        {% assign name_col_role_and_name = attr_upper_klass_name | append: ":" | append: attr.name %}
+        {% assign type_col_role_and_name = attr.type_ns | append: ":" | append: attr.type %}
+
+        {% for mapping_entry in mapping_keys %}
+          {% assign parts = mapping_entry | split: "=>" %}
+          {% assign key = parts[0] | split: "|" %}
+          {% assign target = parts[1] | split: "|" %}
+          {% if key.size == 3 %}
+            {% comment %}Match on package|class|attribute{% endcomment %}
+            {% if key[0] == attr_upper_klass_name and key[2] == attr.name and target[1] == type_col_role_and_name %}
+              {% assign name_col_role_and_name = target[0] | append: ":" | append: attr.name %}
+              {% break %}
+            {% endif %}
+          {% elsif key.size == 1 %}
+            {% comment %}Match on attribute name only{% endcomment %}
+            {% if parts[0] == attr.name and target[1] == type_col_role_and_name %}
+              {% assign name_col_role_and_name = target[0] | append: ":" | append: attr.name %}
+              {% break %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+
+        {%- capture name_col -%}
+          {%- if attr.used? == false -%}
+            ({{  name_col_role_and_name }}) +
+            [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
+          {%- else -%}
+            {{  name_col_role_and_name }} +
+            [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
+          {%- endif -%}
+        {%- endcapture -%}
+        | {{ name_col }}
+        | {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
+        | {{ attr.definition }}{% if show_guidance_column %} | {{ attr.guidance }}{% endif %}{% if attr.used? == false %}tr-style:[background-color: {{ row_shade_color }} ]{% endif %}
+        {% endif %}
+      {% endfor %}
+      {% for attr in props_with_same_gen %}
+        {% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
+        {% unless citygml_ns contains attr_upper_klass_name %}
+        {%- capture name_col -%}
+          {%- if attr.used? == false -%}
+            ({{ attr_upper_klass_name }}:{{ attr.name }}) +
+            [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
+          {%- else -%}
+            {{ attr_upper_klass_name }}:{{ attr.name }} +
+            [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
+          {%- endif -%}
+        {%- endcapture -%}
+        | {{ name_col }}
+        | {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
+        | {{ attr.definition }}{% if show_guidance_column %} | {{ attr.guidance }}{% endif %}{% if attr.used? == false %}tr-style:[background-color: {{ row_shade_color }} ]{% endif %}
+        {% endunless %}
+      {% endfor %}
+      {% assign performed = true %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
+{% endif %}
+
+{% if root.sorted_assoc_props.size > 0 %}
+  {% assign sorted_assoc_props = root.sorted_assoc_props %}
+  {% assign all_prefixes = 'i-UR,urf,uro' | split: ',' %}
+
+{% comment %}Draw table head{% endcomment %}
+{{ cols_number }}+h| 自身に定義された関連役割
+h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if show_guidance_column %} h| 補足{% endif %}
+
+  {% comment %}Draw table (Prefix other than i-UR, urf, uro){% endcomment %}
+  {% for attr in sorted_assoc_props %}
+    {% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
+    {% if attr.type_ns == "gen" %}
+      {% assign attr_upper_klass_name = "gen" %}
+    {% endif %}
+
+    {% assign prefix = attr_upper_klass_name %}
+    {% assign name_col_role_and_name = attr_upper_klass_name | append: ":" | append: attr.name %}
+    {% assign type_col_role_and_name = attr.type_ns | append: ":" | append: attr.type %}
+
+    {% for mapping_entry in mapping_keys %}
+      {% assign parts = mapping_entry | split: "=>" %}
+      {% assign key = parts[0] | split: "|" %}
+      {% assign target = parts[1] | split: "|" %}
+      {% if key.size == 3 %}
+        {% comment %}Match on package|class|attribute{% endcomment %}
+        {% if key[0] == attr_upper_klass_name and key[2] == attr.name and target[1] == type_col_role_and_name %}
+          {% assign name_col_role_and_name = target[0] | append: ":" | append: attr.name %}
+          {% assign prefix = target[0] %}
+          {% break %}
+        {% endif %}
+      {% elsif key.size == 1 %}
+        {% comment %}Match on attribute name only{% endcomment %}
+        {% if parts[0] == attr.name and target[1] == type_col_role_and_name %}
+          {% assign name_col_role_and_name = target[0] | append: ":" | append: attr.name %}
+          {% assign prefix = target[0] %}
+          {% break %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    {%- capture name_col -%}
+      {%- if attr.used? == false -%}
+        ({{ name_col_role_and_name }}) +
+        [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
+      {%- else -%}
+        {{ name_col_role_and_name }} +
+        [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
+      {%- endif -%}
+    {%- endcapture -%}
+
+{% comment %}Draw table rows{% endcomment %}
+    {% unless all_prefixes contains prefix %}
+| {{ name_col }}
+| {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
+| {{ attr.definition }}{% if show_guidance_column %} | {{ attr.guidance }}{% endif %}{% if attr.used? == false %}tr-style:[background-color: {{ row_shade_color }} ]{% endif %}
+    {% endunless %}
+  {% endfor %}
+
+  {% comment %}Draw table (Prefix equals i-UR){% endcomment %}
+  {% for attr in sorted_assoc_props %}
+    {% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
+    {% if attr.type_ns == "gen" %}
+      {% assign attr_upper_klass_name = "gen" %}
+    {% endif %}
+
+    {% assign prefix = attr_upper_klass_name %}
+    {% assign name_col_role_and_name = attr_upper_klass_name | append: ":" | append: attr.name %}
+    {% assign type_col_role_and_name = attr.type_ns | append: ":" | append: attr.type %}
+
+    {% for mapping_entry in mapping_keys %}
+      {% assign parts = mapping_entry | split: "=>" %}
+      {% assign key = parts[0] | split: "|" %}
+      {% assign target = parts[1] | split: "|" %}
+      {% if key.size == 3 %}
+        {% comment %}Match on package|class|attribute{% endcomment %}
+        {% if key[0] == attr_upper_klass_name and key[2] == attr.name and target[1] == type_col_role_and_name %}
+          {% assign name_col_role_and_name = target[0] | append: ":" | append: attr.name %}
+          {% assign prefix = target[0] %}
+          {% break %}
+        {% endif %}
+      {% elsif key.size == 1 %}
+        {% comment %}Match on attribute name only{% endcomment %}
+        {% if parts[0] == attr.name and target[1] == type_col_role_and_name %}
+          {% assign name_col_role_and_name = target[0] | append: ":" | append: attr.name %}
+          {% assign prefix = target[0] %}
+          {% break %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    {%- capture name_col -%}
+      {%- if attr.used? == false -%}
+        ({{ name_col_role_and_name }}) +
+        [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
+      {%- else -%}
+        {{ name_col_role_and_name }} +
+        [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
+      {%- endif -%}
+    {%- endcapture -%}
+
+{% comment %}Draw table rows{% endcomment %}
+    {% if prefix == "i-UR" %}
+| {{ name_col }}
+| {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
+| {{ attr.definition }}{% if show_guidance_column %} | {{ attr.guidance }}{% endif %}{% if attr.used? == false %}tr-style:[background-color: {{ row_shade_color }} ]{% endif %}
+    {% endif %}
+  {% endfor %}
+
+  {% comment %}Draw table (Prefix equals urf){% endcomment %}
+  {% for attr in sorted_assoc_props %}
+    {% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
+    {% if attr.type_ns == "gen" %}
+      {% assign attr_upper_klass_name = "gen" %}
+    {% endif %}
+
+    {% assign prefix = attr_upper_klass_name %}
+    {% assign name_col_role_and_name = attr_upper_klass_name | append: ":" | append: attr.name %}
+    {% assign type_col_role_and_name = attr.type_ns | append: ":" | append: attr.type %}
+
+    {% for mapping_entry in mapping_keys %}
+      {% assign parts = mapping_entry | split: "=>" %}
+      {% assign key = parts[0] | split: "|" %}
+      {% assign target = parts[1] | split: "|" %}
+      {% if key.size == 3 %}
+        {% comment %}Match on package|class|attribute{% endcomment %}
+        {% if key[0] == attr_upper_klass_name and key[2] == attr.name and target[1] == type_col_role_and_name %}
+          {% assign name_col_role_and_name = target[0] | append: ":" | append: attr.name %}
+          {% assign prefix = target[0] %}
+          {% break %}
+        {% endif %}
+      {% elsif key.size == 1 %}
+        {% comment %}Match on attribute name only{% endcomment %}
+        {% if parts[0] == attr.name and target[1] == type_col_role_and_name %}
+          {% assign name_col_role_and_name = target[0] | append: ":" | append: attr.name %}
+          {% assign prefix = target[0] %}
+          {% break %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    {%- capture name_col -%}
+      {%- if attr.used? == false -%}
+        ({{ name_col_role_and_name }}) +
+        [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
+      {%- else -%}
+        {{ name_col_role_and_name }} +
+        [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
+      {%- endif -%}
+    {%- endcapture -%}
+
+{% comment %}Draw table rows{% endcomment %}
+    {% if prefix == "urf" %}
+| {{ name_col }}
+| {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
+| {{ attr.definition }}{% if show_guidance_column %} | {{ attr.guidance }}{% endif %}{% if attr.used? == false %}tr-style:[background-color: {{ row_shade_color }} ]{% endif %}
+    {% endif %}
+  {% endfor %}
+
+  {% comment %}Draw table (Prefix equals uro){% endcomment %}
+  {% for attr in sorted_assoc_props %}
+    {% assign attr_upper_klass_name = attr.upper_klass.absolute_path | split: "::" | last %}
+    {% if attr.type_ns == "gen" %}
+      {% assign attr_upper_klass_name = "gen" %}
+    {% endif %}
+
+    {% assign prefix = attr_upper_klass_name %}
+    {% assign name_col_role_and_name = attr_upper_klass_name | append: ":" | append: attr.name %}
+    {% assign type_col_role_and_name = attr.type_ns | append: ":" | append: attr.type %}
+
+    {% for mapping_entry in mapping_keys %}
+      {% assign parts = mapping_entry | split: "=>" %}
+      {% assign key = parts[0] | split: "|" %}
+      {% assign target = parts[1] | split: "|" %}
+      {% if key.size == 3 %}
+        {% comment %}Match on package|class|attribute{% endcomment %}
+        {% if key[0] == attr_upper_klass_name and key[2] == attr.name and target[1] == type_col_role_and_name %}
+          {% assign name_col_role_and_name = target[0] | append: ":" | append: attr.name %}
+          {% assign prefix = target[0] %}
+          {% break %}
+        {% endif %}
+      {% elsif key.size == 1 %}
+        {% comment %}Match on attribute name only{% endcomment %}
+        {% if parts[0] == attr.name and target[1] == type_col_role_and_name %}
+          {% assign name_col_role_and_name = target[0] | append: ":" | append: attr.name %}
+          {% assign prefix = target[0] %}
+          {% break %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    {%- capture name_col -%}
+      {%- if attr.used? == false -%}
+        ({{ name_col_role_and_name }}) +
+        [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
+      {%- else -%}
+        {{ name_col_role_and_name }} +
+        [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
+      {%- endif -%}
+    {%- endcapture -%}
+
+{% comment %}Draw table rows{% endcomment %}
+    {% if prefix == "uro" %}
+| {{ name_col }}
+| {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
+| {{ attr.definition }}{% if show_guidance_column %} | {{ attr.guidance }}{% endif %}{% if attr.used? == false %}tr-style:[background-color: {{ row_shade_color }} ]{% endif %}
+    {% endif %}
+  {% endfor %}
+
+{% endif %}
+|===
