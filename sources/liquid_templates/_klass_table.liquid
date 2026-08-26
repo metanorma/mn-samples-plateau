@@ -422,7 +422,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
 
   {% comment %}Draw table (Prefix equals i-UR){% endcomment %}
   {% for attr in sorted_assoc_props %}
-    {% assign attr_upper_klass_name = attr.upper_klass %}
+    {% assign attr_upper_klass_name = attr.name_ns %}
     {% if attr.type_ns == "gen" %}
       {% assign attr_upper_klass_name = "gen" %}
     {% endif %}
@@ -473,7 +473,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
 
   {% comment %}Draw table (Prefix equals urf){% endcomment %}
   {% for attr in sorted_assoc_props %}
-    {% assign attr_upper_klass_name = attr.upper_klass %}
+    {% assign attr_upper_klass_name = attr.name_ns %}
     {% if attr.type_ns == "gen" %}
       {% assign attr_upper_klass_name = "gen" %}
     {% endif %}
@@ -524,7 +524,7 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
 
   {% comment %}Draw table (Prefix equals uro){% endcomment %}
   {% for attr in sorted_assoc_props %}
-    {% assign attr_upper_klass_name = attr.upper_klass %}
+    {% assign attr_upper_klass_name = attr.name_ns %}
     {% if attr.type_ns == "gen" %}
       {% assign attr_upper_klass_name = "gen" %}
     {% endif %}
