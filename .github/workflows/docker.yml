@@ -19,6 +19,10 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      # Gemfile.lock is committed: install exactly what it pins and fail
+      # loudly on Gemfile/lock drift instead of re-resolving git branches
+      BUNDLE_FROZEN: "true"
     # container:
     #   image: metanorma/metanorma:latest
     steps:
