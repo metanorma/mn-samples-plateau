@@ -94,6 +94,9 @@ jobs:
           git config --global user.name "Metanorma CI"
           git config --global init.defaultBranch main
           git init .
+          # actions/checkout leaves HEAD detached on pull_request events;
+          # FireLight resolves the "main" ref, so the branch must exist
+          git checkout -B main
 
       - name: "Firelight: commit document ${{ matrix.document.dir }}"
         run: |
