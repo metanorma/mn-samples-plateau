@@ -33,11 +33,11 @@ gem "sassc-embedded"
 
 # hyperperformance line: git-main for the whole lutaml family
 gem "lutaml-model", github: "lutaml/lutaml-model", branch: "perf/hash-access-allocs" # lutaml-model#916: fetch_str_or_sym string births
-gem "moxml", github: "lutaml/moxml", branch: "perf/wrapper-read-memos" # #321 wrapper read memos, stacked on #317 (census A/B)
-gem "leptris" # 1.9.282.0 pin lifted - the malloc regression was moxml#308 (leptris-ruby#362 misattribution)
-gem "ea", github: "lutaml/ea", branch: "main"
+gem "moxml", github: "lutaml/moxml", branch: "perf/node-set-intersection" # moxml#324: NodeSet set-ops + mutator adoption; byte-parity-validated here. wrapper-read-memos (#321 line) stacks on main separately
+gem "leptris", "1.9.290.0" # frozen at the byte-parity-validated version; the malloc regression was moxml#308 (leptris-ruby#362 misattribution)
+gem "ea", github: "lutaml/ea", branch: "perf/xmi-slicer" # ea#86: whole/partial loading (Ea::Xmi.load); flip to main on merge
 gem "xmi", github: "lutaml/xmi", branch: "main"
-gem "metanorma-plugin-lutaml", github: "metanorma/metanorma-plugin-lutaml", branch: "main"
+gem "metanorma-plugin-lutaml", github: "metanorma/metanorma-plugin-lutaml", branch: "perf/xmi-slices" # plugin#311: partial load via Ea::Xmi.load_graph (lutaml-ea-xmi-load: partial); flip to main on merge
 
 # asciidoctor (2.0.x) rebuilds the whole cell buffer String on every appended
 # table line (O(N^2) per multi-line cell): the klass tables render a 57k-line
@@ -53,7 +53,7 @@ gem "metanorma-plugin-lutaml", github: "metanorma/metanorma-plugin-lutaml", bran
 # keys match relaton/cache/v2 — like standoc#1267.
 gem "relaton", "= 3.0.0.pre.alpha.4"
 gem "relaton-cli", github: "relaton/relaton", tag: "v3.0.0.pre.alpha.4", glob: "gems/relaton-cli/relaton-cli.gemspec" # keep in lockstep with the relaton pin above
-gem "pubid", github: "pubid/pubid", branch: "perf/string-allocs" # pubid#487: polymorphic_name memo + alias folds
+gem "pubid", github: "pubid/pubid", branch: "main" # pubid#487 (5f3e9add73 polymorphic_name memo + alias folds) is on main; the perf/string-allocs branch is gone
 # released relaton-render 1.3.0 still pulls the relaton-bib fragment, whose
 # Relaton::RequestError redefinition clashes with the relaton monogem
 # (superclass mismatch); render main depends on the monogem directly
