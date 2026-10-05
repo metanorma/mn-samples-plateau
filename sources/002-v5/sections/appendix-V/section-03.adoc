@@ -72,10 +72,10 @@ image::images/EAID_71F9216B_E7A7_4083_B08E_6C71B57F3A1F.png[]
           <uro:srcFilteringCriteria codeSpace="../../codelists/PointCloudSpecAttribute_srcFilteringCriteria.xml">1</uro:srcFilteringCriteria>
           <uro:srcGridInterval uom="m">1</uro:srcGridInterval>
           <uro:isIntensity>1</uro:isIntensity>
-          <uro:spectralBandSet>1</uro:spectralBandSet>
+          <uro:spectralBandSet codeSpace="../../codelists/PointCloudSpecAttribute_spectralBandSet.xml">1</uro:spectralBandSet>
           <uro:isReturnInfo>0</uro:isReturnInfo>
           <uro:isStandardClassification>0</uro:isStandardClassification>
-          <uro:customClassificationType>0</uro:customClassificationType>
+          <uro:customClassificationType codeSpace="../../codelists/PointCloudSpecAttribute_customClassificationType.xml">0</uro:customClassificationType>
           <uro:pointCloudAssociationMethod codeSpace="../../codelists/PointCloudSpecAttribute_pointCloudAssociationMethod.xml">1</uro:pointCloudAssociationMethod>
           <uro:pointSubsamplingInfo codeSpace="../../codelists/PointCloudSpecAttribute_pointSubsamplingInfo.xml">1</uro:pointSubsamplingInfo>
         </uro:PointCloudSpecAttribute>
@@ -100,7 +100,7 @@ image::images/EAID_71F9216B_E7A7_4083_B08E_6C71B57F3A1F.png[]
 *	uro:srcHorizontalAccuracyには、原典の三次元点群データの水平精度を記述する。単位はｍとする。
 *	uro:srcVerticalAccuracyには、原典の三次元点群データの垂直精度を記述する。単位はｍとする。
 *	uro:srcRequiredPointDensityには、原典の三次元点群データの要求点密度を記述する。単位は点/m2とする。
-** 要求点密度とは、作成時に満たすべき点密度を指し、原典の三次元点群データの作成時
+** 要求点密度とは、作成時に満たすべき点密度を指し、原典の三次元点群データの作成時に設定される。
 *	uro:srcFilteringCriteriaには、原典の三次元点群データのフィルタリングの状況を記述する。
 ** フィルタリングした項目をコードリスト（PointCloudSpecAttribute_srcFilteringCriteria.xml）から複数選択する。
 *	uro:srcGridIntervalには、原典の三次元点群データの格子間隔を記述する。単位はm又はdegとする。
