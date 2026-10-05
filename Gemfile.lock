@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/lutaml/ea.git
-  revision: 5fa4d50fb797ef613947bc6cd2525ab33f9d6117
+  revision: baabc7ee1433ef8d0312720817eb67f1f46bd355
   branch: perf/xmi-slicer
   specs:
-    ea (0.6.28)
+    ea (0.6.36)
       benchmark
       liquid
       lutaml-model
@@ -32,10 +32,10 @@ GIT
 
 GIT
   remote: https://github.com/lutaml/moxml.git
-  revision: b11ccb5a4b7c32d21cc8b457f5b1375a2e79a3b5
+  revision: 9ba4b9b303c127967ed0169f33fd5bed5e1df76a
   branch: perf/node-set-intersection
   specs:
-    moxml (0.5.105)
+    moxml (0.5.106)
 
 GIT
   remote: https://github.com/lutaml/xmi.git
@@ -224,7 +224,7 @@ GIT
 
 GIT
   remote: https://github.com/metanorma/metanorma-standoc.git
-  revision: fe032ff5315086f44ba050e59f2b3b1782b76a9b
+  revision: 4ebdfd66af920d3d8889e7a107c17e12dad83744
   branch: perf/cleanup-gc-budget
   specs:
     metanorma-standoc (3.5.0)
@@ -682,21 +682,21 @@ GEM
       rdf (~> 3.3)
       rexml (~> 3.2)
     latex-decode (0.4.2)
-    leptris (1.9.290.0-aarch64-linux)
+    leptris (1.9.304.0-aarch64-linux)
       ffi (~> 1.15)
-    leptris (1.9.290.0-aarch64-linux-musl)
+    leptris (1.9.304.0-aarch64-linux-musl)
       ffi (~> 1.15)
-    leptris (1.9.290.0-arm-linux)
+    leptris (1.9.304.0-arm-linux)
       ffi (~> 1.15)
-    leptris (1.9.290.0-arm-linux-musl)
+    leptris (1.9.304.0-arm-linux-musl)
       ffi (~> 1.15)
-    leptris (1.9.290.0-arm64-darwin)
+    leptris (1.9.304.0-arm64-darwin)
       ffi (~> 1.15)
-    leptris (1.9.290.0-x86_64-darwin)
+    leptris (1.9.304.0-x86_64-darwin)
       ffi (~> 1.15)
-    leptris (1.9.290.0-x86_64-linux)
+    leptris (1.9.304.0-x86_64-linux)
       ffi (~> 1.15)
-    leptris (1.9.290.0-x86_64-linux-musl)
+    leptris (1.9.304.0-x86_64-linux-musl)
       ffi (~> 1.15)
     libpng (1.6.58.6)
       ffi (~> 1.0)
@@ -1245,7 +1245,7 @@ DEPENDENCIES
   html2doc!
   isodoc!
   isodoc-i18n!
-  leptris (= 1.9.290.0)
+  leptris (= 1.9.304)
   lutaml-model!
   metanorma!
   metanorma-cli!

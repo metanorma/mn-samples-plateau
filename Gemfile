@@ -34,7 +34,7 @@ gem "sassc-embedded"
 # hyperperformance line: git-main for the whole lutaml family
 gem "lutaml-model", github: "lutaml/lutaml-model", branch: "perf/hash-access-allocs" # lutaml-model#916: fetch_str_or_sym string births
 gem "moxml", github: "lutaml/moxml", branch: "perf/node-set-intersection" # moxml#324: NodeSet set-ops + mutator adoption; byte-parity-validated here. wrapper-read-memos (#321 line) stacks on main separately
-gem "leptris", "1.9.290.0" # frozen at the byte-parity-validated version; the malloc regression was moxml#308 (leptris-ruby#362 misattribution)
+gem "leptris", "1.9.304" # v1.9.304: leptris#1528 fixed (cross-document splice adoption); #1528 was the sectioned-cleanup segfault
 gem "ea", github: "lutaml/ea", branch: "perf/xmi-slicer" # ea#86: whole/partial loading (Ea::Xmi.load); flip to main on merge
 gem "xmi", github: "lutaml/xmi", branch: "main"
 gem "metanorma-plugin-lutaml", github: "metanorma/metanorma-plugin-lutaml", branch: "perf/xmi-slices" # plugin#311: partial load via Ea::Xmi.load_graph (lutaml-ea-xmi-load: partial); flip to main on merge
