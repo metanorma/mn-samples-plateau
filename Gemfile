@@ -25,9 +25,9 @@ gem "lutaml-model", "0.8.107" # LATEST RELEASE: source-location warnings
 gem "moxml", github: "lutaml/moxml", branch: "main"
 
 # relaton / pubid line
-gem "relaton", "= 3.0.0.pre.alpha.4"
-gem "relaton-cli", github: "relaton/relaton", tag: "v3.0.0.pre.alpha.4", glob: "gems/relaton-cli/relaton-cli.gemspec"
-gem "relaton-render", "= 3.0.0.pre.alpha.19"
+gem "relaton", "= 3.0.0.pre.alpha.14"
+gem "relaton-cli", "= 3.0.0.pre.alpha.14"
+gem "relaton-render", "= 3.0.0.pre.alpha.43"
 gem "pubid", github: "pubid/pubid", branch: "main"
 
 # corpus extras
