@@ -253,22 +253,10 @@ GIT
   revision: 2a0d97748b0a0bac8d759ec4c43e64e3f2152180
   branch: main
   specs:
-    pubid (2.0.0.pre.alpha.13)
+    pubid (2.0.0.pre.alpha.28)
       lutaml-model
+      parsanol (>= 1.3.62)
       parslet
-
-GIT
-  remote: https://github.com/relaton/relaton.git
-  revision: 35bdf3431f50cd5efccd19dbdd031c07f6a5edad
-  tag: v3.0.0.pre.alpha.4
-  glob: gems/relaton-cli/relaton-cli.gemspec
-  specs:
-    relaton-cli (3.0.0.pre.alpha.4)
-      liquid (~> 5)
-      pubid (~> 2.0.0.pre.alpha.13)
-      relaton (= 3.0.0.pre.alpha.4)
-      thor
-      thor-hollaback
 
 GEM
   remote: https://rubygems.org/
@@ -362,7 +350,7 @@ GEM
       irb (~> 1.10)
       reline (>= 0.3.8)
     diff-lcs (2.0.0)
-    domain_name (0.6.20260921)
+    domain_name (0.7.20261007)
     down (5.6.0)
       addressable (~> 2.8)
       base64 (~> 0.3)
@@ -473,15 +461,15 @@ GEM
       addressable (~> 2.8)
       process_executer (~> 4.1)
       rchardet (~> 1.9)
-    glossarist (2.14.0)
+    glossarist (2.14.2)
       lutaml-model (~> 0.8.15)
-      lutaml-store (~> 0.2.0)
+      lutaml-store (~> 0.3)
       paint (~> 2.3)
       rdf-turtle (~> 3.3)
       relaton (~> 3.0.0.pre.alpha)
       rubyzip (~> 3.7)
       shacl (~> 0.4)
-      sts (~> 0.5.6)
+      sts (>= 0.5.6, < 0.7)
       table_tennis (~> 0.0)
       tbx (~> 0.1)
       thor
@@ -610,13 +598,13 @@ GEM
       lutaml-model
       lutaml-store (~> 0.2)
       rainbow (~> 3.0)
-    lutaml-lml (0.1.5)
+    lutaml-lml (0.3.0)
       lutaml-model (~> 0.8.0)
       moxml (>= 0.1.24)
-      parsanol (~> 1.3.57)
+      parsanol (~> 1.3.68)
       ruby-graphviz
-    lutaml-model (0.8.97)
-      base64
+    lutaml-model (0.8.107)
+      base64 (>= 0.1.1)
       bigdecimal
       canon
       concurrent-ruby
@@ -624,10 +612,10 @@ GEM
       moxml (~> 0.5.84)
       ostruct
       rubyzip (~> 3.7)
-      thor
+      thor (~> 1.4)
     lutaml-path (0.1.0)
       parslet
-    lutaml-store (0.2.4)
+    lutaml-store (0.3.2)
       lutaml-model (~> 0.8.15)
       rubyzip (>= 2.3, < 4)
     lutaml-uml (1.0.2)
@@ -701,7 +689,7 @@ GEM
     mime-types (3.7.0)
       logger
       mime-types-data (~> 3.2025, >= 3.2025.0507)
-    mime-types-data (3.2026.0929)
+    mime-types-data (3.2026.1006)
     mini_portile2 (2.8.9)
     minitest (6.0.6)
       drb (~> 2.0)
@@ -772,16 +760,19 @@ GEM
       bigdecimal (>= 3.0)
     paint (2.3.0)
     parallel (1.28.0)
-    parsanol (1.3.57)
+    parsanol (1.3.91)
       rb_sys (~> 0.9.39)
-    parsanol (1.3.57-aarch64-linux)
-    parsanol (1.3.57-aarch64-linux-musl)
-    parsanol (1.3.57-arm-linux)
-    parsanol (1.3.57-arm-linux-musl)
-    parsanol (1.3.57-arm64-darwin)
-    parsanol (1.3.57-x86_64-darwin)
-    parsanol (1.3.57-x86_64-linux)
-    parsanol (1.3.57-x86_64-linux-musl)
+    parsanol (1.3.91-aarch64-linux)
+    parsanol (1.3.91-aarch64-linux-musl)
+    parsanol (1.3.91-arm-linux)
+    parsanol (1.3.91-arm-linux-musl)
+    parsanol (1.3.91-arm64-darwin)
+    parsanol (1.3.91-x64-mingw-ucrt)
+    parsanol (1.3.91-x64-mingw32)
+      rb_sys (~> 0.9.39)
+    parsanol (1.3.91-x86_64-darwin)
+    parsanol (1.3.91-x86_64-linux)
+    parsanol (1.3.91-x86_64-linux-musl)
     parslet (2.0.0)
     plane1converter (0.0.1)
     plist (3.7.2)
@@ -853,7 +844,7 @@ GEM
       tsort
     readline (0.0.4)
       reline
-    relaton (3.0.0.pre.alpha.4)
+    relaton (3.0.0.pre.alpha.14)
       addressable (~> 2.8)
       algolia (~> 2.3.0)
       base64
@@ -871,21 +862,25 @@ GEM
       iso639
       isoics (~> 0.1.6)
       json (< 3)
+      leptris (>= 1.9.80)
       loc_mods (~> 0.3.0)
       logger (~> 1.6)
       lutaml-hal (~> 0.2, >= 0.2.5)
-      lutaml-model (~> 0.8.0)
+      lutaml-model (~> 0.8.76)
+      lutaml-store (~> 0.3.2)
       mechanize (~> 2.10)
       mini_portile2 (~> 2.8.0)
+      moxml (>= 0.5)
       niso-jats (~> 0.3.4)
-      nokogiri (>= 1.16)
       parallel (~> 1.26)
       parslet (~> 2.0.0)
-      psych (~> 5.2.0)
-      pubid (~> 2.0.0.pre.alpha.11)
+      pubid (~> 2.0.0.pre.alpha.28)
+      relaton-render (>= 3.0.0.pre.alpha.1, < 4)
       rfcxml (~> 0.4.3)
       rubyzip (~> 3.7)
+      sqlite3 (~> 1.7)
       w3c_api (~> 0.3.3)
+      yeptris (>= 0.4)
     relaton-bib (2.1.9)
       bibtex-ruby
       iso639
@@ -896,6 +891,12 @@ GEM
       relaton-core (~> 0.0.8)
       relaton-logger (~> 0.2.0)
       rfcxml (~> 0.4.3)
+    relaton-cli (3.0.0.pre.alpha.14)
+      liquid (~> 5)
+      pubid (~> 2.0.0.pre.alpha.13)
+      relaton (= 3.0.0.pre.alpha.14)
+      thor
+      thor-hollaback
     relaton-core (0.0.13)
       nokogiri (>= 1.16)
       psych (~> 5.2.0)
@@ -907,7 +908,7 @@ GEM
       uuidtools
     relaton-logger (0.2.4)
       logger (~> 1.6)
-    relaton-render (3.0.0.pre.alpha.19)
+    relaton-render (3.0.0.pre.alpha.43)
       htmlentities
       liquid (~> 5)
       lutaml-model
@@ -992,18 +993,8 @@ GEM
     sparql-client (3.3.0)
       net-http-persistent (~> 4.0, >= 4.0.2)
       rdf (~> 3.3)
-    sqlite3 (2.9.6)
+    sqlite3 (1.7.3)
       mini_portile2 (~> 2.8.0)
-    sqlite3 (2.9.6-aarch64-linux-gnu)
-    sqlite3 (2.9.6-aarch64-linux-musl)
-    sqlite3 (2.9.6-arm-linux-gnu)
-    sqlite3 (2.9.6-arm-linux-musl)
-    sqlite3 (2.9.6-arm64-darwin)
-    sqlite3 (2.9.6-x86-linux-gnu)
-    sqlite3 (2.9.6-x86-linux-musl)
-    sqlite3 (2.9.6-x86_64-darwin)
-    sqlite3 (2.9.6-x86_64-linux-gnu)
-    sqlite3 (2.9.6-x86_64-linux-musl)
     ssrf_filter (1.6.0)
     sterile (1.0.26)
       nokogiri (>= 1.11.7)
@@ -1196,7 +1187,7 @@ DEPENDENCIES
   isodoc-i18n!
   lutaml-hal
   lutaml-lml
-  lutaml-model (= 0.8.97)
+  lutaml-model (= 0.8.107)
   lutaml-store
   metanorma!
   metanorma-cli!
@@ -1214,9 +1205,9 @@ DEPENDENCIES
   moxml!
   parsanol
   pubid!
-  relaton (= 3.0.0.pre.alpha.4)
-  relaton-cli!
-  relaton-render (= 3.0.0.pre.alpha.19)
+  relaton (= 3.0.0.pre.alpha.14)
+  relaton-cli (= 3.0.0.pre.alpha.14)
+  relaton-render (= 3.0.0.pre.alpha.43)
   sassc-embedded
   tzinfo-data
   word-to-markdown
