@@ -21,7 +21,7 @@ gem "metanorma-iec", github: "metanorma/metanorma-iec", branch: "main"
 gem "metanorma-jis", github: "metanorma/metanorma-jis", branch: "main"
 
 # lutaml family
-gem "lutaml-model", "= 0.8.97"
+gem "lutaml-model", "0.8.107" # LATEST RELEASE: source-location warnings
 gem "moxml", github: "lutaml/moxml", branch: "main"
 
 # relaton / pubid line
