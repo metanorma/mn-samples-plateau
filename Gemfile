@@ -1,20 +1,20 @@
 source "https://rubygems.org"
 
 # metanorma core stack: git main
-gem "metanorma-cli", git: "https://github.com/metanorma/metanorma-cli", branch: "main"
-gem "metanorma-core", git: "https://github.com/metanorma/metanorma-core", branch: "main"
-gem "metanorma", git: "https://github.com/metanorma/metanorma", branch: "main"
-gem "metanorma-standoc", git: "https://github.com/metanorma/metanorma-standoc", branch: "main"
-gem "metanorma-document", git: "https://github.com/metanorma/metanorma-document", branch: "main"
-gem "metanorma-utils", git: "https://github.com/metanorma/metanorma-utils", branch: "main"
+gem "metanorma-cli", git: "https://github.com/metanorma/metanorma-cli", branch: "main", github: "metanorma/metanorma-cli", branch: "main"
+gem "metanorma-core", git: "https://github.com/metanorma/metanorma-core", branch: "main", github: "metanorma/metanorma-core", branch: "main"
+gem "metanorma", git: "https://github.com/metanorma/metanorma", branch: "main", github: "metanorma/metanorma", branch: "main"
+gem "metanorma-standoc", git: "https://github.com/metanorma/metanorma-standoc", branch: "main", github: "metanorma/metanorma-standoc", branch: "main"
+gem "metanorma-document", git: "https://github.com/metanorma/metanorma-document", branch: "main", github: "metanorma/metanorma-document", branch: "main"
+gem "metanorma-utils", git: "https://github.com/metanorma/metanorma-utils", branch: "main", github: "metanorma/metanorma-utils", branch: "main"
 gem "html2doc", git: "https://github.com/metanorma/html2doc", branch: "main"
-gem "isodoc", git: "https://github.com/metanorma/isodoc", branch: "main"
-gem "isodoc-i18n", git: "https://github.com/metanorma/isodoc-i18n", branch: "main"
+gem "isodoc", git: "https://github.com/metanorma/isodoc", branch: "main", github: "metanorma/isodoc", branch: "main"
+gem "isodoc-i18n", git: "https://github.com/metanorma/isodoc-i18n", branch: "main", github: "metanorma/isodoc-i18n", branch: "main"
 gem "mn-requirements", git: "https://github.com/metanorma/mn-requirements", branch: "main"
 
 # flavors: git main
 gem "metanorma-plateau", github: "metanorma/metanorma-plateau", branch: "main"
-gem "metanorma-iso", git: "https://github.com/metanorma/metanorma-iso", branch: "main"
+gem "metanorma-iso", git: "https://github.com/metanorma/metanorma-iso", branch: "main", github: "metanorma/metanorma-iso", branch: "main"
 gem "metanorma-ieee", github: "metanorma/metanorma-ieee", branch: "main"
 gem "metanorma-itu", github: "metanorma/metanorma-itu", branch: "main"
 gem "metanorma-iec", github: "metanorma/metanorma-iec", branch: "main"
@@ -26,8 +26,8 @@ gem "moxml", github: "lutaml/moxml", branch: "main"
 
 # relaton / pubid line
 gem "relaton", "= 3.0.0.pre.alpha.14"
-gem "relaton-cli", "= 3.0.0.pre.alpha.14"
-gem "relaton-render", "= 3.0.0.pre.alpha.43"
+gem "relaton-cli", "= 3.0.0.pre.alpha.14", github: "metanorma/relaton-cli", branch: "main"
+gem "relaton-render", "= 3.0.0.pre.alpha.43", github: "metanorma/relaton-render", branch: "main"
 gem "pubid", github: "pubid/pubid", branch: "main"
 
 # corpus extras
