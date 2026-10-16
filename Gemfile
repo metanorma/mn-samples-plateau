@@ -26,8 +26,8 @@ gem "moxml", github: "lutaml/moxml", branch: "main"
 
 # relaton / pubid line
 gem "relaton", "~> 3.0.0.pre.alpha"
-gem "relaton-cli", "~> 2.0.0.pre.alpha"
-gem "relaton-render", "~> 2.0.0.pre.alpha"
+gem "relaton-cli", "~> 3.0.0.pre.alpha"
+gem "relaton-render", "~> 3.0.0.pre.alpha"
 gem "pubid", "~> 2.0.0.pre.alpha"
 
 # corpus extras
