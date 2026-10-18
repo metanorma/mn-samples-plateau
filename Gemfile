@@ -22,7 +22,6 @@ gem "metanorma-jis", github: "metanorma/metanorma-jis", branch: "main"
 
 # lutaml family
 gem "lutaml-model", "0.8.107" # LATEST RELEASE: source-location warnings
-gem "moxml", github: "lutaml/moxml", branch: "main"
 
 # relaton / pubid line
 gem "relaton", "~> 3.0.0.pre.alpha"
