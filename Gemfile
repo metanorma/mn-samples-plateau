@@ -21,7 +21,7 @@ gem "metanorma-iec", github: "metanorma/metanorma-iec", branch: "main"
 gem "metanorma-jis", github: "metanorma/metanorma-jis", branch: "main"
 
 # lutaml family
-gem "lutaml-model", "0.8.107" # LATEST RELEASE: source-location warnings
+gem "lutaml-model", "0.8.114" # relaton 3.x declares singular_tolerance (needs 0.8.113+)
 
 # relaton / pubid line
 gem "relaton", "~> 3.0.0.pre.alpha"
