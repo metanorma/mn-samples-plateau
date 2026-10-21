@@ -132,7 +132,7 @@ jobs:
             -y @riboseinc/anafero-cli@0.1.1 build-site \
             --target-dir dist/${{ matrix.document.url }} \
             --path-prefix ${{ matrix.env.prefix }}${{ matrix.document.url }} \
-            --current-rev main --debug
+            --current-rev main
 
       - name: "Firelight: append HTML overrides for doc ${{ matrix.document.dir }}"
         run: |
