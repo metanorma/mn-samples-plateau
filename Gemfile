@@ -19,6 +19,13 @@ gem "metanorma-ieee", github: "metanorma/metanorma-ieee", branch: "main"
 gem "metanorma-itu", github: "metanorma/metanorma-itu", branch: "main"
 gem "metanorma-iec", github: "metanorma/metanorma-iec", branch: "main"
 gem "metanorma-jis", github: "metanorma/metanorma-jis", branch: "main"
+# released shadow flavors (lib/relaton/render shipped in 1.x/2.x gems) crash
+# boot under render 3.x (isodoc's compatibility require picks the shadow):
+# ogc, iho, ietf, bipm still need git main until their shadow-free cuts land
+gem "metanorma-ogc", github: "metanorma/metanorma-ogc", branch: "main"
+gem "metanorma-iho", github: "metanorma/metanorma-iho", branch: "main"
+gem "metanorma-ietf", github: "metanorma/metanorma-ietf", branch: "main"
+gem "metanorma-bipm", github: "metanorma/metanorma-bipm", branch: "main"
 
 # lutaml family
 gem "lutaml-model", "0.8.114" # relaton 3.x declares singular_tolerance (needs 0.8.113+)
