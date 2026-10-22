@@ -28,7 +28,6 @@ gem "metanorma-ietf", github: "metanorma/metanorma-ietf", branch: "main"
 gem "metanorma-bipm", github: "metanorma/metanorma-bipm", branch: "main"
 
 # lutaml family
-gem "lutaml-model", "0.8.114" # relaton 3.x declares singular_tolerance (needs 0.8.113+)
 
 # relaton / pubid line
 gem "relaton", "~> 3.0.0.pre.alpha"
