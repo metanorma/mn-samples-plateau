@@ -1,31 +1,31 @@
 source "https://rubygems.org"
 
 # metanorma core stack: git main
-gem "metanorma-cli", github: "metanorma/metanorma-cli", branch: "main"
-gem "metanorma-core", github: "metanorma/metanorma-core", branch: "main"
-gem "metanorma", github: "metanorma/metanorma", branch: "main"
-gem "metanorma-standoc", github: "metanorma/metanorma-standoc", branch: "main"
-gem "metanorma-document", github: "metanorma/metanorma-document", branch: "main"
+gem "metanorma-cli", "1.18.0.pre.alpha.1" #$(1)
+gem "metanorma-core", "0.2.5.pre.alpha.1" #$(1)
+gem "metanorma", "2.5.6.pre.alpha.1" #$(1)
+gem "metanorma-standoc", "3.5.1.pre.alpha.1" #$(1)
+gem "metanorma-document", "0.5.2.pre.alpha.1" #$(1)
 gem "metanorma-utils", github: "metanorma/metanorma-utils", branch: "main"
 gem "html2doc", git: "https://github.com/metanorma/html2doc", branch: "main"
-gem "isodoc", github: "metanorma/isodoc", branch: "main"
-gem "isodoc-i18n", github: "metanorma/isodoc-i18n", branch: "main"
+gem "isodoc", "3.7.4.pre.alpha.1" #$(1)
+gem "isodoc-i18n", "1.5.4.pre.alpha.1" #$(1)
 gem "mn-requirements", git: "https://github.com/metanorma/mn-requirements", branch: "main"
 
 # flavors: git main
-gem "metanorma-plateau", github: "metanorma/metanorma-plateau", branch: "main"
-gem "metanorma-iso", github: "metanorma/metanorma-iso", branch: "main"
-gem "metanorma-ieee", github: "metanorma/metanorma-ieee", branch: "main"
-gem "metanorma-itu", github: "metanorma/metanorma-itu", branch: "main"
-gem "metanorma-iec", github: "metanorma/metanorma-iec", branch: "main"
-gem "metanorma-jis", github: "metanorma/metanorma-jis", branch: "main"
+gem "metanorma-plateau", "1.3.2.pre.alpha.1" #$(1)
+gem "metanorma-iso", "3.5.1.pre.alpha.1" #$(1)
+gem "metanorma-ieee", "1.7.1.pre.alpha.1" #$(1)
+gem "metanorma-itu", "2.9.3.pre.alpha.1" #$(1)
+gem "metanorma-iec", "2.9.1.pre.alpha.1" #$(1)
+gem "metanorma-jis", "1.2.1.pre.alpha.1" #$(1)
 # released shadow flavors (lib/relaton/render shipped in 1.x/2.x gems) crash
 # boot under render 3.x (isodoc's compatibility require picks the shadow):
 # ogc, iho, ietf, bipm still need git main until their shadow-free cuts land
-gem "metanorma-ogc", github: "metanorma/metanorma-ogc", branch: "main"
-gem "metanorma-iho", github: "metanorma/metanorma-iho", branch: "main"
-gem "metanorma-ietf", github: "metanorma/metanorma-ietf", branch: "main"
-gem "metanorma-bipm", github: "metanorma/metanorma-bipm", branch: "main"
+gem "metanorma-ogc", "2.10.1.pre.alpha.1" #$(1)
+gem "metanorma-iho", "1.4.1.pre.alpha.1" #$(1)
+gem "metanorma-ietf", "3.7.12.pre.alpha.1" #$(1)
+gem "metanorma-bipm", "2.9.1.pre.alpha.1" #$(1)
 
 # lutaml family
 
@@ -50,3 +50,8 @@ gem "word-to-markdown"
 gem "debug"
 gem "ffi"
 gem "sassc-embedded"
+
+# transitive pre-stack gems: root pins make prereleases admissible for
+# their gemspec constraints
+gem "metanorma-taste", "1.1.3.pre.alpha.1"
+gem "metanorma-plugin-datastruct", "0.3.12.pre.alpha.1"
