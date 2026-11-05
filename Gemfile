@@ -32,7 +32,6 @@ gem "metanorma-bipm", github: "metanorma/metanorma-bipm", branch: "main"
 # relaton / pubid line
 gem "relaton", "~> 3.0"
 gem "relaton-cli", "~> 3.0"
-gem "relaton-render", "~> 3.0"
 gem "pubid", "~> 2.0"
 
 # corpus extras
