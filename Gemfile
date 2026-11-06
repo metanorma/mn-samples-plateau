@@ -19,9 +19,8 @@ gem "metanorma-ieee", github: "metanorma/metanorma-ieee", branch: "main"
 gem "metanorma-itu", github: "metanorma/metanorma-itu", branch: "main"
 gem "metanorma-iec", github: "metanorma/metanorma-iec", branch: "main"
 gem "metanorma-jis", github: "metanorma/metanorma-jis", branch: "main"
-# released shadow flavors (lib/relaton/render shipped in 1.x/2.x gems) crash
-# boot under render 3.x (isodoc's compatibility require picks the shadow):
-# ogc, iho, ietf, bipm still need git main until their shadow-free cuts land
+# shadow-free stable cuts landed (ogc 2.10.1, iho 1.4.1, ietf 3.7.13,
+# bipm 2.9.2 ship no lib/relaton/render shadow); these ride git main
 gem "metanorma-ogc", github: "metanorma/metanorma-ogc", branch: "main"
 gem "metanorma-iho", github: "metanorma/metanorma-iho", branch: "main"
 gem "metanorma-ietf", github: "metanorma/metanorma-ietf", branch: "main"
@@ -30,8 +29,7 @@ gem "metanorma-bipm", github: "metanorma/metanorma-bipm", branch: "main"
 # lutaml family
 
 # relaton / pubid line
-gem "relaton", "~> 3.0"
-gem "relaton-cli", "~> 3.0"
+gem "relaton", "~> 3.1.1"
 gem "pubid", "~> 2.0"
 
 # corpus extras
