@@ -3,8 +3,8 @@
 Initialize global variables and mappings
 ==============================================
 {%- endcomment -%}
-{% assign root = klass.generalization %}
-{% assign citygml_ns = "app,bldg,brid,core,dem,frn,gen,grp,luse,tran,tun,veg,wtr,uro" | split: "," %}
+{% assign root = klass.generalization -%}
+{%- assign citygml_ns = "app,bldg,brid,core,dem,frn,gen,grp,luse,tran,tun,veg,wtr,uro" | split: "," %}
 
 {%- comment -%}Format upper class name{%- endcomment -%}
 {%- capture upper_klass_name -%}
@@ -216,8 +216,8 @@ h| ステレオタイプ {{ cols_header }}+| {{ stereotype }}
 {% if root.inherited_props.size > 0 %}
 {{ cols_number }}+h| 継承する属性
 h| 属性名 h| 属性の型及び多重度 h| 定義 {% if klass.has_guidance? %} h| 補足{%- endif %}
-{% for attr in root.inherited_props %}
-  {% assign attr_upper_klass_name = attr.upper_klass %}
+{% for attr in root.inherited_props -%}
+{%- assign attr_upper_klass_name = attr.upper_klass %}
   {%- capture name_col -%}
     {%- if attr.used? == false -%}
       ({{ attr_upper_klass_name }}:{{ attr.name }}) +
@@ -227,35 +227,35 @@ h| 属性名 h| 属性の型及び多重度 h| 定義 {% if klass.has_guidance? 
       [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
     {%- endif -%}
   {%- endcapture -%}
-  {% assign type_col = attr.type %}
-  {% for mapping_type in mapping_types %}
-    {% assign parts = mapping_type | split: "=>" %}
-    {% if parts[0] == attr.type %}
-      {% assign type_col = parts[1] %}
-      {% break %}
-    {% endif %}
-  {% endfor %}
-  {% if type_col == 'core:TextureTypeType' %}
-  	{% assign type_col = 'app:TextureTypeType' %}
-  {% endif %}
-  {% if type_col == 'core:WrapModeType' %}
-  	{% assign type_col = 'app:WrapModeType' %}
-  {% endif %}
-  {% if type_col == 'core:ColorPlusOpacity' %}
-  	{% assign type_col = 'app:ColorPlusOpacity' %}
-  {% endif %}
+{% assign type_col = attr.type -%}
+{%- for mapping_type in mapping_types -%}
+{%- assign parts = mapping_type | split: "=>" -%}
+{%- if parts[0] == attr.type -%}
+{%- assign type_col = parts[1] -%}
+{%- break -%}
+{%- endif -%}
+{%- endfor -%}
+{%- if type_col == 'core:TextureTypeType' -%}
+{%- assign type_col = 'app:TextureTypeType' -%}
+{%- endif -%}
+{%- if type_col == 'core:WrapModeType' -%}
+{%- assign type_col = 'app:WrapModeType' -%}
+{%- endif -%}
+{%- if type_col == 'core:ColorPlusOpacity' -%}
+{%- assign type_col = 'app:ColorPlusOpacity' -%}
+{%- endif %}
   | {{ name_col }}
   | {{ type_col }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
   | {{ attr.definition }}
   {% if klass.has_guidance? -%} | {{ attr.guidance }}{%- endif %}{% if attr.used? == false %}tr-style:[background-color: grey]{% endif %}
-{% endfor %}
-{% endif %}
+{% endfor -%}
+{%- endif -%}
 
 {% if root.owned_props.size > 0 %}
 {{ cols_number }}+h| 自身に定義された属性
 h| 属性名 h| 属性の型及び多重度 h| 定義 {% if klass.has_guidance? %} h| 補足{%- endif %}
-{% for attr in root.owned_props %}
-  {% assign attr_upper_klass_name = attr.name_ns %}
+{% for attr in root.owned_props -%}
+{%- assign attr_upper_klass_name = attr.name_ns %}
   {%- capture name_col -%}
     {%- if attr.used? == false -%}
       ({{ attr_upper_klass_name }}:{{ attr.name }}) +
@@ -265,141 +265,126 @@ h| 属性名 h| 属性の型及び多重度 h| 定義 {% if klass.has_guidance? 
       [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
     {%- endif -%}
   {%- endcapture -%}
-  {% assign type_col = attr.type %}
-  {% for mapping_type in mapping_types %}
-    {% assign parts = mapping_type | split: "=>" %}
-    {% if parts[0] == attr.type %}
-      {% assign type_col = parts[1] %}
-      {% break %}
-    {% endif %}
-  {% endfor %}
-  {% if type_col == 'core:Color' %}
-  	{% assign type_col = 'app:Color' %}
-  {% endif %}
+{% assign type_col = attr.type -%}
+{%- for mapping_type in mapping_types -%}
+{%- assign parts = mapping_type | split: "=>" -%}
+{%- if parts[0] == attr.type -%}
+{%- assign type_col = parts[1] -%}
+{%- break -%}
+{%- endif -%}
+{%- endfor -%}
+{%- if type_col == 'core:Color' -%}
+{%- assign type_col = 'app:Color' -%}
+{%- endif %}
   | {{ name_col }}
   | {{ type_col }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
   | {{ attr.definition }}
   {% if klass.has_guidance? -%} | {{ attr.guidance }}{%- endif %}{% if attr.used? == false %}tr-style:[background-color: grey]{% endif %}
-{% endfor %}
-{% endif %}
+{% endfor -%}
+{%- endif -%}
 
 {% if root.sorted_inherited_assoc_props.size > 0 %}
 {{ cols_number }}+h| 継承する関連役割
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.has_guidance? %} h| 補足{%- endif %}
-  {% assign all_gen_names = '' %}
-  {% for attr in root.sorted_inherited_assoc_props %}
-    {% assign all_gen_names = all_gen_names | append: ',' | append: attr.gen_name %}
-  {% endfor %}
-  {% assign all_gens = all_gen_names | split: ',' | uniq %}
-{% for cur_gen in all_gens %}
-  {% assign performed = false %}
-  {% for attr in root.sorted_inherited_assoc_props %}
-    {% assign props_with_same_gen = root.sorted_inherited_assoc_props | where: 'gen_name', cur_gen %}
-    {% unless performed %}
-      {% for attr in props_with_same_gen %}
-        {% assign attr_upper_klass_name = attr.upper_klass %}
-        {% if citygml_ns contains attr_upper_klass_name %}
+{% assign all_gen_names = '' -%}
+{%- for attr in root.sorted_inherited_assoc_props -%}
+{%- assign all_gen_names = all_gen_names | append: ',' | append: attr.gen_name -%}
+{%- endfor -%}
+{%- assign all_gens = all_gen_names | split: ',' | uniq -%}
+{%- for cur_gen in all_gens -%}
+{%- assign props_with_same_gen = root.sorted_inherited_assoc_props | where: 'gen_name', cur_gen -%}
+{%- for attr in props_with_same_gen -%}
+{%- assign attr_upper_klass_name = attr.upper_klass -%}
+{%- if citygml_ns contains attr_upper_klass_name -%}
+{%- assign name_col_role_and_name = attr_upper_klass_name | append: ":" | append: attr.name -%}
+{%- assign type_col_role_and_name = attr.type_ns | append: ":" | append: attr.type -%}
+{%- for mapping_entry in mapping_keys -%}
+{%- assign parts = mapping_entry | split: "=>" -%}
+{%- assign key = parts[0] | split: "|" -%}
+{%- assign target = parts[1] | split: "|" -%}
+{%- if key.size == 3 -%}
+{%- if key[0] == attr_upper_klass_name and key[2] == attr.name and target[1] == type_col_role_and_name -%}
+{%- assign name_col_role_and_name = target[0] | append: ":" | append: attr.name -%}
+{%- break -%}
+{%- endif -%}
+{%- elsif key.size == 1 -%}
+{%- if parts[0] == attr.name and target[1] == type_col_role_and_name -%}
+{%- assign name_col_role_and_name = target[0] | append: ":" | append: attr.name -%}
+{%- break -%}
+{%- endif -%}
+{%- endif -%}
+{%- endfor -%}
+{%- capture name_col -%}
+{%- if attr.used? == false -%}
+        ({{ name_col_role_and_name }}) +
+        [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
+{%- else -%}
+        {{ name_col_role_and_name }} +
+        [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
+{%- endif -%}
+{%- endcapture %}
+    | {{ name_col }}
+    | {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
+    | {{ attr.definition }}
+    {% if klass.has_guidance? -%} | {{ attr.guidance }}{%- endif %}{% if attr.used? == false %}tr-style:[background-color: grey]{% endif %}
+{% endif -%}
+{%- endfor -%}
+{%- for attr in props_with_same_gen -%}
+{%- assign attr_upper_klass_name = attr.upper_klass -%}
+{%- unless citygml_ns contains attr_upper_klass_name -%}
+{%- capture name_col -%}
+{%- if attr.used? == false -%}
+        ({{ attr_upper_klass_name }}:{{ attr.name }}) +
+        [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
+{%- else -%}
+        {{ attr_upper_klass_name }}:{{ attr.name }} +
+        [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
+{%- endif -%}
+{%- endcapture %}
+    | {{ name_col }}
+    | {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
+    | {{ attr.definition }}
+    {% if klass.has_guidance? -%} | {{ attr.guidance }}{%- endif %}{% if attr.used? == false %}tr-style:[background-color: grey]{% endif %}
+{% endunless -%}
+{%- endfor -%}
+{%- endfor -%}
+{%- endif -%}
 
-        {% assign name_col_role_and_name = attr_upper_klass_name | append: ":" | append: attr.name %}
-        {% assign type_col_role_and_name = attr.type_ns | append: ":" | append: attr.type %}
+{% if root.sorted_assoc_props.size > 0 -%}
+{%- assign sorted_assoc_props = root.sorted_assoc_props -%}
+{%- assign all_prefixes = 'i-UR,urf,uro' | split: ',' -%}
 
-        {% for mapping_entry in mapping_keys %}
-          {% assign parts = mapping_entry | split: "=>" %}
-          {% assign key = parts[0] | split: "|" %}
-          {% assign target = parts[1] | split: "|" %}
-          {% if key.size == 3 %}
-            {% comment %}Match on package|class|attribute{% endcomment %}
-            {% if key[0] == attr_upper_klass_name and key[2] == attr.name and target[1] == type_col_role_and_name %}
-              {% assign name_col_role_and_name = target[0] | append: ":" | append: attr.name %}
-              {% break %}
-            {% endif %}
-          {% elsif key.size == 1 %}
-            {% comment %}Match on attribute name only{% endcomment %}
-            {% if parts[0] == attr.name and target[1] == type_col_role_and_name %}
-              {% assign name_col_role_and_name = target[0] | append: ":" | append: attr.name %}
-              {% break %}
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-
-        {%- capture name_col -%}
-          {%- if attr.used? == false -%}
-            ({{  name_col_role_and_name }}) +
-            [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
-          {%- else -%}
-            {{  name_col_role_and_name }} +
-            [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
-          {%- endif -%}
-        {%- endcapture -%}
-        | {{ name_col }}
-        | {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
-        | {{ attr.definition }}
-        {% if klass.has_guidance? -%} | {{ attr.guidance }}{%- endif %}{% if attr.used? == false %}tr-style:[background-color: grey]{% endif %}
-        {% endif %}
-      {% endfor %}
-      {% for attr in props_with_same_gen %}
-        {% assign attr_upper_klass_name = attr.upper_klass %}
-        {% unless citygml_ns contains attr_upper_klass_name %}
-        {%- capture name_col -%}
-          {%- if attr.used? == false -%}
-            ({{ attr_upper_klass_name }}:{{ attr.name }}) +
-            [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
-          {%- else -%}
-            {{ attr_upper_klass_name }}:{{ attr.name }} +
-            [{{ attr_upper_klass_name }}::{{ attr.gen_name }}]
-          {%- endif -%}
-        {%- endcapture -%}
-        | {{ name_col }}
-        | {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
-        | {{ attr.definition }}
-        {% if klass.has_guidance? -%} | {{ attr.guidance }}{%- endif %}{% if attr.used? == false %}tr-style:[background-color: grey]{% endif %}
-        {% endunless %}
-      {% endfor %}
-      {% assign performed = true %}
-    {% endunless %}
-  {% endfor %}
-{% endfor %}
-{% endif %}
-
-{% if root.sorted_assoc_props.size > 0 %}
-  {% assign sorted_assoc_props = root.sorted_assoc_props %}
-  {% assign all_prefixes = 'i-UR,urf,uro' | split: ',' %}
-
-{% comment %}Draw table head{% endcomment %}
 {{ cols_number }}+h| 自身に定義された関連役割
 h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.has_guidance? %} h| 補足{%- endif %}
 
-  {% comment %}Draw table (Prefix other than i-UR, urf, uro){% endcomment %}
-  {% for attr in sorted_assoc_props %}
-    {% assign attr_upper_klass_name = attr.name_ns %}
-    {% if attr.type_ns == "gen" %}
-      {% assign attr_upper_klass_name = "gen" %}
-    {% endif %}
+{%- for attr in sorted_assoc_props -%}
+{%- assign attr_upper_klass_name = attr.name_ns -%}
+{%- if attr.type_ns == "gen" -%}
+{%- assign attr_upper_klass_name = "gen" -%}
+{%- endif -%}
 
-    {% assign prefix = attr_upper_klass_name %}
-    {% assign name_col_role_and_name = attr_upper_klass_name | append: ":" | append: attr.name %}
-    {% assign type_col_role_and_name = attr.type_ns | append: ":" | append: attr.type %}
+{% assign prefix = attr_upper_klass_name -%}
+{%- assign name_col_role_and_name = attr_upper_klass_name | append: ":" | append: attr.name -%}
+{%- assign type_col_role_and_name = attr.type_ns | append: ":" | append: attr.type -%}
 
-    {% for mapping_entry in mapping_keys %}
-      {% assign parts = mapping_entry | split: "=>" %}
-      {% assign key = parts[0] | split: "|" %}
-      {% assign target = parts[1] | split: "|" %}
-      {% if key.size == 3 %}
-        {% comment %}Match on package|class|attribute{% endcomment %}
-        {% if key[0] == attr_upper_klass_name and key[2] == attr.name and target[1] == type_col_role_and_name %}
-          {% assign name_col_role_and_name = target[0] | append: ":" | append: attr.name %}
-          {% assign prefix = target[0] %}
-          {% break %}
-        {% endif %}
-      {% elsif key.size == 1 %}
-        {% comment %}Match on attribute name only{% endcomment %}
-        {% if parts[0] == attr.name and target[1] == type_col_role_and_name %}
-          {% assign name_col_role_and_name = target[0] | append: ":" | append: attr.name %}
-          {% assign prefix = target[0] %}
-          {% break %}
-        {% endif %}
-      {% endif %}
-    {% endfor %}
+{% for mapping_entry in mapping_keys -%}
+{%- assign parts = mapping_entry | split: "=>" -%}
+{%- assign key = parts[0] | split: "|" -%}
+{%- assign target = parts[1] | split: "|" -%}
+{%- if key.size == 3 -%}
+{%- if key[0] == attr_upper_klass_name and key[2] == attr.name and target[1] == type_col_role_and_name -%}
+{%- assign name_col_role_and_name = target[0] | append: ":" | append: attr.name -%}
+{%- assign prefix = target[0] -%}
+{%- break -%}
+{%- endif -%}
+{%- elsif key.size == 1 -%}
+{%- if parts[0] == attr.name and target[1] == type_col_role_and_name -%}
+{%- assign name_col_role_and_name = target[0] | append: ":" | append: attr.name -%}
+{%- assign prefix = target[0] -%}
+{%- break -%}
+{%- endif -%}
+{%- endif -%}
+{%- endfor %}
 
     {%- capture name_col -%}
       {%- if attr.used? == false -%}
@@ -411,46 +396,42 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
       {%- endif -%}
     {%- endcapture -%}
 
-{% comment %}Draw table rows{% endcomment %}
-    {% unless all_prefixes contains prefix %}
+{%- unless all_prefixes contains prefix %}
 | {{ name_col }}
 | {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
 | {{ attr.definition }}
 {% if klass.has_guidance? -%} | {{ attr.guidance }}{%- endif %}{% if attr.used? == false %}tr-style:[background-color: grey]{% endif %}
-    {% endunless %}
-  {% endfor %}
+{% endunless -%}
+{%- endfor -%}
 
-  {% comment %}Draw table (Prefix equals i-UR){% endcomment %}
-  {% for attr in sorted_assoc_props %}
-    {% assign attr_upper_klass_name = attr.name_ns %}
-    {% if attr.type_ns == "gen" %}
-      {% assign attr_upper_klass_name = "gen" %}
-    {% endif %}
+{%- for attr in sorted_assoc_props -%}
+{%- assign attr_upper_klass_name = attr.name_ns -%}
+{%- if attr.type_ns == "gen" -%}
+{%- assign attr_upper_klass_name = "gen" -%}
+{%- endif -%}
 
-    {% assign prefix = attr_upper_klass_name %}
-    {% assign name_col_role_and_name = attr_upper_klass_name | append: ":" | append: attr.name %}
-    {% assign type_col_role_and_name = attr.type_ns | append: ":" | append: attr.type %}
+{% assign prefix = attr_upper_klass_name -%}
+{%- assign name_col_role_and_name = attr_upper_klass_name | append: ":" | append: attr.name -%}
+{%- assign type_col_role_and_name = attr.type_ns | append: ":" | append: attr.type -%}
 
-    {% for mapping_entry in mapping_keys %}
-      {% assign parts = mapping_entry | split: "=>" %}
-      {% assign key = parts[0] | split: "|" %}
-      {% assign target = parts[1] | split: "|" %}
-      {% if key.size == 3 %}
-        {% comment %}Match on package|class|attribute{% endcomment %}
-        {% if key[0] == attr_upper_klass_name and key[2] == attr.name and target[1] == type_col_role_and_name %}
-          {% assign name_col_role_and_name = target[0] | append: ":" | append: attr.name %}
-          {% assign prefix = target[0] %}
-          {% break %}
-        {% endif %}
-      {% elsif key.size == 1 %}
-        {% comment %}Match on attribute name only{% endcomment %}
-        {% if parts[0] == attr.name and target[1] == type_col_role_and_name %}
-          {% assign name_col_role_and_name = target[0] | append: ":" | append: attr.name %}
-          {% assign prefix = target[0] %}
-          {% break %}
-        {% endif %}
-      {% endif %}
-    {% endfor %}
+{% for mapping_entry in mapping_keys -%}
+{%- assign parts = mapping_entry | split: "=>" -%}
+{%- assign key = parts[0] | split: "|" -%}
+{%- assign target = parts[1] | split: "|" -%}
+{%- if key.size == 3 -%}
+{%- if key[0] == attr_upper_klass_name and key[2] == attr.name and target[1] == type_col_role_and_name -%}
+{%- assign name_col_role_and_name = target[0] | append: ":" | append: attr.name -%}
+{%- assign prefix = target[0] -%}
+{%- break -%}
+{%- endif -%}
+{%- elsif key.size == 1 -%}
+{%- if parts[0] == attr.name and target[1] == type_col_role_and_name -%}
+{%- assign name_col_role_and_name = target[0] | append: ":" | append: attr.name -%}
+{%- assign prefix = target[0] -%}
+{%- break -%}
+{%- endif -%}
+{%- endif -%}
+{%- endfor %}
 
     {%- capture name_col -%}
       {%- if attr.used? == false -%}
@@ -462,46 +443,42 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
       {%- endif -%}
     {%- endcapture -%}
 
-{% comment %}Draw table rows{% endcomment %}
-    {% if prefix == "i-UR" %}
+{%- if prefix == "i-UR" %}
 | {{ name_col }}
 | {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
 | {{ attr.definition }}
 {% if klass.has_guidance? -%} | {{ attr.guidance }}{%- endif %}{% if attr.used? == false %}tr-style:[background-color: grey]{% endif %}
-    {% endif %}
-  {% endfor %}
+{% endif -%}
+{%- endfor -%}
 
-  {% comment %}Draw table (Prefix equals urf){% endcomment %}
-  {% for attr in sorted_assoc_props %}
-    {% assign attr_upper_klass_name = attr.name_ns %}
-    {% if attr.type_ns == "gen" %}
-      {% assign attr_upper_klass_name = "gen" %}
-    {% endif %}
+{%- for attr in sorted_assoc_props -%}
+{%- assign attr_upper_klass_name = attr.name_ns -%}
+{%- if attr.type_ns == "gen" -%}
+{%- assign attr_upper_klass_name = "gen" -%}
+{%- endif -%}
 
-    {% assign prefix = attr_upper_klass_name %}
-    {% assign name_col_role_and_name = attr_upper_klass_name | append: ":" | append: attr.name %}
-    {% assign type_col_role_and_name = attr.type_ns | append: ":" | append: attr.type %}
+{% assign prefix = attr_upper_klass_name -%}
+{%- assign name_col_role_and_name = attr_upper_klass_name | append: ":" | append: attr.name -%}
+{%- assign type_col_role_and_name = attr.type_ns | append: ":" | append: attr.type -%}
 
-    {% for mapping_entry in mapping_keys %}
-      {% assign parts = mapping_entry | split: "=>" %}
-      {% assign key = parts[0] | split: "|" %}
-      {% assign target = parts[1] | split: "|" %}
-      {% if key.size == 3 %}
-        {% comment %}Match on package|class|attribute{% endcomment %}
-        {% if key[0] == attr_upper_klass_name and key[2] == attr.name and target[1] == type_col_role_and_name %}
-          {% assign name_col_role_and_name = target[0] | append: ":" | append: attr.name %}
-          {% assign prefix = target[0] %}
-          {% break %}
-        {% endif %}
-      {% elsif key.size == 1 %}
-        {% comment %}Match on attribute name only{% endcomment %}
-        {% if parts[0] == attr.name and target[1] == type_col_role_and_name %}
-          {% assign name_col_role_and_name = target[0] | append: ":" | append: attr.name %}
-          {% assign prefix = target[0] %}
-          {% break %}
-        {% endif %}
-      {% endif %}
-    {% endfor %}
+{% for mapping_entry in mapping_keys -%}
+{%- assign parts = mapping_entry | split: "=>" -%}
+{%- assign key = parts[0] | split: "|" -%}
+{%- assign target = parts[1] | split: "|" -%}
+{%- if key.size == 3 -%}
+{%- if key[0] == attr_upper_klass_name and key[2] == attr.name and target[1] == type_col_role_and_name -%}
+{%- assign name_col_role_and_name = target[0] | append: ":" | append: attr.name -%}
+{%- assign prefix = target[0] -%}
+{%- break -%}
+{%- endif -%}
+{%- elsif key.size == 1 -%}
+{%- if parts[0] == attr.name and target[1] == type_col_role_and_name -%}
+{%- assign name_col_role_and_name = target[0] | append: ":" | append: attr.name -%}
+{%- assign prefix = target[0] -%}
+{%- break -%}
+{%- endif -%}
+{%- endif -%}
+{%- endfor %}
 
     {%- capture name_col -%}
       {%- if attr.used? == false -%}
@@ -513,46 +490,42 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
       {%- endif -%}
     {%- endcapture -%}
 
-{% comment %}Draw table rows{% endcomment %}
-    {% if prefix == "urf" %}
+{%- if prefix == "urf" %}
 | {{ name_col }}
 | {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
 | {{ attr.definition }}
 {% if klass.has_guidance? -%} | {{ attr.guidance }}{%- endif %}{% if attr.used? == false %}tr-style:[background-color: grey]{% endif %}
-    {% endif %}
-  {% endfor %}
+{% endif -%}
+{%- endfor -%}
 
-  {% comment %}Draw table (Prefix equals uro){% endcomment %}
-  {% for attr in sorted_assoc_props %}
-    {% assign attr_upper_klass_name = attr.name_ns %}
-    {% if attr.type_ns == "gen" %}
-      {% assign attr_upper_klass_name = "gen" %}
-    {% endif %}
+{%- for attr in sorted_assoc_props -%}
+{%- assign attr_upper_klass_name = attr.name_ns -%}
+{%- if attr.type_ns == "gen" -%}
+{%- assign attr_upper_klass_name = "gen" -%}
+{%- endif -%}
 
-    {% assign prefix = attr_upper_klass_name %}
-    {% assign name_col_role_and_name = attr_upper_klass_name | append: ":" | append: attr.name %}
-    {% assign type_col_role_and_name = attr.type_ns | append: ":" | append: attr.type %}
+{% assign prefix = attr_upper_klass_name -%}
+{%- assign name_col_role_and_name = attr_upper_klass_name | append: ":" | append: attr.name -%}
+{%- assign type_col_role_and_name = attr.type_ns | append: ":" | append: attr.type -%}
 
-    {% for mapping_entry in mapping_keys %}
-      {% assign parts = mapping_entry | split: "=>" %}
-      {% assign key = parts[0] | split: "|" %}
-      {% assign target = parts[1] | split: "|" %}
-      {% if key.size == 3 %}
-        {% comment %}Match on package|class|attribute{% endcomment %}
-        {% if key[0] == attr_upper_klass_name and key[2] == attr.name and target[1] == type_col_role_and_name %}
-          {% assign name_col_role_and_name = target[0] | append: ":" | append: attr.name %}
-          {% assign prefix = target[0] %}
-          {% break %}
-        {% endif %}
-      {% elsif key.size == 1 %}
-        {% comment %}Match on attribute name only{% endcomment %}
-        {% if parts[0] == attr.name and target[1] == type_col_role_and_name %}
-          {% assign name_col_role_and_name = target[0] | append: ":" | append: attr.name %}
-          {% assign prefix = target[0] %}
-          {% break %}
-        {% endif %}
-      {% endif %}
-    {% endfor %}
+{% for mapping_entry in mapping_keys -%}
+{%- assign parts = mapping_entry | split: "=>" -%}
+{%- assign key = parts[0] | split: "|" -%}
+{%- assign target = parts[1] | split: "|" -%}
+{%- if key.size == 3 -%}
+{%- if key[0] == attr_upper_klass_name and key[2] == attr.name and target[1] == type_col_role_and_name -%}
+{%- assign name_col_role_and_name = target[0] | append: ":" | append: attr.name -%}
+{%- assign prefix = target[0] -%}
+{%- break -%}
+{%- endif -%}
+{%- elsif key.size == 1 -%}
+{%- if parts[0] == attr.name and target[1] == type_col_role_and_name -%}
+{%- assign name_col_role_and_name = target[0] | append: ":" | append: attr.name -%}
+{%- assign prefix = target[0] -%}
+{%- break -%}
+{%- endif -%}
+{%- endif -%}
+{%- endfor %}
 
     {%- capture name_col -%}
       {%- if attr.used? == false -%}
@@ -564,14 +537,13 @@ h| 関連役割名 h| 関連役割の型及び多重度 h| 定義 {% if klass.ha
       {%- endif -%}
     {%- endcapture -%}
 
-{% comment %}Draw table rows{% endcomment %}
-    {% if prefix == "uro" %}
+{%- if prefix == "uro" %}
 | {{ name_col }}
 | {{ attr.type_ns }}:{{ attr.type }} [{{ attr.cardinality.min }}..{{ attr.cardinality.max }}]
 | {{ attr.definition }}
 {% if klass.has_guidance? -%} | {{ attr.guidance }}{%- endif %}{% if attr.used? == false %}tr-style:[background-color: grey]{% endif %}
-    {% endif %}
-  {% endfor %}
+{% endif -%}
+{%- endfor -%}
 
 {% endif %}
 |===
